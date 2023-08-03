@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SRC="gzip"
+PKG="$SRC"
+
+case $(uname -m) in i?86) export DEFS="NO_ASM" ;; esac
+
+./configure --prefix=/usr
+
+make
+make install
+unset DEFS

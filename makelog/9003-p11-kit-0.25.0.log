@@ -1,0 +1,1351 @@
+Fri Aug  4 00:13:46 CST 2023
+KB: 1557648	/
+
+The Meson build system
+Version: 1.2.0
+Source dir: /sources/p11-kit-0.25.0
+Build dir: /sources/p11-kit-0.25.0/p11-build
+Build type: native build
+Project name: p11-kit
+Project version: 0.25.0
+C compiler for the host machine: cc (gcc 13.2.0 "cc (GCC) 13.2.0")
+C linker for the host machine: cc ld.bfd 2.41
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Has header "libintl.h" : YES 
+Run-time dependency intl found: YES
+../meson.build:65: WARNING: Project targets '>= 0.49' but uses feature introduced in '0.59.0': dep 'intl' custom lookup. consider checking for `ngettext` with and without `find_library('intl')`
+Checking for function "dgettext" with dependency intl: YES 
+Checking for size of "unsigned long" : 8 
+Run-time dependency threads found: YES
+Checking for function "pthread_create" with dependency threads: YES 
+Checking for function "nanosleep" : YES 
+Checking for function "dlopen" : YES 
+Library nsl found: NO
+Has header "locale.h" : YES 
+Checking for type "locale_t" : YES 
+Checking for function "newlocale" : YES 
+Checking for function "strerror_l" : YES 
+Has header "sys/resource.h" : YES 
+Has header "sys/un.h" : YES 
+Has header "ucred.h" : NO 
+Checking for function "fdwalk" : NO 
+Checking for function "getauxval" : YES 
+Checking for function "getexecname" : NO 
+Checking for function "getpeereid" : NO 
+Checking for function "getpeerucred" : NO 
+Checking for function "getprogname" : NO 
+Checking for function "getresuid" : YES 
+Checking for function "isatty" : YES 
+Checking for function "issetugid" : YES 
+Checking for function "mkdtemp" : YES 
+Checking for function "mkstemp" : YES 
+Checking for function "secure_getenv" : YES 
+Checking for function "strndup" : YES 
+Checking whether type "struct dirent" has member "d_type" : YES 
+Checking if "thread-local storage class" compiles: YES 
+Checking for function "gmtime_r" : YES 
+Checking if "program_invocation_short_name_test_code" : links: YES 
+Checking if "__libc_enable_secure" : links: NO 
+Checking if "vsock_test" compiles: YES 
+Checking for type "sighandler_t" : NO 
+Checking for type "sig_t" : NO 
+Checking for type "__sighandler_t" : NO 
+Checking for type "sighandler_t" : NO 
+Checking for type "sig_t" : YES 
+Checking for type "__sighandler_t" : NO 
+Has header "stdbool.h" : YES 
+Checking for function "asprintf" : YES 
+Checking for function "basename" : YES 
+Checking for function "memdup" : NO 
+Checking for function "reallocarray" : YES 
+Checking for function "secure_getenv" : YES (cached)
+Checking for function "setenv" : YES 
+Checking for function "strnstr" : NO 
+Checking for function "vasprintf" : YES 
+Checking for function "strerror_r" : YES 
+Checking if "strerror_r check" runs: YES
+Header "errno.h" has symbol "program_invocation_short_name" : YES 
+Header "stdio.h" has symbol "asprintf" : YES 
+Header "stdio.h" has symbol "vasprintf" : YES 
+Header "stdlib.h" has symbol "reallocarray" : YES 
+Found pkg-config: /usr/bin/pkg-config (1.9.5)
+Run-time dependency libffi found: YES 3.4.4
+Run-time dependency libtasn1 found: YES 4.19.0
+Program asn1Parser found: YES (/usr/bin/asn1Parser)
+Did not find CMake 'cmake'
+Found CMake: NO
+Run-time dependency libsystemd found: NO (tried pkgconfig and cmake)
+Run-time dependency systemd found: NO (tried pkgconfig and cmake)
+Configuring config.h using configuration
+Compiler for C supports link arguments -Wl,--version-script,/sources/p11-kit-0.25.0/p11-kit/libp11-kit.map: YES 
+Compiler for C supports link arguments -Wl,-z,nodelete: YES 
+Compiler for C supports link arguments -Wl,--version-script,/sources/p11-kit-0.25.0/p11-kit/p11-module.map: YES 
+Program gen-pkcs11-gnu.sh found: YES (/sources/p11-kit-0.25.0/p11-kit/gen-pkcs11-gnu.sh)
+Program test-profiles.sh found: YES (/sources/p11-kit-0.25.0/p11-kit/test-profiles.sh)
+Program test-messages.sh found: YES (/sources/p11-kit-0.25.0/p11-kit/test-messages.sh)
+Program test-server.sh found: YES (/sources/p11-kit-0.25.0/p11-kit/test-server.sh)
+Configuring pkcs11.conf.example using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Run-time dependency bash-completion found: NO (tried pkgconfig and cmake)
+../bash-completion/meson.build:7: WARNING: Will not install bash completion due to missing dependencies!
+Build targets in project: 186
+WARNING: Project specifies a minimum meson_version '>= 0.49' but uses features which were added in newer versions:
+ * 0.59.0: {'dep 'intl' custom lookup'}
+
+p11-kit 0.25.0
+
+  User defined options
+    buildtype  : release
+    prefix     : /usr
+    trust_paths: /etc/pki/anchors
+
+Found ninja-1.11.1 at /usr/bin/ninja
+[2 1/383 0.075s] Compiling C object common/libp11-common.a.p/argv.c.o
+[2 2/383 0.165s] Compiling C object common/libp11-common.a.p/array.c.o
+[2 3/383 0.265s] Compiling C object common/libp11-common.a.p/buffer.c.o
+[2 4/383 0.389s] Compiling C object common/libp11-common.a.p/attrs.c.o
+[2 5/383 0.410s] Compiling C object common/libp11-common.a.p/compat.c.o
+../common/compat.c: In function ‘p11_recursive_mutex_init’:
+../common/compat.c:230:13: warning: variable ‘ret’ set but not used [-Wunused-but-set-variable]
+  230 |         int ret;
+      |             ^~~
+[2 6/383 0.503s] Compiling C object common/libp11-common.a.p/debug.c.o
+[2 7/383 0.513s] Compiling C object common/libp11-common.a.p/constants.c.o
+[2 8/383 0.579s] Compiling C object common/libp11-common.a.p/hash.c.o
+[2 9/383 0.659s] Compiling C object common/libp11-common.a.p/dict.c.o
+[2 10/383 0.699s] Compiling C object common/libp11-common.a.p/lexer.c.o
+[2 11/383 0.741s] Compiling C object common/libp11-common.a.p/message.c.o
+[2 12/383 0.811s] Compiling C object common/libp11-common.a.p/runtime.c.o
+[2 13/383 0.873s] Compiling C object common/libp11-common.a.p/path.c.o
+[2 14/383 0.887s] Compiling C object common/libp11-common.a.p/url.c.o
+[2 15/383 0.938s] Compiling C object common/libp11-common.a.p/vsock.c.o
+[2 16/383 0.945s] Linking static target common/libp11-common.a
+[2 17/383 0.950s] Compiling C object common/libp11-library.a.p/library.c.o
+[2 18/383 0.954s] Linking static target common/libp11-library.a
+[2 19/383 1.168s] Compiling C object common/libp11-test.a.p/test.c.o
+[2 20/383 1.269s] Compiling C object common/libp11-tool.a.p/print.c.o
+[2 21/383 1.424s] Compiling C object common/libp11-tool.a.p/tool.c.o
+[2 22/383 1.465s] Compiling C object common/libp11-tool.a.p/unix-peer.c.o
+[2 23/383 1.470s] Linking static target common/libp11-tool.a
+[2 24/383 1.526s] Compiling C object common/test-tests.p/test-tests.c.o
+[2 25/383 1.625s] Compiling C object common/test-compat.p/test-compat.c.o
+[2 26/383 1.686s] Compiling C object common/test-hash.p/test-hash.c.o
+[2 27/383 2.017s] Compiling C object common/test-dict.p/test-dict.c.o
+../common/test-dict.c: In function ‘test_set_clear’:
+../common/test-dict.c:254:15: warning: variable ‘check’ set but not used [-Wunused-but-set-variable]
+  254 |         char *check;
+      |               ^~~~~
+[2 28/383 2.155s] Compiling C object common/test-array.p/test-array.c.o
+[2 29/383 2.252s] Compiling C object common/test-constants.p/test-constants.c.o
+[2 30/383 2.524s] Compiling C object common/libp11-test.a.p/mock.c.o
+[2 31/383 2.529s] Linking static target common/libp11-test.a
+[2 32/383 2.544s] Linking target common/test-tests
+[2 33/383 2.558s] Linking target common/test-compat
+[2 34/383 2.573s] Linking target common/test-hash
+[2 35/383 2.589s] Linking target common/test-dict
+[2 36/383 2.603s] Linking target common/test-array
+[2 37/383 2.620s] Linking target common/test-constants
+[2 38/383 2.776s] Compiling C object common/test-buffer.p/test-buffer.c.o
+[2 39/383 2.787s] Compiling C object common/test-attrs.p/test-attrs.c.o
+[2 40/383 2.791s] Linking target common/test-buffer
+[2 41/383 2.805s] Linking target common/test-attrs
+[2 42/383 2.916s] Compiling C object common/test-url.p/test-url.c.o
+[2 43/383 2.931s] Linking target common/test-url
+[2 44/383 3.017s] Compiling C object common/test-path.p/test-path.c.o
+[2 45/383 3.033s] Linking target common/test-path
+[2 46/383 3.041s] Compiling C object common/test-lexer.p/test-lexer.c.o
+[2 47/383 3.056s] Linking target common/test-lexer
+[2 48/383 3.096s] Compiling C object common/test-message.p/test-message.c.o
+[2 49/383 3.111s] Linking target common/test-message
+[2 50/383 3.150s] Compiling C object common/test-argv.p/test-argv.c.o
+[2 51/383 3.165s] Linking target common/test-argv
+[2 52/383 3.213s] Compiling C object common/test-runtime.p/test-runtime.c.o
+[2 53/383 3.215s] Compiling C object common/frob-getauxval.p/frob-getauxval.c.o
+[2 54/383 3.227s] Linking target common/frob-getauxval
+[2 55/383 3.229s] Linking target common/test-runtime
+[2 56/383 3.279s] Compiling C object common/frob-getenv.p/frob-getenv.c.o
+[2 57/383 3.293s] Compiling C object common/frob-getprogname.p/frob-getprogname.c.o
+[2 58/383 3.293s] Linking target common/frob-getenv
+[2 59/383 3.305s] Linking target common/frob-getprogname
+[2 60/383 3.441s] Generating p11-kit/generate virtual-fixed-generated.h with a custom command
+[2 61/383 3.621s] Compiling C object p11-kit/libp11-kit-internal.a.p/conf.c.o
+[2 62/383 3.622s] Compiling C object p11-kit/libp11-kit.so.0.3.0.p/iter.c.o
+[2 63/383 3.795s] Compiling C object p11-kit/libp11-kit-internal.a.p/filter.c.o
+[2 64/383 4.114s] Compiling C object p11-kit/libp11-kit-internal.a.p/rpc-transport.c.o
+[2 65/383 4.774s] Compiling C object p11-kit/libp11-kit-internal.a.p/rpc-message.c.o
+[2 66/383 5.208s] Compiling C object p11-kit/libp11-kit-internal.a.p/log.c.o
+[2 67/383 6.028s] Compiling C object p11-kit/libp11-kit-internal.a.p/rpc-client.c.o
+[2 68/383 6.118s] Compiling C object p11-kit/libp11-kit.so.0.3.0.p/messages.c.o
+[2 69/383 6.773s] Compiling C object p11-kit/libp11-kit.so.0.3.0.p/modules.c.o
+[2 70/383 6.937s] Compiling C object p11-kit/libp11-kit.so.0.3.0.p/pin.c.o
+[2 71/383 7.769s] Compiling C object p11-kit/libp11-kit.so.0.3.0.p/proxy.c.o
+../p11-kit/proxy.c: In function ‘proxy_C_Initialize’:
+../p11-kit/proxy.c:427:35: warning: ‘py’ may be used uninitialized [-Wmaybe-uninitialized]
+  427 |                         state->px = py;
+      |                         ~~~~~~~~~~^~~~
+../p11-kit/proxy.c:379:16: note: ‘py’ was declared here
+  379 |         Proxy *py;
+      |                ^~
+[2 72/383 7.821s] Compiling C object p11-kit/libp11-kit.so.0.3.0.p/proxy-init.c.o
+[2 73/383 8.805s] Compiling C object p11-kit/libp11-kit.so.0.3.0.p/rpc-server.c.o
+[2 74/383 9.328s] Compiling C object p11-kit/libp11-kit.so.0.3.0.p/uri.c.o
+[2 75/383 9.413s] Compiling C object p11-kit/libp11-kit.so.0.3.0.p/util.c.o
+[2 76/383 9.521s] Compiling C object p11-kit/p11-kit-client.so.p/client.c.o
+[2 77/383 9.571s] Compiling C object p11-kit/p11-kit-client.so.p/client-init.c.o
+[2 78/383 9.755s] Compiling C object p11-kit/libp11-kit-testable.a.p/conf.c.o
+[2 79/383 11.347s] Compiling C object p11-kit/libp11-kit-testable.a.p/log.c.o
+[2 80/383 11.520s] Compiling C object p11-kit/libp11-kit-testable.a.p/filter.c.o
+[2 81/383 11.838s] Compiling C object p11-kit/libp11-kit-testable.a.p/rpc-transport.c.o
+[2 82/383 12.489s] Compiling C object p11-kit/libp11-kit-testable.a.p/rpc-message.c.o
+[2 83/383 13.739s] Compiling C object p11-kit/libp11-kit-testable.a.p/rpc-client.c.o
+[2 84/383 37.888s] Compiling C object p11-kit/libp11-kit-internal.a.p/virtual.c.o
+[2 85/383 37.896s] Linking static target p11-kit/libp11-kit-internal.a
+[2 86/383 37.973s] Linking target p11-kit/libp11-kit.so.0.3.0
+[2 87/383 38.082s] Generating symbol file p11-kit/libp11-kit.so.0.3.0.p/libp11-kit.so.0.3.0.symbols
+[2 88/383 38.147s] Linking target p11-kit/p11-kit-client.so
+[2 89/383 38.465s] Compiling C object p11-kit/libp11-kit-testable.a.p/iter.c.o
+[2 90/383 38.557s] Compiling C object p11-kit/libp11-kit-testable.a.p/messages.c.o
+[2 91/383 39.223s] Compiling C object p11-kit/libp11-kit-testable.a.p/modules.c.o
+[2 92/383 39.388s] Compiling C object p11-kit/libp11-kit-testable.a.p/pin.c.o
+[2 93/383 40.210s] Compiling C object p11-kit/libp11-kit-testable.a.p/proxy.c.o
+../p11-kit/proxy.c: In function ‘proxy_C_Initialize’:
+../p11-kit/proxy.c:427:35: warning: ‘py’ may be used uninitialized [-Wmaybe-uninitialized]
+  427 |                         state->px = py;
+      |                         ~~~~~~~~~~^~~~
+../p11-kit/proxy.c:379:16: note: ‘py’ was declared here
+  379 |         Proxy *py;
+      |                ^~
+[2 94/383 40.261s] Compiling C object p11-kit/libp11-kit-testable.a.p/proxy-init.c.o
+[2 95/383 41.258s] Compiling C object p11-kit/libp11-kit-testable.a.p/rpc-server.c.o
+[2 96/383 41.787s] Compiling C object p11-kit/libp11-kit-testable.a.p/uri.c.o
+[2 97/383 41.871s] Compiling C object p11-kit/libp11-kit-testable.a.p/util.c.o
+[2 98/383 41.982s] Compiling C object p11-kit/p11-kit.p/add-profile.c.o
+[2 99/383 42.086s] Compiling C object p11-kit/p11-kit.p/delete-profile.c.o
+[2 100/383 42.174s] Compiling C object p11-kit/p11-kit.p/list-profiles.c.o
+[2 101/383 42.316s] Compiling C object p11-kit/p11-kit.p/lists.c.o
+[2 102/383 42.401s] Compiling C object p11-kit/p11-kit.p/p11-kit.c.o
+[2 103/383 42.467s] Compiling C object p11-kit/p11-kit.p/print-config.c.o
+[2 104/383 42.489s] Linking target p11-kit/p11-kit
+[2 105/383 42.597s] Compiling C object p11-kit/p11-kit-testable.p/add-profile.c.o
+[2 106/383 42.694s] Compiling C object p11-kit/p11-kit-testable.p/delete-profile.c.o
+[2 107/383 42.778s] Compiling C object p11-kit/p11-kit-testable.p/list-profiles.c.o
+[2 108/383 42.918s] Compiling C object p11-kit/p11-kit-testable.p/lists.c.o
+[2 109/383 43.001s] Compiling C object p11-kit/p11-kit-testable.p/p11-kit.c.o
+[2 110/383 43.070s] Compiling C object p11-kit/p11-kit-testable.p/print-config.c.o
+[2 111/383 43.147s] Compiling C object p11-kit/p11-kit-remote.p/remote.c.o
+[2 112/383 43.163s] Linking target p11-kit/p11-kit-remote
+[2 113/383 43.239s] Compiling C object p11-kit/p11-kit-remote-testable.p/remote.c.o
+[2 114/383 43.546s] Compiling C object p11-kit/p11-kit-server.p/server.c.o
+[2 115/383 43.563s] Linking target p11-kit/p11-kit-server
+[2 116/383 43.868s] Compiling C object p11-kit/p11-kit-server-testable.p/server.c.o
+[2 117/383 43.875s] Generating 'p11-kit/libp11-kit-pkcs11-gnu.a.p/pkcs11-gnu-iter.h'
+[2 118/383 43.882s] Generating 'p11-kit/libp11-kit-pkcs11-gnu.a.p/pkcs11-gnu-pin.h'
+[2 119/383 43.889s] Generating 'p11-kit/libp11-kit-pkcs11-gnu.a.p/pkcs11-gnu-uri.h'
+[2 120/383 43.919s] Compiling C object p11-kit/libp11-kit-pkcs11-gnu.a.p/pkcs11-gnu.c.o
+[2 121/383 43.923s] Linking static target p11-kit/libp11-kit-pkcs11-gnu.a
+[2 122/383 44.001s] Compiling C object p11-kit/test-progname.p/test-progname.c.o
+[2 123/383 44.069s] Compiling C object p11-kit/test-util.p/test-util.c.o
+[2 124/383 44.428s] Compiling C object p11-kit/test-conf.p/test-conf.c.o
+[2 125/383 45.214s] Compiling C object p11-kit/test-uri.p/test-uri.c.o
+../p11-kit/test-uri.c: In function ‘test_uri_parse_with_token’:
+../p11-kit/test-uri.c:352:27: warning: variable ‘token’ set but not used [-Wunused-but-set-variable]
+  352 |         CK_TOKEN_INFO_PTR token;
+      |                           ^~~~~
+../p11-kit/test-uri.c: In function ‘test_uri_parse_with_spaces’:
+../p11-kit/test-uri.c:405:21: warning: variable ‘info’ set but not used [-Wunused-but-set-variable]
+  405 |         CK_INFO_PTR info;
+      |                     ^~~~
+../p11-kit/test-uri.c: In function ‘test_uri_parse_with_library’:
+../p11-kit/test-uri.c:428:21: warning: variable ‘info’ set but not used [-Wunused-but-set-variable]
+  428 |         CK_INFO_PTR info;
+      |                     ^~~~
+../p11-kit/test-uri.c: In function ‘test_uri_parse_with_slot’:
+../p11-kit/test-uri.c:465:26: warning: variable ‘slot’ set but not used [-Wunused-but-set-variable]
+  465 |         CK_SLOT_INFO_PTR slot;
+      |                          ^~~~
+../p11-kit/test-uri.c: At top level:
+../p11-kit/test-uri.c:335:1: warning: ‘is_space_string’ defined but not used [-Wunused-function]
+  335 | is_space_string (CK_UTF8CHAR_PTR string, CK_ULONG size, const char *check)
+      | ^~~~~~~~~~~~~~~
+../p11-kit/test-uri.c:78:1: warning: ‘are_attributes_empty’ defined but not used [-Wunused-function]
+   78 | are_attributes_empty (P11KitUri *uri)
+      | ^~~~~~~~~~~~~~~~~~~~
+../p11-kit/test-uri.c:68:1: warning: ‘is_token_empty’ defined but not used [-Wunused-function]
+   68 | is_token_empty (P11KitUri *uri)
+      | ^~~~~~~~~~~~~~
+../p11-kit/test-uri.c:60:1: warning: ‘is_slot_empty’ defined but not used [-Wunused-function]
+   60 | is_slot_empty (P11KitUri *uri)
+      | ^~~~~~~~~~~~~
+../p11-kit/test-uri.c:50:1: warning: ‘is_module_empty’ defined but not used [-Wunused-function]
+   50 | is_module_empty (P11KitUri *uri)
+      | ^~~~~~~~~~~~~~~
+[2 126/383 45.362s] Compiling C object p11-kit/test-pin.p/test-pin.c.o
+../p11-kit/test-pin.c: In function ‘callback_one’:
+../p11-kit/test-pin.c:53:14: warning: unused variable ‘data’ [-Wunused-variable]
+   53 |         int *data = callback_data;
+      |              ^~~~
+../p11-kit/test-pin.c: In function ‘test_pin_read’:
+../p11-kit/test-pin.c:94:30: warning: variable ‘ptr’ set but not used [-Wunused-but-set-variable]
+   94 |         const unsigned char *ptr;
+      |                              ^~~
+../p11-kit/test-pin.c: In function ‘test_pin_register_duplicate’:
+../p11-kit/test-pin.c:137:30: warning: variable ‘ptr’ set but not used [-Wunused-but-set-variable]
+  137 |         const unsigned char *ptr;
+      |                              ^~~
+../p11-kit/test-pin.c: In function ‘test_pin_register_fallback’:
+../p11-kit/test-pin.c:187:30: warning: variable ‘ptr’ set but not used [-Wunused-but-set-variable]
+  187 |         const unsigned char *ptr;
+      |                              ^~~
+../p11-kit/test-pin.c: In function ‘test_pin_file’:
+../p11-kit/test-pin.c:230:30: warning: variable ‘ptr’ set but not used [-Wunused-but-set-variable]
+  230 |         const unsigned char *ptr;
+      |                              ^~~
+[2 127/383 45.531s] Compiling C object p11-kit/test-init.p/test-init.c.o
+../p11-kit/test-init.c: In function ‘mock_C_Initialize__with_fork’:
+../p11-kit/test-init.c:67:15: warning: variable ‘ret’ set but not used [-Wunused-but-set-variable]
+   67 |         pid_t ret;
+      |               ^~~
+../p11-kit/test-init.c:65:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+   65 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-init.c: In function ‘test_fork_initialization’:
+../p11-kit/test-init.c:93:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+   93 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-init.c: In function ‘mock_C_Initialize__with_recursive’:
+../p11-kit/test-init.c:129:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  129 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-init.c: In function ‘test_threaded_initialization’:
+../p11-kit/test-init.c:227:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  227 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-init.c: In function ‘mock_C_Initialize__test_mutexes’:
+../p11-kit/test-init.c:297:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  297 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-init.c: In function ‘test_mutexes’:
+../p11-kit/test-init.c:321:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  321 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-init.c: In function ‘test_load_and_initialize’:
+../p11-kit/test-init.c:344:13: warning: variable ‘ret’ set but not used [-Wunused-but-set-variable]
+  344 |         int ret;
+      |             ^~~
+../p11-kit/test-init.c:343:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  343 |         CK_RV rv;
+      |               ^~
+[2 128/383 45.764s] Compiling C object p11-kit/test-modules.p/test-modules.c.o
+[2 129/383 45.959s] Compiling C object p11-kit/test-deprecated.p/test-deprecated.c.o
+../p11-kit/test-deprecated.c: In function ‘mock_C_Initialize__with_fork’:
+../p11-kit/test-deprecated.c:244:15: warning: variable ‘ret’ set but not used [-Wunused-but-set-variable]
+  244 |         pid_t ret;
+      |               ^~~
+../p11-kit/test-deprecated.c:242:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  242 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-deprecated.c: In function ‘test_fork_initialization’:
+../p11-kit/test-deprecated.c:269:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  269 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-deprecated.c: In function ‘test_recursive_initialization’:
+../p11-kit/test-deprecated.c:298:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  298 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-deprecated.c: In function ‘initialization_thread’:
+../p11-kit/test-deprecated.c:343:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  343 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-deprecated.c: In function ‘finalization_thread’:
+../p11-kit/test-deprecated.c:355:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  355 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-deprecated.c: In function ‘test_mutexes’:
+../p11-kit/test-deprecated.c:449:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  449 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-deprecated.c: In function ‘test_load_and_initialize’:
+../p11-kit/test-deprecated.c:472:13: warning: variable ‘ret’ set but not used [-Wunused-but-set-variable]
+  472 |         int ret;
+      |             ^~~
+../p11-kit/test-deprecated.c: At top level:
+../p11-kit/test-deprecated.c:118:1: warning: ‘lookup_module_with_name’ defined but not used [-Wunused-function]
+  118 | lookup_module_with_name (CK_FUNCTION_LIST_PTR_PTR modules,
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+[2 130/383 46.643s] Compiling C object p11-kit/libp11-kit-testable.a.p/virtual.c.o
+[2 131/383 46.653s] Linking static target p11-kit/libp11-kit-testable.a
+[2 132/383 46.734s] Linking target p11-kit/p11-kit-testable
+[2 133/383 46.813s] Linking target p11-kit/p11-kit-remote-testable
+[2 134/383 46.893s] Linking target p11-kit/p11-kit-server-testable
+[2 135/383 46.911s] Linking target p11-kit/test-progname
+[2 136/383 46.990s] Linking target p11-kit/test-util
+[2 137/383 47.008s] Linking target p11-kit/test-conf
+[2 138/383 47.089s] Linking target p11-kit/test-uri
+[2 139/383 47.111s] Linking target p11-kit/test-pin
+[2 140/383 47.190s] Linking target p11-kit/test-init
+[2 141/383 47.267s] Linking target p11-kit/test-modules
+[2 142/383 47.345s] Linking target p11-kit/test-deprecated
+[2 143/383 47.565s] Compiling C object p11-kit/test-proxy.p/test-proxy.c.o
+../p11-kit/test-proxy.c: In function ‘test_initialize_multiple’:
+../p11-kit/test-proxy.c:93:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+   93 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-proxy.c: In function ‘setup_mock_module’:
+../p11-kit/test-proxy.c:442:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  442 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-proxy.c: In function ‘teardown_mock_module’:
+../p11-kit/test-proxy.c:478:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  478 |         CK_RV rv;
+      |               ^~
+In file included from ../p11-kit/test-proxy.c:506:
+../p11-kit/test-mock.c: In function ‘test_get_slot_list’:
+../p11-kit/test-mock.c:76:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+   76 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_slot_info’:
+../p11-kit/test-mock.c:110:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  110 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_token_info’:
+../p11-kit/test-mock.c:144:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  144 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_mechanism_list’:
+../p11-kit/test-mock.c:195:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  195 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_init_token’:
+../p11-kit/test-mock.c:252:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  252 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_wait_for_slot_event’:
+../p11-kit/test-mock.c:274:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  274 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_open_close_session’:
+../p11-kit/test-mock.c:297:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  297 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_close_all_sessions’:
+../p11-kit/test-mock.c:324:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  324 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_function_status’:
+../p11-kit/test-mock.c:346:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  346 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_cancel_function’:
+../p11-kit/test-mock.c:361:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  361 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_session_info’:
+../p11-kit/test-mock.c:377:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  377 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_init_pin’:
+../p11-kit/test-mock.c:414:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  414 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_operation_state’:
+../p11-kit/test-mock.c:458:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  458 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_attribute_value’:
+../p11-kit/test-mock.c:514:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  514 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_create_object’:
+../p11-kit/test-mock.c:618:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  618 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_copy_object’:
+../p11-kit/test-mock.c:716:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  716 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_destroy_object’:
+../p11-kit/test-mock.c:800:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  800 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_object_size’:
+../p11-kit/test-mock.c:829:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  829 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_find_objects’:
+../p11-kit/test-mock.c:855:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  855 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_generate_key’:
+../p11-kit/test-mock.c:1624:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1624 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_generate_key_pair’:
+../p11-kit/test-mock.c:1682:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1682 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_unwrap_key’:
+../p11-kit/test-mock.c:1802:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1802 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_derive_key’:
+../p11-kit/test-mock.c:1857:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1857 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_random’:
+../p11-kit/test-mock.c:1907:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1907 |         CK_RV rv;
+      |               ^~
+[2 144/383 47.643s] Linking target p11-kit/test-proxy
+[2 145/383 48.218s] Compiling C object p11-kit/test-iter.p/test-iter.c.o
+../p11-kit/test-iter.c: In function ‘on_iter_callback’:
+../p11-kit/test-iter.c:154:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  154 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-iter.c: In function ‘test_callback’:
+../p11-kit/test-iter.c:182:26: warning: variable ‘objects’ set but not used [-Wunused-but-set-variable]
+  182 |         CK_OBJECT_HANDLE objects[128];
+      |                          ^~~~~~~
+../p11-kit/test-iter.c: In function ‘test_with_session’:
+../p11-kit/test-iter.c:279:20: warning: variable ‘slot’ set but not used [-Wunused-but-set-variable]
+  279 |         CK_SLOT_ID slot;
+      |                    ^~~~
+../p11-kit/test-iter.c:276:26: warning: variable ‘objects’ set but not used [-Wunused-but-set-variable]
+  276 |         CK_OBJECT_HANDLE objects[128];
+      |                          ^~~~~~~
+../p11-kit/test-iter.c: In function ‘test_with_slot’:
+../p11-kit/test-iter.c:336:20: warning: variable ‘slot’ set but not used [-Wunused-but-set-variable]
+  336 |         CK_SLOT_ID slot;
+      |                    ^~~~
+../p11-kit/test-iter.c:334:26: warning: variable ‘objects’ set but not used [-Wunused-but-set-variable]
+  334 |         CK_OBJECT_HANDLE objects[128];
+      |                          ^~~~~~~
+../p11-kit/test-iter.c: In function ‘test_with_module’:
+../p11-kit/test-iter.c:382:26: warning: variable ‘objects’ set but not used [-Wunused-but-set-variable]
+  382 |         CK_OBJECT_HANDLE objects[128];
+      |                          ^~~~~~~
+../p11-kit/test-iter.c: In function ‘test_keep_session’:
+../p11-kit/test-iter.c:428:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  428 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-iter.c: In function ‘test_uri_with_type’:
+../p11-kit/test-iter.c:486:26: warning: variable ‘objects’ set but not used [-Wunused-but-set-variable]
+  486 |         CK_OBJECT_HANDLE objects[128];
+      |                          ^~~~~~~
+../p11-kit/test-iter.c: In function ‘test_filter’:
+../p11-kit/test-iter.c:559:26: warning: variable ‘objects’ set but not used [-Wunused-but-set-variable]
+  559 |         CK_OBJECT_HANDLE objects[128];
+      |                          ^~~~~~~
+../p11-kit/test-iter.c: In function ‘test_get_attributes’:
+../p11-kit/test-iter.c:1272:18: warning: unused variable ‘ulong’ [-Wunused-variable]
+ 1272 |         CK_ULONG ulong;
+      |                  ^~~~~
+../p11-kit/test-iter.c: In function ‘test_load_attributes’:
+../p11-kit/test-iter.c:1338:18: warning: unused variable ‘ulong’ [-Wunused-variable]
+ 1338 |         CK_ULONG ulong;
+      |                  ^~~~~
+../p11-kit/test-iter.c: In function ‘test_profile’:
+../p11-kit/test-iter.c:1631:20: warning: variable ‘slot’ set but not used [-Wunused-but-set-variable]
+ 1631 |         CK_SLOT_ID slot;
+      |                    ^~~~
+../p11-kit/test-iter.c:1628:26: warning: variable ‘objects’ set but not used [-Wunused-but-set-variable]
+ 1628 |         CK_OBJECT_HANDLE objects[128];
+      |                          ^~~~~~~
+../p11-kit/test-iter.c: At top level:
+../p11-kit/test-iter.c:77:1: warning: ‘has_handle’ defined but not used [-Wunused-function]
+   77 | has_handle (CK_ULONG *objects,
+      | ^~~~~~~~~~
+[2 146/383 48.297s] Linking target p11-kit/test-iter
+[2 147/383 48.839s] Compiling C object p11-kit/test-proxy3.p/test-proxy3.c.o
+../p11-kit/test-proxy3.c: In function ‘test_interface_version’:
+../p11-kit/test-proxy3.c:105:15: warning: unused variable ‘name’ [-Wunused-variable]
+  105 |         char *name = "PKCS 11";
+      |               ^~~~
+../p11-kit/test-proxy3.c: In function ‘test_interface_list’:
+../p11-kit/test-proxy3.c:131:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  131 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-proxy3.c: In function ‘setup_mock_module’:
+../p11-kit/test-proxy3.c:192:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  192 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-proxy3.c: In function ‘teardown_mock_module’:
+../p11-kit/test-proxy3.c:229:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  229 |         CK_RV rv;
+      |               ^~
+In file included from ../p11-kit/test-proxy3.c:257:
+../p11-kit/test-mock.c: In function ‘test_get_slot_list’:
+../p11-kit/test-mock.c:76:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+   76 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_slot_info’:
+../p11-kit/test-mock.c:110:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  110 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_token_info’:
+../p11-kit/test-mock.c:144:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  144 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_mechanism_list’:
+../p11-kit/test-mock.c:195:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  195 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_init_token’:
+../p11-kit/test-mock.c:252:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  252 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_wait_for_slot_event’:
+../p11-kit/test-mock.c:274:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  274 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_open_close_session’:
+../p11-kit/test-mock.c:297:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  297 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_close_all_sessions’:
+../p11-kit/test-mock.c:324:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  324 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_function_status’:
+../p11-kit/test-mock.c:346:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  346 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_cancel_function’:
+../p11-kit/test-mock.c:361:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  361 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_session_info’:
+../p11-kit/test-mock.c:377:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  377 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_init_pin’:
+../p11-kit/test-mock.c:414:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  414 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_operation_state’:
+../p11-kit/test-mock.c:458:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  458 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_attribute_value’:
+../p11-kit/test-mock.c:514:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  514 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_create_object’:
+../p11-kit/test-mock.c:618:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  618 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_copy_object’:
+../p11-kit/test-mock.c:716:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  716 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_destroy_object’:
+../p11-kit/test-mock.c:800:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  800 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_object_size’:
+../p11-kit/test-mock.c:829:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  829 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_find_objects’:
+../p11-kit/test-mock.c:855:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  855 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_generate_key’:
+../p11-kit/test-mock.c:1624:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1624 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_generate_key_pair’:
+../p11-kit/test-mock.c:1682:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1682 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_unwrap_key’:
+../p11-kit/test-mock.c:1802:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1802 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_derive_key’:
+../p11-kit/test-mock.c:1857:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1857 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_random’:
+../p11-kit/test-mock.c:1907:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1907 |         CK_RV rv;
+      |               ^~
+[2 148/383 48.918s] Linking target p11-kit/test-proxy3
+[2 149/383 50.086s] Compiling C object p11-kit/test-rpc.p/test-rpc.c.o
+../p11-kit/test-rpc.c: In function ‘rpc_transport’:
+../p11-kit/test-rpc.c:109:14: warning: variable ‘ret’ set but not used [-Wunused-but-set-variable]
+  109 |         bool ret;
+      |              ^~~
+../p11-kit/test-rpc.c: In function ‘test_initialize’:
+../p11-kit/test-rpc.c:135:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  135 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-rpc.c: In function ‘test_not_initialized’:
+../p11-kit/test-rpc.c:162:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  162 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-rpc.c: In function ‘test_initialize_fails_on_client’:
+../p11-kit/test-rpc.c:183:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  183 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-rpc.c: In function ‘test_transport_fails’:
+../p11-kit/test-rpc.c:213:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  213 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-rpc.c: In function ‘test_initialize_fails_on_server’:
+../p11-kit/test-rpc.c:235:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  235 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-rpc.c: In function ‘rpc_transport_bad_parse’:
+../p11-kit/test-rpc.c:256:13: warning: variable ‘rc’ set but not used [-Wunused-but-set-variable]
+  256 |         int rc;
+      |             ^~
+../p11-kit/test-rpc.c: In function ‘test_transport_bad_parse’:
+../p11-kit/test-rpc.c:275:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  275 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-rpc.c: In function ‘rpc_transport_short_error’:
+../p11-kit/test-rpc.c:299:13: warning: variable ‘rc’ set but not used [-Wunused-but-set-variable]
+  299 |         int rc;
+      |             ^~
+../p11-kit/test-rpc.c: In function ‘test_transport_short_error’:
+../p11-kit/test-rpc.c:323:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  323 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-rpc.c: In function ‘rpc_transport_invalid_error’:
+../p11-kit/test-rpc.c:346:13: warning: variable ‘rc’ set but not used [-Wunused-but-set-variable]
+  346 |         int rc;
+      |             ^~
+../p11-kit/test-rpc.c: In function ‘test_transport_invalid_error’:
+../p11-kit/test-rpc.c:370:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  370 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-rpc.c: In function ‘rpc_transport_wrong_response’:
+../p11-kit/test-rpc.c:393:13: warning: variable ‘rc’ set but not used [-Wunused-but-set-variable]
+  393 |         int rc;
+      |             ^~
+../p11-kit/test-rpc.c: In function ‘test_transport_wrong_response’:
+../p11-kit/test-rpc.c:415:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  415 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-rpc.c: In function ‘rpc_transport_bad_contents’:
+../p11-kit/test-rpc.c:438:13: warning: variable ‘rc’ set but not used [-Wunused-but-set-variable]
+  438 |         int rc;
+      |             ^~
+../p11-kit/test-rpc.c: In function ‘test_transport_bad_contents’:
+../p11-kit/test-rpc.c:462:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  462 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-rpc.c: In function ‘setup_test_rpc_module’:
+../p11-kit/test-rpc.c:511:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  511 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-rpc.c: In function ‘test_get_info_stand_in’:
+../p11-kit/test-rpc.c:556:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  556 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-rpc.c: In function ‘test_get_slot_list_no_device’:
+../p11-kit/test-rpc.c:586:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  586 |         CK_RV rv;
+      |               ^~
+In file included from ../p11-kit/test-rpc.c:725:
+../p11-kit/test-mock.c: In function ‘test_get_slot_list’:
+../p11-kit/test-mock.c:76:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+   76 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_slot_info’:
+../p11-kit/test-mock.c:110:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  110 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_token_info’:
+../p11-kit/test-mock.c:144:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  144 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_mechanism_list’:
+../p11-kit/test-mock.c:195:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  195 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_init_token’:
+../p11-kit/test-mock.c:252:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  252 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_wait_for_slot_event’:
+../p11-kit/test-mock.c:274:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  274 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_open_close_session’:
+../p11-kit/test-mock.c:297:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  297 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_close_all_sessions’:
+../p11-kit/test-mock.c:324:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  324 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_function_status’:
+../p11-kit/test-mock.c:346:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  346 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_cancel_function’:
+../p11-kit/test-mock.c:361:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  361 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_session_info’:
+../p11-kit/test-mock.c:377:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  377 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_init_pin’:
+../p11-kit/test-mock.c:414:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  414 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_operation_state’:
+../p11-kit/test-mock.c:458:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  458 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_attribute_value’:
+../p11-kit/test-mock.c:514:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  514 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_create_object’:
+../p11-kit/test-mock.c:618:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  618 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_copy_object’:
+../p11-kit/test-mock.c:716:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  716 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_destroy_object’:
+../p11-kit/test-mock.c:800:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  800 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_object_size’:
+../p11-kit/test-mock.c:829:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  829 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_find_objects’:
+../p11-kit/test-mock.c:855:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  855 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_generate_key’:
+../p11-kit/test-mock.c:1624:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1624 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_generate_key_pair’:
+../p11-kit/test-mock.c:1682:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1682 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_unwrap_key’:
+../p11-kit/test-mock.c:1802:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1802 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_derive_key’:
+../p11-kit/test-mock.c:1857:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1857 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_random’:
+../p11-kit/test-mock.c:1907:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1907 |         CK_RV rv;
+      |               ^~
+[2 150/383 50.170s] Linking target p11-kit/test-rpc
+[2 151/383 50.323s] Compiling C object p11-kit/test-virtual.p/test-virtual.c.o
+[2 152/383 50.393s] Linking target p11-kit/test-virtual
+[2 153/383 50.741s] Compiling C object p11-kit/test-rpc-message.p/test-rpc-message.c.o
+../p11-kit/test-rpc-message.c: In function ‘rpc_transport’:
+../p11-kit/test-rpc-message.c:101:14: warning: variable ‘ret’ set but not used [-Wunused-but-set-variable]
+  101 |         bool ret;
+      |              ^~~
+../p11-kit/test-rpc-message.c: In function ‘setup_test_rpc_module’:
+../p11-kit/test-rpc-message.c:144:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  144 |         CK_RV rv;
+      |               ^~
+In file included from ../p11-kit/test-rpc-message.c:809:
+../p11-kit/test-mock.c: In function ‘test_get_slot_list’:
+../p11-kit/test-mock.c:76:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+   76 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_slot_info’:
+../p11-kit/test-mock.c:110:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  110 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_token_info’:
+../p11-kit/test-mock.c:144:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  144 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_mechanism_list’:
+../p11-kit/test-mock.c:195:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  195 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_init_token’:
+../p11-kit/test-mock.c:252:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  252 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_wait_for_slot_event’:
+../p11-kit/test-mock.c:274:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  274 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_open_close_session’:
+../p11-kit/test-mock.c:297:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  297 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_close_all_sessions’:
+../p11-kit/test-mock.c:324:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  324 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_function_status’:
+../p11-kit/test-mock.c:346:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  346 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_cancel_function’:
+../p11-kit/test-mock.c:361:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  361 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_session_info’:
+../p11-kit/test-mock.c:377:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  377 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_init_pin’:
+../p11-kit/test-mock.c:414:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  414 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_operation_state’:
+../p11-kit/test-mock.c:458:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  458 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_attribute_value’:
+../p11-kit/test-mock.c:514:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  514 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_create_object’:
+../p11-kit/test-mock.c:618:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  618 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_copy_object’:
+../p11-kit/test-mock.c:716:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  716 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_destroy_object’:
+../p11-kit/test-mock.c:800:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  800 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_get_object_size’:
+../p11-kit/test-mock.c:829:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  829 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_find_objects’:
+../p11-kit/test-mock.c:855:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  855 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_generate_key’:
+../p11-kit/test-mock.c:1624:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1624 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_generate_key_pair’:
+../p11-kit/test-mock.c:1682:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1682 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_unwrap_key’:
+../p11-kit/test-mock.c:1802:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1802 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_derive_key’:
+../p11-kit/test-mock.c:1857:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1857 |         CK_RV rv;
+      |               ^~
+../p11-kit/test-mock.c: In function ‘test_random’:
+../p11-kit/test-mock.c:1907:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1907 |         CK_RV rv;
+      |               ^~
+[2 154/383 50.824s] Linking target p11-kit/test-rpc-message
+[2 155/383 52.156s] Compiling C object p11-kit/test-managed.p/test-managed.c.o
+[2 156/383 52.242s] Linking target p11-kit/test-managed
+[2 157/383 52.634s] Compiling C object p11-kit/test-log.p/test-log.c.o
+[2 158/383 52.715s] Linking target p11-kit/test-log
+[2 159/383 52.933s] Compiling C object p11-kit/test-filter.p/test-filter.c.o
+[2 160/383 53.006s] Linking target p11-kit/test-filter
+[2 161/383 53.870s] Compiling C object p11-kit/test-log3.p/test-log3.c.o
+[2 162/383 53.951s] Linking target p11-kit/test-log3
+[2 163/383 54.756s] Compiling C object p11-kit/test-transport.p/test-transport.c.o
+[2 164/383 54.835s] Linking target p11-kit/test-transport
+[2 165/383 55.005s] Compiling C object p11-kit/test-server.p/test-server.c.o
+[2 166/383 55.084s] Linking target p11-kit/test-server
+[2 167/383 55.181s] Compiling C object p11-kit/print-messages.p/print-messages.c.o
+[2 168/383 55.196s] Linking target p11-kit/print-messages
+[2 169/383 55.260s] Compiling C object p11-kit/frob-setuid.p/frob-setuid.c.o
+[2 170/383 55.337s] Linking target p11-kit/frob-setuid
+[2 171/383 55.394s] Compiling C object p11-kit/mock-one.so.p/mock-module-ep.c.o
+[2 172/383 55.414s] Linking target p11-kit/mock-one.so
+[2 173/383 55.493s] Compiling C object p11-kit/mock-v3-one.so.p/mock-module-v3-ep.c.o
+[2 174/383 55.513s] Linking target p11-kit/mock-v3-one.so
+[2 175/383 55.573s] Compiling C object p11-kit/mock-two.so.p/mock-module-ep2.c.o
+[2 176/383 55.593s] Linking target p11-kit/mock-two.so
+[2 177/383 55.672s] Compiling C object p11-kit/mock-v3-two.so.p/mock-module-v3-ep2.c.o
+[2 178/383 55.692s] Linking target p11-kit/mock-v3-two.so
+[2 179/383 55.729s] Compiling C object p11-kit/test-transport3.p/test-transport3.c.o
+[2 180/383 55.748s] Compiling C object p11-kit/mock-three.so.p/mock-module-ep.c.o
+[2 181/383 55.767s] Linking target p11-kit/mock-three.so
+[2 182/383 55.807s] Linking target p11-kit/test-transport3
+[2 183/383 55.825s] Compiling C object p11-kit/mock-four.so.p/mock-module-ep.c.o
+[2 184/383 55.845s] Linking target p11-kit/mock-four.so
+[2 185/383 55.889s] Compiling C object p11-kit/mock-v3-four.so.p/mock-module-v3-ep.c.o
+[2 186/383 55.909s] Linking target p11-kit/mock-v3-four.so
+[2 187/383 55.915s] Compiling C object p11-kit/mock-five.so.p/mock-module-ep3.c.o
+[2 188/383 55.935s] Linking target p11-kit/mock-five.so
+[2 189/383 55.975s] Compiling C object p11-kit/mock-seven.so.p/mock-module-ep5.c.o
+[2 190/383 55.995s] Linking target p11-kit/mock-seven.so
+[2 191/383 55.998s] Compiling C object p11-kit/mock-eight.so.p/mock-module-ep6.c.o
+[2 192/383 56.018s] Linking target p11-kit/mock-eight.so
+[2 193/383 56.058s] Compiling C object p11-kit/mock-nine.so.p/mock-module-ep7.c.o
+[2 194/383 56.077s] Linking target p11-kit/mock-nine.so
+[2 195/383 56.085s] Compiling C object p11-kit/mock-ten.so.p/mock-module-ep8.c.o
+[2 196/383 56.106s] Linking target p11-kit/mock-ten.so
+[2 197/383 56.136s] Compiling C object p11-kit/mock-eleven.so.p/mock-module-ep9.c.o
+[2 198/383 56.155s] Linking target p11-kit/mock-eleven.so
+[2 199/383 56.169s] Compiling C object p11-kit/mock-six.so.p/mock-module-ep4.c.o
+[2 200/383 56.189s] Linking target p11-kit/mock-six.so
+[2 201/383 56.219s] Compiling C object fuzz/rpc_fuzzer.p/rpc_fuzzer.c.o
+[2 202/383 56.220s] Generating trust/basic.asn.h with a custom command
+Done.
+[2 203/383 56.223s] Generating trust/pkix.asn.h with a custom command
+Done.
+[2 204/383 56.225s] Generating trust/openssl.asn.h with a custom command
+Done.
+[2 205/383 56.225s] Compiling C object fuzz/rpc_fuzzer.p/main.c.o
+[2 206/383 56.304s] Linking target fuzz/rpc_fuzzer
+[2 207/383 56.399s] Compiling C object trust/liblibtrust-data.a.p/asn1.c.o
+[2 208/383 56.418s] Compiling C object trust/liblibtrust-data.a.p/base64.c.o
+[2 209/383 56.478s] Compiling C object trust/liblibtrust-data.a.p/oid.c.o
+[2 210/383 56.496s] Compiling C object trust/liblibtrust-data.a.p/pem.c.o
+[2 211/383 56.581s] Compiling C object trust/liblibtrust-data.a.p/utf8.c.o
+[2 212/383 56.656s] Compiling C object trust/liblibtrust-data.a.p/x509.c.o
+[2 213/383 56.661s] Linking static target trust/liblibtrust-data.a
+[2 214/383 57.076s] Compiling C object trust/p11-kit-trust.so.p/digest.c.o
+[2 215/383 57.231s] Compiling C object trust/p11-kit-trust.so.p/builder.c.o
+[2 216/383 57.444s] Compiling C object trust/p11-kit-trust.so.p/index.c.o
+[2 217/383 57.505s] Compiling C object trust/p11-kit-trust.so.p/parser.c.o
+[2 218/383 57.715s] Compiling C object trust/p11-kit-trust.so.p/persist.c.o
+[2 219/383 57.926s] Compiling C object trust/p11-kit-trust.so.p/save.c.o
+[2 220/383 57.996s] Compiling C object trust/p11-kit-trust.so.p/session.c.o
+[2 221/383 58.013s] Compiling C object trust/p11-kit-trust.so.p/module.c.o
+../trust/module.c: In function ‘create_tokens_inlock’:
+../trust/module.c:217:20: warning: unused variable ‘check’ [-Wunused-variable]
+  217 |         p11_token *check;
+      |                    ^~~~~
+[2 222/383 58.064s] Compiling C object trust/p11-kit-trust.so.p/module-init.c.o
+[2 223/383 58.335s] Compiling C object trust/p11-kit-trust.so.p/token.c.o
+[2 224/383 58.361s] Linking target trust/p11-kit-trust.so
+[2 225/383 58.719s] Compiling C object trust/liblibtrust-testable.a.p/builder.c.o
+[2 226/383 58.779s] Compiling C object trust/liblibtrust-testable.a.p/digest.c.o
+[2 227/383 59.052s] Compiling C object trust/liblibtrust-testable.a.p/parser.c.o
+[2 228/383 59.082s] Compiling C object trust/liblibtrust-testable.a.p/index.c.o
+[2 229/383 59.323s] Compiling C object trust/liblibtrust-testable.a.p/persist.c.o
+[2 230/383 59.534s] Compiling C object trust/liblibtrust-testable.a.p/save.c.o
+[2 231/383 59.591s] Compiling C object trust/liblibtrust-testable.a.p/module.c.o
+../trust/module.c: In function ‘create_tokens_inlock’:
+../trust/module.c:217:20: warning: unused variable ‘check’ [-Wunused-variable]
+  217 |         p11_token *check;
+      |                    ^~~~~
+[2 232/383 59.606s] Compiling C object trust/liblibtrust-testable.a.p/session.c.o
+[2 233/383 59.847s] Compiling C object trust/trust.p/anchor.c.o
+[2 234/383 59.926s] Compiling C object trust/liblibtrust-testable.a.p/token.c.o
+[2 235/383 59.931s] Compiling C object trust/trust.p/check-format.c.o
+[2 236/383 59.932s] Linking static target trust/liblibtrust-testable.a
+[2 237/383 60.203s] Compiling C object trust/trust.p/persist.c.o
+[2 238/383 60.209s] Compiling C object trust/trust.p/parser.c.o
+[2 239/383 60.302s] Compiling C object trust/trust.p/dump.c.o
+[2 240/383 60.585s] Compiling C object trust/trust.p/enumerate.c.o
+[2 241/383 60.619s] Compiling C object trust/trust.p/digest.c.o
+[2 242/383 60.711s] Compiling C object trust/trust.p/extract.c.o
+[2 243/383 60.760s] Compiling C object trust/trust.p/extract-jks.c.o
+[2 244/383 60.802s] Compiling C object trust/trust.p/extract-edk2.c.o
+[2 245/383 60.904s] Compiling C object trust/trust.p/extract-pem.c.o
+[2 246/383 60.982s] Compiling C object trust/trust.p/extract-cer.c.o
+[2 247/383 61.012s] Compiling C object trust/trust.p/extract-openssl.c.o
+[2 248/383 61.098s] Compiling C object trust/trust.p/list.c.o
+../trust/list.c: In function ‘list_iterate’:
+../trust/list.c:96:26: warning: variable ‘object’ set but not used [-Wunused-but-set-variable]
+   96 |         CK_OBJECT_HANDLE object;
+      |                          ^~~~~~
+[2 249/383 61.158s] Compiling C object trust/trust.p/trust.c.o
+[2 250/383 61.226s] Compiling C object trust/trust.p/save.c.o
+[2 251/383 61.254s] Linking target trust/trust
+[2 252/383 61.325s] Compiling C object trust/liblibtrust-test.a.p/test-trust.c.o
+[2 253/383 61.394s] Compiling C object trust/test-digest.p/test-digest.c.o
+../trust/test-digest.c: In function ‘test_sha1_long’:
+../trust/test-digest.c:83:15: warning: unused variable ‘expected’ [-Wunused-variable]
+   83 |         char *expected = "\x34\xAA\x97\x3C\xD4\xC4\xDA\xA4\xF6\x1E\xEB\x2B\xDB\xAD\x27\x31\x65\x34\x01\x6F";
+      |               ^~~~~~~~
+[2 254/383 61.484s] Compiling C object trust/test-asn1.p/test-asn1.c.o
+[2 255/383 61.555s] Compiling C object trust/test-base64.p/test-base64.c.o
+[2 256/383 61.666s] Compiling C object trust/liblibtrust-test.a.p/digest.c.o
+[2 257/383 61.671s] Linking static target trust/liblibtrust-test.a
+[2 258/383 61.680s] Compiling C object trust/test-pem.p/test-pem.c.o
+[2 259/383 61.688s] Linking target trust/test-digest
+[2 260/383 61.699s] Linking target trust/test-asn1
+[2 261/383 61.705s] Linking target trust/test-base64
+[2 262/383 61.716s] Linking target trust/test-pem
+[2 263/383 61.818s] Compiling C object trust/test-oid.p/test-oid.c.o
+[2 264/383 61.836s] Linking target trust/test-oid
+[2 265/383 61.838s] Compiling C object trust/test-utf8.p/test-utf8.c.o
+[2 266/383 61.855s] Linking target trust/test-utf8
+[2 267/383 61.988s] Compiling C object trust/test-x509.p/test-x509.c.o
+[2 268/383 62.008s] Linking target trust/test-x509
+[2 269/383 62.092s] Compiling C object trust/test-persist.p/test-persist.c.o
+[2 270/383 62.114s] Linking target trust/test-persist
+[2 271/383 62.374s] Compiling C object trust/test-parser.p/test-parser.c.o
+[2 272/383 62.397s] Linking target trust/test-parser
+[2 273/383 62.600s] Compiling C object trust/test-index.p/test-index.c.o
+[2 274/383 62.628s] Linking target trust/test-index
+[2 275/383 63.043s] Compiling C object trust/test-token.p/test-token.c.o
+[2 276/383 63.072s] Linking target trust/test-token
+[2 277/383 63.308s] Compiling C object trust/test-builder.p/test-builder.c.o
+[2 278/383 63.337s] Linking target trust/test-builder
+[2 279/383 63.728s] Compiling C object trust/test-save.p/test-save.c.o
+[2 280/383 63.749s] Linking target trust/test-save
+[2 281/383 63.778s] Compiling C object trust/test-module.p/test-module.c.o
+../trust/test-module.c: In function ‘setup’:
+../trust/test-module.c:83:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+   83 |         CK_RV rv;
+      |               ^~
+../trust/test-module.c: In function ‘teardown’:
+../trust/test-module.c:114:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  114 |         CK_RV rv;
+      |               ^~
+../trust/test-module.c: In function ‘setup_unreadable’:
+../trust/test-module.c:183:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  183 |         CK_RV rv;
+      |               ^~
+../trust/test-module.c: In function ‘find_objects’:
+../trust/test-module.c:508:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  508 |         CK_RV rv;
+      |               ^~
+../trust/test-module.c: In function ‘check_trust_object_hashes’:
+../trust/test-module.c:571:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  571 |         CK_RV rv;
+      |               ^~
+../trust/test-module.c: In function ‘test_session_object’:
+../trust/test-module.c:789:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  789 |         CK_RV rv;
+      |               ^~
+../trust/test-module.c: In function ‘test_lookup_invalid’:
+../trust/test-module.c:876:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  876 |         CK_RV rv;
+      |               ^~
+../trust/test-module.c: In function ‘test_session_setattr’:
+../trust/test-module.c:979:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+  979 |         CK_RV rv;
+      |               ^~
+../trust/test-module.c: In function ‘test_session_remove’:
+../trust/test-module.c:1003:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1003 |         CK_RV rv;
+      |               ^~
+../trust/test-module.c: In function ‘test_login_logout’:
+../trust/test-module.c:1144:15: warning: variable ‘rv’ set but not used [-Wunused-but-set-variable]
+ 1144 |         CK_RV rv;
+      |               ^~
+[2 282/383 63.806s] Linking target trust/test-module
+[2 283/383 64.276s] Compiling C object trust/test-enumerate.p/test-enumerate.c.o
+[2 284/383 64.302s] Linking target trust/test-enumerate
+[2 285/383 64.376s] Compiling C object trust/test-cer.p/test-cer.c.o
+[2 286/383 64.402s] Linking target trust/test-cer
+[2 287/383 65.109s] Compiling C object trust/test-bundle.p/test-bundle.c.o
+[2 288/383 65.137s] Linking target trust/test-bundle
+[2 289/383 65.286s] Compiling C object trust/test-openssl.p/test-openssl.c.o
+[2 290/383 65.313s] Linking target trust/test-openssl
+[2 291/383 65.525s] Compiling C object trust/test-edk2.p/test-edk2.c.o
+[2 292/383 65.551s] Linking target trust/test-edk2
+[2 293/383 65.590s] Compiling C object trust/frob-pow.p/frob-pow.c.o
+[2 294/383 65.605s] Linking target trust/frob-pow
+[2 295/383 65.661s] Compiling C object trust/frob-token.p/frob-token.c.o
+[2 296/383 65.689s] Linking target trust/frob-token
+[2 297/383 65.772s] Compiling C object trust/test-jks.p/test-jks.c.o
+[2 298/383 65.800s] Linking target trust/test-jks
+[2 299/383 65.801s] Compiling C object trust/frob-nss-trust.p/frob-nss-trust.c.o
+[2 300/383 65.820s] Linking target trust/frob-nss-trust
+[2 301/383 65.883s] Compiling C object trust/frob-cert.p/frob-cert.c.o
+[2 302/383 65.893s] Compiling C object trust/frob-bc.p/frob-bc.c.o
+[2 303/383 65.899s] Linking target trust/frob-cert
+[2 304/383 65.909s] Linking target trust/frob-bc
+[2 305/383 65.983s] Compiling C object trust/frob-ku.p/frob-ku.c.o
+[2 306/383 65.984s] Compiling C object trust/frob-eku.p/frob-eku.c.o
+[2 307/383 65.999s] Linking target trust/frob-ku
+[2 308/383 65.999s] Linking target trust/frob-eku
+[2 309/383 66.070s] Compiling C object trust/frob-oid.p/frob-oid.c.o
+[2 310/383 66.079s] Compiling C object trust/frob-ext.p/frob-ext.c.o
+[2 311/383 66.086s] Linking target trust/frob-oid
+[2 312/383 66.091s] Generating po/ar/LC_MESSAGES/p11-kit-ar.mo with a custom command
+[2 313/383 66.095s] Linking target trust/frob-ext
+[2 314/383 66.095s] Generating po/as/LC_MESSAGES/p11-kit-as.mo with a custom command
+[2 315/383 66.100s] Generating po/ast/LC_MESSAGES/p11-kit-ast.mo with a custom command
+[2 316/383 66.100s] Generating po/az/LC_MESSAGES/p11-kit-az.mo with a custom command
+[2 317/383 66.104s] Generating po/bg/LC_MESSAGES/p11-kit-bg.mo with a custom command
+[2 318/383 66.104s] Generating po/bn_IN/LC_MESSAGES/p11-kit-bn_IN.mo with a custom command
+[2 319/383 66.109s] Generating po/ca@valencia/LC_MESSAGES/p11-kit-ca@valencia.mo with a custom command
+[2 320/383 66.109s] Generating po/ca/LC_MESSAGES/p11-kit-ca.mo with a custom command
+[2 321/383 66.113s] Generating po/cs/LC_MESSAGES/p11-kit-cs.mo with a custom command
+[2 322/383 66.114s] Generating po/cy/LC_MESSAGES/p11-kit-cy.mo with a custom command
+[2 323/383 66.119s] Generating po/de/LC_MESSAGES/p11-kit-de.mo with a custom command
+[2 324/383 66.119s] Generating po/da/LC_MESSAGES/p11-kit-da.mo with a custom command
+[2 325/383 66.124s] Generating po/el/LC_MESSAGES/p11-kit-el.mo with a custom command
+[2 326/383 66.124s] Generating po/en_GB/LC_MESSAGES/p11-kit-en_GB.mo with a custom command
+[2 327/383 66.128s] Generating po/eo/LC_MESSAGES/p11-kit-eo.mo with a custom command
+[2 328/383 66.130s] Generating po/es/LC_MESSAGES/p11-kit-es.mo with a custom command
+[2 329/383 66.132s] Generating po/et/LC_MESSAGES/p11-kit-et.mo with a custom command
+[2 330/383 66.134s] Generating po/eu/LC_MESSAGES/p11-kit-eu.mo with a custom command
+[2 331/383 66.137s] Generating po/fa/LC_MESSAGES/p11-kit-fa.mo with a custom command
+[2 332/383 66.139s] Generating po/fi/LC_MESSAGES/p11-kit-fi.mo with a custom command
+[2 333/383 66.141s] Generating po/fo/LC_MESSAGES/p11-kit-fo.mo with a custom command
+[2 334/383 66.144s] Generating po/fr/LC_MESSAGES/p11-kit-fr.mo with a custom command
+[2 335/383 66.146s] Generating po/fur/LC_MESSAGES/p11-kit-fur.mo with a custom command
+[2 336/383 66.148s] Generating po/ga/LC_MESSAGES/p11-kit-ga.mo with a custom command
+[2 337/383 66.150s] Generating po/gl/LC_MESSAGES/p11-kit-gl.mo with a custom command
+[2 338/383 66.153s] Generating po/gu/LC_MESSAGES/p11-kit-gu.mo with a custom command
+[2 339/383 66.155s] Generating po/he/LC_MESSAGES/p11-kit-he.mo with a custom command
+[2 340/383 66.157s] Generating po/hi/LC_MESSAGES/p11-kit-hi.mo with a custom command
+[2 341/383 66.159s] Generating po/hr/LC_MESSAGES/p11-kit-hr.mo with a custom command
+[2 342/383 66.163s] Generating po/hu/LC_MESSAGES/p11-kit-hu.mo with a custom command
+[2 343/383 66.164s] Generating po/ia/LC_MESSAGES/p11-kit-ia.mo with a custom command
+[2 344/383 66.168s] Generating po/id/LC_MESSAGES/p11-kit-id.mo with a custom command
+[2 345/383 66.168s] Generating po/it/LC_MESSAGES/p11-kit-it.mo with a custom command
+[2 346/383 66.173s] Generating po/ja/LC_MESSAGES/p11-kit-ja.mo with a custom command
+[2 347/383 66.173s] Generating po/ka/LC_MESSAGES/p11-kit-ka.mo with a custom command
+[2 348/383 66.177s] Generating po/kk/LC_MESSAGES/p11-kit-kk.mo with a custom command
+[2 349/383 66.177s] Generating po/kn/LC_MESSAGES/p11-kit-kn.mo with a custom command
+[2 350/383 66.182s] Generating po/lt/LC_MESSAGES/p11-kit-lt.mo with a custom command
+[2 351/383 66.182s] Generating po/ko/LC_MESSAGES/p11-kit-ko.mo with a custom command
+[2 352/383 66.186s] Generating po/lv/LC_MESSAGES/p11-kit-lv.mo with a custom command
+[2 353/383 66.186s] Generating po/ml/LC_MESSAGES/p11-kit-ml.mo with a custom command
+[2 354/383 66.191s] Generating po/mr/LC_MESSAGES/p11-kit-mr.mo with a custom command
+[2 355/383 66.191s] Generating po/ms/LC_MESSAGES/p11-kit-ms.mo with a custom command
+[2 356/383 66.195s] Generating po/nb/LC_MESSAGES/p11-kit-nb.mo with a custom command
+[2 357/383 66.195s] Generating po/nl/LC_MESSAGES/p11-kit-nl.mo with a custom command
+[2 358/383 66.199s] Generating po/nn/LC_MESSAGES/p11-kit-nn.mo with a custom command
+[2 359/383 66.200s] Generating po/oc/LC_MESSAGES/p11-kit-oc.mo with a custom command
+[2 360/383 66.203s] Generating po/or/LC_MESSAGES/p11-kit-or.mo with a custom command
+[2 361/383 66.205s] Generating po/pa/LC_MESSAGES/p11-kit-pa.mo with a custom command
+[2 362/383 66.208s] Generating po/pl/LC_MESSAGES/p11-kit-pl.mo with a custom command
+[2 363/383 66.209s] Generating po/pt/LC_MESSAGES/p11-kit-pt.mo with a custom command
+[2 364/383 66.214s] Generating po/ro/LC_MESSAGES/p11-kit-ro.mo with a custom command
+[2 365/383 66.214s] Generating po/pt_BR/LC_MESSAGES/p11-kit-pt_BR.mo with a custom command
+[2 366/383 66.218s] Generating po/ru/LC_MESSAGES/p11-kit-ru.mo with a custom command
+[2 367/383 66.220s] Generating po/si/LC_MESSAGES/p11-kit-si.mo with a custom command
+[2 368/383 66.223s] Generating po/sk/LC_MESSAGES/p11-kit-sk.mo with a custom command
+[2 369/383 66.225s] Generating po/sl/LC_MESSAGES/p11-kit-sl.mo with a custom command
+[2 370/383 66.227s] Generating po/sq/LC_MESSAGES/p11-kit-sq.mo with a custom command
+[2 371/383 66.230s] Generating po/sr/LC_MESSAGES/p11-kit-sr.mo with a custom command
+[2 372/383 66.231s] Generating po/sr@latin/LC_MESSAGES/p11-kit-sr@latin.mo with a custom command
+[2 373/383 66.235s] Generating po/sv/LC_MESSAGES/p11-kit-sv.mo with a custom command
+[2 374/383 66.235s] Generating po/ta/LC_MESSAGES/p11-kit-ta.mo with a custom command
+[2 375/383 66.239s] Generating po/te/LC_MESSAGES/p11-kit-te.mo with a custom command
+[2 376/383 66.240s] Generating po/th/LC_MESSAGES/p11-kit-th.mo with a custom command
+[2 377/383 66.244s] Generating po/tr/LC_MESSAGES/p11-kit-tr.mo with a custom command
+[2 378/383 66.246s] Generating po/uk/LC_MESSAGES/p11-kit-uk.mo with a custom command
+[2 379/383 66.248s] Generating po/vi/LC_MESSAGES/p11-kit-vi.mo with a custom command
+[2 380/383 66.250s] Generating po/wa/LC_MESSAGES/p11-kit-wa.mo with a custom command
+[2 381/383 66.253s] Generating po/zh_CN/LC_MESSAGES/p11-kit-zh_CN.mo with a custom command
+[2 382/383 66.255s] Generating po/zh_HK/LC_MESSAGES/p11-kit-zh_HK.mo with a custom command
+[1 383/383 66.258s] Generating po/zh_TW/LC_MESSAGES/p11-kit-zh_TW.mo with a custom command
+[1 0/1 0.009s] Installing files.
+Installing p11-kit/libp11-kit.so.0.3.0 to /usr/lib
+Installing p11-kit/p11-kit-client.so to /usr/lib/pkcs11
+Installing p11-kit/p11-kit to /usr/bin
+Installing p11-kit/p11-kit-remote to /usr/libexec/p11-kit
+Installing p11-kit/p11-kit-server to /usr/libexec/p11-kit
+Installing trust/p11-kit-trust.so to /usr/lib/pkcs11
+Installing trust/trust to /usr/bin
+Installing po/ar/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ar/LC_MESSAGES
+Installing po/as/LC_MESSAGES/p11-kit.mo to /usr/share/locale/as/LC_MESSAGES
+Installing po/ast/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ast/LC_MESSAGES
+Installing po/az/LC_MESSAGES/p11-kit.mo to /usr/share/locale/az/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/p11-kit.mo to /usr/share/locale/bg/LC_MESSAGES
+Installing po/bn_IN/LC_MESSAGES/p11-kit.mo to /usr/share/locale/bn_IN/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ca/LC_MESSAGES
+Installing po/ca@valencia/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ca@valencia/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/p11-kit.mo to /usr/share/locale/cs/LC_MESSAGES
+Installing po/cy/LC_MESSAGES/p11-kit.mo to /usr/share/locale/cy/LC_MESSAGES
+Installing po/da/LC_MESSAGES/p11-kit.mo to /usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/p11-kit.mo to /usr/share/locale/de/LC_MESSAGES
+Installing po/el/LC_MESSAGES/p11-kit.mo to /usr/share/locale/el/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/p11-kit.mo to /usr/share/locale/en_GB/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/p11-kit.mo to /usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/p11-kit.mo to /usr/share/locale/es/LC_MESSAGES
+Installing po/et/LC_MESSAGES/p11-kit.mo to /usr/share/locale/et/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/p11-kit.mo to /usr/share/locale/eu/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/p11-kit.mo to /usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/p11-kit.mo to /usr/share/locale/fi/LC_MESSAGES
+Installing po/fo/LC_MESSAGES/p11-kit.mo to /usr/share/locale/fo/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/p11-kit.mo to /usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/p11-kit.mo to /usr/share/locale/fur/LC_MESSAGES
+Installing po/ga/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ga/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/p11-kit.mo to /usr/share/locale/gl/LC_MESSAGES
+Installing po/gu/LC_MESSAGES/p11-kit.mo to /usr/share/locale/gu/LC_MESSAGES
+Installing po/he/LC_MESSAGES/p11-kit.mo to /usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/p11-kit.mo to /usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/p11-kit.mo to /usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/p11-kit.mo to /usr/share/locale/hu/LC_MESSAGES
+Installing po/ia/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ia/LC_MESSAGES
+Installing po/id/LC_MESSAGES/p11-kit.mo to /usr/share/locale/id/LC_MESSAGES
+Installing po/it/LC_MESSAGES/p11-kit.mo to /usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ka/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/p11-kit.mo to /usr/share/locale/kk/LC_MESSAGES
+Installing po/kn/LC_MESSAGES/p11-kit.mo to /usr/share/locale/kn/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ko/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/p11-kit.mo to /usr/share/locale/lt/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/p11-kit.mo to /usr/share/locale/lv/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ml/LC_MESSAGES
+Installing po/mr/LC_MESSAGES/p11-kit.mo to /usr/share/locale/mr/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ms/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/p11-kit.mo to /usr/share/locale/nb/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/p11-kit.mo to /usr/share/locale/nl/LC_MESSAGES
+Installing po/nn/LC_MESSAGES/p11-kit.mo to /usr/share/locale/nn/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/p11-kit.mo to /usr/share/locale/oc/LC_MESSAGES
+Installing po/or/LC_MESSAGES/p11-kit.mo to /usr/share/locale/or/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/p11-kit.mo to /usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/p11-kit.mo to /usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/p11-kit.mo to /usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/p11-kit.mo to /usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ru/LC_MESSAGES
+Installing po/si/LC_MESSAGES/p11-kit.mo to /usr/share/locale/si/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/p11-kit.mo to /usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/p11-kit.mo to /usr/share/locale/sl/LC_MESSAGES
+Installing po/sq/LC_MESSAGES/p11-kit.mo to /usr/share/locale/sq/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/p11-kit.mo to /usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/p11-kit.mo to /usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/p11-kit.mo to /usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ta/LC_MESSAGES
+Installing po/te/LC_MESSAGES/p11-kit.mo to /usr/share/locale/te/LC_MESSAGES
+Installing po/th/LC_MESSAGES/p11-kit.mo to /usr/share/locale/th/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/p11-kit.mo to /usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/p11-kit.mo to /usr/share/locale/uk/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/p11-kit.mo to /usr/share/locale/vi/LC_MESSAGES
+Installing po/wa/LC_MESSAGES/p11-kit.mo to /usr/share/locale/wa/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/p11-kit.mo to /usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_HK/LC_MESSAGES/p11-kit.mo to /usr/share/locale/zh_HK/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/p11-kit.mo to /usr/share/locale/zh_TW/LC_MESSAGES
+Installing /sources/p11-kit-0.25.0/common/pkcs11.h to /usr/include/p11-kit-1/p11-kit/
+Installing /sources/p11-kit-0.25.0/common/pkcs11x.h to /usr/include/p11-kit-1/p11-kit/
+Installing /sources/p11-kit-0.25.0/p11-kit/deprecated.h to /usr/include/p11-kit-1/p11-kit/
+Installing /sources/p11-kit-0.25.0/p11-kit/iter.h to /usr/include/p11-kit-1/p11-kit/
+Installing /sources/p11-kit-0.25.0/p11-kit/p11-kit.h to /usr/include/p11-kit-1/p11-kit/
+Installing /sources/p11-kit-0.25.0/p11-kit/pin.h to /usr/include/p11-kit-1/p11-kit/
+Installing /sources/p11-kit-0.25.0/p11-kit/remote.h to /usr/include/p11-kit-1/p11-kit/
+Installing /sources/p11-kit-0.25.0/p11-kit/uri.h to /usr/include/p11-kit-1/p11-kit/
+Installing /sources/p11-kit-0.25.0/p11-build/meson-private/p11-kit-1.pc to /usr/lib/pkgconfig
+Installing /sources/p11-kit-0.25.0/p11-build/p11-kit/pkcs11.conf.example to /etc/pkcs11
+Installing /sources/p11-kit-0.25.0/trust/p11-kit-trust.module to /usr/share/p11-kit/modules
+Installing /sources/p11-kit-0.25.0/trust/trust-extract-compat to /usr/libexec/p11-kit
+Installing symlink pointing to libp11-kit.so.0.3.0 to /usr/lib/libp11-kit.so.0
+Installing symlink pointing to libp11-kit.so.0 to /usr/lib/libp11-kit.so
+Running custom install script '/sources/p11-kit-0.25.0/p11-kit/meson_post_install.sh lib share/p11-kit/modules'
+'/usr/lib/libnssckbi.so' -> 'pkcs11/p11-kit-trust.so'
+
+
+Fri Aug  4 00:14:55 CST 2023
+
+Totalseconds: 69
+
+KB: 1644096	/
+

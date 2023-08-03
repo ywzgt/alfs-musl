@@ -1,0 +1,245 @@
+/etc/conf.d/agetty.tty1	6	root:root	777	agetty
+/etc/conf.d/agetty.tty2	6	root:root	777	agetty
+/etc/conf.d/agetty.tty3	6	root:root	777	agetty
+/etc/conf.d/agetty.tty4	6	root:root	777	agetty
+/etc/conf.d/agetty.tty5	6	root:root	777	agetty
+/etc/conf.d/agetty.tty6	6	root:root	777	agetty
+/etc/conf.d/hwclock	859	root:root	644	
+/etc/init.d/agetty	1246	root:root	755	
+/etc/init.d/agetty.tty1	6	root:root	777	agetty
+/etc/init.d/agetty.tty2	6	root:root	777	agetty
+/etc/init.d/agetty.tty3	6	root:root	777	agetty
+/etc/init.d/agetty.tty4	6	root:root	777	agetty
+/etc/init.d/agetty.tty5	6	root:root	777	agetty
+/etc/init.d/agetty.tty6	6	root:root	777	agetty
+/etc/init.d/binfmt	806	root:root	755	
+/etc/init.d/bootmisc	6028	root:root	755	
+/etc/init.d/cgroups	3684	root:root	755	
+/etc/init.d/consolefont	1839	root:root	755	
+/etc/init.d/devfs	3749	root:root	755	
+/etc/init.d/dmesg	747	root:root	755	
+/etc/init.d/fsck	3166	root:root	755	
+/etc/init.d/functions.sh	27	root:root	777	/usr/lib/rc/sh/functions.sh
+/etc/init.d/hostname	1025	root:root	755	
+/etc/init.d/hwclock	3308	root:root	755	
+/etc/init.d/keymaps	1991	root:root	755	
+/etc/init.d/killprocs	846	root:root	755	
+/etc/init.d/localmount	3663	root:root	755	
+/etc/init.d/loopback	1013	root:root	755	
+/etc/init.d/modules	2955	root:root	755	
+/etc/init.d/mount-ro	1568	root:root	755	
+/etc/init.d/net-online	2289	root:root	755	
+/etc/init.d/netmount	2071	root:root	755	
+/etc/init.d/network	7014	root:root	755	
+/etc/init.d/numlock	1153	root:root	755	
+/etc/init.d/osclock	943	root:root	755	
+/etc/init.d/procfs	1262	root:root	755	
+/etc/init.d/root	1434	root:root	755	
+/etc/init.d/runsvdir	1122	root:root	755	
+/etc/init.d/s6-svscan	1120	root:root	755	
+/etc/init.d/save-keymaps	867	root:root	755	
+/etc/init.d/save-termencoding	982	root:root	755	
+/etc/init.d/savecache	1899	root:root	755	
+/etc/init.d/seedrng	1153	root:root	755	
+/etc/init.d/staticroute	2052	root:root	755	
+/etc/init.d/swap	1037	root:root	755	
+/etc/init.d/swclock	1066	root:root	755	
+/etc/init.d/sysctl	1336	root:root	755	
+/etc/init.d/sysfs	3301	root:root	755	
+/etc/init.d/termencoding	1455	root:root	755	
+/etc/rc.conf	12585	root:root	644	
+/etc/runlevels/boot/binfmt	18	root:root	777	/etc/init.d/binfmt
+/etc/runlevels/boot/bootmisc	20	root:root	777	/etc/init.d/bootmisc
+/etc/runlevels/boot/fsck	16	root:root	777	/etc/init.d/fsck
+/etc/runlevels/boot/hostname	20	root:root	777	/etc/init.d/hostname
+/etc/runlevels/boot/hwclock	19	root:root	777	/etc/init.d/hwclock
+/etc/runlevels/boot/keymaps	19	root:root	777	/etc/init.d/keymaps
+/etc/runlevels/boot/localmount	22	root:root	777	/etc/init.d/localmount
+/etc/runlevels/boot/loopback	20	root:root	777	/etc/init.d/loopback
+/etc/runlevels/boot/modules	19	root:root	777	/etc/init.d/modules
+/etc/runlevels/boot/network	19	root:root	777	/etc/init.d/network
+/etc/runlevels/boot/procfs	18	root:root	777	/etc/init.d/procfs
+/etc/runlevels/boot/root	16	root:root	777	/etc/init.d/root
+/etc/runlevels/boot/save-keymaps	24	root:root	777	/etc/init.d/save-keymaps
+/etc/runlevels/boot/save-termencoding	29	root:root	777	/etc/init.d/save-termencoding
+/etc/runlevels/boot/seedrng	19	root:root	777	/etc/init.d/seedrng
+/etc/runlevels/boot/staticroute	23	root:root	777	/etc/init.d/staticroute
+/etc/runlevels/boot/sysctl	18	root:root	777	/etc/init.d/sysctl
+/etc/runlevels/boot/termencoding	24	root:root	777	/etc/init.d/termencoding
+/etc/runlevels/default/agetty.tty1	23	root:root	777	/etc/init.d/agetty.tty1
+/etc/runlevels/default/agetty.tty2	23	root:root	777	/etc/init.d/agetty.tty2
+/etc/runlevels/default/agetty.tty3	23	root:root	777	/etc/init.d/agetty.tty3
+/etc/runlevels/default/agetty.tty4	23	root:root	777	/etc/init.d/agetty.tty4
+/etc/runlevels/default/agetty.tty5	23	root:root	777	/etc/init.d/agetty.tty5
+/etc/runlevels/default/agetty.tty6	23	root:root	777	/etc/init.d/agetty.tty6
+/etc/runlevels/shutdown/killprocs	21	root:root	777	/etc/init.d/killprocs
+/etc/runlevels/shutdown/mount-ro	20	root:root	777	/etc/init.d/mount-ro
+/etc/runlevels/shutdown/savecache	21	root:root	777	/etc/init.d/savecache
+/etc/runlevels/sysinit/devfs	17	root:root	777	/etc/init.d/devfs
+/etc/runlevels/sysinit/dmesg	17	root:root	777	/etc/init.d/dmesg
+/etc/sysctl.conf	52	root:root	644	
+/usr/bin/rc-status	40752	root:root	755	
+/usr/include/rc.h	20908	root:root	644	
+/usr/lib/libeinfo.so	13	root:root	777	libeinfo.so.1
+/usr/lib/libeinfo.so.1	30128	root:root	755	
+/usr/lib/librc.so	10	root:root	777	librc.so.1
+/usr/lib/librc.so.1	62160	root:root	755	
+/usr/lib/pkgconfig/einfo.pc	182	root:root	644	
+/usr/lib/pkgconfig/openrc.pc	189	root:root	644	
+/usr/lib/rc/bin/checkpath	40152	root:root	755	
+/usr/lib/rc/bin/ebegin	21080	root:root	755	
+/usr/lib/rc/bin/eend	21080	root:root	755	
+/usr/lib/rc/bin/eerror	21080	root:root	755	
+/usr/lib/rc/bin/eerrorn	21080	root:root	755	
+/usr/lib/rc/bin/eindent	21080	root:root	755	
+/usr/lib/rc/bin/einfo	21080	root:root	755	
+/usr/lib/rc/bin/einfon	21080	root:root	755	
+/usr/lib/rc/bin/eoutdent	21080	root:root	755	
+/usr/lib/rc/bin/esyslog	21080	root:root	755	
+/usr/lib/rc/bin/eval_ecolors	21080	root:root	755	
+/usr/lib/rc/bin/ewaitfile	21080	root:root	755	
+/usr/lib/rc/bin/ewarn	21080	root:root	755	
+/usr/lib/rc/bin/ewarnn	21080	root:root	755	
+/usr/lib/rc/bin/ewend	21080	root:root	755	
+/usr/lib/rc/bin/fstabinfo	35728	root:root	755	
+/usr/lib/rc/bin/get_options	26864	root:root	755	
+/usr/lib/rc/bin/is_newer_than	26728	root:root	755	
+/usr/lib/rc/bin/is_older_than	26728	root:root	755	
+/usr/lib/rc/bin/kill_all	21616	root:root	755	
+/usr/lib/rc/bin/mountinfo	35856	root:root	755	
+/usr/lib/rc/bin/rc-depend	31536	root:root	755	
+/usr/lib/rc/bin/save_options	26864	root:root	755	
+/usr/lib/rc/bin/service_crashed	26896	root:root	755	
+/usr/lib/rc/bin/service_get_value	26864	root:root	755	
+/usr/lib/rc/bin/service_hotplugged	26896	root:root	755	
+/usr/lib/rc/bin/service_inactive	26896	root:root	755	
+/usr/lib/rc/bin/service_set_value	26864	root:root	755	
+/usr/lib/rc/bin/service_started	26896	root:root	755	
+/usr/lib/rc/bin/service_started_daemon	26896	root:root	755	
+/usr/lib/rc/bin/service_starting	26896	root:root	755	
+/usr/lib/rc/bin/service_stopped	26896	root:root	755	
+/usr/lib/rc/bin/service_stopping	26896	root:root	755	
+/usr/lib/rc/bin/service_wasinactive	26896	root:root	755	
+/usr/lib/rc/bin/shell_var	15352	root:root	755	
+/usr/lib/rc/bin/vebegin	21080	root:root	755	
+/usr/lib/rc/bin/veend	21080	root:root	755	
+/usr/lib/rc/bin/veindent	21080	root:root	755	
+/usr/lib/rc/bin/veinfo	21080	root:root	755	
+/usr/lib/rc/bin/veoutdent	21080	root:root	755	
+/usr/lib/rc/bin/vewarn	21080	root:root	755	
+/usr/lib/rc/bin/vewend	21080	root:root	755	
+/usr/lib/rc/sbin/mark_service_crashed	26784	root:root	755	
+/usr/lib/rc/sbin/mark_service_failed	26784	root:root	755	
+/usr/lib/rc/sbin/mark_service_hotplugged	26784	root:root	755	
+/usr/lib/rc/sbin/mark_service_inactive	26784	root:root	755	
+/usr/lib/rc/sbin/mark_service_started	26784	root:root	755	
+/usr/lib/rc/sbin/mark_service_starting	26784	root:root	755	
+/usr/lib/rc/sbin/mark_service_stopped	26784	root:root	755	
+/usr/lib/rc/sbin/mark_service_stopping	26784	root:root	755	
+/usr/lib/rc/sbin/mark_service_wasinactive	26784	root:root	755	
+/usr/lib/rc/sbin/rc-abort	15600	root:root	755	
+/usr/lib/rc/sbin/seedrng	29544	root:root	755	
+/usr/lib/rc/sbin/swclock	31456	root:root	755	
+/usr/lib/rc/sh/binfmt.sh	2810	root:root	755	
+/usr/lib/rc/sh/cgroup-release-agent.sh	751	root:root	755	
+/usr/lib/rc/sh/functions.sh	3147	root:root	644	
+/usr/lib/rc/sh/gendepends.sh	2702	root:root	755	
+/usr/lib/rc/sh/init-early.sh	1999	root:root	755	
+/usr/lib/rc/sh/init.sh	3020	root:root	755	
+/usr/lib/rc/sh/openrc-run.sh	9075	root:root	755	
+/usr/lib/rc/version	5	root:root	644	
+/usr/sbin/halt	525	root:root	755	
+/usr/sbin/init	11	root:root	777	openrc-init
+/usr/sbin/openrc	55728	root:root	755	
+/usr/sbin/openrc-init	26064	root:root	755	
+/usr/sbin/openrc-run	55392	root:root	755	
+/usr/sbin/openrc-shutdown	41600	root:root	755	
+/usr/sbin/poweroff	493	root:root	755	
+/usr/sbin/rc	55728	root:root	755	
+/usr/sbin/rc-service	35696	root:root	755	
+/usr/sbin/rc-update	36096	root:root	755	
+/usr/sbin/reboot	528	root:root	755	
+/usr/sbin/runscript	55392	root:root	755	
+/usr/sbin/shutdown	783	root:root	755	
+/usr/sbin/start-stop-daemon	62472	root:root	755	
+/usr/sbin/supervise-daemon	64304	root:root	755	
+/usr/share/man/man3/ebegin.3	7	root:root	777	einfo.3
+/usr/share/man/man3/ebeginn.3	7	root:root	777	einfo.3
+/usr/share/man/man3/ebeginv.3	7	root:root	777	einfo.3
+/usr/share/man/man3/ebeginvn.3	7	root:root	777	einfo.3
+/usr/share/man/man3/ebracket.3	7	root:root	777	einfo.3
+/usr/share/man/man3/eend.3	7	root:root	777	einfo.3
+/usr/share/man/man3/eendv.3	7	root:root	777	einfo.3
+/usr/share/man/man3/eerror.3	7	root:root	777	einfo.3
+/usr/share/man/man3/eerrorn.3	7	root:root	777	einfo.3
+/usr/share/man/man3/eerrorx.3	7	root:root	777	einfo.3
+/usr/share/man/man3/eindent.3	7	root:root	777	einfo.3
+/usr/share/man/man3/eindentv.3	7	root:root	777	einfo.3
+/usr/share/man/man3/einfon.3	7	root:root	777	einfo.3
+/usr/share/man/man3/einfov.3	7	root:root	777	einfo.3
+/usr/share/man/man3/einfovn.3	7	root:root	777	einfo.3
+/usr/share/man/man3/eoutdent.3	7	root:root	777	einfo.3
+/usr/share/man/man3/eoutdentv.3	7	root:root	777	einfo.3
+/usr/share/man/man3/eprefix.3	7	root:root	777	einfo.3
+/usr/share/man/man3/ewarn.3	7	root:root	777	einfo.3
+/usr/share/man/man3/ewarnn.3	7	root:root	777	einfo.3
+/usr/share/man/man3/ewarnv.3	7	root:root	777	einfo.3
+/usr/share/man/man3/ewarnvn.3	7	root:root	777	einfo.3
+/usr/share/man/man3/ewarnx.3	7	root:root	777	einfo.3
+/usr/share/man/man3/ewend.3	7	root:root	777	einfo.3
+/usr/share/man/man3/ewendv.3	7	root:root	777	einfo.3
+/usr/share/man/man3/rc_config_list.3	11	root:root	777	rc_config.3
+/usr/share/man/man3/rc_config_load.3	11	root:root	777	rc_config.3
+/usr/share/man/man3/rc_config_value.3	11	root:root	777	rc_config.3
+/usr/share/man/man3/rc_deptree_depend.3	12	root:root	777	rc_deptree.3
+/usr/share/man/man3/rc_deptree_depends.3	12	root:root	777	rc_deptree.3
+/usr/share/man/man3/rc_deptree_free.3	12	root:root	777	rc_deptree.3
+/usr/share/man/man3/rc_deptree_load.3	12	root:root	777	rc_deptree.3
+/usr/share/man/man3/rc_deptree_order.3	12	root:root	777	rc_deptree.3
+/usr/share/man/man3/rc_deptree_update.3	12	root:root	777	rc_deptree.3
+/usr/share/man/man3/rc_deptree_update_needed.3	12	root:root	777	rc_deptree.3
+/usr/share/man/man3/rc_runlevel_exists.3	13	root:root	777	rc_runlevel.3
+/usr/share/man/man3/rc_runlevel_get.3	13	root:root	777	rc_runlevel.3
+/usr/share/man/man3/rc_runlevel_list.3	13	root:root	777	rc_runlevel.3
+/usr/share/man/man3/rc_runlevel_set.3	13	root:root	777	rc_runlevel.3
+/usr/share/man/man3/rc_runlevel_starting.3	13	root:root	777	rc_runlevel.3
+/usr/share/man/man3/rc_runlevel_stopping.3	13	root:root	777	rc_runlevel.3
+/usr/share/man/man3/rc_service_add.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_daemon_set.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_daemons_crashed.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_delete.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_description.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_exists.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_extra_commands.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_in_runlevel.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_mark.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_plugable.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_resolve.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_schedule_clear.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_schedule_start.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_started_daemon.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_state.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_value_get.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_service_value_set.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_services_in_runlevel.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_services_in_state.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_services_scheduled.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_services_scheduled_by.3	12	root:root	777	rc_service.3
+/usr/share/man/man3/rc_stringlist_add.3	15	root:root	777	rc_stringlist.3
+/usr/share/man/man3/rc_stringlist_addu.3	15	root:root	777	rc_stringlist.3
+/usr/share/man/man3/rc_stringlist_delete.3	15	root:root	777	rc_stringlist.3
+/usr/share/man/man3/rc_stringlist_free.3	15	root:root	777	rc_stringlist.3
+/usr/share/man/man3/rc_stringlist_new.3	15	root:root	777	rc_stringlist.3
+/usr/share/man/man3/rc_stringlist_sort.3	15	root:root	777	rc_stringlist.3
+/usr/share/man/man3/rc_yesno.3	11	root:root	777	rc_config.3
+/usr/share/openrc/support/init.d.examples/avahi-dnsconfd	736	root:root	755	
+/usr/share/openrc/support/init.d.examples/avahid	728	root:root	755	
+/usr/share/openrc/support/init.d.examples/dbus	746	root:root	755	
+/usr/share/openrc/support/init.d.examples/dhcpcd	932	root:root	755	
+/usr/share/openrc/support/init.d.examples/hald	673	root:root	755	
+/usr/share/openrc/support/init.d.examples/named	2994	root:root	755	
+/usr/share/openrc/support/init.d.examples/ntpd	1234	root:root	755	
+/usr/share/openrc/support/init.d.examples/openvpn	2322	root:root	755	
+/usr/share/openrc/support/init.d.examples/polkitd	670	root:root	755	
+/usr/share/openrc/support/init.d.examples/sshd	1186	root:root	755	
+/usr/share/openrc/support/init.d.examples/wpa_supplicant	1737	root:root	755	

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SRC="expat"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--disable-static \
+	--docdir=/usr/share/doc/expat
+
+make
+make install
