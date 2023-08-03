@@ -1,0 +1,99 @@
+#!/bin/bash
+# https://gitweb.gentoo.org/repo/gentoo.git/tree/sys-libs/musl/files
+# https://git.alpinelinux.org/aports/tree/main/musl/APKBUILD
+# https://github.com/void-linux/void-packages/tree/master/srcpkgs/musl
+
+SRC="musl"
+PKG="$SRC"
+
+mkdir -v build
+cd build
+
+../configure --prefix=/usr \
+	--{sys,}libdir=/usr/lib \
+	--localstatedir=/var \
+	--mandir=/usr/share/man \
+	--sysconfdir=/etc \
+	--disable-debug
+
+make
+make install
+make install-headers  # 之前已经安装了头文件，make install 不会重新安装
+ln -srfv /usr/lib/{libc.so,ld-musl*.so.1}
+
+# https://packages.gentoo.org/packages/sys-libs/queue-standalone
+# 一些包需要这个文件，如 libarchive
+install -Dvm644 "$SRC_ROOT/queue.h" -t /usr/include/sys/
+
+# provide minimal libssp_nonshared.a so we don't need libssp from gcc
+gcc $CPPFLAGS $CFLAGS -c "$SRC_ROOT/stack_chk_fail_local.c" -o stack_chk_fail_local.o
+ar r libssp_nonshared.a stack_chk_fail_local.o
+cp -fv libssp_nonshared.a /usr/lib
+
+for i in getconf getent iconv ; do
+	gcc $CPPFLAGS $CFLAGS "$SRC_ROOT"/$i.c -o $i
+done
+install -vm755 getconf getent iconv -t /usr/bin
+
+# 即使 install-headers 仍不会安装完整...
+make DESTDIR=$PWD/DES install
+(cd DES; find . | sed 's/^.\///')>install_file
+for i in $(<install_file); do touch "/$i"; done
+
+
+_ldconfig () {
+	fail () { echo "$*" ; exit 1 ; }
+	local ARCH
+	printf "checking target system type... "
+	target=$(cc -dumpmachine 2>/dev/null) || target=$(uname -m)
+	printf "%s\n" "$target"
+
+	case "$target" in
+		i?86*) ARCH=i386 ;;
+		x86_64-x32*|x32*|x86_64*x32) ARCH=x32 ;;
+		x86_64*) ARCH=x86_64 ;;
+		*) fail "$0: unknown or unsupported target \"$target\"" ;;
+	esac
+
+	install -Dvm755 "${SRC_ROOT}/ldconfig.in" /usr/sbin/ldconfig
+	sed -i "s|@@ARCH@@|${ARCH}|" /usr/sbin/ldconfig
+	[ -e /etc/ld.so.conf ] || touch /etc/ld.so.conf
+
+	# ln -s true /usr/bin/ldconfig   # Fake ldconfig from voidLinux
+}
+
+_ldd_install() {
+	local rule="$(printf "%s\n\t%s\n" 'print-ldso:' '@echo $$(basename $(LDSO_PATHNAME))')"
+	local LDSO=$(make -f Makefile --eval "$rule" print-ldso)
+
+# 	install -Dvm755 /dev/stdin /usr/bin/ldd<<EOF
+# #!/bin/sh
+# exec /lib/$LDSO --list "\$@"
+# EOF
+
+	ln -sv ../lib/$LDSO /usr/bin/ldd 		# 二者效果一样，区别如下方注释
+}
+
+_ldconfig
+_ldd_install
+
+# (chroot) root:/ # ldd
+# musl libc (x86_64)
+# Version 1.2.4
+# Dynamic Program Loader
+# Usage: /lib/ld-musl-x86_64.so.1 [options] [--] pathname
+#
+# >> ldd /lib/libz.so
+# /lib/ld-musl-x86_64.so.1 (0x7f39faeec000)
+# libc.so => /lib/ld-musl-x86_64.so.1 (0x7f39faeec000)
+#
+#
+# alp / # ldd
+# musl libc (x86_64)
+# Version 1.2.3
+# Dynamic Program Loader
+# Usage: ldd [options] [--] pathname
+#
+# >> ldd /lib/libz.so.1
+# ldd (0x7ff4b0774000)
+# libc.so => ldd (0x7ff4b0774000)

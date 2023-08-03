@@ -1,0 +1,18 @@
+#!/bin/bash
+# https://github.com/void-linux/void-packages/blob/master/srcpkgs/gettext/template
+
+SRC="gettext"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--disable-static \
+	--docdir=/usr/share/doc/gettext \
+	--without-examples \
+	--with-included-gettext
+
+make
+make DESTDIR=$PWD/DES install
+rm -v DES/usr/lib/*.la
+install -dv DES/usr/include/gettext
+mv -v DES/usr/include{,/gettext}/libintl.h
+cp -av DES/* /

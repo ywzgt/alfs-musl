@@ -1,0 +1,24 @@
+#!/bin/bash
+
+SRC="binutils"
+PKG="$SRC"
+
+mkdir -v build
+cd build
+
+../configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--enable-gold \
+	--enable-ld=default \
+	--enable-plugins \
+	--enable-shared \
+	--disable-werror \
+	--disable-multilib \
+	--disable-gprofng \
+	--enable-64-bit-bfd \
+	--with-system-zlib
+
+make tooldir=/usr
+make tooldir=/usr install
+rm -fv /usr/lib/lib{bfd,ctf,ctf-nobfd,sframe,opcodes}.a
+rm -fv /usr/share/man/man1/{gprofng,gp-*}.1

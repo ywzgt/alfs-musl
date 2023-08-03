@@ -1,0 +1,81 @@
+Thu Aug  3 14:56:05 UTC 2023
+KB: 1133236	/
+
+VERSION=`cat version` && sed \
+		-e 's|#!/bin/bash|#!/bin/bash|g' \
+		-e 's|AWK=[^}]*|AWK='\''awk'\''|g' \
+		-e 's|\(PKGVERSION\)=.*|\1='\''(tzcode) '\''|' \
+		-e 's|\(REPORT_BUGS_TO\)=.*|\1=tz@iana.org|' \
+		-e 's|TZDIR=[^}]*|TZDIR=/usr/share/zoneinfo|' \
+		-e 's|\(TZVERSION\)=.*|\1='"$VERSION"'|' \
+		<tzselect.ksh >tzselect.out
+VERSION=`cat version` && printf '%s\n' \
+	  'static char const PKGVERSION[]="(tzcode) ";' \
+	  "static char const TZVERSION[]=\"$VERSION\";" \
+	  'static char const REPORT_BUGS_TO[]="tz@iana.org";' \
+	  >version.h.out
+mv version.h.out version.h
+cc -DTZDIR='"/usr/share/zoneinfo"'  -Os -pipe -fPIC -DNDEBUG  -c -o localtime.o localtime.c
+chmod +x tzselect.out
+mv tzselect.out tzselect
+cc -DTZDIR='"/usr/share/zoneinfo"'  -Os -pipe -fPIC -DNDEBUG  -c -o asctime.o asctime.c
+cc -DTZDIR='"/usr/share/zoneinfo"'  -Os -pipe -fPIC -DNDEBUG  -c -o strftime.o strftime.c
+cc -DTZDIR='"/usr/share/zoneinfo"'  -Os -pipe -fPIC -DNDEBUG  -c -o difftime.o difftime.c
+awk \
+	  -v DATAFORM=`expr main.zi : '\(.*\).zi'` \
+	  -v PACKRATDATA='' \
+	  -v PACKRATLIST='' \
+	  -f ziguard.awk \
+	  africa antarctica asia australasia europe northamerica southamerica etcetera factory backward  >main.zi.out
+mv main.zi.out main.zi
+awk \
+	  -v DATAFORM=`expr vanguard.zi : '\(.*\).zi'` \
+	  -v PACKRATDATA='' \
+	  -v PACKRATLIST='' \
+	  -f ziguard.awk \
+	  africa antarctica asia australasia europe northamerica southamerica etcetera factory backward  >vanguard.zi.out
+mv vanguard.zi.out vanguard.zi
+awk \
+	  -v DATAFORM=`expr rearguard.zi : '\(.*\).zi'` \
+	  -v PACKRATDATA='' \
+	  -v PACKRATLIST='' \
+	  -f ziguard.awk \
+	  africa antarctica asia australasia europe northamerica southamerica etcetera factory backward  >rearguard.zi.out
+mv rearguard.zi.out rearguard.zi
+cc -DTZDIR='"/usr/share/zoneinfo"'  -Os -pipe -fPIC -DNDEBUG  -c -o zic.o zic.c
+cc -DTZDIR='"/usr/share/zoneinfo"'  -Os -pipe -fPIC -DNDEBUG  -c -o zdump.o zdump.c
+rm -f libtz.a
+ar -rc libtz.a localtime.o asctime.o difftime.o strftime.o
+: libtz.a
+version=`sed 1q version` && \
+	  LC_ALL=C awk \
+	    -v dataform='main' \
+	    -v deps='ziguard.awk africa antarctica asia australasia europe northamerica southamerica etcetera factory backward   zishrink.awk' \
+	    -v redo='posix_right' \
+	    -v version="$version" \
+	    -f zishrink.awk \
+	    main.zi >tzdata.zi.out
+mv tzdata.zi.out tzdata.zi
+cc -DTZDIR='"/usr/share/zoneinfo"' -o zdump   zdump.o localtime.o asctime.o strftime.o 
+cc -DTZDIR='"/usr/share/zoneinfo"' -o zic   zic.o 
+renamed 'date.1' -> 'tzdate.1'
+'newctime.3' -> '/usr/share/man/man3/newctime.3'
+'newstrftime.3' -> '/usr/share/man/man3/newstrftime.3'
+'newtzset.3' -> '/usr/share/man/man3/newtzset.3'
+'time2posix.3' -> '/usr/share/man/man3/time2posix.3'
+'tzdate.1' -> '/usr/share/man/man1/tzdate.1'
+'tzfile.5' -> '/usr/share/man/man5/tzfile.5'
+'tzselect.8' -> '/usr/share/man/man8/tzselect.8'
+'zdump.8' -> '/usr/share/man/man8/zdump.8'
+'zic.8' -> '/usr/share/man/man8/zic.8'
+'tzselect' -> '/usr/bin/tzselect'
+'zdump' -> '/usr/bin/zdump'
+'zic' -> '/usr/bin/zic'
+
+
+Thu Aug  3 14:56:08 UTC 2023
+
+Totalseconds: 3
+
+KB: 1138228	/
+

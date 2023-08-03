@@ -1,0 +1,944 @@
+Fri Aug  4 00:48:37 CST 2023
+KB: 1503428	/
+
+mkdir: created directory 'build'
+The Meson build system
+Version: 1.2.0
+Source dir: /sources/openrc-0.48
+Build dir: /sources/openrc-0.48/build
+Build type: native build
+Project name: OpenRC
+Project version: 0.48
+C compiler for the host machine: cc (gcc 13.2.0 "cc (GCC) 13.2.0")
+C linker for the host machine: cc ld.bfd 2.41
+Host machine cpu family: x86
+Host machine cpu: i686
+Found pkg-config: /usr/bin/pkg-config (1.9.5)
+Did not find CMake 'cmake'
+Found CMake: NO
+Run-time dependency audit found: NO (tried pkgconfig and cmake)
+Run-time dependency pam found: NO (tried pkgconfig and cmake)
+Library pam found: NO
+Run-time dependency libcap found: YES 2.69
+Dependency libselinux skipped: feature selinux disabled
+Run-time dependency ncurses found: YES 6.4.20221231
+Compiler for C supports arguments -Wcast-align: YES 
+Compiler for C supports arguments -Wcast-qual: YES 
+Compiler for C supports arguments -Wdeclaration-after-statement: YES 
+Compiler for C supports arguments -Wformat=2: YES 
+Compiler for C supports arguments -Winline: YES 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wmissing-format-attribute: YES 
+Compiler for C supports arguments -Wmissing-noreturn: YES 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wnested-externs: YES 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Compiler for C supports arguments -Wsequence-point: YES 
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Compiler for C supports arguments -Werror=implicit-int: YES 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Compiler for C supports arguments -Werror=int-conversion: YES 
+Compiler for C supports arguments -Werror=incompatible-function-pointer-types: NO 
+Checking if "malloc attribute with arguments" compiles: YES 
+Checking for function "closefrom" : NO 
+Checking for function "close_range" : NO 
+Library dl found: YES
+Library util found: YES
+Configuring bootmisc using configuration
+Configuring fsck using configuration
+Configuring hostname using configuration
+Configuring local using configuration
+Configuring localmount using configuration
+Configuring loopback using configuration
+Configuring netmount using configuration
+Configuring osclock using configuration
+Configuring root using configuration
+Configuring savecache using configuration
+Configuring swap using configuration
+Configuring swclock using configuration
+Configuring sysctl using configuration
+Configuring runsvdir using configuration
+Configuring s6-svscan using configuration
+Configuring network using configuration
+Configuring staticroute using configuration
+Configuring agetty using configuration
+Configuring binfmt using configuration
+Configuring cgroups using configuration
+Configuring consolefont using configuration
+Configuring devfs using configuration
+Configuring dmesg using configuration
+Configuring hwclock using configuration
+Configuring keymaps using configuration
+Configuring killprocs using configuration
+Configuring modules using configuration
+Configuring mount-ro using configuration
+Configuring mtab using configuration
+Configuring numlock using configuration
+Configuring procfs using configuration
+Configuring net-online using configuration
+Configuring save-keymaps using configuration
+Configuring save-termencoding using configuration
+Configuring seedrng using configuration
+Configuring sysfs using configuration
+Configuring termencoding using configuration
+Configuring einfo.pc using configuration
+Configuring openrc.pc using configuration
+Configuring functions.sh using configuration
+Configuring gendepends.sh using configuration
+Configuring openrc-run.sh using configuration
+Configuring binfmt.sh using configuration
+Configuring cgroup-release-agent.sh using configuration
+Configuring init-early.sh using configuration
+Configuring init.sh using configuration
+Configuring rc.h using configuration
+Configuring avahi-dnsconfd using configuration
+Configuring avahid using configuration
+Configuring dhcpcd using configuration
+Configuring dbus using configuration
+Configuring hald using configuration
+Configuring named using configuration
+Configuring ntpd using configuration
+Configuring openvpn using configuration
+Configuring polkitd using configuration
+Configuring sshd using configuration
+Configuring wpa_supplicant using configuration
+Program check-obsolete-functions.sh found: YES (/sources/openrc-0.48/test/check-obsolete-functions.sh)
+Program check-spacing-style.sh found: YES (/bin/sh /sources/openrc-0.48/test/check-spacing-style.sh)
+Program check-trailing-newlines.sh found: YES (/sources/openrc-0.48/test/check-trailing-newlines.sh)
+Program check-trailing-whitespace.sh found: YES (/sources/openrc-0.48/test/check-trailing-whitespace.sh)
+Program check-xfunc-usage.sh found: YES (/sources/openrc-0.48/test/check-xfunc-usage.sh)
+Program check-is-older-than.sh found: YES (/sources/openrc-0.48/test/units/check-is-older-than.sh)
+Program check-sh-yesno.sh found: YES (/sources/openrc-0.48/test/units/check-sh-yesno.sh)
+Build targets in project: 69
+
+OpenRC 0.48
+
+  User defined options
+    buildtype       : release
+    prefix          : /usr
+    sysconfdir      : /etc
+    bash-completions: true
+    branding        : "Linux From Scratch <musl>"
+    os              : Linux
+    pam             : false
+    pkgconfig       : true
+    selinux         : disabled
+    shell           : /bin/bash
+    split-usr       : true
+    sysvinit        : false
+    termcap         : ncurses
+    zsh-completions : true
+
+Found ninja-1.11.1 at /usr/bin/ninja
+[2 1/213 0.095s] Generating src/shared/version with a custom command
+[2 2/213 0.095s] Generating src/shared/version.h with a custom command
+[2 3/213 0.526s] Compiling C object src/libeinfo/libeinfo.so.1.p/libeinfo.c.o
+[2 4/213 0.539s] Linking target src/libeinfo/libeinfo.so.1
+[2 5/213 0.630s] Compiling C object src/librc/librc.so.1.p/librc.c.o
+../src/librc/librc.c: In function ‘rc_service_mark’:
+../src/librc/librc.c:817:58: warning: ‘/’ directive output may be truncated writing 1 byte into a region of size between 0 and 4095 [-Wformat-truncation=]
+  817 |                         snprintf(was, sizeof(was), "%s/%s/%s",
+      |                                                          ^
+../src/librc/librc.c:817:25: note: ‘snprintf’ output 3 or more bytes (assuming 4098) into a destination of size 4096
+  817 |                         snprintf(was, sizeof(was), "%s/%s/%s",
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  818 |                             file, dir->value, base);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~
+../src/librc/librc.c:822:58: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+  822 |                         snprintf(was, sizeof(was), "%s/%s", file, dir->value);
+      |                                                          ^
+../src/librc/librc.c:822:25: note: ‘snprintf’ output 2 or more bytes (assuming 4097) into a destination of size 4096
+  822 |                         snprintf(was, sizeof(was), "%s/%s", file, dir->value);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2 6/213 0.649s] Generating symbol file src/libeinfo/libeinfo.so.1.p/libeinfo.so.1.symbols
+[2 7/213 0.972s] Compiling C object src/librc/librc.so.1.p/librc-daemon.c.o
+[2 8/213 1.230s] Compiling C object src/librc/librc.so.1.p/librc-misc.c.o
+[2 9/213 1.234s] Compiling C object src/librc/librc.so.1.p/librc-depend.c.o
+[2 10/213 1.359s] Compiling C object src/librc/librc.so.1.p/librc-stringlist.c.o
+[2 11/213 1.373s] Linking target src/librc/librc.so.1
+[2 12/213 1.481s] Generating symbol file src/librc/librc.so.1.p/librc.so.1.symbols
+[2 13/213 1.498s] Compiling C object src/checkpath/checkpath.p/checkpath.c.o
+[2 14/213 1.577s] Compiling C object src/checkpath/checkpath.p/.._shared__usage.c.o
+[2 15/213 1.750s] Compiling C object src/einfo/einfon.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 16/213 1.763s] Linking target src/einfo/einfon
+[2 17/213 1.766s] Compiling C object src/checkpath/checkpath.p/.._shared_misc.c.o
+[2 18/213 1.780s] Linking target src/checkpath/checkpath
+[2 19/213 1.935s] Compiling C object src/einfo/einfo.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 20/213 1.947s] Linking target src/einfo/einfo
+[2 21/213 1.951s] Compiling C object src/einfo/ewarnn.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 22/213 1.963s] Linking target src/einfo/ewarnn
+[2 23/213 2.120s] Compiling C object src/einfo/ewarn.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 24/213 2.133s] Linking target src/einfo/ewarn
+[2 25/213 2.135s] Compiling C object src/einfo/eerrorn.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 26/213 2.148s] Linking target src/einfo/eerrorn
+[2 27/213 2.306s] Compiling C object src/einfo/eerror.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 28/213 2.318s] Linking target src/einfo/eerror
+[2 29/213 2.319s] Compiling C object src/einfo/ebegin.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 30/213 2.331s] Linking target src/einfo/ebegin
+[2 31/213 2.491s] Compiling C object src/einfo/eend.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 32/213 2.502s] Compiling C object src/einfo/ewend.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 33/213 2.503s] Linking target src/einfo/eend
+[2 34/213 2.515s] Linking target src/einfo/ewend
+[2 35/213 2.676s] Compiling C object src/einfo/eindent.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 36/213 2.686s] Compiling C object src/einfo/eoutdent.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 37/213 2.689s] Linking target src/einfo/eindent
+[2 38/213 2.698s] Linking target src/einfo/eoutdent
+[2 39/213 2.861s] Compiling C object src/einfo/esyslog.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 40/213 2.870s] Compiling C object src/einfo/eval_ecolors.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 41/213 2.874s] Linking target src/einfo/esyslog
+[2 42/213 2.882s] Linking target src/einfo/eval_ecolors
+[2 43/213 3.046s] Compiling C object src/einfo/ewaitfile.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 44/213 3.053s] Compiling C object src/einfo/veinfo.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 45/213 3.059s] Linking target src/einfo/ewaitfile
+[2 46/213 3.065s] Linking target src/einfo/veinfo
+[2 47/213 3.232s] Compiling C object src/einfo/vewarn.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 48/213 3.238s] Compiling C object src/einfo/vebegin.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 49/213 3.244s] Linking target src/einfo/vewarn
+[2 50/213 3.250s] Linking target src/einfo/vebegin
+[2 51/213 3.417s] Compiling C object src/einfo/veend.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 52/213 3.421s] Compiling C object src/einfo/vewend.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 53/213 3.429s] Linking target src/einfo/veend
+[2 54/213 3.433s] Linking target src/einfo/vewend
+[2 55/213 3.602s] Compiling C object src/einfo/veindent.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 56/213 3.604s] Compiling C object src/einfo/veoutdent.p/einfo.c.o
+../src/einfo/einfo.c: In function ‘main’:
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |                             (level = syslog_decode(p + 1, prioritynames)) == -1)
+      |                                                           ^~~~~~~~~~~~~
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+../src/einfo/einfo.c:98:59: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+[2 57/213 3.614s] Linking target src/einfo/veindent
+[2 58/213 3.616s] Linking target src/einfo/veoutdent
+[2 59/213 3.779s] Compiling C object src/fstabinfo/fstabinfo.p/fstabinfo.c.o
+[2 60/213 3.858s] Compiling C object src/fstabinfo/fstabinfo.p/.._shared__usage.c.o
+[2 61/213 3.902s] Compiling C object src/is_newer_than/is_newer_than.p/is_newer_than.c.o
+[2 62/213 3.905s] Compiling C object src/fstabinfo/fstabinfo.p/.._shared_misc.c.o
+[2 63/213 3.919s] Linking target src/fstabinfo/fstabinfo
+[2 64/213 3.962s] Compiling C object src/is_older_than/is_older_than.p/is_older_than.c.o
+[2 65/213 4.189s] Compiling C object src/is_newer_than/is_newer_than.p/.._shared_misc.c.o
+[2 66/213 4.203s] Linking target src/is_newer_than/is_newer_than
+[2 67/213 4.246s] Compiling C object src/is_older_than/is_older_than.p/.._shared_misc.c.o
+[2 68/213 4.259s] Linking target src/is_older_than/is_older_than
+[2 69/213 4.337s] Compiling C object src/kill_all/kill_all.p/.._shared__usage.c.o
+[2 70/213 4.360s] Compiling C object src/kill_all/kill_all.p/kill_all.c.o
+[2 71/213 4.373s] Linking target src/kill_all/kill_all
+[2 72/213 4.407s] Compiling C object src/mark_service/mark_service_starting.p/mark_service.c.o
+[2 73/213 4.476s] Compiling C object src/mark_service/mark_service_started.p/mark_service.c.o
+[2 74/213 4.659s] Compiling C object src/mark_service/mark_service_starting.p/.._shared_misc.c.o
+[2 75/213 4.673s] Linking target src/mark_service/mark_service_starting
+[2 76/213 4.742s] Compiling C object src/mark_service/mark_service_stopping.p/mark_service.c.o
+[2 77/213 4.760s] Compiling C object src/mark_service/mark_service_started.p/.._shared_misc.c.o
+[2 78/213 4.773s] Linking target src/mark_service/mark_service_started
+[2 79/213 4.842s] Compiling C object src/mark_service/mark_service_stopped.p/mark_service.c.o
+[2 80/213 5.028s] Compiling C object src/mark_service/mark_service_stopping.p/.._shared_misc.c.o
+[2 81/213 5.042s] Linking target src/mark_service/mark_service_stopping
+[2 82/213 5.111s] Compiling C object src/mark_service/mark_service_inactive.p/mark_service.c.o
+[2 83/213 5.131s] Compiling C object src/mark_service/mark_service_stopped.p/.._shared_misc.c.o
+[2 84/213 5.144s] Linking target src/mark_service/mark_service_stopped
+[2 85/213 5.213s] Compiling C object src/mark_service/mark_service_wasinactive.p/mark_service.c.o
+[2 86/213 5.399s] Compiling C object src/mark_service/mark_service_inactive.p/.._shared_misc.c.o
+[2 87/213 5.412s] Linking target src/mark_service/mark_service_inactive
+[2 88/213 5.481s] Compiling C object src/mark_service/mark_service_hotplugged.p/mark_service.c.o
+[2 89/213 5.501s] Compiling C object src/mark_service/mark_service_wasinactive.p/.._shared_misc.c.o
+[2 90/213 5.514s] Linking target src/mark_service/mark_service_wasinactive
+[2 91/213 5.582s] Compiling C object src/mark_service/mark_service_failed.p/mark_service.c.o
+[2 92/213 5.768s] Compiling C object src/mark_service/mark_service_hotplugged.p/.._shared_misc.c.o
+[2 93/213 5.781s] Linking target src/mark_service/mark_service_hotplugged
+[2 94/213 5.850s] Compiling C object src/mark_service/mark_service_crashed.p/mark_service.c.o
+[2 95/213 5.866s] Compiling C object src/mark_service/mark_service_failed.p/.._shared_misc.c.o
+[2 96/213 5.880s] Linking target src/mark_service/mark_service_failed
+[2 97/213 6.063s] Compiling C object src/mountinfo/mountinfo.p/mountinfo.c.o
+[2 98/213 6.141s] Compiling C object src/mark_service/mark_service_crashed.p/.._shared_misc.c.o
+[2 99/213 6.156s] Linking target src/mark_service/mark_service_crashed
+[2 100/213 6.235s] Compiling C object src/mountinfo/mountinfo.p/.._shared__usage.c.o
+[2 101/213 6.348s] Compiling C object src/mountinfo/mountinfo.p/.._shared_misc.c.o
+[2 102/213 6.362s] Linking target src/mountinfo/mountinfo
+[2 103/213 6.556s] Compiling C object src/openrc/openrc.p/rc-logger.c.o
+[2 104/213 6.771s] Compiling C object src/openrc/openrc.p/rc.c.o
+[2 105/213 6.845s] Compiling C object src/openrc/openrc.p/.._shared_misc.c.o
+[2 106/213 6.924s] Compiling C object src/openrc/openrc.p/.._shared__usage.c.o
+[2 107/213 6.927s] Compiling C object src/openrc/openrc.p/.._shared_plugin.c.o
+../src/shared/plugin.c: In function ‘rc_plugin_load’:
+../src/shared/plugin.c:94:24: warning: cast between incompatible function types from ‘dlfunc_t’ {aka ‘void (*)(struct __dlfunc_arg)’} to ‘int (*)(RC_HOOK,  const char *)’ [-Wcast-function-type]
+   94 |                 fptr = (int (*)(RC_HOOK, const char *))
+      |                        ^
+[2 108/213 6.942s] Linking target src/openrc/openrc
+[2 109/213 7.136s] Compiling C object src/openrc/rc.p/rc-logger.c.o
+[2 110/213 7.422s] Compiling C object src/openrc/rc.p/.._shared_misc.c.o
+[2 111/213 7.457s] Compiling C object src/openrc/rc.p/rc.c.o
+[2 112/213 7.535s] Compiling C object src/openrc/rc.p/.._shared__usage.c.o
+[2 113/213 7.577s] Compiling C object src/openrc/rc.p/.._shared_plugin.c.o
+../src/shared/plugin.c: In function ‘rc_plugin_load’:
+../src/shared/plugin.c:94:24: warning: cast between incompatible function types from ‘dlfunc_t’ {aka ‘void (*)(struct __dlfunc_arg)’} to ‘int (*)(RC_HOOK,  const char *)’ [-Wcast-function-type]
+   94 |                 fptr = (int (*)(RC_HOOK, const char *))
+      |                        ^
+[2 114/213 7.592s] Linking target src/openrc/rc
+[2 115/213 7.677s] Compiling C object src/openrc-init/openrc-init.p/openrc-init.c.o
+[2 116/213 7.723s] Compiling C object src/openrc-init/openrc-init.p/.._shared_wtmp.c.o
+[2 117/213 7.747s] Compiling C object src/openrc-init/openrc-init.p/.._shared_plugin.c.o
+../src/shared/plugin.c: In function ‘rc_plugin_load’:
+../src/shared/plugin.c:94:24: warning: cast between incompatible function types from ‘dlfunc_t’ {aka ‘void (*)(struct __dlfunc_arg)’} to ‘int (*)(RC_HOOK,  const char *)’ [-Wcast-function-type]
+   94 |                 fptr = (int (*)(RC_HOOK, const char *))
+      |                        ^
+[2 118/213 7.760s] Linking target src/openrc-init/openrc-init
+[2 119/213 8.045s] Compiling C object src/openrc-run/openrc-run.p/.._shared_misc.c.o
+[2 120/213 8.201s] Compiling C object src/openrc-run/openrc-run.p/.._shared_plugin.c.o
+../src/shared/plugin.c: In function ‘rc_plugin_load’:
+../src/shared/plugin.c:94:24: warning: cast between incompatible function types from ‘dlfunc_t’ {aka ‘void (*)(struct __dlfunc_arg)’} to ‘int (*)(RC_HOOK,  const char *)’ [-Wcast-function-type]
+   94 |                 fptr = (int (*)(RC_HOOK, const char *))
+      |                        ^
+[2 121/213 8.280s] Compiling C object src/openrc-run/openrc-run.p/.._shared__usage.c.o
+[2 122/213 8.429s] Compiling C object src/openrc-run/openrc-run.p/openrc-run.c.o
+[2 123/213 8.444s] Linking target src/openrc-run/openrc-run
+[2 124/213 8.728s] Compiling C object src/openrc-run/runscript.p/.._shared_misc.c.o
+[2 125/213 8.883s] Compiling C object src/openrc-run/runscript.p/.._shared_plugin.c.o
+../src/shared/plugin.c: In function ‘rc_plugin_load’:
+../src/shared/plugin.c:94:24: warning: cast between incompatible function types from ‘dlfunc_t’ {aka ‘void (*)(struct __dlfunc_arg)’} to ‘int (*)(RC_HOOK,  const char *)’ [-Wcast-function-type]
+   94 |                 fptr = (int (*)(RC_HOOK, const char *))
+      |                        ^
+[2 126/213 8.962s] Compiling C object src/openrc-run/runscript.p/.._shared__usage.c.o
+[2 127/213 8.988s] Compiling C object src/openrc-run/runscript.p/openrc-run.c.o
+[2 128/213 9.003s] Linking target src/openrc-run/runscript
+[2 129/213 9.125s] Compiling C object src/openrc-shutdown/openrc-shutdown.p/broadcast.c.o
+[2 130/213 9.160s] Compiling C object src/openrc-shutdown/openrc-shutdown.p/openrc-shutdown.c.o
+[2 131/213 9.196s] Compiling C object src/openrc-shutdown/openrc-shutdown.p/sysvinit.c.o
+[2 132/213 9.274s] Compiling C object src/openrc-shutdown/openrc-shutdown.p/.._shared__usage.c.o
+[2 133/213 9.320s] Compiling C object src/openrc-shutdown/openrc-shutdown.p/.._shared_wtmp.c.o
+[2 134/213 9.366s] Compiling C object src/rc-abort/rc-abort.p/rc-abort.c.o
+[2 135/213 9.377s] Linking target src/rc-abort/rc-abort
+[2 136/213 9.445s] Compiling C object src/openrc-shutdown/openrc-shutdown.p/.._shared_misc.c.o
+[2 137/213 9.460s] Linking target src/openrc-shutdown/openrc-shutdown
+[2 138/213 9.485s] Compiling C object src/rc-depend/rc-depend.p/rc-depend.c.o
+[2 139/213 9.564s] Compiling C object src/rc-depend/rc-depend.p/.._shared__usage.c.o
+[2 140/213 9.663s] Compiling C object src/rc-service/rc-service.p/rc-service.c.o
+[2 141/213 9.744s] Compiling C object src/rc-depend/rc-depend.p/.._shared_misc.c.o
+[2 142/213 9.758s] Linking target src/rc-depend/rc-depend
+[2 143/213 9.835s] Compiling C object src/rc-service/rc-service.p/.._shared__usage.c.o
+[2 144/213 9.952s] Compiling C object src/rc-service/rc-service.p/.._shared_misc.c.o
+[2 145/213 9.966s] Linking target src/rc-service/rc-service
+[2 146/213 10.138s] Compiling C object src/rc-status/rc-status.p/rc-status.c.o
+[2 147/213 10.216s] Compiling C object src/rc-status/rc-status.p/.._shared__usage.c.o
+[2 148/213 10.252s] Compiling C object src/rc-status/rc-status.p/.._shared_misc.c.o
+[2 149/213 10.267s] Linking target src/rc-status/rc-status
+[2 150/213 10.412s] Compiling C object src/rc-update/rc-update.p/rc-update.c.o
+[2 151/213 10.491s] Compiling C object src/rc-update/rc-update.p/.._shared__usage.c.o
+[2 152/213 10.553s] Compiling C object src/rc-update/rc-update.p/.._shared_misc.c.o
+[2 153/213 10.561s] Compiling C object src/service/service_starting.p/service.c.o
+[2 154/213 10.567s] Linking target src/rc-update/rc-update
+[2 155/213 10.638s] Compiling C object src/service/service_started.p/service.c.o
+[2 156/213 10.847s] Compiling C object src/service/service_starting.p/.._shared_misc.c.o
+[2 157/213 10.860s] Linking target src/service/service_starting
+[2 158/213 10.924s] Compiling C object src/service/service_started.p/.._shared_misc.c.o
+[2 159/213 10.930s] Compiling C object src/service/service_stopping.p/service.c.o
+[2 160/213 10.937s] Linking target src/service/service_started
+[2 161/213 11.008s] Compiling C object src/service/service_stopped.p/service.c.o
+[2 162/213 11.216s] Compiling C object src/service/service_stopping.p/.._shared_misc.c.o
+[2 163/213 11.229s] Linking target src/service/service_stopping
+[2 164/213 11.294s] Compiling C object src/service/service_stopped.p/.._shared_misc.c.o
+[2 165/213 11.300s] Compiling C object src/service/service_inactive.p/service.c.o
+[2 166/213 11.308s] Linking target src/service/service_stopped
+[2 167/213 11.378s] Compiling C object src/service/service_wasinactive.p/service.c.o
+[2 168/213 11.584s] Compiling C object src/service/service_inactive.p/.._shared_misc.c.o
+[2 169/213 11.597s] Linking target src/service/service_inactive
+[2 170/213 11.663s] Compiling C object src/service/service_wasinactive.p/.._shared_misc.c.o
+[2 171/213 11.667s] Compiling C object src/service/service_hotplugged.p/service.c.o
+[2 172/213 11.677s] Linking target src/service/service_wasinactive
+[2 173/213 11.748s] Compiling C object src/service/service_started_daemon.p/service.c.o
+[2 174/213 11.954s] Compiling C object src/service/service_hotplugged.p/.._shared_misc.c.o
+[2 175/213 11.967s] Linking target src/service/service_hotplugged
+[2 176/213 12.034s] Compiling C object src/service/service_started_daemon.p/.._shared_misc.c.o
+[2 177/213 12.037s] Compiling C object src/service/service_crashed.p/service.c.o
+[2 178/213 12.047s] Linking target src/service/service_started_daemon
+[2 179/213 12.319s] Compiling C object src/service/service_crashed.p/.._shared_misc.c.o
+[2 180/213 12.332s] Linking target src/service/service_crashed
+[2 181/213 12.410s] Compiling C object src/seedrng/seedrng.p/.._shared__usage.c.o
+[2 182/213 12.455s] Compiling C object src/shell_var/shell_var.p/shell_var.c.o
+[2 183/213 12.466s] Linking target src/shell_var/shell_var
+[2 184/213 12.737s] Compiling C object src/seedrng/seedrng.p/seedrng.c.o
+[2 185/213 12.750s] Linking target src/seedrng/seedrng
+[2 186/213 12.795s] Compiling C object src/start-stop-daemon/start-stop-daemon.p/pipes.c.o
+[2 187/213 13.081s] Compiling C object src/start-stop-daemon/start-stop-daemon.p/.._shared_misc.c.o
+[2 188/213 13.126s] Compiling C object src/start-stop-daemon/start-stop-daemon.p/start-stop-daemon.c.o
+[2 189/213 13.205s] Compiling C object src/start-stop-daemon/start-stop-daemon.p/.._shared__usage.c.o
+[2 190/213 13.301s] Compiling C object src/start-stop-daemon/start-stop-daemon.p/.._shared_schedules.c.o
+[2 191/213 13.316s] Linking target src/start-stop-daemon/start-stop-daemon
+[2 192/213 13.603s] Compiling C object src/supervise-daemon/supervise-daemon.p/.._shared_misc.c.o
+[2 193/213 13.759s] Compiling C object src/supervise-daemon/supervise-daemon.p/.._shared_plugin.c.o
+../src/shared/plugin.c: In function ‘rc_plugin_load’:
+../src/shared/plugin.c:94:24: warning: cast between incompatible function types from ‘dlfunc_t’ {aka ‘void (*)(struct __dlfunc_arg)’} to ‘int (*)(RC_HOOK,  const char *)’ [-Wcast-function-type]
+   94 |                 fptr = (int (*)(RC_HOOK, const char *))
+      |                        ^
+[2 194/213 13.825s] Compiling C object src/supervise-daemon/supervise-daemon.p/supervise-daemon.c.o
+[2 195/213 13.904s] Compiling C object src/supervise-daemon/supervise-daemon.p/.._shared__usage.c.o
+[2 196/213 13.979s] Compiling C object src/supervise-daemon/supervise-daemon.p/.._shared_schedules.c.o
+[2 197/213 13.986s] Compiling C object src/swclock/swclock.p/swclock.c.o
+[2 198/213 13.995s] Linking target src/supervise-daemon/supervise-daemon
+[2 199/213 14.074s] Compiling C object src/swclock/swclock.p/.._shared__usage.c.o
+[2 200/213 14.134s] Compiling C object src/value/service_get_value.p/value.c.o
+[2 201/213 14.272s] Compiling C object src/swclock/swclock.p/.._shared_misc.c.o
+[2 202/213 14.286s] Linking target src/swclock/swclock
+[2 203/213 14.346s] Compiling C object src/value/service_set_value.p/value.c.o
+[2 204/213 14.421s] Compiling C object src/value/service_get_value.p/.._shared_misc.c.o
+[2 205/213 14.434s] Linking target src/value/service_get_value
+[2 206/213 14.495s] Compiling C object src/value/get_options.p/value.c.o
+[2 207/213 14.631s] Compiling C object src/value/service_set_value.p/.._shared_misc.c.o
+[2 208/213 14.645s] Linking target src/value/service_set_value
+[2 209/213 14.705s] Compiling C object src/value/save_options.p/value.c.o
+[2 210/213 14.782s] Compiling C object src/value/get_options.p/.._shared_misc.c.o
+[2 211/213 14.795s] Linking target src/value/get_options
+[1 212/213 14.990s] Compiling C object src/value/save_options.p/.._shared_misc.c.o
+[1 213/213 15.003s] Linking target src/value/save_options
+[2 1/104 0.097s] Generating src/shared/version with a custom command
+[1 2/104 0.100s] Generating src/shared/version.h with a custom command
+[1 2/3 0.100s] Installing files.
+Installing src/libeinfo/libeinfo.so.1 to /usr/lib
+Installing src/librc/librc.so.1 to /usr/lib
+Installing src/checkpath/checkpath to /usr/lib/rc/bin
+Installing src/einfo/einfon to /usr/lib/rc/bin
+Installing src/einfo/einfo to /usr/lib/rc/bin
+Installing src/einfo/ewarnn to /usr/lib/rc/bin
+Installing src/einfo/ewarn to /usr/lib/rc/bin
+Installing src/einfo/eerrorn to /usr/lib/rc/bin
+Installing src/einfo/eerror to /usr/lib/rc/bin
+Installing src/einfo/ebegin to /usr/lib/rc/bin
+Installing src/einfo/eend to /usr/lib/rc/bin
+Installing src/einfo/ewend to /usr/lib/rc/bin
+Installing src/einfo/eindent to /usr/lib/rc/bin
+Installing src/einfo/eoutdent to /usr/lib/rc/bin
+Installing src/einfo/esyslog to /usr/lib/rc/bin
+Installing src/einfo/eval_ecolors to /usr/lib/rc/bin
+Installing src/einfo/ewaitfile to /usr/lib/rc/bin
+Installing src/einfo/veinfo to /usr/lib/rc/bin
+Installing src/einfo/vewarn to /usr/lib/rc/bin
+Installing src/einfo/vebegin to /usr/lib/rc/bin
+Installing src/einfo/veend to /usr/lib/rc/bin
+Installing src/einfo/vewend to /usr/lib/rc/bin
+Installing src/einfo/veindent to /usr/lib/rc/bin
+Installing src/einfo/veoutdent to /usr/lib/rc/bin
+Installing src/fstabinfo/fstabinfo to /usr/lib/rc/bin
+Installing src/is_newer_than/is_newer_than to /usr/lib/rc/bin
+Installing src/is_older_than/is_older_than to /usr/lib/rc/bin
+Installing src/kill_all/kill_all to /usr/lib/rc/bin
+Installing src/mark_service/mark_service_starting to /usr/lib/rc/sbin
+Installing src/mark_service/mark_service_started to /usr/lib/rc/sbin
+Installing src/mark_service/mark_service_stopping to /usr/lib/rc/sbin
+Installing src/mark_service/mark_service_stopped to /usr/lib/rc/sbin
+Installing src/mark_service/mark_service_inactive to /usr/lib/rc/sbin
+Installing src/mark_service/mark_service_wasinactive to /usr/lib/rc/sbin
+Installing src/mark_service/mark_service_hotplugged to /usr/lib/rc/sbin
+Installing src/mark_service/mark_service_failed to /usr/lib/rc/sbin
+Installing src/mark_service/mark_service_crashed to /usr/lib/rc/sbin
+Installing src/mountinfo/mountinfo to /usr/lib/rc/bin
+Installing src/openrc/openrc to /usr/sbin
+Installing src/openrc/rc to /usr/sbin
+Installing src/openrc-init/openrc-init to /usr/sbin
+Installing src/openrc-run/openrc-run to /usr/sbin
+Installing src/openrc-run/runscript to /usr/sbin
+Installing src/openrc-shutdown/openrc-shutdown to /usr/sbin
+Installing src/rc-abort/rc-abort to /usr/lib/rc/sbin
+Installing src/rc-depend/rc-depend to /usr/lib/rc/bin
+Installing src/rc-service/rc-service to /usr/sbin
+Installing src/rc-status/rc-status to /usr/bin
+Installing src/rc-update/rc-update to /usr/sbin
+Installing src/service/service_starting to /usr/lib/rc/bin
+Installing src/service/service_started to /usr/lib/rc/bin
+Installing src/service/service_stopping to /usr/lib/rc/bin
+Installing src/service/service_stopped to /usr/lib/rc/bin
+Installing src/service/service_inactive to /usr/lib/rc/bin
+Installing src/service/service_wasinactive to /usr/lib/rc/bin
+Installing src/service/service_hotplugged to /usr/lib/rc/bin
+Installing src/service/service_started_daemon to /usr/lib/rc/bin
+Installing src/service/service_crashed to /usr/lib/rc/bin
+Installing src/seedrng/seedrng to /usr/lib/rc/sbin
+Installing src/shell_var/shell_var to /usr/lib/rc/bin
+Installing src/start-stop-daemon/start-stop-daemon to /usr/sbin
+Installing src/supervise-daemon/supervise-daemon to /usr/sbin
+Installing src/swclock/swclock to /usr/lib/rc/sbin
+Installing src/value/service_get_value to /usr/lib/rc/bin
+Installing src/value/service_set_value to /usr/lib/rc/bin
+Installing src/value/get_options to /usr/lib/rc/bin
+Installing src/value/save_options to /usr/lib/rc/bin
+Installing /sources/openrc-0.48/src/libeinfo/einfo.h to /usr/include/
+Installing /sources/openrc-0.48/build/src/librc/rc.h to /usr/include/
+Installing /sources/openrc-0.48/bash-completion/openrc to /usr/share/bash-completion/completions
+Installing /sources/openrc-0.48/bash-completion/openrc-service-script to /usr/share/bash-completion/completions
+Installing /sources/openrc-0.48/bash-completion/rc-service to /usr/share/bash-completion/completions
+Installing /sources/openrc-0.48/bash-completion/rc-status to /usr/share/bash-completion/completions
+Installing /sources/openrc-0.48/bash-completion/rc-update to /usr/share/bash-completion/completions
+Installing /sources/openrc-0.48/conf.d/bootmisc to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/fsck to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/hostname to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/localmount to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/netmount to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/swap to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/swclock to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/network to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/staticroute to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/agetty to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/consolefont to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/devfs to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/dmesg to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/hwclock to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/keymaps to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/killprocs to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/modules to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/mtab to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/net-online to /etc/conf.d
+Installing /sources/openrc-0.48/conf.d/seedrng to /etc/conf.d
+Installing /sources/openrc-0.48/etc/rc.conf to /etc
+Installing /sources/openrc-0.48/build/init.d/bootmisc to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/fsck to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/hostname to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/local to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/localmount to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/loopback to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/netmount to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/osclock to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/root to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/savecache to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/swap to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/swclock to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/sysctl to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/runsvdir to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/s6-svscan to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/network to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/staticroute to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/agetty to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/binfmt to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/cgroups to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/consolefont to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/devfs to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/dmesg to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/hwclock to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/keymaps to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/killprocs to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/modules to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/mount-ro to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/mtab to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/numlock to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/procfs to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/net-online to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/save-keymaps to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/save-termencoding to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/seedrng to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/sysfs to /etc/init.d
+Installing /sources/openrc-0.48/build/init.d/termencoding to /etc/init.d
+Installing /sources/openrc-0.48/local.d/README to /etc/local.d
+Installing /sources/openrc-0.48/man/einfo.3 to /usr/share/man/man3
+Installing /sources/openrc-0.48/man/rc_config.3 to /usr/share/man/man3
+Installing /sources/openrc-0.48/man/rc_deptree.3 to /usr/share/man/man3
+Installing /sources/openrc-0.48/man/rc_find_pids.3 to /usr/share/man/man3
+Installing /sources/openrc-0.48/man/rc_plugin_hook.3 to /usr/share/man/man3
+Installing /sources/openrc-0.48/man/rc_runlevel.3 to /usr/share/man/man3
+Installing /sources/openrc-0.48/man/rc_service.3 to /usr/share/man/man3
+Installing /sources/openrc-0.48/man/rc_stringlist.3 to /usr/share/man/man3
+Installing /sources/openrc-0.48/man/openrc.8 to /usr/share/man/man8
+Installing /sources/openrc-0.48/man/openrc-run.8 to /usr/share/man/man8
+Installing /sources/openrc-0.48/man/rc-service.8 to /usr/share/man/man8
+Installing /sources/openrc-0.48/man/rc-status.8 to /usr/share/man/man8
+Installing /sources/openrc-0.48/man/rc-update.8 to /usr/share/man/man8
+Installing /sources/openrc-0.48/man/start-stop-daemon.8 to /usr/share/man/man8
+Installing /sources/openrc-0.48/man/supervise-daemon.8 to /usr/share/man/man8
+Installing /sources/openrc-0.48/man/rc-sstat.8 to /usr/share/man/man8
+Installing /sources/openrc-0.48/man/openrc-init.8 to /usr/share/man/man8
+Installing /sources/openrc-0.48/man/openrc-shutdown.8 to /usr/share/man/man8
+Installing /sources/openrc-0.48/build/pkgconfig/einfo.pc to /usr/lib/pkgconfig
+Installing /sources/openrc-0.48/build/pkgconfig/openrc.pc to /usr/lib/pkgconfig
+Installing /sources/openrc-0.48/sh/rc-functions.sh to /usr/lib/rc/sh
+Installing /sources/openrc-0.48/sh/rc-mount.sh to /usr/lib/rc/sh
+Installing /sources/openrc-0.48/sh/runit.sh to /usr/lib/rc/sh
+Installing /sources/openrc-0.48/sh/s6.sh to /usr/lib/rc/sh
+Installing /sources/openrc-0.48/sh/start-stop-daemon.sh to /usr/lib/rc/sh
+Installing /sources/openrc-0.48/sh/supervise-daemon.sh to /usr/lib/rc/sh
+Installing /sources/openrc-0.48/sh/rc-cgroup.sh to /usr/lib/rc/sh
+Installing /sources/openrc-0.48/build/sh/functions.sh to /usr/lib/rc/sh
+Installing /sources/openrc-0.48/build/sh/gendepends.sh to /usr/lib/rc/sh
+Installing /sources/openrc-0.48/build/sh/openrc-run.sh to /usr/lib/rc/sh
+Installing /sources/openrc-0.48/build/sh/binfmt.sh to /usr/lib/rc/sh
+Installing /sources/openrc-0.48/build/sh/cgroup-release-agent.sh to /usr/lib/rc/sh
+Installing /sources/openrc-0.48/build/sh/init-early.sh to /usr/lib/rc/sh
+Installing /sources/openrc-0.48/build/sh/init.sh to /usr/lib/rc/sh
+Installing /sources/openrc-0.48/src/on_ac_power/on_ac_power to /usr/lib/rc/bin
+Installing /sources/openrc-0.48/src/rc-sstat/rc-sstat to /usr/sbin
+Installing /sources/openrc-0.48/support/deptree2dot/deptree2dot to /usr/share/openrc/support/deptree2dot
+Installing /sources/openrc-0.48/support/deptree2dot/README.md to /usr/share/openrc/support/deptree2dot
+Installing /sources/openrc-0.48/build/support/init.d.examples/avahi-dnsconfd to /usr/share/openrc/support/init.d.examples
+Installing /sources/openrc-0.48/build/support/init.d.examples/avahid to /usr/share/openrc/support/init.d.examples
+Installing /sources/openrc-0.48/build/support/init.d.examples/dhcpcd to /usr/share/openrc/support/init.d.examples
+Installing /sources/openrc-0.48/build/support/init.d.examples/dbus to /usr/share/openrc/support/init.d.examples
+Installing /sources/openrc-0.48/build/support/init.d.examples/hald to /usr/share/openrc/support/init.d.examples
+Installing /sources/openrc-0.48/build/support/init.d.examples/named to /usr/share/openrc/support/init.d.examples
+Installing /sources/openrc-0.48/build/support/init.d.examples/ntpd to /usr/share/openrc/support/init.d.examples
+Installing /sources/openrc-0.48/build/support/init.d.examples/openvpn to /usr/share/openrc/support/init.d.examples
+Installing /sources/openrc-0.48/build/support/init.d.examples/polkitd to /usr/share/openrc/support/init.d.examples
+Installing /sources/openrc-0.48/build/support/init.d.examples/sshd to /usr/share/openrc/support/init.d.examples
+Installing /sources/openrc-0.48/build/support/init.d.examples/wpa_supplicant to /usr/share/openrc/support/init.d.examples
+Installing /sources/openrc-0.48/support/init.d.examples/README.md to /usr/share/openrc/support/init.d.examples
+Installing /sources/openrc-0.48/support/openvpn/down.sh to /usr/share/openrc/support/openvpn
+Installing /sources/openrc-0.48/support/openvpn/up.sh to /usr/share/openrc/support/openvpn
+Installing /sources/openrc-0.48/support/openvpn/README.md to /usr/share/openrc/support/openvpn
+Installing /sources/openrc-0.48/support/sysvinit/halt.sh to /usr/share/openrc/support/sysvinit
+Installing /sources/openrc-0.48/support/sysvinit/inittab to /usr/share/openrc/support/sysvinit
+Installing /sources/openrc-0.48/support/sysvinit/README.md to /usr/share/openrc/support/sysvinit
+Installing /sources/openrc-0.48/sysctl.d/README to /etc/sysctl.d
+Installing /sources/openrc-0.48/zsh-completion/_openrc to /usr/share/zsh/site-functions
+Installing /sources/openrc-0.48/zsh-completion/_rc-service to /usr/share/zsh/site-functions
+Installing /sources/openrc-0.48/zsh-completion/_rc-status to /usr/share/zsh/site-functions
+Installing /sources/openrc-0.48/zsh-completion/_rc-update to /usr/share/zsh/site-functions
+Installing symlink pointing to libeinfo.so.1 to /usr/lib/libeinfo.so
+Installing symlink pointing to librc.so.1 to /usr/lib/librc.so
+Running custom install script '/sources/openrc-0.48/man/meson_man_links.sh share/man einfo.3 rc_config.3 rc_deptree.3 rc_find_pids.3 rc_plugin_hook.3 rc_runlevel.3 rc_service.3 rc_stringlist.3 openrc.8 openrc-run.8 rc-service.8 rc-status.8 rc-update.8 start-stop-daemon.8 supervise-daemon.8 rc-sstat.8 openrc-init.8 openrc-shutdown.8'
+Running custom install script '/sources/openrc-0.48/tools/meson_runlevels.sh Linux yes /usr/lib/rc /etc no'
+Running custom install script '/sources/openrc-0.48/tools/meson_final.sh /usr/lib/rc /usr/sbin Linux no'
+'/usr/sbin/init' -> 'openrc-init'
+'halt' -> '/usr/sbin/halt'
+'poweroff' -> '/usr/sbin/poweroff'
+'reboot' -> '/usr/sbin/reboot'
+'shutdown' -> '/usr/sbin/shutdown'
+removed '/etc/conf.d/hostname'
+removed '/etc/runlevels/sysinit/cgroups'
+removed '/etc/runlevels/sysinit/sysfs'
+removed '/etc/runlevels/default/local'
+removed '/etc/runlevels/nonetwork/local'
+removed '/etc/init.d/local'
+removed '/etc/conf.d/mtab'
+removed '/etc/init.d/mtab'
+removed '/etc/runlevels/boot/mtab'
+removed '/etc/runlevels/boot/swap'
+removed '/etc/runlevels/default/netmount'
+'/etc/init.d/agetty.tty1' -> 'agetty'
+'/etc/conf.d/agetty.tty1' -> 'agetty'
+'/etc/runlevels/default/agetty.tty1' -> '/etc/init.d/agetty.tty1'
+'/etc/init.d/agetty.tty2' -> 'agetty'
+'/etc/conf.d/agetty.tty2' -> 'agetty'
+'/etc/runlevels/default/agetty.tty2' -> '/etc/init.d/agetty.tty2'
+'/etc/init.d/agetty.tty3' -> 'agetty'
+'/etc/conf.d/agetty.tty3' -> 'agetty'
+'/etc/runlevels/default/agetty.tty3' -> '/etc/init.d/agetty.tty3'
+'/etc/init.d/agetty.tty4' -> 'agetty'
+'/etc/conf.d/agetty.tty4' -> 'agetty'
+'/etc/runlevels/default/agetty.tty4' -> '/etc/init.d/agetty.tty4'
+'/etc/init.d/agetty.tty5' -> 'agetty'
+'/etc/conf.d/agetty.tty5' -> 'agetty'
+'/etc/runlevels/default/agetty.tty5' -> '/etc/init.d/agetty.tty5'
+'/etc/init.d/agetty.tty6' -> 'agetty'
+'/etc/conf.d/agetty.tty6' -> 'agetty'
+'/etc/runlevels/default/agetty.tty6' -> '/etc/init.d/agetty.tty6'
+
+
+Fri Aug  4 00:48:54 CST 2023
+
+Totalseconds: 17
+
+KB: 1512932	/
+

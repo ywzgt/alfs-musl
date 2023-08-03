@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SRC="attr"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--disable-static \
+	--sysconfdir=/etc \
+	--docdir=/usr/share/doc/attr
+
+make
+make install
