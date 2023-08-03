@@ -1,0 +1,19 @@
+#!/bin/bash
+# https://gitlab.archlinux.org/archlinux/packaging/packages/fakeroot
+# https://git.alpinelinux.org/aports/tree/main/fakeroot/APKBUILD
+# https://github.com/void-linux/void-packages/tree/master/srcpkgs/fakeroot
+# https://packages.debian.org/source/sid/fakeroot
+
+SRC="fakeroot"
+PKG="$SRC"
+
+# musl does not have _STAT_VER, it's really not used for
+# anything, so define it as zero (just like uclibc does)
+export CFLAGS="-D_STAT_VER=0 $CFLAGS"
+
+
+./bootstrap
+./configure --prefix=/usr \
+		--disable-static
+make
+make install

@@ -1,0 +1,49 @@
+Fri Aug  4 00:04:17 CST 2023
+KB: 1474624	/
+
+pip 23.1.2 from /usr/lib/python3.11/site-packages/pip (python 3.11)
+Processing /sources/wheel-0.41.0
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: wheel
+  Building wheel for wheel (pyproject.toml): started
+  Building wheel for wheel (pyproject.toml): finished with status 'done'
+  Created wheel for wheel: filename=wheel-0.41.0-py3-none-any.whl size=64712 sha256=98b7f39721ef50e070a1d865835029f60674e0debb9009257b49fae93648a583
+  Stored in directory: /root/.cache/pip/wheels/64/61/04/2705e03d26e9f7c96645e3177ccd4f24e92be981696089fbf3
+Successfully built wheel
+
+[notice] A new release of pip is available: 23.1.2 -> 23.2.1
+[notice] To update, run: pip3 install --upgrade pip
+Looking in links: dist
+Processing ./dist/wheel-0.41.0-py3-none-any.whl
+Installing collected packages: wheel
+Successfully installed wheel-0.41.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+
+removed '/root/.cache/pip/selfcheck/241e69162522ccf5846a2f42ebc24b17464915a155679666b89a9f31'
+removed directory '/root/.cache/pip/selfcheck'
+removed '/root/.cache/pip/wheels/64/61/04/2705e03d26e9f7c96645e3177ccd4f24e92be981696089fbf3/origin.json'
+removed '/root/.cache/pip/wheels/64/61/04/2705e03d26e9f7c96645e3177ccd4f24e92be981696089fbf3/wheel-0.41.0-py3-none-any.whl'
+removed directory '/root/.cache/pip/wheels/64/61/04/2705e03d26e9f7c96645e3177ccd4f24e92be981696089fbf3'
+removed directory '/root/.cache/pip/wheels/64/61/04'
+removed directory '/root/.cache/pip/wheels/64/61'
+removed directory '/root/.cache/pip/wheels/64'
+removed directory '/root/.cache/pip/wheels'
+removed '/root/.cache/pip/http/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a'
+removed directory '/root/.cache/pip/http/a/1/9/5/3'
+removed directory '/root/.cache/pip/http/a/1/9/5'
+removed directory '/root/.cache/pip/http/a/1/9'
+removed directory '/root/.cache/pip/http/a/1'
+removed directory '/root/.cache/pip/http/a'
+removed directory '/root/.cache/pip/http'
+removed directory '/root/.cache/pip'
+removed directory '/root/.cache'
+
+
+Fri Aug  4 00:04:19 CST 2023
+
+Totalseconds: 2
+
+KB: 1476120	/
+

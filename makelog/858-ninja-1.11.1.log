@@ -1,0 +1,74 @@
+Fri Aug  4 00:04:21 CST 2023
+KB: 1475264	/
+
+/sources/ninja-1.11.1/configure.py:26: DeprecationWarning: 'pipes' is deprecated and slated for removal in Python 3.13
+  import pipes
+[01m[K./src/ninja.cc:[m[K In constructor ‘[01m[K{anonymous}::DeferGuessParallelism::[01;32m[KDeferGuessParallelism[m[K(BuildConfig*)[m[K’:
+[01m[K./src/ninja.cc:1405:16:[m[K [01;35m[Kwarning: [m[K‘[01m[K{anonymous}::DeferGuessParallelism::config[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+ 1405 |   BuildConfig* [01;35m[Kconfig[m[K;
+      |                [01;35m[K^~~~~~[m[K
+[01m[K./src/ninja.cc:1404:8:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool {anonymous}::DeferGuessParallelism::needGuess[m[K’ [[01;35m[K-Wreorder[m[K]
+ 1404 |   bool [01;35m[KneedGuess[m[K;
+      |        [01;35m[K^~~~~~~~~[m[K
+[01m[K./src/ninja.cc:1407:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+ 1407 |   [01;35m[KDeferGuessParallelism[m[K(BuildConfig* config)
+      |   [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2 1/32 0.020s] INLINE build/browse_py.h
+[2 2/32 0.460s] CXX build/browse.o
+[2 3/32 2.310s] CXX build/build_log.o
+[2 4/32 3.925s] CXX build/build.o
+[2 5/32 4.021s] CXX build/clean.o
+[2 6/32 4.038s] CXX build/debug_flags.o
+[2 7/32 4.833s] CXX build/depfile_parser.o
+[2 8/32 4.884s] CXX build/clparser.o
+[2 9/32 5.709s] CXX build/disk_interface.o
+[2 10/32 6.389s] CXX build/deps_log.o
+[2 11/32 7.153s] CXX build/dyndep.o
+[2 12/32 7.723s] CXX build/edit_distance.o
+[2 13/32 8.025s] CXX build/dyndep_parser.o
+[2 14/32 9.330s] CXX build/eval_env.o
+[2 15/32 10.491s] CXX build/graphviz.o
+[2 16/32 11.252s] CXX build/json.o
+[2 17/32 11.270s] CXX build/graph.o
+[2 18/32 12.126s] CXX build/line_printer.o
+[2 19/32 12.480s] CXX build/lexer.o
+[2 20/32 13.132s] CXX build/metrics.o
+[2 21/32 14.093s] CXX build/manifest_parser.o
+[2 22/32 14.829s] CXX build/parser.o
+[2 23/32 15.451s] CXX build/missing_deps.o
+[2 24/32 16.901s] CXX build/status.o
+[2 25/32 16.963s] CXX build/state.o
+[2 26/32 17.689s] CXX build/string_piece_util.o
+[2 27/32 18.215s] CXX build/version.o
+[2 28/32 19.298s] CXX build/subprocess-posix.o
+[2 29/32 19.331s] CXX build/util.o
+[2 30/32 19.360s] AR build/libninja.a
+[1 31/32 22.991s] CXX build/ninja.o
+src/ninja.cc: In constructor ‘{anonymous}::DeferGuessParallelism::DeferGuessParallelism(BuildConfig*)’:
+src/ninja.cc:1405:16: warning: ‘{anonymous}::DeferGuessParallelism::config’ will be initialized after [-Wreorder]
+ 1405 |   BuildConfig* config;
+      |                ^~~~~~
+src/ninja.cc:1404:8: warning:   ‘bool {anonymous}::DeferGuessParallelism::needGuess’ [-Wreorder]
+ 1404 |   bool needGuess;
+      |        ^~~~~~~~~
+src/ninja.cc:1407:3: warning:   when initialized here [-Wreorder]
+ 1407 |   DeferGuessParallelism(BuildConfig* config)
+      |   ^~~~~~~~~~~~~~~~~~~~~
+[1 32/32 23.184s] LINK ninja
+bootstrapping ninja...
+warning: A compatible version of re2c (>= 0.11.3) was not found; changes to src/*.in.cc will not affect your build.
+wrote build.ninja.
+bootstrap complete.  rebuilding...
+'ninja' -> '/usr/bin/ninja'
+'misc/bash-completion' -> '/usr/share/bash-completion/completions/ninja'
+install: creating directory '/usr/share/zsh'
+install: creating directory '/usr/share/zsh/site-functions'
+'misc/zsh-completion' -> '/usr/share/zsh/site-functions/_ninja'
+
+
+Fri Aug  4 00:05:24 CST 2023
+
+Totalseconds: 63
+
+KB: 1499208	/
+
