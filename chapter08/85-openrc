@@ -1,0 +1,91 @@
+#!/bin/bash
+# https://github.com/OpenRC/openrc/blob/master/agetty-guide.md
+# https://github.com/OpenRC/openrc/tags
+
+SRC="openrc"
+PKG="$SRC"
+
+mkdir -v build
+cd build
+
+meson setup --prefix=/usr \
+	--buildtype=release \
+	--sysconfdir=/etc \
+	-Dsplit-usr=true \
+	-Dpam=false \
+	-Dos=Linux \
+	-Dselinux=disabled \
+	-Dsysvinit=false \
+	-Dpkgconfig=true \
+	-Dtermcap=ncurses \
+	-Dshell=/bin/bash \
+	-Dbranding="\"Linux From Scratch <musl>\"" \
+	-Dzsh-completions=true \
+	-Dbash-completions=true ..
+
+ninja
+DESTDIR=/ ninja install
+
+ln -sv openrc-init /usr/sbin/init
+
+for i in {halt,poweroff,reboot,shutdown}; do
+		sed 's:@SBINDIR@:/usr/sbin:' ../src/$i/${i}.in >"$i"
+		sed '/script_args=now/s/now/0/' -i "$i"
+		install -Dvm 755 $i -t /usr/sbin/
+done
+
+
+# 硬件时间 (RTC) 设为本地时间
+sed -i '/^clock="UTC"$/s/UTC/local/' /etc/conf.d/hwclock
+
+# 开启 unicode支持
+sed -i '/^#unicode=/c\unicode="YES"' /etc/rc.conf
+
+# 从 /etc/hostname 读取主机名
+rm -fv /etc/conf.d/hostname
+
+# 为防止丢失文件错误，创建文件：
+printf '# content of this file will override /etc/sysctl.d/*' >/etc/sysctl.conf
+
+# 取消两个默认自启项 （开启会报错）
+rm -fv /etc/runlevels/sysinit/{cgroups,sysfs}
+
+# 不使用 local 服务
+# 运行 /etc/openrc/local.d/README 目录下的脚本
+rm -fv /etc/runlevels/{default,nonetwork}/local
+rm -fv /etc/init.d/local
+
+# 没必要每次启动都创建软连接  /etc/mtab -> ../proc/self/mounts
+rm -fv /etc/*/mtab
+rm -fv /etc/runlevels/*/mtab
+
+
+# 默认启用 /etc/fstab 中的所有交换区
+rm -fv /etc/runlevels/boot/swap
+
+# 根据 /etc/fstab 挂载网络共享  nfs,nfs4 等
+rm -fv /etc/runlevels/default/netmount
+
+# 需要手动启用getty服务
+for n in {1..6}; do
+	ln -svr /etc/init.d/agetty{,.tty${n}}
+	ln -svr /etc/conf.d/agetty{,.tty${n}}
+	ln -sv /etc/init.d/agetty.tty${n} "/etc/runlevels/default/agetty.tty$n"
+done
+# 自启 tty;  和  rc-update add agetty.tty1 default   效果一样
+
+# 没必要创建 uucp 组
+for f in /usr/lib{,exec}/rc/sh/init.sh; do
+	[ ! -e $f ] || sed -i '/root:uucp/s/uucp/root/' $f
+done
+
+
+
+# udev 服务
+for i in udev{,-settle,-trigger}; do
+	wget -nv https://github.com/windsey/openrc-services/raw/main/conf.d/$i -P /etc/conf.d/
+	wget -nv https://github.com/windsey/openrc-services/raw/main/init.d/$i.in -O- | sed -e 's|@RUNSCRIPT@|/usr/sbin/openrc-run|' \
+		-e 's|/sbin/udevd|/bin/udevd|' > /etc/init.d/$i
+	chmod -v 755 "/etc/init.d/$i"
+	ln -sv "/etc/init.d/$i" /etc/runlevels/sysinit/
+done

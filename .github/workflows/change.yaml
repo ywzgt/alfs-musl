@@ -1,0 +1,50 @@
+name: Wget-list change
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 */30 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions: write-all
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+      with:
+        ref: blfs-change
+        fetch-depth: 1
+    - name: Checkout Repository book
+      run: |
+        mkdir -v book
+        cd book
+        git init 2>/dev/null
+        git config --global user.name "Github Actions"
+        git config --global user.email "action@github.com"
+        git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+        git pull origin blfs
+        if [ "$(git rev-list --count HEAD)" -ge 3 ]; then echo "CONTINUE_RUN=1" >>$GITHUB_ENV; fi
+
+    - name: Compare different
+      if: ${{ env.CONTINUE_RUN == 1 }}
+      run: |
+        cd book
+        OLD_VER="$(git diff HEAD^ HEAD index.html|grep '^-.*Revision'|sed 's/^.*Revision\s//')"
+        NEW_VER="$(git diff HEAD^ HEAD index.html|grep '^+.*Revision'|sed 's/^.*Revision\s//')"
+        if [ -n "$OLD_VER" ] && [ -n "$NEW_VER" ]; then
+          NAME=${OLD_VER}_${NEW_VER}.diff
+          export TZ=GMT-8
+          mkdir -pv ../$(date +%Y%m)
+          git diff HEAD^ HEAD wget-list > ../$(date +%Y%m)/$NAME
+          if [ -n "$(cat ../$(date +%Y%m)/$NAME)" ]; then
+            cd ..
+            git add $(date +%Y)*
+            git commit -m "Generated $(date +%Y%m%d\ %H:%M)" || echo -e '\e[01;36mNo commit !'
+            git push || { echo -e '\e[01;31mNo update !'; }
+          else
+            echo -e '\e[01;31mNo update !'
+          fi
+        else
+          echo -e '\e[01;31mNo update !'
+        fi

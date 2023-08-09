@@ -1,0 +1,20 @@
+export BUILDDIR="/lfs_build"
+export SRC_ARCHIVE="$BUILDDIR/sources"
+export LFS="$BUILDDIR"
+export log_dir="$PWD/log"
+
+export SRC_ROOT="/sources"
+export BLD_ROOT="/alfs"
+export LOG_DIR="$BLD_ROOT/log"
+export FILE_DIR="$BLD_ROOT/installed-files"
+
+# wget-list channels
+export channels="development" # stable 11.3 ... https://www.linuxfromscratch.org/lfs/downloads
+
+export CFLAGS="-march=haswell -Os -pipe -fno-plt -fPIC -DNDEBUG"
+export CXXFLAGS="$CFLAGS -Wp,-D_GLIBCXX_ASSERTIONS"
+export CPPFLAGS="-Os -pipe -fPIC -DNDEBUG"
+export LDFLAGS="-Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now"
+export MAKEFLAGS="-j$(nproc)"
+export NINJAJOBS="$(nproc)"
+export NINJA_STATUS="[%r %f/%t %es] "

@@ -1,0 +1,203 @@
+name: Build x32
+on:
+  workflow_dispatch:
+  #schedule:
+    #- cron: '05 08 * * *'   #Runs at 08:05 UTC  https://docs.github.com/zh/actions/using-workflows/workflow-syntax-for-github-actions#onschedule
+    #- cron: '5 14,20 7 5 0' #Runs at 14:05 and 20:05, on day 7 of the month, and on Sunday, only in May. UTC (Two triggers: specific date, the day of the week)
+    #- cron: '5 02,08 8 5 *' #Runs at 02:05 and 08:05, on day 8 of the month, only in May. UTC (One trigger: specific date)
+
+jobs:
+  build-muslx32:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+    - name: Check
+      run: |
+        git config --global user.name "Github Actions"
+        git config --global user.email "noreply@github.com"
+        printf 'Processor: '; cat /proc/cpuinfo|grep processor|wc -l
+        cat /proc/cpuinfo|grep 'model name'|head -1
+        cat /proc/meminfo|head; echo ' '
+        uname -a; echo ' '
+        sudo ln -sf bash /bin/sh
+        bash -e script/version-check
+        echo ' '; df -Th; echo ' '; free -h
+        sed -i '/^LFS_TGT=/s/linux-musl/&x32/' bashrc
+        echo 'export X32=y' >>envars
+
+    - name: Get Sources
+      run: |
+        source envars
+        sudo mkdir -p "${SRC_ARCHIVE}"
+        sudo chown -R $(id -u):$(id -g) "${SRC_ARCHIVE}"
+        wget -nv -cP "${SRC_ARCHIVE}" https://www.linuxfromscratch.org/lfs/downloads/$channels/{wget-list,md5sums}
+        sed -e '/html.tar\|systemd\|glibc\|grub\|lfs-bootscripts/d' -i "${SRC_ARCHIVE}/"{wget-list,md5sums}
+        [ ! -e sources.list ] || grep -Ev '^#|^$' sources.list >> "${SRC_ARCHIVE}/wget-list"
+        [ ! -d files ] || cp -v files/* "${SRC_ARCHIVE}"
+        if [ -d chapter09 ]; then
+          [ -e chapter09/.ignore ] && ignore_src="$(<chapter09/.ignore)"
+          wget -nv "https://github.com/${{ github.repository }}/raw/blfs/wget-list"
+          for i in chapter09/*; do
+            grep '^SRC=' $i >tmp
+            . tmp
+            if [ -n "$SRC" ] && [[ ! $ignore_src =~ "$SRC" ]]; then
+              grep "^.*//.*/$SRC" wget-list >>"${SRC_ARCHIVE}/wget-list"
+            fi
+          done
+          grep '^.*//.*/nano' wget-list >>"${SRC_ARCHIVE}/wget-list"
+          grep '^.*//.*/pcre2' wget-list >>"${SRC_ARCHIVE}/wget-list"
+          fakeroot_src="$(curl -sL https://packages.debian.org/source/sid/fakeroot|awk '/.orig.tar.gz/'|sed 's/<.*="\|">.*$//g')"
+          fakeroot_md5="$(curl -sL https://packages.debian.org/source/sid/fakeroot| grep -A2 orig.tar.gz|tail -1|sed 's/<.*">\|<\/.*//g')"
+          echo "$fakeroot_src" >>"${SRC_ARCHIVE}/wget-list"
+          echo "$fakeroot_md5  $(basename $fakeroot_src)" >>"${SRC_ARCHIVE}/md5sums"
+        fi
+        wget -nv -cP "${SRC_ARCHIVE}" -i "${SRC_ARCHIVE}/wget-list"
+        for i in {md5,b2,sha{1,224,256,384,512}}; do
+          if [ -e sources.${i} ]; then grep -Ev '^#|^$' sources.${i} >> "${SRC_ARCHIVE}/${i}sums"
+            pushd "${SRC_ARCHIVE}" >/dev/null
+            echo ' '
+            ${i}sum -c ${i}sums
+            popd >/dev/null
+          fi
+        done
+        TZ_VER="$(curl -s https://www.linuxfromscratch.org/lfs/downloads/$channels/wget-list|grep tzdata|sed 's/^.*\/tzdata\|.tar.*$//g')"
+        cd "$SRC_ARCHIVE"
+        wget -nv https://data.iana.org/time-zones/releases/tzcode${TZ_VER}.tar.gz
+        mkdir -pv tz{utils,data}-$TZ_VER
+        tar -xf tzcode${TZ_VER}.tar.gz -C tzutils-$TZ_VER
+        tar -xf tzdata${TZ_VER}.tar.gz -C tzutils-$TZ_VER
+        tar -xf tzdata${TZ_VER}.tar.gz -C tzdata-$TZ_VER
+        rm -fv tz*${TZ_VER}.tar*
+        tar -zcf tzdata-${TZ_VER}.tar.gz tzdata-$TZ_VER
+        tar -zcf tzutils-${TZ_VER}.tar.gz tzutils-$TZ_VER
+        rm -rf tz{utils,data}-$TZ_VER
+        ls -l tz*${TZ_VER}.tar*
+        mv -v systemd-musl-patches*.tar.gz gentoo-systemd-musl-patches.tar.gz
+        TGZ="$(find . -type f -name '*.tgz')"
+        ZIP="$(find . -type f -name '*.zip')"
+        if [[ -n "$TGZ" ]]; then for f in $TGZ; do mv -v $f ${f%.tgz}.tar.gz; done; fi
+        if [[ -n "$ZIP" ]]; then
+          for f in $ZIP; do
+            unzip -q $f -d ZIP_SRC
+            (cd ZIP_SRC; tar zcf - .) >${f%.zip}.tar.gz
+            rm -v $f && ls -l ${f%.zip}.tar.gz
+            rm -rf ZIP_SRC
+          done
+        fi
+
+    - name: Fix Sources
+      run: source envars; test ! -e script/fixsrc || bash -e script/fixsrc
+    - name: Final Preparations
+      run: |
+        source envars
+        sudo mkdir -pv $LFS/{etc,var} $LFS/usr/{bin,lib,sbin}
+        for i in bin lib sbin; do sudo ln -sv usr/$i $LFS/$i; done
+        sudo mkdir -pv $LFS/tools
+        echo "status_dir=$PWD" >> bashrc
+        sed -i "/log_dir=/s/\$PWD/${PWD//\//\\/}/" envars
+    - name: Chapter 5. Compiling a Cross-Toolchain
+      run: sudo env -i HOME=$HOME TERM=$TERM bash -e script/buildpkg chapter05/*
+    - name: Chapter 6. Cross Compiling Temporary Tools
+      run: sudo env -i HOME=$HOME TERM=$TERM bash -e script/buildpkg chapter06/*
+
+    - name: Preparing Virtual Kernel File Systems and Creating Directories
+      run: |
+        source envars
+        sudo mkdir -pv $LFS/{dev,proc,sys,run,tmp}
+        sudo mount -v --bind /dev $LFS/dev
+        sudo mount -v --bind /dev/pts $LFS/dev/pts
+        sudo mount -vt proc proc $LFS/proc
+        sudo mount -vt sysfs sysfs $LFS/sys
+        sudo mount -vt tmpfs tmpfs $LFS/run
+        sudo mount -vt tmpfs tmpfs $LFS/tmp
+        if [ -h $LFS/dev/shm ]; then sudo mkdir -pv $LFS/$(readlink $LFS/dev/shm); else sudo mount -vt tmpfs -o nosuid,nodev devshm $LFS/dev/shm; fi
+        echo ''
+        sudo mkdir -pv $LFS/{boot,home,mnt,opt,srv}
+        sudo mkdir -pv $LFS/etc/{opt,sysconfig}
+        sudo mkdir -pv $LFS/usr/{,local/}{include,src}
+        sudo mkdir -pv $LFS/usr/local/{bin,lib,sbin}
+        sudo mkdir -pv $LFS/usr/{,local/}share/{color,dict,doc,info,locale,man}
+        sudo mkdir -pv $LFS/usr/{,local/}share/{misc,terminfo,zoneinfo}
+        sudo mkdir -pv $LFS/usr/{,local/}share/man/man{1..8}
+        sudo mkdir -pv $LFS/var/{cache,local,log,mail,opt,spool}
+        sudo mkdir -pv $LFS/var/lib/{color,misc,locate}
+        sudo ln -sfv ../run $LFS/var/run
+        sudo ln -sfv ../run/lock $LFS/var/lock
+        sudo install -dv -m 0750 $LFS/root
+        sudo install -dv -m 1777 $LFS/var/tmp
+        sudo -E bash -e script/pre_chroot
+
+    - name: Chapter 7. Entering Chroot and Building Additional Temporary Tools
+      run: |
+        source envars
+        sudo mkdir -p "$LFS/$BLD_ROOT"
+        sudo cp envars script/buildpkg_chroot chapter07 -at "$LFS/$BLD_ROOT"
+        sudo sed -i '/BUILDDIR=/s/=.*/="\/"/' "$LFS/$BLD_ROOT/envars"
+        sudo sed -e '/log_dir/d' -e '/SRC_ARCHIVE/d' -e '/LFS/d' -i "$LFS/$BLD_ROOT/envars"
+        sudo install -vm666 /dev/null "$LFS/$BLD_ROOT/docmd"
+        echo "cd $BLD_ROOT" > "$LFS/$BLD_ROOT/docmd"
+        echo 'bash -e buildpkg_chroot chapter07/*' >> "$LFS/$BLD_ROOT/docmd"
+        sudo chroot "$LFS" /usr/bin/env -i HOME=/root TERM="$TERM" PATH=/usr/bin:/usr/sbin /bin/bash --login "$BLD_ROOT/docmd"
+        sudo rm -rf $LFS/usr/share/{info,man,doc}/*
+        sudo find $LFS/usr/{lib,libexec} -name \*.la -delete
+        sudo rm -rf $LFS/tools
+
+    - name: Chapter 8. Installing Basic System Software
+      run: |
+        source envars
+        sudo cp chapter08 -at "$LFS/$BLD_ROOT"
+        sudo sed -i '/chapter07/s/7/8/' "$LFS/$BLD_ROOT/docmd"
+        sudo chroot "$LFS" /usr/bin/env -i HOME=/root TERM="$TERM" PATH=/usr/bin:/usr/sbin /bin/bash --login "$BLD_ROOT/docmd"
+    - name: Chapter 9. Building packages
+      run: |
+        source envars
+        sudo cp chapter09 -at "$LFS/$BLD_ROOT"
+        sudo sed -i '/chapter08/s/8/9/' "$LFS/$BLD_ROOT/docmd"
+        sudo chroot "$LFS" /usr/bin/env -i HOME=/root TERM="$TERM" PATH=/usr/bin:/usr/sbin /bin/bash --login "$BLD_ROOT/docmd"
+
+    - name: Stripping
+      run: source envars; sudo -E bash -e script/strip
+    - name: Package and tag
+      run: source envars; sudo -E bash -e script/package x32; sudo chown -R $(id -u):$(id -g) tag
+    - name: Push
+      run: cd tag; git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"; git push origin ${{ env.TAG_VERSION }}
+
+    - name: Upload failed logs
+      if: ${{ failure() }}
+      run: |
+        source envars
+        branch="failed_$(TZ=GMT-8 date +%Y%m%d_%H%M%S)_${GITHUB_JOB#build-}"
+        mkdir -v uploadlogs
+        cd uploadlogs
+        git init 2>/dev/null
+        for i in $LFS/{$FILE_DIR,$LOG_DIR} $log_dir; do
+          if [ -d "$i" ] && [[ -n "$(find $i -type f)" ]]; then
+            mkdir -pv $(basename $i)
+            cp -a $i/* $(basename $i)
+          fi
+        done
+        git add .
+        git branch -m $branch
+        git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+        git commit -m "Uploading $(TZ='Asia/Shanghai' date|sed -e 's/20[0-9][0-9]$//' -e 's/CST//')"
+        git push origin $branch
+
+    - name: Upload to Releases
+      uses: softprops/action-gh-release@v1
+      with:
+        name: ${{ env.TAG_VERSION }}
+        tag_name: ${{ env.TAG_VERSION }}
+        body: "${{ env.TAG_DES }}"
+        files: release/*
+        fail_on_unmatched_files: true
+        prerelease: false
+    - name: Remove old pre Releases
+      uses: dev-drprasad/delete-older-releases@v0.2.1
+      with:
+        keep_latest: 2
+        delete_tags: true
+        delete_tag_pattern: .x32
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

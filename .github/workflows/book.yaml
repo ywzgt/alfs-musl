@@ -1,0 +1,50 @@
+name: Generate blfs book
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - blfs
+    paths:
+      - MKBOOK
+  schedule:
+    - cron: '00 */24 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions: write-all
+    steps:
+    - name: Check
+      run: |
+        echo "Processor: $(cat /proc/cpuinfo|grep processor|wc -l)"
+        cat /proc/cpuinfo|grep 'model name'|head -1
+        cat /proc/meminfo|head; echo ' '
+        uname -a
+    - name: Prepare the environment
+      run: |
+        echo "install dependencies..."
+        sudo apt-get update >/dev/null 2>&1
+        sudo apt-get install -y libxml2-utils xsltproc docbook-xml docbook-xsl tidy
+        echo -e '\n'
+        mkdir -v book
+        cd book
+        git init 2>/dev/null
+        git branch -m blfs
+        git config --global user.name "Github Actions"
+        git config --global user.email "action@github.com"
+        git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+        git pull origin blfs --depth=1
+        rm -rf *
+    - name: Get Blfs Sources and Generate book
+      run: |
+        mkdir sysv
+        git clone "https://git.linuxfromscratch.org/blfs.git"
+        make -C blfs BASEDIR=$PWD/sysv REV=sysv NOCHUNKS_OUTPUT=blfs-book.html wget-list nochunks
+        make -C blfs clean
+        make -C blfs BASEDIR=$PWD/book REV=systemd all
+        mv -v sysv/blfs-book.html book; xz -v book/blfs*-book.html
+        cat {book,sysv}/wget-list >tmp
+        awk '!seen[$0]++' tmp >book/wget-list
+    - name: Push Repository
+      run: cd book; git add .; git commit -m "Generated $(TZ=GMT-8 date +%Y%m%d\ %H:%M)" && git push origin blfs || { echo -e '\e[01;31mNo update !'; }
