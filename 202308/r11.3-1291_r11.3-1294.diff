@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 942db21..206669f 100644
+--- a/wget-list
++++ b/wget-list
+@@ -31,7 +31,7 @@ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripw
+ https://github.com/felixonmars/volume_key/archive/volume_key-0.3.12.tar.gz
+ https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.3.3.tar.xz
+ https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz
+-https://github.com/libfuse/libfuse/releases/download/fuse-3.15.1/fuse-3.15.1.tar.gz
++https://github.com/libfuse/libfuse/releases/download/fuse-3.16.1/fuse-3.16.1.tar.gz
+ https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.patch
+ ftp://sourceware.org/pub/lvm2/LVM2.2.03.22.tgz
+@@ -231,7 +231,7 @@ https://telepathy.freedesktop.org/releases/telepathy-mission-control/telepathy-m
+ https://github.com/htacg/tidy-html5/archive/5.8.0/tidy-html5-5.8.0.tar.gz
+ ftp://ftp.gnu.org/gnu/time/time-1.9.tar.gz
+ https://mama.indstate.edu/users/ice/tree/src/tree-2.1.1.tgz
+-ftp://ftp.unixodbc.org/pub/unixODBC/unixODBC-2.3.11.tar.gz
++ftp://ftp.unixodbc.org/pub/unixODBC/unixODBC-2.3.12.tar.gz
+ https://github.com/flatpak/xdg-dbus-proxy/releases/download/0.1.5/xdg-dbus-proxy-0.1.5.tar.xz
+ https://user-dirs.freedesktop.org/releases/xdg-user-dirs-0.18.tar.gz
+ https://www.freedesktop.org/software/accountsservice/accountsservice-23.13.9.tar.xz
