@@ -1,0 +1,40 @@
+diff --git a/wget-list b/wget-list
+index 206669f..b745fc1 100644
+--- a/wget-list
++++ b/wget-list
+@@ -87,7 +87,7 @@ ftp://ftp.gnu.org/gnu/gsl/gsl-2.7.1.tar.gz
+ https://download.gnome.org/sources/gspell/1.12/gspell-1.12.2.tar.xz
+ https://github.com/unicode-org/icu/releases/download/release-73-2/icu4c-73_2-src.tgz
+ https://github.com/benhoyt/inih/archive/r57/inih-r57.tar.gz
+-https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-22.3.9.tar.gz
++https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-22.3.10.tar.gz
+ https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
+ https://archive.mozilla.org/pub/firefox/releases/102.13.0esr/source/firefox-102.13.0esr.source.tar.xz
+ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.16.tar.gz
+@@ -145,7 +145,7 @@ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_0/log4cplus-2.1.0.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.6.tar.bz2
+-https://nodejs.org/dist/v18.17.0/node-v18.17.0.tar.xz
++https://nodejs.org/dist/v18.17.1/node-v18.17.1.tar.xz
+ ftp://ftp.gnupg.org/gcrypt/npth/npth-1.6.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
+ https://sourceforge.net/projects/pcre/files/pcre/8.45/pcre-8.45.tar.bz2
+@@ -563,7 +563,7 @@ https://w1.fi/releases/wpa_supplicant-2.10.tar.gz
+ https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+ ftp://ftp.isc.org/isc/bind9/9.18.17/bind-9.18.17.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/NetworkManager/1.42/NetworkManager-1.42.8.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/NetworkManager/1.44/NetworkManager-1.44.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/network-manager-applet/1.32/network-manager-applet-1.32.0.tar.xz
+ https://nmap.org/dist/nmap-7.94.tar.bz2
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.2.tar.gz
+@@ -615,7 +615,7 @@ ftp://ftp.sendmail.org/pub/sendmail/sendmail.8.17.2.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz
+ https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
+ ftp://mirrors.fe.up.pt/pub/mariadb/mariadb-10.11.4/source/mariadb-10.11.4.tar.gz
+-https://ftp.postgresql.org/pub/source/v15.3/postgresql-15.3.tar.bz2
++https://ftp.postgresql.org/pub/source/v15.4/postgresql-15.4.tar.bz2
+ https://sqlite.org/2023/sqlite-autoconf-3420000.tar.gz
+ https://sqlite.org/2023/sqlite-doc-3420000.zip
+ ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-2.6.5.tgz
