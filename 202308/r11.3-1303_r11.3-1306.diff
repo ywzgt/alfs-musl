@@ -1,0 +1,15 @@
+diff --git a/wget-list b/wget-list
+index b745fc1..01345d6 100644
+--- a/wget-list
++++ b/wget-list
+@@ -703,8 +703,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.15-build_fixe
+ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.15-ffmpeg5_fixes-1.patch
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/tepl/6.8/tepl-6.8.0.tar.xz
+-https://webkitgtk.org/releases/webkitgtk-2.41.6.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/webkitgtk-2.41.6-consolidated_fixes-1.patch
++https://webkitgtk.org/releases/webkitgtk-2.41.90.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/webkitgtk-2.41.90-consolidated_fixes-1.patch
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gdm/44/gdm-44.1.tar.xz
+ https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.tar.xz
+ https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.8/lightdm-gtk-greeter-2.0.8.tar.gz
