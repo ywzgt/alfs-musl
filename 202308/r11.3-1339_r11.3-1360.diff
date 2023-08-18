@@ -1,0 +1,26 @@
+diff --git a/wget-list b/wget-list
+index 4d38bca..7e14edc 100644
+--- a/wget-list
++++ b/wget-list
+@@ -1,4 +1,4 @@
+-https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20230627.tar.xz
++https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20230816.tar.xz
+ https://github.com/lfs-book/make-ca/releases/download/v1.12/make-ca-1.12.tar.xz
+ https://github.com/cracklib/cracklib/releases/download/v2.9.11/cracklib-2.9.11.tar.xz
+ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.4/cryptsetup-2.4.3.tar.xz
+@@ -420,7 +420,6 @@ https://cpan.metacpan.org/authors/id/R/RG/RGARCIA/Sub-Identify-0.14.tar.gz
+ https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Sub-Info-0.002.tar.gz
+ https://cpan.metacpan.org/authors/id/H/HA/HAARG/Sub-Quote-2.006008.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz
+-https://cpan.metacpan.org/authors/id/C/CH/CHROMATIC/SUPER-1.20190531.tar.gz
+ https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Term-Table-0.016.tar.gz
+ https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Test-Deep-1.204.tar.gz
+ https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Test-Exception-0.43.tar.gz
+@@ -428,7 +427,6 @@ https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Test-Fatal-0.017.tar.gz
+ https://cpan.metacpan.org/authors/id/B/BD/BDFOY/Test-File-1.993.tar.gz
+ https://cpan.metacpan.org/authors/id/K/KE/KENTNL/Test-File-ShareDir-1.001002.tar.gz
+ https://cpan.metacpan.org/authors/id/L/LE/LEEJO/Test-LeakTrace-0.17.tar.gz
+-https://cpan.metacpan.org/authors/id/G/GF/GFRANKS/Test-MockModule-v0.176.0.tar.gz
+ https://cpan.metacpan.org/authors/id/H/HA/HAARG/Test-Needs-0.002010.tar.gz
+ https://cpan.metacpan.org/authors/id/T/TO/TOKUHIROM/Test-Requires-0.11.tar.gz
+ https://cpan.metacpan.org/authors/id/M/MA/MALLEN/Test-RequiresInternet-0.05.tar.gz
