@@ -1,0 +1,57 @@
+diff --git a/wget-list b/wget-list
+index 7e14edc..c2c4e60 100644
+--- a/wget-list
++++ b/wget-list
+@@ -14,7 +14,7 @@ https://github.com/linux-pam/linux-pam/releases/download/v1.5.3/Linux-PAM-1.5.3-
+ https://downloads.sourceforge.net/liboauth/liboauth-1.0.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3.patch
+ https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2
+-https://kerberos.org/dist/krb5/1.21/krb5-1.21.1.tar.gz
++https://kerberos.org/dist/krb5/1.21/krb5-1.21.2.tar.gz
+ ftp://ftp.gnu.org/gnu/nettle/nettle-3.9.1.tar.gz
+ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_92_RTM/src/nss-3.92.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.92-standalone-1.patch
+@@ -223,7 +223,7 @@ https://github.com/lsof-org/lsof/releases/download/4.95.0/lsof_4.95.0.linux.tar.
+ https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
+ ftp://ftp.gnupg.org/gcrypt/pinentry/pinentry-1.2.1.tar.bz2
+ https://download.tuxfamily.org/librep/rep-gtk/rep-gtk_0.90.8.3.tar.xz
+-ftp://ftp.gnu.org/gnu/screen/screen-4.9.0.tar.gz
++ftp://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
+ https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/2.2/shared-mime-info-2.2.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/xdgmime/xdgmime.tar.xz
+ ftp://ftp.gnu.org/gnu/sharutils/sharutils-4.15.2.tar.xz
+@@ -560,7 +560,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_s
+ https://w1.fi/releases/wpa_supplicant-2.10.tar.gz
+ https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+-ftp://ftp.isc.org/isc/bind9/9.18.17/bind-9.18.17.tar.xz
++ftp://ftp.isc.org/isc/bind9/9.18.18/bind-9.18.18.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/NetworkManager/1.44/NetworkManager-1.44.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/network-manager-applet/1.32/network-manager-applet-1.32.0.tar.xz
+ https://nmap.org/dist/nmap-7.94.tar.bz2
+@@ -623,8 +623,8 @@ ftp://ftp.x.org/pub/individual/util/util-macros-1.20.0.tar.xz
+ https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2023.2.tar.xz
+ ftp://ftp.x.org/pub/individual/lib/libXau-1.0.11.tar.xz
+ ftp://ftp.x.org/pub/individual/lib/libXdmcp-1.1.4.tar.xz
+-https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.15.2.tar.xz
+-https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.15.tar.xz
++https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.16.0.tar.xz
++https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.16.tar.xz
+ ftp://ftp.x.org/pub/individual/lib/libxcvt-0.1.2.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-0.4.1.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-image-0.4.1.tar.xz
+@@ -632,12 +632,12 @@ https://xcb.freedesktop.org/dist/xcb-util-keysyms-0.4.1.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-renderutil-0.3.10.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-wm-0.4.2.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.4.tar.xz
+-ftp://ftp.freedesktop.org/pub/mesa/mesa-23.1.5.tar.xz
++ftp://ftp.freedesktop.org/pub/mesa/mesa-23.1.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-2.patch
+ ftp://ftp.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ ftp://ftp.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
+ ftp://ftp.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.39.tar.xz
+-ftp://ftp.x.org/pub/individual/xserver/xwayland-23.1.2.tar.xz
++ftp://ftp.x.org/pub/individual/xserver/xwayland-23.2.0.tar.xz
+ ftp://ftp.x.org/pub/individual/xserver/xorg-server-21.1.8.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.8-tearfree_backport-1.patch
+ https://www.freedesktop.org/software/libevdev/libevdev-1.13.1.tar.xz
