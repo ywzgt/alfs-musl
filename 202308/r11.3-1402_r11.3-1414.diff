@@ -1,0 +1,38 @@
+diff --git a/wget-list b/wget-list
+index e4a7a26..bc88d88 100644
+--- a/wget-list
++++ b/wget-list
+@@ -217,7 +217,7 @@ ftp://ftp.acc.umu.se/pub/gnome/sources/gtk-doc/1.33/gtk-doc-1.33.2.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.7.tar.bz2
+ https://github.com/ibus/ibus/releases/download/1.5.28/ibus-1.5.28.tar.gz
+ https://www.unicode.org/Public/zipped/15.0.0/UCD.zip
+-https://www.imagemagick.org/archive/releases/ImageMagick-7.1.1-12.tar.xz
++https://www.imagemagick.org/archive/releases/ImageMagick-7.1.1-15.tar.xz
+ https://ftp.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.15.0.orig.tar.xz
+ https://github.com/lsof-org/lsof/releases/download/4.95.0/lsof_4.95.0.linux.tar.bz2
+ https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
+@@ -541,7 +541,6 @@ https://github.com/openjdk/jdk20u/archive/jdk-20.0.2-ga.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-20.0.2/jtreg-7.2+1.tar.gz
+ https://archive.apache.org/dist/ant/source/apache-ant-1.10.13-src.tar.xz
+ https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.0.2/dhcpcd-10.0.2.tar.xz
+-ftp://ftp.isc.org/isc/kea/2.4.0/kea-2.4.0.tar.gz
+ https://www.kernel.org/pub/linux/utils/net/bridge-utils/bridge-utils-1.7.1.tar.xz
+ https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.0.tar.bz2
+ ftp://ftp.ncftp.com/ncftp/ncftp-3.2.6-src.tar.xz
+@@ -602,6 +601,7 @@ https://ftp.osuosl.org/pub/blfs/conglomeration/procmail/procmail-3.22.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.22-consolidated_fixes-1.patch
+ https://archive.apache.org/dist/httpd/httpd-2.4.57.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.57-blfs_layout-1.patch
++ftp://ftp.isc.org/isc/kea/2.4.0/kea-2.4.0.tar.gz
+ ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.8.tar.gz
+ https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
+ https://www.dovecot.org/releases/2.3/dovecot-2.3.20.tar.gz
+@@ -677,7 +677,7 @@ ftp://ftp.acc.umu.se/pub/gnome/sources/gtk-vnc/1.3/gtk-vnc-1.3.1.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gtksourceview/5.8/gtksourceview-5.8.0.tar.xz
+-https://downloads.sourceforge.net/enlightenment/imlib2-1.11.1.tar.xz
++https://downloads.sourceforge.net/enlightenment/imlib2-1.12.0.tar.xz
+ https://github.com/ksnip/kColorPicker/archive/refs/tags/v0.2.0/kColorPicker-0.2.0.tar.gz
+ https://github.com/ksnip/kImageAnnotator/archive/refs/tags/v0.6.1/kImageAnnotator-0.6.1.tar.gz
+ https://github.com/kupferlauncher/keybinder/releases/download/v0.3.1/keybinder-0.3.1.tar.gz
