@@ -1,0 +1,21 @@
+diff --git a/wget-list b/wget-list
+index bc88d88..6f96553 100644
+--- a/wget-list
++++ b/wget-list
+@@ -596,7 +596,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/lynx-2.8.9rel.1-security_fix-1
+ https://downloads.sourceforge.net/fetchmail/fetchmail-6.4.37.tar.xz
+ https://ftp.debian.org/debian/pool/main/h/heirloom-mailx/heirloom-mailx_12.5.orig.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.patch
+-ftp://ftp.mutt.org/pub/mutt/mutt-2.2.10.tar.gz
++ftp://ftp.mutt.org/pub/mutt/mutt-2.2.11.tar.gz
+ https://ftp.osuosl.org/pub/blfs/conglomeration/procmail/procmail-3.22.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.22-consolidated_fixes-1.patch
+ https://archive.apache.org/dist/httpd/httpd-2.4.57.tar.bz2
+@@ -1005,6 +1005,7 @@ https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-6.0-chromium_method-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-6.0-binutils_2.41-1.patch
+ ftp://ftp.mplayerhq.hu/MPlayer/releases/MPlayer-1.5.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/MPlayer-1.5-upstream_ffmpg6_fixes-1.patch
+ ftp://ftp.mplayerhq.hu/MPlayer/skins/Clearlooks-2.0.tar.bz2
+ ftp://ftp.mirrorservice.org/sites/distfiles.gentoo.org/distfiles/transcode-1.1.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/transcode-1.1.7-gcc10_fix-1.patch
