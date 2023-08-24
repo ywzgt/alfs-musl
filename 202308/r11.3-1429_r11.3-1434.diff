@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 6f96553..40efbd3 100644
+--- a/wget-list
++++ b/wget-list
+@@ -539,7 +539,7 @@ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-20.0.2/OpenJDK-20.0.2+9
+ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-20.0.2/OpenJDK-20.0.2+9-x86_64-bin.tar.xz
+ https://github.com/openjdk/jdk20u/archive/jdk-20.0.2-ga.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-20.0.2/jtreg-7.2+1.tar.gz
+-https://archive.apache.org/dist/ant/source/apache-ant-1.10.13-src.tar.xz
++https://archive.apache.org/dist/ant/source/apache-ant-1.10.14-src.tar.xz
+ https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.0.2/dhcpcd-10.0.2.tar.xz
+ https://www.kernel.org/pub/linux/utils/net/bridge-utils/bridge-utils-1.7.1.tar.xz
+ https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.0.tar.bz2
+@@ -701,7 +701,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.15-build_fixe
+ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.15-ffmpeg5_fixes-1.patch
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/tepl/6.8/tepl-6.8.0.tar.xz
+-https://webkitgtk.org/releases/webkitgtk-2.41.90.tar.xz
++https://webkitgtk.org/releases/webkitgtk-2.41.91.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gdm/44/gdm-44.1.tar.xz
+ https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.tar.xz
+ https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.8/lightdm-gtk-greeter-2.0.8.tar.gz
