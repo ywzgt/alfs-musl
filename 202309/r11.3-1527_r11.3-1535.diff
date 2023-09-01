@@ -1,0 +1,10 @@
+diff --git a/wget-list b/wget-list
+index 8dd995af..d5480d76 100644
+--- a/wget-list
++++ b/wget-list
+@@ -1064,4 +1064,4 @@ https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.p
+ https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20230824.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/bluez-5.68-obexd_without_systemd-1.patch
+ https://github.com/elogind/elogind/archive/v252.9/elogind-252.9.tar.gz
+-https://github.com/lfs-book/blocaled/releases/download/v0.4/blocaled-0.4.tar.xz
++https://github.com/lfs-book/blocaled/releases/download/v0.5/blocaled-0.5.tar.xz
