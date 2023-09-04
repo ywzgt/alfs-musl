@@ -1,0 +1,107 @@
+diff --git a/wget-list b/wget-list
+index 31f7ee2f..577b7704 100644
+--- a/wget-list
++++ b/wget-list
+@@ -6,7 +6,7 @@ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyru
+ ftp://ftp.gnupg.org/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gnupg-2.4.3-emacs-1.patch
+ ftp://ftp.gnupg.org/gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz
+-ftp://ftp.gnupg.org/gcrypt/gpgme/gpgme-1.21.0.tar.bz2
++ftp://ftp.gnupg.org/gcrypt/gpgme/gpgme-1.22.0.tar.bz2
+ https://www.netfilter.org/projects/iptables/files/iptables-1.8.9.tar.xz
+ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.69.tar.xz
+ https://github.com/linux-pam/linux-pam/releases/download/v1.5.3/Linux-PAM-1.5.3.tar.xz
+@@ -40,7 +40,6 @@ https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2022.10.3.tgz
+ https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.9.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.9-convenience-1.patch
+ ftp://ftp.gnu.org/gnu/parted/parted-3.6.tar.xz
+-https://www.kernel.org/pub/linux/kernel/people/jeffm/reiserfsprogs/v3.6.27/reiserfsprogs-3.6.27.tar.xz
+ https://downloads.sourceforge.net/smartmontools/smartmontools-7.4.tar.gz
+ https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.3/sshfs-3.7.3.tar.xz
+ https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.4.0.tar.xz
+@@ -69,7 +68,7 @@ ftp://ftp.mirrorservice.org/sites/ftp.apache.org/apr/apr-util-1.6.3.tar.bz2
+ ftp://ftp.gnu.org/gnu/aspell/aspell-0.60.8.tar.gz
+ https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2
+ https://boostorg.jfrog.io/artifactory/main/release/1.83.0/source/boost_1_83_0.tar.bz2
+-https://github.com/google/brotli/archive/v1.0.9/brotli-1.0.9.tar.gz
++https://github.com/google/brotli/archive/v1.1.0/brotli-1.1.0.tar.gz
+ https://downloads.sourceforge.net/clucene/clucene-core-2.3.3.4.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/clucene-2.3.3.4-contribs_lib-1.patch
+ https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz
+@@ -120,7 +119,7 @@ https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.5/libnvme-1.5.tar.gz
+ https://github.com/rrthomas/libpaper/releases/download/v2.1.1/libpaper-2.1.1.tar.gz
+ https://github.com/flatpak/libportal/releases/download/0.6/libportal-0.6.tar.xz
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+-https://github.com/Qalculate/libqalculate/releases/download/v4.7.0/libqalculate-4.7.0.tar.gz
++https://github.com/Qalculate/libqalculate/releases/download/v4.8.0/libqalculate-4.8.0.tar.gz
+ https://www.freedesktop.org/software/libqmi/libqmi-1.30.8.tar.xz
+ https://github.com/seccomp/libseccomp/releases/download/v2.5.4/libseccomp-2.5.4.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/libsigc++/2.12/libsigc++-2.12.0.tar.xz
+@@ -278,14 +277,14 @@ https://www.linuxfromscratch.org/patches/blfs/svn/autoconf-2.13-consolidated_fix
+ https://github.com/eqrion/cbindgen/archive/v0.24.3/cbindgen-0.24.3.tar.gz
+ ftp://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+-https://cmake.org/files/v3.27/cmake-3.27.2.tar.gz
++https://cmake.org/files/v3.27/cmake-3.27.4.tar.gz
+ https://doxygen.nl/files/doxygen-1.9.7.src.tar.gz
+ ftp://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.4/gc-8.2.4.tar.gz
+ ftp://ftp.gnu.org/gnu/gdb/gdb-13.2.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-2.41.0.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-manpages-2.41.0.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.41.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-2.42.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-manpages-2.42.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.42.0.tar.xz
+ ftp://ftp.gnu.org/gnu/guile/guile-3.0.9.tar.xz
+ https://download.tuxfamily.org/librep/librep_0.92.7.tar.xz
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.5/llvm-16.0.5.src.tar.xz
+@@ -488,8 +487,8 @@ https://files.pythonhosted.org/packages/source/r/requests/requests-2.31.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/requests-2.31.0-use_system_certs-1.patch
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+ https://files.pythonhosted.org/packages/source/s/six/six-1.16.0.tar.gz
+-https://github.com/sphinx-doc/sphinx/archive/v7.1.2/sphinx-7.1.2.tar.gz
+-https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-1.2.2.tar.gz
++https://github.com/sphinx-doc/sphinx/archive/v7.2.5/sphinx-7.2.5.tar.gz
++https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-1.3.0.tar.gz
+ https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-0.7.13.tar.gz
+ https://files.pythonhosted.org/packages/source/a/attrs/attrs-22.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/B/Babel/Babel-2.11.0.tar.gz
+@@ -519,7 +518,7 @@ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-htmlhelp/sphinxco
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jquery/sphinxcontrib-jquery-4.1.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jsmath/sphinxcontrib-jsmath-1.0.1.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-qthelp/sphinxcontrib-qthelp-1.0.3.tar.gz
+-https://files.pythonhosted.org/packages/source/s/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml-1.1.5.tar.gz
++https://files.pythonhosted.org/packages/source/s/sphinxcontrib_serializinghtml/sphinxcontrib_serializinghtml-1.1.9.tar.gz
+ https://files.pythonhosted.org/packages/source/t/typing_extensions/typing_extensions-4.4.0.tar.gz
+ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.0.7.tar.gz
+ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.0.2.tar.gz
+@@ -532,7 +531,7 @@ https://downloads.sourceforge.net/swig/swig-4.1.1.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/sysprof/3.48/sysprof-3.48.0.tar.xz
+ https://downloads.sourceforge.net/tcl/tk8.6.13-src.tar.gz
+ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/vala/0.56/vala-0.56.11.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/vala/0.56/vala-0.56.13.tar.xz
+ ftp://sourceware.org/pub/valgrind/valgrind-3.21.0.tar.bz2
+ https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-20.0.2/OpenJDK-20.0.2+9-i686-bin.tar.xz
+@@ -563,7 +562,7 @@ ftp://ftp.isc.org/isc/bind9/9.18.18/bind-9.18.18.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/NetworkManager/1.44/NetworkManager-1.44.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/network-manager-applet/1.32/network-manager-applet-1.32.0.tar.xz
+ https://nmap.org/dist/nmap-7.94.tar.bz2
+-https://downloads.sourceforge.net/traceroute/traceroute-2.1.2.tar.gz
++https://downloads.sourceforge.net/traceroute/traceroute-2.1.3.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.0.7.tar.xz
+ https://c-ares.haxx.se/download/c-ares-1.19.1.tar.gz
+@@ -614,8 +613,8 @@ https://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz
+ https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
+ https://downloads.mariadb.org/interstitial/mariadb-10.11.4/source/mariadb-10.11.4.tar.gz
+ https://ftp.postgresql.org/pub/source/v15.4/postgresql-15.4.tar.bz2
+-https://sqlite.org/2023/sqlite-autoconf-3420000.tar.gz
+-https://sqlite.org/2023/sqlite-doc-3420000.zip
++https://sqlite.org/2023/sqlite-autoconf-3430000.tar.gz
++https://sqlite.org/2023/sqlite-doc-3430000.zip
+ ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-2.6.6.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.6-consolidated-1.patch
+ https://nlnetlabs.nl/downloads/unbound/unbound-1.17.1.tar.gz
