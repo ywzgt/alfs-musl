@@ -1,0 +1,148 @@
+diff --git a/wget-list b/wget-list
+index 577b7704..27a01a07 100644
+--- a/wget-list
++++ b/wget-list
+@@ -23,7 +23,7 @@ https://github.com/p11-glue/p11-kit/releases/download/0.25.0/p11-kit-0.25.0.tar.
+ https://gitlab.freedesktop.org/polkit/polkit/-/archive/123/polkit-123.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+-https://github.com/shadow-maint/shadow/releases/download/4.13/shadow-4.13.tar.xz
++https://github.com/shadow-maint/shadow/releases/download/4.14.0/shadow-4.14.0.tar.xz
+ ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.4p1.tar.gz
+ ftp://ftp.stunnel.org/stunnel/archive/5.x/stunnel-5.70.tar.gz
+ ftp://ftp.sudo.ws/pub/sudo/sudo-1.9.14p3.tar.gz
+@@ -77,7 +77,7 @@ https://duktape.org/duktape-2.7.0.tar.xz
+ https://github.com/AbiWord/enchant/releases/download/v2.5.0/enchant-2.5.0.tar.gz
+ https://libopenraw.freedesktop.org/download/exempi-2.6.4.tar.xz
+ ftp://ftp.fftw.org/pub/fftw/fftw-3.3.10.tar.gz 
+-ftp://ftp.acc.umu.se/pub/gnome/sources/glib/2.76/glib-2.76.4.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/glib/2.76/glib-2.76.5.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+ ftp://ftp.acc.umu.se/pub/gnome/sources/glibmm/2.66/glibmm-2.66.5.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gmime/3.2/gmime-3.2.7.tar.xz
+@@ -86,7 +86,7 @@ ftp://ftp.gnu.org/gnu/gsl/gsl-2.7.1.tar.gz
+ https://download.gnome.org/sources/gspell/1.12/gspell-1.12.2.tar.xz
+ https://github.com/unicode-org/icu/releases/download/release-73-2/icu4c-73_2-src.tgz
+ https://github.com/benhoyt/inih/archive/r57/inih-r57.tar.gz
+-https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-22.3.10.tar.gz
++https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-22.3.11.tar.gz
+ https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
+ https://archive.mozilla.org/pub/firefox/releases/102.13.0esr/source/firefox-102.13.0esr.source.tar.xz
+ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.17.tar.gz
+@@ -210,7 +210,7 @@ https://downloads.sourceforge.net/bogofilter/bogofilter-1.2.5.tar.xz
+ ftp://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.26.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/desktop-file-utils-0.26-update_standard-1.patch
+-https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.0.tar.gz
++https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.1.tar.gz
+ https://gitlab.com/graphviz/graphviz/-/archive/8.1.0/graphviz-8.1.0.tar.bz2
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gtk-doc/1.33/gtk-doc-1.33.2.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.7.tar.bz2
+@@ -221,7 +221,6 @@ https://ftp.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.15.0.orig.tar.xz
+ https://github.com/lsof-org/lsof/releases/download/4.95.0/lsof_4.95.0.linux.tar.bz2
+ https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
+ ftp://ftp.gnupg.org/gcrypt/pinentry/pinentry-1.2.1.tar.bz2
+-https://download.tuxfamily.org/librep/rep-gtk/rep-gtk_0.90.8.3.tar.xz
+ ftp://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
+ https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/2.2/shared-mime-info-2.2.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/xdgmime/xdgmime.tar.xz
+@@ -331,7 +330,7 @@ https://www.cpan.org/authors/id/R/RE/REHSACK/List-MoreUtils-0.430.tar.gz
+ https://www.cpan.org/authors/id/E/ET/ETJ/Log-Log4perl-1.57.tar.gz
+ https://www.cpan.org/authors/id/O/OA/OALDERS/LWP-Protocol-https-6.11.tar.gz
+ https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-0.4232.tar.gz
+-https://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-1.39.tar.gz
++https://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-1.40.tar.gz
+ https://www.cpan.org/authors/id/J/JT/JTBRAUN/Parse-RecDescent-1.967015.tar.gz
+ https://www.cpan.org/authors/id/W/WB/WBRASWELL/Parse-Yapp-1.21.tar.gz
+ https://www.cpan.org/authors/id/L/LE/LEONT/PerlIO-utf8_strict-0.010.tar.gz
+@@ -345,7 +344,7 @@ https://www.cpan.org/authors/id/I/IS/ISHIGAKI/Text-CSV-2.03.tar.gz
+ https://www.cpan.org/authors/id/S/SY/SYP/Text-Roman-3.5.tar.gz
+ https://www.cpan.org/authors/id/S/SA/SADAHIRO/Unicode-Collate-1.31.tar.gz
+ https://www.cpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz
+-https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.17.tar.gz
++https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.21.tar.gz
+ https://www.cpan.org/authors/id/M/MA/MARKOV/XML-LibXML-Simple-1.01.tar.gz
+ https://www.cpan.org/authors/id/S/SH/SHLOMIF/XML-LibXSLT-2.002001.tar.gz
+ https://www.cpan.org/authors/id/G/GR/GRANTM/XML-Simple-2.25.tar.gz
+@@ -452,8 +451,8 @@ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/Python-2.7.18-security_fixes-1.patch
+ https://www.python.org/ftp/python/doc/2.7.18/python-2.7.18-docs-html.tar.bz2
+-https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tar.xz
+-https://www.python.org/ftp/python/doc/3.11.4/python-3.11.4-docs-html.tar.bz2
++https://www.python.org/ftp/python/3.11.5/Python-3.11.5.tar.xz
++https://www.python.org/ftp/python/doc/3.11.5/python-3.11.5-docs-html.tar.bz2
+ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.2.0.tar.gz
+ https://github.com/psf/cachecontrol/archive/refs/tags/v0.13.1/cachecontrol-0.13.1.tar.gz
+@@ -479,7 +478,7 @@ ftp://ftp.acc.umu.se/pub/gnome/sources/pygobject/3.44/pygobject-3.44.1.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/pygtk/2.24/pygtk-2.24.0.tar.bz2
+ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.1.1.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+-https://files.pythonhosted.org/packages/source/p/pytest/pytest-7.4.0.tar.gz
++https://files.pythonhosted.org/packages/source/p/pytest/pytest-7.4.1.tar.gz
+ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
+ https://files.pythonhosted.org/packages/source/P/PyYAML/PyYAML-6.0.1.tar.gz
+ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
+@@ -564,7 +563,7 @@ ftp://ftp.acc.umu.se/pub/gnome/sources/network-manager-applet/1.32/network-manag
+ https://nmap.org/dist/nmap-7.94.tar.bz2
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.3.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
+-https://www.wireshark.org/download/src/all-versions/wireshark-4.0.7.tar.xz
++https://www.wireshark.org/download/src/all-versions/wireshark-4.0.8.tar.xz
+ https://c-ares.haxx.se/download/c-ares-1.19.1.tar.gz
+ https://curl.se/download/curl-8.2.1.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.0/geoclue-2.7.0.tar.bz2
+@@ -686,7 +685,7 @@ ftp://ftp.acc.umu.se/pub/gnome/sources/libdazzle/3.44/libdazzle-3.44.0.tar.xz
+ https://gedit-technology.net/tarballs/libgedit-amtk/libgedit-amtk-5.8.0.tar.xz
+ https://gedit-technology.net/tarballs/libgedit-gtksourceview/libgedit-gtksourceview-299.0.4.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/libhandy/1.8/libhandy-1.8.2.tar.xz
+-https://dri.freedesktop.org/libdrm/libdrm-2.4.115.tar.xz
++https://dri.freedesktop.org/libdrm/libdrm-2.4.116.tar.xz
+ https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/libglade/2.6/libglade-2.6.4.tar.bz2
+ ftp://ftp.acc.umu.se/pub/gnome/sources/libnotify/0.8/libnotify-0.8.2.tar.xz
+@@ -708,7 +707,6 @@ https://github.com/sddm/sddm/archive/v0.20.0/sddm-0.20.0.tar.gz
+ https://downloads.sourceforge.net/fluxbox/fluxbox-1.3.7.tar.xz
+ https://github.com/ice-wm/icewm/archive/3.4.1/icewm-3.4.1.tar.gz
+ http://openbox.org/dist/openbox/openbox-3.6.1.tar.gz
+-https://download.tuxfamily.org/sawfish/sawfish_1.13.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/adwaita-icon-theme/44/adwaita-icon-theme-44.0.tar.xz
+ https://download.kde.org/stable/frameworks/5.109/breeze-icons-5.109.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-icon-theme/3.12/gnome-icon-theme-3.12.0.tar.xz
+@@ -797,7 +795,7 @@ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-calculator/44/gnome-calculator-44.0
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-color-manager/3.36/gnome-color-manager-3.36.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-disk-utility/44/gnome-disk-utility-44.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-logs/43/gnome-logs-43.0.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-maps/44/gnome-maps-44.3.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-maps/44/gnome-maps-44.4.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-nettool/42/gnome-nettool-42.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gnome-nettool-42.0-ping_and_netstat_fixes-1.patch
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-power-manager/43/gnome-power-manager-43.0.tar.xz
+@@ -815,7 +813,7 @@ https://archive.xfce.org/src/xfce/libxfce4ui/4.18/libxfce4ui-4.18.4.tar.bz2
+ https://archive.xfce.org/src/xfce/exo/4.18/exo-4.18.0.tar.bz2
+ https://archive.xfce.org/src/xfce/garcon/4.18/garcon-4.18.1.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-panel/4.18/xfce4-panel-4.18.4.tar.bz2
+-https://archive.xfce.org/src/xfce/thunar/4.18/thunar-4.18.6.tar.bz2
++https://archive.xfce.org/src/xfce/thunar/4.18/thunar-4.18.7.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar-volman/4.18/thunar-volman-4.18.0.tar.bz2
+ https://archive.xfce.org/src/xfce/tumbler/4.18/tumbler-4.18.1.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-appfinder/4.18/xfce4-appfinder-4.18.1.tar.bz2
+@@ -973,7 +971,7 @@ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
+ https://github.com/webmproject/libvpx/archive/v1.13.0/libvpx-1.13.0.tar.gz
+ https://github.com/mltframework/mlt/releases/download/v7.18.0/mlt-7.18.0.tar.gz
+ https://archive.mozilla.org/pub/opus/opus-1.3.1.tar.gz
+-https://github.com/PipeWire/pipewire/archive/0.3.77/pipewire-0.3.77.tar.gz
++https://github.com/PipeWire/pipewire/archive/0.3.79/pipewire-0.3.79.tar.gz
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-16.1.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.0.tar.xz
+ https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.64/sdl12-compat-release-1.2.64.tar.gz
+@@ -1047,7 +1045,7 @@ ftp://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/epdfview/epdfview-0.1.8.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/epdfview-0.1.8-fixes-2.patch
+ https://archive.apache.org/dist/xmlgraphics/fop/source/fop-2.9-src.tar.gz
+-https://www.mupdf.com/downloads/archive/mupdf-1.22.2-source.tar.gz
++https://www.mupdf.com/downloads/archive/mupdf-1.23.2-source.tar.gz
+ https://downloads.sourceforge.net/paps/paps-0.7.1.tar.gz
+ https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+ ftp://tug.org/texlive/historic/2023/texlive-20230313-source.tar.xz
