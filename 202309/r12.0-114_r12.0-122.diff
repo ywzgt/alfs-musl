@@ -1,0 +1,52 @@
+diff --git a/wget-list b/wget-list
+index c49f8b83..ac2d2c7c 100644
+--- a/wget-list
++++ b/wget-list
+@@ -98,7 +98,7 @@ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/ivmai/libatomic_ops/releases/download/v7.8.0/libatomic_ops-7.8.0.tar.gz
+ https://github.com/storaged-project/libblockdev/releases/download/3.0.3-1/libblockdev-3.0.3.tar.gz
+ https://github.com/storaged-project/libbytesize/releases/download/2.9/libbytesize-2.9.tar.gz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/libcloudproviders/0.3/libcloudproviders-0.3.2.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/libcloudproviders/0.3/libcloudproviders-0.3.4.tar.xz
+ https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+ ftp://ftp.gnupg.org/gcrypt/libgcrypt/libgcrypt-1.10.2.tar.bz2
+ ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.47.tar.bz2
+@@ -258,9 +258,9 @@ https://download.librdf.org/source/raptor2-2.0.16.tar.gz
+ https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+ https://download.librdf.org/source/redland-1.0.17.tar.gz
+ https://sg.danny.cz/sg/p/sg3_utils-1.48.tar.xz
+-http://sebastien.godard.pagesperso-orange.fr/sysstat-12.7.2.tar.xz
++https://sysstat.github.io/sysstat-packages/sysstat-12.7.4.tar.xz
+ https://github.com/systemd/systemd/archive/v254/systemd-254.tar.gz
+-https://github.com/storaged-project/udisks/releases/download/udisks-2.10.0/udisks-2.10.0.tar.bz2
++https://github.com/storaged-project/udisks/releases/download/udisks-2.10.1/udisks-2.10.1.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-6.2.10.tar.gz
+ https://downloads.sourceforge.net/infozip/unzip60.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-consolidated_fixes-1.patch
+@@ -474,7 +474,7 @@ ftp://ftp.acc.umu.se/pub/gnome/sources/pygobject/3.44/pygobject-3.44.1.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/pygtk/2.24/pygtk-2.24.0.tar.bz2
+ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.1.1.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+-https://files.pythonhosted.org/packages/source/p/pytest/pytest-7.4.1.tar.gz
++https://files.pythonhosted.org/packages/source/p/pytest/pytest-7.4.2.tar.gz
+ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
+ https://files.pythonhosted.org/packages/source/P/PyYAML/PyYAML-6.0.1.tar.gz
+ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
+@@ -695,7 +695,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.15-build_fixe
+ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.15-ffmpeg5_fixes-1.patch
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/tepl/6.8/tepl-6.8.0.tar.xz
+-https://webkitgtk.org/releases/webkitgtk-2.41.91.tar.xz
++https://webkitgtk.org/releases/webkitgtk-2.41.92.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gdm/44/gdm-44.1.tar.xz
+ https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.tar.xz
+ https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.8/lightdm-gtk-greeter-2.0.8.tar.gz
+@@ -849,7 +849,7 @@ https://github.com/lxqt/lxqt-admin/releases/download/1.3.0/lxqt-admin-1.3.0.tar.
+ https://github.com/lxqt/lxqt-openssh-askpass/releases/download/1.3.0/lxqt-openssh-askpass-1.3.0.tar.xz
+ https://github.com/lxqt/lxqt-sudo/releases/download/1.3.0/lxqt-sudo-1.3.0.tar.xz
+ https://github.com/lxqt/lxqt-config/releases/download/1.3.0/lxqt-config-1.3.0.tar.xz
+-https://github.com/lxqt/obconf-qt/releases/download/0.16.2/obconf-qt-0.16.2.tar.xz
++https://github.com/lxqt/obconf-qt/releases/download/0.16.3/obconf-qt-0.16.3.tar.xz
+ https://github.com/lxqt/lxqt-globalkeys/releases/download/1.3.0/lxqt-globalkeys-1.3.0.tar.xz
+ https://github.com/lxqt/lxqt-policykit/releases/download/1.3.0/lxqt-policykit-1.3.0.tar.xz
+ https://github.com/lxqt/lxqt-session/releases/download/1.3.0/lxqt-session-1.3.0.tar.xz
