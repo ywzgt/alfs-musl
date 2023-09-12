@@ -1,0 +1,45 @@
+diff --git a/wget-list b/wget-list
+index 63475b67..6df16598 100644
+--- a/wget-list
++++ b/wget-list
+@@ -76,11 +76,11 @@ https://duktape.org/duktape-2.7.0.tar.xz
+ https://github.com/AbiWord/enchant/releases/download/v2.5.0/enchant-2.5.0.tar.gz
+ https://libopenraw.freedesktop.org/download/exempi-2.6.4.tar.xz
+ ftp://ftp.fftw.org/pub/fftw/fftw-3.3.10.tar.gz 
+-ftp://ftp.acc.umu.se/pub/gnome/sources/glib/2.76/glib-2.76.5.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/glib/2.78/glib-2.78.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+ ftp://ftp.acc.umu.se/pub/gnome/sources/glibmm/2.66/glibmm-2.66.5.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gmime/3.2/gmime-3.2.7.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gobject-introspection/1.76/gobject-introspection-1.76.1.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gobject-introspection/1.78/gobject-introspection-1.78.0.tar.xz
+ ftp://ftp.gnu.org/gnu/gsl/gsl-2.7.1.tar.gz
+ https://download.gnome.org/sources/gspell/1.12/gspell-1.12.2.tar.xz
+ https://github.com/unicode-org/icu/releases/download/release-73-2/icu4c-73_2-src.tgz
+@@ -116,7 +116,7 @@ https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
+ https://www.freedesktop.org/software/libmbim/libmbim-1.26.4.tar.xz
+ https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.5/libnvme-1.5.tar.gz
+ https://github.com/rrthomas/libpaper/releases/download/v2.1.1/libpaper-2.1.1.tar.gz
+-https://github.com/flatpak/libportal/releases/download/0.7/libportal-0.7.tar.xz
++https://github.com/flatpak/libportal/releases/download/0.7.1/libportal-0.7.1.tar.xz
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+ https://github.com/Qalculate/libqalculate/releases/download/v4.8.0/libqalculate-4.8.0.tar.gz
+ https://www.freedesktop.org/software/libqmi/libqmi-1.30.8.tar.xz
+@@ -590,7 +590,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/lynx-2.8.9rel.1-security_fix-1
+ https://downloads.sourceforge.net/fetchmail/fetchmail-6.4.37.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/mailx/heirloom-mailx_12.5.orig.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.patch
+-ftp://ftp.mutt.org/pub/mutt/mutt-2.2.11.tar.gz
++ftp://ftp.mutt.org/pub/mutt/mutt-2.2.12.tar.gz
+ https://ftp.osuosl.org/pub/blfs/conglomeration/procmail/procmail-3.22.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.22-consolidated_fixes-1.patch
+ https://archive.apache.org/dist/httpd/httpd-2.4.57.tar.bz2
+@@ -919,7 +919,7 @@ https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.22.5.tar.xz
+ https://gstreamer.freedesktop.org/src/gstreamer-vaapi/gstreamer-vaapi-1.22.5.tar.xz
+ https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+-https://github.com/intel/media-driver/archive/refs/tags/intel-media-23.3.2.tar.gz
++https://github.com/intel/media-driver/archive/refs/tags/intel-media-23.3.3.tar.gz
+ https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
+ https://liba52.sourceforge.net/files/a52dec-0.7.4.tar.gz
+ https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
