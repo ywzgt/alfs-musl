@@ -1,0 +1,97 @@
+diff --git a/wget-list b/wget-list
+index 8478b743..6b579001 100644
+--- a/wget-list
++++ b/wget-list
+@@ -28,7 +28,7 @@ ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.4p1.tar.gz
+ ftp://ftp.stunnel.org/stunnel/archive/5.x/stunnel-5.70.tar.gz
+ ftp://ftp.sudo.ws/pub/sudo/sudo-1.9.14p3.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+-https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.5.tar.xz
++https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.5.1.tar.xz
+ https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz
+ https://github.com/libfuse/libfuse/releases/download/fuse-3.16.1/fuse-3.16.1.tar.gz
+ https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
+@@ -92,7 +92,7 @@ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.17.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/json-glib/1.6/json-glib-1.6.6.tar.xz
+ https://people.redhat.com/~dhowells/keyutils/keyutils-1.6.1.tar.bz2
+ https://pagure.io/libaio/archive/libaio-0.3.113/libaio-0.3.113.tar.gz
+-https://github.com/libarchive/libarchive/releases/download/v3.7.1/libarchive-3.7.1.tar.xz
++https://github.com/libarchive/libarchive/releases/download/v3.7.2/libarchive-3.7.2.tar.xz
+ ftp://ftp.gnupg.org/gcrypt/libassuan/libassuan-2.5.6.tar.bz2
+ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/ivmai/libatomic_ops/releases/download/v7.8.0/libatomic_ops-7.8.0.tar.gz
+@@ -186,8 +186,7 @@ https://www.libraw.org/data/LibRaw-0.21.1.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/librsvg/2.56/librsvg-2.56.3.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+ https://download.osgeo.org/libtiff/tiff-4.5.1.tar.gz
+-http://downloads.webmproject.org/releases/webp/libwebp-1.3.1.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libwebp-1.3.1-security_update-2.patch
++https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.2.tar.gz
+ https://github.com/mypaint/mypaint-brushes/releases/download/v1.3.1/mypaint-brushes-1.3.1.tar.xz
+ https://releases.pagure.org/newt/newt-0.52.23.tar.gz
+ https://github.com/opencv/opencv/archive/4.8.0/opencv-4.8.0.tar.gz
+@@ -209,7 +208,7 @@ ftp://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.26.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/desktop-file-utils-0.26-update_standard-1.patch
+ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.1.tar.gz
+-https://gitlab.com/graphviz/graphviz/-/archive/8.1.0/graphviz-8.1.0.tar.bz2
++https://gitlab.com/graphviz/graphviz/-/archive/9.0.0/graphviz-9.0.0.tar.bz2
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gtk-doc/1.33/gtk-doc-1.33.2.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.8.tar.bz2
+ https://github.com/ibus/ibus/releases/download/1.5.28/ibus-1.5.28.tar.gz
+@@ -471,7 +470,7 @@ https://github.com/pygobject/pycairo/releases/download/v1.24.0/pycairo-1.24.0.ta
+ https://github.com/Legrandin/pycryptodome/archive/v3.18.0/pycryptodome-3.18.0.tar.gz
+ https://files.pythonhosted.org/packages/source/P/Pygments/Pygments-2.16.1.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/pygobject/2.28/pygobject-2.28.7.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/pygobject/3.44/pygobject-3.44.1.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/pygobject/3.46/pygobject-3.46.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/pygtk/2.24/pygtk-2.24.0.tar.bz2
+ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.1.1.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+@@ -483,7 +482,7 @@ https://files.pythonhosted.org/packages/source/r/requests/requests-2.31.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/requests-2.31.0-use_system_certs-1.patch
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+ https://files.pythonhosted.org/packages/source/s/six/six-1.16.0.tar.gz
+-https://github.com/sphinx-doc/sphinx/archive/v7.2.5/sphinx-7.2.5.tar.gz
++https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-7.2.6.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-1.3.0.tar.gz
+ https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-0.7.13.tar.gz
+ https://files.pythonhosted.org/packages/source/a/attrs/attrs-22.2.0.tar.gz
+@@ -562,7 +561,7 @@ https://downloads.sourceforge.net/traceroute/traceroute-2.1.3.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.0.8.tar.xz
+ https://c-ares.haxx.se/download/c-ares-1.19.1.tar.gz
+-https://curl.se/download/curl-8.2.1.tar.xz
++https://curl.se/download/curl-8.3.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.1/geoclue-2.7.1.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.76/glib-networking-2.76.1.tar.xz
+ https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.1.1/kdsoap-2.1.1.tar.gz
+@@ -609,8 +608,8 @@ https://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz
+ https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
+ https://downloads.mariadb.org/interstitial/mariadb-10.11.5/source/mariadb-10.11.5.tar.gz
+ https://ftp.postgresql.org/pub/source/v15.4/postgresql-15.4.tar.bz2
+-https://sqlite.org/2023/sqlite-autoconf-3430000.tar.gz
+-https://sqlite.org/2023/sqlite-doc-3430000.zip
++https://sqlite.org/2023/sqlite-autoconf-3430100.tar.gz
++https://sqlite.org/2023/sqlite-doc-3430100.zip
+ ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-2.6.6.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.6-consolidated-1.patch
+ https://nlnetlabs.nl/downloads/unbound/unbound-1.18.0.tar.gz
+@@ -887,7 +886,7 @@ https://inkscape.org/gallery/item/42328/inkscape-1.3.tar.xz
+ https://downloads.sourceforge.net/pidgin/pidgin-2.14.12.tar.bz2
+ https://downloads.sourceforge.net/rox/rox-filer-2.11.tar.bz2
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/115.2.0/source/thunderbird-115.2.0.source.tar.xz
++https://archive.mozilla.org/pub/thunderbird/releases/115.2.2/source/thunderbird-115.2.2.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.13.1/tigervnc-1.13.1.tar.gz
+ https://www.x.org/pub/individual/xserver/xorg-server-21.1.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.13.1-configuration_fixes-1.patch
+@@ -996,7 +995,7 @@ https://files.libburnia-project.org/releases/libisofs-1.5.6.tar.gz
+ https://github.com/OpenPrinting/cups/releases/download/v2.4.6/cups-2.4.6-source.tar.gz
+ https://www.openprinting.org/download/cups-filters/cups-filters-1.28.16.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/cups-filters-1.28.16-security_fix-1.patch
+-https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10012/ghostscript-10.01.2.tar.xz
++https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10020/ghostscript-10.02.0.tar.xz
+ https://downloads.sourceforge.net/gs-fonts/ghostscript-fonts-std-8.11.tar.gz
+ https://downloads.sourceforge.net/gs-fonts/gnu-gs-fonts-other-6.0.tar.gz
+ https://downloads.sourceforge.net/gimp-print/gutenprint-5.3.4.tar.xz
