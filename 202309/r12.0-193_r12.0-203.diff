@@ -1,0 +1,56 @@
+diff --git a/wget-list b/wget-list
+index fd012ba6..78e2b313 100644
+--- a/wget-list
++++ b/wget-list
+@@ -87,7 +87,6 @@ https://github.com/unicode-org/icu/releases/download/release-73-2/icu4c-73_2-src
+ https://github.com/benhoyt/inih/archive/r57/inih-r57.tar.gz
+ https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-22.3.11.tar.gz
+ https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
+-https://archive.mozilla.org/pub/firefox/releases/102.15.0esr/source/firefox-102.15.0esr.source.tar.xz
+ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.17.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/json-glib/1.6/json-glib-1.6.6.tar.xz
+ https://people.redhat.com/~dhowells/keyutils/keyutils-1.6.1.tar.bz2
+@@ -149,6 +148,7 @@ https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.42/pcre2-10.42.
+ ftp://ftp.rpm.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
+ ftp://ftp.gnu.org/gnu/pth/pth-2.0.7.tar.gz
+ https://download.kde.org/stable/qca/2.3.7/qca-2.3.7.tar.xz
++https://archive.mozilla.org/pub/firefox/releases/115.2.1esr/source/firefox-115.2.1esr.source.tar.xz
+ https://www.samba.org/ftp/talloc/talloc-2.4.1.tar.gz
+ https://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.24.2.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+@@ -742,7 +742,7 @@ https://gitlab.gnome.org/GNOME/vte/-/archive/0.72.2/vte-0.72.2.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/yelp-xsl/42/yelp-xsl-42.1.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/GConf/3.2/GConf-3.2.6.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gjs/1.76/gjs-1.76.2.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gjs/1.76/gjs-1.78.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-autoar/0.4/gnome-autoar-0.4.4.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-desktop/44/gnome-desktop-44.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
+@@ -866,13 +866,12 @@ https://github.com/lxqt/screengrab/releases/download/2.6.0/screengrab-2.6.0.tar.
+ https://www.abisource.com/downloads/abiword/3.0.5/source/abiword-3.0.5.tar.gz
+ https://www.abisource.com/downloads/abiword/3.0.2/source/abiword-docs-3.0.2.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnumeric/1.12/gnumeric-1.12.55.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/7.6.0/libreoffice-7.6.0.3.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/7.6.0/libreoffice-dictionaries-7.6.0.3.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/7.6.0/libreoffice-help-7.6.0.3.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/7.6.0/libreoffice-translations-7.6.0.3.tar.xz
++https://download.documentfoundation.org/libreoffice/src/7.6.1/libreoffice-7.6.1.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/7.6.1/libreoffice-dictionaries-7.6.1.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/7.6.1/libreoffice-help-7.6.1.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/7.6.1/libreoffice-translations-7.6.1.2.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/epiphany/44/epiphany-44.6.tar.xz
+ https://download.kde.org/stable/release-service/23.08.0/src/falkon-23.08.0.tar.xz
+-https://archive.mozilla.org/pub/firefox/releases/115.2.1esr/source/firefox-115.2.1esr.source.tar.xz
+ https://archive.mozilla.org/pub/seamonkey/releases/2.53.17/source/seamonkey-2.53.17.source.tar.xz
+ https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.4-upstream_fixes-2.patch
+@@ -1037,7 +1036,7 @@ https://github.com/plk/biber/archive/v2.19/biber-2.19.tar.gz
+ https://github.com/mgieseki/dvisvgm/releases/download/3.1/dvisvgm-3.1.tar.gz
+ https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
+-https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20230824.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20230917.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/bluez-5.69-obexd_without_systemd-1.patch
+ https://github.com/elogind/elogind/archive/v252.9/elogind-252.9.tar.gz
+ https://github.com/lfs-book/blocaled/releases/download/v0.5/blocaled-0.5.tar.xz
