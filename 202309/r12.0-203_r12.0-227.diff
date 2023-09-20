@@ -1,0 +1,113 @@
+diff --git a/wget-list b/wget-list
+index 78e2b313..c3cbf492 100644
+--- a/wget-list
++++ b/wget-list
+@@ -62,6 +62,7 @@ ftp://ftp.astron.com/pub/tcsh/tcsh-6.24.10.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+ https://www.zsh.org/pub/zsh-5.9-doc.tar.xz
+ https://download.qemu.org/qemu-8.1.0.tar.xz
++https://www.freedesktop.org/software/appstream/releases/AppStream-0.16.3.tar.xz
+ ftp://ftp.mirrorservice.org/sites/ftp.apache.org/apr/apr-1.7.4.tar.bz2
+ ftp://ftp.mirrorservice.org/sites/ftp.apache.org/apr/apr-util-1.6.3.tar.bz2
+ ftp://ftp.gnu.org/gnu/aspell/aspell-0.60.8.tar.gz
+@@ -80,7 +81,7 @@ ftp://ftp.acc.umu.se/pub/gnome/sources/glib/2.78/glib-2.78.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+ ftp://ftp.acc.umu.se/pub/gnome/sources/glibmm/2.66/glibmm-2.66.5.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gmime/3.2/gmime-3.2.7.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gobject-introspection/1.78/gobject-introspection-1.78.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gobject-introspection/1.78/gobject-introspection-1.78.1.tar.xz
+ ftp://ftp.gnu.org/gnu/gsl/gsl-2.7.1.tar.gz
+ https://download.gnome.org/sources/gspell/1.12/gspell-1.12.2.tar.xz
+ https://github.com/unicode-org/icu/releases/download/release-73-2/icu4c-73_2-src.tgz
+@@ -88,7 +89,7 @@ https://github.com/benhoyt/inih/archive/r57/inih-r57.tar.gz
+ https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-22.3.11.tar.gz
+ https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
+ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.17.tar.gz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/json-glib/1.6/json-glib-1.6.6.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/json-glib/1.8/json-glib-1.8.0.tar.xz
+ https://people.redhat.com/~dhowells/keyutils/keyutils-1.6.1.tar.bz2
+ https://pagure.io/libaio/archive/libaio-0.3.113/libaio-0.3.113.tar.gz
+ https://github.com/libarchive/libarchive/releases/download/v3.7.2/libarchive-3.7.2.tar.xz
+@@ -133,6 +134,7 @@ https://dist.libuv.org/dist/v1.46.0/libuv-v1.46.0.tar.gz
+ https://xkbcommon.org/download/libxkbcommon-1.5.0.tar.xz
+ https://download.gnome.org/sources/libxml2/2.10/libxml2-2.10.4.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
++https://github.com/hughsie/libxmlb/releases/download/0.3.14/libxmlb-0.3.14.tar.xz
+ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.38.tar.xz
+ https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.8.0/libwacom-2.8.0.tar.xz
+ https://wpewebkit.org/releases/libwpe-1.14.1.tar.xz
+@@ -461,13 +463,12 @@ https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-0.5.2.tar.gz
+ https://files.pythonhosted.org/packages/source/g/gi-docgen/gi-docgen-2023.1.tar.gz
+ https://files.pythonhosted.org/packages/source/l/lxml/lxml-4.9.3.tar.gz
+ https://files.pythonhosted.org/packages/source/M/Mako/Mako-1.2.4.tar.gz
+-https://files.pythonhosted.org/packages/source/n/numpy/numpy-1.25.2.tar.gz
++https://files.pythonhosted.org/packages/source/n/numpy/numpy-1.26.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/packaging/packaging-23.1.tar.gz
+ https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/pyatspi/2.46/pyatspi-2.46.0.tar.xz
+ https://github.com/pygobject/pycairo/releases/download/v1.18.2/pycairo-1.18.2.tar.gz
+ https://github.com/pygobject/pycairo/releases/download/v1.24.0/pycairo-1.24.0.tar.gz
+-https://github.com/Legrandin/pycryptodome/archive/v3.18.0/pycryptodome-3.18.0.tar.gz
+ https://files.pythonhosted.org/packages/source/P/Pygments/Pygments-2.16.1.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/pygobject/2.28/pygobject-2.28.7.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/pygobject/3.46/pygobject-3.46.0.tar.xz
+@@ -523,7 +524,6 @@ https://downloads.sourceforge.net/scons/SCons-4.5.2.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+ https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
+ https://downloads.sourceforge.net/swig/swig-4.1.1.tar.gz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/sysprof/3.48/sysprof-3.48.0.tar.xz
+ https://downloads.sourceforge.net/tcl/tk8.6.13-src.tar.gz
+ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/vala/0.56/vala-0.56.13.tar.xz
+@@ -577,7 +577,7 @@ https://github.com/rockdaboot/libpsl/releases/download/0.21.2/libpsl-0.21.2.tar.
+ http://libndp.org/files/libndp-1.8.tar.gz
+ https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.7.0/libslirp-v4.7.0.tar.bz2
+ ftp://ftp.acc.umu.se/pub/gnome/sources/libsoup/2.74/libsoup-2.74.3.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/libsoup/3.4/libsoup-3.4.2.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/libsoup/3.4/libsoup-3.4.3.tar.xz
+ https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.3.tar.bz2
+ https://notroj.github.io/neon/neon-0.32.5.tar.gz
+ https://github.com/nghttp2/nghttp2/releases/download/v1.56.0/nghttp2-1.56.0.tar.xz
+@@ -645,7 +645,7 @@ https://invisible-mirror.net/archives/xterm/xterm-384.tgz
+ ftp://ftp.x.org/pub/individual/app/xclock-1.1.1.tar.xz
+ ftp://ftp.x.org/pub/individual/app/xinit-1.4.2.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/atkmm/2.28/atkmm-2.28.3.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/at-spi2-core/2.48/at-spi2-core-2.48.4.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/at-spi2-core/2.50/at-spi2-core-2.50.0.tar.xz
+ https://download.gnome.org/sources/cairo/1.17/cairo-1.17.6.tar.xz
+ https://www.cairographics.org/releases/cairomm-1.14.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/cogl/1.22/cogl-1.22.8.tar.xz
+@@ -669,13 +669,12 @@ ftp://ftp.acc.umu.se/pub/gnome/sources/gtkmm/3.24/gtkmm-3.24.8.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gtk-vnc/1.3/gtk-vnc-1.3.1.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gtksourceview/5.8/gtksourceview-5.8.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gtksourceview/5.10/gtksourceview-5.10.0.tar.xz
+ https://downloads.sourceforge.net/enlightenment/imlib2-1.12.0.tar.xz
+ https://github.com/ksnip/kColorPicker/archive/refs/tags/v0.2.0/kColorPicker-0.2.0.tar.gz
+ https://github.com/ksnip/kImageAnnotator/archive/refs/tags/v0.6.1/kImageAnnotator-0.6.1.tar.gz
+ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/libadwaita/1.3/libadwaita-1.3.4.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/libdazzle/3.44/libdazzle-3.44.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/libadwaita/1.4/libadwaita-1.4.0.tar.xz
+ https://gedit-technology.net/tarballs/libgedit-amtk/libgedit-amtk-5.8.0.tar.xz
+ https://gedit-technology.net/tarballs/libgedit-gtksourceview/libgedit-gtksourceview-299.0.4.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/libhandy/1.8/libhandy-1.8.2.tar.xz
+@@ -742,7 +741,7 @@ https://gitlab.gnome.org/GNOME/vte/-/archive/0.72.2/vte-0.72.2.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/yelp-xsl/42/yelp-xsl-42.1.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/GConf/3.2/GConf-3.2.6.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gjs/1.76/gjs-1.78.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gjs/1.78/gjs-1.78.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-autoar/0.4/gnome-autoar-0.4.4.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-desktop/44/gnome-desktop-44.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
+@@ -785,7 +784,7 @@ ftp://ftp.acc.umu.se/pub/gnome/sources/eog/44/eog-44.3.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/evince/44/evince-44.3.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/evolution/3.48/evolution-3.48.4.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/file-roller/43/file-roller-43.0.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-calculator/44/gnome-calculator-44.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-calculator/45/gnome-calculator-45.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-color-manager/3.36/gnome-color-manager-3.36.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-disk-utility/45/gnome-disk-utility-45.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-logs/43/gnome-logs-43.0.tar.xz
