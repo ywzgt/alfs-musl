@@ -1,0 +1,64 @@
+diff --git a/wget-list b/wget-list
+index fd4f37a1..6be06689 100644
+--- a/wget-list
++++ b/wget-list
+@@ -675,6 +675,7 @@ https://github.com/ksnip/kColorPicker/archive/refs/tags/v0.2.0/kColorPicker-0.2.
+ https://github.com/ksnip/kImageAnnotator/archive/refs/tags/v0.6.1/kImageAnnotator-0.6.1.tar.gz
+ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/libadwaita/1.4/libadwaita-1.4.0.tar.xz
++https://gitlab.freedesktop.org/libinput/libei/-/archive/1.1.0/libei-1.1.0.tar.gz
+ https://gedit-technology.net/tarballs/libgedit-amtk/libgedit-amtk-5.8.0.tar.xz
+ https://gedit-technology.net/tarballs/libgedit-gtksourceview/libgedit-gtksourceview-299.0.4.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/libhandy/1.8/libhandy-1.8.2.tar.xz
+@@ -693,7 +694,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.15-ffmpeg5_fi
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/tepl/6.8/tepl-6.8.0.tar.xz
+ https://webkitgtk.org/releases/webkitgtk-2.42.0.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gdm/44/gdm-44.1.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gdm/45/gdm-45.0.1.tar.xz
+ https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.tar.xz
+ https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.8/lightdm-gtk-greeter-2.0.8.tar.gz
+ https://github.com/sddm/sddm/archive/v0.20.0/sddm-0.20.0.tar.gz
+@@ -734,7 +735,7 @@ https://download.kde.org/stable/release-service/23.08.0/src/k3b-23.08.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gcr/3.41/gcr-3.41.1.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gcr/4.1/gcr-4.1.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gsettings-desktop-schemas/45/gsettings-desktop-schemas-45.0.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/libsecret/0.21/libsecret-0.21.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/libsecret/0.21/libsecret-0.21.1.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/rest/0.9/rest-0.9.1.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.6.tar.xz
+ https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.0/vte-0.74.0.tar.gz
+@@ -761,21 +762,22 @@ ftp://ftp.acc.umu.se/pub/gnome/sources/tracker/3.6/tracker-3.6.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/tracker-miners/3.6/tracker-miners-3.6.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gsound/1.0/gsound-1.0.3.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/dconf/0.40/dconf-0.40.0.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/dconf-editor/43/dconf-editor-43.0.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-backgrounds/44/gnome-backgrounds-44.0.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gvfs/1.50/gvfs-1.50.6.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/dconf-editor/45/dconf-editor-45.0.1.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-backgrounds/45/gnome-backgrounds-45.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gvfs/1.52/gvfs-1.52.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gexiv2/0.14/gexiv2-0.14.2.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/nautilus/44/nautilus-44.2.1.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/nautilus/45/nautilus-45.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-bluetooth/42/gnome-bluetooth-42.6.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-keyring/42/gnome-keyring-42.1.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-settings-daemon/44/gnome-settings-daemon-44.1.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-control-center/44/gnome-control-center-44.3.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/mutter/44/mutter-44.4.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-shell/44/gnome-shell-44.4.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-shell-extensions/44/gnome-shell-extensions-44.0.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-session/44/gnome-session-44.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-settings-daemon/45/gnome-settings-daemon-45.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/tecla/45/tecla-45.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-control-center/45/gnome-control-center-45.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/mutter/45/mutter-45.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-shell/45/gnome-shell-45.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-shell-extensions/45/gnome-shell-extensions-45.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-session/45/gnome-session-45.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-tweaks/40/gnome-tweaks-40.10.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-user-docs/44/gnome-user-docs-44.3.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-user-docs/45/gnome-user-docs-45.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/yelp/42/yelp-42.2.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/baobab/44/baobab-44.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/brasero/3.12/brasero-3.12.3.tar.xz
