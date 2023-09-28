@@ -1,0 +1,56 @@
+diff --git a/wget-list b/wget-list
+index 5e9204e5..ff07cdac 100644
+--- a/wget-list
++++ b/wget-list
+@@ -1,5 +1,5 @@
+ https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20230816.tar.xz
+-https://github.com/lfs-book/make-ca/releases/download/v1.12/make-ca-1.12.tar.xz
++https://github.com/lfs-book/make-ca/releases/download/v1.13/make-ca-1.13.tar.xz
+ https://github.com/cracklib/cracklib/releases/download/v2.9.11/cracklib-2.9.11.tar.xz
+ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.4/cryptsetup-2.4.3.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+@@ -150,7 +150,7 @@ https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.42/pcre2-10.42.
+ ftp://ftp.rpm.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
+ ftp://ftp.gnu.org/gnu/pth/pth-2.0.7.tar.gz
+ https://download.kde.org/stable/qca/2.3.7/qca-2.3.7.tar.xz
+-https://archive.mozilla.org/pub/firefox/releases/115.2.1esr/source/firefox-115.2.1esr.source.tar.xz
++https://archive.mozilla.org/pub/firefox/releases/115.3.0esr/source/firefox-115.3.0esr.source.tar.xz
+ https://www.samba.org/ftp/talloc/talloc-2.4.1.tar.gz
+ https://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.24.2.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+@@ -275,7 +275,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/autoconf-2.13-consolidated_fix
+ https://github.com/mozilla/cbindgen/archive/v0.26.0/cbindgen-0.26.0.tar.gz
+ ftp://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+-https://cmake.org/files/v3.27/cmake-3.27.5.tar.gz
++https://cmake.org/files/v3.27/cmake-3.27.6.tar.gz
+ https://doxygen.nl/files/doxygen-1.9.8.src.tar.gz
+ ftp://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.4/gc-8.2.4.tar.gz
+@@ -1000,6 +1000,7 @@ https://downloads.sourceforge.net/gs-fonts/gnu-gs-fonts-other-6.0.tar.gz
+ https://downloads.sourceforge.net/gimp-print/gutenprint-5.3.4.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/sane/sane-backends-1.2.1.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/sane/sane-frontends-1.0.14.tar.gz
++ftp://ftp.acc.umu.se/pub/gnome/sources/simple-scan/44/simple-scan-44.0.tar.xz
+ ftp://anduin.linuxfromscratch.org/BLFS/xsane/xsane-0.999.tar.gz
+ ftp://sourceware.org/pub/docbook-tools/new-trials/SOURCES/sgml-common-0.6.3.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/sgml-common-0.6.3-manpage-1.patch
+@@ -1021,8 +1022,7 @@ https://github.com/docbook/xslt10-stylesheets/releases/download/release/1.79.2/d
+ https://files.itstool.org/itstool/itstool-2.0.7.tar.bz2
+ https://releases.pagure.org/xmlto/xmlto-0.0.28.tar.bz2
+ ftp://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz
+-https://anduin.linuxfromscratch.org/BLFS/epdfview/epdfview-0.1.8.tar.bz2
+-https://www.linuxfromscratch.org/patches/blfs/svn/epdfview-0.1.8-fixes-2.patch
++https://anduin.linuxfromscratch.org/BLFS/epdfview-gtk3/epdfview-gtk3-20200814.tar.xz
+ https://archive.apache.org/dist/xmlgraphics/fop/source/fop-2.9-src.tar.gz
+ https://www.mupdf.com/downloads/archive/mupdf-1.23.3-source.tar.gz
+ https://downloads.sourceforge.net/paps/paps-0.7.1.tar.gz
+@@ -1033,7 +1033,7 @@ ftp://tug.org/texlive/historic/2023/texlive-20230311-tlpdb-full.tar.gz
+ https://downloads.sourceforge.net/asymptote/asymptote-2.86.src.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/asymptote-2.86-build_fix-1.patch
+ https://github.com/plk/biber/archive/v2.19/biber-2.19.tar.gz
+-https://github.com/mgieseki/dvisvgm/releases/download/3.1/dvisvgm-3.1.tar.gz
++https://github.com/mgieseki/dvisvgm/releases/download/3.1.1/dvisvgm-3.1.1.tar.gz
+ https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
+ https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20230917.tar.xz
