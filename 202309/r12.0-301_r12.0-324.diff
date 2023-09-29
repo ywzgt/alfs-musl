@@ -1,0 +1,80 @@
+diff --git a/wget-list b/wget-list
+index ff07cdac..9ba83786 100644
+--- a/wget-list
++++ b/wget-list
+@@ -631,7 +631,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-2.patch
+ ftp://ftp.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ ftp://ftp.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
+ ftp://ftp.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.39.tar.xz
+-ftp://ftp.x.org/pub/individual/xserver/xwayland-23.2.0.tar.xz
++ftp://ftp.x.org/pub/individual/xserver/xwayland-23.2.1.tar.xz
+ ftp://ftp.x.org/pub/individual/xserver/xorg-server-21.1.8.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.8-tearfree_backport-1.patch
+ https://www.freedesktop.org/software/libevdev/libevdev-1.13.1.tar.xz
+@@ -648,10 +648,6 @@ ftp://ftp.acc.umu.se/pub/gnome/sources/atkmm/2.28/atkmm-2.28.3.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/at-spi2-core/2.50/at-spi2-core-2.50.0.tar.xz
+ https://download.gnome.org/sources/cairo/1.17/cairo-1.17.6.tar.xz
+ https://www.cairographics.org/releases/cairomm-1.14.0.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/cogl/1.22/cogl-1.22.8.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/clutter/1.26/clutter-1.26.4.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/clutter-gst/3.0/clutter-gst-3.0.27.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/clutter-gtk/1.8/clutter-gtk-1.8.4.tar.xz
+ https://www.freedesktop.org/software/colord/releases/colord-gtk-0.3.0.tar.xz
+ https://fltk.org/pub/fltk/1.3.8/fltk-1.3.8-source.tar.gz
+ https://downloads.sourceforge.net/freeglut/freeglut-3.4.0.tar.gz
+@@ -778,28 +774,28 @@ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-session/45/gnome-session-45.0.tar.x
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-tweaks/40/gnome-tweaks-40.10.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-user-docs/45/gnome-user-docs-45.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/yelp/42/yelp-42.2.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/baobab/44/baobab-44.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/baobab/45/baobab-45.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/brasero/3.12/brasero-3.12.3.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/cheese/44/cheese-44.1.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/eog/44/eog-44.3.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/evince/44/evince-44.3.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/eog/45/eog-45.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/evince/45/evince-45.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/evolution/3.50/evolution-3.50.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/file-roller/43/file-roller-43.0.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-calculator/45/gnome-calculator-45.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-calculator/45/gnome-calculator-45.0.2.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-color-manager/3.36/gnome-color-manager-3.36.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-disk-utility/45/gnome-disk-utility-45.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-logs/43/gnome-logs-43.0.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-maps/44/gnome-maps-44.4.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-maps/45/gnome-maps-45.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-nettool/42/gnome-nettool-42.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gnome-nettool-42.0-ping_and_netstat_fixes-1.patch
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-power-manager/43/gnome-power-manager-43.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-screenshot/41/gnome-screenshot-41.0.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-system-monitor/45/gnome-system-monitor-45.0.1.tar.xz
+-https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.48.2/gnome-terminal-3.48.2.tar.gz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-weather/44/gnome-weather-44.0.tar.xz
+-https://gitlab.gnome.org/GNOME/gucharmap/-/archive/15.1.0/gucharmap-15.1.0.tar.bz2
++ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-system-monitor/45/gnome-system-monitor-45.0.2.tar.xz
++https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.50.0/gnome-terminal-3.50.0.tar.gz
++ftp://ftp.acc.umu.se/pub/gnome/sources/gnome-weather/45/gnome-weather-45.0.tar.xz
++https://gitlab.gnome.org/GNOME/gucharmap/-/archive/15.1.1/gucharmap-15.1.1.tar.bz2
+ https://www.unicode.org/Public/zipped/15.1.0/Unihan.zip
+ ftp://ftp.acc.umu.se/pub/gnome/sources/seahorse/43/seahorse-43.0.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/snapshot/45/snapshot-45.0.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/vinagre/3.22/vinagre-3.22.0.tar.xz
+ https://archive.xfce.org/src/xfce/libxfce4util/4.18/libxfce4util-4.18.1.tar.bz2
+ https://archive.xfce.org/src/xfce/xfconf/4.18/xfconf-4.18.1.tar.bz2
+@@ -870,7 +866,7 @@ https://download.documentfoundation.org/libreoffice/src/7.6.1/libreoffice-7.6.1.
+ https://download.documentfoundation.org/libreoffice/src/7.6.1/libreoffice-dictionaries-7.6.1.2.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/7.6.1/libreoffice-help-7.6.1.2.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/7.6.1/libreoffice-translations-7.6.1.2.tar.xz
+-ftp://ftp.acc.umu.se/pub/gnome/sources/epiphany/44/epiphany-44.6.tar.xz
++ftp://ftp.acc.umu.se/pub/gnome/sources/epiphany/45/epiphany-45.0.tar.xz
+ https://download.kde.org/stable/release-service/23.08.0/src/falkon-23.08.0.tar.xz
+ https://archive.mozilla.org/pub/seamonkey/releases/2.53.17/source/seamonkey-2.53.17.source.tar.xz
+ https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
+@@ -961,6 +957,7 @@ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://taglib.org/releases/taglib-1.13.1.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.24.1.tar.bz2
++https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.4.14/wireplumber-0.4.14.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20230215.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/x265/x265-20230215.tar.xz
+ ftp://ftp.mirrorservice.org/sites/distfiles.gentoo.org/distfiles/xine-lib-1.2.13.tar.xz
