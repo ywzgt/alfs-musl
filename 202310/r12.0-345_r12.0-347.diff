@@ -1,0 +1,24 @@
+diff --git a/wget-list b/wget-list
+index cff724da..73bfa034 100644
+--- a/wget-list
++++ b/wget-list
+@@ -16,8 +16,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3
+ https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2
+ https://kerberos.org/dist/krb5/1.21/krb5-1.21.2.tar.gz
+ ftp://ftp.gnu.org/gnu/nettle/nettle-3.9.1.tar.gz
+-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_93_RTM/src/nss-3.93.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.93-standalone-1.patch
++https://archive.mozilla.org/pub/security/nss/releases/NSS_3_94_RTM/src/nss-3.94.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.94-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.4p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.25.0/p11-kit-0.25.0.tar.xz
+ https://gitlab.freedesktop.org/polkit/polkit/-/archive/123/polkit-123.tar.gz
+@@ -601,7 +601,7 @@ https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
+ https://www.dovecot.org/releases/2.3/dovecot-2.3.21.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/dovecot-2.3.21-openssl3_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/dovecot-2.3.21-security_fix-1.patch
+-ftp://ftp.exim.org/pub/exim/exim4/exim-4.96.tar.xz
++ftp://ftp.exim.org/pub/exim/exim4/exim-4.96.1.tar.xz
+ ftp://ftp.porcupine.org/mirrors/postfix-release/official/postfix-3.8.2.tar.gz
+ ftp://ftp.sendmail.org/pub/sendmail/sendmail.8.17.2.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz
