@@ -1,0 +1,66 @@
+diff --git a/wget-list b/wget-list
+index cd149d6a..51824a45 100644
+--- a/wget-list
++++ b/wget-list
+@@ -18,13 +18,13 @@ https://kerberos.org/dist/krb5/1.21/krb5-1.21.2.tar.gz
+ ftp://ftp.gnu.org/gnu/nettle/nettle-3.9.1.tar.gz
+ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_94_RTM/src/nss-3.94.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.94-standalone-1.patch
+-https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.4p1.tar.gz
++https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.5p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.25.0/p11-kit-0.25.0.tar.xz
+ https://gitlab.freedesktop.org/polkit/polkit/-/archive/123/polkit-123.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+ https://github.com/shadow-maint/shadow/releases/download/4.14.0/shadow-4.14.0.tar.xz
+-ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.4p1.tar.gz
++ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.5p1.tar.gz
+ ftp://ftp.stunnel.org/stunnel/archive/5.x/stunnel-5.71.tar.gz
+ ftp://ftp.sudo.ws/pub/sudo/sudo-1.9.14p3.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+@@ -443,7 +443,7 @@ https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0208.tar.gz
+ https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+-https://www.php.net/distributions/php-8.2.10.tar.xz
++https://www.php.net/distributions/php-8.2.11.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
+@@ -519,7 +519,7 @@ https://files.pythonhosted.org/packages/source/t/typing_extensions/typing_extens
+ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.0.7.tar.gz
+ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.0.2.tar.gz
+ https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.2.tar.xz
+-https://static.rust-lang.org/dist/rustc-1.72.0-src.tar.xz
++https://static.rust-lang.org/dist/rustc-1.73.0-src.tar.xz
+ https://downloads.sourceforge.net/scons/SCons-4.5.2.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+ https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
+@@ -534,7 +534,7 @@ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21/OpenJDK-21+35-x86_64
+ https://github.com/openjdk/jdk21u/archive/jdk-21-ga.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21/jtreg-7.2+1.tar.gz
+ https://archive.apache.org/dist/ant/source/apache-ant-1.10.14-src.tar.xz
+-https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.0.2/dhcpcd-10.0.2.tar.xz
++https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.0.3/dhcpcd-10.0.3.tar.xz
+ https://www.kernel.org/pub/linux/utils/net/bridge-utils/bridge-utils-1.7.1.tar.xz
+ https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.0.tar.bz2
+ ftp://ftp.ncftp.com/ncftp/ncftp-3.2.6-src.tar.xz
+@@ -641,7 +641,7 @@ ftp://ftp.x.org/pub/individual/driver/xf86-input-libinput-1.4.0.tar.xz
+ ftp://ftp.x.org/pub/individual/driver/xf86-input-synaptics-1.9.2.tar.xz
+ https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-1.2.0/xf86-input-wacom-1.2.0.tar.bz2
+ ftp://ftp.x.org/pub/individual/app/twm-1.0.12.tar.xz
+-https://invisible-mirror.net/archives/xterm/xterm-384.tgz
++https://invisible-mirror.net/archives/xterm/xterm-385.tgz
+ ftp://ftp.x.org/pub/individual/app/xclock-1.1.1.tar.xz
+ ftp://ftp.x.org/pub/individual/app/xinit-1.4.2.tar.xz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/atkmm/2.28/atkmm-2.28.3.tar.xz
+@@ -943,8 +943,7 @@ https://github.com/intel/libva/releases/download/2.19.0/libva-2.19.0.tar.bz2
+ https://gitlab.freedesktop.org/vdpau/libvdpau/-/archive/1.5/libvdpau-1.5.tar.bz2
+ https://github.com/i-rinat/libvdpau-va-gl/archive/v0.4.0/libvdpau-va-gl-0.4.0.tar.gz
+ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
+-https://github.com/webmproject/libvpx/archive/v1.13.0/libvpx-1.13.0.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libvpx-1.13.0-security_fix-1.patch
++https://github.com/webmproject/libvpx/archive/v1.13.1/libvpx-1.13.1.tar.gz
+ https://github.com/mltframework/mlt/releases/download/v7.18.0/mlt-7.18.0.tar.gz
+ https://downloads.xiph.org/releases/opus/opus-1.4.tar.gz
+ https://github.com/PipeWire/pipewire/archive/0.3.80/pipewire-0.3.80.tar.gz
