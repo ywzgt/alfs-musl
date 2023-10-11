@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index 51824a45..ab2621d3 100644
+--- a/wget-list
++++ b/wget-list
+@@ -275,7 +275,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/autoconf-2.13-consolidated_fix
+ https://github.com/mozilla/cbindgen/archive/v0.26.0/cbindgen-0.26.0.tar.gz
+ ftp://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+-https://cmake.org/files/v3.27/cmake-3.27.6.tar.gz
++https://cmake.org/files/v3.27/cmake-3.27.7.tar.gz
+ https://doxygen.nl/files/doxygen-1.9.8.src.tar.gz
+ ftp://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.4/gc-8.2.4.tar.gz
+@@ -464,7 +464,7 @@ https://files.pythonhosted.org/packages/source/g/gi-docgen/gi-docgen-2023.1.tar.
+ https://files.pythonhosted.org/packages/source/l/lxml/lxml-4.9.3.tar.gz
+ https://files.pythonhosted.org/packages/source/M/Mako/Mako-1.2.4.tar.gz
+ https://files.pythonhosted.org/packages/source/n/numpy/numpy-1.26.0.tar.gz
+-https://files.pythonhosted.org/packages/source/p/packaging/packaging-23.1.tar.gz
++https://files.pythonhosted.org/packages/source/p/packaging/packaging-23.2.tar.gz
+ https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
+ ftp://ftp.acc.umu.se/pub/gnome/sources/pyatspi/2.46/pyatspi-2.46.0.tar.xz
+ https://github.com/pygobject/pycairo/releases/download/v1.18.2/pycairo-1.18.2.tar.gz
+@@ -630,7 +630,7 @@ ftp://ftp.freedesktop.org/pub/mesa/mesa-23.1.8.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-2.patch
+ ftp://ftp.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ ftp://ftp.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
+-ftp://ftp.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.39.tar.xz
++ftp://ftp.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.40.tar.xz
+ ftp://ftp.x.org/pub/individual/xserver/xwayland-23.2.1.tar.xz
+ ftp://ftp.x.org/pub/individual/xserver/xorg-server-21.1.8.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.8-tearfree_backport-1.patch
