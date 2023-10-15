@@ -1,0 +1,40 @@
+diff --git a/wget-list b/wget-list
+index 1ce145f7..3262a4d7 100644
+--- a/wget-list
++++ b/wget-list
+@@ -7,7 +7,7 @@ ftp://ftp.gnupg.org/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gnupg-2.4.3-emacs-1.patch
+ ftp://ftp.gnupg.org/gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz
+ ftp://ftp.gnupg.org/gcrypt/gpgme/gpgme-1.22.0.tar.bz2
+-https://www.netfilter.org/projects/iptables/files/iptables-1.8.9.tar.xz
++https://www.netfilter.org/projects/iptables/files/iptables-1.8.10.tar.xz
+ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.69.tar.xz
+ https://github.com/linux-pam/linux-pam/releases/download/v1.5.3/Linux-PAM-1.5.3.tar.xz
+ https://github.com/linux-pam/linux-pam/releases/download/v1.5.3/Linux-PAM-1.5.3-docs.tar.xz
+@@ -41,7 +41,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.9-convenience-1.p
+ ftp://ftp.gnu.org/gnu/parted/parted-3.6.tar.xz
+ https://downloads.sourceforge.net/smartmontools/smartmontools-7.4.tar.gz
+ https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.3/sshfs-3.7.3.tar.xz
+-https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.4.0.tar.xz
++https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.5.0.tar.xz
+ https://github.com/rhboot/efivar/releases/download/38/efivar-38.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/efivar-38-i686-1.patch
+ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
+@@ -335,7 +335,7 @@ https://www.cpan.org/authors/id/A/AB/ABIGAIL/Regexp-Common-2017060201.tar.gz
+ https://www.cpan.org/authors/id/R/RA/RAAB/SGMLSpm-1.1.tar.gz
+ https://www.cpan.org/authors/id/S/SA/SALVA/Sort-Key-1.33.tar.gz
+ https://www.cpan.org/authors/id/D/DA/DANBOO/Test-Command-0.11.tar.gz
+-https://www.cpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.70.tar.gz
++https://www.cpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.71.tar.gz
+ https://www.cpan.org/authors/id/A/AM/AMBS/Text-BibTeX-0.89.tar.gz
+ https://www.cpan.org/authors/id/I/IS/ISHIGAKI/Text-CSV-2.03.tar.gz
+ https://www.cpan.org/authors/id/S/SY/SYP/Text-Roman-3.5.tar.gz
+@@ -887,7 +887,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.13.1-configuration_
+ https://github.com/transmission/transmission/releases/download/4.0.4/transmission-4.0.4.tar.xz
+ https://github.com/ib/xarchiver/archive/0.5.4.21/xarchiver-0.5.4.21.tar.gz
+ https://portland.freedesktop.org/download/xdg-utils-1.1.3.tar.gz
+-https://www.jwz.org/xscreensaver/xscreensaver-6.07.tar.gz
++https://www.jwz.org/xscreensaver/xscreensaver-6.08.tar.gz
+ ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.2.10.tar.bz2
+ ftp://ftp.alsa-project.org/pub/plugins/alsa-plugins-1.2.7.1.tar.bz2
+ ftp://ftp.alsa-project.org/pub/utils/alsa-utils-1.2.10.tar.bz2
