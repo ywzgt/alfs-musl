@@ -1,0 +1,80 @@
+diff --git a/wget-list b/wget-list
+index 3628d372..9754b66b 100644
+--- a/wget-list
++++ b/wget-list
+@@ -85,7 +85,7 @@ https://ftp.gnu.org/gnu/gsl/gsl-2.7.1.tar.gz
+ https://download.gnome.org/sources/gspell/1.12/gspell-1.12.2.tar.xz
+ https://github.com/unicode-org/icu/releases/download/release-73-2/icu4c-73_2-src.tgz
+ https://github.com/benhoyt/inih/archive/r57/inih-r57.tar.gz
+-https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-22.3.11.tar.gz
++https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-22.3.12.tar.gz
+ https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
+ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.17.tar.gz
+ https://download.gnome.org/sources/json-glib/1.8/json-glib-1.8.0.tar.xz
+@@ -591,8 +591,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.pa
+ https://bitbucket.org/mutt/mutt/downloads/mutt-2.2.12.tar.gz
+ https://ftp.osuosl.org/pub/blfs/conglomeration/procmail/procmail-3.22.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.22-consolidated_fixes-1.patch
+-https://archive.apache.org/dist/httpd/httpd-2.4.57.tar.bz2
+-https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.57-blfs_layout-1.patch
++https://archive.apache.org/dist/httpd/httpd-2.4.58.tar.bz2
++https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.58-blfs_layout-1.patch
+ https://downloads.isc.org/isc/kea/2.4.0/kea-2.4.0.tar.gz
+ https://github.com/proftpd/proftpd/archive/v1.3.8a/proftpd-1.3.8a.tar.gz
+ https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
+@@ -732,7 +732,7 @@ https://download.gnome.org/sources/gsettings-desktop-schemas/45/gsettings-deskto
+ https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.1.tar.xz
+ https://download.gnome.org/sources/rest/0.9/rest-0.9.1.tar.xz
+ https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.6.tar.xz
+-https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.0/vte-0.74.0.tar.gz
++https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.1/vte-0.74.1.tar.gz
+ https://download.gnome.org/sources/yelp-xsl/42/yelp-xsl-42.1.tar.xz
+ https://download.gnome.org/sources/GConf/3.2/GConf-3.2.6.tar.xz
+ https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+@@ -788,9 +788,9 @@ https://www.linuxfromscratch.org/patches/blfs/svn/gnome-nettool-42.0-ping_and_ne
+ https://download.gnome.org/sources/gnome-power-manager/43/gnome-power-manager-43.0.tar.xz
+ https://download.gnome.org/sources/gnome-screenshot/41/gnome-screenshot-41.0.tar.xz
+ https://download.gnome.org/sources/gnome-system-monitor/45/gnome-system-monitor-45.0.2.tar.xz
+-https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.50.0/gnome-terminal-3.50.0.tar.gz
++https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.50.1/gnome-terminal-3.50.1.tar.gz
+ https://download.gnome.org/sources/gnome-weather/45/gnome-weather-45.0.tar.xz
+-https://gitlab.gnome.org/GNOME/gucharmap/-/archive/15.1.1/gucharmap-15.1.1.tar.bz2
++https://gitlab.gnome.org/GNOME/gucharmap/-/archive/15.1.2/gucharmap-15.1.2.tar.bz2
+ https://www.unicode.org/Public/zipped/15.1.0/Unihan.zip
+ https://download.gnome.org/sources/seahorse/43/seahorse-43.0.tar.xz
+ https://download.gnome.org/sources/snapshot/45/snapshot-45.0.tar.xz
+@@ -880,7 +880,7 @@ https://inkscape.org/gallery/item/42328/inkscape-1.3.tar.xz
+ https://downloads.sourceforge.net/pidgin/pidgin-2.14.12.tar.bz2
+ https://downloads.sourceforge.net/rox/rox-filer-2.11.tar.bz2
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/115.3.2/source/thunderbird-115.3.2.source.tar.xz
++https://archive.mozilla.org/pub/thunderbird/releases/115.3.3/source/thunderbird-115.3.3.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.13.1/tigervnc-1.13.1.tar.gz
+ https://www.x.org/pub/individual/xserver/xorg-server-21.1.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.13.1-configuration_fixes-1.patch
+@@ -889,6 +889,7 @@ https://github.com/ib/xarchiver/archive/0.5.4.21/xarchiver-0.5.4.21.tar.gz
+ https://portland.freedesktop.org/download/xdg-utils-1.1.3.tar.gz
+ https://www.jwz.org/xscreensaver/xscreensaver-6.08.tar.gz
+ https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.10.tar.bz2
++https://www.linuxfromscratch.org/patches/blfs/svn/alsa-lib-1.2.10-upstream_fixes-1.patch
+ https://www.alsa-project.org/files/pub/plugins/alsa-plugins-1.2.7.1.tar.bz2
+ https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.10.tar.bz2
+ https://www.alsa-project.org/files/pub/tools/alsa-tools-1.2.5.tar.bz2
+@@ -911,7 +912,7 @@ https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.22.6.tar.xz
+ https://gstreamer.freedesktop.org/src/gstreamer-vaapi/gstreamer-vaapi-1.22.6.tar.xz
+ https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+-https://github.com/intel/media-driver/archive/refs/tags/intel-media-23.3.4.tar.gz
++https://github.com/intel/media-driver/archive/refs/tags/intel-media-23.3.5.tar.gz
+ https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
+ https://liba52.sourceforge.net/files/a52dec-0.7.4.tar.gz
+ https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
+@@ -945,7 +946,7 @@ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
+ https://github.com/webmproject/libvpx/archive/v1.13.1/libvpx-1.13.1.tar.gz
+ https://github.com/mltframework/mlt/releases/download/v7.20.0/mlt-7.20.0.tar.gz
+ https://downloads.xiph.org/releases/opus/opus-1.4.tar.gz
+-https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/0.3.82/pipewire-0.3.82.tar.bz2
++https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/0.3.83/pipewire-0.3.83.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-16.1.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.0.tar.xz
+ https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.68/sdl12-compat-release-1.2.68.tar.gz
