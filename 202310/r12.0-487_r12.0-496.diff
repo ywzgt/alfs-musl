@@ -1,0 +1,40 @@
+diff --git a/wget-list b/wget-list
+index 4ba43f503..ae92ced10 100644
+--- a/wget-list
++++ b/wget-list
+@@ -6,7 +6,7 @@ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyru
+ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gnupg-2.4.3-emacs-1.patch
+ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz
+-https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.22.0.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.0.tar.bz2
+ https://www.netfilter.org/projects/iptables/files/iptables-1.8.10.tar.xz
+ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.69.tar.xz
+ https://github.com/linux-pam/linux-pam/releases/download/v1.5.3/Linux-PAM-1.5.3.tar.xz
+@@ -76,7 +76,7 @@ https://duktape.org/duktape-2.7.0.tar.xz
+ https://github.com/AbiWord/enchant/releases/download/v2.6.1/enchant-2.6.1.tar.gz
+ https://libopenraw.freedesktop.org/download/exempi-2.6.4.tar.xz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+-https://download.gnome.org/sources/glib/2.78/glib-2.78.0.tar.xz
++https://download.gnome.org/sources/glib/2.78/glib-2.78.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+ https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.5.tar.xz
+ https://download.gnome.org/sources/gmime/3.2/gmime-3.2.7.tar.xz
+@@ -189,7 +189,7 @@ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-2
+ https://download.osgeo.org/libtiff/tiff-4.6.0.tar.gz
+ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.2.tar.gz
+ https://github.com/mypaint/mypaint-brushes/releases/download/v1.3.1/mypaint-brushes-1.3.1.tar.xz
+-https://releases.pagure.org/newt/newt-0.52.23.tar.gz
++https://releases.pagure.org/newt/newt-0.52.24.tar.gz
+ https://github.com/opencv/opencv/archive/4.8.1/opencv-4.8.1.tar.gz
+ https://github.com/opencv/opencv_contrib/archive/4.8.1/opencv_contrib-4.8.1.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.0/openjpeg-2.5.0.tar.gz
+@@ -473,7 +473,7 @@ https://download.gnome.org/sources/pygobject/3.46/pygobject-3.46.0.tar.xz
+ https://download.gnome.org/sources/pygtk/2.24/pygtk-2.24.0.tar.bz2
+ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.1.1.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+-https://files.pythonhosted.org/packages/source/p/pytest/pytest-7.4.2.tar.gz
++https://files.pythonhosted.org/packages/source/p/pytest/pytest-7.4.3.tar.gz
+ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
+ https://files.pythonhosted.org/packages/source/P/PyYAML/PyYAML-6.0.1.tar.gz
+ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
