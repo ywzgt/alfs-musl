@@ -1,0 +1,51 @@
+diff --git a/wget-list b/wget-list
+index cc7ac6d3f..e8d02ca35 100644
+--- a/wget-list
++++ b/wget-list
+@@ -23,7 +23,7 @@ https://github.com/p11-glue/p11-kit/releases/download/0.25.1/p11-kit-0.25.1.tar.
+ https://gitlab.freedesktop.org/polkit/polkit/-/archive/123/polkit-123.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+-https://github.com/shadow-maint/shadow/releases/download/4.14.1/shadow-4.14.1.tar.xz
++https://github.com/shadow-maint/shadow/releases/download/4.14.2/shadow-4.14.2.tar.xz
+ https://www.stunnel.org/downloads/archive/5.x/stunnel-5.71.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.14p3.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+@@ -265,7 +265,7 @@ https://www.rarlab.com/rar/unrarsrc-6.2.12.tar.gz
+ https://downloads.sourceforge.net/infozip/unzip60.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-consolidated_fixes-1.patch
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.2/upower-v1.90.2.tar.bz2
+-https://github.com/gregkh/usbutils/archive/v016/usbutils-016.tar.gz
++https://github.com/gregkh/usbutils/archive/v017/usbutils-017.tar.gz
+ https://ftp.gnu.org/gnu/which/which-2.21.tar.gz
+ https://downloads.sourceforge.net/infozip/zip30.tar.gz
+ https://ftp.gnu.org/gnu/autoconf/autoconf-2.13.tar.gz
+@@ -447,8 +447,8 @@ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/Python-2.7.18-security_fixes-1.patch
+ https://www.python.org/ftp/python/doc/2.7.18/python-2.7.18-docs-html.tar.bz2
+-https://www.python.org/ftp/python/3.11.5/Python-3.11.5.tar.xz
+-https://www.python.org/ftp/python/doc/3.11.5/python-3.11.5-docs-html.tar.bz2
++https://www.python.org/ftp/python/3.12.0/Python-3.12.0.tar.xz
++https://www.python.org/ftp/python/doc/3.12.0/python-3.12.0-docs-html.tar.bz2
+ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.2.0.tar.gz
+ https://github.com/psf/cachecontrol/archive/refs/tags/v0.13.1/cachecontrol-0.13.1.tar.gz
+@@ -913,7 +913,7 @@ https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.22.6.tar.xz
+ https://gstreamer.freedesktop.org/src/gstreamer-vaapi/gstreamer-vaapi-1.22.6.tar.xz
+ https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+-https://github.com/intel/media-driver/archive/refs/tags/intel-media-23.3.5.tar.gz
++https://github.com/intel/media-driver/archive/refs/tags/intel-media-23.4.0.tar.gz
+ https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
+ https://liba52.sourceforge.net/files/a52dec-0.7.4.tar.gz
+ https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
+@@ -982,7 +982,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/MPlayer-1.5-upstream_ffmpg6_fi
+ https://mplayerhq.hu/MPlayer/skins/Clearlooks-2.0.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/transcode/transcode-1.1.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/transcode-1.1.7-gcc10_fix-1.patch
+-https://download.videolan.org/vlc/3.0.19/vlc-3.0.19.tar.xz
++https://download.videolan.org/vlc/3.0.20/vlc-3.0.20.tar.xz
+ https://downloads.sourceforge.net/xine/xine-ui-0.99.14.tar.xz
+ https://downloads.sourceforge.net/cdrdao/cdrdao-1.2.4.tar.bz2
+ https://downloads.sourceforge.net/cdrtools/cdrtools-3.02a09.tar.bz2
