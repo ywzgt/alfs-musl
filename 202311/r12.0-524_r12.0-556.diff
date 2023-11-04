@@ -1,0 +1,161 @@
+diff --git a/wget-list b/wget-list
+index e8d02ca35..a8cebe294 100644
+--- a/wget-list
++++ b/wget-list
+@@ -19,7 +19,7 @@ https://ftp.gnu.org/gnu/nettle/nettle-3.9.1.tar.gz
+ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_94_RTM/src/nss-3.94.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.94-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.5p1.tar.gz
+-https://github.com/p11-glue/p11-kit/releases/download/0.25.1/p11-kit-0.25.1.tar.xz
++https://github.com/p11-glue/p11-kit/releases/download/0.25.2/p11-kit-0.25.2.tar.xz
+ https://gitlab.freedesktop.org/polkit/polkit/-/archive/123/polkit-123.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+@@ -83,7 +83,7 @@ https://download.gnome.org/sources/gmime/3.2/gmime-3.2.7.tar.xz
+ https://download.gnome.org/sources/gobject-introspection/1.78/gobject-introspection-1.78.1.tar.xz
+ https://ftp.gnu.org/gnu/gsl/gsl-2.7.1.tar.gz
+ https://download.gnome.org/sources/gspell/1.12/gspell-1.12.2.tar.xz
+-https://github.com/unicode-org/icu/releases/download/release-73-2/icu4c-73_2-src.tgz
++https://github.com/unicode-org/icu/releases/download/release-74-1/icu4c-74_1-src.tgz
+ https://github.com/benhoyt/inih/archive/r57/inih-r57.tar.gz
+ https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-22.3.12.tar.gz
+ https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
+@@ -265,7 +265,7 @@ https://www.rarlab.com/rar/unrarsrc-6.2.12.tar.gz
+ https://downloads.sourceforge.net/infozip/unzip60.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-consolidated_fixes-1.patch
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.2/upower-v1.90.2.tar.bz2
+-https://github.com/gregkh/usbutils/archive/v017/usbutils-017.tar.gz
++https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-017.tar.xz
+ https://ftp.gnu.org/gnu/which/which-2.21.tar.gz
+ https://downloads.sourceforge.net/infozip/zip30.tar.gz
+ https://ftp.gnu.org/gnu/autoconf/autoconf-2.13.tar.gz
+@@ -525,12 +525,12 @@ https://downloads.sourceforge.net/swig/swig-4.1.1.tar.gz
+ https://downloads.sourceforge.net/tcl/tk8.6.13-src.tar.gz
+ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+ https://download.gnome.org/sources/vala/0.56/vala-0.56.13.tar.xz
+-https://sourceware.org/pub/valgrind/valgrind-3.21.0.tar.bz2
++https://sourceware.org/pub/valgrind/valgrind-3.22.0.tar.bz2
+ https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
+-https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21/OpenJDK-21+35-i686-bin.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21/OpenJDK-21+35-x86_64-bin.tar.xz
+-https://github.com/openjdk/jdk21u/archive/jdk-21-ga.tar.gz
+-https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21/jtreg-7.2+1.tar.gz
++https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.1/OpenJDK-21.0.1+12-i686-bin.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.1/OpenJDK-21.0.1+12-x86_64-bin.tar.xz
++https://github.com/openjdk/jdk21u/archive/jdk-21.0.1-ga.tar.gz
++https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.1/jtreg-7.2+1.tar.gz
+ https://archive.apache.org/dist/ant/source/apache-ant-1.10.14-src.tar.xz
+ https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.0.4/dhcpcd-10.0.4.tar.xz
+ https://www.kernel.org/pub/linux/utils/net/bridge-utils/bridge-utils-1.7.1.tar.xz
+@@ -558,7 +558,7 @@ https://nmap.org/dist/nmap-7.94.tar.bz2
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.3.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.0.10.tar.xz
+-https://c-ares.haxx.se/download/c-ares-1.20.1.tar.gz
++https://c-ares.haxx.se/download/c-ares-1.21.0.tar.gz
+ https://curl.se/download/curl-8.4.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.1/geoclue-2.7.1.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.78/glib-networking-2.78.0.tar.xz
+@@ -575,10 +575,10 @@ https://github.com/rockdaboot/libpsl/releases/download/0.21.2/libpsl-0.21.2.tar.
+ http://libndp.org/files/libndp-1.8.tar.gz
+ https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.7.0/libslirp-v4.7.0.tar.bz2
+ https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.3.tar.xz
+-https://download.gnome.org/sources/libsoup/3.4/libsoup-3.4.3.tar.xz
++https://download.gnome.org/sources/libsoup/3.4/libsoup-3.4.4.tar.xz
+ https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.4.tar.bz2
+ https://notroj.github.io/neon/neon-0.32.5.tar.gz
+-https://github.com/nghttp2/nghttp2/releases/download/v1.57.0/nghttp2-1.57.0.tar.xz
++https://github.com/nghttp2/nghttp2/releases/download/v1.58.0/nghttp2-1.58.0.tar.xz
+ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.4.4.tar.xz
+ https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
+ https://tecnocode.co.uk/downloads/uhttpmock/uhttpmock-0.5.3.tar.xz
+@@ -706,13 +706,12 @@ http://tango.freedesktop.org/releases/icon-naming-utils-0.8.90.tar.bz2
+ https://downloads.sourceforge.net/lxde/lxde-icon-theme-0.5.1.tar.xz
+ https://download.kde.org/stable/frameworks/5.109/oxygen-icons5-5.109.0.tar.xz
+ https://download.kde.org/stable/frameworks/5.109/extra-cmake-modules-5.109.0.tar.xz
+-https://download.kde.org/stable/phonon/4.11.1/phonon-4.11.1.tar.xz
+-https://download.kde.org/stable/phonon/phonon-backend-gstreamer/4.10.0/phonon-backend-gstreamer-4.10.0.tar.xz
+-https://download.kde.org/stable/phonon/phonon-backend-vlc/0.11.3/phonon-backend-vlc-0.11.3.tar.xz
++https://download.kde.org/stable/phonon/4.12.0/phonon-4.12.0.tar.xz
++https://download.kde.org/stable/phonon/phonon-backend-vlc/0.12.0/phonon-backend-vlc-0.12.0.tar.xz
+ https://download.kde.org/stable/polkit-qt-1/polkit-qt-1-0.114.0.tar.xz
+ https://launchpad.net/ubuntu/+archive/primary/+files/libdbusmenu-qt_0.9.3+16.04.20160218.orig.tar.gz
+ https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.10.0.tar.xz
+-https://download.kde.org/stable/kuserfeedback/kuserfeedback-1.2.0.tar.xz
++https://download.kde.org/stable/kuserfeedback/kuserfeedback-1.3.0.tar.xz
+ https://download.kde.org/stable/release-service/23.08.0/src/ark-23.08.0.tar.xz
+ https://download.kde.org/stable/release-service/23.08.0/src/kdenlive-23.08.0.tar.xz
+ https://download.kde.org/stable/release-service/23.08.0/src/kmix-23.08.0.tar.xz
+@@ -748,42 +747,41 @@ https://download.gnome.org/sources/libgee/0.20/libgee-0.20.6.tar.xz
+ https://download.gnome.org/sources/libgtop/2.40/libgtop-2.40.0.tar.xz
+ https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.0.tar.xz
+ https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz
+-https://download.gnome.org/sources/libshumate/1.1/libshumate-1.1.0.tar.xz
++https://download.gnome.org/sources/libshumate/1.1/libshumate-1.1.2.tar.xz
+ https://download.gnome.org/sources/libwnck/43/libwnck-43.0.tar.xz
+-https://download.gnome.org/sources/evolution-data-server/3.50/evolution-data-server-3.50.0.tar.xz
++https://download.gnome.org/sources/evolution-data-server/3.50/evolution-data-server-3.50.1.tar.xz
+ https://download.gnome.org/sources/tracker/3.6/tracker-3.6.0.tar.xz
+-https://download.gnome.org/sources/tracker-miners/3.6/tracker-miners-3.6.1.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/tracker-miners-3.6.1-upstream_fixes-1.patch
++https://download.gnome.org/sources/tracker-miners/3.6/tracker-miners-3.6.2.tar.xz
+ https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz
+ https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
+ https://download.gnome.org/sources/dconf-editor/45/dconf-editor-45.0.1.tar.xz
+ https://download.gnome.org/sources/gnome-backgrounds/45/gnome-backgrounds-45.0.tar.xz
+ https://download.gnome.org/sources/gvfs/1.52/gvfs-1.52.1.tar.xz
+ https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.2.tar.xz
+-https://download.gnome.org/sources/nautilus/45/nautilus-45.0.tar.xz
++https://download.gnome.org/sources/nautilus/45/nautilus-45.1.tar.xz
+ https://download.gnome.org/sources/gnome-bluetooth/42/gnome-bluetooth-42.6.tar.xz
+ https://download.gnome.org/sources/gnome-keyring/42/gnome-keyring-42.1.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/45/gnome-settings-daemon-45.0.tar.xz
+ https://download.gnome.org/sources/tecla/45/tecla-45.0.tar.xz
+-https://download.gnome.org/sources/gnome-control-center/45/gnome-control-center-45.0.tar.xz
+-https://download.gnome.org/sources/mutter/45/mutter-45.0.tar.xz
+-https://download.gnome.org/sources/gnome-shell/45/gnome-shell-45.0.tar.xz
+-https://download.gnome.org/sources/gnome-shell-extensions/45/gnome-shell-extensions-45.0.tar.xz
++https://download.gnome.org/sources/gnome-control-center/45/gnome-control-center-45.1.tar.xz
++https://download.gnome.org/sources/mutter/45/mutter-45.1.tar.xz
++https://download.gnome.org/sources/gnome-shell/45/gnome-shell-45.1.tar.xz
++https://download.gnome.org/sources/gnome-shell-extensions/45/gnome-shell-extensions-45.1.tar.xz
+ https://download.gnome.org/sources/gnome-session/45/gnome-session-45.0.tar.xz
+ https://download.gnome.org/sources/gnome-tweaks/40/gnome-tweaks-40.10.tar.xz
+-https://download.gnome.org/sources/gnome-user-docs/45/gnome-user-docs-45.0.tar.xz
++https://download.gnome.org/sources/gnome-user-docs/45/gnome-user-docs-45.1.tar.xz
+ https://download.gnome.org/sources/yelp/42/yelp-42.2.tar.xz
+ https://download.gnome.org/sources/baobab/45/baobab-45.0.tar.xz
+ https://download.gnome.org/sources/brasero/3.12/brasero-3.12.3.tar.xz
+-https://download.gnome.org/sources/eog/45/eog-45.0.tar.xz
++https://download.gnome.org/sources/eog/45/eog-45.1.tar.xz
+ https://download.gnome.org/sources/evince/45/evince-45.0.tar.xz
+-https://download.gnome.org/sources/evolution/3.50/evolution-3.50.0.tar.xz
++https://download.gnome.org/sources/evolution/3.50/evolution-3.50.1.tar.xz
+ https://download.gnome.org/sources/file-roller/43/file-roller-43.0.tar.xz
+ https://download.gnome.org/sources/gnome-calculator/45/gnome-calculator-45.0.2.tar.xz
+ https://download.gnome.org/sources/gnome-color-manager/3.36/gnome-color-manager-3.36.0.tar.xz
+ https://download.gnome.org/sources/gnome-disk-utility/45/gnome-disk-utility-45.0.tar.xz
+ https://download.gnome.org/sources/gnome-logs/43/gnome-logs-43.0.tar.xz
+-https://download.gnome.org/sources/gnome-maps/45/gnome-maps-45.0.tar.xz
++https://download.gnome.org/sources/gnome-maps/45/gnome-maps-45.1.tar.xz
+ https://download.gnome.org/sources/gnome-nettool/42/gnome-nettool-42.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gnome-nettool-42.0-ping_and_netstat_fixes-1.patch
+ https://download.gnome.org/sources/gnome-power-manager/43/gnome-power-manager-43.0.tar.xz
+@@ -797,7 +795,7 @@ https://download.gnome.org/sources/seahorse/43/seahorse-43.0.tar.xz
+ https://download.gnome.org/sources/snapshot/45/snapshot-45.0.tar.xz
+ https://download.gnome.org/sources/vinagre/3.22/vinagre-3.22.0.tar.xz
+ https://archive.xfce.org/src/xfce/libxfce4util/4.18/libxfce4util-4.18.1.tar.bz2
+-https://archive.xfce.org/src/xfce/xfconf/4.18/xfconf-4.18.2.tar.bz2
++https://archive.xfce.org/src/xfce/xfconf/4.18/xfconf-4.18.3.tar.bz2
+ https://archive.xfce.org/src/xfce/libxfce4ui/4.18/libxfce4ui-4.18.4.tar.bz2
+ https://archive.xfce.org/src/xfce/exo/4.18/exo-4.18.0.tar.bz2
+ https://archive.xfce.org/src/xfce/garcon/4.18/garcon-4.18.1.tar.bz2
+@@ -881,7 +879,7 @@ https://inkscape.org/gallery/item/42328/inkscape-1.3.tar.xz
+ https://downloads.sourceforge.net/pidgin/pidgin-2.14.12.tar.bz2
+ https://downloads.sourceforge.net/rox/rox-filer-2.11.tar.bz2
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/115.3.3/source/thunderbird-115.3.3.source.tar.xz
++https://archive.mozilla.org/pub/thunderbird/releases/115.4.1/source/thunderbird-115.4.1.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.13.1/tigervnc-1.13.1.tar.gz
+ https://www.x.org/pub/individual/xserver/xorg-server-21.1.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.13.1-configuration_fixes-1.patch
