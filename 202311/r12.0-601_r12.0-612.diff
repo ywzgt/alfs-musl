@@ -1,0 +1,149 @@
+diff --git a/wget-list b/wget-list
+index ef897ce5f..b3af0f112 100644
+--- a/wget-list
++++ b/wget-list
+@@ -105,7 +105,7 @@ https://download.gnome.org/sources/libgrss/0.7/libgrss-0.7.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libgrss-0.7.0-bugfixes-2.patch
+ https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.51.tar.xz
+ https://download.gnome.org/sources/libgudev/238/libgudev-238.tar.xz
+-https://github.com/hughsie/libgusb/releases/download/0.4.7/libgusb-0.4.7.tar.xz
++https://github.com/hughsie/libgusb/releases/download/0.4.8/libgusb-0.4.8.tar.xz
+ https://github.com/libical/libical/releases/download/v3.0.17/libical-3.0.17.tar.gz
+ https://ftp.gnu.org/gnu/libidn/libidn-1.41.tar.gz
+ https://ftp.gnu.org/gnu/libidn/libidn2-2.3.4.tar.gz
+@@ -157,8 +157,8 @@ https://github.com/martinpitt/umockdev/releases/download/0.17.18/umockdev-0.17.1
+ https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.22.0/downloads/wayland-1.22.0.tar.xz
+ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.32/downloads/wayland-protocols-1.32.tar.xz
+ https://wpewebkit.org/releases/wpebackend-fdo-1.14.2.tar.xz
+-https://www.abisource.com/downloads/wv/1.2.9/wv-1.2.9.tar.gz
+-https://oligarchy.co.uk/xapian/1.4.23/xapian-core-1.4.23.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
++https://oligarchy.co.uk/xapian/1.4.24/xapian-core-1.4.24.tar.xz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+ https://download.gimp.org/pub/babl/0.1/babl-0.1.106.tar.xz
+ https://github.com/Exiv2/exiv2/archive/v0.28.1/exiv2-0.28.1.tar.gz
+@@ -294,7 +294,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.6-shared_library-1.pat
+ https://www.lua.org/tests/lua-5.4.6-tests.tar.gz
+ https://www.lua.org/ftp/lua-5.2.4.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.2.4-shared_library-1.patch
+-https://www.mercurial-scm.org/release/mercurial-6.5.2.tar.gz
++https://www.mercurial-scm.org/release/mercurial-6.5.3.tar.gz
+ https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.xz
+ https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01-xdoc.tar.xz
+ https://github.com/NixOS/patchelf/releases/download/0.17.2/patchelf-0.17.2.tar.gz
+@@ -711,7 +711,7 @@ https://download.kde.org/stable/phonon/4.12.0/phonon-4.12.0.tar.xz
+ https://download.kde.org/stable/phonon/phonon-backend-vlc/0.12.0/phonon-backend-vlc-0.12.0.tar.xz
+ https://download.kde.org/stable/polkit-qt-1/polkit-qt-1-0.114.0.tar.xz
+ https://launchpad.net/ubuntu/+archive/primary/+files/libdbusmenu-qt_0.9.3+16.04.20160218.orig.tar.gz
+-https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.10.0.tar.xz
++https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.11.0.tar.xz
+ https://download.kde.org/stable/kuserfeedback/kuserfeedback-1.3.0.tar.xz
+ https://download.kde.org/stable/release-service/23.08.0/src/ark-23.08.0.tar.xz
+ https://download.kde.org/stable/release-service/23.08.0/src/kdenlive-23.08.0.tar.xz
+@@ -825,40 +825,40 @@ https://download.kde.org/stable/frameworks/5.109/kidletime-5.109.0.tar.xz
+ http://download.kde.org/stable/plasma/5.27.7/libkscreen-5.27.7.tar.xz
+ https://github.com/beltoforion/muparser/archive/v2.3.4/muparser-2.3.4.tar.gz
+ https://github.com/lxqt/lxqt-build-tools/releases/download/0.13.0/lxqt-build-tools-0.13.0.tar.xz
+-https://github.com/lxqt/libqtxdg/releases/download/3.11.0/libqtxdg-3.11.0.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/lxqt-menu-data/lxqt-menu-data-20230619.tar.xz
+-https://github.com/lxqt/liblxqt/releases/download/1.3.0/liblxqt-1.3.0.tar.xz
++https://github.com/lxqt/libqtxdg/releases/download/3.12.0/libqtxdg-3.12.0.tar.xz
++https://github.com/lxqt/lxqt-menu-data/releases/download/1.4.0/lxqt-menu-data-1.4.0.tar.xz
++https://github.com/lxqt/liblxqt/releases/download/1.4.0/liblxqt-1.4.0.tar.xz
+ https://github.com/lxqt/libsysstat/releases/download/0.4.6/libsysstat-0.4.6.tar.xz
+-https://github.com/lxqt/qtxdg-tools/releases/download/3.11.0/qtxdg-tools-3.11.0.tar.xz
++https://github.com/lxqt/qtxdg-tools/releases/download/3.12.0/qtxdg-tools-3.12.0.tar.xz
+ https://downloads.sourceforge.net/pcmanfm/libfm-1.3.2.tar.xz
+ https://downloads.sourceforge.net/lxde/menu-cache-1.1.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/menu-cache-1.1.0-consolidated_fixes-1.patch
+-https://github.com/lxqt/libfm-qt/releases/download/1.3.0/libfm-qt-1.3.0.tar.xz
+-https://github.com/lxqt/lxqt-themes/releases/download/1.3.0/lxqt-themes-1.3.0.tar.xz
+-https://github.com/lxqt/lxqt-qtplugin/releases/download/1.3.0/lxqt-qtplugin-1.3.0.tar.xz
+-https://github.com/lxqt/lxqt-about/releases/download/1.3.0/lxqt-about-1.3.0.tar.xz
+-https://github.com/lxqt/lxqt-admin/releases/download/1.3.0/lxqt-admin-1.3.0.tar.xz
+-https://github.com/lxqt/lxqt-openssh-askpass/releases/download/1.3.0/lxqt-openssh-askpass-1.3.0.tar.xz
+-https://github.com/lxqt/lxqt-sudo/releases/download/1.3.0/lxqt-sudo-1.3.0.tar.xz
+-https://github.com/lxqt/lxqt-config/releases/download/1.3.0/lxqt-config-1.3.0.tar.xz
++https://github.com/lxqt/libfm-qt/releases/download/1.4.0/libfm-qt-1.4.0.tar.xz
++https://github.com/lxqt/lxqt-themes/releases/download/1.4.0/lxqt-themes-1.4.0.tar.xz
++https://github.com/lxqt/lxqt-qtplugin/releases/download/1.4.0/lxqt-qtplugin-1.4.0.tar.xz
++https://github.com/lxqt/lxqt-about/releases/download/1.4.0/lxqt-about-1.4.0.tar.xz
++https://github.com/lxqt/lxqt-admin/releases/download/1.4.0/lxqt-admin-1.4.0.tar.xz
++https://github.com/lxqt/lxqt-openssh-askpass/releases/download/1.4.0/lxqt-openssh-askpass-1.4.0.tar.xz
++https://github.com/lxqt/lxqt-sudo/releases/download/1.4.0/lxqt-sudo-1.4.0.tar.xz
++https://github.com/lxqt/lxqt-config/releases/download/1.4.0/lxqt-config-1.4.0.tar.xz
+ https://github.com/lxqt/obconf-qt/releases/download/0.16.3/obconf-qt-0.16.3.tar.xz
+-https://github.com/lxqt/lxqt-globalkeys/releases/download/1.3.0/lxqt-globalkeys-1.3.0.tar.xz
+-https://github.com/lxqt/lxqt-policykit/releases/download/1.3.0/lxqt-policykit-1.3.0.tar.xz
+-https://github.com/lxqt/lxqt-session/releases/download/1.3.0/lxqt-session-1.3.0.tar.xz
+-https://github.com/lxqt/pcmanfm-qt/releases/download/1.3.0/pcmanfm-qt-1.3.0.tar.xz
+-https://github.com/lxqt/lxqt-panel/releases/download/1.3.0/lxqt-panel-1.3.0.tar.xz
+-https://github.com/lxqt/lxqt-powermanagement/releases/download/1.3.0/lxqt-powermanagement-1.3.0.tar.xz
+-https://github.com/lxqt/lxqt-runner/releases/download/1.3.0/lxqt-runner-1.3.0.tar.xz
+-https://github.com/lxqt/lximage-qt/releases/download/1.3.0/lximage-qt-1.3.0.tar.xz
+-https://github.com/lxqt/lxqt-archiver/releases/download/0.8.0/lxqt-archiver-0.8.0.tar.xz
+-https://github.com/lxqt/lxqt-notificationd/releases/download/1.3.0/lxqt-notificationd-1.3.0.tar.xz
+-https://github.com/lxqt/pavucontrol-qt/releases/download/1.3.0/pavucontrol-qt-1.3.0.tar.xz
+-https://github.com/lxqt/qps/releases/download/2.7.0/qps-2.7.0.tar.xz
+-https://github.com/lxqt/qtermwidget/releases/download/1.3.0/qtermwidget-1.3.0.tar.xz
+-https://github.com/lxqt/qterminal/releases/download/1.3.0/qterminal-1.3.0.tar.xz
+-https://github.com/lxqt/screengrab/releases/download/2.6.0/screengrab-2.6.0.tar.xz
+-https://www.abisource.com/downloads/abiword/3.0.5/source/abiword-3.0.5.tar.gz
+-https://www.abisource.com/downloads/abiword/3.0.2/source/abiword-docs-3.0.2.tar.gz
++https://github.com/lxqt/lxqt-globalkeys/releases/download/1.4.0/lxqt-globalkeys-1.4.0.tar.xz
++https://github.com/lxqt/lxqt-policykit/releases/download/1.4.0/lxqt-policykit-1.4.0.tar.xz
++https://github.com/lxqt/lxqt-session/releases/download/1.4.0/lxqt-session-1.4.0.tar.xz
++https://github.com/lxqt/pcmanfm-qt/releases/download/1.4.0/pcmanfm-qt-1.4.0.tar.xz
++https://github.com/lxqt/lxqt-panel/releases/download/1.4.0/lxqt-panel-1.4.0.tar.xz
++https://github.com/lxqt/lxqt-powermanagement/releases/download/1.4.0/lxqt-powermanagement-1.4.0.tar.xz
++https://github.com/lxqt/lxqt-runner/releases/download/1.4.0/lxqt-runner-1.4.0.tar.xz
++https://github.com/lxqt/lximage-qt/releases/download/1.4.0/lximage-qt-1.4.0.tar.xz
++https://github.com/lxqt/lxqt-archiver/releases/download/0.9.0/lxqt-archiver-0.9.0.tar.xz
++https://github.com/lxqt/lxqt-notificationd/releases/download/1.4.0/lxqt-notificationd-1.4.0.tar.xz
++https://github.com/lxqt/pavucontrol-qt/releases/download/1.4.0/pavucontrol-qt-1.4.0.tar.xz
++https://github.com/lxqt/qps/releases/download/2.8.0/qps-2.8.0.tar.xz
++https://github.com/lxqt/qtermwidget/releases/download/1.4.0/qtermwidget-1.4.0.tar.xz
++https://github.com/lxqt/qterminal/releases/download/1.4.0/qterminal-1.4.0.tar.xz
++https://github.com/lxqt/screengrab/releases/download/2.7.0/screengrab-2.7.0.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/abiword/abiword-3.0.5.tar.gz
++https://anduin.linuxfromscratch.org/BLFS/abiword/abiword-docs-3.0.2.tar.gz
+ https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.56.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/7.6.2/libreoffice-7.6.2.1.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/7.6.2/libreoffice-dictionaries-7.6.2.1.tar.xz
+@@ -873,15 +873,15 @@ https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.4-upstream_fixes-2.patch
+ https://feh.finalrewind.org/feh-3.10.1.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20230101/fontforge-20230101.tar.xz
+-https://download.gimp.org/pub/gimp/v2.10/gimp-2.10.34.tar.bz2
+-https://download.gimp.org/pub/gimp/help/gimp-help-2.10.34.tar.bz2
++https://download.gimp.org/pub/gimp/v2.10/gimp-2.10.36.tar.bz2
++https://download.gimp.org/pub/gimp/help/gimp-help-2.10.36.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.5.0.tar.gz
+ https://dl.hexchat.net/hexchat/hexchat-2.16.1.tar.xz
+ https://inkscape.org/gallery/item/42328/inkscape-1.3.tar.xz
+ https://downloads.sourceforge.net/pidgin/pidgin-2.14.12.tar.bz2
+ https://downloads.sourceforge.net/rox/rox-filer-2.11.tar.bz2
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/115.4.1/source/thunderbird-115.4.1.source.tar.xz
++https://archive.mozilla.org/pub/thunderbird/releases/115.4.2/source/thunderbird-115.4.2.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.13.1/tigervnc-1.13.1.tar.gz
+ https://www.x.org/pub/individual/xserver/xorg-server-21.1.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.13.1-configuration_fixes-1.patch
+@@ -899,7 +899,7 @@ https://www.alsa-project.org/files/pub/oss-lib/alsa-oss-1.1.8.tar.bz2
+ https://download.gnome.org/sources/audiofile/0.3/audiofile-0.3.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/audiofile-0.3.6-consolidated_patches-1.patch
+ https://github.com/knik0/faac/archive/1_30/faac-1_30.tar.gz
+-https://github.com/knik0/faad2/archive/2.10.1/faad2-2.10.1.tar.gz
++https://github.com/knik0/faad2/archive/2.11.0/faad2-2.11.0.tar.gz
+ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.2.tar.gz
+ https://downloads.xiph.org/releases/flac/flac-1.4.3.tar.xz
+ https://files.dyne.org/frei0r/releases/frei0r-plugins-1.8.0.tar.gz
+@@ -1024,7 +1024,7 @@ https://releases.pagure.org/xmlto/xmlto-0.0.28.tar.bz2
+ https://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/epdfview-gtk3/epdfview-gtk3-20200814.tar.xz
+ https://archive.apache.org/dist/xmlgraphics/fop/source/fop-2.9-src.tar.gz
+-https://www.mupdf.com/downloads/archive/mupdf-1.23.4-source.tar.gz
++https://www.mupdf.com/downloads/archive/mupdf-1.23.5-source.tar.gz
+ https://downloads.sourceforge.net/paps/paps-0.7.1.tar.gz
+ https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/texlive-20230313-source.tar.xz
