@@ -1,0 +1,74 @@
+diff --git a/wget-list b/wget-list
+index 32fd31506..351a76cf3 100644
+--- a/wget-list
++++ b/wget-list
+@@ -5,7 +5,7 @@ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.4/cryptsetup-2.4.3.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gnupg-2.4.3-emacs-1.patch
+-https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz
++https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.2.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.1.tar.bz2
+ https://www.netfilter.org/projects/iptables/files/iptables-1.8.10.tar.xz
+ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.69.tar.xz
+@@ -19,7 +19,7 @@ https://ftp.gnu.org/gnu/nettle/nettle-3.9.1.tar.gz
+ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_94_RTM/src/nss-3.94.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.94-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.5p1.tar.gz
+-https://github.com/p11-glue/p11-kit/releases/download/0.25.2/p11-kit-0.25.2.tar.xz
++https://github.com/p11-glue/p11-kit/releases/download/0.25.3/p11-kit-0.25.3.tar.xz
+ https://gitlab.freedesktop.org/polkit/polkit/-/archive/123/polkit-123.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+@@ -270,7 +270,7 @@ https://downloads.sourceforge.net/infozip/zip30.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.26.0/cbindgen-0.26.0.tar.gz
+ https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+-https://cmake.org/files/v3.27/cmake-3.27.7.tar.gz
++https://cmake.org/files/v3.27/cmake-3.27.8.tar.gz
+ https://doxygen.nl/files/doxygen-1.9.8.src.tar.gz
+ https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.4/gc-8.2.4.tar.gz
+@@ -307,7 +307,7 @@ https://www.cpan.org/authors/id/W/WY/WYANT/DateTime-Calendar-Julian-0.107.tar.gz
+ https://www.cpan.org/authors/id/D/DR/DROLSKY/DateTime-Format-Builder-0.83.tar.gz
+ https://www.cpan.org/authors/id/N/NE/NEZUMI/Encode-EUCJPASCII-0.03.tar.gz
+ https://www.cpan.org/authors/id/A/AU/AUDREYT/Encode-HanExtra-0.23.tar.gz
+-https://www.cpan.org/authors/id/D/DA/DANKOGAI/Encode-JIS2K-0.03.tar.gz
++https://www.cpan.org/authors/id/D/DA/DANKOGAI/Encode-JIS2K-0.05.tar.gz
+ https://www.cpan.org/authors/id/L/LE/LEONT/File-Slurper-0.014.tar.gz
+ https://www.cpan.org/authors/id/P/PL/PLICEASE/File-Which-1.27.tar.gz
+ https://www.cpan.org/authors/id/O/OA/OALDERS/HTML-Parser-3.81.tar.gz
+@@ -548,14 +548,13 @@ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_s
+ https://w1.fi/releases/wpa_supplicant-2.10.tar.gz
+ https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+-https://ftp.isc.org/isc/bind9/9.18.19/bind-9.18.19.tar.xz
++https://ftp.isc.org/isc/bind9/9.18.20/bind-9.18.20.tar.xz
+ https://download.gnome.org/sources/NetworkManager/1.44/NetworkManager-1.44.2.tar.xz
+ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
+ https://nmap.org/dist/nmap-7.94.tar.bz2
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.3.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
+-https://www.wireshark.org/download/src/all-versions/wireshark-4.0.10.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/wireshark-4.0.10-py_3.12_fix-1.patch
++https://www.wireshark.org/download/src/all-versions/wireshark-4.2.0.tar.xz
+ https://c-ares.haxx.se/download/c-ares-1.22.0.tar.gz
+ https://curl.se/download/curl-8.4.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.1/geoclue-2.7.1.tar.bz2
+@@ -764,6 +763,7 @@ https://download.gnome.org/sources/gnome-control-center/45/gnome-control-center-
+ https://download.gnome.org/sources/mutter/45/mutter-45.1.tar.xz
+ https://download.gnome.org/sources/gnome-shell/45/gnome-shell-45.1.tar.xz
+ https://download.gnome.org/sources/gnome-shell-extensions/45/gnome-shell-extensions-45.1.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/gnome-shell-extensions-45.1-upstream_fixes-1.patch
+ https://download.gnome.org/sources/gnome-session/45/gnome-session-45.0.tar.xz
+ https://download.gnome.org/sources/gnome-tweaks/40/gnome-tweaks-40.10.tar.xz
+ https://download.gnome.org/sources/gnome-user-docs/45/gnome-user-docs-45.1.tar.xz
+@@ -877,7 +877,7 @@ https://inkscape.org/gallery/item/42328/inkscape-1.3.tar.xz
+ https://downloads.sourceforge.net/pidgin/pidgin-2.14.12.tar.bz2
+ https://downloads.sourceforge.net/rox/rox-filer-2.11.tar.bz2
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/115.4.2/source/thunderbird-115.4.2.source.tar.xz
++https://archive.mozilla.org/pub/thunderbird/releases/115.4.3/source/thunderbird-115.4.3.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.13.1/tigervnc-1.13.1.tar.gz
+ https://www.x.org/pub/individual/xserver/xorg-server-21.1.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.13.1-configuration_fixes-1.patch
