@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 2daeb90ce..effcb97e6 100644
+--- a/wget-list
++++ b/wget-list
+@@ -536,7 +536,7 @@ https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.0.tar.bz2
+ https://www.ncftp.com/downloads/ncftp/ncftp-3.2.6-src.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/ncftp-3.2.6-configure_fixes-1.patch
+ https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
+-https://www.kernel.org/pub/linux/utils/nfs-utils/2.6.3/nfs-utils-2.6.3.tar.xz
++https://www.kernel.org/pub/linux/utils/nfs-utils/2.6.4/nfs-utils-2.6.4.tar.xz
+ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p17.tar.gz
+ https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.6.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/rpcbind-1.2.6-vulnerability_fixes-1.patch
+@@ -1033,7 +1033,7 @@ https://github.com/plk/biber/archive/v2.19/biber-2.19.tar.gz
+ https://github.com/mgieseki/dvisvgm/releases/download/3.1.1/dvisvgm-3.1.1.tar.gz
+ https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
+-https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20230917.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20231119.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/bluez-5.70-obexd_without_systemd-1.patch
+ https://github.com/elogind/elogind/archive/v252.9/elogind-252.9.tar.gz
+ https://github.com/lfs-book/blocaled/releases/download/v0.5/blocaled-0.5.tar.xz
