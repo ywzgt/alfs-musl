@@ -1,0 +1,60 @@
+diff --git a/wget-list b/wget-list
+index fa2cf1a8a..e2c365a23 100644
+--- a/wget-list
++++ b/wget-list
+@@ -213,7 +213,7 @@ https://github.com/ibus/ibus/releases/download/1.5.28/ibus-1.5.28.tar.gz
+ https://www.unicode.org/Public/zipped/15.1.0/UCD.zip
+ https://www.imagemagick.org/archive/releases/ImageMagick-7.1.1-15.tar.xz
+ https://ftp.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.15.0.orig.tar.xz
+-https://github.com/lsof-org/lsof/releases/download/4.95.0/lsof_4.95.0.linux.tar.bz2
++https://github.com/lsof-org/lsof/releases/download/4.99.0/lsof-4.99.0.tar.gz
+ https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.2.1.tar.bz2
+ https://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
+@@ -465,7 +465,7 @@ https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
+ https://download.gnome.org/sources/pyatspi/2.46/pyatspi-2.46.0.tar.xz
+ https://github.com/pygobject/pycairo/releases/download/v1.18.2/pycairo-1.18.2.tar.gz
+ https://github.com/pygobject/pycairo/releases/download/v1.25.1/pycairo-1.25.1.tar.gz
+-https://files.pythonhosted.org/packages/source/P/Pygments/Pygments-2.16.1.tar.gz
++https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.17.1.tar.gz
+ https://download.gnome.org/sources/pygobject/2.28/pygobject-2.28.7.tar.xz
+ https://download.gnome.org/sources/pygobject/3.46/pygobject-3.46.0.tar.xz
+ https://download.gnome.org/sources/pygtk/2.24/pygtk-2.24.0.tar.bz2
+@@ -515,8 +515,8 @@ https://files.pythonhosted.org/packages/source/t/typing_extensions/typing_extens
+ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.0.7.tar.gz
+ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.0.2.tar.gz
+ https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.2.tar.xz
+-https://static.rust-lang.org/dist/rustc-1.73.0-src.tar.xz
+-https://downloads.sourceforge.net/scons/SCons-4.5.2.tar.gz
++https://static.rust-lang.org/dist/rustc-1.74.0-src.tar.xz
++https://downloads.sourceforge.net/scons/SCons-4.6.0.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+ https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
+ https://downloads.sourceforge.net/swig/swig-4.1.1.tar.gz
+@@ -556,7 +556,7 @@ https://nmap.org/dist/nmap-7.94.tar.bz2
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.3.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.2.0.tar.xz
+-https://c-ares.haxx.se/download/c-ares-1.22.0.tar.gz
++https://c-ares.haxx.se/download/c-ares-1.22.1.tar.gz
+ https://curl.se/download/curl-8.4.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.1/geoclue-2.7.1.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.78/glib-networking-2.78.0.tar.xz
+@@ -655,7 +655,7 @@ https://github.com/steveire/grantlee/releases/download/v5.3.1/grantlee-5.3.1.tar
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+ https://download.gnome.org/sources/gtk+/2.24/gtk+-2.24.33.tar.xz
+ https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.38.tar.xz
+-https://download.gnome.org/sources/gtk/4.12/gtk-4.12.3.tar.xz
++https://download.gnome.org/sources/gtk/4.12/gtk-4.12.4.tar.xz
+ https://download.gnome.org/sources/gtk-engines/2.20/gtk-engines-2.20.2.tar.bz2
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.8.tar.xz
+ https://download.gnome.org/sources/gtk-vnc/1.3/gtk-vnc-1.3.1.tar.xz
+@@ -875,7 +875,7 @@ https://download.gimp.org/pub/gimp/v2.10/gimp-2.10.36.tar.bz2
+ https://download.gimp.org/pub/gimp/help/gimp-help-2.10.34.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.5.0.tar.gz
+ https://dl.hexchat.net/hexchat/hexchat-2.16.1.tar.xz
+-https://inkscape.org/gallery/item/42328/inkscape-1.3.tar.xz
++https://inkscape.org/gallery/item/44467/inkscape-1.3.1.tar.xz
+ https://downloads.sourceforge.net/pidgin/pidgin-2.14.12.tar.bz2
+ https://downloads.sourceforge.net/rox/rox-filer-2.11.tar.bz2
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
