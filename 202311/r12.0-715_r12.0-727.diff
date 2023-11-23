@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index e2c365a23..a08487935 100644
+--- a/wget-list
++++ b/wget-list
+@@ -149,7 +149,7 @@ https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.42/pcre2-10.42.
+ http://ftp.rpm.org/popt/releases/popt-1.x/popt-1.19.tar.gz
+ https://ftp.gnu.org/gnu/pth/pth-2.0.7.tar.gz
+ https://download.kde.org/stable/qca/2.3.7/qca-2.3.7.tar.xz
+-https://archive.mozilla.org/pub/firefox/releases/115.4.0esr/source/firefox-115.4.0esr.source.tar.xz
++https://archive.mozilla.org/pub/firefox/releases/115.5.0esr/source/firefox-115.5.0esr.source.tar.xz
+ https://www.samba.org/ftp/talloc/talloc-2.4.1.tar.gz
+ https://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.24.2.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+@@ -209,7 +209,7 @@ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.1.tar.gz
+ https://gitlab.com/graphviz/graphviz/-/archive/9.0.0/graphviz-9.0.0.tar.bz2
+ https://download.gnome.org/sources/gtk-doc/1.33/gtk-doc-1.33.2.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.10.tar.bz2
+-https://github.com/ibus/ibus/releases/download/1.5.28/ibus-1.5.28.tar.gz
++https://github.com/ibus/ibus/releases/download/1.5.29/ibus-1.5.29.tar.gz
+ https://www.unicode.org/Public/zipped/15.1.0/UCD.zip
+ https://www.imagemagick.org/archive/releases/ImageMagick-7.1.1-15.tar.xz
+ https://ftp.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.15.0.orig.tar.xz
+@@ -1030,7 +1030,7 @@ https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2023/texlive-2023031
+ https://downloads.sourceforge.net/asymptote/asymptote-2.86.src.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/asymptote-2.86-build_fix-1.patch
+ https://github.com/plk/biber/archive/v2.19/biber-2.19.tar.gz
+-https://github.com/mgieseki/dvisvgm/releases/download/3.1.1/dvisvgm-3.1.1.tar.gz
++https://github.com/mgieseki/dvisvgm/releases/download/3.1.2/dvisvgm-3.1.2.tar.gz
+ https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
+ https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20231119.tar.xz
