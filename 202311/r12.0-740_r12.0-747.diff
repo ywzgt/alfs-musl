@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index fac6dd55e..4e4d09955 100644
+--- a/wget-list
++++ b/wget-list
+@@ -85,7 +85,7 @@ https://ftp.gnu.org/gnu/gsl/gsl-2.7.1.tar.gz
+ https://download.gnome.org/sources/gspell/1.12/gspell-1.12.2.tar.xz
+ https://github.com/unicode-org/icu/releases/download/release-74-1/icu4c-74_1-src.tgz
+ https://github.com/benhoyt/inih/archive/r57/inih-r57.tar.gz
+-https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-22.3.12.tar.gz
++https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-22.3.13.tar.gz
+ https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
+ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.17.tar.gz
+ https://download.gnome.org/sources/json-glib/1.8/json-glib-1.8.0.tar.xz
+@@ -290,7 +290,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.6-shared_library-1.pat
+ https://www.lua.org/tests/lua-5.4.6-tests.tar.gz
+ https://www.lua.org/ftp/lua-5.2.4.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.2.4-shared_library-1.patch
+-https://www.mercurial-scm.org/release/mercurial-6.5.3.tar.gz
++https://www.mercurial-scm.org/release/mercurial-6.6.tar.gz
+ https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.xz
+ https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01-xdoc.tar.xz
+ https://github.com/NixOS/patchelf/releases/download/0.17.2/patchelf-0.17.2.tar.gz
+@@ -910,7 +910,7 @@ https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.22.7.tar.xz
+ https://gstreamer.freedesktop.org/src/gstreamer-vaapi/gstreamer-vaapi-1.22.7.tar.xz
+ https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+-https://github.com/intel/media-driver/archive/refs/tags/intel-media-23.4.0.tar.gz
++https://github.com/intel/media-driver/archive/refs/tags/intel-media-23.4.1.tar.gz
+ https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
+ https://liba52.sourceforge.net/files/a52dec-0.7.4.tar.gz
+ https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
