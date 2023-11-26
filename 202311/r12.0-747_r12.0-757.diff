@@ -1,0 +1,75 @@
+diff --git a/wget-list b/wget-list
+index 4e4d09955..d4d93fe54 100644
+--- a/wget-list
++++ b/wget-list
+@@ -32,7 +32,7 @@ https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.t
+ https://github.com/libfuse/libfuse/releases/download/fuse-3.16.2/fuse-3.16.2.tar.gz
+ https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.patch
+-https://sourceware.org/ftp/lvm2/LVM2.2.03.22.tgz
++https://sourceware.org/ftp/lvm2/LVM2.2.03.23.tgz
+ https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.2.tar.xz
+ https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2022.10.3.tgz
+ https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.9.tar.gz
+@@ -85,7 +85,7 @@ https://ftp.gnu.org/gnu/gsl/gsl-2.7.1.tar.gz
+ https://download.gnome.org/sources/gspell/1.12/gspell-1.12.2.tar.xz
+ https://github.com/unicode-org/icu/releases/download/release-74-1/icu4c-74_1-src.tgz
+ https://github.com/benhoyt/inih/archive/r57/inih-r57.tar.gz
+-https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-22.3.13.tar.gz
++https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-22.3.14.tar.gz
+ https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
+ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.17.tar.gz
+ https://download.gnome.org/sources/json-glib/1.8/json-glib-1.8.0.tar.xz
+@@ -131,7 +131,7 @@ https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
+ https://dist.libuv.org/dist/v1.47.0/libuv-v1.47.0.tar.gz
+ https://xkbcommon.org/download/libxkbcommon-1.6.0.tar.xz
+-https://download.gnome.org/sources/libxml2/2.12/libxml2-2.12.0.tar.xz
++https://download.gnome.org/sources/libxml2/2.12/libxml2-2.12.1.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.14/libxmlb-0.3.14.tar.xz
+ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.39.tar.xz
+@@ -141,7 +141,7 @@ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_1/log4cplus-2.1.1.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.6.tar.bz2
+-https://nodejs.org/dist/v20.9.0/node-v20.9.0.tar.xz
++https://nodejs.org/dist/v20.10.0/node-v20.10.0.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
+ https://sourceforge.net/projects/pcre/files/pcre/8.45/pcre-8.45.tar.bz2
+@@ -439,7 +439,7 @@ https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0208.tar.gz
+ https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+-https://www.php.net/distributions/php-8.2.12.tar.xz
++https://www.php.net/distributions/php-8.3.0.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
+@@ -603,7 +603,7 @@ https://ftp.sendmail.org/sendmail.8.17.2.tar.gz
+ https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
+ https://downloads.mariadb.org/interstitial/mariadb-10.11.5/source/mariadb-10.11.5.tar.gz
+ https://ftp.postgresql.org/pub/source/v16.1/postgresql-16.1.tar.bz2
+-https://sqlite.org/2023/sqlite-autoconf-3440000.tar.gz
++https://sqlite.org/2023/sqlite-autoconf-3440100.tar.gz
+ https://sqlite.org/2023/sqlite-doc-3440000.zip
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.6.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.6-consolidated-1.patch
+@@ -686,6 +686,7 @@ https://download.qt.io/archive/qt/6.6/6.6.0/single/qt-everywhere-src-6.6.0.tar.x
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ https://download.gnome.org/sources/tepl/6.8/tepl-6.8.0.tar.xz
+ https://webkitgtk.org/releases/webkitgtk-2.42.2.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/webkitgtk-2.42.2-upstream_fixes-1.patch
+ https://download.gnome.org/sources/gdm/45/gdm-45.0.1.tar.xz
+ https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.tar.xz
+ https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.8/lightdm-gtk-greeter-2.0.8.tar.gz
+@@ -955,7 +956,7 @@ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://taglib.org/releases/taglib-1.13.1.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.24.1.tar.bz2
+-https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.4.15/wireplumber-0.4.15.tar.bz2
++https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.4.16/wireplumber-0.4.16.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20230215.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/x265/x265-20230215.tar.xz
+ https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
