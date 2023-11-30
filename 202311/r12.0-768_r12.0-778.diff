@@ -1,0 +1,72 @@
+diff --git a/wget-list b/wget-list
+index b05974b4f..0ddd7363f 100644
+--- a/wget-list
++++ b/wget-list
+@@ -117,7 +117,7 @@ https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.6/libnvme-1.6.tar.gz
+ https://github.com/rrthomas/libpaper/releases/download/v2.1.2/libpaper-2.1.2.tar.gz
+ https://github.com/flatpak/libportal/releases/download/0.7.1/libportal-0.7.1.tar.xz
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+-https://github.com/Qalculate/libqalculate/releases/download/v4.8.1/libqalculate-4.8.1.tar.gz
++https://github.com/Qalculate/libqalculate/releases/download/v4.9.0/libqalculate-4.9.0.tar.gz
+ https://www.freedesktop.org/software/libqmi/libqmi-1.30.8.tar.xz
+ https://github.com/seccomp/libseccomp/releases/download/v2.5.4/libseccomp-2.5.4.tar.gz
+ https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.1.tar.xz
+@@ -135,7 +135,7 @@ https://download.gnome.org/sources/libxml2/2.12/libxml2-2.12.1.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.14/libxmlb-0.3.14.tar.xz
+ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.39.tar.xz
+-https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.8.0/libwacom-2.8.0.tar.xz
++https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.9.0/libwacom-2.9.0.tar.xz
+ https://wpewebkit.org/releases/libwpe-1.14.1.tar.xz
+ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_1/log4cplus-2.1.1.tar.xz
+@@ -324,7 +324,7 @@ https://www.cpan.org/authors/id/R/RE/REHSACK/List-MoreUtils-0.430.tar.gz
+ https://www.cpan.org/authors/id/E/ET/ETJ/Log-Log4perl-1.57.tar.gz
+ https://www.cpan.org/authors/id/O/OA/OALDERS/LWP-Protocol-https-6.11.tar.gz
+ https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-0.4232.tar.gz
+-https://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-1.40.tar.gz
++https://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-1.41.tar.gz
+ https://www.cpan.org/authors/id/J/JT/JTBRAUN/Parse-RecDescent-1.967015.tar.gz
+ https://www.cpan.org/authors/id/W/WB/WBRASWELL/Parse-Yapp-1.21.tar.gz
+ https://www.cpan.org/authors/id/L/LE/LEONT/PerlIO-utf8_strict-0.010.tar.gz
+@@ -541,7 +541,7 @@ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p17.tar.gz
+ https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.6.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/rpcbind-1.2.6-vulnerability_fixes-1.patch
+ https://www.samba.org/ftp/rsync/src/rsync-3.2.7.tar.gz
+-https://download.samba.org/pub/samba/stable/samba-4.19.2.tar.gz
++https://download.samba.org/pub/samba/stable/samba-4.19.3.tar.gz
+ https://ftp.gnu.org/gnu/wget/wget-1.21.4.tar.gz
+ https://www.kernel.org/pub/software/network/iw/iw-5.19.tar.xz
+ https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
+@@ -682,7 +682,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5
+ https://anduin.linuxfromscratch.org/BLFS/qtwebengine/qtwebengine-5.15.16.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.16-build_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.16-ffmpeg5_fixes-1.patch
+-https://download.qt.io/archive/qt/6.6/6.6.0/single/qt-everywhere-src-6.6.0.tar.xz
++https://download.qt.io/archive/qt/6.6/6.6.1/single/qt-everywhere-src-6.6.1.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ https://download.gnome.org/sources/tepl/6.8/tepl-6.8.0.tar.xz
+ https://webkitgtk.org/releases/webkitgtk-2.42.2.tar.xz
+@@ -876,11 +876,11 @@ https://download.gimp.org/pub/gimp/v2.10/gimp-2.10.36.tar.bz2
+ https://download.gimp.org/pub/gimp/help/gimp-help-2.10.34.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.5.0.tar.gz
+ https://dl.hexchat.net/hexchat/hexchat-2.16.1.tar.xz
+-https://inkscape.org/gallery/item/44467/inkscape-1.3.1.tar.xz
++https://inkscape.org/gallery/item/44615/inkscape-1.3.2.tar.xz
+ https://downloads.sourceforge.net/pidgin/pidgin-2.14.12.tar.bz2
+ https://downloads.sourceforge.net/rox/rox-filer-2.11.tar.bz2
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/115.5.0/source/thunderbird-115.5.0.source.tar.xz
++https://archive.mozilla.org/pub/thunderbird/releases/115.5.1/source/thunderbird-115.5.1.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.13.1/tigervnc-1.13.1.tar.gz
+ https://www.x.org/pub/individual/xserver/xorg-server-21.1.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.13.1-configuration_fixes-1.patch
+@@ -946,7 +946,7 @@ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
+ https://github.com/webmproject/libvpx/archive/v1.13.1/libvpx-1.13.1.tar.gz
+ https://github.com/mltframework/mlt/releases/download/v7.20.0/mlt-7.20.0.tar.gz
+ https://downloads.xiph.org/releases/opus/opus-1.4.tar.gz
+-https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/0.3.85/pipewire-0.3.85.tar.bz2
++https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.0.0/pipewire-1.0.0.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-16.1.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.0.tar.xz
+ https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.68/sdl12-compat-release-1.2.68.tar.gz
