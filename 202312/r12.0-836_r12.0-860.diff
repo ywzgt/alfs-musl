@@ -1,0 +1,124 @@
+diff --git a/wget-list b/wget-list
+index 6448bf7bf..ae297aaee 100644
+--- a/wget-list
++++ b/wget-list
+@@ -1,7 +1,7 @@
+-https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20230816.tar.xz
++https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20231204.tar.xz
+ https://github.com/lfs-book/make-ca/releases/download/v1.13/make-ca-1.13.tar.xz
+ https://github.com/cracklib/cracklib/releases/download/v2.9.11/cracklib-2.9.11.tar.xz
+-https://www.kernel.org/pub/linux/utils/cryptsetup/v2.4/cryptsetup-2.4.3.tar.xz
++https://www.kernel.org/pub/linux/utils/cryptsetup/v2.6/cryptsetup-2.6.1.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gnupg-2.4.3-emacs-1.patch
+@@ -119,7 +119,7 @@ https://github.com/flatpak/libportal/releases/download/0.7.1/libportal-0.7.1.tar
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+ https://github.com/Qalculate/libqalculate/releases/download/v4.9.0/libqalculate-4.9.0.tar.gz
+ https://www.freedesktop.org/software/libqmi/libqmi-1.30.8.tar.xz
+-https://github.com/seccomp/libseccomp/releases/download/v2.5.4/libseccomp-2.5.4.tar.gz
++https://github.com/seccomp/libseccomp/releases/download/v2.5.5/libseccomp-2.5.5.tar.gz
+ https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.1.tar.xz
+ https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.14.tar.gz
+ https://www.libssh2.org/download/libssh2-1.11.0.tar.gz
+@@ -220,7 +220,7 @@ https://github.com/lsof-org/lsof/releases/download/4.99.0/lsof-4.99.0.tar.gz
+ https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.2.1.tar.bz2
+ https://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
+-https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/2.2/shared-mime-info-2.2.tar.gz
++https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/2.4/shared-mime-info-2.4.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/xdgmime/xdgmime.tar.xz
+ https://ftp.gnu.org/gnu/sharutils/sharutils-4.15.2.tar.xz
+ https://telepathy.freedesktop.org/releases/telepathy-mission-control/telepathy-mission-control-5.16.6.tar.gz
+@@ -337,7 +337,7 @@ https://www.cpan.org/authors/id/S/SA/SALVA/Sort-Key-1.33.tar.gz
+ https://www.cpan.org/authors/id/D/DA/DANBOO/Test-Command-0.11.tar.gz
+ https://www.cpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.71.tar.gz
+ https://www.cpan.org/authors/id/A/AM/AMBS/Text-BibTeX-0.89.tar.gz
+-https://www.cpan.org/authors/id/I/IS/ISHIGAKI/Text-CSV-2.03.tar.gz
++https://www.cpan.org/authors/id/I/IS/ISHIGAKI/Text-CSV-2.04.tar.gz
+ https://www.cpan.org/authors/id/S/SY/SYP/Text-Roman-3.5.tar.gz
+ https://www.cpan.org/authors/id/S/SA/SADAHIRO/Unicode-Collate-1.31.tar.gz
+ https://www.cpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz
+@@ -430,7 +430,7 @@ https://cpan.metacpan.org/authors/id/E/ET/ETHER/Test-Warnings-0.031.tar.gz
+ https://cpan.metacpan.org/authors/id/C/CO/CORION/Test-Without-Module-0.21.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Test2-Plugin-NoWarnings-0.09.tar.gz
+ https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Test2-Suite-0.000145.tar.gz
+-https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.51.tgz
++https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.53.tgz
+ https://cpan.metacpan.org/authors/id/N/NE/NEILB/Text-Diff-1.45.tar.gz
+ https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/Text-Glob-0.11.tar.gz
+ https://cpan.metacpan.org/authors/id/B/BD/BDFOY/Tie-Cycle-1.227.tar.gz
+@@ -594,7 +594,7 @@ https://ftp.osuosl.org/pub/blfs/conglomeration/procmail/procmail-3.22.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.22-consolidated_fixes-1.patch
+ https://archive.apache.org/dist/httpd/httpd-2.4.58.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.58-blfs_layout-1.patch
+-https://downloads.isc.org/isc/kea/2.4.0/kea-2.4.0.tar.gz
++https://downloads.isc.org/isc/kea/2.4.1/kea-2.4.1.tar.gz
+ https://github.com/proftpd/proftpd/archive/v1.3.8a/proftpd-1.3.8a.tar.gz
+ https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
+ https://www.dovecot.org/releases/2.3/dovecot-2.3.21.tar.gz
+@@ -669,7 +669,7 @@ https://downloads.sourceforge.net/enlightenment/imlib2-1.12.1.tar.xz
+ https://github.com/ksnip/kColorPicker/archive/refs/tags/v0.2.0/kColorPicker-0.2.0.tar.gz
+ https://github.com/ksnip/kImageAnnotator/archive/refs/tags/v0.6.1/kImageAnnotator-0.6.1.tar.gz
+ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
+-https://download.gnome.org/sources/libadwaita/1.4/libadwaita-1.4.0.tar.xz
++https://download.gnome.org/sources/libadwaita/1.4/libadwaita-1.4.2.tar.xz
+ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.1.0/libei-1.1.0.tar.gz
+ https://gedit-technology.net/tarballs/libgedit-amtk/libgedit-amtk-5.8.0.tar.xz
+ https://gedit-technology.net/tarballs/libgedit-gtksourceview/libgedit-gtksourceview-299.0.4.tar.xz
+@@ -739,7 +739,7 @@ https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.6.t
+ https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.1/vte-0.74.1.tar.gz
+ https://download.gnome.org/sources/yelp-xsl/42/yelp-xsl-42.1.tar.xz
+ https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+-https://download.gnome.org/sources/gjs/1.78/gjs-1.78.0.tar.xz
++https://download.gnome.org/sources/gjs/1.78/gjs-1.78.1.tar.xz
+ https://download.gnome.org/sources/gnome-autoar/0.4/gnome-autoar-0.4.4.tar.xz
+ https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.0.tar.xz
+ https://download.gnome.org/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
+@@ -753,7 +753,7 @@ https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.0.tar.xz
+ https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz
+ https://download.gnome.org/sources/libshumate/1.1/libshumate-1.1.2.tar.xz
+ https://download.gnome.org/sources/libwnck/43/libwnck-43.0.tar.xz
+-https://download.gnome.org/sources/evolution-data-server/3.50/evolution-data-server-3.50.1.tar.xz
++https://download.gnome.org/sources/evolution-data-server/3.50/evolution-data-server-3.50.2.tar.xz
+ https://download.gnome.org/sources/tracker/3.6/tracker-3.6.0.tar.xz
+ https://download.gnome.org/sources/tracker-miners/3.6/tracker-miners-3.6.2.tar.xz
+ https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz
+@@ -762,16 +762,15 @@ https://download.gnome.org/sources/dconf-editor/45/dconf-editor-45.0.1.tar.xz
+ https://download.gnome.org/sources/gnome-backgrounds/45/gnome-backgrounds-45.0.tar.xz
+ https://download.gnome.org/sources/gvfs/1.52/gvfs-1.52.1.tar.xz
+ https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.2.tar.xz
+-https://download.gnome.org/sources/nautilus/45/nautilus-45.1.tar.xz
++https://download.gnome.org/sources/nautilus/45/nautilus-45.2.tar.xz
+ https://download.gnome.org/sources/gnome-bluetooth/42/gnome-bluetooth-42.7.tar.xz
+ https://download.gnome.org/sources/gnome-keyring/42/gnome-keyring-42.1.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/45/gnome-settings-daemon-45.0.tar.xz
+ https://download.gnome.org/sources/tecla/45/tecla-45.0.tar.xz
+ https://download.gnome.org/sources/gnome-control-center/45/gnome-control-center-45.1.tar.xz
+-https://download.gnome.org/sources/mutter/45/mutter-45.1.tar.xz
+-https://download.gnome.org/sources/gnome-shell/45/gnome-shell-45.1.tar.xz
+-https://download.gnome.org/sources/gnome-shell-extensions/45/gnome-shell-extensions-45.1.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/gnome-shell-extensions-45.1-upstream_fixes-1.patch
++https://download.gnome.org/sources/mutter/45/mutter-45.2.tar.xz
++https://download.gnome.org/sources/gnome-shell/45/gnome-shell-45.2.tar.xz
++https://download.gnome.org/sources/gnome-shell-extensions/45/gnome-shell-extensions-45.2.tar.xz
+ https://download.gnome.org/sources/gnome-session/45/gnome-session-45.0.tar.xz
+ https://download.gnome.org/sources/gnome-tweaks/40/gnome-tweaks-40.10.tar.xz
+ https://download.gnome.org/sources/gnome-user-docs/45/gnome-user-docs-45.1.tar.xz
+@@ -780,13 +779,13 @@ https://download.gnome.org/sources/baobab/45/baobab-45.0.tar.xz
+ https://download.gnome.org/sources/brasero/3.12/brasero-3.12.3.tar.xz
+ https://download.gnome.org/sources/eog/45/eog-45.1.tar.xz
+ https://download.gnome.org/sources/evince/45/evince-45.0.tar.xz
+-https://download.gnome.org/sources/evolution/3.50/evolution-3.50.1.tar.xz
+-https://download.gnome.org/sources/file-roller/43/file-roller-43.0.tar.xz
++https://download.gnome.org/sources/evolution/3.50/evolution-3.50.2.tar.xz
++https://download.gnome.org/sources/file-roller/43/file-roller-43.1.tar.xz
+ https://download.gnome.org/sources/gnome-calculator/45/gnome-calculator-45.0.2.tar.xz
+ https://download.gnome.org/sources/gnome-color-manager/3.36/gnome-color-manager-3.36.0.tar.xz
+ https://download.gnome.org/sources/gnome-disk-utility/45/gnome-disk-utility-45.1.tar.xz
+ https://download.gnome.org/sources/gnome-logs/43/gnome-logs-43.0.tar.xz
+-https://download.gnome.org/sources/gnome-maps/45/gnome-maps-45.1.tar.xz
++https://download.gnome.org/sources/gnome-maps/45/gnome-maps-45.2.tar.xz
+ https://download.gnome.org/sources/gnome-nettool/42/gnome-nettool-42.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gnome-nettool-42.0-ping_and_netstat_fixes-1.patch
+ https://download.gnome.org/sources/gnome-power-manager/43/gnome-power-manager-43.0.tar.xz
