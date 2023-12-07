@@ -1,0 +1,29 @@
+diff --git a/wget-list b/wget-list
+index ae297aaee..4269cb0e2 100644
+--- a/wget-list
++++ b/wget-list
+@@ -1,4 +1,4 @@
+-https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20231204.tar.xz
++https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20231205.tar.xz
+ https://github.com/lfs-book/make-ca/releases/download/v1.13/make-ca-1.13.tar.xz
+ https://github.com/cracklib/cracklib/releases/download/v2.9.11/cracklib-2.9.11.tar.xz
+ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.6/cryptsetup-2.6.1.tar.xz
+@@ -806,14 +806,14 @@ https://archive.xfce.org/src/xfce/garcon/4.18/garcon-4.18.1.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-panel/4.18/xfce4-panel-4.18.5.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar/4.18/thunar-4.18.8.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar-volman/4.18/thunar-volman-4.18.0.tar.bz2
+-https://archive.xfce.org/src/xfce/tumbler/4.18/tumbler-4.18.1.tar.bz2
++https://archive.xfce.org/src/xfce/tumbler/4.18/tumbler-4.18.2.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-appfinder/4.18/xfce4-appfinder-4.18.1.tar.bz2
+-https://archive.xfce.org/src/xfce/xfce4-power-manager/4.18/xfce4-power-manager-4.18.2.tar.bz2
+-https://archive.xfce.org/src/xfce/xfce4-settings/4.18/xfce4-settings-4.18.3.tar.bz2
++https://archive.xfce.org/src/xfce/xfce4-power-manager/4.18/xfce4-power-manager-4.18.3.tar.bz2
++https://archive.xfce.org/src/xfce/xfce4-settings/4.18/xfce4-settings-4.18.4.tar.bz2
+ https://archive.xfce.org/src/xfce/xfdesktop/4.18/xfdesktop-4.18.1.tar.bz2
+ https://archive.xfce.org/src/xfce/xfwm4/4.18/xfwm4-4.18.0.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-session/4.18/xfce4-session-4.18.3.tar.bz2
+-https://archive.xfce.org/src/apps/parole/4.18/parole-4.18.0.tar.bz2
++https://archive.xfce.org/src/apps/parole/4.18/parole-4.18.1.tar.bz2
+ https://archive.xfce.org/src/apps/xfce4-terminal/1.1/xfce4-terminal-1.1.1.tar.bz2
+ https://archive.xfce.org/src/apps/xfburn/0.7/xfburn-0.7.0.tar.bz2
+ https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.1.tar.bz2
