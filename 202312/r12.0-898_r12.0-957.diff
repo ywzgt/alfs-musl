@@ -1,0 +1,49 @@
+diff --git a/wget-list b/wget-list
+index 51020a34f..d190fcb1e 100644
+--- a/wget-list
++++ b/wget-list
+@@ -76,7 +76,7 @@ https://duktape.org/duktape-2.7.0.tar.xz
+ https://github.com/AbiWord/enchant/releases/download/v2.6.3/enchant-2.6.3.tar.gz
+ https://libopenraw.freedesktop.org/download/exempi-2.6.4.tar.xz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+-https://download.gnome.org/sources/glib/2.78/glib-2.78.1.tar.xz
++https://download.gnome.org/sources/glib/2.78/glib-2.78.3.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+ https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.5.tar.xz
+ https://download.gnome.org/sources/gmime/3.2/gmime-3.2.7.tar.xz
+@@ -131,7 +131,7 @@ https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
+ https://dist.libuv.org/dist/v1.47.0/libuv-v1.47.0.tar.gz
+ https://xkbcommon.org/download/libxkbcommon-1.6.0.tar.xz
+-https://download.gnome.org/sources/libxml2/2.12/libxml2-2.12.1.tar.xz
++https://download.gnome.org/sources/libxml2/2.12/libxml2-2.12.2.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.14/libxmlb-0.3.14.tar.xz
+ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.39.tar.xz
+@@ -226,7 +226,7 @@ https://ftp.gnu.org/gnu/sharutils/sharutils-4.15.2.tar.xz
+ https://telepathy.freedesktop.org/releases/telepathy-mission-control/telepathy-mission-control-5.16.6.tar.gz
+ https://github.com/htacg/tidy-html5/archive/5.8.0/tidy-html5-5.8.0.tar.gz
+ https://ftp.gnu.org/gnu/time/time-1.9.tar.gz
+-https://mama.indstate.edu/users/ice/tree/src/tree-2.1.1.tgz
++https://gitlab.com/OldManProgrammer/unix-tree/-/archive/2.1.1/unix-tree-2.1.1.tar.bz2
+ https://github.com/lurcher/unixODBC/releases/download/2.3.12/unixODBC-2.3.12.tar.gz
+ https://github.com/flatpak/xdg-dbus-proxy/releases/download/0.1.5/xdg-dbus-proxy-0.1.5.tar.xz
+ https://user-dirs.freedesktop.org/releases/xdg-user-dirs-0.18.tar.gz
+@@ -670,7 +670,7 @@ https://github.com/ksnip/kColorPicker/archive/refs/tags/v0.2.0/kColorPicker-0.2.
+ https://github.com/ksnip/kImageAnnotator/archive/refs/tags/v0.6.1/kImageAnnotator-0.6.1.tar.gz
+ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
+ https://download.gnome.org/sources/libadwaita/1.4/libadwaita-1.4.2.tar.xz
+-https://gitlab.freedesktop.org/libinput/libei/-/archive/1.1.0/libei-1.1.0.tar.gz
++https://gitlab.freedesktop.org/libinput/libei/-/archive/1.2.0/libei-1.2.0.tar.gz
+ https://gedit-technology.net/tarballs/libgedit-amtk/libgedit-amtk-5.8.0.tar.xz
+ https://gedit-technology.net/tarballs/libgedit-gtksourceview/libgedit-gtksourceview-299.0.4.tar.xz
+ https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.2.tar.xz
+@@ -761,7 +761,7 @@ https://download.gnome.org/sources/dconf-editor/45/dconf-editor-45.0.1.tar.xz
+ https://download.gnome.org/sources/gnome-backgrounds/45/gnome-backgrounds-45.0.tar.xz
+ https://download.gnome.org/sources/gvfs/1.52/gvfs-1.52.1.tar.xz
+ https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.2.tar.xz
+-https://download.gnome.org/sources/nautilus/45/nautilus-45.2.tar.xz
++https://download.gnome.org/sources/nautilus/45/nautilus-45.2.1.tar.xz
+ https://download.gnome.org/sources/gnome-bluetooth/42/gnome-bluetooth-42.7.tar.xz
+ https://download.gnome.org/sources/gnome-keyring/42/gnome-keyring-42.1.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/45/gnome-settings-daemon-45.0.tar.xz
