@@ -1,0 +1,49 @@
+diff --git a/wget-list b/wget-list
+index d190fcb1e..7bd102de3 100644
+--- a/wget-list
++++ b/wget-list
+@@ -273,7 +273,7 @@ https://downloads.sourceforge.net/infozip/zip30.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.26.0/cbindgen-0.26.0.tar.gz
+ https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+-https://cmake.org/files/v3.27/cmake-3.27.9.tar.gz
++https://cmake.org/files/v3.28/cmake-3.28.0.tar.gz
+ https://doxygen.nl/files/doxygen-1.9.8.src.tar.gz
+ https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.4/gc-8.2.4.tar.gz
+@@ -293,7 +293,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.6-shared_library-1.pat
+ https://www.lua.org/tests/lua-5.4.6-tests.tar.gz
+ https://www.lua.org/ftp/lua-5.2.4.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.2.4-shared_library-1.patch
+-https://www.mercurial-scm.org/release/mercurial-6.6.tar.gz
++https://www.mercurial-scm.org/release/mercurial-6.6.1.tar.gz
+ https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.xz
+ https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01-xdoc.tar.xz
+ https://github.com/NixOS/patchelf/releases/download/0.17.2/patchelf-0.17.2.tar.gz
+@@ -518,7 +518,7 @@ https://files.pythonhosted.org/packages/source/t/typing_extensions/typing_extens
+ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.0.7.tar.gz
+ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.0.2.tar.gz
+ https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.2.tar.xz
+-https://static.rust-lang.org/dist/rustc-1.74.0-src.tar.xz
++https://static.rust-lang.org/dist/rustc-1.74.1-src.tar.xz
+ https://downloads.sourceforge.net/scons/SCons-4.6.0.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+ https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
+@@ -766,7 +766,7 @@ https://download.gnome.org/sources/gnome-bluetooth/42/gnome-bluetooth-42.7.tar.x
+ https://download.gnome.org/sources/gnome-keyring/42/gnome-keyring-42.1.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/45/gnome-settings-daemon-45.0.tar.xz
+ https://download.gnome.org/sources/tecla/45/tecla-45.0.tar.xz
+-https://download.gnome.org/sources/gnome-control-center/45/gnome-control-center-45.1.tar.xz
++https://download.gnome.org/sources/gnome-control-center/45/gnome-control-center-45.2.tar.xz
+ https://download.gnome.org/sources/mutter/45/mutter-45.2.tar.xz
+ https://download.gnome.org/sources/gnome-shell/45/gnome-shell-45.2.tar.xz
+ https://download.gnome.org/sources/gnome-shell-extensions/45/gnome-shell-extensions-45.2.tar.xz
+@@ -920,7 +920,7 @@ https://github.com/intel/media-driver/archive/refs/tags/intel-media-23.4.1.tar.g
+ https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
+ https://liba52.sourceforge.net/files/a52dec-0.7.4.tar.gz
+ https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
+-https://storage.googleapis.com/aom-releases/libaom-3.7.1.tar.gz
++https://storage.googleapis.com/aom-releases/libaom-3.8.0.tar.gz
+ https://github.com/libass/libass/releases/download/0.17.1/libass-0.17.1.tar.xz
+ https://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libcanberra-0.30-wayland-1.patch
