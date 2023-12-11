@@ -1,0 +1,21 @@
+diff --git a/wget-list b/wget-list
+index 7bd102de3..8aca2533c 100644
+--- a/wget-list
++++ b/wget-list
+@@ -862,11 +862,11 @@ https://github.com/lxqt/screengrab/releases/download/2.7.0/screengrab-2.7.0.tar.
+ https://anduin.linuxfromscratch.org/BLFS/abiword/abiword-3.0.5.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/abiword/abiword-docs-3.0.2.tar.gz
+ https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.56.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/7.6.3/libreoffice-7.6.3.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/7.6.3/libreoffice-dictionaries-7.6.3.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/7.6.3/libreoffice-help-7.6.3.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/7.6.3/libreoffice-translations-7.6.3.2.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-7.6.3.2-consolidated_fixes-1.patch
++https://download.documentfoundation.org/libreoffice/src/7.6.4/libreoffice-7.6.4.1.tar.xz
++https://download.documentfoundation.org/libreoffice/src/7.6.4/libreoffice-dictionaries-7.6.4.1.tar.xz
++https://download.documentfoundation.org/libreoffice/src/7.6.4/libreoffice-help-7.6.4.1.tar.xz
++https://download.documentfoundation.org/libreoffice/src/7.6.4/libreoffice-translations-7.6.4.1.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-7.6.4.1-consolidated_fixes-1.patch
+ https://download.gnome.org/sources/epiphany/45/epiphany-45.1.tar.xz
+ https://download.kde.org/stable/release-service/23.08.0/src/falkon-23.08.0.tar.xz
+ https://archive.mozilla.org/pub/seamonkey/releases/2.53.17.1/source/seamonkey-2.53.17.1.source.tar.xz
