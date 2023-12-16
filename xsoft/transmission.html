@@ -6,18 +6,18 @@
     <meta http-equiv="Content-Type" content=
     "application/xhtml+xml; charset=iso-8859-1" />
     <title>
-      Transmission-4.0.4
+      Transmission-4.0.5
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-983">
+  <body class="blfs" id="blfs-r12.0-989">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-983
+        "phrase">(systemd</span> Edition) - Version r12.0-989
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -43,14 +43,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-983">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-989">
           Home</a>
         </li>
       </ul>
     </div>
     <div class="sect1" lang="en" xml:lang="en">
       <h1 class="sect1">
-        <a id="transmission" name="transmission"></a>Transmission-4.0.4
+        <a id="transmission" name="transmission"></a>Transmission-4.0.5
       </h1>
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -81,18 +81,18 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/transmission/transmission/releases/download/4.0.4/transmission-4.0.4.tar.xz">
-                https://github.com/transmission/transmission/releases/download/4.0.4/transmission-4.0.4.tar.xz</a>
+                "https://github.com/transmission/transmission/releases/download/4.0.5/transmission-4.0.5.tar.xz">
+                https://github.com/transmission/transmission/releases/download/4.0.5/transmission-4.0.5.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: a9985ff897d060d40b80e763263ffaf9
+                Download MD5 sum: d3cda868215246644c429b18a30f7e47
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 9.3 MB
+                Download size: 9.2 MB
               </p>
             </li>
             <li class="listitem">
@@ -175,7 +175,7 @@ cd    build &amp;&amp;
 
 cmake -DCMAKE_INSTALL_PREFIX=/usr \
       -DCMAKE_BUILD_TYPE=Release  \
-      -DCMAKE_INSTALL_DOCDIR=/usr/share/doc/transmission-4.0.4 \
+      -DCMAKE_INSTALL_DOCDIR=/usr/share/doc/transmission-4.0.5 \
       .. &amp;&amp;
 
 make</kbd></pre>
@@ -197,11 +197,12 @@ make</kbd></pre>
         </h2>
         <p>
           <code class="option">-DENABLE_QT=OFF</code>: This switch disables
-          building the <span class="application">Qt5</span> interface. The
+          building the <span class="application">Qt</span> interface. The
           default is to build it if (<a class="xref" href="../x/qt5.html"
           title="Qt-5.15.11">Qt-5.15.11</a> or <a class="xref" href=
           "../x/qt5-alternate.html" title=
-          "qt-alternate-5.15.11">qt-alternate-5.15.11</a>) is installed.
+          "qt-alternate-5.15.11">qt-alternate-5.15.11</a>) or <a class="xref"
+          href="../x/qt6.html" title="Qt-6.6.1">Qt-6.6.1</a> is installed.
         </p>
         <p>
           <code class="option">-DENABLE_GTK=OFF</code>: This switch disables
@@ -231,10 +232,9 @@ make</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">transmission-cli, transmission-create,
-              transmission-daemon, transmission-edit, transmission-gtk,
-              transmission-qt, transmission-remote, and
-              transmission-show</span>
+              <span class="segbody">transmission-create, transmission-daemon,
+              transmission-edit, transmission-gtk, transmission-qt,
+              transmission-remote, and transmission-show</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
@@ -243,7 +243,7 @@ make</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directory:</strong>
               <span class="segbody">/usr/share/transmission (contains the web
-              client) and /usr/share/doc/transmission-4.0.4</span>
+              client) and /usr/share/doc/transmission-4.0.5</span>
             </div>
           </div>
         </div>
@@ -257,21 +257,6 @@ make</kbd></pre>
               <col />
             </colgroup>
             <tbody>
-              <tr>
-                <td>
-                  <p>
-                    <a id="transmission-cli" name=
-                    "transmission-cli"></a><span class="term"><span class=
-                    "command"><strong>transmission-cli</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is a lightweight, command line BitTorrent client with
-                    scripting capabilities
-                  </p>
-                </td>
-              </tr>
               <tr>
                 <td>
                   <p>
@@ -403,7 +388,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-983">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-989">
           Home</a>
         </li>
       </ul>
