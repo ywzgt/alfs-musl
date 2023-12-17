@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-989">
+  <body class="blfs" id="blfs-r12.0-1001">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-989
+        "phrase">(systemd</span> Edition) - Version r12.0-1001
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-989">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1001">
           Home</a>
         </li>
       </ul>
@@ -182,10 +182,13 @@ ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>LC_ALL=C
           ninja test</strong></span>. Some checks may not pass due to missing
-          files. Test suite should be run from a local GUI session started
-          with dbus-launch. 2 tests relating to the headphone hotplug feature
-          are known to fail, these can be safely ignored as the headphone
-          functionality does still work.
+          files. The test suite should be run from a local GUI session
+          started with dbus-launch. On 32-bit machines, one test will fail
+          due to rounding errors: <code class=
+          "filename">Tests.test_battery_energy_charge_mixed</code>. On some
+          systems, two tests relading to the headphone hotplug feature are
+          known to fail. Those can be safely ignored since the functionality
+          still works.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -318,7 +321,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-989">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1001">
           Home</a>
         </li>
       </ul>
