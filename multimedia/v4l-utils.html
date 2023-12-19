@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1011">
+  <body class="blfs" id="blfs-r12.0-1017">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1011
+        "phrase">(systemd</span> Edition) - Version r12.0-1017
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1011">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1017">
           Home</a>
         </li>
       </ul>
@@ -161,9 +161,11 @@
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
-meson setup --prefix=/usr -Ddoxygen-doc=disabled \
-            -Dgconv=disabled --buildtype=release ..
 
+meson setup --prefix=/usr          \
+            -Ddoxygen-doc=disabled \
+            -Dgconv=disabled       \
+            --buildtype=release    .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -171,14 +173,13 @@ ninja</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
-        <pre class="root"><kbd class="command">ninja  install</kbd></pre>
+        <pre class="root"><kbd class="command">ninja install</kbd></pre>
         <p>
           If you also wish to install the contrib programs, add:
         </p>
-        <pre class="root"><kbd class=
-        "command">for prog in sdlcam  v4l2gl  v4l2grab
+        <pre class="root"><kbd class="command">for prog in v4l2gl v4l2grab
 do
-        cp -v contrib/test/$prog $DESTDIR/usr/bin/.
+   cp -v contrib/test/$prog /usr/bin
 done</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -203,7 +204,8 @@ done</kbd></pre>
               cx18-ctl, decode_tm6000, dvb-fe-tool, dvb-format-convert,
               dvbv5-daemon, dvbv5-scan, dvbv5-zap, ir-ctl, ir-keytable,
               ivtv-ctl, media-ctl, qv4l2, qvidcap, rds-ctl, v4l2-compliance,
-              v4l2-ctl, v4l2-dbg, and v4l2-sysfs-path</span>
+              v4l2-ctl, v4l2-dbg, v4l2gl, v4l2grab, and
+              v4l2-sysfs-path</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Library:</strong>
@@ -454,6 +456,37 @@ done</kbd></pre>
               <tr>
                 <td>
                   <p>
+                    <a id="v4l2gl" name="v4l2gl"></a><span class=
+                    "term"><span class=
+                    "command"><strong>v4l2gl</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    captures images using libv4l and stores them as PPM files
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="v4l2grab" name="v4l2grab"></a><span class=
+                    "term"><span class=
+                    "command"><strong>v4l2grab</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    captures images using libv4l and stores them as PPM
+                    files, while also allowing for additonal options such as
+                    setting the amount of frames captured and saving the file
+                    as a RAW file
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
                     <a id="v4l2-sysfs-path" name=
                     "v4l2-sysfs-path"></a><span class="term"><span class=
                     "command"><strong>v4l2-sysfs-path</strong></span></span>
@@ -492,7 +525,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1011">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1017">
           Home</a>
         </li>
       </ul>
