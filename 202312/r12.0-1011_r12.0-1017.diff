@@ -1,0 +1,35 @@
+diff --git a/wget-list b/wget-list
+index ba4d14c..0369d6e 100644
+--- a/wget-list
++++ b/wget-list
+@@ -198,7 +198,7 @@ https://www.cairographics.org/releases/pixman-0.42.2.tar.gz
+ https://poppler.freedesktop.org/poppler-23.12.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+-https://github.com/qpdf/qpdf/releases/download/v11.6.3/qpdf-11.6.3.tar.gz
++https://github.com/qpdf/qpdf/releases/download/v11.6.4/qpdf-11.6.4.tar.gz
+ https://fukuchi.org/works/qrencode/qrencode-4.1.1.tar.bz2
+ https://github.com/sass/sassc/archive/3.6.2/sassc-3.6.2.tar.gz
+ https://github.com/sass/libsass/archive/3.6.5/libsass-3.6.5.tar.gz
+@@ -557,10 +557,10 @@ https://ftp.isc.org/isc/bind9/9.18.20/bind-9.18.20.tar.xz
+ https://download.gnome.org/sources/NetworkManager/1.44/NetworkManager-1.44.2.tar.xz
+ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
+ https://nmap.org/dist/nmap-7.94.tar.bz2
+-https://downloads.sourceforge.net/traceroute/traceroute-2.1.4.tar.gz
++https://downloads.sourceforge.net/traceroute/traceroute-2.1.5.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.2.0.tar.xz
+-https://c-ares.haxx.se/download/c-ares-1.23.0.tar.gz
++https://c-ares.haxx.se/download/c-ares-1.24.0.tar.gz
+ https://curl.se/download/curl-8.5.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.1/geoclue-2.7.1.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.78/glib-networking-2.78.0.tar.xz
+@@ -796,7 +796,7 @@ https://download.gnome.org/sources/gnome-weather/45/gnome-weather-45.0.tar.xz
+ https://gitlab.gnome.org/GNOME/gucharmap/-/archive/15.1.2/gucharmap-15.1.2.tar.bz2
+ https://www.unicode.org/Public/zipped/15.1.0/Unihan.zip
+ https://download.gnome.org/sources/seahorse/43/seahorse-43.0.tar.xz
+-https://download.gnome.org/sources/snapshot/45/snapshot-45.0.tar.xz
++https://download.gnome.org/sources/snapshot/45/snapshot-45.1.tar.xz
+ https://download.gnome.org/sources/vinagre/3.22/vinagre-3.22.0.tar.xz
+ https://archive.xfce.org/src/xfce/libxfce4util/4.18/libxfce4util-4.18.1.tar.bz2
+ https://archive.xfce.org/src/xfce/xfconf/4.18/xfconf-4.18.3.tar.bz2
