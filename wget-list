@@ -16,8 +16,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3
 https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2
 https://kerberos.org/dist/krb5/1.21/krb5-1.21.2.tar.gz
 https://ftp.gnu.org/gnu/nettle/nettle-3.9.1.tar.gz
-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_96_RTM/src/nss-3.96.tar.gz
-https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.96-standalone-1.patch
+https://archive.mozilla.org/pub/security/nss/releases/NSS_3_96_1_RTM/src/nss-3.96.1.tar.gz
+https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.96.1-standalone-1.patch
 https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.5p1.tar.gz
 https://github.com/p11-glue/p11-kit/releases/download/0.25.3/p11-kit-0.25.3.tar.xz
 https://gitlab.freedesktop.org/polkit/polkit/-/archive/123/polkit-123.tar.gz
@@ -871,8 +871,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-7.6.4.1-consolidat
 https://download.gnome.org/sources/epiphany/45/epiphany-45.1.tar.xz
 https://download.kde.org/stable/release-service/23.08.4/src/falkon-23.08.4.tar.xz
 https://archive.mozilla.org/pub/firefox/releases/115.6.0esr/source/firefox-115.6.0esr.source.tar.xz
-https://archive.mozilla.org/pub/seamonkey/releases/2.53.17.1/source/seamonkey-2.53.17.1.source.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.17.1-consolidated_fixes-1.patch
+https://archive.mozilla.org/pub/seamonkey/releases/2.53.18/source/seamonkey-2.53.18.source.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.18-consolidated_fixes-1.patch
 https://files.pythonhosted.org/packages/source/s/setuptools/setuptools-68.2.2.tar.gz
 https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.4-upstream_fixes-2.patch

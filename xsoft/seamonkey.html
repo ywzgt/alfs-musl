@@ -6,18 +6,18 @@
     <meta http-equiv="Content-Type" content=
     "application/xhtml+xml; charset=iso-8859-1" />
     <title>
-      Seamonkey-2.53.17.1
+      Seamonkey-2.53.18
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1018">
+  <body class="blfs" id="blfs-r12.0-1028">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1018
+        "phrase">(systemd</span> Edition) - Version r12.0-1028
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -43,14 +43,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1018">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1028">
           Home</a>
         </li>
       </ul>
     </div>
     <div class="sect1" lang="en" xml:lang="en">
       <h1 class="sect1">
-        <a id="seamonkey" name="seamonkey"></a>Seamonkey-2.53.17.1
+        <a id="seamonkey" name="seamonkey"></a>Seamonkey-2.53.18
       </h1>
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -90,23 +90,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://archive.mozilla.org/pub/seamonkey/releases/2.53.17.1/source/seamonkey-2.53.17.1.source.tar.xz">
-                https://archive.mozilla.org/pub/seamonkey/releases/2.53.17.1/source/seamonkey-2.53.17.1.source.tar.xz</a>
+                "https://archive.mozilla.org/pub/seamonkey/releases/2.53.18/source/seamonkey-2.53.18.source.tar.xz">
+                https://archive.mozilla.org/pub/seamonkey/releases/2.53.18/source/seamonkey-2.53.18.source.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 15c73a5e725b7f002b2789706ae643d9
+                Download MD5 sum: 6ac064816caa2c3fe6bc1f130bd9599b
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 254 MB
+                Download size: 241 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 4.3 GB (159 MB installed)
+                Estimated disk space required: 4.2 GB (159 MB installed)
               </p>
             </li>
             <li class="listitem">
@@ -124,8 +124,8 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.17.1-consolidated_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.17.1-consolidated_fixes-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.18-consolidated_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.18-consolidated_fixes-1.patch</a>
               </p>
             </li>
             <li class="listitem">
@@ -136,7 +136,7 @@
               </p>
               <p>
                 This module has already been installed in LFS, but now we
-                need to rebuild its wheel package for SeaMonkey building
+                need to rebuild its wheel package for the SeaMonkey build
                 system.
               </p>
             </li>
@@ -149,9 +149,9 @@
           </h3>
           <p>
             The tarball <span class=
-            "emphasis"><em>seamonkey-2.53.17.1.source.tar.xz</em></span> will
-            untar to <span class=
-            "emphasis"><em>seamonkey-2.53.17.1</em></span> directory.
+            "emphasis"><em>seamonkey-2.53.18.source.tar.xz</em></span> will
+            untar to <span class="emphasis"><em>seamonkey-2.53.18</em></span>
+            directory.
           </p>
         </div>
         <h3>
@@ -187,8 +187,8 @@
           "../general/nasm.html" title="NASM-2.16.01">NASM-2.16.01</a>,
           <a class="xref" href="../general/nspr.html" title=
           "NSPR-4.35">NSPR-4.35</a>, <a class="xref" href=
-          "../postlfs/nss.html" title="NSS-3.96">nss-3.96</a>, and <a class=
-          "xref" href="../multimedia/pulseaudio.html" title=
+          "../postlfs/nss.html" title="NSS-3.96.1">nss-3.96.1</a>, and
+          <a class="xref" href="../multimedia/pulseaudio.html" title=
           "PulseAudio-16.1">PulseAudio-16.1</a>
         </p>
         <div class="admon note">
@@ -343,74 +343,28 @@ EOF</kbd></pre>
           "command">mountpoint -q /dev/shm || mount -t tmpfs devshm /dev/shm</kbd></pre>
         </div>
         <p>
-          First, apply a security patch that fixes some problems with
-          Seamonkey's bundled version of libvpx:
+          First, fix several problems that occur with Python-3.12 and ICU-74.
+          If you are not using ICU-74 and Python-3.12, do not apply this
+          patch.
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../seamonkey-2.53.17.1-consolidated_fixes-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../seamonkey-2.53.18-consolidated_fixes-1.patch</kbd></pre>
         <p>
-          The building system ships several internal copies of the Python 3
-          module <code class="filename">six.py</code> and wheel packages for
-          <code class="filename">pip</code> and <code class=
-          "filename">setuptools</code> modules. Theses shipped modules are
-          too old to work well with Python 3.12 or later. Replace the shipped
-          <code class="filename">six.py</code> copies with the symlinks to
-          <a class="xref" href="../general/python-modules.html#six" title=
-          "six-1.16.0">six-1.16.0</a> already installed on the system, link
-          the updated <code class="filename">pip</code> wheel package shipped
-          as a part of Python 3 in LFS into the building system, and build an
-          updated <code class="filename">setuptools</code> wheel package.
-          Then adapt the building system for the updated modules. We also
-          need to rewrite the code based on the <code class=
-          "filename">imp</code> module removed in Python 3.12 and later using
-          the <code class="filename">importlib</code> module:
+          Next, if you are using Python-3.12, reinstall the setuptools
+          package for Seamonkey, and update it's vendored copy of pip:
         </p>
         <pre class="userinput"><kbd class=
-        "command">(for i in $(find -name six.py); do
-   ln -sfv /usr/lib/python3.12/site-packages/six.py $i
-   [ $? = 0 ] || exit $?
- done) &amp;&amp;
-
-ln -sv /usr/lib/python3.12/ensurepip/_bundled/pip-*.whl \
+        "command">ln -sv /usr/lib/python3.12/ensurepip/_bundled/pip-*.whl \
        third_party/python/virtualenv/virtualenv_support &amp;&amp;
 
 tar xf ../setuptools-68.2.2.tar.gz                             &amp;&amp;
 pip3 wheel --no-build-isolation --no-deps --no-cache-dir       \
            $PWD/setuptools-68.2.2                              \
-           -w third_party/python/virtualenv/virtualenv_support &amp;&amp;
-
-sed '/ConfigParser/s/Safe//'                          \
-    -i testing/mozbase/mozprofile/mozprofile/prefs.py &amp;&amp;
-
-sed 's/distutils/setuptools._&amp;/'            \
-    -i python/mozbuild/mozbuild/nodeutil.py &amp;&amp;
-
-sed 's/readfp/read_file/' -i ipc/ipdl/ipdl.py &amp;&amp;
-
-sed -e '/^import/s/imp$/importlib.util/'             \
-    -e 's/imp.new_module/__import__/'                \
-    -e "s/imp.load_source\(.*\)/spec =               \
-        importlib.util.spec_from_file_location\1;    \
-        mod = importlib.util.module_from_spec(spec); \
-        spec.loader.exec_module(mod)/" -i python/mach/mach/main.py &amp;&amp;
-
-sed -e '/^import/s/imp$/importlib.util/'                          \
-    -e '/imp.PY_SOURCE/d'                                         \
-    -e "s/\([a-z_]*\) = imp.load_module([^,]*,[^,]*,\(.*\)/spec = \
-        importlib.util.spec_from_file_location('script', \2);     \
-        \1 = importlib.util.module_from_spec(spec);               \
-        spec.loader.exec_module(\1)/"                             \
-    -i netwerk/dns/prepare_tlds.py                                \
-       python/mozbuild/mozbuild/action/file_generate.py</kbd></pre>
+           -w third_party/python/virtualenv/virtualenv_support</kbd></pre>
         <p>
-          If building with system ICU, adapt the line break mapping for ICU
-          74 or later:
-        </p>
-        <pre class="userinput"><kbd class="command">(for i in {43..47}; do
-   sed '/ZWJ/s/$/,CLASS_CHARACTER/' -i intl/lwbrk/LineBreaker.cpp || exit $?
- done)</kbd></pre>
-        <p>
-          Fix a problem with the bundled 'distro' python module:
+          Next, if you are on Python-3.11 still, fix a problem with the
+          bundled 'distro' python module. This has been included in the patch
+          for Python-3.12 users:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -e '1012 s/stderr=devnull/stderr=subprocess.DEVNULL/' \
@@ -615,7 +569,7 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1018">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1028">
           Home</a>
         </li>
       </ul>
