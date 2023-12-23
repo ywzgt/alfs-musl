@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1038">
+  <body class="blfs" id="blfs-r12.0-1048">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1038
+        "phrase">(systemd</span> Edition) - Version r12.0-1048
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1038">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1048">
           Home</a>
         </li>
       </ul>
@@ -129,7 +129,7 @@
             --mandir=/usr/share/man \
             --enable-shared         \
             --disable-static        \
-            CFLAGS="${CFLAGS:--g -O2} $([ $(uname -m) = x86_64 ] &amp;&amp; echo -fPIC)" &amp;&amp;
+            CFLAGS="${CFLAGS:--g -O3} -fPIC" &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
@@ -148,10 +148,17 @@ install -v -m644 -D doc/liba52.txt \
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>CFLAGS="${CFLAGS:--g -O2}
-          ...</code></em>: This sets CFLAGS to -g -O2 (which is the default)
-          but then on x86_64 adds -fPIC. This is needed to compile
-          <span class="application">liba52</span> on x86_64.
+          <em class="parameter"><code>CFLAGS="${CFLAGS:--g -O3}
+          -fPIC"</code></em>: This appends <code class="option">-fPIC</code>
+          to <code class="envar">CFLAGS</code> but use <code class=
+          "option">-g -O3</code> (the default of this package) instead of an
+          empty string when <code class="envar">CFLAGS</code> is not set.
+          This is needed to compile <span class="application">liba52</span>
+          without runtime text relocation. Runtime text relocation is
+          prohibited on x86_64 so <code class="option">-fPIC</code> is
+          strictly required. On 32-bit x86 runtime text relocation is allowed
+          but it's insecure and it may waste physical RAM, so <code class=
+          "option">-fPIC</code> is still better.
         </p>
         <p>
           <em class="parameter"><code>--disable-static</code></em>: This
@@ -264,7 +271,7 @@ install -v -m644 -D doc/liba52.txt \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1038">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1048">
           Home</a>
         </li>
       </ul>
