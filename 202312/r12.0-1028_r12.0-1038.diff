@@ -1,0 +1,36 @@
+diff --git a/wget-list b/wget-list
+index a77e1e1..3f89f0d 100644
+--- a/wget-list
++++ b/wget-list
+@@ -60,11 +60,11 @@ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.10.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+ https://www.zsh.org/pub/zsh-5.9-doc.tar.xz
+-https://download.qemu.org/qemu-8.1.2.tar.xz
++https://download.qemu.org/qemu-8.2.0.tar.xz
+ https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.1.tar.xz
+ https://archive.apache.org/dist/apr/apr-1.7.4.tar.bz2
+ https://archive.apache.org/dist/apr/apr-util-1.6.3.tar.bz2
+-https://ftp.gnu.org/gnu/aspell/aspell-0.60.8.tar.gz
++https://ftp.gnu.org/gnu/aspell/aspell-0.60.8.1.tar.gz
+ https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2
+ https://boostorg.jfrog.io/artifactory/main/release/1.84.0/source/boost_1_84_0.tar.bz2
+ https://github.com/google/brotli/archive/v1.1.0/brotli-1.1.0.tar.gz
+@@ -113,7 +113,7 @@ https://downloads.sourceforge.net/iodbc/libiodbc-3.52.15.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.5.tar.bz2
+ https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
+ https://www.freedesktop.org/software/libmbim/libmbim-1.26.4.tar.xz
+-https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.6/libnvme-1.6.tar.gz
++https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.7.1/libnvme-1.7.1.tar.gz
+ https://github.com/rrthomas/libpaper/releases/download/v2.1.2/libpaper-2.1.2.tar.gz
+ https://github.com/flatpak/libportal/releases/download/0.7.1/libportal-0.7.1.tar.xz
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+@@ -184,7 +184,7 @@ https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
+ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz
+ https://downloads.sourceforge.net/libpng/libpng-1.6.40.tar.xz
+ https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.40-apng.patch.gz
+-https://www.libraw.org/data/LibRaw-0.21.1.tar.gz
++https://www.libraw.org/data/LibRaw-0.21.2.tar.gz
+ https://download.gnome.org/sources/librsvg/2.57/librsvg-2.57.1.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+ https://download.osgeo.org/libtiff/tiff-4.6.0.tar.gz
