@@ -6,18 +6,18 @@
     <meta http-equiv="Content-Type" content=
     "application/xhtml+xml; charset=iso-8859-1" />
     <title>
-      Systemd-254
+      Systemd-255
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1048">
+  <body class="blfs" id="blfs-r12.0-1055">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1048
+        "phrase">(systemd</span> Edition) - Version r12.0-1055
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -42,14 +42,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1048">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1055">
           Home</a>
         </li>
       </ul>
     </div>
     <div class="sect1" lang="en" xml:lang="en">
       <h1 class="sect1">
-        <a id="systemd" name="systemd"></a>Systemd-254
+        <a id="systemd" name="systemd"></a>Systemd-255
       </h1>
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -84,18 +84,18 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/systemd/systemd/archive/v254/systemd-254.tar.gz">
-                https://github.com/systemd/systemd/archive/v254/systemd-254.tar.gz</a>
+                "https://github.com/systemd/systemd/archive/v255/systemd-255.tar.gz">
+                https://github.com/systemd/systemd/archive/v255/systemd-255.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 0d266e5361dc72097b6c18cfde1c0001
+                Download MD5 sum: 521cda27409a9edf0370c128fae3e690
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 14 MB
+                Download size: 15 MB
               </p>
             </li>
             <li class="listitem">
@@ -193,8 +193,9 @@
           "https://www.gnu.org/software/libmicrohttpd/">libmicrohttpd</a>,
           <a class="ulink" href="https://lz4.github.io/lz4/">lz4</a>,
           <a class="ulink" href=
-          "https://pypi.org/project/pyelftools/">pyelftools</a>, <a class=
-          "ulink" href=
+          "https://pypi.org/project/pefile/">pefile</a>, <a class="ulink"
+          href="https://pypi.org/project/pyelftools/">pyelftools</a>,
+          <a class="ulink" href=
           "https://sourceforge.net/projects/linuxquota/">quota-tools</a>,
           <a class="ulink" href="https://rpm.org/">rpm</a>, <a class="ulink"
           href="https://github.com/SELinuxProject/selinux">SELinux</a>,
@@ -250,14 +251,16 @@ meson setup ..                \
       -Dman=auto              \
       -Dsysusers=false        \
       -Drpmmacrosdir=no       \
-      -Dhomed=false           \
+      -Dhomed=disabled        \
       -Duserdb=false          \
       -Dmode=release          \
       -Dpam=true              \
       -Dpamconfdir=/etc/pam.d \
       -Ddev-kvm-mode=0660     \
       -Dnobody-group=nogroup  \
-      -Ddocdir=/usr/share/doc/systemd-254 &amp;&amp;
+      -Dsysupdate=disabled    \
+      -Dukify=disabled        \
+      -Ddocdir=/usr/share/doc/systemd-255 &amp;&amp;
 
 ninja</kbd></pre>
         <div class="admon note">
@@ -306,7 +309,7 @@ ninja</kbd></pre>
           daemon, replace "false" with "true" in the above meson command.
         </p>
         <p>
-          <em class="parameter"><code>-Dhomed=false</code></em>: Removes a
+          <em class="parameter"><code>-Dhomed=disabled</code></em>: Removes a
           daemon that does not offer any use under a traditional BLFS
           configuration, especially using accounts created with useradd. To
           enable systemd-homed, first ensure that you have <a class="xref"
@@ -314,7 +317,31 @@ ninja</kbd></pre>
           "cryptsetup-2.6.1">cryptsetup-2.6.1</a> and <a class="xref" href=
           "../postlfs/libpwquality.html" title=
           "libpwquality-1.4.5">libpwquality-1.4.5</a> installed, and then
-          change "false" to "true" in the above meson command.
+          change <span class="quote">&ldquo;<span class=
+          "quote">disabled</span>&rdquo;</span> to <span class=
+          "quote">&ldquo;<span class="quote">enabled</span>&rdquo;</span> in
+          the above <span class="command"><strong>meson setup</strong></span>
+          command.
+        </p>
+        <p>
+          <em class="parameter"><code>-Dukify=disabled</code></em>: Removes a
+          script for combining a kernel, an initramfs, and a kernel command
+          line etc. into an UEFI application which can be loaded by the UEFI
+          firmware to start the embedded Linux kernel. It's not needed for
+          booting a BLFS system with UEFI if following <a class="xref" href=
+          "../postlfs/grub-setup.html" title=
+          "Using GRUB to Set Up the Boot Process with UEFI">Using GRUB to Set
+          Up the Boot Process with UEFI</a>. And, it requires the
+          <span class="application">pefile</span> Python module at runtime,
+          so if it's enabled but <span class="application">pefile</span> is
+          not installed, in the test suite one test for it will fail. To
+          enable <span class="command"><strong>systemd-ukify</strong></span>,
+          install the <span class="application">pefile</span> module and then
+          change <span class="quote">&ldquo;<span class=
+          "quote">disabled</span>&rdquo;</span> to <span class=
+          "quote">&ldquo;<span class="quote">enabled</span>&rdquo;</span> in
+          the above <span class="command"><strong>meson setup</strong></span>
+          command.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -495,7 +522,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1048">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1055">
           Home</a>
         </li>
       </ul>
