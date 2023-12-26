@@ -1,0 +1,56 @@
+diff --git a/wget-list b/wget-list
+index e9064ff..f031503 100644
+--- a/wget-list
++++ b/wget-list
+@@ -165,7 +165,7 @@ https://download.gimp.org/pub/babl/0.1/babl-0.1.106.tar.xz
+ https://github.com/Exiv2/exiv2/archive/v0.28.1/exiv2-0.28.1.tar.gz
+ https://downloads.sourceforge.net/freetype/freetype-2.13.2.tar.xz
+ https://downloads.sourceforge.net/freetype/freetype-doc-2.13.2.tar.xz
+-https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz
++https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.15.0.tar.xz
+ https://github.com/fribidi/fribidi/releases/download/v1.0.13/fribidi-1.0.13.tar.xz
+ https://download.gimp.org/pub/gegl/0.4/gegl-0.4.46.tar.xz
+ https://sourceforge.net/projects/giflib/files/giflib-5.2.1.tar.gz
+@@ -259,7 +259,7 @@ https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+ https://download.librdf.org/source/redland-1.0.17.tar.gz
+ https://sg.danny.cz/sg/p/sg3_utils-1.48.tar.xz
+ https://github.com/lfs-book/sysmon-qt/releases/download/v1.0/sysmon-qt-1.0.tar.xz
+-https://sysstat.github.io/sysstat-packages/sysstat-12.7.4.tar.xz
++https://sysstat.github.io/sysstat-packages/sysstat-12.7.5.tar.xz
+ https://github.com/systemd/systemd/archive/v255/systemd-255.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.10.1/udisks-2.10.1.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-6.2.12.tar.gz
+@@ -453,7 +453,7 @@ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.2.0.tar.gz
+ https://github.com/psf/cachecontrol/archive/refs/tags/v0.13.1/cachecontrol-0.13.1.tar.gz
+ https://github.com/cython/cython/releases/download/0.29.36/Cython-0.29.36.tar.gz
+-https://files.pythonhosted.org/packages/source/p/python-dbusmock/python-dbusmock-0.30.0.tar.gz
++https://files.pythonhosted.org/packages/source/p/python-dbusmock/python-dbusmock-0.30.1.tar.gz
+ https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.3.2.tar.gz
+ https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.20.1.tar.gz
+ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.gz
+@@ -551,7 +551,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_s
+ https://w1.fi/releases/wpa_supplicant-2.10.tar.gz
+ https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+-https://ftp.isc.org/isc/bind9/9.18.20/bind-9.18.20.tar.xz
++https://ftp.isc.org/isc/bind9/9.18.21/bind-9.18.21.tar.xz
+ https://download.gnome.org/sources/NetworkManager/1.44/NetworkManager-1.44.2.tar.xz
+ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
+ https://nmap.org/dist/nmap-7.94.tar.bz2
+@@ -650,13 +650,13 @@ https://fltk.org/pub/fltk/1.3.9/fltk-1.3.9-source.tar.gz
+ https://downloads.sourceforge.net/freeglut/freeglut-3.4.0.tar.gz
+ https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.10.tar.xz
+ https://downloads.sourceforge.net/glew/glew-2.2.0.tgz
+-https://github.com/KhronosGroup/glslang/archive/refs/tags/13.1.1/glslang-13.1.1.tar.gz
++https://github.com/KhronosGroup/glslang/archive/refs/tags/14.0.0/glslang-14.0.0.tar.gz
+ https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
+ https://download.gnome.org/sources/goffice/0.10/goffice-0.10.56.tar.xz
+ https://github.com/steveire/grantlee/releases/download/v5.3.1/grantlee-5.3.1.tar.gz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+ https://download.gnome.org/sources/gtk+/2.24/gtk+-2.24.33.tar.xz
+-https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.38.tar.xz
++https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.39.tar.xz
+ https://download.gnome.org/sources/gtk/4.12/gtk-4.12.4.tar.xz
+ https://download.gnome.org/sources/gtk-engines/2.20/gtk-engines-2.20.2.tar.bz2
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.8.tar.xz
