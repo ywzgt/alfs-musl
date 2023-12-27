@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1061">
+  <body class="blfs" id="blfs-r12.0-1071">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1061
+        "phrase">(systemd</span> Edition) - Version r12.0-1071
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1061">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1071">
           Home</a>
         </li>
       </ul>
@@ -172,8 +172,8 @@
           "alsa-lib-1.2.10">alsa-lib-1.2.10</a> if you edit the mozconfig;
           now deprecated by mozilla), in either case please read the
           Configuration Information, <a class="xref" href=
-          "../general/python3.html" title="Python-3.12.1">Python-3.12.1</a>
-          (rebuilt after installing <a class="xref" href=
+          "../general/python311.html" title="Python-3.11.1">Python-3.11.1</a>
+          (built after installing <a class="xref" href=
           "../server/sqlite.html" title="SQLite-3.44.2">SQLite-3.44.2</a>),
           <a class="xref" href="../general/python-modules.html#six" title=
           "six-1.16.0">six-1.16.0</a>, <a class="xref" href=
@@ -238,48 +238,6 @@
         <h2 class="sect2">
           Installation of Firefox
         </h2>
-        <p>
-          The building system ships several internal copies of the Python 3
-          modules <span class="application">setuptools</span> and
-          <code class="filename">six.py</code>. The shipped copies are too
-          old to work well with Python 3.12 or later. Replace them with the
-          symlinks to the LFS <span class="application">setuptools</span>
-          package and <a class="xref" href=
-          "../general/python-modules.html#six" title=
-          "six-1.16.0">six-1.16.0</a> already installed on the system, and
-          adapt the building system for these updated Python modules. We also
-          need to rewrite the code based on the <code class=
-          "filename">imp</code> module removed in Python 3.12 and later using
-          the <code class="filename">importlib</code> module:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">(for i in $(find -name six.py); do
-   ln -sfv /usr/lib/python3.12/site-packages/six.py $i
-   [ $? = 0 ] || exit $?
- done) &amp;&amp;
-
-sed '/ConfigParser/s/Safe//'                          \
-    -i testing/mozbase/mozprofile/mozprofile/prefs.py &amp;&amp;
-
-(for i in setuptools distutils-precedence.pth  \
-          pkg_resources _distutils_hack; do
-   rm -rf third_party/python/setuptools/$i     &amp;&amp;
-   ln -sv /usr/lib/python3.12/site-packages/$i \
-          third_party/python/setuptools
-   [ $? = 0 ] || exit $?
- done) &amp;&amp;
-
-sed 's/distutils/setuptools._&amp;/'            \
-    -i python/mozbuild/mozbuild/nodeutil.py &amp;&amp;
-
-sed -e '/^import/s/imp$/importlib.util/'             \
-    -e 's/imp.new_module/__import__/'                \
-    -e "s/imp.load_source\(.*\)/spec =               \
-        importlib.util.spec_from_file_location\1;    \
-        mod = importlib.util.module_from_spec(spec); \
-        spec.loader.exec_module(mod)/" -i python/mach/mach/main.py &amp;&amp;
-sed '/import imp/d' -i netwerk/dns/prepare_tlds.py
-</kbd></pre>
         <p>
           If building with system ICU, adapt the line break mapping for ICU
           74 or later:
@@ -452,8 +410,9 @@ echo "613364a7-9418-4c86-bcee-57e32fd70c23" &gt; mozilla-key</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none &amp;&amp;
 export MOZBUILD_STATE_PATH=${PWD}/mozbuild          &amp;&amp;
-./mach configure                                    &amp;&amp;
-./mach build</kbd></pre>
+export PYTHON311=/opt/python3.11/bin/python3.11     &amp;&amp;
+$PYTHON311 ./mach configure                         &amp;&amp;
+$PYTHON311 ./mach build</kbd></pre>
         <p>
           The <code class="filename">mozconfig</code> above disables the
           tests because they use a lot more time and disk space for no
@@ -470,12 +429,16 @@ export MOZBUILD_STATE_PATH=${PWD}/mozbuild          &amp;&amp;
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none ./mach install</kbd></pre>
+        "command">export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none &amp;&amp;
+export PYTHON311=/opt/python3.11/bin/python3.11     &amp;&amp;
+$PYTHON311 ./mach install</kbd></pre>
         <p>
           Empty the environment variables which were set above:
         </p>
         <pre class="userinput"><kbd class=
-        "command">unset MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE MOZBUILD_STATE_PATH</kbd></pre>
+        "command">unset MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE
+unset MOZBUILD_STATE_PATH
+unset PYTHON311</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -483,8 +446,8 @@ export MOZBUILD_STATE_PATH=${PWD}/mozbuild          &amp;&amp;
         </h2>
         <p>
           <span class="command"><strong>export
-          MOZBUILD_STATE_PATH=${PWD}/mozbuild</strong></span>: The build is
-          now supposed to tell you that it intends to create <code class=
+          MOZBUILD_STATE_PATH=${PWD}/mozbuild</strong></span>: The build
+          tells you that it intends to create <code class=
           "filename">~/.mozbuild</code>, and offer you an option to press
           &lt;ENTER&gt; to accept this, or Ctrl-C to cancel and restart the
           build after specifying the directory. In practice, the message may
@@ -493,20 +456,17 @@ export MOZBUILD_STATE_PATH=${PWD}/mozbuild          &amp;&amp;
         </p>
         <p>
           That directory is used for a (probably random) telemetry
-          identifier. Creating this in the build directory, and deleting that
-          after the installation, prevents it being used. If you wish to
-          participate in telemetry, export MOZBUILD_STATE_PATH to point to
-          its default directory and remove the entry from the <code class=
-          "filename">mozconfig</code>.
+          identifier. Creating this directory within the build directory and
+          deleting it after the installation prevents it being used.
         </p>
         <p>
           <span class=
           "command"><strong>MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none</strong></span>:
           Use the system python to create a virtual environment for
           <span class="command"><strong>mach</strong></span> without
-          downloading any python wheels nor using the system python modules.
-          This prevents version mismatches between system modules and bundled
-          ones.
+          downloading any python wheels and without using the system python
+          modules. This prevents version mismatches between system modules
+          and bundled ones.
         </p>
         <p>
           <span class="command"><strong>./mach configure</strong></span>:
@@ -579,7 +539,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm86106" name="idm86106"></a>Configuration Information
+            <a id="idm86176" name="idm86176"></a>Configuration Information
           </h4>
           <p>
             The application settings for firefox are accessible by keying
@@ -740,7 +700,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1061">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1071">
           Home</a>
         </li>
       </ul>

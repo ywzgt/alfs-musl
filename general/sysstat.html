@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1061">
+  <body class="blfs" id="blfs-r12.0-1071">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1061
+        "phrase">(systemd</span> Edition) - Version r12.0-1071
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1061">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1071">
           Home</a>
         </li>
       </ul>
@@ -144,9 +144,11 @@ make</kbd></pre>
           <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">install -v -m644 sysstat.service /usr/lib/systemd/system/sysstat.service &amp;&amp;
+        "command">install -v -m644 sysstat.service /usr/lib/systemd/system/sysstat.service                      &amp;&amp;
 install -v -m644 cron/sysstat-collect.service /usr/lib/systemd/system/sysstat-collect.service &amp;&amp;
-install -v -m644 cron/sysstat-collect.timer /usr/lib/systemd/system/sysstat-collect.timer &amp;&amp;
+install -v -m644 cron/sysstat-collect.timer /usr/lib/systemd/system/sysstat-collect.timer     &amp;&amp;
+install -v -m644 cron/sysstat-rotate.service /usr/lib/systemd/system/sysstat-roate.service    &amp;&amp;
+install -v -m644 cron/sysstat-rotate.timer /usr/lib/systemd/system/sysstat-rotate.timer       &amp;&amp;
 install -v -m644 cron/sysstat-summary.service /usr/lib/systemd/system/sysstat-summary.service &amp;&amp;
 install -v -m644 cron/sysstat-summary.timer /usr/lib/systemd/system/sysstat-summary.timer</kbd></pre>
         <p>
@@ -214,7 +216,7 @@ install -v -m644 cron/sysstat-summary.timer /usr/lib/systemd/system/sysstat-summ
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm32013" name="idm32013"></a>Cron Information
+            <a id="idm32022" name="idm32022"></a>Cron Information
           </h4>
           <p>
             To begin gathering <span class="application">Sysstat</span>
@@ -431,7 +433,7 @@ install -v -m644 cron/sysstat-summary.timer /usr/lib/systemd/system/sysstat-summ
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1061">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1071">
           Home</a>
         </li>
       </ul>
