@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1071">
+  <body class="blfs" id="blfs-r12.0-1086">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1071
+        "phrase">(systemd</span> Edition) - Version r12.0-1086
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -43,7 +43,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1071">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1086">
           Home</a>
         </li>
       </ul>
@@ -154,8 +154,8 @@
           "../general/python-modules.html#python-dbusmock" title=
           "dbusmock-0.30.1">dbusmock-0.30.1</a>, and <a class="xref" href=
           "../general/spidermonkey.html" title=
-          "SpiderMonkey from Firefox-115.5.0">SpiderMonkey from
-          Firefox-115.5.0</a> (can be used in place of duktape)
+          "SpiderMonkey from Firefox-115.6.0">SpiderMonkey from
+          Firefox-115.6.0</a> (can be used in place of duktape)
         </p>
         <h4>
           Required Runtime Dependencies
@@ -217,8 +217,8 @@ useradd -c "PolicyKit Daemon Owner" -d /etc/polkit-1 -u 27 \
         -g polkitd -s /bin/false polkitd</kbd></pre>
         <p>
           If using <a class="xref" href="../general/spidermonkey.html" title=
-          "SpiderMonkey from Firefox-115.5.0">SpiderMonkey from
-          Firefox-115.5.0</a>, make the following change (see Command
+          "SpiderMonkey from Firefox-115.6.0">SpiderMonkey from
+          Firefox-115.6.0</a>, make the following change (see Command
           Explanations below for more information):
         </p>
         <pre class="userinput"><kbd class=
@@ -267,8 +267,8 @@ ninja</kbd></pre>
           's/JS_Init/JS::DisableJitBackend(); &amp;/' ...</strong></span> :
           The JIT compiling of <a class="xref" href=
           "../general/spidermonkey.html" title=
-          "SpiderMonkey from Firefox-115.5.0">SpiderMonkey from
-          Firefox-115.5.0</a> needs W+X mapping which is dangerous and is not
+          "SpiderMonkey from Firefox-115.6.0">SpiderMonkey from
+          Firefox-115.6.0</a> needs W+X mapping which is dangerous and is not
           permitted by the <span class="application">systemd</span> unit file
           shipped within the polkit package. This command is not strictly
           needed on systems based on sysvinit but it still improves security.
@@ -291,8 +291,8 @@ ninja</kbd></pre>
         <p>
           <code class="option">-Djs_engine=mozjs</code>: This switch allows
           using the <a class="xref" href="../general/spidermonkey.html"
-          title="SpiderMonkey from Firefox-115.5.0">SpiderMonkey from
-          Firefox-115.5.0</a> JavaScript engine instead of the <a class=
+          title="SpiderMonkey from Firefox-115.6.0">SpiderMonkey from
+          Firefox-115.6.0</a> JavaScript engine instead of the <a class=
           "xref" href="../general/duktape.html" title=
           "duktape-2.7.0">duktape-2.7.0</a> JavaScript engine.
         </p>
@@ -495,7 +495,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1071">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1086">
           Home</a>
         </li>
       </ul>

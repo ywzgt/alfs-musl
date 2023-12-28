@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1071">
+  <body class="blfs" id="blfs-r12.0-1086">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1071
+        "phrase">(systemd</span> Edition) - Version r12.0-1086
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -43,7 +43,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1071">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1086">
           Home</a>
         </li>
       </ul>
@@ -105,6 +105,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/libssh2-1.11.0-security_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/libssh2-1.11.0-security_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           libssh2 Dependencies
         </h3>
         <h4>
@@ -117,7 +131,7 @@
           <a class="xref" href="libgcrypt.html" title=
           "libgcrypt-1.10.3">libgcrypt-1.10.3</a> (can be used instead of
           OpenSSL), <a class="xref" href="../postlfs/openssh.html" title=
-          "OpenSSH-9.5p1">OpenSSH-9.5p1</a> (for some tests), and <a class=
+          "OpenSSH-9.6p1">OpenSSH-9.6p1</a> (for some tests), and <a class=
           "ulink" href="https://www.docker.com">Docker</a> (for some tests)
         </p>
       </div>
@@ -125,6 +139,11 @@
         <h2 class="sect2">
           Installation of libssh2
         </h2>
+        <p>
+          First, fix a critical security vulnerability in libssh2:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../libssh2-1.11.0-security_fixes-1.patch</kbd></pre>
         <p>
           If you want to test the package, exclude the tests requiring a
           static library:
@@ -236,7 +255,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1071">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1086">
           Home</a>
         </li>
       </ul>
