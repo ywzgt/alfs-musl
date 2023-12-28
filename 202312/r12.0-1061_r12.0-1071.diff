@@ -1,0 +1,12 @@
+diff --git a/wget-list b/wget-list
+index f031503..303635f 100644
+--- a/wget-list
++++ b/wget-list
+@@ -449,6 +449,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/Python-2.7.18-security_fixes-1
+ https://www.python.org/ftp/python/doc/2.7.18/python-2.7.18-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.12.1/Python-3.12.1.tar.xz
+ https://www.python.org/ftp/python/doc/3.12.1/python-3.12.1-docs-html.tar.bz2
++https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.2.0.tar.gz
+ https://github.com/psf/cachecontrol/archive/refs/tags/v0.13.1/cachecontrol-0.13.1.tar.gz
