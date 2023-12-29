@@ -6,18 +6,18 @@
     <meta http-equiv="Content-Type" content=
     "application/xhtml+xml; charset=iso-8859-1" />
     <title>
-      opencv-4.8.1
+      opencv-4.9.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1086">
+  <body class="blfs" id="blfs-r12.0-1095">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1086
+        "phrase">(systemd</span> Edition) - Version r12.0-1095
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -42,14 +42,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1086">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1095">
           Home</a>
         </li>
       </ul>
     </div>
     <div class="sect1" lang="en" xml:lang="en">
       <h1 class="sect1">
-        <a id="opencv" name="opencv"></a>opencv-4.8.1
+        <a id="opencv" name="opencv"></a>opencv-4.9.0
       </h1>
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -78,13 +78,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/opencv/opencv/archive/4.8.1/opencv-4.8.1.tar.gz">
-                https://github.com/opencv/opencv/archive/4.8.1/opencv-4.8.1.tar.gz</a>
+                "https://github.com/opencv/opencv/archive/4.9.0/opencv-4.9.0.tar.gz">
+                https://github.com/opencv/opencv/archive/4.9.0/opencv-4.9.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 7e3b6b5046e4e31226bbf4872091201c
+                Download MD5 sum: 153b4b8dd103b1bfe447f7dd1f22eac0
               </p>
             </li>
             <li class="listitem">
@@ -94,12 +94,12 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 781 MB
+                Estimated disk space required: 820 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 7.1 SBU (using parallelism=4)
+                Estimated build time: 7.4 SBU (using parallelism=4)
               </p>
             </li>
           </ul>
@@ -112,8 +112,8 @@
             <li class="listitem">
               <p>
                 Optional additional modules: <a class="ulink" href=
-                "https://github.com/opencv/opencv_contrib/archive/4.8.1/opencv_contrib-4.8.1.tar.gz">
-                https://github.com/opencv/opencv_contrib/archive/4.8.1/opencv_contrib-4.8.1.tar.gz</a>
+                "https://github.com/opencv/opencv_contrib/archive/4.9.0/opencv_contrib-4.9.0.tar.gz">
+                https://github.com/opencv/opencv_contrib/archive/4.9.0/opencv_contrib-4.9.0.tar.gz</a>
               </p>
             </li>
           </ul>
@@ -175,17 +175,15 @@
           "doxygen.html" title="Doxygen-1.10.0">Doxygen-1.10.0</a>, <a class=
           "xref" href="java.html" title="Java-21.0.1">Java-21.0.1</a>,
           <a class="xref" href="python-modules.html#numpy" title=
-          "NumPy-1.26.2">NumPy-1.26.2</a>, <a class="xref" href=
-          "python2.html" title="Python-2.7.18">Python-2.7.18</a>, <a class=
-          "ulink" href="https://math-atlas.sourceforge.net/">ATLAS</a>,
-          <a class="ulink" href="https://www.netlib.org/blas/">blas</a>,
-          <a class="ulink" href=
-          "https://developer.nvidia.com/cuda-zone">Cuda</a>, <a class="ulink"
-          href="https://eigen.tuxfamily.org/">Eigen</a>, <a class="ulink"
-          href="https://www.openexr.com/">OpenEXR</a>, <a class="ulink" href=
-          "https://www.gdal.org/">GDAL</a>, <a class="ulink" href=
-          "https://www.netlib.org/lapack/">lapack</a>, <a class="ulink" href=
-          "https://sourceforge.net/projects/libdc1394/">libdc1394</a>,
+          "NumPy-1.26.2">NumPy-1.26.2</a>, <a class="ulink" href=
+          "https://math-atlas.sourceforge.net/">ATLAS</a>, <a class="ulink"
+          href="https://www.netlib.org/blas/">blas</a>, <a class="ulink"
+          href="https://developer.nvidia.com/cuda-zone">Cuda</a>, <a class=
+          "ulink" href="https://eigen.tuxfamily.org/">Eigen</a>, <a class=
+          "ulink" href="https://www.openexr.com/">OpenEXR</a>, <a class=
+          "ulink" href="https://www.gdal.org/">GDAL</a>, <a class="ulink"
+          href="https://www.netlib.org/lapack/">lapack</a>, <a class="ulink"
+          href="https://sourceforge.net/projects/libdc1394/">libdc1394</a>,
           <a class="ulink" href=
           "https://github.com/oneapi-src/oneTBB">Threading Building Blocks
           (TBB)</a>, and <a class="ulink" href="https://vtk.org/">VTK - The
@@ -200,7 +198,7 @@
           If you downloaded the optional modules, unpack them now:
         </p>
         <pre class="userinput"><kbd class=
-        "command">tar -xf ../opencv_contrib-4.8.1.tar.gz</kbd></pre>
+        "command">tar -xf ../opencv_contrib-4.9.0.tar.gz</kbd></pre>
         <p>
           Install <span class="application">opencv</span> by running the
           following commands:
@@ -244,7 +242,7 @@ make</kbd></pre>
         </p>
         <p>
           <code class=
-          "option">-DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.8.1/modules</code>:
+          "option">-DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.9.0/modules</code>:
           instructs the build system to build additional modules.
         </p>
       </div>
@@ -303,7 +301,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1086">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1095">
           Home</a>
         </li>
       </ul>

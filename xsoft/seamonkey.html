@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1086">
+  <body class="blfs" id="blfs-r12.0-1095">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1086
+        "phrase">(systemd</span> Edition) - Version r12.0-1095
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -43,7 +43,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1086">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1095">
           Home</a>
         </li>
       </ul>
@@ -332,7 +332,6 @@ done)</kbd></pre>
         </p>
         <pre class="userinput"><kbd class=
         "command">export PYTHON311=/opt/python3.11/bin/python3.11 &amp;&amp;
-$PYTHON311 AUTOCONF=true ./mach configure       &amp;&amp;
 $PYTHON311 AUTOCONF=true ./mach build</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -363,19 +362,6 @@ cp -v $(find -name seamonkey.1 | head -n1) /usr/share/man/man1</kbd></pre>
           <span class="application">llvm</span> unless overridden, the older
           configure code in <span class="application">Seamonkey</span>
           defaults to gcc.
-        </p>
-        <p>
-          <span class="command"><strong>AUTOCONF=true ./mach
-          configure</strong></span>: This validates the supplied dependencies
-          and the <code class="filename">mozconfig</code>. The building
-          system always checks for an old version (2.13) of autoconf, but
-          it's not really needed because the necessary <span class=
-          "command"><strong>configure</strong></span> scripts are already
-          shipped in the tarball and we've not modified the <code class=
-          "filename">configure.in</code> files. So we pass <code class=
-          "envar">AUTOCONF=true</code> so the building system will skip the
-          checking for autoconf-2.13 and allow building this package without
-          autoconf-2.13 installed.
         </p>
         <p>
           <code class="option">./mach build --verbose</code>: Use this
@@ -527,7 +513,7 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1086">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1095">
           Home</a>
         </li>
       </ul>
