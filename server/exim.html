@@ -6,18 +6,18 @@
     <meta http-equiv="Content-Type" content=
     "application/xhtml+xml; charset=iso-8859-1" />
     <title>
-      Exim-4.97
+      Exim-4.97.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1095">
+  <body class="blfs" id="blfs-r12.0-1105">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1095
+        "phrase">(systemd</span> Edition) - Version r12.0-1105
       </h4>
       <h3>
         Chapter&nbsp;21.&nbsp;Mail Server Software
@@ -42,14 +42,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1095">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1105">
           Home</a>
         </li>
       </ul>
     </div>
     <div class="sect1" lang="en" xml:lang="en">
       <h1 class="sect1">
-        <a id="exim" name="exim"></a>Exim-4.97
+        <a id="exim" name="exim"></a>Exim-4.97.1
       </h1>
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -79,12 +79,12 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ftp.exim.org/pub/exim/exim4/exim-4.97.tar.xz">https://ftp.exim.org/pub/exim/exim4/exim-4.97.tar.xz</a>
+                "https://ftp.exim.org/pub/exim/exim4/exim-4.97.1.tar.xz">https://ftp.exim.org/pub/exim/exim4/exim-4.97.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: dba384773ac0b7423927051bf3a6dad8
+                Download MD5 sum: 3fd68ae37720767619dd305b047fe8f9
               </p>
             </li>
             <li class="listitem">
@@ -99,7 +99,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: less than 0.1 SBU (at -j4)
+                Estimated build time: 0.1 SBU
               </p>
             </li>
           </ul>
@@ -208,8 +208,8 @@ echo "EXTRALIBS=-lpam" &gt;&gt; Local/Makefile
         "command">make install                                    &amp;&amp;
 install -v -m644 doc/exim.8 /usr/share/man/man8 &amp;&amp;
 
-install -vdm 755    /usr/share/doc/exim-4.97 &amp;&amp;
-cp      -Rv doc/*   /usr/share/doc/exim-4.97 &amp;&amp;
+install -vdm 755    /usr/share/doc/exim-4.97.1 &amp;&amp;
+cp      -Rv doc/*   /usr/share/doc/exim-4.97.1 &amp;&amp;
 
 ln -sfv exim /usr/sbin/sendmail                 &amp;&amp;
 install -v -d -m750 -o exim -g exim /var/spool/exim</kbd></pre>
@@ -302,55 +302,55 @@ install -v -d -m750 -o exim -g exim /var/spool/exim</kbd></pre>
           If you wish to build and install the <code class=
           "filename">.info</code> documentation, refer to <a class="ulink"
           href=
-          "https://exim.org/exim-html-4.97/doc/html/spec_html/ch04.html#SECTinsinfdoc">
-          https://exim.org/exim-html-4.97/doc/html/spec_html/ch04.html#SECTinsinfdoc</a>.
+          "https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch04.html#SECTinsinfdoc">
+          https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch04.html#SECTinsinfdoc</a>.
         </p>
         <p>
           If you wish to build in Exim's interfaces for calling virus and
           spam scanning software directly from access control lists,
           uncomment the <code class="option">WITH_CONTENT_SCAN=yes</code>
           parameter and review the information found at <a class="ulink"
-          href="https://exim.org/exim-html-4.97/doc/html/spec_html/ch45.html">
-          https://exim.org/exim-html-4.97/doc/html/spec_html/ch45.html</a>.
+          href="https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch45.html">
+          https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch45.html</a>.
         </p>
         <p>
           To use a backend database other than <span class=
           "application">GDBM</span> , see the instructions at <a class=
           "ulink" href=
-          "https://exim.org/exim-html-4.97/doc/html/spec_html/ch04.html#SECTdb">
-          https://exim.org/exim-html-4.97/doc/html/spec_html/ch04.html#SECTdb</a>.
+          "https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch04.html#SECTdb">
+          https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch04.html#SECTdb</a>.
         </p>
         <p>
           For SSL functionality, see the instructions at <a class="ulink"
           href=
-          "https://exim.org/exim-html-4.97/doc/html/spec_html/ch04.html#SECTinctlsssl">
-          https://exim.org/exim-html-4.97/doc/html/spec_html/ch04.html#SECTinctlsssl</a>
+          "https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch04.html#SECTinctlsssl">
+          https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch04.html#SECTinctlsssl</a>
           and <a class="ulink" href=
-          "https://exim.org/exim-html-4.97/doc/html/spec_html/ch42.html">https://exim.org/exim-html-4.97/doc/html/spec_html/ch42.html</a>.
+          "https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch42.html">https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch42.html</a>.
         </p>
         <p>
           For <span class="application">tcpwrappers</span> functionality, see
           the instructions at <a class="ulink" href=
-          "https://exim.org/exim-html-4.97/doc/html/spec_html/ch04.html#SECID27">
-          https://exim.org/exim-html-4.97/doc/html/spec_html/ch04.html#SECID27</a>.
+          "https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch04.html#SECID27">
+          https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch04.html#SECID27</a>.
         </p>
         <p>
           For information about adding authentication mechanisms to the
           build, see chapters 33&mdash;41 of <a class="ulink" href=
-          "https://exim.org/exim-html-4.97/doc/html/spec_html/index.html">https://exim.org/exim-html-4.97/doc/html/spec_html/index.html</a>.
+          "https://exim.org/exim-html-4.97.1/doc/html/spec_html/index.html">https://exim.org/exim-html-4.97.1/doc/html/spec_html/index.html</a>.
         </p>
         <p>
           For information about linking <span class=
           "application">Linux-PAM</span>, refer to the instructions <a class=
           "ulink" href=
-          "https://exim.org/exim-html-4.97/doc/html/spec_html/ch11.html#SECTexpcond">
-          https://exim.org/exim-html-4.97/doc/html/spec_html/ch11.html#SECTexpcond</a>.
+          "https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch11.html#SECTexpcond">
+          https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch11.html#SECTexpcond</a>.
         </p>
         <p>
           For information about linking database engine libraries used for
           <span class="application">Exim</span> name lookups, see the
           instructions at <a class="ulink" href=
-          "https://exim.org/exim-html-4.97/doc/html/spec_html/ch09.html">https://exim.org/exim-html-4.97/doc/html/spec_html/ch09.html</a>.
+          "https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch09.html">https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch09.html</a>.
         </p>
         <p>
           If you wish to add <span class="application">Readline</span>
@@ -359,16 +359,16 @@ install -v -d -m750 -o exim -g exim /var/spool/exim</kbd></pre>
           expansion</span>&rdquo;</span> (<code class="option">-be</code>)
           mode, see the information in the <code class="option">-be</code>
           section of <a class="ulink" href=
-          "https://exim.org/exim-html-4.97/doc/html/spec_html/ch05.html#id2525974">
-          https://exim.org/exim-html-4.97/doc/html/spec_html/ch05.html#id2525974</a>.
+          "https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch05.html#id2525974">
+          https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch05.html#id2525974</a>.
         </p>
         <p>
           You may wish to modify the default configuration and send log files
           to syslog instead of the default <code class=
           "filename">/var/spool/exim/log</code> directory. See the
           information at <a class="ulink" href=
-          "https://exim.org/exim-html-4.97/doc/html/spec_html/ch-log_files.html">
-          https://exim.org/exim-html-4.97/doc/html/spec_html/ch-log_files.html</a>.
+          "https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch-log_files.html">
+          https://exim.org/exim-html-4.97.1/doc/html/spec_html/ch-log_files.html</a>.
         </p>
         <p>
           A wealth of information can be also found at the <a class="ulink"
@@ -394,7 +394,7 @@ install -v -d -m750 -o exim -g exim /var/spool/exim</kbd></pre>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm57992" name="idm57992"></a>Configuration Information
+            <a id="idm58019" name="idm58019"></a>Configuration Information
           </h4>
           <p>
             Review the file <code class="filename">/etc/exim.conf</code>, and
@@ -442,7 +442,7 @@ EOF
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm58012" name="idm58012"></a>Linux PAM Configuration
+            <a id="idm58039" name="idm58039"></a>Linux PAM Configuration
           </h4>
           <p>
             If you have built <span class="application">Exim</span> with
@@ -494,7 +494,7 @@ EOF</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">exicyclog, exigrep, exim, exim-4.97-2,
+              <span class="segbody">exicyclog, exigrep, exim, exim-4.97.1-2,
               exim_checkaccess, exim_dbmbuild, exim_dumpdb, exim_fixdb,
               exim_lock, exim_tidydb, eximstats, exinext, exipick, exiqgrep,
               exiqsumm, exiwhat, and optionally, eximon, eximon.bin, and
@@ -506,7 +506,7 @@ EOF</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/share/doc/exim-4.97 and
+              <span class="segbody">/usr/share/doc/exim-4.97.1 and
               /var/spool/exim</span>
             </div>
           </div>
@@ -560,7 +560,8 @@ EOF</kbd></pre>
                 <td>
                   <p>
                     is a symlink to the <span class=
-                    "command"><strong>exim-4.97-2</strong></span> MTA daemon
+                    "command"><strong>exim-4.97.1-2</strong></span> MTA
+                    daemon
                   </p>
                 </td>
               </tr>
@@ -569,7 +570,7 @@ EOF</kbd></pre>
                   <p>
                     <a id="exim-current_version" name=
                     "exim-current_version"></a><span class=
-                    "term"><span class="command"><strong>exim-4.97-2</strong></span></span>
+                    "term"><span class="command"><strong>exim-4.97.1-2</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -816,7 +817,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1095">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1105">
           Home</a>
         </li>
       </ul>
