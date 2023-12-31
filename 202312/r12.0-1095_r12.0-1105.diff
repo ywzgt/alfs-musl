@@ -1,0 +1,76 @@
+diff --git a/wget-list b/wget-list
+index 954776a..ee33dc8 100644
+--- a/wget-list
++++ b/wget-list
+@@ -202,7 +202,7 @@ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+ https://github.com/qpdf/qpdf/releases/download/v11.6.4/qpdf-11.6.4.tar.gz
+ https://fukuchi.org/works/qrencode/qrencode-4.1.1.tar.bz2
+ https://github.com/sass/sassc/archive/3.6.2/sassc-3.6.2.tar.gz
+-https://github.com/sass/libsass/archive/3.6.5/libsass-3.6.5.tar.gz
++https://github.com/sass/libsass/archive/3.6.6/libsass-3.6.6.tar.gz
+ https://github.com/aruiz/webp-pixbuf-loader/archive/0.2.4/webp-pixbuf-loader-0.2.4.tar.gz
+ https://github.com/google/woff2/archive/v1.0.2/woff2-1.0.2.tar.gz
+ https://github.com/asciidoctor/asciidoctor/archive/v2.0.20/asciidoctor-2.0.20.tar.gz
+@@ -443,7 +443,7 @@ https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0208.tar.gz
+ https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+-https://www.php.net/distributions/php-8.3.0.tar.xz
++https://www.php.net/distributions/php-8.3.1.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
+@@ -523,7 +523,7 @@ https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.0.tar.xz
+ https://static.rust-lang.org/dist/rustc-1.74.1-src.tar.xz
+ https://downloads.sourceforge.net/scons/SCons-4.6.0.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+-https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
++https://archive.apache.org/dist/subversion/subversion-1.14.3.tar.bz2
+ https://downloads.sourceforge.net/swig/swig-4.1.1.tar.gz
+ https://downloads.sourceforge.net/tcl/tk8.6.13-src.tar.gz
+ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+@@ -548,7 +548,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/rpcbind-1.2.6-vulnerability_fi
+ https://www.samba.org/ftp/rsync/src/rsync-3.2.7.tar.gz
+ https://download.samba.org/pub/samba/stable/samba-4.19.3.tar.gz
+ https://ftp.gnu.org/gnu/wget/wget-1.21.4.tar.gz
+-https://www.kernel.org/pub/software/network/iw/iw-5.19.tar.xz
++https://www.kernel.org/pub/software/network/iw/iw-6.7.tar.xz
+ https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_scanning-1.patch
+ https://w1.fi/releases/wpa_supplicant-2.10.tar.gz
+@@ -602,7 +602,7 @@ https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
+ https://www.dovecot.org/releases/2.3/dovecot-2.3.21.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/dovecot-2.3.21-openssl3_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/dovecot-2.3.21-security_fix-1.patch
+-https://ftp.exim.org/pub/exim/exim4/exim-4.97.tar.xz
++https://ftp.exim.org/pub/exim/exim4/exim-4.97.1.tar.xz
+ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.8.3.tar.gz
+ https://ftp.sendmail.org/sendmail.8.17.2.tar.gz
+ https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
+@@ -676,7 +676,7 @@ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.2.0/libei-1.2.0.tar.gz
+ https://gedit-technology.net/tarballs/libgedit-amtk/libgedit-amtk-5.8.0.tar.xz
+ https://gedit-technology.net/tarballs/libgedit-gtksourceview/libgedit-gtksourceview-299.0.4.tar.xz
+ https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.2.tar.xz
+-https://dri.freedesktop.org/libdrm/libdrm-2.4.118.tar.xz
++https://dri.freedesktop.org/libdrm/libdrm-2.4.119.tar.xz
+ https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
+ https://download.gnome.org/sources/libglade/2.6/libglade-2.6.4.tar.bz2
+ https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.3.tar.xz
+@@ -805,7 +805,7 @@ https://archive.xfce.org/src/xfce/libxfce4ui/4.18/libxfce4ui-4.18.4.tar.bz2
+ https://archive.xfce.org/src/xfce/exo/4.18/exo-4.18.0.tar.bz2
+ https://archive.xfce.org/src/xfce/garcon/4.18/garcon-4.18.1.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-panel/4.18/xfce4-panel-4.18.5.tar.bz2
+-https://archive.xfce.org/src/xfce/thunar/4.18/thunar-4.18.8.tar.bz2
++https://archive.xfce.org/src/xfce/thunar/4.18/thunar-4.18.9.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar-volman/4.18/thunar-volman-4.18.0.tar.bz2
+ https://archive.xfce.org/src/xfce/tumbler/4.18/tumbler-4.18.2.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-appfinder/4.18/xfce4-appfinder-4.18.1.tar.bz2
+@@ -903,7 +903,7 @@ https://download.gnome.org/sources/audiofile/0.3/audiofile-0.3.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/audiofile-0.3.6-consolidated_patches-1.patch
+ https://github.com/knik0/faac/archive/1_30/faac-1_30.tar.gz
+ https://github.com/knik0/faad2/archive/2.11.1/faad2-2.11.1.tar.gz
+-https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.2.tar.gz
++https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
+ https://downloads.xiph.org/releases/flac/flac-1.4.3.tar.xz
+ https://files.dyne.org/frei0r/releases/frei0r-plugins-1.8.0.tar.gz
+ https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
