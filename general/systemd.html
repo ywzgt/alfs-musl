@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1105">
+  <body class="blfs" id="blfs-r12.0-1114">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1105
+        "phrase">(systemd</span> Edition) - Version r12.0-1114
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1105">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1114">
           Home</a>
         </li>
       </ul>
@@ -235,6 +235,13 @@
         "command">sed -i -e 's/GROUP="render"/GROUP="video"/' \
        -e 's/GROUP="sgx", //' rules.d/50-udev-default.rules.in</kbd></pre>
         <p>
+          Now fix a security vulnerability in the DNSSEC verification of
+          <span class="command"><strong>systemd-resolved</strong></span>:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e '/return FLAGS_SET.*AUTHENTICATED/s/(t/(dt/' \
+    -i src/resolve/resolved-dns-transaction.c</kbd></pre>
+        <p>
           Rebuild <span class="application">systemd</span> by running the
           following commands:
         </p>
@@ -254,7 +261,7 @@ meson setup ..                \
       -Dhomed=disabled        \
       -Duserdb=false          \
       -Dmode=release          \
-      -Dpam=true              \
+      -Dpam=enabled           \
       -Dpamconfdir=/etc/pam.d \
       -Ddev-kvm-mode=0660     \
       -Dnobody-group=nogroup  \
@@ -522,7 +529,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1105">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1114">
           Home</a>
         </li>
       </ul>

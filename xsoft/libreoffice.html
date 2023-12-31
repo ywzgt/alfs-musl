@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1105">
+  <body class="blfs" id="blfs-r12.0-1114">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1105
+        "phrase">(systemd</span> Edition) - Version r12.0-1114
       </h4>
       <h3>
         Chapter&nbsp;39.&nbsp;Office Programs
@@ -43,7 +43,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1105">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1114">
           Home</a>
         </li>
       </ul>
@@ -572,7 +572,7 @@ sed -e "/distro-install-file-lists/d" -i Makefile.in &amp;&amp;
   ln -svf $LO_PREFIX/lib/libreoffice/program/soffice /usr/bin/libreoffice &amp;&amp;
 
   # Set up a generic location independent of version number
-  ln -sfv libreoffice-7.6.4.1 /opt/libreoffice
+  ln -sfv $LO_PREFIX /opt/libreoffice
 
   # Icons
   mkdir -vp /usr/share/pixmaps
@@ -1022,7 +1022,7 @@ fi</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1105">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1114">
           Home</a>
         </li>
       </ul>
