@@ -6,18 +6,18 @@
     <meta http-equiv="Content-Type" content=
     "application/xhtml+xml; charset=iso-8859-1" />
     <title>
-      SWIG-4.1.1
+      SWIG-4.2.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1114">
+  <body class="blfs" id="blfs-r12.0-1119">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1114
+        "phrase">(systemd</span> Edition) - Version r12.0-1119
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,14 +42,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1114">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1119">
           Home</a>
         </li>
       </ul>
     </div>
     <div class="sect1" lang="en" xml:lang="en">
       <h1 class="sect1">
-        <a id="swig" name="swig"></a>SWIG-4.1.1
+        <a id="swig" name="swig"></a>SWIG-4.2.0
       </h1>
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -63,15 +63,19 @@
           <span class="application">Python</span>, <span class=
           "application">Tcl</span>, <span class="application">Ruby</span>,
           <span class="application">PHP</span>, <span class=
-          "application">Java</span>, <span class="application">C#</span>,
-          <span class="application">D</span>, <span class=
-          "application">Go</span>, <span class="application">Lua</span>,
-          <span class="application">Octave</span>, <span class=
-          "application">R</span>, <span class="application">Scheme</span>,
-          and <span class="application">Ocaml</span>. <span class=
-          "application">SWIG</span> can also export its parse tree into
-          <span class="application">Lisp</span> s-expressions and
-          <span class="application">XML</span>.
+          "application">Java</span>, <span class=
+          "application">JavaScript</span>, <span class=
+          "application">C#</span>, <span class="application">D</span>,
+          <span class="application">Go</span>, <span class=
+          "application">Lua</span>, <span class="application">Octave</span>,
+          <span class="application">R</span>, <span class=
+          "application">Racket</span>, <span class=
+          "application">Scilab</span>, <span class=
+          "application">Scheme</span>, and <span class=
+          "application">Ocaml</span>. <span class="application">SWIG</span>
+          can also export its parse tree into <span class=
+          "application">Lisp</span> s-expressions and <span class=
+          "application">XML</span>.
         </p>
         <p>
           <span class="application">SWIG</span> reads annotated <span class=
@@ -100,27 +104,27 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://downloads.sourceforge.net/swig/swig-4.1.1.tar.gz">https://downloads.sourceforge.net/swig/swig-4.1.1.tar.gz</a>
+                "https://downloads.sourceforge.net/swig/swig-4.2.0.tar.gz">https://downloads.sourceforge.net/swig/swig-4.2.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: c7d55a1bca26752f3846c85b43c1a69c
+                Download MD5 sum: 4d03374a2c30367699fa0928e1d901e8
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 8.2 MB
+                Download size: 8.0 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 82 MB (2.1 GB with tests)
+                Estimated disk space required: 106 MB (2.2 GB with tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.1 SBU (add 7.8 SBU for tests; both
+                Estimated build time: 0.1 SBU (add 10.0 SBU for tests; both
                 using parallelism=4)
               </p>
             </li>
@@ -160,7 +164,7 @@
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>PY3=1
-          make -k check TCL_INCLUDE=</strong></span>. The unsetting of the
+          make TCL_INCLUDE= -k check</strong></span>. The unsetting of the
           variable <code class="envar">TCL_INCLUDE</code> is necessary since
           it is not correctly set by <span class=
           "emphasis"><em>configure</em></span>. The tests are only executed
@@ -175,8 +179,7 @@ make</kbd></pre>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">make install &amp;&amp;
-install -v -m755 -d /usr/share/doc/swig-4.1.1 &amp;&amp;
-cp -v -R Doc/* /usr/share/doc/swig-4.1.1</kbd></pre>
+cp -v -R Doc -T /usr/share/doc/swig-4.2.0</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -193,7 +196,10 @@ cp -v -R Doc/* /usr/share/doc/swig-4.1.1</kbd></pre>
           <code class="option">--without-&lt;language&gt;</code>: allows
           disabling the building of tests and examples for &lt;language&gt;,
           but all the languages capabilities of <span class=
-          "application">SWIG</span> are always built.
+          "application">SWIG</span> are always built. This switch is used for
+          <span class="application">JavaScript</span> because the SWIG
+          implementation is incomplete and a lot of tests fail due to API
+          changes in Node-20.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -212,7 +218,7 @@ cp -v -R Doc/* /usr/share/doc/swig-4.1.1</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/share/doc/swig-4.1.1 and
+              <span class="segbody">/usr/share/doc/swig-4.2.0 and
               /usr/share/swig</span>
             </div>
           </div>
@@ -285,7 +291,7 @@ cp -v -R Doc/* /usr/share/doc/swig-4.1.1</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1114">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1119">
           Home</a>
         </li>
       </ul>
