@@ -5,7 +5,7 @@
 SRC="tzutils"
 PKG="$SRC"
 
-make TZDIR="/usr/share/zoneinfo"
+make TZDIR="/usr/share/zoneinfo" CC=gcc
 
 _doman() {
     for i in $@; do
