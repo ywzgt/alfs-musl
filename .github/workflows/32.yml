@@ -98,6 +98,8 @@ jobs:
         sudo mkdir -pv $LFS/tools
         echo "status_dir=$PWD" >> bashrc
         sed -i "/log_dir=/s/\$PWD/${PWD//\//\\/}/" envars
+        sed -i.ori 's/-march=i686//' envars
+        source envars
     - name: Chapter 5. Compiling a Cross-Toolchain
       shell: linux32 bash -e {0}
       run: sudo env -i HOME=$HOME TERM=$TERM bash -e script/buildpkg chapter05/*
@@ -107,6 +109,7 @@ jobs:
 
     - name: Preparing Virtual Kernel File Systems and Creating Directories
       run: |
+        cp envars{.ori,}
         source envars
         sudo mkdir -pv $LFS/{dev,proc,sys,run,tmp}
         sudo mount -v --bind /dev $LFS/dev

@@ -82,10 +82,11 @@ done
 
 
 # udev 服务
-for i in udev{,-settle,-trigger}; do
+# 简单分区不需要 udev-settle
+for i in udev{,-trigger}; do
 	wget -nv https://github.com/windsey/openrc-services/raw/main/conf.d/$i -P /etc/conf.d/
-	wget -nv https://github.com/windsey/openrc-services/raw/main/init.d/$i.in -O- | sed -e 's|@RUNSCRIPT@|/usr/sbin/openrc-run|' \
-		-e 's|/sbin/udevd|/bin/udevd|' > /etc/init.d/$i
+	wget -nv https://github.com/windsey/openrc-services/raw/main/init.d/$i.in -O- | sed -e \
+		's|@RUNSCRIPT@|/usr/sbin/openrc-run|' > /etc/init.d/$i
 	chmod -v 755 "/etc/init.d/$i"
 	ln -sv "/etc/init.d/$i" /etc/runlevels/sysinit/
 done

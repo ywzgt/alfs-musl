@@ -25,7 +25,7 @@ jobs:
         bash -e script/version-check
         echo ' '; df -Th; echo ' '; free -h
         sed -i '/^LFS_TGT=/s/linux-musl/&x32/' bashrc
-        echo 'export X32=y' >>envars
+        sed -i '1iexport X32=y' envars
 
     - name: Get Sources
       run: |

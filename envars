@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export BUILDDIR="/lfs_build"
 export SRC_ARCHIVE="$BUILDDIR/sources"
 export LFS="$BUILDDIR"
@@ -11,7 +13,20 @@ export FILE_DIR="$BLD_ROOT/installed-files"
 # wget-list channels
 export channels="development" # stable 11.3 ... https://www.linuxfromscratch.org/lfs/downloads
 
-export CFLAGS="-march=haswell -Os -pipe -fno-plt -fPIC -DNDEBUG"
+case $(uname -m) in
+	i?86)
+		CFLAGS="-march=i686"
+		;;
+	x86_64)
+		CFLAGS="-march=x86-64-v3"
+		;;
+	*)
+		echo "$0: unknown or unsupported arch: $(uname -m)"
+		exit 1
+		;;
+esac
+
+export CFLAGS="$CFLAGS -Os -pipe -fno-plt -fPIC -DNDEBUG"
 export CXXFLAGS="$CFLAGS -Wp,-D_GLIBCXX_ASSERTIONS"
 export CPPFLAGS="-Os -pipe -fPIC -DNDEBUG"
 export LDFLAGS="-Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now"
