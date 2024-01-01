@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index ee33dc8..c878c96 100644
+--- a/wget-list
++++ b/wget-list
+@@ -54,7 +54,7 @@ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/23.08.4/src/kate-23.08.4.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.5/mousepad-0.5.10.tar.bz2
+ https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/vim/vim-9.0.2103.tar.xz
++https://github.com/vim/vim/archive/v9.0.2189/vim-9.0.2189.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.10.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+@@ -603,7 +603,7 @@ https://www.dovecot.org/releases/2.3/dovecot-2.3.21.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/dovecot-2.3.21-openssl3_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/dovecot-2.3.21-security_fix-1.patch
+ https://ftp.exim.org/pub/exim/exim4/exim-4.97.1.tar.xz
+-https://ghostarchive.org/postfix/postfix-release/official/postfix-3.8.3.tar.gz
++https://ghostarchive.org/postfix/postfix-release/official/postfix-3.8.4.tar.gz
+ https://ftp.sendmail.org/sendmail.8.17.2.tar.gz
+ https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
+ https://downloads.mariadb.org/interstitial/mariadb-10.11.6/source/mariadb-10.11.6.tar.gz
+@@ -889,7 +889,7 @@ https://github.com/TigerVNC/tigervnc/archive/v1.13.1/tigervnc-1.13.1.tar.gz
+ https://www.x.org/pub/individual/xserver/xorg-server-21.1.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.13.1-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.0.5/transmission-4.0.5.tar.xz
+-https://github.com/ib/xarchiver/archive/0.5.4.21/xarchiver-0.5.4.21.tar.gz
++https://github.com/ib/xarchiver/archive/0.5.4.22/xarchiver-0.5.4.22.tar.gz
+ https://portland.freedesktop.org/download/xdg-utils-1.1.3.tar.gz
+ https://www.jwz.org/xscreensaver/xscreensaver-6.08.tar.gz
+ https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.10.tar.bz2
