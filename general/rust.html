@@ -6,18 +6,18 @@
     <meta http-equiv="Content-Type" content=
     "application/xhtml+xml; charset=iso-8859-1" />
     <title>
-      Rustc-1.74.1
+      Rustc-1.75.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1119">
+  <body class="blfs" id="blfs-r12.0-1120">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1119
+        "phrase">(systemd</span> Edition) - Version r12.0-1120
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,14 +41,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1119">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1120">
           Home</a>
         </li>
       </ul>
     </div>
     <div class="sect1" lang="en" xml:lang="en">
       <h1 class="sect1">
-        <a id="rust" name="rust"></a>Rustc-1.74.1
+        <a id="rust" name="rust"></a>Rustc-1.75.0
       </h1>
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -93,7 +93,7 @@
             broken <span class="command"><strong>cargo</strong></span>
             program. In such a situation, either remove the existing
             installation first, or use a different prefix such as
-            /opt/rustc-1.74.1-build2.
+            /opt/rustc-1.75.0-build2.
           </p>
           <p>
             If you prefer, you can of course change the prefix to
@@ -165,17 +165,17 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://static.rust-lang.org/dist/rustc-1.74.1-src.tar.xz">https://static.rust-lang.org/dist/rustc-1.74.1-src.tar.xz</a>
+                "https://static.rust-lang.org/dist/rustc-1.75.0-src.tar.xz">https://static.rust-lang.org/dist/rustc-1.75.0-src.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: ed0a20a070a3470b63bc612c82ea23fa
+                Download MD5 sum: 62d794105a8c98923a67e6d9ce032be0
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 149 MB
+                Download size: 153 MB
               </p>
             </li>
             <li class="listitem">
@@ -188,6 +188,21 @@
               <p>
                 Estimated build time: 6.7 SBU (including download time; add
                 6.2 SBU for tests, both using parallelism=8)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Optional patch (recommended if running the test suite):
+                <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/rustc-1.75.0-testsuite_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/rustc-1.75.0-testsuite_fix-1.patch</a>
               </p>
             </li>
           </ul>
@@ -239,8 +254,12 @@
           <a class="xref" href="gdb.html" title="GDB-14.1">GDB-14.1</a> (used
           by the test suite if it is present), <a class="xref" href=
           "git.html" title="Git-2.43.0">git-2.43.0</a> (required by the test
-          suite), and <a class="ulink" href=
-          "https://libgit2.org/">libgit2</a>
+          suite), <a class="ulink" href=
+          "https://github.com/bytecodealliance/wasmtime/tree/main/cranelift">cranelift</a>,
+          <a class="ulink" href="https://jemalloc.net/">jemalloc</a>,
+          libgccjit (read command explanation in <a class="xref" href=
+          "gcc.html" title="GCC-13.2.0">GCC-13.2.0</a>), and <a class="ulink"
+          href="https://libgit2.org/">libgit2</a>
         </p>
         <p class="usernotes">
           Editor Notes: <a class="ulink" href=
@@ -271,7 +290,7 @@
     compiler/rustc_target/src/spec/i686_unknown_linux_gnu.rs</code></pre>
           <p>
             And copy the resulting <code class=
-            "filename">/opt/rustc-1.74.1</code> to the system without SSE2
+            "filename">/opt/rustc-1.75.0</code> to the system without SSE2
             capability. But this change is still under upstream review and
             not tested by BLFS editors.
           </p>
@@ -284,8 +303,8 @@
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">mkdir -pv /opt/rustc-1.74.1      &amp;&amp;
-ln -svfn rustc-1.74.1 /opt/rustc</kbd></pre>
+        "command">mkdir -pv /opt/rustc-1.75.0      &amp;&amp;
+ln -svfn rustc-1.75.0 /opt/rustc</kbd></pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -300,6 +319,12 @@ ln -svfn rustc-1.74.1 /opt/rustc</kbd></pre>
           </p>
         </div>
         <p>
+          If running the test suite, apply a patch to prevent the building
+          system from unnecessarily rebuilding the compiler:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../rustc-1.75.0-testsuite_fix-1.patch</kbd></pre>
+        <p>
           Create a suitable <code class="filename">config.toml</code> file
           which will configure the build.
         </p>
@@ -309,8 +334,10 @@ ln -svfn rustc-1.74.1 /opt/rustc</kbd></pre>
 # See the 8.4 book for an old example using shipped LLVM
 # e.g. if not installing clang, or using a version before 13.0
 
-# tell x.py to not keep printing an annoying warning
-changelog-seen = 2
+# Tell x.py the editors have reviewed the content of this file
+# and updated it to follow the major changes of the building system,
+# so x.py will not warn us to do such a review.
+change-id = 116881
 
 [llvm]
 # by default, rust will build for a myriad of architectures
@@ -338,18 +365,22 @@ tools = ["cargo", "clippy", "rustdoc", "rustfmt"]
 vendor = true
 
 [install]
-prefix = "/opt/rustc-1.74.1"
-docdir = "share/doc/rustc-1.74.1"
+prefix = "/opt/rustc-1.75.0"
+docdir = "share/doc/rustc-1.75.0"
 
 [rust]
 channel = "stable"
-description = "for BLFS r12.0-1119"
+description = "for BLFS r12.0-1120"
 
 # BLFS used to not install the FileCheck executable from llvm,
 # so disabled codegen tests.  The assembly tests rely on FileCheck
 # and cannot easily be disabled, so those will anyway fail if
 # FileCheck has not been installed.
 #codegen-tests = false
+
+# Enable the same optimizations as the official upstream build.
+lto = "thin"
+codegen-units = 1
 
 [target.x86_64-unknown-linux-gnu]
 # NB the output of llvm-config (i.e. help options) may be
@@ -361,6 +392,26 @@ llvm-config = "/usr/bin/llvm-config"
 # dumped to the screen when config.toml is parsed.
 llvm-config = "/usr/bin/llvm-config"</code>
 EOF</kbd></pre>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            The <span class="command"><strong>python3 x.py</strong></span>
+            commands may output a warning message complaining <span class=
+            "quote">&ldquo;<span class="quote"><code class=
+            "computeroutput">no codegen-backends config matched the requested
+            path to build a codegen backend</code></span>&rdquo;</span>. And
+            the provided <span class="quote">&ldquo;<span class=
+            "quote">suggestion</span>&rdquo;</span> (<code class=
+            "computeroutput">add backend to codegen-backends in
+            config.toml</code>) will not silence it. This warning is
+            <a class="ulink" href=
+            "https://github.com/rust-lang/rust/issues/110692">bogus</a> and
+            it should be ignored.
+          </p>
+        </div>
         <p>
           Compile <span class="application">Rust</span> by running the
           following commands:
@@ -464,7 +515,7 @@ python3 x.py test --verbose --no-fail-fast | tee rustc-testlog</kbd></pre>
           files:
         </p>
         <pre class="root"><kbd class=
-        "command">find /opt/rustc-1.74.1 -name "*.old" -delete</kbd></pre>
+        "command">find /opt/rustc-1.75.0 -name "*.old" -delete</kbd></pre>
         <p>
           Still as the <code class="systemitem">root</code> user, symlink a
           <span class="application">Zsh</span> completion file into the
@@ -480,7 +531,7 @@ ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
           Command Explanations
         </h2>
         <p>
-          <span class="command"><strong>ln -svfn rustc-1.74.1
+          <span class="command"><strong>ln -svfn rustc-1.75.0
           /opt/rustc</strong></span>: if this is not the first use of the
           <code class="filename">/opt/rustc</code> symlink, overwrite it by
           forcing, and use the '-n' flag to avoid getting confusing results
@@ -605,7 +656,7 @@ EOF</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">~/.cargo, /opt/rustc, symbolic link to
-              /opt/rustc-1.74.1</span>
+              /opt/rustc-1.75.0</span>
             </div>
           </div>
         </div>
@@ -688,7 +739,7 @@ EOF</kbd></pre>
                   <p>
                     is a wrapper script for gdb, pulling in Python
                     pretty-printing modules installed in <code class=
-                    "filename">/opt/rustc-1.74.1/lib/rustlib/etc</code>
+                    "filename">/opt/rustc-1.75.0/lib/rustlib/etc</code>
                   </p>
                 </td>
               </tr>
@@ -804,7 +855,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1119">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1120">
           Home</a>
         </li>
       </ul>
