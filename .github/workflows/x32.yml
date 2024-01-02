@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-muslx32:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04 # ubuntu-latest(22.4) 内核不支持 x32
     permissions: write-all
     steps:
     - name: Checkout Repository
@@ -102,6 +102,8 @@ jobs:
         sudo mkdir -pv $LFS/tools
         echo "status_dir=$PWD" >> bashrc
         sed -i "/log_dir=/s/\$PWD/${PWD//\//\\/}/" envars
+        sed -i.ori 's/-march=x86-64-v3/-march=x86-64/' envars  # ubuntu 20.4 的 gcc 9 不支持 v3
+        source envars
     - name: Chapter 5. Compiling a Cross-Toolchain
       run: sudo env -i HOME=$HOME TERM=$TERM bash -e script/buildpkg chapter05/*
     - name: Chapter 6. Cross Compiling Temporary Tools
@@ -109,6 +111,7 @@ jobs:
 
     - name: Preparing Virtual Kernel File Systems and Creating Directories
       run: |
+        cp envars{.ori,}
         source envars
         sudo mkdir -pv $LFS/{dev,proc,sys,run,tmp}
         sudo mount -v --bind /dev $LFS/dev
@@ -182,6 +185,10 @@ jobs:
             mkdir -pv $(basename $i)
             cp -a $i/* $(basename $i)
           fi
+        done
+        for i in /lfs_build/sources/*{,/build}/*.log; do
+          p="${i##*/sources/}"; p="${p%%/*}"
+          cp $i "$p-$(basename $i)" || true
         done
         git add .
         git branch -m $branch
