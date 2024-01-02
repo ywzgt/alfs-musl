@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SRC="xz"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--disable-static \
+	--docdir=/usr/share/doc/xz
+
+make
+make install

@@ -1,0 +1,33 @@
+Tue Jan  2 18:34:25 CST 2024
+KB: 1638804	/
+
+hwclock from util-linux 2.39.3
+System Time: 1704191666.017669
+Trying to open: /dev/rtc0
+Using the rtc interface to the clock.
+Last drift adjustment done at 0 seconds after 1969
+Last calibration done at 0 seconds after 1969
+Hardware clock is on local time
+Assuming hardware clock is kept in local time.
+Waiting for clock tick...
+...got clock tick
+Time read from Hardware Clock: 2024/01/02 10:34:26
+Hw clock time : 2024/01/02 10:34:26 = 1704162866 seconds since 1969
+Time since last adjustment is 1704162866 seconds
+Calculated Hardware Clock drift is 0.000000 seconds
+2024-01-02 10:34:24.998344+08:00
+install: creating directory '/etc/colors'
+'/sources/DIR_COLORS' -> '/etc/colors/DIR_COLORS'
+'/sources/DIR_COLORS.256color' -> '/etc/colors/DIR_COLORS.256color'
+'/sources/DIR_COLORS.xterm' -> '/etc/colors/DIR_COLORS.xterm'
+'/dev/stdin' -> '/etc/profile.d/dircolors.sh'
+'/dev/stdin' -> '/etc/profile'
+mkdir: created directory '/etc/skel'
+
+
+Tue Jan  2 18:34:27 CST 2024
+
+Totalseconds: 2
+
+KB: 1514608	/
+
