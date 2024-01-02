@@ -1,0 +1,13 @@
+#!/bin/bash
+# https://linuxfromscratch.org/blfs/view/git/basicnet/curl.html
+
+SRC="curl"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+		--disable-static \
+		--with-openssl \
+		--enable-threaded-resolver \
+		--with-ca-path=/etc/ssl/certs
+make
+make install
