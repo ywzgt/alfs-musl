@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1126">
+  <body class="blfs" id="blfs-r12.0-1131">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1126
+        "phrase">(systemd</span> Edition) - Version r12.0-1131
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1126">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1131">
           Home</a>
         </li>
       </ul>
@@ -213,8 +213,8 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.17-build_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.17-build_fixes-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.17-build_fixes-2.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.17-build_fixes-2.patch</a>
               </p>
             </li>
             <li class="listitem">
@@ -237,7 +237,9 @@
           "Node.js-20.10.0">nodejs-20.10.0</a>, <a class="xref" href=
           "../postlfs/nss.html" title="NSS-3.96.1">nss-3.96.1</a>, <a class=
           "xref" href="../general/pciutils.html" title=
-          "pciutils-3.10.0">pciutils-3.10.0</a>, and (<a class="xref" href=
+          "pciutils-3.10.0">pciutils-3.10.0</a>, <a class="xref" href=
+          "../general/python311.html" title=
+          "Python-3.11.1">Python-3.11.1</a>, and (<a class="xref" href=
           "qt5.html" title="Qt-5.15.11">Qt-5.15.11</a> or <a class="xref"
           href="qt5-components.html" title=
           "qt-components-5.15.11">qt-components-5.15.11</a> with qtlocation
@@ -284,7 +286,7 @@
           "../multimedia/pipewire.html" title=
           "Pipewire-1.0.0">pipewire-1.0.0</a>, <a class="xref" href=
           "../general/poppler.html" title=
-          "Poppler-23.12.0">Poppler-23.12.0</a>, <a class="ulink" href=
+          "Poppler-24.01.0">Poppler-24.01.0</a>, <a class="ulink" href=
           "https://github.com/open-source-parsers/jsoncpp/releases">jsoncpp</a>,
           <a class="ulink" href=
           "https://github.com/cisco/libsrtp/releases">libsrtp</a>, <a class=
@@ -300,7 +302,7 @@
           completing, and to force it to use python3:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../qtwebengine-5.15.17-build_fixes-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../qtwebengine-5.15.17-build_fixes-2.patch</kbd></pre>
         <p>
           If building with system <a class="xref" href=
           "../multimedia/ffmpeg.html" title="FFmpeg-6.1">FFmpeg-6.1</a> as
@@ -309,13 +311,6 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../qtwebengine-5.15.17-ffmpeg5_fixes-1.patch</kbd></pre>
-        <p>
-          Otherwise, fix an issue in shipped ffmpeg causing it fail to build
-          with Binutils 2.41 or later:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed 's/(uint8_t)\(([^)]*)\|shift\)/\1 \&amp; 0x1F/' \
-    -i src/3rdparty/chromium/third_party/ffmpeg/libavcodec/x86/mathops.h</kbd></pre>
         <p>
           Although the build_fixes patch has ensured that git is not invoked
           during the build, the build system has labyrinthine rules of
@@ -351,84 +346,15 @@
         "command">sed -e '/link_pulseaudio/s/false/true/' \
     -i src/3rdparty/chromium/media/media_options.gni</kbd></pre>
         <p>
-          Next, fix the build tools so they can be run with Python-3.11+:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e 's/\^(?i)/(?i)^/' \
-    -i src/3rdparty/chromium/tools/metrics/ukm/ukm_model.py &amp;&amp;
-
-sed -e "s/'rU'/'r'/" \
-    -i src/3rdparty/chromium/tools/grit/grit/util.py</kbd></pre>
-        <p>
-          Several fixes are needed for using Python-3.12+: first, either
-          remove references to the removed <span class=
-          "command"><strong>imp</strong></span> module or replace it with the
-          newer <span class="command"><strong>importlib</strong></span>
-          module:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e "/import imp/d"                                                    \
-    -i src/3rdparty/chromium/mojo/public/tools/mojom/mojom/fileutil.py    \
-       src/3rdparty/chromium/mojo/public/tools/mojom/mojom/parse/lexer.py &amp;&amp;
-
-sed -e "s/import imp/import importlib.util/" \
-    -e 's@.*load_source.*@\
-    spec = importlib.util.spec_from_file_location(fullname, filepath)\
-    mod = importlib.util.module_from_spec(spec);\
-    spec.loader.exec_module(mod)\
-    return mod@'                             \
-    -i src/3rdparty/chromium/components/resources/protobufs/binary_proto_generator.py</kbd></pre>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            In the above instruction, the 4-space indentation of the four
-            lines from <span class="command"><strong>spec =
-            ...</strong></span> to <span class="command"><strong>return
-            ...</strong></span> is significant, since they are in a Python
-            script.
-          </p>
-        </div>
-        <p>
-          Remove an obsolete instance of and a reference to the <span class=
-          "command"><strong>six</strong></span> module:
-        </p>
-        <pre class="userinput"><kbd class="command">sed -e /six.move/d \
-    -i src/3rdparty/chromium/third_party/protobuf/python/google/protobuf/internal/python_message.py &amp;&amp;
-
-rm -r src/3rdparty/chromium/tools/grit/third_party/six</kbd></pre>
-        <p>
-          There is also a workaround needed for ICU-74+:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e 's/^#define BA_LB_COUNT.*$/#define BA_LB_COUNT 40/' \
-    -i src/3rdparty/chromium/third_party/blink/renderer/platform/text/text_break_iterator.cc</kbd></pre>
-        <p>
-          If you are using the system copy of libxml2 (which requires that
-          libxml2 has been built with the '--with-icu' option), adapt to an
-          API change:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e 's/xmlError/const xmlError/' \
--i src/3rdparty/chromium/third_party/blink/renderer/core/xml/xslt_processor.h \
--i src/3rdparty/chromium/third_party/blink/renderer/core/xml/xslt_processor_libxslt.cc</kbd></pre>
-        <p>
-          Finally, fix a change in the build system which allows its
-          developers to pass e.g. -j20 to make (for quick tests of some
-          areas) but breaks the build with LFS's use of the NINJAJOBS
-          environment variable:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -i 's/NINJAJOBS/NINJA_JOBS/' src/core/gn_run.pro</kbd></pre>
-        <p>
           Install <span class="application">qtwebengine</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
-qmake .. -- -system-ffmpeg -proprietary-codecs -webengine-icu &amp;&amp;
+PATH=/opt/python3.11/bin:$PATH qmake .. --                  \
+                                        -system-ffmpeg      \
+                                        -proprietary-codecs \
+                                        -webengine-icu      &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -449,6 +375,15 @@ make</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <span class=
+          "command"><strong>PATH=/opt/python3.11/bin:$PATH</strong></span>:
+          This switch forces this package to use the version of Python 3.11
+          that is installed in /opt. This is done to reduce the chances for
+          problems that may occur during the build, and to simplify the
+          instructions since this package is incompatible with Python 3.12
+          without additional modifications.
+        </p>
         <p>
           <span class="command"><strong>qmake</strong></span>: This will
           build the included copy of <span class="application">ninja</span>
@@ -727,7 +662,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1126">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1131">
           Home</a>
         </li>
       </ul>
