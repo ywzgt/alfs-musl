@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1131">
+  <body class="blfs" id="blfs-r12.0-1138">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1131
+        "phrase">(systemd</span> Edition) - Version r12.0-1138
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1131">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1138">
           Home</a>
         </li>
       </ul>
@@ -370,7 +370,7 @@ docdir = "share/doc/rustc-1.75.0"
 
 [rust]
 channel = "stable"
-description = "for BLFS r12.0-1131"
+description = "for BLFS r12.0-1138"
 
 # BLFS used to not install the FileCheck executable from llvm,
 # so disabled codegen tests.  The assembly tests rely on FileCheck
@@ -502,7 +502,7 @@ python3 x.py test --verbose --no-fail-fast | tee rustc-testlog</kbd></pre>
             "option">--preserve-env=LIBSSH2_SYS_USE_PKG_CONFIG</code> option.
             For <span class="command"><strong>su</strong></span>, do
             <span class="emphasis"><em>not</em></span> use the <code class=
-            "option">-</code> or <code class="option">--login</code>.
+            "option">-</code> or <code class="option">--login</code> options.
           </p>
         </div>
         <pre class="root"><kbd class=
@@ -525,6 +525,12 @@ python3 x.py test --verbose --no-fail-fast | tee rustc-testlog</kbd></pre>
         "command">install -vdm755 /usr/share/zsh/site-functions      &amp;&amp;
 ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
         /usr/share/zsh/site-functions</kbd></pre>
+        <p>
+          Finally, unset the <code class=
+          "envar">LIBSSH2_SYS_USE_PKG_CONFIG</code> variable:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">unset LIBSSH2_SYS_USE_PKG_CONFIG</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -855,7 +861,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1131">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1138">
           Home</a>
         </li>
       </ul>

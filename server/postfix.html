@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1131">
+  <body class="blfs" id="blfs-r12.0-1138">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1131
+        "phrase">(systemd</span> Edition) - Version r12.0-1138
       </h4>
       <h3>
         Chapter&nbsp;21.&nbsp;Mail Server Software
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1131">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1138">
           Home</a>
         </li>
       </ul>
@@ -162,7 +162,7 @@
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm58362" name="idm58362"></a>Adding Users and Groups
+            <a id="idm58381" name="idm58381"></a>Adding Users and Groups
           </h4>
           <p>
             Before you compile the program, you need to create users and
@@ -180,7 +180,7 @@ chown -v postfix:postfix /var/mail</kbd></pre>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm58368" name="idm58368"></a>Configuring the Build
+            <a id="idm58387" name="idm58387"></a>Configuring the Build
           </h4>
           <p>
             The README files are formatted to be read with a pager like
@@ -225,7 +225,7 @@ chown -v postfix:postfix /var/mail</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58385" name="idm58385"></a>Cyrus-SASL
+                    <a id="idm58404" name="idm58404"></a>Cyrus-SASL
                   </h5>
                 </div>
               </div>
@@ -245,7 +245,7 @@ AUXLIBS='-lsasl2'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58392" name="idm58392"></a>LMDB
+                    <a id="idm58411" name="idm58411"></a>LMDB
                   </h5>
                 </div>
               </div>
@@ -263,7 +263,7 @@ AUXLIBS_LMDB='-llmdb'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58399" name="idm58399"></a>OpenLDAP
+                    <a id="idm58418" name="idm58418"></a>OpenLDAP
                   </h5>
                 </div>
               </div>
@@ -282,7 +282,7 @@ AUXLIBS_LDAP='-lldap -llber'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58406" name="idm58406"></a>Sqlite
+                    <a id="idm58425" name="idm58425"></a>Sqlite
                   </h5>
                 </div>
               </div>
@@ -301,7 +301,7 @@ AUXLIBS_SQLITE='-lsqlite3 -lpthread'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58413" name="idm58413"></a>MySQL
+                    <a id="idm58432" name="idm58432"></a>MySQL
                   </h5>
                 </div>
               </div>
@@ -319,7 +319,7 @@ AUXLIBS_MYSQL='-lmysqlclient -lz -lm'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58420" name="idm58420"></a>PostgreSQL
+                    <a id="idm58439" name="idm58439"></a>PostgreSQL
                   </h5>
                 </div>
               </div>
@@ -338,7 +338,7 @@ AUXLIBS_PGSQL='-lpq -lz -lm'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58427" name="idm58427"></a>CDB/TinyCDB
+                    <a id="idm58446" name="idm58446"></a>CDB/TinyCDB
                   </h5>
                 </div>
               </div>
@@ -358,7 +358,7 @@ AUXLIBS_CDB='<em class=
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58436" name="idm58436"></a>StartTLS
+                    <a id="idm58455" name="idm58455"></a>StartTLS
                     Authentication
                   </h5>
                 </div>
@@ -377,7 +377,7 @@ AUXLIBS='-lssl -lcrypto'</code></pre>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm58443" name="idm58443"></a>Installing Postfix
+            <a id="idm58462" name="idm58462"></a>Installing Postfix
           </h4>
           <p>
             Adjust the following according to your needs. For example, if you
@@ -453,7 +453,7 @@ make</kbd></pre>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm58480" name="idm58480"></a>Configuration Information
+            <a id="idm58499" name="idm58499"></a>Configuration Information
           </h4>
           <p>
             Create (or append to an existing) <code class=
@@ -493,7 +493,7 @@ echo 'alias_database = lmdb:/etc/aliases' &gt;&gt; /etc/postfix/main.cf &amp;&am
 echo 'alias_maps = lmdb:/etc/aliases'     &gt;&gt; /etc/postfix/main.cf</kbd></pre>
           <p>
             To protect your server against the recent SMTP smuggling attacks,
-            additonal steps are required. Add two lines into <code class=
+            additional steps are required. Add two lines into <code class=
             "filename">/etc/postfix/mail.cf</code> to disconnect remote SMTP
             clients that send bare newlines, while also allowing clients on
             your network with non-standard SMTP implementations to still send
@@ -869,7 +869,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1131">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1138">
           Home</a>
         </li>
       </ul>
