@@ -6,18 +6,18 @@
     <meta http-equiv="Content-Type" content=
     "application/xhtml+xml; charset=iso-8859-1" />
     <title>
-      Wireshark-4.2.1
+      Wireshark-4.2.2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1138">
+  <body class="blfs" id="blfs-r12.0-1141">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1138
+        "phrase">(systemd</span> Edition) - Version r12.0-1141
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -42,14 +42,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1138">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1141">
           Home</a>
         </li>
       </ul>
     </div>
     <div class="sect1" lang="en" xml:lang="en">
       <h1 class="sect1">
-        <a id="wireshark" name="wireshark"></a>Wireshark-4.2.1
+        <a id="wireshark" name="wireshark"></a>Wireshark-4.2.2
       </h1>
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -89,8 +89,8 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.wireshark.org/download/src/all-versions/wireshark-4.2.1.tar.xz">
-                https://www.wireshark.org/download/src/all-versions/wireshark-4.2.1.tar.xz</a>
+                "https://www.wireshark.org/download/src/all-versions/wireshark-4.2.2.tar.xz">
+                https://www.wireshark.org/download/src/all-versions/wireshark-4.2.2.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
@@ -106,7 +106,7 @@
             <li class="listitem">
               <p>
                 Estimated disk space required: 740 MB (with all optional
-                dependencies available in the BLFS book; 168 MB installed)
+                dependencies available in the BLFS book; 167 MB installed)
               </p>
             </li>
             <li class="listitem">
@@ -141,7 +141,7 @@
         <p class="required">
           <a class="xref" href="../general/cmake.html" title=
           "CMake-3.28.1">CMake-3.28.1</a>, <a class="xref" href="c-ares.html"
-          title="c-ares-1.24.0">c-ares-1.24.0</a>, <a class="xref" href=
+          title="c-ares-1.25.0">c-ares-1.25.0</a>, <a class="xref" href=
           "../general/glib2.html" title="GLib-2.78.3">GLib-2.78.3</a>,
           <a class="xref" href="../general/libgcrypt.html" title=
           "libgcrypt-1.10.3">libgcrypt-1.10.3</a>, and <a class="xref" href=
@@ -255,7 +255,7 @@ cd    build &amp;&amp;
 
 cmake -DCMAKE_INSTALL_PREFIX=/usr \
       -DCMAKE_BUILD_TYPE=Release  \
-      -DCMAKE_INSTALL_DOCDIR=/usr/share/doc/wireshark-4.2.1 \
+      -DCMAKE_INSTALL_DOCDIR=/usr/share/doc/wireshark-4.2.2 \
       -G Ninja \
       .. &amp;&amp;
 ninja</kbd></pre>
@@ -267,11 +267,11 @@ ninja</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">ninja install &amp;&amp;
 
-install -v -m755 -d /usr/share/doc/wireshark-4.2.1 &amp;&amp;
+install -v -m755 -d /usr/share/doc/wireshark-4.2.2 &amp;&amp;
 install -v -m644    ../README.linux ../doc/README.* ../doc/randpkt.txt \
-                    /usr/share/doc/wireshark-4.2.1 &amp;&amp;
+                    /usr/share/doc/wireshark-4.2.2 &amp;&amp;
 
-pushd /usr/share/doc/wireshark-4.2.1 &amp;&amp;
+pushd /usr/share/doc/wireshark-4.2.2 &amp;&amp;
    for FILENAME in ../../wireshark/*.html; do
       ln -s -v -f $FILENAME .
    done &amp;&amp;
@@ -285,7 +285,7 @@ unset FILENAME</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">install -v -m644 <em class=
         "replaceable"><code>&lt;Downloaded_Files&gt;</code></em> \
-                 /usr/share/doc/wireshark-4.2.1</kbd></pre>
+                 /usr/share/doc/wireshark-4.2.2</kbd></pre>
         <p>
           Now, set ownership and permissions of sensitive applications to
           only allow authorized users. As the <code class=
@@ -343,7 +343,7 @@ chmod -v 6550 /usr/bin/{tshark,dumpcap}</kbd></pre>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm53489" name="idm53489"></a>Configuration Information
+            <a id="idm53501" name="idm53501"></a>Configuration Information
           </h4>
           <p>
             Though the default configuration parameters are very sane,
@@ -391,7 +391,7 @@ chmod -v 6550 /usr/bin/{tshark,dumpcap}</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/{lib,share}/wireshark and
-              /usr/share/doc/wireshark-4.2.1</span>
+              /usr/share/doc/wireshark-4.2.2</span>
             </div>
           </div>
         </div>
@@ -679,7 +679,7 @@ chmod -v 6550 /usr/bin/{tshark,dumpcap}</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1138">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1141">
           Home</a>
         </li>
       </ul>
