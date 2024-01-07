@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1141">
+  <body class="blfs" id="blfs-r12.0-1145">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1141
+        "phrase">(systemd</span> Edition) - Version r12.0-1145
       </h4>
       <h3>
         Chapter&nbsp;7.&nbsp;Shells
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1141">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1145">
           Home</a>
         </li>
       </ul>
@@ -109,29 +109,6 @@
             </li>
           </ul>
         </div>
-        <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Optional Documentation: <a class="ulink" href=
-                "https://www.zsh.org/pub/zsh-5.9-doc.tar.xz">https://www.zsh.org/pub/zsh-5.9-doc.tar.xz</a>
-              </p>
-            </li>
-            <li class="listitem">
-              <p>
-                Documentation MD5 sum: 8db53446f613521fb4f9b0bd9f6adda1
-              </p>
-            </li>
-            <li class="listitem">
-              <p>
-                Documentation download size: 3.0 MB
-              </p>
-            </li>
-          </ul>
-        </div>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -162,11 +139,11 @@
           Installation of zsh
         </h2>
         <p>
-          If you downloaded the optional documentation, unpack it with the
-          following command:
+          Adapt the documentation build system for texinfo-7.0 or later:
         </p>
         <pre class="userinput"><kbd class=
-        "command">tar --strip-components=1 -xvf ../zsh-5.9-doc.tar.xz</kbd></pre>
+        "command">sed -e 's/set_from_init_file/texinfo_&amp;/' \
+    -i Doc/Makefile.in</kbd></pre>
         <p>
           Install <span class="application">zsh</span> by running the
           following commands:
@@ -176,12 +153,12 @@
             --sysconfdir=/etc/zsh    \
             --enable-etcdir=/etc/zsh \
             --enable-cap             \
-            --enable-gdbm                             &amp;&amp;
-make                                                  &amp;&amp;
+            --enable-gdbm                      &amp;&amp;
+make                                           &amp;&amp;
 
-makeinfo  Doc/zsh.texi --plaintext -o Doc/zsh.txt     &amp;&amp;
-makeinfo  Doc/zsh.texi --html      -o Doc/html        &amp;&amp;
-makeinfo  Doc/zsh.texi --html --no-split --no-headers -o Doc/zsh.html</kbd></pre>
+makeinfo  Doc/zsh.texi --html      -o Doc/html &amp;&amp;
+makeinfo  Doc/zsh.texi --plaintext -o zsh.txt  &amp;&amp;
+makeinfo  Doc/zsh.texi --html --no-split --no-headers -o zsh.html</kbd></pre>
         <p>
           If you have <a class="xref" href="../pst/texlive.html" title=
           "texlive-20230313-source">texlive-20230313</a> installed, you can
@@ -198,20 +175,10 @@ makeinfo  Doc/zsh.texi --html --no-split --no-headers -o Doc/zsh.html</kbd></pre
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">make install                              &amp;&amp;
-make infodir=/usr/share/info install.info &amp;&amp;
-
-install -v -m755 -d                 /usr/share/doc/zsh-5.9/html &amp;&amp;
-install -v -m644 Doc/html/*         /usr/share/doc/zsh-5.9/html &amp;&amp;
-install -v -m644 Doc/zsh.{html,txt} /usr/share/doc/zsh-5.9</kbd></pre>
-        <p>
-          If you downloaded the optional documentation, install it by issuing
-          the following commands as the <code class="systemitem">root</code>
-          user:
-        </p>
-        <pre class="root"><kbd class=
-        "command">make htmldir=/usr/share/doc/zsh-5.9/html install.html &amp;&amp;
-install -v -m644 Doc/zsh.dvi /usr/share/doc/zsh-5.9</kbd></pre>
+        "command">make install                                                    &amp;&amp;
+make infodir=/usr/share/info install.info                       &amp;&amp;
+make htmldir=/usr/share/doc/zsh-5.9/html install.html           &amp;&amp;
+install -v -m644 zsh.{html,txt} Etc/FAQ /usr/share/doc/zsh-5.9</kbd></pre>
         <p>
           If you built the PDF format of the documentation, install it by
           issuing the following command as the <code class=
@@ -299,7 +266,7 @@ install -v -m644 Doc/zsh.dvi /usr/share/doc/zsh-5.9</kbd></pre>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm12806" name="idm12806"></a>Configuration Information
+            <a id="idm12793" name="idm12793"></a>Configuration Information
           </h4>
           <p>
             Update <code class="filename">/etc/shells</code> to include the
@@ -388,7 +355,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1141">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1145">
           Home</a>
         </li>
       </ul>
