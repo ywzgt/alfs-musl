@@ -6,34 +6,34 @@
     <meta http-equiv="Content-Type" content=
     "application/xhtml+xml; charset=iso-8859-1" />
     <title>
-      qt-alternate-5.15.11
+      qt-alternate-5.15.12
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1145">
+  <body class="blfs" id="blfs-r12.0-1146">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1145
+        "phrase">(systemd</span> Edition) - Version r12.0-1146
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="qt5.html" title="Qt-5.15.11">Prev</a>
+          <a accesskey="p" href="qt5.html" title="Qt-5.15.12">Prev</a>
           <p>
-            Qt-5.15.11
+            Qt-5.15.12
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="qt5-components.html" title=
-          "qt-components-5.15.11">Next</a>
+          "qt-components-5.15.12">Next</a>
           <p>
-            qt-components-5.15.11
+            qt-components-5.15.12
           </p>
         </li>
         <li class="up">
@@ -42,14 +42,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1145">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1146">
           Home</a>
         </li>
       </ul>
     </div>
     <div class="sect1" lang="en" xml:lang="en">
       <h1 class="sect1">
-        <a id="qt5-alternate" name="qt5-alternate"></a>qt-alternate-5.15.11
+        <a id="qt5-alternate" name="qt5-alternate"></a>qt-alternate-5.15.12
       </h1>
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -105,13 +105,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.qt.io/archive/qt/5.15/5.15.11/single/qt-everywhere-opensource-src-5.15.11.tar.xz">
-                https://download.qt.io/archive/qt/5.15/5.15.11/single/qt-everywhere-opensource-src-5.15.11.tar.xz</a>
+                "https://download.qt.io/archive/qt/5.15/5.15.12/single/qt-everywhere-opensource-src-5.15.12.tar.xz">
+                https://download.qt.io/archive/qt/5.15/5.15.12/single/qt-everywhere-opensource-src-5.15.12.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 37b79a3764b0c9157fa3686df209b25a
+                Download MD5 sum: 3fb1cd4f763f5d50d491508b7b99fb77
               </p>
             </li>
             <li class="listitem">
@@ -121,12 +121,12 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 8.6 GB (153 MB installed)
+                Estimated disk space required: 8.5 GB (154 MB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 4.8 SBU (using parallelism=8)
+                Estimated build time: 7.4 SBU (using parallelism=4)
               </p>
             </li>
           </ul>
@@ -146,8 +146,8 @@
               </p>
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5.15.11-kf5-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5.15.11-kf5-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5.15.12-kf5-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5.15.12-kf5-1.patch</a>
               </p>
               <p>
                 Details of the kde curation can be found at <a class="ulink"
@@ -250,13 +250,13 @@
             Sometimes, the installation paths are hardcoded into installed
             files. This is the reason why <code class=
             "filename">/opt/qt5</code> is used as installation prefix instead
-            of <code class="filename">/opt/qt-5.15.11</code>. To create a
+            of <code class="filename">/opt/qt-5.15.12</code>. To create a
             versioned <span class="application">qt5</span> directory after
             the installation is complete, you may rename the directory and
             create a symlink:
           </p>
-          <pre class="root"><kbd class="command">mkdir -pv /opt/qt-5.15.11
-ln -sfnv qt-5.15.11 /opt/qt5</kbd></pre>
+          <pre class="root"><kbd class="command">mkdir -pv /opt/qt-5.15.12
+ln -sfnv qt-5.15.12 /opt/qt5</kbd></pre>
           <p>
             Later on, you may want to install other versions of <span class=
             "application">qt5</span>. To do that, just remove the symlink and
@@ -304,12 +304,14 @@ ln -sfnv qt-5.15.11 /opt/qt5</kbd></pre>
           </h3>
           <p>
             The BLFS editors do not recommend installing <span class=
-            "application">qt5</span> into the /usr hierarchy because it
-            becomes difficult to find components and to update to a new
-            version. If you do want to install <span class=
-            "application">qt5</span> in /usr, the directories need to be
-            specified explicitly. In this case, set QT5PREFIX=/usr and add
-            the following to the configure arguments below:
+            "application">qt5</span> into the <code class=
+            "filename">/usr</code> hierarchy because it becomes difficult to
+            find components and to update to a new version. If you do want to
+            install <span class="application">qt5</span> in <code class=
+            "filename">/usr</code>, the directories need to be specified
+            explicitly. In this case, set <code class=
+            "envar">QT5PREFIX=/usr</code> and add the following to the
+            configure arguments below:
           </p>
           <pre class="userinput"><kbd class=
           "command">            -archdatadir    /usr/lib/qt5                \
@@ -323,17 +325,11 @@ ln -sfnv qt-5.15.11 /opt/qt5</kbd></pre>
             -examplesdir    /usr/share/doc/qt5/examples</kbd></pre>
         </div>
         <p>
-          The libxkbcommon-1.6.0 package removes some definitions that are
-          not used. Remove those here also:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -i '276,279d' qtbase/src/platformsupport/input/xkbcommon/qxkbcommon.cpp</kbd></pre>
-        <p>
           Now apply a patch to pull in the fixes curated by kde for those
           modules which are required by packages mentioned in this book:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../qt-everywhere-opensource-src-5.15.11-kf5-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../qt-everywhere-opensource-src-5.15.12-kf5-1.patch</kbd></pre>
         <p>
           The patch is supposed to be used in a git repository. Otherwise
           some files that should be modified by <span class=
@@ -657,7 +653,7 @@ EOF</kbd></pre>
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/qt5, /usr/lib/qt5,
               /usr/share/doc/qt5, and /usr/share/qt5 OR /opt/qt5 and
-              /opt/qt-5.15.11</span>
+              /opt/qt-5.15.12</span>
             </div>
           </div>
         </div>
@@ -673,16 +669,16 @@ EOF</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="qt5.html" title="Qt-5.15.11">Prev</a>
+          <a accesskey="p" href="qt5.html" title="Qt-5.15.12">Prev</a>
           <p>
-            Qt-5.15.11
+            Qt-5.15.12
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="qt5-components.html" title=
-          "qt-components-5.15.11">Next</a>
+          "qt-components-5.15.12">Next</a>
           <p>
-            qt-components-5.15.11
+            qt-components-5.15.12
           </p>
         </li>
         <li class="up">
@@ -691,7 +687,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1145">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1146">
           Home</a>
         </li>
       </ul>
