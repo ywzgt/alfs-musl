@@ -1,0 +1,15 @@
+diff --git a/wget-list b/wget-list
+index 4ff3b42a..78852bd4 100644
+--- a/wget-list
++++ b/wget-list
+@@ -683,8 +683,8 @@ https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.3.tar.xz
+ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+ https://download.gnome.org/sources/pango/1.50/pango-1.50.14.tar.xz
+ https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.3.tar.xz
+-https://download.qt.io/archive/qt/5.15/5.15.11/single/qt-everywhere-opensource-src-5.15.11.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5.15.11-kf5-1.patch
++https://download.qt.io/archive/qt/5.15/5.15.12/single/qt-everywhere-opensource-src-5.15.12.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5.15.12-kf5-1.patch
+ https://anduin.linuxfromscratch.org/BLFS/qtwebengine/qtwebengine-5.15.17.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.17-build_fixes-2.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.17-ffmpeg5_fixes-1.patch
