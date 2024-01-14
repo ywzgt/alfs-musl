@@ -1,0 +1,49 @@
+diff --git a/wget-list b/wget-list
+index b5350e0a..d9498c4c 100644
+--- a/wget-list
++++ b/wget-list
+@@ -141,7 +141,7 @@ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_1/log4cplus-2.1.1.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.6.tar.bz2
+-https://nodejs.org/dist/v20.10.0/node-v20.10.0.tar.xz
++https://nodejs.org/dist/v20.11.0/node-v20.11.0.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
+ https://sourceforge.net/projects/pcre/files/pcre/8.45/pcre-8.45.tar.bz2
+@@ -174,7 +174,7 @@ https://github.com/Dav1dde/glad/archive/refs/tags/v2.0.4/glad-2.0.4.tar.gz
+ https://github.com/g-truc/glm/archive/0.9.9.8/glm-0.9.9.8.tar.gz
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+ https://github.com/harfbuzz/harfbuzz/releases/download/8.3.0/harfbuzz-8.3.0.tar.xz
+-https://github.com/jasper-software/jasper/archive/version-4.1.1/jasper-4.1.1.tar.gz
++https://github.com/jasper-software/jasper/archive/version-4.1.2/jasper-4.1.2.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.14/lcms2-2.14.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.0.3/libavif-1.0.3.tar.gz
+ https://github.com/libexif/libexif/releases/download/v0.6.24/libexif-0.6.24.tar.bz2
+@@ -626,7 +626,7 @@ https://xcb.freedesktop.org/dist/xcb-util-keysyms-0.4.1.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-renderutil-0.3.10.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-wm-0.4.2.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.4.tar.xz
+-https://mesa.freedesktop.org/archive/mesa-23.3.2.tar.xz
++https://mesa.freedesktop.org/archive/mesa-23.3.3.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-2.patch
+ https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ https://www.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
+@@ -951,7 +951,7 @@ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
+ https://github.com/webmproject/libvpx/archive/v1.13.1/libvpx-1.13.1.tar.gz
+ https://github.com/mltframework/mlt/releases/download/v7.22.0/mlt-7.22.0.tar.gz
+ https://downloads.xiph.org/releases/opus/opus-1.4.tar.gz
+-https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.0.0/pipewire-1.0.0.tar.bz2
++https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.0.1/pipewire-1.0.1.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-16.1.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.0.tar.xz
+ https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.68/sdl12-compat-release-1.2.68.tar.gz
+@@ -973,7 +973,7 @@ https://downloads.xiph.org/releases/cdparanoia/cdparanoia-III-10.2.src.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/cdparanoia-III-10.2-gcc_fixes-1.patch
+ https://download.kde.org/stable/release-service/23.08.4/src/kwave-23.08.4.tar.xz
+ https://downloads.sourceforge.net/lame/lame-3.100.tar.gz
+-https://downloads.sourceforge.net/mpg123/mpg123-1.32.3.tar.bz2
++https://downloads.sourceforge.net/mpg123/mpg123-1.32.4.tar.bz2
+ https://freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-5.0.tar.xz
+ https://github.com/nicklan/pnmixer/releases/download/v0.7.2/pnmixer-v0.7.2.tar.gz
+ https://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.2.tar.gz
