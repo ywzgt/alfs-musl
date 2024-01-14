@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1176">
+  <body class="blfs" id="blfs-r12.0-1190">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1176
+        "phrase">(systemd</span> Edition) - Version r12.0-1190
       </h4>
       <h3>
         Chapter&nbsp;37.&nbsp;LXQt Desktop
@@ -43,7 +43,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1176">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1190">
           Home</a>
         </li>
       </ul>
@@ -152,10 +152,12 @@
         <pre class="userinput"><kbd class="command">mkdir -v build &amp;&amp;
 cd       build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      -DBUILD_TESTING=OFF         \
-      -Wno-dev ..                 &amp;&amp;
+cmake -DCMAKE_INSTALL_PREFIX=/usr        \
+      -DCMAKE_INSTALL_LIBEXECDIR=libexec \
+      -DKDE_INSTALL_USE_QT_SYS_PATHS=ON  \
+      -DCMAKE_BUILD_TYPE=Release         \
+      -DBUILD_TESTING=OFF                \
+      -Wno-dev ..                        &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -164,12 +166,27 @@ make</kbd></pre>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">make install</kbd></pre>
+      </div>
+      <div class="commands" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Command Explanations
+        </h2>
         <p>
-          Finally, remove some unneeded files as the <code class=
-          "systemitem">root</code> user:
+          <em class=
+          "parameter"><code>-DCMAKE_INSTALL_LIBEXECDIR=libexec</code></em>:
+          This overrides the default in extra-cmake-modules, wich is
+          <code class="filename">/usr/lib/libexec</code> and is not FHS
+          compliant.
         </p>
-        <pre class="root"><kbd class=
-        "command">rm -rf /usr/mkspecs</kbd></pre>
+        <p>
+          <em class=
+          "parameter"><code>-DKDE_INSTALL_USE_QT_SYS_PATHS=ON</code></em>:
+          This forces installation of Qt plugins in the same directory as
+          <a class="xref" href="../x/qt5.html" title=
+          "Qt-5.15.12">Qt-5.15.12</a> itself. Otherwise they get installed
+          into <code class="filename">/usr/mkspecs</code>, which is not FHS
+          compliant.
+        </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -263,7 +280,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1176">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1190">
           Home</a>
         </li>
       </ul>
