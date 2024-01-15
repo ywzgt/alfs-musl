@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1190">
+  <body class="blfs" id="blfs-r12.0-1215">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1190
+        "phrase">(systemd</span> Edition) - Version r12.0-1215
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -43,7 +43,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1190">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1215">
           Home</a>
         </li>
       </ul>
@@ -136,10 +136,8 @@
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="../general/fribidi.html" title=
-          "FriBidi-1.0.13">FriBidi-1.0.13</a>, and <a class="xref" href=
-          "../general/python-modules.html#gi-docgen" title=
-          "Gi-DocGen-2023.3">Gi-DocGen-2023.3</a>
+          <a class="xref" href="../general/python-modules.html#gi-docgen"
+          title="Gi-DocGen-2023.3">Gi-DocGen-2023.3</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -153,7 +151,7 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr --buildtype=release -Dfribidi=false .. &amp;&amp;
+meson setup --prefix=/usr --buildtype=release .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           If you have <a class="xref" href=
@@ -189,10 +187,6 @@ rm -v /etc/profile.d/vte.*</kbd></pre>
           <span class="command"><strong>rm -v
           /etc/profile.d/vte.*</strong></span>: This command removes two
           files installed in /etc/profile.d that have no use on a LFS system.
-        </p>
-        <p>
-          <em class="parameter"><code>-Dfribidi=false</code></em>: Omit this
-          switch if you want to enable bidirectional capabilities.
         </p>
         <p>
           <code class="option">-Dgnutls=false</code>: Add this switch if you
@@ -327,7 +321,7 @@ rm -v /etc/profile.d/vte.*</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1190">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1215">
           Home</a>
         </li>
       </ul>

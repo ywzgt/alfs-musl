@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1190">
+  <body class="blfs" id="blfs-r12.0-1215">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1190
+        "phrase">(systemd</span> Edition) - Version r12.0-1215
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1190">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1215">
           Home</a>
         </li>
       </ul>
@@ -131,20 +131,24 @@
         "command">sed -i 's:$(LIBDIR)/$(PKGCONFIG_DIR):/usr/lib/pkgconfig:' Makefile &amp;&amp;
 make</kbd></pre>
         <p>
-          To test the results, issue, as the <code class=
-          "systemitem">root</code> user:
+          Now, as the <code class="systemitem">root</code> user:
         </p>
-        <pre class="root"><kbd class="command">make -k test</kbd></pre>
+        <pre class="root"><kbd class=
+        "command">make NO_ARLIB=1 LIBDIR=/usr/lib BINDIR=/usr/bin SBINDIR=/usr/sbin install</kbd></pre>
+        <p>
+          The test suite can only run after installing this package. To test
+          the results, issue, as the <code class="systemitem">root</code>
+          user:
+        </p>
+        <pre class="root"><kbd class=
+        "command">sed -e 's/executable/\\(pie \\)?/' \
+    -i tests/toolbox.inc.sh        &amp;&amp;
+make -k test</kbd></pre>
         <p>
           Note that several tests will fail if certain uncommon kernel
           options were not used when the kernel was built. These include
           CONFIG_BIG_KEYS, CONFIG_KEY_DH_OPERATIONS, and CONFIG_CRYPTO_DH.
         </p>
-        <p>
-          Now, as the <code class="systemitem">root</code> user:
-        </p>
-        <pre class="root"><kbd class=
-        "command">make NO_ARLIB=1 LIBDIR=/usr/lib BINDIR=/usr/bin SBINDIR=/usr/sbin install</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -154,6 +158,14 @@ make</kbd></pre>
           <span class="command"><strong>sed ... Makefile</strong></span>:
           This command ensures the pkgconfig file is placed in the correct
           directory.
+        </p>
+        <p>
+          <span class="command"><strong>sed ...
+          tests/toolbox.inc.sh</strong></span>: In LFS, GCC has been
+          configured with <code class="option">--enable-default-pie</code> so
+          <span class="command"><strong>/usr/bin/bash</strong></span> is a
+          PIE, but the test script does not anticipate it. Fix this oversight
+          so the test can run on a LFS system.
         </p>
         <p>
           <em class="parameter"><code>NO_ARLIB=1</code></em>: This make flag
@@ -301,7 +313,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1190">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1215">
           Home</a>
         </li>
       </ul>

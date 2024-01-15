@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1190">
+  <body class="blfs" id="blfs-r12.0-1215">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1190
+        "phrase">(systemd</span> Edition) - Version r12.0-1215
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -43,7 +43,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1190">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1215">
           Home</a>
         </li>
       </ul>
@@ -209,7 +209,8 @@ make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make -k
           check</strong></span>. The test named ibus-compose fails because it
-          uses some locales not installed in LFS.
+          uses some locales not installed in LFS. The test named
+          ibus-keypress will fail if running in a Wayland session.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -248,7 +249,11 @@ make</kbd></pre>
         <p>
           <code class="option">--enable-wayland</code>: This switch enables
           building the <span class="application">Wayland</span> support
-          programs. Use it if you have installed the optional dependencies.
+          programs. It's automatically enabled if both <a class="xref" href=
+          "libxkbcommon.html" title=
+          "libxkbcommon-1.6.0">libxkbcommon-1.6.0</a> and <a class="xref"
+          href="wayland.html" title="Wayland-1.22.0">Wayland-1.22.0</a> are
+          installed.
         </p>
         <p>
           <code class="envar">NOCONFIGURE=1</code>: Prevent <span class=
@@ -413,7 +418,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1190">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1215">
           Home</a>
         </li>
       </ul>

@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1190">
+  <body class="blfs" id="blfs-r12.0-1215">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1190
+        "phrase">(systemd</span> Edition) - Version r12.0-1215
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -43,7 +43,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1190">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1215">
           Home</a>
         </li>
       </ul>
@@ -278,17 +278,6 @@ install -v -d -m755 /etc/dbus-1/system.d &amp;&amp;
 install -v -m644 dbus/dbus-wpa_supplicant.conf \
                  /etc/dbus-1/system.d/wpa_supplicant.conf</kbd></pre>
         <p>
-          Additionally, enable the <code class=
-          "filename">wpa_supplicant.service</code> so that <span class=
-          "application">systemd</span> can properly activate the <span class=
-          "application">D-Bus</span> service. Note that the per-connection
-          service and the D-Bus service cannot be enabled at the same time.
-          Run the following command as the <code class=
-          "systemitem">root</code> user:
-        </p>
-        <pre class="root"><kbd class=
-        "command">systemctl enable wpa_supplicant</kbd></pre>
-        <p>
           If you have built the <span class="application">WPA
           Supplicant</span> GUI program, install it by running the following
           commands as the <code class="systemitem">root</code> user:
@@ -335,6 +324,21 @@ install -v -m644 wpa_gui-qt4/icons/wpa_gui.svg /usr/share/pixmaps/</kbd></pre>
         <h2 class="sect2">
           Configuring wpa_supplicant
         </h2>
+        <div class="admon important">
+          <img alt="[Important]" src="../images/important.png" />
+          <h3>
+            Important
+          </h3>
+          <p>
+            If you are using WPA Supplicant with <a class="xref" href=
+            "networkmanager.html" title=
+            "NetworkManager-1.44.2">NetworkManager-1.44.2</a> (or anything
+            communicating with WPA Supplicant via D-Bus), this section should
+            be skipped. Running a D-Bus connected WPA Supplicant instance and
+            another WPA supplicant instance configured following this section
+            simultaneously can cause subtle issues.
+          </p>
+        </div>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
             <a id="wpa_supplicant-config" name="wpa_supplicant-config"></a>
@@ -351,7 +355,7 @@ install -v -m644 wpa_gui-qt4/icons/wpa_gui.svg /usr/share/pixmaps/</kbd></pre>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm52314" name="idm52314"></a>Configuration Information
+            <a id="idm52348" name="idm52348"></a>Configuration Information
           </h4>
           <p>
             To connect to an access point that uses a password, you need to
@@ -412,7 +416,7 @@ update_config=1</pre>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm52342" name="idm52342"></a>Connecting to an Access
+            <a id="idm52376" name="idm52376"></a>Connecting to an Access
             Point
           </h4>
           <p>
@@ -596,7 +600,7 @@ update_config=1</pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1190">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1215">
           Home</a>
         </li>
       </ul>
