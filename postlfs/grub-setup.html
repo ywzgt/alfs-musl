@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content=
-    "application/xhtml+xml; charset=iso-8859-1" />
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
       Using GRUB to Set Up the Boot Process with UEFI
     </title>
@@ -13,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1215">
+  <body class="blfs" id="blfs-r12.0-1224">
     <div class="navheader">
       <h4>
-        Beyond Linux<sup>�</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1215
+        Beyond Linux<sup>®</sup> From Scratch <span class=
+        "phrase">(systemd</span> Edition) - Version r12.0-1224
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -42,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>
@@ -164,11 +163,11 @@
         </h2>
         <p>
           Ensure that an emergency boot disk is ready to <span class=
-          "quote">&ldquo;<span class="quote">rescue</span>&rdquo;</span> the
-          system in case the system becomes un-bootable. To make an emergency
-          boot disk with GRUB for an EFI based system, find a spare USB flash
-          drive and create a <code class="systemitem">vfat</code> file system
-          on it. Install <a class="xref" href="dosfstools.html" title=
+          "quote">“<span class="quote">rescue</span>”</span> the system in
+          case the system becomes un-bootable. To make an emergency boot disk
+          with GRUB for an EFI based system, find a spare USB flash drive and
+          create a <code class="systemitem">vfat</code> file system on it.
+          Install <a class="xref" href="dosfstools.html" title=
           "dosfstools-4.2">dosfstools-4.2</a> first, then as the <code class=
           "systemitem">root</code> user:
         </p>
@@ -192,10 +191,9 @@
           Still as the <code class="systemitem">root</code> user, use the
           <span class="command"><strong>fdisk</strong></span> utility to set
           the first partition of the USB flash drive to be an <span class=
-          "quote">&ldquo;<span class="quote">EFI system</span>&rdquo;</span>
-          partition (change <strong class=
-          "userinput"><code>sdx</code></strong> to the device node
-          corresponding to your USB flash drive):
+          "quote">“<span class="quote">EFI system</span>”</span> partition
+          (change <strong class="userinput"><code>sdx</code></strong> to the
+          device node corresponding to your USB flash drive):
         </p>
         <pre class="userinput"><kbd class="command">fdisk /dev/sdx</kbd>
 <code class="literal">
@@ -261,9 +259,9 @@ Syncing disks.</code></pre>
         <pre class="userinput"><kbd class=
         "command">fdisk -l /dev/sda</kbd></pre>
         <p>
-          The <span class="quote">&ldquo;<span class=
-          "quote">Type</span>&rdquo;</span> column of the ESP should be
-          <code class="literal">EFI System</code>.
+          The <span class="quote">“<span class="quote">Type</span>”</span>
+          column of the ESP should be <code class="literal">EFI
+          System</code>.
         </p>
         <p>
           If the system or the hard drive is new, or it's the first
@@ -272,9 +270,8 @@ Syncing disks.</code></pre>
           title="dosfstools-4.2">dosfstools-4.2</a> first. Then create a new
           partition, make a <code class="systemitem">vfat</code> file system
           on it, and set the partition type to <span class=
-          "quote">&ldquo;<span class="quote">EFI system</span>&rdquo;</span>.
-          See the instructions for the emergency boot device above as a
-          reference.
+          "quote">“<span class="quote">EFI system</span>”</span>. See the
+          instructions for the emergency boot device above as a reference.
         </p>
         <div class="admon warning">
           <img alt="[Warning]" src="../images/warning.png" />
@@ -407,8 +404,8 @@ Syncing disks.</code></pre>
         <p>
           If you've followed the instructions in this section and set up a
           minimal boot configuration, now skip ahead to <span class=
-          "quote">&ldquo;<span class="quote">Creating the GRUB Configuration
-          File</span>&rdquo;</span>.
+          "quote">“<span class="quote">Creating the GRUB Configuration
+          File</span>”</span>.
         </p>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
@@ -582,8 +579,8 @@ menuentry "Firmware Setup" {
         <p>
           The <code class="literal">Firmware Setup</code> entry can be used
           to enter the configuration interface provided by the firmware
-          (sometimes called <span class="quote">&ldquo;<span class=
-          "quote">BIOS configuration</span>&rdquo;</span>).
+          (sometimes called <span class="quote">“<span class="quote">BIOS
+          configuration</span>”</span>).
         </p>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
@@ -637,7 +634,7 @@ menuentry "Windows 11" {
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>

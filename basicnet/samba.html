@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content=
-    "application/xhtml+xml; charset=iso-8859-1" />
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
       Samba-4.19.4
     </title>
@@ -13,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1215">
+  <body class="blfs" id="blfs-r12.0-1224">
     <div class="navheader">
       <h4>
-        Beyond Linux<sup>�</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1215
+        Beyond Linux<sup>®</sup> From Scratch <span class=
+        "phrase">(systemd</span> Edition) - Version r12.0-1224
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -41,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>
@@ -375,7 +374,7 @@ install -v -m755    examples/LDAP/{get*,ol*} \
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm51340" name="idm51340"></a>Printing to SMB Clients
+            <a id="idm51348" name="idm51348"></a>Printing to SMB Clients
           </h4>
           <p>
             If you use <span class="application">CUPS</span> for print
@@ -391,7 +390,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm51347" name="idm51347"></a>Configuration Information
+            <a id="idm51355" name="idm51355"></a>Configuration Information
           </h4>
           <p>
             Due to the complexity and the many various uses for <span class=
@@ -413,10 +412,10 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               shown below into an empty <code class=
               "filename">/etc/samba/smb.conf</code> file instead of copying
               and editing the default file as mentioned in the <span class=
-              "quote">&ldquo;<span class="quote">Command
-              Explanations</span>&rdquo;</span> section. How you create/edit
-              the <code class="filename">/etc/samba/smb.conf</code> file will
-              be left up to you. Do ensure the file is only writable by the
+              "quote">“<span class="quote">Command
+              Explanations</span>”</span> section. How you create/edit the
+              <code class="filename">/etc/samba/smb.conf</code> file will be
+              left up to you. Do ensure the file is only writable by the
               <code class="systemitem">root</code> user (mode 644).
             </p>
           </div>
@@ -425,7 +424,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm51360" name="idm51360"></a>Scenario 1: Minimal
+                    <a id="idm51368" name="idm51368"></a>Scenario 1: Minimal
                     Standalone Client-Only Installation
                   </h5>
                 </div>
@@ -448,20 +447,19 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
 "replaceable"><code>ISO-8859-1</code></em></code></pre>
             <p>
               The values in this example specify that the computer belongs to
-              a Windows workgroup named <span class=
-              "quote">&ldquo;<span class="quote"><em class=
-              "replaceable"><code>WORKGROUP</code></em></span>&rdquo;</span>,
-              uses the <span class="quote">&ldquo;<span class=
+              a Windows workgroup named <span class="quote">“<span class=
               "quote"><em class=
-              "replaceable"><code>cp850</code></em></span>&rdquo;</span>
-              character set on the wire when talking to MS-DOS and MS Windows
-              9x, and that the filenames are stored in the <span class=
-              "quote">&ldquo;<span class="quote"><em class=
-              "replaceable"><code>ISO-8859-1</code></em></span>&rdquo;</span>
+              "replaceable"><code>WORKGROUP</code></em></span>”</span>, uses
+              the <span class="quote">“<span class="quote"><em class=
+              "replaceable"><code>cp850</code></em></span>”</span> character
+              set on the wire when talking to MS-DOS and MS Windows 9x, and
+              that the filenames are stored in the <span class=
+              "quote">“<span class="quote"><em class=
+              "replaceable"><code>ISO-8859-1</code></em></span>”</span>
               encoding on the disk. Adjust these values appropriately for
-              your installation. The <span class="quote">&ldquo;<span class=
-              "quote">unix charset</span>&rdquo;</span> value must be the
-              same as the output of <span class="command"><strong>locale
+              your installation. The <span class="quote">“<span class=
+              "quote">unix charset</span>”</span> value must be the same as
+              the output of <span class="command"><strong>locale
               charmap</strong></span> when executed with the <code class=
               "envar">LANG</code> variable set to your preferred locale,
               otherwise the <span class="command"><strong>ls</strong></span>
@@ -479,7 +477,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm51385" name="idm51385"></a>Scenario 2:
+                    <a id="idm51393" name="idm51393"></a>Scenario 2:
                     Standalone File/Print Server
                   </h5>
                 </div>
@@ -494,12 +492,11 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               In this case, the <code class=
               "filename">/etc/samba/smb.conf.default</code> file may be a
               good template to start from. Also, you should add the
-              <span class="quote">&ldquo;<span class="quote">dos
-              charset</span>&rdquo;</span> and <span class=
-              "quote">&ldquo;<span class="quote">unix
-              charset</span>&rdquo;</span> parameters to the <span class=
-              "quote">&ldquo;<span class=
-              "quote">[global]</span>&rdquo;</span> section as described in
+              <span class="quote">“<span class="quote">dos
+              charset</span>”</span> and <span class="quote">“<span class=
+              "quote">unix charset</span>”</span> parameters to the
+              <span class="quote">“<span class=
+              "quote">[global]</span>”</span> section as described in
               Scenario 1 in order to prevent filename corruption. For
               security reasons, you may wish to define <em class=
               "replaceable"><code>path =
@@ -509,8 +506,8 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               entire home. Then, replace <em class=
               "replaceable"><code>homes</code></em> by <em class=
               "replaceable"><code>shared-files</code></em> and change also
-              the <span class="quote">&ldquo;<span class="quote"><code class=
-              "literal">comment</code></span>&rdquo;</span> if used the
+              the <span class="quote">“<span class="quote"><code class=
+              "literal">comment</code></span>”</span> if used the
               configuration file below or the <code class=
               "filename">/etc/samba/smb.conf.default</code> to create yours.
             </p>
@@ -537,8 +534,8 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
     printable = yes</code></pre>
             <p>
               Other parameters you may wish to customize in the <span class=
-              "quote">&ldquo;<span class=
-              "quote">[global]</span>&rdquo;</span> section include:
+              "quote">“<span class="quote">[global]</span>”</span> section
+              include:
             </p>
             <pre class="root"><code class="literal">    server string =
     security =
@@ -573,7 +570,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm51422" name="idm51422"></a>Advanced
+                    <a id="idm51430" name="idm51430"></a>Advanced
                     Requirements
                   </h5>
                 </div>
@@ -595,7 +592,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm51427" name="idm51427"></a>Guest account
+                    <a id="idm51435" name="idm51435"></a>Guest account
                   </h5>
                 </div>
               </div>
@@ -1595,7 +1592,7 @@ systemctl start smbd.socket</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>

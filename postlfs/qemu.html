@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content=
-    "application/xhtml+xml; charset=iso-8859-1" />
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
       qemu-8.2.0
     </title>
@@ -13,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1215">
+  <body class="blfs" id="blfs-r12.0-1224">
     <div class="navheader">
       <h4>
-        Beyond Linux<sup>�</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1215
+        Beyond Linux<sup>®</sup> From Scratch <span class=
+        "phrase">(systemd</span> Edition) - Version r12.0-1224
       </h4>
       <h3>
         Chapter&nbsp;8.&nbsp;Virtualization
@@ -43,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>
@@ -270,12 +269,11 @@
           matching your system processor is required.
         </p>
         <p>
-          To use the <span class="quote">&ldquo;<span class=
-          "quote">bridge</span>&rdquo;</span> network device, as explained
-          below, check that <a class="xref" href=
-          "../basicnet/bridge-utils.html" title=
-          "bridge-utils-1.7.1">bridge-utils-1.7.1</a> is installed and the
-          following options in the kernel configuration are enabled:
+          To use the <span class="quote">“<span class=
+          "quote">bridge</span>”</span> network device, as explained below,
+          check that <a class="xref" href="../basicnet/bridge-utils.html"
+          title="bridge-utils-1.7.1">bridge-utils-1.7.1</a> is installed and
+          the following options in the kernel configuration are enabled:
         </p>
         <pre class="screen">[*] N<span class=
         "blue">e</span>tworking support ---&gt;                                                [NET]
@@ -365,9 +363,9 @@ make</kbd></pre>
         <pre class="root"><kbd class="command">make install</kbd></pre>
         <p>
           Change the permissions and ownership of a helper script, which is
-          needed when using the <span class="quote">&ldquo;<span class=
-          "quote">bridge</span>&rdquo;</span> network device (see below).
-          Again as the <code class="systemitem">root</code> user, issue:
+          needed when using the <span class="quote">“<span class=
+          "quote">bridge</span>”</span> network device (see below). Again as
+          the <code class="systemitem">root</code> user, issue:
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -376,9 +374,9 @@ make</kbd></pre>
           </h3>
           <p>
             You need to add any users who might use the <span class=
-            "quote">&ldquo;<span class="quote">bridge</span>&rdquo;</span>
-            network device into the <code class="systemitem">kvm</code> group
-            even if <span class="phrase"><a class="xref" href=
+            "quote">“<span class="quote">bridge</span>”</span> network device
+            into the <code class="systemitem">kvm</code> group even if
+            <span class="phrase"><a class="xref" href=
             "../general/systemd.html" title=
             "Systemd-255">Systemd-255</a></span> is installed.
           </p>
@@ -441,12 +439,12 @@ chmod 4750 /usr/libexec/qemu-bridge-helper</kbd></pre>
           up the virtual machine are in close analogy with those to set up a
           real computer. You'll need to decide about CPU, memory, disk, USB
           devices, network card(s), screen size, etc. Once the <span class=
-          "quote">&ldquo;<span class="quote">hardware</span>&rdquo;</span> is
-          decided, you'll have for example to choose how to connect the
-          machine to internet, and/or to install an OS. In the following, we
-          show basic ways of performing those steps. But qemu is much more
-          than this, and it is strongly advised to read the qemu
-          documentation in <code class=
+          "quote">“<span class="quote">hardware</span>”</span> is decided,
+          you'll have for example to choose how to connect the machine to
+          internet, and/or to install an OS. In the following, we show basic
+          ways of performing those steps. But qemu is much more than this,
+          and it is strongly advised to read the qemu documentation in
+          <code class=
           "filename">/usr/share/doc/qemu-8.2.0/qemu-doc.html</code>.
         </p>
         <div class="admon note">
@@ -456,11 +454,10 @@ chmod 4750 /usr/libexec/qemu-bridge-helper</kbd></pre>
           </h3>
           <p>
             It is standard practice to name the computer running qemu
-            <span class="quote">&ldquo;<span class=
-            "quote">host</span>&rdquo;</span> and the emulated machine
-            running under qemu the <span class="quote">&ldquo;<span class=
-            "quote">guest</span>&rdquo;</span>. We'll use those notations in
-            the following.
+            <span class="quote">“<span class="quote">host</span>”</span> and
+            the emulated machine running under qemu the <span class=
+            "quote">“<span class="quote">guest</span>”</span>. We'll use
+            those notations in the following.
           </p>
         </div>
         <div class="admon note">
@@ -473,8 +470,8 @@ chmod 4750 /usr/libexec/qemu-bridge-helper</kbd></pre>
             <code class="filename">qemu</code>, has been created.
             Additionally, <span class="command"><strong>qemu</strong></span>
             should be run in a graphical environment. But it is possible to
-            use qemu <span class="quote">&ldquo;<span class=
-            "quote">headless</span>&rdquo;</span> or through SSH. See the
+            use qemu <span class="quote">“<span class=
+            "quote">headless</span>”</span> or through SSH. See the
             documentation for the various possibilities.
           </p>
         </div>
@@ -585,12 +582,12 @@ qemu-img create -f qcow2 $VDISK_FILENAME $VDISK_SIZE</kbd></pre>
         <p>
           <em class="parameter"><code>-netdev
           user,id=&lt;netid&gt;</code></em>: defines the network <span class=
-          "quote">&ldquo;<span class="quote">user</span>&rdquo;</span>
-          device. This is a virtual local network with addresses 10.0.2.0/24,
-          where the host has address 10.0.2.2 and acts as a gateway to
-          internet, and with a name server at address 10.0.2.3, and an smb
-          server at address 10.0.2.4. A builtin DHCP server can allocate
-          addresses between 10.0.2.15 and 10.0.2.31.
+          "quote">“<span class="quote">user</span>”</span> device. This is a
+          virtual local network with addresses 10.0.2.0/24, where the host
+          has address 10.0.2.2 and acts as a gateway to internet, and with a
+          name server at address 10.0.2.3, and an smb server at address
+          10.0.2.4. A builtin DHCP server can allocate addresses between
+          10.0.2.15 and 10.0.2.31.
         </p>
         <p>
           <em class="parameter"><code>-soundhw &lt;model&gt;</code></em>:
@@ -659,8 +656,8 @@ qemu-img create -f qcow2 $VDISK_FILENAME $VDISK_SIZE</kbd></pre>
           To set the resolution of the emulated display for a Xorg server
           running in the guest Linux system, read <a class="xref" href=
           "../x/xorg-config.html#xdisplay" title=
-          "Fine Tuning Display Settings">the section called &ldquo;Fine
-          Tuning Display Settings&rdquo;</a>.
+          "Fine Tuning Display Settings">the section called “Fine Tuning
+          Display Settings”</a>.
         </p>
         <h3>
           Networking
@@ -673,14 +670,13 @@ qemu-img create -f qcow2 $VDISK_FILENAME $VDISK_SIZE</kbd></pre>
           And in the case several guests are running, they cannot communicate
           with each other. Other network devices can be used for this
           purpose. For example, there is the <span class=
-          "quote">&ldquo;<span class="quote">socket</span>&rdquo;</span>
-          device, which allows several guests to share a common virtual
-          network. In the following, we describe in more details how to set
-          up the <span class="quote">&ldquo;<span class=
-          "quote">bridge</span>&rdquo;</span> device, which allows the guests
-          to appear as if connected to the local network. All the commands
-          below should be run as the <code class="systemitem">root</code>
-          user.
+          "quote">“<span class="quote">socket</span>”</span> device, which
+          allows several guests to share a common virtual network. In the
+          following, we describe in more details how to set up the
+          <span class="quote">“<span class="quote">bridge</span>”</span>
+          device, which allows the guests to appear as if connected to the
+          local network. All the commands below should be run as the
+          <code class="systemitem">root</code> user.
         </p>
         <p>
           Allow the host to forward IP packets:
@@ -916,7 +912,7 @@ echo allow br0 &gt; /etc/qemu/bridge.conf</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>

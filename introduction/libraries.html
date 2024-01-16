@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content=
-    "application/xhtml+xml; charset=iso-8859-1" />
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
       Libraries: Static or shared?
     </title>
@@ -13,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1215">
+  <body class="blfs" id="blfs-r12.0-1224">
     <div class="navheader">
       <h4>
-        Beyond Linux<sup>�</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1215
+        Beyond Linux<sup>®</sup> From Scratch <span class=
+        "phrase">(systemd</span> Edition) - Version r12.0-1224
       </h4>
       <h3>
         Chapter&nbsp;2.&nbsp;Important Information
@@ -43,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>
@@ -66,12 +65,12 @@
         </p>
         <p>
           On almost all Linux platforms there are also <span class=
-          "quote">&ldquo;<span class="quote">shared</span>&rdquo;</span> (or
-          equivalently <span class="quote">&ldquo;<span class=
-          "quote">dynamic</span>&rdquo;</span>) libraries (with names of the
-          form <code class="filename">libfoo.so</code>) &ndash; one copy of
-          the library is loaded into virtual memory, and shared by all the
-          programs which call any of its functions. This is space efficient.
+          "quote">“<span class="quote">shared</span>”</span> (or equivalently
+          <span class="quote">“<span class="quote">dynamic</span>”</span>)
+          libraries (with names of the form <code class=
+          "filename">libfoo.so</code>) – one copy of the library is loaded
+          into virtual memory, and shared by all the programs which call any
+          of its functions. This is space efficient.
         </p>
         <p>
           In the past, essential programs such as a shell were often linked
@@ -99,7 +98,7 @@
           is unchanged, e.g. going from <code class=
           "filename">libfoo.so.2.0</code> to <code class=
           "filename">libfoo.so.2.1</code>. Going to <code class=
-          "filename">libfoo.so.3</code> will require recompilation &ndash;
+          "filename">libfoo.so.3</code> will require recompilation –
           <span class="command"><strong>ldd</strong></span> can be used to
           find which programs use the old version). If a program is linked to
           a static library, the program always has to be recompiled. If you
@@ -139,9 +138,9 @@
           library which is only used by the programs within the package and,
           crucially, the library is <span class=
           "emphasis"><em>not</em></span> installed as a standalone library.
-          These internal libraries are not a problem &ndash; if the package
-          has to be rebuilt to fix a bug or vulnerability, nothing else is
-          linked to them.
+          These internal libraries are not a problem – if the package has to
+          be rebuilt to fix a bug or vulnerability, nothing else is linked to
+          them.
         </p>
         <p>
           When BLFS mentions system libraries, it means shared versions of
@@ -151,7 +150,7 @@
           "../pst/gs.html" title=
           "ghostscript-10.02.1">ghostscript-10.02.1</a> bundle many other
           libraries in their build tree. The version they ship is often older
-          than the version used in the system, so it may contain bugs &ndash;
+          than the version used in the system, so it may contain bugs –
           sometimes developers go to the trouble of fixing bugs in their
           included libraries, other times they do not.
         </p>
@@ -194,7 +193,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>

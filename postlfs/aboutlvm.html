@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content=
-    "application/xhtml+xml; charset=iso-8859-1" />
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
       About Logical Volume Management (LVM)
     </title>
@@ -13,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1215">
+  <body class="blfs" id="blfs-r12.0-1224">
     <div class="navheader">
       <h4>
-        Beyond Linux<sup>�</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1215
+        Beyond Linux<sup>®</sup> From Scratch <span class=
+        "phrase">(systemd</span> Edition) - Version r12.0-1224
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -41,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>
@@ -177,18 +176,17 @@ mount /dev/lfs-lvm/mysql /srv/mysql</kbd></pre>
         A LVM logical volume can host a root filesystem, but requires the use
         of an initramfs (initial RAM file system). The initramfs proposed in
         <a class="xref" href="initramfs.html" title="About initramfs">the
-        section called &ldquo;About initramfs&rdquo;</a> allows to pass the
-        lvm volume in the <em class="parameter"><code>root=</code></em>
-        switch of the kernel command line.
+        section called “About initramfs”</a> allows to pass the lvm volume in
+        the <em class="parameter"><code>root=</code></em> switch of the
+        kernel command line.
       </p>
       <p>
         If not using an initramfs, there is a race condition in <span class=
         "application">systemd</span> preventing mounting logical volumes
         through <code class="filename">/etc/fstab</code>. You must create a
-        <span class="quote">&ldquo;<span class=
-        "quote">mount</span>&rdquo;</span> unit (see systemd.mount(5)) as in
-        the following example, which mounts the <code class=
-        "filename">/home</code> directory automatically at boot:
+        <span class="quote">“<span class="quote">mount</span>”</span> unit
+        (see systemd.mount(5)) as in the following example, which mounts the
+        <code class="filename">/home</code> directory automatically at boot:
       </p>
       <pre class="root"><kbd class=
       "command">cat &gt; /etc/systemd/system/home.mount &lt;&lt; EOF
@@ -224,7 +222,7 @@ EOF</kbd></pre>
         "https://tldp.org/HOWTO/LVM-HOWTO/">LVM HOWTO</a> and the lvm man
         pages. A good in-depth <a class="ulink" href=
         "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/index">
-        guide</a> is available from RedHat<sup>�</sup>, although it makes
+        guide</a> is available from RedHat<sup>®</sup>, although it makes
         sometimes reference to proprietary tools.
       </p>
     </div>
@@ -248,7 +246,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>

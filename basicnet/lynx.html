@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content=
-    "application/xhtml+xml; charset=iso-8859-1" />
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
       Lynx-2.8.9rel.1
     </title>
@@ -13,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1215">
+  <body class="blfs" id="blfs-r12.0-1224">
     <div class="navheader">
       <h4>
-        Beyond Linux<sup>�</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1215
+        Beyond Linux<sup>®</sup> From Scratch <span class=
+        "phrase">(systemd</span> Edition) - Version r12.0-1224
       </h4>
       <h3>
         Chapter&nbsp;18.&nbsp;Text Web Browsers
@@ -42,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>
@@ -267,7 +266,7 @@ chgrp -v -R root /usr/share/doc/lynx-2.8.9rel.1/lynx_doc</kbd></pre>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm55922" name="idm55922"></a>Configuration Information
+            <a id="idm55930" name="idm55930"></a>Configuration Information
           </h4>
           <p>
             The proper way to get the display character set is to examine the
@@ -290,9 +289,9 @@ chgrp -v -R root /usr/share/doc/lynx-2.8.9rel.1/lynx_doc</kbd></pre>
             to the network when one edits the contents of text areas. The
             only solution to this problem is to configure <span class=
             "application">Lynx</span> to use an external editor (bound to the
-            <span class="quote">&ldquo;<span class="quote">Ctrl+X
-            e</span>&rdquo;</span> key combination by default). Still as the
-            <code class="systemitem">root</code> user:
+            <span class="quote">“<span class="quote">Ctrl+X e</span>”</span>
+            key combination by default). Still as the <code class=
+            "systemitem">root</code> user:
           </p>
           <pre class="root"><kbd class=
           "command">sed -e '/#DEFAULT_ED/ a DEFAULT_EDITOR:vi'       \
@@ -300,28 +299,22 @@ chgrp -v -R root /usr/share/doc/lynx-2.8.9rel.1/lynx_doc</kbd></pre>
           <p>
             <span class="application">Lynx</span> handles the following
             values of the DEFAULT_EDITOR option specially by adding
-            cursor-positioning arguments: <span class=
-            "quote">&ldquo;<span class="quote">emacs</span>&rdquo;</span>,
-            <span class="quote">&ldquo;<span class=
-            "quote">jed</span>&rdquo;</span>, <span class=
-            "quote">&ldquo;<span class="quote">jmacs</span>&rdquo;</span>,
-            <span class="quote">&ldquo;<span class=
-            "quote">joe</span>&rdquo;</span>, <span class=
-            "quote">&ldquo;<span class="quote">jove</span>&rdquo;</span>,
-            <span class="quote">&ldquo;<span class=
-            "quote">jpico</span>&rdquo;</span>, <span class=
-            "quote">&ldquo;<span class="quote">jstar</span>&rdquo;</span>,
-            <span class="quote">&ldquo;<span class=
-            "quote">nano</span>&rdquo;</span>, <span class=
-            "quote">&ldquo;<span class="quote">pico</span>&rdquo;</span>,
-            <span class="quote">&ldquo;<span class=
-            "quote">rjoe</span>&rdquo;</span>, <span class=
-            "quote">&ldquo;<span class="quote">vi</span>&rdquo;</span> (but
-            not <span class="quote">&ldquo;<span class=
-            "quote">vim</span>&rdquo;</span>: in order to position the cursor
-            in <a class="xref" href="../postlfs/vim.html" title=
-            "Vim-9.0.2189">Vim-9.0.2189</a>, set this option to <span class=
-            "quote">&ldquo;<span class="quote">vi</span>&rdquo;</span>).
+            cursor-positioning arguments: <span class="quote">“<span class=
+            "quote">emacs</span>”</span>, <span class="quote">“<span class=
+            "quote">jed</span>”</span>, <span class="quote">“<span class=
+            "quote">jmacs</span>”</span>, <span class="quote">“<span class=
+            "quote">joe</span>”</span>, <span class="quote">“<span class=
+            "quote">jove</span>”</span>, <span class="quote">“<span class=
+            "quote">jpico</span>”</span>, <span class="quote">“<span class=
+            "quote">jstar</span>”</span>, <span class="quote">“<span class=
+            "quote">nano</span>”</span>, <span class="quote">“<span class=
+            "quote">pico</span>”</span>, <span class="quote">“<span class=
+            "quote">rjoe</span>”</span>, <span class="quote">“<span class=
+            "quote">vi</span>”</span> (but not <span class=
+            "quote">“<span class="quote">vim</span>”</span>: in order to
+            position the cursor in <a class="xref" href="../postlfs/vim.html"
+            title="Vim-9.0.2189">Vim-9.0.2189</a>, set this option to
+            <span class="quote">“<span class="quote">vi</span>”</span>).
           </p>
           <p>
             By default, <span class="application">Lynx</span> doesn't save
@@ -409,7 +402,7 @@ chgrp -v -R root /usr/share/doc/lynx-2.8.9rel.1/lynx_doc</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>

@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content=
-    "application/xhtml+xml; charset=iso-8859-1" />
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
       Notes on Building Software
     </title>
@@ -13,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1215">
+  <body class="blfs" id="blfs-r12.0-1224">
     <div class="navheader">
       <h4>
-        Beyond Linux<sup>�</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1215
+        Beyond Linux<sup>®</sup> From Scratch <span class=
+        "phrase">(systemd</span> Edition) - Version r12.0-1224
       </h4>
       <h3>
         Chapter&nbsp;2.&nbsp;Important Information
@@ -43,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>
@@ -175,19 +174,19 @@ tar -xvf filename.tar.bz2</kbd></pre>
           MD5 is not cryptographically secure, so the md5sums are only
           provided for detecting unmalicious changes to the file content. For
           example, an error or truncation introduced during network transfer,
-          or a <span class="quote">&ldquo;<span class=
-          "quote">stealth</span>&rdquo;</span> update to the package from the
+          or a <span class="quote">“<span class=
+          "quote">stealth</span>”</span> update to the package from the
           upstream (updating the content of a released tarball instead of
           making a new release properly).
         </p>
         <p>
-          There is no <span class="quote">&ldquo;<span class=
-          "quote">100%</span>&rdquo;</span> secure way to make sure the
-          genuity of the source files. Assuming the upstream is managing
-          their website correctly (the private key is not leaked and the
-          domain is not hijacked), and the trust anchors have been set up
-          correctly using <a class="xref" href="../postlfs/make-ca.html"
-          title="make-ca-1.13">make-ca-1.13</a> on the BLFS system, we can
+          There is no <span class="quote">“<span class=
+          "quote">100%</span>”</span> secure way to make sure the genuity of
+          the source files. Assuming the upstream is managing their website
+          correctly (the private key is not leaked and the domain is not
+          hijacked), and the trust anchors have been set up correctly using
+          <a class="xref" href="../postlfs/make-ca.html" title=
+          "make-ca-1.13">make-ca-1.13</a> on the BLFS system, we can
           reasonably trust download URLs to the upstream official website
           <span class="bold"><strong>with https protocol</strong></span>.
           Note that BLFS book itself is published on a website with https, so
@@ -290,13 +289,12 @@ tar -xvf filename.tar.bz2</kbd></pre>
           For instance, an Intel Core i9-13900K CPU contains 8 performance
           (P) cores and 16 efficiency (E) cores, and the P cores support SMT
           (Simultaneous MultiThreading, also known as <span class=
-          "quote">&ldquo;<span class=
-          "quote">Hyper-Threading</span>&rdquo;</span>) so each P core can
-          run two threads simultaneously and the Linux kernel will treat each
-          P core as two logical cores. As the result, there are 32 logical
-          cores in total. To utilize all these logical cores running
-          <span class="command"><strong>make</strong></span>, we can set an
-          environment variable to tell <span class=
+          "quote">“<span class="quote">Hyper-Threading</span>”</span>) so
+          each P core can run two threads simultaneously and the Linux kernel
+          will treat each P core as two logical cores. As the result, there
+          are 32 logical cores in total. To utilize all these logical cores
+          running <span class="command"><strong>make</strong></span>, we can
+          set an environment variable to tell <span class=
           "command"><strong>make</strong></span> to run 32 jobs
           simultaneously:
         </p>
@@ -346,8 +344,8 @@ tar -xvf filename.tar.bz2</kbd></pre>
           number of logical cores to use. Read <a class="xref" href=
           "notes-on-building.html#build-in-cgroup" title=
           "Use Linux Control Group to Limit the Resource Usage">the section
-          called &ldquo;Use Linux Control Group to Limit the Resource
-          Usage&rdquo;</a> if you want to set such a hard limit.
+          called “Use Linux Control Group to Limit the Resource Usage”</a> if
+          you want to set such a hard limit.
         </p>
         <p>
           Generally the number of processes should not exceed the number of
@@ -492,9 +490,9 @@ systemd-run --user --pty --pipe --wait -G -d \
           When the <span class="command"><strong>nproc</strong></span> or
           <span class="command"><strong>ninja</strong></span> command runs in
           a cgroup, it will use the number of logical cores assigned to the
-          cgroup as the <span class="quote">&ldquo;<span class="quote">system
-          logical core count</span>&rdquo;</span>. For example, in a cgroup
-          with logical cores 0-3 assigned, <span class=
+          cgroup as the <span class="quote">“<span class="quote">system
+          logical core count</span>”</span>. For example, in a cgroup with
+          logical cores 0-3 assigned, <span class=
           "command"><strong>nproc</strong></span> will print <code class=
           "computeroutput">4</code>, and <span class=
           "command"><strong>ninja</strong></span> will run 6 (4 + 2) jobs
@@ -663,9 +661,9 @@ chmod 755 blfs-yes-test1</kbd></pre>
           prompt. This technique could be used in instances when otherwise
           you would have to page through the output of a file (such as a
           license agreement) and then answer the question of <span class=
-          "quote">&ldquo;<span class="quote">do you accept the
-          above?</span>&rdquo;</span>. For this example, another short
-          <span class="application">Bash</span> script is required:
+          "quote">“<span class="quote">do you accept the
+          above?</span>”</span>. For this example, another short <span class=
+          "application">Bash</span> script is required:
         </p>
         <pre class="userinput"><kbd class=
         "command">cat &gt; blfs-yes-test2 &lt;&lt; "EOF"
@@ -709,8 +707,8 @@ chmod 755 blfs-yes-test2</kbd></pre>
         <p>
           Finally, keep in mind that there are many ways to automate and/or
           script the build commands. There is not a single <span class=
-          "quote">&ldquo;<span class="quote">correct</span>&rdquo;</span> way
-          to do it. Your imagination is the only limit.
+          "quote">“<span class="quote">correct</span>”</span> way to do it.
+          Your imagination is the only limit.
         </p>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
@@ -729,42 +727,41 @@ chmod 755 blfs-yes-test2</kbd></pre>
                 <span class="emphasis"><em>Required</em></span> means that
                 the target package cannot be correctly built without the
                 dependency having first been installed, except if the
-                dependency is said to be <span class=
-                "quote">&ldquo;<span class=
-                "quote">runtime</span>&rdquo;</span>, which means the target
+                dependency is said to be <span class="quote">“<span class=
+                "quote">runtime</span>”</span>, which means the target
                 package can be built but cannot function without it.
               </p>
               <p>
                 Note that a target package can start to <span class=
-                "quote">&ldquo;<span class=
-                "quote">function</span>&rdquo;</span> in many subtle ways: an
-                installed configuration file can make the init system, cron
-                daemon, or bus daemon to run a program automatically; another
-                package using the target package as an dependency can run a
-                program from the target package in the building system; and
-                the configuration sections in the BLFS book may also run a
-                program from a just installed package. So if you are
-                installing the target package without a <span class=
-                "emphasis"><em>Required (runtime)</em></span> dependency
-                installed, You should install the dependency as soon as
-                possible after the installation of the target package.
+                "quote">“<span class="quote">function</span>”</span> in many
+                subtle ways: an installed configuration file can make the
+                init system, cron daemon, or bus daemon to run a program
+                automatically; another package using the target package as an
+                dependency can run a program from the target package in the
+                building system; and the configuration sections in the BLFS
+                book may also run a program from a just installed package. So
+                if you are installing the target package without a
+                <span class="emphasis"><em>Required (runtime)</em></span>
+                dependency installed, You should install the dependency as
+                soon as possible after the installation of the target
+                package.
               </p>
             </li>
             <li class="listitem">
               <p>
                 <span class="emphasis"><em>Recommended</em></span> means that
                 BLFS strongly suggests this package is installed first
-                (except if said to be <span class="quote">&ldquo;<span class=
-                "quote">runtime</span>&rdquo;</span>, see below) for a clean
-                and trouble-free build, that won't have issues either during
-                the build process, or at run-time. The instructions in the
-                book assume these packages are installed. Some changes or
+                (except if said to be <span class="quote">“<span class=
+                "quote">runtime</span>”</span>, see below) for a clean and
+                trouble-free build, that won't have issues either during the
+                build process, or at run-time. The instructions in the book
+                assume these packages are installed. Some changes or
                 workarounds may be required if these packages are not
                 installed. If a recommended dependency is said to be
-                <span class="quote">&ldquo;<span class=
-                "quote">runtime</span>&rdquo;</span>, it means that BLFS
-                strongly suggests that this dependency is installed before
-                using the package, for getting full functionality.
+                <span class="quote">“<span class=
+                "quote">runtime</span>”</span>, it means that BLFS strongly
+                suggests that this dependency is installed before using the
+                package, for getting full functionality.
               </p>
             </li>
             <li class="listitem">
@@ -778,11 +775,11 @@ chmod 755 blfs-yes-test2</kbd></pre>
                 need additional configuration options to enable them when the
                 target package is built. Such additional options are often
                 documented in the BLFS book. If an optional dependency is
-                said to be <span class="quote">&ldquo;<span class=
-                "quote">runtime</span>&rdquo;</span>, it means you may
-                install the dependency after installing the target package to
-                support some optional features of the target package if you
-                need these features.
+                said to be <span class="quote">“<span class=
+                "quote">runtime</span>”</span>, it means you may install the
+                dependency after installing the target package to support
+                some optional features of the target package if you need
+                these features.
               </p>
               <p>
                 An optional dependency may be out of BLFS. If you need such
@@ -919,20 +916,19 @@ chmod 755 blfs-yes-test2</kbd></pre>
           changes files in place, which may break anything using it if it is
           loaded in memory. Note that if a file is in use but just removed
           from the disk (i.e. not overwritten nor modified), this is not a
-          problem since the kernel can use <span class=
-          "quote">&ldquo;<span class="quote">deleted</span>&rdquo;</span>
-          files. Look at <code class="filename">/proc/*/maps</code> and it is
-          likely that you'll see some <span class=
-          "emphasis"><em>(deleted)</em></span> entries. The <span class=
-          "command"><strong>mv</strong></span> just removes the destination
-          file from the directory but does not touch its content, so that it
-          satisfies the condition for the kernel to use the old (deleted)
-          file. But this approach can detach hard links into duplicated
-          copies, causing a bloat which is obviously unwanted as we are
-          stripping to reduce system size. If two files in a same file system
-          share the same inode number, they are hard links to each other and
-          we should reconstruct the link. The script below is just an
-          example. It should be run as the <code class=
+          problem since the kernel can use <span class="quote">“<span class=
+          "quote">deleted</span>”</span> files. Look at <code class=
+          "filename">/proc/*/maps</code> and it is likely that you'll see
+          some <span class="emphasis"><em>(deleted)</em></span> entries. The
+          <span class="command"><strong>mv</strong></span> just removes the
+          destination file from the directory but does not touch its content,
+          so that it satisfies the condition for the kernel to use the old
+          (deleted) file. But this approach can detach hard links into
+          duplicated copies, causing a bloat which is obviously unwanted as
+          we are stripping to reduce system size. If two files in a same file
+          system share the same inode number, they are hard links to each
+          other and we should reconstruct the link. The script below is just
+          an example. It should be run as the <code class=
           "systemitem">root</code> user:
         </p>
         <pre class="userinput"><kbd class=
@@ -1043,10 +1039,9 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
         </h3>
         <p>
           This combination is often described as <span class=
-          "quote">&ldquo;<span class="quote">CMMI</span>&rdquo;</span>
-          (configure, make, make install) and is used here to also cover the
-          few packages which have a configure script that is not generated by
-          autotools.
+          "quote">“<span class="quote">CMMI</span>”</span> (configure, make,
+          make install) and is used here to also cover the few packages which
+          have a configure script that is not generated by autotools.
         </p>
         <p>
           Sometimes running <span class="command"><strong>./configure
@@ -1067,12 +1062,12 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
           In most CMMI packages, running <span class=
           "command"><strong>make</strong></span> will list each command and
           run it, interspersed with any warnings. But some packages try to be
-          <span class="quote">&ldquo;<span class=
-          "quote">silent</span>&rdquo;</span> and only show which file they
-          are compiling or linking instead of showing the command line. If
-          you need to inspect the command, either because of an error, or
-          just to see what options and flags are being used, adding
-          <code class="option">V=1</code> to the make invocation may help.
+          <span class="quote">“<span class="quote">silent</span>”</span> and
+          only show which file they are compiling or linking instead of
+          showing the command line. If you need to inspect the command,
+          either because of an error, or just to see what options and flags
+          are being used, adding <code class="option">V=1</code> to the make
+          invocation may help.
         </p>
         <h3>
           <a id="cmake-info" name="cmake-info"></a>CMake
@@ -1300,12 +1295,11 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
           "replaceable"><code>&lt;N&gt;</code></em></code> for invocations of
           <span class="command"><strong>x.py</strong></span> (together with
           the <code class="envar">CARGO_BUILD_JOBS</code> environment
-          variable, which looks like a <span class=
-          "quote">&ldquo;<span class="quote">belt and
-          braces</span>&rdquo;</span> approach but seems to be necessary)
-          mostly works. The exception is running the tests when building
-          rustc, some of them will nevertheless use all online CPUs, at least
-          as of rustc-1.42.0.
+          variable, which looks like a <span class="quote">“<span class=
+          "quote">belt and braces</span>”</span> approach but seems to be
+          necessary) mostly works. The exception is running the tests when
+          building rustc, some of them will nevertheless use all online CPUs,
+          at least as of rustc-1.42.0.
         </p>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
@@ -1369,24 +1363,23 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
         </div>
         <p>
           When a shared library is built by GCC, a feature named <span class=
-          "quote">&ldquo;<span class="quote">semantic
-          interposition</span>&rdquo;</span> is enabled by default. When the
-          shared library refers to a symbol name with external linkage and
-          default visibility, if the symbol exists in both the shared library
-          and the main executable, semantic interposition guarantees the
-          symbol in the main executable is always used. This feature was
-          invented in an attempt to make the behavior of linking a shared
-          library and linking a static library as similar as possible. Today
-          only a small number of packages still depend on semantic
-          interposition, but the feature is still on by the default of GCC,
-          causing many optimizations disabled for shared libraries because
-          they conflict with semantic interposition. The <code class=
-          "option">-fno-semantic-interposition</code> option can be passed to
-          <span class="command"><strong>gcc</strong></span> or <span class=
-          "command"><strong>g++</strong></span> to disable semantic
-          interposition and enable more optimizations for shared libraries.
-          This option is used as the default of some packages (for example
-          <a class="xref" href="../general/python3.html" title=
+          "quote">“<span class="quote">semantic interposition</span>”</span>
+          is enabled by default. When the shared library refers to a symbol
+          name with external linkage and default visibility, if the symbol
+          exists in both the shared library and the main executable, semantic
+          interposition guarantees the symbol in the main executable is
+          always used. This feature was invented in an attempt to make the
+          behavior of linking a shared library and linking a static library
+          as similar as possible. Today only a small number of packages still
+          depend on semantic interposition, but the feature is still on by
+          the default of GCC, causing many optimizations disabled for shared
+          libraries because they conflict with semantic interposition. The
+          <code class="option">-fno-semantic-interposition</code> option can
+          be passed to <span class="command"><strong>gcc</strong></span> or
+          <span class="command"><strong>g++</strong></span> to disable
+          semantic interposition and enable more optimizations for shared
+          libraries. This option is used as the default of some packages (for
+          example <a class="xref" href="../general/python3.html" title=
           "Python-3.12.1">Python-3.12.1</a>), and it's also the default of
           Clang.
         </p>
@@ -1399,8 +1392,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
           If building Perl or Python modules, in general the <code class=
           "envar">CFLAGS</code> and <code class="envar">CXXFLAGS</code> used
           are those which were used by those <span class=
-          "quote">&ldquo;<span class="quote">parent</span>&rdquo;</span>
-          packages.
+          "quote">“<span class="quote">parent</span>”</span> packages.
         </p>
         <p>
           For <code class="envar">LDFLAGS</code>, there are three options can
@@ -1424,10 +1416,9 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
           symbol in <code class="systemitem">lib<em class=
           "replaceable"><code>foo</code></em></code> is really referred from
           the executable or shared library being linked. This can sometimes
-          mitigate the <span class="quote">&ldquo;<span class=
-          "quote">excessive dependencies to shared
-          libraries</span>&rdquo;</span> issues caused by <span class=
-          "application">libtool</span>.
+          mitigate the <span class="quote">“<span class="quote">excessive
+          dependencies to shared libraries</span>”</span> issues caused by
+          <span class="application">libtool</span>.
         </p>
         <p>
           With <code class="option">-Wl,-z,pack-relative-relocs</code>, the
@@ -1484,8 +1475,8 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
           The main distros use much more, such as RELRO (Relocation Read
           Only) and perhaps <code class=
           "option">-fstack-clash-protection</code>. You may also encounter
-          the so-called <span class="quote">&ldquo;<span class=
-          "quote">userspace retpoline</span>&rdquo;</span> (<code class=
+          the so-called <span class="quote">“<span class="quote">userspace
+          retpoline</span>”</span> (<code class=
           "option">-mindirect-branch=thunk</code> etc.) which is the
           equivalent of the spectre mitigations applied to the linux kernel
           in late 2018. The kernel mitigations caused a lot of complaints
@@ -1522,7 +1513,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>

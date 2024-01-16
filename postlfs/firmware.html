@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content=
-    "application/xhtml+xml; charset=iso-8859-1" />
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
       About Firmware
     </title>
@@ -13,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1215">
+  <body class="blfs" id="blfs-r12.0-1224">
     <div class="navheader">
       <h4>
-        Beyond Linux<sup>�</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1215
+        Beyond Linux<sup>®</sup> From Scratch <span class=
+        "phrase">(systemd</span> Edition) - Version r12.0-1224
       </h4>
       <h3>
         Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
@@ -42,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>
@@ -168,7 +167,7 @@
           Although not needed to load a firmware blob, the following tools
           may be useful for determining, obtaining, or preparing the needed
           firmware in order to load it into the system: <a class="xref" href=
-          "../general/cpio.html" title="cpio-2.14">cpio-2.14</a>, <a class=
+          "../general/cpio.html" title="cpio-2.15">cpio-2.15</a>, <a class=
           "xref" href="../general/git.html" title=
           "Git-2.43.0">git-2.43.0</a>, <a class="xref" href=
           "../general/pciutils.html" title=
@@ -248,8 +247,8 @@
         <p>
           Convert the cpu family, model and stepping to pairs of hexadecimal
           digits, and remember the value of the <span class=
-          "quote">&ldquo;<span class="quote">microcode</span>&rdquo;</span>
-          field. You can now check if there is any microcode available.
+          "quote">“<span class="quote">microcode</span>”</span> field. You
+          can now check if there is any microcode available.
         </p>
         <p>
           If you are creating an initrd to update firmware for different
@@ -303,13 +302,13 @@
             CPU) the relevant values are cpu family 6, model 140, stepping 1
             so in this case the required identification is 06-8c-01. The
             releasenote says the latest microcode for it is versioned 0xb4.
-            If the value of the <span class="quote">&ldquo;<span class=
-            "quote">microcode</span>&rdquo;</span> field in <code class=
+            If the value of the <span class="quote">“<span class=
+            "quote">microcode</span>”</span> field in <code class=
             "filename">/proc/cpuinfo</code> is 0xb4 or greater, it indicates
             the microcode update is already applied by the BIOS. Otherwise,
             proceed to <a class="xref" href="firmware.html#early-microcode"
-            title="Early loading of microcode">the section called
-            &ldquo;Early loading of microcode&rdquo;</a>.
+            title="Early loading of microcode">the section called “Early
+            loading of microcode”</a>.
           </p>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
@@ -347,14 +346,14 @@
           <pre class="screen"><code class=
           "computeroutput">Family=0x10 Model=0x05 Stepping=0x03: Patch=0x010000c8 Length=960 bytes</code></pre>
           <p>
-            If the value of the <span class="quote">&ldquo;<span class=
-            "quote">microcode</span>&rdquo;</span> field in <code class=
+            If the value of the <span class="quote">“<span class=
+            "quote">microcode</span>”</span> field in <code class=
             "filename">/proc/cpuinfo</code> is 0x10000c8 or greater, it
             indicates the BIOS has already applied the microcode update.
             Otherwise, proceed to <a class="xref" href=
             "firmware.html#early-microcode" title=
-            "Early loading of microcode">the section called &ldquo;Early
-            loading of microcode&rdquo;</a>.
+            "Early loading of microcode">the section called “Early loading of
+            microcode”</a>.
           </p>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
@@ -369,7 +368,7 @@
             If you have established that updated microcode is available for
             your system, it is time to prepare it for early loading. This
             requires an additional package, <a class="xref" href=
-            "../general/cpio.html" title="cpio-2.14">cpio-2.14</a> and the
+            "../general/cpio.html" title="cpio-2.15">cpio-2.15</a> and the
             creation of an initrd which will need to be added to grub.cfg.
           </p>
           <p>
@@ -414,7 +413,7 @@ cd initrd</kbd></pre>
           <p>
             If you are already booting with an initrd (see <a class="xref"
             href="initramfs.html" title="About initramfs">the section called
-            &ldquo;About initramfs&rdquo;</a>), you should run <span class=
+            “About initramfs”</a>), you should run <span class=
             "command"><strong>mkinitramfs</strong></span> again after putting
             the appropriate blob or container into <code class=
             "filename">/lib/firmware</code>. More precisely, put an intel
@@ -487,9 +486,9 @@ cd initrd</kbd></pre>
             Early radeon devices only needed a single 2K blob of firmware.
             Recent devices need several different blobs, and some of them are
             much bigger. The total size of the radeon firmware directory is
-            over 500K &mdash; on a large modern system you can probably spare
-            the space, but it is still redundant to install all the unused
-            files each time you build a system.
+            over 500K — on a large modern system you can probably spare the
+            space, but it is still redundant to install all the unused files
+            each time you build a system.
           </p>
           <p>
             A better approach is to install <a class="xref" href=
@@ -503,9 +502,9 @@ cd initrd</kbd></pre>
             wiki for <a class="ulink" href=
             "https://wiki.x.org/wiki/RadeonFeature/#index5h2">Decoder ring
             for engineering vs marketing names</a> to identify the family
-            (you may need to know this for the Xorg driver in BLFS &mdash;
-            Southern Islands and Sea Islands use the radeonsi driver) and the
-            specific model.
+            (you may need to know this for the Xorg driver in BLFS — Southern
+            Islands and Sea Islands use the radeonsi driver) and the specific
+            model.
           </p>
           <p>
             Now that you know which controller you are using, consult the
@@ -526,12 +525,11 @@ cp -v &lt;YOUR_BLOBS&gt; /lib/firmware/radeon</kbd></pre>
             is loaded. If you are building it as a part of the kernel image
             for any reason, you need to either include the firmware files in
             the initramfs (read <a class="xref" href="initramfs.html" title=
-            "About initramfs">the section called &ldquo;About
-            initramfs&rdquo;</a> for details), or include them in the kernel
-            image itself (read <a class="xref" href=
-            "firmware.html#firmware-in-kernel-image" title=
-            "Include Firmware Blobs in the Kernel Image">the section called
-            &ldquo;Include Firmware Blobs in the Kernel Image&rdquo;</a> for
+            "About initramfs">the section called “About initramfs”</a> for
+            details), or include them in the kernel image itself (read
+            <a class="xref" href="firmware.html#firmware-in-kernel-image"
+            title="Include Firmware Blobs in the Kernel Image">the section
+            called “Include Firmware Blobs in the Kernel Image”</a> for
             details).
           </p>
         </div>
@@ -586,12 +584,11 @@ cp -v &lt;YOUR_BLOBS&gt; /lib/firmware/amdgpu</kbd></pre>
             is loaded. If you are building it as a part of the kernel image
             for any reason, you need to either include the firmware files in
             the initramfs (read <a class="xref" href="initramfs.html" title=
-            "About initramfs">the section called &ldquo;About
-            initramfs&rdquo;</a> for details), or include them in the kernel
-            image itself (read <a class="xref" href=
-            "firmware.html#firmware-in-kernel-image" title=
-            "Include Firmware Blobs in the Kernel Image">the section called
-            &ldquo;Include Firmware Blobs in the Kernel Image&rdquo;</a> for
+            "About initramfs">the section called “About initramfs”</a> for
+            details), or include them in the kernel image itself (read
+            <a class="xref" href="firmware.html#firmware-in-kernel-image"
+            title="Include Firmware Blobs in the Kernel Image">the section
+            called “Include Firmware Blobs in the Kernel Image”</a> for
             details).
           </p>
         </div>
@@ -681,7 +678,7 @@ cp -d nv* vuc-* /lib/firmware/nouveau/</kbd></pre>
           to be loaded, or those files need to be included as firmware into
           the kernel, as explained above in <a class="xref" href=
           "firmware.html#video-firmware" title="Firmware for Video Cards">the
-          section called &ldquo;Firmware for Video Cards&rdquo;</a>.
+          section called “Firmware for Video Cards”</a>.
         </p>
         <p>
           The access point (AP) would send a country code to your wireless
@@ -735,9 +732,8 @@ cp -av -T --no-preserve=ownership ucm2 /usr/share/alsa/ucm2</kbd></pre>
           will load them) and the UCM configuration files are installed,
           following <a class="xref" href=
           "../multimedia/alsa-utils.html#alsa-utils-config-sect" title=
-          "Configuring ALSA Utilities">the section called &ldquo;Configuring
-          ALSA Utilities&rdquo;</a> to set up your sound card for ALSA
-          properly.
+          "Configuring ALSA Utilities">the section called “Configuring ALSA
+          Utilities”</a> to set up your sound card for ALSA properly.
         </p>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
@@ -751,8 +747,8 @@ cp -av -T --no-preserve=ownership ucm2 /usr/share/alsa/ucm2</kbd></pre>
           "pciutils-3.10.0">pciutils-3.10.0</a>, and then use <strong class=
           "userinput"><code>lspci</code></strong> to identify the device. You
           should then search online to check which module it uses, which
-          firmware, and where to obtain the firmware &mdash; not all of it is
-          in linux-firmware.
+          firmware, and where to obtain the firmware — not all of it is in
+          linux-firmware.
         </p>
         <p>
           If possible, you should begin by using a wired connection when you
@@ -782,12 +778,12 @@ cp -av -T --no-preserve=ownership ucm2 /usr/share/alsa/ucm2</kbd></pre>
           method to handle these drivers is building them as a kernel module.
           An alternative method is creating an initramfs (read <a class=
           "xref" href="initramfs.html" title="About initramfs">the section
-          called &ldquo;About initramfs&rdquo;</a> for details) including the
-          firmware files. If you don't want to use either methods, you may
-          include the firmware files in the kernel image itself. Install the
-          needed firmware files into <code class=
-          "filename">/lib/firmware</code> first, then set the following
-          kernel configuration and rebuild the kernel:
+          called “About initramfs”</a> for details) including the firmware
+          files. If you don't want to use either methods, you may include the
+          firmware files in the kernel image itself. Install the needed
+          firmware files into <code class="filename">/lib/firmware</code>
+          first, then set the following kernel configuration and rebuild the
+          kernel:
         </p>
         <pre class="screen"><span class="blue">D</span>evice Drivers ---&gt;
   <span class="blue">G</span>eneric Driver Options ---&gt;
@@ -848,7 +844,7 @@ make oldconfig</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux� From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>

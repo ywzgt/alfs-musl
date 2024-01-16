@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content=
-    "application/xhtml+xml; charset=iso-8859-1" />
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
       Important Notes About Upgrading Database Server Software
     </title>
@@ -13,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1215">
+  <body class="blfs" id="blfs-r12.0-1224">
     <div class="navheader">
       <h4>
-        Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1215
+        Beyond Linux<sup>Â®</sup> From Scratch <span class=
+        "phrase">(systemd</span> Edition) - Version r12.0-1224
       </h4>
       <h3>
         Chapter&nbsp;22.&nbsp;Databases
@@ -41,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond LinuxÂ® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>
@@ -114,10 +113,10 @@ Oct 26 17:11:53 SRVNAME systemd[1]: Failed to start PostgreSQL database server.<
           for use by the server software. When such server software is
           upgraded, the new software may utilize a different file format than
           had previously been used. Sometimes the new software can work with
-          the old format as well as the new one&mdash;but without the
-          performance improvements the new format provides. Other times, the
-          new server software will reformat the data files automatically
-          after the upgrade.
+          the old format as well as the new oneâ€”but without the performance
+          improvements the new format provides. Other times, the new server
+          software will reformat the data files automatically after the
+          upgrade.
         </p>
         <p>
           Unfortunately, the most likely case is that the new server software
@@ -140,7 +139,7 @@ Oct 26 17:11:53 SRVNAME systemd[1]: Failed to start PostgreSQL database server.<
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm59073" name="idm59073"></a>Upgrade by Backup and
+            <a id="idm59081" name="idm59081"></a>Upgrade by Backup and
             Restore
           </h4>
           <div class="admon note">
@@ -176,19 +175,18 @@ Oct 26 17:11:53 SRVNAME systemd[1]: Failed to start PostgreSQL database server.<
                   Create a full database backup using the old tools.
                 </p>
                 <p>
-                  This step creates an offline copy of the database
-                  files&mdash;for long term archiving, for disaster recovery,
-                  or as preparation for an upgrade. This offline backup
-                  consists of either (1) a full one-to-one copy of the
-                  current database files, or (2) a full backup of the
-                  database files from a certain point in time, plus all the
-                  journal data (that is Oracle® terminology, it is called
-                  "Continuous Archiving" or "write ahead log (WAL)" in
-                  Postgresql) describing the changes made after that point in
-                  time. This second form takes less time to create (if the DB
-                  software provides this type of journaling) because you only
-                  have to save the data that have changed since the last full
-                  backup was created.
+                  This step creates an offline copy of the database filesâ€”for
+                  long term archiving, for disaster recovery, or as
+                  preparation for an upgrade. This offline backup consists of
+                  either (1) a full one-to-one copy of the current database
+                  files, or (2) a full backup of the database files from a
+                  certain point in time, plus all the journal data (that is
+                  OracleÂ® terminology, it is called "Continuous Archiving" or
+                  "write ahead log (WAL)" in Postgresql) describing the
+                  changes made after that point in time. This second form
+                  takes less time to create (if the DB software provides this
+                  type of journaling) because you only have to save the data
+                  that have changed since the last full backup was created.
                 </p>
                 <p>
                   When upgrading database server software, a full backup
@@ -234,14 +232,14 @@ Oct 26 17:11:53 SRVNAME systemd[1]: Failed to start PostgreSQL database server.<
             Since you already have a backup procedure in place (and you have
             tested your restore procedure, right?), this might be the easiest
             way to upgrade as you can use your well known processes to
-            upgrade just as you always do&mdash;at least in terms of the
-            backup and restore.
+            upgrade just as you always doâ€”at least in terms of the backup and
+            restore.
           </p>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm59093" name="idm59093"></a>Upgrade the Database Files
+            <a id="idm59101" name="idm59101"></a>Upgrade the Database Files
             by Using System Tools
           </h4>
           <p>
@@ -265,7 +263,7 @@ Oct 26 17:11:53 SRVNAME systemd[1]: Failed to start PostgreSQL database server.<
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm59099" name="idm59099"></a>PostgreSQL
+            <a id="idm59107" name="idm59107"></a>PostgreSQL
           </h4>
           <p>
             Upstream documentation for Backup/Restore: <a class="ulink" href=
@@ -275,7 +273,7 @@ Oct 26 17:11:53 SRVNAME systemd[1]: Failed to start PostgreSQL database server.<
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm59103" name="idm59103"></a>MariaDB
+            <a id="idm59111" name="idm59111"></a>MariaDB
           </h4>
           <p>
             Upstream documentation for Backup/Restore: <a class="ulink" href=
@@ -285,7 +283,7 @@ Oct 26 17:11:53 SRVNAME systemd[1]: Failed to start PostgreSQL database server.<
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm59107" name="idm59107"></a>Sqlite
+            <a id="idm59115" name="idm59115"></a>Sqlite
           </h4>
           <p>
             Do not underestimate <span class="application">Sqlite</span>. It
@@ -321,7 +319,7 @@ Oct 26 17:11:53 SRVNAME systemd[1]: Failed to start PostgreSQL database server.<
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3"></h3>
           <h4 class="title">
-            <a id="idm59119" name="idm59119"></a>LMDB
+            <a id="idm59127" name="idm59127"></a>LMDB
           </h4>
           <p>
             Like <span class="application">Sqlite</span>, this software acts
@@ -355,7 +353,7 @@ Oct 26 17:11:53 SRVNAME systemd[1]: Failed to start PostgreSQL database server.<
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1215">
+          "Beyond LinuxÂ® From Scratch  (systemd  Edition) - Version r12.0-1224">
           Home</a>
         </li>
       </ul>
