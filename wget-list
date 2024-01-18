@@ -5,7 +5,7 @@ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.6/cryptsetup-2.6.1.tar.xz
 https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
 https://www.linuxfromscratch.org/patches/blfs/svn/gnupg-2.4.3-emacs-1.patch
-https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.2.tar.xz
+https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.3.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.2.tar.bz2
 https://www.netfilter.org/projects/iptables/files/iptables-1.8.10.tar.xz
 https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.69.tar.xz
@@ -293,7 +293,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.6-shared_library-1.pat
 https://www.lua.org/tests/lua-5.4.6-tests.tar.gz
 https://www.lua.org/ftp/lua-5.2.4.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.2.4-shared_library-1.patch
-https://www.mercurial-scm.org/release/mercurial-6.6.1.tar.gz
+https://www.mercurial-scm.org/release/mercurial-6.6.2.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.xz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01-xdoc.tar.xz
 https://github.com/NixOS/patchelf/releases/download/0.17.2/patchelf-0.17.2.tar.gz
@@ -630,9 +630,9 @@ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-2.patch
 https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
 https://www.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
 https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.40.tar.xz
-https://www.x.org/pub/individual/xserver/xwayland-23.2.3.tar.xz
-https://www.x.org/pub/individual/xserver/xorg-server-21.1.10.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.10-tearfree_backport-10.patch
+https://www.x.org/pub/individual/xserver/xwayland-23.2.4.tar.xz
+https://www.x.org/pub/individual/xserver/xorg-server-21.1.11.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.11-tearfree_backport-1.patch
 https://www.freedesktop.org/software/libevdev/libevdev-1.13.1.tar.xz
 https://www.x.org/pub/individual/driver/xf86-input-evdev-2.10.6.tar.bz2
 https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.25.0/libinput-1.25.0.tar.gz
@@ -667,8 +667,8 @@ https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.
 https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz
 https://download.gnome.org/sources/gtksourceview/5.10/gtksourceview-5.10.0.tar.xz
 https://downloads.sourceforge.net/enlightenment/imlib2-1.12.1.tar.xz
-https://github.com/ksnip/kColorPicker/archive/refs/tags/v0.2.0/kColorPicker-0.2.0.tar.gz
-https://github.com/ksnip/kImageAnnotator/archive/refs/tags/v0.6.1/kImageAnnotator-0.6.1.tar.gz
+https://github.com/ksnip/kColorPicker/archive/refs/tags/v0.3.0/kColorPicker-0.3.0.tar.gz
+https://github.com/ksnip/kImageAnnotator/archive/refs/tags/v0.7.0/kImageAnnotator-0.7.0.tar.gz
 https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
 https://download.gnome.org/sources/libadwaita/1.4/libadwaita-1.4.2.tar.xz
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.2.0/libei-1.2.0.tar.gz
@@ -732,7 +732,7 @@ https://download.kde.org/stable/release-service/23.08.4/src/libkdcraw-23.08.4.ta
 https://download.kde.org/stable/release-service/23.08.4/src/gwenview-23.08.4.tar.xz
 https://download.kde.org/stable/release-service/23.08.4/src/libkcddb-23.08.4.tar.xz
 https://download.kde.org/stable/release-service/23.08.4/src/k3b-23.08.4.tar.xz
-https://download.gnome.org/sources/gcr/3.41/gcr-3.41.1.tar.xz
+https://download.gnome.org/sources/gcr/3.41/gcr-3.41.2.tar.xz
 https://download.gnome.org/sources/gcr/4.1/gcr-4.1.0.tar.xz
 https://download.gnome.org/sources/gsettings-desktop-schemas/45/gsettings-desktop-schemas-45.0.tar.xz
 https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.2.tar.xz
@@ -1038,7 +1038,7 @@ https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2023/texlive-2023031
 https://downloads.sourceforge.net/asymptote/asymptote-2.86.src.tgz
 https://www.linuxfromscratch.org/patches/blfs/svn/asymptote-2.86-build_fix-1.patch
 https://github.com/plk/biber/archive/v2.19/biber-2.19.tar.gz
-https://github.com/mgieseki/dvisvgm/releases/download/3.1.2/dvisvgm-3.1.2.tar.gz
+https://github.com/mgieseki/dvisvgm/releases/download/3.2/dvisvgm-3.2.tar.gz
 https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
 https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20231119.tar.xz
