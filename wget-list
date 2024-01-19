@@ -9,8 +9,8 @@ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.3.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.2.tar.bz2
 https://www.netfilter.org/projects/iptables/files/iptables-1.8.10.tar.xz
 https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.69.tar.xz
-https://github.com/linux-pam/linux-pam/releases/download/v1.5.3/Linux-PAM-1.5.3.tar.xz
-https://github.com/linux-pam/linux-pam/releases/download/v1.5.3/Linux-PAM-1.5.3-docs.tar.xz
+https://github.com/linux-pam/linux-pam/releases/download/v1.6.0/Linux-PAM-1.6.0.tar.xz
+https://github.com/linux-pam/linux-pam/releases/download/v1.6.0/Linux-PAM-1.6.0-docs.tar.xz
 https://downloads.sourceforge.net/liboauth/liboauth-1.0.3.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3.patch
 https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2
@@ -20,7 +20,7 @@ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_96_1_RTM/src/nss-3.9
 https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.96.1-standalone-1.patch
 https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.6p1.tar.gz
 https://github.com/p11-glue/p11-kit/releases/download/0.25.3/p11-kit-0.25.3.tar.xz
-https://gitlab.freedesktop.org/polkit/polkit/-/archive/123/polkit-123.tar.gz
+https://gitlab.freedesktop.org/polkit/polkit/-/archive/124/polkit-124.tar.gz
 https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
 https://github.com/shadow-maint/shadow/releases/download/4.14.2/shadow-4.14.2.tar.xz
@@ -150,8 +150,8 @@ http://ftp.rpm.org/popt/releases/popt-1.x/popt-1.19.tar.gz
 https://ftp.gnu.org/gnu/pth/pth-2.0.7.tar.gz
 https://download.kde.org/stable/qca/2.3.8/qca-2.3.8.tar.xz
 https://archive.mozilla.org/pub/firefox/releases/115.6.0esr/source/firefox-115.6.0esr.source.tar.xz
-https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.268.0/SPIRV-Headers-1.3.268.0.tar.gz
-https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2023.5.rc1/SPIRV-Tools-2023.5.rc1.tar.gz
+https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.275.0/SPIRV-Headers-1.3.275.0.tar.gz
+https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.3.275.0/SPIRV-Tools-1.3.275.0.tar.gz
 https://www.samba.org/ftp/talloc/talloc-2.4.1.tar.gz
 https://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.24.2.tar.gz
 https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
