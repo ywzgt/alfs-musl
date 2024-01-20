@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1246">
+  <body class="blfs" id="blfs-r12.0-1260">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1246
+        "phrase">(systemd</span> Edition) - Version r12.0-1260
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1246">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1260">
           Home</a>
         </li>
       </ul>
@@ -207,12 +207,9 @@ make</kbd></pre>
         </p>
         <p>
           <em class="parameter"><code>--system-libs</code></em>: This switch
-          forces the build system to link against <span class=
-          "application">Zlib</span>, <span class="application">Bzip2</span>,
-          <span class="application">cURL</span>, <span class=
-          "application">nghttp2</span>, <span class=
-          "application">Expat</span> and <span class=
-          "application">libarchive</span> installed on the system.
+          forces the build system to link against the system installed
+          version for all needed libraries but those explicitly specified via
+          a <code class="option">--no-system-*</code> option.
         </p>
         <p>
           <em class="parameter"><code>--no-system-jsoncpp</code></em> and
@@ -378,7 +375,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1246">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1260">
           Home</a>
         </li>
       </ul>
