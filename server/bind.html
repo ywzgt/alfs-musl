@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1260">
+  <body class="blfs" id="blfs-r12.0-1270">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1260
+        "phrase">(systemd</span> Edition) - Version r12.0-1270
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1260">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
           Home</a>
         </li>
       </ul>
@@ -293,11 +293,8 @@ make</kbd></pre>
         </h2>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            <a id="bind-config" name="bind-config"></a>
-          </h3>
-          <h4 class="title">
             <a id="bind-config" name="bind-config"></a>Config files
-          </h4>
+          </h3>
           <p>
             <code class="filename">named.conf</code>, <code class=
             "filename">root.hints</code>, <code class=
@@ -307,10 +304,9 @@ make</kbd></pre>
           </p>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3"></h3>
-          <h4 class="title">
-            <a id="idm57061" name="idm57061"></a>Configuration Information
-          </h4>
+          <h3 class="sect3">
+            Configuration Information
+          </h3>
           <p>
             <span class="application">BIND</span> will be configured to run
             in a <span class="command"><strong>chroot</strong></span> jail as
@@ -525,12 +521,8 @@ EOF</kbd></pre>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            <a id="bind-init" name="bind-init"></a>
+            <a id="bind-init" name="bind-init"></a> Systemd Unit
           </h3>
-          <h4 class="title">
-            <a id="bind-init" name="bind-init"></a> <span class=
-            "phrase">Systemd Unit</span>
-          </h4>
           <p>
             To start the DNS server at boot, install the <span class=
             "phrase"><code class="filename">named.service</code> unit</span>
@@ -548,10 +540,9 @@ EOF</kbd></pre>
           "command">systemctl start named</kbd></pre>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3"></h3>
-          <h4 class="title">
-            <a id="idm57135" name="idm57135"></a>Testing BIND
-          </h4>
+          <h3 class="sect3">
+            Testing BIND
+          </h3>
           <p>
             Test out the new <span class="application">BIND</span> 9
             installation. First query the local host address with
@@ -1070,7 +1061,7 @@ dig www.linuxfromscratch.org</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1260">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
           Home</a>
         </li>
       </ul>

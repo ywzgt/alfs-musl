@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1260">
+  <body class="blfs" id="blfs-r12.0-1270">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1260
+        "phrase">(systemd</span> Edition) - Version r12.0-1270
       </h4>
       <h3>
         Chapter&nbsp;22.&nbsp;Databases
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1260">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
           Home</a>
         </li>
       </ul>
@@ -383,12 +383,9 @@ chown -Rv postgres:postgres /srv/pgsql /run/postgresql</kbd></pre>
         </h2>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            <a id="postgresql-config" name="postgresql-config"></a>
-          </h3>
-          <h4 class="title">
             <a id="postgresql-config" name="postgresql-config"></a>Config
             Files
-          </h4>
+          </h3>
           <p>
             <code class="filename">$PGDATA/pg_ident.con</code>, <code class=
             "filename">$PGDATA/pg_hba.conf</code>, and <code class=
@@ -407,12 +404,8 @@ chown -Rv postgres:postgres /srv/pgsql /run/postgresql</kbd></pre>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            <a id="postgresql-init" name="postgresql-init"></a>
+            <a id="postgresql-init" name="postgresql-init"></a> Systemd Unit
           </h3>
-          <h4 class="title">
-            <a id="postgresql-init" name="postgresql-init"></a> <span class=
-            "phrase">Systemd Unit</span>
-          </h4>
           <p>
             Install the <span class="phrase"><code class=
             "filename">postgresql.service</code> unit</span> included in the
@@ -423,11 +416,9 @@ chown -Rv postgres:postgres /srv/pgsql /run/postgresql</kbd></pre>
           "command">make install-postgresql</kbd></pre>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3"></h3>
-          <h4 class="title">
-            <a id="idm60005" name="idm60005"></a>Starting the PostgreSQL
-            Server and Creating a Sample Database
-          </h4>
+          <h3 class="sect3">
+            Starting the PostgreSQL Server and Creating a Sample Database
+          </h3>
           <p>
             The database server can be manually started with the following
             command (as the <code class="systemitem">root</code> user):
@@ -1178,7 +1169,7 @@ echo "select * from t1;" | (su - postgres -c '/usr/bin/psql test')</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1260">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
           Home</a>
         </li>
       </ul>

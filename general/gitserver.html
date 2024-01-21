@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1260">
+  <body class="blfs" id="blfs-r12.0-1270">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1260
+        "phrase">(systemd</span> Edition) - Version r12.0-1270
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1260">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
           Home</a>
         </li>
       </ul>
@@ -86,11 +86,9 @@
           Configuration of the server consists of the following steps:
         </p>
         <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3"></h3>
-          <h4 class="title">
-            <a id="idm34581" name="idm34581"></a>1. Set Up Users, Groups, and
-            Permissions
-          </h4>
+          <h3 class="sect3">
+            1. Set Up Users, Groups, and Permissions
+          </h3>
           <p>
             You will need to be user <code class="systemitem">root</code> for
             the initial portion of configuration. Create the <code class=
@@ -141,10 +139,9 @@ cat &lt;user-ssh-key&gt; &gt;&gt; /home/git/.ssh/authorized_keys</kbd></pre>
           "command">echo "/usr/bin/git-shell" &gt;&gt; /etc/shells</kbd></pre>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3"></h3>
-          <h4 class="title">
-            <a id="idm34608" name="idm34608"></a>2. Create a git repository
-          </h4>
+          <h3 class="sect3">
+            2. Create a git repository
+          </h3>
           <p>
             The repository can be anywhere on the filesystem. It is important
             that the git user has read/write access to that location. We use
@@ -172,11 +169,9 @@ git init --bare                                      &amp;&amp;
 chown -R git:git .</kbd></pre>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3"></h3>
-          <h4 class="title">
-            <a id="idm34619" name="idm34619"></a>3. Populate the repository
-            from a client system
-          </h4>
+          <h3 class="sect3">
+            3. Populate the repository from a client system
+          </h3>
           <div class="admon note">
             <img alt="[Note]" src="../images/note.png" />
             <h3>
@@ -288,12 +283,9 @@ git push</kbd></pre>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            <a id="gitserver-init" name="gitserver-init"></a>
-          </h3>
-          <h4 class="title">
             <a id="gitserver-init" name="gitserver-init"></a>4. Configure the
             Server
-          </h4>
+          </h3>
           <p>
             The setup described above makes a repository available for
             authenticated users (via providing the ssh public key file).
@@ -421,7 +413,7 @@ git push</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1260">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
           Home</a>
         </li>
       </ul>

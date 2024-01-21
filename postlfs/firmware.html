@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1260">
+  <body class="blfs" id="blfs-r12.0-1270">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1260
+        "phrase">(systemd</span> Edition) - Version r12.0-1270
       </h4>
       <h3>
         Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1260">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
           Home</a>
         </li>
       </ul>
@@ -260,12 +260,9 @@
         </p>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            <a id="intel-microcode" name="intel-microcode"></a>
-          </h3>
-          <h4 class="title">
             <a id="intel-microcode" name="intel-microcode"></a>Intel
             Microcode for the CPU
-          </h4>
+          </h3>
           <p>
             The first step is to get the most recent version of the Intel
             microcode. This must be done by navigating to <a class="ulink"
@@ -313,12 +310,9 @@
         </div>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            <a id="amd-microcode" name="amd-microcode"></a>
-          </h3>
-          <h4 class="title">
             <a id="amd-microcode" name="amd-microcode"></a>AMD Microcode for
             the CPU
-          </h4>
+          </h3>
           <p>
             Begin by downloading a container of firmware for your CPU family
             from <a class="ulink" href=
@@ -358,12 +352,9 @@
         </div>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            <a id="early-microcode" name="early-microcode"></a>
-          </h3>
-          <h4 class="title">
             <a id="early-microcode" name="early-microcode"></a>Early loading
             of microcode
-          </h4>
+          </h3>
           <p>
             If you have established that updated microcode is available for
             your system, it is time to prepare it for early loading. This
@@ -468,12 +459,9 @@ cd initrd</kbd></pre>
         </h2>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            <a id="ati-video-firmware" name="ati-video-firmware"></a>
-          </h3>
-          <h4 class="title">
             <a id="ati-video-firmware" name="ati-video-firmware"></a>Firmware
             for ATI video chips (R600 and later)
-          </h4>
+          </h3>
           <p>
             These instructions do NOT apply to old radeons before the R600
             family. For those, the firmware is in the kernel's <code class=
@@ -535,13 +523,10 @@ cp -v &lt;YOUR_BLOBS&gt; /lib/firmware/radeon</kbd></pre>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            <a id="amdgpu-video-firmware" name="amdgpu-video-firmware"></a>
-          </h3>
-          <h4 class="title">
             <a id="amdgpu-video-firmware" name=
             "amdgpu-video-firmware"></a>Firmware for AMD/ATI amdgpu video
             chips
-          </h4>
+          </h3>
           <p>
             All video controllers using the amdgpu kernel driver require
             firmware, whether you will be using the xorg amdgpu driver, the
@@ -594,12 +579,9 @@ cp -v &lt;YOUR_BLOBS&gt; /lib/firmware/amdgpu</kbd></pre>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            <a id="nvidia-video-firmware" name="nvidia-video-firmware"></a>
-          </h3>
-          <h4 class="title">
             <a id="nvidia-video-firmware" name=
             "nvidia-video-firmware"></a>Firmware for Nvidia video chips
-          </h4>
+          </h3>
           <p>
             Nvidia has released basic signed firmware for recent graphics
             chips, but significantly after the chips and its own binary
@@ -844,7 +826,7 @@ make oldconfig</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1260">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
           Home</a>
         </li>
       </ul>

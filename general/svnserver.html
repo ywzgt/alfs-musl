@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1260">
+  <body class="blfs" id="blfs-r12.0-1270">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1260
+        "phrase">(systemd</span> Edition) - Version r12.0-1270
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1260">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
           Home</a>
         </li>
       </ul>
@@ -87,11 +87,9 @@
           server consists of the following steps:
         </p>
         <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3"></h3>
-          <h4 class="title">
-            <a id="idm48395" name="idm48395"></a>1. Set Uup Users, Groups,
-            and Permissions
-          </h4>
+          <h3 class="sect3">
+            1. Set Uup Users, Groups, and Permissions
+          </h3>
           <p>
             You'll need to be user <code class="systemitem">root</code> for
             the initial portion of configuration. Create the <code class=
@@ -148,11 +146,9 @@ chmod 0755 /usr/bin/svn{,serve}</kbd></pre>
           </div>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3"></h3>
-          <h4 class="title">
-            <a id="idm48419" name="idm48419"></a>2. Create a Subversion
-            repository.
-          </h4>
+          <h3 class="sect3">
+            2. Create a Subversion repository.
+          </h3>
           <p>
             There are several ways to set up a subversion repository. It is
             recommended to have a look at the <a class="ulink" href=
@@ -250,10 +246,9 @@ usermod -G svn,svntest -a <em class=
           </div>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3"></h3>
-          <h4 class="title">
-            <a id="idm48460" name="idm48460"></a>3. Configure the Server
-          </h4>
+          <h3 class="sect3">
+            3. Configure the Server
+          </h3>
           <p>
             As mentioned previously, these instructions will configure the
             server to use only <span class=
@@ -289,12 +284,9 @@ EOF</kbd></pre>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            <a id="svnserver-init" name="svnserver-init"></a>
-          </h3>
-          <h4 class="title">
             <a id="svnserver-init" name="svnserver-init"></a>4. Starting the
             Server
-          </h4>
+          </h3>
           <p>
             To start the server at boot time, install the <code class=
             "filename">svnserve.service</code> unit from the <a class="xref"
@@ -342,7 +334,7 @@ echo "UMask=0002" &gt; /etc/systemd/system/svnserve.service.d/99-user.conf</kbd>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1260">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
           Home</a>
         </li>
       </ul>

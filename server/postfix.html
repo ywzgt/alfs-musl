@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1260">
+  <body class="blfs" id="blfs-r12.0-1270">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1260
+        "phrase">(systemd</span> Edition) - Version r12.0-1270
       </h4>
       <h3>
         Chapter&nbsp;21.&nbsp;Mail Server Software
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1260">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
           Home</a>
         </li>
       </ul>
@@ -159,10 +159,9 @@
           Installation of Postfix
         </h2>
         <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3"></h3>
-          <h4 class="title">
-            <a id="idm58581" name="idm58581"></a>Adding Users and Groups
-          </h4>
+          <h3 class="sect3">
+            Adding Users and Groups
+          </h3>
           <p>
             Before you compile the program, you need to create users and
             groups that will be expected to be in place during the
@@ -177,10 +176,9 @@ useradd -c "Postfix Daemon User" -d /var/spool/postfix -g postfix \
 chown -v postfix:postfix /var/mail</kbd></pre>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3"></h3>
-          <h4 class="title">
-            <a id="idm58587" name="idm58587"></a>Configuring the Build
-          </h4>
+          <h3 class="sect3">
+            Configuring the Build
+          </h3>
           <p>
             The README files are formatted to be read with a pager like
             <span class="application">less</span> or <span class=
@@ -224,7 +222,7 @@ chown -v postfix:postfix /var/mail</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58604" name="idm58604"></a>Cyrus-SASL
+                    <a id="idm58625" name="idm58625"></a>Cyrus-SASL
                   </h5>
                 </div>
               </div>
@@ -244,7 +242,7 @@ AUXLIBS='-lsasl2'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58611" name="idm58611"></a>LMDB
+                    <a id="idm58632" name="idm58632"></a>LMDB
                   </h5>
                 </div>
               </div>
@@ -262,7 +260,7 @@ AUXLIBS_LMDB='-llmdb'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58618" name="idm58618"></a>OpenLDAP
+                    <a id="idm58639" name="idm58639"></a>OpenLDAP
                   </h5>
                 </div>
               </div>
@@ -281,7 +279,7 @@ AUXLIBS_LDAP='-lldap -llber'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58625" name="idm58625"></a>Sqlite
+                    <a id="idm58646" name="idm58646"></a>Sqlite
                   </h5>
                 </div>
               </div>
@@ -300,7 +298,7 @@ AUXLIBS_SQLITE='-lsqlite3 -lpthread'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58632" name="idm58632"></a>MySQL
+                    <a id="idm58653" name="idm58653"></a>MySQL
                   </h5>
                 </div>
               </div>
@@ -318,7 +316,7 @@ AUXLIBS_MYSQL='-lmysqlclient -lz -lm'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58639" name="idm58639"></a>PostgreSQL
+                    <a id="idm58660" name="idm58660"></a>PostgreSQL
                   </h5>
                 </div>
               </div>
@@ -337,7 +335,7 @@ AUXLIBS_PGSQL='-lpq -lz -lm'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58646" name="idm58646"></a>CDB/TinyCDB
+                    <a id="idm58667" name="idm58667"></a>CDB/TinyCDB
                   </h5>
                 </div>
               </div>
@@ -357,7 +355,7 @@ AUXLIBS_CDB='<em class=
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58655" name="idm58655"></a>StartTLS
+                    <a id="idm58676" name="idm58676"></a>StartTLS
                     Authentication
                   </h5>
                 </div>
@@ -374,10 +372,9 @@ AUXLIBS='-lssl -lcrypto'</code></pre>
           </div>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3"></h3>
-          <h4 class="title">
-            <a id="idm58662" name="idm58662"></a>Installing Postfix
-          </h4>
+          <h3 class="sect3">
+            Installing Postfix
+          </h3>
           <p>
             Adjust the following according to your needs. For example, if you
             have <span class="application">Cyrus SASL</span> and <span class=
@@ -438,11 +435,8 @@ make</kbd></pre>
         </h2>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            <a id="postfix-config" name="postfix-config"></a>
-          </h3>
-          <h4 class="title">
             <a id="postfix-config" name="postfix-config"></a>Config Files
-          </h4>
+          </h3>
           <p>
             <code class="filename">/etc/aliases</code>, <code class=
             "filename">/etc/postfix/main.cf</code>, and <code class=
@@ -450,10 +444,9 @@ make</kbd></pre>
           </p>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3"></h3>
-          <h4 class="title">
-            <a id="idm58699" name="idm58699"></a>Configuration Information
-          </h4>
+          <h3 class="sect3">
+            Configuration Information
+          </h3>
           <p>
             Create (or append to an existing) <code class=
             "filename">/etc/aliases</code> with the following command. Change
@@ -563,12 +556,8 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
         </div>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            <a id="postfix-init" name="postfix-init"></a>
+            <a id="postfix-init" name="postfix-init"></a> Systemd Unit
           </h3>
-          <h4 class="title">
-            <a id="postfix-init" name="postfix-init"></a> <span class=
-            "phrase">Systemd Unit</span>
-          </h4>
           <p>
             To automate the running of Postfix at startup, install the
             <span class="phrase"><code class=
@@ -868,7 +857,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1260">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
           Home</a>
         </li>
       </ul>
