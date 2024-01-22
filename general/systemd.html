@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1270">
+  <body class="blfs" id="blfs-r12.0-1291">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1270
+        "phrase">(systemd</span> Edition) - Version r12.0-1291
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1291">
           Home</a>
         </li>
       </ul>
@@ -388,6 +388,35 @@ password required    pam_deny.so
 
 # End /etc/pam.d/systemd-user</code>
 EOF</kbd></pre>
+        <p>
+          As the <code class="systemitem">root</code> user, replace the
+          running <span class="command"><strong>systemd</strong></span>
+          manager (the <span class="command"><strong>init</strong></span>
+          process) with the <span class=
+          "command"><strong>systemd</strong></span> executable newly built
+          and installed:
+        </p>
+        <pre class="root"><kbd class=
+        "command">systemctl daemon-reexec</kbd></pre>
+        <div class="admon important">
+          <img alt="[Important]" src="../images/important.png" />
+          <h3>
+            Important
+          </h3>
+          <p>
+            Now ensure <a class="xref" href="../postlfs/shadow.html" title=
+            "Shadow-4.14.2">Shadow-4.14.2</a> has been already rebuilt with
+            <a class="xref" href="../postlfs/linux-pam.html" title=
+            "Linux-PAM-1.6.0">Linux-PAM-1.6.0</a> support first, then logout,
+            and login again. This ensures the running login session
+            registered with <span class=
+            "command"><strong>systemd-logind</strong></span> and a per-user
+            systemd instance running for each user owning a login session.
+            Many BLFS packages listing Systemd as a dependency needs the
+            <span class="command"><strong>systemd-logind</strong></span>
+            integration and/or a running per-user systemd instance.
+          </p>
+        </div>
         <div class="admon warning">
           <img alt="[Warning]" src="../images/warning.png" />
           <h3>
@@ -526,7 +555,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1291">
           Home</a>
         </li>
       </ul>

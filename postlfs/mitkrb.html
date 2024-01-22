@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1270">
+  <body class="blfs" id="blfs-r12.0-1291">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1270
+        "phrase">(systemd</span> Edition) - Version r12.0-1291
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1291">
           Home</a>
         </li>
       </ul>
@@ -181,6 +181,16 @@ make</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">make install &amp;&amp;
 cp -vfr ../doc -T /usr/share/doc/krb5-1.21.2</kbd></pre>
+        <p>
+          Still as the <code class="systemitem">root</code> user, remove
+          linker flags setting RPATH from the <span class=
+          "command"><strong>krb5-config</strong></span> script. These flags
+          are unneeded for an installation in the standard prefix
+          (<code class="filename">/usr</code>) and they may cause some
+          packages fail to build:
+        </p>
+        <pre class="root"><kbd class=
+        "command">sed '/PROG_RPATH_FLAGS/d' -i /usr/bin/krb5-config</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -252,7 +262,7 @@ cp -vfr ../doc -T /usr/share/doc/krb5-1.21.2</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm7239" name="idm7239"></a>Kerberos Configuration
+                    <a id="idm7245" name="idm7245"></a>Kerberos Configuration
                   </h5>
                 </div>
               </div>
@@ -425,7 +435,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm7318" name="idm7318"></a>Additional Information
+                    <a id="idm7324" name="idm7324"></a>Additional Information
                   </h5>
                 </div>
               </div>
@@ -1030,7 +1040,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1291">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1270">
+  <body class="blfs" id="blfs-r12.0-1291">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1270
+        "phrase">(systemd</span> Edition) - Version r12.0-1291
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1291">
           Home</a>
         </li>
       </ul>
@@ -158,10 +158,12 @@
         <pre class="userinput"><kbd class=
         "command">mv tests/dbusmock{,-tests}</kbd></pre>
         <p>
-          Then fix the tests so that the new directory is found:
+          Then fix a test script so that the new directory is found, and
+          adapt it for Python 3.12.0 or later:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -e '/accounts_service\.py/s/dbusmock/dbusmock-tests/' \
+    -e 's/assertEquals/assertEqual/'                      \
     -i tests/test-libaccountsservice.py</kbd></pre>
         <p>
           Fix one test that fails if the <code class=
@@ -237,21 +239,6 @@ ninja</kbd></pre>
    return ["unix-group:adm"];
    });</code>
 EOF</kbd></pre>
-        <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3">
-            <a id="accountsservice-init" name=
-            "accountsservice-init"></a>Systemd Unit
-          </h3>
-          <p>
-            To start the <span class=
-            "command"><strong>accounts-daemon</strong></span> daemon at boot,
-            enable the previously installed systemd unit by running the
-            following command as the <code class="systemitem">root</code>
-            user:
-          </p>
-          <pre class="root"><kbd class=
-          "command">systemctl enable accounts-daemon</kbd></pre>
-        </div>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -343,7 +330,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1291">
           Home</a>
         </li>
       </ul>

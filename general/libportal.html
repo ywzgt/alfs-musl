@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1270">
+  <body class="blfs" id="blfs-r12.0-1291">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1270
+        "phrase">(systemd</span> Edition) - Version r12.0-1291
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1291">
           Home</a>
         </li>
       </ul>
@@ -106,6 +106,21 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Optional patch (required for running the test suite):
+                <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/libportal-0.7.1-testsuite_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/libportal-0.7.1-testsuite_fix-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           libportal Dependencies
         </h3>
         <h4>
@@ -122,6 +137,23 @@
           <a class="xref" href="../x/gtk3.html" title=
           "GTK+-3.24.40">GTK+-3.24.40</a> and <a class="xref" href=
           "../x/gtk4.html" title="GTK-4.12.5">GTK-4.12.5</a>
+        </p>
+        <h4>
+          Recommended (Runtime)
+        </h4>
+        <p class="runtime">
+          To make this package really useful, install <a class="xref" href=
+          "../x/xdg-desktop-portal.html" title=
+          "xdg-desktop-portal-1.18.2">xdg-desktop-portal-1.18.2</a>,
+          <a class="xref" href="../x/xdg-desktop-portal-gtk.html" title=
+          "xdg-desktop-portal-gtk-1.15.1">xdg-desktop-portal-gtk-1.15.1</a>,
+          <a class="xref" href="../gnome/xdg-desktop-portal-gnome.html"
+          title="xdg-desktop-portal-gnome-45.1">xdg-desktop-portal-gnome-45.1</a>
+          (if running a GNOME desktop environment), and <a class="xref" href=
+          "../lxqt/xdg-desktop-portal-lxqt.html" title=
+          "xdg-desktop-portal-lxqt-0.5.0">xdg-desktop-portal-lxqt-0.5.0</a>
+          (if running a LXQt desktop environment). They are not needed if
+          only using this package to satisify a build dependency.
         </p>
         <h4>
           Optional
@@ -160,6 +192,12 @@
     mv -vf /usr/include/libportal{,.old}
 fi</kbd></pre>
         </div>
+        <p>
+          If running the test suite, apply a patch to fix a dozen of test
+          failures with python-dbusmock 0.30.0 or later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../libportal-0.7.1-testsuite_fix-1.patch</kbd></pre>
         <p>
           Install <span class="application">libportal</span> by running the
           following commands:
@@ -328,7 +366,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1291">
           Home</a>
         </li>
       </ul>

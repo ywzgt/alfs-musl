@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1270">
+  <body class="blfs" id="blfs-r12.0-1291">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1270
+        "phrase">(systemd</span> Edition) - Version r12.0-1291
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1291">
           Home</a>
         </li>
       </ul>
@@ -143,6 +143,15 @@
           clang-format), and <a class="ulink" href=
           "https://pypi.org/project/pylint/">pylint</a>
         </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            An Internet connection is needed for some tests of this package.
+          </p>
+        </div>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -183,7 +192,10 @@ ninja</kbd></pre>
           To test the results, issue: <span class="command"><strong>LC_ALL=C
           ninja test</strong></span>. One test, <code class="filename">style
           / style-format</code>, is known to fail due to differences between
-          LLVM-16 and LLVM-17's version of clang-format.
+          LLVM-16 and LLVM-17's version of clang-format. One test named
+          <code class="filename">libgweather / metar</code> is known to fail
+          because it requires some online resources which have been moved
+          away.
         </p>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -282,7 +294,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1291">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1270">
+  <body class="blfs" id="blfs-r12.0-1291">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1270
+        "phrase">(systemd</span> Edition) - Version r12.0-1291
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1291">
           Home</a>
         </li>
       </ul>
@@ -102,6 +102,21 @@
             <li class="listitem">
               <p>
                 Estimated build time: 0.1 SBU (Using parallelism=4)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Optional patch (required for running the test suite):
+                <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/gnome-settings-daemon-45.1-testsuite_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/gnome-settings-daemon-45.1-testsuite_fix-1.patch</a>
               </p>
             </li>
           </ul>
@@ -184,6 +199,12 @@
           Installation of GNOME Settings Daemon
         </h2>
         <p>
+          If running the test suite, apply a patch to fix test timeouts with
+          python-dbusmock 0.30.0 or later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../gnome-settings-daemon-45.1-testsuite_fix-1.patch</kbd></pre>
+        <p>
           Install <span class="application">GNOME Settings Daemon</span> by
           running the following commands:
         </p>
@@ -260,7 +281,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1291">
           Home</a>
         </li>
       </ul>
