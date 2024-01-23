@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1291">
+  <body class="blfs" id="blfs-r12.0-1296">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1291
+        "phrase">(systemd</span> Edition) - Version r12.0-1296
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1291">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1296">
           Home</a>
         </li>
       </ul>
@@ -141,10 +141,12 @@
           following command:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr      \
-            --enable-shared    \
-            --without-valgrind \
-            --without-baseruby \
+        "command">./configure --prefix=/usr         \
+            --disable-rpath       \
+            --enable-shared       \
+            --without-valgrind    \
+            --without-baseruby    \
+            ac_cv_func_qsort_r=no \
             --docdir=/usr/share/doc/ruby-3.3.0 &amp;&amp;
 make</kbd></pre>
         <p>
@@ -153,11 +155,22 @@ make</kbd></pre>
         </p>
         <pre class="userinput"><kbd class="command">make capi</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>make -k
-          check</strong></span>. There are over 27,000 tests. Some tests
-          related to ipv6 may indicate errors. If the tests are run in a
-          directory that has a world writable component (e.g. /tmp) then
-          several additional tests may fail. Three tests are known to fail.
+          To test the results, issue: <span class="command"><strong>make -j1
+          -k check</strong></span>. Note that running the test suite with
+          parallel jobs may cause test failures outputted as cryptic
+          <code class="computeroutput">unknown object</code> messages,
+          resulting a summary falsely claiming <span class=
+          "quote">“<span class="quote">all tests passed</span>”</span>. If
+          the environment has variables related to proxy settings
+          (<code class="envar">all_proxy</code>, <code class=
+          "envar">ALL_PROXY</code>, <code class="envar">http_proxy</code>,
+          and etc.) set, the test suite will bail out early with messages
+          like <code class="computeroutput">net/ftp is not found</code>. So
+          make sure unsetting them for the test suite. There are over 26,000
+          tests. 12 tests are known to fail because of expired certificates
+          in the test data. Some tests related to ipv6 may indicate errors.
+          If the tests are run in a directory that has a world writable
+          component (e.g. /tmp) then several additional tests may fail.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -186,6 +199,16 @@ bundle update rake</kbd></pre>
           Command Explanations
         </h2>
         <p>
+          <em class="parameter"><code>--disable-rpath</code></em>: This
+          switch disables embedding <code class="filename">/usr/lib</code> as
+          a library search path into the <span class=
+          "command"><strong>ruby</strong></span> program. Doing so is not
+          needed (because <code class="filename">/usr/lib</code> is a system
+          library path) and it may cause the test suite running with the
+          system <code class="filename">libruby.so</code> instead of the just
+          built one when Ruby has been installed.
+        </p>
+        <p>
           <em class="parameter"><code>--enable-shared</code></em>: This
           switch enables building the <code class="filename">libruby</code>
           shared library.
@@ -195,6 +218,15 @@ bundle update rake</kbd></pre>
           switch prevents using the system <span class=
           "command"><strong>ruby</strong></span> if it is already installed.
           The build system will use the newly built version instead.
+        </p>
+        <p>
+          <em class="parameter"><code>ac_cv_func_qsort_r=no</code></em>: This
+          switch prevents using the <code class="function">qsort_r</code>
+          function from Glibc. Ruby makes some aggressive optimization
+          assuming <code class="function">qsort_r</code> would never allocate
+          the buffer with <code class="function">malloc</code>, but the
+          assumption is no longer true with Glibc-2.39 or newer. With this
+          switch Ruby will use its own sort implementation instead.
         </p>
         <p>
           <code class="option">--disable-install-doc</code>: This switch
@@ -429,7 +461,7 @@ bundle update rake</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1291">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1296">
           Home</a>
         </li>
       </ul>
