@@ -1,0 +1,23 @@
+diff --git a/wget-list b/wget-list
+index 3cc77d83..5912ad5f 100644
+--- a/wget-list
++++ b/wget-list
+@@ -115,6 +115,7 @@ https://www.freedesktop.org/software/libmbim/libmbim-1.26.4.tar.xz
+ https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.7.1/libnvme-1.7.1.tar.gz
+ https://github.com/rrthomas/libpaper/releases/download/v2.1.2/libpaper-2.1.2.tar.gz
+ https://github.com/flatpak/libportal/releases/download/0.7.1/libportal-0.7.1.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/libportal-0.7.1-testsuite_fix-1.patch
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+ https://github.com/Qalculate/libqalculate/releases/download/v4.9.0/libqalculate-4.9.0.tar.gz
+ https://www.freedesktop.org/software/libqmi/libqmi-1.30.8.tar.xz
+@@ -767,8 +768,10 @@ https://download.gnome.org/sources/gvfs/1.52/gvfs-1.52.2.tar.xz
+ https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.2.tar.xz
+ https://download.gnome.org/sources/nautilus/45/nautilus-45.2.1.tar.xz
+ https://download.gnome.org/sources/gnome-bluetooth/42/gnome-bluetooth-42.7.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/gnome-bluetooth-42.7-testsuite_fix-1.patch
+ https://download.gnome.org/sources/gnome-keyring/42/gnome-keyring-42.1.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/45/gnome-settings-daemon-45.1.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/gnome-settings-daemon-45.1-testsuite_fix-1.patch
+ https://download.gnome.org/sources/tecla/45/tecla-45.0.tar.xz
+ https://download.gnome.org/sources/gnome-control-center/45/gnome-control-center-45.2.tar.xz
+ https://download.gnome.org/sources/mutter/45/mutter-45.3.tar.xz
