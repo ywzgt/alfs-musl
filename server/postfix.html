@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Postfix-3.8.4
+      Postfix-3.8.5
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1296">
+  <body class="blfs" id="blfs-r12.0-1322">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1296
+        "phrase">(systemd</span> Edition) - Version r12.0-1322
       </h4>
       <h3>
         Chapter&nbsp;21.&nbsp;Mail Server Software
@@ -41,15 +41,15 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1296">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1322">
           Home</a>
         </li>
       </ul>
     </div>
+    <h1 class="sect1">
+      <a id="postfix" name="postfix"></a>Postfix-3.8.5
+    </h1>
     <div class="sect1" lang="en" xml:lang="en">
-      <h1 class="sect1">
-        <a id="postfix" name="postfix"></a>Postfix-3.8.4
-      </h1>
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
           Introduction to Postfix
@@ -80,13 +80,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ghostarchive.org/postfix/postfix-release/official/postfix-3.8.4.tar.gz">
-                https://ghostarchive.org/postfix/postfix-release/official/postfix-3.8.4.tar.gz</a>
+                "https://ghostarchive.org/postfix/postfix-release/official/postfix-3.8.5.tar.gz">
+                https://ghostarchive.org/postfix/postfix-release/official/postfix-3.8.5.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: f2e5ac23387a5824bc365675697277e9
+                Download MD5 sum: ae12d4dfc965a74a691a22ace14e7207
               </p>
             </li>
             <li class="listitem">
@@ -101,7 +101,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.2 SBU (Using parallelism=4)
+                Estimated build time: 0.1 SBU (Using parallelism=4)
               </p>
             </li>
           </ul>
@@ -222,7 +222,7 @@ chown -v postfix:postfix /var/mail</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58670" name="idm58670"></a>Cyrus-SASL
+                    <a id="idm58689" name="idm58689"></a>Cyrus-SASL
                   </h5>
                 </div>
               </div>
@@ -242,7 +242,7 @@ AUXLIBS='-lsasl2'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58677" name="idm58677"></a>LMDB
+                    <a id="idm58696" name="idm58696"></a>LMDB
                   </h5>
                 </div>
               </div>
@@ -260,7 +260,7 @@ AUXLIBS_LMDB='-llmdb'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58684" name="idm58684"></a>OpenLDAP
+                    <a id="idm58703" name="idm58703"></a>OpenLDAP
                   </h5>
                 </div>
               </div>
@@ -279,7 +279,7 @@ AUXLIBS_LDAP='-lldap -llber'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58691" name="idm58691"></a>Sqlite
+                    <a id="idm58710" name="idm58710"></a>Sqlite
                   </h5>
                 </div>
               </div>
@@ -298,7 +298,7 @@ AUXLIBS_SQLITE='-lsqlite3 -lpthread'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58698" name="idm58698"></a>MySQL
+                    <a id="idm58717" name="idm58717"></a>MySQL
                   </h5>
                 </div>
               </div>
@@ -316,7 +316,7 @@ AUXLIBS_MYSQL='-lmysqlclient -lz -lm'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58705" name="idm58705"></a>PostgreSQL
+                    <a id="idm58724" name="idm58724"></a>PostgreSQL
                   </h5>
                 </div>
               </div>
@@ -335,7 +335,7 @@ AUXLIBS_PGSQL='-lpq -lz -lm'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58712" name="idm58712"></a>CDB/TinyCDB
+                    <a id="idm58731" name="idm58731"></a>CDB/TinyCDB
                   </h5>
                 </div>
               </div>
@@ -355,7 +355,7 @@ AUXLIBS_CDB='<em class=
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58721" name="idm58721"></a>StartTLS
+                    <a id="idm58740" name="idm58740"></a>StartTLS
                     Authentication
                   </h5>
                 </div>
@@ -399,8 +399,8 @@ make</kbd></pre>
           "command">sh postfix-install -non-interactive \
    daemon_directory=/usr/lib/postfix \
    manpage_directory=/usr/share/man \
-   html_directory=/usr/share/doc/postfix-3.8.4/html \
-   readme_directory=/usr/share/doc/postfix-3.8.4/readme</kbd></pre>
+   html_directory=/usr/share/doc/postfix-3.8.5/html \
+   readme_directory=/usr/share/doc/postfix-3.8.5/readme</kbd></pre>
         </div>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -589,7 +589,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/{etc,usr/lib}/postfix,
-              /usr/share/doc/postfix-3.8.4 and
+              /usr/share/doc/postfix-3.8.5 and
               /var/{lib,spool}/postfix</span>
             </div>
           </div>
@@ -857,7 +857,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1296">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1322">
           Home</a>
         </li>
       </ul>
