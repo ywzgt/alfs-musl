@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1322">
+  <body class="blfs" id="blfs-r12.0-1337">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1322
+        "phrase">(systemd</span> Edition) - Version r12.0-1337
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1322">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1337">
           Home</a>
         </li>
       </ul>
@@ -136,9 +136,10 @@
           <a class="xref" href="../general/libgxps.html" title=
           "Libgxps-0.3.2">libgxps-0.3.2</a>, <a class="xref" href=
           "../general/libseccomp.html" title=
-          "libseccomp-2.5.5">libseccomp-2.5.5</a>, and <a class="xref" href=
+          "libseccomp-2.5.5">libseccomp-2.5.5</a>, <a class="xref" href=
           "../general/poppler.html" title=
-          "Poppler-24.01.0">Poppler-24.01.0</a>
+          "Poppler-24.01.0">Poppler-24.01.0</a>, and <a class="xref" href=
+          "../general/upower.html" title="UPower-1.90.2">UPower-1.90.2</a>
         </p>
         <h4>
           Optional
@@ -158,13 +159,11 @@
           "Taglib-1.13.1">taglib-1.13.1</a>, <a class="xref" href=
           "totem-pl-parser.html" title=
           "totem-pl-parser-3.26.6">totem-pl-parser-3.26.6</a>, <a class=
-          "xref" href="../general/upower.html" title=
-          "UPower-1.90.2">UPower-1.90.2</a>, <a class="ulink" href=
-          "https://github.com/lipnitsk/libcue">libcue</a>, <a class="ulink"
-          href="https://libiptcdata.sourceforge.net/">libitpcdata</a>,
-          <a class="ulink" href="https://libosinfo.org">libosinfo</a>, and
+          "ulink" href="https://github.com/lipnitsk/libcue">libcue</a>,
           <a class="ulink" href=
-          "https://gitlab.gnome.org/GNOME/gupnp">gupnp</a>
+          "https://libiptcdata.sourceforge.net/">libitpcdata</a>, <a class=
+          "ulink" href="https://libosinfo.org">libosinfo</a>, and <a class=
+          "ulink" href="https://gitlab.gnome.org/GNOME/gupnp">gupnp</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -256,6 +255,13 @@ rm -rf ~/tracker-tests</kbd></pre>
           <code class="option">-Dminer_rss=false</code>: Use this option if
           you have not installed the recommended dependency libgrss.
         </p>
+        <p>
+          <code class="option">-Dbattery_detection=none</code>: Use this
+          option if you have not installed the recommended dependency upower.
+          Do not use this option if your system has a battery (laptop battery
+          or UPS), or tracker miners may waste the battery power and lifespan
+          when the A/C power is unavailable.
+        </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -302,7 +308,7 @@ rm -rf ~/tracker-tests</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1322">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1337">
           Home</a>
         </li>
       </ul>
