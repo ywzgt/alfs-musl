@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1352">
+  <body class="blfs" id="blfs-r12.0-1364">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1352
+        "phrase">(systemd</span> Edition) - Version r12.0-1364
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1352">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1364">
           Home</a>
         </li>
       </ul>
@@ -201,12 +201,14 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup .. --prefix=/usr &amp;&amp;
+meson setup --prefix=/usr --buildtype=release .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           If you have installed the needed dependencies, you can test the
           results by running <span class="command"><strong>ninja
-          test</strong></span>.
+          test</strong></span>. Six tests are known to fail if you are not
+          using <a class="xref" href="../gnome/gnome-terminal.html" title=
+          "gnome-terminal-3.50.1">gnome-terminal-3.50.1</a> and are in GNOME.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -288,7 +290,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1352">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1364">
           Home</a>
         </li>
       </ul>
