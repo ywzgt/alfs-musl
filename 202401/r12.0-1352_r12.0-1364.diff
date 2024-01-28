@@ -1,0 +1,69 @@
+diff --git a/wget-list b/wget-list
+index b5a77073..83fa13fc 100644
+--- a/wget-list
++++ b/wget-list
+@@ -3,8 +3,7 @@ https://github.com/lfs-book/make-ca/releases/download/v1.13/make-ca-1.13.tar.xz
+ https://github.com/cracklib/cracklib/releases/download/v2.9.11/cracklib-2.9.11.tar.xz
+ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.0.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+-https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
+-https://www.linuxfromscratch.org/patches/blfs/svn/gnupg-2.4.3-emacs-1.patch
++https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.4.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.3.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.2.tar.bz2
+ https://www.netfilter.org/projects/iptables/files/iptables-1.8.10.tar.xz
+@@ -322,7 +321,7 @@ https://www.cpan.org/authors/id/G/GA/GAAS/IO-String-1.08.tar.gz
+ https://www.cpan.org/authors/id/R/RJ/RJBS/IPC-Run3-0.049.tar.gz
+ https://www.cpan.org/authors/id/I/IS/ISHIGAKI/JSON-4.10.tar.gz
+ https://www.cpan.org/authors/id/A/AL/ALINKE/Lingua-Translit-0.29.tar.gz
+-https://www.cpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.75.tar.gz
++https://www.cpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.76.tar.gz
+ https://www.cpan.org/authors/id/D/DR/DROLSKY/List-AllUtils-0.19.tar.gz
+ https://www.cpan.org/authors/id/R/RE/REHSACK/List-MoreUtils-0.430.tar.gz
+ https://www.cpan.org/authors/id/E/ET/ETJ/Log-Log4perl-1.57.tar.gz
+@@ -342,7 +341,7 @@ https://www.cpan.org/authors/id/I/IS/ISHIGAKI/Text-CSV-2.04.tar.gz
+ https://www.cpan.org/authors/id/S/SY/SYP/Text-Roman-3.5.tar.gz
+ https://www.cpan.org/authors/id/S/SA/SADAHIRO/Unicode-Collate-1.31.tar.gz
+ https://www.cpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz
+-https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.21.tar.gz
++https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.24.tar.gz
+ https://www.cpan.org/authors/id/M/MA/MARKOV/XML-LibXML-Simple-1.01.tar.gz
+ https://www.cpan.org/authors/id/S/SH/SHLOMIF/XML-LibXSLT-2.002001.tar.gz
+ https://www.cpan.org/authors/id/G/GR/GRANTM/XML-Simple-2.25.tar.gz
+@@ -463,7 +462,7 @@ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.g
+ https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-0.5.3.tar.gz
+ https://files.pythonhosted.org/packages/source/g/gi-docgen/gi-docgen-2023.3.tar.gz
+ https://files.pythonhosted.org/packages/source/l/lxml/lxml-4.9.4.tar.gz
+-https://files.pythonhosted.org/packages/source/M/Mako/Mako-1.3.1.tar.gz
++https://files.pythonhosted.org/packages/source/M/Mako/Mako-1.3.0.tar.gz
+ https://files.pythonhosted.org/packages/source/n/numpy/numpy-1.26.3.tar.gz
+ https://files.pythonhosted.org/packages/source/p/packaging/packaging-23.2.tar.gz
+ https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
+@@ -648,7 +647,7 @@ https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.3.tar.xz
+ https://download.gnome.org/sources/at-spi2-core/2.50/at-spi2-core-2.50.1.tar.xz
+ https://www.cairographics.org/releases/cairo-1.18.0.tar.xz
+ https://www.cairographics.org/releases/cairomm-1.14.0.tar.xz
+-https://www.freedesktop.org/software/colord/releases/colord-gtk-0.3.0.tar.xz
++https://www.freedesktop.org/software/colord/releases/colord-gtk-0.3.1.tar.xz
+ https://fltk.org/pub/fltk/1.3.9/fltk-1.3.9-source.tar.gz
+ https://downloads.sourceforge.net/freeglut/freeglut-3.4.0.tar.gz
+ https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.10.tar.xz
+@@ -691,8 +690,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.17-ffmpeg5_fi
+ https://download.qt.io/archive/qt/6.6/6.6.1/single/qt-everywhere-src-6.6.1.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ https://download.gnome.org/sources/tepl/6.8/tepl-6.8.0.tar.xz
+-https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.3.275/Vulkan-Headers-1.3.275.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/v1.3.275/Vulkan-Loader-1.3.275.tar.gz
++https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.3.276/Vulkan-Headers-1.3.276.tar.gz
++https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/v1.3.276/Vulkan-Loader-1.3.276.tar.gz
+ https://webkitgtk.org/releases/webkitgtk-2.42.4.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.18.2/xdg-desktop-portal-1.18.2.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.1/xdg-desktop-portal-gtk-1.15.1.tar.xz
+@@ -892,7 +891,6 @@ https://downloads.sourceforge.net/rox/rox-filer-2.11.tar.bz2
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+ https://archive.mozilla.org/pub/thunderbird/releases/115.7.0/source/thunderbird-115.7.0.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.13.1/tigervnc-1.13.1.tar.gz
+-https://www.x.org/pub/individual/xserver/xorg-server-21.1.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.13.1-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.0.5/transmission-4.0.5.tar.xz
+ https://github.com/ib/xarchiver/archive/0.5.4.22/xarchiver-0.5.4.22.tar.gz
