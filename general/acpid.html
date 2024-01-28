@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1364">
+  <body class="blfs" id="blfs-r12.0-1379">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1364
+        "phrase">(systemd</span> Edition) - Version r12.0-1379
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1364">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1379">
           Home</a>
         </li>
       </ul>
@@ -73,21 +73,24 @@
             may conflict with this package. For example, <span class=
             "phrase"><a class="xref" href="systemd.html" title=
             "Systemd-255">Systemd-255</a></span> (read the documentation for
-            <code class="option">Handle*=</code> in <code class=
-            "filename">logind.conf(5)</code> for details) and <a class="xref"
-            href="upower.html" title="UPower-1.90.2">UPower-1.90.2</a> (used
-            by many desktop environments such as GNOME, KDE, and XFCE for
-            handling ACPI events). If you've installed such a package and
-            it's enough for your use case, this package is probably not
-            needed. If you really need this package, you must be careful
-            configuring it and the other packages handling ACPI events to
-            avoid conflicts. Notably, <span class="phrase"><a class="xref"
-            href="systemd.html" title="Systemd-255">Systemd-255</a></span>
-            handles some ACPI events by default, so the handling of these
-            events by <span class="phrase"><a class="xref" href=
-            "systemd.html" title="Systemd-255">Systemd-255</a></span> should
-            be disabled first if handling these events with acpid (again,
-            read <code class="filename">logind.conf(5)</code> for details).
+            <code class="option">Handle*=</code> in <a class="ulink" href=
+            "https://man.archlinux.org/man/logind.conf.5">logind.conf(5)</a>
+            for details) and <a class="xref" href="upower.html" title=
+            "UPower-1.90.2">UPower-1.90.2</a> (used by many desktop
+            environments such as GNOME, KDE, and XFCE for handling ACPI
+            events). If you've installed such a package and it's enough for
+            your use case, this package is probably not needed. If you really
+            need this package, you must be careful configuring it and the
+            other packages handling ACPI events to avoid conflicts. Notably,
+            <span class="phrase"><a class="xref" href="systemd.html" title=
+            "Systemd-255">Systemd-255</a></span> handles some ACPI events by
+            default, so the handling of these events by <span class=
+            "phrase"><a class="xref" href="systemd.html" title=
+            "Systemd-255">Systemd-255</a></span> should be disabled first if
+            handling these events with acpid (again, read <a class="ulink"
+            href=
+            "https://man.archlinux.org/man/logind.conf.5">logind.conf(5)</a>
+            for details).
           </p>
         </div>
         <div class="admon note">
@@ -337,7 +340,7 @@ echo <code class=
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1364">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1379">
           Home</a>
         </li>
       </ul>

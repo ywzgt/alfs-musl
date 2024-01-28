@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1364">
+  <body class="blfs" id="blfs-r12.0-1379">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1364
+        "phrase">(systemd</span> Edition) - Version r12.0-1379
       </h4>
       <h3>
         Chapter&nbsp;34.&nbsp;<span class="phrase">GNOME Applications</span>
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1364">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1379">
           Home</a>
         </li>
       </ul>
@@ -140,17 +140,6 @@
             and the LTO pass is not parallelized.
           </p>
         </div>
-        <p>
-          First, remove a check against the system <span class=
-          "application">Pango</span> version that is too strict:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed '/pango.v1_52/,+1d' -i vendor/pango-sys/Cargo.toml &amp;&amp;
-
-cat &gt;&gt; Cargo.toml &lt;&lt; EOF
-<code class="literal">[patch.crates-io.pango-sys]
-path = "vendor/pango-sys"</code>
-EOF</kbd></pre>
         <p>
           Install <span class="application">Snapshot</span> by running the
           following commands:
@@ -252,7 +241,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1364">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1379">
           Home</a>
         </li>
       </ul>

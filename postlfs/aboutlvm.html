@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1364">
+  <body class="blfs" id="blfs-r12.0-1379">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1364
+        "phrase">(systemd</span> Edition) - Version r12.0-1379
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1364">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1379">
           Home</a>
         </li>
       </ul>
@@ -185,8 +185,10 @@ mount /dev/lfs-lvm/mysql /srv/mysql</kbd></pre>
         "application">systemd</span> preventing mounting logical volumes
         through <code class="filename">/etc/fstab</code>. You must create a
         <span class="quote">“<span class="quote">mount</span>”</span> unit
-        (see systemd.mount(5)) as in the following example, which mounts the
-        <code class="filename">/home</code> directory automatically at boot:
+        (see <a class="ulink" href=
+        "https://man.archlinux.org/man/systemd.mount.5">systemd.mount(5)</a>)
+        as in the following example, which mounts the <code class=
+        "filename">/home</code> directory automatically at boot:
       </p>
       <pre class="root"><kbd class=
       "command">cat &gt; /etc/systemd/system/home.mount &lt;&lt; EOF
@@ -246,7 +248,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1364">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1379">
           Home</a>
         </li>
       </ul>

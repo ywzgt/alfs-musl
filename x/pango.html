@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Pango-1.50.14
+      Pango-1.51.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1364">
+  <body class="blfs" id="blfs-r12.0-1379">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1364
+        "phrase">(systemd</span> Edition) - Version r12.0-1379
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1364">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1379">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="pango" name="pango"></a>Pango-1.50.14
+      <a id="pango" name="pango"></a>Pango-1.51.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -82,23 +82,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/pango/1.50/pango-1.50.14.tar.xz">
-                https://download.gnome.org/sources/pango/1.50/pango-1.50.14.tar.xz</a>
+                "https://download.gnome.org/sources/pango/1.51/pango-1.51.0.tar.xz">
+                https://download.gnome.org/sources/pango/1.51/pango-1.51.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: baa2a0a67c71935165a205a76da25954
+                Download MD5 sum: d5968724bee6ff1e327fdf0b491d9719
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 4.1 MB
+                Download size: 1.9 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 47 MB (with tests)
+                Estimated disk space required: 28 MB (with tests)
               </p>
             </li>
             <li class="listitem">
@@ -157,12 +157,6 @@
           Installation of Pango
         </h2>
         <p>
-          First work around a bug in gcc-13 which triggers a false warning
-          that breaks a release build:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -i '/array-bounds/d' meson.build</kbd></pre>
-        <p>
           Install <span class="application">Pango</span> by running the
           following commands:
         </p>
@@ -181,7 +175,7 @@ ninja</kbd></pre>
           the API documentation for this package, issue:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed "/docs_dir =/s@\$@ / 'pango-1.50.14'@" -i ../docs/meson.build &amp;&amp;
+        "command">sed "/docs_dir =/s@\$@ / 'pango-1.51.0'@" -i ../docs/meson.build &amp;&amp;
 meson configure -Dgtk_doc=true                                    &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -254,7 +248,7 @@ ninja</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/pango-1.0 and
-              /usr/share/doc/pango-1.50.14 (if gi-docgen is available)</span>
+              /usr/share/doc/pango-1.51.0 (if gi-docgen is available)</span>
             </div>
           </div>
         </div>
@@ -356,7 +350,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1364">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1379">
           Home</a>
         </li>
       </ul>
