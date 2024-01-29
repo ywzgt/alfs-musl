@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1379">
+  <body class="blfs" id="blfs-r12.0-1384">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1379
+        "phrase">(systemd</span> Edition) - Version r12.0-1384
       </h4>
       <h3>
         Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1379">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1384">
           Home</a>
         </li>
       </ul>
@@ -437,8 +437,22 @@ EOF</kbd></pre>
           <pre class="root"><kbd class=
           "command">cat &gt; /etc/profile.d/i18n.sh &lt;&lt; "EOF"
 <code class="literal"># Set up i18n variables
-. /etc/locale.conf
-export LANG</code>
+for i in $(locale); do
+  unset ${i%=*}
+done
+
+if [[ "$TERM" = linux ]]; then
+  export LANG=C.UTF-8
+else
+  source /etc/locale.conf
+
+  for i in $(locale); do
+    key=${i%=*}
+    if [[ -v $key ]]; then
+      export $key
+    fi
+  done
+fi</code>
 EOF</kbd></pre>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
@@ -683,7 +697,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1379">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1384">
           Home</a>
         </li>
       </ul>
