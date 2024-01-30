@@ -136,7 +136,7 @@ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
 https://github.com/hughsie/libxmlb/releases/download/0.3.15/libxmlb-0.3.15.tar.xz
 https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.39.tar.xz
 https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.9.0/libwacom-2.9.0.tar.xz
-https://wpewebkit.org/releases/libwpe-1.14.1.tar.xz
+https://wpewebkit.org/releases/libwpe-1.14.2.tar.xz
 https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
 https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_1/log4cplus-2.1.1.tar.xz
 https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
@@ -194,7 +194,7 @@ https://releases.pagure.org/newt/newt-0.52.24.tar.gz
 https://github.com/opencv/opencv/archive/4.9.0/opencv-4.9.0.tar.gz
 https://github.com/opencv/opencv_contrib/archive/4.9.0/opencv_contrib-4.9.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/v2.5.0/openjpeg-2.5.0.tar.gz
-https://www.cairographics.org/releases/pixman-0.42.2.tar.gz
+https://www.cairographics.org/releases/pixman-0.43.2.tar.gz
 https://poppler.freedesktop.org/poppler-24.01.0.tar.xz
 https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
 https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
@@ -247,7 +247,7 @@ https://downloads.sourceforge.net/hdparm/hdparm-9.65.tar.gz
 https://github.com/lfs-book/LSB-Tools/releases/download/v0.10/LSB-Tools-0.10.tar.gz
 https://github.com/lm-sensors/lm-sensors/archive/V3-6-0/lm-sensors-3-6-0.tar.gz
 https://github.com/logrotate/logrotate/releases/download/3.21.0/logrotate-3.21.0.tar.xz
-http://ftp.midnight-commander.org/mc-4.8.30.tar.xz
+http://ftp.midnight-commander.org/mc-4.8.31.tar.xz
 https://www.freedesktop.org/software/ModemManager/ModemManager-1.18.12.tar.xz
 https://download.gnome.org/sources/notification-daemon/3.20/notification-daemon-3.20.0.tar.xz
 https://github.com/p7zip-project/p7zip/archive/v17.04/p7zip-17.04.tar.gz
@@ -341,7 +341,7 @@ https://www.cpan.org/authors/id/I/IS/ISHIGAKI/Text-CSV-2.04.tar.gz
 https://www.cpan.org/authors/id/S/SY/SYP/Text-Roman-3.5.tar.gz
 https://www.cpan.org/authors/id/S/SA/SADAHIRO/Unicode-Collate-1.31.tar.gz
 https://www.cpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz
-https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.24.tar.gz
+https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.25.tar.gz
 https://www.cpan.org/authors/id/M/MA/MARKOV/XML-LibXML-Simple-1.01.tar.gz
 https://www.cpan.org/authors/id/S/SH/SHLOMIF/XML-LibXSLT-2.002001.tar.gz
 https://www.cpan.org/authors/id/G/GR/GRANTM/XML-Simple-2.25.tar.gz
@@ -475,7 +475,7 @@ https://download.gnome.org/sources/pygobject/3.46/pygobject-3.46.0.tar.xz
 https://download.gnome.org/sources/pygtk/2.24/pygtk-2.24.0.tar.bz2
 https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.1.1.tar.gz
 https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
-https://files.pythonhosted.org/packages/source/p/pytest/pytest-7.4.4.tar.gz
+https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.0.0.tar.gz
 https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
 https://files.pythonhosted.org/packages/source/P/PyYAML/PyYAML-6.0.1.tar.gz
 https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
@@ -501,7 +501,7 @@ https://files.pythonhosted.org/packages/source/M/Markdown/Markdown-3.4.1.tar.gz
 https://files.pythonhosted.org/packages/source/m/meson_python/meson_python-0.12.0.tar.gz
 https://files.pythonhosted.org/packages/source/m/msgpack/msgpack-1.0.4.tar.gz
 https://files.pythonhosted.org/packages/source/p/pathspec/pathspec-0.10.3.tar.gz
-https://files.pythonhosted.org/packages/source/p/pluggy/pluggy-1.0.0.tar.gz
+https://files.pythonhosted.org/packages/source/p/pluggy/pluggy-1.4.0.tar.gz
 https://files.pythonhosted.org/packages/source/p/py/py-1.11.0.tar.gz
 https://files.pythonhosted.org/packages/source/p/pyproject-metadata/pyproject-metadata-0.7.0.tar.gz
 https://files.pythonhosted.org/packages/source/p/pytz/pytz-2022.7.1.tar.gz
@@ -643,7 +643,7 @@ https://www.x.org/pub/individual/app/twm-1.0.12.tar.xz
 https://invisible-mirror.net/archives/xterm/xterm-389.tgz
 https://www.x.org/pub/individual/app/xclock-1.1.1.tar.xz
 https://www.x.org/pub/individual/app/xinit-1.4.2.tar.xz
-https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.3.tar.xz
+https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz
 https://download.gnome.org/sources/at-spi2-core/2.50/at-spi2-core-2.50.1.tar.xz
 https://www.cairographics.org/releases/cairo-1.18.0.tar.xz
 https://www.cairographics.org/releases/cairomm-1.14.0.tar.xz
@@ -681,7 +681,7 @@ https://download.gnome.org/sources/libglade/2.6/libglade-2.6.4.tar.bz2
 https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.3.tar.xz
 https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
 https://download.gnome.org/sources/pango/1.51/pango-1.51.0.tar.xz
-https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.3.tar.xz
+https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
 https://download.qt.io/archive/qt/5.15/5.15.12/single/qt-everywhere-opensource-src-5.15.12.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5.15.12-kf5-1.patch
 https://anduin.linuxfromscratch.org/BLFS/qtwebengine/qtwebengine-5.15.17.tar.xz
