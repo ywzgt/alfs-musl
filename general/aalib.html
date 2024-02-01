@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1393">
+  <body class="blfs" id="blfs-r12.0-1399">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1393
+        "phrase">(systemd</span> Edition) - Version r12.0-1399
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1393">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1399">
           Home</a>
         </li>
       </ul>
@@ -111,10 +111,10 @@
         </h4>
         <p class="optional">
           <a class="xref" href="../x/x7lib.html" title="Xorg Libraries">Xorg
-          Libraries</a>, <a class="xref" href="../x/x7legacy.html" title=
-          "Xorg Legacy">Xorg Legacy Fonts</a> (runtime), <a class="xref"
-          href="slang.html" title="slang-2.3.3">slang-2.3.3</a>, and
-          <a class="xref" href="gpm.html" title="GPM-1.20.7">GPM-1.20.7</a>
+          Libraries</a>, <a class="xref" href="../x/x7font.html" title=
+          "Xorg Fonts">Xorg Fonts</a> (runtime), <a class="xref" href=
+          "slang.html" title="slang-2.3.3">slang-2.3.3</a>, and <a class=
+          "xref" href="gpm.html" title="GPM-1.20.7">GPM-1.20.7</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -126,6 +126,15 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -i -e '/AM_PATH_AALIB,/s/AM_PATH_AALIB/[&amp;]/' aalib.m4</kbd></pre>
+        <p>
+          Change the default X11 font from <a class="xref" href=
+          "../x/x7legacy.html" title="Xorg Legacy">Xorg Legacy Fonts</a> to
+          <a class="xref" href="../x/x7font.html" title="Xorg Fonts">Xorg
+          Fonts</a>:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e 's/8x13bold/-*-luxi mono-bold-r-normal--13-120-*-*-m-*-*-*/' \
+    -i src/aax.c</kbd></pre>
         <p>
           Install <span class="application">AAlib</span> by running the
           following commands:
@@ -292,7 +301,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1393">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1399">
           Home</a>
         </li>
       </ul>
