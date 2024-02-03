@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1404">
+  <body class="blfs" id="blfs-r12.0-1410">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1404
+        "phrase">(systemd</span> Edition) - Version r12.0-1410
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1404">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1410">
           Home</a>
         </li>
       </ul>
@@ -129,7 +129,7 @@
           "gst-plugins-good-1.22.9">gst-plugins-good-1.22.9</a> (runtime),
           <a class="xref" href="../multimedia/gst10-libav.html" title=
           "gst-libav-1.22.9">gst-libav-1.22.9</a> (runtime), <a class="xref"
-          href="../general/icu.html" title="ICU-74.1">ICU-74.1</a>, <a class=
+          href="../general/icu.html" title="ICU-74.2">ICU-74.2</a>, <a class=
           "xref" href="../general/libexif.html" title=
           "libexif-0.6.24">libexif-0.6.24</a>, <a class="xref" href=
           "../general/libgrss.html" title="libgrss-0.7.0">libgrss-0.7.0</a>,
@@ -138,7 +138,7 @@
           "../general/libseccomp.html" title=
           "libseccomp-2.5.5">libseccomp-2.5.5</a>, <a class="xref" href=
           "../general/poppler.html" title=
-          "Poppler-24.01.0">Poppler-24.01.0</a>, and <a class="xref" href=
+          "Poppler-24.02.0">Poppler-24.02.0</a>, and <a class="xref" href=
           "../general/upower.html" title="UPower-1.90.2">UPower-1.90.2</a>
         </p>
         <h4>
@@ -191,6 +191,11 @@
           <pre class="userinput"><kbd class="command">sed -i s/120/<em class=
           "replaceable"><code>200</code></em>/ tests/functional-tests/meson.build</kbd></pre>
         </div>
+        <p>
+          First, fix some crashes introduced by gstreamer-1.22.9:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i '/ALLOW_RULE (shutdown);/a ALLOW_RULE (getsockopt);' src/libtracker-miners-common/tracker-seccomp.c</kbd></pre>
         <p>
           Install <span class="application">Tracker-miners</span> by running
           the following commands:
@@ -307,7 +312,7 @@ rm -rf ~/tracker-tests</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1404">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1410">
           Home</a>
         </li>
       </ul>

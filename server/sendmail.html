@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      sendmail-8.17.2
+      sendmail-8.18.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1404">
+  <body class="blfs" id="blfs-r12.0-1410">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1404
+        "phrase">(systemd</span> Edition) - Version r12.0-1410
       </h4>
       <h3>
         Chapter&nbsp;21.&nbsp;Mail Server Software
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1404">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1410">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="sendmail" name="sendmail"></a>sendmail-8.17.2
+      <a id="sendmail" name="sendmail"></a>sendmail-8.18.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -76,22 +76,22 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ftp.sendmail.org/sendmail.8.17.2.tar.gz">https://ftp.sendmail.org/sendmail.8.17.2.tar.gz</a>
+                "https://ftp.sendmail.org/sendmail.8.18.1.tar.gz">https://ftp.sendmail.org/sendmail.8.18.1.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: eb21e7c8a1d2a69a4597e9ce6b1cb3d5
+                Download MD5 sum: b6b332295b5779036d4c9246f96f673c
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 2.2 MB
+                Download size: 2.3 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 18 MB
+                Estimated disk space required: 21 MB
               </p>
             </li>
             <li class="listitem">
@@ -204,15 +204,15 @@ sh Build install    &amp;&amp;
 install -v -m644 cf/cf/{submit,sendmail}.mc /etc/mail &amp;&amp;
 cp -v -R cf/* /etc/mail                               &amp;&amp;
 
-install -v -m755 -d /usr/share/doc/sendmail-8.17.2/{cf,sendmail} &amp;&amp;
+install -v -m755 -d /usr/share/doc/sendmail-8.18.1/{cf,sendmail} &amp;&amp;
 
 install -v -m644 CACerts FAQ KNOWNBUGS LICENSE PGPKEYS README RELEASE_NOTES \
-        /usr/share/doc/sendmail-8.17.2 &amp;&amp;
+        /usr/share/doc/sendmail-8.18.1 &amp;&amp;
 
 install -v -m644 sendmail/{README,SECURITY,TRACEFLAGS,TUNING} \
-        /usr/share/doc/sendmail-8.17.2/sendmail &amp;&amp;
+        /usr/share/doc/sendmail-8.18.1/sendmail &amp;&amp;
 
-install -v -m644 cf/README /usr/share/doc/sendmail-8.17.2/cf &amp;&amp;
+install -v -m644 cf/README /usr/share/doc/sendmail-8.18.1/cf &amp;&amp;
 
 for manpage in sendmail editmap mailstats makemap praliases smrsh
 do
@@ -248,8 +248,8 @@ make op.txt op.pdf</kbd></pre>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">install -v -d -m755 /usr/share/doc/sendmail-8.17.2 &amp;&amp;
-install -v -m644 op.ps op.txt op.pdf /usr/share/doc/sendmail-8.17.2 &amp;&amp;
+        "command">install -v -d -m755 /usr/share/doc/sendmail-8.18.1 &amp;&amp;
+install -v -m644 op.ps op.txt op.pdf /usr/share/doc/sendmail-8.18.1 &amp;&amp;
 cd ../..</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -395,7 +395,7 @@ m4 m4/cf.m4 sendmail.mc &gt; sendmail.cf</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/etc/mail,
-              /usr/share/doc/sendmail-8.17.2, and
+              /usr/share/doc/sendmail-8.18.1, and
               /var/spool/clientmqueue</span>
             </div>
           </div>
@@ -601,7 +601,7 @@ m4 m4/cf.m4 sendmail.mc &gt; sendmail.cf</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1404">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1410">
           Home</a>
         </li>
       </ul>
