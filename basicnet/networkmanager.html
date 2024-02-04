@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1410">
+  <body class="blfs" id="blfs-r12.0-1426">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1410
+        "phrase">(systemd</span> Edition) - Version r12.0-1426
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1410">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1426">
           Home</a>
         </li>
       </ul>
@@ -129,9 +129,8 @@
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="../general/jansson.html" title=
-          "Jansson-2.14">jansson-2.14</a> and <a class="xref" href=
-          "libndp.html" title="libndp-1.8">libndp-1.8</a>
+          <a class="xref" href="libndp.html" title=
+          "libndp-1.8">libndp-1.8</a>
         </p>
         <h4>
           Recommended
@@ -144,10 +143,12 @@
           "gobject-introspection-1.78.1">gobject-introspection-1.78.1</a>,
           <a class="xref" href="../postlfs/iptables.html" title=
           "iptables-1.8.10">iptables-1.8.10</a>, <a class="xref" href=
-          "../general/newt.html" title="newt-0.52.24">newt-0.52.24</a> (for
-          <span class="command"><strong>nmtui</strong></span>), <a class=
-          "xref" href="../postlfs/nss.html" title="NSS-3.97">nss-3.97</a>,
-          <a class="xref" href="../postlfs/polkit.html" title=
+          "libpsl.html" title="libpsl-0.21.5">libpsl-0.21.5</a>, <a class=
+          "xref" href="../general/newt.html" title=
+          "newt-0.52.24">newt-0.52.24</a> (for <span class=
+          "command"><strong>nmtui</strong></span>), <a class="xref" href=
+          "../postlfs/nss.html" title="NSS-3.97">nss-3.97</a>, <a class=
+          "xref" href="../postlfs/polkit.html" title=
           "Polkit-124">Polkit-124</a> (runtime), <a class="xref" href=
           "../general/python-modules.html#pygobject3" title=
           "PyGObject-3.46.0">PyGObject-3.46.0</a>, <span class=
@@ -171,13 +172,13 @@
           "xref" href="../postlfs/nss.html" title="NSS-3.97">nss-3.97</a>),
           <a class="xref" href="../general/gtk-doc.html" title=
           "GTK-Doc-1.33.2">GTK-Doc-1.33.2</a>, <a class="xref" href=
-          "libpsl.html" title="libpsl-0.21.5">libpsl-0.21.5</a>, (<a class=
-          "xref" href="../x/qt5.html" title="Qt-5.15.12">Qt-5.15.12</a> or
-          <a class="xref" href="../x/qt5-components.html" title=
+          "../general/jansson.html" title="Jansson-2.14">jansson-2.14</a>,
+          <a class="xref" href="../general/ModemManager.html" title=
+          "ModemManager-1.18.12">ModemManager-1.18.12</a>, (<a class="xref"
+          href="../x/qt5.html" title="Qt-5.15.12">Qt-5.15.12</a> or <a class=
+          "xref" href="../x/qt5-components.html" title=
           "qt-components-5.15.12">qt-components-5.15.12</a> with qtdoc) (for
-          examples), <a class="xref" href="../general/ModemManager.html"
-          title="ModemManager-1.18.12">ModemManager-1.18.12</a>, <a class=
-          "xref" href="../general/upower.html" title=
+          examples), <a class="xref" href="../general/upower.html" title=
           "UPower-1.90.2">UPower-1.90.2</a>, <a class="xref" href=
           "../general/valgrind.html" title=
           "Valgrind-3.22.0">Valgrind-3.22.0</a>, <a class="ulink" href=
@@ -298,7 +299,6 @@ meson setup ..                   \
       --prefix=/usr              \
       --buildtype=release        \
       -Dlibaudit=no              \
-      -Dlibpsl=false             \
       -Dnmtui=true               \
       -Dovs=false                \
       -Dppp=false                \
@@ -365,10 +365,12 @@ done</kbd></pre>
           "command"><strong>nmtui</strong></span>.
         </p>
         <p>
-          <em class="parameter"><code>-Dlibpsl=false</code></em> and
-          <em class="parameter"><code>-Dovs=false</code></em>: These switches
-          disable building with the respective libraries. Remove these if you
-          have the needed libraries installed on your system.
+          <em class="parameter"><code>-Dovs=false</code></em>: This switch
+          disable the Open vSwitch integration because it needs <a class=
+          "xref" href="../general/jansson.html" title=
+          "Jansson-2.14">jansson-2.14</a>. Remove it if you have <a class=
+          "xref" href="../general/jansson.html" title=
+          "Jansson-2.14">jansson-2.14</a> installed on your system.
         </p>
         <p>
           <em class="parameter"><code>-Dmodem_manager=false</code></em>: This
@@ -737,7 +739,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1410">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1426">
           Home</a>
         </li>
       </ul>

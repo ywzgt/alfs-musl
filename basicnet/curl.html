@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1410">
+  <body class="blfs" id="blfs-r12.0-1426">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1410
+        "phrase">(systemd</span> Edition) - Version r12.0-1426
       </h4>
       <h3>
         Chapter&nbsp;17.&nbsp;Networking Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1410">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1426">
           Home</a>
         </li>
       </ul>
@@ -112,18 +112,30 @@
           cURL Dependencies
         </h3>
         <h4>
-          Required
-        </h4>
-        <p class="required">
-          <a class="xref" href="libpsl.html" title=
-          "libpsl-0.21.5">libpsl-0.21.5</a>
-        </p>
-        <h4>
           Recommended
         </h4>
         <p class="recommended">
+          <a class="xref" href="libpsl.html" title=
+          "libpsl-0.21.5">libpsl-0.21.5</a>
+        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            While there is an option to build the package without libpsl,
+            both the upstream developers and the BLFS editors alike highly
+            recommend not disabling support for libpsl due to severe security
+            implications.
+          </p>
+        </div>
+        <h4>
+          Recommended at runtime
+        </h4>
+        <p class="recommended">
           <a class="xref" href="../postlfs/make-ca.html" title=
-          "make-ca-1.13">make-ca-1.13</a> (runtime)
+          "make-ca-1.13">make-ca-1.13</a>
         </p>
         <h4>
           Optional
@@ -186,9 +198,8 @@
 make</kbd></pre>
         <p>
           To run the test suite, issue: <span class="command"><strong>make
-          test</strong></span>. Foure tests are known to fail due to missing
-          files. Some tests are flaky, so if some tests have failed it's
-          possible to run a test again with: <span class=
+          test</strong></span>. Some tests are flaky, so if some tests have
+          failed it's possible to run a test again with: <span class=
           "command"><strong>(cd tests; ./runtests.pl <em class=
           "replaceable"><code>&lt;test ID&gt;</code></em>)</strong></span>
           (the ID of failed tests are shown in the <span class=
@@ -387,7 +398,7 @@ cp -v -R docs -T /usr/share/doc/curl-8.6.0</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1410">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1426">
           Home</a>
         </li>
       </ul>

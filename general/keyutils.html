@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1410">
+  <body class="blfs" id="blfs-r12.0-1426">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1410
+        "phrase">(systemd</span> Edition) - Version r12.0-1426
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1410">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1426">
           Home</a>
         </li>
       </ul>
@@ -138,9 +138,6 @@
 
 -*- <span class=
 "blue">C</span>ryptographic API ---&gt;                                              [CRYPTO]
-  <span class="blue">P</span>ublic-key cryptography ---&gt;
-    &lt;*/M&gt; <span class=
-"blue">D</span>H (Diffie-Hellman)                                        [CRYPTO_DH]
   <span class="blue">C</span>ertificates for signature checking ---&gt;
     [*] <span class=
 "blue">P</span>rovide system-wide ring of trusted keys        [SYSTEM_TRUSTED_KEYRING]
@@ -148,7 +145,15 @@
 "blue">P</span>rovide a keyring to which extra trustable keys may be added
                                                 ...  [SECONDARY_TRUSTED_KEYRING]
     [*] <span class=
-"blue">P</span>rovide system-wide ring of blacklisted keys  [SYSTEM_BLACKLIST_KEYRING]</pre>
+"blue">P</span>rovide system-wide ring of blacklisted keys  [SYSTEM_BLACKLIST_KEYRING]
+
+<span class="blue">L</span>ibrary routines ---&gt;
+  <span class="blue">C</span>rypto library routines ---&gt;
+    # If not built into the kernel, [BIG_KEYS] won't show up;
+    # building as a module won't work:
+    &lt;*&gt; <span class=
+"blue">C</span>haCha20-Poly1305 AEAD support (8-byte nonce library version)
+                                              ...  [CRYPTO_LIB_CHACHA20POLY1305]</pre>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -325,7 +330,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1410">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1426">
           Home</a>
         </li>
       </ul>

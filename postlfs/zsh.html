@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1410">
+  <body class="blfs" id="blfs-r12.0-1426">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1410
+        "phrase">(systemd</span> Edition) - Version r12.0-1426
       </h4>
       <h3>
         Chapter&nbsp;7.&nbsp;Shells
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1410">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1426">
           Home</a>
         </li>
       </ul>
@@ -128,9 +128,10 @@
         </h4>
         <p class="optional">
           <a class="xref" href="../general/pcre.html" title=
-          "PCRE-8.45">PCRE-8.45</a> and <a class="xref" href=
+          "PCRE-8.45">PCRE-8.45</a>, <a class="xref" href=
           "../general/valgrind.html" title=
-          "Valgrind-3.22.0">Valgrind-3.22.0</a>
+          "Valgrind-3.22.0">Valgrind-3.22.0</a>, and <a class="ulink" href=
+          "https://fbb-git.gitlab.io/yodl/">yodl</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -143,6 +144,17 @@
         <pre class="userinput"><kbd class=
         "command">sed -e 's/set_from_init_file/texinfo_&amp;/' \
     -i Doc/Makefile.in</kbd></pre>
+        <p>
+          The documentation files contain references to zsh configuration
+          files in <code class="filename">/etc</code>, but we'll use
+          <code class="filename">/etc/zsh</code> to hold these configuration
+          files instead. The building system will fix up those references if
+          the <span class="application">yodl</span> package is available, but
+          it's out of the scope of BLFS. So we need to fix up the references
+          manually:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed 's|/etc/z|/etc/zsh/z|g' -i Doc/*.*</kbd></pre>
         <p>
           Install <span class="application">zsh</span> by running the
           following commands:
@@ -351,7 +363,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1410">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1426">
           Home</a>
         </li>
       </ul>
