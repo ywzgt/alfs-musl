@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1428">
+  <body class="blfs" id="blfs-r12.0-1446">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1428
+        "phrase">(systemd</span> Edition) - Version r12.0-1446
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1428">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1446">
           Home</a>
         </li>
       </ul>
@@ -123,20 +123,22 @@
         </p>
         <pre class="root"><kbd class=
         "command">rm /usr/sbin/lsbinstall</kbd></pre>
+        <p>
+          Remove two scripts that serve no purpose on a systemd system:
+        </p>
+        <pre class="root"><kbd class=
+        "command">rm /usr/sbin/{install,remove}_initd</kbd></pre>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
           Configuration Information
         </h2>
         <p>
-          The configuration for this package was done in <span class=
-          "phrase"><a class="ulink" href=
-          "https://www.linuxfromscratch.org/lfs/view/systemd/chapter11/theend.html">
-          LFS</a> and <a class="ulink" href=
-          "https://www.linuxfromscratch.org/lfs/view/systemd/chapter08/systemd.html">
-          Systemd</a>.</span> The file <code class=
-          "filename">/etc/lsb-release</code> should already exist. Be sure
-          that the DISTRIB_CODENAME entry has been set properly.
+          The configuration for this package was done in <a class="ulink"
+          href="../../../../lfs/view/systemd/chapter11/theend.html">LFS</a>.
+          The file <code class="filename">/etc/lsb-release</code> should
+          already exist. Be sure that the DISTRIB_CODENAME entry has been set
+          properly.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -147,8 +149,7 @@
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">lsb_release, install_initd, and
-              remove_initd</span>
+              <span class="segbody">lsb_release</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Library:</strong>
@@ -185,34 +186,6 @@
                   </p>
                 </td>
               </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="install_initd" name=
-                    "install_initd"></a><span class="term"><span class=
-                    "command"><strong>install_initd</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is a script to activate SysV startup scripts
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="remove_initd" name="remove_initd"></a><span class=
-                    "term"><span class=
-                    "command"><strong>remove_initd</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is a script to deactivate SysV startup scripts
-                  </p>
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
@@ -239,7 +212,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1428">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1446">
           Home</a>
         </li>
       </ul>

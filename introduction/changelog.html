@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1428">
+  <body class="blfs" id="blfs-r12.0-1446">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1428
+        "phrase">(systemd</span> Edition) - Version r12.0-1446
       </h4>
       <h3>
         Chapter&nbsp;1.&nbsp;Welcome to BLFS
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1428">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1446">
           Home</a>
         </li>
       </ul>
@@ -52,13 +52,137 @@
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <p>
-        Current release: r12.0-1428 – February 4th, 2024
+        Current release: r12.0-1446 – February 5th, 2024
       </p>
       <div class="itemizedlist">
         <p class="title">
           <strong>Changelog Entries:</strong>
         </p>
         <ul>
+          <li class="listitem">
+            <p>
+              February 5th, 2024
+            </p>
+            <div class="itemizedlist">
+              <ul>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to blfs-systemd-units-20240205. This
+                    version fixes a warning that occurs when starting slapd
+                    with the default configuration.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to WebKitGTK-2.42.5 (Security Update).
+                    Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19242">#19242</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Change TigerVNC to use LXQt instead of LXDE
+                    for the default configuration. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19245">#19245</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [rahul] - Update to openldap-2.6.7 (Security Update).
+                    Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19211">#19211</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [rahul] - Update to neon-0.33.0. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19210">#19210</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [rahul] - Update to cmake-3.28.2. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19209">#19209</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [rahul] - Update to talloc-2.4.2. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19208">#19208</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Change libxml2 to use ICU, and fix a build
+                    failure in QtWebEngine that occurs with libxml2-2.12.x
+                    configured like this. Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19246">#19246</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Update to xkeyboard-config-2.41. Fixes
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19241">#19241</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Update to xorg-libs libXvMC-1.0.14,
+                    libxkbfile-1.1.3, libXext-1.3.6, and libpciaccess-0.18.
+                    Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19232">#19232</a>,
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19233">#19233</a>,
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19234">#19234</a>,
+                    and <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19235">#19235</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Update to xorg-apps xkbcomp-1.4.7,
+                    xkbutils-1.0.6, and xprop-1.2.7. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19229">#19229</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to libxml2-2.12.5 (Security Update).
+                    Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19238">#19238</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to gc-8.2.6. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19240">#19240</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to glad-2.0.5. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19239">#19239</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to enchant-2.6.6. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19236">#19236</a>.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
           <li class="listitem">
             <p>
               February 4th, 2024
@@ -6866,7 +6990,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1428">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1446">
           Home</a>
         </li>
       </ul>
