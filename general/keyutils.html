@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1446">
+  <body class="blfs" id="blfs-r12.0-1459">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1446
+        "phrase">(systemd</span> Edition) - Version r12.0-1459
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1446">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1459">
           Home</a>
         </li>
       </ul>
@@ -138,6 +138,18 @@
 
 -*- <span class=
 "blue">C</span>ryptographic API ---&gt;                                              [CRYPTO]
+  <span class="blue">P</span>ublic-key cryptography ---&gt;
+    &lt;*/M&gt; <span class=
+"blue">R</span>SA (Rivest-Shamir-Adleman)                               [CRYPTO_RSA]
+  [*] <span class=
+"blue">A</span>symmetric (public-key cryptographic) key type ---&gt;  [ASYMMETRIC_KEY_TYPE]
+    &lt;*&gt; <span class=
+"blue">A</span>symmetric public-key crypto algorithm subtype
+                                            ...  [ASYMMETRIC_PUBLIC_KEY_SUBTYPE]
+    # If not built into the kernel, [SYSTEM_TRUSTED_KEYRING] won't show up;
+    # building as a module won't work:
+    &lt;*&gt;   <span class=
+"blue">X</span>.509 certificate parser                     [X509_CERTIFICATE_PARSER]
   <span class="blue">C</span>ertificates for signature checking ---&gt;
     [*] <span class=
 "blue">P</span>rovide system-wide ring of trusted keys        [SYSTEM_TRUSTED_KEYRING]
@@ -180,7 +192,10 @@
           "LSB-Tools-0.12">lsb-tools-0.12</a> is not installed, the test
           suite will output some lines complaining the <span class=
           "command"><strong>lsb_release</strong></span> command not available
-          but it won't affect the test result.
+          but it won't affect the test result. One test named <code class=
+          "literal">TRY ADDING ASYMMETRIC KEYS</code> is known to fail due to
+          the removal of the support for SHA1 with RSA signature algorithm
+          from Linux kernel version 6.7 or newer.
         </p>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -330,7 +345,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1446">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1459">
           Home</a>
         </li>
       </ul>
