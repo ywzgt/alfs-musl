@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1459">
+  <body class="blfs" id="blfs-r12.0-1474">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1459
+        "phrase">(systemd</span> Edition) - Version r12.0-1474
       </h4>
       <h3>
         Chapter&nbsp;23.&nbsp;Other Server Software
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1459">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1474">
           Home</a>
         </li>
       </ul>
@@ -173,7 +173,6 @@ autoconf &amp;&amp;
             --sysconfdir=/etc    \
             --disable-static     \
             --enable-dynamic     \
-            --disable-versioning \
             --disable-debug      \
             --disable-slapd &amp;&amp;
 
@@ -208,7 +207,6 @@ autoconf &amp;&amp;
             --localstatedir=/var  \
             --libexecdir=/usr/lib \
             --disable-static      \
-            --disable-versioning  \
             --disable-debug       \
             --with-tls=openssl    \
             --with-cyrus-sasl     \
@@ -271,11 +269,6 @@ cp      -vfr      doc/{drafts,rfc,guide} \
           libraries to be dynamically linked to the executable programs.
         </p>
         <p>
-          <em class="parameter"><code>--disable-versioning</code></em>: This
-          switch disables symbol versioning in the <span class=
-          "application">OpenLDAP</span> libraries.
-        </p>
-        <p>
           <em class="parameter"><code>--enable-crypt</code></em>: This switch
           enables using <a class="ulink" href=
           "https://man.archlinux.org/man/crypt.3">crypt(3)</a> passwords.
@@ -324,6 +317,14 @@ cp      -vfr      doc/{drafts,rfc,guide} \
           <code class="option">--enable-slp</code>: This switch enables SLPv2
           support. Use it if you have installed <a class="ulink" href=
           "http://www.openslp.org/">OpenSLP</a>.
+        </p>
+        <p>
+          <code class="option">--disable-versioning</code>: This switch
+          disables symbol versioning in the <span class=
+          "application">OpenLDAP</span> libraries. The default is to have
+          symbol versioning. Note that if you have built applications using
+          this package with symbol versioning, and remove the symbols, the
+          applications may fail to run.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -946,7 +947,7 @@ result: 0 Success
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1459">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1474">
           Home</a>
         </li>
       </ul>

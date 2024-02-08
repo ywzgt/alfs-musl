@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1459">
+  <body class="blfs" id="blfs-r12.0-1474">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1459
+        "phrase">(systemd</span> Edition) - Version r12.0-1474
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1459">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1474">
           Home</a>
         </li>
       </ul>
@@ -215,6 +215,14 @@
             "command"><strong>-DUSE_GTK4</strong></span>
           </p>
         </div>
+        <p>
+          First, if you are on a 32-bit machine, fix a build failure:
+        </p>
+        <pre class="userinput"><kbd class="command">case $(uname -m) in
+   i?86) sed -e '/UNUSED_VARIABLE(t6)/d' \
+             -e '/UNUSED_VARIABLE(t7)/d' \
+             -i Source/JavaScriptCore/llint/LowLevelInterpreter.cpp ;;
+esac</kbd></pre>
         <p>
           If you want to install the GTK+-3 version of <span class=
           "application">WebKitGTK</span>, run the following commands:
@@ -513,7 +521,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1459">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1474">
           Home</a>
         </li>
       </ul>
