@@ -1,0 +1,95 @@
+diff --git a/wget-list b/wget-list
+index a1d093d6..26a6000f 100644
+--- a/wget-list
++++ b/wget-list
+@@ -23,7 +23,7 @@ https://gitlab.freedesktop.org/polkit/polkit/-/archive/124/polkit-124.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+ https://github.com/shadow-maint/shadow/releases/download/4.14.3/shadow-4.14.3.tar.xz
+-https://www.stunnel.org/downloads/archive/5.x/stunnel-5.71.tar.gz
++https://www.stunnel.org/downloads/archive/5.x/stunnel-5.72.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.15p5.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+ https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.7.tar.xz
+@@ -51,7 +51,7 @@ https://ftp.gnu.org/gnu/emacs/emacs-29.2.tar.xz
+ https://download.gnome.org/sources/gedit/46/gedit-46.1.tar.xz
+ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/23.08.4/src/kate-23.08.4.tar.xz
+-https://archive.xfce.org/src/apps/mousepad/0.5/mousepad-0.5.10.tar.bz2
++https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.2.tar.bz2
+ https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
+ https://github.com/vim/vim/archive/v9.1.0041/vim-9.1.0041.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+@@ -101,7 +101,7 @@ https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.10.3.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.47.tar.bz2
+ https://download.gnome.org/sources/libgrss/0.7/libgrss-0.7.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libgrss-0.7.0-bugfixes-2.patch
+-https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.51.tar.xz
++https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.52.tar.xz
+ https://download.gnome.org/sources/libgudev/238/libgudev-238.tar.xz
+ https://github.com/hughsie/libgusb/releases/download/0.4.8/libgusb-0.4.8.tar.xz
+ https://github.com/libical/libical/releases/download/v3.0.17/libical-3.0.17.tar.gz
+@@ -174,7 +174,7 @@ https://github.com/Dav1dde/glad/archive/refs/tags/v2.0.5/glad-2.0.5.tar.gz
+ https://github.com/g-truc/glm/archive/1.0.0/glm-1.0.0.tar.gz
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+ https://github.com/harfbuzz/harfbuzz/releases/download/8.3.0/harfbuzz-8.3.0.tar.xz
+-https://github.com/jasper-software/jasper/archive/version-4.1.2/jasper-4.1.2.tar.gz
++https://github.com/jasper-software/jasper/archive/version-4.2.0/jasper-4.2.0.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.14/lcms2-2.14.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.0.3/libavif-1.0.3.tar.gz
+ https://github.com/libexif/libexif/releases/download/v0.6.24/libexif-0.6.24.tar.bz2
+@@ -273,7 +273,7 @@ https://downloads.sourceforge.net/infozip/zip30.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.26.0/cbindgen-0.26.0.tar.gz
+ https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+-https://cmake.org/files/v3.28/cmake-3.28.2.tar.gz
++https://cmake.org/files/v3.28/cmake-3.28.3.tar.gz
+ https://doxygen.nl/files/doxygen-1.10.0.src.tar.gz
+ https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.6/gc-8.2.6.tar.gz
+@@ -666,7 +666,7 @@ https://download.gnome.org/sources/gtk-vnc/1.3/gtk-vnc-1.3.1.tar.xz
+ https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz
+ https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz
+ https://download.gnome.org/sources/gtksourceview/5.10/gtksourceview-5.10.0.tar.xz
+-https://downloads.sourceforge.net/enlightenment/imlib2-1.12.1.tar.xz
++https://downloads.sourceforge.net/enlightenment/imlib2-1.12.2.tar.xz
+ https://github.com/ksnip/kColorPicker/archive/refs/tags/v0.3.0/kColorPicker-0.3.0.tar.gz
+ https://github.com/ksnip/kImageAnnotator/archive/refs/tags/v0.7.0/kImageAnnotator-0.7.0.tar.gz
+ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
+@@ -766,8 +766,7 @@ https://download.gnome.org/sources/gnome-backgrounds/45/gnome-backgrounds-45.0.t
+ https://download.gnome.org/sources/gvfs/1.52/gvfs-1.52.2.tar.xz
+ https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.2.tar.xz
+ https://download.gnome.org/sources/nautilus/45/nautilus-45.2.1.tar.xz
+-https://download.gnome.org/sources/gnome-bluetooth/42/gnome-bluetooth-42.7.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/gnome-bluetooth-42.7-testsuite_fix-1.patch
++https://download.gnome.org/sources/gnome-bluetooth/42/gnome-bluetooth-42.8.tar.xz
+ https://download.gnome.org/sources/gnome-keyring/42/gnome-keyring-42.1.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/45/gnome-settings-daemon-45.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gnome-settings-daemon-45.1-testsuite_fix-1.patch
+@@ -803,11 +802,11 @@ https://www.unicode.org/Public/zipped/15.1.0/Unihan.zip
+ https://download.gnome.org/sources/seahorse/43/seahorse-43.0.tar.xz
+ https://download.gnome.org/sources/snapshot/45/snapshot-45.2.tar.xz
+ https://download.gnome.org/sources/vinagre/3.22/vinagre-3.22.0.tar.xz
+-https://archive.xfce.org/src/xfce/libxfce4util/4.18/libxfce4util-4.18.1.tar.bz2
++https://archive.xfce.org/src/xfce/libxfce4util/4.18/libxfce4util-4.18.2.tar.bz2
+ https://archive.xfce.org/src/xfce/xfconf/4.18/xfconf-4.18.3.tar.bz2
+-https://archive.xfce.org/src/xfce/libxfce4ui/4.18/libxfce4ui-4.18.4.tar.bz2
++https://archive.xfce.org/src/xfce/libxfce4ui/4.18/libxfce4ui-4.18.5.tar.bz2
+ https://archive.xfce.org/src/xfce/exo/4.18/exo-4.18.0.tar.bz2
+-https://archive.xfce.org/src/xfce/garcon/4.18/garcon-4.18.1.tar.bz2
++https://archive.xfce.org/src/xfce/garcon/4.18/garcon-4.18.2.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-panel/4.18/xfce4-panel-4.18.5.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar/4.18/thunar-4.18.10.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar-volman/4.18/thunar-volman-4.18.0.tar.bz2
+@@ -819,9 +818,9 @@ https://archive.xfce.org/src/xfce/xfdesktop/4.18/xfdesktop-4.18.1.tar.bz2
+ https://archive.xfce.org/src/xfce/xfwm4/4.18/xfwm4-4.18.0.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-session/4.18/xfce4-session-4.18.3.tar.bz2
+ https://archive.xfce.org/src/apps/parole/4.18/parole-4.18.1.tar.bz2
+-https://archive.xfce.org/src/apps/xfce4-terminal/1.1/xfce4-terminal-1.1.1.tar.bz2
++https://archive.xfce.org/src/apps/xfce4-terminal/1.1/xfce4-terminal-1.1.2.tar.bz2
+ https://archive.xfce.org/src/apps/xfburn/0.7/xfburn-0.7.0.tar.bz2
+-https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.1.tar.bz2
++https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.2.tar.bz2
+ http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.18/xfce4-dev-tools-4.18.1.tar.bz2
+ https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.3.tar.bz2
+ https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.4/xfce4-pulseaudio-plugin-0.4.8.tar.bz2
