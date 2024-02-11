@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      PostgreSQL-16.1
+      PostgreSQL-16.2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1482">
+  <body class="blfs" id="blfs-r12.0-1500">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1482
+        "phrase">(systemd</span> Edition) - Version r12.0-1500
       </h4>
       <h3>
         Chapter&nbsp;22.&nbsp;Databases
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="mariadb.html" title=
-          "MariaDB-10.11.6">Prev</a>
+          "MariaDB-10.11.7">Prev</a>
           <p>
-            MariaDB-10.11.6
+            MariaDB-10.11.7
           </p>
         </li>
         <li class="next">
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1482">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1500">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="postgresql" name="postgresql"></a>PostgreSQL-16.1
+      <a id="postgresql" name="postgresql"></a>PostgreSQL-16.2
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,23 +78,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ftp.postgresql.org/pub/source/v16.1/postgresql-16.1.tar.bz2">
-                https://ftp.postgresql.org/pub/source/v16.1/postgresql-16.1.tar.bz2</a>
+                "https://ftp.postgresql.org/pub/source/v16.2/postgresql-16.2.tar.bz2">
+                https://ftp.postgresql.org/pub/source/v16.2/postgresql-16.2.tar.bz2</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 9cbfb9076ed06384471802b850698a6d
+                Download MD5 sum: 3d19d93434666db5d33e692472915ae5
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 23 MB
+                Download size: 24 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 245 MB (add 25 MB for tests)
+                Estimated disk space required: 227 MB (add 43 MB for tests)
               </p>
             </li>
             <li class="listitem">
@@ -181,7 +181,7 @@ useradd -c "PostgreSQL Server" -g postgres -d /srv/pgsql/data \
 
 ./configure --prefix=/usr          \
             --enable-thread-safety \
-            --docdir=/usr/share/doc/postgresql-16.1 &amp;&amp;
+            --docdir=/usr/share/doc/postgresql-16.2 &amp;&amp;
 make</kbd></pre>
         <p>
           There are a number of programs in the <code class=
@@ -399,7 +399,7 @@ chown -Rv postgres:postgres /srv/pgsql /run/postgresql</kbd></pre>
             <code class="filename">PGDATA/</code> directory. Details on the
             format of the files and the options that can be set in each can
             be found in <code class=
-            "filename">/usr/share/doc/postgresql-16.1/html/index.html</code>.
+            "filename">/usr/share/doc/postgresql-16.2/html/index.html</code>.
           </p>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
@@ -494,7 +494,7 @@ echo "select * from t1;" | (su - postgres -c '/usr/bin/psql test')</kbd></pre>
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/{libpq,postgresql},
               /usr/lib/postgresql,
-              /usr/share/{doc/postgresql-16.1,postgresql}, and
+              /usr/share/{doc/postgresql-16.2,postgresql}, and
               /srv/pgsql</span>
             </div>
           </div>
@@ -1152,9 +1152,9 @@ echo "select * from t1;" | (su - postgres -c '/usr/bin/psql test')</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="mariadb.html" title=
-          "MariaDB-10.11.6">Prev</a>
+          "MariaDB-10.11.7">Prev</a>
           <p>
-            MariaDB-10.11.6
+            MariaDB-10.11.7
           </p>
         </li>
         <li class="next">
@@ -1169,7 +1169,7 @@ echo "select * from t1;" | (su - postgres -c '/usr/bin/psql test')</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1482">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1500">
           Home</a>
         </li>
       </ul>

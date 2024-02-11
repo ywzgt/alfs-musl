@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1482">
+  <body class="blfs" id="blfs-r12.0-1500">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1482
+        "phrase">(systemd</span> Edition) - Version r12.0-1500
       </h4>
       <h3>
         Chapter&nbsp;49.&nbsp;Extensible Markup Language (XML)
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1482">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1500">
           Home</a>
         </li>
       </ul>
@@ -259,7 +259,9 @@ install -v -m644    RELEASE-NOTES* NEWS* \
           <p>
             Create (or append) and populate the XML catalog file using the
             following commands as the <code class="systemitem">root</code>
-            user:
+            user (both <span class="emphasis"><em>http</em></span> and
+            <span class="emphasis"><em>https</em></span> forms are used
+            because upstream have had both in their documentation):
           </p>
           <pre class="root"><kbd class=
           "command">if [ ! -d /etc/xml ]; then install -v -m755 -d /etc/xml; fi &amp;&amp;
@@ -268,7 +270,17 @@ if [ ! -f /etc/xml/catalog ]; then
 fi &amp;&amp;
 
 xmlcatalog --noout --add "rewriteSystem" \
+           "http://cdn.docbook.org/release/xsl-nons/1.79.2" \
+           "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
+    /etc/xml/catalog &amp;&amp;
+
+xmlcatalog --noout --add "rewriteSystem" \
            "https://cdn.docbook.org/release/xsl-nons/1.79.2" \
+           "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
+    /etc/xml/catalog &amp;&amp;
+
+xmlcatalog --noout --add "rewriteURI" \
+           "http://cdn.docbook.org/release/xsl-nons/1.79.2" \
            "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
     /etc/xml/catalog &amp;&amp;
 
@@ -278,7 +290,17 @@ xmlcatalog --noout --add "rewriteURI" \
     /etc/xml/catalog &amp;&amp;
 
 xmlcatalog --noout --add "rewriteSystem" \
+           "http://cdn.docbook.org/release/xsl-nons/current" \
+           "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
+    /etc/xml/catalog &amp;&amp;
+
+xmlcatalog --noout --add "rewriteSystem" \
            "https://cdn.docbook.org/release/xsl-nons/current" \
+           "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
+    /etc/xml/catalog &amp;&amp;
+
+xmlcatalog --noout --add "rewriteURI" \
+           "http://cdn.docbook.org/release/xsl-nons/current" \
            "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
     /etc/xml/catalog &amp;&amp;
 
@@ -389,7 +411,7 @@ xmlcatalog --noout --add "rewriteURI" \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1482">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1500">
           Home</a>
         </li>
       </ul>
