@@ -1,9 +1,0 @@
-#!/bin/bash
-# https://www.linuxfromscratch.org/blfs/view/svn/general/tree.html
-
-SRC="tree"
-PKG="$SRC"
-
-make
-make install PREFIX=/usr MANDIR=/usr/share/man
-chmod -v 644 /usr/share/man/man1/tree.1

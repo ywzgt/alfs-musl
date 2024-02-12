@@ -118,6 +118,7 @@ _pacman_db() {
 
 			if [ -n "$PKG" ]; then
 			if ! test "$PV"; then PV="${f##*-}"; fi
+			PV=${PV//-/_}
 
 			if [ ! -f installed.file ]; then _cp
 			else
@@ -134,7 +135,7 @@ _pacman_db() {
 			install -Dm644 files -t "${BUILDDIR}/var/lib/pacman/local/${PKG}-${PV}-1"
 			local FILES="$(cat files|sed '/\/$\|%FILES%/d')"
 			if [[ -n "$FILES" ]]; then
-				local FSIZE="$(cd ${BUILDDIR}; LC_ALL=C du -c $FILES|awk '/total$/{print$1}')"
+				local FSIZE="$(cd ${BUILDDIR}; LC_ALL=C du -xc $FILES|awk '/total$/{print$1}')"
 				local SIZE=$((FSIZE*1024))
 			fi
 			echo -e "%NAME%\n${PKG}\n\n%VERSION%\n${PV}-1\n\n%BASE%\n${PKG}\n\n%ARCH%\n${ARCH}\n\n%BUILDDATE%\n$(date +%s)\n\n%INSTALLDATE%\n$(date +%s)\n\n%PACKAGER%\nbuildbot <bot@$(hostname)>\n\n%SIZE%\n${SIZE}\n\n%VALIDATION%\nsha256\n\n" \
@@ -218,6 +219,18 @@ _pacman_db
 
 sleep 1 && newline
 _package
-echo "TAG_DES=Target: $(uname -m)-pc-linux-musl${ABI}" >>$GITHUB_ENV
+
+echo "Target: $(uname -m)-pc-linux-musl${ABI}" > tag_des.txt
+for f in $LFS/$FILE_DIR/8*-{binutils,gcc,musl}-[0-9]*; do
+case "${f##*/}" in
+	*-binutils-*) BINUTILS_VER="${f##*-}";;
+	*-gcc-*) GCC_VER="${f##*-}";;
+	*-musl-*) MUSL_VER="${f##*-}";;
+esac
+done
+echo "Binutils: $BINUTILS_VER" >> tag_des.txt
+echo "GCC: $GCC_VER" >> tag_des.txt
+echo "Musl: $MUSL_VER" >> tag_des.txt
+echo "TAG_DES=$PWD/tag_des.txt" >>$GITHUB_ENV
 echo "TAG_VERSION=$VER" >>$GITHUB_ENV
 _tag

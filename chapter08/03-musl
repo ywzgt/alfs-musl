@@ -63,7 +63,7 @@ _ldconfig () {
 }
 
 _ldd_install() {
-	local rule="$(printf "%s\n\t%s\n" 'print-ldso:' '@echo $$(basename $(LDSO_PATHNAME))')"
+	local rule=$(printf "%s\n\t%s\n" 'print-ldso:' '@echo $$(basename $(LDSO_PATHNAME))')
 	local LDSO=$(make -f Makefile --eval "$rule" print-ldso)
 
 # 	install -Dvm755 /dev/stdin /usr/bin/ldd<<EOF

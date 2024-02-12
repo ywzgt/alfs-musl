@@ -195,34 +195,23 @@ jobs:
         git commit -m "Uploading $(TZ='Asia/Shanghai' date|sed -e 's/20[0-9][0-9]$//' -e 's/CST//')"
         git push origin $branch
         echo "TAG_TOOLS=${branch#failed_}" >>$GITHUB_ENV
-        touch ../continue
     - name: Setup tmate ssh session
       if: ${{ failure() }}
       uses: mxschmitt/action-tmate@v3
-      timeout-minutes: 60 # 40 多分钟会自动断开
+      timeout-minutes: 90
       with:
         limit-access-to-actor: true
-    - name: Package tools
-      if: ${{ failure() }}
-      run: source envars; (cd "${BUILDDIR}"; find sources -depth -type d ! -name sources|xargs sudo rm -rf; sudo tar cf - --exclude=./dev/* --exclude=./proc/* --exclude=./sys/* --exclude=./run/* --exclude=./tmp/* --exclude=./alfs - .|xz -T0) >tools-full.tar.xz 2>/dev/null; (cd "${BUILDDIR}"; sudo tar cf - --exclude=./dev/* --exclude=./proc/* --exclude=./sys/* --exclude=./run/* --exclude=./tmp/* --exclude=./alfs --exclude=./sources - .|xz -T0) >tools.tar.xz 2>/dev/null
-    - name: Upload tools
-      if: ${{ failure() }}
-      uses: softprops/action-gh-release@v1
-      with:
-        name: ${{ env.TAG_TOOLS }}-tools
-        tag_name: failed_${{ env.TAG_TOOLS }}
-        files: tools*.tar.xz
-        prerelease: true
 
     - name: Upload to Releases
       uses: softprops/action-gh-release@v1
       with:
         name: ${{ env.TAG_VERSION }}
         tag_name: ${{ env.TAG_VERSION }}
-        body: "${{ env.TAG_DES }}"
+        body_path: "${{ env.TAG_DES }}"
         files: release/*
         fail_on_unmatched_files: true
-        prerelease: false
+        prerelease: true
+
     - name: Remove old pre Releases
       uses: dev-drprasad/delete-older-releases@v0.2.1
       with:

@@ -16,6 +16,8 @@ cd build
 	--disable-multilib \
 	--disable-gprofng \
 	--enable-64-bit-bfd \
+	--enable-colored-disassembly \
+	--enable-default-hash-style=gnu \
 	--with-system-zlib
 
 make tooldir=/usr

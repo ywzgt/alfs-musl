@@ -3,7 +3,8 @@
 _cleanup_dir() {
 		pushd ${BUILDDIR} >/dev/null
 		rm -rf "usr/"{,local/}lib/python*/{test,ctypes/test,distutils/tests,idlelib/idle_test,lib2to3/tests,sqlite3/test,tkinter/test,unittest/test}
-		rm -rf "usr"{,local}/share/info
+		rm -rf "usr"{,local}/share/info root/.{cache,wget-hsts}
+		sed -i '/^\/root\/.\(wget-hsts\s\|cache\/\)/d' ${FILE_DIR#/}/*
 
 		find "usr" -type f -name '*.la' -delete
 		find "var/cache" ! -type d -delete
@@ -70,12 +71,44 @@ _remove_staticlib() {
 		printf 'done.\n'
 }
 
+_binutils() {
+	# ubuntu 20.04 的 strip 不支持 elf32_x86_64
+	local b_workdir="$(mktemp -d)"
+	if [[ $(strip --version|head -1|sed 's/GNU\s.*\s//') < 2.38 ]]; then
+		echo "Updating binutils..."
+		echo "STRIP version: < $(strip --version|head -1)>"
+		pushd "$b_workdir" > /dev/null
+		wget -nv -c "$(curl -sL https://linuxfromscratch.org/lfs/view/systemd/wget-list|grep '/binutils-[0-9].*\.tar.*'|head -1)"
+		tar -xf binutils-*.tar*
+		cd binutils-*[0-9]; mkdir build && cd build
+		unset {C{,XX,PP},LD}FLAGS
+		../configure --prefix=/usr       \
+             --sysconfdir=/etc   \
+             --enable-gold       \
+             --enable-ld=default \
+             --enable-plugins    \
+             --enable-shared     \
+             --disable-werror    \
+             --disable-multilib \
+             --enable-64-bit-bfd \
+             --with-system-zlib  \
+             --enable-default-hash-style=gnu > binutils-conf.log
+		make -j$(nproc) > binutils-mk.log 2>&1
+		sudo make install > binutils-ins.log 2>&1
+		popd > /dev/null
+		echo; echo "STRIP New version: < $(strip --version|head -1)>";	echo
+	fi
+}
+
 docmd() {
 		[ -z ${BUILDDIR} ] && return
 		[ -d ${BUILDDIR} ] || return 0
 
 		echo '::Removing Python test files and Tools directory...'
 		_cleanup_dir
+
+		echo "::Checking Binutils Version..."
+		_binutils
 
 		echo "::Remove all symbol and relocation information from binaries and libraries, in '${BUILDDIR}/usr'..."
 		_strip_symbol

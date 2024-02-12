@@ -1,4 +1,4 @@
-name: Build-lfs-musl
+name: Build 64
 on:
   workflow_dispatch:
   #schedule:
@@ -7,7 +7,7 @@ on:
     #- cron: '5 02,08 8 5 *' #Runs at 02:05 and 08:05, on day 8 of the month, only in May. UTC (One trigger: specific date)
 
 jobs:
-  build-musl:
+  build-musl64:
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
@@ -182,13 +182,19 @@ jobs:
         git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
         git commit -m "Uploading $(TZ='Asia/Shanghai' date|sed -e 's/20[0-9][0-9]$//' -e 's/CST//')"
         git push origin $branch
+    - name: Setup tmate ssh session
+      if: ${{ failure() }}
+      uses: mxschmitt/action-tmate@v3
+      timeout-minutes: 90
+      with:
+        limit-access-to-actor: true
 
     - name: Upload to Releases
       uses: softprops/action-gh-release@v1
       with:
         name: ${{ env.TAG_VERSION }}
         tag_name: ${{ env.TAG_VERSION }}
-        body: "${{ env.TAG_DES }}"
+        body_path: "${{ env.TAG_DES }}"
         files: release/*
         fail_on_unmatched_files: true
         prerelease: false

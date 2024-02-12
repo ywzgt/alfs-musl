@@ -20,10 +20,9 @@ _abi() {
 mkdir -v build
 cd build
 
-export CFLAGS=${CFLAGS/-DNDEBUG/}
-export CXXFLAGS=${CXXFLAGS/-DNDEBUG/}
 export CPPFLAGS=${CPPFLAGS/-DNDEBUG/}
 
+_conf_gcc() {
 ../configure --prefix=/usr \
 	--disable-bootstrap \
 	--disable-fixincludes \
@@ -33,9 +32,10 @@ export CPPFLAGS=${CPPFLAGS/-DNDEBUG/}
 	--disable-libsanitizer \
 	--disable-libssp $(_abi) \
 	--with-system-zlib \
-	--enable-languages=c,c++
+	--enable-languages=c,c++ $@
+}
 
-make
+_conf_gcc && make
 make install
 ln -svr /usr/bin/cpp /usr/lib
 ln -sfv gcc /usr/bin/cc

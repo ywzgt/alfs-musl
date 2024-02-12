@@ -4,7 +4,6 @@ SRC="procps-ng"
 PKG="$SRC"
 
 ./configure --prefix=/usr \
-	--docdir=/usr/share/doc/procps-ng \
 	--disable-static \
 	--disable-kill
 
