@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1500">
+  <body class="blfs" id="blfs-r12.0-1502">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1500
+        "phrase">(systemd</span> Edition) - Version r12.0-1502
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1500">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1502">
           Home</a>
         </li>
       </ul>
@@ -155,8 +155,10 @@ ninja</kbd></pre>
           the API documentation for this package, issue:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed 's/lib_version/version/' -i ../docs/meson.build &amp;&amp;
-meson configure -Dgtk_doc=true                      &amp;&amp;
+        "command">sed -e 's/lib_version/version/' \
+    -e '/fatal-warnings/d'      \
+    -i ../docs/meson.build      &amp;&amp;
+meson configure -Dgtk_doc=true  &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
@@ -255,7 +257,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1500">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1502">
           Home</a>
         </li>
       </ul>
