@@ -1,0 +1,103 @@
+diff --git a/wget-list b/wget-list
+index edbeb94f..a61b7a9b 100644
+--- a/wget-list
++++ b/wget-list
+@@ -22,7 +22,7 @@ https://github.com/p11-glue/p11-kit/releases/download/0.25.3/p11-kit-0.25.3.tar.
+ https://gitlab.freedesktop.org/polkit/polkit/-/archive/124/polkit-124.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+-https://github.com/shadow-maint/shadow/releases/download/4.14.3/shadow-4.14.3.tar.xz
++https://github.com/shadow-maint/shadow/releases/download/4.14.4/shadow-4.14.4.tar.xz
+ https://www.stunnel.org/downloads/archive/5.x/stunnel-5.72.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.15p5.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+@@ -301,8 +301,8 @@ https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01-xdoc.tar.xz
+ https://github.com/NixOS/patchelf/releases/download/0.18.0/patchelf-0.18.0.tar.gz
+ https://www.cpan.org/authors/id/P/PH/PHRED/Archive-Zip-1.68.tar.gz
+ https://www.cpan.org/authors/id/V/VP/VPIT/autovivification-0.18.tar.gz
+-https://www.cpan.org/authors/id/B/BD/BDFOY/Business-ISBN-3.008.tar.gz
+-https://www.cpan.org/authors/id/B/BD/BDFOY/Business-ISMN-1.203.tar.gz
++https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISBN-3.009.tar.gz
++https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISMN-1.204.tar.gz
+ https://www.cpan.org/authors/id/B/BD/BDFOY/Business-ISSN-1.005.tar.gz
+ https://www.cpan.org/authors/id/K/KA/KASEI/Class-Accessor-0.51.tar.gz
+ https://www.cpan.org/authors/id/D/DC/DCANTRELL/Data-Compare-1.29.tar.gz
+@@ -343,7 +343,7 @@ https://www.cpan.org/authors/id/I/IS/ISHIGAKI/Text-CSV-2.04.tar.gz
+ https://www.cpan.org/authors/id/S/SY/SYP/Text-Roman-3.5.tar.gz
+ https://www.cpan.org/authors/id/S/SA/SADAHIRO/Unicode-Collate-1.31.tar.gz
+ https://www.cpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz
+-https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.26.tar.gz
++https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.27.tar.gz
+ https://www.cpan.org/authors/id/M/MA/MARKOV/XML-LibXML-Simple-1.01.tar.gz
+ https://www.cpan.org/authors/id/S/SH/SHLOMIF/XML-LibXSLT-2.002001.tar.gz
+ https://www.cpan.org/authors/id/G/GR/GRANTM/XML-Simple-2.25.tar.gz
+@@ -354,7 +354,7 @@ https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Alien-Build-Plugin-Download-G
+ https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Alien-Libxml2-0.19.tar.gz
+ https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/B-COW-0.007.tar.gz
+ https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Hooks-EndOfScope-0.26.tar.gz
+-https://cpan.metacpan.org/authors/id/B/BD/BDFOY/Business-ISBN-Data-20230426.001.tar.gz
++https://cpan.metacpan.org/authors/id/B/BD/BDFOY/Business-ISBN-Data-20240209.001.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Capture-Tiny-0.48.tar.gz
+ https://cpan.metacpan.org/authors/id/R/RS/RSHERER/Class-Data-Inheritable-0.09.tar.gz
+ https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Class-Inspector-1.36.tar.gz
+@@ -450,8 +450,8 @@ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/Python-2.7.18-security_fixes-1.patch
+ https://www.python.org/ftp/python/doc/2.7.18/python-2.7.18-docs-html.tar.bz2
+-https://www.python.org/ftp/python/3.12.1/Python-3.12.1.tar.xz
+-https://www.python.org/ftp/python/doc/3.12.1/python-3.12.1-docs-html.tar.bz2
++https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tar.xz
++https://www.python.org/ftp/python/doc/3.12.2/python-3.12.2-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.2.0.tar.gz
+@@ -470,7 +470,7 @@ https://files.pythonhosted.org/packages/source/p/packaging/packaging-23.2.tar.gz
+ https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
+ https://download.gnome.org/sources/pyatspi/2.46/pyatspi-2.46.1.tar.xz
+ https://github.com/pygobject/pycairo/releases/download/v1.18.2/pycairo-1.18.2.tar.gz
+-https://github.com/pygobject/pycairo/releases/download/v1.25.1/pycairo-1.25.1.tar.gz
++https://github.com/pygobject/pycairo/releases/download/v1.26.0/pycairo-1.26.0.tar.gz
+ https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.17.2.tar.gz
+ https://download.gnome.org/sources/pygobject/2.28/pygobject-2.28.7.tar.xz
+ https://download.gnome.org/sources/pygobject/3.46/pygobject-3.46.0.tar.xz
+@@ -824,7 +824,7 @@ https://archive.xfce.org/src/apps/xfce4-terminal/1.1/xfce4-terminal-1.1.2.tar.bz
+ https://archive.xfce.org/src/apps/xfburn/0.7/xfburn-0.7.0.tar.bz2
+ https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.2.tar.bz2
+ http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.18/xfce4-dev-tools-4.18.1.tar.bz2
+-https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.3.tar.bz2
++https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.4.tar.bz2
+ https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.4/xfce4-pulseaudio-plugin-0.4.8.tar.bz2
+ https://download.kde.org/stable/frameworks/5.113/kwindowsystem-5.113.0.tar.xz
+ https://download.kde.org/stable/frameworks/5.113/kwayland-5.113.0.tar.xz
+@@ -850,11 +850,11 @@ https://github.com/lxqt/lxqt-admin/releases/download/1.4.0/lxqt-admin-1.4.0.tar.
+ https://github.com/lxqt/lxqt-openssh-askpass/releases/download/1.4.0/lxqt-openssh-askpass-1.4.0.tar.xz
+ https://github.com/lxqt/lxqt-sudo/releases/download/1.4.0/lxqt-sudo-1.4.0.tar.xz
+ https://github.com/lxqt/lxqt-config/releases/download/1.4.0/lxqt-config-1.4.0.tar.xz
+-https://github.com/lxqt/obconf-qt/releases/download/0.16.3/obconf-qt-0.16.3.tar.xz
++https://github.com/lxqt/obconf-qt/releases/download/0.16.4/obconf-qt-0.16.4.tar.xz
+ https://github.com/lxqt/lxqt-globalkeys/releases/download/1.4.0/lxqt-globalkeys-1.4.0.tar.xz
+ https://github.com/lxqt/lxqt-policykit/releases/download/1.4.0/lxqt-policykit-1.4.0.tar.xz
+ https://github.com/lxqt/lxqt-session/releases/download/1.4.0/lxqt-session-1.4.0.tar.xz
+-https://github.com/lxqt/pcmanfm-qt/releases/download/1.4.0/pcmanfm-qt-1.4.0.tar.xz
++https://github.com/lxqt/pcmanfm-qt/releases/download/1.4.1/pcmanfm-qt-1.4.1.tar.xz
+ https://github.com/lxqt/lxqt-panel/releases/download/1.4.0/lxqt-panel-1.4.0.tar.xz
+ https://github.com/lxqt/lxqt-powermanagement/releases/download/1.4.0/lxqt-powermanagement-1.4.0.tar.xz
+ https://github.com/lxqt/lxqt-runner/releases/download/1.4.0/lxqt-runner-1.4.0.tar.xz
+@@ -885,7 +885,7 @@ https://github.com/fontforge/fontforge/releases/download/20230101/fontforge-2023
+ https://download.gimp.org/pub/gimp/v2.10/gimp-2.10.36.tar.bz2
+ https://download.gimp.org/pub/gimp/help/gimp-help-2.10.34.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.5.0.tar.gz
+-https://dl.hexchat.net/hexchat/hexchat-2.16.1.tar.xz
++https:///github.com/hexchat/hexchat/releases/download/v2.16.2/hexchat-2.16.2.tar.xz
+ https://inkscape.org/gallery/item/44615/inkscape-1.3.2.tar.xz
+ https://downloads.sourceforge.net/pidgin/pidgin-2.14.12.tar.bz2
+ https://downloads.sourceforge.net/rox/rox-filer-2.11.tar.bz2
+@@ -895,7 +895,7 @@ https://github.com/TigerVNC/tigervnc/archive/v1.13.1/tigervnc-1.13.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.13.1-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.0.5/transmission-4.0.5.tar.xz
+ https://github.com/ib/xarchiver/archive/0.5.4.22/xarchiver-0.5.4.22.tar.gz
+-https://portland.freedesktop.org/download/xdg-utils-1.1.3.tar.gz
++https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz
+ https://www.jwz.org/xscreensaver/xscreensaver-6.08.tar.gz
+ https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.11.tar.bz2
+ https://www.alsa-project.org/files/pub/plugins/alsa-plugins-1.2.7.1.tar.bz2
