@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1532">
+  <body class="blfs" id="blfs-r12.0-1549">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1532
+        "phrase">(systemd</span> Edition) - Version r12.0-1549
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1532">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1549">
           Home</a>
         </li>
       </ul>
@@ -105,6 +105,20 @@
             <li class="listitem">
               <p>
                 Estimated build time: 0.5 SBU (with optional gui)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/wpa_supplicant-2.10-security_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/wpa_supplicant-2.10-security_fix-1.patch</a>
               </p>
             </li>
           </ul>
@@ -213,6 +227,12 @@ EOF</kbd></pre>
 CONFIG_CTRL_IFACE_DBUS_NEW=y
 CONFIG_CTRL_IFACE_DBUS_INTRO=y</code>
 EOF</kbd></pre>
+        <p>
+          Next, patch a security vulnerability that occurs when connecting to
+          some networks:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../wpa_supplicant-2.10-security_fix-1.patch</kbd></pre>
         <p>
           Install <span class="application">WPA Supplicant</span> by running
           the following commands:
@@ -593,7 +613,7 @@ update_config=1</pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1532">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1549">
           Home</a>
         </li>
       </ul>
