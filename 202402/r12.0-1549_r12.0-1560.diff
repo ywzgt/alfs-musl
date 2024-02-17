@@ -1,0 +1,53 @@
+diff --git a/wget-list b/wget-list
+index b8d31414..bc277a30 100644
+--- a/wget-list
++++ b/wget-list
+@@ -22,7 +22,7 @@ https://github.com/p11-glue/p11-kit/releases/download/0.25.3/p11-kit-0.25.3.tar.
+ https://gitlab.freedesktop.org/polkit/polkit/-/archive/124/polkit-124.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+-https://github.com/shadow-maint/shadow/releases/download/4.14.4/shadow-4.14.4.tar.xz
++https://github.com/shadow-maint/shadow/releases/download/4.14.5/shadow-4.14.5.tar.xz
+ https://www.stunnel.org/downloads/archive/5.x/stunnel-5.72.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.15p5.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+@@ -202,7 +202,7 @@ https://github.com/qpdf/qpdf/releases/download/v11.8.0/qpdf-11.8.0.tar.gz
+ https://fukuchi.org/works/qrencode/qrencode-4.1.1.tar.bz2
+ https://github.com/sass/sassc/archive/3.6.2/sassc-3.6.2.tar.gz
+ https://github.com/sass/libsass/archive/3.6.6/libsass-3.6.6.tar.gz
+-https://github.com/aruiz/webp-pixbuf-loader/archive/0.2.6/webp-pixbuf-loader-0.2.6.tar.gz
++https://github.com/aruiz/webp-pixbuf-loader/archive/0.2.7/webp-pixbuf-loader-0.2.7.tar.gz
+ https://github.com/google/woff2/archive/v1.0.2/woff2-1.0.2.tar.gz
+ https://github.com/asciidoctor/asciidoctor/archive/v2.0.20/asciidoctor-2.0.20.tar.gz
+ https://downloads.sourceforge.net/bogofilter/bogofilter-1.2.5.tar.xz
+@@ -214,7 +214,7 @@ https://download.gnome.org/sources/gtk-doc/1.33/gtk-doc-1.33.2.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.10.tar.bz2
+ https://github.com/ibus/ibus/archive/refs/tags/1.5.29/ibus-1.5.29.tar.gz
+ https://www.unicode.org/Public/zipped/15.1.0/UCD.zip
+-https://www.imagemagick.org/archive/releases/ImageMagick-7.1.1-15.tar.xz
++https://www.imagemagick.org/archive/releases/ImageMagick-7.1.1-28.tar.xz
+ https://ftp.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.16.0.orig.tar.xz
+ https://github.com/lsof-org/lsof/releases/download/4.99.0/lsof-4.99.0.tar.gz
+ https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
+@@ -255,7 +255,7 @@ http://www.mirbsd.org/MirOS/dist/mir/cpio/paxmirabilis-20201030.tgz
+ https://mj.ucw.cz/download/linux/pci/pciutils-3.10.0.tar.gz
+ https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/pm-utils-1.4.1-bugfixes-1.patch
+-https://gitlab.freedesktop.org/upower/power-profiles-daemon/-/archive/0.13/power-profiles-daemon-0.13.tar.gz
++https://gitlab.freedesktop.org/upower/power-profiles-daemon/-/archive/0.20/power-profiles-daemon-0.20.tar.gz
+ https://download.librdf.org/source/raptor2-2.0.16.tar.gz
+ https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+ https://download.librdf.org/source/redland-1.0.17.tar.gz
+@@ -280,9 +280,9 @@ https://doxygen.nl/files/doxygen-1.10.0.src.tar.gz
+ https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.6/gc-8.2.6.tar.gz
+ https://ftp.gnu.org/gnu/gdb/gdb-14.1.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-2.43.1.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-manpages-2.43.1.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.43.1.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-2.43.2.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-manpages-2.43.2.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.43.2.tar.xz
+ https://ftp.gnu.org/gnu/guile/guile-3.0.9.tar.xz
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/llvm-17.0.6.src.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-17.src.tar.xz
