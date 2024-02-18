@@ -141,7 +141,7 @@ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
 https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_1/log4cplus-2.1.1.tar.xz
 https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
 https://bitmath.org/code/mtdev/mtdev-1.1.6.tar.bz2
-https://nodejs.org/dist/v20.11.0/node-v20.11.0.tar.xz
+https://nodejs.org/dist/v20.11.1/node-v20.11.1.tar.xz
 https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2
 https://archive.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
 https://sourceforge.net/projects/pcre/files/pcre/8.45/pcre-8.45.tar.bz2
@@ -260,7 +260,7 @@ https://download.librdf.org/source/raptor2-2.0.16.tar.gz
 https://download.librdf.org/source/rasqal-0.9.33.tar.gz
 https://download.librdf.org/source/redland-1.0.17.tar.gz
 https://sg.danny.cz/sg/p/sg3_utils-1.48.tar.xz
-https://github.com/lfs-book/sysmon-qt/releases/download/v1.0/sysmon-qt-1.0.tar.xz
+https://github.com/lfs-book/sysmon-qt/releases/download/v1.1/sysmon-qt-1.1.tar.xz
 https://sysstat.github.io/sysstat-packages/sysstat-12.7.5.tar.xz
 https://github.com/systemd/systemd/archive/v255/systemd-255.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/systemd-255-upstream_fixes-1.patch
@@ -329,7 +329,7 @@ https://www.cpan.org/authors/id/R/RE/REHSACK/List-MoreUtils-0.430.tar.gz
 https://www.cpan.org/authors/id/E/ET/ETJ/Log-Log4perl-1.57.tar.gz
 https://www.cpan.org/authors/id/O/OA/OALDERS/LWP-Protocol-https-6.13.tar.gz
 https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-0.4232.tar.gz
-https://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-1.43.tar.gz
+https://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-1.44.tar.gz
 https://www.cpan.org/authors/id/J/JT/JTBRAUN/Parse-RecDescent-1.967015.tar.gz
 https://www.cpan.org/authors/id/W/WB/WBRASWELL/Parse-Yapp-1.21.tar.gz
 https://www.cpan.org/authors/id/L/LE/LEONT/PerlIO-utf8_strict-0.010.tar.gz
@@ -688,6 +688,7 @@ https://download.gnome.org/sources/pango/1.51/pango-1.51.2.tar.xz
 https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
 https://download.qt.io/archive/qt/5.15/5.15.12/single/qt-everywhere-opensource-src-5.15.12.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5.15.12-kf5-1.patch
+https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5.15.12-security_fix-1.patch
 https://anduin.linuxfromscratch.org/BLFS/qtwebengine/qtwebengine-5.15.17.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.17-build_fixes-2.patch
 https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.17-ffmpeg5_fixes-1.patch

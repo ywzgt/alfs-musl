@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1574">
+  <body class="blfs" id="blfs-r12.0-1586">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1574
+        "phrase">(systemd</span> Edition) - Version r12.0-1586
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1574">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1586">
           Home</a>
         </li>
       </ul>
@@ -155,6 +155,13 @@
                 https://dot.kde.org/2021/04/06/announcing-kdes-qt-5-patch-collection</a>
                 and <a class="ulink" href=
                 "https://community.kde.org/Qt5PatchCollection">https://community.kde.org/Qt5PatchCollection</a>.
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5.15.12-security_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5.15.12-security_fix-1.patch</a>
               </p>
             </li>
           </ul>
@@ -342,6 +349,11 @@ ln -sfnv qt-5.15.12 /opt/qt5</kbd></pre>
         </p>
         <pre class="userinput"><kbd class=
         "command">mkdir -pv qtbase/.git</kbd></pre>
+        <p>
+          Fix a security vulnerability in qtbase:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../qt-everywhere-opensource-src-5.15.12-security_fix-1.patch</kbd></pre>
         <p>
           At this point we want to set up skipping most components. Do that
           with:
@@ -685,7 +697,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1574">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1586">
           Home</a>
         </li>
       </ul>

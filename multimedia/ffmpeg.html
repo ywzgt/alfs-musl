@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1574">
+  <body class="blfs" id="blfs-r12.0-1586">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1574
+        "phrase">(systemd</span> Edition) - Version r12.0-1586
       </h4>
       <h3>
         Chapter&nbsp;44.&nbsp;Video Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1574">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1586">
           Home</a>
         </li>
       </ul>
@@ -67,17 +67,10 @@
           Video4Linux compatible video source and any Open Sound System audio
           source.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.1
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -473,6 +466,20 @@ grep ^TEST ../fate.log | wc -l</kbd></pre>
           HTTPS protocol for network streams.
         </p>
         <p>
+          <em class="parameter"><code>--disable-vulkan</code></em>: Disables
+          Vulkan for the current version of <a class="xref" href=
+          "../x/vulkan-loader.html" title=
+          "Vulkan-Loader-1.3.277">Vulkan-Loader-1.3.277</a> due to an API
+          conflict.
+        </p>
+        <p>
+          <em class="parameter"><code>--ignore-tests=...</code></em>:
+          Disables tests that fail to run on BLFS without the optional
+          packages. Currently the AV1 test is disabled as it needs dav1d to
+          do AV1 decoding on the CPU. The test might work if you have a GPU
+          that can decode AV1, but this was not tested.
+        </p>
+        <p>
           <code class="option">--enable-gnutls</code>: Use this option
           instead of <em class=
           "parameter"><code>--enable-openssl</code></em>, if you want to use
@@ -488,20 +495,6 @@ grep ^TEST ../fate.log | wc -l</kbd></pre>
         <p>
           <code class="option">--enable-libpulse</code>: Enables support for
           <span class="application">Pulseaudio</span> for audio output.
-        </p>
-        <p>
-          <code class="option">--disable-vulkan</code>: Disables Vulkan for
-          the current version of <a class="xref" href=
-          "../x/vulkan-loader.html" title=
-          "Vulkan-Loader-1.3.277">Vulkan-Loader-1.3.277</a> due to an API
-          conflict.
-        </p>
-        <p>
-          <code class="option">--ignore-tests=...</code>: Disables tests that
-          fail to run on BLFS without the optional packages. Currently the
-          AV1 test is disabled as it needs dav1d to do AV1 decoding on the
-          CPU. The test might work if you have a GPU that can decode AV1, but
-          this was not tested.
         </p>
         <p>
           <span class="command"><strong>gcc tools/qt-faststart.c -o
@@ -787,7 +780,7 @@ grep ^TEST ../fate.log | wc -l</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1574">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1586">
           Home</a>
         </li>
       </ul>
