@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1586">
+  <body class="blfs" id="blfs-r12.0-1601">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1586
+        "phrase">(systemd</span> Edition) - Version r12.0-1601
       </h4>
       <h3>
         Chapter&nbsp;32.&nbsp;KDE Plasma 5
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1586">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1601">
           Home</a>
         </li>
       </ul>
@@ -54,17 +54,10 @@
         Frameworks 5 and QML. They implement the KDE Display Environment
         (Plasma 5).
       </p>
-      <div class="admon note">
-        <img alt="[Note]" src="../images/note.png" />
-        <h3>
-          Note
-        </h3>
-        <p>
-          Development versions of BLFS may not build or run some packages
-          properly if LFS or dependencies have been updated since the most
-          recent stable versions of the books.
-        </p>
-      </div>
+      <p>
+        This package is known to build and work properly using an LFS 12.1
+        platform.
+      </p>
       <p>
         The instructions below build all of the Plasma 5 packages in one step
         by using a bash script.
@@ -112,7 +105,7 @@
         <a class="xref" href="../x/gtk3.html" title=
         "GTK+-3.24.41">GTK+-3.24.41</a>, <a class="xref" href=
         "frameworks5.html" title="Building KDE Frameworks 5 (KF5)">KDE
-        Frameworks-5.113.0</a>, <a class="xref" href="kuserfeedback.html"
+        Frameworks-5.115.0</a>, <a class="xref" href="kuserfeedback.html"
         title="kuserfeedback-1.3.0">kuserfeedback-1.3.0</a>, <a class="xref"
         href="../postlfs/libpwquality.html" title=
         "libpwquality-1.4.5">libpwquality-1.4.5</a>, <a class="xref" href=
@@ -157,7 +150,7 @@
         "../general/lm_sensors.html" title=
         "Lm-sensors-3-6-0">lm-sensors-3-6-0</a>, <a class="xref" href=
         "../x/oxygen-icons.html" title=
-        "oxygen-icons-5.113.0">oxygen-icons-5.113.0</a>, <a class="xref"
+        "oxygen-icons-5.115.0">oxygen-icons-5.115.0</a>, <a class="xref"
         href="../general/pciutils.html" title=
         "pciutils-3.10.0">pciutils-3.10.0</a>, and <a class="xref" href=
         "../general/power-profiles-daemon.html" title=
@@ -282,6 +275,7 @@ e95d6813c180b078be4bf40550791e26  ksshaskpass-5.27.10.tar.xz
 #8c52fad441ffe43969458ae71b6a2f26  plasma-sdk-5.27.10.tar.xz
 1af573d08dd99879f27c5a2b55b02bc9  sddm-kcm-5.27.10.tar.xz
 #560ac5c60112e18bb44c46eec3563d7d  discover-5.27.10.tar.xz
+#3af40cfe47213087d2a8c89132ff004d  discover-5.27.10.1.tar.xz
 #2cd0a4e1e3e89197e18f48d893c0f2d6  breeze-grub-5.27.10.tar.xz
 #fe7bb4efec17206a9faceb9cfe35fbf5  breeze-plymouth-5.27.10.tar.xz
 5bbb5c7a2985f8d7b8816a35d517d333  kactivitymanagerd-5.27.10.tar.xz
@@ -323,16 +317,17 @@ EOF</kbd></pre>
             boot (see <a class="xref" href="../postlfs/initramfs.html" title=
             "About initramfs">the section called “About initramfs”</a>). The
             plasma-sdk package is optional and used for software development.
-            The plasma-nano package is used for embedded systems and
-            plasma-mobile provides phone functionality for Plasma. The
-            aura-browser package requires <a class="xref" href=
+            The plasma-nano package is used for embedded systems. The
+            plasma-mobile package provides phone functionality for Plasma.
+            The aura-browser package requires <a class="xref" href=
             "../x/qtwebengine.html" title=
             "QtWebEngine-5.15.17">qtwebengine-5.15.17</a>. The discover
             package requires <a class="xref" href="../general/appstream.html"
             title="AppStream-1.0.1">AppStream-1.0.1</a> to be built with the
-            -Dqt=true switch. The plasma-welcome package requires the
-            external package <a class="ulink" href=
-            "https://download.kde.org/stable/release-service/23.08.4/src/">kaccounts-integration</a>.
+            -Dqt=true switch. The discover-5.27.10.1 version of the package
+            is an update to the previous version. The plasma-welcome package
+            requires the external package <a class="ulink" href=
+            "https://download.kde.org/stable/release-service/23.08.5/src/">kaccounts-integration</a>.
             The flatpack-kcm package is for managing support of flatpack
             applications.
           </p>
@@ -601,7 +596,7 @@ startx</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1586">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1601">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1586">
+  <body class="blfs" id="blfs-r12.0-1601">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1586
+        "phrase">(systemd</span> Edition) - Version r12.0-1601
       </h4>
       <h3>
         Chapter&nbsp;44.&nbsp;Video Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1586">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1601">
           Home</a>
         </li>
       </ul>
@@ -63,17 +63,10 @@
           DivX, WMV, Vorbis, AC3, AAC, etc.), and it can also convert to
           different formats and/or send streams through the network.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.1
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -104,6 +97,20 @@
               <p>
                 Estimated build time: 1.9 SBU (using parallelism=4; with
                 tests)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/vlc-3.0.20-taglib-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/vlc-3.0.20-taglib-1.patch</a>
               </p>
             </li>
           </ul>
@@ -328,6 +335,11 @@
         <h2 class="sect2">
           Installation of VLC
         </h2>
+        <p>
+          First, add a correction for problems of taglib-2.0 and later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../vlc-3.0.20-taglib-1.patch</kbd></pre>
         <p>
           Install <span class="application">VLC</span> by running the
           following commands:
@@ -594,7 +606,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1586">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1601">
           Home</a>
         </li>
       </ul>
