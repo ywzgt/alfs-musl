@@ -1,0 +1,30 @@
+diff --git a/wget-list b/wget-list
+index 5ff7e6ae..93c6f8c9 100644
+--- a/wget-list
++++ b/wget-list
+@@ -260,7 +260,7 @@ https://download.librdf.org/source/raptor2-2.0.16.tar.gz
+ https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+ https://download.librdf.org/source/redland-1.0.17.tar.gz
+ https://sg.danny.cz/sg/p/sg3_utils-1.48.tar.xz
+-https://github.com/lfs-book/sysmon-qt/releases/download/v1.1/sysmon-qt-1.1.tar.xz
++https://github.com/lfs-book/sysmon-qt/releases/download/v2.0/sysmon-qt-2.0.tar.xz
+ https://sysstat.github.io/sysstat-packages/sysstat-12.7.5.tar.xz
+ https://github.com/systemd/systemd/archive/v255/systemd-255.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/systemd-255-upstream_fixes-1.patch
+@@ -644,7 +644,7 @@ https://www.x.org/pub/individual/driver/xf86-input-libinput-1.4.0.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-synaptics-1.9.2.tar.xz
+ https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-1.2.0/xf86-input-wacom-1.2.0.tar.bz2
+ https://www.x.org/pub/individual/app/twm-1.0.12.tar.xz
+-https://invisible-mirror.net/archives/xterm/xterm-389.tgz
++https://invisible-mirror.net/archives/xterm/xterm-390.tgz
+ https://www.x.org/pub/individual/app/xclock-1.1.1.tar.xz
+ https://www.x.org/pub/individual/app/xinit-1.4.2.tar.xz
+ https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz
+@@ -880,6 +880,7 @@ https://download.documentfoundation.org/libreoffice/src/24.2.0/libreoffice-trans
+ https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-24.2.0.3-consolidated_fixes-1.patch
+ https://download.gnome.org/sources/epiphany/45/epiphany-45.2.tar.xz
+ https://download.kde.org/stable/release-service/23.08.5/src/falkon-23.08.5.tar.xz
++https://archive.mozilla.org/pub/firefox/releases/115.8.0esr/source/firefox-115.8.0esr.source.tar.xz
+ https://archive.mozilla.org/pub/seamonkey/releases/2.53.18/source/seamonkey-2.53.18.source.tar.xz
+ https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.4-upstream_fixes-2.patch
