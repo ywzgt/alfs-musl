@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1634">
+  <body class="blfs" id="blfs-r12.0-1650">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1634
+        "phrase">(systemd</span> Edition) - Version r12.0-1650
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1634">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1650">
           Home</a>
         </li>
       </ul>
@@ -230,13 +230,6 @@
           Installation of Firefox
         </h2>
         <p>
-          If building with system ICU, adapt the line break mapping for ICU
-          74 or later:
-        </p>
-        <pre class="userinput"><kbd class="command">(for i in {43..47}; do
-   sed '/ZWJ/s/}/,CLASS_CHARACTER&amp;/' -i intl/lwbrk/LineBreaker.cpp || exit $?
- done)</kbd></pre>
-        <p>
           The configuration of <span class="application">Firefox</span> is
           accomplished by creating a <code class="filename">mozconfig</code>
           file containing the desired configuration options. A default
@@ -349,6 +342,13 @@ unset MOZ_TELEMETRY_REPORTING
 
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir</code>
 EOF</kbd></pre>
+        <p>
+          If building with system ICU, adapt the line break mapping for ICU
+          74 or later. This construct adds five entries to a c++ array.
+        </p>
+        <pre class="userinput"><kbd class="command">for i in {43..47}; do
+   sed -i '/ZWJ/s/}/,CLASS_CHARACTER&amp;/' intl/lwbrk/LineBreaker.cpp 
+done</kbd></pre>
         <p>
           Compile <span class="application">Firefox</span> by issuing the
           following commands:
@@ -684,7 +684,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1634">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1650">
           Home</a>
         </li>
       </ul>

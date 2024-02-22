@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Samba-4.19.4
+      Samba-4.19.5
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1634">
+  <body class="blfs" id="blfs-r12.0-1650">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1634
+        "phrase">(systemd</span> Edition) - Version r12.0-1650
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1634">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1650">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="samba" name="samba"></a>Samba-4.19.4
+      <a id="samba" name="samba"></a>Samba-4.19.5
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -62,17 +62,10 @@
           a NetBIOS (RFC1001/1002) nameserver (which among other things
           provides LAN browsing support).
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.1
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -81,13 +74,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.samba.org/pub/samba/stable/samba-4.19.4.tar.gz">
-                https://download.samba.org/pub/samba/stable/samba-4.19.4.tar.gz</a>
+                "https://download.samba.org/pub/samba/stable/samba-4.19.5.tar.gz">
+                https://download.samba.org/pub/samba/stable/samba-4.19.5.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 65f90102ba7c9235d6eb58291b0c1d64
+                Download MD5 sum: 123979dc044d747be56393dcb455454e
               </p>
             </li>
             <li class="listitem">
@@ -419,7 +412,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm51722" name="idm51722"></a>Scenario 1: Minimal
+                    <a id="idm51731" name="idm51731"></a>Scenario 1: Minimal
                     Standalone Client-Only Installation
                   </h5>
                 </div>
@@ -472,7 +465,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm51747" name="idm51747"></a>Scenario 2:
+                    <a id="idm51756" name="idm51756"></a>Scenario 2:
                     Standalone File/Print Server
                   </h5>
                 </div>
@@ -565,7 +558,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm51784" name="idm51784"></a>Advanced
+                    <a id="idm51793" name="idm51793"></a>Advanced
                     Requirements
                   </h5>
                 </div>
@@ -587,7 +580,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm51789" name="idm51789"></a>Guest account
+                    <a id="idm51798" name="idm51798"></a>Guest account
                   </h5>
                 </div>
               </div>
@@ -1587,7 +1580,7 @@ systemctl start smbd.socket</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1634">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1650">
           Home</a>
         </li>
       </ul>
