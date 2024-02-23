@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1650">
+  <body class="blfs" id="blfs-r12.0-1661">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1650
+        "phrase">(systemd</span> Edition) - Version r12.0-1661
       </h4>
       <h3>
         Chapter&nbsp;2.&nbsp;Important Information
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1650">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1661">
           Home</a>
         </li>
       </ul>
@@ -1468,7 +1468,9 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
           For hardening options which are reasonably cheap, there is some
           discussion in the 'tuning' link above (occasionally, one or more of
           these options might be inappropriate for a package). These options
-          are <code class="option">-D_FORTIFY_SOURCE=2</code> and (for C++)
+          are <code class="option">-D_FORTIFY_SOURCE=2</code> (or
+          <code class="option">-D_FORTIFY_SOURCE=3</code> which is more
+          secure but with a larger performance overhead) and (for C++)
           <code class="option">-D_GLIBCXX_ASSERTIONS</code>. On modern
           machines these should only have a little impact on how fast things
           run, and often they will not be noticeable.
@@ -1515,7 +1517,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1650">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1661">
           Home</a>
         </li>
       </ul>

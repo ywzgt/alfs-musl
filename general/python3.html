@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1650">
+  <body class="blfs" id="blfs-r12.0-1661">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1650
+        "phrase">(systemd</span> Edition) - Version r12.0-1661
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1650">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1661">
           Home</a>
         </li>
       </ul>
@@ -230,7 +230,10 @@ make</kbd></pre>
         <p>
           To test the result, issue <span class=
           "command"><strong>LC_ALL=en_US.UTF-8 make test</strong></span>.
-          Some tests may need an Internet connection.
+          Some tests may need an Internet connection. Two tests named
+          <code class="filename">test_xml_etree</code> and <code class=
+          "filename">test_xml_etree_c</code> are known to fail with
+          expat-2.6.0 or newer.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -425,7 +428,7 @@ tar --strip-components=1  \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1650">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1661">
           Home</a>
         </li>
       </ul>
