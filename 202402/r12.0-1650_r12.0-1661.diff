@@ -1,0 +1,40 @@
+diff --git a/wget-list b/wget-list
+index 881d1bde..69b6457b 100644
+--- a/wget-list
++++ b/wget-list
+@@ -34,14 +34,13 @@ https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.pa
+ https://sourceware.org/ftp/lvm2/LVM2.2.03.23.tgz
+ https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.2.tar.xz
+ https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2022.10.3.tgz
+-https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.9.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.9-convenience-1.patch
++https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.10-convenience-1.patch
+ https://ftp.gnu.org/gnu/parted/parted-3.6.tar.xz
+ https://downloads.sourceforge.net/smartmontools/smartmontools-7.4.tar.gz
+ https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.3/sshfs-3.7.3.tar.xz
+ https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.6.0.tar.xz
+-https://github.com/rhboot/efivar/releases/download/38/efivar-38.tar.bz2
+-https://www.linuxfromscratch.org/patches/blfs/svn/efivar-38-i686-1.patch
++https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
+ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
+ https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz
+ https://unifoundry.com/pub/unifont/unifont-15.1.04/font-builds/unifont-15.1.04.pcf.gz
+@@ -57,7 +56,7 @@ https://github.com/vim/vim/archive/v9.1.0041/vim-9.1.0041.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.10.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+-https://download.qemu.org/qemu-8.2.0.tar.xz
++https://download.qemu.org/qemu-8.2.1.tar.xz
+ https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.1.tar.xz
+ https://archive.apache.org/dist/apr/apr-1.7.4.tar.bz2
+ https://archive.apache.org/dist/apr/apr-util-1.6.3.tar.bz2
+@@ -863,7 +862,7 @@ https://github.com/lxqt/lxqt-powermanagement/releases/download/1.4.0/lxqt-powerm
+ https://github.com/lxqt/lxqt-runner/releases/download/1.4.0/lxqt-runner-1.4.0.tar.xz
+ https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/0.5.0/xdg-desktop-portal-lxqt-0.5.0.tar.xz
+ https://github.com/lxqt/lximage-qt/releases/download/1.4.0/lximage-qt-1.4.0.tar.xz
+-https://github.com/lxqt/lxqt-archiver/releases/download/0.9.0/lxqt-archiver-0.9.0.tar.xz
++https://github.com/lxqt/lxqt-archiver/releases/download/0.9.1/lxqt-archiver-0.9.1.tar.xz
+ https://github.com/lxqt/lxqt-notificationd/releases/download/1.4.0/lxqt-notificationd-1.4.0.tar.xz
+ https://github.com/lxqt/pavucontrol-qt/releases/download/1.4.0/pavucontrol-qt-1.4.0.tar.xz
+ https://github.com/lxqt/qps/releases/download/2.8.0/qps-2.8.0.tar.xz
