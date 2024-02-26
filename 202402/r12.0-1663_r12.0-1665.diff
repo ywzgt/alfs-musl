@@ -1,0 +1,17 @@
+diff --git a/wget-list b/wget-list
+index 69b6457b..c7b1545f 100644
+--- a/wget-list
++++ b/wget-list
+@@ -279,9 +279,9 @@ https://doxygen.nl/files/doxygen-1.10.0.src.tar.gz
+ https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.6/gc-8.2.6.tar.gz
+ https://ftp.gnu.org/gnu/gdb/gdb-14.1.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-2.43.2.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-manpages-2.43.2.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.43.2.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-2.44.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-manpages-2.44.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.44.0.tar.xz
+ https://ftp.gnu.org/gnu/guile/guile-3.0.9.tar.xz
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/llvm-17.0.6.src.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-17.src.tar.xz
