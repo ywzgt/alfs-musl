@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.0-1666">
+  <body class="blfs" id="blfs-r12.0-1678">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.0-1666
+        "phrase">(systemd</span> Edition) - Version r12.0-1678
       </h4>
       <h3>
         Chapter&nbsp;31.&nbsp;KDE Frameworks 5 Based Applications
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1666">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1678">
           Home</a>
         </li>
       </ul>
@@ -98,6 +98,23 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch for building against <a class="xref" href=
+                "../x/kimageannotator.html" title=
+                "kImageAnnotator-0.7.0">kimageannotator-0.7.0</a>: <a class=
+                "ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/gwenview-23.08.5-build_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/gwenview-23.08.5-build_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Gwenview Dependencies
         </h3>
         <h4>
@@ -136,7 +153,7 @@
           kImageAnnotator:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -i /find_package/s/kImageAnnotator/&amp;1-Qt5/" CMakeLists.txt</kbd></pre>
+        "command">patch -Np1 -i ../gwenview-23.08.5-build_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">Gwenview</span> by running the
           following commands:
@@ -243,7 +260,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1666">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.0-1678">
           Home</a>
         </li>
       </ul>
