@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index e4aa4db07..f871697ae 100644
+--- a/wget-list
++++ b/wget-list
+@@ -812,7 +812,7 @@ https://archive.xfce.org/src/xfce/xfconf/4.18/xfconf-4.18.3.tar.bz2
+ https://archive.xfce.org/src/xfce/libxfce4ui/4.18/libxfce4ui-4.18.5.tar.bz2
+ https://archive.xfce.org/src/xfce/exo/4.18/exo-4.18.0.tar.bz2
+ https://archive.xfce.org/src/xfce/garcon/4.18/garcon-4.18.2.tar.bz2
+-https://archive.xfce.org/src/xfce/xfce4-panel/4.18/xfce4-panel-4.18.5.tar.bz2
++https://archive.xfce.org/src/xfce/xfce4-panel/4.18/xfce4-panel-4.18.6.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar/4.18/thunar-4.18.10.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar-volman/4.18/thunar-volman-4.18.0.tar.bz2
+ https://archive.xfce.org/src/xfce/tumbler/4.18/tumbler-4.18.2.tar.bz2
+@@ -823,7 +823,7 @@ https://archive.xfce.org/src/xfce/xfdesktop/4.18/xfdesktop-4.18.1.tar.bz2
+ https://archive.xfce.org/src/xfce/xfwm4/4.18/xfwm4-4.18.0.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-session/4.18/xfce4-session-4.18.3.tar.bz2
+ https://archive.xfce.org/src/apps/parole/4.18/parole-4.18.1.tar.bz2
+-https://archive.xfce.org/src/apps/xfce4-terminal/1.1/xfce4-terminal-1.1.2.tar.bz2
++https://archive.xfce.org/src/apps/xfce4-terminal/1.1/xfce4-terminal-1.1.3.tar.bz2
+ https://archive.xfce.org/src/apps/xfburn/0.7/xfburn-0.7.0.tar.bz2
+ https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.2.tar.bz2
+ http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.18/xfce4-dev-tools-4.18.1.tar.bz2
+@@ -898,7 +898,7 @@ https://archive.mozilla.org/pub/thunderbird/releases/115.8.0/source/thunderbird-
+ https://github.com/TigerVNC/tigervnc/archive/v1.13.1/tigervnc-1.13.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.13.1-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.0.5/transmission-4.0.5.tar.xz
+-https://github.com/ib/xarchiver/archive/0.5.4.22/xarchiver-0.5.4.22.tar.gz
++https://github.com/ib/xarchiver/archive/0.5.4.23/xarchiver-0.5.4.23.tar.gz
+ https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz
+ https://www.jwz.org/xscreensaver/xscreensaver-6.08.tar.gz
+ https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.11.tar.bz2
