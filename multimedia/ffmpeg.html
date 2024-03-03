@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1">
+  <body class="blfs" id="blfs-r12.1-19">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1
+        "phrase">(systemd</span> Edition) - Version r12.1-19
       </h4>
       <h3>
         Chapter&nbsp;44.&nbsp;Video Utilities
@@ -41,7 +41,8 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-19">
+          Home</a>
         </li>
       </ul>
     </div>
@@ -118,6 +119,13 @@
                 https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-6.1.1-chromium_method-1.patch</a>
               </p>
             </li>
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-6.1.1-vulkan_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-6.1.1-vulkan_fixes-1.patch</a>
+              </p>
+            </li>
           </ul>
         </div>
         <h3>
@@ -175,7 +183,7 @@
           "libwebp-1.3.2">libwebp-1.3.2</a>, <a class="xref" href=
           "../general/opencv.html" title="opencv-4.9.0">opencv-4.9.0</a>,
           <a class="xref" href="../general/openjpeg2.html" title=
-          "OpenJPEG-2.5.0">OpenJPEG-2.5.0</a>, <a class="xref" href=
+          "OpenJPEG-2.5.2">OpenJPEG-2.5.2</a>, <a class="xref" href=
           "../postlfs/gnutls.html" title="GnuTLS-3.8.3">GnuTLS-3.8.3</a>,
           <a class="xref" href="pulseaudio.html" title=
           "PulseAudio-17.0">PulseAudio-17.0</a>, <a class="xref" href=
@@ -189,7 +197,7 @@
           <a class="xref" href="v4l-utils.html" title=
           "v4l-utils-1.26.1">v4l-utils-1.26.1</a>, <a class="xref" href=
           "../x/vulkan-loader.html" title=
-          "Vulkan-Loader-1.3.277">Vulkan-Loader-1.3.277</a>, <a class="xref"
+          "Vulkan-Loader-1.3.279">Vulkan-Loader-1.3.279</a>, <a class="xref"
           href="xvid.html" title="XviD-1.3.7">XviD-1.3.7</a>, <a class="xref"
           href="../x/installing.html" title=
           "Chapter&nbsp;24.&nbsp;Graphical Environments">a graphical
@@ -245,6 +253,12 @@
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../ffmpeg-6.1.1-chromium_method-1.patch</kbd></pre>
         <p>
+          Next, apply a patch that fixes building with the latest version of
+          the Vulkan API:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../ffmpeg-6.1.1-vulkan_fixes-1.patch</kbd></pre>
+        <p>
           Install <span class="application">FFmpeg</span> by running the
           following commands:
         </p>
@@ -267,7 +281,6 @@
             --enable-libx264     \
             --enable-libx265     \
             --enable-openssl     \
-            --disable-vulkan     \
             --ignore-tests=enhanced-flv-av1 \
             --docdir=/usr/share/doc/ffmpeg-6.1.1 &amp;&amp;
 
@@ -463,13 +476,6 @@ grep ^TEST ../fate.log | wc -l</kbd></pre>
         <p>
           <em class="parameter"><code>--enable-openssl</code></em>: Enables
           HTTPS protocol for network streams.
-        </p>
-        <p>
-          <em class="parameter"><code>--disable-vulkan</code></em>: Disables
-          Vulkan for the current version of <a class="xref" href=
-          "../x/vulkan-loader.html" title=
-          "Vulkan-Loader-1.3.277">Vulkan-Loader-1.3.277</a> due to an API
-          conflict.
         </p>
         <p>
           <em class="parameter"><code>--ignore-tests=...</code></em>:
@@ -779,7 +785,8 @@ grep ^TEST ../fate.log | wc -l</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-19">
+          Home</a>
         </li>
       </ul>
     </div>

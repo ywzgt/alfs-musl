@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1">
+  <body class="blfs" id="blfs-r12.1-19">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1
+        "phrase">(systemd</span> Edition) - Version r12.1-19
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,7 +42,8 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-19">
+          Home</a>
         </li>
       </ul>
     </div>
@@ -166,6 +167,24 @@
             passwords.
           </p>
         </div>
+      </div>
+      <div class="kernel" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          <a id="linux-pam-kernel" name="linux-pam-kernel"></a>Kernel
+          Configuration
+        </h2>
+        <p>
+          For the PAM module <code class="filename">pam_loginuid.so</code>
+          (referred by the PAM configuration file <code class=
+          "filename">system-session</code> if <span class="phrase"><a class=
+          "xref" href="../general/systemd.html" title=
+          "Systemd-255">Systemd-255</a> is rebuilt with PAM support</span>
+          later) to work, a kernel configuration parameter need to be set or
+          the module will just do nothing:
+        </p>
+        <pre class="screen"><span class="blue">G</span>eneral setup ---&gt;
+  [*] <span class=
+"blue">A</span>uditing support                                                   [AUDIT]</pre>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -565,7 +584,8 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-19">
+          Home</a>
         </li>
       </ul>
     </div>
