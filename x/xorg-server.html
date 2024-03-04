@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-19">
+  <body class="blfs" id="blfs-r12.1-42">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-19
+        "phrase">(systemd</span> Edition) - Version r12.1-42
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-19">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-42">
           Home</a>
         </li>
       </ul>
@@ -59,10 +59,17 @@
           The <span class="application">Xorg</span> Server is the core of the
           X Window system.
         </p>
-        <p>
-          This package is known to build and work properly using an LFS 12.1
-          platform.
-        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            Development versions of BLFS may not build or run some packages
+            properly if LFS or dependencies have been updated since the most
+            recent stable versions of the books.
+          </p>
+        </div>
         <h3>
           Package Information
         </h3>
@@ -129,7 +136,7 @@
         <p class="required">
           <a class="xref" href="libxcvt.html" title=
           "libxcvt-0.1.2">libxcvt-0.1.2</a>, <a class="xref" href=
-          "../general/pixman.html" title="Pixman-0.43.2">Pixman-0.43.2</a>,
+          "../general/pixman.html" title="Pixman-0.43.4">Pixman-0.43.4</a>,
           <a class="xref" href="x7font.html" title="Xorg Fonts">Xorg
           Fonts</a> (only font-util), and at runtime: <a class="xref" href=
           "xkeyboard-config.html" title=
@@ -213,7 +220,7 @@
         </p>
         <p>
           If your GPU supports 3D acceleration and <a class="xref" href=
-          "mesa.html" title="Mesa-24.0.1">Mesa-24.0.1</a> provides a
+          "mesa.html" title="Mesa-24.0.2">Mesa-24.0.2</a> provides a
           Gallium3D driver for utilizing its 3D capability, you should have
           already enabled the necessary kernel configuration options in
           <a class="xref" href="mesa.html#mesa-kernel" title=
@@ -501,7 +508,7 @@ mkdir -pv /etc/X11/xorg.conf.d</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-19">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-42">
           Home</a>
         </li>
       </ul>

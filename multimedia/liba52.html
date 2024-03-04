@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Liba52-0.7.4
+      Liba52-0.8.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-19">
+  <body class="blfs" id="blfs-r12.1-42">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-19
+        "phrase">(systemd</span> Edition) - Version r12.1-42
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-19">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-42">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="liba52" name="liba52"></a>Liba52-0.7.4
+      <a id="liba52" name="liba52"></a>Liba52-0.8.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -60,10 +60,17 @@
           is used in a variety of applications, including digital television
           and DVD.
         </p>
-        <p>
-          This package is known to build and work properly using an LFS 12.1
-          platform.
-        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            Development versions of BLFS may not build or run some packages
+            properly if LFS or dependencies have been updated since the most
+            recent stable versions of the books.
+          </p>
+        </div>
         <h3>
           Package Information
         </h3>
@@ -72,23 +79,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "http://ftp.osuosl.org/pub/blfs/conglomeration/a52dec/a52dec-0.7.4.tar.gz">
-                http://ftp.osuosl.org/pub/blfs/conglomeration/a52dec/a52dec-0.7.4.tar.gz</a>
+                "https://distfiles.adelielinux.org/source/a52dec/a52dec-0.8.0.tar.gz">
+                https://distfiles.adelielinux.org/source/a52dec/a52dec-0.8.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: caa9f5bc44232dc8aeea773fea56be80
+                Download MD5 sum: 4debeed0257f5312e84d92711a5cfcec
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 236 KB
+                Download size: 448 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 2.5 MB
+                Estimated disk space required: 3.7 MB
               </p>
             </li>
             <li class="listitem">
@@ -134,7 +141,7 @@ make</kbd></pre>
         <pre class="root"><kbd class="command">make install &amp;&amp;
 cp liba52/a52_internal.h /usr/include/a52dec &amp;&amp;
 install -v -m644 -D doc/liba52.txt \
-    /usr/share/doc/liba52-0.7.4/liba52.txt</kbd></pre>
+    /usr/share/doc/liba52-0.8.0/liba52.txt</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -182,7 +189,7 @@ install -v -m644 -D doc/liba52.txt \
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/a52dec and
-              /usr/share/doc/liba52-0.7.4</span>
+              /usr/share/doc/liba52-0.8.0</span>
             </div>
           </div>
         </div>
@@ -264,7 +271,7 @@ install -v -m644 -D doc/liba52.txt \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-19">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-42">
           Home</a>
         </li>
       </ul>

@@ -12,20 +12,20 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-19">
+  <body class="blfs" id="blfs-r12.1-42">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-19
+        "phrase">(systemd</span> Edition) - Version r12.1-42
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="libxcb.html" title="libxcb-1.16">Prev</a>
+          <a accesskey="p" href="libxcb.html" title="libxcb-1.16.1">Prev</a>
           <p>
-            libxcb-1.16
+            libxcb-1.16.1
           </p>
         </li>
         <li class="next">
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-19">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-42">
           Home</a>
         </li>
       </ul>
@@ -57,10 +57,17 @@
           The <span class="application">Xorg</span> libraries provide library
           routines that are used within all X Window applications.
         </p>
-        <p>
-          This package is known to build and work properly using an LFS 12.1
-          platform.
-        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            Development versions of BLFS may not build or run some packages
+            properly if LFS or dependencies have been updated since the most
+            recent stable versions of the books.
+          </p>
+        </div>
         <h3>
           Package Information
         </h3>
@@ -99,7 +106,7 @@
         <p class="required">
           <a class="xref" href="../general/fontconfig.html" title=
           "Fontconfig-2.15.0">Fontconfig-2.15.0</a> and <a class="xref" href=
-          "libxcb.html" title="libxcb-1.16">libxcb-1.16</a>
+          "libxcb.html" title="libxcb-1.16.1">libxcb-1.16.1</a>
         </p>
         <h4>
           Optional
@@ -150,9 +157,9 @@ ed52d396115fbc4d05300762aab79685  libXmu-1.1.4.tar.xz
 65b9ba1e9ff3d16c4fa72915d4bb585a  libXfixes-6.0.1.tar.xz
 af0a5f0abb5b55f8411cd738cf0e5259  libXcomposite-0.4.6.tar.xz
 ebf7fb3241ec03e8a3b2af72f03b4631  libXrender-0.9.11.tar.xz
-4cdd1886fe5cce6f68554296edb46db8  libXcursor-1.2.1.tar.xz
+bf3a43ad8cb91a258b48f19c83af8790  libXcursor-1.2.2.tar.xz
 ca55d29fa0a8b5c4a89f609a7952ebf8  libXdamage-1.1.6.tar.xz
-6d3f1b15bb5b0bb71ae9f0a5103c1fc4  libfontenc-1.1.7.tar.xz
+8816cc44d06ebe42e85950b368185826  libfontenc-1.1.8.tar.xz
 c179daa707f5f432f1bc13977e5bb329  libXfont2-2.0.6.tar.xz
 cea0a3304e47a841c90fbeeeb55329ee  libXft-2.3.8.tar.xz
 89ac74ad6829c08d5c8ae8f48d363b06  libXi-1.8.1.tar.xz
@@ -914,9 +921,9 @@ ln -sv $XORG_PREFIX/include/X11 /usr/include/X11</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="libxcb.html" title="libxcb-1.16">Prev</a>
+          <a accesskey="p" href="libxcb.html" title="libxcb-1.16.1">Prev</a>
           <p>
-            libxcb-1.16
+            libxcb-1.16.1
           </p>
         </li>
         <li class="next">
@@ -931,7 +938,7 @@ ln -sv $XORG_PREFIX/include/X11 /usr/include/X11</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-19">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-42">
           Home</a>
         </li>
       </ul>

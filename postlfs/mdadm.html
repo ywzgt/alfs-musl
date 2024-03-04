@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      mdadm-4.2
+      mdadm-4.3
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-19">
+  <body class="blfs" id="blfs-r12.1-42">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-19
+        "phrase">(systemd</span> Edition) - Version r12.1-42
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-19">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-42">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="mdadm" name="mdadm"></a>mdadm-4.2
+      <a id="mdadm" name="mdadm"></a>mdadm-4.3
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -58,10 +58,17 @@
           The <span class="application">mdadm</span> package contains
           administration tools for software RAID.
         </p>
-        <p>
-          This package is known to build and work properly using an LFS 12.1
-          platform.
-        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            Development versions of BLFS may not build or run some packages
+            properly if LFS or dependencies have been updated since the most
+            recent stable versions of the books.
+          </p>
+        </div>
         <h3>
           Package Information
         </h3>
@@ -70,23 +77,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.2.tar.xz">
-                https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.2.tar.xz</a>
+                "https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.3.tar.xz">
+                https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.3.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: a304eb0a978ca81045620d06547050a6
+                Download MD5 sum: a42def84e31734a529111394f2289e0e
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 444 KB
+                Download size: 456 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 5.0 MB
+                Estimated disk space required: 5.5 MB
               </p>
             </li>
             <li class="listitem">
@@ -106,16 +113,6 @@
           A <a class="xref" href="../server/mail.html" title=
           "Chapter&nbsp;21.&nbsp;Mail Server Software">MTA</a>
         </p>
-        <div class="admon caution">
-          <img alt="[Caution]" src="../images/caution.png" />
-          <h3>
-            Caution
-          </h3>
-          <p>
-            Kernel versions in series 4.1 through 4.4.1 have a broken RAID
-            implementation. Use a kernel with version at or above 4.4.2.
-          </p>
-        </div>
       </div>
       <div class="kernel" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -257,7 +254,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-19">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-42">
           Home</a>
         </li>
       </ul>
