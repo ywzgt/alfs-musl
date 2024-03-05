@@ -15,7 +15,8 @@ cd build
 	--enable-gprofng=no \
 	--disable-werror \
 	--disable-multilib \
-	--enable-64-bit-bfd
+	--enable-64-bit-bfd \
+	--enable-default-hash-style=gnu
 
 make
 make DESTDIR=$LFS install

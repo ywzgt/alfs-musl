@@ -4,6 +4,8 @@
 SRC="npth"
 PKG="$SRC"
 
+sed -i 's/defined(__USE_UNIX98) || defined(__USE_XOPEN2K)/1/' configure{,.ac}
+
 ./configure --prefix=/usr \
 		--disable-static
 

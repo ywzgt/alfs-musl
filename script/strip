@@ -83,14 +83,9 @@ _binutils() {
 		cd binutils-*[0-9]; mkdir build && cd build
 		unset {C{,XX,PP},LD}FLAGS
 		../configure --prefix=/usr       \
-             --sysconfdir=/etc   \
-             --enable-gold       \
-             --enable-ld=default \
-             --enable-plugins    \
              --enable-shared     \
              --disable-werror    \
              --disable-multilib \
-             --enable-64-bit-bfd \
              --with-system-zlib  \
              --enable-default-hash-style=gnu > binutils-conf.log
 		make -j$(nproc) > binutils-mk.log 2>&1

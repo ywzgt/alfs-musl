@@ -113,11 +113,11 @@ _pacman_db() {
 
 			awk '{print$1}' $i | sed 's|^/||' >tmp
 			local pname=${f:1}
-			grep -E '^SRC=|^PKG=|^PV=' "chapter0${f:0:1}/${pname%-*}"* >ptmp
+			grep -E '^(SRC|PKG|PV)=' "chapter0${f::1}/${pname%%-[0-9]*}"* >ptmp
 			. ptmp
 
 			if [ -n "$PKG" ]; then
-			if ! test "$PV"; then PV="${f##*-}"; fi
+			if ! test "$PV"; then PV="${f##*[a-z]-}"; fi
 			PV=${PV//-/_}
 
 			if [ ! -f installed.file ]; then _cp

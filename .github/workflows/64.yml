@@ -52,6 +52,14 @@ jobs:
           echo "$fakeroot_src" >>"${SRC_ARCHIVE}/wget-list"
           echo "$fakeroot_md5  $(basename $fakeroot_src)" >>"${SRC_ARCHIVE}/md5sums"
         fi
+        if [ -s script/temp.sh ]; then
+            sudo -E bash -e script/temp.sh
+        fi
+        for url in $(<$SRC_ARCHIVE/wget-list); do
+            [[ ! $url =~ sourceforge.net ]] || continue
+            wget -nv -P "${SRC_ARCHIVE}" "${url}" &
+        done
+        while pidof -q wget; do sleep 0.1; done
         wget -nv -cP "${SRC_ARCHIVE}" -i "${SRC_ARCHIVE}/wget-list"
         for i in {md5,b2,sha{1,224,256,384,512}}; do
           if [ -e sources.${i} ]; then grep -Ev '^#|^$' sources.${i} >> "${SRC_ARCHIVE}/${i}sums"
