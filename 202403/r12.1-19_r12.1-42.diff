@@ -1,0 +1,167 @@
+diff --git a/wget-list b/wget-list
+index fb3f385ec..a2b5f2aad 100644
+--- a/wget-list
++++ b/wget-list
+@@ -22,7 +22,7 @@ https://github.com/p11-glue/p11-kit/releases/download/0.25.3/p11-kit-0.25.3.tar.
+ https://gitlab.freedesktop.org/polkit/polkit/-/archive/124/polkit-124.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+-https://github.com/shadow-maint/shadow/releases/download/4.14.5/shadow-4.14.5.tar.xz
++https://github.com/shadow-maint/shadow/releases/download/4.14.6/shadow-4.14.6.tar.xz
+ https://www.stunnel.org/downloads/archive/5.x/stunnel-5.72.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.15p5.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+@@ -32,7 +32,7 @@ https://github.com/libfuse/libfuse/releases/download/fuse-3.16.2/fuse-3.16.2.tar
+ https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.patch
+ https://sourceware.org/ftp/lvm2/LVM2.2.03.23.tgz
+-https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.2.tar.xz
++https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.3.tar.xz
+ https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2022.10.3.tgz
+ https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.10-convenience-1.patch
+@@ -97,7 +97,7 @@ https://github.com/storaged-project/libbytesize/releases/download/2.10/libbytesi
+ https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.5.tar.xz
+ https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.10.3.tar.bz2
+-https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.47.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.48.tar.bz2
+ https://download.gnome.org/sources/libgrss/0.7/libgrss-0.7.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libgrss-0.7.0-bugfixes-2.patch
+ https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.52.tar.xz
+@@ -107,7 +107,7 @@ https://github.com/libical/libical/releases/download/v3.0.17/libical-3.0.17.tar.
+ https://ftp.gnu.org/gnu/libidn/libidn-1.42.tar.gz
+ https://ftp.gnu.org/gnu/libidn/libidn2-2.3.7.tar.gz
+ https://downloads.sourceforge.net/iodbc/libiodbc-3.52.15.tar.gz
+-https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.5.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.6.tar.bz2
+ https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
+ https://www.freedesktop.org/software/libmbim/libmbim-1.26.4.tar.xz
+ https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.8/libnvme-1.8.tar.gz
+@@ -124,7 +124,7 @@ https://www.libssh2.org/download/libssh2-1.11.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libssh2-1.11.0-security_fixes-1.patch
+ https://www.mirrorservice.org/sites/ftp.i-scream.org/pub/i-scream/libstatgrab/libstatgrab-0.92.1.tar.gz
+ https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.19.0.tar.gz
+-https://ftp.gnu.org/gnu/libunistring/libunistring-1.1.tar.xz
++https://ftp.gnu.org/gnu/libunistring/libunistring-1.2.tar.xz
+ https://download.savannah.nongnu.org/releases/libunwind/libunwind-1.6.2.tar.gz
+ https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.tar.bz2
+@@ -141,7 +141,7 @@ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_1/log4cplus-2.1
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.6.tar.bz2
+ https://nodejs.org/dist/v20.11.1/node-v20.11.1.tar.xz
+-https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/npth/npth-1.7.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
+ https://sourceforge.net/projects/pcre/files/pcre/8.45/pcre-8.45.tar.bz2
+ https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.43/pcre2-10.43.tar.bz2
+@@ -182,8 +182,8 @@ https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
+ https://downloads.sourceforge.net/libjpeg-turbo/libjpeg-turbo-3.0.1.tar.gz
+ https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
+ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz
+-https://downloads.sourceforge.net/libpng/libpng-1.6.42.tar.xz
+-https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.40-apng.patch.gz
++https://downloads.sourceforge.net/libpng/libpng-1.6.43.tar.xz
++https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.43-apng.patch.gz
+ https://www.libraw.org/data/LibRaw-0.21.2.tar.gz
+ https://download.gnome.org/sources/librsvg/2.57/librsvg-2.57.1.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+@@ -194,11 +194,11 @@ https://releases.pagure.org/newt/newt-0.52.24.tar.gz
+ https://github.com/opencv/opencv/archive/4.9.0/opencv-4.9.0.tar.gz
+ https://github.com/opencv/opencv_contrib/archive/4.9.0/opencv_contrib-4.9.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.2/openjpeg-2.5.2.tar.gz
+-https://www.cairographics.org/releases/pixman-0.43.2.tar.gz
++https://www.cairographics.org/releases/pixman-0.43.4.tar.gz
+ https://poppler.freedesktop.org/poppler-24.02.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+-https://github.com/qpdf/qpdf/releases/download/v11.8.0/qpdf-11.8.0.tar.gz
++https://github.com/qpdf/qpdf/releases/download/v11.9.0/qpdf-11.9.0.tar.gz
+ https://fukuchi.org/works/qrencode/qrencode-4.1.1.tar.bz2
+ https://github.com/sass/sassc/archive/3.6.2/sassc-3.6.2.tar.gz
+ https://github.com/sass/libsass/archive/3.6.6/libsass-3.6.6.tar.gz
+@@ -252,7 +252,7 @@ https://www.freedesktop.org/software/ModemManager/ModemManager-1.18.12.tar.xz
+ https://download.gnome.org/sources/notification-daemon/3.20/notification-daemon-3.20.0.tar.xz
+ https://github.com/p7zip-project/p7zip/archive/v17.04/p7zip-17.04.tar.gz
+ http://www.mirbsd.org/MirOS/dist/mir/cpio/paxmirabilis-20201030.tgz
+-https://mj.ucw.cz/download/linux/pci/pciutils-3.10.0.tar.gz
++https://mj.ucw.cz/download/linux/pci/pciutils-3.11.1.tar.gz
+ https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/pm-utils-1.4.1-bugfixes-1.patch
+ https://gitlab.freedesktop.org/upower/power-profiles-daemon/-/archive/0.20/power-profiles-daemon-0.20.tar.gz
+@@ -457,7 +457,7 @@ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.2.0.tar.gz
+ https://github.com/psf/cachecontrol/archive/refs/tags/v0.14.0/cachecontrol-0.14.0.tar.gz
+ https://github.com/cython/cython/releases/download/0.29.36/Cython-0.29.36.tar.gz
+-https://files.pythonhosted.org/packages/source/p/python-dbusmock/python-dbusmock-0.30.2.tar.gz
++https://files.pythonhosted.org/packages/source/p/python-dbusmock/python-dbusmock-0.31.1.tar.gz
+ https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.3.2.tar.gz
+ https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.20.1.tar.gz
+ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.gz
+@@ -526,7 +526,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/rustc-1.76.0-testsuite_fix-1.p
+ https://downloads.sourceforge.net/scons/SCons-4.6.0.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+ https://archive.apache.org/dist/subversion/subversion-1.14.3.tar.bz2
+-https://downloads.sourceforge.net/swig/swig-4.2.0.tar.gz
++https://downloads.sourceforge.net/swig/swig-4.2.1.tar.gz
+ https://downloads.sourceforge.net/tcl/tk8.6.13-src.tar.gz
+ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+ https://download.gnome.org/sources/vala/0.56/vala-0.56.14.tar.xz
+@@ -584,7 +584,7 @@ https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.3.tar.xz
+ https://download.gnome.org/sources/libsoup/3.4/libsoup-3.4.4.tar.xz
+ https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.4.tar.bz2
+ https://notroj.github.io/neon/neon-0.33.0.tar.gz
+-https://github.com/nghttp2/nghttp2/releases/download/v1.59.0/nghttp2-1.59.0.tar.xz
++https://github.com/nghttp2/nghttp2/releases/download/v1.60.0/nghttp2-1.60.0.tar.xz
+ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.4.4.tar.xz
+ https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
+ https://tecnocode.co.uk/downloads/uhttpmock/uhttpmock-0.5.3.tar.xz
+@@ -619,9 +619,9 @@ https://nlnetlabs.nl/downloads/unbound/unbound-1.19.1.tar.gz
+ https://www.x.org/pub/individual/util/util-macros-1.20.0.tar.xz
+ https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2023.2.tar.xz
+ https://www.x.org/pub/individual/lib/libXau-1.0.11.tar.xz
+-https://www.x.org/pub/individual/lib/libXdmcp-1.1.4.tar.xz
++https://www.x.org/pub/individual/lib/libXdmcp-1.1.5.tar.xz
+ https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.16.0.tar.xz
+-https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.16.tar.xz
++https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.16.1.tar.xz
+ https://www.x.org/pub/individual/lib/libxcvt-0.1.2.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-0.4.1.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-image-0.4.1.tar.xz
+@@ -629,7 +629,7 @@ https://xcb.freedesktop.org/dist/xcb-util-keysyms-0.4.1.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-renderutil-0.3.10.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-wm-0.4.2.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.4.tar.xz
+-https://mesa.freedesktop.org/archive/mesa-24.0.1.tar.xz
++https://mesa.freedesktop.org/archive/mesa-24.0.2.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-2.patch
+ https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ https://www.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
+@@ -720,7 +720,7 @@ https://download.kde.org/stable/frameworks/5.115/oxygen-icons-5.115.0.tar.xz
+ https://download.kde.org/stable/frameworks/5.115/extra-cmake-modules-5.115.0.tar.xz
+ https://download.kde.org/stable/phonon/4.12.0/phonon-4.12.0.tar.xz
+ https://download.kde.org/stable/phonon/phonon-backend-vlc/0.12.0/phonon-backend-vlc-0.12.0.tar.xz
+-https://download.kde.org/stable/polkit-qt-1/polkit-qt-1-0.114.0.tar.xz
++https://download.kde.org/stable/polkit-qt-1/polkit-qt-1-0.200.0.tar.xz
+ https://launchpad.net/ubuntu/+archive/primary/+files/libdbusmenu-qt_0.9.3+16.04.20160218.orig.tar.gz
+ https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.12.0.tar.xz
+ https://download.kde.org/stable/kuserfeedback/kuserfeedback-1.3.0.tar.xz
+@@ -925,7 +925,7 @@ https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+ https://github.com/intel/media-driver/archive/refs/tags/intel-media-23.4.3.tar.gz
+ https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
+-http://ftp.osuosl.org/pub/blfs/conglomeration/a52dec/a52dec-0.7.4.tar.gz
++https://distfiles.adelielinux.org/source/a52dec/a52dec-0.8.0.tar.gz
+ https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
+ https://storage.googleapis.com/aom-releases/libaom-3.8.1.tar.gz
+ https://github.com/libass/libass/releases/download/0.17.1/libass-0.17.1.tar.xz
+@@ -1035,7 +1035,7 @@ https://releases.pagure.org/xmlto/xmlto-0.0.28.tar.bz2
+ https://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/epdfview-gtk3/epdfview-gtk3-20200814.tar.xz
+ https://archive.apache.org/dist/xmlgraphics/fop/source/fop-2.9-src.tar.gz
+-https://www.mupdf.com/downloads/archive/mupdf-1.23.10-source.tar.gz
++https://www.mupdf.com/downloads/archive/mupdf-1.23.11-source.tar.gz
+ https://github.com/dov/paps/releases/download/v0.8.0/paps-0.8.0.tar.gz
+ https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/texlive-20230313-source.tar.xz
