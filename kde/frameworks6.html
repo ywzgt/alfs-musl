@@ -5,28 +5,28 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Building KDE Frameworks 5 (KF5)
+      Building KDE Frameworks 6 (KF6)
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-42">
+  <body class="blfs" id="blfs-r12.1-45">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-42
+        "phrase">(systemd</span> Edition) - Version r12.1-45
       </h4>
       <h3>
-        Chapter&nbsp;30.&nbsp;KDE Frameworks 5
+        Chapter&nbsp;30.&nbsp;KDE Frameworks 6
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="kf5-intro.html" title=
-          "KDE Frameworks 5 Pre-installation Configuration">Prev</a>
+          <a accesskey="p" href="kf6-intro.html" title=
+          "KDE Frameworks 6 Pre-installation Configuration">Prev</a>
           <p>
-            KDE Frameworks 5 Pre-installation Configuration
+            KDE Frameworks 6 Pre-installation Configuration
           </p>
         </li>
         <li class="next">
@@ -37,25 +37,25 @@
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="kf5.html" title=
-          "Chapter&nbsp;30.&nbsp;KDE Frameworks 5">Up</a>
+          <a accesskey="u" href="kf6.html" title=
+          "Chapter&nbsp;30.&nbsp;KDE Frameworks 6">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-42">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-45">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="kf5-frameworks" name="kf5-frameworks"></a>Building KDE
-      Frameworks 5 (KF5)
+      Frameworks 6 (KF6)
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <p>
-        KDE Frameworks 5 is a collection of libraries based on top of Qt5 and
-        QML derived from the monolithic KDE 4 libraries. They can be used
-        independent of the KDE Display Environment (Plasma 5).
+        KDE Frameworks is a collection of libraries based on top of Qt6 and
+        QML derived from the previous KDE 5 libraries. They can be used
+        independent of the KDE Display Environment (Plasma 6).
       </p>
       <div class="admon note">
         <img alt="[Note]" src="../images/note.png" />
@@ -80,7 +80,7 @@
           <li class="listitem">
             <p>
               Download (HTTP): <a class="ulink" href=
-              "https://download.kde.org/stable/frameworks/5.115">https://download.kde.org/stable/frameworks/5.115</a>
+              "https://download.kde.org/stable/frameworks/6.0">https://download.kde.org/stable/frameworks/6.0</a>
             </p>
           </li>
           <li class="listitem">
@@ -115,8 +115,8 @@
         <a class="xref" href="../general/boost.html" title=
         "Boost-1.84.0">Boost-1.84.0</a>, <a class="xref" href=
         "extra-cmake-modules.html" title=
-        "extra-cmake-modules-5.115.0">extra-cmake-modules-5.115.0</a>,
-        <a class="xref" href="../pst/docbook.html" title=
+        "extra-cmake-modules-6.0.0">extra-cmake-modules-6.0.0</a>, <a class=
+        "xref" href="../pst/docbook.html" title=
         "docbook-xml-4.5">docbook-xml-4.5</a>, <a class="xref" href=
         "../pst/docbook-xsl.html" title=
         "docbook-xsl-nons-1.79.2">docbook-xsl-nons-1.79.2</a>, <a class=
@@ -153,23 +153,20 @@
         "Aspell-0.60.8.1">Aspell-0.60.8.1</a> (Dictionary backend for
         Sonnet), <a class="xref" href="../basicnet/avahi.html" title=
         "Avahi-0.8">Avahi-0.8</a> (DNS-SD backend for KDNSSD), <a class=
-        "xref" href="libdbusmenu-qt.html" title=
-        "libdbusmenu-qt-0.9.3+16.04.20160218">libdbusmenu-qt-0.9.3+16.04.20160218</a>
-        (built with qt5), <a class="xref" href="../general/ModemManager.html"
-        title="ModemManager-1.18.12">ModemManager-1.18.12</a> (needed to
-        build ModemManager-Qt), <a class="xref" href=
+        "xref" href="../general/ModemManager.html" title=
+        "ModemManager-1.18.12">ModemManager-1.18.12</a> (needed to build
+        ModemManager-Qt), <a class="xref" href=
         "../basicnet/networkmanager.html" title=
         "NetworkManager-1.46.0">NetworkManager-1.46.0</a> (needed to build
-        NetworkManager-Qt), <a class="xref" href="../general/pcre.html"
-        title="PCRE-8.45">PCRE-8.45</a>, and <a class="xref" href=
-        "polkit-qt.html" title="Polkit-Qt-0.200.0">polkit-qt-0.200.0</a>
-        (Authentication backend for KAuth)
+        NetworkManager-Qt), and <a class="xref" href="polkit-qt.html" title=
+        "Polkit-Qt-0.200.0">polkit-qt-0.200.0</a> (Authentication backend for
+        KAuth)
       </p>
       <p class="recommended">
         Furthermore, the instructions below assume that the environment has
-        been set up as described in <a class="xref" href="kf5-intro.html"
-        title="KDE Frameworks 5 Pre-installation Configuration">Introduction
-        to KF5</a>.
+        been set up as described in <a class="xref" href="kf6-intro.html"
+        title="KDE Frameworks 6 Pre-installation Configuration">Introduction
+        to KF6</a>.
       </p>
       <h4>
         Optional
@@ -243,13 +240,6 @@
         the default).
       </p>
       <h4>
-        Optional dependency for kdewebkit
-      </h4>
-      <p class="optional">
-        <a class="ulink" href=
-        "https://download.qt.io/community_releases/5.9/5.9.0-final/">QtWebkit</a>
-      </p>
-      <h4>
         Optional dictionary backends for Sonnet
       </h4>
       <p class="optional">
@@ -267,7 +257,7 @@
           them all at once:
         </p>
         <pre class="userinput"><kbd class=
-        "command">url=https://download.kde.org/stable/frameworks/5.115/
+        "command">url=https://download.kde.org/stable/frameworks/6.0/
 wget -r -nH -nd -A '*.xz' -np $url</kbd>
 <code class="literal">
 The options used here are:
@@ -287,91 +277,81 @@ The options used here are:
           follows:
         </p>
         <pre class="userinput"><kbd class=
-        "command">cat &gt; frameworks-5.115.0.md5 &lt;&lt; "EOF"
-<code class="literal">28643b6e6d1883390ba8cc138f98e4e0  attica-5.115.0.tar.xz
-#125bbaa9cd2853caf029b67b48a3b3d9  extra-cmake-modules-5.115.0.tar.xz
-6db6b6fef4a89e40a97cfaf121b7bb39  kapidox-5.115.0.tar.xz
-0c22e60234f50e95d76a45d6a8135bba  karchive-5.115.0.tar.xz
-c87402505994a05fbf4c368a22016ef5  kcodecs-5.115.0.tar.xz
-fcb77cb2d9349b33e9e085ca4d2ebe7f  kconfig-5.115.0.tar.xz
-159559a9fcc0812b4145acdd073a73d7  kcoreaddons-5.115.0.tar.xz
-8c5b4a9555618c620a2e94a5d45798df  kdbusaddons-5.115.0.tar.xz
-2327fbcd8dea339ca3ef24b889a71e63  kdnssd-5.115.0.tar.xz
-c89c04e2ec19cab40c023f70e58dc941  kguiaddons-5.115.0.tar.xz
-50ba903da49c6b9acf8d2e3881164787  ki18n-5.115.1.tar.xz
-#abe7fcdfce4a066fdef6236ab15d11b2  ki18n-5.115.0.tar.xz
-1bf59dbd22248f150f3b9c977af8b51f  kidletime-5.115.0.tar.xz
-63e0fd1101429ab4dd94130074e732bb  kimageformats-5.115.0.tar.xz
-49a623828ead35d4fa2d3255bbdca470  kitemmodels-5.115.0.tar.xz
-c134615e17dd472b93230f6712f9f01b  kitemviews-5.115.0.tar.xz
-a4ff537eb676fc53db9b3b7b8ecdc2ac  kplotting-5.115.0.tar.xz
-148cb8009939e1ae53928d0d75111efb  kwidgetsaddons-5.115.0.tar.xz
-7ff6c4358016468807c4d8c9ab9e0f5e  kwindowsystem-5.115.0.tar.xz
-ec9afc8825fe4ffed7fdc69954682bd3  networkmanager-qt-5.115.0.tar.xz
-4bc3f8554b526f0e39d8c2a6f228a988  solid-5.115.0.tar.xz
-fe0e704f92fd43e6748ace4146616ef3  sonnet-5.115.0.tar.xz
-4115012f00ffed36c9939f23cfb677ea  threadweaver-5.115.0.tar.xz
-637f364c6e5ce6fbbca7a14e56f04c64  kauth-5.115.0.tar.xz
-f0c3fc3ad2f0ad70c612d672d0ecb980  kcompletion-5.115.0.tar.xz
-e4d7458f0df9c5adbe4e01dc2c917839  kcrash-5.115.0.tar.xz
-bb297f2112003546b94c89c705578316  kdoctools-5.115.0.tar.xz
-4efa94dabf55b53594a44efce08af107  kpty-5.115.0.tar.xz
-c01766f3867f156ae2869031be469a5f  kunitconversion-5.115.0.tar.xz
-22f355d87607bc76b9257724048ca73e  kconfigwidgets-5.115.0.tar.xz
-1fc0908df48b8041271b88350b1f59f0  kservice-5.115.0.tar.xz
-97f8e0b90a7c2ae352a9c6b3442e1a1f  kglobalaccel-5.115.0.tar.xz
-e4bbae93076e4cc5f1f05c555d982837  kpackage-5.115.0.tar.xz
-871278a972963eb6242688de2c3abc2e  kdesu-5.115.0.tar.xz
-2c2978ff806b9a4a3e7eed141e7fae06  kemoticons-5.115.0.tar.xz
-818c95b686e9257db6b4cdf007e2c49b  kiconthemes-5.115.0.tar.xz
-e7bcd0c302c603e51ec20f9777ba1c0b  kjobwidgets-5.115.0.tar.xz
-e3951d19de26c6b83e0fd2dc46b9ed55  knotifications-5.115.0.tar.xz
-94a3182125744d25654f2c507dea6614  ktextwidgets-5.115.0.tar.xz
-30270996c70d97fbda952aa2f822339f  kxmlgui-5.115.0.tar.xz
-ae18d83dae4dd64ab4a728d26a6d79de  kbookmarks-5.115.0.tar.xz
-1101eaf6d63a1c873cf21ee091821592  kwallet-5.115.0.tar.xz
-4bc257fbce10119918d48593b203cf2e  kded-5.115.0.tar.xz
-502f27350ad2538c843c6bdf4031ef8a  kio-5.115.0.tar.xz
-934c4f217a34a44a82704be7f47a6ef6  kdeclarative-5.115.0.tar.xz
-011fc001cffe0fd611ea516ced255578  kcmutils-5.115.0.tar.xz
-a6b54d0321cecb9b9ce4fe8bdc2bdf75  kirigami2-5.115.0.tar.xz
-0b47f08e5502871d9d7a483b75bb6ac4  syndication-5.115.0.tar.xz
-32e234371b5454850f17441d15b5748e  knewstuff-5.115.0.tar.xz
-c1cc6f7cb0b35ec6e1ef691ec4b1943b  frameworkintegration-5.115.0.tar.xz
-7ae60737e857a72bf8af9859a65886f0  kinit-5.115.0.tar.xz
-a1593f1c8024c1287b44e0035d00f2c6  kparts-5.115.0.tar.xz
-b7b6252b2414fb108617f8cf73f0a810  kactivities-5.115.0.tar.xz
-#dd11151488180073a39557afa9a1907e  kdewebkit-5.115.0.tar.xz
-813461682389193e4fd0e589ffad866b  syntax-highlighting-5.115.0.tar.xz
-e30c868032b7d722b75695b8f1eae46b  ktexteditor-5.115.0.tar.xz
-474caf85f2b192e7f2bb68cce60aa273  kdesignerplugin-5.115.0.tar.xz
-5031ae48f5214293ca8484e719a78895  kwayland-5.115.0.tar.xz
-553e0499f311ad2cf96177e3e76abf64  plasma-framework-5.115.0.tar.xz
-45d49e1ef3d42dc35fe07c36a45c612e  modemmanager-qt-5.115.0.tar.xz
-a21b59445d190328cad46c6e8d5e48b0  kpeople-5.115.0.tar.xz
-76e6ec2b6740ec77ff958fbe86d40932  kxmlrpcclient-5.115.0.tar.xz
-872b72db316483eb4fcfb013de091403  bluez-qt-5.115.0.tar.xz
-27eee2497d1e878693cd4cbeaf571379  kfilemetadata-5.115.0.tar.xz
-d145b146adf0ae1d3c104d17a79e156a  baloo-5.115.0.tar.xz
-#8a90f95057b7ab8ab03f3e4140b7adff  breeze-icons-5.115.0.tar.xz
-#98931250d009db3750132d74447a030a  oxygen-icons-5.115.0.tar.xz
-7f2a7726a6bba2f0a9c0474175fc69f6  kactivities-stats-5.115.0.tar.xz
-021a50470de1860b96bc5edb8f3ef11c  krunner-5.115.0.tar.xz
-abf08dfa6dd1d274e7834964e5cd23c5  prison-5.115.0.tar.xz
-476bf46c139885de38b717e229f9a39d  qqc2-desktop-style-5.115.0.tar.xz
-7af70230b69f0de4bb76c585b2af5733  kjs-5.115.0.tar.xz
-51d2788c1bff19b532d4208dd5e778a2  kdelibs4support-5.115.0.tar.xz
-d11bceb4cb9104d900a90708d6197bed  khtml-5.115.0.tar.xz
-97bdb8d6a40d3dd499e1fb1297656f97  kjsembed-5.115.0.tar.xz
-795fcee43ff4be908389f60942e8cba3  kmediaplayer-5.115.0.tar.xz
-95fef271cb5197f9a0f009e41e2072c9  kross-5.115.0.tar.xz
-06ab59b2662a0ddb5b77b0cc43173b7d  kholidays-5.115.0.tar.xz
-27623b7ac58f7ed7d0a42208dc18aad2  purpose-5.115.0.tar.xz
-ffacabefa59d96ac6d2fef1f9d33176f  kcalendarcore-5.115.0.tar.xz
-ea0c60ec29421be2c26be53b0f6d135e  kcontacts-5.115.0.tar.xz
-6ae56540d6d56086701a5dc130917e32  kquickcharts-5.115.0.tar.xz
-0fdec6499fe1bfdf5ba509d0d9874f0a  knotifyconfig-5.115.0.tar.xz
-7ec159103a24ed3d72b4680de952db20  kdav-5.115.0.tar.xz</code>
+        "command">cat &gt; frameworks-6.0.0.md5 &lt;&lt; "EOF"
+<code class="literal">47c7b3b14fdfd20526f921893e33a6df  attica-6.0.0.tar.xz
+#3e1b640fc5c3b4d96484029d1034c48a  extra-cmake-modules-6.0.0.tar.xz
+fd71ce0819198e19dd050c582423eee1  kapidox-6.0.0.tar.xz
+8fad68a775205e8247bf80ed9c3c5fc6  karchive-6.0.0.tar.xz
+17861d96f9e2b02432796982fcc20bb1  kcodecs-6.0.0.tar.xz
+294ae52167345f5d762691af6e1ade62  kconfig-6.0.0.tar.xz
+92a8009b1730b681f0a91c0e064a292b  kcoreaddons-6.0.0.tar.xz
+2ecb30602c833a9646b490c4e451c2bd  kdbusaddons-6.0.0.tar.xz
+0fa4228b3314387071fa438d47098037  kdnssd-6.0.0.tar.xz
+aba6bc813350b590112f9968fd59536a  kguiaddons-6.0.0.tar.xz
+46836705302aafc233e02d9aa5874c28  ki18n-6.0.0.tar.xz
+66c874a79a1cdca06d244d0af163b8a8  kidletime-6.0.0.tar.xz
+5cdb039fbc21b8bd58cb357b6e2f9863  kimageformats-6.0.0.tar.xz
+400fba4b2c11ebacb1ef7e496c741113  kitemmodels-6.0.0.tar.xz
+070c90dfbe2eea82913b2cab66e6331b  kitemviews-6.0.0.tar.xz
+405d1db9454a29d34d0a5a86bb58edbe  kplotting-6.0.0.tar.xz
+583bc50cda0c24d3864381ab1135d529  kwidgetsaddons-6.0.0.tar.xz
+9af0c4bdd92546078e096b719883dd28  kwindowsystem-6.0.0.tar.xz
+bdbee4bc5ba342e4830adf2e482a24bf  networkmanager-qt-6.0.0.tar.xz
+301bbd9f7d6f087d0afb248e895f13a7  solid-6.0.0.tar.xz
+045795628122c1ed16732ac8f9d4c96d  sonnet-6.0.0.tar.xz
+3d2bc3128145680b6851796c7ad6e871  threadweaver-6.0.0.tar.xz
+430907dc0f160f5588b060ffdcc358d4  kauth-6.0.0.tar.xz
+df90c97913a557375af05d5104c9a603  kcompletion-6.0.0.tar.xz
+58c794a280d3e4434aa11e9a0f0c5652  kcrash-6.0.0.tar.xz
+0a32d559bd1e00080163dc4b43312cde  kdoctools-6.0.0.tar.xz
+01e029d636d97fc9a257a273cbe0b211  kpty-6.0.0.tar.xz
+bbb148d38eed535bb9577748ceb06357  kunitconversion-6.0.0.tar.xz
+f2cc31377f41b79ca52d4eb40c42894b  kcolorscheme-6.0.0.tar.xz
+48df23dbabdd99d71abe5edae5394d62  kconfigwidgets-6.0.0.tar.xz
+08e20f41e2688e573d781d7d692cacdf  kservice-6.0.0.tar.xz
+e34267126f5e7d46ff5ab0c0fc78d64a  kglobalaccel-6.0.0.tar.xz
+2eacfd0463b1d5687b2c1c9ad3fa8014  kpackage-6.0.0.tar.xz
+b985ce1b579e4da7f2c0994fda195289  kdesu-6.0.0.tar.xz
+a33286edcde3d3ad7134a4db09227bf4  kiconthemes-6.0.0.tar.xz
+3fc8f5b9a780a4848064dc72f9844003  knotifications-6.0.0.tar.xz
+0b0a8c64155013ebb43f4cc001d6ce21  kjobwidgets-6.0.0.tar.xz
+6bcd6ec8fd59771da4c9dbc705dde02d  ktextwidgets-6.0.0.tar.xz
+5de68ebf37021a60488388732388b76e  kxmlgui-6.0.0.tar.xz
+e67eb02aa35a248937feca26b7028748  kbookmarks-6.0.0.tar.xz
+33679e8e105abdfd1bb09f75d1749375  kwallet-6.0.0.tar.xz
+2c782d6072737810e8ca371ccdcbb19d  kded-6.0.0.tar.xz
+a3d60dc1c5ed3c7e4494ff58c5735c29  kio-6.0.0.tar.xz
+6111defab41958eee9a52da6dc306db9  kdeclarative-6.0.0.tar.xz
+8202576f8624c0a83d127e1da4514fff  kcmutils-6.0.0.tar.xz
+4184323526fa39a73c6e935958a68bcc  kirigami-6.0.0.tar.xz
+00ba7e0955491ce5aeccf5ac88f6a3ec  syndication-6.0.0.tar.xz
+2b0ec2d3a917703b5f41fbf5f5c7dbb0  knewstuff-6.0.0.tar.xz
+fca1fe0771881e164b6a215cf1e28b77  frameworkintegration-6.0.0.tar.xz
+4c470da26e21c1531368ca524b480014  kparts-6.0.0.tar.xz
+2503b86bd37eb4d9e4bf42a69f0da32a  syntax-highlighting-6.0.0.tar.xz
+81ecc55af1cb0a0f13f1fc3860eb61d6  ktexteditor-6.0.0.tar.xz
+e6ae9483863a45be56557c0500a17568  modemmanager-qt-6.0.0.tar.xz
+bcc9eacf11e58c9cbbac7d9e4b0cb82e  kcontacts-6.0.0.tar.xz
+99ea6f649906b13eb1456e58c260506f  kpeople-6.0.0.tar.xz
+3d2d05a15c28e359df9a94fc31ca6e21  bluez-qt-6.0.0.tar.xz
+6234859a96372fcd260a3a229dc0bfb3  kfilemetadata-6.0.0.tar.xz
+57d06b4db354d93cf82d4391e8e9e3e9  baloo-6.0.0.tar.xz
+#795661e00d90c350bfc57665060a0ebf  breeze-icons-6.0.0.tar.xz
+bf373b60871e30f8ed1a0cc8fd82df2e  krunner-6.0.0.tar.xz
+0f56b81c3aa5b419d137fbe55f1a57ac  prison-6.0.0.tar.xz
+2c5a2c2eaa340a32227d4bce6f87fa48  qqc2-desktop-style-6.0.0.tar.xz
+10b15c95f371c54f21e4cc49a305b9f6  kholidays-6.0.0.tar.xz
+e370b59bd1b5d827dbce2799ea1ba23e  purpose-6.0.0.tar.xz
+5d757437cbbad16e9830991f0f500ab9  kcalendarcore-6.0.0.tar.xz
+07abf1cf5e5f52b846e6bf9aeaeb6518  kquickcharts-6.0.0.tar.xz
+cfe50038b8bffe743f28db553f958d5b  knotifyconfig-6.0.0.tar.xz
+84c03c331aa4af0c39f206e7cc30e156  kdav-6.0.0.tar.xz
+306d264725d574b435eea8e57dfcec95  kstatusnotifieritem-6.0.0.tar.xz
+9ffd741e4f57e6a619e113098cddcd87  ksvg-6.0.0.tar.xz
+e4067a993382ef01c82c6f15f05c2d14  ktexttemplate-6.0.0.tar.xz
+430cd1f91678dd0ffaacf56458a8dd9d  kuserfeedback-6.0.0.tar.xz
+
+</code>
 EOF</kbd></pre>
         <p>
           In the above list, notice that some files have been commented out
@@ -379,15 +359,9 @@ EOF</kbd></pre>
           commented out because it was built earlier in the <a class="xref"
           href="introduction.html" title=
           "Chapter&nbsp;29.&nbsp;Introduction to KDE">Introduction to
-          KDE</a>. The ki18n-5.115.0 package has been replaced by
-          ki18n-5.115.1. The icon packages are covered separately at
-          <a class="xref" href="../x/breeze-icons.html" title=
-          "breeze-icons-5.115.0">breeze-icons-5.115.0</a> and <a class="xref"
-          href="../x/oxygen-icons.html" title=
-          "oxygen-icons-5.115.0">oxygen-icons-5.115.0</a>. The kdewebkit
-          package may be built if the external package <a class="ulink" href=
-          "https://download.qt.io/community_releases/5.9/5.9.0-final/">QtWebkit</a>
-          has been built.
+          KDE</a>. The icon package is covered separately at <a class="xref"
+          href="../x/breeze-icons.html" title=
+          "breeze-icons-6.0.0">breeze-icons-6.0.0</a>.
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -451,18 +425,18 @@ export -f as_root</kbd></pre>
           </h3>
           <p>
             If installing in <code class="filename">/opt</code> and there is
-            an existing /opt/kf5 either as a regular directory or a symbolic
+            an existing /opt/kf6 either as a regular directory or a symbolic
             link, it should be reinitialized (as <code class=
             "systemitem">root</code>):
           </p>
           <pre class="root"><kbd class=
-          "command">mv -v /opt/kf5 /opt/kf5.old                         &amp;&amp;
-install -v -dm755           $KF5_PREFIX/{etc,share} &amp;&amp;
-ln -sfv /etc/dbus-1         $KF5_PREFIX/etc         &amp;&amp;
-ln -sfv /usr/share/dbus-1   $KF5_PREFIX/share       &amp;&amp;
-ln -sfv /usr/share/polkit-1 $KF5_PREFIX/share       &amp;&amp;
-install -v -dm755           $KF5_PREFIX/lib         &amp;&amp;
-ln -sfv /usr/lib/systemd    $KF5_PREFIX/lib</kbd></pre>
+          "command">mv -v /opt/kf6 /opt/kf6.old                         &amp;&amp;
+install -v -dm755           $KF6_PREFIX/{etc,share} &amp;&amp;
+ln -sfv /etc/dbus-1         $KF6_PREFIX/etc         &amp;&amp;
+ln -sfv /usr/share/dbus-1   $KF6_PREFIX/share       &amp;&amp;
+ln -sfv /usr/share/polkit-1 $KF6_PREFIX/share       &amp;&amp;
+install -v -dm755           $KF6_PREFIX/lib         &amp;&amp;
+ln -sfv /usr/lib/systemd    $KF6_PREFIX/lib</kbd></pre>
         </div>
         <p>
           First, start a subshell that will exit on error:
@@ -480,7 +454,7 @@ ln -sfv /usr/lib/systemd    $KF5_PREFIX/lib</kbd></pre>
     pkg=$(echo $file|sed 's|^.*/||')          # Remove directory
     packagedir=$(echo $pkg|sed 's|\.tar.*||') # Package directory
 
-    name=$(echo $pkg|sed 's|-5.*$||') # Isolate package name
+    name=$(echo $pkg|sed 's|-6.*$||') # Isolate package name
 
     tar -xf $file
     pushd $packagedir
@@ -499,8 +473,8 @@ ln -sfv /usr/lib/systemd    $KF5_PREFIX/lib</kbd></pre>
       mkdir build
       cd    build
 
-      cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
-            -DCMAKE_PREFIX_PATH=$QT5DIR        \
+      cmake -DCMAKE_INSTALL_PREFIX=$KF6_PREFIX \
+            -DCMAKE_PREFIX_PATH=$QT6DIR        \
             -DCMAKE_BUILD_TYPE=Release         \
             -DBUILD_TESTING=OFF                \
             -Wno-dev ..
@@ -511,7 +485,7 @@ ln -sfv /usr/lib/systemd    $KF5_PREFIX/lib</kbd></pre>
   as_root rm -rf $packagedir
   as_root /sbin/ldconfig
 
-done &lt; frameworks-5.115.0.md5
+done &lt; frameworks-6.0.0.md5
 
 exit</kbd></pre>
         <div class="admon note">
@@ -531,9 +505,8 @@ exit</kbd></pre>
           files. If the installed directory is not /usr, rename the directory
           and create a symlink:
         </p>
-        <pre class="root"><kbd class=
-        "command">mv -v /opt/kf5 /opt/kf5-5.115.0
-ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
+        <pre class="root"><kbd class="command">mv -v /opt/kf6 /opt/kf6-6.0.0
+ln -sfvn kf6-6.0.0 /opt/kf6</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -541,7 +514,7 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
         </h2>
         <p>
           <em class=
-          "parameter"><code>-DCMAKE_PREFIX_PATH=$QT5DIR</code></em>: This
+          "parameter"><code>-DCMAKE_PREFIX_PATH=$QT6DIR</code></em>: This
           switch is used to allow cmake to find the proper Qt libraries.
         </p>
         <p>
@@ -564,60 +537,60 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
               <span class="segbody">balooctl, baloo_file,
-              baloo_file_extractor, baloosearch, balooshow, checkXML5,
+              baloo_file_extractor, baloosearch, balooshow, checkXML6,
               depdiagram-generate, depdiagram-generate-all,
               depdiagram-prepare, desktoptojson, gentrigrams,
               kactivities-cli, kapidox_generate, kate-syntax-highlighter,
-              kbuildsycoca5, kcookiejar5, kdebugdialog5, kded5, kdeinit5,
-              kdeinit5_shutdown, kdeinit5_wrapper, kf5-config, kf5kross,
-              kgendesignerplugin, kglobalaccel5, kiconfinder5, kjs5, kjscmd5,
+              kbuildsycoca6, kcookiejar6, kdebugdialog6, kded6, kdeinit6,
+              kdeinit6_shutdown, kdeinit6_wrapper, kf6-config, kf6kross,
+              kgendesignerplugin, kglobalaccel6, kiconfinder6, kjs6, kjscmd6,
               kjsconsole, knewstuff-dialog, kpackagelauncherqml,
-              kpackagetool5, kquitapp5, kreadconfig5, kshell5,
-              ktelnetservice5, ktrash5, kwalletd5, kwallet-query, kwrapper5,
-              kwriteconfig5, meinproc5, parsetrigrams, plasmapkg2,
-              preparetips5, protocoltojson, and solid-hardware5</span>
+              kpackagetool6, kquitapp6, kreadconfig6, kshell6,
+              ktelnetservice6, ktrash6, kwalletd6, kwallet-query, kwrapper6,
+              kwriteconfig6, meinproc6, parsetrigrams, plasmapkg2,
+              preparetips6, protocoltojson, and solid-hardware6</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libkdeinit5_klauncher.so,
-              libKF5Activities.so, libKF5ActivitiesStats.so,
-              libKF5Archive.so, libKF5Attica.so, libKF5AuthCore.so,
-              libKF5Auth.so, libKF5Baloo.so, libKF5BluezQt.so,
-              libKF5Bookmarks.so, libKF5CalendarCore.so,
-              libKF5CalendarEvents.so, libKF5Codecs.so, libKF5Completion.so,
-              libKF5ConfigCore.so, libKF5ConfigGui.so,
-              libKF5ConfigWidgets.so, libKF5Contacts.so, libKF5CoreAddons.so,
-              libKF5Crash.so, libKF5DAV.so, libKF5DBusAddons.so,
-              libKF5Declarative.so, libKF5DNSSD.so, libKF5DocTools.so,
-              libKF5Emoticons.so, libKF5FileMetaData.so,
-              libKF5GlobalAccel.so, libKF5GuiAddons.so, libKF5Holidays.so,
-              libKF5I18n.so, libKF5IconThemes.so, libKF5IdleTime.so,
-              libKF5ItemModels.so, libKF5ItemViews.so, libKF5JobWidgets.so,
-              libKF5JSApi.so, libKF5JsEmbed.so, libKF5JS.so,
-              libKF5KCMUtils.so, libKF5KDELibs4Support.so, libKF5KHtml.so,
-              libKF5KIOCore.so, libKF5KIOFileWidgets.so, libKF5KIOGui.so,
-              libKF5KIONTLM.so, libKF5KIOWidgets.so, libKF5Kirigami2.so,
-              libKF5KrossCore.so, libKF5KrossUi.so, libKF5MediaPlayer.so,
-              libKF5NetworkManagerQt.so, libKF5NewStuffCore.so,
-              libKF5NewStuff.so, libKF5Notifications.so,
-              libKF5NotifyConfig.so, libKF5Package.so, libKF5Parts.so,
-              libKF5PeopleBackend.so, libKF5People.so,
-              libKF5PeopleWidgets.so, libKF5PlasmaQuick.so, libKF5Plasma.so,
-              libKF5Plotting.so, libKF5Prison.so, libKF5Pty.so,
-              libKF5Purpose.so, libKF5PurposeWidgets.so,
-              libKF5QuickAddons.so, libKF5Runner.so, libKF5Service.so,
-              libKF5Solid.so, libKF5SonnetCore.so, libKF5SonnetUi.so,
-              libKF5Style.so, libKF5Su.so, libKF5SyntaxHighlighting.so,
-              libKF5TextEditor.so, libKF5TextWidgets.so,
-              libKF5ThreadWeaver.so, libKF5UnitConversion.so,
-              libKF5Wallet.so, libKF5WaylandClient.so,
-              libKF5WaylandServer.so, libKF5WidgetsAddons.so,
-              libKF5WindowSystem.so, libKF5XmlGui.so, libKF5XmlRpcClient.so,
-              and libkwalletbackend5.so</span>
+              <span class="segbody">libkdeinit6_klauncher.so,
+              libKF6Activities.so, libKF6ActivitiesStats.so,
+              libKF6Archive.so, libKF6Attica.so, libKF6AuthCore.so,
+              libKF6Auth.so, libKF6Baloo.so, libKF6BluezQt.so,
+              libKF6Bookmarks.so, libKF6CalendarCore.so,
+              libKF6CalendarEvents.so, libKF6Codecs.so, libKF6Completion.so,
+              libKF6ConfigCore.so, libKF6ConfigGui.so,
+              libKF6ConfigWidgets.so, libKF6Contacts.so, libKF6CoreAddons.so,
+              libKF6Crash.so, libKF6DAV.so, libKF6DBusAddons.so,
+              libKF6Declarative.so, libKF6DNSSD.so, libKF6DocTools.so,
+              libKF6Emoticons.so, libKF6FileMetaData.so,
+              libKF6GlobalAccel.so, libKF6GuiAddons.so, libKF6Holidays.so,
+              libKF6I18n.so, libKF6IconThemes.so, libKF6IdleTime.so,
+              libKF6ItemModels.so, libKF6ItemViews.so, libKF6JobWidgets.so,
+              libKF6JSApi.so, libKF6JsEmbed.so, libKF6JS.so,
+              libKF6KCMUtils.so, libKF6KDELibs4Support.so, libKF6KHtml.so,
+              libKF6KIOCore.so, libKF6KIOFileWidgets.so, libKF6KIOGui.so,
+              libKF6KIONTLM.so, libKF6KIOWidgets.so, libKF6Kirigami2.so,
+              libKF6KrossCore.so, libKF6KrossUi.so, libKF6MediaPlayer.so,
+              libKF6NetworkManagerQt.so, libKF6NewStuffCore.so,
+              libKF6NewStuff.so, libKF6Notifications.so,
+              libKF6NotifyConfig.so, libKF6Package.so, libKF6Parts.so,
+              libKF6PeopleBackend.so, libKF6People.so,
+              libKF6PeopleWidgets.so, libKF6PlasmaQuick.so, libKF6Plasma.so,
+              libKF6Plotting.so, libKF6Prison.so, libKF6Pty.so,
+              libKF6Purpose.so, libKF6PurposeWidgets.so,
+              libKF6QuickAddons.so, libKF6Runner.so, libKF6Service.so,
+              libKF6Solid.so, libKF6SonnetCore.so, libKF6SonnetUi.so,
+              libKF6Style.so, libKF6Su.so, libKF6SyntaxHighlighting.so,
+              libKF6TextEditor.so, libKF6TextWidgets.so,
+              libKF6ThreadWeaver.so, libKF6UnitConversion.so,
+              libKF6Wallet.so, libKF6WaylandClient.so,
+              libKF6WaylandServer.so, libKF6WidgetsAddons.so,
+              libKF6WindowSystem.so, libKF6XmlGui.so, libKF6XmlRpcClient.so,
+              and libkwalletbackend6.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/opt/kf5 (symlink to /opt/kf5-5.115.0) if
+              <span class="segbody">/opt/kf6 (symlink to /opt/kf6-6.0.0) if
               installing in /opt</span>
             </div>
           </div>
@@ -635,9 +608,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="checkXML5" name="checkXML5"></a><span class=
+                    <a id="checkXML6" name="checkXML6"></a><span class=
                     "term"><span class=
-                    "command"><strong>checkXML5</strong></span></span>
+                    "command"><strong>checkXML6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -708,9 +681,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kbuildsycoca5" name=
-                    "kbuildsycoca5"></a><span class="term"><span class=
-                    "command"><strong>kbuildsycoca5</strong></span></span>
+                    <a id="kbuildsycoca6" name=
+                    "kbuildsycoca6"></a><span class="term"><span class=
+                    "command"><strong>kbuildsycoca6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -723,9 +696,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kcookiejar5" name="kcookiejar5"></a><span class=
+                    <a id="kcookiejar6" name="kcookiejar6"></a><span class=
                     "term"><span class=
-                    "command"><strong>kcookiejar5</strong></span></span>
+                    "command"><strong>kcookiejar6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -738,9 +711,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kded5" name="kded5"></a><span class=
+                    <a id="kded6" name="kded6"></a><span class=
                     "term"><span class=
-                    "command"><strong>kded5</strong></span></span>
+                    "command"><strong>kded6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -752,9 +725,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kdeinit5" name="kdeinit5"></a><span class=
+                    <a id="kdeinit6" name="kdeinit6"></a><span class=
                     "term"><span class=
-                    "command"><strong>kdeinit5</strong></span></span>
+                    "command"><strong>kdeinit6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -767,9 +740,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kf5-config" name="kf5-config"></a><span class=
+                    <a id="kf6-config" name="kf6-config"></a><span class=
                     "term"><span class=
-                    "command"><strong>kf5-config</strong></span></span>
+                    "command"><strong>kf6-config</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -782,9 +755,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kf5kross" name="kf5kross"></a><span class=
+                    <a id="kf6kross" name="kf6kross"></a><span class=
                     "term"><span class=
-                    "command"><strong>kf5kross</strong></span></span>
+                    "command"><strong>kf6kross</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -811,9 +784,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kglobalaccel5" name=
-                    "kglobalaccel5"></a><span class="term"><span class=
-                    "command"><strong>kglobalaccel5</strong></span></span>
+                    <a id="kglobalaccel6" name=
+                    "kglobalaccel6"></a><span class="term"><span class=
+                    "command"><strong>kglobalaccel6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -826,9 +799,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kjs5" name="kjs5"></a><span class=
+                    <a id="kjs6" name="kjs6"></a><span class=
                     "term"><span class=
-                    "command"><strong>kjs5</strong></span></span>
+                    "command"><strong>kjs6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -840,9 +813,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kjscmd5" name="kjscmd5"></a><span class=
+                    <a id="kjscmd6" name="kjscmd6"></a><span class=
                     "term"><span class=
-                    "command"><strong>kjscmd5</strong></span></span>
+                    "command"><strong>kjscmd6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -863,7 +836,7 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
                 <td>
                   <p>
                     is a console for <span class=
-                    "command"><strong>kjs5</strong></span>
+                    "command"><strong>kjs6</strong></span>
                   </p>
                 </td>
               </tr>
@@ -885,9 +858,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kpackagetool5" name=
-                    "kpackagetool5"></a><span class="term"><span class=
-                    "command"><strong>kpackagetool5</strong></span></span>
+                    <a id="kpackagetool6" name=
+                    "kpackagetool6"></a><span class="term"><span class=
+                    "command"><strong>kpackagetool6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -899,9 +872,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kreadconfig5" name="kreadconfig5"></a><span class=
+                    <a id="kreadconfig6" name="kreadconfig6"></a><span class=
                     "term"><span class=
-                    "command"><strong>kreadconfig5</strong></span></span>
+                    "command"><strong>kreadconfig6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -914,9 +887,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kshell5" name="kshell5"></a><span class=
+                    <a id="kshell6" name="kshell6"></a><span class=
                     "term"><span class=
-                    "command"><strong>kshell5</strong></span></span>
+                    "command"><strong>kshell6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -928,9 +901,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="ktelnetservice5" name=
-                    "ktelnetservice5"></a><span class="term"><span class=
-                    "command"><strong>ktelnetservice5</strong></span></span>
+                    <a id="ktelnetservice6" name=
+                    "ktelnetservice6"></a><span class="term"><span class=
+                    "command"><strong>ktelnetservice6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -942,9 +915,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="ktrash5" name="ktrash5"></a><span class=
+                    <a id="ktrash6" name="ktrash6"></a><span class=
                     "term"><span class=
-                    "command"><strong>ktrash5</strong></span></span>
+                    "command"><strong>ktrash6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -956,9 +929,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kwalletd5" name="kwalletd5"></a><span class=
+                    <a id="kwalletd6" name="kwalletd6"></a><span class=
                     "term"><span class=
-                    "command"><strong>kwalletd5</strong></span></span>
+                    "command"><strong>kwalletd6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -970,9 +943,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kwriteconfig5" name=
-                    "kwriteconfig5"></a><span class="term"><span class=
-                    "command"><strong>kwriteconfig5</strong></span></span>
+                    <a id="kwriteconfig6" name=
+                    "kwriteconfig6"></a><span class="term"><span class=
+                    "command"><strong>kwriteconfig6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -985,9 +958,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="meinproc5" name="meinproc5"></a><span class=
+                    <a id="meinproc6" name="meinproc6"></a><span class=
                     "term"><span class=
-                    "command"><strong>meinproc5</strong></span></span>
+                    "command"><strong>meinproc6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -1013,9 +986,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="preparetips5" name="preparetips5"></a><span class=
+                    <a id="preparetips6" name="preparetips6"></a><span class=
                     "term"><span class=
-                    "command"><strong>preparetips5</strong></span></span>
+                    "command"><strong>preparetips6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -1027,9 +1000,9 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="solid-hardware5" name=
-                    "solid-hardware5"></a><span class="term"><span class=
-                    "command"><strong>solid-hardware5</strong></span></span>
+                    <a id="solid-hardware6" name=
+                    "solid-hardware6"></a><span class="term"><span class=
+                    "command"><strong>solid-hardware6</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -1046,10 +1019,10 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="kf5-intro.html" title=
-          "KDE Frameworks 5 Pre-installation Configuration">Prev</a>
+          <a accesskey="p" href="kf6-intro.html" title=
+          "KDE Frameworks 6 Pre-installation Configuration">Prev</a>
           <p>
-            KDE Frameworks 5 Pre-installation Configuration
+            KDE Frameworks 6 Pre-installation Configuration
           </p>
         </li>
         <li class="next">
@@ -1060,12 +1033,12 @@ ln -sfvn kf5-5.115.0 /opt/kf5</kbd></pre>
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="kf5.html" title=
-          "Chapter&nbsp;30.&nbsp;KDE Frameworks 5">Up</a>
+          <a accesskey="u" href="kf6.html" title=
+          "Chapter&nbsp;30.&nbsp;KDE Frameworks 6">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-42">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-45">
           Home</a>
         </li>
       </ul>
