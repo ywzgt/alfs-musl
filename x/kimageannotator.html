@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      kImageAnnotator-0.7.0
+      kImageAnnotator-0.7.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-45">
+  <body class="blfs" id="blfs-r12.1-54">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-45
+        "phrase">(systemd</span> Edition) - Version r12.1-54
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="kcolorpicker.html" title=
-          "kColorPicker-0.3.0">Prev</a>
+          "kColorPicker-0.3.1">Prev</a>
           <p>
-            kColorPicker-0.3.0
+            kColorPicker-0.3.1
           </p>
         </li>
         <li class="next">
@@ -42,14 +42,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-45">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="kimageannotator" name=
-      "kimageannotator"></a>kImageAnnotator-0.7.0
+      "kimageannotator"></a>kImageAnnotator-0.7.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,13 +78,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/ksnip/kImageAnnotator/archive/refs/tags/v0.7.0/kImageAnnotator-0.7.0.tar.gz">
-                https://github.com/ksnip/kImageAnnotator/archive/refs/tags/v0.7.0/kImageAnnotator-0.7.0.tar.gz</a>
+                "https://github.com/ksnip/kImageAnnotator/archive/refs/tags/v0.7.1/kImageAnnotator-0.7.1.tar.gz">
+                https://github.com/ksnip/kImageAnnotator/archive/refs/tags/v0.7.1/kImageAnnotator-0.7.1.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 337b493d010bc82b87a7b908855270cf
+                Download MD5 sum: 68990dfe7fe03f1aff5e0e5338b9f3bb
               </p>
             </li>
             <li class="listitem">
@@ -99,7 +99,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.5 SBU (Using parallelism=4)
+                Estimated build time: 0.6 SBU (Using parallelism=4)
               </p>
             </li>
           </ul>
@@ -112,7 +112,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="kcolorpicker.html" title=
-          "kColorPicker-0.3.0">kcolorpicker-0.3.0</a>
+          "kColorPicker-0.3.1">kcolorpicker-0.3.1</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -128,6 +128,8 @@ cd    build &amp;&amp;
 
 cmake -DCMAKE_INSTALL_PREFIX=/usr \
       -DCMAKE_BUILD_TYPE=Release  \
+      -DBUILD_SHARED_LIBS=ON      \
+      -DBUILD_WITH_QT6=ON         \
       .. &amp;&amp;
 make</kbd></pre>
         <p>
@@ -150,12 +152,12 @@ make</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libkImageAnnotator-Qt5.a</span>
+              <span class="segbody">libkImageAnnotator.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/include/kImageAnnotator-Qt5,
-              /usr/lib/cmake/kImageAnnotator-Qt5, and
+              <span class="segbody">/usr/include/kImageAnnotator-Qt6,
+              /usr/lib/cmake/kImageAnnotator-Qt6, and
               /usr/share/kImageAnnotator</span>
             </div>
           </div>
@@ -166,9 +168,9 @@ make</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="kcolorpicker.html" title=
-          "kColorPicker-0.3.0">Prev</a>
+          "kColorPicker-0.3.1">Prev</a>
           <p>
-            kColorPicker-0.3.0
+            kColorPicker-0.3.1
           </p>
         </li>
         <li class="next">
@@ -184,7 +186,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-45">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
           Home</a>
         </li>
       </ul>

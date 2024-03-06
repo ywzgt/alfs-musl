@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-45">
+  <body class="blfs" id="blfs-r12.1-54">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-45
+        "phrase">(systemd</span> Edition) - Version r12.1-54
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-45">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
           Home</a>
         </li>
       </ul>
@@ -161,14 +161,11 @@
           "../multimedia/libvdpau.html" title="libvdpau-1.5">libvdpau-1.5</a>
           (to build VDPAU drivers), <a class="xref" href=
           "../general/llvm.html" title="LLVM-17.0.6">LLVM-17.0.6</a>
-          (required for Gallium3D, nouveau, and radeonsi drivers and for
-          swrast, the software rasterizer which is sometimes referred to as
-          llvmpipe. See <a class="ulink" href=
-          "https://docs.mesa3d.org/systems.html">https://docs.mesa3d.org/systems.html</a>
-          for more information), <a class="xref" href=
-          "../general/wayland-protocols.html" title=
-          "Wayland-Protocols-1.33">wayland-protocols-1.33</a> (required for
-          <a class="xref" href="../kde/plasma-all.html" title=
+          (required for the r300, r600, and radeonsi drivers, and the
+          LLVMpipe software rasterizer which can make the swrast driver much
+          faster), <a class="xref" href="../general/wayland-protocols.html"
+          title="Wayland-Protocols-1.33">wayland-protocols-1.33</a> (required
+          for <a class="xref" href="../kde/plasma-all.html" title=
           "Building Plasma 5">Plasma-6.0.0</a>, GNOME, and recommended for
           <a class="xref" href="gtk3.html" title=
           "GTK+-3.24.41">GTK+-3.24.41</a>), and <a class="xref" href=
@@ -354,7 +351,7 @@ ninja</kbd></pre>
           Nouveau status page</a>), <code class="literal">virgl</code> (for
           QEMU virtual GPU with <span class="application">virglrender</span>
           support; note that BLFS <a class="xref" href="../postlfs/qemu.html"
-          title="qemu-8.2.1">qemu-8.2.1</a> is not built with <span class=
+          title="qemu-8.2.2">qemu-8.2.2</a> is not built with <span class=
           "application">virglrender</span>), <code class=
           "literal">svga</code> (for VMWare virtual GPU), <code class=
           "literal">swrast</code> (using CPU for 3D rasterisation; note that
@@ -595,7 +592,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-45">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
           Home</a>
         </li>
       </ul>
