@@ -5,59 +5,59 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Gwenview-24.02.0
+      Konsole-24.02.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-54">
+  <body class="blfs" id="blfs-r12.1-70">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-54
+        "phrase">(systemd</span> Edition) - Version r12.1-70
       </h4>
       <h3>
-        Chapter&nbsp;31.&nbsp;KDE Frameworks 5 Based Applications
+        Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="libkdcraw.html" title=
-          "libkdcraw-24.02.0">Prev</a>
+          <a accesskey="p" href="khelpcenter.html" title=
+          "Khelpcenter-24.02.0">Prev</a>
           <p>
-            libkdcraw-24.02.0
+            Khelpcenter-24.02.0
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="libkcddb.html" title=
-          "libkcddb-24.02.0">Next</a>
+          <a accesskey="n" href="libkexiv2.html" title=
+          "libkexiv2-24.02.0">Next</a>
           <p>
-            libkcddb-24.02.0
+            libkexiv2-24.02.0
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="kf5-apps.html" title=
-          "Chapter&nbsp;31.&nbsp;KDE Frameworks 5 Based Applications">Up</a>
+          <a accesskey="u" href="kf6-apps.html" title=
+          "Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="gwenview5" name="gwenview5"></a>Gwenview-24.02.0
+      <a id="konsole" name="konsole"></a>Konsole-24.02.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to Gwenview
+          Introduction to Konsole
         </h2>
         <p>
-          <span class="application">Gwenview</span> is a fast and easy-to-use
-          image viewer for KDE.
+          The <span class="application">Konsole</span> package is a KF6 based
+          terminal emulator.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -78,74 +78,87 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.kde.org/stable/release-service/24.02.0/src/gwenview-24.02.0.tar.xz">
-                https://download.kde.org/stable/release-service/24.02.0/src/gwenview-24.02.0.tar.xz</a>
+                "https://download.kde.org/stable/release-service/24.02.0/src/konsole-24.02.0.tar.xz">
+                https://download.kde.org/stable/release-service/24.02.0/src/konsole-24.02.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: dded6bc13018cb19276257158a428be0
+                Download MD5 sum: d6195f0b41d438428c2e433ff45b4c1b
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 6.6 MB
+                Download size: 1.7 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 50 MB
+                Estimated disk space required: 60 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.5 SBU (using parallelism=4)
+                Estimated build time: 0.7 SBU (using parallelism=4)
               </p>
             </li>
           </ul>
         </div>
         <h3>
-          Gwenview Dependencies
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Optional patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/konsole-24.02.0-scrollbar-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/konsole-24.02.0-scrollbar-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Konsole Dependencies
         </h3>
         <h4>
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="../general/exiv2.html" title=
-          "Exiv2-0.28.2">Exiv2-0.28.2</a>, <a class="xref" href=
-          "../x/kimageannotator.html" title=
-          "kImageAnnotator-0.7.1">kimageannotator-0.7.1</a>, <a class="xref"
-          href="frameworks6.html" title="Building KDE Frameworks 6 (KF6)">KDE
-          Frameworks-6.0.0</a>, and <a class="xref" href=
-          "../general/lcms2.html" title="Little CMS-2.14">Little CMS-2.14</a>
-        </p>
-        <h4>
-          Recommended
-        </h4>
-        <p class="recommended">
-          <a class="xref" href="libkdcraw.html" title=
-          "libkdcraw-24.02.0">libkdcraw-24.02.0</a>
-        </p>
-        <h4>
-          Optional
-        </h4>
-        <p class="optional">
-          <a class="ulink" href=
-          "https://download.kde.org/stable/release-service/24.02.0/src/">KF5Kipi</a>
+          <a class="xref" href="frameworks6.html" title=
+          "Building KDE Frameworks 6 (KF6)">KDE Frameworks-6.0.0</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of Gwenview
+          Installation of Konsole
         </h2>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            In non-plasma environments, the konsole scrollbar and its handle
+            do not show up well. If desired, apply the optional patch to the
+            package:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">patch -Np1 -i ../konsole-24.02.0-scrollbar-1.patch</kbd></pre>
+          <p>
+            The patch makes the scrollbar light gray with a small white
+            border. The handle is dark gray. If desired, the colors may be
+            changed to taste by editing the patch.
+          </p>
+        </div>
         <p>
-          Install <span class="application">Gwenview</span> by running the
+          Install <span class="application">Konsole</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
+cmake -DCMAKE_INSTALL_PREFIX=$KF6_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DBUILD_TESTING=OFF                \
       -Wno-dev .. &amp;&amp;
@@ -165,17 +178,19 @@ make</kbd></pre>
         <div class="segmentedlist">
           <div class="seglistitem">
             <div class="seg">
-              <strong class="segtitle">Installed Program:</strong>
-              <span class="segbody">gwenview and gwenview_importer</span>
+              <strong class="segtitle">Installed Programs:</strong>
+              <span class="segbody">konsole and konsoleprofile</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libgwenviewlib.so and gvpart.so</span>
+              <span class="segbody">libkdeinit6_konsole.so and
+              libkonsoleprivate.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class=
-              "segbody">$KF5_PREFIX/share/{kxmlgui5/gvpart,gwenview,doc/HTML/*/gwenview}</span>
+              <span class="segbody">$KF6_PREFIX/share/doc/HTML/*/konsole,
+              $KF6_PREFIX/share/konsole, and
+              $KF6_PREFIX/share/kxmlgui6/konsole</span>
             </div>
           </div>
         </div>
@@ -192,28 +207,30 @@ make</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="gwenview5-prog" name=
-                    "gwenview5-prog"></a><span class="term"><span class=
-                    "command"><strong>gwenview</strong></span></span>
+                    <a id="konsole-prog" name="konsole-prog"></a><span class=
+                    "term"><span class=
+                    "command"><strong>konsole</strong></span></span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    is the KDE image viewer
+                    is an X terminal emulation which provides a command-line
+                    interface
                   </p>
                 </td>
               </tr>
               <tr>
                 <td>
                   <p>
-                    <a id="gwenview5-importer" name=
-                    "gwenview5-importer"></a><span class="term"><span class=
-                    "command"><strong>gwenview_importer</strong></span></span>
+                    <a id="konsoleprofile" name=
+                    "konsoleprofile"></a><span class="term"><span class=
+                    "command"><strong>konsoleprofile</strong></span></span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    is a Photo importer
+                    is a command-line tool to change the current tab's
+                    profile options
                   </p>
                 </td>
               </tr>
@@ -225,26 +242,26 @@ make</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="libkdcraw.html" title=
-          "libkdcraw-24.02.0">Prev</a>
+          <a accesskey="p" href="khelpcenter.html" title=
+          "Khelpcenter-24.02.0">Prev</a>
           <p>
-            libkdcraw-24.02.0
+            Khelpcenter-24.02.0
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="libkcddb.html" title=
-          "libkcddb-24.02.0">Next</a>
+          <a accesskey="n" href="libkexiv2.html" title=
+          "libkexiv2-24.02.0">Next</a>
           <p>
-            libkcddb-24.02.0
+            libkexiv2-24.02.0
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="kf5-apps.html" title=
-          "Chapter&nbsp;31.&nbsp;KDE Frameworks 5 Based Applications">Up</a>
+          <a accesskey="u" href="kf6-apps.html" title=
+          "Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>

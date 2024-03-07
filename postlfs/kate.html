@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-54">
+  <body class="blfs" id="blfs-r12.1-70">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-54
+        "phrase">(systemd</span> Edition) - Version r12.1-70
       </h4>
       <h3>
         Chapter&nbsp;6.&nbsp;Text Editors
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="kate5" name="kate5"></a>Kate-24.02.0
+      <a id="kate" name="kate"></a>Kate-24.02.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -56,7 +56,7 @@
         </h2>
         <p>
           The <span class="application">Kate</span> package contains an
-          advanced KF5 based graphical text editor.
+          advanced KF6 based graphical text editor.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -83,22 +83,22 @@
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 46323fc33eea7a38816277b47b1fa08a
+                Download MD5 sum: d368f1cb7acc4cb1f9f3eadb6fbd37ac
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 7.7 MB
+                Download size: 8.0 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 217 MB
+                Estimated disk space required: 252 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.7 SBU (using parallelism=4)
+                Estimated build time: 1.0 SBU (using parallelism=4)
               </p>
             </li>
           </ul>
@@ -113,12 +113,6 @@
           <a class="xref" href="../kde/frameworks6.html" title=
           "Building KDE Frameworks 6 (KF6)">KDE Frameworks-6.0.0</a>
         </p>
-        <h4>
-          Optional
-        </h4>
-        <p class="optional">
-          <a class="ulink" href="https://libgit2.github.com/">libgit2</a>
-        </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -131,7 +125,7 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX  \
+cmake -DCMAKE_INSTALL_PREFIX=$KF6_PREFIX  \
       -DCMAKE_BUILD_TYPE=Release          \
       -DBUILD_TESTING=OFF                 \
       -Wno-dev .. &amp;&amp;
@@ -157,15 +151,15 @@ make</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
               <span class="segbody">Several plugins under
-              $KF5_PREFIX/lib/plugins</span>
+              $KF6_PREFIX/lib/plugins</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">$KF5_PREFIX/lib/plugins/ktexteditor,
-              $KF5_PREFIX/lib/plugins/plasma/dataengine,
-              $KF5_PREFIX/share/doc/HTML/*/{kate,katepart,kwrite},
-              $KF5_PREFIX/share/{kateproject,katexmltools}, and
-              $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.katesessions</span>
+              <span class="segbody">$KF6_PREFIX/lib/plugins/ktexteditor,
+              $KF6_PREFIX/lib/plugins/plasma/dataengine,
+              $KF6_PREFIX/share/doc/HTML/*/{kate,katepart,kwrite},
+              $KF6_PREFIX/share/{kateproject,katexmltools}, and
+              $KF6_PREFIX/share/plasma/plasmoids/org.kde.plasma.katesessions</span>
             </div>
           </div>
         </div>
@@ -182,7 +176,7 @@ make</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kate5-prog" name="kate5-prog"></a><span class=
+                    <a id="kate-prog" name="kate-prog"></a><span class=
                     "term"><span class=
                     "command"><strong>kate</strong></span></span>
                   </p>
@@ -196,7 +190,7 @@ make</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kwrite5" name="kwrite5"></a><span class=
+                    <a id="kwrite" name="kwrite"></a><span class=
                     "term"><span class=
                     "command"><strong>kwrite</strong></span></span>
                   </p>
@@ -234,7 +228,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>

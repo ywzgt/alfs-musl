@@ -5,34 +5,34 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      QtWebEngine-5.15.17
+      QtWebEngine-6.6.2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-54">
+  <body class="blfs" id="blfs-r12.1-70">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-54
+        "phrase">(systemd</span> Edition) - Version r12.1-70
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="qt5-components.html" title=
-          "qt-components-5.15.12">Prev</a>
+          <a accesskey="p" href="qt6.html" title="Qt-6.6.2">Prev</a>
           <p>
-            qt-components-5.15.12
+            Qt-6.6.2
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="qt6.html" title="Qt-6.6.2">Next</a>
+          <a accesskey="n" href="startup-notification.html" title=
+          "startup-notification-0.12">Next</a>
           <p>
-            Qt-6.6.2
+            startup-notification-0.12
           </p>
         </li>
         <li class="up">
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="qtwebengine" name="qtwebengine"></a>QtWebEngine-5.15.17
+      <a id="qtwebengine" name="qtwebengine"></a>QtWebEngine-6.6.2
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -67,52 +67,6 @@
           This package and browsers using it may be useful if you need to use
           a website designed for google chrome, or chromium, browsers.
         </p>
-        <div class="admon important">
-          <img alt="[Important]" src="../images/important.png" />
-          <h3>
-            Important
-          </h3>
-          <p>
-            Qt-5.15 reached End Of Life on 26 May 2023. Extended lifetime
-            Qt5.15 LTS has been extended until 26th May 2025 for those with
-            subscription licenses. Because qtwebengine uses chromium code
-            under the LGPL, it appears that any new backported CVE fixes for
-            QtWebEngine will be available after Qt makes public releases of
-            its current versions.
-          </p>
-        </div>
-        <div class="admon warning">
-          <img alt="[Warning]" src="../images/warning.png" />
-          <h3>
-            Warning
-          </h3>
-          <p>
-            QtWebEngine uses a forked copy of chromium, and is therefore
-            vulnerable to many issues found there. The Qt developers have
-            always preferred to make releases at the same time as the rest of
-            Qt (rather than adding emergency fixes), but with stable versions
-            getting released after the current development version. Now that
-            they are keen to move to Qt6, the 5.15.3 and later Qt-5.15
-            releases are initially only available to paying customers.
-            QtWebEngine is something of an exception because of its LGPL
-            licence, but getting the git sources (with the forked chromium
-            submodule) to a position where they will successfully build on a
-            current BLFS system can take a lot of effort and therefore
-            updates to the book may be delayed.
-          </p>
-          <p>
-            It seems likely that future 5.15-series versions will also be
-            released long after the chromium vulnerabilities are known, but
-            fixes for QtWebEngine can be found in git and the editors take
-            the view that known vulnerabilities in browsers should be fixed.
-          </p>
-          <p>
-            The tarball linked to below was created from the 5.15 git branch
-            and the 87-branch of the chromium submodule (which is forked from
-            chromium). See the GIT-VERSIONS file in the tarball for details
-            of the latest commits.
-          </p>
-        </div>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -142,34 +96,6 @@
             To work around this, see the Command Explanations below.
           </p>
         </div>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            If you are upgrading and have installed a newer version of
-            <a class="xref" href="../general/icu.html" title=
-            "ICU-74.2">ICU-74.2</a> since you last installed <a class="xref"
-            href="qt5.html" title="Qt-5.15.12">Qt-5.15.12</a>, you will need
-            to reinstall Qt5 before upgrading, otherwise the final link of
-            this package will fail with a warning that the version of icu
-            libraries needed by libQt5Core.so may conflict with the version
-            used for this package.
-          </p>
-          <p>
-            Unusually, the shipped GN build system (used to create the Ninja
-            files) requires a static <code class=
-            "filename">libstdc++.a</code> although the installed libraries
-            correctly use the shared version. If that static library is not
-            present, the build will fail quite quickly. Please note that if
-            you try to build webengine as part of <span class=
-            "application">Qt</span> and the static library is not available,
-            that build will either complete without installing webengine, or
-            else fail during the install (both variants were observed in
-            5.12.0).
-          </p>
-        </div>
         <h3>
           Package Information
         </h3>
@@ -178,49 +104,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://anduin.linuxfromscratch.org/BLFS/qtwebengine/qtwebengine-5.15.17.tar.xz">
-                https://anduin.linuxfromscratch.org/BLFS/qtwebengine/qtwebengine-5.15.17.tar.xz</a>
+                "https://download.qt.io/official_releases/qt/6.6/6.6.2/submodules/qtwebengine-everywhere-src-6.6.2.tar.xz">
+                https://download.qt.io/official_releases/qt/6.6/6.6.2/submodules/qtwebengine-everywhere-src-6.6.2.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 9f430acf599605c762a8098000155045
+                Download MD5 sum: 593be964bad252a2b8e0052bc171175b
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 307 MB
+                Download size: 402 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 5.1 GB (154 MB installed)
+                Estimated disk space required: 7.6 GB (231 MB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 45 SBU (Using parallelism=8)
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.17-build_fixes-2.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.17-build_fixes-2.patch</a>
-              </p>
-            </li>
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.17-ffmpeg5_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-5.15.17-ffmpeg5_fixes-1.patch</a>
+                Estimated build time: 51 SBU (Using parallelism=8)
               </p>
             </li>
           </ul>
@@ -236,13 +141,8 @@
           "Node.js-20.11.1">nodejs-20.11.1</a>, <a class="xref" href=
           "../postlfs/nss.html" title="NSS-3.98">nss-3.98</a>, <a class=
           "xref" href="../general/pciutils.html" title=
-          "pciutils-3.11.1">pciutils-3.11.1</a>, <a class="xref" href=
-          "../general/python311.html" title=
-          "Python-3.11.1">Python-3.11.1</a>, and (<a class="xref" href=
-          "qt5.html" title="Qt-5.15.12">Qt-5.15.12</a> or <a class="xref"
-          href="qt5-components.html" title=
-          "qt-components-5.15.12">qt-components-5.15.12</a> with qtlocation
-          and qtwebchannel)
+          "pciutils-3.11.1">pciutils-3.11.1</a>, and <a class="xref" href=
+          "qt6.html" title="Qt-6.6.2">Qt-6.6.2</a>
         </p>
         <h4>
           Recommended
@@ -296,72 +196,22 @@
           Installation of qtwebengine
         </h2>
         <p>
-          Apply a patch to fix several issues that can prevent the build from
-          completing, and to force it to use python3:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../qtwebengine-5.15.17-build_fixes-2.patch</kbd></pre>
-        <p>
-          If building with system <a class="xref" href=
-          "../multimedia/ffmpeg.html" title="FFmpeg-6.1.1">FFmpeg-6.1.1</a>
-          as the editors recommend, apply a patch that resolves problems when
-          building with ffmpeg-5 and later:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../qtwebengine-5.15.17-ffmpeg5_fixes-1.patch</kbd></pre>
-        <p>
-          Although the build_fixes patch has ensured that git is not invoked
-          during the build, the build system has labyrinthine rules of
-          byzantine complexity, and in particular trying to build without two
-          <code class="filename">.git</code> directories will lead to it
-          eventually falling into unexpected and unbuildable code which
-          references a private header that has not been created. Avoid this
-          by creating the required directories:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">mkdir -pv .git src/3rdparty/chromium/.git</kbd></pre>
-        <p>
-          Because this version of qtwebengine is aimed at a later release
-          than the current public releases, change it to build for qt-5.15.12
-          using a sed:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e '/^MODULE_VERSION/s/5.*/5.15.12/' -i .qmake.conf</kbd></pre>
-        <p>
-          Now, ensure that the local headers are available when not building
-          as part of the complete <a class="xref" href="qt5.html" title=
-          "Qt-5.15.12">Qt-5.15.12</a>:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">find -type f -name "*.pr[io]" |
-  xargs sed -i -e 's|INCLUDEPATH += |&amp;$$QTWEBENGINE_ROOT/include |'</kbd></pre>
-        <p>
-          Next, allow the pulseaudio library to be linked at build time,
-          instead of run time. This also prevents an issue with newer
-          pulseaudio:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e '/link_pulseaudio/s/false/true/' \
-    -i src/3rdparty/chromium/media/media_options.gni</kbd></pre>
-        <p>
-          Next, fix a build failure that occurs when libxml2-2.12.0 or later
-          is installed:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e 's/xmlError/const xmlError/' \
--i src/3rdparty/chromium/third_party/blink/renderer/core/xml/xslt_processor.h \
--i src/3rdparty/chromium/third_party/blink/renderer/core/xml/xslt_processor_libxslt.cc</kbd></pre>
-        <p>
           Install <span class="application">qtwebengine</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
-PATH=/opt/python3.11/bin:$PATH qmake .. --                  \
-                                        -system-ffmpeg      \
-                                        -proprietary-codecs \
-                                        -webengine-icu      &amp;&amp;
-make</kbd></pre>
+
+cmake -D CMAKE_MESSAGE_LOG_LEVEL=STATUS             \
+      -D QT_FEATURE_webengine_system_ffmpeg=ON      \
+      -D QT_FEATURE_webengine_system_icu=ON         \
+      -D QT_FEATURE_webengine_system_libevent=ON    \
+      -D QT_FEATURE_webengine_proprietary_codecs=ON \
+      -D QT_FEATURE_webengine_webrtc_pipewire=ON    \
+      -D QT_BUILD_EXAMPLES_BY_DEFAULT=OFF           \
+      -G Ninja .. &amp;&amp;
+
+ninja</kbd></pre>
         <p>
           This package does not come with a test suite.
         </p>
@@ -369,62 +219,27 @@ make</kbd></pre>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">make install</kbd></pre>
-        <p>
-          Remove references to the build directory from installed library
-          dependency (prl) files by running the following commands as the
-          <code class="systemitem">root</code> user:
-        </p>
-        <pre class="root"><kbd class="command">find $QT5DIR/ -name \*.prl \
-   -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
           Command Explanations
         </h2>
         <p>
-          <span class=
-          "command"><strong>PATH=/opt/python3.11/bin:$PATH</strong></span>:
-          This switch forces this package to use the version of Python 3.11
-          that is installed in /opt. This is done to reduce the chances for
-          problems that may occur during the build, and to simplify the
-          instructions since this package is incompatible with Python 3.12
-          without additional modifications.
+          <em class=
+          "parameter"><code>CMAKE_MESSAGE_LOG_LEVEL=STATUS</code></em>:
+          Output interesting messages that project users might be interested
+          in. Ideally these should be concise, no more than a single line,
+          but still informative.
         </p>
         <p>
-          <span class="command"><strong>qmake</strong></span>: This will
-          build the included copy of <span class="application">ninja</span>
-          if it is not already installed and use it to configure the build.
+          <em class=
+          "parameter"><code>QT_FEATURE_webengine_system_*</code></em>:
+          Specify what external packages the system should use.
         </p>
         <p>
-          <span class="command"><strong>-- -system-ffmpeg -proprietary-codecs
-          -webengine-icu</strong></span>: If any options are passed to qmake
-          they must come after '--' which must follow '..' that points to the
-          main directory. The options here cause it to use system ffmpeg and
-          system icu. The '-proprietary-codecs' option allows ffmpeg to
-          decode H264 and H265 codecs. If built as part of full Qt5, the
-          system icu is automatically used (only) by Qt5Core if it is
-          available, but unless this option is used webengine will always use
-          its shipped copy of icu, adding time and space to the build. Remove
-          the <em class="parameter"><code>-system-ffmpeg</code></em> switch
-          if you don't have <a class="xref" href="../multimedia/ffmpeg.html"
-          title="FFmpeg-6.1.1">FFmpeg-6.1.1</a> installed and want to build
-          this package with an internal copy of ffmpeg.
-        </p>
-        <p>
-          <code class="option">-webengine-jumbo-build 0</code>: If this is
-          added to the qmake command it will cause the 'Jumbo Build Merge
-          Limit' to be reported as 'no' instead of 8. That turns off the
-          jumbo build. Some distros do that to get a smaller build on some
-          architectures such as MIPS. On x86_64 it might save a little space
-          in the build, but the build time will increase by a very large
-          amount.
-        </p>
-        <p>
-          <code class="option">-webengine-kerberos</code>: Add this if you
-          have installed <a class="xref" href="../postlfs/mitkrb.html" title=
-          "MIT Kerberos V5-1.21.2">MIT Kerberos V5-1.21.2</a> and wish to
-          connect from a browser using QtWebEngine to a webserver which
-          requires you to connect via kerberos.
+          <em class=
+          "parameter"><code>QT_BUILD_EXAMPLES_BY_DEFAULT=OFF</code></em>: Do
+          not build exampes by default.
         </p>
         <p>
           <code class="option">NINJAJOBS=4 make</code>: If you patched system
@@ -532,21 +347,23 @@ make</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
               <span class="segbody">qtwebengine_convert_dict and
-              QtWebEngineProcess (in $QT5DIR/libexec)</span>
+              QtWebEngineProcess (both in $QT6DIR/libexec)</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libQt5Pdf.so, libQt5PdfWidgets.so,
-              libQt5WebEngineCore.so, libQt5WebEngine.so, and
-              libQt5WebEngineWidgets.so</span>
+              <span class="segbody">libQt6Pdf.so, libQt6PdfQuick.so,
+              libQt6PdfWidgets.so, libQt6WebEngineCore.so,
+              libQt6WebEngineiQuick.so, libQt6WebEngineQuickDelegatesQml.so,
+              and libQt6WebEngineWidgets.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">$QT5DIR/include/QtPdf,
-              $QT5DIR/include/QtPdfWidgets, $QT5DIR/include/QtWebEngine,
-              $QT5DIR/include/QtWebEngineCore,
-              $QT5DIR/include/QtWebEngineWidgets, $QT5DIR/qml/QtWebEngine,
-              and $QT5DIR/translations/qtwebengine_locales</span>
+              <span class="segbody">$QT6DIR/include/QtPdf,
+              $QT6DIR/include/QtPdfQuick, $QT6DIR/include/QtPdfWidgets,
+              $QT6DIR/include/QtWebEngineCore,
+              $QT6DIR/include/QtWebEngineQuick,
+              $QT6DIR/include/QtWebEngineWidgets, $QT6DIR/qml/QtWebEngine,
+              and $QT6DIR/translations/qtwebengine_locales</span>
             </div>
           </div>
         </div>
@@ -593,52 +410,6 @@ make</kbd></pre>
                   </p>
                 </td>
               </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="libQtWebEngine-lib" name=
-                    "libQtWebEngine-lib"></a><span class="term"><code class=
-                    "filename">libQtWebEngine.so</code></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    provides QML types for rendering web content within a QML
-                    application
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="libQtWebEngineCore" name=
-                    "libQtWebEngineCore"></a><span class="term"><code class=
-                    "filename">libQtWebEngineCore.so</code></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    provides public API shared by both QtWebEngine and
-                    QtWebEngineWidgets
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="libQtWebEngineWidgets" name=
-                    "libQtWebEngineWidgets"></a><span class=
-                    "term"><code class=
-                    "filename">libQtWebEngineWidgets.so</code></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    provides a web browser engine as well as C++ classes to
-                    render and interact with web content
-                  </p>
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
@@ -647,16 +418,16 @@ make</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="qt5-components.html" title=
-          "qt-components-5.15.12">Prev</a>
+          <a accesskey="p" href="qt6.html" title="Qt-6.6.2">Prev</a>
           <p>
-            qt-components-5.15.12
+            Qt-6.6.2
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="qt6.html" title="Qt-6.6.2">Next</a>
+          <a accesskey="n" href="startup-notification.html" title=
+          "startup-notification-0.12">Next</a>
           <p>
-            Qt-6.6.2
+            startup-notification-0.12
           </p>
         </li>
         <li class="up">
@@ -665,7 +436,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>

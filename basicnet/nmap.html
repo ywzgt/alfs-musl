@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-54">
+  <body class="blfs" id="blfs-r12.1-70">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-54
+        "phrase">(systemd</span> Edition) - Version r12.1-70
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>
@@ -106,6 +106,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Recommended patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/nmap-7.94-pcre_2-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/nmap-7.94-pcre_2-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Nmap Dependencies
         </h3>
         <h4>
@@ -129,8 +143,8 @@
           "xref" href="../general/libssh2.html" title=
           "libssh2-1.11.0">libssh2-1.11.0</a>, <a class="xref" href=
           "../general/lua.html" title="Lua-5.4.6">Lua-5.4.6</a>, <a class=
-          "xref" href="../general/pcre.html" title="PCRE-8.45">PCRE-8.45</a>,
-          and <a class="xref" href=
+          "xref" href="../general/pcre2.html" title=
+          "PCRE2-10.43">pcre2-10.43</a>, and <a class="xref" href=
           "../general/python-modules.html#pygobject3" title=
           "PyGObject-3.46.0">PyGObject-3.46.0</a>
         </p>
@@ -147,12 +161,29 @@
           Installation of Nmap
         </h2>
         <p>
+          If and only if the recommended dependency <a class="xref" href=
+          "../general/pcre2.html" title="PCRE2-10.43">pcre2-10.43</a> is
+          installed, apply a patch to allow building this package with system
+          <a class="xref" href="../general/pcre2.html" title=
+          "PCRE2-10.43">pcre2-10.43</a> instead of an internal copy of the
+          outdated PCRE1:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../nmap-7.94-pcre_2-1.patch</kbd></pre>
+        <p>
           Install <span class="application">Nmap</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
         "command">./configure --prefix=/usr &amp;&amp;
 make</kbd></pre>
+        <p>
+          If you wish to run the test suite, run the following command:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e '/import imp/d'                \
+    -e 's/^ndiff = .*$/import ndiff/' \
+    -i ndiff/ndifftest.py</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
           check</strong></span> as the <code class="systemitem">root</code>
@@ -328,7 +359,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>

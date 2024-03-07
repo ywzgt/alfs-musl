@@ -5,59 +5,59 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      KMix-24.02.0
+      Okular-24.02.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-54">
+  <body class="blfs" id="blfs-r12.1-70">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-54
+        "phrase">(systemd</span> Edition) - Version r12.1-70
       </h4>
       <h3>
-        Chapter&nbsp;31.&nbsp;KDE Frameworks 5 Based Applications
+        Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="kdenlive.html" title=
-          "Kdenlive-24.02.0">Prev</a>
+          <a accesskey="p" href="plasma-activities.html" title=
+          "plasma-activities-6.0.0">Prev</a>
           <p>
-            Kdenlive-24.02.0
+            plasma-activities-6.0.0
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="kio-extras.html" title=
-          "kio-extras-24.02.0">Next</a>
+          <a accesskey="n" href="libkdcraw.html" title=
+          "libkdcraw-24.02.0">Next</a>
           <p>
-            kio-extras-24.02.0
+            libkdcraw-24.02.0
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="kf5-apps.html" title=
-          "Chapter&nbsp;31.&nbsp;KDE Frameworks 5 Based Applications">Up</a>
+          <a accesskey="u" href="kf6-apps.html" title=
+          "Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="kmix5" name="kmix5"></a>KMix-24.02.0
+      <a id="okular" name="okular"></a>Okular-24.02.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to KMix
+          Introduction to Okular
         </h2>
         <p>
-          The <span class="application">KMix</span> package contains a KF5
-          based Sound Mixer application.
+          Okular is a document viewer for KDE. It can view documents of many
+          types including PDF, PostScript, TIFF, DjVu, DVI, XPS, and ePub.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -78,73 +78,97 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.kde.org/stable/release-service/24.02.0/src/kmix-24.02.0.tar.xz">
-                https://download.kde.org/stable/release-service/24.02.0/src/kmix-24.02.0.tar.xz</a>
+                "https://download.kde.org/stable/release-service/24.02.0/src/okular-24.02.0.tar.xz">
+                https://download.kde.org/stable/release-service/24.02.0/src/okular-24.02.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: a58f84cfc3aa7aeb1745ef0889788dc9
+                Download MD5 sum: b2ced60d37221bf1c4693e529aa0429d
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 1.2 MB
+                Download size: 8.2 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 20 MB
+                Estimated disk space required: 93 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.2 SBU (using parallelism=4)
+                Estimated build time: 1.0 SBU (using parallelism=4)
               </p>
             </li>
           </ul>
         </div>
         <h3>
-          KMix Dependencies
+          Okular Dependencies
         </h3>
         <h4>
           Required
         </h4>
         <p class="required">
           <a class="xref" href="frameworks6.html" title=
-          "Building KDE Frameworks 6 (KF6)">KDE Frameworks-6.0.0</a>
+          "Building KDE Frameworks 6 (KF6)">KDE Frameworks-6.0.0</a> and
+          <a class="xref" href="plasma-activities.html" title=
+          "plasma-activities-6.0.0">plasma-activities-6.0.0</a>
         </p>
         <h4>
           Recommended
         </h4>
         <p class="recommended">
-          <a class="xref" href="../multimedia/alsa-lib.html" title=
-          "alsa-lib-1.2.11">alsa-lib-1.2.11</a>
+          <a class="xref" href="libkexiv2.html" title=
+          "libkexiv2-24.02.0">libkexiv2-24.02.0</a>, <a class="xref" href=
+          "../general/libtiff.html" title="libtiff-4.6.0">libtiff-4.6.0</a>,
+          and <a class="xref" href="../general/poppler.html" title=
+          "Poppler-24.03.0">Poppler-24.03.0</a> (built with Qt6, required for
+          PDF support)
         </p>
         <h4>
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="../multimedia/libcanberra.html" title=
-          "libcanberra-0.30">libcanberra-0.30</a> and <a class="xref" href=
-          "../multimedia/pulseaudio.html" title=
-          "PulseAudio-17.0">PulseAudio-17.0</a>
+          <a class="xref" href="../general/qca.html" title=
+          "Qca-2.3.8">qca-2.3.8</a>, <a class="ulink" href=
+          "https://www.pell.portland.or.us/~orc/Code/discount/">discount</a>,
+          <a class="ulink" href=
+          "https://djvu.sourceforge.net/">DjVuLibre</a>, <a class="ulink"
+          href="https://libspectre.freedesktop.org/">libspectre</a> <a class=
+          "ulink" href=
+          "https://sourceforge.net/projects/ebook-tools">libepub</a>, and
+          <a class="ulink" href="https://libzip.org">LibZip</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of KMix
+          Installation of Okular
         </h2>
         <p>
-          Install <span class="application">KMix</span> by running the
+          Install <span class="application">Okular</span> by running the
           following commands:
         </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            If any of the optional dependencies are installed, remove the
+            associated reference in the SKIP_OPTIONAL environment variable.
+          </p>
+        </div>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
+
+SKIP_OPTIONAL='Discount;DjVuLibre;EPub;LibSpectre;LibZip'
 
 cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DBUILD_TESTING=OFF                \
+      -DFORCE_NOT_REQUIRED_DEPENDENCIES="$SKIP_OPTIONAL" \
       -Wno-dev .. &amp;&amp;
 make</kbd></pre>
         <p>
@@ -162,18 +186,19 @@ make</kbd></pre>
         <div class="segmentedlist">
           <div class="seglistitem">
             <div class="seg">
-              <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">kmix, kmixctrl, and kmixremote</span>
+              <strong class="segtitle">Installed Program:</strong>
+              <span class="segbody">okular</span>
             </div>
             <div class="seg">
-              <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libkmixcore.so</span>
+              <strong class="segtitle">Installed Library:</strong>
+              <span class="segbody">Okular6Core.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">$KF5_PREFIX/share/kmix,
-              $KF5_PREFIX/share/kxmlgui5/kmix, and
-              $KF5_PREFIX/share/doc/HTML/*/kmix</span>
+              <span class="segbody">$KF6_PREFIX/include/okular,
+              $KF6_PREFIX/lib/cmake/Okular6, $KF6_PREFIX/lib/plugins/okular,
+              $KF6_PREFIX/share/okular, and
+              $KF6_PREFIX/share/doc/HTML/*/okular</span>
             </div>
           </div>
         </div>
@@ -190,43 +215,14 @@ make</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="kmix5-prog" name="kmix5-prog"></a><span class=
+                    <a id="okular-prog" name="okular-prog"></a><span class=
                     "term"><span class=
-                    "command"><strong>kmix</strong></span></span>
+                    "command"><strong>okular</strong></span></span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    is a mini audio mixer for kde
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="kmixctrl5" name="kmixctrl5"></a><span class=
-                    "term"><span class=
-                    "command"><strong>kmixctrl</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is used to save or restore the settings of <span class=
-                    "command"><strong>kmix</strong></span>
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="kmixremote" name="kmixremote"></a><span class=
-                    "term"><span class=
-                    "command"><strong>kmixremote</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is a utility to mute, get and set volume levels
+                    is a document viewer
                   </p>
                 </td>
               </tr>
@@ -238,26 +234,26 @@ make</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="kdenlive.html" title=
-          "Kdenlive-24.02.0">Prev</a>
+          <a accesskey="p" href="plasma-activities.html" title=
+          "plasma-activities-6.0.0">Prev</a>
           <p>
-            Kdenlive-24.02.0
+            plasma-activities-6.0.0
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="kio-extras.html" title=
-          "kio-extras-24.02.0">Next</a>
+          <a accesskey="n" href="libkdcraw.html" title=
+          "libkdcraw-24.02.0">Next</a>
           <p>
-            kio-extras-24.02.0
+            libkdcraw-24.02.0
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="kf5-apps.html" title=
-          "Chapter&nbsp;31.&nbsp;KDE Frameworks 5 Based Applications">Up</a>
+          <a accesskey="u" href="kf6-apps.html" title=
+          "Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>

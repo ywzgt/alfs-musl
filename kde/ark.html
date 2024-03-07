@@ -5,60 +5,59 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Okular-24.02.0
+      Ark-24.02.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-54">
+  <body class="blfs" id="blfs-r12.1-70">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-54
+        "phrase">(systemd</span> Edition) - Version r12.1-70
       </h4>
       <h3>
-        Chapter&nbsp;31.&nbsp;KDE Frameworks 5 Based Applications
+        Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="libkexiv2.html" title=
-          "libkexiv2-24.02.0">Prev</a>
+          <a accesskey="p" href="kf6-apps.html" title=
+          "KDE Frameworks 6 Based Applications">Prev</a>
           <p>
-            libkexiv2-24.02.0
+            KDE Frameworks 6 Based Applications
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="libkdcraw.html" title=
-          "libkdcraw-24.02.0">Next</a>
+          <a accesskey="n" href="kdenlive.html" title=
+          "Kdenlive-24.02.0">Next</a>
           <p>
-            libkdcraw-24.02.0
+            Kdenlive-24.02.0
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="kf5-apps.html" title=
-          "Chapter&nbsp;31.&nbsp;KDE Frameworks 5 Based Applications">Up</a>
+          <a accesskey="u" href="kf6-apps.html" title=
+          "Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="okular5" name="okular5"></a>Okular-24.02.0
+      <a id="ark" name="ark"></a>Ark-24.02.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to Okular
+          Introduction to Ark
         </h2>
         <p>
-          Okular is a document viewer for KDE. It can view documents of many
-          types including PDF, PostScript, TIFF, Microsoft CHM, DjVu, DVI,
-          XPS and ePub.
+          The <span class="application">Ark</span> package is a KF6 archive
+          tool. It is a graphical front end to tar and similar tools.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -79,101 +78,72 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.kde.org/stable/release-service/24.02.0/src/okular-24.02.0.tar.xz">
-                https://download.kde.org/stable/release-service/24.02.0/src/okular-24.02.0.tar.xz</a>
+                "https://download.kde.org/stable/release-service/24.02.0/src/ark-24.02.0.tar.xz">
+                https://download.kde.org/stable/release-service/24.02.0/src/ark-24.02.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: b974ae6ac5232d8b3d033c8b4e3c37f1
+                Download MD5 sum: f249f98d0e7a0b87f6c3dc3fc48618d4
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 8.1 MB
+                Download size: 2.9 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 86 MB
+                Estimated disk space required: 34 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.7 SBU (using parallelism=4)
+                Estimated build time: 0.3 SBU (using parallelism=4)
               </p>
             </li>
           </ul>
         </div>
         <h3>
-          Okular Dependencies
+          Ark Dependencies
         </h3>
         <h4>
           Required
         </h4>
         <p class="required">
           <a class="xref" href="frameworks6.html" title=
-          "Building KDE Frameworks 6 (KF6)">KDE Frameworks-6.0.0</a>
+          "Building KDE Frameworks 6 (KF6)">KDE Frameworks-6.0.0</a> and
+          <a class="xref" href="../general/libarchive.html" title=
+          "libarchive-3.7.2">libarchive-3.7.2</a>
         </p>
         <h4>
           Recommended
         </h4>
         <p class="recommended">
-          <a class="xref" href="libkexiv2.html" title=
-          "libkexiv2-24.02.0">libkexiv2-24.02.0</a>, <a class="xref" href=
-          "../general/libtiff.html" title="libtiff-4.6.0">libtiff-4.6.0</a>,
-          and <a class="xref" href="../general/poppler.html" title=
-          "Poppler-24.03.0">Poppler-24.03.0</a> (built with Qt5, required for
-          PDF support)
-        </p>
-        <h4>
-          Optional
-        </h4>
-        <p class="optional">
-          <a class="xref" href="../general/qca.html" title=
-          "Qca-2.3.8">qca-2.3.8</a>, <a class="ulink" href=
-          "https://www.pell.portland.or.us/~orc/Code/discount/">discount</a>,
-          <a class="ulink" href=
-          "https://djvu.sourceforge.net/">DjVuLibre</a>, <a class="ulink"
-          href=
-          "https://download.kde.org/stable/release-service/24.02.0/src/">kpimtextedit</a>,
-          <a class="ulink" href=
-          "https://libspectre.freedesktop.org/">libspectre</a> (for
-          PostScript support), <a class="ulink" href=
-          "http://www.jedrea.com/chmlib">libchm</a>, <a class="ulink" href=
-          "https://sourceforge.net/projects/ebook-tools">libepub</a>, and
-          <a class="ulink" href=
-          "https://projects.kde.org/projects/kde/kdegraphics/kdegraphics-mobipocket">
-          Mobipocket</a>
+          <a class="xref" href="../general/cpio.html" title=
+          "cpio-2.15">cpio-2.15</a>, <a class="xref" href=
+          "../general/p7zip.html" title="p7zip-17.04">p7zip-17.04</a>,
+          <a class="xref" href="../general/unrar.html" title=
+          "UnRar-7.0.7">UnRar-7.0.7</a>, <a class="xref" href=
+          "../general/unzip.html" title="UnZip-6.0">UnZip-6.0</a>, and
+          <a class="xref" href="../general/zip.html" title=
+          "Zip-3.0">Zip-3.0</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of Okular
+          Installation of Ark
         </h2>
         <p>
-          Install <span class="application">Okular</span> by running the
+          Install <span class="application">Ark</span> by running the
           following commands:
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            If any of the optional dependencies are installed, remove the
-            associated reference in the SKIP_OPTIONAL environment variable.
-          </p>
-        </div>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-SKIP_OPTIONAL='LibSpectre;CHM;LibZip;DjVuLibre;EPub;QMobipocket;Discount'
-
-cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
+cmake -DCMAKE_INSTALL_PREFIX=$KF6_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DBUILD_TESTING=OFF                \
-      -DFORCE_NOT_REQUIRED_DEPENDENCIES="$SKIP_OPTIONAL" \
       -Wno-dev .. &amp;&amp;
 make</kbd></pre>
         <p>
@@ -191,19 +161,17 @@ make</kbd></pre>
         <div class="segmentedlist">
           <div class="seglistitem">
             <div class="seg">
-              <strong class="segtitle">Installed Program:</strong>
-              <span class="segbody">okular</span>
+              <strong class="segtitle">Installed Programs:</strong>
+              <span class="segbody">ark</span>
             </div>
             <div class="seg">
-              <strong class="segtitle">Installed Library:</strong>
-              <span class="segbody">libOkular5Core.so</span>
+              <strong class="segtitle">Installed Libraries:</strong>
+              <span class="segbody">libkerfuffle.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">$KF5_PREFIX/include/okular,
-              $KF5_PREFIX/lib/cmake/Okular5, $KF5_PREFIX/lib/plugins/okular,
-              $KF5_PREFIX/share/kxmlgui5/okular, $KF5_PREFIX/share/okular,
-              $KF5_PREFIX/share/doc/HTML/*/okular, and</span>
+              <span class="segbody">$KF6_PREFIX/lib/plugins/kerfuffle and
+              $KF6_PREFIX/share/doc/HTML/*/ark</span>
             </div>
           </div>
         </div>
@@ -220,14 +188,14 @@ make</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="okular5-prog" name="okular5-prog"></a><span class=
+                    <a id="ark-prog" name="ark-prog"></a><span class=
                     "term"><span class=
-                    "command"><strong>okular</strong></span></span>
+                    "command"><strong>ark</strong></span></span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    is a document viewer
+                    is a KF6-based Archive Manager
                   </p>
                 </td>
               </tr>
@@ -239,26 +207,26 @@ make</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="libkexiv2.html" title=
-          "libkexiv2-24.02.0">Prev</a>
+          <a accesskey="p" href="kf6-apps.html" title=
+          "KDE Frameworks 6 Based Applications">Prev</a>
           <p>
-            libkexiv2-24.02.0
+            KDE Frameworks 6 Based Applications
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="libkdcraw.html" title=
-          "libkdcraw-24.02.0">Next</a>
+          <a accesskey="n" href="kdenlive.html" title=
+          "Kdenlive-24.02.0">Next</a>
           <p>
-            libkdcraw-24.02.0
+            Kdenlive-24.02.0
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="kf5-apps.html" title=
-          "Chapter&nbsp;31.&nbsp;KDE Frameworks 5 Based Applications">Up</a>
+          <a accesskey="u" href="kf6-apps.html" title=
+          "Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>

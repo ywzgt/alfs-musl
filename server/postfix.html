@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-54">
+  <body class="blfs" id="blfs-r12.1-70">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-54
+        "phrase">(systemd</span> Edition) - Version r12.1-70
       </h4>
       <h3>
         Chapter&nbsp;21.&nbsp;Mail Server Software
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>
@@ -130,13 +130,10 @@
           "https://www.mysql.com/">MySQL</a>, <a class="xref" href=
           "openldap.html" title="OpenLDAP-2.6.7">OpenLDAP-2.6.7</a>,
           <a class="xref" href="../general/pcre2.html" title=
-          "PCRE2-10.43">pcre2-10.43</a> (<span class=
-          "emphasis"><em>or</em></span> the deprecated <a class="xref" href=
-          "../general/pcre.html" title="PCRE-8.45">PCRE-8.45</a>), <a class=
-          "xref" href="postgresql.html" title=
-          "PostgreSQL-16.2">PostgreSQL-16.2</a>, <a class="xref" href=
-          "sqlite.html" title="SQLite-3.45.1">SQLite-3.45.1</a>, <a class=
-          "ulink" href=
+          "PCRE2-10.43">pcre2-10.43</a>, <a class="xref" href=
+          "postgresql.html" title="PostgreSQL-16.2">PostgreSQL-16.2</a>,
+          <a class="xref" href="sqlite.html" title=
+          "SQLite-3.45.1">SQLite-3.45.1</a>, <a class="ulink" href=
           "https://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz">Berkeley
           DB</a> (deprecated), and <a class="ulink" href=
           "https://cr.yp.to/cdb.html">CDB</a> or <a class="ulink" href=
@@ -222,7 +219,7 @@ chown -v postfix:postfix /var/mail</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm56436" name="idm56436"></a>Cyrus-SASL
+                    <a id="idm56372" name="idm56372"></a>Cyrus-SASL
                   </h5>
                 </div>
               </div>
@@ -242,7 +239,7 @@ AUXLIBS='-lsasl2'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm56443" name="idm56443"></a>LMDB
+                    <a id="idm56379" name="idm56379"></a>LMDB
                   </h5>
                 </div>
               </div>
@@ -260,7 +257,7 @@ AUXLIBS_LMDB='-llmdb'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm56450" name="idm56450"></a>OpenLDAP
+                    <a id="idm56386" name="idm56386"></a>OpenLDAP
                   </h5>
                 </div>
               </div>
@@ -279,7 +276,7 @@ AUXLIBS_LDAP='-lldap -llber'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm56457" name="idm56457"></a>Sqlite
+                    <a id="idm56393" name="idm56393"></a>Sqlite
                   </h5>
                 </div>
               </div>
@@ -298,7 +295,7 @@ AUXLIBS_SQLITE='-lsqlite3 -lpthread'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm56464" name="idm56464"></a>MySQL
+                    <a id="idm56400" name="idm56400"></a>MySQL
                   </h5>
                 </div>
               </div>
@@ -316,7 +313,7 @@ AUXLIBS_MYSQL='-lmysqlclient -lz -lm'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm56471" name="idm56471"></a>PostgreSQL
+                    <a id="idm56407" name="idm56407"></a>PostgreSQL
                   </h5>
                 </div>
               </div>
@@ -335,7 +332,7 @@ AUXLIBS_PGSQL='-lpq -lz -lm'</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm56478" name="idm56478"></a>CDB/TinyCDB
+                    <a id="idm56414" name="idm56414"></a>CDB/TinyCDB
                   </h5>
                 </div>
               </div>
@@ -355,7 +352,7 @@ AUXLIBS_CDB='<em class=
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm56487" name="idm56487"></a>StartTLS
+                    <a id="idm56423" name="idm56423"></a>StartTLS
                     Authentication
                   </h5>
                 </div>
@@ -857,7 +854,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>

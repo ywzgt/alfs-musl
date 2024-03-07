@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-54">
+  <body class="blfs" id="blfs-r12.1-70">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-54
+        "phrase">(systemd</span> Edition) - Version r12.1-70
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>
@@ -174,7 +174,13 @@ make</kbd></pre>
           check</strong></span>. Some tests may fail with the latest version
           of dejagnu and glibc. Some tests may hang for a long time and fail
           if the system is not connected to a network. One test, <code class=
-          "filename">t_kadm5srv</code>, is known to fail.
+          "filename">t_kadm5srv</code>, is known to fail. If <a class="xref"
+          href="../general/keyutils.html" title=
+          "keyutils-1.6.3">keyutils-1.6.3</a> is installed but <a class=
+          "xref" href="../general/keyutils.html#keyutils-test-kernel" title=
+          "Kernel Configuration">Keyutils Kernel Configuration</a> is not
+          satisfied, some tests will fail complaining <code class=
+          "computeroutput">keyctl failed with code 1</code>.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -262,7 +268,7 @@ cp -vfr ../doc -T /usr/share/doc/krb5-1.21.2</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm4903" name="idm4903"></a>Kerberos Configuration
+                    <a id="idm4936" name="idm4936"></a>Kerberos Configuration
                   </h5>
                 </div>
               </div>
@@ -435,7 +441,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm4982" name="idm4982"></a>Additional Information
+                    <a id="idm5015" name="idm5015"></a>Additional Information
                   </h5>
                 </div>
               </div>
@@ -1040,7 +1046,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>

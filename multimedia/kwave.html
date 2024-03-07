@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-54">
+  <body class="blfs" id="blfs-r12.1-70">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-54
+        "phrase">(systemd</span> Edition) - Version r12.1-70
       </h4>
       <h3>
         Chapter&nbsp;43.&nbsp;Audio Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>
@@ -55,8 +55,8 @@
           Introduction to KWave
         </h2>
         <p>
-          The <span class="application">KWave</span> package contains a KF5
-          based Sound Editor application.
+          The <span class="application">KWave</span> package contains a KDE
+          Frameworks based Sound Editor application.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -83,7 +83,7 @@
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: a1a4ae6e687440a40e0a504d2b90df45
+                Download MD5 sum: 09075523852cf46e97dba018c1457b9c
               </p>
             </li>
             <li class="listitem">
@@ -148,7 +148,7 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
+cmake -DCMAKE_INSTALL_PREFIX=$KF6_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DBUILD_TESTING=OFF                \
       -Wno-dev .. &amp;&amp;
@@ -173,14 +173,14 @@ make</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libkwave.so, libkwavegui.so, and 29
+              <span class="segbody">libkwave.so, libkwavegui.so, and 30
               plugins</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">$KF5_PREFIX/lib/plugins/kwave,
-              $KF5_PREFIX/share/kwave,
-              $KF5_PREFIX/share/doc/HTML/*/kwave</span>
+              <span class="segbody">$KF6_PREFIX/lib/plugins/kwave,
+              $KF6_PREFIX/share/kwave,
+              $KF6_PREFIX/share/doc/HTML/*/kwave</span>
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@ make</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    is a sound editor built on the KDE Frameworks 5
+                    is a sound editor built on the KDE Frameworks
                   </p>
                 </td>
               </tr>
@@ -234,7 +234,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-54">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
           Home</a>
         </li>
       </ul>
