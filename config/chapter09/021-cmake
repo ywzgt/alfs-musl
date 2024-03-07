@@ -1,0 +1,20 @@
+#!/bin/bash
+# https://linuxfromscratch.org/blfs/view/systemd/general/cmake.html
+
+SRC="cmake"
+PKG="$SRC"
+
+sed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
+
+./bootstrap --prefix=/usr \
+	--system-libs \
+	--mandir=/share/man \
+	--no-system-jsoncpp \
+	--no-system-cppdap \
+	--no-system-librhash \
+	--no-system-{libuv,nghttp2} \
+	--datadir=/share/cmake \
+	--parallel=$(nproc)
+
+make
+make install
