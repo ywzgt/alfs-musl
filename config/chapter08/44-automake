@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SRC="automake"
+PKG="$SRC"
+
+./configure --prefix=/usr --docdir=/usr/share/doc/automake
+
+make
+make install

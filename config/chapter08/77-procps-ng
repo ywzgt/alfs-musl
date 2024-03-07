@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SRC="procps-ng"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--disable-static \
+	--disable-kill
+
+make
+make install
