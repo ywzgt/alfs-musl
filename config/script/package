@@ -1,0 +1,236 @@
+#!/bin/bash
+
+case "$(uname -m)" in
+	i?86)
+		ARCH=i386
+		VER="$(date -u +%Y%m%d).r32" ;;
+	x86_64)
+		case "$1" in
+			x32)
+				ABI=x32
+				ARCH=x32
+				VER="$(date -u +%Y%m%d).x32" ;;
+			*)
+				ARCH=x64
+				VER="$(date -u +%Y%m%d).r" ;;
+		esac
+esac
+
+newline() { printf "\n"; }
+
+_pacman_conf(){
+		git clone --depth=1 "https://github.com/windsey/script" packmgr
+		make DESTDIR="${BUILDDIR}" install -C packmgr/makepkg
+		sed -e '/^#Color/s/#//' -e '/^#VerbosePkgLists/s/#//' -e 's/^CheckSpace/#&/' \
+			-e '/^HoldPkg/s/glibc/musl/' -i "${BUILDDIR}/etc/pacman.conf"
+		sed "/^Architecture/s/auto/${ARCH}/" -i "${BUILDDIR}/etc/pacman.conf"
+
+		install -Dm644 /dev/stdin "${BUILDDIR}/etc/makepkg.conf" <<EFO
+#!/hint/bash
+#
+# /etc/makepkg.conf
+#
+
+DLAGENTS=('file::/usr/bin/curl -qgC - -o %o %u'
+          'ftp::/usr/bin/curl -qgfC - --ftp-pasv --retry 3 --retry-delay 3 -o %o %u'
+          'http::/usr/bin/curl -qgb "" -fLC - --retry 3 --retry-delay 3 -o %o %u'
+          'https::/usr/bin/curl -qgb "" -fLC - --retry 3 --retry-delay 3 -o %o %u'
+          'rsync::/usr/bin/rsync --no-motd -z %u %o'
+          'scp::/usr/bin/scp -C %u %o')
+VCSCLIENTS=('bzr::breezy'
+            'fossil::fossil'
+            'git::git'
+            'hg::mercurial'
+            'svn::subversion')
+CARCH="${ARCH}"
+CHOST="$(uname -m)-pc-linux-musl${ABI}"
+CFLAGS="-march=haswell -Os -pipe -fno-plt -fPIC -DNDEBUG -w"
+CXXFLAGS="\$CFLAGS -Wp,-D_GLIBCXX_ASSERTIONS"
+LDFLAGS="-Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now"
+LTOFLAGS="-flto=auto"
+RUSTFLAGS="-C opt-level=2"
+CPPFLAGS="-Os -pipe -fPIC -DNDEBUG -w"
+MAKEFLAGS="-j\$(nproc)"
+BUILDENV=(!distcc color !ccache check !sign)
+BUILDDIR=/build/workdir
+OPTIONS=(addep rman strip docs !html !locale !libtool !staticlibs emptydirs zipman purge !debug lto)
+. /etc/pacman.d/localedir 2>/dev/null
+. /etc/pacman.d/rmandir 2>/dev/null
+INTEGRITY_CHECK=(sha256)
+STRIP_BINARIES="--strip-all"
+STRIP_SHARED="--strip-unneeded"
+STRIP_STATIC="--strip-debug"
+MAN_DIRS=({usr{,/local}{,/share},opt/*}/{man,info})
+DOC_DIRS=(usr/{,local/}{,share/}{doc,gtk-doc} opt/*/{doc,gtk-doc}) #usr/share/info)
+PURGE_TARGETS=(usr/{,share}/info/dir .packlist *.pod) #usr/share/info/*)
+PKGDEST=/build/packages
+SRCDEST=/build/sources
+PACKAGER="Github Action <build-bot@\$(hostname)>"
+COMPRESSGZ=(gzip -c -f -n)
+COMPRESSBZ2=(bzip2 -c -f)
+COMPRESSXZ=(xz -c -z --threads=0 -)
+COMPRESSZST=(zstd -c -z -q --threads=0 -)
+COMPRESSLRZ=(lrzip -q)
+COMPRESSLZO=(lzop -q)
+COMPRESSZ=(compress -c -f)
+COMPRESSLZ4=(lz4 -q)
+COMPRESSLZ=(lzip -c -f)
+PKGEXT='.pkg.tar.xz'
+SRCEXT='.src.tar.xz'
+EFO
+}
+
+_pacman_db() {
+		pushd "${BUILDDIR}/${BLD_ROOT#/}" >/dev/null
+		local GCC_LIB="$(find installed-files/8*gcc-[0-9]* -exec basename {} +|sed 's/8.*gcc/800-gcc-libs/')"
+		touch installed-files/$GCC_LIB
+		grep '^/usr/lib/lib.*so' installed-files/8*gcc-[0-9]*|awk '{print$1}'|sed '/libcc1.so/d' >installed-files/$GCC_LIB
+		cat chapter08/[0-9][0-9]-gcc|sed '/^PKG=/s/=.*/=gcc-libs/' > chapter08/00-gcc-libs
+
+		add_dir() {
+			local dir="$1"
+			echo "${dir}/" >>$2
+			while [[ "$dir" =~ "/" ]]; do
+				echo "${dir}/" >>$2
+				dir=${dir%/*}
+				echo "${dir}/" >>$2
+			done
+		}
+		copy() {
+			add_dir "$(dirname $1)" pkg.file
+			echo "$1" >>pkg.file
+			echo "$1" >>installed.file
+		}
+		_cp() {
+			while read -r file; do
+				[[ -z "$(find ${BUILDDIR}/$file 2>/dev/null)" ]] || copy "$file"
+			done <tmp
+		}
+
+		for i in installed-files/{8,9}*; do
+			local f=${i#*/}
+			local SRC PKG PV
+
+			awk '{print$1}' $i | sed 's|^/||' >tmp
+			local pname=${f:1}
+			grep -E '^(SRC|PKG|PV)=' "chapter0${f::1}/${pname%%-[0-9]*}"* >ptmp
+			. ptmp
+
+			if [ -n "$PKG" ]; then
+			if ! test "$PV"; then PV="${f##*[a-z]-}"; fi
+			PV=${PV//-/_}
+
+			if [ ! -f installed.file ]; then _cp
+			else
+				case "$f" in 899*nls*) _cp ;;
+				*) while read -r file; do
+						if [[ -n "$(find ${BUILDDIR}/$file 2>/dev/null)" ]] && [[ ! "$(<installed.file)" =~  "${file#/}" ]]; then copy "$file"; fi
+					done <tmp ;;
+				esac
+			fi
+
+			touch pkg.file
+			awk '!seen[$0]++' pkg.file | sort >files
+			sed -i '1i\%FILES%' files
+			install -Dm644 files -t "${BUILDDIR}/var/lib/pacman/local/${PKG}-${PV}-1"
+			local FILES="$(cat files|sed '/\/$\|%FILES%/d')"
+			if [[ -n "$FILES" ]]; then
+				local FSIZE="$(cd ${BUILDDIR}; LC_ALL=C du -xc $FILES|awk '/total$/{print$1}')"
+				local SIZE=$((FSIZE*1024))
+			fi
+			echo -e "%NAME%\n${PKG}\n\n%VERSION%\n${PV}-1\n\n%BASE%\n${PKG}\n\n%ARCH%\n${ARCH}\n\n%BUILDDATE%\n$(date +%s)\n\n%INSTALLDATE%\n$(date +%s)\n\n%PACKAGER%\nbuildbot <bot@$(hostname)>\n\n%SIZE%\n${SIZE}\n\n%VALIDATION%\nsha256\n\n" \
+				>"${BUILDDIR}/var/lib/pacman/local/${PKG}-${PV}-1/desc"
+			unset PV
+			rm pkg.file files
+			fi
+		done
+		for p in $(find ${BUILDDIR}/var/lib/pacman/local -name files -empty); do
+			local pkg_dir="$(dirname $p)"
+			[ ! -d "$pkg_dir" ] ||  rm -rfv $pkg_dir
+		done
+		rm -f chapter08/00-gcc-libs
+		popd >/dev/null
+
+		echo "::Updating alpm library database..."
+		chroot "${BUILDDIR}" /usr/bin/env -i HOME=/root TERM="$TERM" PATH=/usr/bin:/usr/sbin /bin/bash -c pacman-db-upgrade
+		newline
+		mountpoint -q "${LFS}/proc" && umount -v "${LFS}/proc" || true
+		mountpoint -q "${LFS}/sys" && umount -v "${LFS}/sys" || true
+		mountpoint -q "${LFS}/run" && umount -v "${LFS}/run" || true
+		mountpoint -q "${LFS}/tmp" && umount -v "${LFS}/tmp" || true
+		mountpoint -q "${LFS}/dev/shm" && umount -v "${LFS}/dev/shm" || true
+		mountpoint -q "${LFS}/dev/pts" && umount -v "${LFS}/dev/pts" || umount -lv "${LFS}/dev/pts" || true
+		mountpoint -q "${LFS}/dev" && umount -v "${LFS}/dev" || umount -lv "${LFS}/dev" || true
+}
+
+_package() {
+		mkdir -pv release tag
+		pushd release >/dev/null
+
+		echo ":: Package the document as tar, Using xz Compression..."
+		(cd "${BUILDDIR}/usr/share/doc";  tar cf - .|xz -T0) >doc.tar.xz 2>/dev/null
+		rm -rf "${BUILDDIR}/usr/share/doc/"*
+
+		echo ":: Package other language locale files..."
+		mkdir tmpdir
+		cp "${BUILDDIR}/usr/share/locale/"{zh_,locale.alias}* -at tmpdir
+		rm -rf "${BUILDDIR}/usr/share/locale/"{zh_,locale.alias}*
+		( cd "${BUILDDIR}/usr/share/locale/";  tar cf - .|xz -T0) >l10n.tar.xz
+		rm -rf "${BUILDDIR}/usr/share/locale/"*
+		cp -a tmpdir/* -t "${BUILDDIR}/usr/share/locale/"
+		rm -rf tmpdir
+
+		echo ":: Package the 'SysRoot' as tar, Using xz Compression..."
+		(cd "${BUILDDIR}"; tar cf - --exclude=./dev/* --exclude=./proc/* --exclude=./sys/* --exclude=./run/* \
+			--exclude=./tmp/* --exclude=./${BLD_ROOT#/} --exclude=./sources .|xz -T0) >"rootfs.tar.xz" 2>/dev/null
+		echo ":: done."
+
+		tar tf "rootfs.tar.xz"|sort >../tag/archive-list
+		tar tvf "rootfs.tar.xz"|sort -k6 >../tag/archive-list-verbose
+
+		echo 'Update Hash...'
+		for i in *.tar.xz; do sha256sum $i >$i.sha256; done
+		echo 'done.'
+		popd >/dev/null
+}
+
+_tag() {
+		pushd tag >/dev/null
+		mkdir -p config makelog install-file
+		cp ../{files,script,chapter0*,envars,bashrc} "$SRC_ARCHIVE/wget-list" -at config
+		for i in {md5,b2,sha{1,224,256,384,512}}; do local SUM="${SRC_ARCHIVE}/${i}sums"; if [ -e "$SUM" ]; then cp "$SUM" config; fi; done
+		cp $LFS/$FILE_DIR/* install-file
+		cp $LFS/$LOG_DIR/* $log_dir/* -t makelog
+		../script/create-report makelog "$(<makelog/target)"
+		rm makelog/{target,end*}
+		newline && git init 2>/dev/null
+		git add .
+		git commit -m "Created tag in $(TZ='Asia/Shanghai' date|sed -e 's/20[0-9][0-9]$//' -e 's/CST//')"
+		git tag $VER
+		popd >/dev/null
+}
+
+echo '::Seting pacman Configuration...'
+_pacman_conf
+
+newline
+echo "::Upgrading the local pacman database... "
+_pacman_db
+
+sleep 1 && newline
+_package
+
+echo "Target: $(uname -m)-pc-linux-musl${ABI}" > tag_des.txt
+for f in $LFS/$FILE_DIR/8*-{binutils,gcc,musl}-[0-9]*; do
+case "${f##*/}" in
+	*-binutils-*) BINUTILS_VER="${f##*-}";;
+	*-gcc-*) GCC_VER="${f##*-}";;
+	*-musl-*) MUSL_VER="${f##*-}";;
+esac
+done
+echo "Binutils: $BINUTILS_VER" >> tag_des.txt
+echo "GCC: $GCC_VER" >> tag_des.txt
+echo "Musl: $MUSL_VER" >> tag_des.txt
+echo "TAG_DES=$PWD/tag_des.txt" >>$GITHUB_ENV
+echo "TAG_VERSION=$VER" >>$GITHUB_ENV
+_tag

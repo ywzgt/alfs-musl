@@ -1,0 +1,13 @@
+#!/bin/bash
+
+SRC="gzip"
+
+case $(uname -m) in i?86) export DEFS="NO_ASM" ;; esac
+
+./configure --prefix=/usr \
+	--host=$LFS_TGT \
+	--target=$LFS_TGT
+
+make
+make DESTDIR=$LFS install
+unset DEFS
