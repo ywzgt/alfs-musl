@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-70">
+  <body class="blfs" id="blfs-r12.1-88">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-70
+        "phrase">(systemd</span> Edition) - Version r12.1-88
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-88">
           Home</a>
         </li>
       </ul>
@@ -232,7 +232,7 @@
         <p class="recommended">
           <a class="xref" href="libssh2.html" title=
           "libssh2-1.11.0">libssh2-1.11.0</a> and <a class="xref" href=
-          "llvm.html" title="LLVM-17.0.6">LLVM-17.0.6</a> (built with
+          "llvm.html" title="LLVM-18.1.0">LLVM-18.1.0</a> (built with
           -DLLVM_LINK_LLVM_DYLIB=ON so that rust can link to system LLVM
           instead of building its shipped version)
         </p>
@@ -250,7 +250,7 @@
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="gdb.html" title="GDB-14.1">GDB-14.1</a> (used
+          <a class="xref" href="gdb.html" title="GDB-14.2">GDB-14.2</a> (used
           by the test suite if it is present), <a class="xref" href=
           "git.html" title="Git-2.44.0">git-2.44.0</a> (required by the test
           suite), <a class="ulink" href=
@@ -369,7 +369,7 @@ docdir = "share/doc/rustc-1.76.0"
 
 [rust]
 channel = "stable"
-description = "for BLFS r12.1-70"
+description = "for BLFS r12.1-88"
 
 # BLFS used to not install the FileCheck executable from llvm,
 # so disabled codegen tests.  The assembly tests rely on FileCheck
@@ -412,6 +412,16 @@ EOF</kbd></pre>
           </p>
         </div>
         <p>
+          If building with system <a class="xref" href="llvm.html" title=
+          "LLVM-18.1.0">LLVM-18.1.0</a>, adapt rustc to allow it to build and
+          function with the changes in LLVM-18:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed 's/f[0-9][0-9]:/i128:128-&amp;/' \
+    -i compiler/rustc_target/src/spec/targets/{i?86,x86_64}*.rs &amp;&amp;
+sed '/static_assert_size!\((Lit|MetaItemLit|BasicBlockData|Terminator)/d' \
+    -ri compiler/{rustc_ast/src/ast.rs,rustc_middle/src/mir/mod.rs}</kbd></pre>
+        <p>
           Compile <span class="application">Rust</span> by running the
           following commands:
         </p>
@@ -442,6 +452,11 @@ python3 x.py test --verbose --no-fail-fast | tee rustc-testlog</kbd></pre>
           "filename">tests/ui/issues/issue-21763.rs</code> and <code class=
           "filename">tests/debuginfo/regression-bad-location-list-67992.rs</code>,
           are known to fail.
+        </p>
+        <p>
+          With LLVM-18, two codegen tests named <code class=
+          "filename">abi-main-signature-32bit-c-int.rs</code> and
+          <code class="filename">slice-reverse.rs</code> are known to fail.
         </p>
         <p>
           If <span class="command"><strong>FileCheck</strong></span> from
@@ -857,7 +872,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-88">
           Home</a>
         </li>
       </ul>

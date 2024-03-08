@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-70">
+  <body class="blfs" id="blfs-r12.1-88">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-70
+        "phrase">(systemd</span> Edition) - Version r12.1-88
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-88">
           Home</a>
         </li>
       </ul>
@@ -119,7 +119,7 @@
           "dbus-glib-0.112">dbus-glib-0.112</a>, <a class="xref" href=
           "../x/gtk3.html" title="GTK+-3.24.41">GTK+-3.24.41</a>, <a class=
           "xref" href="../general/llvm.html" title=
-          "LLVM-17.0.6">LLVM-17.0.6</a> including clang, <a class="xref"
+          "LLVM-18.1.0">LLVM-18.1.0</a> including clang, <a class="xref"
           href="../general/nodejs.html" title=
           "Node.js-20.11.1">nodejs-20.11.1</a>, <a class="xref" href=
           "../multimedia/pulseaudio.html" title=
@@ -254,6 +254,39 @@ ac_add_options --with-system-zlib
 # and was reported to seriously slow the build. Disable it.
 ac_add_options --without-wasm-sandboxed-libraries</code>
 EOF</kbd></pre>
+        <p>
+          Adapt the shipped <span class="application">rust-bindgen</span>
+          copy for LLVM-18 and later, and tell <span class=
+          "command"><strong>cargo</strong></span> we've modified the code of
+          <span class="application">rust-bindgen</span> so the checksum
+          verification of this crate should be skipped:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e "/match cursor.kind()/a                                    \
+        CXCursor_LinkageSpec =&gt; return Err(ParseError::Recurse)," \
+    -i third_party/rust/bindgen/ir/item.rs                        &amp;&amp;
+
+cat &gt;&gt; Cargo.toml &lt;&lt; EOF &amp;&amp;
+<code class="literal">[patch.crates-io.bindgen_0_64_0]
+package = "bindgen"
+version = "0.64.0"
+path = "third_party/rust/bindgen"</code>
+EOF
+
+sed -r '/name = "bindgen"/,+5 s/^source|^checksum/#&amp;/' \
+    -i Cargo.lock</kbd></pre>
+        <p>
+          Adapt the WebRTC code to use 64-bit timestamp to fix a build
+          failure with Clang-18 and later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed 's/uint32_t timestamp/uint64_t timestamp/'                \
+    -i dom/media/gmp-plugin-openh264/gmp-fake-openh264.cpp    \
+       dom/media/gtest/TestGMPRemoveAndDelete.cpp             \
+       dom/media/webrtc/libwebrtcglue/WebrtcGmpVideoCodec.cpp &amp;&amp;
+
+sed '/mInputImageMap/s/uint32_t/uint64_t/' \
+    -i dom/media/webrtc/libwebrtcglue/WebrtcGmpVideoCodec.h</kbd></pre>
         <p>
           Now invoke the Python <span class=
           "command"><strong>mach</strong></span> script to compile
@@ -487,7 +520,7 @@ ln -sfv /usr/lib/thunderbird/chrome/icons/default/default256.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-88">
           Home</a>
         </li>
       </ul>

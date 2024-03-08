@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      LLVM-17.0.6
+      LLVM-18.1.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-70">
+  <body class="blfs" id="blfs-r12.1-88">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-70
+        "phrase">(systemd</span> Edition) - Version r12.1-88
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-88">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="llvm" name="llvm"></a>LLVM-17.0.6
+      <a id="llvm" name="llvm"></a>LLVM-18.1.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -96,18 +96,18 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/llvm-17.0.6.src.tar.xz">
-                https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/llvm-17.0.6.src.tar.xz</a>
+                "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.0/llvm-18.1.0.src.tar.xz">
+                https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.0/llvm-18.1.0.src.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: fd7fc891907e14f8e0ff7e3f87cc89a4
+                Download MD5 sum: aaaf9cd983c775a11f18ee9b9713edb4
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 57 MB
+                Download size: 60 MB
               </p>
             </li>
             <li class="listitem">
@@ -135,13 +135,13 @@
             <li class="listitem">
               <p>
                 Download: <a class="ulink" href=
-                "https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-17.src.tar.xz">
-                https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-17.src.tar.xz</a>
+                "https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-18.src.tar.xz">
+                https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-18.src.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 2b75b6446bfd5d0dcc288cd412b6a52a
+                Download MD5 sum: bf2ad617d47ce40fe77c0e5c26b1fe43
               </p>
             </li>
             <li class="listitem">
@@ -160,18 +160,18 @@
             <li class="listitem">
               <p>
                 Download: <a class="ulink" href=
-                "https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-third-party-17.src.tar.xz">
-                https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-third-party-17.src.tar.xz</a>
+                "https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-third-party-18.src.tar.xz">
+                https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-third-party-18.src.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 09c9f2259766dd65b75cd728df11b395
+                Download MD5 sum: 5ebac19868c66cdac8b87077faefd38c
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 376 KB
+                Download size: 396 KB
               </p>
             </li>
           </ul>
@@ -187,32 +187,18 @@
             <li class="listitem">
               <p>
                 Download: <a class="ulink" href=
-                "https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/clang-17.0.6.src.tar.xz">
-                https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/clang-17.0.6.src.tar.xz</a>
+                "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.0/clang-18.1.0.src.tar.xz">
+                https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.0/clang-18.1.0.src.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 52ff9f49e064860445474aa21e4a7e40
+                Download MD5 sum: 1d4b452265bda9f570d1aa2499815f5a
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 21 MB
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Patch enabling <a class="xref" href=
-                "../appendices/glossary.html#gSSP" title=
-                "SSP"><acronym class="acronym">SSP</acronym></a> by default
-                in clang: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/clang-17-enable_default_ssp-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/clang-17-enable_default_ssp-1.patch</a>
+                Download size: 22 MB
               </p>
             </li>
           </ul>
@@ -228,13 +214,13 @@
             <li class="listitem">
               <p>
                 Download: <a class="ulink" href=
-                "https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/compiler-rt-17.0.6.src.tar.xz">
-                https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/compiler-rt-17.0.6.src.tar.xz</a>
+                "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.0/compiler-rt-18.1.0.src.tar.xz">
+                https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.0/compiler-rt-18.1.0.src.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 85d25f04cbc4c1a20e3a1ab2a2c522cd
+                Download MD5 sum: 745326564d64300874cbf3be602cd459
               </p>
             </li>
             <li class="listitem">
@@ -288,42 +274,38 @@
         </h2>
         <p>
           Two additional tarballs <code class=
-          "filename">llvm-cmake-17.src.tar.xz</code> and <code class=
-          "filename">llvm-third-party-17.src.tar.xz</code> are needed by LLVM
+          "filename">llvm-cmake-18.src.tar.xz</code> and <code class=
+          "filename">llvm-third-party-18.src.tar.xz</code> are needed by LLVM
           building system. The upstream expects them extracted at the same
-          level as the <code class="filename">llvm-17.0.6.src.tar.xz</code>
+          level as the <code class="filename">llvm-18.1.0.src.tar.xz</code>
           tarball, and the extracted directories renamed to <code class=
           "filename">cmake</code> and <code class=
           "filename">third-party</code>. Extract them and modify the build
           system to avoid creating ambiguously-named directories outside the
-          <code class="filename">llvm-17.0.6.src</code> hierarchy:
+          <code class="filename">llvm-18.1.0.src</code> hierarchy:
         </p>
         <pre class="userinput"><kbd class=
-        "command">tar -xf ../llvm-cmake-17.src.tar.xz                                   &amp;&amp;
-tar -xf ../llvm-third-party-17.src.tar.xz                             &amp;&amp;
-sed '/LLVM_COMMON_CMAKE_UTILS/s@../cmake@llvm-cmake-17.src@'          \
+        "command">tar -xf ../llvm-cmake-18.src.tar.xz                                   &amp;&amp;
+tar -xf ../llvm-third-party-18.src.tar.xz                             &amp;&amp;
+sed '/LLVM_COMMON_CMAKE_UTILS/s@../cmake@llvm-cmake-18.src@'          \
     -i CMakeLists.txt                                                 &amp;&amp;
-sed '/LLVM_THIRD_PARTY_DIR/s@../third-party@llvm-third-party-17.src@' \
+sed '/LLVM_THIRD_PARTY_DIR/s@../third-party@llvm-third-party-18.src@' \
     -i cmake/modules/HandleLLVMOptions.cmake</kbd></pre>
         <p>
           Install <span class="application">clang</span> into the source tree
           by running the following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">tar -xf ../clang-17.0.6.src.tar.xz -C tools &amp;&amp;
-mv tools/clang-17.0.6.src tools/clang</kbd></pre>
+        "command">tar -xf ../clang-18.1.0.src.tar.xz -C tools &amp;&amp;
+mv tools/clang-18.1.0.src tools/clang</kbd></pre>
         <p>
           If you have downloaded <span class=
           "application">compiler-rt</span>, install it into the source tree
-          by running the following commands, and modify the building system
-          so it will find the <code class="filename">llvm-cmake-17.src</code>
-          directory correctly:
+          by running the following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">tar -xf ../compiler-rt-17.0.6.src.tar.xz -C projects    &amp;&amp;
-mv projects/compiler-rt-17.0.6.src projects/compiler-rt &amp;&amp;
-sed '/^set(LLVM_COMMON_CMAKE_UTILS/d'                   \
-    -i projects/compiler-rt/CMakeLists.txt</kbd></pre>
+        "command">tar -xf ../compiler-rt-18.1.0.src.tar.xz -C projects    &amp;&amp;
+mv projects/compiler-rt-18.1.0.src projects/compiler-rt</kbd></pre>
         <p>
           There are many Python scripts in this package which use
           <span class="command"><strong>/usr/bin/env python</strong></span>
@@ -333,22 +315,6 @@ sed '/^set(LLVM_COMMON_CMAKE_UTILS/d'                   \
         </p>
         <pre class="userinput"><kbd class=
         "command">grep -rl '#!.*python' | xargs sed -i '1s/python$/python3/'</kbd></pre>
-        <p>
-          If you have downloaded <span class="application">clang</span>,
-          apply the following patch to enable <a class="xref" href=
-          "../appendices/glossary.html#gSSP" title="SSP"><acronym class=
-          "acronym">SSP</acronym></a> by default in compiled programs.
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np2 -d tools/clang &lt;../clang-17-enable_default_ssp-1.patch</kbd></pre>
-        <p>
-          If you have downloaded <span class=
-          "application">compiler-rt</span>, fix a test case broken by default
-          SSP in <span class="application">clang</span>:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed 's/clang_dfsan/&amp; -fno-stack-protector/' \
-    -i projects/compiler-rt/test/dfsan/origin_unaligned_memtrans.c</kbd></pre>
         <p>
           Install <span class="application">LLVM</span> by running the
           following commands:
@@ -366,7 +332,9 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr           \
       -DLLVM_TARGETS_TO_BUILD="host;AMDGPU" \
       -DLLVM_BINUTILS_INCDIR=/usr/include   \
       -DLLVM_INCLUDE_BENCHMARKS=OFF         \
+      -DLLVM_VERSION_SUFFIX=                \
       -DCLANG_DEFAULT_PIE_ON_LINUX=ON       \
+      -DCLANG_CONFIG_FILE_SYSTEM_DIR=/etc/clang \
       -Wno-dev -G Ninja ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -428,7 +396,10 @@ systemd-run --user --pty -d -G -p LimitCORE=0 ninja check-all</kbd></pre>
           "Use Linux Control Group to Limit the Resource Usage">the section
           called “Use Linux Control Group to Limit the Resource Usage”</a>
           for details) to limit the number of logical cores for running the
-          tests. One test named <code class=
+          tests. Two tests named <code class=
+          "filename">sanitizer_coverage_inline8bit_counter_default_impl.cpp</code>
+          and <code class="filename">sanitizer_coverage_symbolize.cpp</code>
+          are known to fail. One test named <code class=
           "filename">Linux/clone_setns.cpp</code> will fail if <code class=
           "option">CONFIG_USER_NS</code> is not enabled in kernel
           configuration.
@@ -444,8 +415,8 @@ cp bin/FileCheck /usr/bin</kbd></pre>
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">install -v -d -m755 /usr/share/doc/llvm-17.0.6            &amp;&amp;
-mv -v /usr/share/doc/LLVM/llvm /usr/share/doc/llvm-17.0.6 &amp;&amp;
+        "command">install -v -d -m755 /usr/share/doc/llvm-18.1.0            &amp;&amp;
+mv -v /usr/share/doc/LLVM/llvm /usr/share/doc/llvm-18.1.0 &amp;&amp;
 rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
         <p>
           If you have built the clang documentation, it has been installed,
@@ -453,8 +424,8 @@ rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">install -v -d -m755 /usr/share/doc/llvm-17.0.6             &amp;&amp;
-mv -v /usr/share/doc/LLVM/clang /usr/share/doc/llvm-17.0.6 &amp;&amp;
+        "command">install -v -d -m755 /usr/share/doc/llvm-18.1.0             &amp;&amp;
+mv -v /usr/share/doc/LLVM/clang /usr/share/doc/llvm-18.1.0 &amp;&amp;
 rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -484,9 +455,10 @@ rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
           This switch enables building for the same target as the host, and
           also for the r600 AMD GPU used by the Mesa r600 and radeonsi
           drivers. The default is all of the targets. You can use a semicolon
-          separated list. Valid targets are: host, X86, Sparc, PowerPC, ARM,
-          AArch64, Mips, Hexagon, Xcore, M68K, MSP430, NVPTX, SystemZ,
-          AMDGPU, BPF, CppBackend, or all.
+          separated list. Valid targets are: host, AArch64, AMDGPU, ARM, AVR,
+          BPF, Hexagon, Lanai, LoongArch, Mips, MSP430, NVPTX, PowerPC,
+          RISCV, Sparc, SystemZ, SystemZ, VE, WebAssembly, X86, XCore, or
+          all.
         </p>
         <p>
           <em class="parameter"><code>-DLLVM_LINK_LLVM_DYLIB=ON</code></em>:
@@ -494,7 +466,7 @@ rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
           "parameter"><code>-DLLVM_BUILD_LLVM_DYLIB=ON</code></em>, this
           switch enables linking the tools against the shared library instead
           of the static ones. It slightly reduces their size and also ensures
-          that llvm-config will correctly use libLLVM-17.so.
+          that llvm-config will correctly use libLLVM-18.so.
         </p>
         <p>
           <em class="parameter"><code>-DLLVM_ENABLE_RTTI=ON</code></em>: This
@@ -520,6 +492,12 @@ rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
           available.
         </p>
         <p>
+          <em class="parameter"><code>-DLLVM_VERSION_SUFFIX=</code></em>:
+          works around an oversight in the upstream releasing process causing
+          the 18.1.0 release branded <span class="quote">“<span class=
+          "quote">18.1rc</span>”</span>.
+        </p>
+        <p>
           <em class=
           "parameter"><code>-DCLANG_DEFAULT_PIE_ON_LINUX=ON</code></em>:
           makes <code class="option">-fpie</code> option the default when
@@ -527,6 +505,13 @@ rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
           "../appendices/glossary.html#gASLR" title="ASLR"><acronym class=
           "acronym">ASLR</acronym></a> feature enabled in the kernel, this
           defeats some kind of attacks based on known memory layouts.
+        </p>
+        <p>
+          <em class=
+          "parameter"><code>-DCLANG_CONFIG_FILE_SYSTEM_DIR=/etc/clang</code></em>:
+          makes <span class="command"><strong>clang</strong></span> and
+          <span class="command"><strong>clang++</strong></span> search
+          <code class="filename">/etc/clang</code> for configuration files.
         </p>
         <p>
           <code class="option">-DBUILD_SHARED_LIBS=ON</code>: if used instead
@@ -545,6 +530,32 @@ rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
           install the generated documentation manually.
         </p>
       </div>
+      <div class="configuration" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Configuring LLVM
+        </h2>
+        <div class="sect3" lang="en" xml:lang="en">
+          <h3 class="sect3">
+            <a id="llvm-config-info" name=
+            "llvm-config-info"></a>Configuration Information
+          </h3>
+          <p>
+            If you've built Clang, as the <code class=
+            "systemitem">root</code> user create two configuration files to
+            make <a class="xref" href="../appendices/glossary.html#gSSP"
+            title="SSP"><acronym class="acronym">SSP</acronym></a> enabled by
+            default for for <span class=
+            "command"><strong>clang</strong></span> and <span class=
+            "command"><strong>clang++</strong></span>, so the default
+            configuration of their SSP feature will be consistent with
+            <a class="xref" href="gcc.html" title=
+            "GCC-13.2.0">GCC-13.2.0</a>:
+          </p>
+          <pre class="root"><kbd class="command">for i in clang clang++; do
+  echo -fstack-protector-strong &gt; /etc/clang/$i.cfg
+done</kbd></pre>
+        </div>
+      </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
           Contents
@@ -554,34 +565,34 @@ rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
               <span class="segbody">amdgpu-arch, analyze-build, bugpoint,
-              c-index-test, clang, clang++ (symlinks to clang-17), clang-17,
+              c-index-test, clang, clang++ (symlinks to clang-18), clang-18,
               clang-check, clang-cl, clang-cpp (last two symlinks to clang),
               clang-extdef-mapping, clang-format, clang-linker-wrapper,
               clang-offload-bundler, clang-offload-packager, clang-refactor,
-              clang-rename, clang-repl, clang-scan-deps, diagtool, dsymutil,
-              FileCheck, git-clang-format, hmaptool, intercept-build, llc,
-              lli, llvm-addr2line (symlink to llvm-symbolizer), llvm-ar,
-              llvm-as, llvm-bcanalyzer, llvm-bitcode-strip (symlink to
-              llvm-objcopy), llvm-cat, llvm-cfi-verify, llvm-config,
-              llvm-cov, llvm-c-test, llvm-cvtres, llvm-cxxdump, llvm-cxxfilt,
-              llvm-cxxmap, llvm-debuginfo-analyzer, llvm-debuginfod,
-              llvm-debuginfod-find, llvm-diff, llvm-dis, llvm-dlltool
-              (symlink to llvm-ar), llvm-dwarfdump, llvm-dwarfutil, llvm-dwp,
-              llvm-exegesis, llvm-extract, llvm-gsymutil, llvm-ifs,
-              llvm-install-name-tool (symlink to llvm-objcopy), llvm-jitlink,
-              llvm-lib (symlink to llvm-ar), llvm-libtool-darwin, llvm-link,
-              llvm-lipo, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-ml,
-              llvm-modextract, llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump,
-              llvm-opt-report, llvm-otool (symlink to llv-objdump),
-              llvm-pdbutil, llvm-profdata, llvm-profgen, llvm-ranlib (symlink
-              to llvm-ar), llvm-rc, llvm-readelf (symlink to llvm-readobj),
-              llvm-readobj, llvm-reduce, llvm-remark-size-diff,
-              llvm-remarkutil, llvm-rtdyld, llvm-sim, llvm-size, llvm-split,
-              llvm-stress, llvm-strings, llvm-strip (symlink to
-              llvm-objcopy), llvm-symbolizer, llvm-tapi-diff, llvm-tblgen,
-              llvm-tli-checker, llvm-undname, llvm-windres (symlink to
-              llvm-rc), llvm-xray, nvptx-arch, opt, sancov, sanstats,
-              scan-build, scan-build-py, scan-view, split-file, and
+              clang-rename, clang-repl, clang-scan-deps, clang-tblgen,
+              diagtool, dsymutil, FileCheck, git-clang-format, hmaptool,
+              intercept-build, llc, lli, llvm-addr2line (symlink to
+              llvm-symbolizer), llvm-ar, llvm-as, llvm-bcanalyzer,
+              llvm-bitcode-strip (symlink to llvm-objcopy), llvm-cat,
+              llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test,
+              llvm-cvtres, llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap,
+              llvm-debuginfo-analyzer, llvm-debuginfod, llvm-debuginfod-find,
+              llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar),
+              llvm-dwarfdump, llvm-dwarfutil, llvm-dwp, llvm-exegesis,
+              llvm-extract, llvm-gsymutil, llvm-ifs, llvm-install-name-tool
+              (symlink to llvm-objcopy), llvm-jitlink, llvm-lib (symlink to
+              llvm-ar), llvm-libtool-darwin, llvm-link, llvm-lipo, llvm-lto,
+              llvm-lto2, llvm-mc, llvm-mca, llvm-ml, llvm-modextract,
+              llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump, llvm-opt-report,
+              llvm-otool (symlink to llv-objdump), llvm-pdbutil,
+              llvm-profdata, llvm-profgen, llvm-ranlib (symlink to llvm-ar),
+              llvm-rc, llvm-readelf (symlink to llvm-readobj), llvm-readobj,
+              llvm-readtapi, llvm-reduce, llvm-remarkutil, llvm-rtdyld,
+              llvm-sim, llvm-size, llvm-split, llvm-stress, llvm-strings,
+              llvm-strip (symlink to llvm-objcopy), llvm-symbolizer,
+              llvm-tblgen, llvm-tli-checker, llvm-undname, llvm-windres
+              (symlink to llvm-rc), llvm-xray, nvptx-arch, opt, sancov,
+              sanstats, scan-build, scan-build-py, scan-view, and
               verify-uselistorder</span>
             </div>
             <div class="seg">
@@ -594,8 +605,8 @@ rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/{clang,clang-c,llvm,llvm-c},
               /usr/lib/{clang,cmake/{clang,llvm},libear,libscanbuild},
-              /usr/share/{clang,opt-viewer,scan-build,scan-view}, and
-              /usr/share/doc/llvm-17.0.6</span>
+              /usr/share/{clang,opt-viewer,scan-build,scan-view},
+              /usr/share/doc/llvm-18.1.0, and /etc/clang</span>
             </div>
           </div>
         </div>
@@ -815,6 +826,22 @@ rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
                 <td>
                   <p>
                     is a tool to scan for dependencies in a source file
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="clang-tblgen" name="clang-tblgen"></a><span class=
+                    "term"><span class=
+                    "command"><strong>clang-tblgen</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    is a program that translates compiler-related target
+                    description (<code class="filename">.td</code>) files
+                    into C++ code and other output formats
                   </p>
                 </td>
               </tr>
@@ -1659,6 +1686,20 @@ rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
               <tr>
                 <td>
                   <p>
+                    <a id="llvm-readtapi" name=
+                    "llvm-readtapi"></a><span class="term"><span class=
+                    "command"><strong>llvm-readtapi</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    is the LLVM TAPI file reader and transformer
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
                     <a id="llvm-reduce" name="llvm-reduce"></a><span class=
                     "term"><span class=
                     "command"><strong>llvm-reduce</strong></span></span>
@@ -1668,22 +1709,6 @@ rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
                   <p>
                     is used to automatically reduce testcases when running a
                     test suite
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="llvm-remark-size-diff" name=
-                    "llvm-remark-size-diff"></a><span class=
-                    "term"><span class=
-                    "command"><strong>llvm-remark-size-diff</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    reports the difference in instruction count and stack
-                    size remarks between two remark files
                   </p>
                 </td>
               </tr>
@@ -1957,21 +1982,6 @@ rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="split-file" name="split-file"></a><span class=
-                    "term"><span class=
-                    "command"><strong>split-file</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    splits an input file into multiple parts separated by
-                    regex
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
                     <a id="verify-uselistorder" name=
                     "verify-uselistorder"></a><span class="term"><span class=
                     "command"><strong>verify-uselistorder</strong></span></span>
@@ -2009,7 +2019,7 @@ rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-70">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-88">
           Home</a>
         </li>
       </ul>
