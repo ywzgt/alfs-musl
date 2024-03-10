@@ -1,0 +1,21 @@
+diff --git a/wget-list b/wget-list
+index e486bfd98..db61fa28a 100644
+--- a/wget-list
++++ b/wget-list
+@@ -826,11 +826,11 @@ https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.2.tar.bz2
+ http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.18/xfce4-dev-tools-4.18.1.tar.bz2
+ https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.4.tar.bz2
+ https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.4/xfce4-pulseaudio-plugin-0.4.8.tar.bz2
+-https://download.kde.org/stable/frameworks/5.115/kwindowsystem-5.115.tar.xz
+-https://download.kde.org/stable/frameworks/5.115/kwayland-5.115.tar.xz
+-https://download.kde.org/stable/frameworks/5.115/kconfig-5.115.tar.xz
+-https://download.kde.org/stable/frameworks/5.115/solid-5.115.tar.xz
+-https://download.kde.org/stable/frameworks/5.115/kidletime-5.115.tar.xz
++https://download.kde.org/stable/frameworks/5.115/kwindowsystem-5.115.0.tar.xz
++https://download.kde.org/stable/frameworks/5.115/kwayland-5.115.0.tar.xz
++https://download.kde.org/stable/frameworks/5.115/kconfig-5.115.0.tar.xz
++https://download.kde.org/stable/frameworks/5.115/solid-5.115.0.tar.xz
++https://download.kde.org/stable/frameworks/5.115/kidletime-5.115.0.tar.xz
+ http://download.kde.org/stable/plasma/5.27.10/libkscreen-5.27.10.tar.xz
+ https://github.com/beltoforion/muparser/archive/v2.3.4/muparser-2.3.4.tar.gz
+ https://github.com/lxqt/lxqt-build-tools/releases/download/0.13.0/lxqt-build-tools-0.13.0.tar.xz
