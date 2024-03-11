@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-95">
+  <body class="blfs" id="blfs-r12.1-99">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-95
+        "phrase">(systemd</span> Edition) - Version r12.1-99
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-95">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-99">
           Home</a>
         </li>
       </ul>
@@ -1360,7 +1360,7 @@
           <p class="required">
             <a class="xref" href="dbus.html" title=
             "dbus-1.14.10">dbus-1.14.10</a>, <a class="xref" href=
-            "glib2.html" title="GLib-2.78.4">GLib-2.78.4</a>, <a class="xref"
+            "glib2.html" title="GLib-2.80.0">GLib-2.80.0</a>, <a class="xref"
             href="python-dependencies.html#meson_python" title=
             "Meson_python-0.15.0">meson_python-0.15.0</a>, and <a class=
             "xref" href="patchelf.html" title=
@@ -3963,7 +3963,7 @@ ninja</kbd></pre>
           </h5>
           <p class="required">
             <a class="xref" href="glib2.html" title=
-            "GLib-2.78.4">GLib-2.78.4</a>, <a class="xref" href=
+            "GLib-2.80.0">GLib-2.80.0</a>, <a class="xref" href=
             "python-modules.html#pycairo2" title=
             "PyCairo-1.18.2">PyCairo-1.18.2</a> and <a class="xref" href=
             "python2.html" title="Python-2.7.18">Python-2.7.18</a>
@@ -3972,9 +3972,7 @@ ninja</kbd></pre>
             Optional
           </h5>
           <p class="optional">
-            <a class="xref" href="gobject-introspection.html" title=
-            "gobject-introspection-1.78.1">gobject-introspection-1.78.1</a>
-            and <a class="xref" href="libxslt.html" title=
+            <a class="xref" href="libxslt.html" title=
             "libxslt-1.1.39">libxslt-1.1.39</a> (to Build Documentation)
           </p>
         </div>
@@ -3987,7 +3985,7 @@ ninja</kbd></pre>
             following commands:
           </p>
           <pre class="userinput"><kbd class=
-          "command">./configure --prefix=/usr --disable-introspection &amp;&amp;
+          "command">./configure --prefix=/usr &amp;&amp;
 make</kbd></pre>
           <p>
             This package does not have a working test suite.
@@ -4002,11 +4000,10 @@ make</kbd></pre>
             Command Explanations
           </h3>
           <p>
-            <code class="option">--disable-introspection</code>: Omit this
-            switch if you have installed <a class="xref" href=
-            "gobject-introspection.html" title=
-            "gobject-introspection-1.78.1">gobject-introspection-1.78.1</a>.
-            Note that it conflicts with <a class="xref" href=
+            <code class="option">--disable-introspection</code>: Add this
+            switch if you have installed <a class="xref" href="glib2.html"
+            title="GLib-2.80.0">GLib-2.80.0</a> without GObject
+            Introspection. Note that it conflicts with <a class="xref" href=
             "python-modules.html#pygobject3" title=
             "PyGObject-3.46.0">PyGObject-3.46.0</a>.
           </p>
@@ -4108,9 +4105,9 @@ make</kbd></pre>
             Required
           </h5>
           <p class="required">
-            <a class="xref" href="gobject-introspection.html" title=
-            "gobject-introspection-1.78.1">gobject-introspection-1.78.1</a>
-            and <a class="xref" href="python-modules.html#pycairo" title=
+            <a class="xref" href="glib2.html" title=
+            "GLib-2.80.0">GLib-2.80.0</a> (with GObject Introspection) and
+            <a class="xref" href="python-modules.html#pycairo" title=
             "PyCairo-1.26.0">PyCairo-1.26.0</a> (<span class=
             "application">Python 3</span> module)
           </p>
@@ -6744,7 +6741,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-95">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-99">
           Home</a>
         </li>
       </ul>
