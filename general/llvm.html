@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-99">
+  <body class="blfs" id="blfs-r12.1-104">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-99
+        "phrase">(systemd</span> Edition) - Version r12.1-104
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-99">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-104">
           Home</a>
         </li>
       </ul>
@@ -551,7 +551,9 @@ rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
             <a class="xref" href="gcc.html" title=
             "GCC-13.2.0">GCC-13.2.0</a>:
           </p>
-          <pre class="root"><kbd class="command">for i in clang clang++; do
+          <pre class="root"><kbd class=
+          "command">mkdir -pv /etc/clang &amp;&amp;
+for i in clang clang++; do
   echo -fstack-protector-strong &gt; /etc/clang/$i.cfg
 done</kbd></pre>
         </div>
@@ -2019,7 +2021,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-99">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-104">
           Home</a>
         </li>
       </ul>
