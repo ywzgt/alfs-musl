@@ -1,0 +1,28 @@
+diff --git a/wget-list b/wget-list
+index d9d553f9d..94bef2373 100644
+--- a/wget-list
++++ b/wget-list
+@@ -73,11 +73,11 @@ https://github.com/AbiWord/enchant/releases/download/v2.6.7/enchant-2.6.7.tar.gz
+ https://libopenraw.freedesktop.org/download/exempi-2.6.5.tar.xz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+ https://github.com/fmtlib/fmt/archive/refs/tags/10.2.1/fmt-10.2.1.tar.gz
+-https://download.gnome.org/sources/glib/2.78/glib-2.78.4.tar.xz
++https://download.gnome.org/sources/glib/2.80/glib-2.80.0.tar.xz
++https://download.gnome.org/sources/gobject-introspection/1.80/gobject-introspection-1.80.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+ https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.5.tar.xz
+ https://download.gnome.org/sources/gmime/3.2/gmime-3.2.7.tar.xz
+-https://download.gnome.org/sources/gobject-introspection/1.78/gobject-introspection-1.78.1.tar.xz
+ https://ftp.gnu.org/gnu/gsl/gsl-2.7.1.tar.gz
+ https://download.gnome.org/sources/gspell/1.12/gspell-1.12.2.tar.xz
+ https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz
+@@ -1036,8 +1036,7 @@ https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/texlive-20230313-source.tar.xz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/texlive-20230313-texmf.tar.xz
+ https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2023/texlive-20230311-tlpdb-full.tar.gz
+-https://downloads.sourceforge.net/asymptote/asymptote-2.86.src.tgz
+-https://www.linuxfromscratch.org/patches/blfs/svn/asymptote-2.86-build_fix-1.patch
++https://downloads.sourceforge.net/asymptote/asymptote-2.88.src.tgz
+ https://github.com/plk/biber/archive/v2.19/biber-2.19.tar.gz
+ https://github.com/mgieseki/dvisvgm/releases/download/3.2.2/dvisvgm-3.2.2.tar.gz
+ https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
