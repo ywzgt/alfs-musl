@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-104">
+  <body class="blfs" id="blfs-r12.1-109">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-104
+        "phrase">(systemd</span> Edition) - Version r12.1-109
       </h4>
       <h3>
         Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-104">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-109">
           Home</a>
         </li>
       </ul>
@@ -270,7 +270,7 @@
             "https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/">
             https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/</a>
             and downloading the latest file there. As of this writing the
-            most secure version of the microcode is microcode-20231114.
+            most secure version of the microcode is microcode-20240312.
             Extract this file in the normal way, the microcode is in the
             <code class="filename">intel-ucode</code> directory, containing
             various blobs with names in the form XX-YY-ZZ. There are also
@@ -298,10 +298,10 @@
             For an Tigerlake mobile (described as Intel(R) Core(TM) i5-11300H
             CPU) the relevant values are cpu family 6, model 140, stepping 1
             so in this case the required identification is 06-8c-01. The
-            releasenote says the latest microcode for it is versioned 0xb4.
+            releasenote says the latest microcode for it is versioned 0xb6.
             If the value of the <span class="quote">“<span class=
             "quote">microcode</span>”</span> field in <code class=
-            "filename">/proc/cpuinfo</code> is 0xb4 or greater, it indicates
+            "filename">/proc/cpuinfo</code> is 0xb6 or greater, it indicates
             the microcode update is already applied by the BIOS. Otherwise,
             proceed to <a class="xref" href="firmware.html#early-microcode"
             title="Early loading of microcode">the section called “Early
@@ -435,10 +435,10 @@ cd initrd</kbd></pre>
             Intel (Tigerlake mobile) with early loading:
           </p>
           <pre class="screen"><code class=
-          "literal">[    0.000000] microcode: microcode updated early: 0x86 -&gt; 0xb4, date = 2023-09-07
-[    0.000000] Linux version 6.6.1 (xry111@stargazer) (gcc (GCC) 13.2.0, GNU ld (GNU Binutils) 2.41) #36 SMP PREEMPT_DYNAMIC Tue Nov 14 01:56:04 CST 2023
-[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-6.6.1 root=PARTUUID=<em class="replaceable"><code>&lt;CLASSIFIED&gt;</code></em> ro
-[    0.424002] microcode: Microcode Update Driver: v2.2.</code></pre>
+          "literal">[    0.000000] Linux version 6.8.0 (xry111@stargazer) (gcc (GCC) 13.2.0, GNU ld (GNU Binutils) 2.42) #53 SMP PREEMPT_DYNAMIC Tue Mar 12 20:01:39 CST 2024
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-6.8.0 root=PARTUUID=<em class="replaceable"><code>&lt;CLASSIFIED&gt;</code></em> ro
+[    0.571761] microcode: Current revision: 0x000000b6
+[    0.571771] microcode: Updated early from: 0x00000086</code></pre>
           <p>
             A historic AMD example:
           </p>
@@ -826,7 +826,7 @@ make oldconfig</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-104">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-109">
           Home</a>
         </li>
       </ul>
