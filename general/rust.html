@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-114">
+  <body class="blfs" id="blfs-r12.1-126">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-114
+        "phrase">(systemd</span> Edition) - Version r12.1-126
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-114">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-126">
           Home</a>
         </li>
       </ul>
@@ -231,10 +231,11 @@
         </h4>
         <p class="recommended">
           <a class="xref" href="libssh2.html" title=
-          "libssh2-1.11.0">libssh2-1.11.0</a> and <a class="xref" href=
+          "libssh2-1.11.0">libssh2-1.11.0</a>, <a class="xref" href=
           "llvm.html" title="LLVM-18.1.0">LLVM-18.1.0</a> (built with
           -DLLVM_LINK_LLVM_DYLIB=ON so that rust can link to system LLVM
-          instead of building its shipped version)
+          instead of building its shipped version), and <a class="xref" href=
+          "../server/sqlite.html" title="SQLite-3.45.2">SQLite-3.45.2</a>
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -369,7 +370,7 @@ docdir = "share/doc/rustc-1.76.0"
 
 [rust]
 channel = "stable"
-description = "for BLFS r12.1-114"
+description = "for BLFS r12.1-126"
 
 # BLFS used to not install the FileCheck executable from llvm,
 # so disabled codegen tests.  The assembly tests rely on FileCheck
@@ -427,7 +428,9 @@ sed '/static_assert_size!\((Lit|MetaItemLit|BasicBlockData|Terminator)/d' \
         </p>
         <pre class="userinput"><kbd class=
         "command">{ [ ! -e /usr/include/libssh2.h ] ||
-  export LIBSSH2_SYS_USE_PKG_CONFIG=1; } &amp;&amp;
+  export LIBSSH2_SYS_USE_PKG_CONFIG=1; }    &amp;&amp;
+{ [ ! -e /usr/include/sqlite3.h ] ||
+  export LIBSQLITE3_SYS_USE_PKG_CONFIG=1; } &amp;&amp;
 python3 x.py build</kbd></pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -509,18 +512,21 @@ python3 x.py test --verbose --no-fail-fast | tee rustc-testlog</kbd></pre>
             If <span class="command"><strong>sudo</strong></span> or
             <span class="command"><strong>su</strong></span> is invoked for
             switching to the <code class="systemitem">root</code> user,
-            ensure <code class="envar">LIBSSH2_SYS_USE_PKG_CONFIG</code> is
-            correctly passed or the following command may completely rebuild
-            this package. For <span class=
+            ensure <code class="envar">LIBSSH2_SYS_USE_PKG_CONFIG</code> and
+            <code class="envar">LIBSQLITE3_SYS_USE_PKG_CONFIG</code> are
+            correctly passed or the following command may rebuild
+            <span class="command"><strong>cargo</strong></span> with shipped
+            copies of libssh2 and sqlite. For <span class=
             "command"><strong>sudo</strong></span>, use the <code class=
-            "option">--preserve-env=LIBSSH2_SYS_USE_PKG_CONFIG</code> option.
-            For <span class="command"><strong>su</strong></span>, do
+            "option">--preserve-env=LIB{SSH2,SQLITE3}_SYS_USE_PKG_CONFIG</code>
+            option. For <span class="command"><strong>su</strong></span>, do
             <span class="emphasis"><em>not</em></span> use the <code class=
             "option">-</code> or <code class="option">--login</code> options.
           </p>
         </div>
         <pre class="root"><kbd class=
-        "command">python3 x.py install</kbd></pre>
+        "command">python3 x.py install rustc std &amp;&amp;
+python3 x.py install --stage=1 cargo clippy rustfmt</kbd></pre>
         <p>
           The building system attempts to install some files twice, and
           during the second attempt it renames the old one (installed in the
@@ -540,11 +546,10 @@ python3 x.py test --verbose --no-fail-fast | tee rustc-testlog</kbd></pre>
 ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
         /usr/share/zsh/site-functions</kbd></pre>
         <p>
-          Finally, unset the <code class=
-          "envar">LIBSSH2_SYS_USE_PKG_CONFIG</code> variable:
+          Finally, unset the exported environment variables:
         </p>
         <pre class="userinput"><kbd class=
-        "command">unset LIBSSH2_SYS_USE_PKG_CONFIG</kbd></pre>
+        "command">unset LIB{SSH2,SQLITE3}_SYS_USE_PKG_CONFIG</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -599,6 +604,11 @@ ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
           "command"><strong>cargo</strong></span> to link to system libssh2.
         </p>
         <p>
+          <span class="command"><strong>export
+          LIBSQLITE3_SYS_USE_PKG_CONFIG</strong></span>: Allow <span class=
+          "command"><strong>cargo</strong></span> to link to system sqlite.
+        </p>
+        <p>
           <code class="envar">SSL_CERT_DIR=/etc/ssl/certs</code>: Work around
           an issue causing test failures with the CA certificate store layout
           used by <a class="xref" href="../postlfs/make-ca.html" title=
@@ -611,6 +621,12 @@ ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
         <p>
           <em class="parameter"><code>--no-fail-fast</code></em>: this switch
           ensures that the test suite will not stop at the first error.
+        </p>
+        <p>
+          <em class="parameter"><code>--stage=1</code></em>: this switch
+          works around an issue causing some Rustc components unnecessarily
+          rebuilt running <span class="command"><strong>python3 x.py
+          install</strong></span>.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -872,7 +888,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-114">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-126">
           Home</a>
         </li>
       </ul>
