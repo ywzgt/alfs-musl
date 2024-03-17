@@ -1,0 +1,15 @@
+diff --git a/wget-list b/wget-list
+index 503f37de2..576e1d3bf 100644
+--- a/wget-list
++++ b/wget-list
+@@ -611,8 +611,8 @@ https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
+ https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
+ https://downloads.mariadb.org/interstitial/mariadb-10.11.7/source/mariadb-10.11.7.tar.gz
+ https://ftp.postgresql.org/pub/source/v16.2/postgresql-16.2.tar.bz2
+-https://sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
+-https://sqlite.org/2024/sqlite-doc-3450100.zip
++https://sqlite.org/2024/sqlite-autoconf-3450200.tar.gz
++https://sqlite.org/2024/sqlite-doc-3450200.zip
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.7.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.7-consolidated-1.patch
+ https://nlnetlabs.nl/downloads/unbound/unbound-1.19.1.tar.gz
