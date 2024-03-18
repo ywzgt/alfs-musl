@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-126">
+  <body class="blfs" id="blfs-r12.1-139">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-126
+        "phrase">(systemd</span> Edition) - Version r12.1-139
       </h4>
       <h3>
         Chapter&nbsp;30.&nbsp;KDE Frameworks 6
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-126">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-139">
           Home</a>
         </li>
       </ul>
@@ -112,31 +112,24 @@
         Required
       </h4>
       <p class="required">
-        <a class="xref" href="../general/boost.html" title=
-        "Boost-1.84.0">Boost-1.84.0</a>, <a class="xref" href=
-        "extra-cmake-modules.html" title=
+        <a class="xref" href="extra-cmake-modules.html" title=
         "extra-cmake-modules-6.0.0">extra-cmake-modules-6.0.0</a>, <a class=
         "xref" href="../pst/docbook.html" title=
         "docbook-xml-4.5">docbook-xml-4.5</a>, <a class="xref" href=
         "../pst/docbook-xsl.html" title=
         "docbook-xsl-nons-1.79.2">docbook-xsl-nons-1.79.2</a>, <a class=
-        "xref" href="../general/giflib.html" title=
-        "giflib-5.2.2">giflib-5.2.2</a>, <a class="xref" href=
-        "../x/libepoxy.html" title="libepoxy-1.5.10">libepoxy-1.5.10</a>,
-        <a class="xref" href="../general/libgcrypt.html" title=
+        "xref" href="../multimedia/libcanberra.html" title=
+        "libcanberra-0.30">libcanberra-0.30</a>, <a class="xref" href=
+        "../general/libgcrypt.html" title=
         "libgcrypt-1.10.3">libgcrypt-1.10.3</a>, <a class="xref" href=
         "../general/libical.html" title="libical-3.0.17">libical-3.0.17</a>,
-        <a class="xref" href="../general/libjpeg.html" title=
-        "libjpeg-turbo-3.0.1">libjpeg-turbo-3.0.1</a>, <a class="xref" href=
-        "../general/libpng.html" title="libpng-1.6.43">libpng-1.6.43</a>,
         <a class="xref" href="../general/libxslt.html" title=
         "libxslt-1.1.39">libxslt-1.1.39</a>, <a class="xref" href=
         "../server/lmdb.html" title="lmdb-0.9.31">lmdb-0.9.31</a>, <a class=
         "xref" href="../general/qca.html" title="Qca-2.3.8">qca-2.3.8</a>,
         <a class="xref" href="../general/qrencode.html" title=
         "qrencode-4.1.1">qrencode-4.1.1</a>, <a class="xref" href=
-        "phonon.html" title="Phonon-4.12.0">phonon-4.12.0</a>, <a class=
-        "xref" href="plasma-wayland-protocols.html" title=
+        "plasma-wayland-protocols.html" title=
         "Plasma-wayland-protocols-1.12.0">plasma-wayland-protocols-1.12.0</a>,
         <a class="xref" href="../general/shared-mime-info.html" title=
         "shared-mime-info-2.4">shared-mime-info-2.4</a>, <a class="xref"
@@ -155,12 +148,11 @@
         "Avahi-0.8">Avahi-0.8</a> (DNS-SD backend for KDNSSD), <a class=
         "xref" href="../general/ModemManager.html" title=
         "ModemManager-1.18.12">ModemManager-1.18.12</a> (needed to build
-        ModemManager-Qt), <a class="xref" href=
-        "../basicnet/networkmanager.html" title=
-        "NetworkManager-1.46.0">NetworkManager-1.46.0</a> (needed to build
-        NetworkManager-Qt), and <a class="xref" href="polkit-qt.html" title=
+        ModemManager-Qt), <a class="xref" href="polkit-qt.html" title=
         "Polkit-Qt-0.200.0">polkit-qt-0.200.0</a> (Authentication backend for
-        KAuth)
+        KAuth), and <a class="xref" href="../x/vulkan-loader.html" title=
+        "Vulkan-Loader-1.3.279">Vulkan-Loader-1.3.279</a> (Add support for
+        Vulkan graphics drivers)
       </p>
       <p class="recommended">
         Furthermore, the instructions below assume that the environment has
@@ -193,9 +185,7 @@
         "../general/python-modules.html#doxypypy" title=
         "Doxypypy-0.8.8.7">doxypypy-0.8.8.7</a>, <a class="xref" href=
         "../general/python-modules.html#doxyqml" title=
-        "Doxyqml-0.5.3">doxyqml-0.5.3</a>, <a class="xref" href=
-        "../general/python-modules.html#PyYAML" title=
-        "PyYAML-6.0.1">PyYAML-6.0.1</a>, and <a class="xref" href=
+        "Doxyqml-0.5.3">doxyqml-0.5.3</a>, and <a class="xref" href=
         "../general/python-modules.html#requests" title=
         "Requests-2.31.0">requests-2.31.0</a>
       </p>
@@ -203,22 +193,14 @@
         Additional image formats support in KImageFormats
       </h4>
       <p class="optional">
-        <a class="xref" href="../general/jasper.html" title=
-        "JasPer-4.2.1">JasPer-4.2.1</a>, <a class="xref" href=
-        "../general/libavif.html" title="libavif-1.0.4">libavif-1.0.4</a>,
-        <a class="xref" href="../general/libraw.html" title=
-        "libraw-0.21.2">libraw-0.21.2</a>, <a class="ulink" href=
+        <a class="xref" href="../general/libavif.html" title=
+        "libavif-1.0.4">libavif-1.0.4</a>, <a class="xref" href=
+        "../general/libraw.html" title="libraw-0.21.2">libraw-0.21.2</a>,
+        <a class="ulink" href=
         "https://github.com/strukturag/libheif">libheif</a>, <a class="ulink"
         href="https://github.com/libjxl/libjxl">libjxl</a>, and <a class=
         "ulink" href=
         "https://github.com/AcademySoftwareFoundation/openexr">OpenEXR</a>
-      </p>
-      <h4>
-        Optional dependencies for KIO
-      </h4>
-      <p class="optional">
-        <a class="xref" href="../postlfs/mitkrb.html" title=
-        "MIT Kerberos V5-1.21.2">MIT Kerberos V5-1.21.2</a>
       </p>
       <h4>
         Optional dependencies for Solid
@@ -471,11 +453,12 @@ ln -sfv /usr/lib/systemd    $KF6_PREFIX/lib</kbd></pre>
       mkdir build
       cd    build
 
-      cmake -DCMAKE_INSTALL_PREFIX=$KF6_PREFIX \
-            -DCMAKE_PREFIX_PATH=$QT6DIR        \
-            -DCMAKE_BUILD_TYPE=Release         \
-            -DBUILD_TESTING=OFF                \
-            -Wno-dev ..
+      cmake -D CMAKE_INSTALL_PREFIX=$KF6_PREFIX \
+            -D CMAKE_INSTALL_LIBEXECDIR=libexec \
+            -D CMAKE_PREFIX_PATH=$QT6DIR        \
+            -D CMAKE_BUILD_TYPE=Release         \
+            -D BUILD_TESTING=OFF                \
+            -W no-dev ..
       make
       as_root make install
     popd
@@ -1036,7 +1019,7 @@ ln -sfvn kf6-6.0.0 /opt/kf6</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-126">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-139">
           Home</a>
         </li>
       </ul>

@@ -87,6 +87,7 @@ https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
 https://s3.amazonaws.com/json-c_releases/releases/json-c-0.17.tar.gz
 https://download.gnome.org/sources/json-glib/1.8/json-glib-1.8.0.tar.xz
 https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-1.6.3.tar.gz
+https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.0.1.tar.xz
 https://pagure.io/libaio/archive/libaio-0.3.113/libaio-0.3.113.tar.gz
 https://github.com/libarchive/libarchive/releases/download/v3.7.2/libarchive-3.7.2.tar.xz
 https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.5.7.tar.bz2
@@ -95,7 +96,9 @@ https://github.com/ivmai/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.
 https://github.com/storaged-project/libblockdev/releases/download/3.1.0-1/libblockdev-3.1.0.tar.gz
 https://github.com/storaged-project/libbytesize/releases/download/2.10/libbytesize-2.10.tar.gz
 https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.5.tar.xz
+https://launchpad.net/ubuntu/+archive/primary/+files/libdbusmenu-qt_0.9.3+16.04.20160218.orig.tar.gz
 https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.1.1/downloads//libdisplay-info-0.1.1.tar.xz
 https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.10.3.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.48.tar.bz2
 https://download.gnome.org/sources/libgrss/0.7/libgrss-0.7.0.tar.xz
@@ -130,12 +133,11 @@ https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
 https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.tar.bz2
 https://dist.libuv.org/dist/v1.48.0/libuv-v1.48.0.tar.gz
 https://xkbcommon.org/download/libxkbcommon-1.6.0.tar.xz
-https://download.gnome.org/sources/libxml2/2.12/libxml2-2.12.5.tar.xz
+https://download.gnome.org/sources/libxml2/2.12/libxml2-2.12.6.tar.xz
 https://www.w3.org/XML/Test/xmlts20130923.tar.gz
 https://github.com/hughsie/libxmlb/releases/download/0.3.15/libxmlb-0.3.15.tar.xz
 https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.39.tar.xz
 https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.10.0/libwacom-2.10.0.tar.xz
-https://wpewebkit.org/releases/libwpe-1.14.2.tar.xz
 https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
 https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_1/log4cplus-2.1.1.tar.xz
 https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
@@ -146,6 +148,7 @@ https://archive.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
 https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.43/pcre2-10.43.tar.bz2
 http://ftp.rpm.org/popt/releases/popt-1.x/popt-1.19.tar.gz
 https://download.kde.org/stable/qca/2.3.8/qca-2.3.8.tar.xz
+https://github.com/danvratil/qcoro/archive/v0.10.0/qcoro-0.10.0.tar.gz
 https://archive.mozilla.org/pub/firefox/releases/115.8.0esr/source/firefox-115.8.0esr.source.tar.xz
 https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.275.0/SPIRV-Headers-1.3.275.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.3.275.0/SPIRV-Tools-1.3.275.0.tar.gz
@@ -156,7 +159,6 @@ https://github.com/martinpitt/umockdev/releases/download/0.18.0/umockdev-0.18.0.
 https://github.com/nemtrif/utfcpp/archive/v4.0.5/utfcpp-4.0.5.tar.gz
 https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.22.0/downloads/wayland-1.22.0.tar.xz
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.33/downloads/wayland-protocols-1.33.tar.xz
-https://wpewebkit.org/releases/wpebackend-fdo-1.14.2.tar.xz
 https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
 https://oligarchy.co.uk/xapian/1.4.24/xapian-core-1.4.24.tar.xz
 https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
@@ -243,6 +245,7 @@ http://fcron.free.fr/archives/fcron-3.2.1.src.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/gpm/gpm-1.20.7.tar.bz2
 https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch
 https://downloads.sourceforge.net/hdparm/hdparm-9.65.tar.gz
+https://github.com/vcrhonek/hwdata/archive/v0.380/hwdata-0.380.tar.gz
 https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
 https://github.com/lm-sensors/lm-sensors/archive/V3-6-0/lm-sensors-3-6-0.tar.gz
 https://github.com/logrotate/logrotate/releases/download/3.21.0/logrotate-3.21.0.tar.xz
@@ -270,6 +273,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-consolidated_fixes-1
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.2/upower-v1.90.2.tar.bz2
 https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-017.tar.xz
 https://ftp.gnu.org/gnu/which/which-2.21.tar.gz
+https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz
 https://downloads.sourceforge.net/infozip/zip30.tar.gz
 https://github.com/mozilla/cbindgen/archive/v0.26.0/cbindgen-0.26.0.tar.gz
 https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
@@ -695,13 +699,13 @@ https://www.freedesktop.org/software/startup-notification/releases/startup-notif
 https://download.gnome.org/sources/tepl/6.8/tepl-6.8.0.tar.xz
 https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.3.279/Vulkan-Headers-1.3.279.tar.gz
 https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/v1.3.279/Vulkan-Loader-1.3.279.tar.gz
-https://webkitgtk.org/releases/webkitgtk-2.42.5.tar.xz
+https://webkitgtk.org/releases/webkitgtk-2.44.0.tar.xz
 https://github.com/flatpak/xdg-desktop-portal/releases/download/1.18.2/xdg-desktop-portal-1.18.2.tar.xz
 https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.1/xdg-desktop-portal-gtk-1.15.1.tar.xz
 https://download.gnome.org/sources/gdm/45/gdm-45.0.1.tar.xz
 https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.tar.xz
 https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.9/lightdm-gtk-greeter-2.0.9.tar.gz
-https://github.com/sddm/sddm/archive/v0.20.0/sddm-0.20.0.tar.gz
+https://github.com/sddm/sddm/archive/v0.21.0/sddm-0.21.0.tar.gz
 https://downloads.sourceforge.net/fluxbox/fluxbox-1.3.7.tar.xz
 https://github.com/ice-wm/icewm/archive/3.4.6/icewm-3.4.6.tar.gz
 http://openbox.org/dist/openbox/openbox-3.6.1.tar.gz
@@ -719,12 +723,9 @@ https://download.kde.org/stable/frameworks/6.0/extra-cmake-modules-6.0.0.tar.xz
 https://download.kde.org/stable/phonon/4.12.0/phonon-4.12.0.tar.xz
 https://download.kde.org/stable/phonon/phonon-backend-vlc/0.12.0/phonon-backend-vlc-0.12.0.tar.xz
 https://download.kde.org/stable/polkit-qt-1/polkit-qt-1-0.200.0.tar.xz
-https://launchpad.net/ubuntu/+archive/primary/+files/libdbusmenu-qt_0.9.3+16.04.20160218.orig.tar.gz
 https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.12.0.tar.xz
-https://download.kde.org/stable/kuserfeedback/kuserfeedback-1.3.0.tar.xz
 https://download.kde.org/stable/release-service/24.02.0/src/ark-24.02.0.tar.xz
 https://download.kde.org/stable/release-service/24.02.0/src/kdenlive-24.02.0.tar.xz
-https://download.kde.org/stable/release-service/24.02.0/src/kmix-24.02.0.tar.xz
 https://download.kde.org/stable/release-service/24.02.0/src/khelpcenter-24.02.0.tar.xz
 https://download.kde.org/stable/release-service/24.02.0/src/konsole-24.02.0.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/konsole-24.02.0-scrollbar-1.patch
@@ -733,8 +734,6 @@ https://download.kde.org/stable/plasma/6.0.0/plasma-activities-6.0.0.tar.xz
 https://download.kde.org/stable/release-service/24.02.0/src/okular-24.02.0.tar.xz
 https://download.kde.org/stable/release-service/24.02.0/src/libkdcraw-24.02.0.tar.xz
 https://download.kde.org/stable/release-service/24.02.0/src/gwenview-24.02.0.tar.xz
-https://download.kde.org/stable/release-service/24.02.0/src/libkcddb-24.02.0.tar.xz
-https://download.kde.org/stable/release-service/24.02.0/src/k3b-24.02.0.tar.xz
 https://download.gnome.org/sources/gcr/3.41/gcr-3.41.2.tar.xz
 https://download.gnome.org/sources/gcr/4.2/gcr-4.2.1.tar.xz
 https://download.gnome.org/sources/gsettings-desktop-schemas/45/gsettings-desktop-schemas-45.0.tar.xz

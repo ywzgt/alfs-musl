@@ -5,58 +5,61 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      libkcddb-24.02.0
+      libdbusmenu-qt-0.9.3+16.04.20160218
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-126">
+  <body class="blfs" id="blfs-r12.1-139">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-126
+        "phrase">(systemd</span> Edition) - Version r12.1-139
       </h4>
       <h3>
-        Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications
+        Chapter&nbsp;9.&nbsp;General Libraries
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="gwenview.html" title=
-          "Gwenview-24.02.0">Prev</a>
+          <a accesskey="p" href="libcloudproviders.html" title=
+          "libcloudproviders-0.3.5">Prev</a>
           <p>
-            Gwenview-24.02.0
+            libcloudproviders-0.3.5
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="k3b.html" title="k3b-24.02.0">Next</a>
+          <a accesskey="n" href="libdaemon.html" title=
+          "libdaemon-0.14">Next</a>
           <p>
-            k3b-24.02.0
+            libdaemon-0.14
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="kf6-apps.html" title=
-          "Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications">Up</a>
+          <a accesskey="u" href="genlib.html" title=
+          "Chapter&nbsp;9.&nbsp;General Libraries">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-126">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-139">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="libkcddb" name="libkcddb"></a>libkcddb-24.02.0
+      <a id="libdbusmenu-qt" name=
+      "libdbusmenu-qt"></a>libdbusmenu-qt-0.9.3+16.04.20160218
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to libkcddb
+          Introduction to libdbusmenu-qt
         </h2>
         <p>
-          The <span class="application">libkcddb</span> package contains a
-          library used to retrieve audio CD meta data from the internet.
+          This library provides a <span class="application">Qt</span>
+          implementation of the DBusMenu specification that exposes menus via
+          DBus.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -77,74 +80,81 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.kde.org/stable/release-service/24.02.0/src/libkcddb-24.02.0.tar.xz">
-                https://download.kde.org/stable/release-service/24.02.0/src/libkcddb-24.02.0.tar.xz</a>
+                "https://launchpad.net/ubuntu/+archive/primary/+files/libdbusmenu-qt_0.9.3+16.04.20160218.orig.tar.gz">
+                https://launchpad.net/ubuntu/+archive/primary/+files/libdbusmenu-qt_0.9.3+16.04.20160218.orig.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 29438c22614fb4bd372c7cd326ce5853
+                Download MD5 sum: 8b90312bd8654e026d814d4db986ce5e
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 444 KB
+                Download size: 48 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 11 MB
+                Estimated disk space required: 4.6 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.1 SBU
+                Estimated build time: 0.4 SBU
               </p>
             </li>
           </ul>
         </div>
         <h3>
-          libkcddb Dependencies
+          libdbusmenu-qt Dependencies
         </h3>
         <h4>
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="frameworks6.html" title=
-          "Building KDE Frameworks 6 (KF6)">KDE Frameworks-6.0.0</a>
-        </p>
-        <h4>
-          Recommended
-        </h4>
-        <p class="recommended">
-          <a class="xref" href="../multimedia/libmusicbrainz5.html" title=
-          "libmusicbrainz-5.1.0">libmusicbrainz-5.1.0</a>
+          <a class="xref" href="../x/qt5-alternate.html" title=
+          "qt-alternate-5.15.12">qt-alternate-5.15.12</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of libkcddb
+          Installation of libdbusmenu-qt
         </h2>
         <p>
-          Install <span class="application">libkcddb</span> by running the
-          following commands:
+          Install <span class="application">libdbusmenu-qt</span> by running
+          the following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=$KF6_PREFIX \
-      -DCMAKE_BUILD_TYPE=Release         \
-      -DBUILD_TESTING=OFF                \
-      -DQT_MAJOR_VERSION=6               \
-      -Wno-dev ..                        &amp;&amp;
+cmake -DCMAKE_INSTALL_PREFIX=/usr \
+      -DCMAKE_BUILD_TYPE=Release  \
+      -DWITH_DOC=OFF              \
+      -Wno-dev .. &amp;&amp;
 make</kbd></pre>
         <p>
-          This package does not come with a test suite.
+          This package does not come with a working test suite.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">make install</kbd></pre>
+      </div>
+      <div class="commands" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Command Explanations
+        </h2>
+        <p>
+          <em class="parameter"><code>-DCMAKE_BUILD_TYPE=Release</code></em>:
+          This switch is used to build without debugging symbols and apply a
+          higher level of compiler optimizations.
+        </p>
+        <p>
+          <em class="parameter"><code>-DWITH_DOC=OFF</code></em>: This option
+          is set to avoid trying to build the API documentation which
+          requires obsolete Qt4.
+        </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -157,68 +167,41 @@ make</kbd></pre>
               <span class="segbody">None</span>
             </div>
             <div class="seg">
-              <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libKCddb6.so</span>
+              <strong class="segtitle">Installed Library:</strong>
+              <span class="segbody">libdbusmenu-qt5.so</span>
             </div>
             <div class="seg">
-              <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">$KF6_PREFIX/include/KCddb6
-              $KF6_PREFIX/lib/cmake/KCddb6
-              $KF6_PREFIX/share/doc/HTML/*/kcontrol</span>
+              <strong class="segtitle">Installed Directory:</strong>
+              <span class="segbody">/usr/lib/cmake/dbusmenu-qt5 and
+              /usr/include/dbusmenu-qt5</span>
             </div>
           </div>
-        </div>
-        <div class="variablelist">
-          <h3>
-            Short Descriptions
-          </h3>
-          <table border="0" class="variablelist">
-            <colgroup>
-              <col align="left" valign="top" />
-              <col />
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>
-                  <p>
-                    <a id="libkcddb-lib" name="libkcddb-lib"></a><span class=
-                    "term"><code class="filename">libKCddb6.so</code></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    contains functions used to retrieve audio CD meta data
-                    from the internet
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="gwenview.html" title=
-          "Gwenview-24.02.0">Prev</a>
+          <a accesskey="p" href="libcloudproviders.html" title=
+          "libcloudproviders-0.3.5">Prev</a>
           <p>
-            Gwenview-24.02.0
+            libcloudproviders-0.3.5
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="k3b.html" title="k3b-24.02.0">Next</a>
+          <a accesskey="n" href="libdaemon.html" title=
+          "libdaemon-0.14">Next</a>
           <p>
-            k3b-24.02.0
+            libdaemon-0.14
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="kf6-apps.html" title=
-          "Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications">Up</a>
+          <a accesskey="u" href="genlib.html" title=
+          "Chapter&nbsp;9.&nbsp;General Libraries">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-126">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-139">
           Home</a>
         </li>
       </ul>
