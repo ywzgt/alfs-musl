@@ -1,0 +1,56 @@
+diff --git a/wget-list b/wget-list
+index 576e1d3bf..24d734d93 100644
+--- a/wget-list
++++ b/wget-list
+@@ -3,7 +3,7 @@ https://github.com/lfs-book/make-ca/releases/download/v1.13/make-ca-1.13.tar.xz
+ https://github.com/cracklib/cracklib/releases/download/v2.9.11/cracklib-2.9.11.tar.xz
+ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.0.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+-https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.4.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.5.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.3.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.2.tar.bz2
+ https://www.netfilter.org/projects/iptables/files/iptables-1.8.10.tar.xz
+@@ -233,7 +233,7 @@ https://www.freedesktop.org/software/accountsservice/accountsservice-23.13.9.tar
+ https://downloads.sourceforge.net/acpid2/acpid-2.0.34.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/at/at_3.2.5.orig.tar.gz
+ https://www.kernel.org/pub/linux/daemons/autofs/v5/autofs-5.1.9.tar.xz
+-https://www.kernel.org/pub/linux/bluetooth/bluez-5.72.tar.xz
++https://www.kernel.org/pub/linux/bluetooth/bluez-5.73.tar.xz
+ https://github.com/containers/bubblewrap/releases/download/v0.8.0/bubblewrap-0.8.0.tar.xz
+ https://www.freedesktop.org/software/colord/releases/colord-1.4.7.tar.xz
+ https://ftp.gnu.org/gnu/cpio/cpio-2.15.tar.bz2
+@@ -615,7 +615,7 @@ https://sqlite.org/2024/sqlite-autoconf-3450200.tar.gz
+ https://sqlite.org/2024/sqlite-doc-3450200.zip
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.7.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.7-consolidated-1.patch
+-https://nlnetlabs.nl/downloads/unbound/unbound-1.19.1.tar.gz
++https://nlnetlabs.nl/downloads/unbound/unbound-1.19.3.tar.gz
+ https://www.x.org/pub/individual/util/util-macros-1.20.0.tar.xz
+ https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2023.2.tar.xz
+ https://www.x.org/pub/individual/lib/libXau-1.0.11.tar.xz
+@@ -629,7 +629,7 @@ https://xcb.freedesktop.org/dist/xcb-util-keysyms-0.4.1.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-renderutil-0.3.10.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-wm-0.4.2.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.4.tar.xz
+-https://mesa.freedesktop.org/archive/mesa-24.0.2.tar.xz
++https://mesa.freedesktop.org/archive/mesa-24.0.3.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-2.patch
+ https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ https://www.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
+@@ -703,7 +703,7 @@ https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.
+ https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.9/lightdm-gtk-greeter-2.0.9.tar.gz
+ https://github.com/sddm/sddm/archive/v0.20.0/sddm-0.20.0.tar.gz
+ https://downloads.sourceforge.net/fluxbox/fluxbox-1.3.7.tar.xz
+-https://github.com/ice-wm/icewm/archive/3.4.5/icewm-3.4.5.tar.gz
++https://github.com/ice-wm/icewm/archive/3.4.6/icewm-3.4.6.tar.gz
+ http://openbox.org/dist/openbox/openbox-3.6.1.tar.gz
+ https://download.gnome.org/sources/adwaita-icon-theme/45/adwaita-icon-theme-45.0.tar.xz
+ https://download.kde.org/stable/frameworks/6.0/breeze-icons-6.0.0.tar.xz
+@@ -1043,6 +1043,5 @@ https://github.com/mgieseki/dvisvgm/releases/download/3.2.2/dvisvgm-3.2.2.tar.gz
+ https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
+ https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20240209.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/bluez-5.72-obexd_without_systemd-1.patch
+ https://github.com/elogind/elogind/archive/v252.9/elogind-252.9.tar.gz
+ https://github.com/lfs-book/blocaled/releases/download/v0.5/blocaled-0.5.tar.xz
