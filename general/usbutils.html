@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-139">
+  <body class="blfs" id="blfs-r12.1-164">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-139
+        "phrase">(systemd</span> Edition) - Version r12.1-164
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-139">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-164">
           Home</a>
         </li>
       </ul>
@@ -118,8 +118,8 @@
           Recommended
         </h4>
         <p class="recommended">
-          <a class="xref" href="../basicnet/wget.html" title=
-          "Wget-1.21.4">Wget-1.21.4</a>
+          <a class="xref" href="hwdata.html" title=
+          "hwdata-0.380">hwdata-0.380</a> (runtime)
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -141,14 +141,10 @@ make</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">make install</kbd></pre>
         <p>
-          To install the <code class="filename">usb.ids</code> data file,
-          using <a class="xref" href="../basicnet/wget.html" title=
-          "Wget-1.21.4">Wget-1.21.4</a>, run, as the <code class=
-          "systemitem">root</code> user:
+          For the <code class="filename">usb.ids</code> data file, install
+          the <a class="xref" href="hwdata.html" title=
+          "hwdata-0.380">hwdata-0.380</a> package.
         </p>
-        <pre class="root"><kbd class=
-        "command">install -dm755 /usr/share/hwdata/ &amp;&amp;
-wget http://www.linux-usb.org/usb.ids -O /usr/share/hwdata/usb.ids</kbd></pre>
         <p>
           The script <span class="command"><strong>lsusb.py</strong></span>
           displays information in a more easily readable form than
@@ -157,45 +153,6 @@ wget http://www.linux-usb.org/usb.ids -O /usr/share/hwdata/usb.ids</kbd></pre>
           -h</strong></span>. One form of use recommended by the developer is
           <span class="command"><strong>lsusb.py -ciu</strong></span>.
         </p>
-      </div>
-      <div class="configuration" lang="en" xml:lang="en">
-        <h2 class="sect2">
-          Configuring USB Utils
-        </h2>
-        <p>
-          You should update the <code class=
-          "filename">/usr/share/hwdata/usb.ids</code> file periodically.
-          <span class="phrase">Execute</span> the following commands, as the
-          <code class="systemitem">root</code> user, to create a <span class=
-          "phrase">systemd timer to update it weekly on Sundays at 2:30 A.M.
-          (local time):</span>
-        </p>
-        <pre class="root"><kbd class=
-        "command">cat &gt; /usr/lib/systemd/system/update-usbids.service &lt;&lt; "EOF" &amp;&amp;
-<code class="literal">[Unit]
-Description=Update usb.ids file
-Documentation=man:lsusb(8)
-DefaultDependencies=no
-After=local-fs.target network-online.target
-Before=shutdown.target
-
-[Service]
-Type=oneshot
-RemainAfterExit=yes
-ExecStart=/usr/bin/wget http://www.linux-usb.org/usb.ids -O /usr/share/hwdata/usb.ids</code>
-EOF
-cat &gt; /usr/lib/systemd/system/update-usbids.timer &lt;&lt; "EOF" &amp;&amp;
-<code class="literal">[Unit]
-Description=Update usb.ids file weekly
-
-[Timer]
-OnCalendar=Sun 03:00:00
-Persistent=true
-
-[Install]
-WantedBy=timers.target</code>
-EOF
-systemctl enable update-usbids.timer</kbd></pre>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -317,7 +274,7 @@ systemctl enable update-usbids.timer</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-139">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-164">
           Home</a>
         </li>
       </ul>

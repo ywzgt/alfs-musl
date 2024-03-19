@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-139">
+  <body class="blfs" id="blfs-r12.1-164">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-139
+        "phrase">(systemd</span> Edition) - Version r12.1-164
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-139">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-164">
           Home</a>
         </li>
       </ul>
@@ -159,6 +159,7 @@ cd    build &amp;&amp;
 meson setup --prefix=/usr       \
             --buildtype=release \
             -Dgtk_doc=false     \
+            -Dssh_agent=false   \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -190,6 +191,14 @@ ninja</kbd></pre>
           <em class="parameter"><code>--buildtype=release</code></em>:
           Specify a buildtype suitable for stable releases of the package, as
           the default may produce unoptimized binaries.
+        </p>
+        <p>
+          <em class="parameter"><code>-Dssh_agent=false</code></em>: Prevent
+          a conflict with <a class="xref" href="gcr4.html" title=
+          "Gcr-4.2.1">Gcr-4.2.1</a>. Omit this switch if you do not plan to
+          install <a class="xref" href="gcr4.html" title=
+          "Gcr-4.2.1">Gcr-4.2.1</a> and you want to use <span class=
+          "command"><strong>gcr-ssh-agent</strong></span>.
         </p>
         <p>
           <code class="option">-Dgtk=false</code>: Use this switch if you
@@ -295,7 +304,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-139">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-164">
           Home</a>
         </li>
       </ul>

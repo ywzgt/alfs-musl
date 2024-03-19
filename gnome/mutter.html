@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-139">
+  <body class="blfs" id="blfs-r12.1-164">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-139
+        "phrase">(systemd</span> Edition) - Version r12.1-164
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-139">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-164">
           Home</a>
         </li>
       </ul>
@@ -157,7 +157,9 @@
           <a class="xref" href=
           "../general/python-modules.html#python-dbusmock" title=
           "dbusmock-0.31.1">dbusmock-0.31.1</a> (required for tests),
-          <a class="xref" href="../x/xorg-server.html" title=
+          <a class="xref" href="../general/libdisplay-info.html" title=
+          "libdisplay-info-0.1.1">libdisplay-info-0.1.1</a>, <a class="xref"
+          href="../x/xorg-server.html" title=
           "Xorg-Server-21.1.11">Xorg-Server-21.1.11</a> (for X11 sessions),
           and <a class="ulink" href=
           "https://wiki.gnome.org/Apps/Sysprof">sysprof</a>
@@ -260,6 +262,14 @@ ninja</kbd></pre>
           "application">Clutter</span> library. The <span class=
           "application">Clutter</span> tests are known to fail with
           <em class="parameter"><code>--buildtype=release</code></em>.
+        </p>
+        <p>
+          <code class="option">-Dlibdisplay_info=true</code>: Use this switch
+          for the <span class="command"><strong>meson setup</strong></span>
+          command if you've installed <a class="xref" href=
+          "../general/libdisplay-info.html" title=
+          "libdisplay-info-0.1.1">libdisplay-info-0.1.1</a> and you want to
+          use it for mutter to improve the monitor EDID parsing.
         </p>
       </div>
       <div class="starting" lang="en" xml:lang="en">
@@ -401,7 +411,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-139">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-164">
           Home</a>
         </li>
       </ul>

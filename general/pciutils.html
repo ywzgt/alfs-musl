@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-139">
+  <body class="blfs" id="blfs-r12.1-164">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-139
+        "phrase">(systemd</span> Edition) - Version r12.1-164
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-139">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-164">
           Home</a>
         </li>
       </ul>
@@ -111,18 +111,23 @@
           Recommended
         </h4>
         <p class="recommended">
-          <a class="xref" href="../basicnet/curl.html" title=
-          "cURL-8.6.0">cURL-8.6.0</a>, <a class="xref" href=
-          "../basicnet/wget.html" title="Wget-1.21.4">Wget-1.21.4</a>, or
-          <a class="xref" href="../basicnet/lynx.html" title=
-          "Lynx-2.8.9rel.1">Lynx-2.8.9rel.1</a> (for the update-pciids script
-          to function correctly).
+          <a class="xref" href="hwdata.html" title=
+          "hwdata-0.380">hwdata-0.380</a> (runtime)
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
           Installation of PCI Utils
         </h2>
+        <p>
+          Prevent the installation of the <code class=
+          "filename">pci.ids</code> file to avoid a conflict with the
+          <a class="xref" href="hwdata.html" title=
+          "hwdata-0.380">hwdata-0.380</a> package:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -r '/INSTALL.*(PCI_IDS|update-pciids)/d' \
+    -i Makefile</kbd></pre>
         <p>
           Install <span class="application">PCI Utils</span> by running the
           following commands:
@@ -144,6 +149,11 @@
      install install-lib        &amp;&amp;
 
 chmod -v 755 /usr/lib/libpci.so</kbd></pre>
+        <p>
+          Now install the <a class="xref" href="hwdata.html" title=
+          "hwdata-0.380">hwdata-0.380</a> package for the <code class=
+          "filename">pci.ids</code> file.
+        </p>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -158,60 +168,6 @@ chmod -v 755 /usr/lib/libpci.so</kbd></pre>
           compression of the <code class="filename">pci.ids</code> file.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
-        <h2 class="sect2">
-          Configuring PCI Utils
-        </h2>
-        <p>
-          The <code class="filename">pci.ids</code> data file is constantly
-          being updated. To get a current version of this file, run
-          <span class="command"><strong>update-pciids</strong></span> as the
-          <code class="systemitem">root</code> user. This program requires
-          the <a class="xref" href="which.html" title=
-          "Which-2.21 and Alternatives">Which-2.21</a> script or program to
-          find <a class="xref" href="../basicnet/curl.html" title=
-          "cURL-8.6.0">cURL-8.6.0</a>, <a class="xref" href=
-          "../basicnet/lynx.html" title=
-          "Lynx-2.8.9rel.1">Lynx-2.8.9rel.1</a>, or <a class="xref" href=
-          "../basicnet/wget.html" title="Wget-1.21.4">Wget-1.21.4</a> which
-          are used to download the most current file, and then replace the
-          existing file in <code class="filename">/usr/share/hwdata</code>.
-        </p>
-        <p>
-          You should update the <code class=
-          "filename">/usr/share/hwdata/pci.ids</code> file periodically.
-          <span class="phrase">Execute</span> the following commands, as the
-          <code class="systemitem">root</code> user, to create a <span class=
-          "phrase">systemd timer to update it weekly on Sundays at 2:30 A.M.
-          (local time):</span>
-        </p>
-        <pre class="root"><kbd class=
-        "command">cat &gt; /usr/lib/systemd/system/update-pciids.service &lt;&lt; "EOF" &amp;&amp;
-<code class="literal">[Unit]
-Description=Update pci.ids file
-Documentation=man:update-pciids(8)
-DefaultDependencies=no
-After=local-fs.target network-online.target
-Before=shutdown.target
-
-[Service]
-Type=oneshot
-RemainAfterExit=yes
-ExecStart=/usr/sbin/update-pciids</code>
-EOF
-cat &gt; /usr/lib/systemd/system/update-pciids.timer &lt;&lt; "EOF" &amp;&amp;
-<code class="literal">[Unit]
-Description=Update pci.ids file weekly
-
-[Timer]
-OnCalendar=Sun 02:30:00
-Persistent=true
-
-[Install]
-WantedBy=timers.target</code>
-EOF
-systemctl enable update-pciids.timer</kbd></pre>
-      </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
           Contents
@@ -220,7 +176,7 @@ systemctl enable update-pciids.timer</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">lspci, setpci, and update-pciids</span>
+              <span class="segbody">lspci and setpci</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Library:</strong>
@@ -275,20 +231,6 @@ systemctl enable update-pciids.timer</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="update-pciids" name=
-                    "update-pciids"></a><span class="term"><span class=
-                    "command"><strong>update-pciids</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    fetches the current version of the PCI ID list.
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
                     <a id="libpci" name="libpci"></a><span class=
                     "term"><code class="filename">libpci.so</code></span>
                   </p>
@@ -326,7 +268,7 @@ systemctl enable update-pciids.timer</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-139">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-164">
           Home</a>
         </li>
       </ul>
