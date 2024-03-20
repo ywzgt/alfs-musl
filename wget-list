@@ -15,8 +15,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3
 https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2
 https://kerberos.org/dist/krb5/1.21/krb5-1.21.2.tar.gz
 https://ftp.gnu.org/gnu/nettle/nettle-3.9.1.tar.gz
-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_98_RTM/src/nss-3.98.tar.gz
-https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.98-standalone-1.patch
+https://archive.mozilla.org/pub/security/nss/releases/NSS_3_99_RTM/src/nss-3.99.tar.gz
+https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.99-standalone-1.patch
 https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.7p1.tar.gz
 https://github.com/p11-glue/p11-kit/releases/download/0.25.3/p11-kit-0.25.3.tar.xz
 https://gitlab.freedesktop.org/polkit/polkit/-/archive/124/polkit-124.tar.gz
@@ -54,7 +54,7 @@ https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.2.tar.bz2
 https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
 https://github.com/vim/vim/archive/v9.1.0041/vim-9.1.0041.tar.gz
 http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
-https://astron.com/pub/tcsh/tcsh-6.24.10.tar.gz
+https://astron.com/pub/tcsh/tcsh-6.24.11.tar.gz
 https://www.zsh.org/pub/zsh-5.9.tar.xz
 https://download.qemu.org/qemu-8.2.2.tar.xz
 https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.2.tar.xz
@@ -114,11 +114,11 @@ https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.6.tar.bz2
 https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
 https://www.freedesktop.org/software/libmbim/libmbim-1.26.4.tar.xz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.8/libnvme-1.8.tar.gz
-https://github.com/rrthomas/libpaper/releases/download/v2.1.3/libpaper-2.1.3.tar.gz
+https://github.com/rrthomas/libpaper/releases/download/v2.2.3/libpaper-2.2.3.tar.gz
 https://github.com/flatpak/libportal/releases/download/0.7.1/libportal-0.7.1.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/libportal-0.7.1-testsuite_fix-1.patch
 http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
-https://github.com/Qalculate/libqalculate/releases/download/v4.9.0/libqalculate-4.9.0.tar.gz
+https://github.com/Qalculate/libqalculate/releases/download/v5.0.0/libqalculate-5.0.0.tar.gz
 https://www.freedesktop.org/software/libqmi/libqmi-1.30.8.tar.xz
 https://github.com/seccomp/libseccomp/releases/download/v2.5.5/libseccomp-2.5.5.tar.gz
 https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.1.tar.xz
@@ -175,7 +175,7 @@ https://github.com/Dav1dde/glad/archive/refs/tags/v2.0.5/glad-2.0.5.tar.gz
 https://github.com/g-truc/glm/archive/1.0.1/glm-1.0.1.tar.gz
 https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
 https://github.com/harfbuzz/harfbuzz/releases/download/8.3.0/harfbuzz-8.3.0.tar.xz
-https://github.com/jasper-software/jasper/archive/version-4.2.1/jasper-4.2.1.tar.gz
+https://github.com/jasper-software/jasper/archive/version-4.2.2/jasper-4.2.2.tar.gz
 https://github.com/mm2/Little-CMS/releases/download/lcms2.14/lcms2-2.14.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/v1.0.4/libavif-1.0.4.tar.gz
 https://github.com/libexif/libexif/releases/download/v0.6.24/libexif-0.6.24.tar.bz2
@@ -476,7 +476,7 @@ https://github.com/pygobject/pycairo/releases/download/v1.18.2/pycairo-1.18.2.ta
 https://github.com/pygobject/pycairo/releases/download/v1.26.0/pycairo-1.26.0.tar.gz
 https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.17.2.tar.gz
 https://download.gnome.org/sources/pygobject/2.28/pygobject-2.28.7.tar.xz
-https://download.gnome.org/sources/pygobject/3.46/pygobject-3.48.1.tar.xz
+https://download.gnome.org/sources/pygobject/3.48/pygobject-3.48.1.tar.xz
 https://download.gnome.org/sources/pygtk/2.24/pygtk-2.24.0.tar.bz2
 https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.1.2.tar.gz
 https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
@@ -526,13 +526,13 @@ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.0.2.tar.gz
 https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.0.tar.xz
 https://static.rust-lang.org/dist/rustc-1.76.0-src.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/rustc-1.76.0-testsuite_fix-1.patch
-https://downloads.sourceforge.net/scons/SCons-4.6.0.tar.gz
+https://downloads.sourceforge.net/scons/SCons-4.7.0.tar.gz
 https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.3.tar.bz2
 https://downloads.sourceforge.net/swig/swig-4.2.1.tar.gz
-https://downloads.sourceforge.net/tcl/tk8.6.13-src.tar.gz
+https://downloads.sourceforge.net/tcl/tk8.6.14-src.tar.gz
 https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
-https://download.gnome.org/sources/vala/0.56/vala-0.56.15.tar.xz
+https://download.gnome.org/sources/vala/0.56/vala-0.56.16.tar.xz
 https://sourceware.org/pub/valgrind/valgrind-3.22.0.tar.bz2
 https://www.linuxfromscratch.org/patches/blfs/svn/valgrind-3.22.0-upstream_fixes-1.patch
 https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
@@ -571,7 +571,7 @@ https://www.wireshark.org/download/src/all-versions/wireshark-4.2.3.tar.xz
 https://c-ares.haxx.se/download/c-ares-1.27.0.tar.gz
 https://curl.se/download/curl-8.6.0.tar.xz
 https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.1/geoclue-2.7.1.tar.bz2
-https://download.gnome.org/sources/glib-networking/2.78/glib-networking-2.78.1.tar.xz
+https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.0.tar.xz
 https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.2.0/kdsoap-2.2.0.tar.gz
 https://www.nlnetlabs.nl/downloads/ldns/ldns-1.8.3.tar.gz
 https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
@@ -876,6 +876,7 @@ https://download.documentfoundation.org/libreoffice/src/24.2.1/libreoffice-help-
 https://download.documentfoundation.org/libreoffice/src/24.2.1/libreoffice-translations-24.2.1.2.tar.xz
 https://download.gnome.org/sources/epiphany/45/epiphany-45.3.tar.xz
 https://download.kde.org/stable/release-service/24.02.0/src/falkon-24.02.0.tar.xz
+https://archive.mozilla.org/pub/firefox/releases/115.9.0esr/source/firefox-115.9.0esr.source.tar.xz
 https://archive.seamonkey-project.org/releases/2.53.18.1/source/seamonkey-2.53.18.1.source.tar.xz
 https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.4-upstream_fixes-2.patch
@@ -922,7 +923,7 @@ https://github.com/intel/media-driver/archive/refs/tags/intel-media-23.4.3.tar.g
 https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
 https://distfiles.adelielinux.org/source/a52dec/a52dec-0.8.0.tar.gz
 https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
-https://storage.googleapis.com/aom-releases/libaom-3.8.1.tar.gz
+https://storage.googleapis.com/aom-releases/libaom-3.8.2.tar.gz
 https://github.com/libass/libass/releases/download/0.17.1/libass-0.17.1.tar.xz
 https://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/libcanberra-0.30-wayland-1.patch
