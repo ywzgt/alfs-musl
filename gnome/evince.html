@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-178">
+  <body class="blfs" id="blfs-r12.1-208">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-178
+        "phrase">(systemd</span> Edition) - Version r12.1-208
       </h4>
       <h3>
         Chapter&nbsp;34.&nbsp;<span class="phrase">GNOME Applications</span>
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-178">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-208">
           Home</a>
         </li>
       </ul>
@@ -160,7 +160,7 @@
           <a class="xref" href="../general/libtiff.html" title=
           "libtiff-4.6.0">libtiff-4.6.0</a>, <a class="xref" href=
           "../pst/texlive.html" title=
-          "texlive-20230313-source">texlive-20230313</a> (or <a class="xref"
+          "texlive-20240312-source">texlive-20240312</a> (or <a class="xref"
           href="../pst/tl-installer.html" title=
           "install-tl-unx">install-tl-unx</a>), <a class="ulink" href=
           "https://djvu.sourceforge.net/">DjVuLibre</a>, <a class="ulink"
@@ -181,7 +181,7 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-CPPFLAGS+=" -I/opt/texlive/2023/include" \
+CPPFLAGS+=" -I/opt/texlive/2024/include" \
 meson setup --prefix=/usr          \
             --buildtype=release    \
             -Dgtk_doc=false        \
@@ -234,7 +234,7 @@ ninja</kbd></pre>
         </p>
         <p>
           <em class="parameter"><code>CPPFLAGS+="
-          -I/opt/texlive/2023/include"</code></em>: Make sure that meson can
+          -I/opt/texlive/2024/include"</code></em>: Make sure that meson can
           find libkpathsea headers from TeXLive if it is installed. This has
           no effect on systems without TeXLive installed.
         </p>
@@ -388,7 +388,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-178">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-208">
           Home</a>
         </li>
       </ul>

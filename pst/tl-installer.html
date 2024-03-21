@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-178">
+  <body class="blfs" id="blfs-r12.1-208">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-178
+        "phrase">(systemd</span> Edition) - Version r12.1-208
       </h4>
       <h3>
         Chapter&nbsp;51.&nbsp;Typesetting
@@ -31,9 +31,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="texlive.html" title=
-          "texlive-20230313-source">Next</a>
+          "texlive-20240312-source">Next</a>
           <p>
-            texlive-20230313-source
+            texlive-20240312-source
           </p>
         </li>
         <li class="up">
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-178">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-208">
           Home</a>
         </li>
       </ul>
@@ -58,7 +58,7 @@
         <p>
           The <span class="application">TeX Live</span> package is a
           comprehensive TeX document production system. It includes TeX,
-          LaTeX2e, ConTeXt, Metafont, MetaPost, BibTeX and many other
+          LaTeX2e, LuaLaTeX, Metafont, MetaPost, BibTeX and many other
           programs; an extensive collection of macros, fonts and
           documentation; and support for typesetting in many different
           scripts from around the world.
@@ -69,19 +69,35 @@
           and documentation. The installer is updated frequently, so any
           published md5sum will soon be out of date. Newer versions of the
           installer are expected to work with these instructions, for so long
-          as they install to a <code class="filename">2023/</code> directory.
+          as they install to a <code class="filename">2024/</code> directory.
         </p>
         <p>
           There are two reasons why you may wish to install the binaries in
           BLFS: either you need a smaller install (e.g. at a minimum plain
-          TeX without LaTeX2e, ConTeXt, etc), or you wish to use <span class=
+          TeX without LaTeX, ConTeXt, etc), or you wish to use <span class=
           "command"><strong>tlmgr</strong></span> to get updates whilst this
-          version is supported (typically, until April of the year after it
+          version is supported (typically, until March of the year after it
           was released). For the latter, you might prefer to install in your
           <code class="filename">/home</code> directory as an unprivileged
           user, and to then make corresponding changes to the PATH in your
           <code class="filename">~/.bashrc</code> or equivalent.
         </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            If you wish to use ConTeXt with <span class=
+            "command"><strong>luametatex</strong></span> (most of the old
+            MKII and MKIV code was removed from TeX Live 2023 by the ConTeXt
+            developer), using the binary is probably the easiest option. The
+            source no-longer ships with TeX Live and is poorly adapted to
+            building with systems except those running Mac and Windows. See
+            comments 1 to 5 of <a class="ulink" href=
+            "https://wiki.linuxfromscratch.org/blfs/ticket/17823">#17823</a>.
+          </p>
+        </div>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -117,8 +133,9 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 310 MB for basic TeX and
-                latex, 7.9GB if everything is included
+                Estimated disk space required: 85 MB MB for plain TeX,
+                typically 2 to 4 MB for latex and later engines, 8.6 GB if
+                everything is included
               </p>
             </li>
             <li class="listitem">
@@ -244,6 +261,22 @@
           directory structure. BLFS recommends <code class=
           "filename">/opt/texlive</code>.
         </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            If you have chosen to install the binary as a normal user, the
+            directory for the prefix needs to be writable by that user. The
+            <code class="systemitem">root</code> user can chown <code class=
+            "filename">/opt/texlive/2024</code> to that user before the user
+            starts the install. If any later change in that directory is made
+            by the <code class="systemitem">root</code> user <span class=
+            "emphasis"><em>that will change the ownership</em></span> which
+            breaks usage by normal users.
+          </p>
+        </div>
         <p>
           As with any other package, unpack the installer and change into its
           directory, <code class=
@@ -251,20 +284,6 @@
           changes when the installer is updated, so replace &lt;CCYYMMDD&gt;
           by the correct directory name.
         </p>
-        <div class="admon warning">
-          <img alt="[Warning]" src="../images/warning.png" />
-          <h3>
-            Warning
-          </h3>
-          <p>
-            If you have installed any of the luatex programs (luatex,
-            luahbtex, luajitex, luajithbtex) or ConTeXt with the luametatex
-            backend there was a security issue fixed by the introduction of
-            luatex v1.17.0. You should check the version with 'luatex
-            --version' and if it is less than 1.17.0 you can use tlmgr to
-            update.
-          </p>
-        </div>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -313,7 +332,7 @@
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">for F in /opt/texlive/2023/texmf-dist/scripts/latex-make/*.py ; do
+        "command">for F in /opt/texlive/2024/texmf-dist/scripts/latex-make/*.py ; do
   test -f $F &amp;&amp; sed -i 's%/usr/bin/env python%/usr/bin/python3%' $F || true
 done
 </kbd></pre>
@@ -386,7 +405,7 @@ done
                     list. Please refer to the individual program HTML and PDF
                     pages in the various html, man, or pdf files within the
                     subdirectories of <code class=
-                    "filename">2023/texmf-dist/</code>. Using <span class=
+                    "filename">2024/texmf-dist/</code>. Using <span class=
                     "command"><strong>texdoc pdflatex</strong></span> (
                     replace <span class="emphasis"><em>pdflatex</em></span>
                     with the command name ) may also be useful
@@ -409,9 +428,9 @@ done
         </li>
         <li class="next">
           <a accesskey="n" href="texlive.html" title=
-          "texlive-20230313-source">Next</a>
+          "texlive-20240312-source">Next</a>
           <p>
-            texlive-20230313-source
+            texlive-20240312-source
           </p>
         </li>
         <li class="up">
@@ -420,7 +439,7 @@ done
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-178">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-208">
           Home</a>
         </li>
       </ul>

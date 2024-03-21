@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-178">
+  <body class="blfs" id="blfs-r12.1-208">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-178
+        "phrase">(systemd</span> Edition) - Version r12.1-208
       </h4>
       <h3>
         Chapter&nbsp;51.&nbsp;Typesetting
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-178">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-208">
           Home</a>
         </li>
       </ul>
@@ -51,6 +51,14 @@
       <a id="tex-path" name="tex-path"></a>Setting the PATH for TeX Live
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
+      <p>
+        Upstream prefers to install in <code class=
+        "filename">/usr/local</code> but the BLFS editors regard that as
+        inconvenient, and think using <code class=
+        "filename">/opt/texlive</code> is more appropriate. Originally BLFS
+        used a full binary install to bootstrap the source install, so the
+        same prefix is used for both.
+      </p>
       <p>
         Before starting to build TeX Live, set up your PATH so that the
         system can properly find the files. If you set up your login scripts
@@ -84,7 +92,7 @@
 
 cat &gt; /etc/profile.d/texlive.sh &lt;&lt; EOF
 <code class="literal"># Begin texlive setup
-TEXLIVE_PREFIX=/opt/texlive/2023
+TEXLIVE_PREFIX=/opt/texlive/2024
 export TEXLIVE_PREFIX
 
 pathappend \$TEXLIVE_PREFIX/texmf-dist/doc/man  MANPATH
@@ -130,7 +138,7 @@ unset TEXARCH</kbd></pre>
         You should now proceed either to <a class="xref" href=
         "tl-installer.html" title="install-tl-unx">install-tl-unx</a> for a
         binary installation of texlive, or to <a class="xref" href=
-        "texlive.html" title="texlive-20230313-source">texlive-20230313</a>
+        "texlive.html" title="texlive-20240312-source">texlive-20240312</a>
         to begin installing from source.
       </p>
     </div>
@@ -156,7 +164,7 @@ unset TEXARCH</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-178">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-208">
           Home</a>
         </li>
       </ul>

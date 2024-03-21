@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-178">
+  <body class="blfs" id="blfs-r12.1-208">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-178
+        "phrase">(systemd</span> Edition) - Version r12.1-208
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-178">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-208">
           Home</a>
         </li>
       </ul>
@@ -118,8 +118,7 @@
         </h4>
         <p class="optional">
           <a class="xref" href="../general/doxygen.html" title=
-          "Doxygen-1.10.0">Doxygen-1.10.0</a>, <a class="ulink" href=
-          "https://lz4.github.io/lz4/">lz4</a>, and <a class="ulink" href=
+          "Doxygen-1.10.0">Doxygen-1.10.0</a> and <a class="ulink" href=
           "https://cyan4973.github.io/xxHash/">xxhash</a>
         </p>
       </div>
@@ -146,7 +145,6 @@ useradd -c "rsyncd Daemon" -m -d /home/rsync -g rsyncd \
         </p>
         <pre class="userinput"><kbd class=
         "command">./configure --prefix=/usr    \
-            --disable-lz4    \
             --disable-xxhash \
             --without-included-zlib &amp;&amp;
 make</kbd></pre>
@@ -176,12 +174,6 @@ install -v -m644 dox/html/*  /usr/share/doc/rsync-3.2.7/api</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
-        <p>
-          <em class="parameter"><code>--disable-lz4</code></em>: This switch
-          disables LZ4 compression support. Note that it uses the superior
-          'zstd' algorithm when this switch is in use, and zstd is provided
-          in LFS.
-        </p>
         <p>
           <em class="parameter"><code>--disable-xxhash</code></em>: This
           switch disables advanced xxhash checksum support. Remove this
@@ -393,7 +385,7 @@ systemctl start rsyncd.socket</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-178">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-208">
           Home</a>
         </li>
       </ul>
