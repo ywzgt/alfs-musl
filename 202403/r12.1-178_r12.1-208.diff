@@ -1,0 +1,86 @@
+diff --git a/wget-list b/wget-list
+index 297bea8a1..051647c07 100644
+--- a/wget-list
++++ b/wget-list
+@@ -44,7 +44,7 @@ https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
+ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
+ https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz
+ https://unifoundry.com/pub/unifont/unifont-15.1.04/font-builds/unifont-15.1.04.pcf.gz
+-https://www.bennewitz.com/bluefish/stable/source/bluefish-2.2.14.tar.bz2
++https://www.bennewitz.com/bluefish/stable/source/bluefish-2.2.15.tar.bz2
+ https://ftp.gnu.org/gnu/ed/ed-1.20.1.tar.lz
+ https://ftp.gnu.org/gnu/emacs/emacs-29.2.tar.xz
+ https://download.gnome.org/sources/gedit/46/gedit-46.2.tar.xz
+@@ -114,7 +114,7 @@ https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.6.tar.bz2
+ https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
+ https://www.freedesktop.org/software/libmbim/libmbim-1.26.4.tar.xz
+ https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.8/libnvme-1.8.tar.gz
+-https://github.com/rrthomas/libpaper/releases/download/v2.2.3/libpaper-2.2.3.tar.gz
++https://github.com/rrthomas/libpaper/releases/download/v2.2.5/libpaper-2.2.5.tar.gz
+ https://github.com/flatpak/libportal/releases/download/0.7.1/libportal-0.7.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libportal-0.7.1-testsuite_fix-1.patch
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+@@ -174,7 +174,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-upstream_fixes-1.
+ https://github.com/Dav1dde/glad/archive/refs/tags/v2.0.5/glad-2.0.5.tar.gz
+ https://github.com/g-truc/glm/archive/1.0.1/glm-1.0.1.tar.gz
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+-https://github.com/harfbuzz/harfbuzz/releases/download/8.3.0/harfbuzz-8.3.0.tar.xz
++https://github.com/harfbuzz/harfbuzz/releases/download/8.3.1/harfbuzz-8.3.1.tar.xz
+ https://github.com/jasper-software/jasper/archive/version-4.2.2/jasper-4.2.2.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.14/lcms2-2.14.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.0.4/libavif-1.0.4.tar.gz
+@@ -298,7 +298,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.6-shared_library-1.pat
+ https://www.lua.org/tests/lua-5.4.6-tests.tar.gz
+ https://www.lua.org/ftp/lua-5.2.4.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.2.4-shared_library-1.patch
+-https://www.mercurial-scm.org/release/mercurial-6.6.3.tar.gz
++https://www.mercurial-scm.org/release/mercurial-6.7.tar.gz
+ https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.xz
+ https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01-xdoc.tar.xz
+ https://github.com/NixOS/patchelf/releases/download/0.18.0/patchelf-0.18.0.tar.gz
+@@ -740,7 +740,7 @@ https://download.gnome.org/sources/gsettings-desktop-schemas/45/gsettings-deskto
+ https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.4.tar.xz
+ https://download.gnome.org/sources/rest/0.9/rest-0.9.1.tar.xz
+ https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.6.tar.xz
+-https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.2/vte-0.74.2.tar.gz
++https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.0/vte-0.76.0.tar.gz
+ https://download.gnome.org/sources/yelp-xsl/42/yelp-xsl-42.1.tar.xz
+ https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+ https://download.gnome.org/sources/gjs/1.78/gjs-1.78.4.tar.xz
+@@ -890,7 +890,7 @@ https://inkscape.org/gallery/item/44615/inkscape-1.3.2.tar.xz
+ https://downloads.sourceforge.net/pidgin/pidgin-2.14.13.tar.bz2
+ https://downloads.sourceforge.net/rox/rox-filer-2.11.tar.bz2
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/115.8.1/source/thunderbird-115.8.1.source.tar.xz
++https://archive.mozilla.org/pub/thunderbird/releases/115.9.0/source/thunderbird-115.9.0.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.13.1/tigervnc-1.13.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.13.1-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.0.5/transmission-4.0.5.tar.xz
+@@ -964,7 +964,7 @@ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://taglib.org/releases/taglib-2.0.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.26.1.tar.xz
+-https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.4.17/wireplumber-0.4.17.tar.bz2
++https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.0/wireplumber-0.5.0.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20240216.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/x265/x265-20240216.tar.xz
+ https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
+@@ -1034,14 +1034,14 @@ https://archive.apache.org/dist/xmlgraphics/fop/source/fop-2.9-src.tar.gz
+ https://www.mupdf.com/downloads/archive/mupdf-1.23.11-source.tar.gz
+ https://github.com/dov/paps/releases/download/v0.8.0/paps-0.8.0.tar.gz
+ https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+-https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/texlive-20230313-source.tar.xz
+-https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/texlive-20230313-texmf.tar.xz
+-https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2023/texlive-20230311-tlpdb-full.tar.gz
++https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312-source.tar.xz
++https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312-texmf.tar.xz
++https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2024/texlive-20240312-extra.tar.xz
+ https://downloads.sourceforge.net/asymptote/asymptote-2.88.src.tgz
+ https://github.com/plk/biber/archive/v2.19/biber-2.19.tar.gz
+ https://github.com/mgieseki/dvisvgm/releases/download/3.2.2/dvisvgm-3.2.2.tar.gz
+ https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
+ https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20240209.tar.xz
+-https://github.com/elogind/elogind/archive/v252.9/elogind-252.9.tar.gz
++https://github.com/elogind/elogind/archive/v252.23/elogind-252.23.tar.gz
+ https://github.com/lfs-book/blocaled/releases/download/v0.5/blocaled-0.5.tar.xz
