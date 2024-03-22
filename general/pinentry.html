@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      pinentry-1.2.1
+      pinentry-1.3.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-208">
+  <body class="blfs" id="blfs-r12.1-217">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-208
+        "phrase">(systemd</span> Edition) - Version r12.1-217
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-208">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-217">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="pinentry" name="pinentry"></a>pinentry-1.2.1
+      <a id="pinentry" name="pinentry"></a>pinentry-1.3.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -85,28 +85,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.2.1.tar.bz2">
-                https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.2.1.tar.bz2</a>
+                "https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.3.0.tar.bz2">
+                https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.3.0.tar.bz2</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: be9b0d4bb493a139d2ec20e9b6872d37
+                Download MD5 sum: ccae9619032fda53b234849c7c2253ac
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 536 KB
+                Download size: 600 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 5.6 MB
+                Estimated disk space required: 17 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: less than 0.1 SBU
+                Estimated build time: 0.2 SBU
               </p>
             </li>
           </ul>
@@ -129,8 +129,8 @@
           <a class="xref" href="../postlfs/emacs.html" title=
           "Emacs-29.2">Emacs-29.2</a>, <a class="xref" href="../x/fltk.html"
           title="FLTK-1.3.9">FLTK-1.3.9</a>, <a class="xref" href=
-          "../gnome/gcr.html" title="Gcr-3.41.2">Gcr-3.41.2</a>, <a class=
-          "xref" href="../x/gtk2.html" title="GTK+-2.24.33">GTK+-2.24.33</a>,
+          "../gnome/gcr4.html" title="Gcr-4.2.1">Gcr-4.2.1</a> (or <a class=
+          "xref" href="../gnome/gcr.html" title="Gcr-3.41.2">Gcr-3.41.2</a>),
           <a class="xref" href="../kde/frameworks6.html" title=
           "Building KDE Frameworks 6 (KF6)">KDE Frameworks-6.0.0</a> (or
           <a class="xref" href="../lxqt/lxqt-kwayland.html" title=
@@ -152,7 +152,10 @@
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr --enable-pinentry-tty &amp;&amp;
+        "command">./configure --prefix=/usr          \
+            --enable-pinentry-tty  \
+            --disable-pinentry-qt5 \
+            &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -166,6 +169,10 @@ make</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <code class="option">--disable-pinentry-qt5</code>: Don't use qt5
+          even if it is available. Qt5 is deprecated.
+        </p>
         <p>
           <code class="option">--enable-inside-emacs=yes/no</code>: Default
           is no.
@@ -184,8 +191,10 @@ make</kbd></pre>
         </p>
         <p>
           <code class="option">--enable-pinentry-gnome3=yes/no</code>:
-          Default is yes. Actually, it uses <span class=
-          "application">Gcr</span> for the pinentry dialog.
+          Default is yes. Actually, it uses <a class="xref" href=
+          "../gnome/gcr4.html" title="Gcr-4.2.1">Gcr-4.2.1</a> (or <a class=
+          "xref" href="../gnome/gcr.html" title="Gcr-3.41.2">Gcr-3.41.2</a>
+          if the former is not installed) for the pinentry dialog.
         </p>
         <p>
           <em class="parameter"><code>--enable-pinentry-tty</code></em>:
@@ -370,7 +379,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-208">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-217">
           Home</a>
         </li>
       </ul>
