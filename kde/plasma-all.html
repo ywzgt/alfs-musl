@@ -12,20 +12,20 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-230">
+  <body class="blfs" id="blfs-r12.1-247">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-230
+        "phrase">(systemd</span> Edition) - Version r12.1-247
       </h4>
       <h3>
-        Chapter&nbsp;32.&nbsp;KDE Plasma 5
+        Chapter&nbsp;32.&nbsp;KDE Plasma
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="plasma5.html" title="KDE Plasma 5">Prev</a>
+          <a accesskey="p" href="plasma.html" title="KDE Plasma">Prev</a>
           <p>
-            KDE Plasma 5
+            KDE Plasma
           </p>
         </li>
         <li class="next">
@@ -35,12 +35,12 @@
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="plasma5.html" title=
-          "Chapter&nbsp;32.&nbsp;KDE Plasma 5">Up</a>
+          <a accesskey="u" href="plasma.html" title=
+          "Chapter&nbsp;32.&nbsp;KDE Plasma">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-230">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-247">
           Home</a>
         </li>
       </ul>
@@ -123,13 +123,11 @@
         "libqalculate-5.0.0">libqalculate-5.0.0</a>, <a class="xref" href=
         "../x/libxcvt.html" title="libxcvt-0.1.2">libxcvt-0.1.2</a>,
         <a class="xref" href="../general/libxkbcommon.html" title=
-        "libxkbcommon-1.6.0">libxkbcommon-1.6.0</a>, <a class="xref" href=
+        "libxkbcommon-1.7.0">libxkbcommon-1.7.0</a>, <a class="xref" href=
         "../x/mesa.html" title="Mesa-24.0.3">Mesa-24.0.3</a> built with
         <a class="xref" href="../general/wayland.html" title=
         "Wayland-1.22.0">Wayland-1.22.0</a>, <a class="xref" href=
-        "../basicnet/networkmanager.html" title=
-        "NetworkManager-1.46.0">NetworkManager-1.46.0</a>, <a class="xref"
-        href="../multimedia/pipewire.html" title=
+        "../multimedia/pipewire.html" title=
         "Pipewire-1.0.4">pipewire-1.0.4</a>, <a class="xref" href=
         "../multimedia/pulseaudio.html" title=
         "PulseAudio-17.0">PulseAudio-17.0</a>, <a class="xref" href=
@@ -138,9 +136,11 @@
         "qcoro-0.10.0">qcoro-0.10.0</a>, <a class="xref" href=
         "../general/sassc.html" title="sassc-3.6.2">sassc-3.6.2</a>,
         <a class="xref" href="../multimedia/taglib.html" title=
-        "Taglib-2.0">taglib-2.0</a>, and <a class="xref" href=
+        "Taglib-2.0">taglib-2.0</a>, <a class="xref" href=
         "../general/xdotool.html" title=
-        "xdotool-3.20211022.1">xdotool-3.20211022.1</a>
+        "xdotool-3.20211022.1">xdotool-3.20211022.1</a>, and <a class="xref"
+        href="../x/x7driver.html#xorg-evdev-driver" title=
+        "Xorg Evdev Driver-2.10.6">Xorg Evdev Driver-2.10.6</a>
       </p>
       <h4>
         Recommended
@@ -171,7 +171,9 @@
       <p class="recommended">
         <a class="xref" href="../general/accountsservice.html" title=
         "AccountsService-23.13.9">AccountsService-23.13.9</a>, <a class=
-        "xref" href="../postlfs/smartmontools.html" title=
+        "xref" href="../x/breeze-icons.html" title=
+        "breeze-icons-6.0.0">breeze-icons-6.0.0</a>, <a class="xref" href=
+        "../postlfs/smartmontools.html" title=
         "smartmontools-7.4">smartmontools-7.4</a>, <a class="xref" href=
         "../x/xdg-desktop-portal.html" title=
         "xdg-desktop-portal-1.18.2">xdg-desktop-portal-1.18.2</a>, and
@@ -292,7 +294,7 @@ f250350b7fa2ff6f28f88233955c5638  qqc2-breeze-style-6.0.0.tar.xz
 8aad48fd0f58f08ea197aa6d8e4dfab3  oxygen-sounds-6.0.0.tar.xz
 4d7c36f9ada95960ec0619547c716f81  kdeplasma-addons-6.0.0.tar.xz
 #df582e99c5288d1c0b8dcd1b34a31d08  flatpak-kcm-6.0.0.tar.xz
-#eebf65971b0066c707eef50742a9c49e  plasma-welcome-6.0.0.tar.xz
+eebf65971b0066c707eef50742a9c49e  plasma-welcome-6.0.0.tar.xz
 8f0c51c160819c170dcc77722b6153e3  ocean-sound-theme-6.0.0.tar.xz
 b8963fb1790449d4a905cf85f017d1e9  print-manager-6.0.0.tar.xz
 #a05c7d650e44cd046fbc090fcbb69ae4  wacomtablet-6.0.0.tar.xz</code>
@@ -315,13 +317,10 @@ EOF</kbd></pre>
             The discover package requires <a class="xref" href=
             "../general/appstream.html" title=
             "AppStream-1.0.2">AppStream-1.0.2</a> to be built with the
-            -Dqt=true switch. The plasma-welcome package requires the
-            external package <a class="ulink" href=
-            "https://download.kde.org/stable/release-service/24.02.0/src/">kaccounts-integration</a>.
-            The flatpack-kcm package is for managing support of flatpack
-            applications. The plasma-browser-integration package is only used
-            by plasma-meta which is not installed by BLFS. The wacomtablet
-            application requires plasma5 support.
+            -Dqt=true switch. The flatpack-kcm package is for managing
+            support of flatpack applications. The plasma-browser-integration
+            package is only used by plasma-meta which is not installed by
+            BLFS. The wacomtablet application requires plasma5 support.
           </p>
         </div>
       </div>
@@ -402,8 +401,9 @@ export -f as_root</kbd></pre>
        cd    build
 
        cmake -D CMAKE_INSTALL_PREFIX=$KF6_PREFIX \
-             -d CMAKE_INSTALL_LIBEXECDIR=libexec \
+             -D CMAKE_INSTALL_LIBEXECDIR=libexec \
              -D CMAKE_BUILD_TYPE=Release         \
+             -D BUILD_QT5=OFF                    \
              -D BUILD_TESTING=OFF                \
              -W no-dev ..  &amp;&amp;
 
@@ -584,9 +584,9 @@ startx</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="plasma5.html" title="KDE Plasma 5">Prev</a>
+          <a accesskey="p" href="plasma.html" title="KDE Plasma">Prev</a>
           <p>
-            KDE Plasma 5
+            KDE Plasma
           </p>
         </li>
         <li class="next">
@@ -596,12 +596,12 @@ startx</kbd></pre>
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="plasma5.html" title=
-          "Chapter&nbsp;32.&nbsp;KDE Plasma 5">Up</a>
+          <a accesskey="u" href="plasma.html" title=
+          "Chapter&nbsp;32.&nbsp;KDE Plasma">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-230">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-247">
           Home</a>
         </li>
       </ul>
