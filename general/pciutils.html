@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-247">
+  <body class="blfs" id="blfs-r12.1-254">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-247
+        "phrase">(systemd</span> Edition) - Version r12.1-254
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-247">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-254">
           Home</a>
         </li>
       </ul>
@@ -150,7 +150,7 @@
 
 chmod -v 755 /usr/lib/libpci.so</kbd></pre>
         <p>
-          Now install the <a class="xref" href="hwdata.html" title=
+          Next, install the <a class="xref" href="hwdata.html" title=
           "hwdata-0.380">hwdata-0.380</a> package for the <code class=
           "filename">pci.ids</code> file.
         </p>
@@ -163,10 +163,6 @@ chmod -v 755 /usr/lib/libpci.so</kbd></pre>
           <em class="parameter"><code>SHARED=yes</code></em>: This parameter
           enables building of the shared library instead of the static one.
         </p>
-        <p>
-          <code class="option">ZLIB=no</code>: This option prevents
-          compression of the <code class="filename">pci.ids</code> file.
-        </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -176,7 +172,7 @@ chmod -v 755 /usr/lib/libpci.so</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">lspci and setpci</span>
+              <span class="segbody">lspci, pcilmr, and setpci</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Library:</strong>
@@ -184,8 +180,7 @@ chmod -v 755 /usr/lib/libpci.so</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directory:</strong>
-              <span class="segbody">/usr/include/pci and
-              /usr/share/hwdata</span>
+              <span class="segbody">/usr/include/pci</span>
             </div>
           </div>
         </div>
@@ -211,6 +206,20 @@ chmod -v 755 /usr/lib/libpci.so</kbd></pre>
                   <p>
                     is a utility for displaying information about all PCI
                     buses in the system and all devices connected to them
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="pcilmr" name="pcilmr"></a><span class=
+                    "term"><span class=
+                    "command"><strong>pcilmr</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    is a utility for margining PCIe links
                   </p>
                 </td>
               </tr>
@@ -268,7 +277,7 @@ chmod -v 755 /usr/lib/libpci.so</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-247">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-254">
           Home</a>
         </li>
       </ul>
