@@ -1,0 +1,51 @@
+diff --git a/wget-list b/wget-list
+index 38d9c121d..892837224 100644
+--- a/wget-list
++++ b/wget-list
+@@ -1,7 +1,7 @@
+ https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20240205.tar.xz
+ https://github.com/lfs-book/make-ca/releases/download/v1.13/make-ca-1.13.tar.xz
+ https://github.com/cracklib/cracklib/releases/download/v2.9.11/cracklib-2.9.11.tar.xz
+-https://www.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.0.tar.xz
++https://www.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.1.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.5.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.4.tar.xz
+@@ -46,7 +46,7 @@ https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz
+ https://unifoundry.com/pub/unifont/unifont-15.1.04/font-builds/unifont-15.1.04.pcf.gz
+ https://www.bennewitz.com/bluefish/stable/source/bluefish-2.2.15.tar.bz2
+ https://ftp.gnu.org/gnu/ed/ed-1.20.1.tar.lz
+-https://ftp.gnu.org/gnu/emacs/emacs-29.2.tar.xz
++https://ftp.gnu.org/gnu/emacs/emacs-29.3.tar.xz
+ https://download.gnome.org/sources/gedit/46/gedit-46.2.tar.xz
+ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/24.02.0/src/kate-24.02.0.tar.xz
+@@ -155,7 +155,7 @@ https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.3.280
+ https://www.samba.org/ftp/talloc/talloc-2.4.2.tar.gz
+ https://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.24.2.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+-https://github.com/martinpitt/umockdev/releases/download/0.18.0/umockdev-0.18.0.tar.xz
++https://github.com/martinpitt/umockdev/releases/download/0.18.1/umockdev-0.18.1.tar.xz
+ https://github.com/nemtrif/utfcpp/archive/v4.0.5/utfcpp-4.0.5.tar.gz
+ https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.22.0/downloads/wayland-1.22.0.tar.xz
+ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.34/downloads/wayland-protocols-1.34.tar.xz
+@@ -702,8 +702,8 @@ https://download.qt.io/archive/qt/6.6/6.6.2/single/qt-everywhere-src-6.6.2.tar.x
+ https://download.qt.io/official_releases/qt/6.6/6.6.2/submodules/qtwebengine-everywhere-src-6.6.2.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ https://download.gnome.org/sources/tepl/6.8/tepl-6.8.0.tar.xz
+-https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.3.279/Vulkan-Headers-1.3.279.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/v1.3.279/Vulkan-Loader-1.3.279.tar.gz
++https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.3.281/Vulkan-Headers-1.3.281.tar.gz
++https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/v1.3.281/Vulkan-Loader-1.3.281.tar.gz
+ https://webkitgtk.org/releases/webkitgtk-2.44.0.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.18.2/xdg-desktop-portal-1.18.2.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.1/xdg-desktop-portal-gtk-1.15.1.tar.xz
+@@ -712,7 +712,7 @@ https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.
+ https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.9/lightdm-gtk-greeter-2.0.9.tar.gz
+ https://github.com/sddm/sddm/archive/v0.21.0/sddm-0.21.0.tar.gz
+ https://downloads.sourceforge.net/fluxbox/fluxbox-1.3.7.tar.xz
+-https://github.com/ice-wm/icewm/archive/3.4.6/icewm-3.4.6.tar.gz
++https://github.com/ice-wm/icewm/archive/3.4.7/icewm-3.4.7.tar.gz
+ http://openbox.org/dist/openbox/openbox-3.6.1.tar.gz
+ https://download.gnome.org/sources/adwaita-icon-theme/46/adwaita-icon-theme-46.0.tar.xz
+ https://download.kde.org/stable/frameworks/6.0/breeze-icons-6.0.0.tar.xz
