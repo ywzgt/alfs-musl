@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-262">
+  <body class="blfs" id="blfs-r12.1-265">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-262
+        "phrase">(systemd</span> Edition) - Version r12.1-265
       </h4>
       <h3>
         Chapter&nbsp;44.&nbsp;Video Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-262">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-265">
           Home</a>
         </li>
       </ul>
@@ -139,8 +139,9 @@
           "../general/libgcrypt.html" title=
           "libgcrypt-1.10.3">libgcrypt-1.10.3</a> <a class="xref" href=
           "libmad.html" title="libmad-0.15.1b">libmad-0.15.1b</a>, <a class=
-          "xref" href="../general/lua.html" title="Lua-5.4.6">Lua-5.4.6</a>,
-          and <a class="xref" href="../x/installing.html" title=
+          "xref" href="../general/lua52.html" title=
+          "Lua-5.2.4">Lua-5.2.4</a>, and <a class="xref" href=
+          "../x/installing.html" title=
           "Chapter&nbsp;24.&nbsp;Graphical Environments">a graphical
           environment</a>
         </p>
@@ -347,6 +348,14 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../vlc-3.0.20-taglib-1.patch</kbd></pre>
+        <p>
+          If you wish to add support for lua extensions, enforce the use of
+          <span class="application">lua52</span>:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">export LUAC=/usr/bin/luac5.2                   &amp;&amp;
+export LUA_LIBS="$(pkg-config --libs lua52)"   &amp;&amp;
+export CPPFLAGS="$(pkg-config --cflags lua52)"</kbd></pre>
         <p>
           Install <span class="application">VLC</span> by running the
           following commands:
@@ -613,7 +622,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-262">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-265">
           Home</a>
         </li>
       </ul>
