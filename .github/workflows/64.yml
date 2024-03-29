@@ -198,7 +198,7 @@ jobs:
         limit-access-to-actor: true
 
     - name: Upload to Releases
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         name: ${{ env.TAG_VERSION }}
         tag_name: ${{ env.TAG_VERSION }}
@@ -208,7 +208,7 @@ jobs:
         prerelease: false
 
     - name: Remove old pre Releases
-      uses: dev-drprasad/delete-older-releases@v0.2.1
+      uses: dev-drprasad/delete-older-releases@v0.3.3
       with:
         keep_latest: 3
         delete_tags: true
