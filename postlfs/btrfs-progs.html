@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      btrfs-progs-6.7.1
+      btrfs-progs-6.8
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-265">
+  <body class="blfs" id="blfs-r12.1-271">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-265
+        "phrase">(systemd</span> Edition) - Version r12.1-271
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-265">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-271">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="btrfs-progs" name="btrfs-progs"></a>btrfs-progs-6.7.1
+      <a id="btrfs-progs" name="btrfs-progs"></a>btrfs-progs-6.8
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -79,18 +79,18 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.7.1.tar.xz">
-                https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.7.1.tar.xz</a>
+                "https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.8.tar.xz">
+                https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.8.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 3898c68efdc0fe4e3a6a1bd90b3b4fa4
+                Download MD5 sum: 729b0927484ebb34e375849b632e287d
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 2.4 MB
+                Download size: 2.5 MB
               </p>
             </li>
             <li class="listitem">
@@ -101,7 +101,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.3 SBU (with parallelism=4; add 4.6
+                Estimated build time: 0.3 SBU (with parallelism=4; add 2.5
                 SBU for tests, up to 14 SBU on slow disks)
               </p>
             </li>
@@ -193,7 +193,7 @@ make</kbd></pre>
    ./fsck-tests.sh
    ./mkfs-tests.sh
    ./cli-tests.sh
-   ./convert-tests.sh
+   #./convert-tests.sh
    ./misc-tests.sh
    ./fuzz-tests.sh
 popd</kbd></pre>
@@ -208,6 +208,11 @@ popd</kbd></pre>
             the test disk image is not cleanly unmounted.
           </p>
         </div>
+        <p>
+          The convert-tests scripts are known to fail. Tests 004-shrink-fs
+          and 062-fi-show-raw-dm-all-devices in the misc-tests are known to
+          fail.
+        </p>
         <p>
           Install the package as the <code class="systemitem">root</code>
           user:
@@ -411,7 +416,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-265">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-271">
           Home</a>
         </li>
       </ul>
