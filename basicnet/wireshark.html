@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Wireshark-4.2.3
+      Wireshark-4.2.4
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-277">
+  <body class="blfs" id="blfs-r12.1-280">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-277
+        "phrase">(systemd</span> Edition) - Version r12.1-280
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-277">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-280">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="wireshark" name="wireshark"></a>Wireshark-4.2.3
+      <a id="wireshark" name="wireshark"></a>Wireshark-4.2.4
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -87,13 +87,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.wireshark.org/download/src/all-versions/wireshark-4.2.3.tar.xz">
-                https://www.wireshark.org/download/src/all-versions/wireshark-4.2.3.tar.xz</a>
+                "https://www.wireshark.org/download/src/all-versions/wireshark-4.2.4.tar.xz">
+                https://www.wireshark.org/download/src/all-versions/wireshark-4.2.4.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 6c773f66b127ea1928d43b96d0e28098
+                Download MD5 sum: cebb012489563a8eb9c3829cdcb0579c
               </p>
             </li>
             <li class="listitem">
@@ -103,13 +103,13 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 915 MB (with all optional
+                Estimated disk space required: 910 MB (with all optional
                 dependencies available in the BLFS book; 170 MB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 2.9 SBU (with parallelism=4 and all
+                Estimated build time: 3.3 SBU (with parallelism=4 and all
                 optional dependencies available in the BLFS book)
               </p>
             </li>
@@ -139,11 +139,12 @@
         <p class="required">
           <a class="xref" href="../general/cmake.html" title=
           "CMake-3.29.0">CMake-3.29.0</a>, <a class="xref" href="c-ares.html"
-          title="c-ares-1.27.0">c-ares-1.27.0</a>, <a class="xref" href=
+          title="c-ares-1.28.0">c-ares-1.28.0</a>, <a class="xref" href=
           "../general/glib2.html" title="GLib-2.80.0">GLib-2.80.0</a>,
           <a class="xref" href="../general/libgcrypt.html" title=
-          "libgcrypt-1.10.3">libgcrypt-1.10.3</a>, and <a class="xref" href=
-          "../x/qt6.html" title="Qt-6.6.3">Qt-6.6.3</a>
+          "libgcrypt-1.10.3">libgcrypt-1.10.3</a>, <a class="xref" href=
+          "../x/qt6.html" title="Qt-6.6.3">Qt-6.6.3</a>, and <a class="xref"
+          href="../multimedia/speex.html" title="Speex-1.2.1">Speex-1.2.1</a>
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -193,8 +194,7 @@
           qtmultimedia) (required if <a class="xref" href="../x/qt6.html"
           title="Qt-6.6.3">Qt-6.6.3</a> is not installed), <a class="xref"
           href="../multimedia/sbc.html" title="SBC-2.0">SBC-2.0</a>,
-          <a class="xref" href="../multimedia/speex.html" title=
-          "Speex-1.2.1">Speex-1.2.1</a>, <a class="ulink" href=
+          <a class="ulink" href=
           "https://www.linphone.org/technical-corner/bcg729">BCG729</a>,
           <a class="ulink" href=
           "https://github.com/TimothyGu/libilbc">libilbc</a>, <a class=
@@ -252,7 +252,7 @@ cd    build &amp;&amp;
 
 cmake -DCMAKE_INSTALL_PREFIX=/usr \
       -DCMAKE_BUILD_TYPE=Release  \
-      -DCMAKE_INSTALL_DOCDIR=/usr/share/doc/wireshark-4.2.3 \
+      -DCMAKE_INSTALL_DOCDIR=/usr/share/doc/wireshark-4.2.4 \
       -G Ninja \
       .. &amp;&amp;
 ninja</kbd></pre>
@@ -264,11 +264,11 @@ ninja</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">ninja install &amp;&amp;
 
-install -v -m755 -d /usr/share/doc/wireshark-4.2.3 &amp;&amp;
+install -v -m755 -d /usr/share/doc/wireshark-4.2.4 &amp;&amp;
 install -v -m644    ../README.linux ../doc/README.* ../doc/randpkt.txt \
-                    /usr/share/doc/wireshark-4.2.3 &amp;&amp;
+                    /usr/share/doc/wireshark-4.2.4 &amp;&amp;
 
-pushd /usr/share/doc/wireshark-4.2.3 &amp;&amp;
+pushd /usr/share/doc/wireshark-4.2.4 &amp;&amp;
    for FILENAME in ../../wireshark/*.html; do
       ln -s -v -f $FILENAME .
    done &amp;&amp;
@@ -282,7 +282,7 @@ unset FILENAME</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">install -v -m644 <em class=
         "replaceable"><code>&lt;Downloaded_Files&gt;</code></em> \
-                 /usr/share/doc/wireshark-4.2.3</kbd></pre>
+                 /usr/share/doc/wireshark-4.2.4</kbd></pre>
         <p>
           Now, set ownership and permissions of sensitive applications to
           only allow authorized users. As the <code class=
@@ -384,7 +384,7 @@ chmod -v 6550 /usr/bin/{tshark,dumpcap}</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/{lib,share}/wireshark and
-              /usr/share/doc/wireshark-4.2.3</span>
+              /usr/share/doc/wireshark-4.2.4</span>
             </div>
           </div>
         </div>
@@ -671,7 +671,7 @@ chmod -v 6550 /usr/bin/{tshark,dumpcap}</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-277">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-280">
           Home</a>
         </li>
       </ul>
