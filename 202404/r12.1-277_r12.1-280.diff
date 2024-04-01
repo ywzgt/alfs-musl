@@ -1,0 +1,24 @@
+diff --git a/wget-list b/wget-list
+index 8012736c6..cdb0af296 100644
+--- a/wget-list
++++ b/wget-list
+@@ -490,7 +490,7 @@ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1
+ https://files.pythonhosted.org/packages/source/r/requests/requests-2.31.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/requests-2.31.0-use_system_certs-1.patch
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+-https://files.pythonhosted.org/packages/source/s/sentry-sdk/sentry-sdk-1.43.0.tar.gz
++https://files.pythonhosted.org/packages/source/s/sentry-sdk/sentry-sdk-1.44.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/six/six-1.16.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-7.2.6.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-2.0.0.tar.gz
+@@ -572,8 +572,8 @@ https://nmap.org/dist/nmap-7.94.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/nmap-7.94-pcre_2-1.patch
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.5.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
+-https://www.wireshark.org/download/src/all-versions/wireshark-4.2.3.tar.xz
+-https://c-ares.haxx.se/download/c-ares-1.27.0.tar.gz
++https://www.wireshark.org/download/src/all-versions/wireshark-4.2.4.tar.xz
++https://c-ares.haxx.se/download/c-ares-1.28.0.tar.gz
+ https://curl.se/download/curl-8.7.1.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.1/geoclue-2.7.1.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.0.tar.xz
