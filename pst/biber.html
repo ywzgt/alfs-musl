@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      biber-2.19
+      biber-2.20
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-292">
+  <body class="blfs" id="blfs-r12.1-319">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-292
+        "phrase">(systemd</span> Edition) - Version r12.1-319
       </h4>
       <h3>
         Chapter&nbsp;51.&nbsp;Typesetting
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-292">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-319">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="biber" name="biber"></a>biber-2.19
+      <a id="biber" name="biber"></a>biber-2.20
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,13 +77,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/plk/biber/archive/v2.19/biber-2.19.tar.gz">
-                https://github.com/plk/biber/archive/v2.19/biber-2.19.tar.gz</a>
+                "https://github.com/plk/biber/archive/v2.20/biber-2.20.tar.gz">
+                https://github.com/plk/biber/archive/v2.20/biber-2.20.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 898661d715ebb202e5b9d3ece354672e
+                Download MD5 sum: a7f400cdac3a3d9d9ab13ca053eb6791
               </p>
             </li>
             <li class="listitem">
@@ -93,7 +93,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 16 MB (installs 1.6MB of perl
+                Estimated disk space required: 15 MB (installs 1.6MB of perl
                 modules)
               </p>
             </li>
@@ -110,6 +110,20 @@
             Note
           </h3>
           <p>
+            The <span class="application">biber</span> source tarball shown
+            above downloads with the correct name, biber-2.20.tar.gz, if
+            using a browser such as Firefox. If you prefer to use a command
+            line program such as wget, you normally would obtain
+            v2.20.tar.gz. To obtain this package with the proper filename,
+            run:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">wget -c https://github.com/plk/biber/archive/v2.20/biber-2.20.tar.gz \
+     -O biber-2.20.tar.gz</kbd></pre>
+          <p>
+            .
+          </p>
+          <p>
             If you have updated to a new release of texlive-source, biber and
             its perl dependencies are still present in <code class=
             "filename">/usr</code> and do not need to be rebuilt. However,
@@ -125,6 +139,30 @@
             the modules. BLFS patches LWP::Protocol::https to use the system
             certificates, Mozilla::CA uses old certificates.
           </p>
+        </div>
+        <h3>
+          Required Additional Download
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Download (HTTP): <a class="ulink" href=
+                "https://sourceforge.net/projects/biblatex/files/biblatex-3.20/biblatex-3.20.tds.tgz">
+                https://sourceforge.net/projects/biblatex/files/biblatex-3.20/biblatex-3.20.tds.tgz</a>
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                Download MD5 sum: 6c4117fd06e12854495a3777523d5372
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                Download size: 19 MB
+              </p>
+            </li>
+          </ul>
         </div>
         <h3>
           Biber Dependencies
@@ -179,7 +217,7 @@
           "../general/perl-modules.html#perl-lwp-protocol-https" title=
           "LWP::Protocol::https-6.14">LWP-Protocol-https-6.14</a> <a class=
           "xref" href="../general/perl-modules.html#perl-module-build" title=
-          "Module::Build-0.4232">Module-Build-0.4232</a> <a class="xref"
+          "Module::Build-0.4234">Module-Build-0.4234</a> <a class="xref"
           href="../general/perl-modules.html#perl-parse-recdescent" title=
           "Parse::RecDescent-1.967015">Parse-RecDescent-1.967015</a>
           <a class="xref" href=
@@ -225,7 +263,7 @@
             It is possible to install all missing dependencies automatically.
             You must first install <a class="xref" href=
             "../general/perl-modules.html#perl-module-build" title=
-            "Module::Build-0.4232">Module-Build-0.4232</a> using <a class=
+            "Module::Build-0.4234">Module-Build-0.4234</a> using <a class=
             "xref" href="../general/perl-modules.html#perl-auto-install"
             title="Automatic Installation of Perl Modules.">automatic
             installation of perl modules</a>. Then run <span class=
@@ -329,7 +367,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-292">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-319">
           Home</a>
         </li>
       </ul>
