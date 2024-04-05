@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-321">
+  <body class="blfs" id="blfs-r12.1-332">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-321
+        "phrase">(systemd</span> Edition) - Version r12.1-332
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-321">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-332">
           Home</a>
         </li>
       </ul>
@@ -257,11 +257,7 @@
 # to use geolocation web services, comment out this line
 ac_add_options --disable-necko-wifi
 
-# API Keys for geolocation APIs - necko-wifi (above) is required for MLS
-# Uncomment the following line if you wish to use Mozilla Location Service
-#ac_add_options --with-mozilla-api-keyfile=$PWD/mozilla-key
-
-# Uncomment the following line if you wish to use Google's geolocation API
+# Uncomment the following line if you wish to use Google's Geolocation API
 # (needed for use with saved maps with Google Maps)
 #ac_add_options --with-google-location-service-api-keyfile=$PWD/google-key
 
@@ -369,20 +365,16 @@ done</kbd></pre>
             Note
           </h3>
           <p>
-            The Google and Mozilla API Keys below are specific to LFS. If
-            using these instructions for another distro, or if you intend to
-            distribute binary copies of the software using these
-            instructions, please obtain your own keys following the
-            instructions located at <a class="ulink" href=
-            "https://www.chromium.org/developers/how-tos/api-keys">https://www.chromium.org/developers/how-tos/api-keys</a>
-            and <a class="ulink" href=
-            "https://location.services.mozilla.com/api">https://location.services.mozilla.com/api</a>
-            respectively.
+            The Google API Key below is specific to LFS. If using these
+            instructions for another distro, or if you intend to distribute
+            binary copies of the software using these instructions, please
+            obtain your own key following the instructions located at
+            <a class="ulink" href=
+            "https://www.chromium.org/developers/how-tos/api-keys">https://www.chromium.org/developers/how-tos/api-keys</a>.
           </p>
         </div>
         <pre class="userinput"><kbd class=
-        "command">echo "AIzaSyDxKL42zsPjbke5O8_rPVpVrLrJ8aeE9rQ" &gt; google-key
-echo "613364a7-9418-4c86-bcee-57e32fd70c23" &gt; mozilla-key</kbd></pre>
+        "command">echo "AIzaSyDxKL42zsPjbke5O8_rPVpVrLrJ8aeE9rQ" &gt; google-key</kbd></pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -724,7 +716,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-321">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-332">
           Home</a>
         </li>
       </ul>

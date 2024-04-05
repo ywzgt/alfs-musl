@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-321">
+  <body class="blfs" id="blfs-r12.1-332">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-321
+        "phrase">(systemd</span> Edition) - Version r12.1-332
       </h4>
       <h3>
         Chapter&nbsp;17.&nbsp;Networking Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-321">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-332">
           Home</a>
         </li>
       </ul>
@@ -196,6 +196,64 @@ ninja</kbd></pre>
           <span class="application">libnotify</span> package.
         </p>
       </div>
+      <div class="configuration" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Configuring GeoClue
+        </h2>
+        <div class="sect3" lang="en" xml:lang="en">
+          <h3 class="sect3">
+            <a id="geoclue2-config" name="geoclue2-config"></a>Config Files
+          </h3>
+          <p>
+            <code class=
+            "filename">/etc/geoclue/conf.d/90-lfs-google.conf</code>
+          </p>
+        </div>
+        <div class="sect3" lang="en" xml:lang="en">
+          <h3 class="sect3">
+            Configuration Information
+          </h3>
+          <p>
+            In March of 2024, Mozilla announced the shutdown of the Mozilla
+            Location Service. Geoclue uses this service for determining a
+            user's location when requested by other applications. The only
+            supported alternative by upstream is to use Google's Geolocation
+            Service.
+          </p>
+          <p>
+            To use Google's Geolocation Service, an API key must be used, and
+            a configuration file must be created. <span class=
+            "bold"><strong>This API key is only intended for use with LFS.
+            Please do not use this API key if you are building for another
+            distro or distributing binary copies. If you need an API key, you
+            can request one at <a class="ulink" href=
+            "https://www.chromium.org/developers/how-tos/api-keys">https://www.chromium.org/developers/how-tos/api-keys</a>.</strong></span>
+          </p>
+          <p>
+            Create the configuration needed for using Google's Geolocation
+            Service as the <code class="systemitem">root</code> user:
+          </p>
+          <pre class="root"><kbd class=
+          "command">cat &gt;&gt; /etc/geoclue/conf.d/90-lfs-google.conf &lt;&lt; "EOF"
+<code class="literal"># Begin /etc/geoclue/conf.d/90-lfs-google.conf
+
+# This configuration applies for the WiFi source.
+[wifi]
+
+# Set the URL to Google's Geolocation Service.
+url=https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyDxKL42zsPjbke5O8_rPVpVrLrJ8aeE9rQ
+
+# End /etc/geoclue/conf.d/90-lfs-google.conf</code>
+EOF</kbd></pre>
+          <p>
+            If you do not wish to request your location from a Geolocation
+            service, you can hardcode your location in <code class=
+            "filename">/etc/geolocation</code> using the format described in
+            <a class="ulink" href=
+            "https://man.archlinux.org/man/geoclue">geoclue(5)</a>.
+          </p>
+        </div>
+      </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
           Contents
@@ -241,7 +299,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-321">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-332">
           Home</a>
         </li>
       </ul>
