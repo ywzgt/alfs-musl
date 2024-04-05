@@ -1,0 +1,34 @@
+diff --git a/wget-list b/wget-list
+index 94c13c443..53eec1303 100644
+--- a/wget-list
++++ b/wget-list
+@@ -680,7 +680,7 @@ https://downloads.sourceforge.net/enlightenment/imlib2-1.12.2.tar.xz
+ https://github.com/ksnip/kColorPicker/archive/refs/tags/v0.3.1/kColorPicker-0.3.1.tar.gz
+ https://github.com/ksnip/kImageAnnotator/archive/refs/tags/v0.7.1/kImageAnnotator-0.7.1.tar.gz
+ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
+-https://download.gnome.org/sources/libadwaita/1.4/libadwaita-1.4.4.tar.xz
++https://download.gnome.org/sources/libadwaita/1.5/libadwaita-1.5.0.tar.xz
+ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.2.1/libei-1.2.1.tar.gz
+ https://gedit-technology.net/tarballs/libgedit-amtk/libgedit-amtk-5.8.0.tar.xz
+ https://gedit-technology.net/tarballs/libgedit-gtksourceview/libgedit-gtksourceview-299.0.4.tar.xz
+@@ -913,13 +913,13 @@ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
+ https://downloads.xiph.org/releases/flac/flac-1.4.3.tar.xz
+ https://files.dyne.org/frei0r/releases/frei0r-plugins-1.8.0.tar.gz
+ https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
+-https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.22.10.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.22.10.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.22.10.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.22.10.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.22.10.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.22.10.tar.xz
+-https://gstreamer.freedesktop.org/src/gstreamer-vaapi/gstreamer-vaapi-1.22.10.tar.xz
++https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.24.1.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.24.1.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.24.1.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.24.1.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.24.1.tar.xz
++https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.24.1.tar.xz
++https://gstreamer.freedesktop.org/src/gstreamer-vaapi/gstreamer-vaapi-1.24.1.tar.xz
+ https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+ https://github.com/intel/media-driver/archive/refs/tags/intel-media-23.4.3.tar.gz
