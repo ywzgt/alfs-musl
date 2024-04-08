@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Samba-4.19.5
+      Samba-4.20.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-355">
+  <body class="blfs" id="blfs-r12.1-366">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-355
+        "phrase">(systemd</span> Edition) - Version r12.1-366
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-355">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-366">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="samba" name="samba"></a>Samba-4.19.5
+      <a id="samba" name="samba"></a>Samba-4.20.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -81,23 +81,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.samba.org/pub/samba/stable/samba-4.19.5.tar.gz">
-                https://download.samba.org/pub/samba/stable/samba-4.19.5.tar.gz</a>
+                "https://download.samba.org/pub/samba/stable/samba-4.20.0.tar.gz">
+                https://download.samba.org/pub/samba/stable/samba-4.20.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 123979dc044d747be56393dcb455454e
+                Download MD5 sum: 3563da3ffc17f3f2b37572c15f37a0b4
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 40 MB
+                Download size: 41 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 610 MB (add 64 MB for
+                Estimated disk space required: 615 MB (add 64 MB for
                 quicktest)
               </p>
             </li>
@@ -141,7 +141,9 @@
           "../general/libxslt.html" title="libxslt-1.1.39">libxslt-1.1.39</a>
           (for documentation), <a class="xref" href=
           "../postlfs/linux-pam.html" title=
-          "Linux-PAM-1.6.0">Linux-PAM-1.6.0</a>, and <a class="xref" href=
+          "Linux-PAM-1.6.0">Linux-PAM-1.6.0</a>, <a class="xref" href=
+          "../postlfs/mitkrb.html" title="MIT Kerberos V5-1.21.2">MIT
+          Kerberos V5-1.21.2</a>, and <a class="xref" href=
           "../server/openldap.html" title="OpenLDAP-2.6.7">OpenLDAP-2.6.7</a>
         </p>
         <h4>
@@ -172,11 +174,9 @@
           "../server/lmdb.html" title="lmdb-0.9.31">lmdb-0.9.31</a>,
           <a class="xref" href="../general/python-dependencies.html#markdown"
           title="Markdown-3.4.1">Markdown-3.4.1</a>, <a class="xref" href=
-          "../postlfs/mitkrb.html" title="MIT Kerberos V5-1.21.2">MIT
-          Kerberos V5-1.21.2</a>, <a class="xref" href="../postlfs/nss.html"
-          title="NSS-3.99">nss-3.99</a>, <a class="xref" href=
-          "../general/popt.html" title="Popt-1.19">popt-1.19</a>, <a class=
-          "xref" href="../general/talloc.html" title=
+          "../postlfs/nss.html" title="NSS-3.99">nss-3.99</a>, <a class=
+          "xref" href="../general/popt.html" title="Popt-1.19">popt-1.19</a>,
+          <a class="xref" href="../general/talloc.html" title=
           "Talloc-2.4.2">Talloc-2.4.2</a> (included), <a class="xref" href=
           "../general/vala.html" title="Vala-0.56.16">Vala-0.56.16</a>,
           <a class="xref" href="../general/valgrind.html" title=
@@ -253,6 +253,7 @@
     --with-pammodulesdir=/usr/lib/security \
     --enable-fhs                           \
     --without-ad-dc                        \
+    --with-system-mitkrb5                  \
     --enable-selftest                      &amp;&amp;
 make</kbd></pre>
         <p>
@@ -334,6 +335,14 @@ install -v -m755    examples/LDAP/{get*,ol*} \
           modules needed for ADS support. Note that BLFS does not provide a
           samba bootscript or systemd unit for an Active Directory domain
           controller.
+        </p>
+        <p>
+          <em class="parameter"><code>--with-system-mitkrb5</code></em>:
+          Enables building with the system version of Kerberos. This
+          mitigates security vulnerabilties and reduces build time. Remove
+          this if you do not have <a class="xref" href=
+          "../postlfs/mitkrb.html" title="MIT Kerberos V5-1.21.2">MIT
+          Kerberos V5-1.21.2</a> installed.
         </p>
         <p>
           <code class="option">--with-selftest-prefix=SELFTEST_PREFIX</code>:
@@ -419,7 +428,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm50421" name="idm50421"></a>Scenario 1: Minimal
+                    <a id="idm50451" name="idm50451"></a>Scenario 1: Minimal
                     Standalone Client-Only Installation
                   </h5>
                 </div>
@@ -472,7 +481,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm50446" name="idm50446"></a>Scenario 2:
+                    <a id="idm50476" name="idm50476"></a>Scenario 2:
                     Standalone File/Print Server
                   </h5>
                 </div>
@@ -565,7 +574,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm50483" name="idm50483"></a>Advanced
+                    <a id="idm50513" name="idm50513"></a>Advanced
                     Requirements
                   </h5>
                 </div>
@@ -587,7 +596,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm50488" name="idm50488"></a>Guest account
+                    <a id="idm50518" name="idm50518"></a>Guest account
                   </h5>
                 </div>
               </div>
@@ -1587,7 +1596,7 @@ systemctl start smbd.socket</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-355">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-366">
           Home</a>
         </li>
       </ul>
