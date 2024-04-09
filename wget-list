@@ -476,7 +476,7 @@ https://github.com/pygobject/pycairo/releases/download/v1.26.0/pycairo-1.26.0.ta
 https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
 https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.17.2.tar.gz
 https://download.gnome.org/sources/pygobject/2.28/pygobject-2.28.7.tar.xz
-https://download.gnome.org/sources/pygobject/3.48/pygobject-3.48.1.tar.xz
+https://download.gnome.org/sources/pygobject/3.48/pygobject-3.48.2.tar.xz
 https://download.gnome.org/sources/pygtk/2.24/pygtk-2.24.0.tar.bz2
 https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.1.2.tar.gz
 https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
@@ -590,7 +590,7 @@ https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.3.tar.xz
 https://download.gnome.org/sources/libsoup/3.4/libsoup-3.4.4.tar.xz
 https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.4.tar.bz2
 https://notroj.github.io/neon/neon-0.33.0.tar.gz
-https://github.com/nghttp2/nghttp2/releases/download/v1.60.0/nghttp2-1.60.0.tar.xz
+https://github.com/nghttp2/nghttp2/releases/download/v1.61.0/nghttp2-1.61.0.tar.xz
 https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.4.4.tar.xz
 https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
 https://tecnocode.co.uk/downloads/uhttpmock/uhttpmock-0.10.0.tar.xz
@@ -603,8 +603,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.pa
 https://bitbucket.org/mutt/mutt/downloads/mutt-2.2.13.tar.gz
 https://ftp.osuosl.org/pub/blfs/conglomeration/procmail/procmail-3.22.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.22-consolidated_fixes-1.patch
-https://archive.apache.org/dist/httpd/httpd-2.4.58.tar.bz2
-https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.58-blfs_layout-1.patch
+https://archive.apache.org/dist/httpd/httpd-2.4.59.tar.bz2
+https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.59-blfs_layout-1.patch
 https://downloads.isc.org/isc/kea/2.4.1/kea-2.4.1.tar.gz
 https://github.com/proftpd/proftpd/archive/v1.3.8b/proftpd-1.3.8b.tar.gz
 https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
@@ -641,9 +641,9 @@ https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
 https://invisible-mirror.net/archives/luit/luit-20240102.tgz
 https://www.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
 https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.41.tar.xz
-https://www.x.org/pub/individual/xserver/xwayland-23.2.4.tar.xz
-https://www.x.org/pub/individual/xserver/xorg-server-21.1.11.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.11-tearfree_backport-1.patch
+https://www.x.org/pub/individual/xserver/xwayland-23.2.5.tar.xz
+https://www.x.org/pub/individual/xserver/xorg-server-21.1.12.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.12-tearfree_backport-1.patch
 https://www.freedesktop.org/software/libevdev/libevdev-1.13.1.tar.xz
 https://www.x.org/pub/individual/driver/xf86-input-evdev-2.10.6.tar.bz2
 https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.25.0/libinput-1.25.0.tar.gz
@@ -676,7 +676,7 @@ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.9.tar.xz
 https://download.gnome.org/sources/gtk-vnc/1.3/gtk-vnc-1.3.1.tar.xz
 https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz
 https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz
-https://download.gnome.org/sources/gtksourceview/5.10/gtksourceview-5.10.0.tar.xz
+https://download.gnome.org/sources/gtksourceview/5.12/gtksourceview-5.12.0.tar.xz
 https://downloads.sourceforge.net/enlightenment/imlib2-1.12.2.tar.xz
 https://github.com/ksnip/kColorPicker/archive/refs/tags/v0.3.1/kColorPicker-0.3.1.tar.gz
 https://github.com/ksnip/kImageAnnotator/archive/refs/tags/v0.7.1/kImageAnnotator-0.7.1.tar.gz
@@ -699,7 +699,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5
 https://download.qt.io/archive/qt/6.6/6.6.3/single/qt-everywhere-src-6.6.3.tar.xz
 https://download.qt.io/official_releases/qt/6.6/6.6.3/submodules/qtwebengine-everywhere-src-6.6.3.tar.xz
 https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
-https://download.gnome.org/sources/tepl/6.8/tepl-6.9.0.tar.xz
+https://download.gnome.org/sources/tepl/6.9/tepl-6.9.0.tar.xz
 https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.3.281/Vulkan-Headers-1.3.281.tar.gz
 https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/v1.3.281/Vulkan-Loader-1.3.281.tar.gz
 https://webkitgtk.org/releases/webkitgtk-2.44.0.tar.xz
@@ -750,8 +750,7 @@ https://download.gnome.org/sources/gjs/1.80/gjs-1.80.2.tar.xz
 https://download.gnome.org/sources/gnome-autoar/0.4/gnome-autoar-0.4.4.tar.xz
 https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.0.tar.xz
 https://download.gnome.org/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
-https://download.gnome.org/sources/gnome-video-effects/0.6/gnome-video-effects-0.6.0.tar.xz
-https://download.gnome.org/sources/gnome-online-accounts/3.48/gnome-online-accounts-3.48.0.tar.xz
+https://download.gnome.org/sources/gnome-online-accounts/3.50/gnome-online-accounts-3.50.0.tar.xz
 https://download.gnome.org/sources/grilo/0.3/grilo-0.3.16.tar.xz
 https://download.gnome.org/sources/libgdata/0.18/libgdata-0.18.1.tar.xz
 https://download.gnome.org/sources/libgee/0.20/libgee-0.20.6.tar.xz
@@ -771,7 +770,7 @@ https://download.gnome.org/sources/gvfs/1.54/gvfs-1.54.0.tar.xz
 https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.2.tar.xz
 https://download.gnome.org/sources/nautilus/45/nautilus-45.2.1.tar.xz
 https://download.gnome.org/sources/gnome-bluetooth/42/gnome-bluetooth-42.8.tar.xz
-https://download.gnome.org/sources/gnome-keyring/42/gnome-keyring-42.1.tar.xz
+https://download.gnome.org/sources/gnome-keyring/46/gnome-keyring-46.1.tar.xz
 https://download.gnome.org/sources/gnome-settings-daemon/45/gnome-settings-daemon-45.1.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/gnome-settings-daemon-45.1-testsuite_fix-1.patch
 https://download.gnome.org/sources/tecla/45/tecla-45.0.tar.xz
