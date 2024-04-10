@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-384">
+  <body class="blfs" id="blfs-r12.1-406">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-384
+        "phrase">(systemd</span> Edition) - Version r12.1-406
       </h4>
       <h3>
         Chapter&nbsp;51.&nbsp;Typesetting
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-384">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-406">
           Home</a>
         </li>
       </ul>
@@ -95,7 +95,6 @@ cat &gt; /etc/profile.d/texlive.sh &lt;&lt; EOF
 TEXLIVE_PREFIX=/opt/texlive/2024
 export TEXLIVE_PREFIX
 
-pathappend \$TEXLIVE_PREFIX/texmf-dist/doc/man  MANPATH
 pathappend \$TEXLIVE_PREFIX/texmf-dist/doc/info INFOPATH
 pathappend \$TEXLIVE_PREFIX/bin/$TEXARCH
 
@@ -112,10 +111,10 @@ unset TEXARCH</kbd></pre>
           Note
         </h3>
         <p>
-          The standard MANPATH and INFOPATH path are specified above to
-          ensure they are included. If they are already set in the boot
-          script procedure, the pathappend function will ensure duplicates
-          are removed, so including them here will do no harm.
+          The standard INFOPATH path are specified above to ensure they are
+          included. If they are already set in the boot script procedure, the
+          pathappend function will ensure duplicates are removed, so
+          including them here will do no harm.
         </p>
       </div>
       <div class="admon note">
@@ -164,7 +163,7 @@ unset TEXARCH</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-384">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-406">
           Home</a>
         </li>
       </ul>

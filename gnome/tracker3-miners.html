@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Tracker-miners-3.6.2
+      Tracker-miners-3.7.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-384">
+  <body class="blfs" id="blfs-r12.1-406">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-384
+        "phrase">(systemd</span> Edition) - Version r12.1-406
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="tracker3.html" title=
-          "Tracker-3.6.0">Prev</a>
+          "Tracker-3.7.1">Prev</a>
           <p>
-            Tracker-3.6.0
+            Tracker-3.7.1
           </p>
         </li>
         <li class="next">
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-384">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-406">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="tracker3-miners" name="tracker3-miners"></a>Tracker-miners-3.6.2
+      <a id="tracker3-miners" name="tracker3-miners"></a>Tracker-miners-3.7.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,13 +77,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/tracker-miners/3.6/tracker-miners-3.6.2.tar.xz">
-                https://download.gnome.org/sources/tracker-miners/3.6/tracker-miners-3.6.2.tar.xz</a>
+                "https://download.gnome.org/sources/tracker-miners/3.7/tracker-miners-3.7.1.tar.xz">
+                https://download.gnome.org/sources/tracker-miners/3.7/tracker-miners-3.7.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 36b1149a9b10ee3db3e3aa6d8a95c5dc
+                Download MD5 sum: fc47e13aebbcbe002cfd07980d0cde46
               </p>
             </li>
             <li class="listitem">
@@ -93,7 +93,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 85 MB (with tests)
+                Estimated disk space required: 38 MB (with tests)
               </p>
             </li>
             <li class="listitem">
@@ -114,7 +114,7 @@
           <a class="xref" href="../multimedia/gst10-plugins-base.html" title=
           "gst-plugins-base-1.24.1">gst-plugins-base-1.24.1</a>, <a class=
           "xref" href="tracker3.html" title=
-          "Tracker-3.6.0">Tracker-3.6.0</a>, <a class="xref" href=
+          "Tracker-3.7.1">Tracker-3.7.1</a>, <a class="xref" href=
           "../general/exempi.html" title="Exempi-2.6.5">Exempi-2.6.5</a>, and
           <a class="xref" href="gexiv2.html" title=
           "gexiv2-0.14.2">gexiv2-0.14.2</a>
@@ -192,11 +192,6 @@
           "replaceable"><code>200</code></em>/ tests/functional-tests/meson.build</kbd></pre>
         </div>
         <p>
-          First, fix some crashes introduced by gstreamer-1.22.9:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -i '/ALLOW_RULE (shutdown);/a ALLOW_RULE (getsockopt);' src/libtracker-miners-common/tracker-seccomp.c</kbd></pre>
-        <p>
           Install <span class="application">Tracker-miners</span> by running
           the following commands:
         </p>
@@ -206,6 +201,7 @@ cd    build &amp;&amp;
 meson setup --prefix=/usr       \
             --buildtype=release \
             -Dman=false         \
+            -Dlandlock=disabled \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -249,6 +245,12 @@ rm -rf ~/tracker-tests</kbd></pre>
           generate and install the man pages.
         </p>
         <p>
+          <em class="parameter"><code>-Dlandlock=disabled</code></em>: This
+          switch disables the Landlock file access sandbox due to it
+          requiring additional kernel configuration and packages such as
+          selinux or AppArmor.
+        </p>
+        <p>
           <code class="option">-Dseccomp=false</code>: This option disables
           the seccomp system call filter. On some architectures, such as i686
           and ARM, the functions that tracker-miners uses are not guarded
@@ -275,7 +277,9 @@ rm -rf ~/tracker-tests</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">None</span>
+              <span class="segbody">tracker3-daemon, tracker3-extract,
+              tracker3-index, tracker3-info, tracker3-reset, tracker3-search,
+              tracker3-status, and tracker3-tag</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
@@ -289,15 +293,142 @@ rm -rf ~/tracker-tests</kbd></pre>
             </div>
           </div>
         </div>
+        <div class="variablelist">
+          <h3>
+            Short Descriptions
+          </h3>
+          <table border="0" class="variablelist">
+            <colgroup>
+              <col align="left" valign="top" />
+              <col />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>
+                  <p>
+                    <a id="tracker3-daemon" name=
+                    "tracker3-daemon"></a><span class="term"><span class=
+                    "command"><strong>tracker3-daemon</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    starts, stops, restarts, and lists daemons responsible
+                    for indexing content
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="tracker3-extract" name=
+                    "tracker3-extract"></a><span class="term"><span class=
+                    "command"><strong>tracker3-extract</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    extracts metadata from a file
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="tracker3-index" name=
+                    "tracker3-index"></a><span class="term"><span class=
+                    "command"><strong>tracker3-index</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    indexes content using the Tracker filesystem miner
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="tracker3-info" name=
+                    "tracker3-info"></a><span class="term"><span class=
+                    "command"><strong>tracker3-info</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    retrieves all information available for a certain file
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="tracker3-reset" name=
+                    "tracker3-reset"></a><span class="term"><span class=
+                    "command"><strong>tracker3-reset</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    resets the Tracker index and configuration
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="tracker3-search" name=
+                    "tracker3-search"></a><span class="term"><span class=
+                    "command"><strong>tracker3-search</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    searches for content by type or across all types
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="tracker3-status" name=
+                    "tracker3-status"></a><span class="term"><span class=
+                    "command"><strong>tracker3-status</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    provides status and statistics on data that has been
+                    indexed
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="tracker3-tag" name="tracker3-tag"></a><span class=
+                    "term"><span class=
+                    "command"><strong>tracker3-tag</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    adds, removes, and lists tags
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
     <div class="navfooter">
       <ul>
         <li class="prev">
           <a accesskey="p" href="tracker3.html" title=
-          "Tracker-3.6.0">Prev</a>
+          "Tracker-3.7.1">Prev</a>
           <p>
-            Tracker-3.6.0
+            Tracker-3.7.1
           </p>
         </li>
         <li class="next">
@@ -312,7 +443,7 @@ rm -rf ~/tracker-tests</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-384">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-406">
           Home</a>
         </li>
       </ul>

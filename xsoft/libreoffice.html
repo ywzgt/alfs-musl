@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-384">
+  <body class="blfs" id="blfs-r12.1-406">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-384
+        "phrase">(systemd</span> Edition) - Version r12.1-406
       </h4>
       <h3>
         Chapter&nbsp;39.&nbsp;Office Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-384">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-406">
           Home</a>
         </li>
       </ul>
@@ -282,10 +282,12 @@
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="../basicnet/avahi.html" title=
-          "Avahi-0.8">Avahi-0.8</a>, <a class="xref" href=
-          "../general/bluez.html" title="BlueZ-5.73">BlueZ-5.73</a>,
-          <a class="xref" href="../gnome/dconf.html" title=
+          <a class="xref" href="../general/abseil-cpp.html" title=
+          "Abseil-cpp-20240116.2">Abseil-cpp-20240116.2</a>, <a class="xref"
+          href="../basicnet/avahi.html" title="Avahi-0.8">Avahi-0.8</a>,
+          <a class="xref" href="../general/bluez.html" title=
+          "BlueZ-5.73">BlueZ-5.73</a>, <a class="xref" href=
+          "../gnome/dconf.html" title=
           "DConf-0.40.0 / DConf-Editor-45.0.1">DConf-0.40.0</a>, <a class=
           "xref" href="../general/desktop-file-utils.html" title=
           "desktop-file-utils-0.27">desktop-file-utils-0.27</a>, <a class=
@@ -293,7 +295,7 @@
           "Doxygen-1.10.0">Doxygen-1.10.0</a> (not relevant if using
           --disable-odk), <a class="xref" href=
           "../gnome/evolution-data-server.html" title=
-          "evolution-data-server-3.50.4">evolution-data-server-3.50.4</a>,
+          "evolution-data-server-3.52.0">evolution-data-server-3.52.0</a>,
           <a class="xref" href="../general/gdb.html" title=
           "GDB-14.2">GDB-14.2</a>, <a class="xref" href=
           "../postlfs/gnutls.html" title="GnuTLS-3.8.5">GnuTLS-3.8.5</a>,
@@ -310,7 +312,7 @@
           "../x/qt5.html" title="Qt-5.15.12">Qt-5.15.12</a> or <a class=
           "xref" href="../x/qt5-alternate.html" title=
           "qt-alternate-5.15.12">qt-alternate-5.15.12</a>), <a class="xref"
-          href="../x/qt6.html" title="Qt-6.6.3">Qt-6.6.3</a>, <a class="xref"
+          href="../x/qt6.html" title="Qt-6.7.0">Qt-6.7.0</a>, <a class="xref"
           href="../pst/sane.html" title="SANE-1.2.1">SANE-1.2.1</a>,
           <a class="xref" href="../general/telepathy-glib.html" title=
           "telepathy-glib-0.24.2">telepathy-glib-0.24.2</a>, <a class="xref"
@@ -828,11 +830,19 @@ fi</kbd></pre>
         <p>
           <code class="option">--enable-qt6</code>: This switch enables
           support for integration with Qt6 and the Qt6 theming engine. If
-          <a class="xref" href="../x/qt6.html" title="Qt-6.6.3">Qt-6.6.3</a>
+          <a class="xref" href="../x/qt6.html" title="Qt-6.7.0">Qt-6.7.0</a>
           is not installed in <code class="filename">/usr</code>, the include
           and library directories must be specified in the <code class=
           "envar">QT6INC</code> and <code class="envar">QT6LIB</code>
           environment variables.
+        </p>
+        <p>
+          <code class="option">--with-system-abseil</code>: This switch
+          enables using a system version of the Abseil C++ libraries instead
+          of the bundled copy. Add this switch if <a class="xref" href=
+          "../general/abseil-cpp.html" title=
+          "Abseil-cpp-20240116.2">Abseil-cpp-20240116.2</a> is installed and
+          you wish to use it instead of the bundled copy.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -1029,7 +1039,7 @@ fi</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-384">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-406">
           Home</a>
         </li>
       </ul>
