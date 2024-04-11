@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-406">
+  <body class="blfs" id="blfs-r12.1-416">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-406
+        "phrase">(systemd</span> Edition) - Version r12.1-416
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-406">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-416">
           Home</a>
         </li>
       </ul>
@@ -186,7 +186,11 @@ ninja install</kbd></pre>
         <p>
           <em class=
           "parameter"><code>-Dutf8_range_ENABLE_INSTALL=OFF</code></em>: This
-          parameter disables building and installing the utf8_range library.
+          parameter disables installing the utf8_range static library. The
+          functions provided by this library and used by protobuf is already
+          embedded into <code class="filename">libprotobuf.so</code>, so
+          installing a full copy of the static library is just wasting the
+          disk space.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -308,7 +312,7 @@ ninja install</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-406">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-416">
           Home</a>
         </li>
       </ul>
