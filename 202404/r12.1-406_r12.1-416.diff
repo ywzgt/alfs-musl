@@ -1,0 +1,56 @@
+diff --git a/wget-list b/wget-list
+index 8f29ce977..6798ebe28 100644
+--- a/wget-list
++++ b/wget-list
+@@ -57,7 +57,7 @@ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.12.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+ https://download.qemu.org/qemu-8.2.2.tar.xz
+-https://github.com/abseil-cpp/releases/download/20240116.2/abseil-cpp-20240116.2.tar.gz
++https://github.com/abseil/abseil-cpp/releases/download/20240116.2/abseil-cpp-20240116.2.tar.gz
+ https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.2.tar.xz
+ https://archive.apache.org/dist/apr/apr-1.7.4.tar.bz2
+ https://archive.apache.org/dist/apr/apr-util-1.6.3.tar.bz2
+@@ -90,7 +90,7 @@ https://download.gnome.org/sources/json-glib/1.8/json-glib-1.8.0.tar.xz
+ https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-1.6.3.tar.gz
+ https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.1.0.tar.xz
+ https://pagure.io/libaio/archive/libaio-0.3.113/libaio-0.3.113.tar.gz
+-https://github.com/libarchive/libarchive/releases/download/v3.7.2/libarchive-3.7.2.tar.xz
++https://github.com/libarchive/libarchive/releases/download/v3.7.3/libarchive-3.7.3.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.5.7.tar.bz2
+ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/ivmai/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz
+@@ -153,7 +153,7 @@ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.0/protobuf-c-1.5
+ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.0-consolidated_fixes-1.patch
+ https://download.kde.org/stable/qca/2.3.8/qca-2.3.8.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.10.0/qcoro-0.10.0.tar.gz
+-https://archive.mozilla.org/pub/firefox/releases/115.9.0esr/source/firefox-115.9.0esr.source.tar.xz
++https://archive.mozilla.org/pub/firefox/releases/115.9.1esr/source/firefox-115.9.1esr.source.tar.xz
+ https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.280.0/SPIRV-Headers-1.3.280.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.3.280.0/SPIRV-Tools-1.3.280.0.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.4.2.tar.gz
+@@ -556,7 +556,7 @@ https://www.kernel.org/pub/linux/utils/nfs-utils/2.6.4/nfs-utils-2.6.4.tar.xz
+ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p17.tar.gz
+ https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.6.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/rpcbind-1.2.6-vulnerability_fixes-1.patch
+-https://www.samba.org/ftp/rsync/src/rsync-3.2.7.tar.gz
++https://www.samba.org/ftp/rsync/src/rsync-3.3.0.tar.gz
+ https://download.samba.org/pub/samba/stable/samba-4.20.0.tar.gz
+ https://ftp.gnu.org/gnu/wget/wget-1.24.5.tar.gz
+ https://www.kernel.org/pub/software/network/iw/iw-6.7.tar.xz
+@@ -882,7 +882,6 @@ https://download.documentfoundation.org/libreoffice/src/24.2.2/libreoffice-help-
+ https://download.documentfoundation.org/libreoffice/src/24.2.2/libreoffice-translations-24.2.2.2.tar.xz
+ https://download.gnome.org/sources/epiphany/45/epiphany-45.3.tar.xz
+ https://download.kde.org/stable/release-service/24.02.0/src/falkon-24.02.0.tar.xz
+-https://archive.mozilla.org/pub/firefox/releases/115.9.1esr/source/firefox-115.9.1esr.source.tar.xz
+ https://archive.seamonkey-project.org/releases/2.53.18.1/source/seamonkey-2.53.18.1.source.tar.xz
+ https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.4-upstream_fixes-2.patch
+@@ -961,6 +960,7 @@ https://github.com/webmproject/libvpx/archive/v1.14.0/libvpx-1.14.0.tar.gz
+ https://github.com/mltframework/mlt/releases/download/v7.22.0/mlt-7.22.0.tar.gz
+ https://downloads.xiph.org/releases/opus/opus-1.5.1.tar.gz
+ https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.0.4/pipewire-1.0.4.tar.bz2
++https://www.linuxfromscratch.org/patches/blfs/svn/pipewire-1.0.4-upstream_fix-1.patch
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.0.tar.xz
+ https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.68/sdl12-compat-release-1.2.68.tar.gz
