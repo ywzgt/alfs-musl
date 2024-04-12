@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-416">
+  <body class="blfs" id="blfs-r12.1-434">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-416
+        "phrase">(systemd</span> Edition) - Version r12.1-434
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-416">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-434">
           Home</a>
         </li>
       </ul>
@@ -60,7 +60,9 @@
           provides a program that allows modification of the system
           power/behavior state. This is used on many laptops and can be used
           by a Desktop Environment to activate power saving or performance
-          CPU governors through dbus.
+          CPU governors through dbus. On other systems, Power-profiles-daemon
+          can be used as a streamlined way to set the CPU governor in order
+          to increase system performance at the cost of energy usage.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -118,7 +120,7 @@
           "Polkit-124">Polkit-124</a>, <a class="xref" href=
           "python-modules.html#pygobject3" title=
           "PyGObject-3.48.2">PyGObject-3.48.2</a>, and <a class="xref" href=
-          "upower.html" title="UPower-1.90.2">UPower-1.90.2</a>,
+          "upower.html" title="UPower-1.90.4">UPower-1.90.4</a>,
         </p>
         <h4>
           Optional
@@ -198,9 +200,6 @@ ninja</kbd></pre>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
-        <p>
-          Now, clean up an unneeded systemd unit installed into /tmp:
-        </p>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -235,6 +234,38 @@ ninja</kbd></pre>
           </p>
           <pre class="root"><kbd class=
           "command">systemctl enable power-profiles-daemon</kbd></pre>
+        </div>
+        <div class="sect3" lang="en" xml:lang="en">
+          <h3 class="sect3">
+            Select a Power Profile
+          </h3>
+          <p>
+            To list all supported power profiles, issue:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">powerprofilesctl</kbd></pre>
+          <p>
+            To activate a power profile (for example <em class=
+            "replaceable"><code>performance</code></em>), issue:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">powerprofilesctl set <em class=
+          "replaceable"><code>performance</code></em></kbd></pre>
+          <p>
+            Some desktop environments (for example GNOME and KDE) also
+            provide a graphical interface to interact with <span class=
+            "command"><strong>power-profiles-daemon</strong></span> and
+            activate a power profile.
+          </p>
+          <p>
+            The activated power profile is automatically stored in
+            <code class=
+            "filename">/var/lib/power-profiles-daemon/state.ini</code> and
+            <span class=
+            "command"><strong>power-profiles-daemon</strong></span> will read
+            it out and activate it again on the next boot if the <span class=
+            "phrase">Systemd unit is enabled</span> as above.
+          </p>
         </div>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -308,7 +339,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-416">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-434">
           Home</a>
         </li>
       </ul>

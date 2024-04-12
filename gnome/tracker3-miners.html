@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-416">
+  <body class="blfs" id="blfs-r12.1-434">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-416
+        "phrase">(systemd</span> Edition) - Version r12.1-434
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-416">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-434">
           Home</a>
         </li>
       </ul>
@@ -139,7 +139,7 @@
           "libseccomp-2.5.5">libseccomp-2.5.5</a>, <a class="xref" href=
           "../general/poppler.html" title=
           "Poppler-24.04.0">Poppler-24.04.0</a>, and <a class="xref" href=
-          "../general/upower.html" title="UPower-1.90.2">UPower-1.90.2</a>
+          "../general/upower.html" title="UPower-1.90.4">UPower-1.90.4</a>
         </p>
         <h4>
           Optional
@@ -164,6 +164,26 @@
           "ulink" href="https://libosinfo.org">libosinfo</a>, and <a class=
           "ulink" href="https://gitlab.gnome.org/GNOME/gupnp">gupnp</a>
         </p>
+      </div>
+      <div class="kernel" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          <a id="tracker3-miners-kernel" name=
+          "tracker3-miners-kernel"></a>Kernel Configuration
+        </h2>
+        <p>
+          Enable the following options in the kernel configuration, then
+          recompile the kernel and reboot if necessary:
+        </p>
+        <pre class="screen"><span class=
+        "blue">S</span>ecurity options ---&gt;
+  [*]        <span class=
+"blue">E</span>nable different security models                         [SECURITY]
+  [*]        <span class=
+"blue">L</span>andlock support                                [SECURITY_LANDLOCK]
+  # List more Linux Security Modules here (separated with comma) if needed,
+  # for example 'landlock,lockdown,smack':
+  (landlock) <span class=
+"blue">O</span>rdered list of enabled LSMs                                  [LSM]</pre>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -201,7 +221,6 @@ cd    build &amp;&amp;
 meson setup --prefix=/usr       \
             --buildtype=release \
             -Dman=false         \
-            -Dlandlock=disabled \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -245,17 +264,21 @@ rm -rf ~/tracker-tests</kbd></pre>
           generate and install the man pages.
         </p>
         <p>
-          <em class="parameter"><code>-Dlandlock=disabled</code></em>: This
-          switch disables the Landlock file access sandbox due to it
-          requiring additional kernel configuration and packages such as
-          selinux or AppArmor.
-        </p>
-        <p>
           <code class="option">-Dseccomp=false</code>: This option disables
           the seccomp system call filter. On some architectures, such as i686
           and ARM, the functions that tracker-miners uses are not guarded
           properly, and tracker-miners will get killed with a SIGSYS as a
-          result.
+          result. Note that disabling seccomp might cause the system
+          compromised more severely in case a security vulnerability in
+          tracker-miners or its dependencies is exploited.
+        </p>
+        <p>
+          <code class="option">-Dlandlock=disabled</code>: This switch
+          disables the Landlock file access sandbox. Use it if you don't want
+          to build the kernel with Landlock support. Note that disabling
+          Landlock might cause the system compromised more severely in case a
+          security vulnerability in tracker-miners or its dependencies is
+          exploited.
         </p>
         <p>
           <code class="option">-Dminer_rss=false</code>: Use this option if
@@ -443,7 +466,7 @@ rm -rf ~/tracker-tests</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-416">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-434">
           Home</a>
         </li>
       </ul>
