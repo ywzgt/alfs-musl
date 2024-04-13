@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      WebKitGTK-2.44.0
+      WebKitGTK-2.44.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-434">
+  <body class="blfs" id="blfs-r12.1-468">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-434
+        "phrase">(systemd</span> Edition) - Version r12.1-468
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-434">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-468">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="webkitgtk" name="webkitgtk"></a>WebKitGTK-2.44.0
+      <a id="webkitgtk" name="webkitgtk"></a>WebKitGTK-2.44.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,29 +80,29 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://webkitgtk.org/releases/webkitgtk-2.44.0.tar.xz">https://webkitgtk.org/releases/webkitgtk-2.44.0.tar.xz</a>
+                "https://webkitgtk.org/releases/webkitgtk-2.44.1.tar.xz">https://webkitgtk.org/releases/webkitgtk-2.44.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 20fef6a9122fc46f66f2f8550d5f08c6
+                Download MD5 sum: b3a4504892162b30a774d3afde4707f7
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 36 MB
+                Download size: 35 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 1.2 GB (195 MB installed, add
-                148 MB for GTK-4)
+                Estimated disk space required: 1.2 GB (156 MB installed, add
+                151 MB for GTK-4)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 23 SBU (for GTK-3, using parallelism=8,
-                add 22 SBU for GTK-4)
+                Estimated build time: 25 SBU (for GTK-3, using parallelism=8,
+                add 25 SBU for GTK-4)
               </p>
             </li>
           </ul>
@@ -116,7 +116,7 @@
         <p class="required">
           <a class="xref" href="cairo.html" title=
           "Cairo-1.18.0">Cairo-1.18.0</a>, <a class="xref" href=
-          "../general/cmake.html" title="CMake-3.29.1">CMake-3.29.1</a>,
+          "../general/cmake.html" title="CMake-3.29.2">CMake-3.29.2</a>,
           <a class="xref" href="../multimedia/gst10-plugins-base.html" title=
           "gst-plugins-base-1.24.1">gst-plugins-base-1.24.1</a>, <a class=
           "xref" href="../multimedia/gst10-plugins-bad.html" title=
@@ -161,7 +161,8 @@
           "hicolor-icon-theme-0.17">hicolor-icon-theme-0.17</a>, <a class=
           "xref" href="../general/libavif.html" title=
           "libavif-1.0.4">libavif-1.0.4</a>, <a class="xref" href=
-          "../general/libseccomp.html" title=
+          "../general/libjxl.html" title="libjxl-0.10.2">libjxl-0.10.2</a>,
+          <a class="xref" href="../general/libseccomp.html" title=
           "libseccomp-2.5.5">libseccomp-2.5.5</a>, and <a class="xref" href=
           "../general/xdg-dbus-proxy.html" title=
           "xdg-dbus-proxy-0.1.5">xdg-dbus-proxy-0.1.5</a>
@@ -182,9 +183,7 @@
           "https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</a>,
           <a class="ulink" href=
           "https://github.com/ianlancetaylor/libbacktrace">libbacktrace</a>,
-          <a class="ulink" href=
-          "https://github.com/libjxl/libjxl">libjxl</a>, and <a class="ulink"
-          href=
+          and <a class="ulink" href=
           "https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</a>
         </p>
       </div>
@@ -204,7 +203,7 @@
             This package allows building with either GTK-3 or GTK-4, but not
             both in the same build. The GTK-4 version is needed for packages
             such as <a class="xref" href="../xsoft/epiphany.html" title=
-            "Epiphany-45.3">Epiphany-45.3</a>. Other packages, such as
+            "Epiphany-46.0">Epiphany-46.0</a>. Other packages, such as
             <a class="xref" href="../xsoft/balsa.html" title=
             "Balsa-2.6.4">Balsa-2.6.4</a> or <a class="xref" href=
             "../gnome/evolution.html" title=
@@ -235,7 +234,6 @@ cmake -DCMAKE_BUILD_TYPE=Release  \
       -DENABLE_DOCUMENTATION=OFF  \
       -DUSE_WOFF2=OFF             \
       -DUSE_GTK4=OFF              \
-      -DUSE_JPEGXL=OFF            \
       -DENABLE_BUBBLEWRAP_SANDBOX=ON \
       -Wno-dev -G Ninja ..        &amp;&amp;
 ninja</kbd></pre>
@@ -268,7 +266,6 @@ cmake -DCMAKE_BUILD_TYPE=Release  \
       -DENABLE_DOCUMENTATION=OFF  \
       -DUSE_WOFF2=OFF             \
       -DUSE_GTK4=ON               \
-      -DUSE_JPEGXL=OFF            \
       -DENABLE_BUBBLEWRAP_SANDBOX=ON \
       -Wno-dev -G Ninja ..        &amp;&amp;
 ninja</kbd></pre>
@@ -331,12 +328,6 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
           This switch enables compiling and installing the MiniBrowser.
         </p>
         <p>
-          <em class="parameter"><code>-DUSE_JPEGXL=OFF</code></em>: This
-          switch turns off support for JPEG-XL images. Remove it if you have
-          the optional package <a class="ulink" href=
-          "https://github.com/libjxl/libjxl">libjxl</a> installed.
-        </p>
-        <p>
           <em class=
           "parameter"><code>-DENABLE_BUBBLEWRAP_SANDBOX=ON</code></em>: This
           switch enables the Bubblewrap sandbox, which helps mitigate the
@@ -372,6 +363,13 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
           optional package <a class="xref" href="../general/woff2.html"
           title="woff2-1.0.2">WOFF2-1.0.2</a> is installed. This adds
           additional support for fonts.
+        </p>
+        <p>
+          <code class="option">-DUSE_JPEGXL=OFF</code>: Use this switch if
+          the recommended package <a class="xref" href=
+          "../general/libjxl.html" title="libjxl-0.10.2">libjxl-0.10.2</a> is
+          not installed. Note that you will not have support for JPEG XL
+          images if this option is passed.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -516,7 +514,7 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-434">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-468">
           Home</a>
         </li>
       </ul>

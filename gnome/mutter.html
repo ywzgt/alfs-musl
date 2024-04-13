@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Mutter-45.4
+      Mutter-46.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-434">
+  <body class="blfs" id="blfs-r12.1-468">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-434
+        "phrase">(systemd</span> Edition) - Version r12.1-468
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -24,16 +24,16 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="gnome-control-center.html" title=
-          "gnome-control-center-45.3">Prev</a>
+          "gnome-control-center-46.0.1">Prev</a>
           <p>
-            gnome-control-center-45.3
+            gnome-control-center-46.0.1
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="gnome-shell.html" title=
-          "gnome-shell-45.4">Next</a>
+          "gnome-shell-46.0">Next</a>
           <p>
-            gnome-shell-45.4
+            gnome-shell-46.0
           </p>
         </li>
         <li class="up">
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-434">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-468">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="mutter" name="mutter"></a>Mutter-45.4
+      <a id="mutter" name="mutter"></a>Mutter-46.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,28 +80,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/mutter/45/mutter-45.4.tar.xz">
-                https://download.gnome.org/sources/mutter/45/mutter-45.4.tar.xz</a>
+                "https://download.gnome.org/sources/mutter/46/mutter-46.0.tar.xz">
+                https://download.gnome.org/sources/mutter/46/mutter-46.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 74e84722518707c0768f9753fc3492d7
+                Download MD5 sum: fb8c5c6269dbb9f8d1fe5b9ef9b146a6
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 2.8 MB
+                Download size: 6.4 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 70 MB (with tests)
+                Estimated disk space required: 83 MB (with tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.7 SBU (Using parallelism=4; add 1.4
+                Estimated build time: 0.5 SBU (Using parallelism=4; add 1.4
                 SBU for tests)
               </p>
             </li>
@@ -115,7 +115,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="gnome-settings-daemon.html" title=
-          "gnome-settings-daemon-45.1">gnome-settings-daemon-45.1</a>,
+          "gnome-settings-daemon-46.0">gnome-settings-daemon-46.0</a>,
           <a class="xref" href="../x/graphene.html" title=
           "Graphene-1.10.8">graphene-1.10.8</a>, <a class="xref" href=
           "../x/libei.html" title="libei-1.2.1">libei-1.2.1</a>, <a class=
@@ -148,7 +148,7 @@
           "../general/wayland-protocols.html" title=
           "Wayland-Protocols-1.34">wayland-protocols-1.34</a>, and <a class=
           "xref" href="../x/xwayland.html" title=
-          "Xwayland-23.2.5">Xwayland-23.2.5</a>
+          "Xwayland-23.2.6">Xwayland-23.2.6</a>
         </p>
         <h4>
           Optional
@@ -160,7 +160,7 @@
           <a class="xref" href="../general/libdisplay-info.html" title=
           "libdisplay-info-0.1.1">libdisplay-info-0.1.1</a>, <a class="xref"
           href="../x/xorg-server.html" title=
-          "Xorg-Server-21.1.12">Xorg-Server-21.1.12</a> (for X11 sessions),
+          "Xorg-Server-21.1.13">Xorg-Server-21.1.13</a> (for X11 sessions),
           and <a class="ulink" href=
           "https://wiki.gnome.org/Apps/Sysprof">sysprof</a>
         </p>
@@ -195,9 +195,9 @@ ninja</kbd></pre>
           "command"><strong>Xvfb</strong></span> at runtime, and <span class=
           "command"><strong>Xvfb</strong></span> can be installed from either
           <a class="xref" href="../x/xorg-server.html" title=
-          "Xorg-Server-21.1.12">Xorg-Server-21.1.12</a> or <a class="xref"
+          "Xorg-Server-21.1.13">Xorg-Server-21.1.13</a> or <a class="xref"
           href="../x/xwayland.html" title=
-          "Xwayland-23.2.5">Xwayland-23.2.5</a>. You should also replace
+          "Xwayland-23.2.6">Xwayland-23.2.6</a>. You should also replace
           <em class="parameter"><code>-Dtests=false</code></em> in the
           <span class="command"><strong>meson</strong></span> command, with
           <em class="parameter"><code>-Dtests=true
@@ -228,10 +228,12 @@ ninja</kbd></pre>
         <pre class="test"><kbd class="command">ninja test</kbd></pre>
         <p>
           The tests require an active X or wayland session. One test named
-          <code class="filename">input-capture</code> is known to fail. A few
-          other tests may fail depending on the configuration. Don't make any
-          mouse or keyboard input while the test suite is running or some
-          tests may fail.
+          <code class="filename">input-capture</code> is known to fail. An
+          additional test named <code class=
+          "filename">cogl-test-offscreen-texture-formats-gles2</code> is
+          known to fail. A few other tests may fail depending on the
+          configuration. Don't make any mouse or keyboard input while the
+          test suite is running or some tests may fail.
         </p>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -315,13 +317,13 @@ ninja</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libmutter-13.so and libmutter-test-13.so
+              <span class="segbody">libmutter-14.so and libmutter-test-14.so
               (optional)</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class=
-              "segbody">/usr/{lib,include,libexec/installed-tests,share/{,installed-tests}}/mutter-13</span>
+              "segbody">/usr/{lib,include,libexec/installed-tests,share/{,installed-tests}}/mutter-14</span>
             </div>
           </div>
         </div>
@@ -356,7 +358,7 @@ ninja</kbd></pre>
                   <p>
                     <a id="libmutter" name="libmutter"></a><span class=
                     "term"><code class=
-                    "filename">libmutter-13.so</code></span>
+                    "filename">libmutter-14.so</code></span>
                   </p>
                 </td>
                 <td>
@@ -371,7 +373,7 @@ ninja</kbd></pre>
                   <p>
                     <a id="libmutter-test" name=
                     "libmutter-test"></a><span class="term"><code class=
-                    "filename">libmutter-test-13.so</code></span>
+                    "filename">libmutter-test-14.so</code></span>
                   </p>
                 </td>
                 <td>
@@ -393,16 +395,16 @@ ninja</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="gnome-control-center.html" title=
-          "gnome-control-center-45.3">Prev</a>
+          "gnome-control-center-46.0.1">Prev</a>
           <p>
-            gnome-control-center-45.3
+            gnome-control-center-46.0.1
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="gnome-shell.html" title=
-          "gnome-shell-45.4">Next</a>
+          "gnome-shell-46.0">Next</a>
           <p>
-            gnome-shell-45.4
+            gnome-shell-46.0
           </p>
         </li>
         <li class="up">
@@ -411,7 +413,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-434">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-468">
           Home</a>
         </li>
       </ul>
