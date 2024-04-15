@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-470">
+  <body class="blfs" id="blfs-r12.1-481">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-470
+        "phrase">(systemd</span> Edition) - Version r12.1-481
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-470">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-481">
           Home</a>
         </li>
       </ul>
@@ -140,6 +140,12 @@
         <h2 class="sect2">
           Installation of Protobuf-c
         </h2>
+        <p>
+          First, apply some upstream fixes to make this package compatible
+          with protobuf-26.1:
+        </p>
+        <pre class="pre"><kbd class=
+        "command">patch -Np1 -i ../protobuf-c-1.5.0-consolidated_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">Protobuf-c</span> by running the
           following commands:
@@ -252,7 +258,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-470">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-481">
           Home</a>
         </li>
       </ul>
