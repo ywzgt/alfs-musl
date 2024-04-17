@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-481">
+  <body class="blfs" id="blfs-r12.1-534">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-481
+        "phrase">(systemd</span> Edition) - Version r12.1-534
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-534">
           Home</a>
         </li>
       </ul>
@@ -63,6 +63,14 @@
           about the details of how <span class=
           "application">Fontconfig</span> works. But there are many things
           which can be altered if they do not suit your needs.
+        </p>
+        <p>
+          However, before spending a long time trying out different settings
+          please be aware that modern applications and desktop environments
+          may ignore the settings of fontconfig - see <a class="xref" href=
+          "tuning-fontconfig.html#items-which-can-override-fontconfig" title=
+          "Items which can override Fontconfig">Items which can override
+          Fontconfig</a>.
         </p>
         <p>
           Although this page is long, it barely scratches the surface and you
@@ -1203,10 +1211,8 @@ EOF</kbd></pre>
         <p>
           <span class="application">KDE Plasma</span>: The settings can be
           adjusted in <span class="application">System Settings</span> under
-          Appearance -&gt; Fonts. This will create or modify <code class=
-          "filename">~/.config/fontconfig/fonts.conf</code> although
-          <code class="filename">~/.config/fontconfig/fonts.conf</code>, if
-          installed, can override that.
+          Appearance -&gt; Fonts or in Edit -&gt; Preferences of the
+          individual application.
         </p>
         <p>
           <span class="application">Xfce desktop</span>: The settings can be
@@ -1356,7 +1362,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-534">
           Home</a>
         </li>
       </ul>

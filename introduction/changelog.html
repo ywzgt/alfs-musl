@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-481">
+  <body class="blfs" id="blfs-r12.1-534">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-481
+        "phrase">(systemd</span> Edition) - Version r12.1-534
       </h4>
       <h3>
         Chapter&nbsp;1.&nbsp;Welcome to BLFS
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-534">
           Home</a>
         </li>
       </ul>
@@ -52,13 +52,278 @@
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <p>
-        Current release: r12.1-481 – April 14th, 2024
+        Current release: r12.1-534 – April 16th, 2024
       </p>
       <div class="itemizedlist">
         <p class="title">
           <strong>Changelog Entries:</strong>
         </p>
         <ul>
+          <li class="listitem">
+            <p>
+              April 16th, 2024
+            </p>
+            <div class="itemizedlist">
+              <ul>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Update to php-8.3.6 (security update). Fixes
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19645">#19645</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Update to sqlite-autoconf-3450300 (3.45.3).
+                    Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19662">#19662</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Update to boost-1.85.0. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19660">#19660</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [ken] - Change details for KDE in tuning fontconfig and
+                    note much earlier that the settings for fontconfig may be
+                    ignored by applications and desktop environments. Fixes
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19667">#19667</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to xf86-input-wacom-1.2.2. Fixes
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19663">#19663</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to libwacom-2.11.0. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19661">#19661</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to gnome-system-monitor-46.0. Fixes
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19606">#19606</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Add gtkmm-4.14.0 to the book. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/14443">#14443</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Add atkmm-2.36.3 to the book. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/14406">#14406</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Add pangomm-2.52.0 to the book. Fixes
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/14405">#14405</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Add cairomm-1.18.0 to the book. Fixes
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/14172">#14172</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Add glibmm-2.80.0 to the book. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/14403">#14403</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Add libsigc++3 to the book. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/16086">#16086</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Update to bluez-5.74. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19655">#19655</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Fix a build problem for sphinx-7.2.6. Fixes
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19659">#19659</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Update to elogind-255.4-r1. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19298">#19298</a>.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="listitem">
+            <p>
+              April 15th, 2024
+            </p>
+            <div class="itemizedlist">
+              <ul>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to gucharmap-15.1.3. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19477">#19477</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to gnome-terminal-3.52.0. Fixes
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19476">#19476</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to gnome-logs-45.0. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19603">#19603</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to gnome-disk-utility-46.0. Fixes
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19602">#19602</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to gnome-calculator-46.0. Fixes
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19599">#19599</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to file-roller-44.1. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19598">#19598</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to evince-46.0. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19490">#19490</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to dvisvgm-3.3. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19642">#19642</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to asymptote-2.89. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19543">#19543</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Fix bugs in latex2e and dvipdfm-x in texlive.
+                    Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19571">#19571</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to EOG-45.3. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19475">#19475</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to baobab-46.0. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19601">#19601</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to simple-scan-46.0. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19620">#19620</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Update to Python3-3.12.3. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19633">#19633</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Fix CVE-2024-25081 and CVE-2024-25082 in
+                    FontForge. Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19545">#19545</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to libxcb-1.17.0. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19658">#19658</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to xcb-proto-1.17.0. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19657">#19657</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to vulkan-headers-1.3.282. Fixes
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19656">#19656</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to gtk-4.14.2. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/19583">#19583</a>.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
           <li class="listitem">
             <p>
               April 14th, 2024
@@ -2506,7 +2771,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-534">
           Home</a>
         </li>
       </ul>

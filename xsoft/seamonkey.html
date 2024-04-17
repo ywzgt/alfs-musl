@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-481">
+  <body class="blfs" id="blfs-r12.1-534">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-481
+        "phrase">(systemd</span> Edition) - Version r12.1-534
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-534">
           Home</a>
         </li>
       </ul>
@@ -272,9 +272,8 @@ ac_add_options --disable-crashreporter
 ac_add_options --disable-updater
 ac_add_options --disable-tests
 
-# The Rust code for SIMD optimization is much more outdated than
-# Firefox and Thunderbird, so it does not build with recent Rustc.
-ac_add_options --disable-rust-simd
+# This enables SIMD optimization in the shipped encoding_rs crate.
+ac_add_options --enable-rust-simd
 
 ac_add_options --enable-strip
 ac_add_options --enable-install-strip
@@ -532,7 +531,7 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-534">
           Home</a>
         </li>
       </ul>
