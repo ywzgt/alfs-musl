@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      HarfBuzz-8.4.0
+      harfBuzz-8.4.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-548">
+  <body class="blfs" id="blfs-r12.1-561">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-548
+        "phrase">(systemd</span> Edition) - Version r12.1-561
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-548">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-561">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="harfbuzz" name="harfbuzz"></a>HarfBuzz-8.4.0
+      <a id="harfbuzz" name="harfbuzz"></a>harfBuzz-8.4.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -120,9 +120,9 @@
           "xref" href="../xsoft/libreoffice.html" title=
           "LibreOffice-24.2.2">LibreOffice-24.2.2.2</a> with system
           harfbuzz), <a class="xref" href="icu.html" title=
-          "ICU-74.2">ICU-74.2</a>, and <a class="xref" href="freetype2.html"
+          "icu-75.1">ICU-75.1</a>, and <a class="xref" href="freetype2.html"
           title="FreeType-2.13.2">FreeType-2.13.2</a> (after <a class="xref"
-          href="harfbuzz.html" title="HarfBuzz-8.4.0">HarfBuzz-8.4.0</a> is
+          href="harfbuzz.html" title="harfBuzz-8.4.0">harfBuzz-8.4.0</a> is
           installed, reinstall <a class="xref" href="freetype2.html" title=
           "FreeType-2.13.2">FreeType-2.13.2</a>)
         </p>
@@ -170,6 +170,7 @@ cd    build &amp;&amp;
 meson setup ..            \
       --prefix=/usr       \
       --buildtype=release \
+      -Dcpp_std=c++17     \
       -Dgraphite2=enabled &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -189,6 +190,16 @@ ninja</kbd></pre>
           <em class="parameter"><code>--buildtype=release</code></em>:
           Specify a buildtype suitable for stable releases of the package, as
           the default may produce unoptimized binaries.
+        </p>
+        <p>
+          <em class="parameter"><code>-Dcpp_std=c++17</code></em>: This
+          switch ensures compiling the C++ code following the C++17 standard,
+          overriding the default of this package (C++11). It's required to
+          build this package with <a class="xref" href="icu.html" title=
+          "icu-75.1">ICU-75.1</a> installed because some ICU headers use
+          C++17 features. It is unnecessary if <a class="xref" href=
+          "icu.html" title="icu-75.1">ICU-75.1</a> is not installed, but does
+          no harm anyway.
         </p>
         <p>
           <em class="parameter"><code>-Dgraphite2=enabled</code></em>: This
@@ -426,7 +437,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-548">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-561">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-548">
+  <body class="blfs" id="blfs-r12.1-561">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-548
+        "phrase">(systemd</span> Edition) - Version r12.1-561
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-548">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-561">
           Home</a>
         </li>
       </ul>
@@ -124,7 +124,7 @@
           "xref" href="gtk3.html" title="GTK+-3.24.41">GTK+-3.24.41</a>,
           <a class="xref" href="gtk4.html" title="GTK-4.14.2">GTK-4.14.2</a>,
           <a class="xref" href="../general/icu.html" title=
-          "ICU-74.2">ICU-74.2</a>, <a class="xref" href=
+          "icu-75.1">ICU-75.1</a>, <a class="xref" href=
           "../general/lcms2.html" title="Little CMS-2.14">Little
           CMS-2.14</a>, <a class="xref" href="../general/libgudev.html"
           title="libgudev-238">libgudev-238</a>, <a class="xref" href=
@@ -174,7 +174,7 @@
           <a class="xref" href="../general/python-modules.html#gi-docgen"
           title="Gi-DocGen-2023.3">Gi-DocGen-2023.3</a>, <a class="xref"
           href="../general/harfbuzz.html" title=
-          "HarfBuzz-8.4.0">HarfBuzz-8.4.0</a>, <a class="xref" href=
+          "harfBuzz-8.4.0">harfBuzz-8.4.0</a>, <a class="xref" href=
           "../general/wayland.html" title=
           "Wayland-1.22.0">Wayland-1.22.0</a>, <a class="xref" href=
           "../general/woff2.html" title="woff2-1.0.2">WOFF2-1.0.2</a>,
@@ -232,6 +232,7 @@ cmake -DCMAKE_BUILD_TYPE=Release  \
       -DENABLE_GAMEPAD=OFF        \
       -DENABLE_MINIBROWSER=ON     \
       -DENABLE_DOCUMENTATION=OFF  \
+      -DENABLE_WEBDRIVER=OFF      \
       -DUSE_WOFF2=OFF             \
       -DUSE_GTK4=OFF              \
       -DENABLE_BUBBLEWRAP_SANDBOX=ON \
@@ -326,6 +327,15 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
         <p>
           <em class="parameter"><code>-DENABLE_MINIBROWSER=ON</code></em>:
           This switch enables compiling and installing the MiniBrowser.
+        </p>
+        <p>
+          <em class="parameter"><code>-DENABLE_WEBDRIVER=OFF</code></em>:
+          This switch disables compiling and installing <span class=
+          "command"><strong>WebKitWebDriver</strong></span>. We use it for
+          the GTK-3 build because the <span class=
+          "command"><strong>WebKitWebDriver</strong></span> from the GTK-3
+          build will be overwritten by the GTK-4 build anyway. Remove this
+          option if you don't plan to build this package with GTK-4.
         </p>
         <p>
           <em class=
@@ -514,7 +524,7 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-548">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-561">
           Home</a>
         </li>
       </ul>
