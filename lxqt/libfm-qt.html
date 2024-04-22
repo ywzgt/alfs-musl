@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      libfm-qt-1.4.0
+      libfm-qt-2.0.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-567">
+  <body class="blfs" id="blfs-r12.1-578">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-567
+        "phrase">(systemd</span> Edition) - Version r12.1-578
       </h4>
       <h3>
         Chapter&nbsp;37.&nbsp;LXQt Desktop
@@ -30,10 +30,10 @@
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="lxqt-themes.html" title=
-          "lxqt-themes-1.3.0">Next</a>
+          <a accesskey="n" href="lxqt-globalkeys.html" title=
+          "lxqt-globalkeys-2.0.0">Next</a>
           <p>
-            lxqt-themes-1.3.0
+            lxqt-globalkeys-2.0.0
           </p>
         </li>
         <li class="up">
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-567">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="libfm-qt" name="libfm-qt"></a>libfm-qt-1.4.0
+      <a id="libfm-qt" name="libfm-qt"></a>libfm-qt-2.0.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,23 +78,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/lxqt/libfm-qt/releases/download/1.4.0/libfm-qt-1.4.0.tar.xz">
-                https://github.com/lxqt/libfm-qt/releases/download/1.4.0/libfm-qt-1.4.0.tar.xz</a>
+                "https://github.com/lxqt/libfm-qt/releases/download/2.0.0/libfm-qt-2.0.0.tar.xz">
+                https://github.com/lxqt/libfm-qt/releases/download/2.0.0/libfm-qt-2.0.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: d018e160cefdbccfea8bd550f2d7b517
+                Download MD5 sum: 364155e5d3450a8ad6e08614ef5ccfe3
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 392 KB
+                Download size: 404 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 24 MB
+                Estimated disk space required: 30 MB
               </p>
             </li>
             <li class="listitem">
@@ -116,10 +116,8 @@
           "../general/libexif.html" title=
           "libexif-0.6.24">libexif-0.6.24</a>, <a class="xref" href=
           "menu-cache.html" title="menu-cache-1.1.0">menu-cache-1.1.0</a>,
-          and (<a class="xref" href="../x/qt5.html" title=
-          "Qt-5.15.12">Qt-5.15.12</a> or <a class="xref" href=
-          "../x/qt5-alternate.html" title=
-          "qt-alternate-5.15.12">qt-alternate-5.15.12</a>)
+          and <a class="xref" href="../x/qt6.html" title=
+          "Qt-6.7.0">Qt-6.7.0</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -130,12 +128,12 @@
           Install <span class="application">libfm-qt</span> by running the
           following commands:
         </p>
-        <pre class="userinput"><kbd class="command">mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
+        <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
+cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..                          &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
+      ..                           &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -157,12 +155,12 @@ make</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Library:</strong>
-              <span class="segbody">libfm-qt.so</span>
+              <span class="segbody">libfm-qt6.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/include/libfm-qt,
-              /usr/share/libfm-qt, and /usr/share/cmake/fm-qt</span>
+              <span class="segbody">/usr/include/libfm-qt6,
+              /usr/share/libfm-qt6, and /usr/share/cmake/fm-qt6</span>
             </div>
           </div>
         </div>
@@ -180,12 +178,12 @@ make</kbd></pre>
                 <td>
                   <p>
                     <a id="libfm-qt-lib" name="libfm-qt-lib"></a><span class=
-                    "term"><code class="filename">libfm-qt.so</code></span>
+                    "term"><code class="filename">libfm-qt6.so</code></span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    contains the <span class="application">libfm-qt</span>
+                    contains the <span class="application">libfm-qt6</span>
                     API functions
                   </p>
                 </td>
@@ -205,10 +203,10 @@ make</kbd></pre>
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="lxqt-themes.html" title=
-          "lxqt-themes-1.3.0">Next</a>
+          <a accesskey="n" href="lxqt-globalkeys.html" title=
+          "lxqt-globalkeys-2.0.0">Next</a>
           <p>
-            lxqt-themes-1.3.0
+            lxqt-globalkeys-2.0.0
           </p>
         </li>
         <li class="up">
@@ -217,7 +215,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-567">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
           Home</a>
         </li>
       </ul>

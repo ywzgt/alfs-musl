@@ -12,20 +12,20 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-567">
+  <body class="blfs" id="blfs-r12.1-578">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-567
+        "phrase">(systemd</span> Edition) - Version r12.1-578
       </h4>
       <h3>
         Chapter&nbsp;38.&nbsp;LXQt Applications
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="qps.html" title="qps-2.8.0">Prev</a>
+          <a accesskey="p" href="qps.html" title="qps-2.9.0">Prev</a>
           <p>
-            qps-2.8.0
+            qps-2.9.0
           </p>
         </li>
         <li class="next">
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-567">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
           Home</a>
         </li>
       </ul>
@@ -111,8 +111,10 @@
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="lxqt-build-tools.html" title=
-          "lxqt-build-tools-0.13.0">lxqt-build-tools-0.13.0</a>
+          (<a class="xref" href="../x/qt5.html" title=
+          "Qt-5.15.12">Qt-5.15.12</a> or <a class="xref" href=
+          "../x/qt5-alternate.html" title=
+          "qt-alternate-5.15.12">qt-alternate-5.15.12</a>)
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -123,12 +125,12 @@
           Install <span class="application">qtermwidget</span> by running the
           following commands:
         </p>
-        <pre class="userinput"><kbd class="command">mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
+        <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
+cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..       &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
+      ..                           &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -191,9 +193,9 @@ make</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="qps.html" title="qps-2.8.0">Prev</a>
+          <a accesskey="p" href="qps.html" title="qps-2.9.0">Prev</a>
           <p>
-            qps-2.8.0
+            qps-2.9.0
           </p>
         </li>
         <li class="next">
@@ -209,7 +211,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-567">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
           Home</a>
         </li>
       </ul>

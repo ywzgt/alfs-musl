@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      screengrab-2.7.0
+      screengrab-2.8.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-567">
+  <body class="blfs" id="blfs-r12.1-578">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-567
+        "phrase">(systemd</span> Edition) - Version r12.1-578
       </h4>
       <h3>
         Chapter&nbsp;38.&nbsp;LXQt Applications
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-567">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="screengrab" name="screengrab"></a>screengrab-2.7.0
+      <a id="screengrab" name="screengrab"></a>screengrab-2.8.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,23 +78,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/lxqt/screengrab/releases/download/2.7.0/screengrab-2.7.0.tar.xz">
-                https://github.com/lxqt/screengrab/releases/download/2.7.0/screengrab-2.7.0.tar.xz</a>
+                "https://github.com/lxqt/screengrab/releases/download/2.8.0/screengrab-2.8.0.tar.xz">
+                https://github.com/lxqt/screengrab/releases/download/2.8.0/screengrab-2.8.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: df840ca6ad74b6388b9c0067c9f31423
+                Download MD5 sum: bec5465f053bfb964c7a6e57e20e421f
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 336 KB
+                Download size: 340 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 6.5 MB
+                Estimated disk space required: 9.1 MB
               </p>
             </li>
             <li class="listitem">
@@ -112,9 +112,9 @@
         </h4>
         <p class="required">
           <a class="xref" href="lxqt-kwindowsystem.html" title=
-          "kwindowsystem-5.115.0 for lxqt">kwindowsystem-5.115.0 for lxqt</a>
-          and <a class="xref" href="libqtxdg.html" title=
-          "libqtxdg-3.12.0">libqtxdg-3.12.0</a>
+          "kwindowsystem-6.1.0 for lxqt">kwindowsystem-6.1.0 for lxqt</a> and
+          <a class="xref" href="libqtxdg.html" title=
+          "libqtxdg-4.0.0">libqtxdg-4.0.0</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -125,13 +125,12 @@
           Install <span class="application">screengrab</span> by running the
           following commands:
         </p>
-        <pre class="userinput"><kbd class="command">mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
+        <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
+cd    build &amp;&amp;
 
-cmake -DCMAKE_BUILD_TYPE=Release  \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      ..       &amp;&amp;
-
+cmake -D CMAKE_BUILD_TYPE=Release  \
+      -D CMAKE_INSTALL_PREFIX=/usr \
+      ..                           &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -220,7 +219,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-567">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
           Home</a>
         </li>
       </ul>

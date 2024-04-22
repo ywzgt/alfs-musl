@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-567">
+  <body class="blfs" id="blfs-r12.1-578">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-567
+        "phrase">(systemd</span> Edition) - Version r12.1-578
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-567">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
           Home</a>
         </li>
       </ul>
@@ -135,7 +135,7 @@
           "Asciidoc-10.2.0">asciidoc-10.2.0</a>, <a class="xref" href=
           "../x/cairo.html" title="Cairo-1.18.0">Cairo-1.18.0</a>, <a class=
           "xref" href="../multimedia/ffmpeg.html" title=
-          "FFmpeg-6.1.1">FFmpeg-6.1.1</a>, <a class="xref" href=
+          "FFmpeg-7.0">FFmpeg-7.0</a>, <a class="xref" href=
           "../x/gdk-pixbuf.html" title=
           "gdk-pixbuf-2.42.10">gdk-pixbuf-2.42.10</a>, <a class="xref" href=
           "../gnome/gexiv2.html" title="gexiv2-0.14.2">gexiv2-0.14.2</a>,
@@ -195,7 +195,7 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr --buildtype=release .. &amp;&amp;
+meson setup --prefix=/usr --buildtype=release -Dlibav=disabled .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           To run the tests, issue: <span class="command"><strong>ninja
@@ -215,7 +215,10 @@ ninja</kbd></pre>
         <p>
           <code class="option">-Ddocs=true</code>: Build and install
           documentation (requires <a class="xref" href="gtk-doc.html" title=
-          "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a>,).
+          "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a>). <code class=
+          "option">-Dlibav=disabled</code>: Disable FFMpeg support as the
+          build fails with <a class="xref" href="../multimedia/ffmpeg.html"
+          title="FFmpeg-7.0">FFmpeg-7.0</a>.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -334,7 +337,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-567">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
           Home</a>
         </li>
       </ul>

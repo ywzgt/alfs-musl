@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-567">
+  <body class="blfs" id="blfs-r12.1-578">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-567
+        "phrase">(systemd</span> Edition) - Version r12.1-578
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-567">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
           Home</a>
         </li>
       </ul>
@@ -114,7 +114,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="ffmpeg.html" title=
-          "FFmpeg-6.1.1">FFmpeg-6.1.1</a> and <a class="xref" href=
+          "FFmpeg-7.0">FFmpeg-7.0</a> and <a class="xref" href=
           "gst10-plugins-base.html" title=
           "gst-plugins-base-1.24.2">gst-plugins-base-1.24.2</a>
         </p>
@@ -136,6 +136,26 @@
         <h2 class="sect2">
           Installation of GStreamer Libav
         </h2>
+        <p>
+          Remove/Check for a series of deprecated API's by running the
+          following commands:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i '444a#if LIBAVUTIL_VERSION_MAJOR &lt; 59' ext/libav/gstavcfg.c &amp;&amp;
+sed -i '446a#endif' ext/libav/gstavcfg.c &amp;&amp;
+sed -i '/ID_R210/d' ext/libav/gstavviddec.c &amp;&amp;
+sed -i 's/ID_V410\ ||/ID_V410\ ||\ in_plugin-&gt;id\ ==\ AV_CODEC_ID_R210/' ext/libav/gstavviddec.c &amp;&amp;
+sed -i '/ID_R210/a#if\ LIBAVCODEC_VERSION_MAJOR\ \&lt;\ 61' ext/libav/gstavviddec.c &amp;&amp;
+sed -i '/ID_AYUV/a#endif' ext/libav/gstavviddec.c &amp;&amp;
+sed -i '/ID_R210/d' ext/libav/gstavvidenc.c &amp;&amp;
+sed -i 's/ID_V410\ ||/ID_V410\ ||\ in_plugin-&gt;id\ ==\ AV_CODEC_ID_R210/' ext/libav/gstavvidenc.c &amp;&amp;
+sed -i '/ID_R210/a#if\ LIBAVCODEC_VERSION_MAJOR\ \&lt;\ 61' ext/libav/gstavvidenc.c &amp;&amp;
+sed -i '/ID_AYUV/a#endif' ext/libav/gstavvidenc.c &amp;&amp;
+sed -i ext/libav/gstavdemux.c -e '1375,1430d' \
+            -e '2058d' \
+            -e '2105,2140d' \
+            -e '2217,2221d' &amp;&amp;
+sed -i '2122aif (!gst_element_register (plugin, type_name, rank, type)) {' ext/libav/gstavdemux.c</kbd></pre>
         <p>
           Install <span class="application">GStreamer Libav</span> by running
           the following commands:
@@ -211,7 +231,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-567">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
           Home</a>
         </li>
       </ul>

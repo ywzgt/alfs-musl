@@ -12,28 +12,28 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-567">
+  <body class="blfs" id="blfs-r12.1-578">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-567
+        "phrase">(systemd</span> Edition) - Version r12.1-578
       </h4>
       <h3>
         Chapter&nbsp;37.&nbsp;LXQt Desktop
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="lxqt-config.html" title=
-          "lxqt-config-1.4.0">Prev</a>
+          <a accesskey="p" href="xdg-desktop-portal-lxqt.html" title=
+          "xdg-desktop-portal-lxqt-1.0.1">Prev</a>
           <p>
-            lxqt-config-1.4.0
+            xdg-desktop-portal-lxqt-1.0.1
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="lxqt-globalkeys.html" title=
-          "lxqt-globalkeys-1.4.0">Next</a>
+          <a accesskey="n" href="post-install.html" title=
+          "LXQt Desktop Final Instructions">Next</a>
           <p>
-            lxqt-globalkeys-1.4.0
+            LXQt Desktop Final Instructions
           </p>
         </li>
         <li class="up">
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-567">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
           Home</a>
         </li>
       </ul>
@@ -114,9 +114,13 @@
         <p class="required">
           <a class="xref" href="../x/hicolor-icon-theme.html" title=
           "hicolor-icon-theme-0.17">hicolor-icon-theme-0.17</a>, <a class=
-          "xref" href="liblxqt.html" title="liblxqt-1.4.0">liblxqt-1.4.0</a>,
-          and <a class="xref" href="../x/openbox.html" title=
-          "openbox-3.6.1">openbox-3.6.1</a>
+          "xref" href="lxqt-build-tools.html" title=
+          "lxqt-build-tools-2.0.0">lxqt-build-tools-2.0.0</a>, <a class=
+          "xref" href="../x/openbox.html" title=
+          "openbox-3.6.1">openbox-3.6.1</a>, and (<a class="xref" href=
+          "../x/qt5.html" title="Qt-5.15.12">Qt-5.15.12</a> or <a class=
+          "xref" href="../x/qt5-alternate.html" title=
+          "qt-alternate-5.15.12">qt-alternate-5.15.12</a>)
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -127,12 +131,12 @@
           Install <span class="application">obconf-qt</span> by running the
           following commands:
         </p>
-        <pre class="userinput"><kbd class="command">mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
+        <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
+cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..                          &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
+      ..                           &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -195,17 +199,17 @@ make</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="lxqt-config.html" title=
-          "lxqt-config-1.4.0">Prev</a>
+          <a accesskey="p" href="xdg-desktop-portal-lxqt.html" title=
+          "xdg-desktop-portal-lxqt-1.0.1">Prev</a>
           <p>
-            lxqt-config-1.4.0
+            xdg-desktop-portal-lxqt-1.0.1
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="lxqt-globalkeys.html" title=
-          "lxqt-globalkeys-1.4.0">Next</a>
+          <a accesskey="n" href="post-install.html" title=
+          "LXQt Desktop Final Instructions">Next</a>
           <p>
-            lxqt-globalkeys-1.4.0
+            LXQt Desktop Final Instructions
           </p>
         </li>
         <li class="up">
@@ -214,7 +218,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-567">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
           Home</a>
         </li>
       </ul>

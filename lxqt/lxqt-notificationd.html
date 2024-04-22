@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      lxqt-notificationd-1.4.0
+      lxqt-notificationd-2.0.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-567">
+  <body class="blfs" id="blfs-r12.1-578">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-567
+        "phrase">(systemd</span> Edition) - Version r12.1-578
       </h4>
       <h3>
         Chapter&nbsp;38.&nbsp;LXQt Applications
@@ -24,16 +24,16 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="lxqt-archiver.html" title=
-          "lxqt-archiver-0.9.1">Prev</a>
+          "lxqt-archiver-1.0.0">Prev</a>
           <p>
-            lxqt-archiver-0.9.1
+            lxqt-archiver-1.0.0
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="pavucontrol-qt.html" title=
-          "pavucontrol-qt-1.4.0">Next</a>
+          "pavucontrol-qt-2.0.0">Next</a>
           <p>
-            pavucontrol-qt-1.4.0
+            pavucontrol-qt-2.0.0
           </p>
         </li>
         <li class="up">
@@ -42,14 +42,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-567">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="lxqt-notificationd" name=
-      "lxqt-notificationd"></a>lxqt-notificationd-1.4.0
+      "lxqt-notificationd"></a>lxqt-notificationd-2.0.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -79,13 +79,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/lxqt/lxqt-notificationd/releases/download/1.4.0/lxqt-notificationd-1.4.0.tar.xz">
-                https://github.com/lxqt/lxqt-notificationd/releases/download/1.4.0/lxqt-notificationd-1.4.0.tar.xz</a>
+                "https://github.com/lxqt/lxqt-notificationd/releases/download/2.0.0/lxqt-notificationd-2.0.0.tar.xz">
+                https://github.com/lxqt/lxqt-notificationd/releases/download/2.0.0/lxqt-notificationd-2.0.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 823aef2b5ad40b332a3ea6f83488bdad
+                Download MD5 sum: a1427b39f8c64a8ecac40c0834830f82
               </p>
             </li>
             <li class="listitem">
@@ -95,12 +95,12 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 4.3 MB
+                Estimated disk space required: 5.9 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.2 SBU
+                Estimated build time: 0.1 SBU
               </p>
             </li>
           </ul>
@@ -113,7 +113,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="liblxqt.html" title=
-          "liblxqt-1.4.0">liblxqt-1.4.0</a>
+          "liblxqt-2.0.0">liblxqt-2.0.0</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -124,13 +124,12 @@
           Install <span class="application">lxqt-notificationd</span> by
           running the following commands:
         </p>
-        <pre class="userinput"><kbd class="command">mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
+        <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
+cd    build &amp;&amp;
 
-cmake -DCMAKE_BUILD_TYPE=Release  \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      ..       &amp;&amp;
-
+cmake -D CMAKE_BUILD_TYPE=Release  \
+      -D CMAKE_INSTALL_PREFIX=/usr \
+      ..                           &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -215,16 +214,16 @@ make</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="lxqt-archiver.html" title=
-          "lxqt-archiver-0.9.1">Prev</a>
+          "lxqt-archiver-1.0.0">Prev</a>
           <p>
-            lxqt-archiver-0.9.1
+            lxqt-archiver-1.0.0
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="pavucontrol-qt.html" title=
-          "pavucontrol-qt-1.4.0">Next</a>
+          "pavucontrol-qt-2.0.0">Next</a>
           <p>
-            pavucontrol-qt-1.4.0
+            pavucontrol-qt-2.0.0
           </p>
         </li>
         <li class="up">
@@ -233,7 +232,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-567">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
           Home</a>
         </li>
       </ul>
