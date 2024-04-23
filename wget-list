@@ -70,7 +70,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/clucene-2.3.3.4-contribs_lib-1
 https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz
 https://github.com/google/double-conversion/archive/v3.3.0/double-conversion-3.3.0.tar.gz
 https://duktape.org/duktape-2.7.0.tar.xz
-https://github.com/AbiWord/enchant/releases/download/v2.6.9/enchant-2.6.9.tar.gz
+https://github.com/AbiWord/enchant/releases/download/v2.7.0/enchant-2.7.0.tar.gz
 https://libopenraw.freedesktop.org/download/exempi-2.6.5.tar.xz
 https://www.fftw.org/fftw-3.3.10.tar.gz
 https://github.com/fmtlib/fmt/archive/10.2.1/fmt-10.2.1.tar.gz
@@ -540,7 +540,7 @@ https://archive.apache.org/dist/subversion/subversion-1.14.3.tar.bz2
 https://downloads.sourceforge.net/swig/swig-4.2.1.tar.gz
 https://downloads.sourceforge.net/tcl/tk8.6.14-src.tar.gz
 https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
-https://download.gnome.org/sources/vala/0.56/vala-0.56.16.tar.xz
+https://download.gnome.org/sources/vala/0.56/vala-0.56.17.tar.xz
 https://sourceware.org/pub/valgrind/valgrind-3.22.0.tar.bz2
 https://www.linuxfromscratch.org/patches/blfs/svn/valgrind-3.22.0-upstream_fixes-1.patch
 https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
@@ -669,7 +669,7 @@ https://www.cairographics.org/releases/cairomm-1.18.0.tar.xz
 https://www.freedesktop.org/software/colord/releases/colord-gtk-0.3.1.tar.xz
 https://fltk.org/pub/fltk/1.3.9/fltk-1.3.9-source.tar.gz
 https://downloads.sourceforge.net/freeglut/freeglut-3.4.0.tar.gz
-https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.10.tar.xz
+https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.11.tar.xz
 https://downloads.sourceforge.net/glew/glew-2.2.0.tgz
 https://github.com/KhronosGroup/glslang/archive/14.1.0/glslang-14.1.0.tar.gz
 https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
@@ -838,10 +838,10 @@ http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.18/xfce4-dev-tools-4.18.1.tar
 https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.4.tar.bz2
 https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.4/xfce4-pulseaudio-plugin-0.4.8.tar.bz2
 https://download.kde.org/stable/frameworks/6.1/kwindowsystem-6.1.0.tar.xz
-http://download.kde.org/stable/plasma/6.0.3/kwayland-6.0.3.tar.xz
 https://download.kde.org/stable/frameworks/6.1/kconfig-6.1.0.tar.xz
-https://download.kde.org/stable/frameworks/6.1/solid-6.1.0.tar.xz
+https://download.kde.org/stable/frameworks/6.1/solid-6.1.1.tar.xz
 https://download.kde.org/stable/frameworks/6.1/kidletime-6.1.0.tar.xz
+http://download.kde.org/stable/plasma/6.0.3/kwayland-6.0.3.tar.xz
 http://download.kde.org/stable/plasma/6.0.3/libkscreen-6.0.3.tar.xz
 http://download.kde.org/stable/plasma/6.0.3/layer-shell-qt-6.0.3.tar.xz
 https://github.com/beltoforion/muparser/archive/v2.3.4/muparser-2.3.4.tar.gz
@@ -872,6 +872,7 @@ https://github.com/lxqt/lxqt-openssh-askpass/releases/download/2.0.0/lxqt-openss
 https://github.com/lxqt/lxqt-session/releases/download/2.0.0/lxqt-session-2.0.0.tar.xz
 https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/1.0.1/xdg-desktop-portal-lxqt-1.0.1.tar.xz
 https://github.com/lxqt/obconf-qt/releases/download/0.16.4/obconf-qt-0.16.4.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/obconf-qt-0.16.4-qt6-1.patch
 https://github.com/lxqt/lximage-qt/releases/download/2.0.0/lximage-qt-2.0.0.tar.xz
 https://github.com/lxqt/lxqt-archiver/releases/download/1.0.0/lxqt-archiver-1.0.0.tar.xz
 https://github.com/lxqt/lxqt-notificationd/releases/download/2.0.0/lxqt-notificationd-2.0.0.tar.xz

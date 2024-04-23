@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-578">
+  <body class="blfs" id="blfs-r12.1-584">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-578
+        "phrase">(systemd</span> Edition) - Version r12.1-584
       </h4>
       <h3>
         Chapter&nbsp;37.&nbsp;LXQt Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-584">
           Home</a>
         </li>
       </ul>
@@ -106,6 +106,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/obconf-qt-0.16.4-qt6-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/obconf-qt-0.16.4-qt6-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           obconf-qt Dependencies
         </h3>
         <h4>
@@ -117,16 +131,20 @@
           "xref" href="lxqt-build-tools.html" title=
           "lxqt-build-tools-2.0.0">lxqt-build-tools-2.0.0</a>, <a class=
           "xref" href="../x/openbox.html" title=
-          "openbox-3.6.1">openbox-3.6.1</a>, and (<a class="xref" href=
-          "../x/qt5.html" title="Qt-5.15.12">Qt-5.15.12</a> or <a class=
-          "xref" href="../x/qt5-alternate.html" title=
-          "qt-alternate-5.15.12">qt-alternate-5.15.12</a>)
+          "openbox-3.6.1">openbox-3.6.1</a>, and <a class="xref" href=
+          "../x/qt6.html" title="Qt-6.7.0">Qt-6.7.0</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
           Installation of obconf-qt
         </h2>
+        <p>
+          First, make the program compatible with <a class="xref" href=
+          "../x/qt6.html" title="Qt-6.7.0">Qt-6.7.0</a>.
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../obconf-qt-0.16.4-qt6-1.patch</kbd></pre>
         <p>
           Install <span class="application">obconf-qt</span> by running the
           following commands:
@@ -218,7 +236,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-578">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-584">
           Home</a>
         </li>
       </ul>
