@@ -3,8 +3,6 @@
 SRC="util-linux"
 PKG="$SRC"
 
-sed -i '/test_mkfds/s/^/#/' tests/helpers/Makemodule.am
-
 ./configure ADJTIME_PATH=/etc/adjtime \
 		--bindir=/usr/bin \
 		--libdir=/usr/lib \
@@ -18,6 +16,7 @@ sed -i '/test_mkfds/s/^/#/' tests/helpers/Makemodule.am
 		--disable-runuser \
 		--disable-pylibmount \
 		--disable-static \
+		--disable-liblastlog2 \
 		--without-python \
 		--without-systemd \
 		--without-systemdsystemunitdir \

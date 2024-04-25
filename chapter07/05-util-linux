@@ -16,6 +16,7 @@ mkdir -pv /var/lib/hwclock
 	--disable-runuser \
 	--disable-pylibmount \
 	--disable-static \
+	--disable-liblastlog2 \
 	--without-python
 
 make
