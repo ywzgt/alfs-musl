@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-613">
+  <body class="blfs" id="blfs-r12.1-615">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-613
+        "phrase">(systemd</span> Edition) - Version r12.1-615
       </h4>
       <h3>
         Chapter&nbsp;37.&nbsp;LXQt Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-613">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-615">
           Home</a>
         </li>
       </ul>
@@ -149,6 +149,12 @@
           Installation of lxqt-panel
         </h2>
         <p>
+          First, fix a problem identified upstream:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e '/lxqt_app_translation_loader/a set(CMAKE_EXECUTABLE_ENABLE_EXPORTS TRUE)' \
+    -i panel/CMakeLists.txt</kbd></pre>
+        <p>
           Install <span class="application">lxqt-panel</span> by running the
           following commands:
         </p>
@@ -242,7 +248,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-613">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-615">
           Home</a>
         </li>
       </ul>
