@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      enchant-2.7.0
+      enchant-2.7.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-615">
+  <body class="blfs" id="blfs-r12.1-627">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-615
+        "phrase">(systemd</span> Edition) - Version r12.1-627
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-615">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-627">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="enchant" name="enchant"></a>enchant-2.7.0
+      <a id="enchant" name="enchant"></a>enchant-2.7.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -76,23 +76,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/AbiWord/enchant/releases/download/v2.7.0/enchant-2.7.0.tar.gz">
-                https://github.com/AbiWord/enchant/releases/download/v2.7.0/enchant-2.7.0.tar.gz</a>
+                "https://github.com/AbiWord/enchant/releases/download/v2.7.1/enchant-2.7.1.tar.gz">
+                https://github.com/AbiWord/enchant/releases/download/v2.7.1/enchant-2.7.1.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 5da2afd6cf92027b4871824d4da4afbf
+                Download MD5 sum: 74eae981b66cd7ed286662233faeb3c8
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 5.5 MB
+                Download size: 4.2 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 20 MB (add 63 MB for tests)
+                Estimated disk space required: 18 MB (add 64 MB for tests)
               </p>
             </li>
             <li class="listitem">
@@ -141,19 +141,13 @@
           Installation of enchant
         </h2>
         <p>
-          First, remove a generated file that causes the build to fail. The
-          file will be regenerated for the current system.
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">rm -f src/api.c</kbd></pre>
-        <p>
           Install <span class="application">enchant</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
         "command">./configure --prefix=/usr    \
             --disable-static \
-            --docdir /usr/share/doc/enchant-2.7.0 &amp;&amp;
+            --docdir /usr/share/doc/enchant-2.7.1 &amp;&amp;
 make</kbd></pre>
         <p>
           To run tests, unittest-cpp must be installed and the <code class=
@@ -234,7 +228,7 @@ enchant-2 -d en_GB -a /tmp/test-enchant.txt</kbd></pre>
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/enchant-2,
               /usr/lib/enchant-2, /usr/share/enchant, and
-              /usr/share/doc/enchant-2.7.0</span>
+              /usr/share/doc/enchant-2.7.1</span>
             </div>
           </div>
         </div>
@@ -315,7 +309,7 @@ enchant-2 -d en_GB -a /tmp/test-enchant.txt</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-615">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-627">
           Home</a>
         </li>
       </ul>
