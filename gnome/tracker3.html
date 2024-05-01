@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Tracker-3.7.1
+      Tracker-3.7.2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-636">
+  <body class="blfs" id="blfs-r12.1-643">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-636
+        "phrase">(systemd</span> Edition) - Version r12.1-643
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -31,9 +31,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="tracker3-miners.html" title=
-          "Tracker-miners-3.7.1">Next</a>
+          "Tracker-miners-3.7.2">Next</a>
           <p>
-            Tracker-miners-3.7.1
+            Tracker-miners-3.7.2
           </p>
         </li>
         <li class="up">
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-636">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-643">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="tracker3" name="tracker3"></a>Tracker-3.7.1
+      <a id="tracker3" name="tracker3"></a>Tracker-3.7.2
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -79,13 +79,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/tracker/3.7/tracker-3.7.1.tar.xz">
-                https://download.gnome.org/sources/tracker/3.7/tracker-3.7.1.tar.xz</a>
+                "https://download.gnome.org/sources/tracker/3.7/tracker-3.7.2.tar.xz">
+                https://download.gnome.org/sources/tracker/3.7/tracker-3.7.2.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 63357a4966867fa86b7f899283de075e
+                Download MD5 sum: 5f15dfe3b50e17b5baf62dc8aebb7be3
               </p>
             </li>
             <li class="listitem">
@@ -132,7 +132,7 @@
           "PyGObject-3.48.2">PyGObject-3.48.2</a>, <a class="xref" href=
           "../server/sqlite.html" title="SQLite-3.45.3">SQLite-3.45.3</a>,
           and <a class="xref" href="tracker3-miners.html" title=
-          "Tracker-miners-3.7.1">tracker-miners-3.7.1</a> (runtime)
+          "Tracker-miners-3.7.2">tracker-miners-3.7.2</a> (runtime)
         </p>
         <h4>
           Optional
@@ -158,15 +158,9 @@
           Fix the location to install the documentation into:
         </p>
         <pre class="userinput"><kbd class=
-        "command">mv docs/reference/libtracker-sparql/doc/{Tracker-3.0,tracker-3.7.1} &amp;&amp;
-sed '/docs_name/s/Tracker-3.0/tracker-3.7.1/' \
+        "command">mv docs/reference/libtracker-sparql/doc/{Tracker-3.0,tracker-3.7.2} &amp;&amp;
+sed '/docs_name/s/Tracker-3.0/tracker-3.7.2/' \
     -i docs/reference/libtracker-sparql/meson.build</kbd></pre>
-        <p>
-          Adapt for a behavior change of SQLite 3.45.3:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed 's/ROWID/\\"rdfs:Resource\\".ID/' \
-    -i src/libtracker-sparql/core/tracker-fts.c</kbd></pre>
         <p>
           Install <span class="application">Tracker</span> by running the
           following commands:
@@ -234,7 +228,7 @@ ninja</kbd></pre>
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/{include,lib}/tracker-3.0,
               /usr/libexec/tracker3, /usr/share/tracker3, and
-              /usr/share/doc/tracker-3.7.1 (optional)</span>
+              /usr/share/doc/tracker-3.7.2 (optional)</span>
             </div>
           </div>
         </div>
@@ -376,9 +370,9 @@ ninja</kbd></pre>
         </li>
         <li class="next">
           <a accesskey="n" href="tracker3-miners.html" title=
-          "Tracker-miners-3.7.1">Next</a>
+          "Tracker-miners-3.7.2">Next</a>
           <p>
-            Tracker-miners-3.7.1
+            Tracker-miners-3.7.2
           </p>
         </li>
         <li class="up">
@@ -387,7 +381,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-636">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-643">
           Home</a>
         </li>
       </ul>
