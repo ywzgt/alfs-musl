@@ -7,12 +7,12 @@ https://musl.libc.org/releases/musl-1.2.5.tar.gz
 # https://github.com/systemd/systemd/tags
 # https://github.com/systemd/systemd-stable/tags
 # https://gitweb.gentoo.org/repo/gentoo.git/plain/sys-apps/systemd-utils/Manifest
-https://github.com/systemd/systemd-stable/archive/v253.17/systemd-stable-253.17.tar.gz
+https://github.com/systemd/systemd-stable/archive/v253.18/systemd-stable-253.18.tar.gz
 https://dev.gentoo.org/~floppym/dist/systemd-musl-patches-253.3.tar.gz
 
 # https://archlinux.org/packages/core/x86_64/pacman
 # https://gitlab.archlinux.org/archlinux/packaging/packages/pacman
-https://sources.archlinux.org/other/pacman/pacman-6.0.2.tar.xz
+https://gitlab.archlinux.org/pacman/pacman/-/releases/v6.1.0/downloads/pacman-6.1.0.tar.xz
 
 https://github.com/argp-standalone/argp-standalone/archive/1.5.0/argp-standalone-1.5.0.tar.gz
 https://github.com/void-linux/musl-fts/archive/v1.2.7/musl-fts-1.2.7.tar.gz

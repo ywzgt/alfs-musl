@@ -40,8 +40,8 @@ make install
 ln -svr /usr/bin/cpp /usr/lib
 ln -sfv gcc /usr/bin/cc
 ln -sv gcc.1 /usr/share/man/man1/cc.1
-ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/[0-9]*/liblto_plugin.so \
-		/usr/lib/bfd-plugins/
+ln -srfv /usr/libexec/gcc/$(gcc -dumpmachine)/$(gcc -dumpversion)/liblto_plugin.so \
+	/usr/lib/bfd-plugins/
 mkdir -pv /usr/share/gdb/auto-load/usr/lib
 mv -v /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib
 

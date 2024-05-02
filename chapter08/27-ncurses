@@ -2,6 +2,8 @@
 
 SRC="ncurses"
 PKG="$SRC"
+PV=${PWD##*/ncurses-}
+PV=${PV%%-*}
 
 ./configure --prefix=/usr \
 	--mandir=/usr/share/man \
@@ -15,8 +17,8 @@ PKG="$SRC"
 
 make
 make DESTDIR=$PWD/dest install
-install -vm755 dest/usr/lib/libncursesw.so.6.4 /usr/lib
-rm -v  dest/usr/lib/libncursesw.so.6.4
+install -vm755 dest/usr/lib/libncursesw.so.${PV} /usr/lib
+rm -v  dest/usr/lib/libncursesw.so.${PV}
 cp -av dest/* /
 
 for lib in ncurses form panel menu ; do
@@ -29,9 +31,8 @@ rm -vf /usr/lib/libcursesw.so
 echo "INPUT(-lncursesw)" > /usr/lib/libcursesw.so
 ln -sfv libncurses.so /usr/lib/libcurses.so
 
-ver=${PWD##*/ncurses-}
 for lib in tic tinfo; do
-	echo "INPUT(libncursesw.so.${ver::1})" > /usr/lib/lib${lib}.so
-	ln -sv libncursesw.so.${ver::1} /usr/lib/lib${lib}.so.${ver::1}
+	echo "INPUT(libncursesw.so.${PV::1})" > /usr/lib/lib${lib}.so
+	ln -sv libncursesw.so.${PV::1} /usr/lib/lib${lib}.so.${PV::1}
 	ln -sv ncursesw.pc /usr/lib/pkgconfig/${lib}.pc
 done
