@@ -1,0 +1,47 @@
+Thu May  2 23:08:47 CST 2024
+KB: 1481696	/
+
+pip 24.0 from /usr/lib/python3.12/site-packages/pip (python 3.12)
+Processing /sources/wheel-0.43.0
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: wheel
+  Building wheel for wheel (pyproject.toml): started
+  Building wheel for wheel (pyproject.toml): finished with status 'done'
+  Created wheel for wheel: filename=wheel-0.43.0-py3-none-any.whl size=65775 sha256=99b4c794b32af9fb8048d5cdb73e36293fa058728138d27237f0c85fbfdd5ce0
+  Stored in directory: /root/.cache/pip/wheels/fa/67/f0/922b44229a407d9078caff16ad16d500798fde1eb4b1897400
+Successfully built wheel
+Looking in links: dist
+Processing ./dist/wheel-0.43.0-py3-none-any.whl
+Installing collected packages: wheel
+Successfully installed wheel-0.43.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+
+removed '/root/.cache/pip/http-v2/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a.body'
+removed '/root/.cache/pip/http-v2/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a'
+removed directory '/root/.cache/pip/http-v2/a/1/9/5/3'
+removed directory '/root/.cache/pip/http-v2/a/1/9/5'
+removed directory '/root/.cache/pip/http-v2/a/1/9'
+removed directory '/root/.cache/pip/http-v2/a/1'
+removed directory '/root/.cache/pip/http-v2/a'
+removed directory '/root/.cache/pip/http-v2'
+removed '/root/.cache/pip/wheels/fa/67/f0/922b44229a407d9078caff16ad16d500798fde1eb4b1897400/origin.json'
+removed '/root/.cache/pip/wheels/fa/67/f0/922b44229a407d9078caff16ad16d500798fde1eb4b1897400/wheel-0.43.0-py3-none-any.whl'
+removed directory '/root/.cache/pip/wheels/fa/67/f0/922b44229a407d9078caff16ad16d500798fde1eb4b1897400'
+removed directory '/root/.cache/pip/wheels/fa/67/f0'
+removed directory '/root/.cache/pip/wheels/fa/67'
+removed directory '/root/.cache/pip/wheels/fa'
+removed directory '/root/.cache/pip/wheels'
+removed '/root/.cache/pip/selfcheck/241e69162522ccf5846a2f42ebc24b17464915a155679666b89a9f31'
+removed directory '/root/.cache/pip/selfcheck'
+removed directory '/root/.cache/pip'
+removed directory '/root/.cache'
+
+
+Thu May  2 23:08:48 CST 2024
+
+Totalseconds: 1
+
+KB: 1483188	/
+

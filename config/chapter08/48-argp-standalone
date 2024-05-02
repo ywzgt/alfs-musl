@@ -1,0 +1,15 @@
+#!/bin/bash
+# https://git.alpinelinux.org/aports/tree/main/argp-standalone/APKBUILD
+# https://github.com/argp-standalone/argp-standalone/tags
+
+SRC="argp-standalone"
+PKG="$SRC"
+
+autoreconf -vif
+
+CFLAGS="$CFLAGS -fPIC" \
+./configure --prefix=/usr
+make
+
+install -Dvm644 argp.h /usr/include/argp.h
+install -Dvm644 libargp.a /usr/lib/libargp.a
