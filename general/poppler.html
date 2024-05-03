@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Poppler-24.04.0
+      Poppler-24.05.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-646">
+  <body class="blfs" id="blfs-r12.1-648">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-646
+        "phrase">(systemd</span> Edition) - Version r12.1-648
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-646">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-648">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="poppler" name="poppler"></a>Poppler-24.04.0
+      <a id="poppler" name="poppler"></a>Poppler-24.05.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,12 +78,12 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://poppler.freedesktop.org/poppler-24.04.0.tar.xz">https://poppler.freedesktop.org/poppler-24.04.0.tar.xz</a>
+                "https://poppler.freedesktop.org/poppler-24.05.0.tar.xz">https://poppler.freedesktop.org/poppler-24.05.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 61ccc0892c0afe886ce31eae87bf8625
+                Download MD5 sum: a9f302feb3b79a99f66fa9d1e4af49ac
               </p>
             </li>
             <li class="listitem">
@@ -93,14 +93,14 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 81 MB (with Qt6 library; add
+                Estimated disk space required: 87 MB (with Qt6 library; add
                 13 MB for tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.9 SBU (with parallelism=4 and Qt5
-                library; add 2.7 SBU for tests)
+                Estimated build time: 1.2 SBU (with parallelism=4, tests, and
+                Qt6 library)
               </p>
             </li>
           </ul>
@@ -178,10 +178,8 @@
           "libtiff.html" title="libtiff-4.6.0">libtiff-4.6.0</a>, <a class=
           "xref" href="../postlfs/nss.html" title="NSS-3.99">nss-3.99</a>,
           <a class="xref" href="openjpeg2.html" title=
-          "OpenJPEG-2.5.2">OpenJPEG-2.5.2</a>, and (<a class="xref" href=
-          "../x/qt5.html" title="Qt-5.15.12">Qt-5.15.12</a> or <a class=
-          "xref" href="../x/qt5-alternate.html" title=
-          "qt-alternate-5.15.12">qt-alternate-5.15.12</a>) (required for PDF
+          "OpenJPEG-2.5.2">OpenJPEG-2.5.2</a>, and <a class="xref" href=
+          "../x/qt6.html" title="Qt-6.7.0">Qt-6.7.0</a> (required for PDF
           support in <a class="xref" href="../kde/okular.html" title=
           "Okular-24.02.2">Okular-24.02.2</a>)
         </p>
@@ -197,7 +195,10 @@
           files), <a class="xref" href="gtk-doc.html" title=
           "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a>, <a class="xref" href=
           "../x/gtk3.html" title="GTK+-3.24.41">GTK+-3.24.41</a>, and
-          <a class="xref" href="../x/qt6.html" title="Qt-6.7.0">Qt-6.7.0</a>
+          (<a class="xref" href="../x/qt5.html" title=
+          "Qt-5.15.12">Qt-5.15.12</a> or <a class="xref" href=
+          "../x/qt5-alternate.html" title=
+          "qt-alternate-5.15.12">qt-alternate-5.15.12</a>)
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -205,8 +206,16 @@
           Installation of Poppler
         </h2>
         <p>
-          Install <span class="application">Poppler</span> by running the
-          following commands:
+          First, conditionalize C++20 only code to fix non C++20 builds that
+          don't use the affected methods.
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e '/::starts/i #if __cplusplus &gt;= 202002L'\
+    -e '/::ends/a #endif'                      \
+    -i goo/GooString.h</kbd></pre>
+        <p>
+          Now, install <span class="application">Poppler</span> by running
+          the following commands:
         </p>
         <pre class="userinput"><kbd class=
         "command">mkdir build                         &amp;&amp;
@@ -215,7 +224,7 @@ cd    build                         &amp;&amp;
 cmake  -DCMAKE_BUILD_TYPE=Release   \
        -DCMAKE_INSTALL_PREFIX=/usr  \
        -DTESTDATADIR=$PWD/testfiles \
-       -DENABLE_QT6=OFF             \
+       -DENABLE_QT5=OFF             \
        -DENABLE_UNSTABLE_API_ABI_HEADERS=ON \
        ..                           &amp;&amp;
 make</kbd></pre>
@@ -225,8 +234,7 @@ make</kbd></pre>
           them is: <span class="command"><strong>git clone --depth 1
           https://gitlab.freedesktop.org/poppler/test.git
           testfiles</strong></span>. Then issue: <span class=
-          "command"><strong>LC_ALL=en_US.UTF-8 make test</strong></span>. One
-          test, check_qt5_signature_basics, is known to fail.
+          "command"><strong>LC_ALL=en_US.UTF-8 make test</strong></span>.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -237,8 +245,8 @@ make</kbd></pre>
           <code class="systemitem">root</code>:
         </p>
         <pre class="root"><kbd class=
-        "command">install -v -m755 -d           /usr/share/doc/poppler-24.04.0 &amp;&amp;
-cp -vr ../glib/reference/html /usr/share/doc/poppler-24.04.0</kbd></pre>
+        "command">install -v -m755 -d           /usr/share/doc/poppler-24.05.0 &amp;&amp;
+cp -vr ../glib/reference/html /usr/share/doc/poppler-24.05.0</kbd></pre>
         <h3>
           Poppler Data
         </h3>
@@ -268,12 +276,6 @@ cd poppler-data-0.4.12</kbd></pre>
           <em class=
           "parameter"><code>-DTESTDATADIR=$PWD/testfiles</code></em>: Tells
           the test programs where the auxiliary files are located.
-        </p>
-        <p>
-          <em class="parameter"><code>-DENABLE_QT6=OFF</code></em>: This
-          switch is needed to prevent an error when Qt6 is not installed.
-          Remove it if you have installed <a class="xref" href=
-          "../x/qt6.html" title="Qt-6.7.0">Qt-6.7.0</a>.
         </p>
         <p>
           <em class=
@@ -339,7 +341,7 @@ cd poppler-data-0.4.12</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/poppler, /usr/share/poppler,
-              and /usr/share/doc/poppler-24.04.0</span>
+              and /usr/share/doc/poppler-24.05.0</span>
             </div>
           </div>
         </div>
@@ -637,7 +639,7 @@ cd poppler-data-0.4.12</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-646">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-648">
           Home</a>
         </li>
       </ul>
