@@ -1,0 +1,20 @@
+diff --git a/wget-list b/wget-list
+index e04ce6417..73a264b40 100644
+--- a/wget-list
++++ b/wget-list
+@@ -1010,7 +1010,7 @@ http://fy.chalmers.se/~appro/linux/DVD+RW/tools/dvd+rw-tools-7.1.tar.gz
+ https://files.libburnia-project.org/releases/libburn-1.5.6.tar.gz
+ https://files.libburnia-project.org/releases/libisoburn-1.5.6.tar.gz
+ https://files.libburnia-project.org/releases/libisofs-1.5.6.tar.gz
+-https://github.com/OpenPrinting/cups/releases/download/v2.4.7/cups-2.4.7-source.tar.gz
++https://github.com/OpenPrinting/cups/releases/download/v2.4.8/cups-2.4.8-source.tar.gz
+ https://github.com/OpenPrinting/cups-browsed/releases/download/2.0.0/cups-browsed-2.0.0.tar.xz
+ https://github.com/OpenPrinting/cups-filters/releases/download/2.0.0/cups-filters-2.0.0.tar.xz
+ https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10030/ghostscript-10.03.0.tar.xz
+@@ -1056,5 +1056,5 @@ https://github.com/mgieseki/dvisvgm/releases/download/3.3/dvisvgm-3.3.tar.gz
+ https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
+ https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20240416.tar.xz
+-https://github.com/elogind/elogind/archive/v255.4-r2/elogind-255.4-r2.tar.gz
++https://github.com/elogind/elogind/archive/v255.5/elogind-255.5.tar.gz
+ https://github.com/lfs-book/blocaled/releases/download/v0.5/blocaled-0.5.tar.xz
