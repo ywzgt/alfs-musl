@@ -1,0 +1,43 @@
+#!/bin/bash
+
+_getver() {
+	local ver=`find "$SRC_ARCHIVE" -iname "$1-[0-9]*.tar*"|head -n1`
+	ver=${ver##*/$1-}
+	echo ${ver%.tar*}
+}
+
+_getsrc() {
+	local p="$1" url="$2"
+	find "$SRC_ARCHIVE" -iname "$p-[0-9]*.tar*" -delete
+	sed -i "/$p-[0-9].*.tar.*/d" "$SRC_ARCHIVE/"{wget-list,*sums}
+	wget -c -nv "$url" -P "$SRC_ARCHIVE"
+	echo "$url" >>"$SRC_ARCHIVE/wget-list"
+	(	cd $SRC_ARCHIVE
+		echo "$(sha256sum $(basename $url))" >>sha256sums
+	)
+}
+
+_gcc_patch() {
+# https://gcc.gnu.org/releases.html
+# https://gitweb.gentoo.org/proj/gcc-patches.git/tree
+# https://dev.gentoo.org/~sam/distfiles/sys-devel/gcc
+
+	local gcc_ver
+	if test $SET_GCC_VER; then
+		gcc_ver=$SET_GCC_VER
+		_getsrc gcc "https://ftp.gnu.org/gnu/gcc/gcc-${gcc_ver}/gcc-${gcc_ver}.tar.xz"
+	else
+		gcc_ver=$(_getver gcc)
+	fi
+	local stadir=$PWD
+	git clone https://anongit.gentoo.org/git/proj/gcc-patches.git --depth=1
+	pushd gcc-patches/$gcc_ver/musl >/dev/null
+	find . -name '*multilib_pure64.patch' -delete
+	for i in {*.patch,../gentoo/*libiberty-asprintf.patch}; do
+		cp -v $i "$SRC_ARCHIVE/gcc-$(basename $i)"
+		cp $i "$stadir/files/gcc-$(basename $i)"
+	done
+	popd >/dev/null
+}
+
+_gcc_patch
