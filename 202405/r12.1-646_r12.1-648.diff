@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 73a264b40..03affa27e 100644
+--- a/wget-list
++++ b/wget-list
+@@ -53,7 +53,7 @@ https://github.com/gedit-technology/libgedit-gfls/releases/download/0.1.0/libged
+ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/24.02.2/src/kate-24.02.2.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.2.tar.bz2
+-https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
++https://www.nano-editor.org/dist/v8/nano-8.0.tar.xz
+ https://github.com/vim/vim/archive/v9.1.0041/vim-9.1.0041.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.12.tar.gz
+@@ -205,7 +205,7 @@ https://github.com/opencv/opencv/archive/4.9.0/opencv-4.9.0.tar.gz
+ https://github.com/opencv/opencv_contrib/archive/4.9.0/opencv_contrib-4.9.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.2/openjpeg-2.5.2.tar.gz
+ https://www.cairographics.org/releases/pixman-0.43.4.tar.gz
+-https://poppler.freedesktop.org/poppler-24.04.0.tar.xz
++https://poppler.freedesktop.org/poppler-24.05.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+ https://github.com/qpdf/qpdf/releases/download/v11.9.0/qpdf-11.9.0.tar.gz
