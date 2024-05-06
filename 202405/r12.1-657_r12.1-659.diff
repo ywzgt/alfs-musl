@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 22e6a9cd6..b525ec4de 100644
+--- a/wget-list
++++ b/wget-list
+@@ -117,7 +117,7 @@ https://downloads.sourceforge.net/iodbc/libiodbc-3.52.15.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.6.tar.bz2
+ https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
+ https://www.freedesktop.org/software/libmbim/libmbim-1.26.4.tar.xz
+-https://github.com/linux-nvme/libnvme/archive/v1.8/libnvme-1.8.tar.gz
++https://github.com/linux-nvme/libnvme/archive/v1.9/libnvme-1.9.tar.gz
+ https://github.com/rrthomas/libpaper/releases/download/v2.2.5/libpaper-2.2.5.tar.gz
+ https://github.com/flatpak/libportal/releases/download/0.7.1/libportal-0.7.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libportal-0.7.1-testsuite_fix-1.patch
+@@ -254,7 +254,7 @@ http://fcron.free.fr/archives/fcron-3.2.1.src.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/gpm/gpm-1.20.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch
+ https://downloads.sourceforge.net/hdparm/hdparm-9.65.tar.gz
+-https://github.com/vcrhonek/hwdata/archive/v0.381/hwdata-0.381.tar.gz
++https://github.com/vcrhonek/hwdata/archive/v0.382/hwdata-0.382.tar.gz
+ https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
+ https://github.com/lm-sensors/lm-sensors/archive/V3-6-0/lm-sensors-3-6-0.tar.gz
+ https://github.com/logrotate/logrotate/releases/download/3.21.0/logrotate-3.21.0.tar.xz
