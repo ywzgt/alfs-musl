@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-659">
+  <body class="blfs" id="blfs-r12.1-686">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-659
+        "phrase">(systemd</span> Edition) - Version r12.1-686
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-659">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-686">
           Home</a>
         </li>
       </ul>
@@ -135,6 +135,13 @@
         <pre class="userinput"><kbd class=
         "command">sed -e 's/8x13bold/-*-luxi mono-bold-r-normal--13-120-*-*-m-*-*-*/' \
     -i src/aax.c</kbd></pre>
+        <p>
+          Fix an overuse of some ncurses internal data structure to allow
+          building this package with ncurses-6.5 or later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed 's/stdscr-&gt;_max\([xy]\) + 1/getmax\1(stdscr)/' \
+    -i src/aacurses.c</kbd></pre>
         <p>
           Install <span class="application">AAlib</span> by running the
           following commands:
@@ -301,7 +308,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-659">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-686">
           Home</a>
         </li>
       </ul>

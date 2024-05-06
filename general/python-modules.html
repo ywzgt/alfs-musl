@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-659">
+  <body class="blfs" id="blfs-r12.1-686">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-659
+        "phrase">(systemd</span> Edition) - Version r12.1-686
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-659">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-686">
           Home</a>
         </li>
       </ul>
@@ -235,7 +235,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="python-modules.html#pygments" title=
-                "Pygments-2.17.2">Pygments-2.17.2</a>
+                "Pygments-2.18.0">Pygments-2.18.0</a>
               </p>
             </li>
             <li class="listitem">
@@ -621,7 +621,7 @@
           </h5>
           <p class="required">
             <a class="xref" href="python-dependencies.html#setuptools_scm"
-            title="Setuptools_scm-7.1.0">setuptools_scm-7.1.0</a>
+            title="Setuptools_scm-8.0.4">setuptools_scm-8.0.4</a>
           </p>
           <h5>
             Optional (for testing)
@@ -1386,7 +1386,7 @@
             "dbus-1.14.10">dbus-1.14.10</a>, <a class="xref" href=
             "glib2.html" title="GLib-2.80.0">GLib-2.80.0</a>, <a class="xref"
             href="python-dependencies.html#meson_python" title=
-            "Meson_python-0.15.0">meson_python-0.15.0</a>, and <a class=
+            "Meson_python-0.16.0">meson_python-0.16.0</a>, and <a class=
             "xref" href="patchelf.html" title=
             "Patchelf-0.18.0">patchelf-0.18.0</a>
           </p>
@@ -1574,21 +1574,9 @@ done</kbd></pre>
           <pre class="root"><kbd class=
           "command">pip3 install --no-index --find-links=dist --no-cache-dir --no-user docutils</kbd></pre>
           <p>
-            To reduce the time needed for loading Python scripts,
-            <span class="command"><strong>pip3 install</strong></span> will
-            compile the scripts with extension <code class=
-            "filename">.py</code> into byte code and save the result into
-            <code class="filename">.pyc</code> files in the directory
-            <code class="filename">__pycache__</code>. But this package
-            installs <code class="filename">.py</code> scripts into
-            <code class="filename">/usr/bin</code>. So the byte code files
-            for them will be installed into <code class=
-            "filename">/usr/bin/__pycache__</code>, which is not allowed by
-            FHS. Still as the <code class="systemitem">root</code> user,
-            remove this directory:
+            To test the installation, issue: <span class=
+            "command"><strong>test/alltests.py</strong></span>.
           </p>
-          <pre class="root"><kbd class=
-          "command">rm -rfv /usr/bin/__pycache__</kbd></pre>
         </div>
         <div class="commands" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -2345,7 +2333,7 @@ done</kbd></pre>
             "python-modules.html#packaging" title=
             "Packaging-24.0">packaging-24.0</a>, <a class="xref" href=
             "python-modules.html#pygments" title=
-            "Pygments-2.17.2">Pygments-2.17.2</a>, and <a class="xref" href=
+            "Pygments-2.18.0">Pygments-2.18.0</a>, and <a class="xref" href=
             "python-dependencies.html#typogrify" title=
             "Typogrify-2.0.7">typogrify-2.0.7</a>
           </p>
@@ -3086,9 +3074,9 @@ done</kbd></pre>
             <a class="xref" href="python-modules.html#cython" title=
             "Cython-0.29.36">cython-0.29.36</a>, <a class="xref" href=
             "python-dependencies.html#meson_python" title=
-            "Meson_python-0.15.0">meson_python-0.15.0</a>, and <a class=
+            "Meson_python-0.16.0">meson_python-0.16.0</a>, and <a class=
             "xref" href="python-dependencies.html#pyproject-metadata" title=
-            "Pyproject-Metadata-0.7.1">pyproject-metadata-0.7.1</a>
+            "Pyproject-Metadata-0.8.0">pyproject-metadata-0.8.0</a>
           </p>
           <h5>
             Optional
@@ -3104,7 +3092,7 @@ done</kbd></pre>
           </h5>
           <p class="optional">
             <a class="xref" href="python-dependencies.html#attrs" title=
-            "Attrs-22.2.0">attrs-22.2.0</a>, <a class="xref" href=
+            "Attrs-23.2.0">attrs-23.2.0</a>, <a class="xref" href=
             "python-modules.html#pytest" title=
             "Pytest-8.2.0">pytest-8.2.0</a>, <a class="xref" href=
             "python-dependencies.html#pytz" title=
@@ -4230,7 +4218,7 @@ ninja</kbd></pre>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          <a id="pygments" name="pygments"></a>Pygments-2.17.2
+          <a id="pygments" name="pygments"></a>Pygments-2.18.0
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -4260,13 +4248,13 @@ ninja</kbd></pre>
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.17.2.tar.gz">
-                  https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.17.2.tar.gz</a>
+                  "https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.18.0.tar.gz">
+                  https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.18.0.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: 7c059773b0f4808f9402eb0650de6bd4
+                  Download MD5 sum: fbb7976df756f832f3391008778e8999
                 </p>
               </li>
               <li class="listitem">
@@ -4294,7 +4282,15 @@ ninja</kbd></pre>
           </h4>
           <p class="required">
             <a class="xref" href="python-dependencies.html#hatchling" title=
-            "Hatchling-1.12.2">hatchling-1.12.2</a>
+            "Hatchling-1.24.2">hatchling-1.24.2</a>
+          </p>
+          <h4>
+            Optional (for testing)
+          </h4>
+          <p class="optional">
+            <a class="xref" href="python-modules.html#pytest" title=
+            "Pytest-8.2.0">pytest-8.2.0</a> and <a class="ulink" href=
+            "https://pypi.org/project/wcag-contrast-ratio">wcag-contrast-ratio</a>
           </p>
         </div>
         <div class="installation" lang="en" xml:lang="en">
@@ -4312,6 +4308,15 @@ ninja</kbd></pre>
           </p>
           <pre class="root"><kbd class=
           "command">pip3 install --no-index --find-links=dist --no-cache-dir --no-user Pygments</kbd></pre>
+          <p>
+            To test the installation, make sure <a class="xref" href=
+            "python-modules.html#pytest" title=
+            "Pytest-8.2.0">pytest-8.2.0</a> is installed and run:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">python3 -m venv --system-site-packages testenv &amp;&amp;
+testenv/bin/pip3 install wcag-contrast-ratio   &amp;&amp;
+testenv/bin/python -m pytest</kbd></pre>
         </div>
         <div class="commands" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -4384,7 +4389,7 @@ ninja</kbd></pre>
                 <strong class="segtitle">Installed Directories:</strong>
                 <span class=
                 "segbody">/usr/lib/python3.12/site-packages/pygments and
-                /usr/lib/python3.12/site-packages/Pygments-2.17.2.dist-info</span>
+                /usr/lib/python3.12/site-packages/Pygments-2.18.0.dist-info</span>
               </div>
             </div>
           </div>
@@ -5187,7 +5192,7 @@ deactivate</kbd></pre>
           </h5>
           <p class="required">
             <a class="xref" href="python-dependencies.html#setuptools_scm"
-            title="Setuptools_scm-7.1.0">setuptools_scm-7.1.0</a>
+            title="Setuptools_scm-8.0.4">setuptools_scm-8.0.4</a>
           </p>
           <h5>
             Optional (for testing)
@@ -5405,37 +5410,32 @@ deactivate</kbd></pre>
             <a class="xref" href="python-dependencies.html#iniconfig" title=
             "Iniconfig-2.0.0">iniconfig-2.0.0</a>, <a class="xref" href=
             "python-modules.html#packaging" title=
-            "Packaging-24.0">packaging-24.0</a>, <a class="xref" href=
+            "Packaging-24.0">packaging-24.0</a>, and <a class="xref" href=
             "python-dependencies.html#pluggy" title=
-            "Pluggy-1.4.0">pluggy-1.4.0</a>, and <a class="xref" href=
-            "python-dependencies.html#py" title="Py-1.11.0">py-1.11.0</a>
+            "Pluggy-1.5.0">pluggy-1.5.0</a>
           </p>
           <h5>
             Recommended
           </h5>
           <p class="recommended">
             <a class="xref" href="python-dependencies.html#setuptools_scm"
-            title="Setuptools_scm-7.1.0">setuptools_scm-7.1.0</a>
+            title="Setuptools_scm-8.0.4">setuptools_scm-8.0.4</a>
           </p>
           <h5>
             Optional (for testing)
           </h5>
           <p class="optional">
-            <a class="xref" href="python-modules.html#pygments" title=
-            "Pygments-2.17.2">Pygments-2.17.2</a>, <a class="xref" href=
+            <a class="xref" href="python-dependencies.html#attrs" title=
+            "Attrs-23.2.0">attrs-23.2.0</a>, <a class="xref" href=
+            "python-modules.html#pygments" title=
+            "Pygments-2.18.0">Pygments-2.18.0</a>, <a class="xref" href=
             "python-modules.html#requests" title=
             "Requests-2.31.0">requests-2.31.0</a>, <a class="ulink" href=
             "https://pypi.org/project/argcomplete/">argcomplete</a>,
             <a class="ulink" href=
-            "https://pypi.org/project/elementpath/">elementpath</a>,
-            <a class="ulink" href=
             "https://pypi.org/project/hypothesis/">hypothesis</a>, <a class=
             "ulink" href="https://pypi.org/project/mock/">mock</a>, <a class=
-            "ulink" href="https://pypi.org/project/nose/">nose</a>, <a class=
-            "ulink" href=
-            "https://pypi.org/project/sortedcontainers/">sortedcontainers</a>,
-            and <a class="ulink" href=
-            "https://pypi.org/project/xmlschema/">xmlschema</a>
+            "ulink" href="https://pypi.org/project/xmlschema/">xmlschema</a>
           </p>
         </div>
         <div class="installation" lang="en" xml:lang="en">
@@ -5458,7 +5458,7 @@ deactivate</kbd></pre>
           <pre class="userinput"><kbd class=
           "command">python3 -m venv --system-site-packages testenv &amp;&amp;
 source testenv/bin/activate                    &amp;&amp;
-pip3 install pytest[testing]                   &amp;&amp;
+pip3 install pytest[dev]                       &amp;&amp;
 python3 /usr/bin/pytest
 deactivate</kbd></pre>
           <p>
@@ -7002,7 +7002,7 @@ deactivate</kbd></pre>
             "python-modules.html#packaging" title=
             "Packaging-24.0">packaging-24.0</a>, <a class="xref" href=
             "python-modules.html#pygments" title=
-            "Pygments-2.17.2">Pygments-2.17.2</a>, <a class="xref" href=
+            "Pygments-2.18.0">Pygments-2.18.0</a>, <a class="xref" href=
             "python-modules.html#requests" title=
             "Requests-2.31.0">requests-2.31.0</a>, <a class="xref" href=
             "python-dependencies.html#snowballstemmer" title=
@@ -7433,7 +7433,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-659">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-686">
           Home</a>
         </li>
       </ul>

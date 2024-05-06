@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-659">
+  <body class="blfs" id="blfs-r12.1-686">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-659
+        "phrase">(systemd</span> Edition) - Version r12.1-686
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-659">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-686">
           Home</a>
         </li>
       </ul>
@@ -127,8 +127,6 @@
           "../multimedia/alsa-lib.html" title=
           "alsa-lib-1.2.11">alsa-lib-1.2.11</a> if you edit the mozconfig;
           although it is now deprecated by mozilla), <a class="xref" href=
-          "../general/python311.html" title="Python-3.11.1">Python-3.11.1</a>
-          (rebuilt with the sqlite module), <a class="xref" href=
           "../x/startup-notification.html" title=
           "startup-notification-0.12">startup-notification-0.12</a>, and
           <a class="xref" href="../general/unzip.html" title=
@@ -233,8 +231,10 @@ ac_add_options --disable-debug
 ac_add_options --disable-debug-symbols
 ac_add_options --disable-tests
 
-# This enables SIMD optimization in the shipped encoding_rs crate.
-ac_add_options --enable-rust-simd
+# The SIMD code relies on the unmaintained packed_simd crate which
+# fails to build with Rustc &gt;= 1.78.0.  We may re-enable it once
+# Mozilla port the code to use std::simd and std::simd is stablized.
+ac_add_options --disable-rust-simd
 
 ac_add_options --enable-strip
 ac_add_options --enable-install-strip
@@ -288,6 +288,12 @@ sed -r '/name = "bindgen"/,+5 s/^source|^checksum/#&amp;/' \
 sed '/mInputImageMap/s/uint32_t/uint64_t/' \
     -i dom/media/webrtc/libwebrtcglue/WebrtcGmpVideoCodec.h</kbd></pre>
         <p>
+          Remove several lines of Rust code only useful for ARM and failing
+          to compile with Rustc-1.78.0 or newer:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed '/cfg_attr/,/)]/d' -i gfx/qcms/src/lib.rs</kbd></pre>
+        <p>
           Now invoke the Python <span class=
           "command"><strong>mach</strong></span> script to compile
           <span class="application">Thunderbird</span>:
@@ -312,8 +318,7 @@ sed '/mInputImageMap/s/uint32_t/uint64_t/' \
         <pre class="userinput"><kbd class=
         "command">export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none &amp;&amp;
 export MOZBUILD_STATE_PATH=./mozbuild               &amp;&amp;
-export PYTHON311=/opt/python3.11/bin/python3.11     &amp;&amp;
-$PYTHON311 ./mach build</kbd></pre>
+./mach build</kbd></pre>
         <p>
           This package does not come with a test suite.
         </p>
@@ -323,14 +328,13 @@ $PYTHON311 ./mach build</kbd></pre>
           user:
         </p>
         <pre class="root"><kbd class=
-        "command">MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none $PYTHON311 ./mach install</kbd></pre>
+        "command">MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none ./mach install</kbd></pre>
         <p>
           Empty the environment variables which were set above:
         </p>
         <pre class="userinput"><kbd class=
         "command">unset MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE &amp;&amp;
-unset MOZBUILD_STATE_PATH                     &amp;&amp;
-unset PYTHON311</kbd></pre>
+unset MOZBUILD_STATE_PATH</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -520,7 +524,7 @@ ln -sfv /usr/lib/thunderbird/chrome/icons/default/default256.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-659">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-686">
           Home</a>
         </li>
       </ul>

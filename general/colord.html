@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-659">
+  <body class="blfs" id="blfs-r12.1-686">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-659
+        "phrase">(systemd</span> Edition) - Version r12.1-686
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-659">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-686">
           Home</a>
         </li>
       </ul>
@@ -107,6 +107,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/colord-1.4.7-upstream_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/colord-1.4.7-upstream_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Colord Dependencies
         </h3>
         <h4>
@@ -156,6 +170,14 @@
         <h2 class="sect2">
           Installation of Colord
         </h2>
+        <p>
+          First, fix a misuse of sqlite API causing a test failure and
+          potential runtime crash <span class="phrase">and an over-strict
+          systemd hardening setting causing the systemd service fail to
+          start</span>:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../colord-1.4.7-upstream_fixes-1.patch</kbd></pre>
         <p>
           There should be a dedicated user and group to take control of the
           colord daemon after it has started. Issue the following commands as
@@ -442,7 +464,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-659">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-686">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-659">
+  <body class="blfs" id="blfs-r12.1-686">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-659
+        "phrase">(systemd</span> Edition) - Version r12.1-686
       </h4>
       <h3>
         Chapter&nbsp;46.&nbsp;Printing
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-659">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-686">
           Home</a>
         </li>
       </ul>
@@ -288,8 +288,9 @@ ln -sfvn ghostscript /usr/include/ps</kbd></pre>
           Now make the documentation accessible from a standard place:
         </p>
         <pre class="root"><kbd class=
-        "command">mv -v /usr/share/doc/ghostscript/10.03.0 /usr/share/doc/ghostscript-10.03.0  &amp;&amp;
-cp -r examples/ -T /usr/share/ghostscript/10.03.0/</kbd></pre>
+        "command">mv -v /usr/share/doc/ghostscript/10.03.0 /usr/share/doc/ghostscript-10.03.0 &amp;&amp;
+rmdir /usr/share/doc/ghostscript &amp;&amp;
+cp -r examples/ -T /usr/share/ghostscript/10.03.0/examples</kbd></pre>
         <p>
           If you have downloaded the fonts, unpack them to <code class=
           "filename">/usr/share/ghostscript</code> and ensure the ownership
@@ -455,7 +456,7 @@ fc-cache -v /usr/share/ghostscript/fonts/</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-659">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-686">
           Home</a>
         </li>
       </ul>
