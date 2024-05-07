@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-686">
+  <body class="blfs" id="blfs-r12.1-694">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-686
+        "phrase">(systemd</span> Edition) - Version r12.1-694
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-686">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-694">
           Home</a>
         </li>
       </ul>
@@ -245,6 +245,13 @@
         <h2 class="sect2">
           Installation of Graphviz
         </h2>
+        <p>
+          Remove a duplicated declaration causing some <a class="xref" href=
+          "vala.html" title="Vala-0.56.17">Vala-0.56.17</a> tests to fail:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">awk -i inplace '/aghtmlstr/ &amp;&amp; ++f == 2 {getline} 1' \
+    lib/cgraph/cgraph.h</kbd></pre>
         <p>
           Install <span class="application">Graphviz</span> by running the
           following commands:
@@ -1094,7 +1101,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-686">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-694">
           Home</a>
         </li>
       </ul>
