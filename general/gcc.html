@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-699">
+  <body class="blfs" id="blfs-r12.1-700">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-699
+        "phrase">(systemd</span> Edition) - Version r12.1-700
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-699">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-700">
           Home</a>
         </li>
       </ul>
@@ -247,7 +247,10 @@ mkdir -pv /usr/share/gdb/auto-load/usr/lib              &amp;&amp;
 mv -v /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib &amp;&amp;
 
 chown -v -R root:root \
-    /usr/lib/gcc/*linux-gnu/13.2.0/include{,-fixed}</kbd></pre>
+    /usr/lib/gcc/*linux-gnu/13.2.0/include{,-fixed}     &amp;&amp;
+
+ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/13.2.0/liblto_plugin.so \
+        /usr/lib/bfd-plugins/</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -490,7 +493,7 @@ chown -v -R root:root \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-699">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-700">
           Home</a>
         </li>
       </ul>
