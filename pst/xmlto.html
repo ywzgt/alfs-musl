@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-705">
+  <body class="blfs" id="blfs-r12.1-711">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-705
+        "phrase">(systemd</span> Edition) - Version r12.1-711
       </h4>
       <h3>
         Chapter&nbsp;49.&nbsp;Extensible Markup Language (XML)
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-705">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-711">
           Home</a>
         </li>
       </ul>
@@ -147,6 +147,12 @@
         <h2 class="sect2">
           Installation of xmlto
         </h2>
+        <p>
+          Fix variable and function declarations in pre-C99 style which is
+          rejected by GCC-14.1 or later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -ri 's/ifsense;|main/int &amp;/' xmlif/xmlif.l</kbd></pre>
         <p>
           Install <span class="application">xmlto</span> by running the
           following commands:
@@ -265,7 +271,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-705">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-711">
           Home</a>
         </li>
       </ul>

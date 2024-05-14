@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-705">
+  <body class="blfs" id="blfs-r12.1-711">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-705
+        "phrase">(systemd</span> Edition) - Version r12.1-711
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-705">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-711">
           Home</a>
         </li>
       </ul>
@@ -7136,6 +7136,13 @@ deactivate</kbd></pre>
             Installation of Sphinx_rtd_theme
           </h3>
           <p>
+            First, tell the package that newer <a class="xref" href=
+            "python-modules.html#docutils" title=
+            "docutils-0.21.2">docutils-0.21.2</a> versions are safe to use:
+          </p>
+          <pre class="userinput"><kbd class="command">sed -e s/0.21/0.22/ \
+    -i setup.cfg</kbd></pre>
+          <p>
             Build the module:
           </p>
           <pre class="userinput"><kbd class=
@@ -7263,7 +7270,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-705">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-711">
           Home</a>
         </li>
       </ul>

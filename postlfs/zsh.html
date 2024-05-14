@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-705">
+  <body class="blfs" id="blfs-r12.1-711">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-705
+        "phrase">(systemd</span> Edition) - Version r12.1-711
       </h4>
       <h3>
         Chapter&nbsp;7.&nbsp;Shells
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-705">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-711">
           Home</a>
         </li>
       </ul>
@@ -142,6 +142,15 @@
         <pre class="userinput"><kbd class=
         "command">sed -e 's/set_from_init_file/texinfo_&amp;/' \
     -i Doc/Makefile.in</kbd></pre>
+        <p>
+          Some programs shipped in the building system for detecting system
+          features use pre-C99 syntax rejected by GCC-14.1 or later. Fix them
+          up or Zsh would be wrongly configured and fail to build:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i -e 's/^main/int &amp;/' -e 's/exit(/return(/' aczsh.m4 configure.ac &amp;&amp;
+sed -i 's/test = /&amp;(char**)/'                    configure.ac          &amp;&amp;
+autoconf</kbd></pre>
         <p>
           The documentation files contain references to zsh configuration
           files in <code class="filename">/etc</code>, but we'll use
@@ -356,7 +365,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-705">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-711">
           Home</a>
         </li>
       </ul>
