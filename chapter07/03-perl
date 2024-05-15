@@ -8,6 +8,8 @@ pkgver=${pkgver#perl-}
 pkgver=${pkgver%.tar*}
 _baseVER="${pkgver%.*}"
 
+patch -p1 -i ../perl-5.38-musl-gcc14.diff
+
 sh Configure -des \
 	-Dprefix=/usr \
 	-Dvendorprefix=/usr \

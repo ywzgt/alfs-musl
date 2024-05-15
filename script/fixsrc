@@ -40,4 +40,4 @@ _gcc_patch() {
 	popd >/dev/null
 }
 
-_gcc_patch
+#_gcc_patch
