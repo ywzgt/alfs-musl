@@ -1,0 +1,10 @@
+--- a/pp_sys.c
++++ b/pp_sys.c
+@@ -208,7 +208,7 @@
+ #       define PERL_EFF_ACCESS(p,f) (eaccess((p), (f), ACC_SELF))
+ #   else
+         /* SCO */
+-#       define PERL_EFF_ACCESS(p,f) (eaccess((p), (f)))
++#       define PERL_EFF_ACCESS(p,f) (access((p), (f)))
+ #   endif
+ #endif

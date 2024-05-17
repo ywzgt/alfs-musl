@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SRC="mpfr"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--disable-static \
+	--enable-thread-safe \
+	--docdir=/usr/share/doc/mpfr
+
+make
+make install
