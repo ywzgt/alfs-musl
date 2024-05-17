@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SRC="gperf"
+PKG="$SRC"
+
+./configure --prefix=/usr --docdir=/usr/share/doc/gperf
+
+make
+make install

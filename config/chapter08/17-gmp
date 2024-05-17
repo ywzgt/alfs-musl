@@ -1,0 +1,25 @@
+#!/bin/bash
+
+SRC="gmp"
+PKG="$SRC"
+
+_abi() {
+	case $(uname -m) in
+		i?86)  ABI=32 $@ ;;
+		*) if test "$X32"; then ABI=x32 $@; else $@; fi ;;
+	esac
+}
+
+# GMP 的默认设置会生成针对主机处理器优化的库
+# 如果运行在能力不如主机 CPU 的处理器上，gcc可能报错: 编译器内部错误
+# 所以创建通用库：
+cp -v config{fsf,}.guess
+cp -v config{fsf,}.sub
+
+_abi ./configure --prefix=/usr \
+	--enable-cxx \
+	--disable-static \
+	--docdir=/usr/share/doc/gmp
+
+make
+make install

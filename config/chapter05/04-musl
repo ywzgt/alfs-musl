@@ -1,0 +1,23 @@
+#!/bin/bash
+
+SRC="musl"
+
+mkdir -v build
+cd build
+
+case $(uname -m) in i?86)
+	${LFS_TGT}-gcc $CPPFLAGS $CFLAGS -c "$SRC_ARCHIVE/stack_chk_fail_local.c" -o stack_chk_fail_local.o
+	${LFS_TGT}-ar r libssp_nonshared.a stack_chk_fail_local.o
+	cp -v libssp_nonshared.a $LFS/usr/lib
+ 	rm -rf *
+	;;
+esac
+
+../configure --prefix=/usr \
+	--with-sysroot=$LFS \
+	--host=$LFS_TGT \
+	--target=$LFS_TGT \
+	--disable-debug
+
+make
+make DESTDIR=$LFS install

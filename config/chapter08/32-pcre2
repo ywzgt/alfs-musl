@@ -1,0 +1,26 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/svn/general/pcre2.html
+
+SRC="pcre2"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+		--disable-static \
+		--docdir=/usr/share/doc/pcre2 \
+		--enable-unicode \
+		--$([[ $(gcc -dumpmachine) = *-muslx32 ]] && echo dis || echo en)able-jit \
+		--enable-pcre2-16 \
+		--enable-pcre2-32 \
+		--enable-pcre2grep-libz \
+		--enable-pcre2grep-libbz2 \
+		--enable-pcre2test-libreadline
+
+make
+make install
+
+# 10.43 on x86_64-pc-linux-muslx32
+# src/sljit/sljitNativeX86_common.c: Assembler messages:
+# src/sljit/sljitNativeX86_common.c:436: Error: operand type mismatch for `movq'
+# ...
+# CC       src/libpcre2_16_la-pcre2_compile.lo
+# make[1]: *** [Makefile:2640: src/libpcre2_8_la-pcre2_jit_compile.lo] Error 1
