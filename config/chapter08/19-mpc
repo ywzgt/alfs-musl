@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SRC="mpc"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--disable-static \
+	--docdir=/usr/share/doc/mpc
+
+make
+make install

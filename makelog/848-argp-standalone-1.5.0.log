@@ -1,0 +1,360 @@
+Fri May 17 12:20:55 CST 2024
+KB: 1243848	/
+
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: /usr/bin/autoconf --force
+configure.ac:6: warning: AM_INIT_AUTOMAKE: two- and three-arguments forms are deprecated.
+./lib/autoconf/general.m4:2434: AC_DIAGNOSE is expanded from...
+aclocal.m4:429: AM_INIT_AUTOMAKE is expanded from...
+configure.ac:6: the top level
+configure.ac:7: warning: 'AM_CONFIG_HEADER': this macro is obsolete.
+configure.ac:7: You should use the 'AC_CONFIG_HEADERS' macro instead.
+./lib/autoconf/general.m4:2434: AC_DIAGNOSE is expanded from...
+aclocal.m4:745: AM_CONFIG_HEADER is expanded from...
+configure.ac:7: the top level
+configure.ac:13: warning: The macro 'AC_GNU_SOURCE' is obsolete.
+configure.ac:13: You should run autoupdate.
+./lib/autoconf/specific.m4:489: AC_GNU_SOURCE is expanded from...
+configure.ac:13: the top level
+configure.ac:19: warning: 'AM_PROG_CC_STDC': this macro is obsolete.
+configure.ac:19: You should simply use the 'AC_PROG_CC' macro instead.
+configure.ac:19: Also, your code should no longer depend upon 'am_cv_prog_cc_stdc',
+configure.ac:19: but upon 'ac_cv_prog_cc_stdc'.
+./lib/autoconf/general.m4:2434: AC_DIAGNOSE is expanded from...
+aclocal.m4:751: AM_PROG_CC_STDC is expanded from...
+configure.ac:19: the top level
+configure.ac:22: warning: The macro 'AC_ERROR' is obsolete.
+configure.ac:22: You should run autoupdate.
+./lib/autoconf/oldnames.m4:34: AC_ERROR is expanded from...
+configure.ac:22: the top level
+configure.ac:28: warning: The macro 'AC_HEADER_STDC' is obsolete.
+configure.ac:28: You should run autoupdate.
+./lib/autoconf/headers.m4:663: AC_HEADER_STDC is expanded from...
+configure.ac:28: the top level
+configure.ac:36: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+configure.ac:36: You should run autoupdate.
+./lib/autoconf/general.m4:2845: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+acinclude.m4:282: LSH_GCC_ATTRIBUTES is expanded from...
+configure.ac:36: the top level
+configure.ac:69: warning: The macro 'AC_TRY_LINK' is obsolete.
+configure.ac:69: You should run autoupdate.
+./lib/autoconf/general.m4:2918: AC_TRY_LINK is expanded from...
+lib/m4sugar/m4sh.m4:690: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:697: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2270: AC_CACHE_CHECK is expanded from...
+configure.ac:46: ARGP_CHECK_FUNC is expanded from...
+configure.ac:69: the top level
+configure.ac:96: warning: AC_OUTPUT should be used without arguments.
+configure.ac:96: You should run autoupdate.
+autoreconf: running: /usr/bin/autoheader --force
+autoheader: warning: WARNING: Using auxiliary files such as 'acconfig.h', 'config.h.bot'
+autoheader: WARNING: and 'config.h.top', to define templates for 'config.h.in'
+autoheader: WARNING: is deprecated and discouraged.
+autoheader: 
+autoheader: WARNING: Using the third argument of 'AC_DEFINE_UNQUOTED' and
+autoheader: WARNING: 'AC_DEFINE' allows one to define a template without
+autoheader: WARNING: 'acconfig.h':
+autoheader: 
+autoheader: WARNING:   AC_DEFINE([NEED_FUNC_MAIN], 1,
+autoheader: 		[Define if a function 'main' is needed.])
+autoheader: 
+autoheader: WARNING: More sophisticated templates can also be produced, see the
+autoheader: WARNING: documentation.
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:6: warning: AM_INIT_AUTOMAKE: two- and three-arguments forms are deprecated.  For more info, see:
+configure.ac:6: https://www.gnu.org/software/automake/manual/automake.html#Modernize-AM_005fINIT_005fAUTOMAKE-invocation
+configure.ac:13: installing './compile'
+configure.ac:6: installing './install-sh'
+configure.ac:6: installing './missing'
+Makefile.am: installing './depcomp'
+autoreconf: './install-sh' is updated
+autoreconf: Leaving directory '.'
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking whether make sets $(MAKE)... (cached) yes
+checking for ranlib... ranlib
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for limits.h... yes
+checking for malloc.h... yes
+checking for unistd.h... (cached) yes
+checking for libintl.h... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for size_t... yes
+checking for __attribute__... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for vprintf... yes
+checking for strerror... yes
+checking for mempcpy... yes
+checking for strndup... yes
+checking for strchrnul... yes
+checking for putc_unlocked('x', stdout)... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether flockfile is declared... yes
+checking whether fputs_unlocked is declared... yes
+checking whether fwrite_unlocked is declared... yes
+checking for strdup... yes
+checking for asprintf... yes
+checking whether program_invocation_name is declared... yes
+checking whether program_invocation_short_name is declared... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating testsuite/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+make  all-recursive
+make[1]: Entering directory '/sources/argp-standalone-1.5.0'
+Making all in .
+make[2]: Entering directory '/sources/argp-standalone-1.5.0'
+gcc -DHAVE_CONFIG_H -I.   -DNDEBUG -I.  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs -MT argp-test.o -MD -MP -MF .deps/argp-test.Tpo -c -o argp-test.o argp-test.c
+gcc -DHAVE_CONFIG_H -I.   -DNDEBUG -I.  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs -MT argp-ba.o -MD -MP -MF .deps/argp-ba.Tpo -c -o argp-ba.o argp-ba.c
+gcc -DHAVE_CONFIG_H -I.   -DNDEBUG -I.  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs -MT argp-eexst.o -MD -MP -MF .deps/argp-eexst.Tpo -c -o argp-eexst.o argp-eexst.c
+gcc -DHAVE_CONFIG_H -I.   -DNDEBUG -I.  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs -MT argp-fmtstream.o -MD -MP -MF .deps/argp-fmtstream.Tpo -c -o argp-fmtstream.o argp-fmtstream.c
+mv -f .deps/argp-ba.Tpo .deps/argp-ba.Po
+gcc -DHAVE_CONFIG_H -I.   -DNDEBUG -I.  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs -MT argp-help.o -MD -MP -MF .deps/argp-help.Tpo -c -o argp-help.o argp-help.c
+argp-test.c:35:8: warning: missing initializer for field ‘group’ of ‘struct argp_option’ [-Wmissing-field-initializers]
+   35 | struct argp_option sub_options[] = { { "subopt1", 's', 0, 0, "Nested option 1" },
+      |        ^~~~~~~~~~~
+In file included from argp-test.c:31:
+./argp.h:104:13: note: ‘group’ declared here
+  104 |         int group;
+      |             ^~~~~
+argp-test.c:36:38: warning: missing initializer for field ‘group’ of ‘struct argp_option’ [-Wmissing-field-initializers]
+   36 |                                      { "subopt2", 'S', 0, 0, "Nested option 2" },
+      |                                      ^
+./argp.h:104:13: note: ‘group’ declared here
+  104 |         int group;
+      |             ^~~~~
+argp-test.c:39:38: warning: missing initializer for field ‘group’ of ‘struct argp_option’ [-Wmissing-field-initializers]
+   39 |                                      { "subopt3", 'p', 0, 0, "Nested option 3" },
+      |                                      ^
+./argp.h:104:13: note: ‘group’ declared here
+  104 |         int group;
+      |             ^~~~~
+argp-test.c: In function ‘sub_parse_opt’:
+argp-test.c:49:54: warning: unused parameter ‘state’ [-Wunused-parameter]
+   49 | sub_parse_opt(int key, char* arg, struct argp_state* state)
+      |                                   ~~~~~~~~~~~~~~~~~~~^~~~~
+argp-test.c: In function ‘sub_help_filter’:
+argp-test.c:74:50: warning: unused parameter ‘input’ [-Wunused-parameter]
+   74 | sub_help_filter(int key, const char* text, void* input)
+      |                                            ~~~~~~^~~~~
+argp-test.c: At top level:
+argp-test.c:84:5: warning: missing initializer for field ‘argp_domain’ of ‘struct argp’ [-Wmissing-field-initializers]
+   84 |     = { sub_options, sub_parse_opt, sub_args_doc, sub_doc, 0, sub_help_filter };
+      |     ^
+./argp.h:262:21: note: ‘argp_domain’ declared here
+  262 |         const char* argp_domain;
+      |                     ^~~~~~~~~~~
+argp-test.c:97:5: warning: missing initializer for field ‘group’ of ‘struct argp_option’ [-Wmissing-field-initializers]
+   97 |     = { { "pid", 'p', "PID", 0, "List the process PID" },
+      |     ^
+./argp.h:104:13: note: ‘group’ declared here
+  104 |         int group;
+      |             ^~~~~
+argp-test.c:98:9: warning: missing initializer for field ‘group’ of ‘struct argp_option’ [-Wmissing-field-initializers]
+   98 |         { "pgrp", OPT_PGRP, "PGRP", 0, "List processes in the process group PGRP" },
+      |         ^
+./argp.h:104:13: note: ‘group’ declared here
+  104 |         int group;
+      |             ^~~~~
+argp-test.c:99:9: warning: missing initializer for field ‘group’ of ‘struct argp_option’ [-Wmissing-field-initializers]
+   99 |         { "no-parent", 'P', 0, 0, "Include processes without parents" },
+      |         ^
+./argp.h:104:13: note: ‘group’ declared here
+  104 |         int group;
+      |             ^~~~~
+argp-test.c:100:9: warning: missing initializer for field ‘doc’ of ‘struct argp_option’ [-Wmissing-field-initializers]
+  100 |         { 0, 'x', 0, OPTION_ALIAS },
+      |         ^
+./argp.h:95:23: note: ‘doc’ declared here
+   95 |         __const char* doc;
+      |                       ^~~
+argp-test.c:108:11: warning: missing initializer for field ‘group’ of ‘struct argp_option’ [-Wmissing-field-initializers]
+  108 |           " removed from the output entirely)" },
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./argp.h:104:13: note: ‘group’ declared here
+  104 |         int group;
+      |             ^~~~~
+argp-test.c:109:9: warning: missing initializer for field ‘group’ of ‘struct argp_option’ [-Wmissing-field-initializers]
+  109 |         { "reverse", 'r', 0, 0, "Reverse the order of any sort" },
+      |         ^
+./argp.h:104:13: note: ‘group’ declared here
+  104 |         int group;
+      |             ^~~~~
+argp-test.c:110:9: warning: missing initializer for field ‘doc’ of ‘struct argp_option’ [-Wmissing-field-initializers]
+  110 |         { "gratuitously-long-reverse-option", 0, 0, OPTION_ALIAS },
+      |         ^
+./argp.h:95:23: note: ‘doc’ declared here
+   95 |         __const char* doc;
+      |                       ^~~
+argp-test.c:117:11: warning: missing initializer for field ‘group’ of ‘struct argp_option’ [-Wmissing-field-initializers]
+  117 |           " the current process)" },
+      |           ^~~~~~~~~~~~~~~~~~~~~~~
+./argp.h:104:13: note: ‘group’ declared here
+  104 |         int group;
+      |             ^~~~~
+argp-test.c:119:9: warning: missing initializer for field ‘group’ of ‘struct argp_option’ [-Wmissing-field-initializers]
+  119 |         { 0, 0, 0, 0, "Here are some more options:" },
+      |         ^
+./argp.h:104:13: note: ‘group’ declared here
+  104 |         int group;
+      |             ^~~~~
+argp-test.c:120:9: warning: missing initializer for field ‘group’ of ‘struct argp_option’ [-Wmissing-field-initializers]
+  120 |         { "foonly", 'f', "ZOT", OPTION_ARG_OPTIONAL, "Glork a foonly" },
+      |         ^
+./argp.h:104:13: note: ‘group’ declared here
+  104 |         int group;
+      |             ^~~~~
+argp-test.c:121:9: warning: missing initializer for field ‘group’ of ‘struct argp_option’ [-Wmissing-field-initializers]
+  121 |         { "zaza", 'z', 0, 0, "Snit a zar" },
+      |         ^
+./argp.h:104:13: note: ‘group’ declared here
+  104 |         int group;
+      |             ^~~~~
+argp-test.c:207:15: warning: missing initializer for field ‘flags’ of ‘struct argp_child’ [-Wmissing-field-initializers]
+  207 | static struct argp_child argp_children[] = { { &sub_argp }, { 0 } };
+      |               ^~~~~~~~~~
+./argp.h:285:13: note: ‘flags’ declared here
+  285 |         int flags;
+      |             ^~~~~
+argp-test.c:208:15: warning: missing initializer for field ‘argp_domain’ of ‘struct argp’ [-Wmissing-field-initializers]
+  208 | static struct argp argp = { options, parse_opt, args_doc, doc, argp_children, help_filter };
+      |               ^~~~
+./argp.h:262:21: note: ‘argp_domain’ declared here
+  262 |         const char* argp_domain;
+      |                     ^~~~~~~~~~~
+mv -f .deps/argp-eexst.Tpo .deps/argp-eexst.Po
+gcc -DHAVE_CONFIG_H -I.   -DNDEBUG -I.  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs -MT argp-parse.o -MD -MP -MF .deps/argp-parse.Tpo -c -o argp-parse.o argp-parse.c
+argp-help.c: In function ‘until_short’:
+argp-help.c:614:39: warning: unused parameter ‘real’ [-Wunused-parameter]
+  614 |             const struct argp_option* real,
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+argp-help.c:615:25: warning: unused parameter ‘domain’ [-Wunused-parameter]
+  615 |             const char* domain,
+      |             ~~~~~~~~~~~~^~~~~~
+argp-help.c:616:19: warning: unused parameter ‘cookie’ [-Wunused-parameter]
+  616 |             void* cookie)
+      |             ~~~~~~^~~~~~
+argp-help.c: In function ‘add_argless_short_opt’:
+argp-help.c:1251:35: warning: unused parameter ‘domain’ [-Wunused-parameter]
+ 1251 |                       const char* domain,
+      |                       ~~~~~~~~~~~~^~~~~~
+argp-help.c: At top level:
+argp-help.c:1762:10: warning: no previous prototype for ‘__argp_error_internal’ [-Wmissing-prototypes]
+ 1762 |     void __argp_error_internal(const struct argp_state* state,
+      |          ^~~~~~~~~~~~~~~~~~~~~
+argp-help.c: In function ‘__argp_error_internal’:
+argp-help.c:1765:45: warning: unused parameter ‘mode_flags’ [-Wunused-parameter]
+ 1765 |                                unsigned int mode_flags)
+      |                                ~~~~~~~~~~~~~^~~~~~~~~~
+argp-help.c: At top level:
+argp-help.c:1825:10: warning: no previous prototype for ‘__argp_failure_internal’ [-Wmissing-prototypes]
+ 1825 |     void __argp_failure_internal(const struct argp_state* state,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+argp-help.c: In function ‘__argp_failure_internal’:
+argp-help.c:1870:22: warning: unused variable ‘buf’ [-Wunused-variable]
+ 1870 |                 char buf[200];
+      |                      ^~~
+argp-help.c:1830:47: warning: unused parameter ‘mode_flags’ [-Wunused-parameter]
+ 1830 |                                  unsigned int mode_flags)
+      |                                  ~~~~~~~~~~~~~^~~~~~~~~~
+mv -f .deps/argp-test.Tpo .deps/argp-test.Po
+gcc -DHAVE_CONFIG_H -I.   -DNDEBUG -I.  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs -MT argp-pv.o -MD -MP -MF .deps/argp-pv.Tpo -c -o argp-pv.o argp-pv.c
+mv -f .deps/argp-pv.Tpo .deps/argp-pv.Po
+gcc -DHAVE_CONFIG_H -I.   -DNDEBUG -I.  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs -MT argp-pvh.o -MD -MP -MF .deps/argp-pvh.Tpo -c -o argp-pvh.o argp-pvh.c
+mv -f .deps/argp-pvh.Tpo .deps/argp-pvh.Po
+mv -f .deps/argp-fmtstream.Tpo .deps/argp-fmtstream.Po
+mv -f .deps/argp-parse.Tpo .deps/argp-parse.Po
+mv -f .deps/argp-help.Tpo .deps/argp-help.Po
+rm -f libargp.a
+ar cru libargp.a argp-ba.o argp-eexst.o argp-fmtstream.o argp-help.o argp-parse.o argp-pv.o argp-pvh.o 
+ranlib libargp.a
+gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -o argp-test argp-test.o libargp.a 
+make[2]: Leaving directory '/sources/argp-standalone-1.5.0'
+Making all in testsuite
+make[2]: Entering directory '/sources/argp-standalone-1.5.0/testsuite'
+gcc -DHAVE_CONFIG_H -I. -I..   -DNDEBUG -I.  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs -MT ex1.o -MD -MP -MF .deps/ex1.Tpo -c -o ex1.o ex1.c
+gcc -DHAVE_CONFIG_H -I. -I..   -DNDEBUG -I.  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs -MT ex3.o -MD -MP -MF .deps/ex3.Tpo -c -o ex3.o ex3.c
+gcc -DHAVE_CONFIG_H -I. -I..   -DNDEBUG -I.  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs -MT ex4.o -MD -MP -MF .deps/ex4.Tpo -c -o ex4.o ex4.c
+ex4.c: In function ‘parse_opt’:
+ex4.c:102:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  102 |             argp_usage(state);
+      |             ^~~~~~~~~~~~~~~~~
+ex4.c:104:9: note: here
+  104 |         case ARGP_KEY_ARG:
+      |         ^~~~
+mv -f .deps/ex1.Tpo .deps/ex1.Po
+gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -o ex1 ex1.o ../libargp.a 
+mv -f .deps/ex3.Tpo .deps/ex3.Po
+gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -o ex3 ex3.o ../libargp.a 
+mv -f .deps/ex4.Tpo .deps/ex4.Po
+gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fPIC -ggdb3 -Wall -W  -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes  -Waggregate-return  -Wpointer-arith -Wbad-function-cast -Wnested-externs  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -o ex4 ex4.o ../libargp.a 
+make[2]: Leaving directory '/sources/argp-standalone-1.5.0/testsuite'
+make[1]: Leaving directory '/sources/argp-standalone-1.5.0'
+'argp.h' -> '/usr/include/argp.h'
+'libargp.a' -> '/usr/lib/libargp.a'
+
+
+Fri May 17 12:20:59 CST 2024
+
+Totalseconds: 4
+
+KB: 1247360	/
+

@@ -1,0 +1,48 @@
+Fri May 17 12:35:54 CST 2024
+KB: 1634660	/
+
+pip 24.0 from /usr/lib/python3.12/site-packages/pip (python 3.12)
+Processing /sources/jinja2-3.1.4
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: Jinja2
+  Building wheel for Jinja2 (pyproject.toml): started
+  Building wheel for Jinja2 (pyproject.toml): finished with status 'done'
+  Created wheel for Jinja2: filename=jinja2-3.1.4-py3-none-any.whl size=133271 sha256=d3431b318d1fa424d9e698a5bdb0888b2364169d967322055150260e6c58e789
+  Stored in directory: /root/.cache/pip/wheels/a8/44/22/d6b1d072cd30c96625934326acf6ddf7a7fdbf33306d212e33
+Successfully built Jinja2
+Looking in links: dist
+Processing ./dist/jinja2-3.1.4-py3-none-any.whl
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/lib/python3.12/site-packages (from Jinja2) (2.1.5)
+Installing collected packages: Jinja2
+Successfully installed Jinja2-3.1.4
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+
+removed '/root/.cache/pip/wheels/a8/44/22/d6b1d072cd30c96625934326acf6ddf7a7fdbf33306d212e33/origin.json'
+removed '/root/.cache/pip/wheels/a8/44/22/d6b1d072cd30c96625934326acf6ddf7a7fdbf33306d212e33/jinja2-3.1.4-py3-none-any.whl'
+removed directory '/root/.cache/pip/wheels/a8/44/22/d6b1d072cd30c96625934326acf6ddf7a7fdbf33306d212e33'
+removed directory '/root/.cache/pip/wheels/a8/44/22'
+removed directory '/root/.cache/pip/wheels/a8/44'
+removed directory '/root/.cache/pip/wheels/a8'
+removed directory '/root/.cache/pip/wheels'
+removed '/root/.cache/pip/selfcheck/241e69162522ccf5846a2f42ebc24b17464915a155679666b89a9f31'
+removed directory '/root/.cache/pip/selfcheck'
+removed '/root/.cache/pip/http-v2/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a'
+removed '/root/.cache/pip/http-v2/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a.body'
+removed directory '/root/.cache/pip/http-v2/a/1/9/5/3'
+removed directory '/root/.cache/pip/http-v2/a/1/9/5'
+removed directory '/root/.cache/pip/http-v2/a/1/9'
+removed directory '/root/.cache/pip/http-v2/a/1'
+removed directory '/root/.cache/pip/http-v2/a'
+removed directory '/root/.cache/pip/http-v2'
+removed directory '/root/.cache/pip'
+removed directory '/root/.cache'
+
+
+Fri May 17 12:35:56 CST 2024
+
+Totalseconds: 2
+
+KB: 1637232	/
+

@@ -1,0 +1,261 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/lfs/view/systemd/chapter08/systemd.html
+# https://www.linuxfromscratch.org/lfs/view/development/chapter08/udev.html
+
+SRC="systemd"
+PKG="$SRC-utils"
+
+### 注意： 编译手册页需要安装 docbook
+###
+
+sed '/bus_message_type_from_string/s/_pure_//' \
+		-i src/libsystemd/sd-bus/bus-internal.h
+sed '/devt_hash_func/s/_pure_//' \
+		-i src/basic/hash-funcs.h
+sed '/job_get_timeout/s/_pure_//' \
+		-i src/core/job.h
+
+sed -i -e 's/GROUP="render"/GROUP="video"/' \
+		-e 's/GROUP="sgx", //' rules.d/50-udev-default.rules.in
+
+# 从默认的 sysusers.d/basic.conf 中删除两个不需要的组render 和sgx：
+sed -i -e '/^g\ render/d' -e '/^g\ sgx/d' sysusers.d/basic.conf.in
+
+mkdir -v patches-musl
+tar xvf $SRC_ROOT/gentoo-systemd-musl-patches.tar.gz --strip-components=1 -C patches-musl
+rm -fv patches-musl/0015-test-sizeof.c-Disable-tests-for-missing-typedefs-in-.patch
+
+for p in patches-musl/*.patch; do
+	echo "Applying patch '$p'..."
+	patch -Np1 -i "$p"
+	echo -e '\n'
+done
+
+# Avoid redefinition of struct ethhdr.
+# 避免 /usr/include/netinet/if_ether.h:115:8: 错误：‘struct ethhdr’重定义
+CPPFLAGS+=" -D__UAPI_DEF_ETHHDR=0"
+
+pkgver="$(find .. -maxdepth 1  -type f -name 'systemd*.tar*' -exec basename {} +|head -1)"
+pkgver=${pkgver#systemd-}
+pkgver="$(echo ${pkgver%.tar*}|sed 's/[A-Za-z]\|_\|-//g')"
+
+mkdir -vp build-utils
+cd build-utils
+
+_meson_options=(
+        -Dmode=release
+        -Dman=false
+        -Dversion-tag="${pkgver}"
+
+        -Dstandalone-binaries=true
+        -Dtmpfiles=true
+        -Dhwdb=true
+        -Dblkid=true
+        -Dacl=true
+        -Dkmod=true
+
+		-Dsysusers=true
+		-Dusers-gid=999
+		-Dnobody-user=nobody
+		-Dnobody-group=nogroup
+		-Dnologin-path=/usr/bin/false
+
+		-D{,gnu-}efi=false
+		-Dkernel-install=false
+        -Dselinux=false
+        -Dtests=false
+        -Dinstall-tests=false
+        -Dgshadow=false
+
+        -Dlink-boot-shared=false
+        -Dlink-udev-shared=false
+
+        -Ddns-servers=
+        -Dntp-servers=
+        -Dsysvinit-path=
+        -Ddefault-dnssec=no
+
+        -Dadm-group=false
+        -Danalyze=false
+        -Dapparmor=false
+        -Daudit=false
+        -Dbacklight=false
+        -Dbinfmt=false
+        -Dcoredump=false
+        -Ddbus=false
+        -Delfutils=false
+        -Denvironment-d=false
+        -Dfdisk=false
+        -Dgcrypt=false
+        -Dglib=false
+        -Dgnutls=false
+        -Dhibernate=false
+        -Dhostnamed=false
+        -Didn=false
+        -Dima=false
+        -Dinitrd=false
+        -Dfirstboot=false
+        -Dldconfig=false
+        -Dlibcryptsetup=false
+        -Dlibcurl=false
+        -Dlibfido2=false
+        -Dlibidn=false
+        -Dlibidn2=false
+        -Dlibiptc=false
+        -Dlocaled=false
+        -Dlogind=false
+        -Dlz4=false
+        -Dmachined=false
+        -Dmicrohttpd=false
+        -Dnetworkd=false
+        -Dnscd=false
+        -Dnss-myhostname=false
+        -Dnss-resolve=false
+        -Dnss-systemd=false
+        -Doomd=false
+        -Dopenssl=false
+        -Dp11kit=false
+        -Dpam=false
+        -Dpcre2=false
+        -Dpolkit=false
+        -Dportabled=false
+        -Dpstore=false
+        -Dpwquality=false
+        -Drandomseed=false
+        -Dresolve=false
+        -Drfkill=false
+        -Dseccomp=false
+        -Dsmack=false
+        -Dsysext=false
+        -Dtimedated=false
+        -Dtimesyncd=false
+        -Dtpm=false
+        -Dqrencode=false
+        -Dquotacheck=false
+        -Duserdb=false
+        -Dutmp=false
+        -Dvconsole=false
+        -Dwheel-group=false
+        -Dxdg-autostart=false
+        -Dxkbcommon=false
+        -Dxz=false
+        -Dzlib=false
+        -Dzstd=false
+)
+
+_targets=(
+		udev:shared_library
+		src/libudev/libudev.pc
+
+		udevadm
+		systemd-hwdb
+		src/udev/ata_id
+		src/udev/cdrom_id
+		src/udev/fido_id
+		src/udev/mtd_probe
+		src/udev/dmi_memory_id
+		src/udev/scsi_id
+		src/udev/v4l_id
+		src/udev/udev.pc
+
+		hwdb.d/60-autosuspend-chromiumos.hwdb
+		rules.d/50-udev-default.rules
+		rules.d/64-btrfs.rules
+
+		systemd-tmpfiles.standalone
+		systemd-sysusers.standalone
+		sysusers.d/basic.conf
+)
+
+# 		man/udev.conf.5
+# 		man/systemd.link.5
+# 		man/hwdb.7
+# 		man/udev.7
+# 		man/systemd-hwdb.8
+# 		man/systemd-udevd.service.8
+# 		man/udevadm.8
+
+# 		man/tmpfiles.d.5
+# 		man/systemd-tmpfiles.8
+
+# 		man/sysusers.d.5
+# 		man/systemd-sysusers.8
+
+
+meson setup --prefix=/usr  \
+	--buildtype=release  \
+	--sysconfdir=/etc  \
+	"${_meson_options[@]}" ..
+
+meson compile "${_targets[@]}"
+
+_doman() {
+    for i in $@; do
+        install -Dvm644 "$i" -t "/usr/share/man/man${i##*.}"
+    done
+}
+
+		meson install --no-rebuild --tags libudev
+
+		builddir="$PWD/.."
+		_bindir="/usr/bin" _libdir="/usr/lib"
+		install -dv "${_bindir}" "${_libdir}/systemd"
+
+		install -vm755 systemd-tmpfiles.standalone "${_bindir}/systemd-tmpfiles"
+		install -vm755 systemd-sysusers.standalone "${_bindir}/systemd-sysusers"
+		install -vm755 udevadm systemd-hwdb -t "${_bindir}"
+		install -Dvm644 sysusers.d/basic.conf -t "/usr/lib/sysusers.d"
+
+		ln -sv udevadm "${_bindir}/udevd"
+		ln -sv systemd-hwdb "${_bindir}/udev-hwdb"
+		ln -sv ../../bin/udevadm "${_libdir}/systemd/systemd-udevd"
+		ln -sv systemd-sysusers "${_bindir}/sysusers"
+
+		install -Dm644 /dev/stdin "/usr/share/libalpm/hooks/20-sysusers.hook" <<END
+[Trigger]
+Type = Path
+Operation = Install
+Operation = Upgrade
+Target = usr/lib/sysusers.d/*.conf
+
+[Action]
+Description = Creating system user accounts...
+When = PostTransaction
+Exec = /usr/bin/systemd-sysusers
+END
+
+		install -Dvm755 \
+			src/udev/ata_id \
+			src/udev/cdrom_id \
+			src/udev/fido_id \
+			src/udev/mtd_probe \
+			src/udev/dmi_memory_id \
+			src/udev/scsi_id \
+			src/udev/v4l_id -t "${_libdir}/udev"
+
+		install -Dvm644 rules.d/*.rules "${builddir}/rules.d/"*.rules -t "${_libdir}/udev/rules.d"
+		install -Dvm644 hwdb.d/*.hwdb "${builddir}/hwdb.d/"*.hwdb -t "${_libdir}/udev/hwdb.d"
+
+		# Remove to avoid conflict with elogind
+		# https://bugs.gentoo.org/856433
+		rm -fv "${_libdir}/udev/rules.d/"70-power-switch.rules
+
+		install -Dvm644 src/udev/udev.pc src/libudev/libudev.pc -t "/usr/lib/pkgconfig"
+		install -Dvm644 "${builddir}/src/libudev/libudev.h" -t "/usr/include"
+		install -Dvm644 "${builddir}/src/udev/udev.conf" -t "/etc/udev"
+		install -dv "/etc/udev/hwdb.d" "/etc/udev/rules.d"
+
+		install -Dvm644 "${builddir}/network/99-default.link" -t "${_libdir}/systemd/network"
+		install -Dvm644 "${builddir}/shell-completion/bash/"udevadm \
+			-t "/usr/share/bash-completion/completions"
+
+		install -Dvm644 "${builddir}/shell-completion/zsh/"_systemd-tmpfiles \
+			"${builddir}/shell-completion/zsh/"_udevadm \
+			-t "/usr/share/zsh/site-functions"
+
+# 		_doman man/systemd-tmpfiles.8 man/tmpfiles.d.5
+# 		_doman man/udev.conf.5 man/systemd.link.5 man/hwdb.7 man/systemd-hwdb.8 man/udev.7 man/udevadm.8
+# 		_doman man/systemd-{udevd,sysusers}.8 man/sysusers.d.5
+
+		cd "${builddir}"
+		install -Dvm644 *.md NEWS README TODO  -t "/usr/share/doc/systemd-utils"

@@ -1,0 +1,9 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/lfs/view/development/chapter07/gettext.html
+
+SRC="gettext"
+
+./configure --disable-shared
+
+make
+cp -v gettext-tools/src/{msgfmt,msgmerge,xgettext} /usr/bin
