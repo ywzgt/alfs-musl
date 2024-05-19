@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      GCC-13.2.0
+      GCC-14.1.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-725">
+  <body class="blfs" id="blfs-r12.1-735">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-725
+        "phrase">(systemd</span> Edition) - Version r12.1-735
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-725">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-735">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="gcc" name="gcc"></a>GCC-13.2.0
+      <a id="gcc" name="gcc"></a>GCC-14.1.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -95,7 +95,7 @@
           </h3>
           <p>
             If you are upgrading <span class="application">GCC</span> from
-            any other version prior to 13.2.0, then you must be careful
+            any other version prior to 14.1.0, then you must be careful
             compiling 3rd party kernel modules. You should ensure that the
             kernel and all its native modules are also compiled using the
             same version of <span class="application">GCC</span> that you use
@@ -115,28 +115,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz">https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz</a>
+                "https://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz">https://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: e0e48554cc6e4f261d55ddee9ab69075
+                Download MD5 sum: 24195dca80ded5e0551b533f46a4481d
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 84 MB
+                Download size: 88 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 13 GB (2.9 GB installed with
+                Estimated disk space required: 11 GB (3.4 GB installed with
                 all listed languages; add 1.5 GB for tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 13 SBU (add 29 SBU for tests; both with
+                Estimated build time: 12 SBU (add 32 SBU for tests; both with
                 parallelism=8)
               </p>
             </li>
@@ -212,20 +212,31 @@ cd    build               &amp;&amp;
     --with-system-zlib    \
     --enable-default-pie  \
     --enable-default-ssp  \
+    --enable-host-pie     \
     --disable-fixincludes \
     --enable-languages=c,c++,fortran,go,objc,obj-c++,m2 &amp;&amp;
 make</kbd></pre>
+        <p>
+          If running tests, as in LFS, remove/fix several known test
+          failures:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e '/cpython/d'               -i ../gcc/testsuite/gcc.dg/plugin/plugin.exp
+sed -e 's/no-pic /&amp;-no-pie /'     -i ../gcc/testsuite/gcc.target/i386/pr113689-1.c
+sed -e 's/300000/(1|300000)/'     -i ../libgomp/testsuite/libgomp.c-c++-common/pr109062.c
+sed -e 's/{ target nonpic } //' \
+    -e '/GOTPCREL/d'              -i ../gcc/testsuite/gcc.target/i386/fentryname3.c</kbd></pre>
         <p>
           If you have installed additional packages such as <span class=
           "application">valgrind</span> and <span class=
           "application">gdb</span>, the <span class="application">gcc</span>
           part of the test suite will run more tests than in LFS. Some of
           those will report FAIL and others XPASS (pass when expected to
-          FAIL). As of gcc-13.2.0, about 65 FAIL occur in the <span class=
+          FAIL). As of gcc-14.1.0, about 74 FAILs occur in the <span class=
           "quote">“<span class="quote">guality</span>”</span> suite, as well
           as miscellaneous failures throughout the rest of the test suite. If
-          all the compilers above are built, there will be a little over 80
-          unexpected failures out of over 546,000 tests. To run the tests,
+          all the compilers above are built, there will be a little over 110
+          unexpected failures out of over 617,000 tests. To run the tests,
           issue:
         </p>
         <pre class="userinput"><kbd class=
@@ -247,9 +258,9 @@ mkdir -pv /usr/share/gdb/auto-load/usr/lib              &amp;&amp;
 mv -v /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib &amp;&amp;
 
 chown -v -R root:root \
-    /usr/lib/gcc/*linux-gnu/13.2.0/include{,-fixed}     &amp;&amp;
+    /usr/lib/gcc/*linux-gnu/14.1.0/include{,-fixed}     &amp;&amp;
 
-ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/13.2.0/liblto_plugin.so \
+ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/14.1.0/liblto_plugin.so \
         /usr/lib/bfd-plugins/</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -290,6 +301,13 @@ ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/13.2.0/liblto_plugin.so \
           "../appendices/glossary.html#gSSP" title="SSP"><acronym class=
           "acronym">SSP</acronym></a> is a technique preventing alteration of
           the program flow by corrupting the parameter stack.
+        </p>
+        <p>
+          <em class="parameter"><code>--enable-host-pie</code></em>: Makes
+          the compiler executables PIE (Position Independent Executable).
+          This can be used to enhance protection against ROP (Return Oriented
+          Programming) attacks, and can be viewed as part of a wider trend to
+          harden binaries.
         </p>
         <p>
           <em class=
@@ -493,7 +511,7 @@ ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/13.2.0/liblto_plugin.so \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-725">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-735">
           Home</a>
         </li>
       </ul>
