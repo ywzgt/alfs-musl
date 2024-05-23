@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Doxygen-1.10.0
+      Doxygen-1.11.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-747">
+  <body class="blfs" id="blfs-r12.1-765">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-747
+        "phrase">(systemd</span> Edition) - Version r12.1-765
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-747">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-765">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="doxygen" name="doxygen"></a>Doxygen-1.10.0
+      <a id="doxygen" name="doxygen"></a>Doxygen-1.11.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -92,28 +92,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://doxygen.nl/files/doxygen-1.10.0.src.tar.gz">https://doxygen.nl/files/doxygen-1.10.0.src.tar.gz</a>
+                "https://doxygen.nl/files/doxygen-1.11.0.src.tar.gz">https://doxygen.nl/files/doxygen-1.11.0.src.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: c7455e9961c3491479929935c5087bf6
+                Download MD5 sum: 61a5288e415d7ae4d2cd82eb137d36f8
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 8.0 MB
+                Download size: 8.1 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 253 MB (with tests)
+                Estimated disk space required: 247 MB (with tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 2.1 SBU (using parallelism=4; with
-                tests)
+                Estimated build time: 1.2 SBU (with tests; both using
+                parallelism=4)
               </p>
             </li>
           </ul>
@@ -130,19 +130,26 @@
           title="Git-2.45.1">git-2.45.1</a>
         </p>
         <h4>
+          Recommended
+        </h4>
+        <p class="recommended">
+          <a class="xref" href="../x/qt6.html" title="Qt-6.7.0">Qt-6.7.0</a>
+          (for doxywizard)
+        </p>
+        <h4>
           Optional
         </h4>
         <p class="optional">
           <a class="xref" href="graphviz.html" title=
           "Graphviz-11.0.0">Graphviz-11.0.0</a>, <a class="xref" href=
           "../pst/gs.html" title=
-          "ghostscript-10.03.0">ghostscript-10.03.0</a>, <a class="xref"
+          "ghostscript-10.03.1">ghostscript-10.03.1</a>, <a class="xref"
           href="libxml2.html" title="libxml2-2.12.7">libxml2-2.12.7</a>
           (required for the tests), <a class="xref" href="llvm.html" title=
           "LLVM-18.1.2">LLVM-18.1.2</a> (with clang), (<a class="xref" href=
           "../x/qt5.html" title="Qt-5.15.12">Qt-5.15.12</a> or <a class=
           "xref" href="../x/qt5-alternate.html" title=
-          "qt-alternate-5.15.12">qt-alternate-5.15.12</a>) (for doxywizard),
+          "qt-alternate-5.15.12">qt-alternate-5.15.12</a>) (deprecated),
           <a class="xref" href="../pst/texlive.html" title=
           "texlive-20240312-source">texlive-20240312</a> (or <a class="xref"
           href="../pst/tl-installer.html" title=
@@ -156,19 +163,6 @@
         <h2 class="sect2">
           Installation of Doxygen
         </h2>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            When untarring this package, you may see messages such as
-            <span class="quote">“<span class="quote">Ignoring unknown
-            extended header keyword
-            'LIBARCHIVE.xattr.com.apple.TextEncoding'</span>”</span>. These
-            messages are harmless, and can be safely ignored.
-          </p>
-        </div>
         <p>
           First, fix up some python scripts:
         </p>
@@ -181,15 +175,20 @@
         <pre class="userinput"><kbd class="command">mkdir -v build &amp;&amp;
 cd       build &amp;&amp;
 
-cmake -G "Unix Makefiles"         \
-      -DCMAKE_BUILD_TYPE=Release  \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      -Wno-dev .. &amp;&amp;
-
+cmake -G "Unix Makefiles"          \
+      -D CMAKE_BUILD_TYPE=Release  \
+      -D CMAKE_INSTALL_PREFIX=/usr \
+      -D build_wizard=ON           \
+      -D force_qt=Qt6              \
+      -W no-dev .. &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
-          tests</strong></span>.
+          tests</strong></span>. One test, 012_cite.dox, is known to fail if
+          <a class="xref" href="../pst/texlive.html" title=
+          "texlive-20240312-source">texlive-20240312</a> or <a class="xref"
+          href="../pst/tl-installer.html" title=
+          "install-tl-unx">install-tl-unx</a> is not installed.
         </p>
         <p>
           If you wish to generate the package documentation, you must have
@@ -198,9 +197,9 @@ make</kbd></pre>
           "application">Ghostscript</span> (for PDF docs) installed, then
           issue the following command:
         </p>
-        <pre class="userinput"><kbd class=
-        "command">cmake -DDOC_INSTALL_DIR=share/doc/doxygen-1.10.0 -Dbuild_doc=ON .. &amp;&amp;
-
+        <pre class="userinput"><kbd class="command">cmake  -D build_doc=ON \
+       -D DOC_INSTALL_DIR=share/doc/doxygen-1.11.0 \
+       .. &amp;&amp;
 make docs</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -218,19 +217,23 @@ install -vm644 ../doc/*.1 /usr/share/man/man1</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <code class="option">-Dbuild_wizard=ON</code>: Use this switch if
-          <span class="application">Qt5</span> is installed and you wish to
-          build the GUI front-end.
+          <code class="option">-D build_wizard=OFF</code>: Use this switch if
+          <span class="application">Qt6</span> is not installed.
         </p>
         <p>
-          <code class="option">-Dbuild_search=ON</code>: Use this switch if
+          <code class="option">-D build_search=ON</code>: Use this switch if
           <span class="application">xapian</span> is installed and you wish
           to build external search tools (<span class=
           "command"><strong>doxysearch.cgi</strong></span> and <span class=
           "command"><strong>doxyindexer)</strong></span>.
         </p>
         <p>
-          <code class="option">-Duse_libclang=ON</code>: Use this switch if
+          <code class="option">-D force_qt6=ON</code>: Use this switch to
+          build <span class="command"><strong>doxywizard</strong></span> with
+          Qt6 even if Qt5 is installed.
+        </p>
+        <p>
+          <code class="option">-D use_libclang=ON</code>: Use this switch if
           <span class="application">llvm</span> with <span class=
           "application">clang</span> are installed, to add support for
           libclang parsing.
@@ -249,7 +252,7 @@ install -vm644 ../doc/*.1 /usr/share/man/man1</kbd></pre>
           "texlive-20240312-source">texlive-20240312</a> installed. If you
           require formulas to convert PostScript files to bitmaps, then you
           must have <a class="xref" href="../pst/gs.html" title=
-          "ghostscript-10.03.0">ghostscript-10.03.0</a> installed.
+          "ghostscript-10.03.1">ghostscript-10.03.1</a> installed.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -269,7 +272,7 @@ install -vm644 ../doc/*.1 /usr/share/man/man1</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directory:</strong>
-              <span class="segbody">/usr/share/doc/doxygen-1.10.0</span>
+              <span class="segbody">/usr/share/doc/doxygen-1.11.0</span>
             </div>
           </div>
         </div>
@@ -375,7 +378,7 @@ install -vm644 ../doc/*.1 /usr/share/man/man1</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-747">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-765">
           Home</a>
         </li>
       </ul>
