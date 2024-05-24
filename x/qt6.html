@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Qt-6.7.0
+      Qt-6.7.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-765">
+  <body class="blfs" id="blfs-r12.1-782">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-765
+        "phrase">(systemd</span> Edition) - Version r12.1-782
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -31,9 +31,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="qtwebengine.html" title=
-          "QtWebEngine-6.7.0">Next</a>
+          "QtWebEngine-6.7.1">Next</a>
           <p>
-            QtWebEngine-6.7.0
+            QtWebEngine-6.7.1
           </p>
         </li>
         <li class="up">
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-765">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-782">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="qt6" name="qt6"></a>Qt-6.7.0
+      <a id="qt6" name="qt6"></a>Qt-6.7.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -82,28 +82,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.qt.io/archive/qt/6.7/6.7.0/single/qt-everywhere-src-6.7.0.tar.xz">
-                https://download.qt.io/archive/qt/6.7/6.7.0/single/qt-everywhere-src-6.7.0.tar.xz</a>
+                "https://download.qt.io/archive/qt/6.7/6.7.1/single/qt-everywhere-src-6.7.1.tar.xz">
+                https://download.qt.io/archive/qt/6.7/6.7.1/single/qt-everywhere-src-6.7.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 4468b457adb3a96294947e601fc877ca
+                Download MD5 sum: dfe73333c2fa22582ad76a679f0ab1e1
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 891 MB
+                Download size: 892 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 35 GB (358 MB installed)
+                Estimated disk space required: 38 GB (376 MB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 17 SBU (using parallelism=8)
+                Estimated build time: 11 SBU (using parallelism=8)
               </p>
             </li>
           </ul>
@@ -130,7 +130,7 @@
           "../general/double-conversion.html" title=
           "Double-conversion-3.3.0">double-conversion-3.3.0</a>, <a class=
           "xref" href="../general/glib2.html" title=
-          "GLib-2.80.0">GLib-2.80.0</a>, <a class="xref" href=
+          "GLib-2.80.2">GLib-2.80.2</a>, <a class="xref" href=
           "../multimedia/gst10-plugins-base.html" title=
           "gst-plugins-base-1.24.3">gst-plugins-base-1.24.3</a> (QtMultimedia
           backend), <a class="xref" href="../general/harfbuzz.html" title=
@@ -228,12 +228,12 @@
             Sometimes the installation paths are hardcoded into installed
             files. This is the reason why <code class=
             "filename">/opt/qt6</code> is used as installation prefix instead
-            of <code class="filename">/opt/qt-6.7.0</code>. To create a
+            of <code class="filename">/opt/qt-6.7.1</code>. To create a
             versioned <span class="application">Qt6</span> directory, you may
             rename the directory and create a symlink:
           </p>
-          <pre class="root"><kbd class="command">mkdir -pv /opt/qt-6.7.0
-ln -sfnv qt-6.7.0 /opt/qt6</kbd></pre>
+          <pre class="root"><kbd class="command">mkdir -pv /opt/qt-6.7.1
+ln -sfnv qt-6.7.1 /opt/qt6</kbd></pre>
           <p>
             Later on, you may want to install other versions of <span class=
             "application">Qt6</span>. To do that, just remove the symlink,
@@ -241,6 +241,18 @@ ln -sfnv qt-6.7.0 /opt/qt6</kbd></pre>
             "filename">/opt/qt6</code> symlink again before building the new
             version. Which version of <span class="application">Qt6</span>
             you use depends only on where the symlink points.
+          </p>
+        </div>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            If <a class="xref" href="../general/qca.html" title=
+            "Qca-2.3.8">qca-2.3.8</a> has been installed and you are
+            reinstalling or updating this package, then <span class=
+            "application">qca</span> will need to be reinstalled.
           </p>
         </div>
       </div>
@@ -301,11 +313,6 @@ ln -sfnv qt-6.7.0 /opt/qt6</kbd></pre>
             installed by Qt5.
           </p>
         </div>
-        <p>
-          First make a correction identified upstream:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -i '/if __cpp_lib_span/s/if/ifdef/' qtbase/src/corelib/tools/qspan.h</kbd></pre>
         <p>
           Install <span class="application">Qt6</span> by running the
           following commands:
@@ -449,7 +456,7 @@ EOF</kbd></pre>
           <em class="parameter"><code>-skip qtwebengine</code></em>: This
           switch disables building the QtWebEngine. The BLFS editors have
           chosen to build <a class="xref" href="qtwebengine.html" title=
-          "QtWebEngine-6.7.0">qtwebengine-6.7.0</a> separately.
+          "QtWebEngine-6.7.1">qtwebengine-6.7.1</a> separately.
         </p>
         <p>
           <em class="parameter"><code>-skip qtquick3dphysics</code></em>:
@@ -600,7 +607,7 @@ EOF</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/opt/qt6 and /opt/qt-6.7.0</span>
+              <span class="segbody">/opt/qt6 and /opt/qt-6.7.1</span>
             </div>
           </div>
         </div>
@@ -1072,9 +1079,9 @@ EOF</kbd></pre>
         </li>
         <li class="next">
           <a accesskey="n" href="qtwebengine.html" title=
-          "QtWebEngine-6.7.0">Next</a>
+          "QtWebEngine-6.7.1">Next</a>
           <p>
-            QtWebEngine-6.7.0
+            QtWebEngine-6.7.1
           </p>
         </li>
         <li class="up">
@@ -1083,7 +1090,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-765">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-782">
           Home</a>
         </li>
       </ul>
