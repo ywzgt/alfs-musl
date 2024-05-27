@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      ntp-4.2.8p17
+      ntp-4.2.8p18
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-787">
+  <body class="blfs" id="blfs-r12.1-795">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-787
+        "phrase">(systemd</span> Edition) - Version r12.1-795
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-787">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-795">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="ntp" name="ntp"></a>ntp-4.2.8p17
+      <a id="ntp" name="ntp"></a>ntp-4.2.8p18
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -79,13 +79,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p17.tar.gz">
-                https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p17.tar.gz</a>
+                "https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz">
+                https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: a15558df580bd1b955a105a8b91c078f
+                Download MD5 sum: 516bdabd94ab7c824e9771390761a46c
               </p>
             </li>
             <li class="listitem">
@@ -148,6 +148,13 @@
 useradd -c "Network Time Protocol" -d /var/lib/ntp -u 87 \
         -g ntp -s /bin/false ntp</kbd></pre>
         <p>
+          Fix an type issue by executing
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e "s;pthread_detach(NULL);pthread_detach(0);" \
+    -i configure \
+       sntp/configure</kbd></pre>
+        <p>
           Install <span class="application">ntp</span> by running the
           following commands:
         </p>
@@ -157,7 +164,7 @@ useradd -c "Network Time Protocol" -d /var/lib/ntp -u 87 \
             --sysconfdir=/etc     \
             --enable-linuxcaps    \
             --with-lineeditlibs=readline \
-            --docdir=/usr/share/doc/ntp-4.2.8p17 &amp;&amp;
+            --docdir=/usr/share/doc/ntp-4.2.8p18 &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
@@ -544,7 +551,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-787">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-795">
           Home</a>
         </li>
       </ul>

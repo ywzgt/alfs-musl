@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-787">
+  <body class="blfs" id="blfs-r12.1-795">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-787
+        "phrase">(systemd</span> Edition) - Version r12.1-795
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-787">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-795">
           Home</a>
         </li>
       </ul>
@@ -131,13 +131,19 @@
           Installation of Gavl
         </h2>
         <p>
-          Install <span class="application">Gavl</span> by running the
+          First, fix an issue with gcc-14 and later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i "/stdio/a #include &lt;string.h&gt;" src/fill_test.c</kbd></pre>
+        <p>
+          Now, install <span class="application">Gavl</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">LIBS=-lm                      \
-./configure --prefix=/usr     \
-            --without-doxygen \
+        "command">LIBS=-lm                         \
+./configure --prefix=/usr        \
+            --without-doxygen    \
+            --with-cpuflags=none \
             --docdir=/usr/share/doc/gavl-1.4.0 &amp;&amp;
 make</kbd></pre>
         <p>
@@ -160,6 +166,11 @@ make</kbd></pre>
           <em class="parameter"><code>--without-doxygen</code></em>: This
           switch disables use of Doxygen. Omit if Doxygen is installed and
           you wish to build the API documentation.
+        </p>
+        <p>
+          <em class="parameter"><code>--with-cpuflags=none</code></em>: This
+          switch fixes a problem identifying capabilities of the system
+          architecture.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -233,7 +244,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-787">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-795">
           Home</a>
         </li>
       </ul>
