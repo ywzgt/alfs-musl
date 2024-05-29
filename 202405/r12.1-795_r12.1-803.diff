@@ -1,0 +1,67 @@
+diff --git a/wget-list b/wget-list
+index fb2c8d35f..9f226f069 100644
+--- a/wget-list
++++ b/wget-list
+@@ -152,7 +152,7 @@ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.7.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
+ https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.43/pcre2-10.43.tar.bz2
+ http://ftp.rpm.org/popt/releases/popt-1.x/popt-1.19.tar.gz
+-https://github.com/protocolbuffers/protobuf/releases/download/v26.1/protobuf-26.1.tar.gz
++https://github.com/protocolbuffers/protobuf/releases/download/v27.0/protobuf-27.0.tar.gz
+ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.0/protobuf-c-1.5.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.0-consolidated_fixes-1.patch
+ https://download.kde.org/stable/qca/2.3.8/qca-2.3.8.tar.xz
+@@ -195,7 +195,7 @@ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.
+ https://downloads.sourceforge.net/libpng/libpng-1.6.43.tar.xz
+ https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.43-apng.patch.gz
+ https://www.libraw.org/data/LibRaw-0.21.2.tar.gz
+-https://download.gnome.org/sources/librsvg/2.58/librsvg-2.58.0.tar.xz
++https://download.gnome.org/sources/librsvg/2.58/librsvg-2.58.1.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+ https://download.osgeo.org/libtiff/tiff-4.6.0.tar.gz
+ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.4.0.tar.gz
+@@ -495,7 +495,7 @@ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1
+ https://files.pythonhosted.org/packages/source/r/requests/requests-2.32.2.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/requests-2.32.2-use_system_certs-1.patch
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+-https://github.com/getsentry/sentry-python/releases/download/2.2.1/sentry_sdk-2.2.1.tar.gz
++https://github.com/getsentry/sentry-python/releases/download/2.3.1/sentry_sdk-2.3.1.tar.gz
+ https://files.pythonhosted.org/packages/source/s/six/six-1.16.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-7.3.7.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-2.0.0.tar.gz
+@@ -690,7 +690,7 @@ https://downloads.sourceforge.net/enlightenment/imlib2-1.12.2.tar.xz
+ https://github.com/ksnip/kColorPicker/archive/v0.3.1/kColorPicker-0.3.1.tar.gz
+ https://github.com/ksnip/kImageAnnotator/archive/v0.7.1/kImageAnnotator-0.7.1.tar.gz
+ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
+-https://download.gnome.org/sources/libadwaita/1.5/libadwaita-1.5.0.tar.xz
++https://download.gnome.org/sources/libadwaita/1.5/libadwaita-1.5.1.tar.xz
+ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.2.1/libei-1.2.1.tar.gz
+ https://gedit-technology.net/tarballs/libgedit-amtk/libgedit-amtk-5.8.0.tar.xz
+ https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
+@@ -734,7 +734,7 @@ https://download.kde.org/stable/frameworks/6.2/extra-cmake-modules-6.2.0.tar.xz
+ https://download.kde.org/stable/phonon/4.12.0/phonon-4.12.0.tar.xz
+ https://download.kde.org/stable/phonon/phonon-backend-vlc/0.12.0/phonon-backend-vlc-0.12.0.tar.xz
+ https://download.kde.org/stable/polkit-qt-1/polkit-qt-1-0.200.0.tar.xz
+-https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.12.0.tar.xz
++https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.13.0.tar.xz
+ https://download.kde.org/stable/release-service/24.05.0/src/ark-24.05.0.tar.xz
+ https://download.kde.org/stable/release-service/24.05.0/src/kdenlive-24.05.0.tar.xz
+ https://download.kde.org/stable/release-service/24.05.0/src/khelpcenter-24.05.0.tar.xz
+@@ -792,7 +792,7 @@ https://download.gnome.org/sources/yelp/42/yelp-42.2.tar.xz
+ https://download.gnome.org/sources/baobab/46/baobab-46.0.tar.xz
+ https://download.gnome.org/sources/brasero/3.12/brasero-3.12.3.tar.xz
+ https://download.gnome.org/sources/eog/45/eog-45.3.tar.xz
+-https://download.gnome.org/sources/evince/46/evince-46.1.tar.xz
++https://download.gnome.org/sources/evince/46/evince-46.3.tar.xz
+ https://download.gnome.org/sources/evolution/3.52/evolution-3.52.1.tar.xz
+ https://download.gnome.org/sources/file-roller/44/file-roller-44.3.tar.xz
+ https://download.gnome.org/sources/gnome-calculator/46/gnome-calculator-46.1.tar.xz
+@@ -837,7 +837,7 @@ https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.4.tar.bz2
+ https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.4/xfce4-pulseaudio-plugin-0.4.8.tar.bz2
+ https://download.kde.org/stable/frameworks/6.2/kwindowsystem-6.2.0.tar.xz
+ https://download.kde.org/stable/frameworks/6.2/kconfig-6.2.0.tar.xz
+-https://download.kde.org/stable/frameworks/6.2/solid-6.1.1.tar.xz
++https://download.kde.org/stable/frameworks/6.2/solid-6.2.0.tar.xz
+ https://download.kde.org/stable/frameworks/6.2/kidletime-6.2.0.tar.xz
+ http://download.kde.org/stable/plasma/6.0.5/kwayland-6.0.5.tar.xz
+ http://download.kde.org/stable/plasma/6.0.5/libkscreen-6.0.5.tar.xz
