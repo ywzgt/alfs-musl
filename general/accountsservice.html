@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-803">
+  <body class="blfs" id="blfs-r12.1-823">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-803
+        "phrase">(systemd</span> Edition) - Version r12.1-823
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-803">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-823">
           Home</a>
         </li>
       </ul>
@@ -185,8 +185,20 @@ cd    build &amp;&amp;
 meson setup ..            \
       --prefix=/usr       \
       --buildtype=release \
-      -Dadmin_group=adm   &amp;&amp;
-ninja</kbd></pre>
+      -Dadmin_group=adm</kbd></pre>
+        <p>
+          Now adapt the shipped mocklibc copy to allow building the test
+          suite with GCC 14 or later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">grep 'print_indent'     ../subprojects/mocklibc-1.0/src/netgroup.c \
+     | sed 's/ {/;/' &gt;&gt; ../subprojects/mocklibc-1.0/src/netgroup.h &amp;&amp;
+sed -i '1i#include &lt;stdio.h&gt;'                                      \
+    ../subprojects/mocklibc-1.0/src/netgroup.h</kbd></pre>
+        <p>
+          Build the package:
+        </p>
+        <pre class="userinput"><kbd class="command">ninja</kbd></pre>
         <p>
           To test the package, issue <span class="command"><strong>ninja
           test</strong></span>.
@@ -334,7 +346,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-803">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-823">
           Home</a>
         </li>
       </ul>

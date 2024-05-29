@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-803">
+  <body class="blfs" id="blfs-r12.1-823">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-803
+        "phrase">(systemd</span> Edition) - Version r12.1-823
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-803">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-823">
           Home</a>
         </li>
       </ul>
@@ -224,8 +224,20 @@ meson setup ..                            \
       --buildtype=release                 \
       -Dman=true                          \
       -Dsession_tracking=libsystemd-login \
-      -Dtests=true                        &amp;&amp;
-ninja</kbd></pre>
+      -Dtests=true</kbd></pre>
+        <p>
+          Now adapt the shipped mocklibc copy to allow building the test
+          suite with GCC 14 or later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">grep 'print_indent'     ../subprojects/mocklibc-1.0/src/netgroup.c \
+     | sed 's/ {/;/' &gt;&gt; ../subprojects/mocklibc-1.0/src/netgroup.h &amp;&amp;
+sed -i '1i#include &lt;stdio.h&gt;'                                      \
+    ../subprojects/mocklibc-1.0/src/netgroup.h</kbd></pre>
+        <p>
+          Build the package:
+        </p>
+        <pre class="userinput"><kbd class="command">ninja</kbd></pre>
         <p>
           To test the results, first ensure that the system <span class=
           "application">D-Bus</span> daemon is running, and both <a class=
@@ -465,7 +477,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-803">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-823">
           Home</a>
         </li>
       </ul>

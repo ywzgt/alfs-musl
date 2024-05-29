@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-803">
+  <body class="blfs" id="blfs-r12.1-823">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-803
+        "phrase">(systemd</span> Edition) - Version r12.1-823
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-803">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-823">
           Home</a>
         </li>
       </ul>
@@ -142,6 +142,24 @@
         <pre class="userinput"><kbd class=
         "command">sed 's/stdscr-&gt;_max\([xy]\) + 1/getmax\1(stdscr)/' \
     -i src/aacurses.c</kbd></pre>
+        <p>
+          To allow building this package with GCC-14 or later, add some
+          missing <code class="literal">#include</code> directives and fix a
+          bad <code class="literal">return</code> statement to make the code
+          C99-compatible. Then regenerate the <span class=
+          "command"><strong>configure</strong></span> script to ensure the C
+          code for probing system features C99-compatible as well:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i '1i#include &lt;stdlib.h&gt;'                            \
+    src/aa{fire,info,lib,linuxkbd,savefont,test,regist}.c &amp;&amp;
+sed -i '1i#include &lt;string.h&gt;'                            \
+    src/aa{kbdreg,moureg,test,regist}.c                   &amp;&amp;
+sed -i '/X11_KBDDRIVER/a#include &lt;X11/Xutil.h&gt;'           \
+    src/aaxkbd.c                                          &amp;&amp;
+sed -i '/rawmode_init/,/^}/s/return;/return 0;/'          \
+    src/aalinuxkbd.c                                      &amp;&amp;
+autoconf</kbd></pre>
         <p>
           Install <span class="application">AAlib</span> by running the
           following commands:
@@ -308,7 +326,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-803">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-823">
           Home</a>
         </li>
       </ul>

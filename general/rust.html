@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-803">
+  <body class="blfs" id="blfs-r12.1-823">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-803
+        "phrase">(systemd</span> Edition) - Version r12.1-823
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-803">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-823">
           Home</a>
         </li>
       </ul>
@@ -255,31 +255,6 @@
         <h2 class="sect2">
           Installation of Rust
         </h2>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Currently the rust compiler produces SSE2 instructions for 32-bit
-            x86, causing the generated code to be broken on 32-bit systems
-            without a SSE2-capable processor. All x86 processor models
-            released after 2004 should be SSE2-capable. Run <span class=
-            "command"><strong>lscpu | grep sse2</strong></span> as a test. If
-            it outputs anything, your CPU is SSE2-capable and OK. Otherwise
-            you may try to build this package <span class="emphasis"><em>on a
-            SSE2-capable system</em></span> with the following fix applied:
-          </p>
-          <pre class="screen"><code class=
-          "computeroutput">sed 's@pentium4@pentiumpro@' -i \
-    compiler/rustc_target/src/spec/i686_unknown_linux_gnu.rs</code></pre>
-          <p>
-            And copy the resulting <code class=
-            "filename">/opt/rustc-1.78.0</code> to the system without SSE2
-            capability. But this change is still under upstream review and
-            not tested by BLFS editors.
-          </p>
-        </div>
         <p>
           To install into the <code class="filename">/opt</code> directory,
           remove any existing <code class="filename">/opt/rustc</code>
@@ -349,7 +324,7 @@ docdir = "share/doc/rustc-1.78.0"
 
 [rust]
 channel = "stable"
-description = "for BLFS r12.1-803"
+description = "for BLFS r12.1-823"
 
 # BLFS used to not install the FileCheck executable from llvm,
 # so disabled codegen tests.  The assembly tests rely on FileCheck
@@ -840,7 +815,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-803">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-823">
           Home</a>
         </li>
       </ul>
