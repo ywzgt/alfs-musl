@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-823">
+  <body class="blfs" id="blfs-r12.1-835">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-823
+        "phrase">(systemd</span> Edition) - Version r12.1-835
       </h4>
       <h3>
         Chapter&nbsp;39.&nbsp;Office Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-823">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-835">
           Home</a>
         </li>
       </ul>
@@ -272,7 +272,7 @@
           server), <a class="xref" href="../general/poppler.html" title=
           "Poppler-24.05.0">Poppler-24.05.0</a> (currentlly broken),
           <a class="xref" href="../server/postgresql.html" title=
-          "PostgreSQL-16.2">PostgreSQL-16.2</a>, <a class="xref" href=
+          "PostgreSQL-16.3">PostgreSQL-16.3</a>, <a class="xref" href=
           "../general/redland.html" title=
           "Redland-1.0.17">Redland-1.0.17</a>, and <a class="xref" href=
           "../general/unixodbc.html" title=
@@ -760,12 +760,6 @@ fi</kbd></pre>
           rendering instead of skia.
         </p>
         <p>
-          <code class="option">--enable-gtk3-kde5</code>: This switch allows
-          the Visual Class Library, which is responsible for widgets, to be
-          built with KF5 file dialogs if GTK+-3, Qt5 and Plasma are all
-          available.
-        </p>
-        <p>
           <code class="option">--enable-lto</code>: This switch will enable
           Link Time Optimization, which results in slightly smaller libraries
           (about 40 MB). This is said to make <span class=
@@ -792,36 +786,10 @@ fi</kbd></pre>
           same fonts, you may prefer to use the system versions.
         </p>
         <p>
-          <code class="option">--enable-kf5</code>: Builds with KDE/Plasma
-          integration. If (<a class="xref" href="../x/qt5.html" title=
-          "Qt-5.15.12">Qt-5.15.12</a> or <a class="xref" href=
-          "../x/qt5-alternate.html" title=
-          "qt-alternate-5.15.12">qt-alternate-5.15.12</a>) and/or <a class=
-          "xref" href="../kde/frameworks6.html" title=
-          "Building KDE Frameworks 6 (KF6)">KDE Frameworks-6.2.0</a> are not
-          installed in <code class="filename">/usr</code>, the include and
-          library directories must be specified in <code class=
-          "envar">QT5INC</code>, <code class="envar">QT5LIB</code>,
-          <code class="envar">KF5INC</code>, and <code class=
-          "envar">KF5LIB</code>, respectively.
-        </p>
-        <p>
           <code class="option">--enable-evolution2</code>: Enables support
           for Evolution address books through Evolution Data Server. Note
           that Evolution Data Server must be installed for this feature to
           function.
-        </p>
-        <p>
-          <code class="option">--enable-qt5</code>: This switch enables
-          support for integration with Qt5 and the Qt5 theming engine. If
-          (<a class="xref" href="../x/qt5.html" title=
-          "Qt-5.15.12">Qt-5.15.12</a> or <a class="xref" href=
-          "../x/qt5-alternate.html" title=
-          "qt-alternate-5.15.12">qt-alternate-5.15.12</a>) is not installed
-          in <code class="filename">/usr</code>, the include and library
-          directories must be specified in the <code class=
-          "envar">QT5INC</code> and <code class="envar">QT5LIB</code>
-          environment variables.
         </p>
         <p>
           <code class="option">--enable-qt6</code>: This switch enables
@@ -831,6 +799,19 @@ fi</kbd></pre>
           and library directories must be specified in the <code class=
           "envar">QT6INC</code> and <code class="envar">QT6LIB</code>
           environment variables.
+        </p>
+        <p>
+          <code class="option">--enable-kf6</code>: Builds with KDE/Plasma
+          integration. If <a class="xref" href="../x/qt6.html" title=
+          "Qt-6.7.1">Qt-6.7.1</a> and/or <a class="xref" href=
+          "../kde/frameworks6.html" title=
+          "Building KDE Frameworks 6 (KF6)">KDE Frameworks-6.2.0</a> are not
+          installed in <code class="filename">/usr</code>, the include and
+          library directories must be specified in <code class=
+          "envar">QT6INC</code>, <code class="envar">QT6LIB</code>,
+          <code class="envar">KF6INC</code>, and <code class=
+          "envar">KF6LIB</code>, respectively. This includes a style plugin
+          and KIO integration.
         </p>
         <p>
           <code class="option">--with-system-abseil</code>: This switch
@@ -1035,7 +1016,7 @@ fi</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-823">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-835">
           Home</a>
         </li>
       </ul>

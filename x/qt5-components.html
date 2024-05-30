@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-823">
+  <body class="blfs" id="blfs-r12.1-835">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-823
+        "phrase">(systemd</span> Edition) - Version r12.1-835
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-823">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-835">
           Home</a>
         </li>
       </ul>
@@ -190,6 +190,15 @@
        qtlocation/src/3rdparty/mapbox-gl-native/include/mbgl/util/string.hpp   \
        qtlocation/src/3rdparty/mapbox-gl-native/src/mbgl/gl/stencil_mode.hpp</kbd></pre>
         <p>
+          Next, if you are installing <span class=
+          "bold"><strong>qtlocation</strong></span>, fix the build with
+          ICU-75:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e "/c++1z/s;^CONFIG;#CONFIG;" \
+    -e "s;c++14;c++17;"            \
+    -i qtlocation/src/3rdparty/mapbox-gl-native/native-gl-native.pro</kbd></pre>
+        <p>
           Install each desired component by running the following commands:
         </p>
         <pre class="userinput"><kbd class="command">cd <em class=
@@ -253,7 +262,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-823">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-835">
           Home</a>
         </li>
       </ul>
