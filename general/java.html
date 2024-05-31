@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Java-21.0.2
+      Java-22.0.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-835">
+  <body class="blfs" id="blfs-r12.1-841">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-835
+        "phrase">(systemd</span> Edition) - Version r12.1-841
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -30,9 +30,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="openjdk.html" title=
-          "OpenJDK-21.0.2">Next</a>
+          "OpenJDK-22.0.1">Next</a>
           <p>
-            OpenJDK-21.0.2
+            OpenJDK-22.0.1
           </p>
         </li>
         <li class="up">
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-835">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-841">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="java" name="java"></a>Java-21.0.2
+      <a id="java" name="java"></a>Java-22.0.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="sect2" lang="en" xml:lang="en">
@@ -134,23 +134,23 @@
             <li class="listitem">
               <p>
                 Binary download (x86): <a class="ulink" href=
-                "https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.2/OpenJDK-21.0.2+13-i686-bin.tar.xz">
-                https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.2/OpenJDK-21.0.2+13-i686-bin.tar.xz</a>
+                "https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-22.0.1/OpenJDK-22.0.1+8-i686-bin.tar.xz">
+                https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-22.0.1/OpenJDK-22.0.1+8-i686-bin.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: a08524784f41d0ccb80c1484b99bde3a
+                Download MD5 sum: a491eac3ae500e7be9927fdf8f0a16ae
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size (binary): 161 MB
+                Download size (binary): 162 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 314 MB
+                Estimated disk space required: 312 MB
               </p>
             </li>
           </ul>
@@ -160,23 +160,23 @@
             <li class="listitem">
               <p>
                 Binary download (x86_64): <a class="ulink" href=
-                "https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.2/OpenJDK-21.0.2+13-x86_64-bin.tar.xz">
-                https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.2/OpenJDK-21.0.2+13-x86_64-bin.tar.xz</a>
+                "https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-22.0.1/OpenJDK-22.0.1+8-x86_64-bin.tar.xz">
+                https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-22.0.1/OpenJDK-22.0.1+8-x86_64-bin.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: ff5cab3d4e6c571996911a6cd47023eb
+                Download MD5 sum: e883fa9409f3582e953a61a77d1b0ef1
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size (binary): 169 MB
+                Download size (binary): 170 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 343 MB
+                Estimated disk space required: 341 MB
               </p>
             </li>
           </ul>
@@ -204,16 +204,16 @@
           commands as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">install -vdm755 /opt/OpenJDK-21.0.2-bin &amp;&amp;
-mv -v * /opt/OpenJDK-21.0.2-bin         &amp;&amp;
-chown -R root:root /opt/OpenJDK-21.0.2-bin</kbd></pre>
+        "command">install -vdm755 /opt/OpenJDK-22.0.1-bin &amp;&amp;
+mv -v * /opt/OpenJDK-22.0.1-bin         &amp;&amp;
+chown -R root:root /opt/OpenJDK-22.0.1-bin</kbd></pre>
         <p>
           The binary version is now installed. You may create a symlink to
           that version by issuing, as the <code class=
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">ln -sfn OpenJDK-21.0.2-bin /opt/jdk</kbd></pre>
+        "command">ln -sfn OpenJDK-22.0.1-bin /opt/jdk</kbd></pre>
         <p>
           You may now proceed to <a class="xref" href="ojdk-conf.html" title=
           "Configuring the Java environment">Configuring the Java
@@ -232,9 +232,9 @@ chown -R root:root /opt/OpenJDK-21.0.2-bin</kbd></pre>
         </li>
         <li class="next">
           <a accesskey="n" href="openjdk.html" title=
-          "OpenJDK-21.0.2">Next</a>
+          "OpenJDK-22.0.1">Next</a>
           <p>
-            OpenJDK-21.0.2
+            OpenJDK-22.0.1
           </p>
         </li>
         <li class="up">
@@ -243,7 +243,7 @@ chown -R root:root /opt/OpenJDK-21.0.2-bin</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-835">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-841">
           Home</a>
         </li>
       </ul>
