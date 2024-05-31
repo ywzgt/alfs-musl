@@ -1,0 +1,40 @@
+diff --git a/wget-list b/wget-list
+index cc92fd430..1d1da9abf 100644
+--- a/wget-list
++++ b/wget-list
+@@ -147,7 +147,7 @@ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_1/log4cplus-2.1.1.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
+-https://nodejs.org/dist/v20.13.1/node-v20.13.1.tar.xz
++https://nodejs.org/dist/v20.14.0/node-v20.14.0.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.7.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
+ https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.43/pcre2-10.43.tar.bz2
+@@ -611,7 +611,7 @@ https://ftp.osuosl.org/pub/blfs/conglomeration/procmail/procmail-3.22.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.22-consolidated_fixes-1.patch
+ https://archive.apache.org/dist/httpd/httpd-2.4.59.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.59-blfs_layout-1.patch
+-https://downloads.isc.org/isc/kea/2.4.1/kea-2.4.1.tar.gz
++https://downloads.isc.org/isc/kea/2.6.0/kea-2.6.0.tar.gz
+ https://github.com/proftpd/proftpd/archive/v1.3.8b/proftpd-1.3.8b.tar.gz
+ https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
+ https://www.dovecot.org/releases/2.3/dovecot-2.3.21.tar.gz
+@@ -622,7 +622,7 @@ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.9.0.tar.gz
+ https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
+ https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
+ https://downloads.mariadb.org/interstitial/mariadb-10.11.7/source/mariadb-10.11.7.tar.gz
+-https://ftp.postgresql.org/pub/source/v16.2/postgresql-16.2.tar.bz2
++https://ftp.postgresql.org/pub/source/v16.3/postgresql-16.3.tar.bz2
+ https://sqlite.org/2024/sqlite-autoconf-3460000.tar.gz
+ https://sqlite.org/2024/sqlite-doc-3460000.zip
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.8.tgz
+@@ -736,6 +736,8 @@ https://download.kde.org/stable/phonon/phonon-backend-vlc/0.12.0/phonon-backend-
+ https://download.kde.org/stable/polkit-qt-1/polkit-qt-1-0.200.0.tar.xz
+ https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.13.0.tar.xz
+ https://download.kde.org/stable/release-service/24.05.0/src/ark-24.05.0.tar.xz
++https://download.kde.org/stable/release-service/24.05.0/src/dolphin-24.05.0.tar.xz
++https://download.kde.org/stable/release-service/24.05.0/src/dolphin-plugins-24.05.0.tar.xz
+ https://download.kde.org/stable/release-service/24.05.0/src/kdenlive-24.05.0.tar.xz
+ https://download.kde.org/stable/release-service/24.05.0/src/khelpcenter-24.05.0.tar.xz
+ https://download.kde.org/stable/release-service/24.05.0/src/konsole-24.05.0.tar.xz
