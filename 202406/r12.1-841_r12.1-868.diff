@@ -1,0 +1,162 @@
+diff --git a/wget-list b/wget-list
+index 2d8309e6b..03a309f51 100644
+--- a/wget-list
++++ b/wget-list
+@@ -7,7 +7,7 @@ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.5.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.5.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.2.tar.bz2
+ https://www.netfilter.org/projects/iptables/files/iptables-1.8.10.tar.xz
+-https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.69.tar.xz
++https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.70.tar.xz
+ https://github.com/linux-pam/linux-pam/releases/download/v1.6.1/Linux-PAM-1.6.1.tar.xz
+ https://github.com/linux-pam/linux-pam/releases/download/v1.6.1/Linux-PAM-1.6.1-docs.tar.xz
+ https://downloads.sourceforge.net/liboauth/liboauth-1.0.3.tar.gz
+@@ -157,7 +157,7 @@ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.0/protobuf-c-1.5
+ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.0-consolidated_fixes-1.patch
+ https://download.kde.org/stable/qca/2.3.8/qca-2.3.8.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.10.0/qcoro-0.10.0.tar.gz
+-https://archive.mozilla.org/pub/firefox/releases/115.10.0esr/source/firefox-115.10.0esr.source.tar.xz
++https://archive.mozilla.org/pub/firefox/releases/115.11.0esr/source/firefox-115.11.0esr.source.tar.xz
+ https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.3.283.0/SPIRV-Headers-1.3.283.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.3.283.0/SPIRV-Tools-1.3.283.0.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.4.2.tar.gz
+@@ -165,7 +165,7 @@ https://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.24.2.
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+ https://github.com/martinpitt/umockdev/releases/download/0.18.3/umockdev-0.18.3.tar.xz
+ https://github.com/nemtrif/utfcpp/archive/v4.0.5/utfcpp-4.0.5.tar.gz
+-https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.22.0/downloads/wayland-1.22.0.tar.xz
++https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.0/downloads/wayland-1.23.0.tar.xz
+ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.36/downloads/wayland-protocols-1.36.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+ https://oligarchy.co.uk/xapian/1.4.25/xapian-core-1.4.25.tar.xz
+@@ -491,6 +491,7 @@ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.1.2.tar.g
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.2.1.tar.gz
+ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
++https://files.pythonhosted.org/packages/source/P/PyYAML/PyYAML-6.0.1.tar.gz
+ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
+ https://files.pythonhosted.org/packages/source/r/requests/requests-2.32.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/requests-2.32.3-use_system_certs-1.patch
+@@ -535,7 +536,7 @@ https://files.pythonhosted.org/packages/source/t/typing_extensions/typing_extens
+ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.0.7.tar.gz
+ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.0.2.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+-https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.1.tar.xz
++https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.2.tar.xz
+ https://static.rust-lang.org/dist/rustc-1.78.0-src.tar.xz
+ https://downloads.sourceforge.net/scons/SCons-4.7.0.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+@@ -685,7 +686,7 @@ https://download.gnome.org/sources/gtkmm/4.14/gtkmm-4.14.0.tar.xz
+ https://download.gnome.org/sources/gtk-vnc/1.3/gtk-vnc-1.3.1.tar.xz
+ https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz
+ https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz
+-https://download.gnome.org/sources/gtksourceview/5.12/gtksourceview-5.12.0.tar.xz
++https://download.gnome.org/sources/gtksourceview/5.12/gtksourceview-5.12.1.tar.xz
+ https://downloads.sourceforge.net/enlightenment/imlib2-1.12.2.tar.xz
+ https://github.com/ksnip/kColorPicker/archive/v0.3.1/kColorPicker-0.3.1.tar.gz
+ https://github.com/ksnip/kImageAnnotator/archive/v0.7.1/kImageAnnotator-0.7.1.tar.gz
+@@ -713,7 +714,7 @@ https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.3.285/Vulkan-Loader-1.3
+ https://webkitgtk.org/releases/webkitgtk-2.44.2.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.18.2/xdg-desktop-portal-1.18.2.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.1/xdg-desktop-portal-gtk-1.15.1.tar.xz
+-https://download.gnome.org/sources/gdm/46/gdm-46.0.tar.xz
++https://download.gnome.org/sources/gdm/46/gdm-46.2.tar.xz
+ https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.tar.xz
+ https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.9/lightdm-gtk-greeter-2.0.9.tar.gz
+ https://github.com/sddm/sddm/archive/v0.21.0/sddm-0.21.0.tar.gz
+@@ -760,33 +761,33 @@ https://download.gnome.org/sources/gjs/1.80/gjs-1.80.2.tar.xz
+ https://download.gnome.org/sources/gnome-autoar/0.4/gnome-autoar-0.4.4.tar.xz
+ https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.0.tar.xz
+ https://download.gnome.org/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
+-https://download.gnome.org/sources/gnome-online-accounts/3.50/gnome-online-accounts-3.50.1.tar.xz
++https://download.gnome.org/sources/gnome-online-accounts/3.50/gnome-online-accounts-3.50.2.tar.xz
+ https://download.gnome.org/sources/grilo/0.3/grilo-0.3.16.tar.xz
+ https://download.gnome.org/sources/libgdata/0.18/libgdata-0.18.1.tar.xz
+ https://download.gnome.org/sources/libgee/0.20/libgee-0.20.6.tar.xz
+ https://download.gnome.org/sources/libgtop/2.41/libgtop-2.41.3.tar.xz
+ https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.2.tar.xz
+ https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz
+-https://download.gnome.org/sources/libshumate/1.2/libshumate-1.2.1.tar.xz
+-https://download.gnome.org/sources/evolution-data-server/3.52/evolution-data-server-3.52.1.tar.xz
++https://download.gnome.org/sources/libshumate/1.2/libshumate-1.2.2.tar.xz
++https://download.gnome.org/sources/evolution-data-server/3.52/evolution-data-server-3.52.2.tar.xz
+ https://download.gnome.org/sources/tracker/3.7/tracker-3.7.3.tar.xz
+ https://download.gnome.org/sources/tracker-miners/3.7/tracker-miners-3.7.3.tar.xz
+ https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz
+-https://download.gnome.org/sources/xdg-desktop-portal-gnome/46/xdg-desktop-portal-gnome-46.1.tar.xz
++https://download.gnome.org/sources/xdg-desktop-portal-gnome/46/xdg-desktop-portal-gnome-46.2.tar.xz
+ https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
+ https://download.gnome.org/sources/dconf-editor/45/dconf-editor-45.0.1.tar.xz
+ https://download.gnome.org/sources/gnome-backgrounds/46/gnome-backgrounds-46.0.tar.xz
+ https://download.gnome.org/sources/gvfs/1.54/gvfs-1.54.1.tar.xz
+ https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.2.tar.xz
+-https://download.gnome.org/sources/nautilus/46/nautilus-46.1.tar.xz
++https://download.gnome.org/sources/nautilus/46/nautilus-46.2.tar.xz
+ https://download.gnome.org/sources/gnome-bluetooth/46/gnome-bluetooth-46.0.tar.xz
+ https://download.gnome.org/sources/gnome-keyring/46/gnome-keyring-46.1.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/46/gnome-settings-daemon-46.0.tar.xz
+ https://download.gnome.org/sources/tecla/46/tecla-46.0.tar.xz
+-https://download.gnome.org/sources/gnome-control-center/46/gnome-control-center-46.1.tar.xz
+-https://download.gnome.org/sources/mutter/46/mutter-46.1.tar.xz
+-https://download.gnome.org/sources/gnome-shell/46/gnome-shell-46.1.tar.xz
+-https://download.gnome.org/sources/gnome-shell-extensions/46/gnome-shell-extensions-46.1.tar.xz
++https://download.gnome.org/sources/gnome-control-center/46/gnome-control-center-46.2.tar.xz
++https://download.gnome.org/sources/mutter/46/mutter-46.2.tar.xz
++https://download.gnome.org/sources/gnome-shell/46/gnome-shell-46.2.tar.xz
++https://download.gnome.org/sources/gnome-shell-extensions/46/gnome-shell-extensions-46.2.tar.xz
+ https://download.gnome.org/sources/gnome-session/46/gnome-session-46.0.tar.xz
+ https://download.gnome.org/sources/gnome-tweaks/46/gnome-tweaks-46.1.tar.xz
+ https://download.gnome.org/sources/gnome-user-docs/46/gnome-user-docs-46.1.tar.xz
+@@ -795,7 +796,7 @@ https://download.gnome.org/sources/baobab/46/baobab-46.0.tar.xz
+ https://download.gnome.org/sources/brasero/3.12/brasero-3.12.3.tar.xz
+ https://download.gnome.org/sources/eog/45/eog-45.3.tar.xz
+ https://download.gnome.org/sources/evince/46/evince-46.3.tar.xz
+-https://download.gnome.org/sources/evolution/3.52/evolution-3.52.1.tar.xz
++https://download.gnome.org/sources/evolution/3.52/evolution-3.52.2.tar.xz
+ https://download.gnome.org/sources/file-roller/44/file-roller-44.3.tar.xz
+ https://download.gnome.org/sources/gnome-calculator/46/gnome-calculator-46.1.tar.xz
+ https://download.gnome.org/sources/gnome-color-manager/3.36/gnome-color-manager-3.36.0.tar.xz
+@@ -807,9 +808,9 @@ https://www.linuxfromscratch.org/patches/blfs/svn/gnome-nettool-42.0-ping_and_ne
+ https://download.gnome.org/sources/gnome-power-manager/43/gnome-power-manager-43.0.tar.xz
+ https://download.gnome.org/sources/gnome-screenshot/41/gnome-screenshot-41.0.tar.xz
+ https://download.gnome.org/sources/gnome-system-monitor/46/gnome-system-monitor-46.0.tar.xz
+-https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.52.1/gnome-terminal-3.52.1.tar.gz
++https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.52.2/gnome-terminal-3.52.2.tar.gz
+ https://download.gnome.org/sources/gnome-weather/46/gnome-weather-46.0.tar.xz
+-https://gitlab.gnome.org/GNOME/gucharmap/-/archive/15.1.4/gucharmap-15.1.4.tar.bz2
++https://gitlab.gnome.org/GNOME/gucharmap/-/archive/15.1.5/gucharmap-15.1.5.tar.bz2
+ https://www.unicode.org/Public/zipped/15.1.0/Unihan.zip
+ https://download.gnome.org/sources/seahorse/43/seahorse-43.0.tar.xz
+ https://download.gnome.org/sources/snapshot/46/snapshot-46.3.tar.xz
+@@ -888,7 +889,7 @@ https://download.documentfoundation.org/libreoffice/src/24.2.3/libreoffice-24.2.
+ https://download.documentfoundation.org/libreoffice/src/24.2.3/libreoffice-dictionaries-24.2.3.2.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/24.2.3/libreoffice-help-24.2.3.2.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/24.2.3/libreoffice-translations-24.2.3.2.tar.xz
+-https://download.gnome.org/sources/epiphany/46/epiphany-46.0.tar.xz
++https://download.gnome.org/sources/epiphany/46/epiphany-46.1.tar.xz
+ https://download.kde.org/stable/release-service/24.05.0/src/falkon-24.05.0.tar.xz
+ https://archive.seamonkey-project.org/releases/2.53.18.2/source/seamonkey-2.53.18.2.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.18.2-cxx17-1.patch
+@@ -906,10 +907,11 @@ https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.3.2-upstream_fixes-
+ https://downloads.sourceforge.net/pidgin/pidgin-2.14.13.tar.bz2
+ https://downloads.sourceforge.net/rox/rox-filer-2.11.tar.bz2
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/115.10.1/source/thunderbird-115.10.1.source.tar.xz
++https://archive.mozilla.org/pub/thunderbird/releases/115.11.1/source/thunderbird-115.11.1.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.13.1/tigervnc-1.13.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.13.1-configuration_fixes-1.patch
+-https://github.com/transmission/transmission/releases/download/4.0.5/transmission-4.0.5.tar.xz
++https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/transmission-4.0.6-build_fix-1.patch
+ https://github.com/ib/xarchiver/archive/0.5.4.23/xarchiver-0.5.4.23.tar.gz
+ https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz
+ https://www.jwz.org/xscreensaver/xscreensaver-6.08.tar.gz
+@@ -966,7 +968,7 @@ https://github.com/intel/libva/archive/2.21.0/libva-2.21.0.tar.gz
+ https://gitlab.freedesktop.org/vdpau/libvdpau/-/archive/1.5/libvdpau-1.5.tar.bz2
+ https://github.com/i-rinat/libvdpau-va-gl/archive/v0.4.2/libvdpau-va-gl-0.4.2.tar.gz
+ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
+-https://github.com/webmproject/libvpx/archive/v1.14.0/libvpx-1.14.0.tar.gz
++https://github.com/webmproject/libvpx/archive/v1.14.1/libvpx-1.14.1.tar.gz
+ https://github.com/mltframework/mlt/releases/download/v7.24.0/mlt-7.24.0.tar.gz
+ https://downloads.xiph.org/releases/opus/opus-1.5.2.tar.gz
+ https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.0.7/pipewire-1.0.7.tar.bz2
