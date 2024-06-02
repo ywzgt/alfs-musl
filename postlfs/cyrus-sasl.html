@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-868">
+  <body class="blfs" id="blfs-r12.1-881">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-868
+        "phrase">(systemd</span> Edition) - Version r12.1-881
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-868">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-881">
           Home</a>
         </li>
       </ul>
@@ -158,6 +158,12 @@
             This package does not support parallel build.
           </p>
         </div>
+        <p>
+          First, fix a flaw revealed by gcc-14:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed '/saslint/a #include &lt;time.h&gt;' -i lib/saslutil.c
+sed '/plugin_common/a #include &lt;time.h&gt;' -i plugins/cram.c</kbd></pre>
         <p>
           Install <span class="application">Cyrus SASL</span> by running the
           following commands:
@@ -466,7 +472,7 @@ install -v -dm700 /var/lib/sasl</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-868">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-881">
           Home</a>
         </li>
       </ul>
