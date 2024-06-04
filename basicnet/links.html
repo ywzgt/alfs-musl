@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-885">
+  <body class="blfs" id="blfs-r12.1-891">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-885
+        "phrase">(systemd</span> Edition) - Version r12.1-891
       </h4>
       <h3>
         Chapter&nbsp;18.&nbsp;Text Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-885">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-891">
           Home</a>
         </li>
       </ul>
@@ -150,6 +150,12 @@
         <h2 class="sect2">
           Installation of Links
         </h2>
+        <p>
+          First, force <span class=
+          "command"><strong>configure</strong></span> to recognize gcc-14:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i '/cc_works=no/ s/no/yes/' configure</kbd></pre>
         <p>
           Install <span class="application">Links</span> by running the
           following commands:
@@ -272,7 +278,7 @@ install -v -m644 doc/links_cal/* KEYS BRAILLE_HOWTO \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-885">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-891">
           Home</a>
         </li>
       </ul>

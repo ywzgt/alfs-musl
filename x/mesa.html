@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-885">
+  <body class="blfs" id="blfs-r12.1-891">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-885
+        "phrase">(systemd</span> Edition) - Version r12.1-891
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-885">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-891">
           Home</a>
         </li>
       </ul>
@@ -149,30 +149,56 @@
         <h4>
           Recommended
         </h4>
-        <p class="recommended">
-          <a class="xref" href="glslang.html" title=
-          "Glslang-14.2.0">Glslang-14.2.0</a> (required for Vulkan support),
-          <a class="xref" href="../multimedia/libva.html" title=
-          "libva-2.21.0">libva-2.21.0</a> (to provide VA-API support for some
-          gallium drivers, note that there is a circular dependency. You must
-          build <span class="application">libva</span> first without EGL and
-          GLX support, install this package, and rebuild <span class=
-          "application">libva</span>), <a class="xref" href=
-          "../multimedia/libvdpau.html" title="libvdpau-1.5">libvdpau-1.5</a>
-          (to build VDPAU drivers), <a class="xref" href=
-          "../general/llvm.html" title="LLVM-18.1.6">LLVM-18.1.6</a>
-          (required for the r300, r600, and radeonsi drivers, and the
-          LLVMpipe software rasterizer which can make the swrast driver much
-          faster), <a class="xref" href="../general/wayland-protocols.html"
-          title="Wayland-Protocols-1.36">wayland-protocols-1.36</a> (required
-          for <a class="xref" href="../kde/plasma-all.html" title=
-          "Building Plasma">Plasma-6.0.5</a>, GNOME, and recommended for
-          <a class="xref" href="gtk3.html" title=
-          "GTK+-3.24.42">GTK+-3.24.42</a>), and <a class="xref" href=
-          "vulkan-loader.html" title=
-          "Vulkan-Loader-1.3.285">Vulkan-Loader-1.3.285</a> (required for
-          Vulkan support)
-        </p>
+        <p class="recommended"></p>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                <a class="xref" href="glslang.html" title=
+                "Glslang-14.2.0">Glslang-14.2.0</a> and <a class="xref" href=
+                "vulkan-loader.html" title=
+                "Vulkan-Loader-1.3.285">Vulkan-Loader-1.3.285</a> (required
+                for Vulkan support)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <a class="xref" href="../multimedia/libva.html" title=
+                "libva-2.21.0">libva-2.21.0</a> (to provide VA-API support
+                for some gallium drivers. Note that there is a circular
+                dependency. You must build <span class=
+                "application">libva</span> first without mesa's EGL and GLX
+                support, install this package, and rebuild <span class=
+                "application">libva</span>)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <a class="xref" href="../multimedia/libvdpau.html" title=
+                "libvdpau-1.5">libvdpau-1.5</a> (to build VDPAU drivers)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <a class="xref" href="../general/llvm.html" title=
+                "LLVM-18.1.6">LLVM-18.1.6</a> (required for the r300, r600,
+                and radeonsi drivers, and the LLVMpipe software rasterizer
+                which can make the swrast driver much faster)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <a class="xref" href="../general/wayland-protocols.html"
+                title="Wayland-Protocols-1.36">wayland-protocols-1.36</a>
+                (required for <a class="xref" href="../kde/plasma-all.html"
+                title="Building Plasma">Plasma-6.0.5</a>, GNOME, and
+                recommended for <a class="xref" href="gtk3.html" title=
+                "GTK+-3.24.42">GTK+-3.24.42</a>)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <p class="recommended"></p>
         <h4>
           Optional
         </h4>
@@ -295,15 +321,14 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup                   \
-      --prefix=$XORG_PREFIX   \
-      --buildtype=release     \
-      -Dplatforms=x11,wayland \
-      -Dgallium-drivers=auto  \
-      -Dvulkan-drivers=auto   \
-      -Dvalgrind=disabled     \
-      -Dlibunwind=disabled    \
-      ..                      &amp;&amp;
+meson setup ..                 \
+      --prefix=$XORG_PREFIX    \
+      --buildtype=release      \
+      -D platforms=x11,wayland \
+      -D gallium-drivers=auto  \
+      -D vulkan-drivers=auto   \
+      -D valgrind=disabled     \
+      -D libunwind=disabled    &amp;&amp;
 
 ninja</kbd></pre>
         <p>
@@ -336,38 +361,95 @@ ninja</kbd></pre>
         <p>
           <a id="mesa-gallium-drivers" name="mesa-gallium-drivers"></a>
           <em class="parameter"><code>-Dgallium-drivers=auto</code></em>:
-          This parameter controls which Gallium3D drivers should be built.
-          <code class="literal">auto</code> selects all Gallium3D drivers
-          available for x86: <code class="literal">r300</code> (for ATI
-          Radeon 9000 or Radeon X series), <code class="literal">r600</code>
-          (for AMD/ATI Radeon HD 2000-6000 series), <code class=
-          "literal">radeonsi</code> (for AMD Radeon HD 7000 or newer AMD GPU
-          models), <code class="literal">nouveau</code> (for Supported NVIDIA
-          GPUs, they are listed as all <span class="quote">“<span class=
-          "quote">3D features</span>”</span> either <span class=
-          "quote">“<span class="quote">DONE</span>”</span> or <span class=
-          "quote">“<span class="quote">N/A</span>”</span> in <a class="ulink"
-          href="https://nouveau.freedesktop.org/FeatureMatrix.html">the
-          Nouveau status page</a>), <code class="literal">virgl</code> (for
-          QEMU virtual GPU with <span class="application">virglrender</span>
-          support; note that BLFS <a class="xref" href="../postlfs/qemu.html"
-          title="qemu-9.0.0">qemu-9.0.0</a> is not built with <span class=
-          "application">virglrender</span>), <code class=
-          "literal">svga</code> (for VMWare virtual GPU), <code class=
-          "literal">swrast</code> (using CPU for 3D rasterisation; note that
-          it's much slower than using a modern 3D-capable GPU, so it should
-          be only used if the GPU is not supported by other drivers),
-          <code class="literal">iris</code> (for Intel GPUs shipped with
-          Broadwell or newer CPUs), <code class="literal">crocus</code> (for
-          Intel GMA 3000, X3000 series, 4000 series, or X4000 series GPUs
-          shipped with chipsets, or Intel HD GPUs shipped with pre-Broadwell
-          CPUs), <code class="literal">i915</code> (for Intel GMA 900, 950,
-          3100, or 3150 GPUs shipped with chipsets or Atom D/N 4xx/5xx CPUs).
-          You may replace <code class="literal">auto</code> with a
-          comma-separated list to build only a subset of these drivers if you
-          precisely know which drivers you need, for example <code class=
-          "option">-Dgallium-drivers=radeonsi,iris,swrast</code>.
+          This parameter controls which Gallium3D drivers should be built:
         </p>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                <code class="literal">auto</code> selects all Gallium3D
+                drivers available for x86. With a comma-separated list, only
+                a subset of these drivers will be built. If you precisely
+                know which drivers you need, you can build. for example.
+                <code class=
+                "option">-Dgallium-drivers=radeonsi,iris,swrast</code>.
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">r300</code> (for ATI Radeon 9000 or
+                Radeon X series)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">r600</code> (for AMD/ATI Radeon HD
+                2000-6000 series)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">radeonsi</code> (for AMD Radeon HD 7000
+                or newer AMD GPU models)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">nouveau</code> (for Supported NVIDIA
+                GPUs, they are listed as all <span class=
+                "quote">“<span class="quote">3D features</span>”</span>
+                either <span class="quote">“<span class=
+                "quote">DONE</span>”</span> or <span class=
+                "quote">“<span class="quote">N/A</span>”</span> in <a class=
+                "ulink" href=
+                "https://nouveau.freedesktop.org/FeatureMatrix.html">the
+                Nouveau status page</a>)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">virgl</code> (for a QEMU virtual GPU
+                with <span class="application">virglrender</span> support;
+                note that BLFS <a class="xref" href="../postlfs/qemu.html"
+                title="qemu-9.0.0">qemu-9.0.0</a> is not built with
+                <span class="application">virglrender</span>)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">svga</code> (for a VMWare virtual GPU)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">swrast</code> (using CPU for 3D
+                rasterisation. Note that it's much slower than using a modern
+                3D-capable GPU, so it should be only used if the GPU is not
+                supported by other drivers),
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">iris</code> (for Intel GPUs shipped
+                with Broadwell or newer CPUs)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">crocus</code> (for Intel GMA 3000,
+                X3000 series, 4000 series, or X4000 series GPUs shipped with
+                chipsets, or Intel HD GPUs shipped with pre-Broadwell CPUs)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">i915</code> (for Intel GMA 900, 950,
+                3100, or 3150 GPUs shipped with chipsets or Atom D/N 4xx/5xx
+                CPUs)
+              </p>
+            </li>
+          </ul>
+        </div>
         <p>
           <em class="parameter"><code>-Dplatforms=...</code></em>: This
           parameter controls which windowing systems will be supported.
@@ -378,8 +460,8 @@ ninja</kbd></pre>
           switch enables support for the Vulkan graphics API. It
           automatically builds all graphics drivers that are available for
           Vulkan. If you wish to build specific drivers, valid options
-          include 'amd', 'intel', 'intel_hasvk', and 'swrast'. If you do not
-          want Vulkan support, change 'auto' to "".
+          include 'amd', 'intel', 'intel_hasvk' (Haswell CPUs), and 'swrast'.
+          If you do not want Vulkan support, change 'auto' to "".
         </p>
         <p>
           <em class="parameter"><code>-Dvalgrind=disabled</code></em>: This
@@ -592,7 +674,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-885">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-891">
           Home</a>
         </li>
       </ul>
