@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index d018ff6a6..f89c9fb4b 100644
+--- a/wget-list
++++ b/wget-list
+@@ -652,7 +652,7 @@ https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.41.tar
+ https://www.x.org/pub/individual/xserver/xwayland-24.1.0.tar.xz
+ https://www.x.org/pub/individual/xserver/xorg-server-21.1.13.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.13-tearfree_backport-1.patch
+-https://www.freedesktop.org/software/libevdev/libevdev-1.13.1.tar.xz
++https://www.freedesktop.org/software/libevdev/libevdev-1.13.2.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-evdev-2.10.6.tar.bz2
+ https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.25.0/libinput-1.25.0.tar.gz
+ https://www.x.org/pub/individual/driver/xf86-input-libinput-1.4.0.tar.xz
+@@ -696,7 +696,7 @@ https://download.gnome.org/sources/libadwaita/1.5/libadwaita-1.5.1.tar.xz
+ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.2.1/libei-1.2.1.tar.gz
+ https://gedit-technology.net/tarballs/libgedit-amtk/libgedit-amtk-5.8.0.tar.xz
+ https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
+-https://dri.freedesktop.org/libdrm/libdrm-2.4.120.tar.xz
++https://dri.freedesktop.org/libdrm/libdrm-2.4.121.tar.xz
+ https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
+ https://download.gnome.org/sources/libglade/2.6/libglade-2.6.4.tar.bz2
+ https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.3.tar.xz
