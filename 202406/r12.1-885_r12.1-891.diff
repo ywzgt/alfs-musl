@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index f89c9fb4b..cb9bc919e 100644
+--- a/wget-list
++++ b/wget-list
+@@ -84,7 +84,7 @@ https://download.gnome.org/sources/glibmm/2.80/glibmm-2.80.0.tar.xz
+ https://download.gnome.org/sources/gmime/3.2/gmime-3.2.7.tar.xz
+ https://ftp.gnu.org/gnu/gsl/gsl-2.8.tar.gz
+ https://download.gnome.org/sources/gspell/1.12/gspell-1.12.2.tar.xz
+-https://github.com/google/highway/archive/1.1.0/highway-1.1.0.tar.gz
++https://github.com/google/highway/archive/1.2.0/highway-1.2.0.tar.gz
+ https://github.com/unicode-org/icu/releases/download/release-75-1/icu4c-75_1-src.tgz
+ https://github.com/benhoyt/inih/archive/r58/inih-r58.tar.gz
+ https://github.com/intel/gmmlib/archive/intel-gmmlib-22.3.16.tar.gz
+@@ -258,7 +258,7 @@ https://downloads.sourceforge.net/hdparm/hdparm-9.65.tar.gz
+ https://github.com/vcrhonek/hwdata/archive/v0.383/hwdata-0.383.tar.gz
+ https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
+ https://github.com/lm-sensors/lm-sensors/archive/V3-6-0/lm-sensors-3-6-0.tar.gz
+-https://github.com/logrotate/logrotate/releases/download/3.21.0/logrotate-3.21.0.tar.xz
++https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
+ http://ftp.midnight-commander.org/mc-4.8.31.tar.xz
+ https://www.freedesktop.org/software/ModemManager/ModemManager-1.18.12.tar.xz
+ https://download.gnome.org/sources/notification-daemon/3.20/notification-daemon-3.20.0.tar.xz
+@@ -651,7 +651,7 @@ https://www.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
+ https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.41.tar.xz
+ https://www.x.org/pub/individual/xserver/xwayland-24.1.0.tar.xz
+ https://www.x.org/pub/individual/xserver/xorg-server-21.1.13.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.13-tearfree_backport-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.13-tearfree_backport-2.patch
+ https://www.freedesktop.org/software/libevdev/libevdev-1.13.2.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-evdev-2.10.6.tar.bz2
+ https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.25.0/libinput-1.25.0.tar.gz
