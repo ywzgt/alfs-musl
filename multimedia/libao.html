@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-891">
+  <body class="blfs" id="blfs-r12.1-895">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-891
+        "phrase">(systemd</span> Edition) - Version r12.1-895
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-891">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-895">
           Home</a>
         </li>
       </ul>
@@ -124,6 +124,11 @@
         <h2 class="sect2">
           Installation of Libao
         </h2>
+        <p>
+          First, fix a gcc-14 issue:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i '/limits.h/a #include &lt;time.h&gt;' src/plugins/pulse/ao_pulse.c</kbd></pre>
         <p>
           Install <span class="application">libao</span> by running the
           following commands:
@@ -235,7 +240,7 @@ install -v -m644 README /usr/share/doc/libao-1.2.0</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-891">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-895">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-891">
+  <body class="blfs" id="blfs-r12.1-895">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-891
+        "phrase">(systemd</span> Edition) - Version r12.1-895
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-891">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-895">
           Home</a>
         </li>
       </ul>
@@ -144,11 +144,17 @@
           Installation of libquicktime
         </h2>
         <p>
+          First fix an issue with gcc14:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i '/qtpng.h/a #include &lt;string.h&gt;' plugins/png/qtpng.c</kbd></pre>
+        <p>
           Install <span class="application">libquicktime</span> by running
           the following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr     \
+        "command">CFLAGS="-msse -msse2"         \
+./configure --prefix=/usr     \
             --enable-gpl      \
             --without-doxygen \
             --without-ffmpeg  \
@@ -418,7 +424,7 @@ install -v -m644    README doc/{*.txt,*.html,mainpage.incl} \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-891">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-895">
           Home</a>
         </li>
       </ul>
