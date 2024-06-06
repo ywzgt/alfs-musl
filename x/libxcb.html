@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-895">
+  <body class="blfs" id="blfs-r12.1-916">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-895
+        "phrase">(systemd</span> Edition) - Version r12.1-916
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-895">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-916">
           Home</a>
         </li>
       </ul>
@@ -147,7 +147,7 @@
         "command">./configure $XORG_CONFIG      \
             --without-doxygen \
             --docdir='${datadir}'/doc/libxcb-1.17.0 &amp;&amp;
-make</kbd></pre>
+LC_ALL=en_US.UTF-8 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
           check</strong></span>.
@@ -169,6 +169,12 @@ make</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <code class="envar">LC_ALL=en_US.UTF-8</code>: Some Python 3 script
+          in the building system of this package may fail with certain system
+          locale settings. This environment variable forces a locale setting
+          known to work.
+        </p>
         <p>
           <em class="parameter"><code>--without-doxygen</code></em>: Do not
           use doxygen to generate API documentation (default: auto). Without
@@ -256,7 +262,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-895">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-916">
           Home</a>
         </li>
       </ul>

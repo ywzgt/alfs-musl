@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-895">
+  <body class="blfs" id="blfs-r12.1-916">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-895
+        "phrase">(systemd</span> Edition) - Version r12.1-916
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-895">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-916">
           Home</a>
         </li>
       </ul>
@@ -140,6 +140,11 @@
         <h2 class="sect2">
           Installation of Telepathy Glib
         </h2>
+        <p>
+          First, fix building this package with gcc-14:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i '1794 s/tp_value_array_free/(GDestroyNotify) tp_value_array_free/' telepathy-glib/protocol.c</kbd></pre>
         <p>
           If you intend to run the tests, one of them defaults to invoking
           <code class="filename">/usr/bin/python</code> and fails if it is
@@ -259,7 +264,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-895">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-916">
           Home</a>
         </li>
       </ul>

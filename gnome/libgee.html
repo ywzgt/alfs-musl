@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-895">
+  <body class="blfs" id="blfs-r12.1-916">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-895
+        "phrase">(systemd</span> Edition) - Version r12.1-916
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-895">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-916">
           Home</a>
         </li>
       </ul>
@@ -114,6 +114,8 @@
         <p class="required">
           <a class="xref" href="../general/glib2.html" title=
           "GLib-2.80.2">GLib-2.80.2</a> (GObject Introspection recommended)
+          and <a class="xref" href="../general/vala.html" title=
+          "Vala-0.56.17">Vala-0.56.17</a>
         </p>
         <h4>
           Recommended
@@ -126,9 +128,8 @@
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="../general/vala.html" title=
-          "Vala-0.56.17">Vala-0.56.17</a> (with Valadoc) and <a class="ulink"
-          href="https://github.com/linux-test-project/lcov">LCOV</a>
+          <a class="ulink" href=
+          "https://github.com/linux-test-project/lcov">LCOV</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -136,11 +137,17 @@
           Installation of libgee
         </h2>
         <p>
+          First, force the Vala code to be regenerated so that it is
+          compatible with gcc-14:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">find . -name \*.vala -exec touch {} \;</kbd></pre>
+        <p>
           Install <span class="application">libgee</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr &amp;&amp;
+        "command">./configure --prefix=/usr --enable-vala &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
@@ -222,7 +229,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-895">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-916">
           Home</a>
         </li>
       </ul>

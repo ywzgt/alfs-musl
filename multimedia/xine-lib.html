@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-895">
+  <body class="blfs" id="blfs-r12.1-916">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-895
+        "phrase">(systemd</span> Edition) - Version r12.1-916
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-895">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-916">
           Home</a>
         </li>
       </ul>
@@ -106,6 +106,20 @@
               <p>
                 Estimated build time: 0.5 SBU (Using parallelism=4; with API
                 documentation)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-upstream_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-upstream_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -193,7 +207,7 @@
           First, fix building this package with ffmpeg-7.0 and later:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -i '/xine_set_flags/s/XINE_PROTECTED//' include/xine.h </kbd></pre>
+        "command">patch -Np1 -i ../xine-lib-1.2.13-upstream_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">Xine Libraries</span> by running
           the following commands:
@@ -376,7 +390,7 @@ install -v -m644    doc/api/* \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-895">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-916">
           Home</a>
         </li>
       </ul>
