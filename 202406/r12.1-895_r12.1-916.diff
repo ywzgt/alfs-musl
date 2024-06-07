@@ -1,0 +1,95 @@
+diff --git a/wget-list b/wget-list
+index cb9bc919e..9875b1b05 100644
+--- a/wget-list
++++ b/wget-list
+@@ -201,11 +201,11 @@ https://download.osgeo.org/libtiff/tiff-4.6.0.tar.gz
+ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.4.0.tar.gz
+ https://github.com/mypaint/mypaint-brushes/releases/download/v1.3.1/mypaint-brushes-1.3.1.tar.xz
+ https://releases.pagure.org/newt/newt-0.52.24.tar.gz
+-https://github.com/opencv/opencv/archive/4.9.0/opencv-4.9.0.tar.gz
+-https://github.com/opencv/opencv_contrib/archive/4.9.0/opencv_contrib-4.9.0.tar.gz
++https://github.com/opencv/opencv/archive/4.10.0/opencv-4.10.0.tar.gz
++https://github.com/opencv/opencv_contrib/archive/4.10.0/opencv_contrib-4.10.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.2/openjpeg-2.5.2.tar.gz
+ https://www.cairographics.org/releases/pixman-0.43.4.tar.gz
+-https://poppler.freedesktop.org/poppler-24.05.0.tar.xz
++https://poppler.freedesktop.org/poppler-24.06.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+ https://github.com/qpdf/qpdf/releases/download/v11.9.0/qpdf-11.9.0.tar.gz
+@@ -289,7 +289,7 @@ https://downloads.sourceforge.net/infozip/zip30.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.26.0/cbindgen-0.26.0.tar.gz
+ https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+-https://cmake.org/files/v3.29/cmake-3.29.3.tar.gz
++https://cmake.org/files/v3.29/cmake-3.29.4.tar.gz
+ https://doxygen.nl/files/doxygen-1.11.0.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.7.0.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz
+@@ -490,14 +490,14 @@ https://download.gnome.org/sources/pygobject/3.48/pygobject-3.48.2.tar.xz
+ https://download.gnome.org/sources/pygtk/2.24/pygtk-2.24.0.tar.bz2
+ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.1.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+-https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.2.1.tar.gz
++https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.2.2.tar.gz
+ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
+ https://files.pythonhosted.org/packages/source/P/PyYAML/PyYAML-6.0.1.tar.gz
+ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
+ https://files.pythonhosted.org/packages/source/r/requests/requests-2.32.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/requests-2.32.3-use_system_certs-1.patch
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+-https://github.com/getsentry/sentry-python/releases/download/2.3.1/sentry_sdk-2.3.1.tar.gz
++https://github.com/getsentry/sentry-python/releases/download/2.4.0/sentry_sdk-2.4.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/six/six-1.16.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-7.3.7.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-2.0.0.tar.gz
+@@ -573,7 +573,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/wpa_supplicant-2.10-security_f
+ https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+ https://ftp.isc.org/isc/bind9/9.18.27/bind-9.18.27.tar.xz
+-https://download.gnome.org/sources/NetworkManager/1.46/NetworkManager-1.46.0.tar.xz
++https://download.gnome.org/sources/NetworkManager/1.48/NetworkManager-1.48.0.tar.xz
+ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
+ https://nmap.org/dist/nmap-7.95.tar.bz2
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.5.tar.gz
+@@ -609,8 +609,8 @@ https://downloads.sourceforge.net/fetchmail/fetchmail-6.4.38.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/mailx/heirloom-mailx_12.5.orig.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.patch
+ https://bitbucket.org/mutt/mutt/downloads/mutt-2.2.13.tar.gz
+-https://ftp.osuosl.org/pub/blfs/conglomeration/procmail/procmail-3.22.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.22-consolidated_fixes-1.patch
++https://github.com/BuGlessRB/procmail/archive/refs/tags/v3.24/procmail-3.24.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.24-consolidated_fixes-1.patch
+ https://archive.apache.org/dist/httpd/httpd-2.4.59.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.59-blfs_layout-1.patch
+ https://downloads.isc.org/isc/kea/2.6.0/kea-2.6.0.tar.gz
+@@ -755,7 +755,7 @@ https://download.gnome.org/sources/gsettings-desktop-schemas/46/gsettings-deskto
+ https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.4.tar.xz
+ https://download.gnome.org/sources/rest/0.9/rest-0.9.1.tar.xz
+ https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.6.tar.xz
+-https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.2/vte-0.76.2.tar.gz
++https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.3/vte-0.76.3.tar.gz
+ https://download.gnome.org/sources/yelp-xsl/42/yelp-xsl-42.1.tar.xz
+ https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+ https://download.gnome.org/sources/gjs/1.80/gjs-1.80.2.tar.xz
+@@ -935,7 +935,6 @@ https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.24.4.t
+ https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.24.4.tar.xz
+ https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.24.4.tar.xz
+ https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.24.4.tar.xz
+-https://gstreamer.freedesktop.org/src/gstreamer-vaapi/gstreamer-vaapi-1.24.4.tar.xz
+ https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+ https://github.com/intel/media-driver/archive/intel-media-23.4.3.tar.gz
+@@ -983,10 +982,11 @@ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://taglib.org/releases/taglib-2.0.1.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.26.1.tar.xz
+-https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.2/wireplumber-0.5.2.tar.bz2
++https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.3/wireplumber-0.5.3.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20240216.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/x265/x265-20240216.tar.xz
+ https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-upstream_fixes-1.patch
+ https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.gz
+ https://distfiles.audacious-media-player.org/audacious-4.3.1.tar.bz2
+ https://distfiles.audacious-media-player.org/audacious-plugins-4.3.1.tar.bz2
