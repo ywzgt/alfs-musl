@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-918">
+  <body class="blfs" id="blfs-r12.1-932">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-918
+        "phrase">(systemd</span> Edition) - Version r12.1-932
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-918">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-932">
           Home</a>
         </li>
       </ul>
@@ -157,7 +157,7 @@
                 <a class="xref" href="glslang.html" title=
                 "Glslang-14.2.0">Glslang-14.2.0</a> and <a class="xref" href=
                 "vulkan-loader.html" title=
-                "Vulkan-Loader-1.3.285">Vulkan-Loader-1.3.285</a> (required
+                "Vulkan-Loader-1.3.287">Vulkan-Loader-1.3.287</a> (required
                 for Vulkan support)
               </p>
             </li>
@@ -181,7 +181,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="../general/llvm.html" title=
-                "LLVM-18.1.6">LLVM-18.1.6</a> (required for the r300, r600,
+                "LLVM-18.1.7">LLVM-18.1.7</a> (required for the r300, r600,
                 and radeonsi drivers, and the LLVMpipe software rasterizer
                 which can make the swrast driver much faster)
               </p>
@@ -199,6 +199,50 @@
           </ul>
         </div>
         <p class="recommended"></p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            <span class="bold"><strong>Choosing Mesa Drivers</strong></span>
+          </p>
+          <p>
+            In the instructions below, all the available drivers are built.
+            That will almost always work. However, it is not efficient.
+            Depending on your video hardware, you probably need only specific
+            drivers.
+          </p>
+          <p>
+            The first thing you need to know is which type of video device
+            you have. In some cases it is built into the CPU. In others is is
+            a separate PCI card. In either case you can tell what video
+            hardware you have by running:
+          </p>
+          <p>
+            <span class="command"><strong>lspci | grep VGA</strong></span>
+          </p>
+          <p>
+            The video device is most likely one of three families: AMD,
+            Intel, or Nvidia. See the Command Explanations for
+            'gallium-drivers' below to see what options are available for
+            your specific video hardware (or emulated video hardware). You
+            should probably add the swrast option as a backup driver.
+          </p>
+          <p>
+            For 'platforms' you can select x11 and/or wayland. Note that in
+            BLFS currently only Gnome and KDE can use wayland. If you are not
+            going to use one of those desktop environments then you probably
+            only want x11.
+          </p>
+          <p>
+            For 'vulkan-drivers' you may want to limit the selection to your
+            current hardware. These drivers are used by some specific
+            applications. For example, ffmpeg (including ffplay) will use
+            Vulkan instead of OpenGL for rendering video on the GPU. If you
+            do not want to do this you may or may not want to install them.
+          </p>
+        </div>
         <h4>
           Optional
         </h4>
@@ -674,7 +718,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-918">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-932">
           Home</a>
         </li>
       </ul>

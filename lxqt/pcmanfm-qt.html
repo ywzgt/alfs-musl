@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-918">
+  <body class="blfs" id="blfs-r12.1-932">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-918
+        "phrase">(systemd</span> Edition) - Version r12.1-932
       </h4>
       <h3>
         Chapter&nbsp;37.&nbsp;LXQt Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-918">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-932">
           Home</a>
         </li>
       </ul>
@@ -137,6 +137,17 @@
         <h2 class="sect2">
           Installation of pcmanfm-qt
         </h2>
+        <p>
+          If libLayerShellQtInterface.so is installed in /opt, help this
+          package find it. As the <code class="systemitem">root</code> user:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">if [   -e /opt/kf6/lib/libLayerShellQtInterface.so -a \
+     ! -e /usr/lib/libLayerShellQtInterface.so ]; then
+
+    ln -sv /opt/kf6/lib/libLayerShellQtInterface.so \
+           /usr/lib/libLayerShellQtInterface.so
+fi</kbd></pre>
         <p>
           Install <span class="application">pcmanfm-qt</span> by running the
           following commands:
@@ -236,7 +247,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-918">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-932">
           Home</a>
         </li>
       </ul>
