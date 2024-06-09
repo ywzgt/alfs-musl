@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-932">
+  <body class="blfs" id="blfs-r12.1-952">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-932
+        "phrase">(systemd</span> Edition) - Version r12.1-952
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-932">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-952">
           Home</a>
         </li>
       </ul>
@@ -239,9 +239,18 @@
             --enable-optimizations &amp;&amp;
 make</kbd></pre>
         <p>
-          To test the result, issue <span class=
-          "command"><strong>LC_ALL=en_US.UTF-8 make test</strong></span>.
-          Some tests may need an Internet connection.
+          Some tests are known to occasionally hang indefinitely. So to test
+          the results, run the test suite but set a 2-minute time limit for
+          each test case:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">make test TESTOPTS="--timeout 120"</kbd></pre>
+        <p>
+          For a relatively slow system you may need to increase the time
+          limit and 1 SBU (measured when building Binutils pass 1 with one
+          CPU core) should be enough. Some tests are flaky, so the test suite
+          will automatically re-run failed tests. If a test failed but then
+          passed when re-run, it should be considered as passed.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -273,13 +282,6 @@ tar --strip-components=1  \
           <em class="parameter"><code>--with-system-expat</code></em>: This
           switch enables linking against the system version of <span class=
           "application">Expat</span>.
-        </p>
-        <p>
-          <code class="option">--with-dbmliborder=bdb:gdbm:ndbm</code>: Use
-          this switch if you want to build the <span class=
-          "application">Python</span> DBM Module against <span class=
-          "application">Berkeley DB</span> instead of <span class=
-          "application">GDBM</span>.
         </p>
         <p>
           <em class="parameter"><code>--enable-optimizations</code></em>:
@@ -436,7 +438,7 @@ tar --strip-components=1  \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-932">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-952">
           Home</a>
         </li>
       </ul>

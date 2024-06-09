@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-932">
+  <body class="blfs" id="blfs-r12.1-952">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-932
+        "phrase">(systemd</span> Edition) - Version r12.1-952
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-932">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-952">
           Home</a>
         </li>
       </ul>
@@ -225,7 +225,7 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr      \
       -DWITH_XINE=ON                   \
       -DBUILD_TESTS=OFF                \
       -DENABLE_PRECOMPILED_HEADERS=OFF \
-      -DCMAKE_SKIP_RPATH=ON            \
+      -DCMAKE_SKIP_INSTALL_RPATH=ON    \
       -DBUILD_WITH_DEBUG_INFO=OFF      \
       -Wno-dev  ..                     &amp;&amp;
 make</kbd></pre>
@@ -241,6 +241,15 @@ make</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <em class=
+          "parameter"><code>-DCMAKE_SKIP_INSTALL_RPATH=ON</code></em>: This
+          switch makes <span class="command"><strong>cmake</strong></span>
+          remove hardcoded library search paths (rpath) when installing a
+          binary executable file or a shared library. This package does not
+          need rpath once it's installed into the standard location, and
+          rpath may sometimes cause unwanted effects or even security issues.
+        </p>
         <p>
           <em class="parameter"><code>-DWITH_XINE=ON</code></em>: This option
           instructs the make procedure to use <a class="xref" href=
@@ -313,7 +322,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-932">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-952">
           Home</a>
         </li>
       </ul>

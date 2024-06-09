@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-932">
+  <body class="blfs" id="blfs-r12.1-952">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-932
+        "phrase">(systemd</span> Edition) - Version r12.1-952
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-932">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-952">
           Home</a>
         </li>
       </ul>
@@ -157,8 +157,9 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr  \
       -DEXIV2_ENABLE_WEBREADY=yes  \
       -DEXIV2_ENABLE_CURL=yes      \
       -DEXIV2_BUILD_SAMPLES=no     \
-      -G "Unix Makefiles" .. &amp;&amp;
-make</kbd></pre>
+      -DCMAKE_SKIP_INSTALL_RPATH=ON \
+      -G Ninja ..                   &amp;&amp;
+ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
           test</strong></span>
@@ -166,12 +167,21 @@ make</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
-        <pre class="root"><kbd class="command">make install</kbd></pre>
+        <pre class="root"><kbd class="command">ninja install</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <em class=
+          "parameter"><code>-DCMAKE_SKIP_INSTALL_RPATH=ON</code></em>: This
+          switch makes <span class="command"><strong>cmake</strong></span>
+          remove hardcoded library search paths (rpath) when installing a
+          binary executable file or a shared library. This package does not
+          need rpath once it's installed into the standard location, and
+          rpath may sometimes cause unwanted effects or even security issues.
+        </p>
         <p>
           <em class="parameter"><code>-DEXIV2_ENABLE_VIDEO=yes</code></em>:
           This switch enables managing video metadata.
@@ -273,7 +283,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-932">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-952">
           Home</a>
         </li>
       </ul>

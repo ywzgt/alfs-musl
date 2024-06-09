@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-932">
+  <body class="blfs" id="blfs-r12.1-952">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-932
+        "phrase">(systemd</span> Edition) - Version r12.1-952
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-932">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-952">
           Home</a>
         </li>
       </ul>
@@ -222,21 +222,21 @@
         "command">mkdir -vp build &amp;&amp;
 cd        build &amp;&amp;
 
-cmake -DCMAKE_BUILD_TYPE=Release  \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_SKIP_RPATH=ON       \
-      -DPORT=GTK                  \
-      -DLIB_INSTALL_DIR=/usr/lib  \
-      -DUSE_LIBBACKTRACE=OFF      \
-      -DUSE_LIBHYPHEN=OFF         \
-      -DENABLE_GAMEPAD=OFF        \
-      -DENABLE_MINIBROWSER=ON     \
-      -DENABLE_DOCUMENTATION=OFF  \
-      -DENABLE_WEBDRIVER=OFF      \
-      -DUSE_WOFF2=OFF             \
-      -DUSE_GTK4=OFF              \
+cmake -DCMAKE_BUILD_TYPE=Release     \
+      -DCMAKE_INSTALL_PREFIX=/usr    \
+      -DCMAKE_SKIP_INSTALL_RPATH=ON  \
+      -DPORT=GTK                     \
+      -DLIB_INSTALL_DIR=/usr/lib     \
+      -DUSE_LIBBACKTRACE=OFF         \
+      -DUSE_LIBHYPHEN=OFF            \
+      -DENABLE_GAMEPAD=OFF           \
+      -DENABLE_MINIBROWSER=ON        \
+      -DENABLE_DOCUMENTATION=OFF     \
+      -DENABLE_WEBDRIVER=OFF         \
+      -DUSE_WOFF2=OFF                \
+      -DUSE_GTK4=OFF                 \
       -DENABLE_BUBBLEWRAP_SANDBOX=ON \
-      -Wno-dev -G Ninja ..        &amp;&amp;
+      -Wno-dev -G Ninja ..           &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not have a working test suite. However, there is
@@ -255,20 +255,20 @@ ninja</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">rm -rf * .[^.]* &amp;&amp;
 
-cmake -DCMAKE_BUILD_TYPE=Release  \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_SKIP_RPATH=ON       \
-      -DPORT=GTK                  \
-      -DLIB_INSTALL_DIR=/usr/lib  \
-      -DUSE_LIBBACKTRACE=OFF      \
-      -DUSE_LIBHYPHEN=OFF         \
-      -DENABLE_GAMEPAD=OFF        \
-      -DENABLE_MINIBROWSER=ON     \
-      -DENABLE_DOCUMENTATION=OFF  \
-      -DUSE_WOFF2=OFF             \
-      -DUSE_GTK4=ON               \
+cmake -DCMAKE_BUILD_TYPE=Release     \
+      -DCMAKE_INSTALL_PREFIX=/usr    \
+      -DCMAKE_SKIP_INSTALL_RPATH=ON  \
+      -DPORT=GTK                     \
+      -DLIB_INSTALL_DIR=/usr/lib     \
+      -DUSE_LIBBACKTRACE=OFF         \
+      -DUSE_LIBHYPHEN=OFF            \
+      -DENABLE_GAMEPAD=OFF           \
+      -DENABLE_MINIBROWSER=ON        \
+      -DENABLE_DOCUMENTATION=OFF     \
+      -DUSE_WOFF2=OFF                \
+      -DUSE_GTK4=ON                  \
       -DENABLE_BUBBLEWRAP_SANDBOX=ON \
-      -Wno-dev -G Ninja ..        &amp;&amp;
+      -Wno-dev -G Ninja ..           &amp;&amp;
 ninja</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -292,6 +292,15 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <em class=
+          "parameter"><code>-DCMAKE_SKIP_INSTALL_RPATH=ON</code></em>: This
+          switch makes <span class="command"><strong>cmake</strong></span>
+          remove hardcoded library search paths (rpath) when installing a
+          binary executable file or a shared library. This package does not
+          need rpath once it's installed into the standard location, and
+          rpath may sometimes cause unwanted effects or even security issues.
+        </p>
         <p>
           <em class="parameter"><code>-DUSE_LIBBACKTRACE=OFF</code></em>:
           This switch disables the use of libbacktrace for dumping a stack
@@ -524,7 +533,7 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-932">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-952">
           Home</a>
         </li>
       </ul>

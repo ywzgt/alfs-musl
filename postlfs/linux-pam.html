@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-932">
+  <body class="blfs" id="blfs-r12.1-952">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-932
+        "phrase">(systemd</span> Edition) - Version r12.1-952
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-932">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-952">
           Home</a>
         </li>
       </ul>
@@ -197,6 +197,16 @@
         <h2 class="sect2">
           Installation of Linux PAM
         </h2>
+        <p>
+          The shipped <code class="filename">libtool.m4</code> file has a
+          configuration inconsistent with LFS <code class=
+          "filename">/usr</code> hierarchy. This issue would cause
+          <code class="filename">libpam_misc.so</code> linked with an rpath
+          flag which may sometimes cause troubles or even security issues.
+          Regenerate the building system to fix the inconsistency:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">autoreconf -fi</kbd></pre>
         <p>
           If you downloaded the documentation, unpack the tarball by issuing
           the following command.
@@ -591,7 +601,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-932">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-952">
           Home</a>
         </li>
       </ul>
