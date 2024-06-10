@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-952">
+  <body class="blfs" id="blfs-r12.1-959">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-952
+        "phrase">(systemd</span> Edition) - Version r12.1-959
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-952">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-959">
           Home</a>
         </li>
       </ul>
@@ -138,10 +138,10 @@
         "command">./configure --prefix=/usr \
             --sysconfdir=/etc \
             --with-readline=gnu &amp;&amp;
-make -j1</kbd></pre>
+make -j1 RPATH=</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>make
-          check</strong></span>.
+          To test the results, issue: <span class="command"><strong>LC_ALL=C
+          make check</strong></span>.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -149,7 +149,7 @@ make -j1</kbd></pre>
         <pre class="root"><kbd class=
         "command">make install_doc_dir=/usr/share/doc/slang-2.3.3   \
      SLSH_DOC_DIR=/usr/share/doc/slang-2.3.3/slsh \
-     install</kbd></pre>
+     RPATH= install</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -162,11 +162,20 @@ make -j1</kbd></pre>
           "application">slang</span> internal version.
         </p>
         <p>
-          <span class="command"><strong>make
-          install_doc_dir=/usr/share/doc/slang-2.3.3
-          SLSH_DOC_DIR=/usr/share/doc/slang-2.3.3/slsh
-          install</strong></span>: This command installs this package with a
-          versioned documentation installation directory.
+          <em class="parameter"><code>RPATH=</code></em>: This overridden
+          <span class="command"><strong>make</strong></span> variable
+          prevents hard coding library search paths (rpath) into the binary
+          executable files and shared libraries. This package does not need
+          rpath for an installtion into the standard location, and rpath may
+          sometimes cause unwanted effects or even security issues.
+        </p>
+        <p>
+          <em class=
+          "parameter"><code>install_doc_dir=/usr/share/doc/slang-2.3.3
+          SLSH_DOC_DIR=/usr/share/doc/slang-2.3.3/slsh</code></em>: These
+          overridden <span class="command"><strong>make</strong></span>
+          variables ensure installing this package with a versioned
+          documentation installation directory.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -259,7 +268,7 @@ make -j1</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-952">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-959">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-952">
+  <body class="blfs" id="blfs-r12.1-959">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-952
+        "phrase">(systemd</span> Edition) - Version r12.1-959
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-952">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-959">
           Home</a>
         </li>
       </ul>
@@ -185,9 +185,11 @@
           Install <span class="application">Lm_sensors</span> by running the
           following commands:
         </p>
-        <pre class="userinput"><kbd class="command">make PREFIX=/usr        \
-     BUILD_STATIC_LIB=0 \
-     MANDIR=/usr/share/man</kbd></pre>
+        <pre class="userinput"><kbd class=
+        "command">make PREFIX=/usr           \
+     BUILD_STATIC_LIB=0    \
+     MANDIR=/usr/share/man \
+     EXLDFLAGS=</kbd></pre>
         <p>
           This package does not come with a test suite.
         </p>
@@ -210,6 +212,13 @@ cp -rv              README INSTALL doc/* \
           <em class="parameter"><code>BUILD_STATIC_LIB=0</code></em>: This
           parameter disables compiling and installing the static version of
           <code class="filename">libsensors</code>.
+        </p>
+        <p>
+          <em class="parameter"><code>EXLDFLAGS=</code></em>: This parameter
+          disables hard coding library search paths (rpath) into the binary
+          executable files and shared libraries. This package does not need
+          rpath for an installtion into the standard location, and rpath may
+          sometimes cause unwanted effects or even security issues.
         </p>
         <p>
           <code class="option">PROG_EXTRA=sensord</code>: This parameter
@@ -441,7 +450,7 @@ cp -rv              README INSTALL doc/* \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-952">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-959">
           Home</a>
         </li>
       </ul>
