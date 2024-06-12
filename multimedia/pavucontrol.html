@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-962">
+  <body class="blfs" id="blfs-r12.1-985">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-962
+        "phrase">(systemd</span> Edition) - Version r12.1-985
       </h4>
       <h3>
         Chapter&nbsp;43.&nbsp;Audio Utilities
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-962">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-985">
           Home</a>
         </li>
       </ul>
@@ -116,10 +116,17 @@
           "Gtkmm-4.14.0">Gtkmm-4.14.0</a>, <a class="xref" href=
           "../general/json-glib.html" title=
           "JSON-GLib-1.8.0">JSON-GLib-1.8.0</a>, <a class="xref" href=
-          "libcanberra.html" title="libcanberra-0.30">libcanberra-0.30</a>,
-          <a class="xref" href="../general/libsigc.html" title=
-          "libsigc++-2.12.1">libsigc++-2.12.1</a>, and <a class="xref" href=
+          "../general/libsigc3.html" title=
+          "libsigc++-3.6.0">libsigc++-3.6.0</a>, and <a class="xref" href=
           "pulseaudio.html" title="PulseAudio-17.0">PulseAudio-17.0</a>
+        </p>
+        <h3>
+          Optional
+        </h3>
+        <p class="optional">
+          <a class="xref" href="libcanberra.html" title=
+          "libcanberra-0.30">libcanberra-0.30</a> and <a class="xref" href=
+          "../basicnet/lynx.html" title="Lynx-2.9.2">Lynx-2.9.2</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -133,7 +140,7 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr --buildtype=release .. &amp;&amp;
+meson setup --prefix=/usr --buildtype=release -Dlynx=false .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -144,6 +151,18 @@ ninja</kbd></pre>
         <pre class="root"><kbd class="command">ninja install &amp;&amp;
 mv /usr/share/doc/pavucontrol /usr/share/doc/pavucontrol-6.0
 </kbd></pre>
+      </div>
+      <div class="commands" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Command Explanations
+        </h2>
+        <p>
+          <em class="parameter"><code>-Dlynx=false</code></em>: This switch
+          disables generating the README file in text format. Remove this
+          switch if you want the README file in text format and have
+          <a class="xref" href="../basicnet/lynx.html" title=
+          "Lynx-2.9.2">Lynx-2.9.2</a> installed.
+        </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -216,7 +235,7 @@ mv /usr/share/doc/pavucontrol /usr/share/doc/pavucontrol-6.0
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-962">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-985">
           Home</a>
         </li>
       </ul>

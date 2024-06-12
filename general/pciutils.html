@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-962">
+  <body class="blfs" id="blfs-r12.1-985">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-962
+        "phrase">(systemd</span> Edition) - Version r12.1-985
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-962">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-985">
           Home</a>
         </li>
       </ul>
@@ -126,7 +126,7 @@
           "hwdata-0.383">hwdata-0.383</a> package:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -r '/INSTALL.*(PCI_IDS|update-pciids)/d' \
+        "command">sed -r '/INSTALL/{/PCI_IDS|update-pciids /d; s/update-pciids.8//}' \
     -i Makefile</kbd></pre>
         <p>
           Install <span class="application">PCI Utils</span> by running the
@@ -277,7 +277,7 @@ chmod -v 755 /usr/lib/libpci.so</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-962">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-985">
           Home</a>
         </li>
       </ul>
