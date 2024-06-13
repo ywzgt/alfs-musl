@@ -139,11 +139,11 @@ https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
 https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.tar.bz2
 https://dist.libuv.org/dist/v1.48.0/libuv-v1.48.0.tar.gz
 https://xkbcommon.org/download/libxkbcommon-1.7.0.tar.xz
-https://download.gnome.org/sources/libxml2/2.12/libxml2-2.12.7.tar.xz
+https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.0.tar.xz
 https://www.w3.org/XML/Test/xmlts20130923.tar.gz
 https://github.com/hughsie/libxmlb/releases/download/0.3.19/libxmlb-0.3.19.tar.xz
 https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.39.tar.xz
-https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.12.0/libwacom-2.12.0.tar.xz
+https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.12.1/libwacom-2.12.1.tar.xz
 https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
 https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_1/log4cplus-2.1.1.tar.xz
 https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
@@ -359,7 +359,7 @@ https://www.cpan.org/authors/id/S/SA/SADAHIRO/Unicode-Collate-1.31.tar.gz
 https://www.cpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz
 https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.28.tar.gz
 https://www.cpan.org/authors/id/M/MA/MARKOV/XML-LibXML-Simple-1.01.tar.gz
-https://www.cpan.org/authors/id/S/SH/SHLOMIF/XML-LibXSLT-2.002001.tar.gz
+https://www.cpan.org/authors/id/S/SH/SHLOMIF/XML-LibXSLT-2.003000.tar.gz
 https://www.cpan.org/authors/id/G/GR/GRANTM/XML-Simple-2.25.tar.gz
 https://www.cpan.org/authors/id/J/JO/JOSEPHW/XML-Writer-0.900.tar.gz
 https://cpan.metacpan.org/authors/id/R/RJ/RJBS//Algorithm-Diff-1.201.tar.gz
@@ -539,7 +539,7 @@ https://files.pythonhosted.org/packages/source/t/typing_extensions/typing_extens
 https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.0.7.tar.gz
 https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.0.2.tar.gz
 https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
-https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.2.tar.xz
+https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.3.tar.xz
 https://static.rust-lang.org/dist/rustc-1.78.0-src.tar.xz
 https://github.com/rust-lang/rust-bindgen/archive/v0.69.4/rust-bindgen-0.69.4.tar.gz
 https://downloads.sourceforge.net/scons/SCons-4.7.0.tar.gz
@@ -919,9 +919,9 @@ https://www.linuxfromscratch.org/patches/blfs/svn/transmission-4.0.6-build_fix-1
 https://github.com/ib/xarchiver/archive/0.5.4.23/xarchiver-0.5.4.23.tar.gz
 https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz
 https://www.jwz.org/xscreensaver/xscreensaver-6.09.tar.gz
-https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.11.tar.bz2
-https://www.alsa-project.org/files/pub/plugins/alsa-plugins-1.2.7.1.tar.bz2
-https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.11.tar.bz2
+https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.12.tar.bz2
+https://www.alsa-project.org/files/pub/plugins/alsa-plugins-1.2.12.tar.bz2
+https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.12.tar.bz2
 https://www.alsa-project.org/files/pub/tools/alsa-tools-1.2.11.tar.bz2
 https://www.alsa-project.org/files/pub/firmware/alsa-firmware-1.2.4.tar.bz2
 https://download.gnome.org/sources/audiofile/0.3/audiofile-0.3.6.tar.xz

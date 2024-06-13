@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-985">
+  <body class="blfs" id="blfs-r12.1-996">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-985
+        "phrase">(systemd</span> Edition) - Version r12.1-996
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-985">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-996">
           Home</a>
         </li>
       </ul>
@@ -114,7 +114,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="libxml2.html" title=
-          "libxml2-2.12.7">libxml2-2.12.7</a>, <a class="xref" href=
+          "libxml2-2.13.0">libxml2-2.13.0</a>, <a class="xref" href=
           "llvm.html" title="LLVM-18.1.7">LLVM-18.1.7</a>, and <a class=
           "xref" href="spirv-tools.html" title=
           "SPIRV-Tools-1.3.283.0">SPIRV-Tools-1.3.283.0</a>
@@ -131,11 +131,11 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake - DCMAKE_INSTALL_PREFIX=/usr               \
-      - DCMAKE_BUILD_TYPE=Release                \
-      - DBUILD_SHARED_LIBS=ON                    \
-      - DCMAKE_SKIP_INSTALL_RPATH=ON             \
-      - DLLVM_EXTERNAL_SPIRV_HEADERS_SOURCE=/usr \
+cmake -D CMAKE_INSTALL_PREFIX=/usr               \
+      -D CMAKE_BUILD_TYPE=Release                \
+      -D BUILD_SHARED_LIBS=ON                    \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON             \
+      -D LLVM_EXTERNAL_SPIRV_HEADERS_SOURCE=/usr \
       -G Ninja ..                                &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -151,23 +151,24 @@ ninja</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-DBUILD_SHARED_LIBS=ON</code></em>:
+          <em class="parameter"><code>-D BUILD_SHARED_LIBS=ON</code></em>:
           This parameter forces building shared versions of the libraries.
         </p>
         <p>
           <em class=
           "parameter"><code>-DCMAKE_SKIP_INSTALL_RPATH=ON</code></em>: This
-          parameter forces CMake to remove hardcoded library search paths
-          when installing a binary executable or library. This package does
-          not need rpath once it's installed into the standard location, and
-          leaving it can cause unexpected effects of security issues.
+          switch makes <span class="command"><strong>cmake</strong></span>
+          remove hardcoded library search paths (rpath) when installing a
+          binary executable file or a shared library. This package does not
+          need rpath once it's installed into the standard location, and
+          rpath may sometimes cause unwanted effects or even security issues.
         </p>
         <p>
-          <em class=
-          "parameter"><code>-DLLVM_EXTERNAL_SPIRV_HEADERS_SOURCE=/usr</code></em>:
-          This parameter allows the build system to use the version of
-          SPIRV-Headers that was installed with SPIRV-Tools, instead of
-          redownloading an unncessary copy of the headers.
+          <em class="parameter"><code>-D
+          LLVM_EXTERNAL_SPIRV_HEADERS_SOURCE=/usr</code></em>: This parameter
+          allows the build system to use the version of SPIRV-Headers that
+          was installed with SPIRV-Tools, instead of redownloading an
+          unncessary copy of the headers.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -255,7 +256,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-985">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-996">
           Home</a>
         </li>
       </ul>
