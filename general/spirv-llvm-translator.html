@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-998">
+  <body class="blfs" id="blfs-r12.1-1007">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-998
+        "phrase">(systemd</span> Edition) - Version r12.1-1007
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-998">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1007">
           Home</a>
         </li>
       </ul>
@@ -131,12 +131,12 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -D CMAKE_INSTALL_PREFIX=/usr               \
-      -D CMAKE_BUILD_TYPE=Release                \
-      -D BUILD_SHARED_LIBS=ON                    \
-      -D CMAKE_SKIP_INSTALL_RPATH=ON             \
-      -D LLVM_EXTERNAL_SPIRV_HEADERS_SOURCE=/usr \
-      -G Ninja ..                                &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr                   \
+      -D CMAKE_BUILD_TYPE=Release                    \
+      -D BUILD_SHARED_LIBS=ON                        \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON                 \
+      -D LLVM_EXTERNAL_SPIRV_HEADERS_SOURCE_DIR=/usr \
+      -G Ninja ..                                    &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -165,10 +165,11 @@ ninja</kbd></pre>
         </p>
         <p>
           <em class="parameter"><code>-D
-          LLVM_EXTERNAL_SPIRV_HEADERS_SOURCE=/usr</code></em>: This parameter
-          allows the build system to use the version of SPIRV-Headers that
-          was installed with SPIRV-Tools, instead of redownloading an
-          unnecessary copy of the headers.
+          LLVM_EXTERNAL_SPIRV_HEADERS_SOURCE_DIR=/usr</code></em>: This
+          parameter allows the build system to use the version of
+          SPIRV-Headers that should have been installed as a dependency of
+          SPIRV-Tools, instead of redownloading an unnecessary copy of the
+          headers.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -256,7 +257,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-998">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1007">
           Home</a>
         </li>
       </ul>

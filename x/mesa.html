@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-998">
+  <body class="blfs" id="blfs-r12.1-1007">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-998
+        "phrase">(systemd</span> Edition) - Version r12.1-1007
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-998">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1007">
           Home</a>
         </li>
       </ul>
@@ -199,9 +199,15 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="../general/libclc.html" title=
-                "libclc-18.1.7">libclc-18.1.7</a> and <a class="xref" href=
-                "../general/python-modules.html#ply" title=
-                "ply-3.11">ply-3.11</a> (required for the Intel drivers)
+                "libclc-18.1.7">libclc-18.1.7</a> (required for the Intel
+                iris gallium driver)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <a class="xref" href="../general/python-modules.html#ply"
+                title="ply-3.11">ply-3.11</a> (required for the Intel vulkan
+                driver)
               </p>
             </li>
             <li class="listitem">
@@ -210,7 +216,7 @@
                 "Cbindgen-0.26.0">Cbindgen-0.26.0</a> and <a class="xref"
                 href="../general/rust-bindgen.html" title=
                 "rust-bindgen-0.69.4">rust-bindgen-0.69.4</a> (required for
-                the swrast Vulkan driver and the Nouveau driver)
+                the Nouveau Vulkan driver)
               </p>
             </li>
           </ul>
@@ -234,17 +240,19 @@
             The first thing you need to know is which type of video device
             you have. In some cases it is built into the CPU. In others is is
             a separate PCI card. In either case you can tell what video
-            hardware you have by running:
+            hardware you have by installing <a class="xref" href=
+            "../general/pciutils.html" title=
+            "pciutils-3.13.0">pciutils-3.13.0</a> and running:
           </p>
-          <p>
-            <span class="command"><strong>lspci | grep VGA</strong></span>
-          </p>
+          <pre class="userinput"><kbd class=
+          "command">lspci | grep VGA</kbd></pre>
           <p>
             The video device is most likely one of three families: AMD,
-            Intel, or Nvidia. See the Command Explanations for
-            'gallium-drivers' below to see what options are available for
-            your specific video hardware (or emulated video hardware). You
-            should probably add the swrast option as a backup driver.
+            Intel, or Nvidia. See the Command Explanations for <em class=
+            "parameter"><code>-D gallium-drivers=auto</code></em> below to
+            see what options are available for your specific video hardware
+            (or emulated video hardware). You should probably add the swrast
+            option as a backup driver.
           </p>
           <p>
             For 'platforms' you can select x11 and/or wayland. Note that in
@@ -258,6 +266,11 @@
             applications. For example, ffmpeg (including ffplay) will use
             Vulkan instead of OpenGL for rendering video on the GPU. If you
             do not want to do this you may or may not want to install them.
+            See the Command Explanations for <em class="parameter"><code>-D
+            vulkan-drivers=auto</code></em> below to see what options are
+            available for your specific video hardware (or emulated video
+            hardware). You should probably add the swrast option as a backup
+            driver unless you don't need Vulkan at all.
           </p>
         </div>
         <h4>
@@ -403,7 +416,8 @@ meson setup ..                 \
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>meson
-          configure -Dbuild-tests=true &amp;&amp; ninja test</strong></span>.
+          configure -D build-tests=true &amp;&amp; ninja
+          test</strong></span>.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -430,7 +444,7 @@ ninja</kbd></pre>
         </p>
         <p>
           <a id="mesa-gallium-drivers" name="mesa-gallium-drivers"></a>
-          <em class="parameter"><code>-Dgallium-drivers=auto</code></em>:
+          <em class="parameter"><code>-D gallium-drivers=auto</code></em>:
           This parameter controls which Gallium3D drivers should be built:
         </p>
         <div class="itemizedlist">
@@ -440,9 +454,9 @@ ninja</kbd></pre>
                 <code class="literal">auto</code> selects all Gallium3D
                 drivers available for x86. With a comma-separated list, only
                 a subset of these drivers will be built. If you precisely
-                know which drivers you need, you can build. for example.
-                <code class=
-                "option">-Dgallium-drivers=radeonsi,iris,swrast</code>.
+                know which drivers you need, you can select them explicitly.
+                for example. <code class="option">-D
+                gallium-drivers=radeonsi,iris,swrast</code>.
               </p>
             </li>
             <li class="listitem">
@@ -501,7 +515,7 @@ ninja</kbd></pre>
             <li class="listitem">
               <p>
                 <code class="literal">iris</code> (for Intel GPUs shipped
-                with Broadwell or newer CPUs)
+                with Broadwell or newer CPUs, or as a dedicated PCIe card)
               </p>
             </li>
             <li class="listitem">
@@ -518,16 +532,73 @@ ninja</kbd></pre>
                 CPUs)
               </p>
             </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">zink</code> (using Vulkan to implement
+                OpenGL, it's not very useful on x86 as at now but it may
+                replace other drivers for modern GPU models in the future)
+              </p>
+            </li>
           </ul>
         </div>
         <p>
-          <em class="parameter"><code>-Dplatforms=...</code></em>: This
+          <em class="parameter"><code>-D vulkan-drivers=auto</code></em>:
+          This parameter controls which Gallium3D drivers should be built:
+        </p>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                <code class="literal">auto</code> selects all Vulkan drivers
+                available for x86. With a comma-separated list, only a subset
+                of these drivers will be built. If you precisely know which
+                drivers you need, you can select them explicitly. for
+                example. <code class="option">-D
+                gallium-drivers=amd,nouveau,swrast</code>.
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">amd</code> (for AMD Radeon HD 7730 or
+                newer AMD GPUs)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">intel</code> (for Intel GPUs shipped
+                with Skylake or newer CPUs, or as a dedicated PCIe card)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">intel_hasvk</code> (for Intel GPUs
+                shipped with Ivy Bridge, Haswell, or Broadwell CPUs)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">nouveau</code> (for GTX 16XX, RTX 20XX,
+                or newer NVIDIA GPUs)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="literal">swrast</code> (using CPU for 3D
+                rasterisation. Note that it's much slower than using a modern
+                3D-capable GPU, so it should be only used if the GPU is not
+                supported by other drivers)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <p>
+          <em class="parameter"><code>-D platforms=...</code></em>: This
           parameter controls which windowing systems will be supported.
           Available linux platforms are x11 and wayland.
         </p>
         <p>
-          <em class="parameter"><code>-Dvulkan-drivers=auto</code></em>: This
-          switch enables support for the Vulkan graphics API. It
+          <em class="parameter"><code>-D vulkan-drivers=auto</code></em>:
+          This switch enables support for the Vulkan graphics API. It
           automatically builds all graphics drivers that are available for
           Vulkan. If you wish to build specific drivers, valid options
           include 'amd', 'intel', 'intel_hasvk' (Haswell CPUs), nouveau
@@ -535,26 +606,26 @@ ninja</kbd></pre>
           change 'auto' to "".
         </p>
         <p>
-          <em class="parameter"><code>-Dvalgrind=disabled</code></em>: This
+          <em class="parameter"><code>-D valgrind=disabled</code></em>: This
           parameter disables the usage of Valgrind during the build process.
           Remove this parameter if you have Valgrind installed, and wish to
           check for memory leaks.
         </p>
         <p>
-          <em class="parameter"><code>-Dlibunwind=disabled</code></em>: This
+          <em class="parameter"><code>-D libunwind=disabled</code></em>: This
           parameter disables the usage of libunwind.
         </p>
         <p>
-          <span class="command"><strong>meson configure
-          -Dbuild-tests=true</strong></span>: This command will reconfigure
-          the build to set <code class="option">-Dbuild-tests=true</code>,
-          but keep the other options specified in the <span class=
+          <span class="command"><strong>meson configure -D
+          build-tests=true</strong></span>: This command will reconfigure the
+          build to set <code class="option">-D build-tests=true</code>, but
+          keep the other options specified in the <span class=
           "command"><strong>meson setup</strong></span> command unchanged. It
           allows <span class="command"><strong>ninja test</strong></span> to
           build and run unit tests.
         </p>
         <p>
-          <code class="option">-Degl-native-platform="..."</code>: This
+          <code class="option">-D egl-native-platform="..."</code>: This
           parameter controls which Embedded Graphics Library support will be
           built. Available linux options are auto (default), x11, wayland,
           surfaceless, and drm.
@@ -745,7 +816,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-998">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1007">
           Home</a>
         </li>
       </ul>
