@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1007">
+  <body class="blfs" id="blfs-r12.1-1021">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1007
+        "phrase">(systemd</span> Edition) - Version r12.1-1021
       </h4>
       <h3>
         Chapter&nbsp;48.&nbsp;Standard Generalized Markup Language (SGML)
@@ -43,7 +43,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1007">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1021">
           Home</a>
         </li>
       </ul>
@@ -108,6 +108,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/OpenSP-1.5.2-gcc14-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/OpenSP-1.5.2-gcc14-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           OpenSP Dependencies
         </h3>
         <h4>
@@ -135,9 +149,10 @@
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -i 's/32,/253,/' lib/Syntax.cxx &amp;&amp;
+        "command">patch -Np1 -i ../OpenSP-1.5.2-gcc14-1.patch          &amp;&amp;
+sed -i 's/32,/253,/' lib/Syntax.cxx                  &amp;&amp;
 sed -i 's/LITLEN          240 /LITLEN          8092/' \
-    unicode/{gensyntax.pl,unicode.syn} &amp;&amp;
+    unicode/{gensyntax.pl,unicode.syn}               &amp;&amp;
 
 ./configure --prefix=/usr                              \
             --disable-static                           \
@@ -507,7 +522,7 @@ ln -v -sf libosp.so /usr/lib/libsp.so</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1007">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1021">
           Home</a>
         </li>
       </ul>

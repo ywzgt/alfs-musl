@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Systemd-255
+      Systemd-256
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1007">
+  <body class="blfs" id="blfs-r12.1-1021">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1007
+        "phrase">(systemd</span> Edition) - Version r12.1-1021
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1007">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1021">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="systemd" name="systemd"></a>Systemd-255
+      <a id="systemd" name="systemd"></a>Systemd-256
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -83,13 +83,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/systemd/systemd/archive/v255/systemd-255.tar.gz">
-                https://github.com/systemd/systemd/archive/v255/systemd-255.tar.gz</a>
+                "https://github.com/systemd/systemd/archive/v256/systemd-256.tar.gz">
+                https://github.com/systemd/systemd/archive/v256/systemd-256.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 521cda27409a9edf0370c128fae3e690
+                Download MD5 sum: 4796b6eb1e23d809a1f11426d171b065
               </p>
             </li>
             <li class="listitem">
@@ -105,20 +105,6 @@
             <li class="listitem">
               <p>
                 Estimated build time: 3.7 SBU (with tests using 4 cores)
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/systemd-255-upstream_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/systemd-255-upstream_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -247,28 +233,6 @@
         "command">sed -i -e 's/GROUP="render"/GROUP="video"/' \
        -e 's/GROUP="sgx", //' rules.d/50-udev-default.rules.in</kbd></pre>
         <p>
-          Next, fix compatibility with API headers from linux-6.9 and later:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -i '/DEVMEM_MAGIC 0/{n;n;a \
-/* cb12fd8e0dabb9a1c8aef55a6a41e2c255fcdf4b (6.8) */ \
-#ifndef PID_FS_MAGIC \
-#define PID_FS_MAGIC 0x50494446 \
-#endif
-}' src/basic/missing_magic.h
-
-sed -i '/OVERLAYFS_SUPER_MAGIC/a \
-pidfs,           {PID_FS_MAGIC}' src/basic/filesystems-gperf.gperf</kbd></pre>
-        <p>
-          Now fix a security vulnerability in the DNSSEC verification of
-          <span class="command"><strong>systemd-resolved</strong></span> and
-          a bug breaking running <span class=
-          "command"><strong>systemd-analyze verify</strong></span> on an
-          instantiated systemd unit:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../systemd-255-upstream_fixes-1.patch</kbd></pre>
-        <p>
           Rebuild <span class="application">systemd</span> by running the
           following commands:
         </p>
@@ -294,7 +258,7 @@ meson setup ..                \
       -Dnobody-group=nogroup  \
       -Dsysupdate=disabled    \
       -Dukify=disabled        \
-      -Ddocdir=/usr/share/doc/systemd-255 &amp;&amp;
+      -Ddocdir=/usr/share/doc/systemd-256 &amp;&amp;
 
 ninja</kbd></pre>
         <div class="admon note">
@@ -311,9 +275,8 @@ ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
           test</strong></span>. The test named <code class=
-          "filename">test-stat-util</code> and <code class=
-          "filename">test-netlink</code> are known to fail if some kernel
-          features are not enabled. If the test suite is ran as the
+          "filename">test-stat-util</code> is known to fail if some kernel
+          features are not enabled. If the test suite is run as the
           <code class="systemitem">root</code> user, some other tests may
           fail because they depend on various kernel configuration options.
         </p>
@@ -582,7 +545,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1007">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1021">
           Home</a>
         </li>
       </ul>
