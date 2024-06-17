@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1021">
+  <body class="blfs" id="blfs-r12.1-1024">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1021
+        "phrase">(systemd</span> Edition) - Version r12.1-1024
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1021">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1024">
           Home</a>
         </li>
       </ul>
@@ -219,21 +219,21 @@ useradd -c "PolicyKit Daemon Owner" -d /etc/polkit-1 -u 27 \
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup ..                            \
-      --prefix=/usr                       \
-      --buildtype=release                 \
-      -Dman=true                          \
-      -Dsession_tracking=libsystemd-login \
-      -Dtests=true</kbd></pre>
+meson setup ..                             \
+      --prefix=/usr                        \
+      --buildtype=release                  \
+      -D man=true                          \
+      -D session_tracking=libsystemd-login \
+      -D tests=true</kbd></pre>
         <p>
           Now adapt the shipped mocklibc copy to allow building the test
           suite with GCC 14 or later:
         </p>
         <pre class="userinput"><kbd class=
-        "command">grep 'print_indent'     ../subprojects/mocklibc-1.0/src/netgroup.c \
-     | sed 's/ {/;/' &gt;&gt; ../subprojects/mocklibc-1.0/src/netgroup.h &amp;&amp;
-sed -i '1i#include &lt;stdio.h&gt;'                                      \
-    ../subprojects/mocklibc-1.0/src/netgroup.h</kbd></pre>
+        "command">grep 'print_indent'             ../subprojects/mocklibc-1.0/src/netgroup.c \
+     | sed 's/ {/;/' &gt;&gt;         ../subprojects/mocklibc-1.0/src/netgroup.h &amp;&amp;
+
+sed -i '1 i #include &lt;stdio.h&gt;' ../subprojects/mocklibc-1.0/src/netgroup.h</kbd></pre>
         <p>
           Build the package:
         </p>
@@ -477,7 +477,7 @@ sed -i '1i#include &lt;stdio.h&gt;'                                      \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1021">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1024">
           Home</a>
         </li>
       </ul>
