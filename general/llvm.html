@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1024">
+  <body class="blfs" id="blfs-r12.1-1035">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1024
+        "phrase">(systemd</span> Edition) - Version r12.1-1035
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1024">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1035">
           Home</a>
         </li>
       </ul>
@@ -255,19 +255,20 @@
           title="Pygments-2.18.0">Pygments-2.18.0</a>, <a class="xref" href=
           "python-modules.html#PyYAML" title="PyYAML-6.0.1">PyYAML-6.0.1</a>
           (for tests), <a class="xref" href="../basicnet/rsync.html" title=
-          "rsync-3.3.0">rsync-3.3.0</a> (for tests), <a class="xref" href=
-          "python-modules.html#recommonmark" title=
-          "Recommonmark-0.7.1">recommonmark-0.7.1</a> (for building
-          documentation), <span class="phrase"><a class="xref" href=
-          "systemd.html" title="Systemd-256">Systemd-256</a> (rebuilt with
-          PAM, for tests),</span> <a class="xref" href="../pst/texlive.html"
-          title="texlive-20240312-source">texlive-20240312</a> (or <a class=
-          "xref" href="../pst/tl-installer.html" title=
+          "rsync-3.3.0">rsync-3.3.0</a> (for tests), <span class=
+          "phrase"><a class="xref" href="systemd.html" title=
+          "Systemd-256">Systemd-256</a> (rebuilt with PAM, for tests),</span>
+          <a class="xref" href="../pst/texlive.html" title=
+          "texlive-20240312-source">texlive-20240312</a> (or <a class="xref"
+          href="../pst/tl-installer.html" title=
           "install-tl-unx">install-tl-unx</a>), <a class="xref" href=
           "valgrind.html" title="Valgrind-3.23.0">Valgrind-3.23.0</a>,
           <a class="xref" href="zip.html" title="Zip-3.0">Zip-3.0</a>,
-          <a class="ulink" href="https://ocaml.org/">OCaml</a>, and <a class=
-          "ulink" href="https://github.com/Z3Prover/z3">Z3</a>
+          <a class="ulink" href=
+          "https://pypi.org/project/myst-parser">myst-parser</a> (for
+          building documentation), <a class="ulink" href=
+          "https://ocaml.org/">OCaml</a>, and <a class="ulink" href=
+          "https://github.com/Z3Prover/z3">Z3</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -348,24 +349,6 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr           \
       -Wno-dev -G Ninja ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
-          If you have installed <a class="xref" href=
-          "python-modules.html#recommonmark" title=
-          "Recommonmark-0.7.1">recommonmark-0.7.1</a> and its dependencies,
-          you can generate the html documentation and manual pages with the
-          following commands:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">cmake -DLLVM_BUILD_DOCS=ON            \
-      -DLLVM_ENABLE_SPHINX=ON         \
-      -DSPHINX_WARNINGS_AS_ERRORS=OFF \
-      -Wno-dev -G Ninja ..            &amp;&amp;
-ninja docs-llvm-html  docs-llvm-man</kbd></pre>
-        <p>
-          The clang documentation can be built too:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">ninja docs-clang-html docs-clang-man</kbd></pre>
-        <p>
           If you wish to run the tests, remove a test case known to hang
           indefinitely on some systems:
         </p>
@@ -415,24 +398,6 @@ systemd-run --user --pty -d -G -p LimitCORE=0 ninja check-all</kbd></pre>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
-        <p>
-          If you have built the llvm documentation, it has been installed by
-          the above command, but it needs to be moved. As the <code class=
-          "systemitem">root</code> user:
-        </p>
-        <pre class="root"><kbd class=
-        "command">install -v -d -m755 /usr/share/doc/llvm-18.1.7            &amp;&amp;
-mv -v /usr/share/doc/LLVM/llvm /usr/share/doc/llvm-18.1.7 &amp;&amp;
-rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
-        <p>
-          If you have built the clang documentation, it has been installed,
-          but needs to be moved too. Again as the <code class=
-          "systemitem">root</code> user:
-        </p>
-        <pre class="root"><kbd class=
-        "command">install -v -d -m755 /usr/share/doc/llvm-18.1.7             &amp;&amp;
-mv -v /usr/share/doc/LLVM/clang /usr/share/doc/llvm-18.1.7 &amp;&amp;
-rmdir -v --ignore-fail-on-non-empty /usr/share/doc/LLVM</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -615,8 +580,8 @@ done</kbd></pre>
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/{clang,clang-c,llvm,llvm-c},
               /usr/lib/{clang,cmake/{clang,llvm},libear,libscanbuild},
-              /usr/share/{clang,opt-viewer,scan-build,scan-view},
-              /usr/share/doc/llvm-18.1.7, and /etc/clang</span>
+              /usr/share/{clang,opt-viewer,scan-build,scan-view}, and
+              /etc/clang</span>
             </div>
           </div>
         </div>
@@ -2029,7 +1994,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1024">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1035">
           Home</a>
         </li>
       </ul>
