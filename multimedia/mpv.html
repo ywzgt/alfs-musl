@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1037">
+  <body class="blfs" id="blfs-r12.1-1043">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1037
+        "phrase">(systemd</span> Edition) - Version r12.1-1043
       </h4>
       <h3>
         Chapter&nbsp;44.&nbsp;Video Utilities
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1037">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1043">
           Home</a>
         </li>
       </ul>
@@ -180,8 +180,7 @@
           Add a fix to build with FFMpeg &gt; 7.0
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed 's/AV_OPT_TYPE_CHANNEL_LAYOUT/AV_OPT_TYPE_CHLAYOUT/' \
--i filters/f_lavfi.c</kbd></pre>
+        "command">sed -i 's/AV_OPT_TYPE_CHANNEL_LAYOUT/AV_OPT_TYPE_CHLAYOUT/' filters/f_lavfi.c</kbd></pre>
         <p>
           Install <span class="application">mpv</span> by running the
           following commands:
@@ -191,7 +190,7 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr       \
             --buildtype=release \
-            -Dx11=enabled       \
+            -D x11=enabled      \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -333,7 +332,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1037">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1043">
           Home</a>
         </li>
       </ul>
