@@ -1,0 +1,60 @@
+diff --git a/wget-list b/wget-list
+index e76feea4d..7d2b13bcf 100644
+--- a/wget-list
++++ b/wget-list
+@@ -95,7 +95,7 @@ https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/k
+ https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.2.1.tar.xz
+ https://pagure.io/libaio/archive/libaio-0.3.113/libaio-0.3.113.tar.gz
+ https://github.com/libarchive/libarchive/releases/download/v3.7.4/libarchive-3.7.4.tar.xz
+-https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.5.7.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.0.tar.bz2
+ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/ivmai/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz
+ https://github.com/storaged-project/libblockdev/releases/download/3.1.1-1/libblockdev-3.1.1.tar.gz
+@@ -480,7 +480,7 @@ https://files.pythonhosted.org/packages/source/M/Mako/Mako-1.3.5.tar.gz
+ https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/packaging/packaging-24.1.tar.gz
+ https://files.pythonhosted.org/packages/source/p/ply/ply-3.11.tar.gz
+-https://files.pythonhosted.org/packages/source/p/psutil/psutil-5.9.8.tar.gz
++https://files.pythonhosted.org/packages/source/p/psutil/psutil-6.0.0.tar.gz
+ https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
+ https://download.gnome.org/sources/pyatspi/2.46/pyatspi-2.46.1.tar.xz
+ https://github.com/pygobject/pycairo/releases/download/v1.18.2/pycairo-1.18.2.tar.gz
+@@ -582,7 +582,7 @@ https://nmap.org/dist/nmap-7.95.tar.bz2
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.5.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.2.5.tar.xz
+-https://github.com/c-ares/c-ares/releases/download/v1.30.0/c-ares-1.30.0.tar.gz
++https://github.com/c-ares/c-ares/releases/download/v1.31.0/c-ares-1.31.0.tar.gz
+ https://curl.se/download/curl-8.8.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.1/geoclue-2.7.1.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.0.tar.xz
+@@ -605,7 +605,7 @@ https://notroj.github.io/neon/neon-0.33.0.tar.gz
+ https://github.com/nghttp2/nghttp2/releases/download/v1.62.1/nghttp2-1.62.1.tar.xz
+ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.4.4.tar.xz
+ https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
+-https://tecnocode.co.uk/downloads/uhttpmock/uhttpmock-0.10.0.tar.xz
++https://tecnocode.co.uk/downloads/uhttpmock/uhttpmock-0.11.0.tar.xz
+ http://links.twibright.com/download/links-2.29.tar.bz2
+ https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.bz2
+ https://downloads.sourceforge.net/fetchmail/fetchmail-6.4.38.tar.xz
+@@ -710,8 +710,8 @@ https://download.gnome.org/sources/pangomm/2.52/pangomm-2.52.0.tar.xz
+ https://download.qt.io/archive/qt/5.15/5.15.12/single/qt-everywhere-opensource-src-5.15.12.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5.15.12-kf5-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5.15.12-security_fix-1.patch
+-https://download.qt.io/archive/qt/6.7/6.7.1/single/qt-everywhere-src-6.7.1.tar.xz
+-https://download.qt.io/official_releases/qt/6.7/6.7.1/submodules/qtwebengine-everywhere-src-6.7.1.tar.xz
++https://download.qt.io/archive/qt/6.7/6.7.2/single/qt-everywhere-src-6.7.2.tar.xz
++https://download.qt.io/official_releases/qt/6.7/6.7.2/submodules/qtwebengine-everywhere-src-6.7.2.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.288/Vulkan-Headers-1.3.288.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.3.288/Vulkan-Loader-1.3.288.tar.gz
+@@ -1020,7 +1020,7 @@ http://fy.chalmers.se/~appro/linux/DVD+RW/tools/dvd+rw-tools-7.1.tar.gz
+ https://files.libburnia-project.org/releases/libburn-1.5.6.tar.gz
+ https://files.libburnia-project.org/releases/libisoburn-1.5.6.tar.gz
+ https://files.libburnia-project.org/releases/libisofs-1.5.6.tar.gz
+-https://github.com/OpenPrinting/cups/releases/download/v2.4.9/cups-2.4.9-source.tar.gz
++https://github.com/OpenPrinting/cups/releases/download/v2.4.10/cups-2.4.10-source.tar.gz
+ https://github.com/OpenPrinting/cups-browsed/releases/download/2.0.0/cups-browsed-2.0.0.tar.xz
+ https://github.com/OpenPrinting/cups-filters/releases/download/2.0.0/cups-filters-2.0.0.tar.xz
+ https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10031/ghostscript-10.03.1.tar.xz
