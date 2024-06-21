@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1043">
+  <body class="blfs" id="blfs-r12.1-1052">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1043
+        "phrase">(systemd</span> Edition) - Version r12.1-1052
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1043">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1052">
           Home</a>
         </li>
       </ul>
@@ -118,7 +118,7 @@
           <a class="xref" href="../general/libassuan.html" title=
           "libassuan-3.0.0">libassuan-3.0.0</a>, <a class="xref" href=
           "../general/libgcrypt.html" title=
-          "libgcrypt-1.10.3">libgcrypt-1.10.3</a>, <a class="xref" href=
+          "libgcrypt-1.11.0">libgcrypt-1.11.0</a>, <a class="xref" href=
           "../general/libksba.html" title="libksba-1.6.6">libksba-1.6.6</a>,
           <a class="xref" href="../general/npth.html" title=
           "npth-1.7">npth-1.7</a>, and <a class="xref" href=
@@ -183,13 +183,11 @@ make -C doc html</kbd></pre>
         <p>
           If you have <a class="xref" href="../pst/texlive.html" title=
           "texlive-20240312-source">texlive-20240312</a> installed and you
-          wish to create documentation in alternate formats, issue the
-          following command (<a class="ulink" href=
-          "https://mcj.sourceforge.net/">fig2dev</a> is needed for the ps
-          format), but note that this process fails due to missing files:
+          wish to create documentation in the pdf format, issue the following
+          command:
         </p>
         <pre class="userinput"><kbd class=
-        "command">make -C doc pdf ps</kbd></pre>
+        "command">make -C doc pdf</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
           check</strong></span>.
@@ -207,12 +205,12 @@ install -v -m644    ../doc/*.texi doc/gnupg.txt \
 install -v -m644    doc/gnupg.html/* \
                     /usr/share/doc/gnupg-2.4.5/html</kbd></pre>
         <p>
-          If you created alternate formats of the documentation, install them
+          If you created the pdf format of the documentation, install them
           using the following command as the <code class=
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">install -v -m644 doc/gnupg.{pdf,dvi,ps} \
+        "command">install -v -m644 doc/gnupg.pdf \
                  /usr/share/doc/gnupg-2.4.5</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -608,7 +606,7 @@ install -v -m644    doc/gnupg.html/* \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1043">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1052">
           Home</a>
         </li>
       </ul>

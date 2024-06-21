@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1043">
+  <body class="blfs" id="blfs-r12.1-1052">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1043
+        "phrase">(systemd</span> Edition) - Version r12.1-1052
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1043">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1052">
           Home</a>
         </li>
       </ul>
@@ -166,7 +166,6 @@
           There are a few extra components needed for different packages in
           BLFS. These are <span class=
           "bold"><strong>qtimageformats</strong></span>, <span class=
-          "bold"><strong>qtlocation</strong></span>, <span class=
           "bold"><strong>qtwebchannel</strong></span>, <span class=
           "bold"><strong>qtdoc</strong></span>, and <span class=
           "bold"><strong>qtmultimedia</strong></span>. Only those components
@@ -179,25 +178,6 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../qt-everywhere-opensource-src-5.15.12-kf5-1.patch</kbd></pre>
-        <p>
-          Next, if you are installing <span class=
-          "bold"><strong>qtlocation</strong></span>, fix the build with
-          GCC-13:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e "/pragma once/a#include &lt;cstdint&gt;"                                      \
-    -i qtlocation/src/3rdparty/mapbox-gl-native/include/mbgl/util/geometry.hpp \
-       qtlocation/src/3rdparty/mapbox-gl-native/include/mbgl/util/string.hpp   \
-       qtlocation/src/3rdparty/mapbox-gl-native/src/mbgl/gl/stencil_mode.hpp</kbd></pre>
-        <p>
-          Next, if you are installing <span class=
-          "bold"><strong>qtlocation</strong></span>, fix the build with
-          ICU-75:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e "/c++1z/s;^CONFIG;#CONFIG;" \
-    -e "s;c++14;c++17;"            \
-    -i qtlocation/src/3rdparty/mapbox-gl-native/native-gl-native.pro</kbd></pre>
         <p>
           Install each desired component by running the following commands:
         </p>
@@ -262,7 +242,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1043">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1052">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1043">
+  <body class="blfs" id="blfs-r12.1-1052">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1043
+        "phrase">(systemd</span> Edition) - Version r12.1-1052
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1043">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1052">
           Home</a>
         </li>
       </ul>
@@ -204,7 +204,7 @@
           "../general/libwebp.html" title="libwebp-1.4.0">libwebp-1.4.0</a>,
           <a class="xref" href="../general/libxkbcommon.html" title=
           "libxkbcommon-1.7.0">libxkbcommon-1.7.0</a>, <a class="xref" href=
-          "mesa.html" title="Mesa-24.1.1">Mesa-24.1.1</a>, <a class="xref"
+          "mesa.html" title="Mesa-24.1.2">Mesa-24.1.2</a>, <a class="xref"
           href="../general/mtdev.html" title="mtdev-1.1.7">mtdev-1.1.7</a>,
           <a class="xref" href="../general/pcre2.html" title=
           "PCRE2-10.44">pcre2-10.44</a>, <a class="xref" href=
@@ -400,21 +400,6 @@ ln -sfnv qt-5.15.12 /opt/qt5</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">mkdir -pv qtbase/.git</kbd></pre>
         <p>
-          Add another fix for building with GCC-13:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e "/pragma once/a#include &lt;cstdint&gt;"                                      \
-    -i qtlocation/src/3rdparty/mapbox-gl-native/include/mbgl/util/geometry.hpp \
-       qtlocation/src/3rdparty/mapbox-gl-native/include/mbgl/util/string.hpp   \
-       qtlocation/src/3rdparty/mapbox-gl-native/src/mbgl/gl/stencil_mode.hpp</kbd></pre>
-        <p>
-          Add a fix for building with ICU-75:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e "/c++1z/s;^CONFIG;#CONFIG;" \
-    -e "s;c++14;c++17;"            \
-    -i qtlocation/src/3rdparty/mapbox-gl-native/mapbox-gl-native.pro</kbd></pre>
-        <p>
           Fix a security vulnerability in qtbase:
         </p>
         <pre class="userinput"><kbd class=
@@ -435,6 +420,7 @@ ln -sfnv qt-5.15.12 /opt/qt5</kbd></pre>
             -nomake examples                          \
             -no-rpath                                 \
             -journald                                 \
+            -skip qtlocation                          \
             -skip qtwebengine                         &amp;&amp;
 make</kbd></pre>
         <p>
@@ -579,10 +565,19 @@ done</kbd></pre>
           "command"><strong>journald</strong></span> logging system.
         </p>
         <p>
+          <em class="parameter"><code>-skip qtlocation</code></em>: This
+          switch disables building the Qt5 location module. Some dependencies
+          of this module are shipped in the tarball but the copies are
+          outdated, so these dependencies won't build with <a class="xref"
+          href="../general/gcc.html" title="GCC-14.1.0">GCC-14.1.0</a> and
+          <a class="xref" href="../general/icu.html" title=
+          "icu-75.1">ICU-75.1</a>. Nothing in BLFS needs this module.
+        </p>
+        <p>
           <em class="parameter"><code>-skip qtwebengine</code></em>: This
-          switch disables building the QtWebEngine. The BLFS editors have
-          chosen to build <a class="xref" href="qtwebengine.html" title=
-          "QtWebEngine-6.7.2">qtwebengine-6.7.2</a> separately.
+          switch disables building the QtWebEngine. BLFS only supports
+          <a class="xref" href="qtwebengine.html" title=
+          "QtWebEngine-6.7.2">qtwebengine-6.7.2</a> from Qt6.
         </p>
         <p>
           <em class="parameter"><code>-system-harfbuzz</code></em>: This
@@ -1562,7 +1557,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1043">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1052">
           Home</a>
         </li>
       </ul>
