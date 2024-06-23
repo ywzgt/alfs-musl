@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1053">
+  <body class="blfs" id="blfs-r12.1-1059">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1053
+        "phrase">(systemd</span> Edition) - Version r12.1-1059
       </h4>
       <h3>
         Chapter&nbsp;2.&nbsp;Important Information
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1053">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1059">
           Home</a>
         </li>
       </ul>
@@ -491,7 +491,7 @@ systemd-run --user --pty --pipe --wait -G -d \
           <span class="command"><strong>ninja</strong></span> command runs in
           a cgroup, it will use the number of logical cores assigned to the
           cgroup as the <span class="quote">“<span class="quote">system
-          logical core count</span>”</span>. For example, in a cgroup with
+          logical core count.</span>”</span> For example, in a cgroup with
           logical cores 0-3 assigned, <span class=
           "command"><strong>nproc</strong></span> will print <code class=
           "computeroutput">4</code>, and <span class=
@@ -662,10 +662,10 @@ chmod 755 blfs-yes-test1</kbd></pre>
           then provide a <span class="keycap"><strong>y</strong></span> to a
           prompt. This technique could be used in instances when otherwise
           you would have to page through the output of a file (such as a
-          license agreement) and then answer the question of <span class=
-          "quote">“<span class="quote">do you accept the
-          above?</span>”</span>. For this example, another short <span class=
-          "application">Bash</span> script is required:
+          license agreement) and then answer the question of <code class=
+          "computeroutput">do you accept the above?</code>. For this example,
+          another short <span class="application">Bash</span> script is
+          required:
         </p>
         <pre class="userinput"><kbd class=
         "command">cat &gt; blfs-yes-test2 &lt;&lt; "EOF"
@@ -730,8 +730,8 @@ chmod 755 blfs-yes-test2</kbd></pre>
                 the target package cannot be correctly built without the
                 dependency having first been installed, except if the
                 dependency is said to be <span class="quote">“<span class=
-                "quote">runtime</span>”</span>, which means the target
-                package can be built but cannot function without it.
+                "quote">runtime</span>”</span> which means the target package
+                can be built but cannot function without it.
               </p>
               <p>
                 Note that a target package can start to <span class=
@@ -754,14 +754,14 @@ chmod 755 blfs-yes-test2</kbd></pre>
                 <span class="emphasis"><em>Recommended</em></span> means that
                 BLFS strongly suggests this package is installed first
                 (except if said to be <span class="quote">“<span class=
-                "quote">runtime</span>”</span>, see below) for a clean and
+                "quote">runtime,</span>”</span> see below) for a clean and
                 trouble-free build, that won't have issues either during the
                 build process, or at run-time. The instructions in the book
                 assume these packages are installed. Some changes or
                 workarounds may be required if these packages are not
                 installed. If a recommended dependency is said to be
                 <span class="quote">“<span class=
-                "quote">runtime</span>”</span>, it means that BLFS strongly
+                "quote">runtime,</span>”</span> it means that BLFS strongly
                 suggests that this dependency is installed before using the
                 package, for getting full functionality.
               </p>
@@ -778,7 +778,7 @@ chmod 755 blfs-yes-test2</kbd></pre>
                 target package is built. Such additional options are often
                 documented in the BLFS book. If an optional dependency is
                 said to be <span class="quote">“<span class=
-                "quote">runtime</span>”</span>, it means you may install the
+                "quote">runtime,</span>”</span> it means you may install the
                 dependency after installing the target package to support
                 some optional features of the target package if you need
                 these features.
@@ -1517,7 +1517,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1053">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1059">
           Home</a>
         </li>
       </ul>
