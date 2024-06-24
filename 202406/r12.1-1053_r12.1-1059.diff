@@ -1,0 +1,40 @@
+diff --git a/wget-list b/wget-list
+index 85e2cc5f2..8da87065c 100644
+--- a/wget-list
++++ b/wget-list
+@@ -115,7 +115,7 @@ https://github.com/libical/libical/releases/download/v3.0.18/libical-3.0.18.tar.
+ https://ftp.gnu.org/gnu/libidn/libidn-1.42.tar.gz
+ https://ftp.gnu.org/gnu/libidn/libidn2-2.3.7.tar.gz
+ https://downloads.sourceforge.net/iodbc/libiodbc-3.52.15.tar.gz
+-https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.6.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.7.tar.bz2
+ https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
+ https://www.freedesktop.org/software/libmbim/libmbim-1.26.4.tar.xz
+ https://github.com/linux-nvme/libnvme/archive/v1.9/libnvme-1.9.tar.gz
+@@ -483,7 +483,7 @@ https://files.pythonhosted.org/packages/source/p/psutil/psutil-6.0.0.tar.gz
+ https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
+ https://download.gnome.org/sources/pyatspi/2.46/pyatspi-2.46.1.tar.xz
+ https://github.com/pygobject/pycairo/releases/download/v1.18.2/pycairo-1.18.2.tar.gz
+-https://github.com/pygobject/pycairo/releases/download/v1.26.0/pycairo-1.26.0.tar.gz
++https://github.com/pygobject/pycairo/releases/download/v1.26.1/pycairo-1.26.1.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.18.0.tar.gz
+ https://download.gnome.org/sources/pygobject/2.28/pygobject-2.28.7.tar.xz
+@@ -565,7 +565,7 @@ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
+ https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.6.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/rpcbind-1.2.6-vulnerability_fixes-1.patch
+ https://www.samba.org/ftp/rsync/src/rsync-3.3.0.tar.gz
+-https://download.samba.org/pub/samba/stable/samba-4.20.1.tar.gz
++https://download.samba.org/pub/samba/stable/samba-4.20.2.tar.gz
+ https://ftp.gnu.org/gnu/wget/wget-1.24.5.tar.gz
+ https://www.kernel.org/pub/software/network/iw/iw-6.9.tar.xz
+ https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
+@@ -1053,7 +1053,7 @@ https://releases.pagure.org/xmlto/xmlto-0.0.28.tar.bz2
+ https://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/epdfview-gtk3/epdfview-gtk3-20200814.tar.xz
+ https://archive.apache.org/dist/xmlgraphics/fop/source/fop-2.9-src.tar.gz
+-https://www.mupdf.com/downloads/archive/mupdf-1.24.3-source.tar.gz
++https://www.mupdf.com/downloads/archive/mupdf-1.24.4-source.tar.gz
+ https://github.com/dov/paps/releases/download/v0.8.0/paps-0.8.0.tar.gz
+ https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312-source.tar.xz
