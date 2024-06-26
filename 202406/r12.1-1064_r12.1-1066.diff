@@ -1,0 +1,13 @@
+diff --git a/wget-list b/wget-list
+index cb1abf47b..df67e0115 100644
+--- a/wget-list
++++ b/wget-list
+@@ -298,7 +298,7 @@ https://ftp.gnu.org/gnu/gdb/gdb-14.2.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-2.45.2.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-manpages-2.45.2.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.45.2.tar.xz
+-https://ftp.gnu.org/gnu/guile/guile-3.0.9.tar.xz
++https://ftp.gnu.org/gnu/guile/guile-3.0.10.tar.xz
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.7/llvm-18.1.7.src.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-18.src.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-third-party-18.src.tar.xz
