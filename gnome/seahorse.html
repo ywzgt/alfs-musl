@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1090">
+  <body class="blfs" id="blfs-r12.1-1096">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1090
+        "phrase">(systemd</span> Edition) - Version r12.1-1096
       </h4>
       <h3>
         Chapter&nbsp;34.&nbsp;<span class="phrase">GNOME Applications</span>
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1090">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1096">
           Home</a>
         </li>
       </ul>
@@ -106,6 +106,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/seahorse-43.0-upstream_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/seahorse-43.0-upstream_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Seahorse Dependencies
         </h3>
         <h4>
@@ -120,8 +134,10 @@
           "itstool-2.0.7">itstool-2.0.7</a>, <a class="xref" href=
           "../x/libhandy1.html" title="libhandy-1.8.3">libhandy-1.8.3</a>,
           <a class="xref" href="../postlfs/libpwquality.html" title=
-          "libpwquality-1.4.5">libpwquality-1.4.5</a> and <a class="xref"
-          href="libsecret.html" title="libsecret-0.21.4">libsecret-0.21.4</a>
+          "libpwquality-1.4.5">libpwquality-1.4.5</a>, <a class="xref" href=
+          "libsecret.html" title="libsecret-0.21.4">libsecret-0.21.4</a>, and
+          <a class="xref" href="../general/vala.html" title=
+          "Vala-0.56.17">Vala-0.56.17</a>
         </p>
         <h4>
           Recommended
@@ -130,10 +146,9 @@
           <a class="xref" href="../basicnet/libsoup3.html" title=
           "libsoup-3.4.4">libsoup-3.4.4</a>, <a class="xref" href=
           "../postlfs/p11-kit.html" title=
-          "p11-kit-0.25.3">p11-kit-0.25.3</a>, <a class="xref" href=
+          "p11-kit-0.25.3">p11-kit-0.25.3</a>, and <a class="xref" href=
           "../postlfs/openssh.html" title="OpenSSH-9.7p1">OpenSSH-9.7p1</a>
-          (for managing SSH keys) and <a class="xref" href=
-          "../general/vala.html" title="Vala-0.56.17">Vala-0.56.17</a>
+          (for managing SSH keys)
         </p>
         <h4>
           Optional
@@ -155,13 +170,17 @@
           Installation of Seahorse
         </h2>
         <p>
+          At first, apply a patch to build failures triggered by GnuPG-2.4 or
+          newer, and GCC-14 or newer:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../seahorse-43.0-upstream_fixes-1.patch</kbd></pre>
+        <p>
           Install <span class="application">Seahorse</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -i -r 's:"(/apps):"/org/gnome\1:' data/*.xml &amp;&amp;
-
-sed -i "s/'2.3.0'/'2.3.0', '2.4.0'/" meson.build &amp;&amp;
 
 mkdir build &amp;&amp;
 cd    build &amp;&amp;
@@ -267,7 +286,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1090">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1096">
           Home</a>
         </li>
       </ul>
