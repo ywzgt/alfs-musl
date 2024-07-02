@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1099">
+  <body class="blfs" id="blfs-r12.1-1104">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1099
+        "phrase">(systemd</span> Edition) - Version r12.1-1104
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1099">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1104">
           Home</a>
         </li>
       </ul>
@@ -116,9 +116,12 @@
         <p class="optional">
           <a class="xref" href="../basicnet/bind-utils.html" title=
           "BIND Utilities-9.18.27">BIND Utilities-9.18.27</a>, <a class=
-          "xref" href="gnupg.html" title="GnuPG-2.4.5">GnuPG-2.4.5</a> (to
-          authenticate the package), <a class="xref" href=
-          "../general/keyutils.html" title=
+          "xref" href="cracklib.html" title=
+          "CrackLib-2.9.11">CrackLib-2.9.11</a> (<code class=
+          "filename">/usr/share/dict/words</code> referred by some tests),
+          <a class="xref" href="gnupg.html" title=
+          "GnuPG-2.4.5">GnuPG-2.4.5</a> (to authenticate the package),
+          <a class="xref" href="../general/keyutils.html" title=
           "keyutils-1.6.3">keyutils-1.6.3</a>, <a class="xref" href=
           "../server/openldap.html" title=
           "OpenLDAP-2.6.8">OpenLDAP-2.6.8</a>, <a class="xref" href=
@@ -156,9 +159,7 @@
           the following commands:
         </p>
         <pre class="userinput"><kbd class="command">cd src &amp;&amp;
-
-sed -i -e '/eq 0/{N;s/12 //}'    plugins/kdb/db2/libdb2/test/run.test &amp;&amp;
-
+sed -i -e '/eq 0/{N;s/12 //}' plugins/kdb/db2/libdb2/test/run.test &amp;&amp;
 
 ./configure --prefix=/usr            \
             --sysconfdir=/etc        \
@@ -266,7 +267,7 @@ cp -vfr ../doc -T /usr/share/doc/krb5-1.21.3</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm7079" name="idm7079"></a>Kerberos Configuration
+                    <a id="idm7093" name="idm7093"></a>Kerberos Configuration
                   </h5>
                 </div>
               </div>
@@ -439,7 +440,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm7158" name="idm7158"></a>Additional Information
+                    <a id="idm7172" name="idm7172"></a>Additional Information
                   </h5>
                 </div>
               </div>
@@ -1044,7 +1045,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1099">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1104">
           Home</a>
         </li>
       </ul>
