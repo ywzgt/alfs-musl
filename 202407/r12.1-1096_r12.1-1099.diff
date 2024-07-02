@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 2484ed936..cd8ca9534 100644
+--- a/wget-list
++++ b/wget-list
+@@ -22,7 +22,7 @@ https://github.com/p11-glue/p11-kit/releases/download/0.25.3/p11-kit-0.25.3.tar.
+ https://gitlab.freedesktop.org/polkit/polkit/-/archive/124/polkit-124.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+-https://github.com/shadow-maint/shadow/releases/download/4.15.1/shadow-4.15.1.tar.xz
++https://github.com/shadow-maint/shadow/releases/download/4.16.0/shadow-4.16.0.tar.xz
+ https://www.stunnel.org/downloads/archive/5.x/stunnel-5.72.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.15p5.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+@@ -223,7 +223,7 @@ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-ut
+ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.2.tar.gz
+ https://gitlab.com/graphviz/graphviz/-/archive/11.0.0/graphviz-11.0.0.tar.bz2
+ https://download.gnome.org/sources/gtk-doc/1.34/gtk-doc-1.34.0.tar.xz
+-http://www.andre-simon.de/zip/highlight-4.10.tar.bz2
++http://www.andre-simon.de/zip/highlight-4.12.tar.bz2
+ https://github.com/ibus/ibus/archive/1.5.30/ibus-1.5.30.tar.gz
+ https://www.unicode.org/Public/zipped/15.1.0/UCD.zip
+ https://www.imagemagick.org/archive/releases/ImageMagick-7.1.1-28.tar.xz
