@@ -1,0 +1,74 @@
+diff --git a/wget-list b/wget-list
+index eb07d074f..df2cbf4b3 100644
+--- a/wget-list
++++ b/wget-list
+@@ -18,7 +18,7 @@ https://ftp.gnu.org/gnu/nettle/nettle-3.10.tar.gz
+ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_101_RTM/src/nss-3.101.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.101-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.8p1.tar.gz
+-https://github.com/p11-glue/p11-kit/releases/download/0.25.3/p11-kit-0.25.3.tar.xz
++https://github.com/p11-glue/p11-kit/releases/download/0.25.4/p11-kit-0.25.4.tar.xz
+ https://gitlab.freedesktop.org/polkit/polkit/-/archive/124/polkit-124.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+@@ -75,7 +75,7 @@ https://duktape.org/duktape-2.7.0.tar.xz
+ https://github.com/AbiWord/enchant/releases/download/v2.8.1/enchant-2.8.1.tar.gz
+ https://libopenraw.freedesktop.org/download/exempi-2.6.5.tar.xz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+-https://github.com/fmtlib/fmt/archive/10.2.1/fmt-10.2.1.tar.gz
++https://github.com/fmtlib/fmt/archive/11.0.0/fmt-11.0.0.tar.gz
+ https://download.gnome.org/sources/glib/2.80/glib-2.80.3.tar.xz
+ https://download.gnome.org/sources/gobject-introspection/1.80/gobject-introspection-1.80.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+@@ -123,7 +123,7 @@ https://github.com/rrthomas/libpaper/releases/download/v2.2.5/libpaper-2.2.5.tar
+ https://github.com/flatpak/libportal/releases/download/0.7.1/libportal-0.7.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libportal-0.7.1-testsuite_fix-1.patch
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+-https://github.com/Qalculate/libqalculate/releases/download/v5.1.1/libqalculate-5.1.1.tar.gz
++https://github.com/Qalculate/libqalculate/releases/download/v5.2.0/libqalculate-5.2.0.tar.gz
+ https://www.freedesktop.org/software/libqmi/libqmi-1.30.8.tar.xz
+ https://github.com/seccomp/libseccomp/releases/download/v2.5.5/libseccomp-2.5.5.tar.gz
+ https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.1.tar.xz
+@@ -237,7 +237,7 @@ https://anduin.linuxfromscratch.org/BLFS/xdgmime/xdgmime.tar.xz
+ https://ftp.gnu.org/gnu/sharutils/sharutils-4.15.2.tar.xz
+ https://github.com/htacg/tidy-html5/archive/5.8.0/tidy-html5-5.8.0.tar.gz
+ https://ftp.gnu.org/gnu/time/time-1.9.tar.gz
+-https://gitlab.com/OldManProgrammer/unix-tree/-/archive/2.1.1/unix-tree-2.1.1.tar.bz2
++https://gitlab.com/OldManProgrammer/unix-tree/-/archive/2.1.2/unix-tree-2.1.2.tar.bz2
+ https://github.com/lurcher/unixODBC/releases/download/2.3.12/unixODBC-2.3.12.tar.gz
+ https://github.com/flatpak/xdg-dbus-proxy/releases/download/0.1.5/xdg-dbus-proxy-0.1.5.tar.xz
+ https://user-dirs.freedesktop.org/releases/xdg-user-dirs-0.18.tar.gz
+@@ -613,8 +613,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.pa
+ https://bitbucket.org/mutt/mutt/downloads/mutt-2.2.13.tar.gz
+ https://github.com/BuGlessRB/procmail/archive/refs/tags/v3.24/procmail-3.24.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.24-consolidated_fixes-1.patch
+-https://archive.apache.org/dist/httpd/httpd-2.4.59.tar.bz2
+-https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.59-blfs_layout-1.patch
++https://archive.apache.org/dist/httpd/httpd-2.4.61.tar.bz2
++https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.61-blfs_layout-1.patch
+ https://downloads.isc.org/isc/kea/2.6.0/kea-2.6.0.tar.gz
+ https://github.com/proftpd/proftpd/archive/v1.3.8b/proftpd-1.3.8b.tar.gz
+ https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
+@@ -946,7 +946,7 @@ https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-
+ https://distfiles.adelielinux.org/source/a52dec/a52dec-0.8.0.tar.gz
+ https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
+ https://storage.googleapis.com/aom-releases/libaom-3.9.1.tar.gz
+-https://github.com/libass/libass/releases/download/0.17.2/libass-0.17.2.tar.xz
++https://github.com/libass/libass/releases/download/0.17.3/libass-0.17.3.tar.xz
+ https://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libcanberra-0.30-wayland-1.patch
+ https://downloads.sourceforge.net/libcddb/libcddb-1.3.2.tar.bz2
+@@ -964,11 +964,11 @@ https://www.linuxfromscratch.org/patches/blfs/svn/libmusicbrainz-2.1.5-missing-i
+ https://github.com/metabrainz/libmusicbrainz/releases/download/release-5.1.0/libmusicbrainz-5.1.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libmusicbrainz-5.1.0-cmake_fixes-1.patch
+ https://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.xz
+-https://github.com/haasn/libplacebo/archive/v6.338.2/libplacebo-6.338.2.tar.gz
++https://github.com/haasn/libplacebo/archive/v7.349.0/libplacebo-7.349.0.tar.gz
+ https://downloads.sourceforge.net/libquicktime/libquicktime-1.2.4.tar.gz
+ https://github.com/libsndfile/libsamplerate/releases/download/0.2.2/libsamplerate-0.2.2.tar.xz
+ https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz
+-https://github.com/intel/libva/archive/2.21.0/libva-2.21.0.tar.gz
++https://github.com/intel/libva/archive/2.22.0/libva-2.22.0.tar.gz
+ https://gitlab.freedesktop.org/vdpau/libvdpau/-/archive/1.5/libvdpau-1.5.tar.bz2
+ https://github.com/i-rinat/libvdpau-va-gl/archive/v0.4.2/libvdpau-va-gl-0.4.2.tar.gz
+ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
