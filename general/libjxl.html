@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1113">
+  <body class="blfs" id="blfs-r12.1-1120">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1113
+        "phrase">(systemd</span> Edition) - Version r12.1-1120
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1113">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1120">
           Home</a>
         </li>
       </ul>
@@ -186,7 +186,7 @@ gdk-pixbuf-query-loaders --update-cache</kbd></pre>
           is aware of the JPEG-XL loader.
         </p>
         <p>
-          <em class="parameter"><code>-DBUILD_TESTING=OFF</code></em>: This
+          <em class="parameter"><code>-D BUILD_TESTING=OFF</code></em>: This
           parameter disables the tests because they require <a class="ulink"
           href="https://github.com/google/googletest">gtest</a>, which is not
           in BLFS. If you wish to run the tests and have <a class="ulink"
@@ -194,37 +194,37 @@ gdk-pixbuf-query-loaders --update-cache</kbd></pre>
           remove this parameter.
         </p>
         <p>
-          <em class="parameter"><code>-DBUILD_SHARED_LIBS=ON</code></em>:
+          <em class="parameter"><code>-D BUILD_SHARED_LIBS=ON</code></em>:
           This parameter enables building shared versions of the libraries
           instead of static ones.
         </p>
         <p>
-          <em class="parameter"><code>-DJPEGXL_ENABLE_SKCMS=OFF</code></em>:
+          <em class="parameter"><code>-D JPEGXL_ENABLE_SKCMS=OFF</code></em>:
           This parameter disables building support for Skia's <span class=
           "application">skcms</span> since it is not necessary for BLFS
           purposes and requires <a class="ulink" href=
           "https://skia.googlesource.com/skcms/">skcms</a>.
         </p>
         <p>
-          <em class="parameter"><code>-DJPEGXL_ENABLE_SJPEG=OFF</code></em>:
+          <em class="parameter"><code>-D JPEGXL_ENABLE_SJPEG=OFF</code></em>:
           This parameter disables support for SimpleJPEG since it is not
           necessary for BLFS purposes and requires <a class="ulink" href=
           "https://github.com/webmproject/sjpeg">sjpeg</a>.
         </p>
         <p>
-          <em class="parameter"><code>-DJPEGXL_ENABLE_PLUGINS=ON</code></em>:
-          This parameter enables Plugin support, which creates plugins for
-          <a class="xref" href="../xsoft/gimp.html" title=
-          "Gimp-2.10.38">Gimp-2.10.38</a> and <a class="xref" href=
-          "../x/gdk-pixbuf.html" title=
+          <em class="parameter"><code>-D
+          JPEGXL_ENABLE_PLUGINS=ON</code></em>: This parameter enables Plugin
+          support, which creates plugins for <a class="xref" href=
+          "../xsoft/gimp.html" title="Gimp-2.10.38">Gimp-2.10.38</a> and
+          <a class="xref" href="../x/gdk-pixbuf.html" title=
           "gdk-pixbuf-2.42.12">gdk-pixbuf-2.42.12</a> if those packages are
           installed.
         </p>
         <p>
-          <em class=
-          "parameter"><code>-DJPEGXL_INSTALL_JARDIR=/usr/share/java</code></em>:
-          This parameter places the JAR file for JPEG XL support in the
-          correct directory if <a class="xref" href="java.html" title=
+          <em class="parameter"><code>-D
+          JPEGXL_INSTALL_JARDIR=/usr/share/java</code></em>: This parameter
+          places the JAR file for JPEG XL support in the correct directory if
+          <a class="xref" href="java.html" title=
           "Java-22.0.1">Java-22.0.1</a> is installed.
         </p>
       </div>
@@ -430,7 +430,7 @@ gdk-pixbuf-query-loaders --update-cache</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1113">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1120">
           Home</a>
         </li>
       </ul>
