@@ -1,0 +1,71 @@
+diff --git a/wget-list b/wget-list
+index f6bacd0cd..3da8cf410 100644
+--- a/wget-list
++++ b/wget-list
+@@ -4,7 +4,7 @@ https://github.com/cracklib/cracklib/releases/download/v2.9.11/cracklib-2.9.11.t
+ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.3.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.5.tar.bz2
+-https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.5.tar.xz
++https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.6.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.2.tar.bz2
+ https://www.netfilter.org/projects/iptables/files/iptables-1.8.10.tar.xz
+ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.70.tar.xz
+@@ -18,7 +18,7 @@ https://ftp.gnu.org/gnu/nettle/nettle-3.10.tar.gz
+ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_101_RTM/src/nss-3.101.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.101-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.8p1.tar.gz
+-https://github.com/p11-glue/p11-kit/releases/download/0.25.4/p11-kit-0.25.4.tar.xz
++https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz
+ https://gitlab.freedesktop.org/polkit/polkit/-/archive/124/polkit-124.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+@@ -139,10 +139,10 @@ https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.tar.bz2
+ https://dist.libuv.org/dist/v1.48.0/libuv-v1.48.0.tar.gz
+ https://xkbcommon.org/download/libxkbcommon-1.7.0.tar.xz
+-https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.1.tar.xz
++https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.2.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.19/libxmlb-0.3.19.tar.xz
+-https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.41.tar.xz
++https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.42.tar.xz
+ https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.12.1/libwacom-2.12.1.tar.xz
+ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_1/log4cplus-2.1.1.tar.xz
+@@ -221,7 +221,7 @@ https://downloads.sourceforge.net/bogofilter/bogofilter-1.2.5.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.27.tar.xz
+ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.2.tar.gz
+-https://gitlab.com/graphviz/graphviz/-/archive/11.0.0/graphviz-11.0.0.tar.bz2
++https://gitlab.com/graphviz/graphviz/-/archive/12.0.0/graphviz-12.0.0.tar.bz2
+ https://download.gnome.org/sources/gtk-doc/1.34/gtk-doc-1.34.0.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.12.tar.bz2
+ https://github.com/ibus/ibus/archive/1.5.30/ibus-1.5.30.tar.gz
+@@ -454,7 +454,7 @@ https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0210.tar.gz
+ https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+-https://www.php.net/distributions/php-8.3.8.tar.xz
++https://www.php.net/distributions/php-8.3.9.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
+@@ -581,7 +581,7 @@ https://nmap.org/dist/nmap-7.95.tar.bz2
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.5.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.2.5.tar.xz
+-https://github.com/c-ares/c-ares/releases/download/v1.31.0/c-ares-1.31.0.tar.gz
++https://github.com/c-ares/c-ares/releases/download/v1.32.0/c-ares-1.32.0.tar.gz
+ https://curl.se/download/curl-8.8.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.1/geoclue-2.7.1.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.0.tar.xz
+@@ -645,7 +645,7 @@ https://xcb.freedesktop.org/dist/xcb-util-keysyms-0.4.1.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-renderutil-0.3.10.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-wm-0.4.2.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.4.tar.xz
+-https://mesa.freedesktop.org/archive/mesa-24.1.2.tar.xz
++https://mesa.freedesktop.org/archive/mesa-24.1.3.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-2.patch
+ https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ https://invisible-mirror.net/archives/luit/luit-20240102.tgz
