@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1134">
+  <body class="blfs" id="blfs-r12.1-1139">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1134
+        "phrase">(systemd</span> Edition) - Version r12.1-1139
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1134">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1139">
           Home</a>
         </li>
       </ul>
@@ -199,10 +199,8 @@
           installed), <a class="xref" href="../general/iso-codes.html" title=
           "ISO Codes-4.16.0">ISO Codes-4.16.0</a>, <a class="xref" href=
           "../general/libgudev.html" title="libgudev-238">libgudev-238</a>,
-          <a class="xref" href="../general/python-modules.html#pygtk" title=
-          "PyGTK-2.24.0">PyGTK-2.24.0</a> (including the gtk, pango and
-          pangocairo modules) and <a class="xref" href="xdg-utils.html"
-          title="xdg-utils-1.2.1">xdg-utils-1.2.1</a>
+          and <a class="xref" href="xdg-utils.html" title=
+          "xdg-utils-1.2.1">xdg-utils-1.2.1</a>
         </p>
         <h4>
           Optional
@@ -219,11 +217,13 @@
           "libunwind-1.6.2">libunwind-1.6.2</a>, <a class="xref" href=
           "../general/libwebp.html" title="libwebp-1.4.0">libwebp-1.4.0</a>,
           <a class="xref" href="../general/openjpeg2.html" title=
-          "OpenJPEG-2.5.2">OpenJPEG-2.5.2</a>, an <a class="xref" href=
-          "../server/mail.html" title=
-          "Chapter&nbsp;21.&nbsp;Mail Server Software">MTA</a> (that provides
-          a <span class="command"><strong>sendmail</strong></span> program),
-          <a class="xref" href="../general/gtk-doc.html" title=
+          "OpenJPEG-2.5.2">OpenJPEG-2.5.2</a>, <a class="xref" href=
+          "../general/python-modules.html#pygtk" title=
+          "PyGTK-2.24.0">PyGTK-2.24.0</a> (including the gtk, pango and
+          pangocairo modules), an <a class="xref" href="../server/mail.html"
+          title="Chapter&nbsp;21.&nbsp;Mail Server Software">MTA</a> (that
+          provides a <span class="command"><strong>sendmail</strong></span>
+          program), <a class="xref" href="../general/gtk-doc.html" title=
           "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a>, <a class="ulink" href=
           "https://people.freedesktop.org/~hughsient/appstream-glib">appstream-glib</a>,
           <a class="ulink" href=
@@ -265,7 +265,7 @@
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr --sysconfdir=/etc &amp;&amp;
+        "command">./configure --prefix=/usr --sysconfdir=/etc --disable-python &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results (requires an X-Windowed terminal) issue:
@@ -348,8 +348,8 @@ chown -R root:root /usr/share/gimp/2.0/help</kbd></pre>
           not wish to build.
         </p>
         <p>
-          <code class="option">--disable-python</code>: This option is
-          necessary if you have not installed <span class=
+          <em class="parameter"><code>--disable-python</code></em>: This
+          option is necessary if you have not installed <span class=
           "application">PyGTK</span>.
         </p>
         <p>
@@ -666,7 +666,7 @@ chown -R root:root /usr/share/gimp/2.0/help</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1134">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1139">
           Home</a>
         </li>
       </ul>
