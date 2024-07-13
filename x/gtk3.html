@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      GTK+-3.24.42
+      GTK+-3.24.43
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1151">
+  <body class="blfs" id="blfs-r12.1-1177">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1151
+        "phrase">(systemd</span> Edition) - Version r12.1-1177
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1151">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1177">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="gtk3" name="gtk3"></a>GTK+-3.24.42
+      <a id="gtk3" name="gtk3"></a>GTK+-3.24.43
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,13 +77,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.42.tar.xz">
-                https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.42.tar.xz</a>
+                "https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz">
+                https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 78327e792d50d98e450791387b5c5a08
+                Download MD5 sum: 226e372664a7fae749a50a04983ecd8d
               </p>
             </li>
             <li class="listitem">
@@ -93,7 +93,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 240 MB (add 8 MB for tests)
+                Estimated disk space required: 252 MB (add 8 MB for tests)
               </p>
             </li>
             <li class="listitem">
@@ -180,8 +180,8 @@
 cd    build &amp;&amp;
 meson setup --prefix=/usr           \
             --buildtype=release     \
-            -Dman=true              \
-            -Dbroadway_backend=true \
+            -D man=true              \
+            -D broadway_backend=true \
             ..                      &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -237,27 +237,27 @@ ninja</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-Dbroadway_backend=true</code></em>:
+          <em class="parameter"><code>-D broadway_backend=true</code></em>:
           This switch enables the HTML5 GTK backend.
         </p>
         <p>
-          <em class="parameter"><code>-Dman=true</code></em>: This switch
+          <em class="parameter"><code>-D man=true</code></em>: This switch
           allows generating manual pages.
         </p>
         <p>
-          <code class="option">-Dgtk_doc=true</code>: This switch enables
+          <code class="option">-D gtk_doc=true</code>: This switch enables
           building documentation. It requires <a class="xref" href=
           "../general/gtk-doc.html" title=
           "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a>.
         </p>
         <p>
-          <code class="option">-Dtracker3=true</code>: This switch enables
+          <code class="option">-D tracker3=true</code>: This switch enables
           the search function based on Tracker 3 in the GTK+-3 file chooser
           dialog. It requires <a class="xref" href="../gnome/tracker3.html"
           title="Tracker-3.7.3">Tracker-3.7.3</a>.
         </p>
         <p>
-          <code class="option">-Dcloudproviders=true</code>: Use this switch
+          <code class="option">-D cloudproviders=true</code>: Use this switch
           if you have <a class="xref" href=
           "../general/libcloudproviders.html" title=
           "libcloudproviders-0.3.6">libcloudproviders-0.3.6</a> installed and
@@ -627,7 +627,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1151">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1177">
           Home</a>
         </li>
       </ul>

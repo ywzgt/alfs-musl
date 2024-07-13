@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1151">
+  <body class="blfs" id="blfs-r12.1-1177">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1151
+        "phrase">(systemd</span> Edition) - Version r12.1-1177
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -30,9 +30,9 @@
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="gtk3.html" title="GTK+-3.24.42">Next</a>
+          <a accesskey="n" href="gtk3.html" title="GTK+-3.24.43">Next</a>
           <p>
-            GTK+-3.24.42
+            GTK+-3.24.43
           </p>
         </li>
         <li class="up">
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1151">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1177">
           Home</a>
         </li>
       </ul>
@@ -94,13 +94,27 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 285 MB
+                Estimated disk space required: 354 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.9 SBU (using parallelism=4; add 0.1
-                SBU for tests)
+                Estimated build time: 1.0 SBU (using parallelism=4; add less
+                than 0.1 SBU for tests)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/gtk+-2.24.33-consolidated_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/gtk+-2.24.33-consolidated_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -151,10 +165,9 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -e 's#l \(gtk-.*\).sgml#&amp; -o \1#' \
-    -i docs/{faq,tutorial}/Makefile.in      &amp;&amp;
-
-./configure --prefix=/usr --sysconfdir=/etc &amp;&amp;
-
+    -i docs/{faq,tutorial}/Makefile.in                  &amp;&amp;
+patch -p1 -i ../gtk+-2.24.33-consolidated_fixes-1.patch &amp;&amp;
+./configure --prefix=/usr --sysconfdir=/etc             &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make -k
@@ -200,6 +213,12 @@ make</kbd></pre>
           in some of the <code class="filename">Makefile</code>s. This
           <span class="command"><strong>sed</strong></span> fixes the
           <code class="filename">Makefile</code>s.
+        </p>
+        <p>
+          <span class="command"><strong>patch -p1 -i
+          ../gtk+-2.24.33-consolidated_fixes-1.patch ...</strong></span>:
+          This patch allows the package to compile with gcc-14 and also
+          prevents loading modules from the current directory.
         </p>
         <p>
           <code class="option">--enable-gtk-doc</code>: Use this parameter if
@@ -416,9 +435,9 @@ EOF</kbd></pre>
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="gtk3.html" title="GTK+-3.24.42">Next</a>
+          <a accesskey="n" href="gtk3.html" title="GTK+-3.24.43">Next</a>
           <p>
-            GTK+-3.24.42
+            GTK+-3.24.43
           </p>
         </li>
         <li class="up">
@@ -427,7 +446,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1151">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1177">
           Home</a>
         </li>
       </ul>

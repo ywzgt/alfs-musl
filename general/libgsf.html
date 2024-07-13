@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1151">
+  <body class="blfs" id="blfs-r12.1-1177">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1151
+        "phrase">(systemd</span> Edition) - Version r12.1-1177
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1151">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1177">
           Home</a>
         </li>
       </ul>
@@ -104,6 +104,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/libgsf-1.14.52-upstream_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/libgsf-1.14.52-upstream_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           libgsf Dependencies
         </h3>
         <h4>
@@ -137,11 +151,18 @@
           Installation of libgsf
         </h2>
         <p>
+          First, fix building <span class="application">libgsf</span> with
+          libxml2-2.13:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../libgsf-1.14.52-upstream_fixes-1.patch</kbd></pre>
+        <p>
           Install <span class="application">libgsf</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr --disable-static &amp;&amp;
+        "command">autoreconf -fiv                            &amp;&amp;
+./configure --prefix=/usr --disable-static &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
@@ -285,7 +306,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1151">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1177">
           Home</a>
         </li>
       </ul>
