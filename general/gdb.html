@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      GDB-14.2
+      GDB-15.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1177">
+  <body class="blfs" id="blfs-r12.1-1182">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1177
+        "phrase">(systemd</span> Edition) - Version r12.1-1182
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1177">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1182">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="gdb" name="gdb"></a>GDB-14.2
+      <a id="gdb" name="gdb"></a>GDB-15.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -81,12 +81,12 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ftp.gnu.org/gnu/gdb/gdb-14.2.tar.xz">https://ftp.gnu.org/gnu/gdb/gdb-14.2.tar.xz</a>
+                "https://ftp.gnu.org/gnu/gdb/gdb-15.1.tar.xz">https://ftp.gnu.org/gnu/gdb/gdb-15.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 4452f575d09f94276cb0a1e95ecff856
+                Download MD5 sum: 494e3beaac44e66367c3e443a4414529
               </p>
             </li>
             <li class="listitem">
@@ -96,14 +96,14 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 964 MB (add 805 MB for docs;
-                add 654 MB for tests)
+                Estimated disk space required: 806 MB (add 1.0 GB for docs;
+                add 720 MB for tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 1.8 SBU (add 0.4 SBU for docs; add 15
-                SBU for tests; all using parallelism=4)
+                Estimated build time: 0.9 SBU (add 0.4 SBU for docs; see
+                below for tests; all using parallelism=8)
               </p>
             </li>
           </ul>
@@ -158,19 +158,49 @@ make</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">make -C gdb/doc doxy</kbd></pre>
         <p>
-          To test the results, issue:
+          Running the tests is not recommended. The results vary a lot
+          depending on the system architecture and what optional dependencies
+          are installed and what version of gcc is being used. On one system
+          tested, there were 140 unexpected failures (out of over 108,000
+          tests) and on another system there were "only" 32 unexpected
+          failures. The time to run the tests varies from approximately 6 SBU
+          to over 15 SBU when using -j8. This depends on number of tests that
+          time out as will as other factors.
+        </p>
+        <div class="admon tip">
+          <img alt="[Tip]" src="../images/tip.png" />
+          <h3>
+            Tip
+          </h3>
+          <p>
+            With a plain <span class="command"><strong>make
+            check</strong></span>, there are many warning messages about a
+            missing global configuration file. These can be avoided by
+            running <span class="command"><strong>touch
+            global.exp</strong></span> and prepending the <span class=
+            "command"><strong>make check</strong></span> command with
+            <span class=
+            "command"><strong>DEJAGNU=$PWD/global.exp</strong></span>. In
+            addition the tests can be speeded up considerably by using the
+            <span class="command"><strong>make</strong></span> option
+            "-j&lt;N&gt;" where &lt;N&gt; is the number of cores on your
+            system.
+          </p>
+        </div>
+        <p>
+          To test the results anyway, issue:
         </p>
         <pre class="userinput"><kbd class=
         "command">pushd gdb/testsuite &amp;&amp;
 make  site.exp      &amp;&amp;
-echo  "set gdb_test_timeout 120" &gt;&gt; site.exp &amp;&amp;
-runtest
+echo  "set gdb_test_timeout 30" &gt;&gt; site.exp &amp;&amp;
+make check 2&gt;1 | tee gdb-check.log
 popd</kbd></pre>
         <p>
           See <span class="emphasis"><em>gdb/testsuite/README</em></span> and
           <a class="ulink" href=
           "https://sourceware.org/gdb/wiki/TestingGDB">TestingGDB</a>. There
-          are many problems with the test suite:
+          are many additional problems with the test suite:
         </p>
         <div class="itemizedlist">
           <ul>
@@ -185,18 +215,6 @@ popd</kbd></pre>
             <li class="listitem">
               <p>
                 Results depend on installed compilers.
-              </p>
-            </li>
-            <li class="listitem">
-              <p>
-                A test run of the test suite had 51 unexpected failures out
-                of the over 106000 tests.
-              </p>
-            </li>
-            <li class="listitem">
-              <p>
-                On some systems, the gdb.tui test suite will fail if running
-                over SSH.
               </p>
             </li>
             <li class="listitem">
@@ -219,9 +237,9 @@ make -C gdbserver install</kbd></pre>
           user):
         </p>
         <pre class="root"><kbd class=
-        "command">install -d /usr/share/doc/gdb-14.2 &amp;&amp;
+        "command">install -d /usr/share/doc/gdb-15.1 &amp;&amp;
 rm -rf gdb/doc/doxy/xml &amp;&amp;
-cp -Rv gdb/doc/doxy /usr/share/doc/gdb-14.2</kbd></pre>
+cp -Rv gdb/doc/doxy /usr/share/doc/gdb-15.1</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -256,7 +274,7 @@ cp -Rv gdb/doc/doxy /usr/share/doc/gdb-14.2</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/{include,share}/gdb and
-              /usr/share/doc/gdb-14.2</span>
+              /usr/share/doc/gdb-15.1</span>
             </div>
           </div>
         </div>
@@ -371,7 +389,7 @@ cp -Rv gdb/doc/doxy /usr/share/doc/gdb-14.2</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1177">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1182">
           Home</a>
         </li>
       </ul>

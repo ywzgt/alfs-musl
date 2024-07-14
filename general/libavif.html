@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      libavif-1.0.4
+      libavif-1.1.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1177">
+  <body class="blfs" id="blfs-r12.1-1182">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1177
+        "phrase">(systemd</span> Edition) - Version r12.1-1182
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1177">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1182">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="libavif" name="libavif"></a>libavif-1.0.4
+      <a id="libavif" name="libavif"></a>libavif-1.1.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,23 +77,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/AOMediaCodec/libavif/archive/v1.0.4/libavif-1.0.4.tar.gz">
-                https://github.com/AOMediaCodec/libavif/archive/v1.0.4/libavif-1.0.4.tar.gz</a>
+                "https://github.com/AOMediaCodec/libavif/archive/v1.1.0/libavif-1.1.0.tar.gz">
+                https://github.com/AOMediaCodec/libavif/archive/v1.1.0/libavif-1.1.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 8c786fd21f8757ace8cc011401e4d420
+                Download MD5 sum: cc9c6014b4c83a56e1714099b4892d7f
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 11 MB
+                Download size: 13 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 16 MB
+                Estimated disk space required: 21 MB
               </p>
             </li>
             <li class="listitem">
@@ -145,10 +145,11 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      -DAVIF_CODEC_AOM=ON         \
-      -DAVIF_BUILD_GDK_PIXBUF=ON  \
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
+      -D AVIF_CODEC_AOM=SYSYEM     \
+      -D AVIF_BUILD_GDK_PIXBUF=ON  \
+      -D AVIF_LIBYUV=OFF           \
       -G Ninja .. &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -172,32 +173,37 @@ ninja</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-DAVIF_CODEC_AOM=ON</code></em>: This
-          switch enables using the AOM codec. This package is useless without
-          at least one codec built in.
+          <em class="parameter"><code>-D AVIF_CODEC_AOM=SYSTEM</code></em>:
+          This switch enables using the AOM codec. This package is useless
+          without at least one codec built in.
         </p>
         <p>
-          <em class="parameter"><code>-DAVIF_BUILD_GDK_PIXBUF=ON</code></em>:
-          This switch builds the AVIF loader for applications which use
-          gdk-pixbuf. Remove it if you have not installed <a class="xref"
-          href="../x/gdk-pixbuf.html" title=
+          <em class="parameter"><code>-D
+          AVIF_BUILD_GDK_PIXBUF=ON</code></em>: This switch builds the AVIF
+          loader for applications which use gdk-pixbuf. Remove it if you have
+          not installed <a class="xref" href="../x/gdk-pixbuf.html" title=
           "gdk-pixbuf-2.42.12">gdk-pixbuf-2.42.12</a>.
         </p>
         <p>
-          <code class="option">-DAVIF_CODEC_DAV1D=ON</code>: Use this switch
-          if you have installed <a class="ulink" href=
+          <code class="option">-D AVIF_LIBYUV=OFF</code>: Use this switch if
+          you have not installed <a class="ulink" href=
+          "https://chromium.googlesource.com/libyuv/libyuv/">libyuv</a>.
+        </p>
+        <p>
+          <code class="option">-D AVIF_CODEC_DAV1D=SYSTEM</code>: Use this
+          switch if you have installed <a class="ulink" href=
           "https://code.videolan.org/videolan/dav1d">libdav1d</a> and wish to
           use it as a codec.
         </p>
         <p>
-          <code class="option">-DAVIF_CODEC_RAV1E=ON</code>: Use this switch
-          if you have installed <a class="ulink" href=
+          <code class="option">-D AVIF_CODEC_RAV1E=SYSTEM</code>: Use this
+          switch if you have installed <a class="ulink" href=
           "https://github.com/xiph/rav1e">rav1e</a> and wish to use it as a
           codec.
         </p>
         <p>
-          <code class="option">-DAVIF_CODEC_SVT=ON</code>: Use this switch if
-          you have installed <a class="ulink" href=
+          <code class="option">-D AVIF_CODEC_SVT=YSTEM</code>: Use this
+          switch if you have installed <a class="ulink" href=
           "https://gitlab.com/AOMediaCodec/SVT-AV1">svt-av1</a> and wish to
           use it as a codec.
         </p>
@@ -289,7 +295,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1177">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1182">
           Home</a>
         </li>
       </ul>
