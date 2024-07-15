@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1182">
+  <body class="blfs" id="blfs-r12.1-1195">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1182
+        "phrase">(systemd</span> Edition) - Version r12.1-1195
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1182">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1195">
           Home</a>
         </li>
       </ul>
@@ -145,6 +145,13 @@
           Installation of libical
         </h2>
         <p>
+          If <a class="xref" href="icu.html" title="icu-75.1">ICU-75.1</a> is
+          installed, fix an incompatibility with ICU 75 or later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed '/getKeywordValuesForLocale/s/NULL/""/' \
+    -i ../src/libical/icalrecur.c</kbd></pre>
+        <p>
           Install <span class="application">libical</span> by running the
           following commands:
         </p>
@@ -173,7 +180,8 @@ make</kbd></pre>
         <pre class="userinput"><kbd class="command">make docs</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
-          test</strong></span>.
+          test</strong></span>. One test named <code class=
+          "literal">icalrecurtest-r</code> is known to fail.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -373,7 +381,7 @@ cp -vr apidocs/html/* /usr/share/doc/libical-3.0.18/html</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1182">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1195">
           Home</a>
         </li>
       </ul>

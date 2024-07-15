@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1182">
+  <body class="blfs" id="blfs-r12.1-1195">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1182
+        "phrase">(systemd</span> Edition) - Version r12.1-1195
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1182">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1195">
           Home</a>
         </li>
       </ul>
@@ -404,13 +404,13 @@ systemd-run --user --pty -d -G -p LimitCORE=0 ninja check-all</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class=
-          "parameter"><code>-DCMAKE_SKIP_INSTALL_RPATH=ON</code></em>: This
-          switch makes <span class="command"><strong>cmake</strong></span>
-          remove hardcoded library search paths (rpath) when installing a
-          binary executable file or a shared library. This package does not
-          need rpath once it's installed into the standard location, and
-          rpath may sometimes cause unwanted effects or even security issues.
+          <em class="parameter"><code>-D
+          CMAKE_SKIP_INSTALL_RPATH=ON</code></em>: This switch makes
+          <span class="command"><strong>cmake</strong></span> remove
+          hardcoded library search paths (rpath) when installing a binary
+          executable file or a shared library. This package does not need
+          rpath once it's installed into the standard location, and rpath may
+          sometimes cause unwanted effects or even security issues.
         </p>
         <p>
           <em class="parameter"><code>-DLLVM_ENABLE_FFI=ON</code></em>: This
@@ -1994,7 +1994,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1182">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1195">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1182">
+  <body class="blfs" id="blfs-r12.1-1195">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1182
+        "phrase">(systemd</span> Edition) - Version r12.1-1195
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1182">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1195">
           Home</a>
         </li>
       </ul>
@@ -145,12 +145,14 @@
         "command">patch -Np1 -i ../libssh2-1.11.0-security_fixes-1.patch</kbd></pre>
         <p>
           If you want to test the package, exclude the tests requiring a
-          static library:
+          static library, and remove the reference to an insecure algorithm
+          removed since OpenSSH 9.8:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -E '/^DOCKER_TEST/,/^SSHD_TEST/s/test_(auth_keyboard_info.* |hostkey |simple)/$(NOTHING)/' \
     -i tests/Makefile.inc &amp;&amp;
-autoreconf -fi</kbd></pre>
+autoreconf -fi &amp;&amp;
+sed 's/ssh-dss,//' -i tests/openssh_server/sshd_config</kbd></pre>
         <p>
           Install <span class="application">libssh2</span> by running the
           following commands:
@@ -254,7 +256,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1182">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1195">
           Home</a>
         </li>
       </ul>
