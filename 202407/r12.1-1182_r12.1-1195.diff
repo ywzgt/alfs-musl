@@ -1,0 +1,94 @@
+diff --git a/wget-list b/wget-list
+index 68e780780..3dd610d7e 100644
+--- a/wget-list
++++ b/wget-list
+@@ -1,6 +1,6 @@
+ https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20240205.tar.xz
+-https://github.com/lfs-book/make-ca/releases/download/v1.13/make-ca-1.13.tar.xz
+-https://github.com/cracklib/cracklib/releases/download/v2.9.11/cracklib-2.9.11.tar.xz
++https://github.com/lfs-book/make-ca/archive/v1.14/make-ca-1.14.tar.gz
++https://github.com/cracklib/cracklib/releases/download/v2.10.0/cracklib-2.10.0.tar.xz
+ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.3.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.5.tar.bz2
+@@ -15,8 +15,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3
+ https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2
+ https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz
+ https://ftp.gnu.org/gnu/nettle/nettle-3.10.tar.gz
+-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_101_RTM/src/nss-3.101.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.101-standalone-1.patch
++https://archive.mozilla.org/pub/security/nss/releases/NSS_3_102_RTM/src/nss-3.102.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.102-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.8p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz
+ https://gitlab.freedesktop.org/polkit/polkit/-/archive/124/polkit-124.tar.gz
+@@ -149,7 +149,7 @@ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_1/log4cplus-2.1.1.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
+-https://nodejs.org/dist/v20.14.0/node-v20.14.0.tar.xz
++https://nodejs.org/dist/v20.15.1/node-v20.15.1.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.7.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
+ https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.44/pcre2-10.44.tar.bz2
+@@ -246,7 +246,7 @@ https://www.freedesktop.org/software/accountsservice/accountsservice-23.13.9.tar
+ https://downloads.sourceforge.net/acpid2/acpid-2.0.34.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/at/at_3.2.5.orig.tar.gz
+ https://www.kernel.org/pub/linux/daemons/autofs/v5/autofs-5.1.9.tar.xz
+-https://www.kernel.org/pub/linux/bluetooth/bluez-5.76.tar.xz
++https://www.kernel.org/pub/linux/bluetooth/bluez-5.77.tar.xz
+ https://github.com/containers/bubblewrap/releases/download/v0.9.0/bubblewrap-0.9.0.tar.xz
+ https://www.freedesktop.org/software/colord/releases/colord-1.4.7.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/colord-1.4.7-upstream_fixes-1.patch
+@@ -692,7 +692,7 @@ https://download.gnome.org/sources/gtk-vnc/1.3/gtk-vnc-1.3.1.tar.xz
+ https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz
+ https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz
+ https://download.gnome.org/sources/gtksourceview/5.12/gtksourceview-5.12.1.tar.xz
+-https://downloads.sourceforge.net/enlightenment/imlib2-1.12.2.tar.xz
++https://downloads.sourceforge.net/enlightenment/imlib2-1.12.3.tar.xz
+ https://github.com/ksnip/kColorPicker/archive/v0.3.1/kColorPicker-0.3.1.tar.gz
+ https://github.com/ksnip/kImageAnnotator/archive/v0.7.1/kImageAnnotator-0.7.1.tar.gz
+ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
+@@ -714,8 +714,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5
+ https://download.qt.io/archive/qt/6.7/6.7.2/single/qt-everywhere-src-6.7.2.tar.xz
+ https://download.qt.io/official_releases/qt/6.7/6.7.2/submodules/qtwebengine-everywhere-src-6.7.2.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.289/Vulkan-Headers-1.3.289.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.3.289/Vulkan-Loader-1.3.289.tar.gz
++https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.290/Vulkan-Headers-1.3.290.tar.gz
++https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.3.290/Vulkan-Loader-1.3.290.tar.gz
+ https://webkitgtk.org/releases/webkitgtk-2.44.2.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.18.2/xdg-desktop-portal-1.18.2.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.1/xdg-desktop-portal-gtk-1.15.1.tar.xz
+@@ -748,6 +748,7 @@ https://download.kde.org/stable/release-service/24.05.0/src/kdenlive-24.05.0.tar
+ https://download.kde.org/stable/release-service/24.05.0/src/khelpcenter-24.05.0.tar.xz
+ https://download.kde.org/stable/release-service/24.05.0/src/konsole-24.05.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/konsole-24.05.0-scrollbar-1.patch
++https://download.kde.org/stable/release-service/24.05.0/src/konversation-24.05.0.tar.xz
+ https://download.kde.org/stable/release-service/24.05.0/src/libkexiv2-24.05.0.tar.xz
+ https://download.kde.org/stable/plasma/6.0.5/plasma-activities-6.0.5.tar.xz
+ https://download.kde.org/stable/release-service/24.05.0/src/okular-24.05.0.tar.xz
+@@ -891,10 +892,10 @@ https://github.com/lxqt/screengrab/releases/download/2.8.0/screengrab-2.8.0.tar.
+ https://anduin.linuxfromscratch.org/BLFS/abiword/abiword-3.0.5.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/abiword/abiword-docs-3.0.2.tar.gz
+ https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.57.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/24.2.4/libreoffice-24.2.4.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/24.2.4/libreoffice-dictionaries-24.2.4.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/24.2.4/libreoffice-help-24.2.4.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/24.2.4/libreoffice-translations-24.2.4.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/24.2.5/libreoffice-24.2.5.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/24.2.5/libreoffice-dictionaries-24.2.5.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/24.2.5/libreoffice-help-24.2.5.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/24.2.5/libreoffice-translations-24.2.5.2.tar.xz
+ https://download.gnome.org/sources/epiphany/46/epiphany-46.1.tar.xz
+ https://download.kde.org/stable/release-service/24.05.0/src/falkon-24.05.0.tar.xz
+ https://archive.mozilla.org/pub/firefox/releases/128.0esr/source/firefox-128.0esr.source.tar.xz
+@@ -983,7 +984,7 @@ https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.2.1/pipewire-1.2.1.
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.0.tar.xz
+ https://github.com/libsdl-org/sdl12-compat/archive/release-1.2.68/sdl12-compat-release-1.2.68.tar.gz
+-https://www.libsdl.org/release/SDL2-2.30.3.tar.gz
++https://www.libsdl.org/release/SDL2-2.30.5.tar.gz
+ https://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2
+ https://www.surina.net/soundtouch/soundtouch-2.3.3.tar.gz
+ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
