@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -139,14 +139,14 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr   \
-      -DBUILD_TYPE=Release          \
-      -G Ninja                      \
-      -Wno-dev ..                   &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D BUILD_TYPE=Release        \
+      -G Ninja                     \
+      -W no-dev ..                 &amp;&amp;
 ninja</kbd></pre>
         <p>
           The test suite is normally run by <span class=
-          "command"><strong>ninja</strong></span> unless -DRUN_TEST_SUITE=NO
+          "command"><strong>ninja</strong></span> unless -D RUN_TEST_SUITE=NO
           is passed to cmake.
         </p>
         <p>
@@ -223,7 +223,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -135,9 +135,9 @@
         </p>
         <pre class="userinput"><kbd class="command">cd build/cmake &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      -DBUILD_TAB2SPACE=ON        \
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
+      -D BUILD_TAB2SPACE=ON        \
       ../..    &amp;&amp;
 
 make</kbd></pre>
@@ -156,12 +156,12 @@ install -v -m755 tab2space /usr/bin</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-DCMAKE_BUILD_TYPE=Release</code></em>:
-          This switch is used to build the release library without any debug
-          `assert` in the code.
+          <em class="parameter"><code>-D
+          CMAKE_BUILD_TYPE=Release</code></em>: This switch is used to build
+          the release library without any debug `assert` in the code.
         </p>
         <p>
-          <em class="parameter"><code>-DBUILD_TAB2SPACE=ON</code></em>: This
+          <em class="parameter"><code>-D BUILD_TAB2SPACE=ON</code></em>: This
           switch is used to enable building the <span class=
           "command"><strong>tab2space</strong></span> utility.
         </p>
@@ -294,7 +294,7 @@ install -v -m755 tab2space /usr/bin</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

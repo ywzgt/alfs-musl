@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -189,9 +189,9 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      -DCMAKE_INSTALL_DOCDIR=/usr/share/doc/transmission-4.0.6 \
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
+      -D CMAKE_INSTALL_DOCDIR=/usr/share/doc/transmission-4.0.6 \
       .. &amp;&amp;
 
 make</kbd></pre>
@@ -212,28 +212,28 @@ make</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <code class="option">-DENABLE_QT=OFF</code>: This switch disables
+          <code class="option">-D ENABLE_QT=OFF</code>: This switch disables
           building the <span class="application">Qt</span> interface. The
-          default is to build it if (<a class="xref" href="../x/qt5.html"
-          title="Qt-5.15.12">Qt-5.15.12</a> or <a class="xref" href=
-          "../x/qt5-alternate.html" title=
-          "qt-alternate-5.15.12">qt-alternate-5.15.12</a>) or <a class="xref"
-          href="../x/qt6.html" title="Qt-6.7.2">Qt-6.7.2</a> is installed.
+          default is to build it if <a class="xref" href=
+          "../x/qt5-components.html" title=
+          "qt-components-5.15.12">qt-components-5.15.12</a> or <a class=
+          "xref" href="../x/qt6.html" title="Qt-6.7.2">Qt-6.7.2</a> is
+          installed.
         </p>
         <p>
-          <code class="option">-DENABLE_GTK=OFF</code>: This switch disables
+          <code class="option">-D ENABLE_GTK=OFF</code>: This switch disables
           building the GTK-4 interface. The default is to build it if
           <a class="xref" href="../x/gtkmm4.html" title=
           "Gtkmm-4.14.0">Gtkmm-4.14.0</a> is installed.
         </p>
         <p>
-          <code class="option">-DENABLE_WEB=OFF</code>: This switch disables
+          <code class="option">-D ENABLE_WEB=OFF</code>: This switch disables
           building the web client. The default is to build it if <a class=
           "xref" href="../general/nodejs.html" title=
           "Node.js-20.15.1">nodejs-20.15.1</a> is installed.
         </p>
         <p>
-          <code class="option">-DREBUILD_WEB=ON</code>: This switch forces
+          <code class="option">-D REBUILD_WEB=ON</code>: This switch forces
           rebuilding the web client. This option needs <a class="xref" href=
           "../general/nodejs.html" title="Node.js-20.15.1">nodejs-20.15.1</a>
           to be installed as well as an internet connection. The default is
@@ -404,7 +404,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

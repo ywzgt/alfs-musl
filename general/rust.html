@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -116,7 +116,7 @@
         <p>
           The current version of rust's num_cpus crate now recognizes that
           cgroups can be used to restrict which processors it is allowed to
-          use. So if your machine lacks DRAM (typically, less than 2GB DRAM
+          use. So if your machine lacks DRAM (typically, less than 2 GB DRAM
           per core) that might be an alternative to taking CPUs offline. Read
           <a class="xref" href=
           "../introduction/notes-on-building.html#build-in-cgroup" title=
@@ -218,8 +218,8 @@
         <p class="recommended">
           <a class="xref" href="libssh2.html" title=
           "libssh2-1.11.0">libssh2-1.11.0</a>, <a class="xref" href=
-          "llvm.html" title="LLVM-18.1.7">LLVM-18.1.7</a> (built with
-          -DLLVM_LINK_LLVM_DYLIB=ON so that rust can link to system LLVM
+          "llvm.html" title="LLVM-18.1.7">LLVM-18.1.7</a> (built with -D
+          LLVM_LINK_LLVM_DYLIB=ON so that rust can link to system LLVM
           instead of building its shipped version), and <a class="xref" href=
           "../server/sqlite.html" title="SQLite-3.46.0">SQLite-3.46.0</a>
         </p>
@@ -325,7 +325,7 @@ docdir = "share/doc/rustc-1.79.0"
 
 [rust]
 channel = "stable"
-description = "for BLFS r12.1-1238"
+description = "for BLFS r12.1-1258"
 
 # Enable the same optimizations as the official upstream build.
 lto = "thin"
@@ -799,7 +799,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

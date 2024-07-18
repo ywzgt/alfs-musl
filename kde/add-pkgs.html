@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -122,10 +122,10 @@
       <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=$KF6_PREFIX \
-      -DCMAKE_BUILD_TYPE=Release         \
-      -DBUILD_TESTING=OFF                \
-      -Wno-dev .. &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=$KF6_PREFIX \
+      -D CMAKE_BUILD_TYPE=Release         \
+      -D BUILD_TESTING=OFF                \
+      -W no-dev .. &amp;&amp;
 make</kbd></pre>
       <p>
         And as the <code class="systemitem">root</code> user:
@@ -153,7 +153,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

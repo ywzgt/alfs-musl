@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;21.&nbsp;Mail Server Software
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -202,13 +202,13 @@ chown -v postfix:postfix /var/mail</kbd></pre>
               Note
             </h3>
             <p>
-              For all variants of the CCARGS you should ensure that -DNO_NIS
-              is specified so that the build does not attempt to access an
-              rpcsvc header which do not exist in BLFS. If <a class="ulink"
-              href=
+              For all variants of the CCARGS you should ensure that '-D
+              NO_NIS' is specified so that the build does not attempt to
+              access an rpcsvc header which do not exist in BLFS. If
+              <a class="ulink" href=
               "https://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz">
-              Berkeley DB</a> (deprecated) is not installed, -DNO_DB needs to
-              be specified as well.
+              Berkeley DB</a> (deprecated) is not installed, '-D NO_DB' needs
+              to be specified as well.
             </p>
           </div>
           <p>
@@ -219,7 +219,7 @@ chown -v postfix:postfix /var/mail</kbd></pre>
             "envar">AUXLIBS</code> according to the note above:
           </p>
           <pre class="userinput"><kbd class=
-          "command">CCARGS="-DNO_NIS -DNO_DB"
+          "command">CCARGS="-D NO_NIS -D NO_DB"
 AUXLIBS=""</kbd></pre>
           <p>
             Next, the <code class="envar">CCARGS</code> and the <code class=
@@ -235,7 +235,7 @@ AUXLIBS=""</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm60351" name="idm60351"></a>Cyrus-SASL
+                    <a id="idm60122" name="idm60122"></a>Cyrus-SASL
                   </h5>
                 </div>
               </div>
@@ -247,7 +247,7 @@ AUXLIBS=""</kbd></pre>
             </p>
             <pre class="userinput"><kbd class=
             "command">if [ -r /usr/lib/libsasl2.so ]; then
-  CCARGS="$CCARGS -DUSE_SASL_AUTH -DUSE_CYRUS_SASL -I/usr/include/sasl"
+  CCARGS="$CCARGS -D USE_SASL_AUTH -D USE_CYRUS_SASL -I/usr/include/sasl"
   AUXLIBS="$AUXLIBS -lsasl2"
 fi</kbd></pre>
           </div>
@@ -256,7 +256,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm60358" name="idm60358"></a>LMDB
+                    <a id="idm60129" name="idm60129"></a>LMDB
                   </h5>
                 </div>
               </div>
@@ -267,7 +267,7 @@ fi</kbd></pre>
             </p>
             <pre class="userinput"><kbd class=
             "command">if [ -r /usr/lib/liblmdb.so ]; then
-  CCARGS="$CCARGS -DHAS_LMDB"
+  CCARGS="$CCARGS -D HAS_LMDB"
   AUXLIBS="$AUXLIBS -llmdb"
 fi</kbd></pre>
           </div>
@@ -276,7 +276,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm60365" name="idm60365"></a>OpenLDAP
+                    <a id="idm60136" name="idm60136"></a>OpenLDAP
                   </h5>
                 </div>
               </div>
@@ -288,7 +288,7 @@ fi</kbd></pre>
             </p>
             <pre class="userinput"><kbd class=
             "command">if [ -r /usr/lib/libldap.so -a -r /usr/lib/liblber.so ]; then
-  CCARGS="$CCARGS -DHAS_LDAP"
+  CCARGS="$CCARGS -D HAS_LDAP"
   AUXLIBS="$AUXLIBS -lldap -llber"
 fi</kbd></pre>
           </div>
@@ -297,7 +297,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm60372" name="idm60372"></a>Sqlite
+                    <a id="idm60143" name="idm60143"></a>Sqlite
                   </h5>
                 </div>
               </div>
@@ -309,7 +309,7 @@ fi</kbd></pre>
             </p>
             <pre class="userinput"><kbd class=
             "command">if [ -r /usr/lib/libsqlite3.so ]; then
-  CCARGS="$CCARGS -DHAS_SQLITE"
+  CCARGS="$CCARGS -D HAS_SQLITE"
   AUXLIBS="$AUXLIBS -lsqlite3 -lpthread"
 fi</kbd></pre>
           </div>
@@ -318,7 +318,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm60379" name="idm60379"></a>MySQL
+                    <a id="idm60150" name="idm60150"></a>MySQL
                   </h5>
                 </div>
               </div>
@@ -329,7 +329,7 @@ fi</kbd></pre>
             </p>
             <pre class="userinput"><kbd class=
             "command">if [ -r /usr/lib/libmysqlclient.so ]; then
-  CCARGS="$CCARGS -DHAS_MYSQL -I/usr/include/mysql"
+  CCARGS="$CCARGS -D HAS_MYSQL -I/usr/include/mysql"
   AUXLIBS="$AUXLIBS -lmysqlclient -lz -lm"
 fi</kbd></pre>
           </div>
@@ -338,7 +338,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm60386" name="idm60386"></a>PostgreSQL
+                    <a id="idm60157" name="idm60157"></a>PostgreSQL
                   </h5>
                 </div>
               </div>
@@ -350,7 +350,7 @@ fi</kbd></pre>
             </p>
             <pre class="userinput"><kbd class=
             "command">if [ -r /usr/lib/libpq.so ]; then
-  CCARGS="$CCARGS -DHAS_PGSQL -I/usr/include/postgresql"
+  CCARGS="$CCARGS -D HAS_PGSQL -I/usr/include/postgresql"
   AUXLIBS="$AUXLIBS -lpq -lz -lm"
 fi</kbd></pre>
           </div>
@@ -359,7 +359,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm60393" name="idm60393"></a>CDB/TinyCDB
+                    <a id="idm60164" name="idm60164"></a>CDB/TinyCDB
                   </h5>
                 </div>
               </div>
@@ -371,7 +371,7 @@ fi</kbd></pre>
             </p>
             <pre class="screen"><code class="literal">if [ -r <em class=
             "replaceable"><code>&lt;/path/to/CDB&gt;</code></em>/libcdb.a ]; then
-  CCARGS="$CCARGS -DHAS_CDB"
+  CCARGS="$CCARGS -D HAS_CDB"
   AUXLIBS="$AUXLIBS <em class=
 "replaceable"><code>&lt;/path/to/CDB&gt;</code></em>/libcdb.a"
 fi</code></pre>
@@ -381,7 +381,7 @@ fi</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm60403" name="idm60403"></a>StartTLS
+                    <a id="idm60174" name="idm60174"></a>StartTLS
                     Authentication
                   </h5>
                 </div>
@@ -394,7 +394,7 @@ fi</code></pre>
             </p>
             <pre class="userinput"><kbd class=
             "command">if [ -r /usr/lib/libssl.so -a -r /usr/lib/libcrypto.so ]; then
-  CCARGS="$CCARGS -DUSE_TLS -I/usr/include/openssl/"
+  CCARGS="$CCARGS -D USE_TLS -I/usr/include/openssl/"
   AUXLIBS="$AUXLIBS -lssl -lcrypto"
 fi</kbd></pre>
             <p>
@@ -453,7 +453,7 @@ make</kbd></pre>
           documentation will not be installed.
         </p>
         <p>
-          <code class="option">CCARGS="-DNO_EAI ..."</code>: this will turn
+          <code class="option">CCARGS="-D NO_EAI ..."</code>: this will turn
           off SMTPUTF8 support, for example if the rest of your email address
           infrastructure cannot handle UTF-8 email addresses and message
           header values.
@@ -887,7 +887,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

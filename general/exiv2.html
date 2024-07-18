@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -151,14 +151,14 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr  \
-      -DCMAKE_BUILD_TYPE=Release   \
-      -DEXIV2_ENABLE_VIDEO=yes     \
-      -DEXIV2_ENABLE_WEBREADY=yes  \
-      -DEXIV2_ENABLE_CURL=yes      \
-      -DEXIV2_BUILD_SAMPLES=no     \
-      -DCMAKE_SKIP_INSTALL_RPATH=ON \
-      -G Ninja ..                   &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr   \
+      -D CMAKE_BUILD_TYPE=Release    \
+      -D EXIV2_ENABLE_VIDEO=yes      \
+      -D EXIV2_ENABLE_WEBREADY=yes   \
+      -D EXIV2_ENABLE_CURL=yes       \
+      -D EXIV2_BUILD_SAMPLES=no      \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON \
+      -G Ninja ..                    &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
@@ -183,31 +183,31 @@ ninja</kbd></pre>
           sometimes cause unwanted effects or even security issues.
         </p>
         <p>
-          <em class="parameter"><code>-DEXIV2_ENABLE_VIDEO=yes</code></em>:
+          <em class="parameter"><code>-D EXIV2_ENABLE_VIDEO=yes</code></em>:
           This switch enables managing video metadata.
         </p>
         <p>
-          <em class=
-          "parameter"><code>-DEXIV2_ENABLE_WEBREADY=yes</code></em>: This
-          switch enables managing web image metadata.
+          <em class="parameter"><code>-D
+          EXIV2_ENABLE_WEBREADY=yes</code></em>: This switch enables managing
+          web image metadata.
         </p>
         <p>
-          <em class="parameter"><code>-DEXIV2_BUILD_SAMPLES=no</code></em>:
+          <em class="parameter"><code>-D EXIV2_BUILD_SAMPLES=no</code></em>:
           This switch is necessary to suppress building and installing sample
           programs. If the sample programs are built, 34 additional programs
           are installed in /usr/bin.
         </p>
         <p>
-          <em class="parameter"><code>-DEXIV2_ENABLE_CURL=yes</code></em>:
+          <em class="parameter"><code>-D EXIV2_ENABLE_CURL=yes</code></em>:
           This switch is necessary to enable network/http capabilities.
         </p>
         <p>
-          <code class="option">-DEXIV2_ENABLE_INIH=no</code>: Use this switch
-          if you have not installed <a class="xref" href="inih.html" title=
-          "inih-58">inih-58</a>.
+          <code class="option">-D EXIV2_ENABLE_INIH=no</code>: Use this
+          switch if you have not installed <a class="xref" href="inih.html"
+          title="inih-58">inih-58</a>.
         </p>
         <p>
-          <code class="option">-DEXIV2_ENABLE_BROTLI=no</code>: Use this
+          <code class="option">-D EXIV2_ENABLE_BROTLI=no</code>: Use this
           switch if you have not installed <a class="xref" href="brotli.html"
           title="brotli-1.1.0">Brotli-1.1.0</a>.
         </p>
@@ -283,7 +283,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -134,15 +134,15 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr      \
-      -DCMAKE_BUILD_TYPE=Release       \
-      -DCMAKE_SKIP_INSTALL_RPATH=ON    \
-      -Dprotobuf_BUILD_TESTS=OFF       \
-      -Dprotobuf_ABSL_PROVIDER=package \
-      -Dprotobuf_BUILD_LIBUPB=OFF      \
-      -Dprotobuf_BUILD_SHARED_LIBS=ON  \
-      -Dutf8_range_ENABLE_INSTALL=OFF  \
-      -G Ninja ..                      &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr      \
+      -D CMAKE_BUILD_TYPE=Release       \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON    \
+      -D protobuf_BUILD_TESTS=OFF       \
+      -D protobuf_ABSL_PROVIDER=package \
+      -D protobuf_BUILD_LIBUPB=OFF      \
+      -D protobuf_BUILD_SHARED_LIBS=ON  \
+      -D utf8_range_ENABLE_INSTALL=OFF  \
+      -G Ninja ..                       &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does come with a test suite, but it requires <a class=
@@ -175,33 +175,32 @@ ninja install</kbd></pre>
           libutf8_range from the pkg-config files installed by this package.
         </p>
         <p>
-          <em class="parameter"><code>-Dprotobuf_BUILD_TESTS=OFF</code></em>:
-          This parameter prevents the tests from being built because
-          <a class="ulink" href=
+          <em class="parameter"><code>-D
+          protobuf_BUILD_TESTS=OFF</code></em>: This parameter prevents the
+          tests from being built because <a class="ulink" href=
           "https://github.com/google/googletest">gtest</a> is not part of
           BLFS.
         </p>
         <p>
-          <em class=
-          "parameter"><code>-Dprotobuf_ABSL_PROVIDER=package</code></em>:
-          This parameter allows the build system to use the system-installed
-          copy of <a class="xref" href="abseil-cpp.html" title=
+          <em class="parameter"><code>-D
+          protobuf_ABSL_PROVIDER=package</code></em>: This parameter allows
+          the build system to use the system-installed copy of <a class=
+          "xref" href="abseil-cpp.html" title=
           "Abseil-cpp-20240116.2">Abseil-cpp-20240116.2</a>.
         </p>
         <p>
-          <em class=
-          "parameter"><code>-Dprotobuf_BUILD_SHARED_LIBS=ON</code></em>: This
-          parameter enables building shared versions of the libraries
-          provided by this package instead of static versions.
+          <em class="parameter"><code>-D
+          protobuf_BUILD_SHARED_LIBS=ON</code></em>: This parameter enables
+          building shared versions of the libraries provided by this package
+          instead of static versions.
         </p>
         <p>
-          <em class=
-          "parameter"><code>-Dutf8_range_ENABLE_INSTALL=OFF</code></em>: This
-          parameter disables installing the utf8_range static library. The
-          functions provided by this library and used by protobuf is already
-          embedded into <code class="filename">libprotobuf.so</code>, so
-          installing a full copy of the static library is just wasting the
-          disk space.
+          <em class="parameter"><code>-D
+          utf8_range_ENABLE_INSTALL=OFF</code></em>: This parameter disables
+          installing the utf8_range static library. The functions provided by
+          this library and used by protobuf is already embedded into
+          <code class="filename">libprotobuf.so</code>, so installing a full
+          copy of the static library is just wasting the disk space.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -323,7 +322,7 @@ ninja install</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

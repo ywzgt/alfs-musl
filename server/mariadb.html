@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;22.&nbsp;Databases
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -152,7 +152,7 @@
           "PCRE2-10.44">pcre2-10.44</a>, <a class="xref" href=
           "../general/ruby.html" title="Ruby-3.3.4">Ruby-3.3.4</a>, <a class=
           "xref" href="../general/python-modules.html#sphinx" title=
-          "Sphinx-7.4.4">sphinx-7.4.4</a>, <a class="xref" href=
+          "Sphinx-7.4.5">sphinx-7.4.5</a>, <a class="xref" href=
           "../general/unixodbc.html" title=
           "unixODBC-2.3.12">unixODBC-2.3.12</a>, <a class="xref" href=
           "../general/valgrind.html" title=
@@ -198,27 +198,27 @@ useradd -c "MySQL Server" -d /srv/mysql -g mysql -s /bin/false -u 40 mysql</kbd>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_BUILD_TYPE=Release                       \
-      -DCMAKE_INSTALL_PREFIX=/usr                      \
-      -DGRN_LOG_PATH=/var/log/groonga.log              \
-      -DINSTALL_DOCDIR=share/doc/mariadb-10.11.8       \
-      -DINSTALL_DOCREADMEDIR=share/doc/mariadb-10.11.8 \
-      -DINSTALL_MANDIR=share/man                       \
-      -DINSTALL_MYSQLSHAREDIR=share/mysql              \
-      -DINSTALL_MYSQLTESTDIR=share/mysql/test          \
-      -DINSTALL_PAMDIR=lib/security                    \
-      -DINSTALL_PAMDATADIR=/etc/security               \
-      -DINSTALL_PLUGINDIR=lib/mysql/plugin             \
-      -DINSTALL_SBINDIR=sbin                           \
-      -DINSTALL_SCRIPTDIR=bin                          \
-      -DINSTALL_SQLBENCHDIR=share/mysql/bench          \
-      -DINSTALL_SUPPORTFILESDIR=share/mysql            \
-      -DMYSQL_DATADIR=/srv/mysql                       \
-      -DMYSQL_UNIX_ADDR=/run/mysqld/mysqld.sock        \
-      -DWITH_EXTRA_CHARSETS=complex                    \
-      -DWITH_EMBEDDED_SERVER=ON                        \
-      -DSKIP_TESTS=ON                                  \
-      -DTOKUDB_OK=0                                    \
+cmake -D CMAKE_BUILD_TYPE=Release                       \
+      -D CMAKE_INSTALL_PREFIX=/usr                      \
+      -D GRN_LOG_PATH=/var/log/groonga.log              \
+      -D INSTALL_DOCDIR=share/doc/mariadb-10.11.8       \
+      -D INSTALL_DOCREADMEDIR=share/doc/mariadb-10.11.8 \
+      -D INSTALL_MANDIR=share/man                       \
+      -D INSTALL_MYSQLSHAREDIR=share/mysql              \
+      -D INSTALL_MYSQLTESTDIR=share/mysql/test          \
+      -D INSTALL_PAMDIR=lib/security                    \
+      -D INSTALL_PAMDATADIR=/etc/security               \
+      -D INSTALL_PLUGINDIR=lib/mysql/plugin             \
+      -D INSTALL_SBINDIR=sbin                           \
+      -D INSTALL_SCRIPTDIR=bin                          \
+      -D INSTALL_SQLBENCHDIR=share/mysql/bench          \
+      -D INSTALL_SUPPORTFILESDIR=share/mysql            \
+      -D MYSQL_DATADIR=/srv/mysql                       \
+      -D MYSQL_UNIX_ADDR=/run/mysqld/mysqld.sock        \
+      -D WITH_EXTRA_CHARSETS=complex                    \
+      -D WITH_EMBEDDED_SERVER=ON                        \
+      -D SKIP_TESTS=ON                                  \
+      -D TOKUDB_OK=0                                    \
       .. &amp;&amp;
 make</kbd></pre>
         <p>
@@ -262,24 +262,25 @@ mv -v /usr/share/user_map.conf /etc/security</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-DWITH_EMBEDDED_SERVER=ON</code></em>:
+          <em class="parameter"><code>-D WITH_EMBEDDED_SERVER=ON</code></em>:
           This switch enables compiling the embedded server library needed by
           certain applications, such as <span class=
           "application">Amarok</span>.
         </p>
         <p>
-          <em class=
-          "parameter"><code>-DWITH_EXTRA_CHARSETS=complex</code></em>: This
-          switch enables support for the complex character sets.
+          <em class="parameter"><code>-D
+          WITH_EXTRA_CHARSETS=complex</code></em>: This switch enables
+          support for the complex character sets.
         </p>
         <p>
-          <em class="parameter"><code>-DSKIP_TESTS=ON</code></em>: This
+          <em class="parameter"><code>-D SKIP_TESTS=ON</code></em>: This
           switch disables tests for MariaDB Connector/C which are not
           supported without additional setup.
         </p>
         <p>
-          <code class="option">-DWITHOUT_SERVER=ON</code>: Use this switch if
-          you don't want the server and would like to build the client only.
+          <code class="option">-D WITHOUT_SERVER=ON</code>: Use this switch
+          if you don't want the server and would like to build the client
+          only.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -1407,7 +1408,7 @@ mysqld_safe --user=mysql 2&gt;&amp;1 &gt;/dev/null &amp;</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

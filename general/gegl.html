@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -121,8 +121,8 @@
           <a class="xref" href="glib2.html" title=
           "GLib-2.80.4">GLib-2.80.4</a> (with GObject Introspection),
           <a class="xref" href="graphviz.html" title=
-          "Graphviz-12.0.0">Graphviz-12.0.0</a> (build with pango), <a class=
-          "xref" href="python-modules.html#pygments" title=
+          "Graphviz-12.0.0">Graphviz-12.0.0</a> (build with pango and
+          libpng), <a class="xref" href="python-modules.html#pygments" title=
           "Pygments-2.18.0">Pygments-2.18.0</a>, and <a class="xref" href=
           "python-modules.html#pygobject3" title=
           "PyGObject-3.48.2">PyGObject-3.48.2</a>
@@ -132,11 +132,11 @@
         </h4>
         <p class="optional">
           <a class="xref" href="python-modules.html#asciidoc" title=
-          "Asciidoc-10.2.0">asciidoc-10.2.0</a>, <a class="xref" href=
+          "Asciidoc-10.2.1">asciidoc-10.2.1</a>, <a class="xref" href=
           "../x/cairo.html" title="Cairo-1.18.0">Cairo-1.18.0</a>, <a class=
           "xref" href="../multimedia/ffmpeg.html" title=
-          "FFmpeg-7.0.1">FFmpeg-7.0.1</a>, <a class="xref" href=
-          "../x/gdk-pixbuf.html" title=
+          "FFmpeg-7.0.1">FFmpeg-7.0.1</a> (broken as at now), <a class="xref"
+          href="../x/gdk-pixbuf.html" title=
           "gdk-pixbuf-2.42.12">gdk-pixbuf-2.42.12</a>, <a class="xref" href=
           "../gnome/gexiv2.html" title="gexiv2-0.14.3">gexiv2-0.14.3</a>,
           <a class="xref" href="gtk-doc.html" title=
@@ -200,9 +200,7 @@ meson setup --prefix=/usr --buildtype=release -Dlibav=disabled .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           To run the tests, issue: <span class="command"><strong>ninja
-          test</strong></span>. 7 tests in the <code class=
-          "filename">gegl:ff-load-save</code> portion of the test suite are
-          known to fail due to incompatibilities with ffmpeg-6.0.
+          test</strong></span>.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -216,10 +214,12 @@ ninja</kbd></pre>
         <p>
           <code class="option">-Ddocs=true</code>: Build and install
           documentation (requires <a class="xref" href="gtk-doc.html" title=
-          "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a>). <code class=
-          "option">-Dlibav=disabled</code>: Disable FFMpeg support as the
-          build fails with <a class="xref" href="../multimedia/ffmpeg.html"
-          title="FFmpeg-7.0.1">FFmpeg-7.0.1</a>.
+          "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a>).
+        </p>
+        <p>
+          <code class="option">-Dlibav=disabled</code>: Disable FFMpeg
+          support as the build fails with <a class="xref" href=
+          "../multimedia/ffmpeg.html" title="FFmpeg-7.0.1">FFmpeg-7.0.1</a>.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -338,7 +338,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

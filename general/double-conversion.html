@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -127,9 +127,9 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DBUILD_SHARED_LIBS=ON      \
-      -DBUILD_TESTING=ON          \
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D BUILD_SHARED_LIBS=ON      \
+      -D BUILD_TESTING=ON          \
       ..                          &amp;&amp;
 make</kbd></pre>
         <p>
@@ -146,12 +146,12 @@ make</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-DBUILD_SHARED_LIBS=ON</code></em>:
+          <em class="parameter"><code>-D BUILD_SHARED_LIBS=ON</code></em>:
           This switch forces cmake to build a shared version of the library
           instead of the static version.
         </p>
         <p>
-          <em class="parameter"><code>-DBUILD_TESTING=ON</code></em>: This
+          <em class="parameter"><code>-D BUILD_TESTING=ON</code></em>: This
           switch builds the test programs.
         </p>
       </div>
@@ -226,7 +226,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

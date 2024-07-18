@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -222,21 +222,21 @@
         "command">mkdir -vp build &amp;&amp;
 cd        build &amp;&amp;
 
-cmake -DCMAKE_BUILD_TYPE=Release     \
-      -DCMAKE_INSTALL_PREFIX=/usr    \
-      -DCMAKE_SKIP_INSTALL_RPATH=ON  \
-      -DPORT=GTK                     \
-      -DLIB_INSTALL_DIR=/usr/lib     \
-      -DUSE_LIBBACKTRACE=OFF         \
-      -DUSE_LIBHYPHEN=OFF            \
-      -DENABLE_GAMEPAD=OFF           \
-      -DENABLE_MINIBROWSER=ON        \
-      -DENABLE_DOCUMENTATION=OFF     \
-      -DENABLE_WEBDRIVER=OFF         \
-      -DUSE_WOFF2=OFF                \
-      -DUSE_GTK4=OFF                 \
-      -DENABLE_BUBBLEWRAP_SANDBOX=ON \
-      -Wno-dev -G Ninja ..           &amp;&amp;
+cmake -D CMAKE_BUILD_TYPE=Release     \
+      -D CMAKE_INSTALL_PREFIX=/usr    \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON  \
+      -D PORT=GTK                     \
+      -D LIB_INSTALL_DIR=/usr/lib     \
+      -D USE_LIBBACKTRACE=OFF         \
+      -D USE_LIBHYPHEN=OFF            \
+      -D ENABLE_GAMEPAD=OFF           \
+      -D ENABLE_MINIBROWSER=ON        \
+      -D ENABLE_DOCUMENTATION=OFF     \
+      -D ENABLE_WEBDRIVER=OFF         \
+      -D USE_WOFF2=OFF                \
+      -D USE_GTK4=OFF                 \
+      -D ENABLE_BUBBLEWRAP_SANDBOX=ON \
+      -W no-dev -G Ninja ..           &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not have a working test suite. However, there is
@@ -255,27 +255,27 @@ ninja</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">rm -rf * .[^.]* &amp;&amp;
 
-cmake -DCMAKE_BUILD_TYPE=Release     \
-      -DCMAKE_INSTALL_PREFIX=/usr    \
-      -DCMAKE_SKIP_INSTALL_RPATH=ON  \
-      -DPORT=GTK                     \
-      -DLIB_INSTALL_DIR=/usr/lib     \
-      -DUSE_LIBBACKTRACE=OFF         \
-      -DUSE_LIBHYPHEN=OFF            \
-      -DENABLE_GAMEPAD=OFF           \
-      -DENABLE_MINIBROWSER=ON        \
-      -DENABLE_DOCUMENTATION=OFF     \
-      -DUSE_WOFF2=OFF                \
-      -DUSE_GTK4=ON                  \
-      -DENABLE_BUBBLEWRAP_SANDBOX=ON \
-      -Wno-dev -G Ninja ..           &amp;&amp;
+cmake -D CMAKE_BUILD_TYPE=Release     \
+      -D CMAKE_INSTALL_PREFIX=/usr    \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON  \
+      -D PORT=GTK                     \
+      -D LIB_INSTALL_DIR=/usr/lib     \
+      -D USE_LIBBACKTRACE=OFF         \
+      -D USE_LIBHYPHEN=OFF            \
+      -D ENABLE_GAMEPAD=OFF           \
+      -D ENABLE_MINIBROWSER=ON        \
+      -D ENABLE_DOCUMENTATION=OFF     \
+      -D USE_WOFF2=OFF                \
+      -D USE_GTK4=ON                  \
+      -D ENABLE_BUBBLEWRAP_SANDBOX=ON \
+      -W no-dev -G Ninja ..           &amp;&amp;
 ninja</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
         <p>
-          As the <code class="option">-DENABLE_DOCUMENTATION=OFF</code>
+          As the <code class="option">-D ENABLE_DOCUMENTATION=OFF</code>
           option is used, the documentation is not rebuilt nor installed now.
           If you need the documentation, you can either install <a class=
           "xref" href="../general/python-modules.html#gi-docgen" title=
@@ -302,7 +302,7 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
           sometimes cause unwanted effects or even security issues.
         </p>
         <p>
-          <em class="parameter"><code>-DUSE_LIBBACKTRACE=OFF</code></em>:
+          <em class="parameter"><code>-D USE_LIBBACKTRACE=OFF</code></em>:
           This switch disables the use of libbacktrace for dumping a stack
           trace when a crash happens. You need to install <a class="ulink"
           href=
@@ -311,7 +311,7 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
           the switch).
         </p>
         <p>
-          <em class="parameter"><code>-DUSE_LIBHYPHEN=OFF</code></em>: This
+          <em class="parameter"><code>-D USE_LIBHYPHEN=OFF</code></em>: This
           switch disables the default automatic hyphenation implementation.
           You need to install <a class="ulink" href=
           "https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</a>
@@ -319,26 +319,26 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
           the switch).
         </p>
         <p>
-          <em class="parameter"><code>-DENABLE_DOCUMENTATION=OFF</code></em>:
-          This switch disables regenerating the documentation. Remove this
-          switch if you have <a class="xref" href=
-          "../general/python-modules.html#gi-docgen" title=
-          "Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> installed and wish to
+          <em class="parameter"><code>-D
+          ENABLE_DOCUMENTATION=OFF</code></em>: This switch disables
+          regenerating the documentation. Remove this switch if you have
+          <a class="xref" href="../general/python-modules.html#gi-docgen"
+          title="Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> installed and wish to
           regenerate the documentation.
         </p>
         <p>
-          <em class="parameter"><code>-DENABLE_GAMEPAD=OFF</code></em>: This
+          <em class="parameter"><code>-D ENABLE_GAMEPAD=OFF</code></em>: This
           switch disables gamepad support. Remove this switch if you have
           <a class="ulink" href=
           "https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</a>
           installed and wish to enable it.
         </p>
         <p>
-          <em class="parameter"><code>-DENABLE_MINIBROWSER=ON</code></em>:
+          <em class="parameter"><code>-D ENABLE_MINIBROWSER=ON</code></em>:
           This switch enables compiling and installing the MiniBrowser.
         </p>
         <p>
-          <em class="parameter"><code>-DENABLE_WEBDRIVER=OFF</code></em>:
+          <em class="parameter"><code>-D ENABLE_WEBDRIVER=OFF</code></em>:
           This switch disables compiling and installing <span class=
           "command"><strong>WebKitWebDriver</strong></span>. We use it for
           the GTK-3 build because the <span class=
@@ -347,12 +347,12 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
           option if you don't plan to build this package with GTK-4.
         </p>
         <p>
-          <em class=
-          "parameter"><code>-DENABLE_BUBBLEWRAP_SANDBOX=ON</code></em>: This
-          switch enables the Bubblewrap sandbox, which helps mitigate the
-          impact of most security vulnerabilities in this package. Change
-          this switch to OFF if you do not want to install <a class="xref"
-          href="../general/bubblewrap.html" title=
+          <em class="parameter"><code>-D
+          ENABLE_BUBBLEWRAP_SANDBOX=ON</code></em>: This switch enables the
+          Bubblewrap sandbox, which helps mitigate the impact of most
+          security vulnerabilities in this package. Change this switch to OFF
+          if you do not want to install <a class="xref" href=
+          "../general/bubblewrap.html" title=
           "Bubblewrap-0.9.0">bubblewrap-0.9.0</a>, <a class="xref" href=
           "../general/libseccomp.html" title=
           "libseccomp-2.5.5">libseccomp-2.5.5</a>, or <a class="xref" href=
@@ -361,30 +361,30 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
           may put you at risk.
         </p>
         <p>
-          <code class="option">-DUSE_SYSTEM_MALLOC=ON</code>: This switch
+          <code class="option">-D USE_SYSTEM_MALLOC=ON</code>: This switch
           enables building against the system installed <span class=
           "application">malloc</span>.
         </p>
         <p>
-          <code class="option">-DENABLE_GEOLOCATION=OFF</code>: Use this
+          <code class="option">-D ENABLE_GEOLOCATION=OFF</code>: Use this
           switch if you don't want to install <a class="xref" href=
           "../basicnet/geoclue2.html" title=
           "GeoClue-2.7.1">GeoClue-2.7.1</a>.
         </p>
         <p>
-          <code class="option">-DUSE_AVIF=OFF</code>: Use this switch if you
+          <code class="option">-D USE_AVIF=OFF</code>: Use this switch if you
           don't want to install <a class="xref" href=
           "../general/libavif.html" title="libavif-1.1.0">libavif-1.1.0</a>.
           Note that you will not have support for AVIF images if you do this.
         </p>
         <p>
-          <code class="option">-DUSE_WOFF2=ON</code>: Use this switch if the
+          <code class="option">-D USE_WOFF2=ON</code>: Use this switch if the
           optional package <a class="xref" href="../general/woff2.html"
           title="woff2-1.0.2">WOFF2-1.0.2</a> is installed. This adds
           additional support for fonts.
         </p>
         <p>
-          <code class="option">-DUSE_JPEGXL=OFF</code>: Use this switch if
+          <code class="option">-D USE_JPEGXL=OFF</code>: Use this switch if
           the recommended package <a class="xref" href=
           "../general/libjxl.html" title="libjxl-0.10.3">libjxl-0.10.3</a> is
           not installed. Note that you will not have support for JPEG XL
@@ -533,7 +533,7 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

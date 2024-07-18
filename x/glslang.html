@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -127,11 +127,11 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr     \
-      -DCMAKE_BUILD_TYPE=Release      \
-      -DALLOW_EXTERNAL_SPIRV_TOOLS=ON \
-      -DBUILD_SHARED_LIBS=ON          \
-      -DGLSLANG_TESTS=ON              \
+cmake -D CMAKE_INSTALL_PREFIX=/usr     \
+      -D CMAKE_BUILD_TYPE=Release      \
+      -D ALLOW_EXTERNAL_SPIRV_TOOLS=ON \
+      -D BUILD_SHARED_LIBS=ON          \
+      -D GLSLANG_TESTS=ON              \
       -G Ninja .. &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -148,20 +148,20 @@ ninja</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class=
-          "parameter"><code>-DALLOW_EXTERNAL_SPIRV_TOOLS=ON</code></em>: This
-          switch allows the build system to use the system-installed copy of
-          <a class="xref" href="../general/spirv-tools.html" title=
+          <em class="parameter"><code>-D
+          ALLOW_EXTERNAL_SPIRV_TOOLS=ON</code></em>: This switch allows the
+          build system to use the system-installed copy of <a class="xref"
+          href="../general/spirv-tools.html" title=
           "SPIRV-Tools-1.3.283.0">SPIRV-Tools-1.3.283.0</a>, instead of
           downloading and installing it's own copy.
         </p>
         <p>
-          <em class="parameter"><code>-DBUILD_SHARED_LIBS=ON</code></em>:
+          <em class="parameter"><code>-D BUILD_SHARED_LIBS=ON</code></em>:
           This switch builds shared versions of the libraries, and does not
           install static versions of them.
         </p>
         <p>
-          <em class="parameter"><code>-DGLSLANG_TESTS=ON</code></em>: This
+          <em class="parameter"><code>-D GLSLANG_TESTS=ON</code></em>: This
           switch builds the tests for the package.
         </p>
       </div>
@@ -281,7 +281,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

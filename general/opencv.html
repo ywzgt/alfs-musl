@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -217,16 +217,16 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr      \
-      -DCMAKE_BUILD_TYPE=Release       \
-      -DENABLE_CXX11=ON                \
-      -DBUILD_PERF_TESTS=OFF           \
-      -DWITH_XINE=ON                   \
-      -DBUILD_TESTS=OFF                \
-      -DENABLE_PRECOMPILED_HEADERS=OFF \
-      -DCMAKE_SKIP_INSTALL_RPATH=ON    \
-      -DBUILD_WITH_DEBUG_INFO=OFF      \
-      -Wno-dev  ..                     &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr      \
+      -D CMAKE_BUILD_TYPE=Release       \
+      -D ENABLE_CXX11=ON                \
+      -D BUILD_PERF_TESTS=OFF           \
+      -D WITH_XINE=ON                   \
+      -D BUILD_TESTS=OFF                \
+      -D ENABLE_PRECOMPILED_HEADERS=OFF \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON    \
+      -D BUILD_WITH_DEBUG_INFO=OFF      \
+      -W no-dev  ..                     &amp;&amp;
 make</kbd></pre>
         <p>
           The package does not come with a test suite.
@@ -250,19 +250,19 @@ make</kbd></pre>
           sometimes cause unwanted effects or even security issues.
         </p>
         <p>
-          <em class="parameter"><code>-DWITH_XINE=ON</code></em>: This option
-          instructs the make procedure to use <a class="xref" href=
+          <em class="parameter"><code>-D WITH_XINE=ON</code></em>: This
+          option instructs the make procedure to use <a class="xref" href=
           "../multimedia/xine-lib.html" title=
           "xine-lib-1.2.13">xine-lib-1.2.13</a>.
         </p>
         <p>
-          <em class=
-          "parameter"><code>-DENABLE_PRECOMPILED_HEADERS=OFF</code></em>:
-          This option is needed for compatibility with gcc-6.1 and later.
+          <em class="parameter"><code>-D
+          ENABLE_PRECOMPILED_HEADERS=OFF</code></em>: This option is needed
+          for compatibility with gcc-6.1 and later.
         </p>
         <p>
-          <code class=
-          "option">-DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.10.0/modules</code>:
+          <code class="option">-D
+          OPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.10.0/modules</code>:
           instructs the build system to build additional modules.
         </p>
       </div>
@@ -321,7 +321,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

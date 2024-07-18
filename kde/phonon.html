@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;29.&nbsp;Introduction to KDE
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -145,10 +145,10 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      -DPHONON_BUILD_QT5=OFF      \
-      -Wno-dev .. &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
+      -D PHONON_BUILD_QT5=OFF      \
+      -W no-dev .. &amp;&amp;
 make</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -160,12 +160,12 @@ make</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-DCMAKE_BUILD_TYPE=Release</code></em>:
-          This switch is used to apply higher level of the compiler
-          optimizations.
+          <em class="parameter"><code>-D
+          CMAKE_BUILD_TYPE=Release</code></em>: This switch is used to apply
+          higher level of the compiler optimizations.
         </p>
         <p>
-          <em class="parameter"><code>-DPHONON_BUILD_QT5=OFF</code></em>: By
+          <em class="parameter"><code>-D PHONON_BUILD_QT5=OFF</code></em>: By
           default both the Qt5 and Qt6 versions of this package are built. We
           currently just want the Qt6 version, since nothing in BLFS uses the
           Qt5 version.
@@ -217,7 +217,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

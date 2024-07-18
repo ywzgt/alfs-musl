@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -170,16 +170,16 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr    \
-      -DSYSCONF_INSTALL_DIR=/etc     \
-      -DENABLE_VALA_BINDINGS=ON      \
-      -DENABLE_INSTALLED_TESTS=ON    \
-      -DWITH_OPENLDAP=OFF            \
-      -DWITH_KRB5=OFF                \
-      -DENABLE_INTROSPECTION=ON      \
-      -DENABLE_GTK_DOC=OFF           \
-      -DWITH_LIBDB=OFF               \
-      -Wno-dev -G Ninja ..           &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr    \
+      -D SYSCONF_INSTALL_DIR=/etc     \
+      -D ENABLE_VALA_BINDINGS=ON      \
+      -D ENABLE_INSTALLED_TESTS=ON    \
+      -D WITH_OPENLDAP=OFF            \
+      -D WITH_KRB5=OFF                \
+      -D ENABLE_INTROSPECTION=ON      \
+      -D ENABLE_GTK_DOC=OFF           \
+      -D WITH_LIBDB=OFF               \
+      -W no-dev -G Ninja ..           &amp;&amp;
 ninja</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -195,19 +195,19 @@ ninja</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-DENABLE_VALA_BINDINGS=ON</code></em>:
+          <em class="parameter"><code>-D ENABLE_VALA_BINDINGS=ON</code></em>:
           This switch enables building the Vala bindings. Remove it if you
           don't have <a class="xref" href="../general/vala.html" title=
           "Vala-0.56.17">Vala-0.56.17</a> installed.
         </p>
         <p>
-          <em class="parameter"><code>-DENABLE_GTK_DOC=OFF</code></em>: This
+          <em class="parameter"><code>-D ENABLE_GTK_DOC=OFF</code></em>: This
           switch disables building the API documentation. It is broken for
           this package due to the use of a long deprecated gtk-doc program
           that is no longer available.
         </p>
         <p>
-          <em class="parameter"><code>-DWITH_LIBDB=OFF</code></em>: This
+          <em class="parameter"><code>-D WITH_LIBDB=OFF</code></em>: This
           switch allows building this package without <a class="ulink" href=
           "https://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz">Berkeley
           DB</a> (deprecated). <a class="xref" href="../server/sqlite.html"
@@ -215,7 +215,7 @@ ninja</kbd></pre>
           operation.
         </p>
         <p>
-          <code class="option">-DENABLE_OAUTH2_WEBKITGTK4=OFF</code>: Use
+          <code class="option">-D ENABLE_OAUTH2_WEBKITGTK4=OFF</code>: Use
           this switch if you did not build <a class="xref" href=
           "../x/webkitgtk.html" title="WebKitGTK-2.44.2">WebKitGTK-2.44.2</a>
           with GTK-4.
@@ -465,7 +465,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

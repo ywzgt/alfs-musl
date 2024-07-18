@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -150,7 +150,7 @@
           href="../general/libtiff.html" title=
           "libtiff-4.6.0">libtiff-4.6.0</a>, <a class="xref" href=
           "../general/python-modules.html#sphinx" title=
-          "Sphinx-7.4.4">sphinx-7.4.4</a> (to build html documentation), and
+          "Sphinx-7.4.5">sphinx-7.4.5</a> (to build html documentation), and
           <a class="xref" href="../general/woff2.html" title=
           "woff2-1.0.2">WOFF2-1.0.2</a>
         </p>
@@ -180,8 +180,8 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
       -Wno-dev .. &amp;&amp;
 make</kbd></pre>
         <p>
@@ -208,16 +208,16 @@ make</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-DCMAKE_BUILD_TYPE=Release</code></em>:
-          This switch is used to create an optimized release without debug
-          information.
+          <em class="parameter"><code>-D
+          CMAKE_BUILD_TYPE=Release</code></em>: This switch is used to create
+          an optimized release without debug information.
         </p>
         <p>
-          <em class="parameter"><code>-Wno-dev</code></em>: This switch is
+          <em class="parameter"><code>-W no-dev</code></em>: This switch is
           used to suppress warnings intended for the package's developers.
         </p>
         <p>
-          <code class="option">-DENABLE_X11=ON</code>: use an X11 backend
+          <code class="option">-D ENABLE_X11=ON</code>: use an X11 backend
           instead of GDK3 (gtk+-3) for basic Xorg graphics.
         </p>
       </div>
@@ -338,7 +338,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

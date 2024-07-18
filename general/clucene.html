@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -151,8 +151,8 @@ sed -i '/Misc.h/a #include &lt;ctime&gt;' src/core/CLucene/document/DateTools.cp
 mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DBUILD_CONTRIBS_LIB=ON .. &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D BUILD_CONTRIBS_LIB=ON .. &amp;&amp;
 make</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -164,7 +164,7 @@ make</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-DBUILD_CONTRIBS_LIB=ON</code></em>:
+          <em class="parameter"><code>-D BUILD_CONTRIBS_LIB=ON</code></em>:
           This cmake variable enables building the CLucene contribs library
           necessary for running applications that use language specific text
           analyzers like LibreOffice for example.
@@ -215,7 +215,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

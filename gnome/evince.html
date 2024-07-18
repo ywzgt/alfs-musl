@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;34.&nbsp;<span class="phrase">GNOME Applications</span>
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -184,7 +184,7 @@ cd    build &amp;&amp;
 CPPFLAGS+=" -I/opt/texlive/2024/include" \
 meson setup --prefix=/usr          \
             --buildtype=release    \
-            -Dgtk_doc=false        \
+            -D gtk_doc=false       \
             --wrap-mode=nodownload \
             ..                     &amp;&amp;
 ninja</kbd></pre>
@@ -196,7 +196,7 @@ ninja</kbd></pre>
         </p>
         <pre class="userinput"><kbd class=
         "command">sed "/docs_dir/s@\$@ / 'evince-46.3'@" -i ../help/meson.build &amp;&amp;
-meson configure -Dgtk_doc=true                                &amp;&amp;
+meson configure -D gtk_doc=true                               &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not have a working test suite.
@@ -241,11 +241,11 @@ ninja</kbd></pre>
         <p>
           <em class="parameter"><code>--wrap-mode=nodownload</code></em>:
           This switch disables fetching any dependency: the build system
-          tries to fetch gi-docgen even if <em class=
-          "parameter"><code>-Dgtk_doc=false</code></em> is passed.
+          tries to fetch gi-docgen even if <em class="parameter"><code>-D
+          gtk_doc=false</code></em> is passed.
         </p>
         <p>
-          <em class="parameter"><code>-Dgtk_doc=false</code></em>: Allow
+          <em class="parameter"><code>-D gtk_doc=false</code></em>: Allow
           building this package without <a class="xref" href=
           "../general/python-modules.html#gi-docgen" title=
           "Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> installed. If you have
@@ -256,30 +256,30 @@ ninja</kbd></pre>
           reset this option.
         </p>
         <p>
-          <code class="option">-Dgspell=false</code>: This switch turns off
+          <code class="option">-D gspell=false</code>: This switch turns off
           support for the spell checking plugin.
         </p>
         <p>
-          <code class="option">-Dintrospection=false</code>: Use this option
+          <code class="option">-D introspection=false</code>: Use this option
           if you don't have built <a class="xref" href=
           "../general/glib2.html" title="GLib-2.80.4">GLib-2.80.4</a> with
           GObject Introspection and don't wish to have introspection support
           built into Evince.
         </p>
         <p>
-          <code class="option">-Dnautilus=false</code>: This switch disables
+          <code class="option">-D nautilus=false</code>: This switch disables
           building the <span class="application">Nautilus</span> Plugin. Use
           this switch if <span class="application">Nautilus</span> is not
           installed.
         </p>
         <p>
-          <code class="option">-Dkeyring=false</code>: This switch disables
+          <code class="option">-D keyring=false</code>: This switch disables
           the use of <span class="application">libsecret</span>. Use this
           switch if <span class="application">libsecret</span> is not
           installed.
         </p>
         <p>
-          <code class="option">-Dps=enabled</code>: Use this switch if
+          <code class="option">-D ps=enabled</code>: Use this switch if
           <span class="application">libspectre</span> is installed and you
           want to view PostScript files with <span class=
           "application">Evince</span>.
@@ -388,7 +388,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

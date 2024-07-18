@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -149,8 +149,7 @@
           installed, fix an incompatibility with ICU 75 or later:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed '/getKeywordValuesForLocale/s/NULL/""/' \
-    -i ../src/libical/icalrecur.c</kbd></pre>
+        "command">sed -i '/getKeywordValuesForLocale/s/NULL/""/' src/libical/icalrecur.c</kbd></pre>
         <p>
           Install <span class="application">libical</span> by running the
           following commands:
@@ -381,7 +380,7 @@ cp -vr apidocs/html/* /usr/share/doc/libical-3.0.18/html</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>

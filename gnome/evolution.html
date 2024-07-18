@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1238">
+  <body class="blfs" id="blfs-r12.1-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1238
+        "phrase">(systemd</span> Edition) - Version r12.1-1258
       </h4>
       <h3>
         Chapter&nbsp;34.&nbsp;<span class="phrase">GNOME Applications</span>
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
@@ -177,14 +177,14 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DSYSCONF_INSTALL_DIR=/etc  \
-      -DENABLE_INSTALLED_TESTS=ON \
-      -DENABLE_PST_IMPORT=OFF     \
-      -DENABLE_YTNEF=OFF          \
-      -DENABLE_CONTACT_MAPS=OFF   \
-      -DENABLE_MARKDOWN=OFF       \
-      -DENABLE_WEATHER=ON         \
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D SYSCONF_INSTALL_DIR=/etc  \
+      -D ENABLE_INSTALLED_TESTS=ON \
+      -D ENABLE_PST_IMPORT=OFF     \
+      -D ENABLE_YTNEF=OFF          \
+      -D ENABLE_CONTACT_MAPS=OFF   \
+      -D ENABLE_MARKDOWN=OFF       \
+      -D ENABLE_WEATHER=ON         \
       -G Ninja .. &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -200,42 +200,42 @@ ninja</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-DENABLE_YTNEF=OFF</code></em>: This
+          <em class="parameter"><code>-D ENABLE_YTNEF=OFF</code></em>: This
           switch is used to disable the yTNEF library usage because
           <span class="application">libytnef</span> is not part of BLFS.
         </p>
         <p>
-          <em class="parameter"><code>-DENABLE_PST_IMPORT=OFF</code></em>:
+          <em class="parameter"><code>-D ENABLE_PST_IMPORT=OFF</code></em>:
           This switch is used to disable the pst-import plugin because
           <span class="application">libpst</span> is not part of BLFS.
         </p>
         <p>
-          <em class="parameter"><code>-DENABLE_CONTACT_MAPS=OFF</code></em>:
+          <em class="parameter"><code>-D ENABLE_CONTACT_MAPS=OFF</code></em>:
           This switch disables building the Contact Maps plugin. Remove this
           switch if you have installed the necessary dependencies and wish to
           build the Contact Maps plugin.
         </p>
         <p>
-          <em class="parameter"><code>-DENABLE_MARKDOWN=OFF</code></em>: This
-          switch allows building without <a class="ulink" href=
+          <em class="parameter"><code>-D ENABLE_MARKDOWN=OFF</code></em>:
+          This switch allows building without <a class="ulink" href=
           "https://github.com/commonmark/cmark">cmark</a>. Remove this switch
           if you need markdown support and you have installed the necessary
           dependency.
         </p>
         <p>
-          <em class="parameter"><code>-DENABLE_WEATHER=ON</code></em>: This
+          <em class="parameter"><code>-D ENABLE_WEATHER=ON</code></em>: This
           switch allows building against <a class="xref" href=
           "libgweather.html" title="libgweather-4.4.2">libgweather-4.4.2</a>.
         </p>
         <p>
-          <code class="option">-DWITH_HELP=OFF</code>: This switch disables
+          <code class="option">-D WITH_HELP=OFF</code>: This switch disables
           building the manual of this package. Use this switch if you have
           not installed <a class="xref" href="../pst/itstool.html" title=
           "itstool-2.0.7">itstool-2.0.7</a>.
         </p>
         <p>
-          <code class="option">-DWITH_OPENLDAP=OFF</code>: Use this switch if
-          you have not installed <a class="xref" href=
+          <code class="option">-D WITH_OPENLDAP=OFF</code>: Use this switch
+          if you have not installed <a class="xref" href=
           "../server/openldap.html" title=
           "OpenLDAP-2.6.8">OpenLDAP-2.6.8</a>.
         </p>
@@ -317,7 +317,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1238">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1258">
           Home</a>
         </li>
       </ul>
