@@ -1,0 +1,61 @@
+diff --git a/wget-list b/wget-list
+index 7c9052eb9..99b70ecaa 100644
+--- a/wget-list
++++ b/wget-list
+@@ -58,7 +58,7 @@ https://github.com/vim/vim/archive/v9.1.0041/vim-9.1.0041.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.13.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+-https://download.qemu.org/qemu-9.0.1.tar.xz
++https://download.qemu.org/qemu-9.0.2.tar.xz
+ https://github.com/abseil/abseil-cpp/releases/download/20240116.2/abseil-cpp-20240116.2.tar.gz
+ https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.3.tar.xz
+ https://archive.apache.org/dist/apr/apr-1.7.4.tar.bz2
+@@ -106,8 +106,6 @@ https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+ https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.2.0/downloads//libdisplay-info-0.2.0.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.0.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.50.tar.bz2
+-https://download.gnome.org/sources/libgrss/0.7/libgrss-0.7.0.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libgrss-0.7.0-bugfixes-2.patch
+ https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.52.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libgsf-1.14.52-upstream_fixes-1.patch
+ https://download.gnome.org/sources/libgudev/238/libgudev-238.tar.xz
+@@ -463,11 +461,11 @@ https://www.python.org/ftp/python/doc/2.7.18/python-2.7.18-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tar.xz
+ https://www.python.org/ftp/python/doc/3.12.4/python-3.12.4-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+-https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.0.tar.gz
++https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.2.0.tar.gz
+ https://github.com/psf/cachecontrol/archive/v0.14.0/cachecontrol-0.14.0.tar.gz
+ https://github.com/cython/cython/releases/download/3.0.10/Cython-3.0.10.tar.gz
+-https://files.pythonhosted.org/packages/source/p/python-dbusmock/python-dbusmock-0.31.2.tar.gz
++https://files.pythonhosted.org/packages/source/p/python-dbusmock/python-dbusmock-0.32.1.tar.gz
+ https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.3.2.tar.gz
+ https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.21.2.tar.gz
+ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.gz
+@@ -500,7 +498,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/requests-2.32.3-use_system_cer
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+ https://github.com/getsentry/sentry-python/releases/download/2.7.1/sentry_sdk-2.7.1.tar.gz
+ https://files.pythonhosted.org/packages/source/s/six/six-1.16.0.tar.gz
+-https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-7.4.4.tar.gz
++https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-7.4.5.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-2.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-0.7.16.tar.gz
+ https://files.pythonhosted.org/packages/source/a/attrs/attrs-23.2.0.tar.gz
+@@ -616,7 +614,6 @@ https://archive.apache.org/dist/httpd/httpd-2.4.61.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.61-blfs_layout-1.patch
+ https://downloads.isc.org/isc/kea/2.6.0/kea-2.6.0.tar.gz
+ https://github.com/proftpd/proftpd/archive/v1.3.8b/proftpd-1.3.8b.tar.gz
+-https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
+ https://www.dovecot.org/releases/2.3/dovecot-2.3.21.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/dovecot-2.3.21-openssl3_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/dovecot-2.3.21-security_fix-1.patch
+@@ -776,6 +773,7 @@ https://download.gnome.org/sources/libshumate/1.2/libshumate-1.2.2.tar.xz
+ https://download.gnome.org/sources/evolution-data-server/3.52/evolution-data-server-3.52.3.tar.xz
+ https://download.gnome.org/sources/tracker/3.7/tracker-3.7.3.tar.xz
+ https://download.gnome.org/sources/tracker-miners/3.7/tracker-miners-3.7.3.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/tracker-miners-3.7.3-upstream_fixes-1.patch
+ https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz
+ https://download.gnome.org/sources/xdg-desktop-portal-gnome/46/xdg-desktop-portal-gnome-46.2.tar.xz
+ https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
