@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1277">
+  <body class="blfs" id="blfs-r12.1-1297">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1277
+        "phrase">(systemd</span> Edition) - Version r12.1-1297
       </h4>
       <h3>
         Chapter&nbsp;46.&nbsp;Printing
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1277">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1297">
           Home</a>
         </li>
       </ul>
@@ -60,8 +60,7 @@
           <span class="application">Gimp-Print</span>) package contains high
           quality drivers for many brands and models of printers for use with
           <a class="xref" href="cups.html" title=
-          "Cups-2.4.10">Cups-2.4.10</a> and the <span class=
-          "application">GIMP-2.0</span>. See a list of supported printers at
+          "Cups-2.4.10">Cups-2.4.10</a> See a list of supported printers at
           <a class="ulink" href=
           "https://gutenprint.sourceforge.net/p_Supported_Printers.php">https://gutenprint.sourceforge.net/p_Supported_Printers.php</a>.
         </p>
@@ -118,8 +117,7 @@
         </h4>
         <p class="recommended">
           <a class="xref" href="cups.html" title=
-          "Cups-2.4.10">Cups-2.4.10</a> and <a class="xref" href=
-          "../xsoft/gimp.html" title="Gimp-20240711">Gimp-20240711</a>
+          "Cups-2.4.10">Cups-2.4.10</a>
         </p>
         <h4>
           Recommended (at runtime)
@@ -194,7 +192,10 @@
         "command">sed -i 's|$(PACKAGE)/doc|doc/$(PACKAGE)-$(VERSION)|' \
        {,doc/,doc/developer/}Makefile.in &amp;&amp;
 
-./configure --prefix=/usr --disable-static &amp;&amp;
+./configure --prefix=/usr                 \
+            --disable-static              \
+            --without-gimp2               \
+            --without-gimp2-as-gutenprint &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
@@ -229,6 +230,11 @@ install -v -m644    doc/gutenprintui2/html/* \
         <p>
           <em class="parameter"><code>--disable-static</code></em>: This
           switch prevents installation of static versions of the libraries.
+        </p>
+        <p>
+          <em class="parameter"><code>--without-gimp2</code></em>: This
+          switch disables support for GIMP because it has not been updated to
+          support GIMP3 yet.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -390,7 +396,7 @@ install -v -m644    doc/gutenprintui2/html/* \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1277">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1297">
           Home</a>
         </li>
       </ul>

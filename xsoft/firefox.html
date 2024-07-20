@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1277">
+  <body class="blfs" id="blfs-r12.1-1297">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1277
+        "phrase">(systemd</span> Edition) - Version r12.1-1297
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1277">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1297">
           Home</a>
         </li>
       </ul>
@@ -156,8 +156,6 @@
         <p class="required">
           <a class="xref" href="../general/cbindgen.html" title=
           "Cbindgen-0.26.0">Cbindgen-0.26.0</a>, <a class="xref" href=
-          "../general/dbus-glib.html" title=
-          "dbus-glib-0.112">dbus-glib-0.112</a>, <a class="xref" href=
           "../x/gtk3.html" title="GTK+-3.24.43">GTK+-3.24.43</a>, <a class=
           "xref" href="../x/libnotify.html" title=
           "libnotify-0.8.3">libnotify-0.8.3</a>, <a class="xref" href=
@@ -276,10 +274,6 @@ ac_add_options --with-system-nspr
 ac_add_options --with-system-nss
 ac_add_options --with-system-webp
 
-# Unlike with thunderbird, although using the gold linker can
-# save four megabytes in the installed file it does not make
-# the build faster.
-
 # The libdav1d library (av1 decoder) requires nasm. Uncomment this
 # if nasm has not been installed. Do not uncomment this if you have
 # ffmpeg installed.
@@ -297,13 +291,6 @@ ac_add_options --enable-official-branding
 # faster. Comment this if you need to run a debugger.
 ac_add_options --disable-debug-symbols
 
-# The elf-hack is reported to cause failed installs (after successful builds)
-# on some machines. It is supposed to improve startup time and it shrinks
-# libxul.so by a few MB.  With recent Binutils releases the linker already
-# supports a much safer and generic way for this.
-ac_add_options --disable-elf-hack
-export LDFLAGS="$LDFLAGS -Wl,-z,pack-relative-relocs"
-
 # The BLFS editors recommend not changing anything below this line:
 ac_add_options --prefix=/usr
 ac_add_options --enable-application=browser
@@ -314,10 +301,8 @@ ac_add_options --disable-updater
 # increase the build time, for no obvious benefit.
 ac_add_options --disable-tests
 
-# The SIMD code relies on the unmaintained packed_simd crate which
-# fails to build with Rustc &gt;= 1.78.0.  We may re-enable it once
-# Mozilla port the code to use std::simd and std::simd is stabilized.
-ac_add_options --disable-rust-simd
+# This enables SIMD optimization in the shipped encoding_rs crate.
+ac_add_options --enable-rust-simd
 
 ac_add_options --enable-system-ffi
 ac_add_options --enable-system-pixman
@@ -680,7 +665,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1277">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1297">
           Home</a>
         </li>
       </ul>
