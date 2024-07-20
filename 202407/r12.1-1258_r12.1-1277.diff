@@ -1,0 +1,131 @@
+diff --git a/wget-list b/wget-list
+index 99b70ecaa..fb5ae05c9 100644
+--- a/wget-list
++++ b/wget-list
+@@ -61,6 +61,7 @@ https://www.zsh.org/pub/zsh-5.9.tar.xz
+ https://download.qemu.org/qemu-9.0.2.tar.xz
+ https://github.com/abseil/abseil-cpp/releases/download/20240116.2/abseil-cpp-20240116.2.tar.gz
+ https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.3.tar.xz
++http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz
+ https://archive.apache.org/dist/apr/apr-1.7.4.tar.bz2
+ https://archive.apache.org/dist/apr/apr-util-1.6.3.tar.bz2
+ https://ftp.gnu.org/gnu/aspell/aspell-0.60.8.1.tar.gz
+@@ -113,7 +114,6 @@ https://github.com/hughsie/libgusb/releases/download/0.4.9/libgusb-0.4.9.tar.xz
+ https://github.com/libical/libical/releases/download/v3.0.18/libical-3.0.18.tar.gz
+ https://ftp.gnu.org/gnu/libidn/libidn-1.42.tar.gz
+ https://ftp.gnu.org/gnu/libidn/libidn2-2.3.7.tar.gz
+-https://downloads.sourceforge.net/iodbc/libiodbc-3.52.15.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.7.tar.bz2
+ https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
+ https://www.freedesktop.org/software/libmbim/libmbim-1.26.4.tar.xz
+@@ -287,7 +287,7 @@ https://downloads.sourceforge.net/infozip/zip30.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.26.0/cbindgen-0.26.0.tar.gz
+ https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+-https://cmake.org/files/v3.29/cmake-3.29.5.tar.gz
++https://cmake.org/files/v3.30/cmake-3.30.1.tar.gz
+ https://doxygen.nl/files/doxygen-1.11.0.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.7.0.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz
+@@ -455,9 +455,6 @@ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+ https://www.php.net/distributions/php-8.3.9.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+-https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/Python-2.7.18-security_fixes-1.patch
+-https://www.python.org/ftp/python/doc/2.7.18/python-2.7.18-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tar.xz
+ https://www.python.org/ftp/python/doc/3.12.4/python-3.12.4-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+@@ -480,13 +477,10 @@ https://files.pythonhosted.org/packages/source/p/ply/ply-3.11.tar.gz
+ https://files.pythonhosted.org/packages/source/p/psutil/psutil-6.0.0.tar.gz
+ https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
+ https://download.gnome.org/sources/pyatspi/2.46/pyatspi-2.46.1.tar.xz
+-https://github.com/pygobject/pycairo/releases/download/v1.18.2/pycairo-1.18.2.tar.gz
+ https://github.com/pygobject/pycairo/releases/download/v1.26.1/pycairo-1.26.1.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.18.0.tar.gz
+-https://download.gnome.org/sources/pygobject/2.28/pygobject-2.28.7.tar.xz
+ https://download.gnome.org/sources/pygobject/3.48/pygobject-3.48.2.tar.xz
+-https://download.gnome.org/sources/pygtk/2.24/pygtk-2.24.0.tar.bz2
+ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.1.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.2.2.tar.gz
+@@ -610,8 +604,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.pa
+ https://bitbucket.org/mutt/mutt/downloads/mutt-2.2.13.tar.gz
+ https://github.com/BuGlessRB/procmail/archive/refs/tags/v3.24/procmail-3.24.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.24-consolidated_fixes-1.patch
+-https://archive.apache.org/dist/httpd/httpd-2.4.61.tar.bz2
+-https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.61-blfs_layout-1.patch
++https://archive.apache.org/dist/httpd/httpd-2.4.62.tar.bz2
++https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.62-blfs_layout-1.patch
+ https://downloads.isc.org/isc/kea/2.6.0/kea-2.6.0.tar.gz
+ https://github.com/proftpd/proftpd/archive/v1.3.8b/proftpd-1.3.8b.tar.gz
+ https://www.dovecot.org/releases/2.3/dovecot-2.3.21.tar.gz
+@@ -641,7 +635,7 @@ https://xcb.freedesktop.org/dist/xcb-util-keysyms-0.4.1.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-renderutil-0.3.10.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-wm-0.4.2.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.4.tar.xz
+-https://mesa.freedesktop.org/archive/mesa-24.1.3.tar.xz
++https://mesa.freedesktop.org/archive/mesa-24.1.4.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-2.patch
+ https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ https://invisible-mirror.net/archives/luit/luit-20240102.tgz
+@@ -676,11 +670,8 @@ https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
+ https://download.gnome.org/sources/goffice/0.10/goffice-0.10.57.tar.xz
+ https://github.com/steveire/grantlee/releases/download/v5.3.1/grantlee-5.3.1.tar.gz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+-https://download.gnome.org/sources/gtk+/2.24/gtk+-2.24.33.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/gtk+-2.24.33-consolidated_fixes-1.patch
+ https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz
+ https://download.gnome.org/sources/gtk/4.14/gtk-4.14.4.tar.xz
+-https://download.gnome.org/sources/gtk-engines/2.20/gtk-engines-2.20.2.tar.bz2
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.9.tar.xz
+ https://download.gnome.org/sources/gtkmm/4.14/gtkmm-4.14.0.tar.xz
+ https://download.gnome.org/sources/gtk-vnc/1.3/gtk-vnc-1.3.1.tar.xz
+@@ -697,7 +688,6 @@ https://gedit-technology.net/tarballs/libgedit-amtk/libgedit-amtk-5.8.0.tar.xz
+ https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
+ https://dri.freedesktop.org/libdrm/libdrm-2.4.122.tar.xz
+ https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
+-https://download.gnome.org/sources/libglade/2.6/libglade-2.6.4.tar.bz2
+ https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.3.tar.xz
+ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+ https://download.gnome.org/sources/pango/1.54/pango-1.54.0.tar.xz
+@@ -903,15 +893,11 @@ https://feh.finalrewind.org/feh-3.10.3.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20230101/fontforge-20230101.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/fontforge-20230101-security_fixes-1.patch
+ https://github.com/freerdp/freerdp/archive/3.6.3/FreeRDP-3.6.3.tar.gz
+-https://download.gimp.org/pub/gimp/v2.10/gimp-2.10.38.tar.bz2
+-https://www.linuxfromscratch.org/patches/blfs/svn/gimp-2.10.38-gcc14-1.patch
+-https://download.gimp.org/pub/gimp/help/gimp-help-2.10.34.tar.bz2
++https://anduin.linuxfromscratch.org/BLFS/BLFS/gimp/gimp-20240711.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/BLFS/gimp/gimp-help-20240711.tar.xz
+ https://downloads.sourceforge.net/gparted/gparted-1.6.0.tar.gz
+-https://github.com/hexchat/hexchat/releases/download/v2.16.2/hexchat-2.16.2.tar.xz
+ https://inkscape.org/gallery/item/44615/inkscape-1.3.2.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.3.2-upstream_fixes-2.patch
+-https://downloads.sourceforge.net/pidgin/pidgin-2.14.13.tar.bz2
+-https://downloads.sourceforge.net/rox/rox-filer-2.11.tar.bz2
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+ https://archive.mozilla.org/pub/thunderbird/releases/128.0esr/source/thunderbird-128.0esr.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.13.1/tigervnc-1.13.1.tar.gz
+@@ -961,8 +947,6 @@ https://downloads.sourceforge.net/libdv/libdv-1.0.0.tar.gz
+ https://downloads.sourceforge.net/mad/libmad-0.15.1b.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libmad-0.15.1b-fixes-1.patch
+ https://libmpeg2.sourceforge.net/files/libmpeg2-0.5.1.tar.gz
+-http://ftp.musicbrainz.org/pub/musicbrainz/historical/libmusicbrainz-2.1.5.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libmusicbrainz-2.1.5-missing-includes-1.patch
+ https://github.com/metabrainz/libmusicbrainz/releases/download/release-5.1.0/libmusicbrainz-5.1.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libmusicbrainz-5.1.0-cmake_fixes-1.patch
+ https://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.xz
+@@ -1006,10 +990,6 @@ https://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.2.tar.gz
+ https://ffmpeg.org/releases/ffmpeg-7.0.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-7.0.1-chromium_method-1.patch
+ https://github.com/mpv-player/mpv/archive/v0.38.0/mpv-0.38.0.tar.gz
+-https://mplayerhq.hu/MPlayer/releases/MPlayer-1.5.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/MPlayer-1.5-upstream_ffmpg6_fixes-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-6.0-binutils_2.41-1.patch
+-https://mplayerhq.hu/MPlayer/skins/Clearlooks-2.0.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/transcode/transcode-1.1.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/transcode-1.1.7-gcc10_fix-1.patch
+ https://download.videolan.org/vlc/3.0.21/vlc-3.0.21.tar.xz
