@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      wpa_supplicant-2.10
+      wpa_supplicant-2.11
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1302">
+  <body class="blfs" id="blfs-r12.1-1310">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1302
+        "phrase">(systemd</span> Edition) - Version r12.1-1310
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1302">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1310">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="wpa_supplicant" name="wpa_supplicant"></a>wpa_supplicant-2.10
+      <a id="wpa_supplicant" name="wpa_supplicant"></a>wpa_supplicant-2.11
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -84,41 +84,27 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://w1.fi/releases/wpa_supplicant-2.10.tar.gz">https://w1.fi/releases/wpa_supplicant-2.10.tar.gz</a>
+                "https://w1.fi/releases/wpa_supplicant-2.11.tar.gz">https://w1.fi/releases/wpa_supplicant-2.11.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: d26797fcb002898d4ee989179346e1cc
+                Download MD5 sum: 72a4a00eddb7a499a58113c3361ab094
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 3.4 MB
+                Download size: 3.7 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 37 MB
+                Estimated disk space required: 35 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.5 SBU (with optional gui)
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/wpa_supplicant-2.10-security_fix-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/wpa_supplicant-2.10-security_fix-1.patch</a>
+                Estimated build time: 0.3 SBU (without optional gui)
               </p>
             </li>
           </ul>
@@ -226,12 +212,6 @@ EOF</kbd></pre>
 CONFIG_CTRL_IFACE_DBUS_NEW=y
 CONFIG_CTRL_IFACE_DBUS_INTRO=y</code>
 EOF</kbd></pre>
-        <p>
-          Next, patch a security vulnerability that occurs when connecting to
-          some networks:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../wpa_supplicant-2.10-security_fix-1.patch</kbd></pre>
         <p>
           Install <span class="application">WPA Supplicant</span> by running
           the following commands:
@@ -609,7 +589,7 @@ update_config=1</pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1302">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1310">
           Home</a>
         </li>
       </ul>
