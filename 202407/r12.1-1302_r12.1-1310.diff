@@ -1,0 +1,50 @@
+diff --git a/wget-list b/wget-list
+index 68e7018e0..c68b3ebb9 100644
+--- a/wget-list
++++ b/wget-list
+@@ -76,7 +76,7 @@ https://duktape.org/duktape-2.7.0.tar.xz
+ https://github.com/AbiWord/enchant/releases/download/v2.8.1/enchant-2.8.1.tar.gz
+ https://libopenraw.freedesktop.org/download/exempi-2.6.5.tar.xz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+-https://github.com/fmtlib/fmt/archive/11.0.1/fmt-11.0.1.tar.gz
++https://github.com/fmtlib/fmt/archive/11.0.2/fmt-11.0.2.tar.gz
+ https://download.gnome.org/sources/glib/2.80/glib-2.80.4.tar.xz
+ https://download.gnome.org/sources/gobject-introspection/1.80/gobject-introspection-1.80.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+@@ -483,7 +483,7 @@ https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.18.0.tar.gz
+ https://download.gnome.org/sources/pygobject/3.48/pygobject-3.48.2.tar.xz
+ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.1.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+-https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.2.2.tar.gz
++https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.3.1.tar.gz
+ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
+ https://files.pythonhosted.org/packages/source/P/PyYAML/PyYAML-6.0.1.tar.gz
+ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
+@@ -561,8 +561,7 @@ https://ftp.gnu.org/gnu/wget/wget-1.24.5.tar.gz
+ https://www.kernel.org/pub/software/network/iw/iw-6.9.tar.xz
+ https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_scanning-1.patch
+-https://w1.fi/releases/wpa_supplicant-2.10.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/wpa_supplicant-2.10-security_fix-1.patch
++https://w1.fi/releases/wpa_supplicant-2.11.tar.gz
+ https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+ https://ftp.isc.org/isc/bind9/9.18.27/bind-9.18.27.tar.xz
+@@ -577,7 +576,7 @@ https://curl.se/download/curl-8.8.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.1/geoclue-2.7.1.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.0.tar.xz
+ https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.2.0/kdsoap-2.2.0.tar.gz
+-https://www.nlnetlabs.nl/downloads/ldns/ldns-1.8.3.tar.gz
++https://www.nlnetlabs.nl/downloads/ldns/ldns-1.8.4.tar.gz
+ https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
+ https://netfilter.org/projects/libmnl/files/libmnl-1.0.5.tar.bz2
+ https://github.com/thom311/libnl/releases/download/libnl3_10_0/libnl-3.10.0.tar.gz
+@@ -938,7 +937,7 @@ https://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libcanberra-0.30-wayland-1.patch
+ https://downloads.sourceforge.net/libcddb/libcddb-1.3.2.tar.bz2
+ https://ftp.gnu.org/gnu/libcdio/libcdio-2.1.0.tar.bz2
+-https://ftp.gnu.org/gnu/libcdio/libcdio-paranoia-10.2+2.0.1.tar.bz2
++https://ftp.gnu.org/gnu/libcdio/libcdio-paranoia-10.2+2.0.2.tar.bz2
+ https://get.videolan.org/libdvdcss/1.4.3/libdvdcss-1.4.3.tar.bz2
+ https://get.videolan.org/libdvdread/6.1.3/libdvdread-6.1.3.tar.bz2
+ https://get.videolan.org/libdvdnav/6.1.1/libdvdnav-6.1.1.tar.bz2
