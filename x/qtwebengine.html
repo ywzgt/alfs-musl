@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1310">
+  <body class="blfs" id="blfs-r12.1-1322">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1310
+        "phrase">(systemd</span> Edition) - Version r12.1-1322
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1310">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1322">
           Home</a>
         </li>
       </ul>
@@ -158,6 +158,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-6.7.2-ffmpeg7_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-6.7.2-ffmpeg7_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           qtwebengine Dependencies
         </h3>
         <h4>
@@ -227,6 +241,20 @@
           Installation of qtwebengine
         </h2>
         <p>
+          First, adapt the bundled copy of Chromium to the latest version of
+          ffmpeg:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -d src/3rdparty/chromium &lt; ../qtwebengine-6.7.2-ffmpeg7_fixes-1.patch</kbd></pre>
+        <p>
+          Next, fix a build failure that occurs because the BLFS build of
+          ffmpeg does not use OpenH264:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e '189 s/=/&amp; false/' \
+    -e '190 d'            \
+    -i.orig src/3rdparty/chromium/third_party/webrtc/webrtc.gni</kbd></pre>
+        <p>
           Install <span class="application">qtwebengine</span> by running the
           following commands:
         </p>
@@ -234,7 +262,7 @@
 cd    build &amp;&amp;
 
 cmake -D CMAKE_MESSAGE_LOG_LEVEL=STATUS             \
-      -D QT_FEATURE_webengine_system_ffmpeg=OFF     \
+      -D QT_FEATURE_webengine_system_ffmpeg=ON      \
       -D QT_FEATURE_webengine_system_icu=ON         \
       -D QT_FEATURE_webengine_system_libevent=ON    \
       -D QT_FEATURE_webengine_proprietary_codecs=ON \
@@ -467,7 +495,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1310">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1322">
           Home</a>
         </li>
       </ul>

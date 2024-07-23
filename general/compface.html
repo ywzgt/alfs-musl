@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1310">
+  <body class="blfs" id="blfs-r12.1-1322">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1310
+        "phrase">(systemd</span> Edition) - Version r12.1-1322
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1310">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1322">
           Home</a>
         </li>
       </ul>
@@ -111,6 +111,17 @@
           Installation of Compface
         </h2>
         <p>
+          First, fix the configure script so that it's C99 compatible:
+        </p>
+        <pre class="userinput"><kbd class="command">autoreconf</kbd></pre>
+        <p>
+          Next, fix a build failure that occurs with GCC 14:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e '/compface.h/a #include &lt;unistd.h&gt;' \
+    -i cmain.c                             \
+    -i uncmain.c</kbd></pre>
+        <p>
           Install <span class="application">Compface</span> by running the
           following commands:
         </p>
@@ -139,7 +150,7 @@ install -m755 -v xbm2xface.pl /usr/bin</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Library:</strong>
-              <span class="segbody">libcompface.{so,a}</span>
+              <span class="segbody">libcompface.a</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
@@ -205,8 +216,7 @@ install -m755 -v xbm2xface.pl /usr/bin</kbd></pre>
                 <td>
                   <p>
                     <a id="libcompface" name="libcompface"></a><span class=
-                    "term"><code class=
-                    "filename">libcompface.{so,a}</code></span>
+                    "term"><code class="filename">libcompface.a</code></span>
                   </p>
                 </td>
                 <td>
@@ -243,7 +253,7 @@ install -m755 -v xbm2xface.pl /usr/bin</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1310">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1322">
           Home</a>
         </li>
       </ul>
