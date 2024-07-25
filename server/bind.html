@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      BIND-9.18.28
+      BIND-9.20.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1328">
+  <body class="blfs" id="blfs-r12.1-1334">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1328
+        "phrase">(systemd</span> Edition) - Version r12.1-1334
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1328">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1334">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="bind" name="bind"></a>BIND-9.18.28
+      <a id="bind" name="bind"></a>BIND-9.20.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -58,8 +58,8 @@
           The <span class="application">BIND</span> package provides a DNS
           server and client utilities. If you are only interested in the
           utilities, refer to the <a class="xref" href=
-          "../basicnet/bind-utils.html" title="BIND Utilities-9.18.28">BIND
-          Utilities-9.18.28</a>.
+          "../basicnet/bind-utils.html" title="BIND Utilities-9.20.0">BIND
+          Utilities-9.20.0</a>.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -80,22 +80,22 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ftp.isc.org/isc/bind9/9.18.28/bind-9.18.28.tar.xz">https://ftp.isc.org/isc/bind9/9.18.28/bind-9.18.28.tar.xz</a>
+                "https://ftp.isc.org/isc/bind9/9.20.0/bind-9.20.0.tar.xz">https://ftp.isc.org/isc/bind9/9.20.0/bind-9.20.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 8fc27fb04e6760aee166a05c6ffd19d5
+                Download MD5 sum: 2c8d94d1524cbbae4d76cd74955bb6d9
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 5.3 MB
+                Download size: 5.5 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 210 MB (21 MB installed)
+                Estimated disk space required: 138 MB (22 MB installed)
               </p>
             </li>
             <li class="listitem">
@@ -114,8 +114,9 @@
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="../general/libuv.html" title=
-          "libuv-1.48.0">libuv-1.48.0</a>
+          <a class="xref" href="../general/liburcu.html" title=
+          "liburcu-0.14.0">liburcu-0.14.0</a> and <a class="xref" href=
+          "../general/libuv.html" title="libuv-1.48.0">libuv-1.48.0</a>
         </p>
         <h4>
           Recommended
@@ -132,7 +133,7 @@
         </h4>
         <p class="optional">
           <a class="xref" href="../basicnet/curl.html" title=
-          "cURL-8.8.0">cURL-8.8.0</a>, <a class="xref" href=
+          "cURL-8.9.0">cURL-8.9.0</a>, <a class="xref" href=
           "../general/libidn2.html" title="libidn2-2.3.7">libidn2-2.3.7</a>,
           <a class="xref" href="../general/libxml2.html" title=
           "libxml2-2.13.2">libxml2-2.13.2</a>, <a class="xref" href=
@@ -148,21 +149,6 @@
           <a class="ulink" href=
           "https://github.com/jemalloc/jemalloc">jemalloc</a>, <a class=
           "ulink" href="http://w3m.sourceforge.net/">w3m</a>
-        </p>
-        <h4>
-          Optional database backends
-        </h4>
-        <p class="optional">
-          <a class="xref" href="mariadb.html" title=
-          "MariaDB-10.11.8">MariaDB-10.11.8</a> or <a class="ulink" href=
-          "https://www.mysql.com/">MySQL</a>, <a class="xref" href=
-          "openldap.html" title="OpenLDAP-2.6.8">OpenLDAP-2.6.8</a>,
-          <a class="xref" href="postgresql.html" title=
-          "PostgreSQL-16.3">PostgreSQL-16.3</a>, <a class="xref" href=
-          "../general/unixodbc.html" title=
-          "unixODBC-2.3.12">unixODBC-2.3.12</a>, and <a class="ulink" href=
-          "https://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz">Berkeley
-          DB</a> (deprecated)
         </p>
         <h4>
           Optional (to run the test suite)
@@ -225,12 +211,21 @@ make</kbd></pre>
           "quote">“<span class="quote">UNTESTED</span>”</span> or do even
           fail if <a class="xref" href=
           "../general/perl-modules.html#perl-net-dns" title=
-          "Net::DNS-1.45">Net-DNS-1.45</a> is not installed. Two tests,
-          <code class="filename">resolver</code> and <code class=
-          "filename">dispatch</code>, are known to fail. To run the tests, as
-          an unprivileged user, execute:
+          "Net::DNS-1.45">Net-DNS-1.45</a> is not installed. One test,
+          <code class="filename">dnssec</code>, is known to fail. The tests
+          require the <a class="ulink" href=
+          "https://hypothesis.readthedocs.org/">hypothesis</a> python module,
+          which is not in BLFS. To work around this, the instructions below
+          create a Python virtual environment and then install the module in
+          there before running the tests. To run the tests, as an
+          unprivileged user, execute:
         </p>
-        <pre class="userinput"><kbd class="command">make -k check</kbd></pre>
+        <pre class="userinput"><kbd class=
+        "command">python3 -m venv --system-site-packages testenv &amp;&amp;
+source testenv/bin/activate                    &amp;&amp;
+pip3 install hypothesis                        &amp;&amp;
+make -k check                                  &amp;&amp;
+deactivate</kbd></pre>
         <p>
           Again as <code class="systemitem">root</code>, clean up the test
           interfaces:
@@ -263,18 +258,6 @@ make</kbd></pre>
           you want to be able to limit the rate of recursive client queries.
           This may be useful on servers which receive a large number of
           queries.
-        </p>
-        <p>
-          <code class="option">--disable-linux-caps</code>: BIND can also be
-          built without capability support by using this option, at the cost
-          of some loss of security.
-        </p>
-        <p>
-          <code class=
-          "option">--with-dlz-{mysql,bdb,filesystem,ldap,odbc,stub}</code>:
-          Use one (or more) of those options to add Dynamically Loadable
-          Zones support. For more information refer to <a class="ulink" href=
-          "https://bind-dlz.sourceforge.net/">bind-dlz.sourceforge.net</a>.
         </p>
         <p>
           <code class="option">--disable-doh</code>: Use this option if you
@@ -588,7 +571,7 @@ dig www.linuxfromscratch.org</kbd></pre>
           easily viewed and/or downloaded – so there is no excuse to not read
           the docs. The formats ISC provides are PDF, epub and html at
           <a class="ulink" href=
-          "https://downloads.isc.org/isc/bind9/9.18.28/doc/arm/">https://downloads.isc.org/isc/bind9/9.18.28/doc/arm/</a>.
+          "https://downloads.isc.org/isc/bind9/9.20.0/doc/arm/">https://downloads.isc.org/isc/bind9/9.20.0/doc/arm/</a>.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -601,7 +584,7 @@ dig www.linuxfromscratch.org</kbd></pre>
               <strong class="segtitle">Installed Programs:</strong>
               <span class="segbody">arpaname, ddns-confgen, delv, dig,
               dnssec-cds, dnssec-dsfromkey, dnssec-importkey,
-              dnssec-keyfromlabel, dnssec-keygen, dnssec-revoke,
+              dnssec-keyfromlabel, dnssec-keygen, dnssec-ksr, dnssec-revoke,
               dnssec-settime, dnssec-signzone, dnssec-verify, host, mdig,
               named, named-checkconf, named-checkzone, named-compilezone,
               named-journalprint, named-nzd2nzf, named-rrchecker, nsec3hash,
@@ -610,13 +593,13 @@ dig www.linuxfromscratch.org</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libbind9.so, libdns.so, libirs.so,
-              libisc.so, libisccc.so, libisccfg.so, and libns.so</span>
+              <span class="segbody">libdns.so, libisc.so, libisccc.so,
+              libisccfg.so, and libns.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class=
-              "segbody">/usr/include/{bind9,dns,dst,irs,isc,isccc,isccfg,ns},
+              "segbody">/usr/include/{dns,dst,irs,isc,isccc,isccfg,ns},
               /usr/lib/bind, and /srv/named</span>
             </div>
           </div>
@@ -756,6 +739,21 @@ dig www.linuxfromscratch.org</kbd></pre>
                 <td>
                   <p>
                     ensures correct DNSKEY coverage based on a defined policy
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="dnssec-ksr" name="dnssec-ksr"></a><span class=
+                    "term"><span class=
+                    "command"><strong>dnssec-ksr</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    creates signed key response (SKR) files for offline KSK
+                    setups
                   </p>
                 </td>
               </tr>
@@ -1061,7 +1059,7 @@ dig www.linuxfromscratch.org</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1328">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1334">
           Home</a>
         </li>
       </ul>

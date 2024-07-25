@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      BIND Utilities-9.18.28
+      BIND Utilities-9.20.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1328">
+  <body class="blfs" id="blfs-r12.1-1334">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1328
+        "phrase">(systemd</span> Edition) - Version r12.1-1334
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1328">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1334">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="bind-utils" name="bind-utils"></a>BIND Utilities-9.18.28
+      <a id="bind-utils" name="bind-utils"></a>BIND Utilities-9.20.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -58,7 +58,7 @@
           <span class="application">BIND Utilities</span> is not a separate
           package, it is a collection of the client side programs that are
           included with <a class="xref" href="../server/bind.html" title=
-          "BIND-9.18.28">BIND-9.18.28</a>. The <span class=
+          "BIND-9.20.0">BIND-9.20.0</a>. The <span class=
           "application">BIND</span> package includes the client side programs
           <span class="command"><strong>nslookup</strong></span>,
           <span class="command"><strong>dig</strong></span> and <span class=
@@ -87,27 +87,27 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ftp.isc.org/isc/bind9/9.18.28/bind-9.18.28.tar.xz">https://ftp.isc.org/isc/bind9/9.18.28/bind-9.18.28.tar.xz</a>
+                "https://ftp.isc.org/isc/bind9/9.20.0/bind-9.20.0.tar.xz">https://ftp.isc.org/isc/bind9/9.20.0/bind-9.20.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 8fc27fb04e6760aee166a05c6ffd19d5
+                Download MD5 sum: 2c8d94d1524cbbae4d76cd74955bb6d9
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 5.3 MB
+                Download size: 5.5 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 95 MB
+                Estimated disk space required: 117 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.3 SBU (using parallelism=4)
+                Estimated build time: 0.5 SBU (using parallelism=4)
               </p>
             </li>
           </ul>
@@ -119,8 +119,9 @@
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="../general/libuv.html" title=
-          "libuv-1.48.0">libuv-1.48.0</a>
+          <a class="xref" href="../general/liburcu.html" title=
+          "liburcu-0.14.0">liburcu-0.14.0</a> and <a class="xref" href=
+          "../general/libuv.html" title="libuv-1.48.0">libuv-1.48.0</a>
         </p>
         <h4>
           Recommended
@@ -156,8 +157,6 @@ make -C lib/isc    &amp;&amp;
 make -C lib/dns    &amp;&amp;
 make -C lib/ns     &amp;&amp;
 make -C lib/isccfg &amp;&amp;
-make -C lib/bind9  &amp;&amp;
-make -C lib/irs    &amp;&amp;
 make -C bin/dig    &amp;&amp;
 make -C doc</kbd></pre>
         <p>
@@ -171,8 +170,6 @@ make -C doc</kbd></pre>
 make -C lib/dns    install &amp;&amp;
 make -C lib/ns     install &amp;&amp;
 make -C lib/isccfg install &amp;&amp;
-make -C lib/bind9  install &amp;&amp;
-make -C lib/irs    install &amp;&amp;
 make -C bin/dig    install &amp;&amp;
 cp -v doc/man/{dig.1,host.1,nslookup.1} /usr/share/man/man1</kbd></pre>
       </div>
@@ -233,8 +230,7 @@ cp -v doc/man/{dig.1,host.1,nslookup.1} /usr/share/man/man1</kbd></pre>
         </h3>
         <p>
           See the program descriptions in the <a class="xref" href=
-          "../server/bind.html" title="BIND-9.18.28">BIND-9.18.28</a>
-          section.
+          "../server/bind.html" title="BIND-9.20.0">BIND-9.20.0</a> section.
         </p>
       </div>
     </div>
@@ -259,7 +255,7 @@ cp -v doc/man/{dig.1,host.1,nslookup.1} /usr/share/man/man1</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1328">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1334">
           Home</a>
         </li>
       </ul>
