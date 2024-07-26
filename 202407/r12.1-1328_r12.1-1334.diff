@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index f969dff89..bbaf19d18 100644
+--- a/wget-list
++++ b/wget-list
+@@ -564,7 +564,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_s
+ https://w1.fi/releases/wpa_supplicant-2.11.tar.gz
+ https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+-https://ftp.isc.org/isc/bind9/9.18.28/bind-9.18.28.tar.xz
++https://ftp.isc.org/isc/bind9/9.20.0/bind-9.20.0.tar.xz
+ https://download.gnome.org/sources/NetworkManager/1.48/NetworkManager-1.48.4.tar.xz
+ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
+ https://nmap.org/dist/nmap-7.95.tar.bz2
+@@ -572,7 +572,7 @@ https://downloads.sourceforge.net/traceroute/traceroute-2.1.5.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.2.6.tar.xz
+ https://github.com/c-ares/c-ares/releases/download/v1.32.2/c-ares-1.32.2.tar.gz
+-https://curl.se/download/curl-8.8.0.tar.xz
++https://curl.se/download/curl-8.9.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.1/geoclue-2.7.1.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.0.tar.xz
+ https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.2.0/kdsoap-2.2.0.tar.gz
+@@ -969,7 +969,7 @@ https://www.surina.net/soundtouch/soundtouch-2.3.3.tar.gz
+ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://taglib.org/releases/taglib-2.0.1.tar.gz
+-https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.28.0.tar.xz
++https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.28.1.tar.xz
+ https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.5/wireplumber-0.5.5.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20240216.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/x265/x265-20240216.tar.xz
