@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1353">
+  <body class="blfs" id="blfs-r12.1-1356">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1353
+        "phrase">(systemd</span> Edition) - Version r12.1-1356
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1353">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1356">
           Home</a>
         </li>
       </ul>
@@ -119,7 +119,7 @@
           "gdk-pixbuf-2.42.12">gdk-pixbuf-2.42.12</a>, <a class="xref" href=
           "../x/pango.html" title="Pango-1.54.0">Pango-1.54.0</a>, and
           <a class="xref" href="rust.html" title=
-          "Rustc-1.79.0">rustc-1.79.0</a>
+          "Rustc-1.80.0">rustc-1.80.0</a>
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -166,9 +166,14 @@
             --docdir=/usr/share/doc/librsvg-2.58.2 &amp;&amp;
 make</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>LC_ALL=C
-          make -k check</strong></span>. One test named <code class=
-          "literal">bugs_bug749415_svg</code> is known to fail.
+          To test the results, issue:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">cargo update --precise 0.3.36 time &amp;&amp;
+LC_ALL=C make check -k</kbd></pre>
+        <p>
+          One test named <code class="literal">bugs_bug749415_svg</code> is
+          known to fail.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -211,6 +216,13 @@ make</kbd></pre>
           override ensures installing the API documentation into the expected
           location if <a class="xref" href="python-modules.html#gi-docgen"
           title="Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> is installed.
+        </p>
+        <p>
+          <span class="command"><strong>cargo update --precise=0.3.36
+          time</strong></span>: This updates the <code class=
+          "filename">Cargo.lock</code> file to refer the version 0.3.36 of
+          the time crate for the test suite. Originally it refers the version
+          0.3.34 which fails to build with Rustc-1.80.0 or later.
         </p>
         <p>
           <code class="option">--disable-introspection</code>: Use this
@@ -327,7 +339,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1353">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1356">
           Home</a>
         </li>
       </ul>

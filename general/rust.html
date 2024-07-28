@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Rustc-1.79.0
+      Rustc-1.80.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1353">
+  <body class="blfs" id="blfs-r12.1-1356">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1353
+        "phrase">(systemd</span> Edition) - Version r12.1-1356
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1353">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1356">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="rust" name="rust"></a>Rustc-1.79.0
+      <a id="rust" name="rust"></a>Rustc-1.80.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -93,7 +93,7 @@
             broken <span class="command"><strong>cargo</strong></span>
             program. In such a situation, either remove the existing
             installation first, or use a different prefix such as
-            /opt/rustc-1.79.0-build2.
+            /opt/rustc-1.80.0-build2.
           </p>
           <p>
             If you prefer, you can of course change the prefix to
@@ -165,7 +165,7 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://static.rust-lang.org/dist/rustc-1.79.0-src.tar.xz">https://static.rust-lang.org/dist/rustc-1.79.0-src.tar.xz</a>
+                "https://static.rust-lang.org/dist/rustc-1.80.0-src.tar.xz">https://static.rust-lang.org/dist/rustc-1.80.0-src.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
@@ -264,8 +264,8 @@
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">mkdir -pv /opt/rustc-1.79.0      &amp;&amp;
-ln -svfn rustc-1.79.0 /opt/rustc</kbd></pre>
+        "command">mkdir -pv /opt/rustc-1.80.0      &amp;&amp;
+ln -svfn rustc-1.80.0 /opt/rustc</kbd></pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -292,7 +292,7 @@ ln -svfn rustc-1.79.0 /opt/rustc</kbd></pre>
 # Tell x.py the editors have reviewed the content of this file
 # and updated it to follow the major changes of the building system,
 # so x.py will not warn us to do such a review.
-change-id = 123711
+change-id = 125535
 
 [llvm]
 # by default, rust will build for a myriad of architectures
@@ -320,12 +320,12 @@ tools = ["cargo", "clippy", "rustdoc", "rustfmt"]
 vendor = true
 
 [install]
-prefix = "/opt/rustc-1.79.0"
-docdir = "share/doc/rustc-1.79.0"
+prefix = "/opt/rustc-1.80.0"
+docdir = "share/doc/rustc-1.80.0"
 
 [rust]
 channel = "stable"
-description = "for BLFS r12.1-1353"
+description = "for BLFS r12.1-1356"
 
 # Enable the same optimizations as the official upstream build.
 lto = "thin"
@@ -387,7 +387,13 @@ python3 x.py build</kbd></pre>
         </p>
         <pre class="userinput"><kbd class=
         "command">SSL_CERT_DIR=/etc/ssl/certs \
-python3 x.py test --verbose --no-fail-fast | tee rustc-testlog</kbd></pre>
+python3 x.py test --verbose --no-fail-fast --keep-stage-std=1 | \
+    tee rustc-testlog</kbd></pre>
+        <p>
+          Two tests named <code class=
+          "filename">tests/run-make/print-cfg</code> and <code class=
+          "filename">tests/run-make/print-to-output</code> are known to fail.
+        </p>
         <p>
           As with all large test suites, some tests might fail on some
           machines - if the number of additional failures is low, check the
@@ -444,16 +450,23 @@ python3 x.py test --verbose --no-fail-fast | tee rustc-testlog</kbd></pre>
         </div>
         <pre class="root"><kbd class=
         "command">python3 x.py install rustc std &amp;&amp;
-python3 x.py install --stage=1 cargo clippy rustfmt</kbd></pre>
+install -vm755 \
+  build/host/stage1-tools/*/*/{cargo{,-clippy,-fmt},clippy-driver,rustfmt} \
+  /opt/rustc-1.80.0/bin &amp;&amp;</kbd>
+install -vDm644 \
+  src/tools/cargo/src/etc/_cargo \
+  /opt/rustc-1.80.0/share/zsh/site-functions/_cargo &amp;&amp;
+install -vm644 src/tools/cargo/src/etc/man/* \
+  /opt/rustc-1.80.0/share/man/man1</pre>
         <p>
           Still as the <code class="systemitem">root</code> user, fix the
           installation of documentations and symlink a <span class=
           "application">Zsh</span> completion file into the correct location:
         </p>
         <pre class="root"><kbd class=
-        "command">rm -fv /opt/rustc-1.79.0/share/doc/rustc-1.79.0/*.old   &amp;&amp;
+        "command">rm -fv /opt/rustc-1.80.0/share/doc/rustc-1.80.0/*.old   &amp;&amp;
 install -vm644 README.md                                \
-               /opt/rustc-1.79.0/share/doc/rustc-1.79.0 &amp;&amp;
+               /opt/rustc-1.80.0/share/doc/rustc-1.80.0 &amp;&amp;
 
 install -vdm755 /usr/share/zsh/site-functions      &amp;&amp;
 ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
@@ -469,7 +482,7 @@ ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
           Command Explanations
         </h2>
         <p>
-          <span class="command"><strong>ln -svfn rustc-1.79.0
+          <span class="command"><strong>ln -svfn rustc-1.80.0
           /opt/rustc</strong></span>: if this is not the first use of the
           <code class="filename">/opt/rustc</code> symlink, overwrite it by
           forcing, and use the '-n' flag to avoid getting confusing results
@@ -536,10 +549,17 @@ ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
           ensures that the test suite will not stop at the first error.
         </p>
         <p>
-          <em class="parameter"><code>--stage=1</code></em>: this switch
-          works around an issue causing some Rustc components unnecessarily
-          rebuilt running <span class="command"><strong>python3 x.py
-          install</strong></span>.
+          <em class="parameter"><code>--keep-stage-std 1</code></em>: this
+          switch prevents <span class="command"><strong>x.py
+          test</strong></span> from rebuilding the entire package for some
+          unknown reason.
+        </p>
+        <p>
+          <span class="command"><strong>install ...
+          /opt/rustc-1.80.0/...</strong></span>: these commands explicitly
+          installs some Rust components. They are used instead of relying on
+          <span class="command"><strong>x.py install</strong></span> because
+          the latter would rebuild these components for some unknown reason.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -599,7 +619,7 @@ EOF</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">~/.cargo, /opt/rustc, symbolic link to
-              /opt/rustc-1.79.0</span>
+              /opt/rustc-1.80.0</span>
             </div>
           </div>
         </div>
@@ -682,7 +702,7 @@ EOF</kbd></pre>
                   <p>
                     is a wrapper script for gdb, pulling in Python
                     pretty-printing modules installed in <code class=
-                    "filename">/opt/rustc-1.79.0/lib/rustlib/etc</code>
+                    "filename">/opt/rustc-1.80.0/lib/rustlib/etc</code>
                   </p>
                 </td>
               </tr>
@@ -799,7 +819,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1353">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1356">
           Home</a>
         </li>
       </ul>
