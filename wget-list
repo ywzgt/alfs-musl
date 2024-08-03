@@ -59,7 +59,7 @@ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.13.tar.gz
 https://www.zsh.org/pub/zsh-5.9.tar.xz
 https://download.qemu.org/qemu-9.0.2.tar.xz
-https://github.com/abseil/abseil-cpp/releases/download/20240116.2/abseil-cpp-20240116.2.tar.gz
+https://github.com/abseil/abseil-cpp/releases/download/20240722.0/abseil-cpp-20240722.0.tar.gz
 https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.3.tar.xz
 http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz
 https://archive.apache.org/dist/apr/apr-1.7.4.tar.bz2
@@ -184,7 +184,7 @@ https://github.com/g-truc/glm/archive/1.0.1/glm-1.0.1.tar.gz
 https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
 https://github.com/harfbuzz/harfbuzz/releases/download/9.0.0/harfbuzz-9.0.0.tar.xz
 https://github.com/jasper-software/jasper/archive/version-4.2.4/jasper-4.2.4.tar.gz
-https://github.com/mm2/Little-CMS/releases/download/lcms2.14/lcms2-2.14.tar.gz
+https://github.com/mm2/Little-CMS/releases/download/lcms2.16/lcms2-2.16.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/v1.1.1/libavif-1.1.1.tar.gz
 https://github.com/libexif/libexif/releases/download/v0.6.24/libexif-0.6.24.tar.bz2
 https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
@@ -205,7 +205,7 @@ https://github.com/opencv/opencv/archive/4.10.0/opencv-4.10.0.tar.gz
 https://github.com/opencv/opencv_contrib/archive/4.10.0/opencv_contrib-4.10.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/v2.5.2/openjpeg-2.5.2.tar.gz
 https://www.cairographics.org/releases/pixman-0.43.4.tar.gz
-https://poppler.freedesktop.org/poppler-24.07.0.tar.xz
+https://poppler.freedesktop.org/poppler-24.08.0.tar.xz
 https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
 https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
 https://github.com/qpdf/qpdf/releases/download/v11.9.1/qpdf-11.9.1.tar.gz
@@ -290,7 +290,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.p
 https://cmake.org/files/v3.30/cmake-3.30.1.tar.gz
 https://doxygen.nl/files/doxygen-1.11.0.src.tar.gz
 https://kernel.org/pub/software/utils/dtc/dtc-1.7.0.tar.xz
-https://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz
+https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
 https://github.com/ivmai/bdwgc/releases/download/v8.2.6/gc-8.2.6.tar.gz
 https://ftp.gnu.org/gnu/gdb/gdb-15.1.tar.xz
 https://www.kernel.org/pub/software/scm/git/git-2.46.0.tar.xz
@@ -307,7 +307,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.7-shared_library-1.pat
 https://www.lua.org/tests/lua-5.4.7-tests.tar.gz
 https://www.lua.org/ftp/lua-5.2.4.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.2.4-shared_library-1.patch
-https://www.mercurial-scm.org/release/mercurial-6.8.tar.gz
+https://www.mercurial-scm.org/release/mercurial-6.8.1.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.xz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03-xdoc.tar.xz
 https://github.com/NixOS/patchelf/releases/download/0.18.0/patchelf-0.18.0.tar.gz
@@ -452,7 +452,7 @@ https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0210.tar.gz
 https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
 https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
 https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
-https://www.php.net/distributions/php-8.3.9.tar.xz
+https://www.php.net/distributions/php-8.3.10.tar.xz
 https://www.php.net/distributions/manual/php_manual_en.html.gz
 https://www.php.net/distributions/manual/php_manual_en.tar.gz
 https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tar.xz
@@ -556,7 +556,7 @@ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
 https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.7.tar.bz2
 https://www.linuxfromscratch.org/patches/blfs/svn/rpcbind-1.2.7-vulnerability_fixes-1.patch
 https://www.samba.org/ftp/rsync/src/rsync-3.3.0.tar.gz
-https://download.samba.org/pub/samba/stable/samba-4.20.2.tar.gz
+https://download.samba.org/pub/samba/stable/samba-4.20.3.tar.gz
 https://ftp.gnu.org/gnu/wget/wget-1.24.5.tar.gz
 https://www.kernel.org/pub/software/network/iw/iw-6.9.tar.xz
 https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
@@ -571,7 +571,7 @@ https://nmap.org/dist/nmap-7.95.tar.bz2
 https://downloads.sourceforge.net/traceroute/traceroute-2.1.5.tar.gz
 https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
 https://www.wireshark.org/download/src/all-versions/wireshark-4.2.6.tar.xz
-https://github.com/c-ares/c-ares/releases/download/v1.32.3/c-ares-1.32.3.tar.gz
+https://github.com/c-ares/c-ares/releases/download/v1.33.0/c-ares-1.33.0.tar.gz
 https://curl.se/download/curl-8.9.1.tar.xz
 https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.1/geoclue-2.7.1.tar.bz2
 https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.0.tar.xz
@@ -758,7 +758,7 @@ https://download.gnome.org/sources/libgee/0.20/libgee-0.20.6.tar.xz
 https://download.gnome.org/sources/libgtop/2.41/libgtop-2.41.3.tar.xz
 https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.2.tar.xz
 https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz
-https://download.gnome.org/sources/libshumate/1.2/libshumate-1.2.2.tar.xz
+https://download.gnome.org/sources/libshumate/1.2/libshumate-1.2.3.tar.xz
 https://download.gnome.org/sources/evolution-data-server/3.52/evolution-data-server-3.52.3.tar.xz
 https://download.gnome.org/sources/tracker/3.7/tracker-3.7.3.tar.xz
 https://download.gnome.org/sources/tracker-miners/3.7/tracker-miners-3.7.3.tar.xz
@@ -785,7 +785,7 @@ https://download.gnome.org/sources/gnome-user-docs/46/gnome-user-docs-46.1.tar.x
 https://download.gnome.org/sources/yelp/42/yelp-42.2.tar.xz
 https://download.gnome.org/sources/baobab/46/baobab-46.0.tar.xz
 https://download.gnome.org/sources/brasero/3.12/brasero-3.12.3.tar.xz
-https://download.gnome.org/sources/eog/45/eog-45.3.tar.xz
+https://download.gnome.org/sources/eog/45/eog-45.4.tar.xz
 https://download.gnome.org/sources/evince/46/evince-46.3.1.tar.xz
 https://download.gnome.org/sources/evolution/3.52/evolution-3.52.3.tar.xz
 https://download.gnome.org/sources/file-roller/44/file-roller-44.3.tar.xz

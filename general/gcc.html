@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      GCC-14.1.0
+      GCC-14.2.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1378">
+  <body class="blfs" id="blfs-r12.1-1391">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1378
+        "phrase">(systemd</span> Edition) - Version r12.1-1391
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1378">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1391">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="gcc" name="gcc"></a>GCC-14.1.0
+      <a id="gcc" name="gcc"></a>GCC-14.2.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -95,7 +95,7 @@
           </h3>
           <p>
             If you are upgrading <span class="application">GCC</span> from
-            any other version prior to 14.1.0, then you must be careful
+            any other version prior to 14.2.0, then you must be careful
             compiling 3rd party kernel modules. You should ensure that the
             kernel and all its native modules are also compiled using the
             same version of <span class="application">GCC</span> that you use
@@ -115,12 +115,12 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz">https://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz</a>
+                "https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz">https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 24195dca80ded5e0551b533f46a4481d
+                Download MD5 sum: 2268420ba02dc01821960e274711bde0
               </p>
             </li>
             <li class="listitem">
@@ -131,12 +131,12 @@
             <li class="listitem">
               <p>
                 Estimated disk space required: 11 GB (3.4 GB installed with
-                all listed languages; add 1.5 GB for tests)
+                all listed languages; add 1.6 GB for tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 12 SBU (add 32 SBU for tests; both with
+                Estimated build time: 14 SBU (add 34 SBU for tests; both with
                 parallelism=8)
               </p>
             </li>
@@ -262,9 +262,9 @@ mkdir -pv /usr/share/gdb/auto-load/usr/lib              &amp;&amp;
 mv -v /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib &amp;&amp;
 
 chown -v -R root:root \
-    /usr/lib/gcc/*linux-gnu/14.1.0/include{,-fixed}     &amp;&amp;
+    /usr/lib/gcc/*linux-gnu/14.2.0/include{,-fixed}     &amp;&amp;
 
-ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/14.1.0/liblto_plugin.so \
+ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/14.2.0/liblto_plugin.so \
         /usr/lib/bfd-plugins/</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -515,7 +515,7 @@ ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/14.1.0/liblto_plugin.so \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1378">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1391">
           Home</a>
         </li>
       </ul>
