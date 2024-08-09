@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1421">
+  <body class="blfs" id="blfs-r12.1-1429">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1421
+        "phrase">(systemd</span> Edition) - Version r12.1-1429
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="xwayland.html" title=
-          "Xwayland-24.1.1">Prev</a>
+          "Xwayland-24.1.2">Prev</a>
           <p>
-            Xwayland-24.1.1
+            Xwayland-24.1.2
           </p>
         </li>
         <li class="next">
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1421">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1429">
           Home</a>
         </li>
       </ul>
@@ -178,7 +178,7 @@
         <p class="optional">
           <a class="xref" href="../general/acpid.html" title=
           "acpid-2.0.34">acpid-2.0.34</a> (runtime), <a class="xref" href=
-          "../general/doxygen.html" title="Doxygen-1.11.0">Doxygen-1.11.0</a>
+          "../general/doxygen.html" title="Doxygen-1.12.0">Doxygen-1.12.0</a>
           (to build API documentation), <a class="xref" href=
           "../pst/fop.html" title="fop-2.9">fop-2.9</a> (to build
           documentation), <a class="xref" href="../general/libunwind.html"
@@ -311,8 +311,8 @@ cd    build &amp;&amp;
 meson setup ..              \
       --prefix=$XORG_PREFIX \
       --localstatedir=/var  \
-      -Dglamor=true         \
-      -Dxkb_output_dir=/var/lib/xkb &amp;&amp;
+      -D glamor=true        \
+      -D xkb_output_dir=/var/lib/xkb &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
@@ -331,18 +331,18 @@ mkdir -pv /etc/X11/xorg.conf.d</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-Dglamor=true</code></em>: Ensure
+          <em class="parameter"><code>-D glamor=true</code></em>: Ensure
           building the Glamor module. It's needed to build the <code class=
           "filename">modesetting_drv</code> driver which replaces the
           traditional Device Dependent X (DDX) drivers.
         </p>
         <p>
-          <code class="option">-Dsuid_wrapper=true</code>: Builds the
+          <code class="option">-D suid_wrapper=true</code>: Builds the
           suid-root wrapper for legacy DDX driver support on rootless xserver
           systems.
         </p>
         <p>
-          <code class="option">-Dxephyr=true</code>: This option allows
+          <code class="option">-D xephyr=true</code>: This option allows
           building Xephyr if its dependencies are met.
         </p>
       </div>
@@ -490,9 +490,9 @@ mkdir -pv /etc/X11/xorg.conf.d</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="xwayland.html" title=
-          "Xwayland-24.1.1">Prev</a>
+          "Xwayland-24.1.2">Prev</a>
           <p>
-            Xwayland-24.1.1
+            Xwayland-24.1.2
           </p>
         </li>
         <li class="next">
@@ -508,7 +508,7 @@ mkdir -pv /etc/X11/xorg.conf.d</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1421">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1429">
           Home</a>
         </li>
       </ul>
