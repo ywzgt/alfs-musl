@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Polkit-124
+      Polkit-125
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1429">
+  <body class="blfs" id="blfs-r12.1-1438">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1429
+        "phrase">(systemd</span> Edition) - Version r12.1-1438
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1429">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1438">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="polkit" name="polkit"></a>Polkit-124
+      <a id="polkit" name="polkit"></a>Polkit-125
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -79,18 +79,18 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://gitlab.freedesktop.org/polkit/polkit/-/archive/124/polkit-124.tar.gz">
-                https://gitlab.freedesktop.org/polkit/polkit/-/archive/124/polkit-124.tar.gz</a>
+                "https://github.com/polkit-org/polkit/archive/125/polkit-125.tar.gz">
+                https://github.com/polkit-org/polkit/archive/125/polkit-125.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 97db655618e1483706fbc764787c7d6e
+                Download MD5 sum: 8e9f2377fc7b4010bd29b97d2e288b4f
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 744 KB
+                Download size: 444 KB
               </p>
             </li>
             <li class="listitem">
@@ -193,10 +193,25 @@
             "../general/libxslt.html" title=
             "libxslt-1.1.42">libxslt-1.1.42</a>, but you do not want to
             install any of the DocBook packages mentioned, you will need to
-            use <code class="option">-Dman=false</code> in the instructions
+            use <code class="option">-D man=false</code> in the instructions
             below.
           </p>
         </div>
+      </div>
+      <div class="kernel" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          <a id="polkit-test-kernel" name="polkit-test-kernel"></a>Kernel
+          Configuration
+        </h2>
+        <p>
+          Some tests need user namespace. If running the test suite, enable
+          it:
+        </p>
+        <pre class="screen"><span class="blue">G</span>eneral setup ---&gt;
+  -*- N<span class=
+"blue">a</span>mespaces support ---&gt;                                       [NAMESPACES]
+    [*] <span class=
+"blue">U</span>ser namespace                                                 [USER_NS]</pre>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -219,11 +234,11 @@ useradd -c "PolicyKit Daemon Owner" -d /etc/polkit-1 -u 27 \
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup ..                             \
-      --prefix=/usr                        \
-      --buildtype=release                  \
-      -D man=true                          \
-      -D session_tracking=libsystemd-login \
+meson setup ..                   \
+      --prefix=/usr              \
+      --buildtype=release        \
+      -D man=true                \
+      -D session_tracking=logind \
       -D tests=true</kbd></pre>
         <p>
           Now adapt the shipped mocklibc copy to allow building the test
@@ -262,14 +277,14 @@ sed -i '1 i #include &lt;stdio.h&gt;' ../subprojects/mocklibc-1.0/src/netgroup.h
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dtests=true</code></em>: This switch
+          <em class="parameter"><code>-D tests=true</code></em>: This switch
           allows to run the test suite of this package. As <span class=
           "application">Polkit</span> is used for authorizations, its
           integrity can affect system security. So it's recommended to run
           the test suite building this package.
         </p>
         <p>
-          <code class="option">-Djs_engine=mozjs</code>: This switch allows
+          <code class="option">-D js_engine=mozjs</code>: This switch allows
           using the <a class="xref" href="../general/spidermonkey.html"
           title="SpiderMonkey from firefox-115.14.0">SpiderMonkey from
           Firefox-115.14.0</a> JavaScript engine instead of the <a class=
@@ -277,36 +292,36 @@ sed -i '1 i #include &lt;stdio.h&gt;' ../subprojects/mocklibc-1.0/src/netgroup.h
           "duktape-2.7.0">duktape-2.7.0</a> JavaScript engine.
         </p>
         <p>
-          <code class="option">-Dos_type=lfs</code>: Use this switch if you
+          <code class="option">-D os_type=lfs</code>: Use this switch if you
           did not create the <code class="filename">/etc/lfs-release</code>
           file or distribution auto detection will fail and you will be
           unable to use <span class="application">Polkit</span>.
         </p>
         <p>
-          <code class="option">-Dauthfw=shadow</code>: This switch enables
+          <code class="option">-D authfw=shadow</code>: This switch enables
           the package to use the <span class="application">Shadow</span>
           rather than the <span class="application">Linux PAM</span>
           Authentication framework. Use it if you have not installed
           <span class="application">Linux PAM</span>.
         </p>
         <p>
-          <code class="option">-Dintrospection=false</code>: Use this option
+          <code class="option">-D introspection=false</code>: Use this option
           if you are certain that you do not need gobject-introspection files
           for polkit, or do not have installed <a class="xref" href=
           "../general/glib2.html" title="GLib-2.80.4">GLib-2.80.4</a> with
           GObject Introspection.
         </p>
         <p>
-          <code class="option">-Dman=false</code>: Use this option to disable
-          generating and installing manual pages. This is useful if libxslt
-          is not installed.
+          <code class="option">-D man=false</code>: Use this option to
+          disable generating and installing manual pages. This is useful if
+          libxslt is not installed.
         </p>
         <p>
-          <code class="option">-Dexamples=true</code>: Use this option to
+          <code class="option">-D examples=true</code>: Use this option to
           build the example programs.
         </p>
         <p>
-          <code class="option">-Dgtk_doc=true</code>: Use this option to
+          <code class="option">-D gtk_doc=true</code>: Use this option to
           enable building and installing the API documentation.
         </p>
       </div>
@@ -477,7 +492,7 @@ sed -i '1 i #include &lt;stdio.h&gt;' ../subprojects/mocklibc-1.0/src/netgroup.h
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1429">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1438">
           Home</a>
         </li>
       </ul>

@@ -19,7 +19,7 @@ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_103_RTM/src/nss-3.10
 https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.103-standalone-1.patch
 https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.8p1.tar.gz
 https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz
-https://gitlab.freedesktop.org/polkit/polkit/-/archive/124/polkit-124.tar.gz
+https://github.com/polkit-org/polkit/archive/125/polkit-125.tar.gz
 https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
 https://github.com/shadow-maint/shadow/releases/download/4.16.0/shadow-4.16.0.tar.xz
@@ -344,7 +344,7 @@ https://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-1.45.tar.gz
 https://www.cpan.org/authors/id/J/JT/JTBRAUN/Parse-RecDescent-1.967015.tar.gz
 https://www.cpan.org/authors/id/W/WB/WBRASWELL/Parse-Yapp-1.21.tar.gz
 https://www.cpan.org/authors/id/L/LE/LEONT/PerlIO-utf8_strict-0.010.tar.gz
-https://www.cpan.org/authors/id/A/AB/ABIGAIL/Regexp-Common-2017060201.tar.gz
+https://www.cpan.org/authors/id/A/AB/ABIGAIL/Regexp-Common-2024080801.tar.gz
 https://www.cpan.org/authors/id/R/RA/RAAB/SGMLSpm-1.1.tar.gz
 https://www.cpan.org/authors/id/S/SA/SALVA/Sort-Key-1.33.tar.gz
 https://www.cpan.org/authors/id/D/DA/DANBOO/Test-Command-0.11.tar.gz
@@ -530,7 +530,7 @@ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.0.7.tar.g
 https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.0.2.tar.gz
 https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
 https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.4.tar.xz
-https://static.rust-lang.org/dist/rustc-1.80.0-src.tar.xz
+https://static.rust-lang.org/dist/rustc-1.80.1-src.tar.xz
 https://github.com/rust-lang/rust-bindgen/archive/v0.69.4/rust-bindgen-0.69.4.tar.gz
 https://downloads.sourceforge.net/scons/SCons-4.8.0.tar.gz
 https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
@@ -615,7 +615,7 @@ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.9.0.tar.gz
 https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
 https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
 https://downloads.mariadb.org/interstitial/mariadb-10.11.8/source/mariadb-10.11.8.tar.gz
-https://ftp.postgresql.org/pub/source/v16.3/postgresql-16.3.tar.bz2
+https://ftp.postgresql.org/pub/source/v16.4/postgresql-16.4.tar.bz2
 https://sqlite.org/2024/sqlite-autoconf-3460000.tar.gz
 https://sqlite.org/2024/sqlite-doc-3460000.zip
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.8.tgz
@@ -891,7 +891,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.4-upstream_fixes-2.p
 https://feh.finalrewind.org/feh-3.10.3.tar.bz2
 https://github.com/fontforge/fontforge/releases/download/20230101/fontforge-20230101.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/fontforge-20230101-security_fixes-1.patch
-https://github.com/freerdp/freerdp/archive/3.6.3/FreeRDP-3.6.3.tar.gz
+https://github.com/freerdp/freerdp/archive/3.7.0/FreeRDP-3.7.0.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/gimp/gimp3-20240711.tar.xz
 https://anduin.linuxfromscratch.org/BLFS/gimp/gimp3-help-20240711.tar.xz
 https://downloads.sourceforge.net/gparted/gparted-1.6.0.tar.gz
