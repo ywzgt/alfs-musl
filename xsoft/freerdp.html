@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1438">
+  <body class="blfs" id="blfs-r12.1-1450">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1438
+        "phrase">(systemd</span> Edition) - Version r12.1-1450
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1438">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1450">
           Home</a>
         </li>
       </ul>
@@ -181,19 +181,19 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -D CMAKE_INSTALL_PREFIX=/usr                                         \
-      -D CMAKE_SKIP_INSTALL_RPATH=OFF                                      \
-      -D CMAKE_BUILD_TYPE=Release                                          \
-      -D WITH_CAIRO=ON                                                     \
-      -D WITH_CLIENT_SDL=OFF                                               \
-      -D WITH_DSP_FFMPEG=ON                                                \
-      -D WITH_FFMPEG=ON                                                    \
-      -D WITH_PCSC=OFF                                                     \
-      -D WITH_SERVER=ON                                                    \
-      -D WITH_SERVER_CHANNELS=ON                                           \
+cmake -D CMAKE_INSTALL_PREFIX=/usr   \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON \
+      -D CMAKE_BUILD_TYPE=Release    \
+      -D WITH_CAIRO=ON               \
+      -D WITH_CLIENT_SDL=OFF         \
+      -D WITH_DSP_FFMPEG=ON          \
+      -D WITH_FFMPEG=ON              \
+      -D WITH_PCSC=OFF               \
+      -D WITH_SERVER=ON              \
+      -D WITH_SERVER_CHANNELS=ON     \
       -D DOCBOOKXSL_DIR=/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2 \
-      -W no-dev                                                            \
-      -G Ninja                                                             .. &amp;&amp;
+      -W no-dev                      \
+      -G Ninja ..                    &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -505,7 +505,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1438">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1450">
           Home</a>
         </li>
       </ul>
