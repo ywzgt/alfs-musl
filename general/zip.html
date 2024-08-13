@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1450">
+  <body class="blfs" id="blfs-r12.1-1472">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1450
+        "phrase">(systemd</span> Edition) - Version r12.1-1472
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1450">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1472">
           Home</a>
         </li>
       </ul>
@@ -110,16 +110,11 @@
           Installation of Zip
         </h2>
         <p>
-          First, make the package compatible with gcc-14:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -i '205 s/CC=gcc/CC="gcc -std=gnu89"/' unix/Makefile</kbd></pre>
-        <p>
           Install <span class="application">Zip</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">make -f unix/Makefile generic_gcc</kbd></pre>
+        "command">make -f unix/Makefile generic CC="gcc -std=gnu89"</kbd></pre>
         <p>
           This package does not come with a test suite.
         </p>
@@ -134,14 +129,23 @@
           Command Explanations
         </h2>
         <p>
-          <span class="command"><strong>make prefix=/usr -f unix/Makefile
-          install</strong></span>: This command overrides the <code class=
-          "varname">prefix</code> variable that is set to <code class=
-          "filename">/usr/local</code> in the <code class=
-          "filename">unix/Makefile</code>. Alternatives to <em class=
-          "parameter"><code>generic_gcc</code></em> can be seen with a
-          <span class="command"><strong>make -f unix/Makefile
-          list</strong></span> command.
+          <em class="parameter"><code>CC="gcc -std=gnu89"</code></em>: This
+          parameter overrides the <code class="varname">CC</code> variable
+          that is set to <span class="command"><strong>cc</strong></span> in
+          the <code class="filename">unix/Makefile</code> file. On LFS
+          <span class="command"><strong>cc</strong></span> is a symlink to
+          <span class="command"><strong>gcc</strong></span>, and it uses
+          <code class="option">-std=gnu17</code> (ISO 9899:2017 with GNU
+          extensions) as the default but Zip is a <span class=
+          "quote">“<span class="quote">legacy</span>”</span> package where
+          some grammar constructs are invalid in ISO 9899:1999 and newer
+          standards.
+        </p>
+        <p>
+          <em class="parameter"><code>prefix=/usr</code></em>: This parameter
+          overrides the <code class="varname">prefix</code> variable that is
+          set to <code class="filename">/usr/local</code> in the <code class=
+          "filename">unix/Makefile</code> file.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -261,7 +265,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1450">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1472">
           Home</a>
         </li>
       </ul>

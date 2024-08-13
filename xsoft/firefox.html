@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1450">
+  <body class="blfs" id="blfs-r12.1-1472">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1450
+        "phrase">(systemd</span> Edition) - Version r12.1-1472
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1450">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1472">
           Home</a>
         </li>
       </ul>
@@ -155,7 +155,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="../general/cbindgen.html" title=
-          "Cbindgen-0.26.0">Cbindgen-0.26.0</a>, <a class="xref" href=
+          "Cbindgen-0.27.0">Cbindgen-0.27.0</a>, <a class="xref" href=
           "../x/gtk3.html" title="GTK+-3.24.43">GTK+-3.24.43</a>, <a class=
           "xref" href="../x/libnotify.html" title=
           "libnotify-0.8.3">libnotify-0.8.3</a>, <a class="xref" href=
@@ -213,7 +213,8 @@
           "Doxygen-1.12.0">Doxygen-1.12.0</a>, <a class="xref" href=
           "../multimedia/ffmpeg.html" title="FFmpeg-7.0.2">FFmpeg-7.0.2</a>
           (runtime, to play mov, mp3 or mp4 files), <a class="xref" href=
-          "../postlfs/liboauth.html" title=
+          "../basicnet/geoclue2.html" title="GeoClue-2.7.1">GeoClue-2.7.1</a>
+          (runtime), <a class="xref" href="../postlfs/liboauth.html" title=
           "liboauth-1.0.3">liboauth-1.0.3</a>, <a class="xref" href=
           "../general/pciutils.html" title=
           "pciutils-3.13.0">pciutils-3.13.0</a> (runtime), <a class="xref"
@@ -255,9 +256,13 @@
 # to use geolocation web services, comment out this line
 ac_add_options --disable-necko-wifi
 
-# Uncomment the following line if you wish to use Google's Geolocation API
-# (needed for use with saved maps with Google Maps)
-#ac_add_options --with-google-location-service-api-keyfile=$PWD/google-key
+# Comment out the following line if you wish not to use Google's Location
+# Service (GLS).  Note that if Geoclue is installed and configured to use
+# GLS (as the BLFS instruction does), Firefox can access GLS via Geoclue
+# anyway.  On the other hand if Geoclue is not installed (or not properly
+# configured) and this line is commented out, the website requiring a
+# location service will not function properly.
+ac_add_options --with-google-location-service-api-keyfile=$PWD/google-key
 
 # startup-notification is required since firefox-78
 
@@ -330,6 +335,13 @@ unset MOZ_TELEMETRY_REPORTING
 
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir</code>
 EOF</kbd></pre>
+        <p>
+          Adapt two files for compatibility with cbindgen-0.27.0 or later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed 's/input.try/&amp;_parse/' \
+    -i servo/components/style_traits/values.rs &amp;&amp;
+sed '0,/"Keyframe"/{//d}' -i servo/ports/geckolib/cbindgen.toml</kbd></pre>
         <p>
           If building with system ICU, adapt the line break mapping for ICU
           74 or later. This construct adds five entries to a c++ array.
@@ -665,7 +677,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1450">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1472">
           Home</a>
         </li>
       </ul>

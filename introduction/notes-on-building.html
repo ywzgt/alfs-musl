@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1450">
+  <body class="blfs" id="blfs-r12.1-1472">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1450
+        "phrase">(systemd</span> Edition) - Version r12.1-1472
       </h4>
       <h3>
         Chapter&nbsp;2.&nbsp;Important Information
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1450">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1472">
           Home</a>
         </li>
       </ul>
@@ -1208,7 +1208,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
           <ul>
             <li class="listitem">
               <p>
-                plain : no added flags. This is for distributors to supply
+                plain: no added flags. This is for distributors to supply
                 their own <code class="envar">CFLAGS</code>, <code class=
                 "envar">CXXFLAGS</code> and <code class=
                 "envar">LDFLAGS</code>. There is no obvious reason to use
@@ -1217,7 +1217,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
             </li>
             <li class="listitem">
               <p>
-                debug : <code class="option">-g</code> - this is the default
+                debug: <code class="option">-g</code> - this is the default
                 if nothing is specified in either <code class=
                 "filename">meson.build</code> or the command line. However it
                 results large and slow binaries, so we should override it in
@@ -1226,14 +1226,14 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
             </li>
             <li class="listitem">
               <p>
-                debugoptimized : <code class="option">-O2 -g</code> - this is
+                debugoptimized: <code class="option">-O2 -g</code> - this is
                 the default specified in <code class=
                 "filename">meson.build</code> of some packages.
               </p>
             </li>
             <li class="listitem">
               <p>
-                release : <code class="option">-O3</code> (occasionally a
+                release: <code class="option">-O3</code> (occasionally a
                 package will force <code class="option">-O2</code> here) -
                 this is the buildtype we use for most packages with Meson
                 build system in BLFS.
@@ -1344,7 +1344,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
           means that you cannot move the binaries to an incompatible machine
           - this can also apply to newer machines, not just to older
           machines. For example programs compiled for <code class=
-          "literal">amdfam10</code> run on old Phenoms, Kaveris, and Ryzens :
+          "literal">amdfam10</code> run on old Phenoms, Kaveris, and Ryzens,
           but programs compiled for a Kaveri will not run on a Ryzen because
           certain op-codes are not present. Similarly, if you build for a
           Haswell not everything will run on a SandyBridge.
@@ -1517,7 +1517,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1450">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1472">
           Home</a>
         </li>
       </ul>
