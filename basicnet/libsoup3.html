@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;17.&nbsp;Networking Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -122,7 +122,7 @@
           "libxml2-2.13.3">libxml2-2.13.3</a>, <a class="xref" href=
           "nghttp2.html" title="nghttp2-1.62.1">nghttp2-1.62.1</a>, and
           <a class="xref" href="../server/sqlite.html" title=
-          "SQLite-3.46.0">SQLite-3.46.0</a>
+          "SQLite-3.46.1">SQLite-3.46.1</a>
         </p>
         <h4>
           Recommended
@@ -173,9 +173,9 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr          \
             --buildtype=release    \
-            -Dvapi=enabled         \
-            -Dgssapi=disabled      \
-            -Dsysprof=disabled     \
+            -D vapi=enabled        \
+            -D gssapi=disabled     \
+            -D sysprof=disabled    \
             --wrap-mode=nofallback \
             ..                     &amp;&amp;
 ninja</kbd></pre>
@@ -206,12 +206,12 @@ ninja</kbd></pre>
           installed on the system.
         </p>
         <p>
-          <code class="option">-Dvapi=disabled</code>: Use this if you have
+          <code class="option">-D vapi=disabled</code>: Use this if you have
           not installed <span class="application">Vala</span>, e.g. because
           you are not building <span class="application">GNOME</span>.
         </p>
         <p>
-          <code class="option">-Ddocs=enabled</code>: If <a class="xref"
+          <code class="option">-D docs=enabled</code>: If <a class="xref"
           href="../general/python-modules.html#gi-docgen" title=
           "Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> is installed, the API
           documentation will be built and installed no matter if this option
@@ -221,12 +221,12 @@ ninja</kbd></pre>
           title="Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> is not installed.
         </p>
         <p>
-          <em class="parameter"><code>-Dgssapi=disabled</code></em>: libsoup3
-          defaults to building with GSSAPI support, which requires Kerberos
-          (as does the test suite).
+          <em class="parameter"><code>-D gssapi=disabled</code></em>:
+          libsoup3 defaults to building with GSSAPI support, which requires
+          Kerberos (as does the test suite).
         </p>
         <p>
-          <em class="parameter"><code>-Dsysprof=disabled</code></em>:
+          <em class="parameter"><code>-D sysprof=disabled</code></em>:
           libsoup3 will automatically download a git version of <a class=
           "ulink" href="https://wiki.gnome.org/Apps/Sysprof">sysprof</a> if
           git is available or use the installed version if it is present on
@@ -306,7 +306,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

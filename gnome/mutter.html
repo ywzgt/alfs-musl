@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -176,11 +176,11 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr              \
-            --buildtype=release        \
-            -Dtests=false              \
-            -Dprofiler=false           \
-            ..                         &amp;&amp;
+meson setup --prefix=/usr       \
+            --buildtype=release \
+            -D tests=false      \
+            -D profiler=false   \
+            ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
           The test suite requires an external program called <span class=
@@ -198,12 +198,12 @@ ninja</kbd></pre>
           "Xorg-Server-21.1.13">Xorg-Server-21.1.13</a> or <a class="xref"
           href="../x/xwayland.html" title=
           "Xwayland-24.1.2">Xwayland-24.1.2</a>. You should also replace
-          <em class="parameter"><code>-Dtests=false</code></em> in the
+          <em class="parameter"><code>-D tests=false</code></em> in the
           <span class="command"><strong>meson</strong></span> command, with
-          <em class="parameter"><code>-Dtests=true
-          -Dclutter_tests=false</code></em>. The test suite requires the
-          mutter schema to be installed on the system, so it is better to run
-          the tests after installing the package.
+          <em class="parameter"><code>-D tests=true -D
+          clutter_tests=false</code></em>. The test suite requires the mutter
+          schema to be installed on the system, so it is better to run the
+          tests after installing the package.
         </p>
         <p>
           You can also test basic functions of <span class=
@@ -247,12 +247,12 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dtests=false</code></em>: Prevents
+          <em class="parameter"><code>-D tests=false</code></em>: Prevents
           building the tests, and removes a hard requirement on <span class=
           "command"><strong>xvfb-run</strong></span>.
         </p>
         <p>
-          <em class="parameter"><code>-Dprofiler=false</code></em>: Allow
+          <em class="parameter"><code>-D profiler=false</code></em>: Allow
           building this package without <span class=
           "application">Sysprof</span>. Remove this option if you've
           installed <span class="application">Sysprof</span> and want to
@@ -260,7 +260,7 @@ ninja</kbd></pre>
           "application">Mutter</span>.
         </p>
         <p>
-          <code class="option">-Dtests=true -Dclutter_tests=false</code>:
+          <code class="option">-D tests=true -D clutter_tests=false</code>:
           Building all the tests but the tests for the shipped <span class=
           "application">Clutter</span> library. The <span class=
           "application">Clutter</span> tests are known to fail with
@@ -406,7 +406,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

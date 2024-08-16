@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -134,7 +134,7 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr --buildtype=release -Dgtkdoc=false .. &amp;&amp;
+meson setup --prefix=/usr --buildtype=release -D gtkdoc=false .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
@@ -155,19 +155,19 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dgtkdoc=false</code></em>: This switch
-          disables building the API documentation. Remove it if you have
-          <a class="xref" href="gtk-doc.html" title=
+          <em class="parameter"><code>-D gtkdoc=false</code></em>: This
+          switch disables building the API documentation. Remove it if you
+          have <a class="xref" href="gtk-doc.html" title=
           "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a> installed and wish to build the
           API documentation.
         </p>
         <p>
-          <code class="option">-Dintrospection=false</code>: Use this switch
+          <code class="option">-D introspection=false</code>: Use this switch
           if you do not have built <a class="xref" href="glib2.html" title=
           "GLib-2.80.4">GLib-2.80.4</a> with GObject Introspection.
         </p>
         <p>
-          <code class="option">-Dstemmer=true</code>: Use this switch if you
+          <code class="option">-D stemmer=true</code>: Use this switch if you
           have <a class="ulink" href=
           "https://github.com/zvelo/libstemmer">libstemmer</a> installed and
           wish to build stemmer support.
@@ -261,7 +261,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

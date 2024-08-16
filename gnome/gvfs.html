@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -189,17 +189,17 @@ cd    build &amp;&amp;
 meson setup               \
       --prefix=/usr       \
       --buildtype=release \
-      -Donedrive=false    \
-      -Dfuse=false        \
-      -Dgphoto2=false     \
-      -Dafc=false         \
-      -Dbluray=false      \
-      -Dnfs=false         \
-      -Dmtp=false         \
-      -Dsmb=false         \
-      -Ddnssd=false       \
-      -Dgoa=false         \
-      -Dgoogle=false      .. &amp;&amp;
+      -D onedrive=false   \
+      -D fuse=false       \
+      -D gphoto2=false    \
+      -D afc=false        \
+      -D bluray=false     \
+      -D nfs=false        \
+      -D mtp=false        \
+      -D smb=false        \
+      -D dnssd=false      \
+      -D goa=false        \
+      -D google=false     .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           The test suite requires <span class=
@@ -238,7 +238,7 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-D&lt;option&gt;=false</code></em>:
+          <em class="parameter"><code>-D &lt;option&gt;=false</code></em>:
           These switches are required if the corresponding dependency is not
           installed. Remove those where you have installed the corresponding
           application and wish to use it with <span class=
@@ -248,7 +248,7 @@ ninja</kbd></pre>
           libmsgraph package.
         </p>
         <p>
-          <code class="option">-Dcdda=false</code>: This switch is required
+          <code class="option">-D cdda=false</code>: This switch is required
           if libcdio is not installed. The cdda backend is useless on
           machines without a CDROM/DVD drive.
         </p>
@@ -326,7 +326,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

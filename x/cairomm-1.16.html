@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -144,11 +144,11 @@
         <pre class="userinput"><kbd class="command">mkdir bld &amp;&amp;
 cd    bld &amp;&amp;
 
-meson setup ..            \
-      --prefix=/usr       \
-      --buildtype=release \
-      -Dbuild-tests=true  \
-      -Dboost-shared=true &amp;&amp;
+meson setup ..             \
+      --prefix=/usr        \
+      --buildtype=release  \
+      -D build-tests=true  \
+      -D boost-shared=true &amp;&amp;
 ninja</kbd></pre>
         <p>
           To run the test suite, run: <span class="command"><strong>ninja
@@ -164,21 +164,21 @@ ninja</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-Dbuild-tests=true</code></em>: This
+          <em class="parameter"><code>-D build-tests=true</code></em>: This
           switch is for building the unit tests. Remove if you have not
           installed <a class="xref" href="../general/boost.html" title=
           "boost-1.85.0">Boost-1.85.0</a>.
         </p>
         <p>
-          <em class="parameter"><code>-Dboost-shared=true</code></em>: This
+          <em class="parameter"><code>-D boost-shared=true</code></em>: This
           switch has the package use the shared version of boost libraries.
           It is required if you have not installed the boost static
-          libraries, and you have passed <em class=
-          "parameter"><code>-Dbuild-tests=true</code></em>.
+          libraries, and you have passed <em class="parameter"><code>-D
+          build-tests=true</code></em>.
         </p>
         <p>
-          <code class="option">-Dbuild-documentation=true</code>: This switch
-          builds the html documentation if doxygen is installed.
+          <code class="option">-D build-documentation=true</code>: This
+          switch builds the html documentation if doxygen is installed.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -254,7 +254,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

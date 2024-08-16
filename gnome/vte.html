@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -161,7 +161,7 @@ ninja</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">sed -e "/docdir =/s@\$@/ 'vte-0.76.4'@" \
     -i ../doc/reference/meson.build     &amp;&amp;
-meson configure -Ddocs=true             &amp;&amp;
+meson configure -D docs=true             &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue <span class="command"><strong>ninja
@@ -188,16 +188,16 @@ rm -v /etc/profile.d/vte.*</kbd></pre>
           files installed in /etc/profile.d that have no use on a LFS system.
         </p>
         <p>
-          <code class="option">-Dgnutls=false</code>: Add this switch if you
+          <code class="option">-D gnutls=false</code>: Add this switch if you
           do not want to enable GnuTLS support.
         </p>
         <p>
-          <code class="option">-Dvapi=false</code>: Add this switch if you do
-          not want to enable vala bindings.
+          <code class="option">-D vapi=false</code>: Add this switch if you
+          do not want to enable vala bindings.
         </p>
         <p>
-          <code class="option">-Dgtk4=false</code>: Add this switch if you do
-          not want to build the GTK-4 version of VTE.
+          <code class="option">-D gtk4=false</code>: Add this switch if you
+          do not want to build the GTK-4 version of VTE.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -320,7 +320,7 @@ rm -v /etc/profile.d/vte.*</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

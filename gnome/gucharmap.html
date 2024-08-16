@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;34.&nbsp;<span class="phrase">GNOME Applications</span>
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -195,8 +195,8 @@ popd                          &amp;&amp;
 meson setup --prefix=/usr       \
             --strip             \
             --buildtype=release \
-            -Ducd_path=./ucd    \
-            -Ddocs=false        \
+            -D ucd_path=./ucd   \
+            -D docs=false       \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -220,7 +220,7 @@ ninja install</kbd></pre>
           binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Ducd_path=./ucd</code></em>: This
+          <em class="parameter"><code>-D ucd_path=./ucd</code></em>: This
           points to where the extracted main Unicode data files, and the
           zipped Unihan archive can be found.
         </p>
@@ -233,18 +233,18 @@ ninja install</kbd></pre>
           present.
         </p>
         <p>
-          <em class="parameter"><code>-Ddocs=false</code></em>: This allows
+          <em class="parameter"><code>-D docs=false</code></em>: This allows
           the package to build even if <span class=
           "application">gtk-doc</span> has not been installed. Remove this if
           you have installed that and wish to build the documentation.
         </p>
         <p>
-          <code class="option">-Dgir=false</code>: Use this if you have not
+          <code class="option">-D gir=false</code>: Use this if you have not
           installed <a class="xref" href="../general/glib2.html" title=
           "GLib-2.80.4">GLib-2.80.4</a> (with GObject Introspection).
         </p>
         <p>
-          <code class="option">-Dvapi=false</code>: Use this if you have not
+          <code class="option">-D vapi=false</code>: Use this if you have not
           installed <a class="xref" href="../general/vala.html" title=
           "Vala-0.56.17">Vala-0.56.17</a>.
         </p>
@@ -335,7 +335,7 @@ ninja install</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

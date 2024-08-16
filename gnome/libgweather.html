@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -137,7 +137,7 @@
           <a class="xref" href="../general/python-modules.html#gi-docgen"
           title="Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> (gi-docgen is also
           provided as a meson subproject, which will be used if <code class=
-          "option">-Dgtk_doc=false</code> is not passed to <span class=
+          "option">-D gtk_doc=false</code> is not passed to <span class=
           "command"><strong>meson</strong></span>), <a class="xref" href=
           "../general/llvm.html" title="LLVM-18.1.7">LLVM-18.1.7</a> (for
           clang-format), and <a class="ulink" href=
@@ -166,7 +166,7 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr       \
             --buildtype=release \
-            -Dgtk_doc=false     \
+            -D gtk_doc=false    \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -178,7 +178,7 @@ ninja</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">sed "s/libgweather_full_version/'libgweather-4.4.2'/" \
     -i ../doc/meson.build                             &amp;&amp;
-meson configure -Dgtk_doc=true                        &amp;&amp;
+meson configure -D gtk_doc=true                       &amp;&amp;
 ninja</kbd></pre>
         <p>
           One test needs that the locale files be installed on the system, so
@@ -203,7 +203,7 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dgtk_doc=false</code></em>: Allow
+          <em class="parameter"><code>-D gtk_doc=false</code></em>: Allow
           building this package without <a class="xref" href=
           "../general/python-modules.html#gi-docgen" title=
           "Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> installed. If you have
@@ -289,7 +289,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -131,9 +131,9 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr        \
-            --buildtype=release  \
-            -Dpython=disabled .. &amp;&amp;
+meson setup --prefix=/usr         \
+            --buildtype=release   \
+            -D python=disabled .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>meson
@@ -195,7 +195,7 @@ pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir ..</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dpython=disabled</code></em>: This
+          <em class="parameter"><code>-D python=disabled</code></em>: This
           switch prevents building the Python 3 binding with the deprecated
           method (running <span class=
           "command"><strong>setup.py</strong></span> directly). We will build
@@ -379,7 +379,7 @@ pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir ..</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

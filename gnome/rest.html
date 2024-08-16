@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -162,8 +162,8 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr       \
             --buildtype=release \
-            -Dexamples=false    \
-            -Dgtk_doc=false     \
+            -D examples=false   \
+            -D gtk_doc=false    \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -174,7 +174,7 @@ ninja</kbd></pre>
         </p>
         <pre class="userinput"><kbd class=
         "command">sed "/output/s/librest-1.0/rest-0.9.1/" -i ../docs/meson.build &amp;&amp;
-meson configure -Dgtk_doc=true                                 &amp;&amp;
+meson configure -D gtk_doc=true                                &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
@@ -195,7 +195,7 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dgtk_doc=false</code></em>: Allow
+          <em class="parameter"><code>-D gtk_doc=false</code></em>: Allow
           building this package without <a class="xref" href=
           "../general/python-modules.html#gi-docgen" title=
           "Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> installed. If you have
@@ -206,7 +206,7 @@ ninja</kbd></pre>
           reset this option.
         </p>
         <p>
-          <em class="parameter"><code>-Dexamples=false</code></em>: Remove
+          <em class="parameter"><code>-D examples=false</code></em>: Remove
           this option if <a class="xref" href="../x/libadwaita.html" title=
           "libadwaita-1.5.3">libadwaita-1.5.3</a> and <a class="xref" href=
           "../x/gtksourceview5.html" title=
@@ -215,7 +215,7 @@ ninja</kbd></pre>
           package.
         </p>
         <p>
-          <code class="option">-Dvapi=true</code>: Use this switch if
+          <code class="option">-D vapi=true</code>: Use this switch if
           <a class="xref" href="../general/vala.html" title=
           "Vala-0.56.17">Vala-0.56.17</a> is installed and you wish to build
           the Vala bindings provided by this package.
@@ -323,7 +323,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

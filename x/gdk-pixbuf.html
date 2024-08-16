@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -166,7 +166,7 @@ cd    build &amp;&amp;
 meson setup ..            \
       --prefix=/usr       \
       --buildtype=release \
-      -Dothers=enabled    \
+      -D others=enabled   \
       --wrap-mode=nofallback &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -177,7 +177,7 @@ ninja</kbd></pre>
         </p>
         <pre class="userinput"><kbd class=
         "command">sed "/docs_dir =/s@\$@ / 'gdk-pixbuf-2.42.12'@" -i ../docs/meson.build &amp;&amp;
-meson configure -Dgtk_doc=true                                         &amp;&amp;
+meson configure -D gtk_doc=true                                        &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
@@ -221,11 +221,11 @@ ninja</kbd></pre>
           installed on the system.
         </p>
         <p>
-          <em class="parameter"><code>-Dothers=enabled</code></em>: Enable
+          <em class="parameter"><code>-D others=enabled</code></em>: Enable
           the loaders for various image formats, for example BMP and XPM.
         </p>
         <p>
-          <code class="option">-Dman=false</code>: Use this option if you do
+          <code class="option">-D man=false</code>: Use this option if you do
           not want to generate manual pages, or if you do not want to install
           <a class="xref" href="../general/python-modules.html#docutils"
           title="docutils-0.21.2">docutils-0.21.2</a>.
@@ -368,7 +368,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

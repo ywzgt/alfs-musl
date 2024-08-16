@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -179,8 +179,8 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr       \
             --buildtype=release \
-            -Dselinux=false     \
-            -Dpackagekit=false  \
+            -D selinux=false    \
+            -D packagekit=false \
             ..                  &amp;&amp;
 
 ninja</kbd></pre>
@@ -225,17 +225,17 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dselinux=false</code></em>: This
+          <em class="parameter"><code>-D selinux=false</code></em>: This
           switch disables the use of selinux which isn't supported by BLFS.
         </p>
         <p>
-          <em class="parameter"><code>-Dpackagekit=false</code></em>: This
+          <em class="parameter"><code>-D packagekit=false</code></em>: This
           switch disables the use of PackageKit which isn't suitable for
           BLFS.
         </p>
         <p>
-          <code class="option">-Dcloudproviders=false</code>: Use this switch
-          if you do not have <a class="xref" href=
+          <code class="option">-D cloudproviders=false</code>: Use this
+          switch if you do not have <a class="xref" href=
           "../general/libcloudproviders.html" title=
           "libcloudproviders-0.3.6">libcloudproviders-0.3.6</a> installed.
         </p>
@@ -329,7 +329,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

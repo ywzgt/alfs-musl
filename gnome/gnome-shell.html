@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -186,12 +186,12 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr       \
             --buildtype=release \
-            -Dtests=false       \
+            -D tests=false      \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, you need to remove the <em class=
-          "parameter"><code>-Dtests=false</code></em> switch, and to have
+          "parameter"><code>-D tests=false</code></em> switch, and to have
           <a class="xref" href="mutter.html" title=
           "Mutter-46.4">Mutter-46.4</a> compiled and installed with tests
           also. To run the tests, issue: <span class="command"><strong>ninja
@@ -216,14 +216,14 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dtests=false</code></em>: Remove this
+          <em class="parameter"><code>-D tests=false</code></em>: Remove this
           switch if you want to build the tests. But then <span class=
           "command"><strong>meson</strong></span> will fail if <a class=
           "xref" href="mutter.html" title="Mutter-46.4">Mutter-46.4</a> tests
           are not installed.
         </p>
         <p>
-          <code class="option">-Dextensions_tool=false</code>: This switch
+          <code class="option">-D extensions_tool=false</code>: This switch
           allows building this package without <a class="xref" href=
           "gnome-autoar.html" title=
           "gnome-autoar-0.4.4">gnome-autoar-0.4.4</a> installed.
@@ -304,7 +304,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -192,11 +192,11 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr           \
-            --buildtype=release     \
-            -Dbroadway-backend=true \
-            -Dintrospection=enabled \
-            -Dvulkan=disabled       \
+meson setup --prefix=/usr            \
+            --buildtype=release      \
+            -D broadway-backend=true \
+            -D introspection=enabled \
+            -D vulkan=disabled       \
             .. &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -207,7 +207,7 @@ ninja</kbd></pre>
         </p>
         <pre class="userinput"><kbd class=
         "command">sed "s@'doc'@&amp; / 'gtk-4.14.4'@" -i ../docs/reference/meson.build &amp;&amp;
-meson configure -Ddocumentation=true                             &amp;&amp;
+meson configure -D documentation=true                            &amp;&amp;
 ninja</kbd></pre>
         <p>
           To run the tests, issue: <span class=
@@ -236,16 +236,16 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dbroadway-backend=true</code></em>:
+          <em class="parameter"><code>-D broadway-backend=true</code></em>:
           This switch enables the HTML5 GDK backend.
         </p>
         <p>
-          <em class="parameter"><code>-Dintrospection=enabled</code></em>:
+          <em class="parameter"><code>-D introspection=enabled</code></em>:
           This switch enables using GObject Introspection to generate GIR
           bindings of this packages. These bindings are required by GNOME.
         </p>
         <p>
-          <code class="option">-Dcloudproviders=enabled</code>: Use this
+          <code class="option">-D cloudproviders=enabled</code>: Use this
           switch if you have <a class="xref" href=
           "../general/libcloudproviders.html" title=
           "libcloudproviders-0.3.6">libcloudproviders-0.3.6</a> installed and
@@ -253,32 +253,32 @@ ninja</kbd></pre>
           window.
         </p>
         <p>
-          <code class="option">-Dtracker=enabled</code>: Use this switch if
+          <code class="option">-D tracker=enabled</code>: Use this switch if
           you have <a class="xref" href="../gnome/tracker3.html" title=
           "Tracker-3.7.3">Tracker-3.7.3</a> installed and wish to use search
           functionality when running a file chooser.
         </p>
         <p>
-          <code class="option">-Dcolord=enabled</code>: Use this switch if
+          <code class="option">-D colord=enabled</code>: Use this switch if
           you have <a class="xref" href="../general/colord.html" title=
           "Colord-1.4.7">colord-1.4.7</a> installed and wish to use colord
           with the CUPS printing backend.
         </p>
         <p>
-          <code class="option">-Dman-pages=true</code>: Use this switch if
+          <code class="option">-D man-pages=true</code>: Use this switch if
           you have <a class="xref" href=
           "../general/python-modules.html#docutils" title=
           "docutils-0.21.2">docutils-0.21.2</a> installed and wish to
           generate the man pages.
         </p>
         <p>
-          <code class="option">-Dsysprof=enabled</code>: Use this switch if
+          <code class="option">-D sysprof=enabled</code>: Use this switch if
           you have <a class="ulink" href=
           "https://wiki.gnome.org/Apps/Sysprof">sysprof</a> installed and
           wish to enable tracing support for GTK4-based applications.
         </p>
         <p>
-          <code class="option">-Dvulkan=enabled</code>: Use this switch if
+          <code class="option">-D vulkan=enabled</code>: Use this switch if
           you have <a class="xref" href="vulkan-loader.html" title=
           "Vulkan-Loader-1.3.292">Vulkan-Loader-1.3.292</a> installed and
           wish to build the experimental Vulkan backend. Note that you must
@@ -606,7 +606,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

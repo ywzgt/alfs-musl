@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -158,8 +158,8 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr       \
             --buildtype=release \
-            -Dgtk_doc=false     \
-            -Dssh_agent=false   \
+            -D gtk_doc=false    \
+            -D ssh_agent=false  \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -171,7 +171,7 @@ ninja</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">sed -e "/install_dir/s@,\$@ / 'gcr-3.41.2'&amp;@" \
     -i ../docs/*/meson.build                  &amp;&amp;
-meson configure -Dgtk_doc=true                &amp;&amp;
+meson configure -D gtk_doc=true               &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
@@ -193,7 +193,7 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dssh_agent=false</code></em>: Prevent
+          <em class="parameter"><code>-D ssh_agent=false</code></em>: Prevent
           a conflict with <a class="xref" href="gcr4.html" title=
           "Gcr-4.3.0">Gcr-4.3.0</a>. Omit this switch if you do not plan to
           install <a class="xref" href="gcr4.html" title=
@@ -201,14 +201,14 @@ ninja</kbd></pre>
           "command"><strong>gcr-ssh-agent</strong></span>.
         </p>
         <p>
-          <code class="option">-Dgtk=false</code>: Use this switch if you
+          <code class="option">-D gtk=false</code>: Use this switch if you
           haven't installed <a class="xref" href="../x/gtk3.html" title=
           "GTK+-3.24.43">GTK+-3.24.43</a>. Note that <span class=
           "application">gcr-viewer</span> will not be installed if this is
           passed to meson.
         </p>
         <p>
-          <code class="option">-Dgtk_doc=true</code>: Allow building this
+          <code class="option">-D gtk_doc=true</code>: Allow building this
           package without <a class="xref" href=
           "../general/python-modules.html#gi-docgen" title=
           "Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> installed. If you have
@@ -304,7 +304,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

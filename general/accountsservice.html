@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -185,7 +185,7 @@ cd    build &amp;&amp;
 meson setup ..            \
       --prefix=/usr       \
       --buildtype=release \
-      -Dadmin_group=adm</kbd></pre>
+      -D admin_group=adm</kbd></pre>
         <p>
           Now adapt the shipped mocklibc copy to allow building the test
           suite with GCC 14 or later:
@@ -218,23 +218,23 @@ sed -i '1i#include &lt;stdio.h&gt;'                                      \
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dadmin_group=adm</code></em>: This
+          <em class="parameter"><code>-D admin_group=adm</code></em>: This
           switch sets the group for administrator accounts.
         </p>
         <p>
-          <code class="option">-Ddocbook=true</code>: This switch enables
+          <code class="option">-D docbook=true</code>: This switch enables
           building the D-Bus interface API documentation (needs <a class=
           "xref" href="../pst/xmlto.html" title=
           "xmlto-0.0.29">xmlto-0.0.29</a>).
         </p>
         <p>
-          <code class="option">-Dgtk_doc=true</code>: This switch enables
+          <code class="option">-D gtk_doc=true</code>: This switch enables
           building the libaccountsservice API documentation (needs <a class=
           "xref" href="gtk-doc.html" title=
           "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a>).
         </p>
         <p>
-          <code class="option">-Dvapi=false</code>: This switch disables
+          <code class="option">-D vapi=false</code>: This switch disables
           building the vala bindings. Use it if you have not installed
           <a class="xref" href="vala.html" title=
           "Vala-0.56.17">Vala-0.56.17</a>.
@@ -346,7 +346,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

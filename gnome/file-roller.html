@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;34.&nbsp;<span class="phrase">GNOME Applications</span>
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -178,7 +178,7 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr       \
             --buildtype=release \
-            -Dpackagekit=false  \
+            -D packagekit=false \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -244,12 +244,12 @@ update-desktop-database -q</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dpackagekit=false</code></em>: This
+          <em class="parameter"><code>-D packagekit=false</code></em>: This
           switch disables the use of PackageKit which isn't suitable for
           BLFS.
         </p>
         <p>
-          <code class="option">-Dapi_docs=enabled</code>: Use this switch if
+          <code class="option">-D api_docs=enabled</code>: Use this switch if
           you have <a class="xref" href=
           "../general/python-modules.html#gi-docgen" title=
           "Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> installed and wish to
@@ -329,7 +329,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

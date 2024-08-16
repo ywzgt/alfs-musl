@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;17.&nbsp;Networking Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -150,7 +150,7 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr       \
             --buildtype=release \
-            -Dgtk-doc=false     \
+            -D gtk-doc=false    \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -171,27 +171,27 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <code class="option">-D3g-source=false</code>: This switch disables
-          the 3G backend. Use it if you have not installed the <span class=
-          "application">ModemManager</span> package.
+          <code class="option">-D 3g-source=false</code>: This switch
+          disables the 3G backend. Use it if you have not installed the
+          <span class="application">ModemManager</span> package.
         </p>
         <p>
-          <code class="option">-Dmodem-gps-source=false</code>: This switch
+          <code class="option">-D modem-gps-source=false</code>: This switch
           disables the modem GPS backend. Use it if you have not installed
           the <span class="application">ModemManager</span> package.
         </p>
         <p>
-          <code class="option">-Dcdma-source=false</code>: This switch
+          <code class="option">-D cdma-source=false</code>: This switch
           disables the CDMA source backend. Use it if you have not installed
           the <span class="application">ModemManager</span> package.
         </p>
         <p>
-          <code class="option">-Dnmea-source=false</code>: This switch
+          <code class="option">-D nmea-source=false</code>: This switch
           disables the NMEA source. Use it if you have not installed the
           <span class="application">Avahi</span> package.
         </p>
         <p>
-          <code class="option">-Ddemo-agent=false</code>: This switch
+          <code class="option">-D demo-agent=false</code>: This switch
           disables the demo. Use it if you have not installed the
           <span class="application">libnotify</span> package.
         </p>
@@ -299,7 +299,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

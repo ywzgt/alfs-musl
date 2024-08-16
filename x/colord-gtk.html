@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -158,10 +158,10 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr       \
             --buildtype=release \
-            -Dgtk4=true         \
-            -Dvapi=true         \
-            -Ddocs=false        \
-            -Dman=false         \
+            -D gtk4=true        \
+            -D vapi=true        \
+            -D docs=false       \
+            -D man=false        \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -184,31 +184,31 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dvapi=true</code></em>: This switch
+          <em class="parameter"><code>-D vapi=true</code></em>: This switch
           enables building of the Vala bindings. Remove this switch if you
           don't have <a class="xref" href="../general/vala.html" title=
           "Vala-0.56.17">Vala-0.56.17</a> installed.
         </p>
         <p>
-          <em class="parameter"><code>-Dgtk4=true</code></em>: This switch
+          <em class="parameter"><code>-D gtk4=true</code></em>: This switch
           enables building the GTK-4 bindings for colord. Set this option to
           'false' if you do not have <a class="xref" href="gtk4.html" title=
           "GTK-4.14.4">GTK-4.14.4</a> installed.
         </p>
         <p>
-          <em class="parameter"><code>-Ddocs=false</code></em>: This switch
+          <em class="parameter"><code>-D docs=false</code></em>: This switch
           disables building gtk-doc based documentation. Even if gtk-doc is
           installed, you will need the namespaced versions of the Docbook XSL
           stylesheets.
         </p>
         <p>
-          <em class="parameter"><code>-Dman=false</code></em>: This switch
+          <em class="parameter"><code>-D man=false</code></em>: This switch
           disables generating the manual pages for this package. Remove this
           switch if you have namespaced versions of the Docbook XSL
           stylesheets installed.
         </p>
         <p>
-          <code class="option">-Dgtk2=true</code>: This switch enables
+          <code class="option">-D gtk2=true</code>: This switch enables
           building the GTK+-2 bindings for colord. However since gtk2 is
           deprecated it is not recommended to build these bindings.
         </p>
@@ -315,7 +315,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

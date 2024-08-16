@@ -172,8 +172,8 @@ https://oligarchy.co.uk/xapian/1.4.26/xapian-core-1.4.26.tar.xz
 https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
 https://download.gimp.org/pub/babl/0.1/babl-0.1.108.tar.xz
 https://github.com/Exiv2/exiv2/archive/v0.28.3/exiv2-0.28.3.tar.gz
-https://downloads.sourceforge.net/freetype/freetype-2.13.2.tar.xz
-https://downloads.sourceforge.net/freetype/freetype-doc-2.13.2.tar.xz
+https://downloads.sourceforge.net/freetype/freetype-2.13.3.tar.xz
+https://downloads.sourceforge.net/freetype/freetype-doc-2.13.3.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.15.0.tar.xz
 https://github.com/fribidi/fribidi/releases/download/v1.0.15/fribidi-1.0.15.tar.xz
 https://download.gimp.org/pub/gegl/0.4/gegl-0.4.48.tar.xz
@@ -455,8 +455,8 @@ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
 https://www.php.net/distributions/php-8.3.10.tar.xz
 https://www.php.net/distributions/manual/php_manual_en.html.gz
 https://www.php.net/distributions/manual/php_manual_en.tar.gz
-https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tar.xz
-https://www.python.org/ftp/python/doc/3.12.4/python-3.12.4-docs-html.tar.bz2
+https://www.python.org/ftp/python/3.12.5/Python-3.12.5.tar.xz
+https://www.python.org/ftp/python/doc/3.12.5/python-3.12.5-docs-html.tar.bz2
 https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
 https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
 https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.2.0.tar.gz
@@ -490,7 +490,7 @@ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1
 https://files.pythonhosted.org/packages/source/r/requests/requests-2.32.3.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/requests-2.32.3-use_system_certs-1.patch
 https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
-https://github.com/getsentry/sentry-python/releases/download/2.12.0/sentry_sdk-2.12.0.tar.gz
+https://github.com/getsentry/sentry-python/releases/download/2.13.0/sentry_sdk-2.13.0.tar.gz
 https://files.pythonhosted.org/packages/source/s/six/six-1.16.0.tar.gz
 https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-8.0.2.tar.gz
 https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-2.0.0.tar.gz
@@ -616,8 +616,8 @@ https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
 https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
 https://downloads.mariadb.org/interstitial/mariadb-10.11.8/source/mariadb-10.11.8.tar.gz
 https://ftp.postgresql.org/pub/source/v16.4/postgresql-16.4.tar.bz2
-https://sqlite.org/2024/sqlite-autoconf-3460000.tar.gz
-https://sqlite.org/2024/sqlite-doc-3460000.zip
+https://sqlite.org/2024/sqlite-autoconf-3460100.tar.gz
+https://sqlite.org/2024/sqlite-doc-3460100.zip
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.8.tgz
 https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.8-consolidated-1.patch
 https://nlnetlabs.nl/downloads/unbound/unbound-1.20.0.tar.gz
@@ -829,7 +829,7 @@ https://archive.xfce.org/src/apps/xfce4-terminal/1.1/xfce4-terminal-1.1.3.tar.bz
 https://archive.xfce.org/src/apps/xfburn/0.7/xfburn-0.7.2.tar.bz2
 https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.2.tar.bz2
 http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.18/xfce4-dev-tools-4.18.1.tar.bz2
-https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.4.tar.bz2
+https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.5.tar.bz2
 https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.4/xfce4-pulseaudio-plugin-0.4.8.tar.bz2
 https://download.kde.org/stable/frameworks/6.5/kwindowsystem-6.5.0.tar.xz
 https://download.kde.org/stable/frameworks/6.5/kconfig-6.5.0.tar.xz
@@ -973,7 +973,7 @@ https://taglib.org/releases/taglib-2.0.1.tar.gz
 https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.28.1.tar.xz
 https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.5/wireplumber-0.5.5.tar.bz2
 https://anduin.linuxfromscratch.org/BLFS/x264/x264-20240812.tar.xz
-https://anduin.linuxfromscratch.org/BLFS/x265/x265-20240812.tar.xz
+https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.6.tar.gz
 https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-upstream_fixes-1.patch
 https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.gz

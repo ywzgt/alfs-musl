@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -239,26 +239,26 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup ..                \
-      --prefix=/usr           \
-      --buildtype=release     \
-      -Ddefault-dnssec=no     \
-      -Dfirstboot=false       \
-      -Dinstall-tests=false   \
-      -Dldconfig=false        \
-      -Dman=auto              \
-      -Dsysusers=false        \
-      -Drpmmacrosdir=no       \
-      -Dhomed=disabled        \
-      -Duserdb=false          \
-      -Dmode=release          \
-      -Dpam=enabled           \
-      -Dpamconfdir=/etc/pam.d \
-      -Ddev-kvm-mode=0660     \
-      -Dnobody-group=nogroup  \
-      -Dsysupdate=disabled    \
-      -Dukify=disabled        \
-      -Ddocdir=/usr/share/doc/systemd-256.4 &amp;&amp;
+meson setup ..                 \
+      --prefix=/usr            \
+      --buildtype=release      \
+      -D default-dnssec=no     \
+      -D firstboot=false       \
+      -D install-tests=false   \
+      -D ldconfig=false        \
+      -D man=auto              \
+      -D sysusers=false        \
+      -D rpmmacrosdir=no       \
+      -D homed=disabled        \
+      -D userdb=false          \
+      -D mode=release          \
+      -D pam=enabled           \
+      -D pamconfdir=/etc/pam.d \
+      -D dev-kvm-mode=0660     \
+      -D nobody-group=nogroup  \
+      -D sysupdate=disabled    \
+      -D ukify=disabled        \
+      -D docdir=/usr/share/doc/systemd-256.4 &amp;&amp;
 
 ninja</kbd></pre>
         <div class="admon note">
@@ -295,19 +295,19 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dpamconfdir=/etc/pam.d</code></em>:
+          <em class="parameter"><code>-D pamconfdir=/etc/pam.d</code></em>:
           Forces the PAM files to be installed in /etc/pam.d rather than
           /usr/lib/pam.d.
         </p>
         <p>
-          <em class="parameter"><code>-Duserdb=false</code></em>: Removes a
+          <em class="parameter"><code>-D userdb=false</code></em>: Removes a
           daemon that does not offer any use under a BLFS configuration. If
           you wish to enable the <span class="application">userdbd</span>
           daemon, replace "false" with "true" in the above meson command.
         </p>
         <p>
-          <em class="parameter"><code>-Dhomed=disabled</code></em>: Removes a
-          daemon that does not offer any use under a traditional BLFS
+          <em class="parameter"><code>-D homed=disabled</code></em>: Removes
+          a daemon that does not offer any use under a traditional BLFS
           configuration, especially using accounts created with useradd. To
           enable systemd-homed, first ensure that you have <a class="xref"
           href="../postlfs/cryptsetup.html" title=
@@ -320,8 +320,8 @@ ninja</kbd></pre>
           <span class="command"><strong>meson setup</strong></span> command.
         </p>
         <p>
-          <em class="parameter"><code>-Dukify=disabled</code></em>: Removes a
-          script for combining a kernel, an initramfs, and a kernel command
+          <em class="parameter"><code>-D ukify=disabled</code></em>: Removes
+          a script for combining a kernel, an initramfs, and a kernel command
           line etc. into an UEFI application which can be loaded by the UEFI
           firmware to start the embedded Linux kernel. It's not needed for
           booting a BLFS system with UEFI if following <a class="xref" href=
@@ -545,7 +545,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

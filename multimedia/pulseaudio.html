@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -172,9 +172,9 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr       \
             --buildtype=release \
-            -Ddatabase=gdbm     \
-            -Ddoxygen=false     \
-            -Dbluez5=disabled   \
+            -D database=gdbm    \
+            -D doxygen=false    \
+            -D bluez5=disable   \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -209,7 +209,7 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dbluez5=disabled</code></em>: This
+          <em class="parameter"><code>-D bluez5=disabled</code></em>: This
           switch prevents a runtime error if <a class="xref" href=
           "../general/dbus.html" title="dbus-1.14.10">dbus-1.14.10</a> and
           <a class="xref" href="sbc.html" title="SBC-2.0">SBC-2.0</a> are
@@ -218,7 +218,7 @@ ninja</kbd></pre>
           you have installed all three packages.
         </p>
         <p>
-          <em class="parameter"><code>-Ddoxygen=false</code></em>: This
+          <em class="parameter"><code>-D doxygen=false</code></em>: This
           allows the package to compile if <a class="xref" href=
           "../general/doxygen.html" title="Doxygen-1.12.0">Doxygen-1.12.0</a>
           is not installed. Remove this if you have installed this and wish
@@ -565,7 +565,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

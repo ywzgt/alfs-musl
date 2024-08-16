@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -170,8 +170,8 @@ cd    build                         &amp;&amp;
 meson setup ..            \
       --prefix=/usr       \
       --buildtype=release \
-      -Dgtk-doc=false     \
-      -Dman=false         &amp;&amp;
+      -D gtk-doc=false    \
+      -D man=false        &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>LC_ALL=C
@@ -193,13 +193,13 @@ ninja</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-Dgtk-doc=false</code></em>: Prevents
+          <em class="parameter"><code>-D gtk-doc=false</code></em>: Prevents
           building the documentation. Remove this if you have <span class=
           "application">GTK-Doc</span> installed and wish to build the
           documentation.
         </p>
         <p>
-          <em class="parameter"><code>-Dman=false</code></em>: Prevents
+          <em class="parameter"><code>-D man=false</code></em>: Prevents
           building the manual pages. Remove this if you have <a class="xref"
           href="libxslt.html" title="libxslt-1.1.42">libxslt-1.1.42</a> and
           <a class="xref" href="../pst/docbook-xsl.html" title=
@@ -293,7 +293,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

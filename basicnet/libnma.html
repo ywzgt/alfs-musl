@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;17.&nbsp;Networking Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -146,12 +146,12 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup ..                               \
-      --prefix=/usr                          \
-      --buildtype=release                    \
-      -Dgtk_doc=false                        \
-      -Dlibnma_gtk4=true                     \
-      -Dmobile_broadband_provider_info=false &amp;&amp;
+meson setup ..                                \
+      --prefix=/usr                           \
+      --buildtype=release                     \
+      -D gtk_doc=false                        \
+      -D libnma_gtk4=true                     \
+      -D mobile_broadband_provider_info=false &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
@@ -172,24 +172,24 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dgtk_doc=false</code></em>: This
+          <em class="parameter"><code>-D gtk_doc=false</code></em>: This
           parameter disables generating API documentation using gtk-doc. If
           you have <a class="xref" href="../general/gtk-doc.html" title=
           "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a> installed and wish to generate
           the API documentation, omit this switch.
         </p>
         <p>
-          <em class="parameter"><code>-Dlibnma_gtk4=true</code></em>: This
+          <em class="parameter"><code>-D libnma_gtk4=true</code></em>: This
           parameter builds the GTK-4 version of libnma. It is needed by
           <a class="xref" href="../gnome/gnome-control-center.html" title=
           "gnome-control-center-46.4">gnome-control-center-46.4</a>.
         </p>
         <p>
-          <em class=
-          "parameter"><code>-Dmobile_broadband_provider_info=false</code></em>:
-          This switch disables WWAN support because
-          mobile-broadband-provider-info is not in BLFS. Omit this switch if
-          you have it installed and wish to enable WWAN support.
+          <em class="parameter"><code>-D
+          mobile_broadband_provider_info=false</code></em>: This switch
+          disables WWAN support because mobile-broadband-provider-info is not
+          in BLFS. Omit this switch if you have it installed and wish to
+          enable WWAN support.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -276,7 +276,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

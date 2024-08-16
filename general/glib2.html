@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -290,11 +290,11 @@ fi</kbd></pre>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup ..                 \
-      --prefix=/usr            \
-      --buildtype=release      \
-      -Dintrospection=disabled \
-      -Dman-pages=enabled      &amp;&amp;
+meson setup ..                  \
+      --prefix=/usr             \
+      --buildtype=release       \
+      -D introspection=disabled \
+      -D man-pages=enabled      &amp;&amp;
 ninja</kbd></pre>
         <p>
           The <span class="application">GLib</span> test suite requires
@@ -334,7 +334,7 @@ ninja -C gi-build</kbd></pre>
           Now generate the introspection data:
         </p>
         <pre class="userinput"><kbd class=
-        "command">meson configure -Dintrospection=enabled &amp;&amp;
+        "command">meson configure -D introspection=enabled &amp;&amp;
 ninja</kbd></pre>
         <p>
           If you have <a class="xref" href="python-modules.html#gi-docgen"
@@ -344,7 +344,7 @@ ninja</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">sed 's/glib-2.0/glib-2.80.4/'        \
     -i ../docs/reference/meson.build &amp;&amp;
-meson configure -Ddocumentation=true &amp;&amp;
+meson configure -D documentation=true &amp;&amp;
 ninja</kbd></pre>
         <p>
           As the <code class="systemitem">root</code> user, install this
@@ -399,7 +399,7 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dman-pages=enabled</code></em>: This
+          <em class="parameter"><code>-D man-pages=enabled</code></em>: This
           switch causes the build to create and install the package man
           pages.
         </p>
@@ -973,7 +973,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -153,8 +153,8 @@ cd    build &amp;&amp;
 
 meson setup --prefix=$XORG_PREFIX \
             --buildtype=release   \
-            -Dudev=true           \
-            -Dvalgrind=disabled   \
+            -D udev=true          \
+            -D valgrind=disabled  \
             ..                    &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -176,12 +176,13 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-Dudev=true</code></em>: This parameter
-          enables support for using <span class="application">Udev</span>
-          instead of <span class="command"><strong>mknod</strong></span>.
+          <em class="parameter"><code>-D udev=true</code></em>: This
+          parameter enables support for using <span class=
+          "application">Udev</span> instead of <span class=
+          "command"><strong>mknod</strong></span>.
         </p>
         <p>
-          <em class="parameter"><code>-Dvalgrind=disabled</code></em>: This
+          <em class="parameter"><code>-D valgrind=disabled</code></em>: This
           parameter disables building libdrm with valgrind support. This
           fixes building some packages that use libdrm. Change this parameter
           to "enabled" (or remove it) if you need support for valgrind.
@@ -319,7 +320,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>

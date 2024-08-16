@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1481">
+  <body class="blfs" id="blfs-r12.1-1492">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1481
+        "phrase">(systemd</span> Edition) - Version r12.1-1492
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
@@ -184,11 +184,11 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd build &amp;&amp;
 
-meson setup               \
-      --prefix=/usr       \
-      --buildtype=release \
-      -Dgtk_doc=false     \
-      -Dtests=false       \
+meson setup                \
+      --prefix=/usr        \
+      --buildtype=release  \
+      -D gtk_doc=false     \
+      -D tests=false       \
       .. &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -206,13 +206,13 @@ ninja</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-Dgtk_doc=false</code></em>: Prevents
+          <em class="parameter"><code>-D gtk_doc=false</code></em>: Prevents
           building the documentation. Remove this if you have <span class=
           "application">GTK-Doc</span> installed and wish to build the
           documentation.
         </p>
         <p>
-          <em class="parameter"><code>-Dtests=false</code></em>: Prevents
+          <em class="parameter"><code>-D tests=false</code></em>: Prevents
           building the tests because they cannot be run within the boundaries
           of BLFS. Remove this if you have installed the external
           dependencies and wish to run the tests.
@@ -339,7 +339,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1481">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
           Home</a>
         </li>
       </ul>
