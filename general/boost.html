@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      boost-1.85.0
+      boost-1.86.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1492">
+  <body class="blfs" id="blfs-r12.1-1505">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1492
+        "phrase">(systemd</span> Edition) - Version r12.1-1505
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1505">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="boost" name="boost"></a>boost-1.85.0
+      <a id="boost" name="boost"></a>boost-1.86.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,7 +78,7 @@
           </h3>
           <p>
             This package will extract to the <code class=
-            "filename">boost-1.85.0</code>/ directory.
+            "filename">boost-1.86.0</code>/ directory.
           </p>
         </div>
         <h3>
@@ -89,8 +89,8 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/boostorg/boost/releases/download/boost-1.85.0/boost-1.85.0-b2-nodocs.tar.xz">
-                https://github.com/boostorg/boost/releases/download/boost-1.85.0/boost-1.85.0-b2-nodocs.tar.xz</a>
+                "https://github.com/boostorg/boost/releases/download/boost-1.86.0/boost-1.86.0-b2-nodocs.tar.xz">
+                https://github.com/boostorg/boost/releases/download/boost-1.86.0/boost-1.86.0-b2-nodocs.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
@@ -117,6 +117,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/boost-1.86.0-upstream_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/boost-1.86.0-upstream_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Boost Dependencies
         </h3>
         <h4>
@@ -130,8 +144,10 @@
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="icu.html" title="icu-75.1">ICU-75.1</a> and
-          <a class="ulink" href="https://www.open-mpi.org/">Open MPI</a>
+          <a class="xref" href="icu.html" title="icu-75.1">ICU-75.1</a>,
+          <a class="xref" href="python-modules.html#numpy" title=
+          "NumPy-2.0.1">NumPy-2.0.1</a>, and <a class="ulink" href=
+          "https://www.open-mpi.org/">Open MPI</a>
         </p>
         <p class="usernotes">
           Editor Notes: <a class="ulink" href=
@@ -142,6 +158,22 @@
         <h2 class="sect2">
           Installation of Boost
         </h2>
+        <p>
+          First, fix a problem with Boost and <a class="xref" href=
+          "python-modules.html#numpy" title="NumPy-2.0.1">NumPy-2.0.1</a>
+          that causes the build to fail:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../boost-1.86.0-upstream_fixes-1.patch</kbd></pre>
+        <p>
+          Next, fix a build issue which occurs in the stacktrace library.
+          This issue is specific to i686 systems.
+        </p>
+        <pre class="userinput"><kbd class="command">case $(uname -m) in
+   i?86)
+      sed -e "s/defined(__MINGW32__)/&amp; || defined(__i386__)/" \
+          -i ./libs/stacktrace/src/exception_headers.h ;;
+esac</kbd></pre>
         <p>
           This package can be built with several jobs running in parallel. In
           the instructions below, <em class=
@@ -279,7 +311,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1492">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1505">
           Home</a>
         </li>
       </ul>
