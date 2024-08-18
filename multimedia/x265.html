@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1505">
+  <body class="blfs" id="blfs-r12.1-1513">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1505
+        "phrase">(systemd</span> Edition) - Version r12.1-1513
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1505">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1513">
           Home</a>
         </li>
       </ul>
@@ -145,15 +145,36 @@ make</kbd></pre>
         <p>
           This package does not come with a test suite.
         </p>
+        <div class="admon important">
+          <img alt="[Important]" src="../images/important.png" />
+          <h3>
+            Important
+          </h3>
+          <p>
+            If downgrading from the bleeding-edge x265-20240812 (it had been
+            mistakenly used in the BLFS development book for several days),
+            remove the shared library from x265-20240812 as the <code class=
+            "systemitem">root</code> user:
+          </p>
+          <pre class="root"><kbd class=
+          "command">rm -fv /usr/lib/libx265.so.212</kbd></pre>
+          <p>
+            This is for preventing <span class=
+            "command"><strong>ldconfig</strong></span> from recreating the
+            symlink <code class="filename">libx265.so</code> with the target
+            <code class="filename">/usr/lib/libx265.so.212</code> which seems
+            to be <span class="quote">“<span class="quote">a newer
+            version</span>”</span> of <code class=
+            "filename">libx265.so.209</code> from x265-3.6.
+          </p>
+        </div>
         <p>
           To install the package, first remove any old library versions.
           After installation, remove a static library. As the <code class=
           "systemitem">root</code> user:
         </p>
-        <pre class="root"><kbd class=
-        "command">rm -vf /usr/lib/libx265* &amp;&amp;
-make install             &amp;&amp;
-rm -vf /usr/lib/libx265.a </kbd></pre>
+        <pre class="root"><kbd class="command">make install &amp;&amp;
+rm -vf /usr/lib/libx265.a</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -239,7 +260,7 @@ rm -vf /usr/lib/libx265.a </kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1505">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1513">
           Home</a>
         </li>
       </ul>
