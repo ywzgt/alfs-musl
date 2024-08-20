@@ -1,0 +1,51 @@
+diff --git a/wget-list b/wget-list
+index 55cfd255b..8b493ad6a 100644
+--- a/wget-list
++++ b/wget-list
+@@ -263,7 +263,7 @@ http://ftp.midnight-commander.org/mc-4.8.31.tar.xz
+ https://www.freedesktop.org/software/ModemManager/ModemManager-1.18.12.tar.xz
+ https://download.gnome.org/sources/notification-daemon/3.20/notification-daemon-3.20.0.tar.xz
+ https://github.com/p7zip-project/p7zip/archive/v17.04/p7zip-17.04.tar.gz
+-http://www.mirbsd.org/MirOS/dist/mir/cpio/paxmirabilis-20201030.tgz
++http://www.mirbsd.org/MirOS/dist/mir/cpio/paxmirabilis-20240817.tgz
+ https://mj.ucw.cz/download/linux/pci/pciutils-3.13.0.tar.gz
+ https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/pm-utils-1.4.1-bugfixes-1.patch
+@@ -290,7 +290,7 @@ https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+ https://cmake.org/files/v3.30/cmake-3.30.2.tar.gz
+ https://doxygen.nl/files/doxygen-1.12.0.src.tar.gz
+-https://kernel.org/pub/software/utils/dtc/dtc-1.7.0.tar.xz
++https://kernel.org/pub/software/utils/dtc/dtc-1.7.1.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.6/gc-8.2.6.tar.gz
+ https://ftp.gnu.org/gnu/gdb/gdb-15.1.tar.xz
+@@ -671,7 +671,7 @@ https://download.gnome.org/sources/goffice/0.10/goffice-0.10.57.tar.xz
+ https://github.com/steveire/grantlee/releases/download/v5.3.1/grantlee-5.3.1.tar.gz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+ https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz
+-https://download.gnome.org/sources/gtk/4.14/gtk-4.14.4.tar.xz
++https://download.gnome.org/sources/gtk/4.14/gtk-4.14.5.tar.xz
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.9.tar.xz
+ https://download.gnome.org/sources/gtkmm/4.14/gtkmm-4.14.0.tar.xz
+ https://download.gnome.org/sources/gtk-vnc/1.3/gtk-vnc-1.3.1.tar.xz
+@@ -699,8 +699,8 @@ https://download.qt.io/archive/qt/6.7/6.7.2/single/qt-everywhere-src-6.7.2.tar.x
+ https://download.qt.io/official_releases/qt/6.7/6.7.2/submodules/qtwebengine-everywhere-src-6.7.2.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-6.7.2-ffmpeg7_fixes-1.patch
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.292/Vulkan-Headers-1.3.292.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.3.292/Vulkan-Loader-1.3.292.tar.gz
++https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.293/Vulkan-Headers-1.3.293.tar.gz
++https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.3.293/Vulkan-Loader-1.3.293.tar.gz
+ https://webkitgtk.org/releases/webkitgtk-2.44.3.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.18.2/xdg-desktop-portal-1.18.2.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.1/xdg-desktop-portal-gtk-1.15.1.tar.xz
+@@ -883,7 +883,7 @@ https://download.documentfoundation.org/libreoffice/src/24.2.5/libreoffice-24.2.
+ https://download.documentfoundation.org/libreoffice/src/24.2.5/libreoffice-dictionaries-24.2.5.2.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/24.2.5/libreoffice-help-24.2.5.2.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/24.2.5/libreoffice-translations-24.2.5.2.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-24.2.5.2-boost_fixes-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-24.2.5.2-boost_fixes-2.patch
+ https://download.gnome.org/sources/epiphany/46/epiphany-46.3.tar.xz
+ https://download.kde.org/stable/release-service/24.05.0/src/falkon-24.05.0.tar.xz
+ https://archive.mozilla.org/pub/firefox/releases/128.1.0esr/source/firefox-128.1.0esr.source.tar.xz
