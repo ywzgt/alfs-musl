@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1522">
+  <body class="blfs" id="blfs-r12.1-1535">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1522
+        "phrase">(systemd</span> Edition) - Version r12.1-1535
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1522">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1535">
           Home</a>
         </li>
       </ul>
@@ -58,17 +58,10 @@
           The <span class="application">libarchive</span> library provides a
           single interface for reading/writing various compression formats.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.2
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -107,15 +100,20 @@
           libarchive Dependencies
         </h3>
         <h4>
+          Recommended
+        </h4>
+        <p class="recommended">
+          <a class="xref" href="libxml2.html" title=
+          "libxml2-2.13.3">libxml2-2.13.3</a>
+        </p>
+        <h4>
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="libxml2.html" title=
-          "libxml2-2.13.3">libxml2-2.13.3</a>, <a class="xref" href=
-          "lzo.html" title="LZO-2.10">LZO-2.10</a>, <a class="xref" href=
-          "../postlfs/nettle.html" title="Nettle-3.10">Nettle-3.10</a>, and
-          <a class="xref" href="pcre2.html" title=
-          "PCRE2-10.44">pcre2-10.44</a>
+          <a class="xref" href="lzo.html" title="LZO-2.10">LZO-2.10</a>,
+          <a class="xref" href="../postlfs/nettle.html" title=
+          "Nettle-3.10">Nettle-3.10</a>, and <a class="xref" href=
+          "pcre2.html" title="PCRE2-10.44">pcre2-10.44</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -127,7 +125,7 @@
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr --disable-static &amp;&amp;
+        "command">./configure --prefix=/usr --disable-static --without-expat &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class=
@@ -147,9 +145,10 @@ make</kbd></pre>
           switch prevents installation of static versions of the libraries.
         </p>
         <p>
-          <code class="option">--without-xml2</code>: This switch sets expat
-          for xar archive format support instead of preferred libxml2 if both
-          packages are installed.
+          <em class="parameter"><code>--without-expat</code></em>: This
+          switch disables using expat for xar format support. Due to a bug
+          the xar reader will loop infinitely if expat is used. The upstream
+          prefers libxml2 for xar support anyway.
         </p>
         <p>
           <code class="option">--without-nettle</code>: This switch sets
@@ -288,7 +287,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1522">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1535">
           Home</a>
         </li>
       </ul>

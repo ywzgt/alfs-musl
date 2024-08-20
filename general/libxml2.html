@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1522">
+  <body class="blfs" id="blfs-r12.1-1535">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1522
+        "phrase">(systemd</span> Edition) - Version r12.1-1535
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1522">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1535">
           Home</a>
         </li>
       </ul>
@@ -59,17 +59,10 @@
           The <span class="application">libxml2</span> package contains
           libraries and utilities used for parsing XML files.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.2
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -112,6 +105,13 @@
           <ul class="compact">
             <li class="listitem">
               <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/libxml2-2.13.3-upstream_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/libxml2-2.13.3-upstream_fix-1.patch</a>
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
                 Optional Test Suite: <a class="ulink" href=
                 "https://www.w3.org/XML/Test/xmlts20130923.tar.gz">https://www.w3.org/XML/Test/xmlts20130923.tar.gz</a>
                 - This enables <span class="command"><strong>make
@@ -141,6 +141,16 @@
         <h2 class="sect2">
           Installation of libxml2
         </h2>
+        <p>
+          At first, fix an issue causing <span class=
+          "command"><strong>xmlcatalog</strong></span> to emit bogus warnings
+          when a new catalog file is created. The patch will modify the
+          building system, so regenerate the building scripts after applying
+          the patch:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../libxml2-2.13.3-upstream_fix-1.patch &amp;&amp;
+autoreconf</kbd></pre>
         <p>
           Install <span class="application">libxml2</span> by running the
           following commands:
@@ -348,7 +358,7 @@ sed '/libs=/s/xml2.*/xml2"/' -i /usr/bin/xml2-config</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1522">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1535">
           Home</a>
         </li>
       </ul>

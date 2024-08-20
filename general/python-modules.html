@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1522">
+  <body class="blfs" id="blfs-r12.1-1535">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1522
+        "phrase">(systemd</span> Edition) - Version r12.1-1535
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1522">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1535">
           Home</a>
         </li>
       </ul>
@@ -914,17 +914,10 @@
             The <span class="application">Cython</span> package provides a
             compiler for writing C extensions for the Python language.
           </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
+          <p>
+            This package is known to build and work properly using an LFS
+            12.2 platform.
+          </p>
           <h4>
             Package Information
           </h4>
@@ -1480,17 +1473,10 @@
             processing plaintext docs into formats such as HTML, XML, or
             LaTeX.
           </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
+          <p>
+            This package is known to build and work properly using an LFS
+            12.2 platform.
+          </p>
           <h4>
             Package Information
           </h4>
@@ -2473,17 +2459,10 @@ done</kbd></pre>
             library for parsing HTML. It is designed to conform to the WHATWG
             HTML specification.
           </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
+          <p>
+            This package is known to build and work properly using an LFS
+            12.2 platform.
+          </p>
           <h4>
             Package Information
           </h4>
@@ -2804,17 +2783,10 @@ done</kbd></pre>
             lightweight templating for the <span class=
             "application">Python</span> platform.
           </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
+          <p>
+            This package is known to build and work properly using an LFS
+            12.2 platform.
+          </p>
           <h4>
             Package Information
           </h4>
@@ -3227,17 +3199,10 @@ deactivate</kbd></pre>
             includes utilities for version handling, specifiers, markers,
             tags, and requirements.
           </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
+          <p>
+            This package is known to build and work properly using an LFS
+            12.2 platform.
+          </p>
           <h4>
             Package Information
           </h4>
@@ -3400,17 +3365,10 @@ deactivate</kbd></pre>
             The <span class="application">ply</span> package is a 100% Python
             implementation of the common parsing tools 'lex' and 'yacc'.
           </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
+          <p>
+            This package is known to build and work properly using an LFS
+            12.2 platform.
+          </p>
           <h4>
             Package Information
           </h4>
@@ -3559,17 +3517,10 @@ deactivate</kbd></pre>
             line tools such as ps, top, iotop, lsof, netstat, ifconfig, free
             and others.
           </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
+          <p>
+            This package is known to build and work properly using an LFS
+            12.2 platform.
+          </p>
           <h4>
             Package Information
           </h4>
@@ -3615,6 +3566,11 @@ deactivate</kbd></pre>
           <pre class="userinput"><kbd class=
           "command">pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir $PWD</kbd></pre>
           <p>
+            Now, as the <code class="systemitem">root</code> user:
+          </p>
+          <pre class="root"><kbd class=
+          "command">pip3 install --no-index --find-links=dist --no-cache-dir --no-user psutil</kbd></pre>
+          <p>
             To test the results, issue:
           </p>
           <pre class="userinput"><kbd class="command">mkdir empty &amp;&amp;
@@ -3623,11 +3579,6 @@ deactivate</kbd></pre>
             Two tests named <code class="literal">test_disk_usage</code> and
             <code class="literal">test_io_counters</code> are known to fail.
           </p>
-          <p>
-            Now, as the <code class="systemitem">root</code> user:
-          </p>
-          <pre class="root"><kbd class=
-          "command">pip3 install --no-index --find-links=dist --no-cache-dir --no-user psutil</kbd></pre>
         </div>
         <div class="commands" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -4222,17 +4173,10 @@ ninja</kbd></pre>
             highlighter written in <span class="application">Python</span>,
             for more than 300 languages.
           </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
+          <p>
+            This package is known to build and work properly using an LFS
+            12.2 platform.
+          </p>
           <h4>
             Package Information
           </h4>
@@ -4977,17 +4921,10 @@ deactivate</kbd></pre>
             easy to write small, readable tests, and can scale to support
             complex functional testing for applications and libraries.
           </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
+          <p>
+            This package is known to build and work properly using an LFS
+            12.2 platform.
+          </p>
           <h4>
             Package Information
           </h4>
@@ -5349,17 +5286,10 @@ deactivate</kbd></pre>
             "application">Python</span> module that implements the next
             generation YAML parser and emitter.
           </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
+          <p>
+            This package is known to build and work properly using an LFS
+            12.2 platform.
+          </p>
           <h4>
             Package Information
           </h4>
@@ -5806,17 +5736,10 @@ deactivate</kbd></pre>
             elegant and simple HTTP library for Python, built for human
             beings. It allows sending HTTP/1.1 requests extremely easily.
           </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
+          <p>
+            This package is known to build and work properly using an LFS
+            12.2 platform.
+          </p>
           <h4>
             Package Information
           </h4>
@@ -6417,17 +6340,10 @@ deactivate</kbd></pre>
           <p>
             Six is a Python 2 to 3 compatibility library.
           </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
+          <p>
+            This package is known to build and work properly using an LFS
+            12.2 platform.
+          </p>
           <h4>
             Package Information
           </h4>
@@ -6570,17 +6486,10 @@ deactivate</kbd></pre>
             tools for translating some structured text formats into pretty
             documentation in various formats.
           </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
+          <p>
+            This package is known to build and work properly using an LFS
+            12.2 platform.
+          </p>
           <h4>
             Package Information
           </h4>
@@ -7069,7 +6978,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1522">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1535">
           Home</a>
         </li>
       </ul>
