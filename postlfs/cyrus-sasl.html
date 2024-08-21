@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1535">
+  <body class="blfs" id="blfs-r12.1-1552">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1535
+        "phrase">(systemd</span> Edition) - Version r12.1-1552
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1535">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1552">
           Home</a>
         </li>
       </ul>
@@ -64,17 +64,10 @@
           negotiated, a security layer is inserted between the protocol and
           the connection.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.2
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -159,20 +152,20 @@
           </p>
         </div>
         <p>
-          First, fix a flaw revealed by gcc-14:
+          First, fix a problem revealed by gcc-14:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed '/saslint/a #include &lt;time.h&gt;' -i lib/saslutil.c
+        "command">sed '/saslint/a #include &lt;time.h&gt;'       -i lib/saslutil.c &amp;&amp;
 sed '/plugin_common/a #include &lt;time.h&gt;' -i plugins/cram.c</kbd></pre>
         <p>
           Install <span class="application">Cyrus SASL</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr        \
-            --sysconfdir=/etc    \
-            --enable-auth-sasldb \
-            --with-dblib=lmdb    \
+        "command">./configure --prefix=/usr                       \
+            --sysconfdir=/etc                   \
+            --enable-auth-sasldb                \
+            --with-dblib=lmdb                   \
             --with-dbpath=/var/lib/sasl/sasldb2 \
             --with-sphinx-build=no              \
             --with-saslauthd=/var/run/saslauthd &amp;&amp;
@@ -335,7 +328,7 @@ install -v -dm700 /var/lib/sasl</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
               <span class="segbody">pluginviewer, saslauthd,
-              sasldblistusers2, saslpasswd2 and testsaslauthd</span>
+              sasldblistusers2, saslpasswd2, and testsaslauthd</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Library:</strong>
@@ -472,7 +465,7 @@ install -v -dm700 /var/lib/sasl</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1535">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1552">
           Home</a>
         </li>
       </ul>
