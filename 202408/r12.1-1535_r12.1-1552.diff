@@ -1,0 +1,12 @@
+diff --git a/wget-list b/wget-list
+index 9e25a72a3..343058993 100644
+--- a/wget-list
++++ b/wget-list
+@@ -264,6 +264,7 @@ http://ftp.midnight-commander.org/mc-4.8.31.tar.xz
+ https://www.freedesktop.org/software/ModemManager/ModemManager-1.18.12.tar.xz
+ https://download.gnome.org/sources/notification-daemon/3.20/notification-daemon-3.20.0.tar.xz
+ https://github.com/p7zip-project/p7zip/archive/v17.04/p7zip-17.04.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/p7zip-17.04-consolidated_fixes-1.patch
+ http://www.mirbsd.org/MirOS/dist/mir/cpio/paxmirabilis-20240817.tgz
+ https://mj.ucw.cz/download/linux/pci/pciutils-3.13.0.tar.gz
+ https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
