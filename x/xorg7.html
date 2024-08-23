@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1559">
+  <body class="blfs" id="blfs-r12.1-1577">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1559
+        "phrase">(systemd</span> Edition) - Version r12.1-1577
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1559">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1577">
           Home</a>
         </li>
       </ul>
@@ -168,6 +168,30 @@
         <pre class="userinput"><kbd class=
         "command">export XORG_CONFIG="--prefix=$XORG_PREFIX --sysconfdir=/etc \
     --localstatedir=/var --disable-static"</kbd></pre>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            We will use <code class="envar">$XORG_CONFIG</code> in the
+            instructions for many packages belonging to or related to Xorg.
+            These instructions won't work properly with the default behavior
+            of <a class="xref" href="../postlfs/zsh.html" title=
+            "zsh-5.9">zsh-5.9</a>. So if you are using <a class="xref" href=
+            "../postlfs/zsh.html" title="zsh-5.9">zsh-5.9</a> as the
+            interactive shell and building a package for which the
+            instruction uses this variable, make <a class="xref" href=
+            "../postlfs/zsh.html" title="zsh-5.9">zsh-5.9</a> behavior
+            expanding <code class="envar">$XORG_CONFIG</code> same as bash:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">set -o shwordsplit</kbd></pre>
+          <p>
+            If you want to make this setting persistent, add this command
+            into the zsh startup file.
+          </p>
+        </div>
         <p>
           Create an <code class="filename">/etc/profile.d/xorg.sh</code>
           configuration file containing these variables as the <code class=
@@ -313,7 +337,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1559">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1577">
           Home</a>
         </li>
       </ul>

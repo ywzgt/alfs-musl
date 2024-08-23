@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1559">
+  <body class="blfs" id="blfs-r12.1-1577">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1559
+        "phrase">(systemd</span> Edition) - Version r12.1-1577
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1559">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1577">
           Home</a>
         </li>
       </ul>
@@ -59,17 +59,10 @@
           The <span class="application">ALSA Tools</span> package contains
           advanced tools for certain sound cards.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.2
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -118,8 +111,6 @@
           Optional
         </h4>
         <p class="optional">
-          <span class="command"><strong>envy24control</strong></span> and
-          <span class="command"><strong>rmedigicontrol</strong></span>),
           <a class="xref" href="../x/gtk3.html" title=
           "GTK+-3.24.43">GTK+-3.24.43</a> (to build <span class=
           "command"><strong>hdajackretask</strong></span>), <a class="xref"
@@ -193,10 +184,12 @@ export -f as_root</kbd></pre>
         <pre class="userinput"><kbd class="command">bash -e</kbd></pre>
         <p>
           Now, remove a tool that needs <span class="application">Qt2 or
-          3</span> and two unneeded files (for the BLFS instructions below):
+          3</span> or <a class="ulink" href=
+          "https://download.gnome.org/sources/gtk+/2.24/">GTK+-2</a> and two
+          unneeded files (for the BLFS instructions below):
         </p>
         <pre class="userinput"><kbd class=
-        "command">rm -rf qlo10k1 Makefile gitcompile</kbd></pre>
+        "command">rm -rf qlo10k1 Makefile gitcompile echomixer envy24control rmedigicontrol</kbd></pre>
         <p>
           The <span class="application">ALSA Tools</span> package is only
           needed by those with advanced requirements for their sound card.
@@ -243,12 +236,12 @@ unset tool tool_dir</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">as10k1, cspctl, dl10k1, echomixer,
-              envy24control, hda-verb, hdajackretask, hdajacksensetest,
-              hdspconf, hdsploader, hdspmixer, hwmixvolume, init_audigy,
-              init_audigy_eq10, init_live, lo10k1, ld10k1, ld10k1d,
-              mixartloader, pcxhrloader, rmedigicontrol, sbiload, sscape_ctl,
-              us428control, usx2yloader, and vxloader</span>
+              <span class="segbody">as10k1, cspctl, dl10k1, hda-verb,
+              hdajackretask, hdajacksensetest, hdspconf, hdsploader,
+              hdspmixer, hwmixvolume, init_audigy, init_audigy_eq10,
+              init_live, lo10k1, ld10k1, ld10k1d, mixartloader, pcxhrloader,
+              sbiload, sscape_ctl, us428control, usx2yloader, and
+              vxloader</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Library:</strong>
@@ -300,37 +293,6 @@ unset tool tool_dir</kbd></pre>
                   <p>
                     is an SB16/AWE32 Creative Signal Processor (ASP/CSP)
                     control program
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="echomixer" name="echomixer"></a><span class=
-                    "term"><span class=
-                    "command"><strong>echomixer</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is the Linux equivalent of the Echoaudio console
-                    application from Echoaudio. It is a tool to control all
-                    the features of any Echoaudio soundcard. This includes
-                    clock sources, input and output gains, mixers, etc
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="envy24control" name=
-                    "envy24control"></a><span class="term"><span class=
-                    "command"><strong>envy24control</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is a control tool for Envy24 (ice1712) based sound cards
                   </p>
                 </td>
               </tr>
@@ -557,22 +519,6 @@ unset tool tool_dir</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="rmedigicontrol" name=
-                    "rmedigicontrol"></a><span class="term"><span class=
-                    "command"><strong>rmedigicontrol</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is a control tool for RME Digi32 and RME Digi96 sound
-                    cards. It provides a graphical frontend for all the sound
-                    card controls and switches
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
                     <a id="sbiload" name="sbiload"></a><span class=
                     "term"><span class=
                     "command"><strong>sbiload</strong></span></span>
@@ -675,7 +621,7 @@ unset tool tool_dir</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1559">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1577">
           Home</a>
         </li>
       </ul>
