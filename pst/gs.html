@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1577">
+  <body class="blfs" id="blfs-r12.1-1598">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1577
+        "phrase">(systemd</span> Edition) - Version r12.1-1598
       </h4>
       <h3>
         Chapter&nbsp;46.&nbsp;Printing
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1577">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1598">
           Home</a>
         </li>
       </ul>
@@ -61,17 +61,10 @@
           to different targets. It is a mandatory part of the cups printing
           stack.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.2
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -175,8 +168,8 @@
           backend, which is needed by <span class=
           "application">cups-filters</span>), <a class="xref" href=
           "../general/fontconfig.html" title=
-          "Fontconfig-2.15.0">Fontconfig-2.15.0</a> (required, if you are
-          installing any suggested font), <a class="xref" href=
+          "Fontconfig-2.15.0">Fontconfig-2.15.0</a> (required if you are
+          installing any of the suggested fonts), <a class="xref" href=
           "../general/freetype2.html" title=
           "FreeType-2.13.3">FreeType-2.13.3</a>, <a class="xref" href=
           "../general/lcms2.html" title="Little CMS-2.16">Little
@@ -240,6 +233,13 @@
         <pre class="userinput"><kbd class=
         "command">rm -rf freetype lcms2mt jpeg libpng openjpeg</kbd></pre>
         <p>
+          Fix building this package with gcc-14:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command"> sed -e '186 s/NewPassword =/*NewPassword =/' \
+      -e '187 s/NewLen =/*NewLen =/'          \
+      -i pdf/pdf_sec.c</kbd></pre>
+        <p>
           Compile <span class="application">Ghostscript</span>:
         </p>
         <pre class="userinput"><kbd class="command">rm -rf zlib &amp;&amp;
@@ -280,9 +280,10 @@ make</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">make install</kbd></pre>
         <p>
-          If you want the shared library too:
+          If you built the shared library, install it with:
         </p>
-        <pre class="root"><kbd class="command">make soinstall &amp;&amp;
+        <pre class="root"><kbd class=
+        "command">make soinstall                                     &amp;&amp;
 install -v -m644 base/*.h /usr/include/ghostscript &amp;&amp;
 ln -sfvn ghostscript /usr/include/ps</kbd></pre>
         <p>
@@ -290,7 +291,7 @@ ln -sfvn ghostscript /usr/include/ps</kbd></pre>
         </p>
         <pre class="root"><kbd class=
         "command">mv -v /usr/share/doc/ghostscript/10.03.1 /usr/share/doc/ghostscript-10.03.1 &amp;&amp;
-rmdir /usr/share/doc/ghostscript &amp;&amp;
+rmdir /usr/share/doc/ghostscript                                            &amp;&amp;
 cp -r examples/ -T /usr/share/ghostscript/10.03.1/examples</kbd></pre>
         <p>
           If you have downloaded the fonts, unpack them to <code class=
@@ -306,7 +307,7 @@ fc-cache -v /usr/share/ghostscript/fonts/</kbd></pre>
           You can now test the rendering of various postscript and pdf files
           from the <code class=
           "filename">/usr/share/ghostscript/10.03.1/examples</code> . To do
-          this, run the following command (in a X Windows display):
+          this, run the following command (in a X11 session):
         </p>
         <pre class="userinput"><kbd class=
         "command">gs -q -dBATCH /usr/share/ghostscript/10.03.1/examples/tiger.eps</kbd></pre>
@@ -345,10 +346,10 @@ fc-cache -v /usr/share/ghostscript/fonts/</kbd></pre>
           <span class="command"><strong>mv -v
           /usr/share/doc/ghostscript/10.03.1
           /usr/share/doc/ghostscript-10.03.1</strong></span>: This moves the
-          documentation where it is expected to be found.
+          documentation to where it is expected to be found.
         </p>
         <p>
-          <code class="option">--disable-cups</code>: this option will save a
+          <code class="option">--disable-cups</code>: This option will save a
           tiny amount of space by not linking <span class=
           "command"><strong>gs</strong></span> and <code class=
           "filename">libgs.so</code> to the <a class="xref" href="cups.html"
@@ -457,7 +458,7 @@ fc-cache -v /usr/share/ghostscript/fonts/</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1577">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1598">
           Home</a>
         </li>
       </ul>

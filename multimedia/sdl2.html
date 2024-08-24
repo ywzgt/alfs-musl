@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1577">
+  <body class="blfs" id="blfs-r12.1-1598">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1577
+        "phrase">(systemd</span> Edition) - Version r12.1-1598
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1577">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1598">
           Home</a>
         </li>
       </ul>
@@ -61,17 +61,10 @@
           designed to make it easy to write multimedia software, such as
           games and emulators.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.2
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -132,7 +125,9 @@
           "../general/ibus.html" title="ibus-1.5.30">ibus-1.5.30</a>,
           <a class="xref" href="libsamplerate.html" title=
           "libsamplerate-0.2.2">libsamplerate-0.2.2</a>, <a class="xref"
-          href="../general/nasm.html" title="NASM-2.16.03">NASM-2.16.03</a>,
+          href="../general/libunwind.html" title=
+          "libunwind-1.6.2">libunwind-1.6.2</a>, <a class="xref" href=
+          "../general/nasm.html" title="NASM-2.16.03">NASM-2.16.03</a>,
           <a class="xref" href="pipewire.html" title=
           "Pipewire-1.2.2">pipewire-1.2.2</a>, <a class="xref" href=
           "pulseaudio.html" title="PulseAudio-17.0">PulseAudio-17.0</a>,
@@ -220,40 +215,6 @@ make</kbd></pre>
           be disabled with a <code class="option">--disable-static</code>
           option to configure, but that breaks the build in this package.
         </p>
-        <p>
-          <code class="option">--disable-alsa-shared</code>: This switch
-          disables dynamically loading ALSA shared libraries.
-        </p>
-        <p>
-          <code class="option">--disable-sdl-dlopen</code>: This switch
-          disables using dlopen for shared object loading. Loading image
-          backend libraries like libpng dynamically on the fly does not work.
-        </p>
-        <p>
-          <code class="option">--disable-x11-shared</code>: This switch
-          disables dynamically loading X11 shared libraries.
-        </p>
-      </div>
-      <div class="configuration" lang="en" xml:lang="en">
-        <h2 class="sect2">
-          Configuring SDL2
-        </h2>
-        <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3">
-            Configuration Information
-          </h3>
-          <p>
-            As with most libraries, there is no configuration to do, save
-            that the library directory, i.e., <code class=
-            "filename">/opt/lib</code> or <code class=
-            "filename">/usr/local/lib</code> should appear in <code class=
-            "filename">/etc/ld.so.conf</code> so that <span class=
-            "command"><strong>ldd</strong></span> can find the shared
-            libraries. After checking that this is the case, <span class=
-            "command"><strong>/sbin/ldconfig</strong></span> should be run
-            while logged in as <code class="systemitem">root</code>.
-          </p>
-        </div>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -313,7 +274,7 @@ make</kbd></pre>
                   <p>
                     contains functions that provide low level access to
                     audio, keyboard, mouse, joystick, 3D hardware via OpenGL,
-                    and 2D frame buffer across multiple platforms
+                    and the 2D frame buffer across multiple platforms
                   </p>
                 </td>
               </tr>
@@ -344,7 +305,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1577">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1598">
           Home</a>
         </li>
       </ul>

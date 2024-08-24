@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1577">
+  <body class="blfs" id="blfs-r12.1-1598">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1577
+        "phrase">(systemd</span> Edition) - Version r12.1-1598
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1577">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1598">
           Home</a>
         </li>
       </ul>
@@ -61,17 +61,10 @@
           Manager</span> for system integration and use when no users are
           logged in.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.2
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -171,10 +164,10 @@
           Installation of Colord
         </h2>
         <p>
-          First, fix a misuse of sqlite API causing a test failure and
-          potential runtime crash <span class="phrase">and an over-strict
-          systemd hardening setting causing the systemd service fail to
-          start</span>:
+          First, fix a misuse of the sqlite API causing a test failure and
+          potential runtime crash<span class="phrase">, as well as an
+          overly-strict systemd hardening setting causing the systemd service
+          to fail to start</span>:
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../colord-1.4.7-upstream_fixes-1.patch</kbd></pre>
@@ -464,7 +457,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1577">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1598">
           Home</a>
         </li>
       </ul>
