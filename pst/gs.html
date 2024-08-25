@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1598">
+  <body class="blfs" id="blfs-r12.1-1613">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1598
+        "phrase">(systemd</span> Edition) - Version r12.1-1613
       </h4>
       <h3>
         Chapter&nbsp;46.&nbsp;Printing
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1598">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1613">
           Home</a>
         </li>
       </ul>
@@ -233,12 +233,12 @@
         <pre class="userinput"><kbd class=
         "command">rm -rf freetype lcms2mt jpeg libpng openjpeg</kbd></pre>
         <p>
-          Fix building this package with gcc-14:
+          Fix building this package with gcc-14 and libidn:
         </p>
         <pre class="userinput"><kbd class=
-        "command"> sed -e '186 s/NewPassword =/*NewPassword =/' \
-      -e '187 s/NewLen =/*NewLen =/'          \
-      -i pdf/pdf_sec.c</kbd></pre>
+        "command">sed -e '186 s/NewPassword =/*NewPassword =/' \
+    -e '187 s/NewLen =/*NewLen =/'           \
+    -i pdf/pdf_sec.c</kbd></pre>
         <p>
           Compile <span class="application">Ghostscript</span>:
         </p>
@@ -458,7 +458,7 @@ fc-cache -v /usr/share/ghostscript/fonts/</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1598">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1613">
           Home</a>
         </li>
       </ul>
