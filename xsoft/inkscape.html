@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1613">
+  <body class="blfs" id="blfs-r12.1-1649">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1613
+        "phrase">(systemd</span> Edition) - Version r12.1-1649
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1613">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1649">
           Home</a>
         </li>
       </ul>
@@ -59,17 +59,10 @@
           you get Scalable Vector Graphics editor. It is useful for creating,
           viewing and changing SVG images.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.2
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -149,10 +142,8 @@
           "../general/libxslt.html" title=
           "libxslt-1.1.42">libxslt-1.1.42</a>, <a class="xref" href=
           "../general/poppler.html" title=
-          "Poppler-24.08.0">Poppler-24.08.0</a>, <a class="xref" href=
-          "../general/popt.html" title="Popt-1.19">popt-1.19</a> and
-          <a class="xref" href="../basicnet/wget.html" title=
-          "Wget-1.24.5">Wget-1.24.5</a> (to download the test dependencies)
+          "Poppler-24.08.0">Poppler-24.08.0</a>, and <a class="xref" href=
+          "../general/popt.html" title="Popt-1.19">popt-1.19</a>
         </p>
         <h4>
           Recommended
@@ -211,7 +202,7 @@
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../inkscape-1.3.2-upstream_fixes-2.patch</kbd></pre>
         <p>
-          First, fix a build failure caused by libxml2-2.12.0:
+          Next, fix a build failure caused by libxml2-2.12.0:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -i '/uri.h/a #include &lt;libxml/xmlmemory.h&gt;' src/object/uri.h</kbd></pre>
@@ -390,7 +381,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1613">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1649">
           Home</a>
         </li>
       </ul>

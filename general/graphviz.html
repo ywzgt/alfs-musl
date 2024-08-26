@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1613">
+  <body class="blfs" id="blfs-r12.1-1649">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1613
+        "phrase">(systemd</span> Edition) - Version r12.1-1649
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1613">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1649">
           Home</a>
         </li>
       </ul>
@@ -64,17 +64,10 @@
           graphical interfaces, auxiliary tools, libraries, and language
           bindings.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.2
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -118,21 +111,21 @@
             Note
           </h3>
           <p>
-            <span class="application">Graphviz</span> basic usage does not
-            need any libraries out of what is found in the LFS book. Its
+            Basic usage of <span class="application">Graphviz</span> does not
+            require any libraries out of what is found in the LFS book. Its
             <span class="quote">“<span class="quote">core</span>”</span>
-            rendering engine allows to generate several graphic formats, such
-            as Postscript, SVG, VML, .fig, and Tk. Those formats can be
-            converted to almost any other format using for example tools from
-            <a class="xref" href="imagemagick.html" title=
+            rendering engine is able to generate several graphic formats,
+            such as Postscript, SVG, VML, .fig, and Tk. Those formats can be
+            converted to almost any other format using tools from packages
+            such as <a class="xref" href="imagemagick.html" title=
             "ImageMagick-7.1.1-36">ImageMagick-7.1.1-36</a>. The dependencies
             below add the ability to generate graph images in bitmap format,
             to display the graph image on screen, to edit a graph by viewing
             the resulting image directly, or to view large graphs. Since
             <span class="application">Graphviz</span> is a dependency of
-            several other packages in this book, it is suggested to first
-            build it without any dependencies, then to rebuild it when you
-            have built enough packages to suit your needs.
+            several other packages in this book, it is suggested that you
+            first build it without any dependencies, and then rebuild it when
+            you have built enough packages to suit your needs.
           </p>
         </div>
         <h4>
@@ -147,7 +140,7 @@
           "Fontconfig-2.15.0">Fontconfig-2.15.0</a>, and <a class="xref"
           href="libpng.html" title="libpng-1.6.43">libpng-1.6.43</a>, to
           generate images in bitmap SVG, postscript, PNG, and PDF formats, or
-          displaying the image on screen. The PNG output is required for
+          to display the image on screen. The PNG output is required for
           building <a class="xref" href="gegl.html" title=
           "gegl-0.4.48">gegl-0.4.48</a>
         </p>
@@ -176,8 +169,8 @@
           "https://www.freedesktop.org/wiki/Software/glitz">glitz</a>
         </p>
         <h4>
-          Optional, to load graphic images that may be displayed inside the
-          nodes of a graph
+          Optional (to load graphics that may be displayed inside the nodes
+          of a graph)
         </h4>
         <p class="optional">
           <code class="filename">libgs.so</code> from <a class="xref" href=
@@ -188,7 +181,7 @@
           "Poppler-24.08.0">Poppler-24.08.0</a>
         </p>
         <h4>
-          Optional, to build more tools
+          Optional (to build more tools)
         </h4>
         <p class="optional">
           <a class="xref" href="../x/freeglut.html" title=
@@ -202,7 +195,7 @@
           <span class="command"><strong>gvedit</strong></span> graph editor)
         </p>
         <h4>
-          Optional (To Build Language Bindings)
+          Optional (to build language bindings)
         </h4>
         <p class="optional">
           <a class="xref" href="swig.html" title="SWIG-4.2.1">SWIG-4.2.1</a>
@@ -454,8 +447,9 @@
                 </td>
                 <td>
                   <p>
-                    takes a graph in DOT format as input, finds node clusters
-                    and then augments the graph with this information
+                    takes a graph in DOT format as input, finds node
+                    clusters, and then augments the graph with this
+                    information
                   </p>
                 </td>
               </tr>
@@ -1093,7 +1087,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1613">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1649">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1613">
+  <body class="blfs" id="blfs-r12.1-1649">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1613
+        "phrase">(systemd</span> Edition) - Version r12.1-1649
       </h4>
       <h3>
         Chapter&nbsp;2.&nbsp;Important Information
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1613">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1649">
           Home</a>
         </li>
       </ul>
@@ -438,6 +438,7 @@ tar -xvf filename.tar.bz2</kbd></pre>
 cat &gt; /etc/systemd/system/user@.service.d/delegate.conf &lt;&lt; EOF &amp;&amp;
 <code class="literal">[Service]
 Delegate=memory cpuset</code>
+EOF
 systemctl daemon-reload</kbd></pre>
         <p>
           Then logout and login again. Now to run <span class=
@@ -479,12 +480,11 @@ systemd-run --user --pty --pipe --wait -G -d \
           <code class="literal">0,2,4,6</code> instead of <code class=
           "literal">0-3</code>. Note that the other CPU models may use a
           different mapping scheme. If you are not sure about the mapping
-          between the logical cores and the physical cores, run <span class=
-          "command"><strong>grep -E '^processor|^core'
-          /proc/cpuinfo</strong></span> which will output logical core IDs in
-          the <code class="computeroutput">processor</code> lines, and
-          physical core IDs in the <code class="computeroutput">core
-          id</code> lines.
+          between the logical cores and the physical cores, run the
+          <span class="command"><strong>lscpu --extended</strong></span>
+          command which will output logical core IDs in the <code class=
+          "computeroutput">CPU</code> column, and physical core IDs in the
+          <code class="computeroutput">CORE</code> column.
         </p>
         <p>
           When the <span class="command"><strong>nproc</strong></span> or
@@ -1517,7 +1517,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1613">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1649">
           Home</a>
         </li>
       </ul>
