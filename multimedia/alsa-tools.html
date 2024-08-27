@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1649">
+  <body class="blfs" id="blfs-r12.1-1663">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1649
+        "phrase">(systemd</span> Edition) - Version r12.1-1663
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1649">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
           Home</a>
         </li>
       </ul>
@@ -183,13 +183,13 @@ export -f as_root</kbd></pre>
         </p>
         <pre class="userinput"><kbd class="command">bash -e</kbd></pre>
         <p>
-          Now, remove a tool that needs <span class="application">Qt2 or
+          Now, remove some tools that need <span class="application">Qt2 or
           3</span> or <a class="ulink" href=
-          "https://download.gnome.org/sources/gtk+/2.24/">GTK+-2</a> and two
-          unneeded files (for the BLFS instructions below):
+          "https://download.gnome.org/sources/gtk+/2.24/">GTK+-2</a>, and
+          also two unneeded files (for the BLFS instructions below):
         </p>
         <pre class="userinput"><kbd class=
-        "command">rm -rf qlo10k1 Makefile gitcompile echomixer envy24control rmedigicontrol</kbd></pre>
+        "command">rm -rf qlo10k1 echomixer envy24control rmedigicontrol Makefile gitcompile</kbd></pre>
         <p>
           The <span class="application">ALSA Tools</span> package is only
           needed by those with advanced requirements for their sound card.
@@ -307,9 +307,8 @@ unset tool tool_dir</kbd></pre>
                 <td>
                   <p>
                     is a GUI to make it easy to retask your jacks - e g, turn
-                    your Mic jack into an extra Headphone, or why not make
-                    them both line outs and connect them to your surround
-                    receiver
+                    your Mic jack into an extra Headphone, or make them both
+                    line outs and connect them to your surround receiver
                   </p>
                 </td>
               </tr>
@@ -323,7 +322,7 @@ unset tool tool_dir</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    is a small program to send HD-audio commands to the given
+                    is a small program to send HD-Audio commands to the given
                     ALSA hwdep device on the hd-audio interface
                   </p>
                 </td>
@@ -489,11 +488,10 @@ unset tool tool_dir</kbd></pre>
                 <td>
                   <p>
                     is a helper program to load the firmware binaries onto
-                    the Digigram's miXart board sound drivers. The following
-                    modules require this program: snd-mixart. These drivers
-                    don't work properly at all until the certain firmware
-                    files are loaded, i.e. no PCM nor mixer devices will
-                    appear
+                    the Digigram's miXart board sound drivers. The snd-mixart
+                    module requires this program. These drivers don't work
+                    properly until the required firmware files are loaded,
+                    i.e. no PCM nor mixer devices will appear
                   </p>
                 </td>
               </tr>
@@ -509,10 +507,9 @@ unset tool tool_dir</kbd></pre>
                   <p>
                     is a helper program to load the firmware binaries onto
                     Digigram's pcxhr compatible board sound drivers. The
-                    following modules require this program: snd-pcxhr. These
-                    drivers don't work properly at all until certain firmware
-                    files are loaded, i.e. no PCM nor mixer devices will
-                    appear
+                    snd-pcxhr module requires this program. These drivers
+                    don't work properly until certain firmware files are
+                    loaded, i.e. no PCM nor mixer devices will appear
                   </p>
                 </td>
               </tr>
@@ -586,11 +583,11 @@ unset tool tool_dir</kbd></pre>
                 <td>
                   <p>
                     is a helper program to load the firmware binaries onto
-                    the Digigram's VX-board sound drivers. The following
-                    modules require this program: snd-vx222, snd-vxpocket,
-                    snd-vxp440. These drivers don't work properly at all
-                    until the certain firmware files are loaded, i.e. no PCM
-                    nor mixer devices will appear
+                    the Digigram's VX-board sound drivers. The snd-vx222,
+                    snd-vxpocket, and snd-vxp440 modules require this
+                    program. These drivers don't work properly until certain
+                    firmware files are loaded, i.e. no PCM nor mixer devices
+                    will appear
                   </p>
                 </td>
               </tr>
@@ -621,7 +618,7 @@ unset tool tool_dir</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1649">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
           Home</a>
         </li>
       </ul>

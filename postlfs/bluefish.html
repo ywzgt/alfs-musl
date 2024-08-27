@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1649">
+  <body class="blfs" id="blfs-r12.1-1663">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1649
+        "phrase">(systemd</span> Edition) - Version r12.1-1663
       </h4>
       <h3>
         Chapter&nbsp;6.&nbsp;Text Editors
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1649">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
           Home</a>
         </li>
       </ul>
@@ -133,12 +133,12 @@
           Installation of Bluefish
         </h2>
         <p>
-          First, fix a problem introduced by gcc14:
+          First, disable a plugin requiring functions removed in
+          libxml-2.13.0 or later:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -e '/HTMLtree.h/a int xmlNanoHTTPFetch(const char* URL, const char* filename, char** contentType);' \
-    -i src/plugin_infbrowser/infb_gui.c
-</kbd></pre>
+        "command">sed '/infbrowser/d' -i src/Makefile.am &amp;&amp;
+autoreconf</kbd></pre>
         <p>
           Install <span class="application">Bluefish</span> by running the
           following commands:
@@ -251,7 +251,7 @@ update-desktop-database</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1649">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
           Home</a>
         </li>
       </ul>
