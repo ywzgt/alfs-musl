@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1663">
+  <body class="blfs" id="blfs-r12.1-1717">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1663
+        "phrase">(systemd</span> Edition) - Version r12.1-1717
       </h4>
       <h3>
         Chapter&nbsp;43.&nbsp;Audio Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>
@@ -120,8 +120,8 @@
           Installation of LAME
         </h2>
         <p>
-          Prevent the source code directory from mistakenly hardcoded as a
-          shared library search path in the installed programs:
+          Prevent the source code directory from being mistakenly hardcoded
+          as a shared library search path in the installed programs:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -i -e 's/^\(\s*hardcode_libdir_flag_spec\s*=\).*/\1/' configure</kbd></pre>
@@ -156,10 +156,10 @@ make</kbd></pre>
           switch prevents installation of static versions of the libraries.
         </p>
         <p>
-          <code class="option">--enable-nasm</code>: Enable the use of
-          <a class="xref" href="../general/nasm.html" title=
+          <code class="option">--enable-nasm</code>: This option enables the
+          use of <a class="xref" href="../general/nasm.html" title=
           "NASM-2.16.03">NASM-2.16.03</a> to compile optimized assembly
-          routines for 32-bit x86. This option has no effect on x86_64.
+          routines for 32-bit x86. Note that this has no effect on x86_64.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -231,8 +231,8 @@ make</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    libraries provide the functions necessary to convert raw
-                    PCM and WAV files to MP3 files
+                    provides the functions necessary to convert raw PCM and
+                    WAV files to MP3 files
                   </p>
                 </td>
               </tr>
@@ -262,7 +262,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>

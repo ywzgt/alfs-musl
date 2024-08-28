@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1663">
+  <body class="blfs" id="blfs-r12.1-1717">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1663
+        "phrase">(systemd</span> Edition) - Version r12.1-1717
       </h4>
       <h3>
         Chapter&nbsp;28.&nbsp;Icons
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>
@@ -62,17 +62,10 @@
           Standard</span>, contains various components of the default
           <span class="application">GNOME</span> theme.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.2
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -128,7 +121,7 @@
           running the following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr &amp;&amp;
+        "command">./configure --prefix=/usr --disable-gtk2-engine &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -143,8 +136,9 @@ make</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <code class="option">--disable-gtk2-engine</code>: This switch
-          disables the GTK+-2 theming engine.
+          <em class="parameter"><code>--disable-gtk2-engine</code></em>: This
+          switch disables the GTK+-2 theming engine because GTK+-2 is no
+          longer part of BLFS.
         </p>
         <p>
           <code class="option">--disable-gtk3-engine</code>: This switch
@@ -163,43 +157,15 @@ make</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Library:</strong>
-              <span class="segbody">libadwaita.so</span>
+              <span class="segbody">None</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/lib/gtk-2.0/2.10.0/engines,
-              /usr/share/icons/HighContrast, /usr/share/themes/Adwaita,
-              /usr/share/themes/Adwaita-dark, and
+              <span class="segbody">/usr/share/icons/HighContrast,
+              /usr/share/themes/Adwaita, /usr/share/themes/Adwaita-dark, and
               /usr/share/themes/HighContrast</span>
             </div>
           </div>
-        </div>
-        <div class="variablelist">
-          <h3>
-            Short Descriptions
-          </h3>
-          <table border="0" class="variablelist">
-            <colgroup>
-              <col align="left" valign="top" />
-              <col />
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>
-                  <p>
-                    <a id="libadwaita" name="libadwaita"></a><span class=
-                    "term"><code class="filename">libadwaita.so</code></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is the Adwaita <span class="application">GTK+-2</span>
-                    engine theme
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
@@ -225,7 +191,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>

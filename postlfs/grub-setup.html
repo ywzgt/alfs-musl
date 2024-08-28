@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1663">
+  <body class="blfs" id="blfs-r12.1-1717">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1663
+        "phrase">(systemd</span> Edition) - Version r12.1-1717
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>
@@ -533,8 +533,8 @@ if loadfont /boot/grub/fonts/unicode.pf2; then
   terminal_output gfxterm
 fi
 
-menuentry "GNU/Linux, Linux 6.7.4-lfs-12.1"  {
-  linux   /boot/vmlinuz-6.7.4-lfs-12.1 root=/dev/sda2 ro
+menuentry "GNU/Linux, Linux 6.10.5-lfs-12.2" {
+  linux   /boot/vmlinuz-6.10.5-lfs-12.2 root=/dev/sda2 ro
 }
 
 menuentry "Firmware Setup" {
@@ -547,14 +547,19 @@ menuentry "Firmware Setup" {
           for the basic knowledge about the <code class=
           "filename">grub.cfg</code> file. <code class=
           "literal">(hd0,2)</code>, <code class="literal">sda2</code>, and
-          <code class="literal">6.4.10-lfs-12.0</code> must match your
+          <code class="literal">6.10.5-lfs-12.2</code> must match your
           configuration.
         </p>
         <p>
-          The <span class="command"><strong>insmod all_video</strong></span>
-          directive loads various modules for video support. It's needed to
-          initialize the EFI framebuffer for the kernel to print messages
-          correctly before the kernel GPU driver initialization.
+          The <span class="command"><strong>insmod efi_gop</strong></span>
+          and <span class="command"><strong>insmod efi_uga</strong></span>
+          directives load two modules for EFI-based video support. On most
+          systems the <code class="literal">efi_gop</code> module is enough.
+          The <code class="literal">efi_uga</code> module is only useful for
+          legacy systems, but it's harmless to load it anyway. The video
+          support is needed for the <span class=
+          "command"><strong>terminal_output gfxterm</strong></span> directive
+          to really work.
         </p>
         <p>
           The <span class="command"><strong>terminal_output
@@ -635,7 +640,7 @@ menuentry "Windows 11" {
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>

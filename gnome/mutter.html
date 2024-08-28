@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1663">
+  <body class="blfs" id="blfs-r12.1-1717">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1663
+        "phrase">(systemd</span> Edition) - Version r12.1-1717
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>
@@ -61,17 +61,10 @@
           but from <span class="application">GNOME Session</span> (on a
           machine with a hardware accelerated video driver).
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.2
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -124,7 +117,7 @@
           "../general/libxkbcommon.html" title=
           "libxkbcommon-1.7.0">libxkbcommon-1.7.0</a>, and <a class="xref"
           href="../multimedia/pipewire.html" title=
-          "Pipewire-1.2.2">pipewire-1.2.2</a>
+          "Pipewire-1.2.3">pipewire-1.2.3</a>
         </p>
         <h4>
           Recommended
@@ -252,17 +245,17 @@ ninja</kbd></pre>
           "command"><strong>xvfb-run</strong></span>.
         </p>
         <p>
-          <em class="parameter"><code>-D profiler=false</code></em>: Allow
+          <em class="parameter"><code>-D profiler=false</code></em>: Allows
           building this package without <span class=
           "application">Sysprof</span>. Remove this option if you've
           installed <span class="application">Sysprof</span> and want to
-          analysis the rendering performance of <span class=
+          analyze the rendering performance of <span class=
           "application">Mutter</span>.
         </p>
         <p>
           <code class="option">-D tests=true -D clutter_tests=false</code>:
-          Building all the tests but the tests for the shipped <span class=
-          "application">Clutter</span> library. The <span class=
+          This builds all of the tests except for the tests for the shipped
+          <span class="application">Clutter</span> library. The <span class=
           "application">Clutter</span> tests are known to fail with
           <em class="parameter"><code>--buildtype=release</code></em>.
         </p>
@@ -406,7 +399,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>

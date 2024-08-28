@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1663">
+  <body class="blfs" id="blfs-r12.1-1717">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1663
+        "phrase">(systemd</span> Edition) - Version r12.1-1717
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>
@@ -236,9 +236,7 @@ sed -e 's/{ target nonpic } //' \
           unexpected failures out of over 617,000 tests. To run the tests,
           issue:
         </p>
-        <pre class="userinput"><kbd class=
-        "command">ulimit -s 32768 &amp;&amp;
-make -k check</kbd></pre>
+        <pre class="userinput"><kbd class="command">make -k check</kbd></pre>
         <p>
           The tests are very long, and the results may be hard to find in the
           logs, specially if you use parallel jobs with make. You can get a
@@ -313,10 +311,6 @@ ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/14.2.0/liblto_plugin.so \
           this command to remove undesired languages. GCC also supports Ada
           and D, but building GCC with Ada (or D) support needs an existing
           Ada (or D) compiler. So they are not enabled here.
-        </p>
-        <p>
-          <span class="command"><strong>ulimit -s 32768</strong></span>: This
-          command prevents several tests from running out of stack space.
         </p>
         <p>
           <span class="command"><strong>make -k check</strong></span>: This
@@ -508,7 +502,7 @@ ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/14.2.0/liblto_plugin.so \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>

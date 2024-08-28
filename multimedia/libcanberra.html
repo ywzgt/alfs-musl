@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1663">
+  <body class="blfs" id="blfs-r12.1-1717">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1663
+        "phrase">(systemd</span> Edition) - Version r12.1-1717
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>
@@ -156,8 +156,8 @@
           Installation of libcanberra
         </h2>
         <p>
-          At first, apply a patch to fix an issue causing some applications
-          to crash in Wayland based desktop environment:
+          First, apply a patch to fix an issue causing some applications to
+          crash in Wayland-based desktop environments:
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../libcanberra-0.30-wayland-1.patch</kbd></pre>
@@ -182,16 +182,12 @@ make</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>--disable-oss</code></em>: disable
+          <em class="parameter"><code>--disable-oss</code></em>: disables
           optional deprecated OSS support
         </p>
         <p>
-          <code class="option">--disable-gtk</code>: disable optional GTK+ 2
-          support
-        </p>
-        <p>
-          <code class="option">--disable-gtk3</code>: disable optional GTK+ 3
-          support
+          <code class="option">--disable-gtk3</code>: disables optional
+          support for GTK+-3
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -207,8 +203,8 @@ make</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libcanberra-gtk.so, libcanberra-gtk3.so
-              and libcanberra.so</span>
+              <span class="segbody">libcanberra-gtk3.so and
+              libcanberra.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
@@ -239,21 +235,6 @@ make</kbd></pre>
                 <td>
                   <p>
                     is an application used for playing sound events
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="libcanberra-gtk" name=
-                    "libcanberra-gtk"></a><span class="term"><code class=
-                    "filename">libcanberra-gtk.so</code></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    contains the <span class="application">libcanberra</span>
-                    bindings for <span class="application">GTK+ 2</span>
                   </p>
                 </td>
               </tr>
@@ -312,7 +293,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>

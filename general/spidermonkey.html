@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1663">
+  <body class="blfs" id="blfs-r12.1-1717">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1663
+        "phrase">(systemd</span> Edition) - Version r12.1-1717
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>
@@ -228,12 +228,12 @@ make</kbd></pre>
           JITTEST_EXTRA_ARGS="--timeout 300"</strong></span>. Like the
           SpiderMonkey test suite, the number of test jobs is same as the
           number of all CPU cores in the system even if a cgroup is used. To
-          make things worse, there are six tests each of them will use 3 GB
-          of system memory, so the peak memory usage may be up to 18 GB if
-          the number of cores is six or more. Running the JIT test suite
-          without enough memory may invoke the kernel OOM killer and cause
-          stability issues. If you don't have enough system memory available,
-          append <code class="option">-jN</code> after <code class=
+          make things worse, there are six tests which will use 3 GB each of
+          system memory, so the peak memory usage may be up to 18 GB if the
+          number of cores is six or more. Running the JIT test suite without
+          enough memory may invoke the kernel OOM killer and cause stability
+          issues. If you don't have enough system memory available, append
+          <code class="option">-jN</code> after <code class=
           "option">--timeout 300</code> with N replaced by the number of
           parallel test jobs you want to start. For example, if you have 16
           GB system memory available and 8 CPU cores, issue <span class=
@@ -435,7 +435,7 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js115-config</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>

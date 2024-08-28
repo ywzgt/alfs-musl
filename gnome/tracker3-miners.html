@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1663">
+  <body class="blfs" id="blfs-r12.1-1717">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1663
+        "phrase">(systemd</span> Edition) - Version r12.1-1717
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>
@@ -58,17 +58,10 @@
           The <span class="application">Tracker-miners</span> package
           contains a set of data extractors for Tracker.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.2
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -297,23 +290,23 @@ rm -rf ~/tracker-tests</kbd></pre>
           the seccomp system call filter. On some architectures, such as i686
           and ARM, the functions that tracker-miners uses are not guarded
           properly, and tracker-miners will get killed with a SIGSYS as a
-          result. Note that disabling seccomp might cause the system
-          compromised more severely in case a security vulnerability in
+          result. Note that disabling seccomp may cause the system to be
+          compromised worse in the event that a security vulnerability in
           tracker-miners or its dependencies is exploited.
         </p>
         <p>
           <code class="option">-D landlock=disabled</code>: This switch
           disables the Landlock file access sandbox. Use it if you don't want
           to build the kernel with Landlock support. Note that disabling
-          Landlock might cause the system compromised more severely in case a
-          security vulnerability in tracker-miners or its dependencies is
-          exploited.
+          Landlock may cause the system to be compromised worse in the event
+          that a security vulnerability in tracker-miners or its dependencies
+          is exploited.
         </p>
         <p>
           <code class="option">-D battery_detection=none</code>: Use this
           option if you have not installed the recommended dependency upower.
           Do not use this option if your system has a battery (laptop battery
-          or UPS), or tracker miners may waste the battery power and lifespan
+          or UPS), or tracker-miners may waste the battery power and lifespan
           when the A/C power is unavailable.
         </p>
       </div>
@@ -491,7 +484,7 @@ rm -rf ~/tracker-tests</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>

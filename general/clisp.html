@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1663">
+  <body class="blfs" id="blfs-r12.1-1717">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1663
+        "phrase">(systemd</span> Edition) - Version r12.1-1717
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>
@@ -151,7 +151,7 @@
     i?86) export CFLAGS="${CFLAGS:--O2 -g} -falign-functions=4" ;;
 esac</kbd></pre>
         <p>
-          Remove two tests, which fail for unknown reasons:
+          Remove two tests which fail for unknown reasons:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -i -e '/socket/d' -e '/"streams"/d' tests/tests.lisp</kbd></pre>
@@ -200,16 +200,16 @@ make -j1</kbd></pre>
           <span class="command"><strong>configure</strong></span>.
         </p>
         <p>
-          <span class=
-          "command"><strong>--docdir=/usr/share/doc/clisp-2.49</strong></span>:
-          this ensures the html documentation will go into a versioned
-          directory instead of straight into <code class=
+          <em class=
+          "parameter"><code>--docdir=/usr/share/doc/clisp-2.49</code></em>:
+          this switch forces the HTML documentation to be installed intoto a
+          versioned directory, rather than into <code class=
           "filename">/usr/share/html/</code>.
         </p>
         <p>
-          <span class=
-          "command"><strong>--with-libsigsegv-prefix=/usr</strong></span>:
-          use this to tell <span class=
+          <em class=
+          "parameter"><code>--with-libsigsegv-prefix=/usr</code></em>: use
+          this to tell <span class=
           "command"><strong>configure</strong></span> that you have installed
           <span class="package">libsigsegv</span> in /usr, otherwise it will
           not be found.
@@ -218,8 +218,8 @@ make -j1</kbd></pre>
           <code class="option">--with-libffcall-prefix=/usr</code>: use this
           to tell <span class="command"><strong>configure</strong></span>
           that you have installed the optional <span class=
-          "package">libffcall</span> in /usr, otherwise like <span class=
-          "package">libsigsegv</span> it will not be found.
+          "package">libffcall</span> package in /usr, otherwise like
+          <span class="package">libsigsegv</span> it will not be found.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -230,7 +230,7 @@ make -j1</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">clisp, clisp-link</span>
+              <span class="segbody">clisp and clisp-link</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
@@ -239,8 +239,9 @@ make -j1</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/lib/clisp-2.49
-              /usr/share/doc/clisp-2.49 /usr/share/emacs/site-lisp;</span>
+              <span class="segbody">/usr/lib/clisp-2.49,
+              /usr/share/doc/clisp-2.49, and
+              /usr/share/emacs/site-lisp</span>
             </div>
           </div>
         </div>
@@ -309,7 +310,7 @@ make -j1</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1663">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
           Home</a>
         </li>
       </ul>
