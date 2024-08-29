@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1717">
+  <body class="blfs" id="blfs-r12.1-1739">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1717
+        "phrase">(systemd</span> Edition) - Version r12.1-1739
       </h4>
       <h3>
         Chapter&nbsp;34.&nbsp;<span class="phrase">GNOME Applications</span>
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1739">
           Home</a>
         </li>
       </ul>
@@ -62,17 +62,10 @@
           that once existed on the <span class="application">GNOME</span>
           Desktop.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.2
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -182,11 +175,11 @@
 cd    build &amp;&amp;
 
 CPPFLAGS+=" -I/opt/texlive/2024/include" \
-meson setup --prefix=/usr          \
-            --buildtype=release    \
-            -D gtk_doc=false       \
-            --wrap-mode=nodownload \
-            ..                     &amp;&amp;
+meson setup --prefix=/usr                \
+            --buildtype=release          \
+            -D gtk_doc=false             \
+            --wrap-mode=nodownload       \
+            ..                           &amp;&amp;
 ninja</kbd></pre>
         <p>
           If you have <a class="xref" href=
@@ -196,7 +189,7 @@ ninja</kbd></pre>
         </p>
         <pre class="userinput"><kbd class=
         "command">sed "/docs_dir/s@\$@ / 'evince-46.3.1'@" -i ../help/meson.build &amp;&amp;
-meson configure -D gtk_doc=true                               &amp;&amp;
+meson configure -D gtk_doc=true                                 &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not have a working test suite.
@@ -388,7 +381,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1739">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1717">
+  <body class="blfs" id="blfs-r12.1-1739">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1717
+        "phrase">(systemd</span> Edition) - Version r12.1-1739
       </h4>
       <h3>
         Chapter&nbsp;51.&nbsp;Typesetting
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1739">
           Home</a>
         </li>
       </ul>
@@ -95,17 +95,10 @@
           so that the final commands to initialize the new installation will
           be found.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.2
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -150,13 +143,14 @@
           fonts, and various other files) is not part of the source tarball.
           You must download it separately. This will give you all of the
           additional files which are provided by a full install of the binary
-          version, there is no realistic way to restrict which parts get
+          version, as there is no realistic way to restrict which parts get
           installed.
         </p>
         <p>
           Because of the size of this package, it is unlikely to be mirrored
-          by BLFS mirrors. In case of difficulty, go to
-          http://www.ctan.org/mirrors/ to find a more-accessible mirror.
+          by BLFS mirrors. If you are unable to download the files for this
+          package, go to https://www.ctan.org/mirrors/ to find a
+          more-accessible mirror.
         </p>
         <div class="itemizedlist">
           <ul class="compact">
@@ -468,8 +462,8 @@ fmtutil-sys --all</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <span class="command"><strong>-C</strong></span>: create
-          config.cache, this saves significant time in a parallel build.
+          <span class="command"><strong>-C</strong></span>: creates
+          config.cache, which saves significant time in a parallel build.
         </p>
         <p>
           <em class="parameter"><code>--prefix=</code></em>, <em class=
@@ -712,7 +706,7 @@ fmtutil-sys --all</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1739">
           Home</a>
         </li>
       </ul>

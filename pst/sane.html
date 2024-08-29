@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1717">
+  <body class="blfs" id="blfs-r12.1-1739">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1717
+        "phrase">(systemd</span> Edition) - Version r12.1-1739
       </h4>
       <h3>
         Chapter&nbsp;47.&nbsp;Scanning
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1739">
           Home</a>
         </li>
       </ul>
@@ -124,7 +124,7 @@
           SANE Dependencies
         </h3>
         <h4>
-          Optional (Back Ends)
+          Optional
         </h4>
         <p class="optional">
           <a class="xref" href="../basicnet/avahi.html" title=
@@ -171,7 +171,7 @@
         </h2>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
-            Installation of SANE Back Ends
+            Installation of SANE Backends
           </h3>
           <p>
             The <span class="application">SANE</span> daemon should run with
@@ -187,15 +187,14 @@
             </h3>
             <p>
               <span class="command"><strong>configure</strong></span> assumes
-              that the user building <span class=
-              "application">SANE</span>-backends is a member of the
-              <code class="systemitem">scanner</code> group for testing the
-              existence of this group. As a result, the user building the
-              package needs to be added to the <code class=
-              "systemitem">scanner</code> group. Add the user to the
-              <code class="systemitem">scanner</code> group by issuing the
-              following command as the <code class="systemitem">root</code>
-              user:
+              that the user building <span class="application">SANE</span>
+              Backends is a member of the <code class=
+              "systemitem">scanner</code> group for testing the existence of
+              this group. As a result, the user building the package needs to
+              be added to the <code class="systemitem">scanner</code> group.
+              Add the user to the <code class="systemitem">scanner</code>
+              group by issuing the following command as the <code class=
+              "systemitem">root</code> user:
             </p>
             <pre class="root"><kbd class=
             "command">usermod -G scanner -a <em class=
@@ -209,7 +208,7 @@
             For a USB scanner, if you are linking to <a class="xref" href=
             "../general/libusb.html" title="libusb-1.0.27">libusb-1.0.27</a>,
             include the configure switch --enable-libusb_1_0. Install
-            <span class="application">SANE</span>-backends by running the
+            <span class="application">SANE</span> Backends by running the
             following commands:
           </p>
           <pre class="userinput"><kbd class=
@@ -284,7 +283,7 @@ chgrp -v scanner  /run/lock/sane</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm99288" name="idm99288"></a>Backend
+                    <a id="idm99291" name="idm99291"></a>Backend
                     Configuration
                   </h5>
                 </div>
@@ -326,7 +325,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm99305" name="idm99305"></a>General Information
+                    <a id="idm99308" name="idm99308"></a>General Information
                   </h5>
                 </div>
               </div>
@@ -346,7 +345,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm99312" name="idm99312"></a>Configuration and
+                    <a id="idm99315" name="idm99315"></a>Configuration and
                     setup of the 'saned' daemon
                   </h5>
                 </div>
@@ -559,7 +558,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1739">
           Home</a>
         </li>
       </ul>

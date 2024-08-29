@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.1-1717">
+  <body class="blfs" id="blfs-r12.1-1739">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.1-1717
+        "phrase">(systemd</span> Edition) - Version r12.1-1739
       </h4>
       <h3>
         Chapter&nbsp;2.&nbsp;Important Information
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1739">
           Home</a>
         </li>
       </ul>
@@ -1460,9 +1460,13 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
           carrying forward a part of its spirit by enabling PIE (<code class=
           "option">-fPIE -pie</code>) and SSP (<code class=
           "option">-fstack-protector-strong</code>) as the defaults for GCC
-          and clang. What is being covered here is different - first you have
-          to make sure that the package is indeed using your added flags and
-          not over-riding them.
+          and clang. And, the linkers (<span class=
+          "command"><strong>ld.bfd</strong></span> and <span class=
+          "command"><strong>ld.gold</strong></span>) have also enabled
+          <code class="option">-Wl,-z,relro</code> (making a part of the GOT
+          immutable) by default since Binutils 2.27. What is being covered
+          here is different - first you have to make sure that the package is
+          indeed using your added flags and not over-riding them.
         </p>
         <p>
           For hardening options which are reasonably cheap, there is some
@@ -1476,17 +1480,67 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
           run, and often they will not be noticeable.
         </p>
         <p>
-          The main distros use much more, such as RELRO (Relocation Read
-          Only) and perhaps <code class=
-          "option">-fstack-clash-protection</code>. You may also encounter
-          the so-called <span class="quote">“<span class="quote">userspace
-          retpoline</span>”</span> (<code class=
-          "option">-mindirect-branch=thunk</code> etc.) which is the
-          equivalent of the spectre mitigations applied to the linux kernel
-          in late 2018. The kernel mitigations caused a lot of complaints
-          about lost performance, if you have a production server you might
-          wish to consider testing that, along with the other available
-          options, to see if performance is still sufficient.
+          The main distros use much more, such as:
+        </p>
+        <div class="itemizedlist">
+          <ul>
+            <li class="listitem">
+              <p>
+                <code class="option">-Wl,-z,now</code>: disables lazy binding
+                to enhance <code class="option">-Wl,-z,relro</code>, so the
+                <span class="emphasis"><em>entire</em></span> GOT can be made
+                immutable.
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="option">-fstack-clash-protection</code>:
+                prevents the attacker from using an offset large enough and
+                not adequately checked to jump over the stack guard page
+                placed by the kernel and the stack canary placed by
+                <code class="option">-fstack-protector=strong</code>, and
+                modify the stack from a heap address, or vice versa.
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="option">-ftrivial-auto-var-init=zero</code>:
+                initializes some variables by filling zero bytes if they are
+                not initialized by other means.
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                <code class="option">-fcf-protection=full</code>: utilizes
+                Intel and AMD CET technology to limit the target addresses of
+                control-flow transfer instructions. To make it really
+                effective for a package, all packages providing a shared
+                library for the package to use must be built with this
+                option, as well as that package itself, Glibc must be
+                configured with the <code class="option">--enable-cet</code>
+                option enabled, and the system must run on Intel Tiger Lake
+                or newer, or AMD Zen 3 or newer. If the criteria is not met
+                the program compiled with this option will still run, but not
+                really protected by CET.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <p>
+          In GCC 14, the option <code class="option">-fhardened</code> is a
+          shorthand to enable all the hardening options mentioned above. It
+          sets <code class="option">-D _FORTIFY_SOURCE=3</code> instead of
+          <code class="option">-D _FORTIFY_SOURCE=2</code>.
+        </p>
+        <p>
+          You may also encounter the so-called <span class=
+          "quote">“<span class="quote">userspace retpoline</span>”</span>
+          (<code class="option">-mindirect-branch=thunk</code> etc.) which is
+          the equivalent of the spectre mitigations applied to the linux
+          kernel in late 2018. The kernel mitigations caused a lot of
+          complaints about lost performance, if you have a production server
+          you might wish to consider testing that, along with the other
+          available options, to see if performance is still sufficient.
         </p>
         <p>
           Whilst gcc has many hardening options, clang/LLVM's strengths lie
@@ -1517,7 +1571,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1717">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.1-1739">
           Home</a>
         </li>
       </ul>
