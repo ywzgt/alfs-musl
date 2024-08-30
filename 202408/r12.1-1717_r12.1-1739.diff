@@ -1,0 +1,20 @@
+diff --git a/wget-list b/wget-list
+index 4e7b159cf..6958e67bc 100644
+--- a/wget-list
++++ b/wget-list
+@@ -793,6 +793,7 @@ https://download.gnome.org/sources/gnome-user-docs/46/gnome-user-docs-46.4.tar.x
+ https://download.gnome.org/sources/yelp/42/yelp-42.2.tar.xz
+ https://download.gnome.org/sources/baobab/46/baobab-46.0.tar.xz
+ https://download.gnome.org/sources/brasero/3.12/brasero-3.12.3.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/brasero-3.12.3-upstream_fixes-1.patch
+ https://download.gnome.org/sources/eog/45/eog-45.4.tar.xz
+ https://download.gnome.org/sources/evince/46/evince-46.3.1.tar.xz
+ https://download.gnome.org/sources/evolution/3.52/evolution-3.52.4.tar.xz
+@@ -1049,7 +1050,6 @@ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312
+ https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2024/texlive-20240312-extra.tar.xz
+ https://downloads.sourceforge.net/asymptote/asymptote-2.91.src.tgz
+ https://github.com/plk/biber/archive/v2.20/biber-2.20.tar.gz
+-https://sourceforge.net/projects/biblatex/files/biblatex-3.20/biblatex-3.20.tds.tgz
+ https://github.com/mgieseki/dvisvgm/releases/download/3.4/dvisvgm-3.4.tar.gz
+ https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
