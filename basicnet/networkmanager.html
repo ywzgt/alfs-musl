@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2">
+  <body class="blfs" id="blfs-r12.2-1">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2
+        "phrase">(systemd</span> Edition) - Version r12.2-1
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1">Home</a>
         </li>
       </ul>
     </div>
@@ -168,9 +168,7 @@
           "../general/jansson.html" title="Jansson-2.14">jansson-2.14</a>,
           <a class="xref" href="../general/ModemManager.html" title=
           "ModemManager-1.18.12">ModemManager-1.18.12</a>, <a class="xref"
-          href="../x/qt5-components.html" title=
-          "qt5-components-5.15.14">qt5-components-5.15.14</a> with qtdoc (for
-          examples), <a class="xref" href="../general/upower.html" title=
+          href="../general/upower.html" title=
           "UPower-1.90.4">UPower-1.90.4</a>, <a class="xref" href=
           "../general/valgrind.html" title=
           "Valgrind-3.23.0">Valgrind-3.23.0</a>, <a class="ulink" href=
@@ -261,18 +259,6 @@
         <h2 class="sect2">
           Installation of NetworkManager
         </h2>
-        <p>
-          If <a class="xref" href="../x/qt5-components.html" title=
-          "qt5-components-5.15.14">qt5-components-5.15.14</a> is installed
-          and the Qt based examples are desired, fix two meson.build files:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e 's/-qt4/-qt5/'              \
-    -e 's/moc_location/host_bins/' \
-    -i examples/C/qt/meson.build   &amp;&amp;
-
-sed -e 's/Qt/&amp;5/'                  \
-    -i meson.build</kbd></pre>
         <p>
           Fix the python scripts so that they use <span class=
           "application">Python 3</span>:
@@ -733,7 +719,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1">Home</a>
         </li>
       </ul>
     </div>
