@@ -1,0 +1,29 @@
+diff --git a/wget-list b/wget-list
+index 18908526b..45b17b2fa 100644
+--- a/wget-list
++++ b/wget-list
+@@ -578,7 +578,6 @@ https://github.com/c-ares/c-ares/releases/download/v1.33.0/c-ares-1.33.0.tar.gz
+ https://curl.se/download/curl-8.9.1.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.1/geoclue-2.7.1.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.0.tar.xz
+-https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.2.0/kdsoap-2.2.0.tar.gz
+ https://www.nlnetlabs.nl/downloads/ldns/ldns-1.8.4.tar.gz
+ https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
+ https://netfilter.org/projects/libmnl/files/libmnl-1.0.5.tar.bz2
+@@ -670,7 +669,6 @@ https://downloads.sourceforge.net/glew/glew-2.2.0.tgz
+ https://github.com/KhronosGroup/glslang/archive/14.3.0/glslang-14.3.0.tar.gz
+ https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
+ https://download.gnome.org/sources/goffice/0.10/goffice-0.10.57.tar.xz
+-https://github.com/steveire/grantlee/releases/download/v5.3.1/grantlee-5.3.1.tar.gz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+ https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz
+ https://download.gnome.org/sources/gtk/4.14/gtk-4.14.5.tar.xz
+@@ -696,8 +694,6 @@ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+ https://download.gnome.org/sources/pango/1.54/pango-1.54.0.tar.xz
+ https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
+ https://download.gnome.org/sources/pangomm/2.54/pangomm-2.54.0.tar.xz
+-https://download.qt.io/archive/qt/5.15/5.15.14/single/qt-everywhere-opensource-src-5.15.14.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-5.15.14-kf5-1.patch
+ https://download.qt.io/archive/qt/6.7/6.7.2/single/qt-everywhere-src-6.7.2.tar.xz
+ https://download.qt.io/official_releases/qt/6.7/6.7.2/submodules/qtwebengine-everywhere-src-6.7.2.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-6.7.2-ffmpeg7_fixes-1.patch
