@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1">
+  <body class="blfs" id="blfs-r12.2-18">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1
+        "phrase">(systemd</span> Edition) - Version r12.2-18
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,8 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-18">
+          Home</a>
         </li>
       </ul>
     </div>
@@ -58,10 +59,17 @@
           line program used to configure the Linux 2.4 and later kernel
           packet filtering ruleset.
         </p>
-        <p>
-          This package is known to build and work properly using an LFS 12.2
-          platform.
-        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            Development versions of BLFS may not build or run some packages
+            properly if LFS or dependencies have been updated since the most
+            recent stable versions of the books.
+          </p>
+        </div>
         <h3>
           Package Information
         </h3>
@@ -104,7 +112,7 @@
         </h4>
         <p class="optional">
           <a class="xref" href="../basicnet/libpcap.html" title=
-          "libpcap-1.10.4">libpcap-1.10.4</a> (required for BPF compiler or
+          "libpcap-1.10.5">libpcap-1.10.5</a> (required for BPF compiler or
           nfsynproxy support), <a class="ulink" href=
           "https://github.com/tadamdam/bpf-utils">bpf-utils</a> (required for
           Berkeley Packet Filter support), <a class="ulink" href=
@@ -911,7 +919,8 @@ iptables -A INPUT -i WAN1 -s 192.168.0.0/16 -j DROP</code></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-18">
+          Home</a>
         </li>
       </ul>
     </div>

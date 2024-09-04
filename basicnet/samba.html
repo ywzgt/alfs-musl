@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1">
+  <body class="blfs" id="blfs-r12.2-18">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1
+        "phrase">(systemd</span> Edition) - Version r12.2-18
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -40,7 +40,8 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-18">
+          Home</a>
         </li>
       </ul>
     </div>
@@ -61,10 +62,17 @@
           a NetBIOS (RFC1001/1002) nameserver (which among other things
           provides LAN browsing support).
         </p>
-        <p>
-          This package is known to build and work properly using an LFS 12.2
-          platform.
-        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            Development versions of BLFS may not build or run some packages
+            properly if LFS or dependencies have been updated since the most
+            recent stable versions of the books.
+          </p>
+        </div>
         <h3>
           Package Information
         </h3>
@@ -173,7 +181,7 @@
           <a class="xref" href="../general/valgrind.html" title=
           "Valgrind-3.23.0">Valgrind-3.23.0</a> (optionally used by the test
           suite), <a class="xref" href="../postlfs/xfsprogs.html" title=
-          "xfsprogs-6.9.0">xfsprogs-6.9.0</a>, <a class="ulink" href=
+          "xfsprogs-6.10.0">xfsprogs-6.10.0</a>, <a class="ulink" href=
           "https://cmocka.org/">cmocka</a>, <a class="ulink" href=
           "https://cryptography.io/en/latest/">cryptography</a>, <a class=
           "ulink" href="https://ctdb.samba.org/">ctdb</a> (included),
@@ -429,7 +437,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm49527" name="idm49527"></a>Scenario 1: Minimal
+                    <a id="idm50091" name="idm50091"></a>Scenario 1: Minimal
                     Standalone Client-Only Installation
                   </h5>
                 </div>
@@ -480,7 +488,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm49552" name="idm49552"></a>Scenario 2:
+                    <a id="idm50116" name="idm50116"></a>Scenario 2:
                     Standalone File/Print Server
                   </h5>
                 </div>
@@ -573,7 +581,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm49589" name="idm49589"></a>Advanced
+                    <a id="idm50153" name="idm50153"></a>Advanced
                     Requirements
                   </h5>
                 </div>
@@ -595,7 +603,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm49594" name="idm49594"></a>Guest account
+                    <a id="idm50158" name="idm50158"></a>Guest account
                   </h5>
                 </div>
               </div>
@@ -1595,7 +1603,8 @@ systemctl start smbd.socket</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-18">
+          Home</a>
         </li>
       </ul>
     </div>
