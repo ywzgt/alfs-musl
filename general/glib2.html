@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-18">
+  <body class="blfs" id="blfs-r12.2-65">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-18
+        "phrase">(systemd</span> Edition) - Version r12.2-65
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-18">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-65">
           Home</a>
         </li>
       </ul>
@@ -288,7 +288,8 @@ meson setup ..                  \
       --buildtype=release       \
       -D introspection=disabled \
       -D glib_debug=disabled    \
-      -D man-pages=enabled      &amp;&amp;
+      -D man-pages=enabled      \
+      -D sysprof=disabled       &amp;&amp;
 ninja</kbd></pre>
         <p>
           The <span class="application">GLib</span> test suite requires
@@ -366,27 +367,6 @@ ninja</kbd></pre>
             "filename">/usr</code> hierarchy.
           </p>
         </div>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            If you have installed the glib-skip_warnings-1.patch and have the
-            environment variable GLIB_LOG_LEVEL set, unset it before running
-            the tests. It will cause several tests to fail.
-          </p>
-        </div>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            If you have used the -D glib_debug=disabled option, 17 tests will
-            fail.
-          </p>
-        </div>
         <p>
           To test the results, after having installed the packages, issue:
           <span class="command"><strong>LC_ALL=C ninja test</strong></span>
@@ -409,8 +389,15 @@ ninja</kbd></pre>
         </p>
         <p>
           <em class="parameter"><code>-D glib_debug=disabled</code></em>:
-          This switch causes the build to not include debugging information
-          in the built programs and libraries..
+          This switch causes the build to not include some expensive checks
+          for debugging in the built programs and libraries.
+        </p>
+        <p>
+          <em class="parameter"><code>-D sysprof=disabled</code></em>: This
+          switch disables the tracing support for sysprof. Remove this option
+          if you want the tracing support. Note that if sysprof is not
+          installed, removing this option will cause the build system to
+          download a copy of sysprof from the Internet.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -982,7 +969,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-18">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-65">
           Home</a>
         </li>
       </ul>
