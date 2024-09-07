@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Lm-sensors-3-6-0
+      lm-sensors-3-6-0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-65">
+  <body class="blfs" id="blfs-r12.2-83">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-65
+        "phrase">(systemd</span> Edition) - Version r12.2-83
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -42,21 +42,21 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-65">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-83">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="lm_sensors" name="lm_sensors"></a>Lm-sensors-3-6-0
+      <a id="lm_sensors" name="lm_sensors"></a>lm-sensors-3-6-0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to Lm_sensors
+          Introduction to lm-sensors
         </h2>
         <p>
-          The <span class="application">lm_sensors</span> package provides
+          The <span class="application">lm-sensors</span> package provides
           userspace support for the hardware monitoring drivers in the Linux
           kernel. This is useful for monitoring the temperature of the CPU
           and adjusting the performance of some hardware (such as cooling
@@ -108,7 +108,7 @@
           </ul>
         </div>
         <h3>
-          lm_sensors Dependencies
+          lm-sensors Dependencies
         </h3>
         <h4>
           Required
@@ -179,10 +179,10 @@
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of Lm_sensors
+          Installation of lm-sensors
         </h2>
         <p>
-          Install <span class="application">Lm_sensors</span> by running the
+          Install <span class="application">lm-sensors</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
@@ -200,9 +200,9 @@
      BUILD_STATIC_LIB=0 \
      MANDIR=/usr/share/man install &amp;&amp;
 
-install -v -m755 -d /usr/share/doc/lm_sensors-3-6-0 &amp;&amp;
+install -v -m755 -d /usr/share/doc/lm-sensors-3-6-0 &amp;&amp;
 cp -rv              README INSTALL doc/* \
-                    /usr/share/doc/lm_sensors-3-6-0</kbd></pre>
+                    /usr/share/doc/lm-sensors-3-6-0</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -229,12 +229,12 @@ cp -rv              README INSTALL doc/* \
           href="https://oss.oetiker.ch/rrdtool/">RRDtool</a>. Be sure to
           install RRDtool in <code class="filename">/usr</code> by running
           <span class="command"><strong>make prefix=/usr</strong></span> when
-          building it. Otherwise, Lm_sensors will not find it easily.
+          building it. Otherwise, lm-sensors will not find it easily.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Configuring Lm_sensors
+          Configuring lm-sensors
         </h2>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -265,7 +265,7 @@ cp -rv              README INSTALL doc/* \
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/etc/sensors.d, /usr/include/sensors and
-              /usr/share/doc/lm_sensors-3-6-0</span>
+              /usr/share/doc/lm-sensors-3-6-0</span>
             </div>
           </div>
         </div>
@@ -290,10 +290,11 @@ cp -rv              README INSTALL doc/* \
                 <td>
                   <p>
                     is a shell script for use with <span class=
-                    "application">lm_sensors</span>. It reads its
-                    configuration from a file, then calculates fan speeds
-                    from temperatures and sets the corresponding PWM outputs
-                    to the computed values
+                    "application">lm-sensors</span>. It reads its
+                    configuration from a file (/etc/sensors3.conf by
+                    default), then calculates fan speeds from temperatures
+                    and sets the corresponding PWM outputs to the computed
+                    values
                   </p>
                 </td>
               </tr>
@@ -390,7 +391,7 @@ cp -rv              README INSTALL doc/* \
                     for various hardware monitoring chips (sensors) supported
                     by <code class="filename">libsensors</code>, or more
                     generally by the <span class=
-                    "application">lm_sensors</span> tool suite
+                    "application">lm-sensors</span> tool suite
                   </p>
                 </td>
               </tr>
@@ -418,7 +419,7 @@ cp -rv              README INSTALL doc/* \
                 </td>
                 <td>
                   <p>
-                    contains the <span class="application">lm_sensors</span>
+                    contains the <span class="application">lm-sensors</span>
                     API functions
                   </p>
                 </td>
@@ -450,7 +451,7 @@ cp -rv              README INSTALL doc/* \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-65">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-83">
           Home</a>
         </li>
       </ul>

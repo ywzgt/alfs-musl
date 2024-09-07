@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Firefox-128.1.0esr
+      Firefox-128.2.0esr
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-65">
+  <body class="blfs" id="blfs-r12.2-83">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-65
+        "phrase">(systemd</span> Edition) - Version r12.2-83
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-65">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-83">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="firefox" name="firefox"></a>Firefox-128.1.0esr
+      <a id="firefox" name="firefox"></a>Firefox-128.2.0esr
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,29 +77,29 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://archive.mozilla.org/pub/firefox/releases/128.1.0esr/source/firefox-128.1.0esr.source.tar.xz">
-                https://archive.mozilla.org/pub/firefox/releases/128.1.0esr/source/firefox-128.1.0esr.source.tar.xz</a>
+                "https://archive.mozilla.org/pub/firefox/releases/128.2.0esr/source/firefox-128.2.0esr.source.tar.xz">
+                https://archive.mozilla.org/pub/firefox/releases/128.2.0esr/source/firefox-128.2.0esr.source.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: efbf349f0b7442fc6f2995bef4d32785
+                Download MD5 sum: e99929b0c939507030b2852ba4bcfacf
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 536 MB
+                Download size: 535 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 6.7 GB (223 MB installed)
+                Estimated disk space required: 6.8 GB (222 MB installed)
                 without tests
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 15 SBU using -j8, without tests
+                Estimated build time: 13 SBU using -j8, without tests
               </p>
             </li>
           </ul>
@@ -110,7 +110,7 @@
             Note
           </h3>
           <p>
-            The directory name is firefox-128.1.0
+            The directory name is firefox-128.2.0
           </p>
           <p>
             Extracting the tarball will reset the permissions of the current
@@ -335,13 +335,6 @@ unset MOZ_TELEMETRY_REPORTING
 
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir</code>
 EOF</kbd></pre>
-        <p>
-          Adapt two files for compatibility with cbindgen-0.27.0 or later:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed 's/input.try/&amp;_parse/' \
-    -i servo/components/style_traits/values.rs &amp;&amp;
-sed '0,/"Keyframe"/{//d}' -i servo/ports/geckolib/cbindgen.toml</kbd></pre>
         <p>
           If building with system ICU, adapt the line break mapping for ICU
           74 or later. This construct adds five entries to a c++ array.
@@ -677,7 +670,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-65">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-83">
           Home</a>
         </li>
       </ul>

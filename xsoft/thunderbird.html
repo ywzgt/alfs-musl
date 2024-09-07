@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Thunderbird-128.1.0esr
+      Thunderbird-128.2.0esr
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-65">
+  <body class="blfs" id="blfs-r12.2-83">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-65
+        "phrase">(systemd</span> Edition) - Version r12.2-83
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-65">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-83">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="thunderbird" name="thunderbird"></a>Thunderbird-128.1.0esr
+      <a id="thunderbird" name="thunderbird"></a>Thunderbird-128.2.0esr
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,28 +80,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://archive.mozilla.org/pub/thunderbird/releases/128.1.0esr/source/thunderbird-128.1.0esr.source.tar.xz">
-                https://archive.mozilla.org/pub/thunderbird/releases/128.1.0esr/source/thunderbird-128.1.0esr.source.tar.xz</a>
+                "https://archive.mozilla.org/pub/thunderbird/releases/128.2.0esr/source/thunderbird-128.2.0esr.source.tar.xz">
+                https://archive.mozilla.org/pub/thunderbird/releases/128.2.0esr/source/thunderbird-128.2.0esr.source.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 77dedc2267784055d1bdc27916660177
+                Download MD5 sum: 88a51261eb7f11cc66935c2eb7ae4e63
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 646 MB
+                Download size: 644 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 7.8 GB (256 MB installed)
+                Estimated disk space required: 7.9 GB (255 MB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 16 SBU (on a 8-core machine)
+                Estimated build time: 14 SBU (on a 8-core machine)
               </p>
             </li>
           </ul>
@@ -246,13 +246,6 @@ ac_add_options --with-system-zlib
 # and was reported to seriously slow the build. Disable it.
 ac_add_options --without-wasm-sandboxed-libraries</code>
 EOF</kbd></pre>
-        <p>
-          Adapt two files for compatibility with cbindgen-0.27.0 or later:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed 's/input.try/&amp;_parse/' \
-    -i servo/components/style_traits/values.rs &amp;&amp;
-sed '0,/"Keyframe"/{//d}' -i servo/ports/geckolib/cbindgen.toml</kbd></pre>
         <p>
           Now invoke the Python <span class=
           "command"><strong>mach</strong></span> script to compile
@@ -476,7 +469,7 @@ ln -sfv /usr/lib/thunderbird/chrome/icons/default/default256.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-65">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-83">
           Home</a>
         </li>
       </ul>
