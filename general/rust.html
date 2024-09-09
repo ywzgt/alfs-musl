@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Rustc-1.80.1
+      Rustc-1.81.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-99">
+  <body class="blfs" id="blfs-r12.2-102">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-99
+        "phrase">(systemd</span> Edition) - Version r12.2-102
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-99">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-102">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="rust" name="rust"></a>Rustc-1.80.1
+      <a id="rust" name="rust"></a>Rustc-1.81.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -93,7 +93,7 @@
             broken <span class="command"><strong>cargo</strong></span>
             program. In such a situation, either remove the existing
             installation first, or use a different prefix such as
-            /opt/rustc-1.80.1-build2.
+            /opt/rustc-1.81.0-build2.
           </p>
           <p>
             If you prefer, you can of course change the prefix to
@@ -165,17 +165,17 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://static.rust-lang.org/dist/rustc-1.80.1-src.tar.xz">https://static.rust-lang.org/dist/rustc-1.80.1-src.tar.xz</a>
+                "https://static.rust-lang.org/dist/rustc-1.81.0-src.tar.xz">https://static.rust-lang.org/dist/rustc-1.81.0-src.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 0b00381728b6c005e95194f7e44cff33
+                Download MD5 sum: 4f202568150660f369de3afbfb410970
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 191 MB
+                Download size: 207 MB
               </p>
             </li>
             <li class="listitem">
@@ -264,8 +264,8 @@
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">mkdir -pv /opt/rustc-1.80.1      &amp;&amp;
-ln -svfn rustc-1.80.1 /opt/rustc</kbd></pre>
+        "command">mkdir -pv /opt/rustc-1.81.0      &amp;&amp;
+ln -svfn rustc-1.81.0 /opt/rustc</kbd></pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -292,7 +292,7 @@ ln -svfn rustc-1.80.1 /opt/rustc</kbd></pre>
 # Tell x.py the editors have reviewed the content of this file
 # and updated it to follow the major changes of the building system,
 # so x.py will not warn us to do such a review.
-change-id = 125535
+change-id = 127866
 
 [llvm]
 # by default, rust will build for a myriad of architectures
@@ -320,12 +320,12 @@ tools = ["cargo", "clippy", "rustdoc", "rustfmt"]
 vendor = true
 
 [install]
-prefix = "/opt/rustc-1.80.1"
-docdir = "share/doc/rustc-1.80.1"
+prefix = "/opt/rustc-1.81.0"
+docdir = "share/doc/rustc-1.81.0"
 
 [rust]
 channel = "stable"
-description = "for BLFS r12.2-99"
+description = "for BLFS r12.2-102"
 
 # Enable the same optimizations as the official upstream build.
 lto = "thin"
@@ -341,25 +341,22 @@ llvm-config = "/usr/bin/llvm-config"
 # dumped to the screen when config.toml is parsed.
 llvm-config = "/usr/bin/llvm-config"</code>
 EOF</kbd></pre>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            The <span class="command"><strong>python3 x.py</strong></span>
-            commands may output a warning message complaining <code class=
-            "computeroutput">no codegen-backends config matched the requested
-            path to build a codegen backend</code>. And the provided
-            <span class="quote">“<span class=
-            "quote">suggestion</span>”</span> (<code class=
-            "computeroutput">add backend to codegen-backends in
-            config.toml</code>) will not silence it. This warning is
-            <a class="ulink" href=
-            "https://github.com/rust-lang/rust/issues/110692">bogus</a> and
-            it should be ignored.
-          </p>
-        </div>
+        <p>
+          Now remove some tests triggering a full rebuild of the Rust
+          standard library and compiler, remove a special case for supporting
+          the <span class="command"><strong>cargo</strong></span> test suite
+          (that we don't run because it's expected running in a Rustc git
+          repository) but triggering a rebuild of <span class=
+          "command"><strong>cargo</strong></span> when running <span class=
+          "command"><strong>python3 x.py install</strong></span>, and prevent
+          building one component useless for BLFS:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed '/MirOpt/d' -i src/bootstrap/src/core/builder.rs               &amp;&amp;
+sed 's/!path.ends_with("cargo")/true/'                             \
+    -i src/bootstrap/src/core/build_steps/tool.rs                  &amp;&amp;
+sed 's/^.*build_wasm.*$/#[allow(unreachable_code)]&amp;return false;/' \
+    -i src/bootstrap/src/lib.rs</kbd></pre>
         <p>
           Compile <span class="application">Rust</span> by running the
           following commands:
@@ -386,14 +383,16 @@ python3 x.py build</kbd></pre>
           To run the tests (again using all available CPUs) issue:
         </p>
         <pre class="userinput"><kbd class=
-        "command">SSL_CERT_DIR=/etc/ssl/certs \
-python3 x.py test --verbose --no-fail-fast --keep-stage-std=1 | \
-    tee rustc-testlog</kbd></pre>
+        "command">python3 x.py test --verbose --no-fail-fast | tee rustc-testlog</kbd></pre>
         <p>
-          Three tests named <code class=
-          "filename">tests/run-make/print-cfg</code>, <code class=
-          "filename">tests/run-make/print-to-output</code>, and <code class=
-          "literal">core::config::tests::download_ci_llvm</code> are known to
+          Four tests in the <code class="filename">tests/run-make</code>
+          directory are known to fail because they need targets not enabled
+          in the BLFS <a class="xref" href="llvm.html" title=
+          "LLVM-18.1.7">LLVM-18.1.7</a> configuration (nor the <code class=
+          "literal">llvm.targets</code> in <code class=
+          "filename">config.toml</code>, in case building with the shipped
+          LLVM). And, one test named <code class=
+          "literal">core::config::tests::download_ci_llvm</code> is known to
           fail.
         </p>
         <p>
@@ -452,23 +451,16 @@ python3 x.py test --verbose --no-fail-fast --keep-stage-std=1 | \
         </div>
         <pre class="root"><kbd class=
         "command">python3 x.py install rustc std &amp;&amp;
-install -vm755 \
-  build/host/stage1-tools/*/*/{cargo{,-clippy,-fmt},clippy-driver,rustfmt} \
-  /opt/rustc-1.80.1/bin &amp;&amp;</kbd>
-install -vDm644 \
-  src/tools/cargo/src/etc/_cargo \
-  /opt/rustc-1.80.1/share/zsh/site-functions/_cargo &amp;&amp;
-install -vm644 src/tools/cargo/src/etc/man/* \
-  /opt/rustc-1.80.1/share/man/man1</pre>
+python3 x.py install --stage=1 cargo clippy rustfmt</kbd></pre>
         <p>
           Still as the <code class="systemitem">root</code> user, fix the
           installation of documentation and symlink a <span class=
           "application">Zsh</span> completion file into the correct location:
         </p>
         <pre class="root"><kbd class=
-        "command">rm -fv /opt/rustc-1.80.1/share/doc/rustc-1.80.1/*.old   &amp;&amp;
+        "command">rm -fv /opt/rustc-1.81.0/share/doc/rustc-1.81.0/*.old   &amp;&amp;
 install -vm644 README.md                                \
-               /opt/rustc-1.80.1/share/doc/rustc-1.80.1 &amp;&amp;
+               /opt/rustc-1.81.0/share/doc/rustc-1.81.0 &amp;&amp;
 
 install -vdm755 /usr/share/zsh/site-functions      &amp;&amp;
 ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
@@ -484,7 +476,7 @@ ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
           Command Explanations
         </h2>
         <p>
-          <span class="command"><strong>ln -svfn rustc-1.80.1
+          <span class="command"><strong>ln -svfn rustc-1.81.0
           /opt/rustc</strong></span>: if this is not the first use of the
           <code class="filename">/opt/rustc</code> symlink, overwrite it by
           forcing, and use the '-n' flag to avoid getting confusing results
@@ -537,12 +529,6 @@ ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
           "command"><strong>cargo</strong></span> to link to system sqlite.
         </p>
         <p>
-          <code class="envar">SSL_CERT_DIR=/etc/ssl/certs</code>: Work around
-          an issue causing test failures with the CA certificate store layout
-          used by <a class="xref" href="../postlfs/make-ca.html" title=
-          "make-ca-1.14">make-ca-1.14</a>.
-        </p>
-        <p>
           <em class="parameter"><code>--verbose</code></em>: this switch can
           sometimes provide more information about a test which fails.
         </p>
@@ -551,17 +537,10 @@ ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
           ensures that the test suite will not stop at the first error.
         </p>
         <p>
-          <em class="parameter"><code>--keep-stage-std 1</code></em>: this
-          switch prevents <span class="command"><strong>x.py
-          test</strong></span> from rebuilding the entire package for some
-          unknown reason.
-        </p>
-        <p>
-          <span class="command"><strong>install ...
-          /opt/rustc-1.80.1/...</strong></span>: these commands explicitly
-          install some Rust components. They are used instead of relying on
-          <span class="command"><strong>x.py install</strong></span> because
-          the latter would rebuild these components for some unknown reason.
+          <em class="parameter"><code>--stage=1</code></em>: this switch
+          works around an issue causing some Rustc components unnecessarily
+          rebuilt running <span class="command"><strong>python3 x.py
+          install</strong></span>.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -621,7 +600,7 @@ EOF</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">~/.cargo, /opt/rustc, symbolic link to
-              /opt/rustc-1.80.1</span>
+              /opt/rustc-1.81.0</span>
             </div>
           </div>
         </div>
@@ -704,7 +683,7 @@ EOF</kbd></pre>
                   <p>
                     is a wrapper script for gdb, pulling in Python
                     pretty-printing modules installed in <code class=
-                    "filename">/opt/rustc-1.80.1/lib/rustlib/etc</code>
+                    "filename">/opt/rustc-1.81.0/lib/rustlib/etc</code>
                   </p>
                 </td>
               </tr>
@@ -821,7 +800,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-99">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-102">
           Home</a>
         </li>
       </ul>
