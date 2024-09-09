@@ -1,0 +1,79 @@
+diff --git a/wget-list b/wget-list
+index 3edd9587f..bbb5afdb5 100644
+--- a/wget-list
++++ b/wget-list
+@@ -119,8 +119,7 @@ https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
+ https://www.freedesktop.org/software/libmbim/libmbim-1.26.4.tar.xz
+ https://github.com/linux-nvme/libnvme/archive/v1.10/libnvme-1.10.tar.gz
+ https://github.com/rrthomas/libpaper/releases/download/v2.2.5/libpaper-2.2.5.tar.gz
+-https://github.com/flatpak/libportal/releases/download/0.7.1/libportal-0.7.1.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libportal-0.7.1-testsuite_fix-1.patch
++https://github.com/flatpak/libportal/releases/download/0.8.1/libportal-0.8.1.tar.xz
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+ https://github.com/Qalculate/libqalculate/releases/download/v5.2.0/libqalculate-5.2.0.tar.gz
+ https://www.freedesktop.org/software/libqmi/libqmi-1.30.8.tar.xz
+@@ -143,7 +142,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/libxml2-2.13.3-upstream_fix-2.
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.19/libxmlb-0.3.19.tar.xz
+ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.42.tar.xz
+-https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.12.2/libwacom-2.12.2.tar.xz
++https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.13.0/libwacom-2.13.0.tar.xz
+ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_1/log4cplus-2.1.1.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+@@ -637,7 +636,7 @@ https://xcb.freedesktop.org/dist/xcb-util-keysyms-0.4.1.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-renderutil-0.3.10.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-wm-0.4.2.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.4.tar.xz
+-https://mesa.freedesktop.org/archive/mesa-24.2.1.tar.xz
++https://mesa.freedesktop.org/archive/mesa-24.2.2.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-3.patch
+ https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ https://invisible-mirror.net/archives/luit/luit-20240102.tgz
+@@ -699,8 +698,8 @@ https://download.qt.io/archive/qt/6.7/6.7.2/single/qt-everywhere-src-6.7.2.tar.x
+ https://download.qt.io/official_releases/qt/6.7/6.7.2/submodules/qtwebengine-everywhere-src-6.7.2.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-6.7.2-ffmpeg7_fixes-1.patch
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.294/Vulkan-Headers-1.3.294.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.3.294/Vulkan-Loader-1.3.294.tar.gz
++https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.295/Vulkan-Headers-1.3.295.tar.gz
++https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.3.295/Vulkan-Loader-1.3.295.tar.gz
+ https://webkitgtk.org/releases/webkitgtk-2.44.3.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.18.2/xdg-desktop-portal-1.18.2.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.1/xdg-desktop-portal-gtk-1.15.1.tar.xz
+@@ -753,7 +752,7 @@ https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.4/vte-0.76.4.tar.gz
+ https://download.gnome.org/sources/yelp-xsl/42/yelp-xsl-42.1.tar.xz
+ https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+ https://download.gnome.org/sources/gjs/1.80/gjs-1.80.2.tar.xz
+-https://download.gnome.org/sources/gnome-autoar/0.4/gnome-autoar-0.4.4.tar.xz
++https://download.gnome.org/sources/gnome-autoar/0.4/gnome-autoar-0.4.5.tar.xz
+ https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.1.tar.xz
+ https://download.gnome.org/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
+ https://download.gnome.org/sources/gnome-online-accounts/3.50/gnome-online-accounts-3.50.4.tar.xz
+@@ -761,7 +760,7 @@ https://download.gnome.org/sources/grilo/0.3/grilo-0.3.16.tar.xz
+ https://download.gnome.org/sources/libgdata/0.18/libgdata-0.18.1.tar.xz
+ https://download.gnome.org/sources/libgee/0.20/libgee-0.20.6.tar.xz
+ https://download.gnome.org/sources/libgtop/2.41/libgtop-2.41.3.tar.xz
+-https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.2.tar.xz
++https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.4.tar.xz
+ https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz
+ https://download.gnome.org/sources/libshumate/1.2/libshumate-1.2.3.tar.xz
+ https://download.gnome.org/sources/evolution-data-server/3.52/evolution-data-server-3.52.4.tar.xz
+@@ -798,7 +797,7 @@ https://download.gnome.org/sources/file-roller/44/file-roller-44.3.tar.xz
+ https://download.gnome.org/sources/gnome-calculator/46/gnome-calculator-46.1.tar.xz
+ https://download.gnome.org/sources/gnome-color-manager/3.36/gnome-color-manager-3.36.0.tar.xz
+ https://download.gnome.org/sources/gnome-connections/46/gnome-connections-46.0.tar.xz
+-https://download.gnome.org/sources/gnome-disk-utility/46/gnome-disk-utility-46.0.tar.xz
++https://download.gnome.org/sources/gnome-disk-utility/46/gnome-disk-utility-46.1.tar.xz
+ https://download.gnome.org/sources/gnome-logs/45/gnome-logs-45.0.tar.xz
+ https://download.gnome.org/sources/gnome-maps/46/gnome-maps-46.11.tar.xz
+ https://download.gnome.org/sources/gnome-nettool/42/gnome-nettool-42.0.tar.xz
+@@ -977,7 +976,7 @@ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://taglib.org/releases/taglib-2.0.2.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.28.1.tar.xz
+-https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.5/wireplumber-0.5.5.tar.bz2
++https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.6/wireplumber-0.5.6.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20240812.tar.xz
+ https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.6.tar.gz
+ https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
