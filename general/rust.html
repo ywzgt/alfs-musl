@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-102">
+  <body class="blfs" id="blfs-r12.2-114">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-102
+        "phrase">(systemd</span> Edition) - Version r12.2-114
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-102">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-114">
           Home</a>
         </li>
       </ul>
@@ -325,7 +325,7 @@ docdir = "share/doc/rustc-1.81.0"
 
 [rust]
 channel = "stable"
-description = "for BLFS r12.2-102"
+description = "for BLFS r12.2-114"
 
 # Enable the same optimizations as the official upstream build.
 lto = "thin"
@@ -345,16 +345,18 @@ EOF</kbd></pre>
           Now remove some tests triggering a full rebuild of the Rust
           standard library and compiler, remove a special case for supporting
           the <span class="command"><strong>cargo</strong></span> test suite
-          (that we don't run because it's expected running in a Rustc git
-          repository) but triggering a rebuild of <span class=
+          (that we don't run because it's expected to be running in a Rustc
+          git repository) but triggering a rebuild of <span class=
           "command"><strong>cargo</strong></span> when running <span class=
           "command"><strong>python3 x.py install</strong></span>, and prevent
           building one component useless for BLFS:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed '/MirOpt/d' -i src/bootstrap/src/core/builder.rs               &amp;&amp;
-sed 's/!path.ends_with("cargo")/true/'                             \
-    -i src/bootstrap/src/core/build_steps/tool.rs                  &amp;&amp;
+        "command">sed '/MirOpt/d' -i src/bootstrap/src/core/builder.rs &amp;&amp;
+
+sed 's/!path.ends_with("cargo")/true/' \
+    -i src/bootstrap/src/core/build_steps/tool.rs &amp;&amp;
+
 sed 's/^.*build_wasm.*$/#[allow(unreachable_code)]&amp;return false;/' \
     -i src/bootstrap/src/lib.rs</kbd></pre>
         <p>
@@ -362,10 +364,8 @@ sed 's/^.*build_wasm.*$/#[allow(unreachable_code)]&amp;return false;/' \
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">{ [ ! -e /usr/include/libssh2.h ] ||
-  export LIBSSH2_SYS_USE_PKG_CONFIG=1; }    &amp;&amp;
-{ [ ! -e /usr/include/sqlite3.h ] ||
-  export LIBSQLITE3_SYS_USE_PKG_CONFIG=1; } &amp;&amp;
+        "command">[ ! -e /usr/include/libssh2.h ] || export LIBSSH2_SYS_USE_PKG_CONFIG=1
+[ ! -e /usr/include/sqlite3.h ] || export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
 python3 x.py build</kbd></pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -800,7 +800,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-102">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-114">
           Home</a>
         </li>
       </ul>
