@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      GTK-4.14.5
+      GTK-4.16.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-115">
+  <body class="blfs" id="blfs-r12.2-116">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-115
+        "phrase">(systemd</span> Edition) - Version r12.2-116
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-115">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-116">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="gtk4" name="gtk4"></a>GTK-4.14.5
+      <a id="gtk4" name="gtk4"></a>GTK-4.16.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,30 +77,30 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/gtk/4.14/gtk-4.14.5.tar.xz">
-                https://download.gnome.org/sources/gtk/4.14/gtk-4.14.5.tar.xz</a>
+                "https://download.gnome.org/sources/gtk/4.16/gtk-4.16.0.tar.xz">
+                https://download.gnome.org/sources/gtk/4.16/gtk-4.16.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 4d7c8edbdd0aed4048053ca9f805ade4
+                Download MD5 sum: 33666e441030f3a965d2a1d2834dda8a
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 17 MB
+                Download size: 18 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 711 MB (with docs; add 66 MB
+                Estimated disk space required: 913 MB (with docs; add 143 MB
                 for tests)
               </p>
             </li>
             <li class="listitem">
               <p>
                 Estimated build time: 1.3 SBU (using parallelism=4; with
-                docs; add 1.3 SBU for tests)
+                docs; add 1.7 SBU for tests)
               </p>
             </li>
           </ul>
@@ -116,11 +116,13 @@
           "FriBidi-1.0.15">FriBidi-1.0.15</a>, <a class="xref" href=
           "gdk-pixbuf.html" title=
           "gdk-pixbuf-2.42.12">gdk-pixbuf-2.42.12</a>, <a class="xref" href=
-          "graphene.html" title="Graphene-1.10.8">graphene-1.10.8</a>,
-          <a class="xref" href="../general/iso-codes.html" title=
-          "ISO Codes-4.16.0">ISO Codes-4.16.0</a>, <a class="xref" href=
-          "libepoxy.html" title="libepoxy-1.5.10">libepoxy-1.5.10</a>,
-          <a class="xref" href="../general/libxkbcommon.html" title=
+          "../general/glslc.html" title="glslc from shaderc-2024.2">glslc
+          from shaderc-2024.2</a>, <a class="xref" href="graphene.html"
+          title="Graphene-1.10.8">graphene-1.10.8</a>, <a class="xref" href=
+          "../general/iso-codes.html" title="ISO Codes-4.16.0">ISO
+          Codes-4.16.0</a>, <a class="xref" href="libepoxy.html" title=
+          "libepoxy-1.5.10">libepoxy-1.5.10</a>, <a class="xref" href=
+          "../general/libxkbcommon.html" title=
           "libxkbcommon-1.7.0">libxkbcommon-1.7.0</a>, <a class="xref" href=
           "pango.html" title="Pango-1.54.0">Pango-1.54.0</a>, <a class="xref"
           href="../general/python-modules.html#pygobject3" title=
@@ -151,7 +153,9 @@
         </h4>
         <p class="recommended">
           <a class="xref" href="../general/glib2.html" title=
-          "GLib-2.82.0">GLib-2.82.0</a> (with GObject Introspection)
+          "GLib-2.82.0">GLib-2.82.0</a> (with GObject Introspection) and
+          <a class="xref" href="vulkan-loader.html" title=
+          "Vulkan-Loader-1.3.295">Vulkan-Loader-1.3.295</a>,
         </p>
         <h4>
           Optional
@@ -173,12 +177,9 @@
           "xref" href="../general/sassc.html" title=
           "sassc-3.6.2">sassc-3.6.2</a>, <a class="xref" href=
           "../gnome/tracker3.html" title="Tracker-3.7.3">Tracker-3.7.3</a>,
-          <a class="xref" href="vulkan-loader.html" title=
-          "Vulkan-Loader-1.3.295">Vulkan-Loader-1.3.295</a>, <a class="ulink"
-          href="https://github.com/OpenPrinting/cpdb-libs">cpdb</a>,
           <a class="ulink" href=
-          "https://github.com/google/shaderc">glslc</a>, and <a class="ulink"
-          href="https://wiki.gnome.org/Apps/Sysprof">sysprof</a>
+          "https://github.com/OpenPrinting/cpdb-libs">cpdb</a>, and <a class=
+          "ulink" href="https://wiki.gnome.org/Apps/Sysprof">sysprof</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -196,7 +197,7 @@ meson setup --prefix=/usr            \
             --buildtype=release      \
             -D broadway-backend=true \
             -D introspection=enabled \
-            -D vulkan=disabled       \
+            -D vulkan=enabled       \
             .. &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -206,7 +207,7 @@ ninja</kbd></pre>
           the API documentation for this package, issue:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed "s@'doc'@&amp; / 'gtk-4.14.5'@" -i ../docs/reference/meson.build &amp;&amp;
+        "command">sed "s@'doc'@&amp; / 'gtk-4.16.0'@" -i ../docs/reference/meson.build &amp;&amp;
 meson configure -D documentation=true                            &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -219,7 +220,8 @@ ninja</kbd></pre>
           "filename">~/.config/gtk-4.0/settings.ini</code> exists and the
           gtk-modules line is not commented out. On systems with NVIDIA
           graphics cards, the tests may take significantly longer than the
-          above test time.
+          above test time. On some systems as many as 212 tests may fail (out
+          of over 6100) for unknown reasons.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -280,11 +282,10 @@ ninja</kbd></pre>
         <p>
           <code class="option">-D vulkan=enabled</code>: Use this switch if
           you have <a class="xref" href="vulkan-loader.html" title=
-          "Vulkan-Loader-1.3.295">Vulkan-Loader-1.3.295</a> installed and
-          wish to build the experimental Vulkan backend. Note that you must
-          have <a class="ulink" href=
-          "https://github.com/google/shaderc/blob/main/downloads.md">glslc</a>
-          installed if you decide to enable this option.
+          "Vulkan-Loader-1.3.295">Vulkan-Loader-1.3.295</a> and <a class=
+          "xref" href="../general/glslc.html" title=
+          "glslc from shaderc-2024.2">glslc from shaderc-2024.2</a> installed
+          and wish to build the experimental Vulkan backend.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -606,7 +607,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-115">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-116">
           Home</a>
         </li>
       </ul>
