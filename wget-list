@@ -23,7 +23,7 @@ https://github.com/polkit-org/polkit/archive/125/polkit-125.tar.gz
 https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
 https://github.com/shadow-maint/shadow/releases/download/4.16.0/shadow-4.16.0.tar.xz
-https://www.stunnel.org/downloads/archive/5.x/stunnel-5.72.tar.gz
+https://www.stunnel.org/downloads/archive/5.x/stunnel-5.73.tar.gz
 https://www.sudo.ws/dist/sudo-1.9.16.tar.gz
 https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.10.1.tar.xz
@@ -99,7 +99,7 @@ https://github.com/libarchive/libarchive/releases/download/v3.7.4/libarchive-3.7
 https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.1.tar.bz2
 https://0pointer.de/public/libatasmart-0.19.tar.xz
 https://github.com/ivmai/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz
-https://github.com/storaged-project/libblockdev/releases/download/3.1.1-1/libblockdev-3.1.1.tar.gz
+https://github.com/storaged-project/libblockdev/releases/download/3.2.0-1/libblockdev-3.2.0.tar.gz
 https://github.com/storaged-project/libbytesize/releases/download/2.11/libbytesize-2.11.tar.gz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.7/libclc-18.1.7.src.tar.xz
 https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6.tar.xz
@@ -220,7 +220,7 @@ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
 https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.27.tar.xz
 https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.2.tar.gz
 https://github.com/google/shaderc/archive/v2024.2/shaderc-2024.2.tar.gz
-https://gitlab.com/graphviz/graphviz/-/archive/12.1.0/graphviz-12.1.0.tar.bz2
+https://gitlab.com/graphviz/graphviz/-/archive/12.1.1/graphviz-12.1.1.tar.bz2
 https://download.gnome.org/sources/gtk-doc/1.34/gtk-doc-1.34.0.tar.xz
 http://www.andre-simon.de/zip/highlight-4.13.tar.bz2
 https://github.com/ibus/ibus/archive/1.5.30/ibus-1.5.30.tar.gz
@@ -486,14 +486,14 @@ https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.18.0.tar.gz
 https://download.gnome.org/sources/pygobject/3.48/pygobject-3.48.2.tar.xz
 https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.1.4.tar.gz
 https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
-https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.3.2.tar.gz
+https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.3.3.tar.gz
 https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
 https://files.pythonhosted.org/packages/source/P/PyYAML/pyyaml-6.0.2.tar.gz
 https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
 https://files.pythonhosted.org/packages/source/r/requests/requests-2.32.3.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/requests-2.32.3-use_system_certs-1.patch
 https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
-https://github.com/getsentry/sentry-python/releases/download/2.13.0/sentry_sdk-2.13.0.tar.gz
+https://github.com/getsentry/sentry-python/releases/download/2.14.0/sentry_sdk-2.14.0.tar.gz
 https://files.pythonhosted.org/packages/source/s/six/six-1.16.0.tar.gz
 https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-8.0.2.tar.gz
 https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-2.0.0.tar.gz
@@ -1050,6 +1050,6 @@ https://github.com/plk/biber/archive/v2.20/biber-2.20.tar.gz
 https://github.com/mgieseki/dvisvgm/releases/download/3.4/dvisvgm-3.4.tar.gz
 https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
-https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20240416.tar.xz
+https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20240913.tar.xz
 https://github.com/elogind/elogind/archive/v255.5/elogind-255.5.tar.gz
 https://github.com/lfs-book/blocaled/releases/download/v0.6/blocaled-0.6.tar.xz
