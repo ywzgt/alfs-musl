@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-152">
+  <body class="blfs" id="blfs-r12.2-175">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-152
+        "phrase">(systemd</span> Edition) - Version r12.2-175
       </h4>
       <h3>
         Chapter&nbsp;17.&nbsp;Networking Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-152">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-175">
           Home</a>
         </li>
       </ul>
@@ -193,7 +193,6 @@
         "command">./configure --prefix=/usr                           \
             --disable-static                        \
             --with-openssl                          \
-            --enable-threaded-resolver              \
             --with-ca-path=/etc/ssl/certs &amp;&amp;
 make</kbd></pre>
         <p>
@@ -245,11 +244,6 @@ cp -v -R docs -T /usr/share/doc/curl-8.9.1</kbd></pre>
           switch prevents installation of static versions of the libraries.
         </p>
         <p>
-          <em class="parameter"><code>--enable-threaded-resolver</code></em>:
-          This switch enables <span class="application">cURL</span>'s builtin
-          threaded DNS resolver.
-        </p>
-        <p>
           <em class=
           "parameter"><code>--with-ca-path=/etc/ssl/certs</code></em>: This
           switch sets the location of the BLFS Certificate Authority store.
@@ -257,7 +251,8 @@ cp -v -R docs -T /usr/share/doc/curl-8.9.1</kbd></pre>
         <p>
           <em class="parameter"><code>--with-openssl</code></em>: This
           parameter chooses <span class="application">OpenSSL</span> as
-          SSL/TLS implementation. This seems mandatory now.
+          SSL/TLS implementation. This option is not needed if <code class=
+          "option">--with-gnutls</code> is selected instead.
         </p>
         <p>
           <code class="option">--with-gssapi</code>: This parameter adds
@@ -265,10 +260,9 @@ cp -v -R docs -T /usr/share/doc/curl-8.9.1</kbd></pre>
           "filename">libcurl</code>.
         </p>
         <p>
-          <code class="option">--without-ssl --with-gnutls</code>: Use this
-          switch to build with <span class="application">GnuTLS</span>
-          support instead of <span class="application">OpenSSL</span> for
-          SSL/TLS.
+          <code class="option">--with-gnutls</code>: Use this switch to build
+          with <span class="application">GnuTLS</span> support instead of
+          <span class="application">OpenSSL</span> for SSL/TLS.
         </p>
         <p>
           <code class=
@@ -285,9 +279,7 @@ cp -v -R docs -T /usr/share/doc/curl-8.9.1</kbd></pre>
         </p>
         <p>
           <code class="option">--enable-ares</code>: This parameter adds
-          support for DNS resolution through the c-ares library. It overrides
-          <em class="parameter"><code>--enable-threaded-resolver</code></em>
-          and is not widely tested by the editors.
+          support for DNS resolution through the c-ares library.
         </p>
         <p>
           <span class="command"><strong>find docs ... -exec rm {}
@@ -398,7 +390,7 @@ cp -v -R docs -T /usr/share/doc/curl-8.9.1</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-152">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-175">
           Home</a>
         </li>
       </ul>

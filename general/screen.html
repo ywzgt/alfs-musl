@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-152">
+  <body class="blfs" id="blfs-r12.2-175">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-152
+        "phrase">(systemd</span> Edition) - Version r12.2-175
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-152">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-175">
           Home</a>
         </li>
       </ul>
@@ -132,6 +132,7 @@
         "command">./configure --prefix=/usr                        \
             --infodir=/usr/share/info            \
             --mandir=/usr/share/man              \
+            --disable-pam                        \
             --enable-socket-dir=/run/screen      \
             --with-pty-group=5                   \
             --with-system_screenrc=/etc/screenrc &amp;&amp;
@@ -151,6 +152,11 @@ install -m 644 etc/etcscreenrc /etc/screenrc</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <em class="parameter"><code>--disable-pam</code></em>: This option
+          removes a build dependency on Linux-PAM. Remove this option if you
+          want PAM support.
+        </p>
         <p>
           <em class=
           "parameter"><code>--enable-socket-dir=/run/screen</code></em>: This
@@ -269,7 +275,7 @@ install -m 644 etc/etcscreenrc /etc/screenrc</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-152">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-175">
           Home</a>
         </li>
       </ul>

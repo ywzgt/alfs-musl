@@ -1,4 +1,4 @@
-https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20240801.tar.xz
+https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20240916.tar.xz
 https://github.com/lfs-book/make-ca/archive/v1.14/make-ca-1.14.tar.gz
 https://github.com/cracklib/cracklib/releases/download/v2.10.2/cracklib-2.10.2.tar.xz
 https://www.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.5.tar.xz
@@ -85,13 +85,13 @@ https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.7.tar.xz
 https://download.gnome.org/sources/glibmm/2.82/glibmm-2.82.0.tar.xz
 https://download.gnome.org/sources/gmime/3.2/gmime-3.2.7.tar.xz
 https://ftp.gnu.org/gnu/gsl/gsl-2.8.tar.gz
-https://download.gnome.org/sources/gspell/1.12/gspell-1.12.2.tar.xz
+https://download.gnome.org/sources/gspell/1.14/gspell-1.14.0.tar.xz
 https://github.com/google/highway/archive/1.2.0/highway-1.2.0.tar.gz
 https://github.com/unicode-org/icu/releases/download/release-75-1/icu4c-75_1-src.tgz
 https://github.com/benhoyt/inih/archive/r58/inih-r58.tar.gz
 https://github.com/intel/gmmlib/archive/intel-gmmlib-22.4.1.tar.gz
 https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
-https://s3.amazonaws.com/json-c_releases/releases/json-c-0.17.tar.gz
+https://s3.amazonaws.com/json-c_releases/releases/json-c-0.18.tar.gz
 https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.0.tar.xz
 https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-1.6.3.tar.gz
 https://pagure.io/libaio/archive/libaio-0.3.113/libaio-0.3.113.tar.gz
@@ -104,7 +104,7 @@ https://github.com/storaged-project/libbytesize/releases/download/2.11/libbytesi
 https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.7/libclc-18.1.7.src.tar.xz
 https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6.tar.xz
 https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
-https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.2.0/downloads//libdisplay-info-0.2.0.tar.xz
+https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.2.0/downloads/libdisplay-info-0.2.0.tar.xz
 https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.0.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.50.tar.bz2
 https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.52.tar.xz
@@ -308,8 +308,7 @@ https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.7/compiler-r
 https://www.lua.org/ftp/lua-5.4.7.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.7-shared_library-1.patch
 https://www.lua.org/tests/lua-5.4.7-tests.tar.gz
-https://www.lua.org/ftp/lua-5.2.4.tar.gz
-https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.2.4-shared_library-1.patch
+https://anduin.linuxfromscratch.org/BLFS/luajit/luajit-20240917.tar.xz
 https://www.mercurial-scm.org/release/mercurial-6.8.1.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.xz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03-xdoc.tar.xz
@@ -763,7 +762,7 @@ https://download.gnome.org/sources/libgee/0.20/libgee-0.20.6.tar.xz
 https://download.gnome.org/sources/libgtop/2.41/libgtop-2.41.3.tar.xz
 https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.4.tar.xz
 https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz
-https://download.gnome.org/sources/libshumate/1.2/libshumate-1.2.3.tar.xz
+https://download.gnome.org/sources/libshumate/1.3/libshumate-1.3.0.tar.xz
 https://download.gnome.org/sources/evolution-data-server/3.52/evolution-data-server-3.52.4.tar.xz
 https://download.gnome.org/sources/tracker/3.7/tracker-3.7.3.tar.xz
 https://download.gnome.org/sources/tracker-miners/3.7/tracker-miners-3.7.3.tar.xz
@@ -1047,7 +1046,7 @@ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312
 https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2024/texlive-20240312-extra.tar.xz
 https://downloads.sourceforge.net/asymptote/asymptote-2.91.src.tgz
 https://github.com/plk/biber/archive/v2.20/biber-2.20.tar.gz
-https://github.com/mgieseki/dvisvgm/releases/download/3.4/dvisvgm-3.4.tar.gz
+https://github.com/mgieseki/dvisvgm/releases/download/3.4.1/dvisvgm-3.4.1.tar.gz
 https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
 https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20240913.tar.xz
