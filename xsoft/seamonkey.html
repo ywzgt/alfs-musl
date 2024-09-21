@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-183">
+  <body class="blfs" id="blfs-r12.2-193">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-183
+        "phrase">(systemd</span> Edition) - Version r12.2-193
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-183">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-193">
           Home</a>
         </li>
       </ul>
@@ -171,7 +171,7 @@
           "libevent-2.1.12">libevent-2.1.12</a>, <a class="xref" href=
           "../general/libwebp.html" title="libwebp-1.4.0">libwebp-1.4.0</a>,
           <a class="xref" href="../general/llvm.html" title=
-          "LLVM-18.1.7">LLVM-18.1.7</a> (with clang), <a class="xref" href=
+          "LLVM-19.1.0">LLVM-19.1.0</a> (with clang), <a class="xref" href=
           "../general/nasm.html" title="NASM-2.16.03">NASM-2.16.03</a>,
           <a class="xref" href="../general/nspr.html" title=
           "NSPR-4.35">NSPR-4.35</a>, <a class="xref" href=
@@ -337,6 +337,14 @@ EOF</kbd></pre>
 done) &amp;&amp;
 
 patch -Np1 -i ../seamonkey-2.53.18.2-cxx17-1.patch</kbd></pre>
+        <p>
+          Next, remove a hunk of unused code violating the C++ standard.
+          Clang has started to reject it even though it's unused since the
+          19.1.0 release:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed '/ExclusiveData(ExclusiveData&amp;&amp;/,/^ *}/d' \
+    -i js/src/threading/ExclusiveData.h</kbd></pre>
         <p>
           Next, fix a problem with the bundled 'distro' python module:
         </p>
@@ -552,7 +560,7 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-183">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-193">
           Home</a>
         </li>
       </ul>

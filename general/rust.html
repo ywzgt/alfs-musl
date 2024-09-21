@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-183">
+  <body class="blfs" id="blfs-r12.2-193">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-183
+        "phrase">(systemd</span> Edition) - Version r12.2-193
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-183">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-193">
           Home</a>
         </li>
       </ul>
@@ -218,7 +218,7 @@
         <p class="recommended">
           <a class="xref" href="libssh2.html" title=
           "libssh2-1.11.0">libssh2-1.11.0</a>, <a class="xref" href=
-          "llvm.html" title="LLVM-18.1.7">LLVM-18.1.7</a> (built with -D
+          "llvm.html" title="LLVM-19.1.0">LLVM-19.1.0</a> (built with -D
           LLVM_LINK_LLVM_DYLIB=ON so that rust can link to system LLVM
           instead of building its shipped version), and <a class="xref" href=
           "../server/sqlite.html" title="SQLite-3.46.1">SQLite-3.46.1</a>
@@ -325,7 +325,7 @@ docdir = "share/doc/rustc-1.81.0"
 
 [rust]
 channel = "stable"
-description = "for BLFS r12.2-183"
+description = "for BLFS r12.2-193"
 
 # Enable the same optimizations as the official upstream build.
 lto = "thin"
@@ -360,6 +360,15 @@ sed 's/!path.ends_with("cargo")/true/' \
 sed 's/^.*build_wasm.*$/#[allow(unreachable_code)]&amp;return false;/' \
     -i src/bootstrap/src/lib.rs</kbd></pre>
         <p>
+          Disable one experimental feature which fails to build with LLVM
+          19.1 or newer, and remove the tests for it:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed '/CondBitmap/,/^}/s/LLVM_VERSION.*/&amp; \&amp;\&amp; LLVM_VERSION_LT(19, 0)/' \
+        -i compiler/rustc_llvm/llvm-wrapper/RustWrapper.cpp &amp;&amp;
+
+rm -v tests/coverage/mcdc/{cond*,if,inline*,nest*,non_*}.rs</kbd></pre>
+        <p>
           Compile <span class="application">Rust</span> by running the
           following commands:
         </p>
@@ -388,12 +397,15 @@ python3 x.py build</kbd></pre>
           Four tests in the <code class="filename">tests/run-make</code>
           directory are known to fail because they need targets not enabled
           in the BLFS <a class="xref" href="llvm.html" title=
-          "LLVM-18.1.7">LLVM-18.1.7</a> configuration (nor the <code class=
+          "LLVM-19.1.0">LLVM-19.1.0</a> configuration (nor the <code class=
           "literal">llvm.targets</code> in <code class=
           "filename">config.toml</code>, in case building with the shipped
-          LLVM). And, one test named <code class=
+          LLVM). One test named <code class=
           "literal">core::config::tests::download_ci_llvm</code> is known to
-          fail.
+          fail. And, one test named <code class="filename">121444.rs</code>
+          is known to fail with LLVM 19.1 or newer because a crash is fixed
+          with the new LLVM but the Rustc test harness does not have the
+          concept of unexpected passes.
         </p>
         <p>
           As with all large test suites, some tests might fail on some
@@ -805,7 +817,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-183">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-193">
           Home</a>
         </li>
       </ul>
