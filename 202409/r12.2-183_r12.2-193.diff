@@ -1,0 +1,57 @@
+diff --git a/wget-list b/wget-list
+index 456a8d0a7..d295e9b5a 100644
+--- a/wget-list
++++ b/wget-list
+@@ -101,7 +101,7 @@ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/ivmai/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz
+ https://github.com/storaged-project/libblockdev/releases/download/3.2.0/libblockdev-3.2.0.tar.gz
+ https://github.com/storaged-project/libbytesize/releases/download/2.11/libbytesize-2.11.tar.gz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.7/libclc-18.1.7.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.0/libclc-19.1.0.src.tar.xz
+ https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6.tar.xz
+ https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+ https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.2.0/downloads/libdisplay-info-0.2.0.tar.xz
+@@ -160,7 +160,7 @@ https://github.com/danvratil/qcoro/archive/v0.10.0/qcoro-0.10.0.tar.gz
+ https://archive.mozilla.org/pub/firefox/releases/115.14.0esr/source/firefox-115.14.0esr.source.tar.xz
+ https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.3.290.0/SPIRV-Headers-1.3.290.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.3.290.0/SPIRV-Tools-1.3.290.0.tar.gz
+-https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v18.1.4/SPIRV-LLVM-Translator-18.1.4.tar.gz
++https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v19.1.0/SPIRV-LLVM-Translator-19.1.0.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.4.2.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+ https://github.com/martinpitt/umockdev/releases/download/0.18.4/umockdev-0.18.4.tar.xz
+@@ -197,7 +197,7 @@ https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.43-apng.pat
+ https://www.libraw.org/data/LibRaw-0.21.2.tar.gz
+ https://download.gnome.org/sources/librsvg/2.58/librsvg-2.58.3.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+-https://download.osgeo.org/libtiff/tiff-4.6.0.tar.gz
++https://download.osgeo.org/libtiff/tiff-4.7.0.tar.gz
+ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.4.0.tar.gz
+ https://github.com/mypaint/mypaint-brushes/releases/download/v1.3.1/mypaint-brushes-1.3.1.tar.xz
+ https://releases.pagure.org/newt/newt-0.52.24.tar.gz
+@@ -245,7 +245,7 @@ https://downloads.sourceforge.net/acpid2/acpid-2.0.34.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/at/at_3.2.5.orig.tar.gz
+ https://www.kernel.org/pub/linux/daemons/autofs/v5/autofs-5.1.9.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/bluez-5.77.tar.xz
+-https://github.com/containers/bubblewrap/releases/download/v0.9.0/bubblewrap-0.9.0.tar.xz
++https://github.com/containers/bubblewrap/releases/download/v0.10.0/bubblewrap-0.10.0.tar.xz
+ https://www.freedesktop.org/software/colord/releases/colord-1.4.7.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/colord-1.4.7-upstream_fixes-1.patch
+ https://ftp.gnu.org/gnu/cpio/cpio-2.15.tar.bz2
+@@ -300,11 +300,11 @@ https://www.kernel.org/pub/software/scm/git/git-2.46.1.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-manpages-2.46.1.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.46.1.tar.xz
+ https://ftp.gnu.org/gnu/guile/guile-3.0.10.tar.xz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.7/llvm-18.1.7.src.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-18.src.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-third-party-18.src.tar.xz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.7/clang-18.1.7.src.tar.xz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.7/compiler-rt-18.1.7.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.0/llvm-19.1.0.src.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-19.src.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-third-party-19.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.0/clang-19.1.0.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.0/compiler-rt-19.1.0.src.tar.xz
+ https://www.lua.org/ftp/lua-5.4.7.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.7-shared_library-1.patch
+ https://www.lua.org/tests/lua-5.4.7-tests.tar.gz
