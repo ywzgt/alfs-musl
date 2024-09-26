@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-201">
+  <body class="blfs" id="blfs-r12.2-203">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-201
+        "phrase">(systemd</span> Edition) - Version r12.2-203
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-201">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-203">
           Home</a>
         </li>
       </ul>
@@ -221,7 +221,7 @@ ninja</kbd></pre>
           To run the tests, issue:
         </p>
         <pre class="userinput"><kbd class="command">LIBGL_ALWAYS_SOFTWARE=1 \
-dbus-run-session meson test --setup x11 --no-suite needs-dmabuf</kbd></pre>
+dbus-run-session meson test --setup x11 --no-suite needs-udmabuf</kbd></pre>
         <p>
           If you are in a Wayland session, replace the two occurrences of
           <code class="literal">x11</code> with <code class=
@@ -319,11 +319,11 @@ dbus-run-session meson test --setup x11 --no-suite needs-dmabuf</kbd></pre>
           different Mesa driver can trigger test failures.
         </p>
         <p>
-          <em class="parameter"><code>--no-suite dmabuf</code></em>: Disable
-          the tests requiring <code class="filename">/dev/udmabuf</code>.
-          This file does not exist if the feature is not enabled in the
-          kernel configuration, and even if it exists it cannot be accessed
-          as unprivileged users.
+          <em class="parameter"><code>--no-suite needs-udmabuf</code></em>:
+          Disable the tests requiring <code class=
+          "filename">/dev/udmabuf</code>. This file does not exist if the
+          feature is not enabled in the kernel configuration, and even if it
+          exists it cannot be accessed as unprivileged users.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -645,7 +645,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-201">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-203">
           Home</a>
         </li>
       </ul>
