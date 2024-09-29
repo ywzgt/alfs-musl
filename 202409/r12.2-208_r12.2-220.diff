@@ -1,0 +1,86 @@
+diff --git a/wget-list b/wget-list
+index 2e2a5e068..0a3bcec33 100644
+--- a/wget-list
++++ b/wget-list
+@@ -17,7 +17,7 @@ https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz
+ https://ftp.gnu.org/gnu/nettle/nettle-3.10.tar.gz
+ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_104_RTM/src/nss-3.104.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.104-standalone-1.patch
+-https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.8p1.tar.gz
++https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.9p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz
+ https://github.com/polkit-org/polkit/archive/125/polkit-125.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+@@ -58,7 +58,7 @@ https://github.com/vim/vim/archive/v9.1.0660/vim-9.1.0660.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.13.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+-https://download.qemu.org/qemu-9.0.2.tar.xz
++https://download.qemu.org/qemu-9.1.0.tar.xz
+ https://github.com/abseil/abseil-cpp/releases/download/20240722.0/abseil-cpp-20240722.0.tar.gz
+ https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.3.tar.xz
+ http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz
+@@ -95,7 +95,7 @@ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.18.tar.gz
+ https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.0.tar.xz
+ https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-1.6.3.tar.gz
+ https://pagure.io/libaio/archive/libaio-0.3.113/libaio-0.3.113.tar.gz
+-https://github.com/libarchive/libarchive/releases/download/v3.7.5/libarchive-3.7.5.tar.xz
++https://github.com/libarchive/libarchive/releases/download/v3.7.6/libarchive-3.7.6.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.1.tar.bz2
+ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/ivmai/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz
+@@ -137,8 +137,7 @@ https://lttng.org/files/urcu/userspace-rcu-0.14.1.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.tar.bz2
+ https://dist.libuv.org/dist/v1.48.0/libuv-v1.48.0.tar.gz
+ https://xkbcommon.org/download/libxkbcommon-1.7.0.tar.xz
+-https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.3.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libxml2-2.13.3-upstream_fix-2.patch
++https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.4.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.19/libxmlb-0.3.19.tar.xz
+ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.42.tar.xz
+@@ -152,7 +151,7 @@ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.7.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
+ https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.44/pcre2-10.44.tar.bz2
+ http://ftp.rpm.org/popt/releases/popt-1.x/popt-1.19.tar.gz
+-https://github.com/protocolbuffers/protobuf/releases/download/v28.0/protobuf-28.0.tar.gz
++https://github.com/protocolbuffers/protobuf/releases/download/v28.2/protobuf-28.2.tar.gz
+ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.0/protobuf-c-1.5.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.0-consolidated_fixes-1.patch
+ https://download.kde.org/stable/qca/2.3.9/qca-2.3.9.tar.xz
+@@ -192,7 +191,7 @@ https://downloads.sourceforge.net/libjpeg-turbo/libjpeg-turbo-3.0.1.tar.gz
+ https://github.com/libjxl/libjxl/archive/v0.11.0/libjxl-0.11.0.tar.gz
+ https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
+ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz
+-https://downloads.sourceforge.net/libpng/libpng-1.6.43.tar.xz
++https://downloads.sourceforge.net/libpng/libpng-1.6.44.tar.xz
+ https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.43-apng.patch.gz
+ https://www.libraw.org/data/LibRaw-0.21.2.tar.gz
+ https://download.gnome.org/sources/librsvg/2.58/librsvg-2.58.3.tar.xz
+@@ -244,7 +243,7 @@ https://www.freedesktop.org/software/accountsservice/accountsservice-23.13.9.tar
+ https://downloads.sourceforge.net/acpid2/acpid-2.0.34.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/at/at_3.2.5.orig.tar.gz
+ https://www.kernel.org/pub/linux/daemons/autofs/v5/autofs-5.1.9.tar.xz
+-https://www.kernel.org/pub/linux/bluetooth/bluez-5.77.tar.xz
++https://www.kernel.org/pub/linux/bluetooth/bluez-5.78.tar.xz
+ https://github.com/containers/bubblewrap/releases/download/v0.10.0/bubblewrap-0.10.0.tar.xz
+ https://www.freedesktop.org/software/colord/releases/colord-1.4.7.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/colord-1.4.7-upstream_fixes-1.patch
+@@ -268,7 +267,7 @@ http://www.mirbsd.org/MirOS/dist/mir/cpio/paxmirabilis-20240817.tgz
+ https://mj.ucw.cz/download/linux/pci/pciutils-3.13.0.tar.gz
+ https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/pm-utils-1.4.1-bugfixes-1.patch
+-https://gitlab.freedesktop.org/upower/power-profiles-daemon/-/archive/0.22/power-profiles-daemon-0.22.tar.gz
++https://gitlab.freedesktop.org/upower/power-profiles-daemon/-/archive/0.23/power-profiles-daemon-0.23.tar.gz
+ https://download.librdf.org/source/raptor2-2.0.16.tar.gz
+ https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+ https://download.librdf.org/source/redland-1.0.17.tar.gz
+@@ -575,7 +574,7 @@ https://downloads.sourceforge.net/traceroute/traceroute-2.1.6.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.4.0.tar.xz
+ https://github.com/c-ares/c-ares/releases/download/v1.33.1/c-ares-1.33.1.tar.gz
+-https://curl.se/download/curl-8.9.1.tar.xz
++https://curl.se/download/curl-8.10.1.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.2/geoclue-2.7.2.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.0.tar.xz
+ https://www.nlnetlabs.nl/downloads/ldns/ldns-1.8.4.tar.gz
