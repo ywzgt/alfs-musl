@@ -1,0 +1,13 @@
+diff --git a/wget-list b/wget-list
+index 0a3bcec33..c4df7e896 100644
+--- a/wget-list
++++ b/wget-list
+@@ -16,7 +16,7 @@ https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.
+ https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz
+ https://ftp.gnu.org/gnu/nettle/nettle-3.10.tar.gz
+ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_104_RTM/src/nss-3.104.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.104-standalone-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.9p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz
+ https://github.com/polkit-org/polkit/archive/125/polkit-125.tar.gz
