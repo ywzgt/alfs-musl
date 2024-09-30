@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      log4cplus-2.1.1
+      cargo-c-0.10.4
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
@@ -19,24 +19,25 @@
         "phrase">(systemd</span> Edition) - Version r12.2-236
       </h4>
       <h3>
-        Chapter&nbsp;9.&nbsp;General Libraries
+        Chapter&nbsp;13.&nbsp;Programming
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="libyaml.html" title="libyaml-0.2.5">Prev</a>
+          <a accesskey="p" href="prog.html" title="Programming">Prev</a>
           <p>
-            libyaml-0.2.5
+            Programming
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="lzo.html" title="LZO-2.10">Next</a>
+          <a accesskey="n" href="cbindgen.html" title=
+          "Cbindgen-0.27.0">Next</a>
           <p>
-            LZO-2.10
+            Cbindgen-0.27.0
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="genlib.html" title=
-          "Chapter&nbsp;9.&nbsp;General Libraries">Up</a>
+          <a accesskey="u" href="prog.html" title=
+          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
@@ -46,18 +47,17 @@
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="log4cplus" name="log4cplus"></a>log4cplus-2.1.1
+      <a id="cargo-c" name="cargo-c"></a>cargo-c-0.10.4
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to log4cplus
+          Introduction to GNOME Weather
         </h2>
         <p>
-          <span class="application">log4cplus</span> is an easy to use C++20
-          logging API providing thread-safe, flexible, and arbitrarily
-          granular control over log management and configuration. It is
-          modeled after the Java log4j API.
+          The <span class="application">cargo-c</span> package creates a
+          cargo subcommand to build and install C-ABI compatibile dynamic and
+          static libraries.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -78,54 +78,84 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_1/log4cplus-2.1.1.tar.xz">
-                https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_1/log4cplus-2.1.1.tar.xz</a>
+                "https://github.com/lu-zero/cargo-c/archive/v0.10.4/cargo-c-0.10.4.tar.gz">
+                https://github.com/lu-zero/cargo-c/archive/v0.10.4/cargo-c-0.10.4.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 6ee2555be39cd269086cc871c834e43f
+                Download MD5 sum: 6146712827673079129551b12e6ce312
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 919 KB
+                Download size: 32 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 73 MB
+                Estimated disk space required: 722 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.3 SBU (Using parallelism=4; add 0.5
-                SBU for tests)
+                Estimated build time: 0.5 SBU
               </p>
             </li>
           </ul>
         </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required download: <a class="ulink" href=
+                "https://github.com/lu-zero/cargo-c/releases/download/v0.10.4/Cargo.lock">
+                https://github.com/lu-zero/cargo-c/releases/download/v0.10.4/Cargo.lock</a>
+              </p>
+              <p>
+                Cargo.lock md5sum: 10765b0a906b6e28373a8e162b80dc82
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          cargo-c Dependencies
+        </h3>
+        <h4>
+          Required
+        </h4>
+        <p class="required">
+          <a class="xref" href="../basicnet/curl.html" title=
+          "cURL-8.10.1">cURL-8.10.1</a>
+        </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of log4cplus
+          Installation of cargo.c
         </h2>
         <p>
-          Build <span class="application">log4cplus</span> by running the
-          following command:
+          Install <span class="application">cargo.c</span> by running the
+          following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr &amp;&amp;
-make</kbd></pre>
+        "command">cp -v ../Cargo.lock . &amp;&amp;
+
+[ ! -e /usr/include/libssh2.h ] || export LIBSSH2_SYS_USE_PKG_CONFIG=1    &amp;&amp;
+[ ! -e /usr/include/sqlite3.h ] || export LIBSQLITE3_SYS_USE_PKG_CONFIG=1 &amp;&amp;
+
+cargo build --release</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>make
-          check</strong></span>.
+          To test the results, issue: <span class="command"><strong>cargo
+          test --release</strong></span>.
         </p>
         <p>
-          Now, install the package as the <code class=
-          "systemitem">root</code> user:
+          Now, as the <code class="systemitem">root</code> user:
         </p>
-        <pre class="root"><kbd class="command">make install</kbd></pre>
+        <pre class="root"><kbd class=
+        "command">install -vm755 target/release/cargo-{capi,cbuild,cinstall,ctest} /usr/bin/</kbd></pre>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -135,11 +165,12 @@ make</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">None</span>
+              <span class="segbody">cargo-capi, cargo-cbuild, cargo-cinstall,
+              and cargo-ctest</span>
             </div>
             <div class="seg">
-              <strong class="segtitle">Installed Library:</strong>
-              <span class="segbody">log4cplus.so</span>
+              <strong class="segtitle">Installed Libraries:</strong>
+              <span class="segbody">None</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
@@ -147,52 +178,26 @@ make</kbd></pre>
             </div>
           </div>
         </div>
-        <div class="variablelist">
-          <h3>
-            Short Descriptions
-          </h3>
-          <table border="0" class="variablelist">
-            <colgroup>
-              <col align="left" valign="top" />
-              <col />
-            </colgroup>
-            <tbody>
-              <tr>
-                <td>
-                  <p>
-                    <a id="log4cplus-lib" name=
-                    "log4cplus-lib"></a><span class="term"><code class=
-                    "filename">log4cplus.so</code></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is the log4cplus library
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </div>
     </div>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="libyaml.html" title="libyaml-0.2.5">Prev</a>
+          <a accesskey="p" href="prog.html" title="Programming">Prev</a>
           <p>
-            libyaml-0.2.5
+            Programming
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="lzo.html" title="LZO-2.10">Next</a>
+          <a accesskey="n" href="cbindgen.html" title=
+          "Cbindgen-0.27.0">Next</a>
           <p>
-            LZO-2.10
+            Cbindgen-0.27.0
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="genlib.html" title=
-          "Chapter&nbsp;9.&nbsp;General Libraries">Up</a>
+          <a accesskey="u" href="prog.html" title=
+          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
