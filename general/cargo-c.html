@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-245">
+  <body class="blfs" id="blfs-r12.2-248">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-245
+        "phrase">(systemd</span> Edition) - Version r12.2-248
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-245">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-248">
           Home</a>
         </li>
       </ul>
@@ -105,45 +105,76 @@
           </ul>
         </div>
         <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Required download: <a class="ulink" href=
-                "https://github.com/lu-zero/cargo-c/releases/download/v0.10.4/Cargo.lock">
-                https://github.com/lu-zero/cargo-c/releases/download/v0.10.4/Cargo.lock</a>
-              </p>
-              <p>
-                Cargo.lock md5sum: 10765b0a906b6e28373a8e162b80dc82
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h3>
           cargo-c Dependencies
         </h3>
         <h4>
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="../basicnet/curl.html" title=
-          "cURL-8.10.1">cURL-8.10.1</a>
+          <a class="xref" href="rust.html" title=
+          "Rustc-1.81.0">rustc-1.81.0</a>
         </p>
+        <h4>
+          Recommended
+        </h4>
+        <p class="recommended">
+          <a class="xref" href="libssh2.html" title=
+          "libssh2-1.11.0">libssh2-1.11.0</a> and <a class="xref" href=
+          "../server/sqlite.html" title="SQLite-3.46.1">SQLite-3.46.1</a>
+        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            An Internet connection is needed for building this package.
+          </p>
+        </div>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of cargo.c
+          Installation of cargo-c
         </h2>
         <p>
-          Install <span class="application">cargo.c</span> by running the
+          At first, download a file to ensure <span class=
+          "command"><strong>cargo</strong></span> to use the dependency
+          versions specified by the upstream developers when this cargo-c
+          version (0.10.4) was released. Otherwise the latest versions of the
+          dependencies would be used and they might cause breakages:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">curl -LO https://github.com/lu-zero/cargo-c/releases/download/v0.10.4/Cargo.lock</kbd></pre>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            Normally we would put such a download into an <span class=
+            "quote">“<span class="quote">Additional Download</span>”</span>
+            section. But in this case we cannot tell the package name and
+            version from the file name <code class=
+            "filename">Cargo.lock</code>, so it's better not to put the
+            ambigiously-named file outside the <code class=
+            "filename">cargo-c-0.10.4</code> directory. We use <span class=
+            "command"><strong>curl</strong></span> here because the <a class=
+            "xref" href="../basicnet/curl.html" title=
+            "cURL-8.10.1">cURL-8.10.1</a> package should have been installed
+            as a required dependency of <a class="xref" href="rust.html"
+            title="Rustc-1.81.0">rustc-1.81.0</a>.
+          </p>
+          <p>
+            The md5sum of the file should be <code class=
+            "literal">10765b0a906b6e28373a8e162b80dc82</code>.
+          </p>
+        </div>
+        <p>
+          Install <span class="application">cargo-c</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">cp -v ../Cargo.lock . &amp;&amp;
-
-[ ! -e /usr/include/libssh2.h ] || export LIBSSH2_SYS_USE_PKG_CONFIG=1    &amp;&amp;
+        "command">[ ! -e /usr/include/libssh2.h ] || export LIBSSH2_SYS_USE_PKG_CONFIG=1    &amp;&amp;
 [ ! -e /usr/include/sqlite3.h ] || export LIBSQLITE3_SYS_USE_PKG_CONFIG=1 &amp;&amp;
 
 cargo build --release</kbd></pre>
@@ -201,7 +232,7 @@ cargo build --release</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-245">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-248">
           Home</a>
         </li>
       </ul>
