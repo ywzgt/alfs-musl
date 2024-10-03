@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-248">
+  <body class="blfs" id="blfs-r12.2-253">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-248
+        "phrase">(systemd</span> Edition) - Version r12.2-253
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-248">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-253">
           Home</a>
         </li>
       </ul>
@@ -145,6 +145,13 @@
         <h2 class="sect2">
           Installation of libplacebo
         </h2>
+        <p>
+          First, fix a build failure that occurs with glslang-15.0.0:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e "20s/$/,/"                                         \
+    -e "21i cxx.find_library('glslang', required: false)" \
+    -i src/glsl/meson.build</kbd></pre>
         <p>
           Install <span class="application">libplacebo</span> by running the
           following commands:
@@ -259,7 +266,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-248">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-253">
           Home</a>
         </li>
       </ul>
