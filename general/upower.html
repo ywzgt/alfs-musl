@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      UPower-1.90.5
+      UPower-1.90.6
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-270">
+  <body class="blfs" id="blfs-r12.2-284">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-270
+        "phrase">(systemd</span> Edition) - Version r12.2-284
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-284">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="upower" name="upower"></a>UPower-1.90.5
+      <a id="upower" name="upower"></a>UPower-1.90.6
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -55,10 +55,10 @@
         </h2>
         <p>
           The <span class="application">UPower</span> package provides an
-          interface for enumerating power devices, listening to device events
-          and querying history and statistics. Any application or service on
-          the system can access the org.freedesktop.UPower service via the
-          system message bus.
+          interface for enumerating power devices, listening to device
+          events, and querying history and statistics. Any application or
+          service on the system can access the org.freedesktop.UPower service
+          via the system message bus.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -79,13 +79,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.5/upower-v1.90.5.tar.bz2">
-                https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.5/upower-v1.90.5.tar.bz2</a>
+                "https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.6/upower-v1.90.6.tar.bz2">
+                https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.6/upower-v1.90.6.tar.bz2</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: f763c23038cbc3033d66f17d1253077d
+                Download MD5 sum: c9782cb9092decb1fab31beaa5a47399
               </p>
             </li>
             <li class="listitem">
@@ -100,22 +100,8 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: less than 0.1 SBU (add 0.8 SBU for
+                Estimated build time: less than 0.1 SBU (add 0.5 SBU for
                 tests)
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/upower-1.90.5-upstream_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/upower-1.90.5-upstream_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -150,7 +136,7 @@
           "xref" href="python-modules.html#pygobject3" title=
           "PyGObject-3.50.0">PyGObject-3.50.0</a>, <a class="xref" href=
           "python-modules.html#python-dbusmock" title=
-          "dbusmock-0.32.1">dbusmock-0.32.1</a>, <a class="xref" href=
+          "dbusmock-0.32.2">dbusmock-0.32.2</a>, <a class="xref" href=
           "umockdev.html" title="Umockdev-0.18.4">umockdev-0.18.4</a> (for
           part of the test suite), and <a class="ulink" href=
           "https://libimobiledevice.org/">libimobiledevice</a>
@@ -174,11 +160,6 @@
         <h2 class="sect2">
           Installation of UPower
         </h2>
-        <p>
-          First, apply some fixes made upstream:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../upower-1.90.5-upstream_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">UPower</span> by running the
           following commands:
@@ -234,7 +215,7 @@ ninja</kbd></pre>
         <div class="segmentedlist">
           <div class="seglistitem">
             <div class="seg">
-              <strong class="segtitle">Installed Program:</strong>
+              <strong class="segtitle">Installed Programs:</strong>
               <span class="segbody">upower</span>
             </div>
             <div class="seg">
@@ -313,7 +294,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-284">
           Home</a>
         </li>
       </ul>

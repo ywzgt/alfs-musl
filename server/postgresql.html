@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-270">
+  <body class="blfs" id="blfs-r12.2-284">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-270
+        "phrase">(systemd</span> Edition) - Version r12.2-284
       </h4>
       <h3>
         Chapter&nbsp;22.&nbsp;Databases
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-284">
           Home</a>
         </li>
       </ul>
@@ -179,8 +179,7 @@ useradd -c "PostgreSQL Server" -g postgres -d /srv/pgsql/data \
         <pre class="userinput"><kbd class=
         "command">sed -i '/DEFAULT_PGSOCKET_DIR/s@/tmp@/run/postgresql@' src/include/pg_config_manual.h &amp;&amp;
 
-./configure --prefix=/usr          \
-            --enable-thread-safety \
+./configure --prefix=/usr \
             --docdir=/usr/share/doc/postgresql-17.0 &amp;&amp;
 make</kbd></pre>
         <p>
@@ -351,12 +350,6 @@ chown -Rv postgres:postgres /srv/pgsql /run/postgresql</kbd></pre>
           changes the server socket location from <code class=
           "filename">/tmp</code> to <code class=
           "filename">/run/postgresql</code>.
-        </p>
-        <p>
-          <em class="parameter"><code>--enable-thread-safety</code></em>:
-          This switch makes the client libraries thread-safe by allowing
-          concurrent threads in <code class="filename">libpq</code> and ECPG
-          programs to safely control their private connection handles.
         </p>
         <p>
           <code class="option">--with-openssl</code>: builds the package with
@@ -1168,7 +1161,7 @@ echo "select * from t1;" | (su - postgres -c '/usr/bin/psql test')</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-284">
           Home</a>
         </li>
       </ul>
