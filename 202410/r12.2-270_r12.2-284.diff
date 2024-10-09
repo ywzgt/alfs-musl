@@ -1,0 +1,98 @@
+diff --git a/wget-list b/wget-list
+index 12962a850..4c0d645c4 100644
+--- a/wget-list
++++ b/wget-list
+@@ -236,7 +236,7 @@ https://github.com/htacg/tidy-html5/archive/5.8.0/tidy-html5-5.8.0.tar.gz
+ https://ftp.gnu.org/gnu/time/time-1.9.tar.gz
+ https://gitlab.com/OldManProgrammer/unix-tree/-/archive/2.1.3/unix-tree-2.1.3.tar.bz2
+ https://github.com/lurcher/unixODBC/releases/download/2.3.12/unixODBC-2.3.12.tar.gz
+-https://github.com/flatpak/xdg-dbus-proxy/releases/download/0.1.5/xdg-dbus-proxy-0.1.5.tar.xz
++https://github.com/flatpak/xdg-dbus-proxy/releases/download/0.1.6/xdg-dbus-proxy-0.1.6.tar.xz
+ https://user-dirs.freedesktop.org/releases/xdg-user-dirs-0.18.tar.gz
+ https://www.freedesktop.org/software/accountsservice/accountsservice-23.13.9.tar.xz
+ https://downloads.sourceforge.net/acpid2/acpid-2.0.34.tar.xz
+@@ -279,8 +279,7 @@ https://www.rarlab.com/rar/unrarsrc-7.0.9.tar.gz
+ https://downloads.sourceforge.net/infozip/unzip60.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-consolidated_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-gcc14-1.patch
+-https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.5/upower-v1.90.5.tar.bz2
+-https://www.linuxfromscratch.org/patches/blfs/svn/upower-1.90.5-upstream_fixes-1.patch
++https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.6/upower-v1.90.6.tar.bz2
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-017.tar.xz
+ https://ftp.gnu.org/gnu/which/which-2.21.tar.gz
+ https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz
+@@ -450,6 +449,7 @@ https://cpan.metacpan.org/authors/id/E/ET/ETHER/Try-Tiny-0.31.tar.gz
+ https://cpan.metacpan.org/authors/id/V/VP/VPIT/Variable-Magic-0.64.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GA/GAAS/WWW-RobotRules-6.02.tar.gz
+ https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0210.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/XML-LibXML-2.0210-testsuite_fixes-1.patch
+ https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+@@ -463,7 +463,7 @@ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.2.0.tar.gz
+ https://github.com/psf/cachecontrol/archive/v0.14.0/cachecontrol-0.14.0.tar.gz
+ https://github.com/cython/cython/releases/download/3.0.11-1/cython-3.0.11.tar.gz
+-https://files.pythonhosted.org/packages/source/p/python-dbusmock/python-dbusmock-0.32.1.tar.gz
++https://files.pythonhosted.org/packages/source/p/python-dbusmock/python-dbusmock-0.32.2.tar.gz
+ https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.3.2.tar.gz
+ https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.21.2.tar.gz
+ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.gz
+@@ -472,7 +472,7 @@ https://files.pythonhosted.org/packages/source/g/gi-docgen/gi_docgen-2024.1.tar.
+ https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
+ https://files.pythonhosted.org/packages/source/l/lxml/lxml-5.3.0.tar.gz
+ https://files.pythonhosted.org/packages/source/M/Mako/Mako-1.3.5.tar.gz
+-https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.1.1.tar.gz
++https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.1.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/packaging/packaging-24.1.tar.gz
+ https://files.pythonhosted.org/packages/source/p/ply/ply-3.11.tar.gz
+ https://files.pythonhosted.org/packages/source/p/psutil/psutil-6.0.0.tar.gz
+@@ -621,7 +621,7 @@ https://sqlite.org/2024/sqlite-autoconf-3460100.tar.gz
+ https://sqlite.org/2024/sqlite-doc-3460100.zip
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.8.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.8-consolidated-1.patch
+-https://nlnetlabs.nl/downloads/unbound/unbound-1.21.0.tar.gz
++https://nlnetlabs.nl/downloads/unbound/unbound-1.21.1.tar.gz
+ https://www.x.org/pub/individual/util/util-macros-1.20.1.tar.xz
+ https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2024.1.tar.xz
+ https://www.x.org/pub/individual/lib/libXau-1.0.11.tar.xz
+@@ -700,7 +700,7 @@ https://www.freedesktop.org/software/startup-notification/releases/startup-notif
+ https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.296/Vulkan-Headers-1.3.296.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.3.296/Vulkan-Loader-1.3.296.tar.gz
+ https://webkitgtk.org/releases/webkitgtk-2.44.4.tar.xz
+-https://github.com/flatpak/xdg-desktop-portal/releases/download/1.18.2/xdg-desktop-portal-1.18.2.tar.xz
++https://github.com/flatpak/xdg-desktop-portal/releases/download/1.18.4/xdg-desktop-portal-1.18.4.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.1/xdg-desktop-portal-gtk-1.15.1.tar.xz
+ https://download.gnome.org/sources/gdm/46/gdm-46.2.tar.xz
+ https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.tar.xz
+@@ -709,7 +709,7 @@ https://github.com/sddm/sddm/archive/v0.21.0/sddm-0.21.0.tar.gz
+ https://downloads.sourceforge.net/fluxbox/fluxbox-1.3.7.tar.xz
+ https://github.com/ice-wm/icewm/archive/3.6.0/icewm-3.6.0.tar.gz
+ http://openbox.org/dist/openbox/openbox-3.6.1.tar.gz
+-https://download.gnome.org/sources/adwaita-icon-theme/46/adwaita-icon-theme-46.2.tar.xz
++https://download.gnome.org/sources/adwaita-icon-theme/47/adwaita-icon-theme-47.0.tar.xz
+ https://download.kde.org/stable/frameworks/6.5/breeze-icons-6.5.0.tar.xz
+ https://download.gnome.org/sources/gnome-icon-theme/3.12/gnome-icon-theme-3.12.0.tar.xz
+ https://download.gnome.org/sources/gnome-icon-theme-extras/3.12/gnome-icon-theme-extras-3.12.0.tar.xz
+@@ -767,10 +767,10 @@ https://download.gnome.org/sources/tracker/3.7/tracker-3.7.3.tar.xz
+ https://download.gnome.org/sources/tracker-miners/3.7/tracker-miners-3.7.3.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tracker-miners-3.7.3-upstream_fixes-1.patch
+ https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz
+-https://download.gnome.org/sources/xdg-desktop-portal-gnome/46/xdg-desktop-portal-gnome-46.2.tar.xz
++https://download.gnome.org/sources/xdg-desktop-portal-gnome/47/xdg-desktop-portal-gnome-47.1.tar.xz
+ https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
+ https://download.gnome.org/sources/dconf-editor/45/dconf-editor-45.0.1.tar.xz
+-https://download.gnome.org/sources/gnome-backgrounds/46/gnome-backgrounds-46.0.tar.xz
++https://download.gnome.org/sources/gnome-backgrounds/47/gnome-backgrounds-47.0.tar.xz
+ https://download.gnome.org/sources/gvfs/1.54/gvfs-1.54.2.tar.xz
+ https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.3.tar.xz
+ https://download.gnome.org/sources/nautilus/46/nautilus-46.2.tar.xz
+@@ -964,7 +964,7 @@ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
+ https://github.com/webmproject/libvpx/archive/v1.14.1/libvpx-1.14.1.tar.gz
+ https://github.com/mltframework/mlt/releases/download/v7.28.0/mlt-7.28.0.tar.gz
+ https://downloads.xiph.org/releases/opus/opus-1.5.2.tar.gz
+-https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.2.3/pipewire-1.2.3.tar.bz2
++https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.2.5/pipewire-1.2.5.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.0.tar.xz
+ https://github.com/libsdl-org/sdl12-compat/archive/release-1.2.68/sdl12-compat-release-1.2.68.tar.gz
