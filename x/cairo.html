@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-285">
+  <body class="blfs" id="blfs-r12.2-299">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-285
+        "phrase">(systemd</span> Edition) - Version r12.2-299
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-285">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-299">
           Home</a>
         </li>
       </ul>
@@ -118,6 +118,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/cairo-1.18.2-upstream_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/cairo-1.18.2-upstream_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Cairo Dependencies
         </h3>
         <h4>
@@ -176,6 +190,11 @@
         <h2 class="sect2">
           Installation of Cairo
         </h2>
+        <p>
+          First, fix a bug that causes problems with printing PDF files:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../cairo-1.18.2-upstream_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">Cairo</span> by running the
           following commands:
@@ -334,7 +353,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-285">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-299">
           Home</a>
         </li>
       </ul>

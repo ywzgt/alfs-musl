@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-285">
+  <body class="blfs" id="blfs-r12.2-299">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-285
+        "phrase">(systemd</span> Edition) - Version r12.2-299
       </h4>
       <h3>
         Chapter&nbsp;46.&nbsp;Printing
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-285">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-299">
           Home</a>
         </li>
       </ul>
@@ -129,6 +129,13 @@
         <h2 class="sect2">
           Installation of cups-browsed
         </h2>
+        <p>
+          First, fix a security vulnerability that can be allow for remote
+          code execution:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i '188 s/dnssd cups/dnssd/' configure.ac &amp;&amp;
+autoreconf -fiv</kbd></pre>
         <p>
           Install <span class="application">cups-browsed</span> by running
           the following commands:
@@ -265,7 +272,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-285">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-299">
           Home</a>
         </li>
       </ul>
