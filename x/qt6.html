@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-306">
+  <body class="blfs" id="blfs-r12.2-326">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-306
+        "phrase">(systemd</span> Edition) - Version r12.2-326
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-306">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-326">
           Home</a>
         </li>
       </ul>
@@ -82,8 +82,8 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.qt.io/archive/qt/6.7/6.8.0/single/qt-everywhere-src-6.8.0.tar.xz">
-                https://download.qt.io/archive/qt/6.7/6.8.0/single/qt-everywhere-src-6.8.0.tar.xz</a>
+                "https://download.qt.io/archive/qt/6.8/6.8.0/single/qt-everywhere-src-6.8.0.tar.xz">
+                https://download.qt.io/archive/qt/6.8/6.8.0/single/qt-everywhere-src-6.8.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
@@ -179,12 +179,13 @@
           QtConnectivity module), <a class="xref" href="gtk3.html" title=
           "GTK+-3.24.43">GTK+-3.24.43</a>, <a class="xref" href=
           "../general/ibus.html" title="ibus-1.5.30">ibus-1.5.30</a>,
-          <a class="xref" href="../server/mariadb.html" title=
-          "MariaDB-11.4.3">MariaDB-11.4.3</a> or <a class="ulink" href=
-          "https://www.mysql.com/">MySQL</a>, <a class="xref" href=
-          "../postlfs/mitkrb.html" title="MIT Kerberos V5-1.21.3">MIT
-          Kerberos V5-1.21.3</a>, <a class="xref" href=
-          "../general/pciutils.html" title=
+          <a class="xref" href="../general/llvm.html" title=
+          "LLVM-19.1.0">LLVM-19.1.0</a> (with Clang), <a class="xref" href=
+          "../server/mariadb.html" title="MariaDB-11.4.3">MariaDB-11.4.3</a>
+          or <a class="ulink" href="https://www.mysql.com/">MySQL</a>,
+          <a class="xref" href="../postlfs/mitkrb.html" title=
+          "MIT Kerberos V5-1.21.3">MIT Kerberos V5-1.21.3</a>, <a class=
+          "xref" href="../general/pciutils.html" title=
           "pciutils-3.13.0">pciutils-3.13.0</a>, <a class="xref" href=
           "../server/postgresql.html" title=
           "PostgreSQL-17.0">PostgreSQL-17.0</a>, <a class="xref" href=
@@ -335,8 +336,7 @@ fi</kbd></pre>
             -journald               \
             -skip qt3d              \
             -skip qtquick3dphysics  \
-            -skip qtwebengine       \
-            -no-feature-clang       &amp;&amp;
+            -skip qtwebengine       &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -470,13 +470,6 @@ EOF</kbd></pre>
           This switch disables building the Qt Quick 3D Physics submodule. On
           32-bit systems, this will cause the build process to fail with an
           inlining error in Qt6's bundled copy of the PhysX SDK.
-        </p>
-        <p>
-          <em class="parameter"><code>-no-feature-clang</code></em>: This
-          switch prevents Qt from using <code class=
-          "systemitem">libclang</code>. As Qt isn't adapted yet for Clang
-          19.1.0 or later, using <code class="systemitem">libclang</code>
-          will cause a build failure.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -1104,7 +1097,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-306">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-326">
           Home</a>
         </li>
       </ul>
