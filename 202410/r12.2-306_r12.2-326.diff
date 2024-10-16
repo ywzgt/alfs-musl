@@ -1,0 +1,135 @@
+diff --git a/wget-list b/wget-list
+index c7f5bea7e..7c4afba9d 100644
+--- a/wget-list
++++ b/wget-list
+@@ -95,7 +95,7 @@ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.18.tar.gz
+ https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.0.tar.xz
+ https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-1.6.3.tar.gz
+ https://pagure.io/libaio/archive/libaio-0.3.113/libaio-0.3.113.tar.gz
+-https://github.com/libarchive/libarchive/releases/download/v3.7.6/libarchive-3.7.6.tar.xz
++https://github.com/libarchive/libarchive/releases/download/v3.7.7/libarchive-3.7.7.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.1.tar.bz2
+ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/ivmai/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz
+@@ -134,7 +134,7 @@ https://ftp.gnu.org/gnu/libunistring/libunistring-1.2.tar.xz
+ https://download.savannah.nongnu.org/releases/libunwind/libunwind-1.6.2.tar.gz
+ https://lttng.org/files/urcu/userspace-rcu-0.14.1.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.tar.bz2
+-https://dist.libuv.org/dist/v1.49.0/libuv-v1.49.0.tar.gz
++https://dist.libuv.org/dist/v1.49.1/libuv-v1.49.1.tar.gz
+ https://xkbcommon.org/download/libxkbcommon-1.7.0.tar.xz
+ https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.4.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+@@ -156,15 +156,15 @@ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.0-consolidated_
+ https://download.kde.org/stable/qca/2.3.9/qca-2.3.9.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.10.0/qcoro-0.10.0.tar.gz
+ https://archive.mozilla.org/pub/firefox/releases/115.14.0esr/source/firefox-115.14.0esr.source.tar.xz
+-https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.3.290.0/SPIRV-Headers-1.3.290.0.tar.gz
+-https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.3.290.0/SPIRV-Tools-1.3.290.0.tar.gz
++https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.3.296.0/SPIRV-Headers-1.3.296.0.tar.gz
++https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.3.296.0/SPIRV-Tools-1.3.296.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v19.1.0/SPIRV-LLVM-Translator-19.1.0.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.4.2.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+ https://github.com/martinpitt/umockdev/releases/download/0.18.4/umockdev-0.18.4.tar.xz
+ https://github.com/nemtrif/utfcpp/archive/v4.0.5/utfcpp-4.0.5.tar.gz
+ https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.0/downloads/wayland-1.23.0.tar.xz
+-https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.37/downloads/wayland-protocols-1.37.tar.xz
++https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.38/downloads/wayland-protocols-1.38.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+ https://oligarchy.co.uk/xapian/1.4.26/xapian-core-1.4.26.tar.xz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+@@ -294,9 +294,9 @@ https://kernel.org/pub/software/utils/dtc/dtc-1.7.1.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.8/gc-8.2.8.tar.gz
+ https://ftp.gnu.org/gnu/gdb/gdb-15.2.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-2.46.2.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-manpages-2.46.2.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.46.2.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-2.47.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-manpages-2.47.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.47.0.tar.xz
+ https://ftp.gnu.org/gnu/guile/guile-3.0.10.tar.xz
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.0/llvm-19.1.0.src.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-19.src.tar.xz
+@@ -354,7 +354,7 @@ https://www.cpan.org/authors/id/I/IS/ISHIGAKI/Text-CSV-2.04.tar.gz
+ https://www.cpan.org/authors/id/S/SY/SYP/Text-Roman-3.5.tar.gz
+ https://www.cpan.org/authors/id/S/SA/SADAHIRO/Unicode-Collate-1.31.tar.gz
+ https://www.cpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz
+-https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.29.tar.gz
++https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.30.tar.gz
+ https://www.cpan.org/authors/id/M/MA/MARKOV/XML-LibXML-Simple-1.01.tar.gz
+ https://www.cpan.org/authors/id/S/SH/SHLOMIF/XML-LibXSLT-2.003000.tar.gz
+ https://www.cpan.org/authors/id/G/GR/GRANTM/XML-Simple-2.25.tar.gz
+@@ -482,7 +482,7 @@ https://github.com/pygobject/pycairo/releases/download/v1.26.1/pycairo-1.26.1.ta
+ https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.18.0.tar.gz
+ https://download.gnome.org/sources/pygobject/3.50/pygobject-3.50.0.tar.xz
+-https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.1.4.tar.gz
++https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.3.3.tar.gz
+ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
+@@ -491,10 +491,10 @@ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1
+ https://files.pythonhosted.org/packages/source/r/requests/requests-2.32.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/requests-2.32.3-use_system_certs-1.patch
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+-https://github.com/getsentry/sentry-python/releases/download/2.15.0/sentry_sdk-2.15.0.tar.gz
++https://github.com/getsentry/sentry-python/releases/download/2.16.0/sentry_sdk-2.16.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/six/six-1.16.0.tar.gz
+-https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-8.0.2.tar.gz
+-https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-2.0.0.tar.gz
++https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-8.1.0.tar.gz
++https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-3.0.1.tar.gz
+ https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-1.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/a/attrs/attrs-24.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/B/Babel/babel-2.16.0.tar.gz
+@@ -677,12 +677,12 @@ https://download.gnome.org/sources/gtkmm/4.16/gtkmm-4.16.0.tar.xz
+ https://download.gnome.org/sources/gtk-vnc/1.3/gtk-vnc-1.3.1.tar.xz
+ https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz
+ https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz
+-https://download.gnome.org/sources/gtksourceview/5.14/gtksourceview-5.14.0.tar.xz
++https://download.gnome.org/sources/gtksourceview/5.14/gtksourceview-5.14.1.tar.xz
+ https://downloads.sourceforge.net/enlightenment/imlib2-1.12.3.tar.xz
+ https://github.com/ksnip/kColorPicker/archive/v0.3.1/kColorPicker-0.3.1.tar.gz
+ https://github.com/ksnip/kImageAnnotator/archive/v0.7.1/kImageAnnotator-0.7.1.tar.gz
+ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
+-https://download.gnome.org/sources/libadwaita/1.6/libadwaita-1.6.0.tar.xz
++https://download.gnome.org/sources/libadwaita/1.6/libadwaita-1.6.1.tar.xz
+ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.3.0/libei-1.3.0.tar.gz
+ https://gedit-technology.net/tarballs/libgedit-amtk/libgedit-amtk-5.8.0.tar.xz
+ https://github.com/gedit-technology/libgedit-gtksourceview/releases/download/299.2.1/libgedit-gtksourceview-299.2.1.tar.xz
+@@ -694,11 +694,11 @@ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+ https://download.gnome.org/sources/pango/1.54/pango-1.54.0.tar.xz
+ https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
+ https://download.gnome.org/sources/pangomm/2.54/pangomm-2.54.0.tar.xz
+-https://download.qt.io/archive/qt/6.7/6.8.0/single/qt-everywhere-src-6.8.0.tar.xz
++https://download.qt.io/archive/qt/6.8/6.8.0/single/qt-everywhere-src-6.8.0.tar.xz
+ https://download.qt.io/official_releases/qt/6.8/6.8.0/submodules/qtwebengine-everywhere-src-6.8.0.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.297/Vulkan-Headers-1.3.297.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.3.297/Vulkan-Loader-1.3.297.tar.gz
++https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.298/Vulkan-Headers-1.3.298.tar.gz
++https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.3.298/Vulkan-Loader-1.3.298.tar.gz
+ https://webkitgtk.org/releases/webkitgtk-2.46.1.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.18.4/xdg-desktop-portal-1.18.4.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.1/xdg-desktop-portal-gtk-1.15.1.tar.xz
+@@ -842,7 +842,7 @@ http://download.kde.org/stable/plasma/6.1.4/libkscreen-6.1.4.tar.xz
+ http://download.kde.org/stable/plasma/6.1.4/layer-shell-qt-6.1.4.tar.xz
+ https://github.com/beltoforion/muparser/archive/v2.3.4/muparser-2.3.4.tar.gz
+ https://github.com/lxqt/lxqt-build-tools/releases/download/2.0.0/lxqt-build-tools-2.0.0.tar.xz
+-https://github.com/lxqt/libqtxdg/releases/download/4.0.0/libqtxdg-4.0.0.tar.xz
++https://github.com/lxqt/libqtxdg/releases/download/4.0.1/libqtxdg-4.0.1.tar.xz
+ https://github.com/lxqt/lxqt-menu-data/releases/download/2.0.0/lxqt-menu-data-2.0.0.tar.xz
+ https://github.com/lxqt/liblxqt/releases/download/2.0.0/liblxqt-2.0.0.tar.xz
+ https://github.com/lxqt/libsysstat/releases/download/1.0.0/libsysstat-1.0.0.tar.xz
+@@ -899,8 +899,7 @@ https://github.com/freerdp/freerdp/archive/3.8.0/FreeRDP-3.8.0.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/gimp/gimp3-20240711.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/gimp/gimp3-help-20240711.tar.xz
+ https://downloads.sourceforge.net/gparted/gparted-1.6.0.tar.gz
+-https://inkscape.org/gallery/item/44615/inkscape-1.3.2.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.3.2-upstream_fixes-2.patch
++https://inkscape.org/gallery/item/53679/inkscape-1.4.tar.xz
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+ https://archive.mozilla.org/pub/thunderbird/releases/128.3.0esr/source/thunderbird-128.3.0esr.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.14.0/tigervnc-1.14.0.tar.gz
