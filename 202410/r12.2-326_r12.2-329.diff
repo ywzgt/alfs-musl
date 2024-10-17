@@ -1,0 +1,13 @@
+diff --git a/wget-list b/wget-list
+index 7c4afba9d..13dc6ddd6 100644
+--- a/wget-list
++++ b/wget-list
+@@ -493,7 +493,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/requests-2.32.3-use_system_cer
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+ https://github.com/getsentry/sentry-python/releases/download/2.16.0/sentry_sdk-2.16.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/six/six-1.16.0.tar.gz
+-https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-8.1.0.tar.gz
++https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-8.1.3.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-3.0.1.tar.gz
+ https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-1.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/a/attrs/attrs-24.2.0.tar.gz
