@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-339">
+  <body class="blfs" id="blfs-r12.2-361">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-339
+        "phrase">(systemd</span> Edition) - Version r12.2-361
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-339">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-361">
           Home</a>
         </li>
       </ul>
@@ -422,9 +422,22 @@ meson setup ..                 \
       -D gallium-drivers=auto  \
       -D vulkan-drivers=auto   \
       -D valgrind=disabled     \
+      -D video-codecs=all      \
       -D libunwind=disabled    &amp;&amp;
 
 ninja</kbd></pre>
+        <div class="admon warning">
+          <img alt="[Warning]" src="../images/warning.png" />
+          <h3>
+            Warning
+          </h3>
+          <p>
+            Please ask your lawyer or remove the <em class=
+            "parameter"><code>-D video-codecs=all</code></em> option if you
+            will distribute the compiled Mesa libraries and drivers to
+            others.
+          </p>
+        </div>
         <p>
           To test the results, issue: <span class="command"><strong>meson
           configure -D build-tests=true &amp;&amp; ninja
@@ -628,6 +641,11 @@ ninja</kbd></pre>
           parameter disables the usage of Valgrind during the build process.
           Remove this parameter if you have Valgrind installed, and wish to
           check for memory leaks.
+        </p>
+        <p>
+          <em class="parameter"><code>-D video-codecs=all</code></em>: This
+          parameter enables building codecs for video formats covered by
+          third-party patents.
         </p>
         <p>
           <em class="parameter"><code>-D libunwind=disabled</code></em>: This
@@ -868,7 +886,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-339">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-361">
           Home</a>
         </li>
       </ul>

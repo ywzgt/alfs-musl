@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-339">
+  <body class="blfs" id="blfs-r12.2-361">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-339
+        "phrase">(systemd</span> Edition) - Version r12.2-361
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-339">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-361">
           Home</a>
         </li>
       </ul>
@@ -135,7 +135,7 @@
           "../general/libxslt.html" title=
           "libxslt-1.1.42">libxslt-1.1.42</a>, <a class="xref" href=
           "../general/poppler.html" title=
-          "Poppler-24.10.0">Poppler-24.10.0</a>, and <a class="xref" href=
+          "Poppler-24.09.0">Poppler-24.09.0</a>, and <a class="xref" href=
           "../general/popt.html" title="Popt-1.19">popt-1.19</a>
         </p>
         <h4>
@@ -197,8 +197,10 @@
         "command">mkdir build                       &amp;&amp;
 cd    build                       &amp;&amp;
 
-cmake -D CMAKE_INSTALL_PREFIX=/usr \
-      -D CMAKE_BUILD_TYPE=Release  \
+cmake -D CMAKE_INSTALL_PREFIX=/usr  \
+      -D CMAKE_BUILD_TYPE=Release   \
+      -D ENABLE_POPPLER=FALSE       \
+      -D ENABLE_POPPLER_CAIRO=FALSE \
       ..                          &amp;&amp;
 make</kbd></pre>
         <p>
@@ -244,6 +246,11 @@ update-desktop-database -q</kbd></pre>
           <em class="parameter"><code>-D
           CMAKE_BUILD_TYPE=Release</code></em>: This switch is used to build
           the release library without any debug `assert` in the code.
+        </p>
+        <p>
+          <em class="parameter"><code>-D ENABLE_POPPLER=FALSE</code></em>:
+          This switch disables PDF support because it does not build with
+          poppler-24.10.0.
         </p>
         <p>
           <code class="option">-D WITH_DBUS=ON</code>: use this if you wish
@@ -351,7 +358,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-339">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-361">
           Home</a>
         </li>
       </ul>
