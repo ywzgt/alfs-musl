@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Tracker-3.7.3
+      tinysparql-3.8.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-361">
+  <body class="blfs" id="blfs-r12.2-398">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-361
+        "phrase">(systemd</span> Edition) - Version r12.2-398
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -24,16 +24,16 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="evolution-data-server.html" title=
-          "evolution-data-server-3.52.4">Prev</a>
+          "evolution-data-server-3.54.1">Prev</a>
           <p>
-            evolution-data-server-3.52.4
+            evolution-data-server-3.54.1
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="tracker3-miners.html" title=
-          "Tracker-miners-3.7.3">Next</a>
+          <a accesskey="n" href="localsearch.html" title=
+          "localsearch-3.8.0">Next</a>
           <p>
-            Tracker-miners-3.7.3
+            localsearch-3.8.0
           </p>
         </li>
         <li class="up">
@@ -42,23 +42,22 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-361">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-398">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="tracker3" name="tracker3"></a>Tracker-3.7.3
+      <a id="tinysparql" name="tinysparql"></a>tinysparql-3.8.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to Tracker
+          Introduction to Tinysparql
         </h2>
         <p>
-          <span class="application">Tracker</span> is the file indexing and
-          search provider used in the <span class="application">GNOME</span>
-          desktop environment.
+          <span class="application">Tinysparql</span> is a low-footprint RDF
+          triple store with a SPARQL 1.1 interface.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -79,43 +78,41 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/tracker/3.7/tracker-3.7.3.tar.xz">
-                https://download.gnome.org/sources/tracker/3.7/tracker-3.7.3.tar.xz</a>
+                "https://download.gnome.org/sources/tinysparql/3.8/tinysparql-3.8.0.tar.xz">
+                https://download.gnome.org/sources/tinysparql/3.8/tinysparql-3.8.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 65cd2945506b7303e9eea493d56431d8
+                Download MD5 sum: b265db81d1292d405945dbeb168a361b
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 1.7 MB
+                Download size: 2.0 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 58 MB (with tests)
+                Estimated disk space required: 60 MB (with tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.4 SBU (with tests)
+                Estimated build time: 0.5 SBU (with tests)
               </p>
             </li>
           </ul>
         </div>
         <h3>
-          Tracker Dependencies
+          Tinysparql Dependencies
         </h3>
         <h4>
           Required
         </h4>
         <p class="required">
           <a class="xref" href="../general/json-glib.html" title=
-          "JSON-GLib-1.10.0">JSON-GLib-1.10.0</a>, <a class="xref" href=
-          "../general/libseccomp.html" title=
-          "libseccomp-2.5.5">libseccomp-2.5.5</a>, and <a class="xref" href=
+          "JSON-GLib-1.10.0">JSON-GLib-1.10.0</a> and <a class="xref" href=
           "../general/vala.html" title="Vala-0.56.17">Vala-0.56.17</a>
         </p>
         <h4>
@@ -131,8 +128,8 @@
           "../general/python-modules.html#pygobject3" title=
           "PyGObject-3.50.0">PyGObject-3.50.0</a>, <a class="xref" href=
           "../server/sqlite.html" title="SQLite-3.46.1">SQLite-3.46.1</a>,
-          and <a class="xref" href="tracker3-miners.html" title=
-          "Tracker-miners-3.7.3">tracker-miners-3.7.3</a> (runtime)
+          and <a class="xref" href="localsearch.html" title=
+          "localsearch-3.8.0">localsearch-3.8.0</a> (runtime)
         </p>
         <h4>
           Optional
@@ -142,27 +139,37 @@
           title="Asciidoc-10.2.1">asciidoc-10.2.1</a>, <a class="xref" href=
           "../basicnet/avahi.html" title="Avahi-0.8">Avahi-0.8</a>, <a class=
           "xref" href="../general/graphviz.html" title=
-          "Graphviz-12.1.2">Graphviz-12.1.2</a>, <a class="xref" href=
-          "../basicnet/libsoup.html" title=
-          "libsoup-2.74.3">libsoup-2.74.3</a>, <a class="ulink" href=
-          "https://github.com/scop/bash-completion/">bash-completion</a>, and
-          <a class="ulink" href=
-          "https://github.com/snowballstem/snowball/">libstemmer</a>
+          "Graphviz-12.1.2">Graphviz-12.1.2</a>, and <a class="ulink" href=
+          "https://github.com/scop/bash-completion/">bash-completion</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of Tracker
+          Installation of Tinysparql
         </h2>
+        <div class="admon warning">
+          <img alt="[Warning]" src="../images/warning.png" />
+          <h3>
+            Warning
+          </h3>
+          <p>
+            If you are upgrading this package from a version that was from
+            when this package was known as <span class=
+            "application">Tracker</span>, remove a file that will cause a
+            conflict as the <code class="systemitem">root</code> user:
+          </p>
+        </div>
+        <pre class="userinput"><kbd class=
+        "command">rm -fv /usr/lib/systemd/user/tracker-xdg-portal-3.service</kbd></pre>
         <p>
           Fix the location to install the documentation into:
         </p>
         <pre class="userinput"><kbd class=
-        "command">mv docs/reference/libtracker-sparql/doc/{Tracker-3.0,tracker-3.7.3} &amp;&amp;
-sed '/docs_name/s/Tracker-3.0/tracker-3.7.3/' \
+        "command">mv docs/reference/libtracker-sparql/doc/{Tsparql-3.0,tinysparql-3.8.0} &amp;&amp;
+sed '/docs_name/s/Tsparql-3.0/tinysparql-3.8.0/' \
     -i docs/reference/libtracker-sparql/meson.build</kbd></pre>
         <p>
-          Install <span class="application">Tracker</span> by running the
+          Install <span class="application">Tinysparql</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
@@ -179,8 +186,10 @@ ninja</kbd></pre>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>meson
-          configure -D debug=true &amp;&amp; ninja test</strong></span>. The
-          test suite should be run from a graphical session.
+          configure -D debug=true &amp;&amp; LC_ALL=C ninja
+          test</strong></span>. The test suite should be run from a graphical
+          session. One test is known to fail due to the manual pages not
+          being generated.
         </p>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -204,7 +213,7 @@ ninja</kbd></pre>
           <span class="command"><strong>meson configure -D
           debug=true</strong></span>: This command enables some debug checks
           necessary for the test suite. We don't want to enable them for the
-          installed Tracker 3 libraries and programs, so we run the test
+          installed tinysparql libraries and programs, so we run the test
           suite after installation.
         </p>
       </div>
@@ -216,19 +225,17 @@ ninja</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">tracker3, tracker3-endpoint,
-              tracker3-export, tracker3-help, tracker3-import,
-              tracker3-sparql, and tracker3-sql</span>
+              <span class="segbody">tinysparql</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Library:</strong>
-              <span class="segbody">libtracker-sparql-3.0.so</span>
+              <span class="segbody">libtinysparql-3.0.so and
+              libtracker-sparql-3.0.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/{include,lib}/tracker-3.0,
-              /usr/libexec/tracker3, /usr/share/tracker3, and
-              /usr/share/doc/tracker-3.7.3 (optional)</span>
+              <span class="segbody">/usr/{include,lib}/tinysparql-3.0 and
+              /usr/share/doc/tinysparql-3.8.0 (optional)</span>
             </div>
           </div>
         </div>
@@ -245,98 +252,28 @@ ninja</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="tracker3-prog" name=
-                    "tracker3-prog"></a><span class="term"><span class=
-                    "command"><strong>tracker3</strong></span></span>
+                    <a id="tinysparql-prog" name=
+                    "tinysparql-prog"></a><span class="term"><span class=
+                    "command"><strong>tinysparql</strong></span></span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    is a control program for the indexer
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="tracker3-endpoint" name=
-                    "tracker3-endpoint"></a><span class="term"><span class=
-                    "command"><strong>tracker3-endpoint</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    creates a SPARQL endpoint
+                    is a control program for TinySPARQL databases
                   </p>
                 </td>
               </tr>
               <tr>
                 <td>
                   <p>
-                    <a id="tracker3-export" name=
-                    "tracker3-export"></a><span class="term"><span class=
-                    "command"><strong>tracker3-export</strong></span></span>
+                    <a id="libtinysparql" name=
+                    "libtinysparql"></a><span class="term"><code class=
+                    "filename">libtinysparql-3.0.so</code></span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    exports all data from a Tracker database
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="tracker3-help" name=
-                    "tracker3-help"></a><span class="term"><span class=
-                    "command"><strong>tracker3-help</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    shows manual pages related to Tracker
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="tracker3-import" name=
-                    "tracker3-import"></a><span class="term"><span class=
-                    "command"><strong>tracker3-import</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    imports data into a Tracker database
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="tracker3-sparql" name=
-                    "tracker3-sparql"></a><span class="term"><span class=
-                    "command"><strong>tracker3-sparql</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    uses SparQL to query a Tracker database
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="tracker3-sql" name="tracker3-sql"></a><span class=
-                    "term"><span class=
-                    "command"><strong>tracker3-sql</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    uses SQL to query a Tracker database
+                    contains functions for administering TinySPARQL databases
                   </p>
                 </td>
               </tr>
@@ -363,16 +300,16 @@ ninja</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="evolution-data-server.html" title=
-          "evolution-data-server-3.52.4">Prev</a>
+          "evolution-data-server-3.54.1">Prev</a>
           <p>
-            evolution-data-server-3.52.4
+            evolution-data-server-3.54.1
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="tracker3-miners.html" title=
-          "Tracker-miners-3.7.3">Next</a>
+          <a accesskey="n" href="localsearch.html" title=
+          "localsearch-3.8.0">Next</a>
           <p>
-            Tracker-miners-3.7.3
+            localsearch-3.8.0
           </p>
         </li>
         <li class="up">
@@ -381,7 +318,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-361">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-398">
           Home</a>
         </li>
       </ul>

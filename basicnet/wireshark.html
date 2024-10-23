@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Wireshark-4.4.0
+      Wireshark-4.4.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-361">
+  <body class="blfs" id="blfs-r12.2-398">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-361
+        "phrase">(systemd</span> Edition) - Version r12.2-398
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-361">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-398">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="wireshark" name="wireshark"></a>Wireshark-4.4.0
+      <a id="wireshark" name="wireshark"></a>Wireshark-4.4.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -87,13 +87,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.wireshark.org/download/src/all-versions/wireshark-4.4.0.tar.xz">
-                https://www.wireshark.org/download/src/all-versions/wireshark-4.4.0.tar.xz</a>
+                "https://www.wireshark.org/download/src/all-versions/wireshark-4.4.1.tar.xz">
+                https://www.wireshark.org/download/src/all-versions/wireshark-4.4.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 50a9ae3a9b90f92d6f352531fe68fbd2
+                Download MD5 sum: f6c14c48f2c5fe8d7bd52236a0a4001f
               </p>
             </li>
             <li class="listitem">
@@ -103,12 +103,12 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 771 MB (171 MB installed)
+                Estimated disk space required: 924 MB (171 MB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 2.5 SBU (with parallelism=4)
+                Estimated build time: 3.3 SBU (with parallelism=4)
               </p>
             </li>
           </ul>
@@ -158,7 +158,9 @@
           <a class="xref" href="../general/asciidoctor.html" title=
           "Asciidoctor-2.0.23">asciidoctor-2.0.23</a>, <a class="xref" href=
           "../general/brotli.html" title="brotli-1.1.0">Brotli-1.1.0</a>,
-          <a class="xref" href="../general/doxygen.html" title=
+          <a class="xref" href="../pst/cups.html" title=
+          "Cups-2.4.11">Cups-2.4.11</a>, <a class="xref" href=
+          "../general/doxygen.html" title=
           "Doxygen-1.12.0">Doxygen-1.12.0</a>, <a class="xref" href=
           "../general/git.html" title="Git-2.47.0">git-2.47.0</a>, <a class=
           "xref" href="../postlfs/gnutls.html" title=
@@ -174,6 +176,8 @@
           "xref" href="nghttp2.html" title=
           "nghttp2-1.63.0">nghttp2-1.63.0</a>, <a class="xref" href=
           "../multimedia/sbc.html" title="SBC-2.0">SBC-2.0</a>, <a class=
+          "xref" href="../x/vulkan-headers.html" title=
+          "Vulkan-Headers-1.3.299">Vulkan-Headers-1.3.299</a>, <a class=
           "ulink" href=
           "https://www.linphone.org/technical-corner/bcg729">BCG729</a>,
           <a class="ulink" href=
@@ -186,8 +190,9 @@
           "ulink" href=
           "https://www.winimage.com/zLibDll/minizip.html">Minizip</a>,
           <a class="ulink" href=
-          "https://google.github.io/snappy/">Snappy</a>, and <a class="ulink"
-          href="https://github.com/freeswitch/spandsp">Spandsp</a>
+          "https://github.com/ngtcp2/nghttp3">nghttp3</a>, <a class="ulink"
+          href="https://google.github.io/snappy/">Snappy</a>, and <a class=
+          "ulink" href="https://github.com/freeswitch/spandsp">Spandsp</a>
         </p>
       </div>
       <div class="kernel" lang="en" xml:lang="en">
@@ -232,7 +237,7 @@ cd    build &amp;&amp;
 
 cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -D CMAKE_BUILD_TYPE=Release  \
-      -D CMAKE_INSTALL_DOCDIR=/usr/share/doc/wireshark-4.4.0 \
+      -D CMAKE_INSTALL_DOCDIR=/usr/share/doc/wireshark-4.4.1 \
       -G Ninja \
       .. &amp;&amp;
 ninja</kbd></pre>
@@ -244,11 +249,11 @@ ninja</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">ninja install &amp;&amp;
 
-install -v -m755 -d /usr/share/doc/wireshark-4.4.0 &amp;&amp;
+install -v -m755 -d /usr/share/doc/wireshark-4.4.1 &amp;&amp;
 install -v -m644    ../README.linux ../doc/README.* ../doc/randpkt.txt \
-                    /usr/share/doc/wireshark-4.4.0 &amp;&amp;
+                    /usr/share/doc/wireshark-4.4.1 &amp;&amp;
 
-pushd /usr/share/doc/wireshark-4.4.0 &amp;&amp;
+pushd /usr/share/doc/wireshark-4.4.1 &amp;&amp;
    for FILENAME in ../../wireshark/*.html; do
       ln -s -v -f $FILENAME .
    done &amp;&amp;
@@ -262,7 +267,7 @@ unset FILENAME</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">install -v -m644 <em class=
         "replaceable"><code>&lt;Downloaded_Files&gt;</code></em> \
-                 /usr/share/doc/wireshark-4.4.0</kbd></pre>
+                 /usr/share/doc/wireshark-4.4.1</kbd></pre>
         <p>
           Now, set ownership and permissions of sensitive applications to
           only allow authorized users. As the <code class=
@@ -350,7 +355,7 @@ chmod -v 6550 /usr/bin/tshark</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/{lib,share}/wireshark and
-              /usr/share/doc/wireshark-4.4.0</span>
+              /usr/share/doc/wireshark-4.4.1</span>
             </div>
           </div>
         </div>
@@ -621,7 +626,7 @@ chmod -v 6550 /usr/bin/tshark</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-361">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-398">
           Home</a>
         </li>
       </ul>

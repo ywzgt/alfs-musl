@@ -5,28 +5,28 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Tracker-miners-3.7.3
+      localsearch-3.8.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-361">
+  <body class="blfs" id="blfs-r12.2-398">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-361
+        "phrase">(systemd</span> Edition) - Version r12.2-398
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="tracker3.html" title=
-          "Tracker-3.7.3">Prev</a>
+          <a accesskey="p" href="tinysparql.html" title=
+          "tinysparql-3.8.0">Prev</a>
           <p>
-            Tracker-3.7.3
+            tinysparql-3.8.0
           </p>
         </li>
         <li class="next">
@@ -41,22 +41,22 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-361">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-398">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="tracker3-miners" name="tracker3-miners"></a>Tracker-miners-3.7.3
+      <a id="localsearch" name="localsearch"></a>localsearch-3.8.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to Tracker-miners
+          Introduction to Localsearch
         </h2>
         <p>
-          The <span class="application">Tracker-miners</span> package
-          contains a set of data extractors for Tracker.
+          The <span class="application">Localsearch</span> package contains a
+          filesystem indexer as well as a metadata extractor.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -77,13 +77,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/tracker-miners/3.7/tracker-miners-3.7.3.tar.xz">
-                https://download.gnome.org/sources/tracker-miners/3.7/tracker-miners-3.7.3.tar.xz</a>
+                "https://download.gnome.org/sources/localsearch/3.8/localsearch-3.8.0.tar.xz">
+                https://download.gnome.org/sources/localsearch/3.8/localsearch-3.8.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 8c1b48f2fa57d888967de9b5ff348fc1
+                Download MD5 sum: b9aa37c729509b6abc94fc6dedc99058
               </p>
             </li>
             <li class="listitem">
@@ -93,33 +93,19 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 36 MB (with tests)
+                Estimated disk space required: 43 MB (with tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.3 SBU (with parallelism=4; add as
+                Estimated build time: 0.4 SBU (with parallelism=4; add as
                 much as 1.0 SBU for tests, dependent on disk speed)
               </p>
             </li>
           </ul>
         </div>
         <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/tracker-miners-3.7.3-upstream_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/tracker-miners-3.7.3-upstream_fixes-1.patch</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h3>
-          Tracker-miners Dependencies
+          Localsearch Dependencies
         </h3>
         <h4>
           Required
@@ -127,8 +113,8 @@
         <p class="required">
           <a class="xref" href="../multimedia/gst10-plugins-base.html" title=
           "gst-plugins-base-1.24.8">gst-plugins-base-1.24.8</a>, <a class=
-          "xref" href="tracker3.html" title=
-          "Tracker-3.7.3">Tracker-3.7.3</a>, <a class="xref" href=
+          "xref" href="tinysparql.html" title=
+          "tinysparql-3.8.0">tinysparql-3.8.0</a>, <a class="xref" href=
           "../general/exempi.html" title="Exempi-2.6.5">Exempi-2.6.5</a>, and
           <a class="xref" href="gexiv2.html" title=
           "gexiv2-0.14.3">gexiv2-0.14.3</a>
@@ -182,8 +168,8 @@
       </div>
       <div class="kernel" lang="en" xml:lang="en">
         <h2 class="sect2">
-          <a id="tracker3-miners-kernel" name=
-          "tracker3-miners-kernel"></a>Kernel Configuration
+          <a id="localsearch-kernel" name="localsearch-kernel"></a>Kernel
+          Configuration
         </h2>
         <p>
           Enable the following options in the kernel configuration, then
@@ -202,8 +188,28 @@
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of Tracker-miners
+          Installation of Localsearch
         </h2>
+        <div class="admon warning">
+          <img alt="[Warning]" src="../images/warning.png" />
+          <h3>
+            Warning
+          </h3>
+          <p>
+            If you are upgrading this package from a version where it was
+            known as <span class="application">tracker-miners</span>, there
+            are several files which will cause conflicts. Before installing
+            this package, remove these files as the <code class=
+            "systemitem">root</code> user:
+          </p>
+        </div>
+        <pre class="root"><kbd class=
+        "command">rm -fv /etc/xdg/autostart/tracker-miner-fs-3.desktop                           &amp;&amp;
+rm -fv /usr/lib/systemd/user/tracker-miner-fs-3.service                        &amp;&amp;
+rm -fv /usr/lib/systemd/user/tracker-miner-fs-control-3.service                &amp;&amp;
+rm -fv /usr/share/dbus-1/services/org.freedesktop.Tracker3.Miner.Files.service &amp;&amp;
+rm -fv /usr/share/dbus-1/services/org.freedesktop.Tracker3.Writeback.service   &amp;&amp;
+rm -fv /usr/share/dbus-1/services/org.freedesktop.Tracker3.Miner.Files.Control.service</kbd></pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -227,14 +233,8 @@
           "replaceable"><code>200</code></em>/ tests/functional-tests/meson.build</kbd></pre>
         </div>
         <p>
-          First, fix one issue in the TIFF extractor and another issue in the
-          Landlock sandbox:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../tracker-miners-3.7.3-upstream_fixes-1.patch</kbd></pre>
-        <p>
-          Install <span class="application">Tracker-miners</span> by running
-          the following commands:
+          Install <span class="application">Localsearch</span> by running the
+          following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
@@ -299,21 +299,21 @@ rm -rf ~/tracker-tests</kbd></pre>
           properly, and tracker-miners will get killed with a SIGSYS as a
           result. Note that disabling seccomp may cause the system to be
           compromised worse in the event that a security vulnerability in
-          tracker-miners or its dependencies is exploited.
+          localsearch or its dependencies is exploited.
         </p>
         <p>
           <code class="option">-D landlock=disabled</code>: This switch
           disables the Landlock file access sandbox. Use it if you don't want
           to build the kernel with Landlock support. Note that disabling
           Landlock may cause the system to be compromised worse in the event
-          that a security vulnerability in tracker-miners or its dependencies
-          is exploited.
+          that a security vulnerability in localsearch or its dependencies is
+          exploited.
         </p>
         <p>
           <code class="option">-D battery_detection=none</code>: Use this
           option if you have not installed the recommended dependency upower.
           Do not use this option if your system has a battery (laptop battery
-          or UPS), or tracker-miners may waste the battery power and lifespan
+          or UPS), or localsearch may waste the battery power and lifespan
           when the A/C power is unavailable.
         </p>
       </div>
@@ -325,19 +325,17 @@ rm -rf ~/tracker-tests</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">tracker3-daemon, tracker3-extract,
-              tracker3-index, tracker3-info, tracker3-reset, tracker3-search,
-              tracker3-status, and tracker3-tag</span>
+              <span class="segbody">localsearch</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
               <span class="segbody">Several modules under
-              /usr/lib/tracker-miners-3.0</span>
+              /usr/lib/localsearch-3.0</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/lib/tracker-miners-3.0,
-              /usr/libexec/tracker3, and /usr/share/tracker3-miners</span>
+              <span class="segbody">/usr/lib/localsearch-3.0 and
+              /usr/share/localsearch</span>
             </div>
           </div>
         </div>
@@ -354,114 +352,15 @@ rm -rf ~/tracker-tests</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="tracker3-daemon" name=
-                    "tracker3-daemon"></a><span class="term"><span class=
-                    "command"><strong>tracker3-daemon</strong></span></span>
+                    <a id="localsearch-prog" name=
+                    "localsearch-prog"></a><span class="term"><span class=
+                    "command"><strong>localsearch</strong></span></span>
                   </p>
                 </td>
                 <td>
                   <p>
                     starts, stops, restarts, and lists daemons responsible
                     for indexing content
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="tracker3-extract" name=
-                    "tracker3-extract"></a><span class="term"><span class=
-                    "command"><strong>tracker3-extract</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    extracts metadata from a file
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="tracker3-index" name=
-                    "tracker3-index"></a><span class="term"><span class=
-                    "command"><strong>tracker3-index</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    indexes content using the Tracker filesystem miner
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="tracker3-info" name=
-                    "tracker3-info"></a><span class="term"><span class=
-                    "command"><strong>tracker3-info</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    retrieves all information available for a certain file
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="tracker3-reset" name=
-                    "tracker3-reset"></a><span class="term"><span class=
-                    "command"><strong>tracker3-reset</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    resets the Tracker index and configuration
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="tracker3-search" name=
-                    "tracker3-search"></a><span class="term"><span class=
-                    "command"><strong>tracker3-search</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    searches for content by type or across all types
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="tracker3-status" name=
-                    "tracker3-status"></a><span class="term"><span class=
-                    "command"><strong>tracker3-status</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    provides status and statistics on data that has been
-                    indexed
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="tracker3-tag" name="tracker3-tag"></a><span class=
-                    "term"><span class=
-                    "command"><strong>tracker3-tag</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    adds, removes, and lists tags
                   </p>
                 </td>
               </tr>
@@ -473,10 +372,10 @@ rm -rf ~/tracker-tests</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="tracker3.html" title=
-          "Tracker-3.7.3">Prev</a>
+          <a accesskey="p" href="tinysparql.html" title=
+          "tinysparql-3.8.0">Prev</a>
           <p>
-            Tracker-3.7.3
+            tinysparql-3.8.0
           </p>
         </li>
         <li class="next">
@@ -491,7 +390,7 @@ rm -rf ~/tracker-tests</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-361">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-398">
           Home</a>
         </li>
       </ul>
