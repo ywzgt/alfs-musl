@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Nautilus-46.2
+      Nautilus-47.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-398">
+  <body class="blfs" id="blfs-r12.2-422">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-398
+        "phrase">(systemd</span> Edition) - Version r12.2-422
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -30,9 +30,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="gnome-bluetooth.html" title=
-          "gnome-bluetooth-46.1">Next</a>
+          "gnome-bluetooth-47.1">Next</a>
           <p>
-            gnome-bluetooth-46.1
+            gnome-bluetooth-47.1
           </p>
         </li>
         <li class="up">
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-398">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-422">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="nautilus" name="nautilus"></a>Nautilus-46.2
+      <a id="nautilus" name="nautilus"></a>Nautilus-47.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,13 +77,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/nautilus/46/nautilus-46.2.tar.xz">
-                https://download.gnome.org/sources/nautilus/46/nautilus-46.2.tar.xz</a>
+                "https://download.gnome.org/sources/nautilus/47/nautilus-47.0.tar.xz">
+                https://download.gnome.org/sources/nautilus/47/nautilus-47.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 88acd6bd9c5d01fb02c8827222c07bc5
+                Download MD5 sum: 76d2af66902a174dae0a5c69a9b35c70
               </p>
             </li>
             <li class="listitem">
@@ -93,12 +93,12 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 88 MB (with tests)
+                Estimated disk space required: 93 MB (with tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.5 SBU (with tests, both using
+                Estimated build time: 0.6 SBU (with tests, both using
                 parallelism=4)
               </p>
             </li>
@@ -145,7 +145,7 @@
           "libexif-0.6.24">libexif-0.6.24</a>
         </p>
         <h4>
-          Optional
+          Optional (for generating documentation)
         </h4>
         <p class="optional">
           <a class="xref" href="../general/python-modules.html#gi-docgen"
@@ -157,7 +157,7 @@
         <p class="recommended">
           <a class="xref" href="../x/adwaita-icon-theme.html" title=
           "adwaita-icon-theme-47.0">adwaita-icon-theme-47.0</a> and <a class=
-          "xref" href="gvfs.html" title="Gvfs-1.54.2">Gvfs-1.54.2</a> (For
+          "xref" href="gvfs.html" title="Gvfs-1.56.1">Gvfs-1.56.1</a> (For
           hotplugging and device mounting to work)
         </p>
       </div>
@@ -165,11 +165,6 @@
         <h2 class="sect2">
           Installation of Nautilus
         </h2>
-        <p>
-          Fix the location to install the API documentation:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed "/docdir =/s@\$@ / 'nautilus-46.2'@" -i meson.build</kbd></pre>
         <p>
           Install <span class="application">Nautilus</span> by running the
           following commands:
@@ -179,11 +174,16 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr       \
             --buildtype=release \
-            -D selinux=false    \
-            -D packagekit=false \
             ..                  &amp;&amp;
 
 ninja</kbd></pre>
+        <p>
+          If you wish to generate and install the API documentation, issue
+          the following commands:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed "/docdir =/s@\$@ / 'nautilus-47.0'@" -i ../meson.build &amp;&amp;
+meson configure -D docs=true</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
           test</strong></span>. The tests need to be run in a graphical
@@ -224,15 +224,6 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-D selinux=false</code></em>: This
-          switch disables the use of selinux which isn't supported by BLFS.
-        </p>
-        <p>
-          <em class="parameter"><code>-D packagekit=false</code></em>: This
-          switch disables the use of PackageKit which isn't suitable for
-          BLFS.
-        </p>
-        <p>
           <code class="option">-D cloudproviders=false</code>: Use this
           switch if you do not have <a class="xref" href=
           "../general/libcloudproviders.html" title=
@@ -257,7 +248,7 @@ ninja</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/{include,lib,share}/nautilus and
-              /usr/share/gtk-doc/html/libnautilus-extension (optional)</span>
+              /usr/share/doc/nautilus-47.0 (optional)</span>
             </div>
           </div>
         </div>
@@ -317,9 +308,9 @@ ninja</kbd></pre>
         </li>
         <li class="next">
           <a accesskey="n" href="gnome-bluetooth.html" title=
-          "gnome-bluetooth-46.1">Next</a>
+          "gnome-bluetooth-47.1">Next</a>
           <p>
-            gnome-bluetooth-46.1
+            gnome-bluetooth-47.1
           </p>
         </li>
         <li class="up">
@@ -328,7 +319,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-398">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-422">
           Home</a>
         </li>
       </ul>

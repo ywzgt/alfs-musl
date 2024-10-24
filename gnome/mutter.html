@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Mutter-46.4
+      Mutter-47.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-398">
+  <body class="blfs" id="blfs-r12.2-422">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-398
+        "phrase">(systemd</span> Edition) - Version r12.2-422
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -24,16 +24,16 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="gnome-control-center.html" title=
-          "gnome-control-center-46.4">Prev</a>
+          "gnome-control-center-47.1.1">Prev</a>
           <p>
-            gnome-control-center-46.4
+            gnome-control-center-47.1.1
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="gnome-shell.html" title=
-          "gnome-shell-46.4">Next</a>
+          "gnome-shell-47.1">Next</a>
           <p>
-            gnome-shell-46.4
+            gnome-shell-47.1
           </p>
         </li>
         <li class="up">
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-398">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-422">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="mutter" name="mutter"></a>Mutter-46.4
+      <a id="mutter" name="mutter"></a>Mutter-47.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,18 +80,18 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/mutter/46/mutter-46.4.tar.xz">
-                https://download.gnome.org/sources/mutter/46/mutter-46.4.tar.xz</a>
+                "https://download.gnome.org/sources/mutter/47/mutter-47.1.tar.xz">
+                https://download.gnome.org/sources/mutter/47/mutter-47.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 022716bf531a4953a74910fef09019ed
+                Download MD5 sum: 20477e4f95d0a73e415f9ce86bfdd61e
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 6.4 MB
+                Download size: 6.5 MB
               </p>
             </li>
             <li class="listitem">
@@ -115,7 +115,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="gnome-settings-daemon.html" title=
-          "gnome-settings-daemon-46.0">gnome-settings-daemon-46.0</a>,
+          "gnome-settings-daemon-47.1">gnome-settings-daemon-47.1</a>,
           <a class="xref" href="../x/graphene.html" title=
           "Graphene-1.10.8">graphene-1.10.8</a>, <a class="xref" href=
           "../x/libei.html" title="libei-1.3.0">libei-1.3.0</a>, <a class=
@@ -198,9 +198,9 @@ ninja</kbd></pre>
           "Xorg-Server-21.1.13">Xorg-Server-21.1.13</a> or <a class="xref"
           href="../x/xwayland.html" title=
           "Xwayland-24.1.3">Xwayland-24.1.3</a>. You should also replace
-          <em class="parameter"><code>-D tests=false</code></em> in the
+          <em class="parameter"><code>-D tests=disabled</code></em> in the
           <span class="command"><strong>meson</strong></span> command, with
-          <em class="parameter"><code>-D tests=true -D
+          <em class="parameter"><code>-D tests=enabled -D
           clutter_tests=false</code></em>. The test suite requires the mutter
           schema to be installed on the system, so it is better to run the
           tests after installing the package.
@@ -247,7 +247,7 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-D tests=false</code></em>: Prevents
+          <em class="parameter"><code>-D tests=disabled</code></em>: Prevents
           building the tests, and removes a hard requirement on <span class=
           "command"><strong>xvfb-run</strong></span>.
         </p>
@@ -260,11 +260,12 @@ ninja</kbd></pre>
           "application">Mutter</span>.
         </p>
         <p>
-          <code class="option">-D tests=true -D clutter_tests=false</code>:
-          This builds all of the tests except for the tests for the shipped
-          <span class="application">Clutter</span> library. The <span class=
-          "application">Clutter</span> tests are known to fail with
-          <em class="parameter"><code>--buildtype=release</code></em>.
+          <code class="option">-D tests=enabled -D
+          clutter_tests=false</code>: This builds all of the tests except for
+          the tests for the shipped <span class="application">Clutter</span>
+          library. The <span class="application">Clutter</span> tests are
+          known to fail with <em class=
+          "parameter"><code>--buildtype=release</code></em>.
         </p>
       </div>
       <div class="starting" lang="en" xml:lang="en">
@@ -310,13 +311,13 @@ ninja</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libmutter-14.so and libmutter-test-14.so
+              <span class="segbody">libmutter-15.so and libmutter-test-15.so
               (optional)</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class=
-              "segbody">/usr/{lib,include,libexec/installed-tests,share/{,installed-tests}}/mutter-14</span>
+              "segbody">/usr/{lib,include,libexec/installed-tests,share/{,installed-tests}}/mutter-15</span>
             </div>
           </div>
         </div>
@@ -351,7 +352,7 @@ ninja</kbd></pre>
                   <p>
                     <a id="libmutter" name="libmutter"></a><span class=
                     "term"><code class=
-                    "filename">libmutter-14.so</code></span>
+                    "filename">libmutter-15.so</code></span>
                   </p>
                 </td>
                 <td>
@@ -366,7 +367,7 @@ ninja</kbd></pre>
                   <p>
                     <a id="libmutter-test" name=
                     "libmutter-test"></a><span class="term"><code class=
-                    "filename">libmutter-test-14.so</code></span>
+                    "filename">libmutter-test-15.so</code></span>
                   </p>
                 </td>
                 <td>
@@ -388,16 +389,16 @@ ninja</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="gnome-control-center.html" title=
-          "gnome-control-center-46.4">Prev</a>
+          "gnome-control-center-47.1.1">Prev</a>
           <p>
-            gnome-control-center-46.4
+            gnome-control-center-47.1.1
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="gnome-shell.html" title=
-          "gnome-shell-46.4">Next</a>
+          "gnome-shell-47.1">Next</a>
           <p>
-            gnome-shell-46.4
+            gnome-shell-47.1
           </p>
         </li>
         <li class="up">
@@ -406,7 +407,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-398">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-422">
           Home</a>
         </li>
       </ul>
