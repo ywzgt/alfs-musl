@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-422">
+  <body class="blfs" id="blfs-r12.2-446">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-422
+        "phrase">(systemd</span> Edition) - Version r12.2-446
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-422">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-446">
           Home</a>
         </li>
       </ul>
@@ -131,9 +131,9 @@
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="../general/gtk-doc.html" title=
-          "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a>, <a class="xref" href=
-          "../postlfs/mitkrb.html" title="MIT Kerberos V5-1.21.3">MIT
+          <a class="xref" href="../general/python-modules.html#gi-docgen"
+          title="Gi-DocGen-2024.1">Gi-DocGen-2024.1</a>, <a class="xref"
+          href="../postlfs/mitkrb.html" title="MIT Kerberos V5-1.21.3">MIT
           Kerberos V5-1.21.3</a>, and <a class="xref" href=
           "../general/valgrind.html" title=
           "Valgrind-3.23.0">Valgrind-3.23.0</a>
@@ -167,10 +167,22 @@ cd    build &amp;&amp;
 meson setup                                            \
       --prefix=/usr                                    \
       --buildtype=release                              \
+      -D documentation=false                           \
       -D kerberos=false                                \
       -D google_client_secret=5ntt6GbbkjnTVXx-MSxbmx5e \
       -D google_client_id=595013732528-llk8trb03f0ldpqq6nprjp1s79596646.apps.googleusercontent.com \
       .. &amp;&amp;
+ninja</kbd></pre>
+        <p>
+          If you've installed <a class="xref" href=
+          "../general/python-modules.html#gi-docgen" title=
+          "Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> and you wish to build and
+          install the API documentation of this package, issue:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">meson configure -D documentation=true &amp;&amp;
+sed "s/project_name()/&amp; + '-' + meson.project_version()/" \
+    -i ../doc/meson.build &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -192,12 +204,6 @@ ninja</kbd></pre>
         <p>
           <em class="parameter"><code>-D google_*</code></em>: These switches
           set the BLFS OAuth ID and secret for Google services.
-        </p>
-        <p>
-          <code class="option">-D gtk_doc=true</code>: Use this switch if you
-          have <a class="xref" href="../general/gtk-doc.html" title=
-          "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a> installed and you wish to
-          generate the API documentation.
         </p>
         <p>
           <code class="option">-D kerberos=true</code>: Use this switch if
@@ -295,7 +301,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-422">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-446">
           Home</a>
         </li>
       </ul>
