@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-446">
+  <body class="blfs" id="blfs-r12.2-451">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-446
+        "phrase">(systemd</span> Edition) - Version r12.2-451
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-446">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-451">
           Home</a>
         </li>
       </ul>
@@ -140,7 +140,7 @@
         "command">mkdir gspell-build &amp;&amp;
 cd    gspell-build &amp;&amp;
 
-meson setup --prefix=/usr --buildtype=release .. &amp;&amp;
+meson setup --prefix=/usr --buildtype=release -D gtk_doc=false .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
@@ -153,6 +153,17 @@ ninja</kbd></pre>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
+      </div>
+      <div class="commands" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Command Explanations
+        </h2>
+        <p>
+          <em class="parameter"><code>-D gtk_doc=false</code></em>: Prevents
+          building the documentation. Remove this if you have <span class=
+          "application">GTK-Doc</span> installed and wish to build the
+          documentation.
+        </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -239,7 +250,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-446">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-451">
           Home</a>
         </li>
       </ul>
