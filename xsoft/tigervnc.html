@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Tigervnc-1.14.0
+      Tigervnc-1.14.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-454">
+  <body class="blfs" id="blfs-r12.2-465">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-454
+        "phrase">(systemd</span> Edition) - Version r12.2-465
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-454">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-465">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="tigervnc" name="tigervnc"></a>Tigervnc-1.14.0
+      <a id="tigervnc" name="tigervnc"></a>Tigervnc-1.14.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,13 +80,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/TigerVNC/tigervnc/archive/v1.14.0/tigervnc-1.14.0.tar.gz">
-                https://github.com/TigerVNC/tigervnc/archive/v1.14.0/tigervnc-1.14.0.tar.gz</a>
+                "https://github.com/TigerVNC/tigervnc/archive/v1.14.1/tigervnc-1.14.1.tar.gz">
+                https://github.com/TigerVNC/tigervnc/archive/v1.14.1/tigervnc-1.14.1.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 402c2ec1f38bd0fb4ad7d93631dc1502
+                Download MD5 sum: f1084a68a023da623bf100015a4573fa
               </p>
             </li>
             <li class="listitem">
@@ -96,12 +96,12 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 101 MB
+                Estimated disk space required: 99 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.5 SBU (Using parallelism=4)
+                Estimated build time: 0.4 SBU (Using parallelism=4)
               </p>
             </li>
           </ul>
@@ -136,8 +136,8 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.14.0-configuration_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.14.0-configuration_fixes-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.14.1-configuration_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.14.1-configuration_fixes-1.patch</a>
               </p>
             </li>
             <li class="listitem">
@@ -170,7 +170,7 @@
           "xref" href="../general/systemd.html" title=
           "Systemd-256.5">Systemd-256.5</a> (with <a class="xref" href=
           "../postlfs/linux-pam.html" title=
-          "Linux-PAM-1.6.1">Linux-PAM-1.6.1</a>),</span> <a class="xref"
+          "Linux-PAM-1.7.0">Linux-PAM-1.7.0</a>),</span> <a class="xref"
           href="../x/x7app.html" title="Xorg Applications">Xorg
           Applications</a>, <a class="xref" href="../x/xinit.html" title=
           "xinit-1.4.2">xinit-1.4.2</a>, and <a class="xref" href=
@@ -193,7 +193,7 @@
           compatible with LFS systems:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../tigervnc-1.14.0-configuration_fixes-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../tigervnc-1.14.1-configuration_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">tigervnc</span> by running the
           following commands:
@@ -237,7 +237,7 @@ popd</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">#Install viewer
 make install &amp;&amp;
-mv  /usr/share/doc/tigervnc /usr/share/doc/tigervnc-1.14.0
+mv  /usr/share/doc/tigervnc /usr/share/doc/tigervnc-1.14.1
 
 #Install server
 ( cd unix/xserver/hw/vnc &amp;&amp; make install ) &amp;&amp;
@@ -344,7 +344,7 @@ EOF</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/share/doc/tigervnc-1.14.0</span>
+              <span class="segbody">/usr/share/doc/tigervnc-1.14.1</span>
             </div>
           </div>
         </div>
@@ -474,7 +474,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-454">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-465">
           Home</a>
         </li>
       </ul>

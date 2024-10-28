@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Linux-PAM-1.6.1
+      Linux-PAM-1.7.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-454">
+  <body class="blfs" id="blfs-r12.2-465">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-454
+        "phrase">(systemd</span> Edition) - Version r12.2-465
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-454">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-465">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="linux-pam" name="linux-pam"></a>Linux-PAM-1.6.1
+      <a id="linux-pam" name="linux-pam"></a>Linux-PAM-1.7.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,28 +80,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/linux-pam/linux-pam/releases/download/v1.6.1/Linux-PAM-1.6.1.tar.xz">
-                https://github.com/linux-pam/linux-pam/releases/download/v1.6.1/Linux-PAM-1.6.1.tar.xz</a>
+                "https://github.com/linux-pam/linux-pam/releases/download/v1.7.0/Linux-PAM-1.7.0.tar.xz">
+                https://github.com/linux-pam/linux-pam/releases/download/v1.7.0/Linux-PAM-1.7.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 8ad1e72d1ff6480d8e0af658e2d7b768
+                Download MD5 sum: c1e41d59d6852e45d0f953c8c8f869d6
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 1.0 MB
+                Download size: 496 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 39 MB (with tests)
+                Estimated disk space required: 16 MB (with tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.4 SBU (with tests)
+                Estimated build time: 0.3 SBU (with tests)
               </p>
             </li>
           </ul>
@@ -117,18 +117,18 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/linux-pam/linux-pam/releases/download/v1.6.1/Linux-PAM-1.6.1-docs.tar.xz">
-                https://github.com/linux-pam/linux-pam/releases/download/v1.6.1/Linux-PAM-1.6.1-docs.tar.xz</a>
+                "https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.0-docs.tar.xz">
+                https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.0-docs.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 46dc9f9a27ef73a2fbe3b667877e88da
+                Download MD5 sum: dba9e555df98004fe9cea233c927a551
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 455 KB
+                Download size: 495 KB
               </p>
             </li>
           </ul>
@@ -148,10 +148,9 @@
           "rpcsvc-proto-1.4.4">rpcsvc-proto-1.4.4</a>, <a class="ulink" href=
           "https://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz">Berkeley
           DB</a> (deprecated), <a class="ulink" href=
-          "https://github.com/linux-audit/audit-userspace">libaudit</a>,
+          "https://github.com/linux-audit/audit-userspace">libaudit</a>, and
           <a class="ulink" href=
-          "https://github.com/openSUSE/libeconf">libeconf</a>, and <a class=
-          "ulink" href="https://www.prelude-siem.org">Prelude</a>
+          "https://github.com/openSUSE/libeconf">libeconf</a>
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -198,33 +197,18 @@
           Installation of Linux PAM
         </h2>
         <p>
-          The shipped <code class="filename">libtool.m4</code> file has a
-          configuration inconsistent with LFS <code class=
-          "filename">/usr</code> hierarchy. This issue would cause
-          <code class="filename">libpam_misc.so</code> linked with an rpath
-          flag which may sometimes cause troubles or even security issues.
-          Regenerate the building system to fix the inconsistency:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">autoreconf -fi</kbd></pre>
-        <p>
-          If you downloaded the documentation, unpack the tarball by issuing
-          the following command.
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">tar -xf ../Linux-PAM-1.6.1-docs.tar.xz --strip-components=1</kbd></pre>
-        <p>
           Compile and link <span class="application">Linux PAM</span> by
           running the following commands:
         </p>
-        <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr                        \
-            --sbindir=/usr/sbin                  \
-            --sysconfdir=/etc                    \
-            --libdir=/usr/lib                    \
-            --enable-securedir=/usr/lib/security \
-            --docdir=/usr/share/doc/Linux-PAM-1.6.1 &amp;&amp;
-make</kbd></pre>
+        <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
+cd    build &amp;&amp;
+
+meson setup ..        \
+  --prefix=/usr       \
+  --buildtype=release \
+  -D docs=disabled    &amp;&amp;
+
+ninja</kbd></pre>
         <p>
           To test the results, a suitable <code class=
           "filename">/etc/pam.d/other</code> configuration file must exist.
@@ -265,11 +249,9 @@ password required       pam_deny.so
 session  required       pam_deny.so</code>
 EOF</kbd></pre>
         <p>
-          Now run the tests by issuing <span class="command"><strong>make
-          check</strong></span>. Be sure the tests produced no errors before
-          continuing the installation. Note that the tests are very long.
-          Redirect the output to a log file, so you can inspect it
-          thoroughly.
+          Now run the tests by issuing <span class="command"><strong>ninja
+          test</strong></span>. Be sure the tests produced no errors before
+          continuing the installation.
         </p>
         <p>
           For a first-time installation, remove the configuration file
@@ -281,26 +263,14 @@ EOF</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
-        <pre class="root"><kbd class="command">make install &amp;&amp;
+        <pre class="root"><kbd class="command">ninja install &amp;&amp;
 chmod -v 4755 /usr/sbin/unix_chkpwd</kbd></pre>
-      </div>
-      <div class="commands" lang="en" xml:lang="en">
-        <h2 class="sect2">
-          Command Explanations
-        </h2>
         <p>
-          <em class=
-          "parameter"><code>--enable-securedir=/usr/lib/security</code></em>:
-          This switch sets the installation location for the <span class=
-          "application">PAM</span> modules.
+          If you downloaded the optional documentation, again as the
+          <code class="systemitem">root</code> user:
         </p>
-        <p>
-          <span class="command"><strong>chmod -v 4755
-          /usr/sbin/unix_chkpwd</strong></span>: The setuid bit for the
-          <span class="command"><strong>unix_chkpwd</strong></span> helper
-          program must be turned on, so that non-<code class=
-          "systemitem">root</code> processes can access the shadow file.
-        </p>
+        <pre class="root"><kbd class=
+        "command">tar -C / -xvf ../../Linux-PAM-1.7.0-docs.tar.xz</kbd></pre>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -404,10 +374,10 @@ EOF</kbd></pre>
             The <span class="application">PAM</span> man page (<span class=
             "command"><strong>man pam</strong></span>) provides a good
             starting point to learn about the several fields, and allowable
-            entries. The <a class="ulink" href=
-            "https://www.docs4dev.com/docs/en/linux-pam/1.1.2/reference/Linux-PAM_SAG.html">
-            Linux-PAM System Administrators' Guide</a> is recommended for
-            additional information.
+            entries. The Linux-PAM System Administrators' Guide at
+            <code class=
+            "filename">/usr/share/doc/Linux-PAM-1.7.0/Linux-PAM_SAG.txt</code>
+            is recommended for additional information.
           </p>
           <div class="admon important">
             <img alt="[Important]" src="../images/important.png" />
@@ -443,7 +413,7 @@ EOF</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/etc/security, /usr/lib/security,
-              /usr/include/security and /usr/share/doc/Linux-PAM-1.6.1</span>
+              /usr/include/security and /usr/share/doc/Linux-PAM-1.7.0</span>
             </div>
           </div>
         </div>
@@ -601,7 +571,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-454">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-465">
           Home</a>
         </li>
       </ul>

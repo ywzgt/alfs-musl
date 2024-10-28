@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-454">
+  <body class="blfs" id="blfs-r12.2-465">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-454
+        "phrase">(systemd</span> Edition) - Version r12.2-465
       </h4>
       <h3>
         Chapter&nbsp;2.&nbsp;Important Information
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-454">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-465">
           Home</a>
         </li>
       </ul>
@@ -421,12 +421,12 @@ tar -xvf filename.tar.bz2</kbd></pre>
           "../postlfs/shadow.html" title="Shadow-4.16.0">Shadow-4.16.0</a>
           have been rebuilt with <a class="xref" href=
           "../postlfs/linux-pam.html" title=
-          "Linux-PAM-1.6.1">Linux-PAM-1.6.1</a> support (if you are
+          "Linux-PAM-1.7.0">Linux-PAM-1.7.0</a> support (if you are
           interacting via a SSH or graphical session, also ensure the
           <a class="xref" href="../postlfs/openssh.html" title=
           "OpenSSH-9.9p1">OpenSSH-9.9p1</a> server or the desktop manager has
           been built with <a class="xref" href="../postlfs/linux-pam.html"
-          title="Linux-PAM-1.6.1">Linux-PAM-1.6.1</a>). As the <code class=
+          title="Linux-PAM-1.7.0">Linux-PAM-1.7.0</a>). As the <code class=
           "systemitem">root</code> user, create a configuration file to allow
           resource control without <code class="systemitem">root</code>
           privilege, and instruct <span class=
@@ -453,17 +453,16 @@ systemd-run --user --pty --pipe --wait -G -d \
             make -j5</kbd></pre>
         <p>
           With <span class="phrase"><em class=
-          "parameter"><code>MemoryHigh=8G</code></em></span> , a soft limit
-          of memory usage is set. If the processes in the cgroup
-          (<span class="command"><strong>make</strong></span> and all the
-          descendants of it) uses more than 8 GB of system memory in total,
-          the kernel will throttle down the processes and try to reclaim the
-          system memory from them. But they can still use more than 8 GB of
-          system memory. If you want to make a hard limit instead, replace
-          <span class="phrase"><em class=
-          "parameter"><code>MemoryHigh</code></em> with <em class=
-          "parameter"><code>MemoryMax</code></em>.</span> But doing so will
-          cause the processes killed if 8 GB is not enough for them.
+          "parameter"><code>MemoryHigh=8G</code></em>,</span> a soft limit of
+          memory usage is set. If the processes in the cgroup (<span class=
+          "command"><strong>make</strong></span> and all the descendants of
+          it) uses more than 8 GB of system memory in total, the kernel will
+          throttle down the processes and try to reclaim the system memory
+          from them. But they can still use more than 8 GB of system memory.
+          If you want to make a hard limit instead, replace <span class=
+          "phrase"><em class="parameter"><code>MemoryHigh</code></em> with
+          <em class="parameter"><code>MemoryMax</code></em>.</span> But doing
+          so will cause the processes killed if 8 GB is not enough for them.
         </p>
         <p>
           <span class="phrase"><em class=
@@ -1572,7 +1571,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-454">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-465">
           Home</a>
         </li>
       </ul>
