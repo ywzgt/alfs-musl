@@ -1,0 +1,69 @@
+diff --git a/wget-list b/wget-list
+index d28e873165..18fd5f3d7c 100644
+--- a/wget-list
++++ b/wget-list
+@@ -8,14 +8,14 @@ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.7.1.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.2.tar.bz2
+ https://www.netfilter.org/projects/iptables/files/iptables-1.8.10.tar.xz
+ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.70.tar.xz
+-https://github.com/linux-pam/linux-pam/releases/download/v1.6.1/Linux-PAM-1.6.1.tar.xz
+-https://github.com/linux-pam/linux-pam/releases/download/v1.6.1/Linux-PAM-1.6.1-docs.tar.xz
++https://github.com/linux-pam/linux-pam/releases/download/v1.7.0/Linux-PAM-1.7.0.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.0-docs.tar.xz
+ https://downloads.sourceforge.net/liboauth/liboauth-1.0.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3.patch
+ https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2
+ https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz
+ https://ftp.gnu.org/gnu/nettle/nettle-3.10.tar.gz
+-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_105_RTM/src/nss-3.105.tar.gz
++https://archive.mozilla.org/pub/security/nss/releases/NSS_3_106_RTM/src/nss-3.106.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.9p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz
+@@ -214,7 +214,7 @@ https://github.com/google/woff2/archive/v1.0.2/woff2-1.0.2.tar.gz
+ https://github.com/asciidoctor/asciidoctor/archive/v2.0.23/asciidoctor-2.0.23.tar.gz
+ https://downloads.sourceforge.net/bogofilter/bogofilter-1.2.5.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+-https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.27.tar.xz
++https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
+ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.2.tar.gz
+ https://github.com/google/shaderc/archive/v2024.3/shaderc-2024.3.tar.gz
+ https://gitlab.com/graphviz/graphviz/-/archive/12.1.2/graphviz-12.1.2.tar.bz2
+@@ -452,7 +452,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/XML-LibXML-2.0210-testsuite_fi
+ https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+-https://www.php.net/distributions/php-8.3.12.tar.xz
++https://www.php.net/distributions/php-8.3.13.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/3.12.7/Python-3.12.7.tar.xz
+@@ -520,7 +520,7 @@ https://github.com/leohemsted/smartypants.py/archive/v2.0.1/smartypants-2.0.1.ta
+ https://files.pythonhosted.org/packages/source/s/snowballstemmer/snowballstemmer-2.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-applehelp/sphinxcontrib_applehelp-2.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-devhelp/sphinxcontrib_devhelp-2.0.0.tar.gz
+-https://files.pythonhosted.org/packages/source/s/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp-2.0.1.tar.gz
++https://files.pythonhosted.org/packages/source/s/sphinxcontrib-htmlhelp/sphinxcontrib_htmlhelp-2.1.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jquery/sphinxcontrib-jquery-4.1.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jsmath/sphinxcontrib-jsmath-1.0.1.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-qthelp/sphinxcontrib_qthelp-2.0.0.tar.gz
+@@ -897,8 +897,8 @@ https://downloads.sourceforge.net/gparted/gparted-1.6.0.tar.gz
+ https://inkscape.org/gallery/item/53679/inkscape-1.4.tar.xz
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+ https://archive.mozilla.org/pub/thunderbird/releases/128.3.3esr/source/thunderbird-128.3.3esr.source.tar.xz
+-https://github.com/TigerVNC/tigervnc/archive/v1.14.0/tigervnc-1.14.0.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.14.0-configuration_fixes-1.patch
++https://github.com/TigerVNC/tigervnc/archive/v1.14.1/tigervnc-1.14.1.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.14.1-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/transmission-4.0.6-build_fix-1.patch
+ https://github.com/ib/xarchiver/archive/0.5.4.23/xarchiver-0.5.4.23.tar.gz
+@@ -980,7 +980,7 @@ https://distfiles.audacious-media-player.org/audacious-plugins-4.4.1.tar.bz2
+ https://downloads.xiph.org/releases/cdparanoia/cdparanoia-III-10.2.src.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/cdparanoia-III-10.2-gcc_fixes-1.patch
+ https://downloads.sourceforge.net/lame/lame-3.100.tar.gz
+-https://downloads.sourceforge.net/mpg123/mpg123-1.32.7.tar.bz2
++https://downloads.sourceforge.net/mpg123/mpg123-1.32.8.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-6.1.tar.xz
+ https://github.com/nicklan/pnmixer/releases/download/v0.7.2/pnmixer-v0.7.2.tar.gz
+ https://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.2.tar.gz
