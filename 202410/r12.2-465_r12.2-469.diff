@@ -1,0 +1,24 @@
+diff --git a/wget-list b/wget-list
+index 18fd5f3d7c..366e24543a 100644
+--- a/wget-list
++++ b/wget-list
+@@ -167,7 +167,7 @@ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.38/downloa
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+ https://oligarchy.co.uk/xapian/1.4.26/xapian-core-1.4.26.tar.xz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+-https://download.gimp.org/pub/babl/0.1/babl-0.1.108.tar.xz
++https://download.gimp.org/pub/babl/0.1/babl-0.1.110.tar.xz
+ https://github.com/Exiv2/exiv2/archive/v0.28.3/exiv2-0.28.3.tar.gz
+ https://downloads.sourceforge.net/freetype/freetype-2.13.3.tar.xz
+ https://downloads.sourceforge.net/freetype/freetype-doc-2.13.3.tar.xz
+@@ -455,8 +455,8 @@ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+ https://www.php.net/distributions/php-8.3.13.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+-https://www.python.org/ftp/python/3.12.7/Python-3.12.7.tar.xz
+-https://www.python.org/ftp/python/doc/3.12.7/python-3.12.7-docs-html.tar.bz2
++https://www.python.org/ftp/python/3.13.0/Python-3.13.0.tar.xz
++https://www.python.org/ftp/python/doc/3.13.0/python-3.13.0-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.2.0.tar.gz
