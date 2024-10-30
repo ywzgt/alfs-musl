@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-469">
+  <body class="blfs" id="blfs-r12.2-474">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-469
+        "phrase">(systemd</span> Edition) - Version r12.2-474
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-469">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-474">
           Home</a>
         </li>
       </ul>
@@ -218,36 +218,54 @@ cd    obj &amp;&amp;
                     --with-system-zlib       &amp;&amp;
 make</kbd></pre>
         <p>
-          To run the SpiderMonkey test suite, issue: <span class=
-          "command"><strong>make -C js/src check-jstests
-          JSTESTS_EXTRA_ARGS="--timeout 300 --wpt=disabled"</strong></span>.
-          It's recommended to redirect the output into a log. Because we are
-          building with system ICU, 45 tests (out of a total of more than
-          50,000) are known to fail. The test suite is executed with all CPU
-          cores available: even in a cgroup with less cores assigned, it
-          still attempts to spawn as many testing jobs as the number of
-          <span class="emphasis"><em>all</em></span> cores in the system;
-          fortunately the kernel still won't run these jobs on cores not
-          assigned to the cgroup so the CPU usage is still controlled.
+          If running the test suite, adapt it to be compatible with Python
+          3.13.0 or newer:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed 's/pipes/shlex/' -i ../js/src/tests/lib/results.py</kbd></pre>
+        <p>
+          To run the SpiderMonkey test suite, issue:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">make -C js/src check-jstests \
+     JSTESTS_EXTRA_ARGS="--timeout 300 --wpt=disabled" | tee jstest.log</kbd></pre>
+        <p>
+          Because we are building with system ICU, 45 tests (out of a total
+          of more than 50,000) are known to fail. The list of failed tests
+          can be extracted via <span class="command"><strong>grep
+          'UNEXPECTED-FAIL' jstest.log</strong></span>. Pass the <code class=
+          "option">-c</code> option to <span class=
+          "command"><strong>grep</strong></span> if you only want the total
+          number of failed tests.
         </p>
         <p>
-          To run the JIT test suite, issue: <span class=
-          "command"><strong>make -C js/src check-jit-test
-          JITTEST_EXTRA_ARGS="--timeout 300"</strong></span>. Like the
-          SpiderMonkey test suite, the number of test jobs is same as the
-          number of all CPU cores in the system even if a cgroup is used. To
-          make things worse, there are six tests which will use 3 GB each of
-          system memory, so the peak memory usage may be up to 18 GB if the
-          number of cores is six or more. Running the JIT test suite without
-          enough memory may invoke the kernel OOM killer and cause stability
-          issues. If you don't have enough system memory available, append
-          <code class="option">-jN</code> after <code class=
+          The test suite is executed with all CPU cores available: even in a
+          cgroup with less cores assigned, it still attempts to spawn as many
+          testing jobs as the number of <span class=
+          "emphasis"><em>all</em></span> cores in the system; fortunately the
+          kernel still won't run these jobs on cores not assigned to the
+          cgroup so the CPU usage is still controlled.
+        </p>
+        <p>
+          To run the JIT test suite, issue:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">make -C js/src check-jit-test JSTESTS_EXTRA_ARGS="--timeout 300"</kbd></pre>
+        <p>
+          Like the SpiderMonkey test suite, the number of test jobs is same
+          as the number of all CPU cores in the system even if a cgroup is
+          used. To make things worse, there are six tests which will use 3 GB
+          each of system memory, so the peak memory usage may be up to 18 GB
+          if the number of cores is six or more. Running the JIT test suite
+          without enough memory may invoke the kernel OOM killer and cause
+          stability issues. If you don't have enough system memory available,
+          append <code class="option">-jN</code> after <code class=
           "option">--timeout 300</code> with N replaced by the number of
           parallel test jobs you want to start. For example, if you have 16
-          GB system memory available and 8 CPU cores, issue <span class=
-          "command"><strong>make -C js/src check-jit-test
-          JITTEST_EXTRA_ARGS="--timeout=300 -j5"</strong></span> to run the
-          test with 5 parallel jobs so the memory usage won't exceed 15 GB.
+          GB system memory available and 8 CPU cores, use <code class=
+          "option">JITTEST_EXTRA_ARGS="--timeout=300 -j5"</code> to run the
+          test suite with 5 parallel jobs so the memory usage won't exceed 15
+          GB.
         </p>
         <div class="admon caution">
           <img alt="[Caution]" src="../images/caution.png" />
@@ -447,7 +465,7 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js128-config</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-469">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-474">
           Home</a>
         </li>
       </ul>

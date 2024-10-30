@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-469">
+  <body class="blfs" id="blfs-r12.2-474">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-469
+        "phrase">(systemd</span> Edition) - Version r12.2-474
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-469">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-474">
           Home</a>
         </li>
       </ul>
@@ -178,12 +178,16 @@ meson setup --prefix=/usr       \
 
 ninja</kbd></pre>
         <p>
-          If you wish to generate and install the API documentation, issue
-          the following commands:
+          If you have <a class="xref" href=
+          "../general/python-modules.html#gi-docgen" title=
+          "Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> installed and you wish to
+          generate and install the API documentation, issue the following
+          commands:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed "/docdir =/s@\$@ / 'nautilus-47.0'@" -i ../meson.build &amp;&amp;
-meson configure -D docs=true</kbd></pre>
+meson configure -D docs=true &amp;&amp;
+ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
           test</strong></span>. The tests need to be run in a graphical
@@ -319,7 +323,7 @@ meson configure -D docs=true</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-469">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-474">
           Home</a>
         </li>
       </ul>
