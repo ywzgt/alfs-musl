@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Firefox-128.3.1esr
+      Firefox-128.4.0esr
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-474">
+  <body class="blfs" id="blfs-r12.2-489">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-474
+        "phrase">(systemd</span> Edition) - Version r12.2-489
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-474">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-489">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="firefox" name="firefox"></a>Firefox-128.3.1esr
+      <a id="firefox" name="firefox"></a>Firefox-128.4.0esr
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,23 +77,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://archive.mozilla.org/pub/firefox/releases/128.3.1esr/source/firefox-128.3.1esr.source.tar.xz">
-                https://archive.mozilla.org/pub/firefox/releases/128.3.1esr/source/firefox-128.3.1esr.source.tar.xz</a>
+                "https://archive.mozilla.org/pub/firefox/releases/128.4.0esr/source/firefox-128.4.0esr.source.tar.xz">
+                https://archive.mozilla.org/pub/firefox/releases/128.4.0esr/source/firefox-128.4.0esr.source.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 8d2e8b9115580dcbdeafeee60699ec81
+                Download MD5 sum: b541a15be48b06c6fbbe665601587e15
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 484 MB
+                Download size: 533 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 6.8 GB (222 MB installed)
+                Estimated disk space required: 6.7 GB (224 MB installed)
                 without tests
               </p>
             </li>
@@ -110,7 +110,7 @@
             Note
           </h3>
           <p>
-            The directory name is firefox-128.3.1
+            The directory name is firefox-128.4.0
           </p>
           <p>
             Extracting the tarball will reset the permissions of the current
@@ -336,12 +336,19 @@ unset MOZ_TELEMETRY_REPORTING
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir</code>
 EOF</kbd></pre>
         <p>
-          If building with system ICU, adapt the line break mapping for ICU
-          74 or later. This construct adds five entries to a c++ array.
+          If you are building with system ICU, adapt the line break mapping
+          for ICU 74 or later. This construct adds five entries to a c++
+          array.
         </p>
         <pre class="userinput"><kbd class="command">for i in {43..47}; do
    sed -i '/ZWJ/s/}/,CLASS_CHARACTER&amp;/' intl/lwbrk/LineBreaker.cpp 
 done</kbd></pre>
+        <p>
+          If you are building with system ICU, adapt the build system to use
+          the correct library:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i 's/icu-i18n/icu-uc &amp;/' js/moz.configure</kbd></pre>
         <p>
           Compile <span class="application">Firefox</span> by issuing the
           following commands:
@@ -670,7 +677,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-474">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-489">
           Home</a>
         </li>
       </ul>
