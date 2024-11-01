@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-489">
+  <body class="blfs" id="blfs-r12.2-514">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-489
+        "phrase">(systemd</span> Edition) - Version r12.2-514
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-489">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-514">
           Home</a>
         </li>
       </ul>
@@ -129,9 +129,13 @@
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="../pst/docbook-utils.html" title=
-          "DocBook-utils-0.6.14">DocBook-utils-0.6.14</a> and <a class="xref"
-          href="../general/gtk-doc.html" title=
+          <a class="xref" href="../pst/docbook5.html" title=
+          "docbook-xml-5.0">docbook-xml-5.0</a>, <a class="xref" href=
+          "../pst/docbook-xsl-ns.html" title=
+          "docbook-xsl-ns-1.79.2">docbook-xsl-ns-1.79.2</a>, <a class="xref"
+          href="../general/libxslt.html" title=
+          "libxslt-1.1.42">libxslt-1.1.42</a> (to build the man page), and
+          <a class="xref" href="../general/gtk-doc.html" title=
           "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a>
         </p>
       </div>
@@ -163,6 +167,20 @@ meson setup --prefix=/usr       \
             -D docs=false       \
             -D man=false        \
             ..                  &amp;&amp;
+ninja</kbd></pre>
+        <p>
+          If <a class="xref" href="../pst/docbook5.html" title=
+          "docbook-xml-5.0">docbook-xml-5.0</a>, <a class="xref" href=
+          "../pst/docbook-xsl-ns.html" title=
+          "docbook-xsl-ns-1.79.2">docbook-xsl-ns-1.79.2</a>, and <a class=
+          "xref" href="../general/libxslt.html" title=
+          "libxslt-1.1.42">libxslt-1.1.42</a> are installed, build the man
+          page:
+        </p>
+        <pre class="userinput"><kbd class="command">sed '/class="manual"/i \
+     &lt;refmiscinfo class="source"&gt;colord-gtk&lt;/refmiscinfo&gt;' \
+    -i ../man/*.xml &amp;&amp;
+meson configure -D man=true &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
@@ -200,12 +218,6 @@ ninja</kbd></pre>
           disables building gtk-doc based documentation. Even if gtk-doc is
           installed, you will need the namespaced versions of the Docbook XSL
           stylesheets.
-        </p>
-        <p>
-          <em class="parameter"><code>-D man=false</code></em>: This switch
-          disables generating the manual pages for this package. Remove this
-          switch if you have namespaced versions of the Docbook XSL
-          stylesheets installed.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -310,7 +322,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-489">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-514">
           Home</a>
         </li>
       </ul>

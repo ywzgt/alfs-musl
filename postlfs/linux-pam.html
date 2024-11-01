@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-489">
+  <body class="blfs" id="blfs-r12.2-514">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-489
+        "phrase">(systemd</span> Edition) - Version r12.2-514
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-489">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-514">
           Home</a>
         </li>
       </ul>
@@ -152,6 +152,20 @@
           <a class="ulink" href=
           "https://github.com/openSUSE/libeconf">libeconf</a>
         </p>
+        <h4>
+          Optional (To build the Documentation and Man Pages)
+        </h4>
+        <p class="optional">
+          <a class="xref" href="../pst/docbook5.html" title=
+          "docbook-xml-5.0">docbook-xml-5.0</a>, <a class="xref" href=
+          "../pst/docbook-xsl-ns.html" title=
+          "docbook-xsl-ns-1.79.2">docbook-xsl-ns-1.79.2</a>, <a class="xref"
+          href="../pst/fop.html" title="fop-2.9">fop-2.9</a> (for the PDF
+          format), <a class="xref" href="../general/libxslt.html" title=
+          "libxslt-1.1.42">libxslt-1.1.42</a>, and <a class="xref" href=
+          "../basicnet/lynx.html" title="Lynx-2.9.2">Lynx-2.9.2</a> (for the
+          plain text format)
+        </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -197,6 +211,25 @@
           Installation of Linux PAM
         </h2>
         <p>
+          If you've installed <a class="xref" href="../pst/docbook5.html"
+          title="docbook-xml-5.0">docbook-xml-5.0</a>, <a class="xref" href=
+          "../pst/docbook-xsl-ns.html" title=
+          "docbook-xsl-ns-1.79.2">docbook-xsl-ns-1.79.2</a>, <a class="xref"
+          href="../general/libxslt.html" title=
+          "libxslt-1.1.42">libxslt-1.1.42</a>, and <a class="xref" href=
+          "../basicnet/lynx.html" title="Lynx-2.9.2">Lynx-2.9.2</a> and you
+          wish to generate the plain text format of the documentations,
+          modify <code class="filename">meson.build</code> to use <a class=
+          "xref" href="../basicnet/lynx.html" title=
+          "Lynx-2.9.2">Lynx-2.9.2</a> instead of W3m or Elinks those BLFS
+          does not provide:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e "s/'elinks'/'lynx'/"                       \
+    -e "s/'-no-numbering', '-no-references'/      \
+          '-force-html', '-nonumbers', '-stdin'/" \
+    -i meson.build</kbd></pre>
+        <p>
           Compile and link <span class="application">Linux PAM</span> by
           running the following commands:
         </p>
@@ -206,7 +239,7 @@ cd    build &amp;&amp;
 meson setup ..        \
   --prefix=/usr       \
   --buildtype=release \
-  -D docs=disabled    &amp;&amp;
+  -D docdir=/usr/share/doc/Linux-PAM-1.7.0 &amp;&amp;
 
 ninja</kbd></pre>
         <p>
@@ -266,8 +299,9 @@ EOF</kbd></pre>
         <pre class="root"><kbd class="command">ninja install &amp;&amp;
 chmod -v 4755 /usr/sbin/unix_chkpwd</kbd></pre>
         <p>
-          If you downloaded the optional documentation, again as the
-          <code class="systemitem">root</code> user:
+          If you do not have the optional dependencies installed to build the
+          documentation and downloaded the optional pre-built documentation,
+          again as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
         "command">tar -C / -xvf ../../Linux-PAM-1.7.0-docs.tar.xz</kbd></pre>
@@ -571,7 +605,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-489">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-514">
           Home</a>
         </li>
       </ul>

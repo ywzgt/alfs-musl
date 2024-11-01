@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-489">
+  <body class="blfs" id="blfs-r12.2-514">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-489
+        "phrase">(systemd</span> Edition) - Version r12.2-514
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="bubblewrap.html" title=
-          "Bubblewrap-0.10.0">Prev</a>
+          "Bubblewrap-0.11.0">Prev</a>
           <p>
-            Bubblewrap-0.10.0
+            Bubblewrap-0.11.0
           </p>
         </li>
         <li class="next">
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-489">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-514">
           Home</a>
         </li>
       </ul>
@@ -155,14 +155,18 @@
           "gnome-desktop-44.1">gnome-desktop-44.1</a> and <a class="xref"
           href="../x/colord-gtk.html" title=
           "colord-gtk-0.3.1">colord-gtk-0.3.1</a> (to build the example
-          tools), <a class="xref" href="../pst/docbook-utils.html" title=
-          "DocBook-utils-0.6.14">DocBook-utils-0.6.14</a>, <a class="xref"
-          href="gtk-doc.html" title="GTK-Doc-1.34.0">GTK-Doc-1.34.0</a>,
-          <a class="xref" href="libxslt.html" title=
-          "libxslt-1.1.42">libxslt-1.1.42</a>, <a class="xref" href=
-          "../pst/sane.html" title="SANE-1.2.1">SANE-1.2.1</a>, <a class=
-          "ulink" href="https://www.argyllcms.com/">ArgyllCMS</a>, and
-          <a class="ulink" href=
+          tools), <a class="xref" href="../pst/docbook5.html" title=
+          "docbook-xml-5.0">docbook-xml-5.0</a>, <a class="xref" href=
+          "../pst/docbook-xsl-ns.html" title=
+          "docbook-xsl-ns-1.79.2">docbook-xsl-ns-1.79.2</a>, and <a class=
+          "xref" href="libxslt.html" title=
+          "libxslt-1.1.42">libxslt-1.1.42</a> (to build the man pages),
+          <a class="xref" href="gtk-doc.html" title=
+          "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a>, <a class="xref" href=
+          "libxslt.html" title="libxslt-1.1.42">libxslt-1.1.42</a>, <a class=
+          "xref" href="../pst/sane.html" title="SANE-1.2.1">SANE-1.2.1</a>,
+          <a class="ulink" href="https://www.argyllcms.com/">ArgyllCMS</a>,
+          and <a class="ulink" href=
           "https://github.com/scop/bash-completion/">Bash Completion</a>
         </p>
       </div>
@@ -205,6 +209,20 @@ meson setup ..                  \
       -D bash_completion=false  \
       -D docs=false             \
       -D man=false              &amp;&amp;
+ninja</kbd></pre>
+        <p>
+          If <a class="xref" href="../pst/docbook5.html" title=
+          "docbook-xml-5.0">docbook-xml-5.0</a>, <a class="xref" href=
+          "../pst/docbook-xsl-ns.html" title=
+          "docbook-xsl-ns-1.79.2">docbook-xsl-ns-1.79.2</a>, and <a class=
+          "xref" href="libxslt.html" title=
+          "libxslt-1.1.42">libxslt-1.1.42</a> are installed, build the man
+          pages:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e '/class="manual"/i&lt;refmiscinfo class="source"&gt;colord&lt;/refmiscinfo&gt;' \
+    -i ../man/*.xml &amp;&amp;
+meson configure -D man=true &amp;&amp;
 ninja</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -264,14 +282,6 @@ ninja</kbd></pre>
           disables building of documentation. Omit if you have <a class=
           "xref" href="gtk-doc.html" title=
           "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a> available.
-        </p>
-        <p>
-          <em class="parameter"><code>-D man=false</code></em>: This switch
-          disables building of man pages. Omit if you have <a class="xref"
-          href="../pst/docbook-utils.html" title=
-          "DocBook-utils-0.6.14">DocBook-utils-0.6.14</a> available.
-          Namespaced versions of the docbook-xsl stylesheets are also
-          required.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -447,9 +457,9 @@ ninja</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="bubblewrap.html" title=
-          "Bubblewrap-0.10.0">Prev</a>
+          "Bubblewrap-0.11.0">Prev</a>
           <p>
-            Bubblewrap-0.10.0
+            Bubblewrap-0.11.0
           </p>
         </li>
         <li class="next">
@@ -464,7 +474,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-489">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-514">
           Home</a>
         </li>
       </ul>
