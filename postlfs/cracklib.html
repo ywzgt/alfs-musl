@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-514">
+  <body class="blfs" id="blfs-r12.2-521">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-514
+        "phrase">(systemd</span> Edition) - Version r12.2-521
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-514">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-521">
           Home</a>
         </li>
       </ul>
@@ -176,10 +176,16 @@
           Install <span class="application">CrackLib</span> by running the
           following commands:
         </p>
-        <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr    \
+        <pre class="userinput"><kbd class="command">autoreconf &amp;&amp;
+
+CPPFLAGS+=' -I /usr/include/python3.13' \
+./configure --prefix=/usr    \
             --disable-static \
             --with-default-dict=/usr/lib/cracklib/pw_dict &amp;&amp;
+
+sed -e 's/makeSuite/TestLoader().loadTestsFromTestCase/' \
+    -i ./python/test_cracklib.py                          &amp;&amp;
+
 make</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -211,6 +217,11 @@ create-cracklib-dict     /usr/share/dict/cracklib-words \
           unprivileged user by issuing the following command:
         </p>
         <pre class="userinput"><kbd class="command">make test</kbd></pre>
+        <p>
+          If desired, test the Python module with:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">python3 -c 'import cracklib; cracklib.test()'</kbd></pre>
         <div class="admon important">
           <img alt="[Important]" src="../images/important.png" />
           <h3>
@@ -236,6 +247,16 @@ create-cracklib-dict     /usr/share/dict/cracklib-words \
           Command Explanations
         </h2>
         <p>
+          <span class="command"><strong>autoreconf</strong></span>: This
+          command resets the configuration to recognize <span class=
+          "application">Python-3.13</span>.
+        </p>
+        <p>
+          <code class="envar">CPPFLAGS+=' -I /usr/include/python3.13'</code>:
+          This environment variable is needed to allow the package to find
+          the <span class="application">Python-3.13</span> include files.
+        </p>
+        <p>
           <em class=
           "parameter"><code>--with-default-dict=/usr/lib/cracklib/pw_dict</code></em>:
           This parameter forces the installation of the <span class=
@@ -245,6 +266,12 @@ create-cracklib-dict     /usr/share/dict/cracklib-words \
         <p>
           <em class="parameter"><code>--disable-static</code></em>: This
           switch prevents installation of static versions of the libraries.
+        </p>
+        <p>
+          <span class="command"><strong>sed ...
+          ./python/test_cracklib.py</strong></span>: This command uodates the
+          build procedure for the Python module for <span class=
+          "application">Python-3.13</span> and later..
         </p>
         <p>
           <span class="command"><strong>install -v -m644 -D
@@ -293,11 +320,12 @@ create-cracklib-dict     /usr/share/dict/cracklib-words \
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libcrack.so</span>
+              <span class="segbody">libcrack.so and _cracklib.so (Python
+              module)</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/lib/cracklib, /usr/share/dict and
+              <span class="segbody">/usr/lib/cracklib, /usr/share/dict, and
               /usr/share/cracklib</span>
             </div>
           </div>
@@ -425,7 +453,7 @@ create-cracklib-dict     /usr/share/dict/cracklib-words \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-514">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-521">
           Home</a>
         </li>
       </ul>
