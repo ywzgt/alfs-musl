@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-529">
+  <body class="blfs" id="blfs-r12.2-534">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-529
+        "phrase">(systemd</span> Edition) - Version r12.2-534
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-529">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-534">
           Home</a>
         </li>
       </ul>
@@ -138,6 +138,11 @@
         <h2 class="sect2">
           Installation of xfsprogs
         </h2>
+        <p>
+          First, adapt the configure script to ICU-76::
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i 's/icu-i18n/icu-uc &amp;/' configure</kbd></pre>
         <p>
           Install <span class="application">xfsprogs</span> by running the
           following commands:
@@ -593,7 +598,7 @@ rm -rfv /usr/lib/libhandle.{a,la}</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-529">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-534">
           Home</a>
         </li>
       </ul>
