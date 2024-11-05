@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      gegl-0.4.48
+      gegl-0.4.50
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-534">
+  <body class="blfs" id="blfs-r12.2-543">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-534
+        "phrase">(systemd</span> Edition) - Version r12.2-543
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-534">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-543">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="gegl" name="gegl"></a>gegl-0.4.48
+      <a id="gegl" name="gegl"></a>gegl-0.4.50
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,22 +77,22 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gimp.org/pub/gegl/0.4/gegl-0.4.48.tar.xz">https://download.gimp.org/pub/gegl/0.4/gegl-0.4.48.tar.xz</a>
+                "https://download.gimp.org/pub/gegl/0.4/gegl-0.4.50.tar.xz">https://download.gimp.org/pub/gegl/0.4/gegl-0.4.50.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: a96ae32d46855ab4eefa1fce2dbefda1
+                Download MD5 sum: e8e7bc31e27979ed1ff879120a750d19
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 5.5 MB
+                Download size: 5.7 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 80 MB (Add 4 MB for tests)
+                Estimated disk space required: 124 MB (Add 4 MB for tests)
               </p>
             </li>
             <li class="listitem">
@@ -121,7 +121,7 @@
           <a class="xref" href="glib2.html" title=
           "GLib-2.82.2">GLib-2.82.2</a> (with GObject Introspection),
           <a class="xref" href="graphviz.html" title=
-          "Graphviz-12.1.2">Graphviz-12.1.2</a> (build with pango and
+          "Graphviz-12.2.0">Graphviz-12.2.0</a> (build with pango and
           libpng), <a class="xref" href="python-modules.html#pygments" title=
           "Pygments-2.18.0">Pygments-2.18.0</a>, and <a class="xref" href=
           "python-modules.html#pygobject3" title=
@@ -154,9 +154,9 @@
           "luajit-20240917">luajit-20240917</a>, <a class="xref" href=
           "../x/pango.html" title="Pango-1.54.0">Pango-1.54.0</a>, <a class=
           "xref" href="poppler.html" title=
-          "Poppler-24.09.0">Poppler-24.09.0</a>, <a class="xref" href=
+          "Poppler-24.11.0">Poppler-24.11.0</a>, <a class="xref" href=
           "ruby.html" title="Ruby-3.3.5">Ruby-3.3.5</a>, <a class="xref"
-          href="../multimedia/sdl2.html" title="SDL2-2.30.8">SDL2-2.30.8</a>,
+          href="../multimedia/sdl2.html" title="SDL2-2.30.9">SDL2-2.30.9</a>,
           <a class="xref" href="../multimedia/v4l-utils.html" title=
           "v4l-utils-1.28.1">v4l-utils-1.28.1</a>, <a class="xref" href=
           "vala.html" title="Vala-0.56.17">Vala-0.56.17</a>, <a class="ulink"
@@ -196,7 +196,7 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr --buildtype=release -D libav=disabled .. &amp;&amp;
+meson setup --prefix=/usr --buildtype=release .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           To run the tests, issue: <span class="command"><strong>ninja
@@ -211,11 +211,6 @@ ninja</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
-        <p>
-          <em class="parameter"><code>-D libav=disabled</code></em>: This
-          switch disables building support for ffmpeg because the latest
-          version causes the build to fail.
-        </p>
         <p>
           <code class="option">-D docs=true</code>: Use this switch to build
           and install the documentation (requires <a class="xref" href=
@@ -339,7 +334,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-534">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-543">
           Home</a>
         </li>
       </ul>
