@@ -1,0 +1,60 @@
+diff --git a/wget-list b/wget-list
+index 9d73b7fc51..b02b91914f 100644
+--- a/wget-list
++++ b/wget-list
+@@ -161,7 +161,7 @@ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v19.1.1/SPIRV-LLVM
+ https://www.samba.org/ftp/talloc/talloc-2.4.2.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+ https://github.com/martinpitt/umockdev/releases/download/0.18.4/umockdev-0.18.4.tar.xz
+-https://github.com/nemtrif/utfcpp/archive/v4.0.5/utfcpp-4.0.5.tar.gz
++https://github.com/nemtrif/utfcpp/archive/v4.0.6/utfcpp-4.0.6.tar.gz
+ https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.0/downloads/wayland-1.23.0.tar.xz
+ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.38/downloads/wayland-protocols-1.38.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+@@ -173,7 +173,7 @@ https://downloads.sourceforge.net/freetype/freetype-2.13.3.tar.xz
+ https://downloads.sourceforge.net/freetype/freetype-doc-2.13.3.tar.xz
+ https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.15.0.tar.xz
+ https://github.com/fribidi/fribidi/releases/download/v1.0.16/fribidi-1.0.16.tar.xz
+-https://download.gimp.org/pub/gegl/0.4/gegl-0.4.48.tar.xz
++https://download.gimp.org/pub/gegl/0.4/gegl-0.4.50.tar.xz
+ https://sourceforge.net/projects/giflib/files/giflib-5.2.2.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-upstream_fixes-1.patch
+ https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
+@@ -202,7 +202,7 @@ https://github.com/opencv/opencv/archive/4.10.0/opencv-4.10.0.tar.gz
+ https://github.com/opencv/opencv_contrib/archive/4.10.0/opencv_contrib-4.10.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.2/openjpeg-2.5.2.tar.gz
+ https://www.cairographics.org/releases/pixman-0.43.4.tar.gz
+-https://poppler.freedesktop.org/poppler-24.09.0.tar.xz
++https://poppler.freedesktop.org/poppler-24.11.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+ https://github.com/qpdf/qpdf/releases/download/v11.9.1/qpdf-11.9.1.tar.gz
+@@ -217,7 +217,7 @@ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
+ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.2.tar.gz
+ https://github.com/google/shaderc/archive/v2024.3/shaderc-2024.3.tar.gz
+-https://gitlab.com/graphviz/graphviz/-/archive/12.1.2/graphviz-12.1.2.tar.bz2
++https://gitlab.com/graphviz/graphviz/-/archive/12.2.0/graphviz-12.2.0.tar.bz2
+ https://download.gnome.org/sources/gtk-doc/1.34/gtk-doc-1.34.0.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.14.tar.bz2
+ https://github.com/ibus/ibus/archive/1.5.30/ibus-1.5.30.tar.gz
+@@ -962,7 +962,7 @@ https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.2.6/pipewire-1.2.6.
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.0.tar.xz
+ https://github.com/libsdl-org/sdl12-compat/archive/release-1.2.68/sdl12-compat-release-1.2.68.tar.gz
+-https://www.libsdl.org/release/SDL2-2.30.8.tar.gz
++https://www.libsdl.org/release/SDL2-2.30.9.tar.gz
+ https://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2
+ https://www.surina.net/soundtouch/soundtouch-2.3.3.tar.gz
+ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+@@ -975,8 +975,8 @@ https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.6.tar.gz
+ https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-upstream_fixes-1.patch
+ https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.gz
+-https://distfiles.audacious-media-player.org/audacious-4.4.1.tar.bz2
+-https://distfiles.audacious-media-player.org/audacious-plugins-4.4.1.tar.bz2
++https://distfiles.audacious-media-player.org/audacious-4.4.2.tar.bz2
++https://distfiles.audacious-media-player.org/audacious-plugins-4.4.2.tar.bz2
+ https://downloads.xiph.org/releases/cdparanoia/cdparanoia-III-10.2.src.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/cdparanoia-III-10.2-gcc_fixes-1.patch
+ https://downloads.sourceforge.net/lame/lame-3.100.tar.gz
