@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-548">
+  <body class="blfs" id="blfs-r12.2-558">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-548
+        "phrase">(systemd</span> Edition) - Version r12.2-558
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-548">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-558">
           Home</a>
         </li>
       </ul>
@@ -115,7 +115,7 @@
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="icu.html" title="icu-75.1">ICU-75.1</a>,
+          <a class="xref" href="icu.html" title="icu-76.1">ICU-76.1</a>,
           <a class="xref" href="rust.html" title=
           "Rustc-1.82.0">rustc-1.82.0</a>, and <a class="xref" href=
           "which.html" title="Which-2.21 and Alternatives">Which-2.21</a>
@@ -236,7 +236,7 @@ make</kbd></pre>
         "command">make -C js/src check-jstests \
      JSTESTS_EXTRA_ARGS="--timeout 300 --wpt=disabled" | tee jstest.log</kbd></pre>
         <p>
-          Because we are building with system ICU, 45 tests (out of a total
+          Because we are building with system ICU, 158 tests (out of a total
           of more than 50,000) are known to fail. The list of failed tests
           can be extracted via <span class="command"><strong>grep
           'UNEXPECTED-FAIL' jstest.log</strong></span>. Pass the <code class=
@@ -253,7 +253,8 @@ make</kbd></pre>
           cgroup so the CPU usage is still controlled.
         </p>
         <p>
-          To run the JIT test suite, issue:
+          To run the JIT test suite, issue the following command. Note that 6
+          tests in the 'timezone.js' suite are known to fail due to ICU-76.
         </p>
         <pre class="userinput"><kbd class=
         "command">make -C js/src check-jit-test JSTESTS_EXTRA_ARGS="--timeout 300"</kbd></pre>
@@ -471,7 +472,7 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js128-config</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-548">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-558">
           Home</a>
         </li>
       </ul>

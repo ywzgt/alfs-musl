@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-548">
+  <body class="blfs" id="blfs-r12.2-558">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-548
+        "phrase">(systemd</span> Edition) - Version r12.2-558
       </h4>
       <h3>
         Chapter&nbsp;51.&nbsp;Typesetting
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-548">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-558">
           Home</a>
         </li>
       </ul>
@@ -242,7 +242,7 @@
           "../general/harfbuzz.html" title=
           "harfBuzz-10.0.1">harfBuzz-10.0.1</a> (built with graphite2
           enabled), <a class="xref" href="../general/icu.html" title=
-          "icu-75.1">ICU-75.1</a>, <a class="xref" href=
+          "icu-76.1">ICU-76.1</a>, <a class="xref" href=
           "../general/libpaper.html" title=
           "libpaper-2.2.5">libpaper-2.2.5</a> (used by at least context and
           xelatex), and <a class="xref" href="../general/libpng.html" title=
@@ -283,7 +283,7 @@
           pythontex there are scripts to invoke python3 or python2 according
           to the system's version of <span class=
           "command"><strong>python</strong></span>. <a class="xref" href=
-          "../general/ruby.html" title="Ruby-3.3.5">Ruby-3.3.5</a> is used by
+          "../general/ruby.html" title="Ruby-3.3.6">Ruby-3.3.6</a> is used by
           two scripts, one is for pTex (Japanese vertical writing) and the
           other is match_parens which might be generally useful. The perl
           module <a class="ulink" href=
@@ -333,6 +333,14 @@
             <code class="systemitem">root</code> use it.
           </p>
         </div>
+        <p>
+          Fix a build failure that occurs on some platforms due to more
+          strict compiler warnings:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e '182 s/internal_font_number/boolean/' \
+    -e '301 s/internal_font_number/boolean/' \
+    -i texk/web2c/pdftexdir/pdftex.ch</kbd></pre>
         <p>
           Now, as a normal user:
         </p>
@@ -713,7 +721,7 @@ fmtutil-sys --all</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-548">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-558">
           Home</a>
         </li>
       </ul>
