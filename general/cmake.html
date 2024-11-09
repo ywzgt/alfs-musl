@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-568">
+  <body class="blfs" id="blfs-r12.2-579">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-568
+        "phrase">(systemd</span> Edition) - Version r12.2-579
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-568">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-579">
           Home</a>
         </li>
       </ul>
@@ -165,14 +165,12 @@
             --docdir=/share/doc/cmake-3.30.5 &amp;&amp;
 make</kbd></pre>
         <p>
-          To test the results, issue: <span class=
-          "command"><strong>LC_ALL=en_US.UTF-8 bin/ctest -j<em class=
-          "replaceable"><code>&lt;N&gt;</code></em> -O
-          cmake-3.30.5-test.log</strong></span>, where <em class=
-          "replaceable"><code>&lt;N&gt;</code></em> is an integer between 1
-          and the number of system cores. Setting <code class=
-          "envar">LC_ALL</code> is needed to prevent some test failures when
-          some of the locale variables are set to non English locales.
+          To test the results, issue: <span class="command"><strong>bin/ctest
+          -j<em class=
+          "replaceable"><code>$(nproc)</code></em></strong></span>. Replace
+          <em class="replaceable"><code>$(nproc)</code></em> with an integer
+          between 1 and the number of system logical cores if you don't want
+          to use all.
         </p>
         <p>
           If you want to investigate a problem with a given "problem1-test",
@@ -377,7 +375,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-568">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-579">
           Home</a>
         </li>
       </ul>
