@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-579">
+  <body class="blfs" id="blfs-r12.2-582">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-579
+        "phrase">(systemd</span> Edition) - Version r12.2-582
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-579">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-582">
           Home</a>
         </li>
       </ul>
@@ -58,14 +58,10 @@
         <p>
           <span class="application">Shadow</span> was indeed installed in LFS
           and there is no reason to reinstall it unless you installed
-          <span class="application">CrackLib</span> or <span class=
-          "application">Linux-PAM</span> after your LFS system was completed.
-          If you have installed <span class="application">CrackLib</span>
-          after LFS, then reinstalling <span class=
-          "application">Shadow</span> will enable strong password support. If
-          you have installed <span class="application">Linux-PAM</span>,
-          reinstalling <span class="application">Shadow</span> will allow
-          programs such as <span class=
+          <span class="application">Linux-PAM</span> after your LFS system
+          was completed. With <span class="application">Linux-PAM</span>
+          installed, reinstalling <span class="application">Shadow</span>
+          will allow programs such as <span class=
           "command"><strong>login</strong></span> and <span class=
           "command"><strong>su</strong></span> to utilize PAM.
         </p>
@@ -122,8 +118,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="linux-pam.html" title=
-          "Linux-PAM-1.7.0">Linux-PAM-1.7.0</a> or <a class="xref" href=
-          "cracklib.html" title="CrackLib-2.10.2">CrackLib-2.10.2</a>
+          "Linux-PAM-1.7.0">Linux-PAM-1.7.0</a>
         </p>
         <h4>
           Optional
@@ -149,29 +144,6 @@
             <span class="application">Shadow</span> is being reinstalled to
             support the <span class="application">Linux-PAM</span>
             installation.
-          </p>
-          <p>
-            If you are reinstalling <span class="application">Shadow</span>
-            to provide strong password support using the <span class=
-            "application">CrackLib</span> library without using <span class=
-            "application">Linux-PAM</span>, ensure you add the <em class=
-            "parameter"><code>--with-libcrack</code></em> parameter to the
-            <span class="command"><strong>configure</strong></span> script
-            below and also issue the following command:
-          </p>
-          <pre class="userinput"><kbd class=
-          "command">sed -i 's@DICTPATH.*@DICTPATH\t/lib/cracklib/pw_dict@' etc/login.defs</kbd></pre>
-        </div>
-        <div class="admon warning">
-          <img alt="[Warning]" src="../images/warning.png" />
-          <h3>
-            Warning
-          </h3>
-          <p>
-            If reinstalling shadow for a version update, be sure to
-            reaccomplish the Linux-PAM configuration below. The installation
-            of shadow overwrites many of the files in <code class=
-            "filename">/etc/pam.d/</code>.
           </p>
         </div>
         <p>
@@ -273,11 +245,7 @@ make</kbd></pre>
           <p>
             The rest of this page is devoted to configuring <span class=
             "application">Shadow</span> to work properly with <span class=
-            "application">Linux-PAM</span>. If you do not have <span class=
-            "application">Linux-PAM</span> installed, and you reinstalled
-            <span class="application">Shadow</span> to support strong
-            passwords via the <span class="application">CrackLib</span>
-            library, no further configuration is required.
+            "application">Linux-PAM</span>.
           </p>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
@@ -357,7 +325,6 @@ for FUNCTION in FAIL_DELAY               \
                 FTMP_FILE NOLOGINS_FILE  \
                 ENV_HZ PASS_MIN_LEN      \
                 SU_WHEEL_ONLY            \
-                CRACKLIB_DICTPATH        \
                 PASS_CHANGE_TRIES        \
                 PASS_ALWAYS_WARN         \
                 CHFN_AUTH ENCRYPT_METHOD \
@@ -371,7 +338,7 @@ done</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm7429" name="idm7429"></a>Configuring the
+                    <a id="idm7411" name="idm7411"></a>Configuring the
                     /etc/pam.d/ Files
                   </h5>
                 </div>
@@ -402,7 +369,7 @@ done</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm7440" name="idm7440"></a>'login'
+                    <a id="idm7422" name="idm7422"></a>'login'
                   </h5>
                 </div>
               </div>
@@ -458,7 +425,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm7445" name="idm7445"></a>'passwd'
+                    <a id="idm7427" name="idm7427"></a>'passwd'
                   </h5>
                 </div>
               </div>
@@ -477,7 +444,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm7450" name="idm7450"></a>'su'
+                    <a id="idm7432" name="idm7432"></a>'su'
                   </h5>
                 </div>
               </div>
@@ -517,7 +484,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm7455" name="idm7455"></a>'chpasswd' and
+                    <a id="idm7437" name="idm7437"></a>'chpasswd' and
                     'newusers'
                   </h5>
                 </div>
@@ -545,7 +512,7 @@ sed -e s/chpasswd/newusers/ /etc/pam.d/chpasswd &gt;/etc/pam.d/newusers</kbd></p
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm7460" name="idm7460"></a>'chage'
+                    <a id="idm7442" name="idm7442"></a>'chage'
                   </h5>
                 </div>
               </div>
@@ -569,7 +536,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm7465" name="idm7465"></a>Other shadow utilities
+                    <a id="idm7447" name="idm7447"></a>Other shadow utilities
                   </h5>
                 </div>
               </div>
@@ -706,7 +673,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-579">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-582">
           Home</a>
         </li>
       </ul>
