@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-582">
+  <body class="blfs" id="blfs-r12.2-596">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-582
+        "phrase">(systemd</span> Edition) - Version r12.2-596
       </h4>
       <h3>
         Chapter&nbsp;21.&nbsp;Mail Server Software
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-582">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-596">
           Home</a>
         </li>
       </ul>
@@ -190,6 +190,11 @@ useradd -c "Dovecot login user" -d /dev/null -u 43 \
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../dovecot-2.3.21.1-openssl3_fixes-1.patch</kbd></pre>
+        <p>
+          Now, fix the package to build with icu-76.1 or later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i 's/\bPKG_CONFIG --libs "icu-i18n\b/&amp; icu-uc/' configure </kbd></pre>
         <p>
           Next, apply a patch to fix a security vulnerability:
         </p>
@@ -460,7 +465,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-582">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-596">
           Home</a>
         </li>
       </ul>
