@@ -1,0 +1,13 @@
+diff --git a/wget-list b/wget-list
+index 74fd83e9db..28a9c89a0a 100644
+--- a/wget-list
++++ b/wget-list
+@@ -557,7 +557,7 @@ https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/rpcbind-1.2.7-vulnerability_fixes-1.patch
+ https://www.samba.org/ftp/rsync/src/rsync-3.3.0.tar.gz
+ https://download.samba.org/pub/samba/stable/samba-4.21.1.tar.gz
+-https://ftp.gnu.org/gnu/wget/wget-1.24.5.tar.gz
++https://ftp.gnu.org/gnu/wget/wget-1.25.0.tar.gz
+ https://www.kernel.org/pub/software/network/iw/iw-6.9.tar.xz
+ https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_scanning-1.patch
