@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Mesa-24.2.6
+      Mesa-24.2.7
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-607">
+  <body class="blfs" id="blfs-r12.2-618">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-607
+        "phrase">(systemd</span> Edition) - Version r12.2-618
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-607">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-618">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="mesa" name="mesa"></a>Mesa-24.2.6
+      <a id="mesa" name="mesa"></a>Mesa-24.2.7
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -89,28 +89,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://mesa.freedesktop.org/archive/mesa-24.2.6.tar.xz">https://mesa.freedesktop.org/archive/mesa-24.2.6.tar.xz</a>
+                "https://mesa.freedesktop.org/archive/mesa-24.2.7.tar.xz">https://mesa.freedesktop.org/archive/mesa-24.2.7.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 2e8016f2afc75c714784fb61dc397f66
+                Download MD5 sum: c245ce6fe6ef8db7b5e62eb754c54449
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 28 MB
+                Download size: 29 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 919 MB (with docs, add 539 MB
+                Estimated disk space required: 1.1 GB (with docs, add 541 MB
                 for tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 3.0 SBU (with docs; add 1.0 SBU for
+                Estimated build time: 3.5 SBU (with docs; add 1.2 SBU for
                 tests; both with parallelism=4)
               </p>
             </li>
@@ -340,6 +340,9 @@
       # For nouveau:
       &lt; /*/M&gt; N<span class=
 "blue">o</span>uveau (NVIDIA) cards                               [DRM_NOUVEAU]
+      [ /*]     <span class=
+"blue">U</span>se GSP firmware for Turing/Ampere (needs firmware installed)
+                                                  ...  [DRM_NOUVEAU_GSP_DEFAULT]
       # For i915, crocus, or iris:
       &lt; /*/M&gt; <span class=
 "blue">I</span>ntel 8xx/9xx/G3x/G4x/HD Graphics                       [DRM_I915]
@@ -370,8 +373,9 @@
             "About Firmware">About Firmware</a> for details.
           </p>
           <p>
-            Selecting <code class="option">CONFIG_DRM_RADEON</code> or
-            <code class="option">CONFIG_DRM_AMDGPU</code> as <span class=
+            Selecting <code class="option">CONFIG_DRM_RADEON</code>,
+            <code class="option">CONFIG_DRM_AMDGPU</code>, or <code class=
+            "option">CONFIG_DRM_NOUVEAU</code> as <span class=
             "quote">“<span class="quote"><code class=
             "literal">y</code></span>”</span> is not recommended. If it is,
             any required firmware must be built as a part of the kernel image
@@ -453,7 +457,7 @@ ninja</kbd></pre>
           user:
         </p>
         <pre class="root"><kbd class=
-        "command">cp -rv ../docs -T /usr/share/doc/mesa-24.2.6</kbd></pre>
+        "command">cp -rv ../docs -T /usr/share/doc/mesa-24.2.7</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -565,9 +569,9 @@ ninja</kbd></pre>
             </li>
             <li class="listitem">
               <p>
-                <code class="literal">zink</code> (using Vulkan to implement
-                OpenGL, it's not very useful on x86 as at now but it may
-                replace other drivers for modern GPU models in the future)
+                <code class="literal">zink</code> (uses Vulkan to implement
+                OpenGL, and while unstable at times, it can be a decent
+                replacement for non-performant gallium drivers like nouveau)
               </p>
             </li>
           </ul>
@@ -681,7 +685,7 @@ ninja</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
               <span class="segbody">libEGL.so, libGL.so, libGLESv1_CM.so,
-              libGLESv2.so, libgbm.so, libglapi.so, libgallium-24.2.6.so, and
+              libGLESv2.so, libgbm.so, libglapi.so, libgallium-24.2.7.so, and
               libxatracker.so</span>
             </div>
             <div class="seg">
@@ -716,7 +720,7 @@ ninja</kbd></pre>
               $XORG_PREFIX/lib/{dri,vdpau}}, $XORG_PREFIX/share/drirc.d
               (contains workarounds for various applications, particularly
               browsers and games), $XORG_PREFIX/share/vulkan, and
-              /usr/share/doc/mesa-24.2.6</span>
+              /usr/share/doc/mesa-24.2.7</span>
             </div>
           </div>
         </div>
@@ -850,7 +854,7 @@ ninja</kbd></pre>
                   <p>
                     <a id="libgallium" name="libgallium"></a><span class=
                     "term"><code class=
-                    "filename">libgallium-24.2.6.so</code></span>
+                    "filename">libgallium-24.2.7.so</code></span>
                   </p>
                 </td>
                 <td>
@@ -886,7 +890,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-607">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-618">
           Home</a>
         </li>
       </ul>

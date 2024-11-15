@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-607">
+  <body class="blfs" id="blfs-r12.2-618">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-607
+        "phrase">(systemd</span> Edition) - Version r12.2-618
       </h4>
       <h3>
         Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-607">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-618">
           Home</a>
         </li>
       </ul>
@@ -52,9 +52,12 @@
     <div class="sect1" lang="en" xml:lang="en">
       <p>
         On some recent PCs it can be necessary, or desirable, to load
-        firmware to make them work at their best. There is a directory,
-        <code class="filename">/lib/firmware</code>, where the kernel or
-        kernel drivers look for firmware images.
+        firmware to make them work at their best. The kernel or kernel
+        drivers look for firmware images in <code class=
+        "filename">/lib/firmware</code>. But in LFS <code class=
+        "filename">/lib</code> is a symlink to <code class=
+        "filename">usr/lib</code>, so the directory containing the firmware
+        files is actually <code class="filename">/usr/lib/firmware</code>.
       </p>
       <p>
         Currently, most firmware can be found at a <strong class=
@@ -80,6 +83,30 @@
         or open this URL in a browser and download the latest snapshot listed
         in the <code class="literal">Tag</code> table.
       </p>
+      <div class="admon important">
+        <img alt="[Important]" src="../images/important.png" />
+        <h3>
+          Important
+        </h3>
+        <p>
+          <a id="linux-firmware-symlink" name="linux-firmware-symlink"></a>
+          Note that some required firmware files (and directories) are
+          actually symlinks to other files (or directories). Those symlinks
+          are not stored in the Git repository, instead they are documented
+          in the <code class="filename">WHENCE</code> file. Each line
+          beginning with <code class="literal">Link:</code> describes a
+          symlink. If you are downloading an item you need and it's such a
+          symlink (or in a directory which is such a symlink), you need to
+          create the symlink manually and download the target. On the other
+          hand, if you want all the firmware files, use the <span class=
+          "command"><strong>./copy-firmware.sh
+          /usr/lib/firmware</strong></span> command which will copy the
+          firmware files and create all the symlinks in the <code class=
+          "filename">WHENCE</code> file, instead of a plain copy command like
+          <span class="command"><strong>cp -r *
+          /usr/lib/firmware/</strong></span>.
+        </p>
+      </div>
       <p>
         For some other firmware, particularly for Intel microcode and certain
         wifi devices, the needed firmware is not available in the above
@@ -113,8 +140,7 @@
             <p>
               ATI Radeon and AMDGPU devices all require firmware to be able
               to use KMS (kernel modesetting - the preferred option) as well
-              as for Xorg. For old radeon chips (before the R600), the
-              firmware is still in the kernel source.
+              as for Xorg.
             </p>
             <p>
               Intel integrated GPUs from Skylake onwards can use firmware for
@@ -133,9 +159,8 @@
             <p>
               Nvidia GPUs from Kepler onwards require signed firmware,
               otherwise the nouveau driver is unable to provide hardware
-              acceleration. Nvidia has now released firmware up to Ampere
-              (GeForce30 series) to linux-firmware. Note that faster clocks
-              than the default are not enabled by the released firmware.
+              acceleration. Nvidia has now released firmware up to Ada
+              Lovelace (GeForce 40 series) to linux-firmware.
             </p>
           </li>
           <li class="listitem">
@@ -287,7 +312,7 @@
             "https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/">
             https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/</a>
             and downloading the latest file there. As of this writing the
-            most secure version of the microcode is microcode-20241029.
+            most secure version of the microcode is microcode-20241112.
             Extract this file in the normal way, the microcode is in the
             <code class="filename">intel-ucode</code> directory, containing
             various blobs with names in the form XX-YY-ZZ. There are also
@@ -424,10 +449,11 @@ cd initrd</kbd></pre>
             “About initramfs”</a>), you should run <span class=
             "command"><strong>mkinitramfs</strong></span> again after putting
             the appropriate blob or container into <code class=
-            "filename">/lib/firmware</code>. More precisely, put an intel
-            blob in a <code class="filename">/lib/firmware/intel-ucode</code>
-            directory or an AMD container in a <code class=
-            "filename">/lib/firmware/amd-ucode</code> directory before
+            "filename">/usr/lib/firmware</code>. More precisely, put an intel
+            blob in a <code class=
+            "filename">/usr/lib/firmware/intel-ucode</code> directory or an
+            AMD container in a <code class=
+            "filename">/usr/lib/firmware/amd-ucode</code> directory before
             running <span class=
             "command"><strong>mkinitramfs</strong></span>. Alternatively, you
             can have both initrd on the same line, such as <strong class=
@@ -477,16 +503,8 @@ cd initrd</kbd></pre>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
             <a id="ati-video-firmware" name="ati-video-firmware"></a>Firmware
-            for ATI video chips (R600 and later)
+            for ATI Radeon video chips
           </h3>
-          <p>
-            These instructions do NOT apply to old radeons before the R600
-            family. For those, the firmware is in the kernel's <code class=
-            "filename">/lib/firmware/</code> directory. Nor do they apply if
-            you intend to avoid a graphical setup such as Xorg and are
-            content to use the default 80x25 display rather than a
-            framebuffer.
-          </p>
           <p>
             Early radeon devices only needed a single 2K blob of firmware.
             Recent devices need several different blobs, and some of them are
@@ -522,8 +540,8 @@ cd initrd</kbd></pre>
             required blobs then install them:
           </p>
           <pre class="userinput"><kbd class=
-          "command">mkdir -pv /lib/firmware/radeon
-cp -v &lt;YOUR_BLOBS&gt; /lib/firmware/radeon</kbd></pre>
+          "command">mkdir -pv /usr/lib/firmware/radeon
+cp -v &lt;YOUR_BLOBS&gt; /usr/lib/firmware/radeon</kbd></pre>
           <p>
             Building the kernel amdgpu driver as a module is recommended
             because the firmware files need to be accessible at the time it
@@ -573,8 +591,8 @@ cp -v &lt;YOUR_BLOBS&gt; /lib/firmware/radeon</kbd></pre>
             updates (e.g. the raven APU now has a 13th file, raven_ta.bin).
           </p>
           <pre class="userinput"><kbd class=
-          "command">mkdir -pv /lib/firmware/amdgpu
-cp -v &lt;YOUR_BLOBS&gt; /lib/firmware/amdgpu</kbd></pre>
+          "command">mkdir -pv /usr/lib/firmware/amdgpu
+cp -v &lt;YOUR_BLOBS&gt; /usr/lib/firmware/amdgpu</kbd></pre>
           <p>
             If disk space is not a problem, you could install all the current
             amdgpu firmware files and not worry about exactly which chipset
@@ -613,7 +631,12 @@ cp -v &lt;YOUR_BLOBS&gt; /lib/firmware/amdgpu</kbd></pre>
           <p>
             If the necessary firmware is available in the <code class=
             "filename">nvidia/</code> directory of linux-firmware, copy it to
-            <code class="filename">/lib/firmware/nouveau</code>.
+            <code class="filename">/usr/lib/firmware/nouveau</code>. Note
+            that the required firmware file may be a symlink (for example,
+            the GSP firmware for RTX 4060 is just a symlink to the GSP
+            firmware directory for RTX 4090) and you'll need to <a class=
+            "xref" href="firmware.html#linux-firmware-symlink">create the
+            symlink and download its target</a>.
           </p>
           <p>
             If the firmware has not been made available in linux-firmware,
@@ -625,8 +648,8 @@ cp -v &lt;YOUR_BLOBS&gt; /lib/firmware/amdgpu</kbd></pre>
 wget https://us.download.nvidia.com/XFree86/Linux-x86/340.32/NVIDIA-Linux-x86-340.32.run
 sh NVIDIA-Linux-x86-340.32.run --extract-only
 python3 extract_firmware.py
-mkdir -p /lib/firmware/nouveau
-cp -d nv* vuc-* /lib/firmware/nouveau/</kbd></pre>
+mkdir -p /usr/lib/firmware/nouveau
+cp -d nv* vuc-* /usr/lib/firmware/nouveau/</kbd></pre>
         </div>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
@@ -636,18 +659,18 @@ cp -d nv* vuc-* /lib/firmware/nouveau/</kbd></pre>
         </h2>
         <p>
           The kernel likes to load firmware for some network drivers,
-          particularly those from Realtek (the /lib/linux-firmware/rtl_nic/)
-          directory, but they generally appear to work without it. Therefore,
-          you can boot the kernel, check dmesg for messages about this
-          missing firmware, and if necessary download the firmware and put it
-          in the specified directory in <code class=
-          "filename">/lib/firmware</code> so that it will be found on
-          subsequent boots. Note that with current kernels this works whether
-          or not the driver is compiled in or built as a module, there is no
-          need to build this firmware into the kernel. Here is an example
-          where the R8169 driver has been compiled in but the firmware was
-          not made available. Once the firmware had been provided, there was
-          no mention of it on later boots.
+          particularly those from Realtek (the <code class=
+          "filename">/usr/lib/linux-firmware/rtl_nic/</code> directory), but
+          they generally appear to work without it. Therefore, you can boot
+          the kernel, check dmesg for messages about this missing firmware,
+          and if necessary download the firmware and put it in the specified
+          directory in <code class="filename">/usr/lib/firmware</code> so
+          that it will be found on subsequent boots. Note that with current
+          kernels this works whether or not the driver is compiled in or
+          built as a module, there is no need to build this firmware into the
+          kernel. Here is an example where the R8169 driver has been compiled
+          in but the firmware was not made available. Once the firmware had
+          been provided, there was no mention of it on later boots.
         </p>
         <pre class="screen"><code class=
         "literal">dmesg | grep firmware | grep r8169
@@ -671,13 +694,14 @@ cp -d nv* vuc-* /lib/firmware/nouveau/</kbd></pre>
           To install it, simply extract <code class=
           "filename">regulatory.db</code> and <code class=
           "filename">regulatory.db.p7s</code> from the tarball into
-          <code class="filename">/lib/firmware</code>. Note that either the
-          <code class="option">cfg80211</code> driver needs to be selected as
-          a module for the <code class="filename">regulatory.*</code> files
-          to be loaded, or those files need to be included as firmware into
-          the kernel, as explained above in <a class="xref" href=
-          "firmware.html#video-firmware" title="Firmware for Video Cards">the
-          section called “Firmware for Video Cards”</a>.
+          <code class="filename">/usr/lib/firmware</code>. Note that either
+          the <code class="option">cfg80211</code> driver needs to be
+          selected as a module for the <code class=
+          "filename">regulatory.*</code> files to be loaded, or those files
+          need to be included as firmware into the kernel, as explained above
+          in <a class="xref" href="firmware.html#video-firmware" title=
+          "Firmware for Video Cards">the section called “Firmware for Video
+          Cards”</a>.
         </p>
         <p>
           The access point (AP) would send a country code to your wireless
@@ -770,7 +794,7 @@ cp -av -T --no-preserve=ownership sof-tplg \
           called “About initramfs”</a> for details) including the firmware
           files. If you don't want to use either methods, you may include the
           firmware files in the kernel image itself. Install the needed
-          firmware files into <code class="filename">/lib/firmware</code>
+          firmware files into <code class="filename">/usr/lib/firmware</code>
           first, then set the following kernel configuration and rebuild the
           kernel:
         </p>
@@ -782,6 +806,8 @@ cp -av -T --no-preserve=ownership sof-tplg \
       (xx/aa.bin xx/bb.bin)   <span class=
 "blue">B</span>uild named firmware blobs into the kernel binary
                                                            ...  [EXTRA_FIRMWARE]
+      # This is the default, you can change it to "/usr/lib/firmware"
+      # if you want:
       (/lib/firmware)           <span class=
 "blue">F</span>irmware blobs root directory
                                                        ...  [EXTRA_FIRMWARE_DIR]</pre>
@@ -789,12 +815,11 @@ cp -av -T --no-preserve=ownership sof-tplg \
           Replace <em class="replaceable"><code>xx/aa.bin
           xx/bb.bin</code></em> with a whitespace-separated list of paths to
           the needed firmware files, relative to <code class=
-          "filename">/lib/firmware</code>. A method easier than manually
+          "filename">/usr/lib/firmware</code>. A method easier than manually
           typing the list (it may be long) is running the following command:
         </p>
         <pre class="userinput"><kbd class=
-        "command">echo CONFIG_EXTRA_FIRMWARE='"'$({ cd /lib/firmware; echo <em class=
-        "replaceable"><code>amdgpu/*</code></em> })'"' &gt;&gt; .config
+        "command">echo CONFIG_EXTRA_FIRMWARE='"'$({ cd /usr/lib/firmware; echo <em class="replaceable"><code>amdgpu/*</code></em> })'"' &gt;&gt; .config
 make oldconfig</kbd></pre>
         <p>
           Replace <em class="replaceable"><code>amdgpu/*</code></em> with a
@@ -833,7 +858,7 @@ make oldconfig</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-607">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-618">
           Home</a>
         </li>
       </ul>
