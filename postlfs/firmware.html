@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-619">
+  <body class="blfs" id="blfs-r12.2-626">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-619
+        "phrase">(systemd</span> Edition) - Version r12.2-626
       </h4>
       <h3>
         Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-619">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-626">
           Home</a>
         </li>
       </ul>
@@ -134,7 +134,7 @@
             <p>
               Firmware for video controllers. On x86 machines this is
               required for ATI devices (Radeon and AMDGPU chips) and may be
-              useful for Intel (Skylake and later) and Nvidia (Kepler and
+              useful for Intel (Skylake and later) and NVIDIA (Kepler and
               later) GPUs.
             </p>
             <p>
@@ -157,9 +157,9 @@
               linux</a>.
             </p>
             <p>
-              Nvidia GPUs from Kepler onwards require signed firmware,
+              NVIDIA GPUs from Kepler onwards require signed firmware,
               otherwise the nouveau driver is unable to provide hardware
-              acceleration. Nvidia has now released firmware up to Ada
+              acceleration. NVIDIA has now released firmware up to Ada
               Lovelace (GeForce 40 series) to linux-firmware.
             </p>
           </li>
@@ -615,33 +615,46 @@ cp -v &lt;YOUR_BLOBS&gt; /usr/lib/firmware/amdgpu</kbd></pre>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
             <a id="nvidia-video-firmware" name=
-            "nvidia-video-firmware"></a>Firmware for Nvidia video chips
+            "nvidia-video-firmware"></a>Firmware for NVIDIA video chips
           </h3>
           <p>
-            Nvidia has released basic signed firmware for recent graphics
-            chips, but significantly after the chips and its own binary
-            drivers were first available. For other chips it has been
-            necessary to extract the firmware from the binary driver.
+            Some NVIDIA GPUs from Kepler onwards (including all NVIDIA
+            GeForce RTX GPUs and GTX 9xx series onwards) require firmware
+            signed by NVIDIA to work. For the Nouveau driver, NVIDIA has
+            released the signed firmware files in the <code class=
+            "filename">nvidia/</code> directory of linux-firmware. Read
+            <a class="ulink" href=
+            "https://nouveau.freedesktop.org/CodeNames.html">the CodeNames
+            page of the Nouveau wiki</a> to figure out the code name of your
+            NVIDIA GPU (for example, the code name of GeForce RTX 4060 Ti is
+            AD106). The directory for the firmware files you need is named as
+            the result converting the code name to lower case (<code class=
+            "filename">ad106</code> for the example). The directory (or some
+            of its contents) may be actually a symlink to another directory
+            (or some files in another directory) and you'll then need to
+            <a class="xref" href=
+            "firmware.html#linux-firmware-symlink">create the symlink and
+            download its target</a> yourself (for example, <code class=
+            "filename">ad106</code> is a symlink to <code class=
+            "filename">ad102</code>).
           </p>
           <p>
-            For more exact information about which chips need extracted
-            firmware, see <a class="ulink" href=
-            "https://nouveau.freedesktop.org/VideoAcceleration.html">https://nouveau.freedesktop.org/VideoAcceleration.html</a>.
+            If you can find the directory for your GPU in neither the
+            linux-firmware tree nor the <code class="filename">WHENCE</code>
+            file (as a symlink), it means either your GPU does not need any
+            firmware, or it's newer than Ada Lovelace (RTX 40xx series) and
+            the firmware for it isn't released yet (as at late 2024).
           </p>
           <p>
-            If the necessary firmware is available in the <code class=
-            "filename">nvidia/</code> directory of linux-firmware, copy it to
-            <code class="filename">/usr/lib/firmware/nouveau</code>. Note
-            that the required firmware file may be a symlink (for example,
-            the GSP firmware for RTX 4060 is just a symlink to the GSP
-            firmware directory for RTX 4090) and you'll need to <a class=
-            "xref" href="firmware.html#linux-firmware-symlink">create the
-            symlink and download its target</a>.
-          </p>
-          <p>
-            If the firmware has not been made available in linux-firmware,
-            for the old chips mentioned in the nouveau wiki link above run
-            the following commands:
+            For the NVIDIA GPUs from Tesla to Kepler, the Nouveau driver
+            requires some extra firmware to support video decoding
+            acceleration. These firmware files are not released by NVIDIA but
+            they can be extracted from the NVIDIA binary driver. For more
+            exact information about which chips need extracted firmware, see
+            <a class="ulink" href=
+            "https://nouveau.freedesktop.org/VideoAcceleration.html">the the
+            VideoAcceleration of the Nouveau wiki</a>. To extract and install
+            these firmware files, issue:
           </p>
           <pre class="userinput"><kbd class=
           "command">wget https://anduin.linuxfromscratch.org/BLFS/nvidia-firmware/extract_firmware.py
@@ -858,7 +871,7 @@ make oldconfig</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-619">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-626">
           Home</a>
         </li>
       </ul>

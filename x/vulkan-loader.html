@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-619">
+  <body class="blfs" id="blfs-r12.2-626">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-619
+        "phrase">(systemd</span> Edition) - Version r12.2-626
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-619">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-626">
           Home</a>
         </li>
       </ul>
@@ -127,6 +127,22 @@
           <a class="xref" href="mesa.html" title=
           "Mesa-24.2.7">Mesa-24.2.7</a> (for Vulkan drivers)
         </p>
+        <h4>
+          Optional (for testing)
+        </h4>
+        <p class="optional">
+          <a class="xref" href="../general/git.html" title=
+          "Git-2.47.0">git-2.47.0</a>
+        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            An Internet connection is needed for some tests of this package.
+          </p>
+        </div>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -157,8 +173,15 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr   \
       -G Ninja .. &amp;&amp;
 ninja</kbd></pre>
         <p>
-          This package does not come with a working test suite.
+          To run the test suite, issue (note that the command will use
+          <a class="xref" href="../general/git.html" title=
+          "Git-2.47.0">git-2.47.0</a> to download a copy of GoogleTest for
+          building the test suite):
         </p>
+        <pre class="userinput"><kbd class=
+        "command">cmake -D BUILD_TESTS=ON -D UPDATE_DEPS=ON .. &amp;&amp;
+ninja &amp;&amp;
+ninja test</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
@@ -249,7 +272,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-619">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-626">
           Home</a>
         </li>
       </ul>
