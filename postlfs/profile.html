@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-636">
+  <body class="blfs" id="blfs-r12.2-647">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-636
+        "phrase">(systemd</span> Edition) - Version r12.2-647
       </h4>
       <h3>
         Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-636">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-647">
           Home</a>
         </li>
       </ul>
@@ -139,17 +139,10 @@
           parameters. It specifies some <span class=
           "command"><strong>bash</strong></span> history parameters and, for
           security purposes, disables keeping a permanent history file for
-          the <code class="systemitem">root</code> user. It also sets a
-          default user prompt. It then calls small, single purpose scripts in
-          the <code class="filename">/etc/profile.d</code> directory to
-          provide most of the initialization.
-        </p>
-        <p>
-          For more information on the escape sequences you can use for your
-          prompt (i.e., the <code class="envar">PS1</code> environment
-          variable) see <span class="command"><strong>info
-          bash</strong></span> -- <span class="strong"><strong>Node: Printing
-          a Prompt</strong></span>.
+          the <code class="systemitem">root</code> user. It then calls small,
+          single purpose scripts in the <code class=
+          "filename">/etc/profile.d</code> directory to provide most of the
+          initialization.
         </p>
         <pre class="root"><kbd class=
         "command">cat &gt; /etc/profile &lt;&lt; "EOF"
@@ -219,23 +212,13 @@ export XDG_DATA_DIRS=${XDG_DATA_DIRS:-/usr/share}
 export XDG_CONFIG_DIRS=${XDG_CONFIG_DIRS:-/etc/xdg}
 export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-/tmp/xdg-$USER}
 
-# Set up a red prompt for root and a green one for users.
-NORMAL="\[\e[0m\]"
-RED="\[\e[1;31m\]"
-GREEN="\[\e[1;32m\]"
-if [[ $EUID == 0 ]] ; then
-  PS1="$RED\u [ $NORMAL\w$RED ]# $NORMAL"
-else
-  PS1="$GREEN\u [ $NORMAL\w$GREEN ]\$ $NORMAL"
-fi
-
 for script in /etc/profile.d/*.sh ; do
         if [ -r $script ] ; then
                 . $script
         fi
 done
 
-unset script RED GREEN NORMAL
+unset script
 
 # End /etc/profile</code>
 EOF</kbd></pre>
@@ -346,10 +329,7 @@ fi
 
 if [ -f "$HOME/.dircolors" ] ; then
         eval $(dircolors -b $HOME/.dircolors)
-fi
-
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'</code>
+fi</code>
 EOF</kbd></pre>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
@@ -516,7 +496,7 @@ EOF</kbd></pre>
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
-# Provides prompt for non-login shells, specifically shells started
+# Provides prompt for interactive shells, specifically shells started
 # in the X environment. [Review the LFS archive thread titled
 # PS1 Environment Variable for a great case study behind this script
 # addendum.]
@@ -532,8 +512,19 @@ fi
 
 unset RED GREEN NORMAL
 
+# GnuPG wants this or it'll fail with pinentry-curses under some
+# circumstances (for example signing a Git commit)
+tty -s &amp;&amp; export GPG_TTY=$(tty)
+
 # End /etc/bashrc</code>
 EOF</kbd></pre>
+        <p>
+          For more information on the escape sequences you can use for your
+          prompt (i.e., the <code class="envar">PS1</code> environment
+          variable) see <span class="command"><strong>info
+          bash</strong></span> -- <span class="strong"><strong>Node: Printing
+          a Prompt</strong></span>.
+        </p>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -692,7 +683,7 @@ EOF</kbd></pre>
           Finally, Ian Macdonald has written an excellent collection of tips
           and tricks to enhance your shell environment. You can read it
           online at <a class="ulink" href=
-          "https://www.caliban.org/bash/index.shtml">https://www.caliban.org/bash/index.shtml</a>.
+          "https://caliban.org/bash/index.shtml">https://caliban.org/bash/index.shtml</a>.
         </p>
       </div>
     </div>
@@ -718,7 +709,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-636">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-647">
           Home</a>
         </li>
       </ul>

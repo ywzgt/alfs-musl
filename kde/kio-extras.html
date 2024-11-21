@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      sysmon-qt-2.0.1
+      kio-extras-24.08.3
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
@@ -19,26 +19,26 @@
         "phrase">(systemd</span> Edition) - Version r12.2-647
       </h4>
       <h3>
-        Chapter&nbsp;12.&nbsp;System Utilities
+        Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="sg3_utils.html" title=
-          "sg3_utils-1.48">Prev</a>
+          <a accesskey="p" href="kdenlive.html" title=
+          "kdenlive-24.08.3">Prev</a>
           <p>
-            sg3_utils-1.48
+            kdenlive-24.08.3
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="sysstat.html" title=
-          "Sysstat-12.7.6">Next</a>
+          <a accesskey="n" href="khelpcenter.html" title=
+          "khelpcenter-24.08.3">Next</a>
           <p>
-            Sysstat-12.7.6
+            khelpcenter-24.08.3
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="sysutils.html" title=
-          "Chapter&nbsp;12.&nbsp;System Utilities">Up</a>
+          <a accesskey="u" href="kf-apps.html" title=
+          "Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
@@ -48,17 +48,17 @@
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="sysmon-qt" name="sysmon-qt"></a>sysmon-qt-2.0.1
+      <a id="kio-extras" name="kio-extras"></a>kio-extras-24.08.3
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to sysmon-qt
+          Introduction to kio-extras
         </h2>
         <p>
-          The <span class="application">sysmon-qt</span> package provides a
-          program to monitor system values including CPU usage, memory usage,
-          and system temperatures in a compact screen window.
+          The <span class="application">kio-extras</span> package contains
+          additional components to increase the functionality of the KDE
+          resource and network access abstractions.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -79,59 +79,71 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/lfs-book/sysmon-qt/releases/download/v2.0.1/sysmon-qt-2.0.1.tar.xz">
-                https://github.com/lfs-book/sysmon-qt/releases/download/v2.0.1/sysmon-qt-2.0.1.tar.xz</a>
+                "https://download.kde.org/stable/release-service/24.08.3/src/kio-extras-24.08.3.tar.xz">
+                https://download.kde.org/stable/release-service/24.08.3/src/kio-extras-24.08.3.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: d1024657f90ac406cbf982e7189a200b
+                Download MD5 sum: d16ed519ecd148253147c4525f1b9d86
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 76 KB
+                Download size: 1.4 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 1.3 MB
+                Estimated disk space required: 49 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.5 SBU
+                Estimated build time: 0.4 SBU (using parallelism=4)
               </p>
             </li>
           </ul>
         </div>
         <h3>
-          sysmon-qt Dependencies
+          kio-extras Dependencies
         </h3>
         <h4>
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="../x/qt6.html" title="Qt-6.8.0">Qt-6.8.0</a>
+          <a class="xref" href="frameworks6.html" title=
+          "Building KDE Frameworks 6.8.0 (KF6)">KDE Frameworks-6.8.0</a>
         </p>
         <h4>
-          Recommended
+          Optional
         </h4>
-        <p class="recommended">
-          <a class="xref" href="lm-sensors.html" title=
-          "lm-sensors-3-6-0">lm-sensors-3-6-0</a> (runtime)
+        <p class="optional">
+          <a class="xref" href="../basicnet/libtirpc.html" title=
+          "libtirpc-1.3.6">libtirpc-1.3.6</a>, <a class="xref" href=
+          "../basicnet/samba.html" title="Samba-4.21.1">Samba-4.21.1</a>,
+          <a class="xref" href="../multimedia/taglib.html" title=
+          "Taglib-2.0.2">taglib-2.0.2</a>, <a class="ulink" href=
+          "https://libmtp.sourceforge.net/">libmtp</a>, <a class="ulink"
+          href="https://www.libssh.org/">libssh</a>, and <a class="ulink"
+          href="https://www.openexr.com/">OpenEXR</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of sysmon-qt
+          Installation of kio-extras
         </h2>
         <p>
-          Install <span class="application">sysmon-qt</span> by running the
+          Install <span class="application">kio-extras</span> by running the
           following commands:
         </p>
-        <pre class="userinput"><kbd class=
-        "command">qmake6 sysmon-qt.pro &amp;&amp;
+        <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
+cd    build &amp;&amp;
+
+cmake -D CMAKE_INSTALL_PREFIX=$KF5_PREFIX \
+      -D CMAKE_BUILD_TYPE=Release         \
+      -D BUILD_TESTING=OFF                \
+      -W no-dev .. &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -149,11 +161,11 @@ make</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">sysmon-qt</span>
+              <span class="segbody">None</span>
             </div>
             <div class="seg">
-              <strong class="segtitle">Installed Library:</strong>
-              <span class="segbody">None</span>
+              <strong class="segtitle">Installed Libraries:</strong>
+              <span class="segbody">libkioarchive.so and 32 plugins</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
@@ -166,22 +178,22 @@ make</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="sg3_utils.html" title=
-          "sg3_utils-1.48">Prev</a>
+          <a accesskey="p" href="kdenlive.html" title=
+          "kdenlive-24.08.3">Prev</a>
           <p>
-            sg3_utils-1.48
+            kdenlive-24.08.3
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="sysstat.html" title=
-          "Sysstat-12.7.6">Next</a>
+          <a accesskey="n" href="khelpcenter.html" title=
+          "khelpcenter-24.08.3">Next</a>
           <p>
-            Sysstat-12.7.6
+            khelpcenter-24.08.3
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="sysutils.html" title=
-          "Chapter&nbsp;12.&nbsp;System Utilities">Up</a>
+          <a accesskey="u" href="kf-apps.html" title=
+          "Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
