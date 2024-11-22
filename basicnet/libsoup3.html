@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-647">
+  <body class="blfs" id="blfs-r12.2-664">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-647
+        "phrase">(systemd</span> Edition) - Version r12.2-664
       </h4>
       <h3>
         Chapter&nbsp;17.&nbsp;Networking Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-647">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-664">
           Home</a>
         </li>
       </ul>
@@ -174,9 +174,6 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr          \
             --buildtype=release    \
-            -D vapi=enabled        \
-            -D gssapi=disabled     \
-            -D sysprof=disabled    \
             --wrap-mode=nofallback \
             ..                     &amp;&amp;
 ninja</kbd></pre>
@@ -207,11 +204,6 @@ ninja</kbd></pre>
           not installed on the system.
         </p>
         <p>
-          <code class="option">-D vapi=disabled</code>: Use this if you have
-          not installed <span class="application">Vala</span>, e.g. because
-          you are not building <span class="application">GNOME</span>.
-        </p>
-        <p>
           <code class="option">-D docs=enabled</code>: If <a class="xref"
           href="../general/python-modules.html#gi-docgen" title=
           "Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> is installed, the API
@@ -220,18 +212,6 @@ ninja</kbd></pre>
           "command"><strong>meson</strong></span> command to fail if
           <a class="xref" href="../general/python-modules.html#gi-docgen"
           title="Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> is not installed.
-        </p>
-        <p>
-          <em class="parameter"><code>-D gssapi=disabled</code></em>:
-          libsoup3 defaults to building with GSSAPI support, which requires
-          Kerberos (as does the test suite).
-        </p>
-        <p>
-          <em class="parameter"><code>-D sysprof=disabled</code></em>:
-          libsoup3 will automatically download a git version of <a class=
-          "ulink" href="https://wiki.gnome.org/Apps/Sysprof">sysprof</a> if
-          git is available or use the installed version if it is present on
-          the system. If you need profiling, remove this option.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -307,7 +287,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-647">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-664">
           Home</a>
         </li>
       </ul>

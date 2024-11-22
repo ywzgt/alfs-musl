@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-647">
+  <body class="blfs" id="blfs-r12.2-664">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-647
+        "phrase">(systemd</span> Edition) - Version r12.2-664
       </h4>
       <h3>
         Chapter&nbsp;37.&nbsp;LXQt Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-647">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-664">
           Home</a>
         </li>
       </ul>
@@ -56,8 +56,8 @@
           Introduction to libqtxdg
         </h2>
         <p>
-          The <span class="application">libqtxdg</span> is a Qt
-          implementation of the freedesktop.org xdg specifications.
+          The <span class="application">libqtxdg</span> package contains a Qt
+          implementation of the freedesktop.org XDG specifications.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -121,7 +121,9 @@
         <p class="optional">
           <a class="xref" href="../x/gtk3.html" title=
           "GTK+-3.24.43">GTK+-3.24.43</a> (for <span class=
-          "command"><strong>gtk-update-icon-cache</strong></span>)
+          "command"><strong>gtk-update-icon-cache</strong></span>) and
+          <a class="xref" href="../x/xterm.html" title=
+          "xterm-395">xterm-395</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -160,8 +162,8 @@ make</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Library:</strong>
-              <span class="segbody">libQt6Xdg.so and
-              libQt6XdgIconLoader.so</span>
+              <span class="segbody">libQt6Xdg.so, libQt6XdgIconLoader.so, and
+              libQt6XdgIconPlugin.so (in $QT6DIR/lib)</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
@@ -190,24 +192,36 @@ make</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    contains the <span class="application">libQt6Xdg</span>
-                    API functions
+                    contains an implementation of the XDG specification for
+                    Qt
                   </p>
                 </td>
               </tr>
               <tr>
                 <td>
                   <p>
-                    <a id="libQt6XdgIconLoader-lib" name=
-                    "libQt6XdgIconLoader-lib"></a><span class=
-                    "term"><code class=
+                    <a id="libQt6XdgIconLoader" name=
+                    "libQt6XdgIconLoader"></a><span class="term"><code class=
                     "filename">libQt6XdgIconLoader.so</code></span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    contains the <span class=
-                    "application">libQt6XdgIconLoader</span> API functions
+                    contains the XDG Icon Loader for Qt
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="libQt6XdgIconPlugin" name=
+                    "libQt6XdgIconPlugin"></a><span class="term"><code class=
+                    "filename">libQt6XdgIconPlugin</code></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    contains a plugin for loading icons using Qt
                   </p>
                 </td>
               </tr>
@@ -238,7 +252,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-647">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-664">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-647">
+  <body class="blfs" id="blfs-r12.2-664">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-647
+        "phrase">(systemd</span> Edition) - Version r12.2-664
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-647">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-664">
           Home</a>
         </li>
       </ul>
@@ -260,7 +260,8 @@
             <code class="envar">JAVA_HOME</code> and <code class=
             "envar">CLASSPATH</code> is not used here. Furthermore, OpenJDK
             developers recommend unsetting <code class=
-            "envar">JAVA_HOME</code>.
+            "envar">JAVA_HOME</code> and <code class=
+            "envar">CLASSPATH</code>.
           </p>
           <p>
             The build system does not allow the <code class=
@@ -275,6 +276,7 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">unset JAVA_HOME                             &amp;&amp;
+unset CLASSPATH                             &amp;&amp;
 bash configure --enable-unlimited-crypto    \
                --disable-warnings-as-errors \
                --with-stdc++lib=dynamic     \
@@ -1005,7 +1007,7 @@ bin/keytool -list -cacerts</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-647">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-664">
           Home</a>
         </li>
       </ul>
