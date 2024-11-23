@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-664">
+  <body class="blfs" id="blfs-r12.2-673">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-664
+        "phrase">(systemd</span> Edition) - Version r12.2-673
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-664">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-673">
           Home</a>
         </li>
       </ul>
@@ -246,19 +246,17 @@ meson setup --prefix=/usr       \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
-          Now, as the <code class="systemitem">root</code> user:
-        </p>
-        <pre class="root"><kbd class="command">ninja install</kbd></pre>
-        <p>
           To test the results, issue (adjust the individual test timeout to a
           value suitable for your machine, see the note above):
         </p>
         <pre class="userinput"><kbd class=
-        "command">meson configure -D debug=true &amp;&amp;
-dbus-run-session env LC_ALL=C.UTF-8 TRACKER_TESTS_AWAIT_TIMEOUT=<em class=
-"replaceable"><code>20</code></em> \
+        "command">dbus-run-session env LC_ALL=C.UTF-8 TRACKER_TESTS_AWAIT_TIMEOUT=<em class="replaceable"><code>20</code></em> \
                  ninja test &amp;&amp;
 rm -rf ~/tracker-tests</kbd></pre>
+        <p>
+          Now, as the <code class="systemitem">root</code> user:
+        </p>
+        <pre class="root"><kbd class="command">ninja install</kbd></pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -390,7 +388,7 @@ rm -rf ~/tracker-tests</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-664">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-673">
           Home</a>
         </li>
       </ul>
