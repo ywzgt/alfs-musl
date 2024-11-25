@@ -306,7 +306,7 @@ https://www.lua.org/ftp/lua-5.4.7.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.7-shared_library-1.patch
 https://www.lua.org/tests/lua-5.4.7-tests.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/luajit/luajit-20240917.tar.xz
-https://www.mercurial-scm.org/release/mercurial-6.8.2.tar.gz
+https://www.mercurial-scm.org/release/mercurial-6.9.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.xz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03-xdoc.tar.xz
 https://github.com/NixOS/patchelf/releases/download/0.18.0/patchelf-0.18.0.tar.gz
@@ -575,6 +575,7 @@ https://github.com/c-ares/c-ares/releases/download/v1.34.3/c-ares-1.34.3.tar.gz
 https://curl.se/download/curl-8.11.0.tar.xz
 https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.2/geoclue-2.7.2.tar.bz2
 https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.0.tar.xz
+https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.2.0/kdsoap-2.2.0.tar.gz
 https://www.nlnetlabs.nl/downloads/ldns/ldns-1.8.4.tar.gz
 https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
 https://netfilter.org/projects/libmnl/files/libmnl-1.0.5.tar.bz2
@@ -589,7 +590,7 @@ https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.8.0/libslirp-v4.8.0.t
 https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.3.tar.xz
 https://download.gnome.org/sources/libsoup/3.4/libsoup-3.4.4.tar.xz
 https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.6.tar.bz2
-https://notroj.github.io/neon/neon-0.33.0.tar.gz
+https://notroj.github.io/neon/neon-0.34.0.tar.gz
 https://github.com/nghttp2/nghttp2/releases/download/v1.64.0/nghttp2-1.64.0.tar.xz
 https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.4.4.tar.xz
 https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
@@ -680,7 +681,7 @@ https://downloads.sourceforge.net/enlightenment/imlib2-1.12.3.tar.xz
 https://github.com/ksnip/kColorPicker/archive/v0.3.1/kColorPicker-0.3.1.tar.gz
 https://github.com/ksnip/kImageAnnotator/archive/v0.7.1/kImageAnnotator-0.7.1.tar.gz
 https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
-https://download.gnome.org/sources/libadwaita/1.6/libadwaita-1.6.1.tar.xz
+https://download.gnome.org/sources/libadwaita/1.6/libadwaita-1.6.2.tar.xz
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.3.0/libei-1.3.0.tar.gz
 https://gitlab.gnome.org/World/gedit/libgedit-amtk/-/archive/5.9.0/libgedit-amtk-5.9.0.tar.bz2
 https://gitlab.gnome.org/World/gedit/libgedit-gtksourceview/-/archive/299.3.0/libgedit-gtksourceview-299.3.0.tar.bz2
@@ -733,6 +734,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/konsole-24.08.3-scrollbar-1.pa
 https://download.kde.org/stable/release-service/24.08.3/src/konversation-24.08.3.tar.xz
 https://download.kde.org/stable/release-service/24.08.3/src/libkexiv2-24.08.3.tar.xz
 https://download.kde.org/stable/plasma/6.2.3/plasma-activities-6.2.3.tar.xz
+https://download.kde.org/stable/plasma/6.2.3/plasma-activities-stats-6.2.3.tar.xz
 https://download.kde.org/stable/release-service/24.08.3/src/okular-24.08.3.tar.xz
 https://download.kde.org/stable/release-service/24.08.3/src/libkdcraw-24.08.3.tar.xz
 https://download.kde.org/stable/release-service/24.08.3/src/gwenview-24.08.3.tar.xz
@@ -746,7 +748,7 @@ https://download.gnome.org/sources/gsettings-desktop-schemas/47/gsettings-deskto
 https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.4.tar.xz
 https://download.gnome.org/sources/rest/0.9/rest-0.9.1.tar.xz
 https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.6.tar.xz
-https://gitlab.gnome.org/GNOME/vte/-/archive/0.78.1/vte-0.78.1.tar.gz
+https://gitlab.gnome.org/GNOME/vte/-/archive/0.78.2/vte-0.78.2.tar.gz
 https://download.gnome.org/sources/yelp-xsl/42/yelp-xsl-42.1.tar.xz
 https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
 https://download.gnome.org/sources/gjs/1.82/gjs-1.82.1.tar.xz
