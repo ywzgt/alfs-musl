@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      libfm-extra-1.3.2
+      kdsoap-ws-discovery-client-0.6.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
@@ -19,26 +19,24 @@
         "phrase">(systemd</span> Edition) - Version r12.2-703
       </h4>
       <h3>
-        Chapter&nbsp;37.&nbsp;LXQt Desktop
+        Chapter&nbsp;17.&nbsp;Networking Libraries
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="qtxdg-tools.html" title=
-          "qtxdg-tools-4.1.0">Prev</a>
+          <a accesskey="p" href="kdsoap.html" title="kdsoap-2.2.0">Prev</a>
           <p>
-            qtxdg-tools-4.1.0
+            kdsoap-2.2.0
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="menu-cache.html" title=
-          "menu-cache-1.1.0">Next</a>
+          <a accesskey="n" href="ldns.html" title="ldns-1.8.4">Next</a>
           <p>
-            menu-cache-1.1.0
+            ldns-1.8.4
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="lxqt-desktop.html" title=
-          "Chapter&nbsp;37.&nbsp;LXQt Desktop">Up</a>
+          <a accesskey="u" href="netlibs.html" title=
+          "Chapter&nbsp;17.&nbsp;Networking Libraries">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
@@ -48,19 +46,19 @@
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="libfm-extra" name="libfm-extra"></a>libfm-extra-1.3.2
+      <a id="kdsoap-ws-discovery-client" name=
+      "kdsoap-ws-discovery-client"></a>kdsoap-ws-discovery-client-0.6.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to libfm-extra
+          Introduction to kdsoap-ws-discovery-client
         </h2>
         <p>
-          The <span class="application">libfm-extra</span> package contains a
-          library and other files required by the <span class=
-          "command"><strong>menu-cache-gen</strong></span> program in
-          /usr/bin/libexec installed by <a class="xref" href=
-          "menu-cache.html" title="menu-cache-1.1.0">menu-cache-1.1.0</a>.
+          The <span class="application">kdsoap-ws-discovery-client</span>
+          package contains a library that provides support for the
+          WS-Discovery protocol, a recent protocol used to discover services
+          available on a local network.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -81,82 +79,101 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://downloads.sourceforge.net/pcmanfm/libfm-1.3.2.tar.xz">
-                https://downloads.sourceforge.net/pcmanfm/libfm-1.3.2.tar.xz</a>
+                "https://download.kde.org/stable/kdsoap-ws-discovery-client/kdsoap-ws-discovery-client-0.6.0.tar.xz">
+                https://download.kde.org/stable/kdsoap-ws-discovery-client/kdsoap-ws-discovery-client-0.6.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: c87a0ff41ae77825079b2f785ec0741e
+                Download MD5 sum: 6d653d927efac8296662bc92784f2fe5
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 924 KB
+                Download size: 32 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 11 MB
+                Estimated disk space required: 7.5 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: less than 0.1 SBU
+                Estimated build time: 0.2 SBU
               </p>
             </li>
           </ul>
         </div>
         <h3>
-          libfm-extra Dependencies
+          kdsoap-ws-discovery-client Dependencies
         </h3>
         <h4>
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="../general/glib2.html" title=
-          "GLib-2.82.2">GLib-2.82.2</a>
+          <a class="xref" href="../general/doxygen.html" title=
+          "Doxygen-1.12.0">Doxygen-1.12.0</a>, <a class="xref" href=
+          "../kde/extra-cmake-modules.html" title=
+          "extra-cmake-modules-6.8.0">extra-cmake-modules-6.8.0</a>, and
+          <a class="xref" href="kdsoap.html" title=
+          "kdsoap-2.2.0">kdsoap-2.2.0</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of libfm-extra
+          Installation of kdsoap-ws-discovery-client
         </h2>
         <p>
-          Install <span class="application">libfm-extra</span> by running the
-          following commands:
+          Install <span class="application">kdsoap-ws-discovery-client</span>
+          by running the following commands:
         </p>
-        <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr     \
-            --sysconfdir=/etc \
-            --with-extra-only \
-            --with-gtk=no     \
-            --disable-static  &amp;&amp;
+        <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
+cd    build &amp;&amp;
+
+cmake -D CMAKE_INSTALL_PREFIX=/usr    \
+      -D CMAKE_BUILD_TYPE=Release     \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON  \
+      -D QT_MAJOR_VERSION=6           \
+      -W no-dev .. &amp;&amp;
 make</kbd></pre>
         <p>
-          This package does not come with a test suite.
+          To test the results, issue: <span class="command"><strong>make
+          test</strong></span>.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
-        <pre class="root"><kbd class="command">make install</kbd></pre>
+        <pre class="root"><kbd class="command">make install &amp;&amp;
+mv -v /usr/share/doc/KDSoapWSDiscoveryClient{,-0.6.0}</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>--with-extra-only</code></em>: This
-          switch disables all components except for the libfm-extra library.
+          <em class="parameter"><code>-D
+          CMAKE_SKIP_INSTALL_RPATH=ON</code></em>: This switch makes
+          <span class="command"><strong>cmake</strong></span> remove
+          hardcoded library search paths (rpath) when installing a binary
+          executable file or a shared library. This package does not need
+          rpath once it's installed into the standard location, and rpath may
+          sometimes cause unwanted effects or even security issues.
         </p>
         <p>
-          <em class="parameter"><code>--with-gtk=no</code></em>: This switch
-          disables support for <span class="application">GTK+</span> because
-          it is not necessary for this package.
+          <span class="command"><strong>mv -v
+          /usr/share/doc/KDSoapWSDiscoveryClient[...]:</strong></span>: This
+          command moves the documentation to a versioned directory.
         </p>
         <p>
-          <em class="parameter"><code>--disable-static</code></em>: This
-          switch prevents installation of static versions of the libraries.
+          <em class="parameter"><code>-D QT_MAJOR_VERSION=6</code></em>: This
+          parameter tells the build system to build the Qt6 version of this
+          package instead of the Qt5 version.
+        </p>
+        <p>
+          <code class="option">-D BUILD_QCH=ON</code>: This option tells the
+          build system to create documentation that can be used with
+          QtCreator, QtAssistant, or KDevelop.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -170,13 +187,14 @@ make</kbd></pre>
               <span class="segbody">None</span>
             </div>
             <div class="seg">
-              <strong class="segtitle">Installed Library:</strong>
-              <span class="segbody">libfm-extra.so</span>
+              <strong class="segtitle">Installed Libraries:</strong>
+              <span class="segbody">libKDSoapWSDiscoveryClient.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/include/libfm (symlink) and
-              /usr/include/libfm-1.0</span>
+              <span class="segbody">/usr/include/KDSoapWSDiscoveryClient,
+              /usr/lib/cmake/KDSoapWSDiscoveryClient, and
+              /usr/share/doc/KDSoapWSDiscoveryClient-0.6.0</span>
             </div>
           </div>
         </div>
@@ -193,15 +211,16 @@ make</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="libfm-extra-lib" name=
-                    "libfm-extra-lib"></a><span class="term"><code class=
-                    "filename">libfm-extra.so</code></span>
+                    <a id="libKDSoapWSDiscoveryClient" name=
+                    "libKDSoapWSDiscoveryClient"></a><span class=
+                    "term"><code class=
+                    "filename">libKDSoapWSDiscoveryClient.so</code></span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    contains the <span class="application">libfm-extra</span>
-                    API functions
+                    provides an implementation of the WS-Discovery protocol
+                    using KDSoap
                   </p>
                 </td>
               </tr>
@@ -213,22 +232,20 @@ make</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="qtxdg-tools.html" title=
-          "qtxdg-tools-4.1.0">Prev</a>
+          <a accesskey="p" href="kdsoap.html" title="kdsoap-2.2.0">Prev</a>
           <p>
-            qtxdg-tools-4.1.0
+            kdsoap-2.2.0
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="menu-cache.html" title=
-          "menu-cache-1.1.0">Next</a>
+          <a accesskey="n" href="ldns.html" title="ldns-1.8.4">Next</a>
           <p>
-            menu-cache-1.1.0
+            ldns-1.8.4
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="lxqt-desktop.html" title=
-          "Chapter&nbsp;37.&nbsp;LXQt Desktop">Up</a>
+          <a accesskey="u" href="netlibs.html" title=
+          "Chapter&nbsp;17.&nbsp;Networking Libraries">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
