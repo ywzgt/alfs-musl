@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Xorg Fonts
+      XCB Utilities
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
@@ -23,17 +23,16 @@
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="xcursor-themes.html" title=
-          "xcursor-themes-1.0.7">Prev</a>
+          <a accesskey="p" href="xcb-util.html" title=
+          "xcb-util-0.4.1">Prev</a>
           <p>
-            xcursor-themes-1.0.7
+            xcb-util-0.4.1
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="xkeyboard-config.html" title=
-          "XKeyboardConfig-2.43">Next</a>
+          <a accesskey="n" href="mesa.html" title="Mesa-24.2.7">Next</a>
           <p>
-            XKeyboardConfig-2.43
+            Mesa-24.2.7
           </p>
         </li>
         <li class="up">
@@ -48,21 +47,19 @@
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="xorg7-font" name="xorg7-font"></a>Xorg Fonts
+      <a id="xcb-utilities" name="xcb-utilities"></a>XCB Utilities
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to Xorg Fonts
+          Introduction to XCB Utilities
         </h2>
         <p>
-          The <span class="application">Xorg</span> font packages provide
-          some scalable fonts and supporting packages for <span class=
-          "application">Xorg</span> applications. Many people will want to
-          install other TTF or OTF fonts in addition to, or instead of,
-          these. Some are listed at <a class="xref" href=
-          "TTF-and-OTF-fonts.html" title="TTF and OTF fonts">the section
-          called “TTF and OTF fonts”</a>.
+          The XCB utilities provide extensions that developers can use when
+          making X Window software. <a class="xref" href="xcb-util.html"
+          title="xcb-util-0.4.1">xcb-util-0.4.1</a> was just installed but
+          these utilites offer even more extensions that X Window software
+          may depend on.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -83,72 +80,70 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.x.org/pub/individual/font/">https://www.x.org/pub/individual/font/</a>
+                "https://xcb.freedesktop.org/dist/">https://xcb.freedesktop.org/dist/</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 3.0 MB
+                Download size: 1.1 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 8.8 MB
+                Estimated disk space required: 13.3 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.1 SBU
+                Estimated build time: 0.1 SBU (ignoring the time to download)
               </p>
             </li>
           </ul>
         </div>
         <h3>
-          Xorg Fonts Dependencies
+          XCB Utilities Dependencies
         </h3>
         <h4>
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="xcursor-themes.html" title=
-          "xcursor-themes-1.0.7">xcursor-themes-1.0.7</a>
+          <a class="xref" href="libxcb.html" title=
+          "libxcb-1.17.0">libxcb-1.17.0</a> and <a class="xref" href=
+          "xcb-util.html" title="xcb-util-0.4.1">xcb-util-0.4.1</a>
         </p>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Downloading Xorg Fonts
+          Downloading XCB Utilities
         </h2>
         <p>
           First, create a list of files to be downloaded. This file will also
           be used to verify the integrity of the downloads when complete:
         </p>
         <pre class="userinput"><kbd class=
-        "command">cat &gt; font-7.md5 &lt;&lt; "EOF"
+        "command">cat &gt; xcb-utils.md5 &lt;&lt; "EOF"
 <code class=
-"literal">a6541d12ceba004c0c1e3df900324642  font-util-1.4.1.tar.xz
-a56b1a7f2c14173f71f010225fa131f1  encodings-1.1.0.tar.xz
-79f4c023e27d1db1dfd90d041ce89835  font-alias-1.0.5.tar.xz
-546d17feab30d4e3abcf332b454f58ed  font-adobe-utopia-type1-1.0.5.tar.xz
-063bfa1456c8a68208bf96a33f472bb1  font-bh-ttf-1.0.4.tar.xz
-51a17c981275439b85e15430a3d711ee  font-bh-type1-1.0.4.tar.xz
-00f64a84b6c9886040241e081347a853  font-ibm-type1-1.0.4.tar.xz
-fe972eaf13176fa9aa7e74a12ecc801a  font-misc-ethiopic-1.0.5.tar.xz
-3b47fed2c032af3a32aad9acc1d25150  font-xfree86-type1-1.0.5.tar.xz</code>
+"literal">a67bfac2eff696170259ef1f5ce1b611  xcb-util-image-0.4.1.tar.xz
+fbdc05f86f72f287ed71b162f1a9725a  xcb-util-keysyms-0.4.1.tar.xz
+193b890e2a89a53c31e2ece3afcbd55f  xcb-util-renderutil-0.3.10.tar.xz
+581b3a092e3c0c1b4de6416d90b969c3  xcb-util-wm-0.4.2.tar.xz
+bc30cd267b11ac5803fe19929cabd230  xcb-util-cursor-0.1.5.tar.xz</code>
 EOF</kbd></pre>
         <p>
           To download the needed files using <a class="xref" href=
           "../basicnet/wget.html" title="Wget-1.25.0">Wget-1.25.0</a>, use
           the following commands:
         </p>
-        <pre class="userinput"><kbd class="command">mkdir font &amp;&amp;
-cd font &amp;&amp;
-grep -v '^#' ../font-7.md5 | awk '{print $2}' | wget -i- -c \
-    -B https://www.x.org/pub/individual/font/ &amp;&amp;
-md5sum -c ../font-7.md5</kbd></pre>
+        <pre class="userinput"><kbd class=
+        "command">mkdir xcb-utils &amp;&amp;
+cd xcb-utils &amp;&amp;
+grep -v '^#' ../xcb-utils.md5 | awk '{print $2}' | wget -i- -c \
+    -B https://xcb.freedesktop.org/dist/ &amp;&amp;
+md5sum -c ../xcb-utils.md5</kbd></pre>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of Xorg Fonts
+          Installation of XCB Utilities
         </h2>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -208,37 +203,21 @@ export -f as_root</kbd></pre>
           Install all of the packages by running the following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">for package in $(grep -v '^#' ../font-7.md5 | awk '{print $2}')
+        "command">for package in $(grep -v '^#' ../xcb-utils.md5 | awk '{print $2}')
 do
   packagedir=${package%.tar.?z*}
   tar -xf $package
   pushd $packagedir
-    ./configure $XORG_CONFIG
-    make
-    as_root make install
+     ./configure $XORG_CONFIG
+     make
+     as_root make install
   popd
-  as_root rm -rf $packagedir
+  rm -rf $packagedir
 done</kbd></pre>
         <p>
           Finally, exit the shell that was started earlier:
         </p>
         <pre class="userinput"><kbd class="command">exit</kbd></pre>
-        <p>
-          When all of the fonts have been installed, the system must be
-          configured so that <span class="application">Fontconfig</span> can
-          find the TrueType fonts. Since the fonts are outside of the default
-          search path of several packages <span class="bold"><strong>if
-          <code class="envar">XORG_PREFIX</code> is not <code class=
-          "filename">/usr</code></strong></span>, make symlinks to the
-          <span class="application">Xorg</span> TrueType font directories in
-          <code class="filename">/usr/share/fonts</code> by running the
-          following commands as the <code class="systemitem">root</code>
-          user:
-        </p>
-        <pre class="root"><kbd class=
-        "command">install -v -d -m755 /usr/share/fonts                               &amp;&amp;
-ln -svfn $XORG_PREFIX/share/fonts/X11/OTF /usr/share/fonts/X11-OTF &amp;&amp;
-ln -svfn $XORG_PREFIX/share/fonts/X11/TTF /usr/share/fonts/X11-TTF</kbd></pre>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -248,16 +227,17 @@ ln -svfn $XORG_PREFIX/share/fonts/X11/TTF /usr/share/fonts/X11-TTF</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">bdftruncate and ucs2any</span>
-            </div>
-            <div class="seg">
-              <strong class="segtitle">Installed Libraries:</strong>
               <span class="segbody">None</span>
             </div>
             <div class="seg">
+              <strong class="segtitle">Installed Libraries:</strong>
+              <span class="segbody">libxcb-image.so, libxcb-keysyms.so,
+              libxcb-render-util.so, libxcb-ewmh.so, libxcb-icccm.so, and
+              libxcb-cursor.so</span>
+            </div>
+            <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody"><code class=
-              "envar">$XORG_PREFIX</code>/share/fonts</span>
+              <span class="segbody">None</span>
             </div>
           </div>
         </div>
@@ -274,30 +254,85 @@ ln -svfn $XORG_PREFIX/share/fonts/X11/TTF /usr/share/fonts/X11-TTF</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="bdftruncate-x7" name=
-                    "bdftruncate-x7"></a><span class="term"><span class=
-                    "command"><strong>bdftruncate</strong></span></span>
+                    <a id="libxcb-image" name="libxcb-image"></a><span class=
+                    "term"><code class=
+                    "filename">libxcb-image.so</code></span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    generates a truncated BDF font from an ISO 10646-1
-                    encoded BDF font
+                    is a port of Xlib's XImage and XShmImage functions
                   </p>
                 </td>
               </tr>
               <tr>
                 <td>
                   <p>
-                    <a id="ucs2any-x7" name="ucs2any-x7"></a><span class=
-                    "term"><span class=
-                    "command"><strong>ucs2any</strong></span></span>
+                    <a id="libxcb-keysyms" name=
+                    "libxcb-keysyms"></a><span class="term"><code class=
+                    "filename">libxcb-keysyms.so</code></span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    generates BDF fonts in any encoding from an ISO 10646-1
-                    encoded BDF font
+                    provides the standard X key constants and API functions
+                    for conversion to/from keycodes
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="libxcb-render-util" name=
+                    "libxcb-render-util"></a><span class="term"><code class=
+                    "filename">libxcb-render-util.so</code></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    provides convenience functions for the Render extension
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="libxcb-ewmh" name="libxcb-ewmh"></a><span class=
+                    "term"><code class=
+                    "filename">libxcb-ewmh.so</code></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    provides the client and window-manager helpers for EWMH
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="libxcb-icccm" name="libxcb-icccm"></a><span class=
+                    "term"><code class=
+                    "filename">libxcb-icccm.so</code></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    provides the client and window-manager helpers for ICCCM
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="libxcb-cursor" name=
+                    "libxcb-cursor"></a><span class="term"><code class=
+                    "filename">libxcb-cursor.so</code></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    is a port of Xlib's libXcursor functions
                   </p>
                 </td>
               </tr>
@@ -309,17 +344,16 @@ ln -svfn $XORG_PREFIX/share/fonts/X11/TTF /usr/share/fonts/X11-TTF</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="xcursor-themes.html" title=
-          "xcursor-themes-1.0.7">Prev</a>
+          <a accesskey="p" href="xcb-util.html" title=
+          "xcb-util-0.4.1">Prev</a>
           <p>
-            xcursor-themes-1.0.7
+            xcb-util-0.4.1
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="xkeyboard-config.html" title=
-          "XKeyboardConfig-2.43">Next</a>
+          <a accesskey="n" href="mesa.html" title="Mesa-24.2.7">Next</a>
           <p>
-            XKeyboardConfig-2.43
+            Mesa-24.2.7
           </p>
         </li>
         <li class="up">

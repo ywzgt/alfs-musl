@@ -3,7 +3,7 @@ https://github.com/lfs-book/make-ca/archive/v1.14/make-ca-1.14.tar.gz
 https://github.com/cracklib/cracklib/releases/download/v2.10.2/cracklib-2.10.2.tar.xz
 https://www.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.5.tar.xz
 https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
-https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.6.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.7.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.8.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.0.tar.bz2
 https://www.netfilter.org/projects/iptables/files/iptables-1.8.11.tar.xz
@@ -56,7 +56,7 @@ https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.3.tar.bz2
 https://www.nano-editor.org/dist/v8/nano-8.2.tar.xz
 https://github.com/vim/vim/archive/v9.1.0866/vim-9.1.0866.tar.gz
 http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
-https://astron.com/pub/tcsh/tcsh-6.24.13.tar.gz
+https://astron.com/pub/tcsh/tcsh-6.24.14.tar.gz
 https://www.zsh.org/pub/zsh-5.9.tar.xz
 https://download.qemu.org/qemu-9.1.2.tar.xz
 https://github.com/abseil/abseil-cpp/releases/download/20240722.0/abseil-cpp-20240722.0.tar.gz
@@ -120,7 +120,7 @@ https://github.com/linux-nvme/libnvme/archive/v1.11.1/libnvme-1.11.1.tar.gz
 https://github.com/rrthomas/libpaper/releases/download/v2.2.5/libpaper-2.2.5.tar.gz
 https://github.com/flatpak/libportal/releases/download/0.8.1/libportal-0.8.1.tar.xz
 http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
-https://github.com/Qalculate/libqalculate/releases/download/v5.3.0/libqalculate-5.3.0.tar.gz
+https://github.com/Qalculate/libqalculate/releases/download/v5.4.0/libqalculate-5.4.0.tar.gz
 https://www.freedesktop.org/software/libqmi/libqmi-1.30.8.tar.xz
 https://github.com/seccomp/libseccomp/releases/download/v2.5.5/libseccomp-2.5.5.tar.gz
 https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.1.tar.xz
@@ -630,11 +630,6 @@ https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.17.0.tar.xz
 https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.17.0.tar.xz
 https://www.x.org/pub/individual/lib/libxcvt-0.1.2.tar.xz
 https://xcb.freedesktop.org/dist/xcb-util-0.4.1.tar.xz
-https://xcb.freedesktop.org/dist/xcb-util-image-0.4.1.tar.xz
-https://xcb.freedesktop.org/dist/xcb-util-keysyms-0.4.1.tar.xz
-https://xcb.freedesktop.org/dist/xcb-util-renderutil-0.3.10.tar.xz
-https://xcb.freedesktop.org/dist/xcb-util-wm-0.4.2.tar.xz
-https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.5.tar.xz
 https://mesa.freedesktop.org/archive/mesa-24.2.7.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-3.patch
 https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
@@ -927,6 +922,7 @@ https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.24.9.tar.xz
 https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.24.9.tar.xz
 https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.24.9.tar.xz
 https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.24.9.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/gst-plugins-bad-1.24.9-x265_4.1-1.patch
 https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.24.9.tar.xz
 https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.24.9.tar.xz
 https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
@@ -963,7 +959,7 @@ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
 https://github.com/webmproject/libvpx/archive/v1.15.0/libvpx-1.15.0.tar.gz
 https://github.com/mltframework/mlt/releases/download/v7.28.0/mlt-7.28.0.tar.gz
 https://downloads.xiph.org/releases/opus/opus-1.5.2.tar.gz
-https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.2.6/pipewire-1.2.6.tar.bz2
+https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.2.7/pipewire-1.2.7.tar.bz2
 https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
 https://www.kernel.org/pub/linux/bluetooth/sbc-2.0.tar.xz
 https://github.com/libsdl-org/sdl12-compat/archive/release-1.2.68/sdl12-compat-release-1.2.68.tar.gz
@@ -976,7 +972,7 @@ https://taglib.org/releases/taglib-2.0.2.tar.gz
 https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.28.1.tar.xz
 https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.6/wireplumber-0.5.6.tar.bz2
 https://anduin.linuxfromscratch.org/BLFS/x264/x264-20240812.tar.xz
-https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.6.tar.gz
+https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz
 https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-upstream_fixes-1.patch
 https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.gz
@@ -1038,7 +1034,7 @@ https://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/epdfview-gtk3/epdfview-gtk3-20200814.tar.xz
 https://archive.apache.org/dist/xmlgraphics/fop/source/fop-2.10-src.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/fop-2.10-upstream_fixes-1.patch
-https://www.mupdf.com/downloads/archive/mupdf-1.24.11-source.tar.gz
+https://www.mupdf.com/downloads/archive/mupdf-1.25.0-source.tar.gz
 https://github.com/dov/paps/releases/download/v0.8.0/paps-0.8.0.tar.gz
 https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312-source.tar.xz

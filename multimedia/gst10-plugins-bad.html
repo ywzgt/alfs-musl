@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-730">
+  <body class="blfs" id="blfs-r12.2-737">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-730
+        "phrase">(systemd</span> Edition) - Version r12.2-737
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-730">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-737">
           Home</a>
         </li>
       </ul>
@@ -105,6 +105,20 @@
               <p>
                 Estimated build time: 0.6 SBU (Using parallelism=4; with
                 tests)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Optional patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/gst-plugins-bad-1.24.9-x265_4.1-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/gst-plugins-bad-1.24.9-x265_4.1-1.patch</a>
               </p>
             </li>
           </ul>
@@ -189,7 +203,7 @@
           title="Wayland-1.23.0">Wayland-1.23.0</a> (<a class="xref" href=
           "../x/gtk3.html" title="GTK+-3.24.43">GTK+-3.24.43</a> must have
           been compiled with wayland support), <a class="xref" href=
-          "x265.html" title="x265-3.6">x265-3.6</a>, <a class="ulink" href=
+          "x265.html" title="x265-4.1">x265-4.1</a>, <a class="ulink" href=
           "https://bs2b.sourceforge.net/">bs2b</a>, <a class="ulink" href=
           "https://acoustid.org/chromaprint">Chromaprint</a>, <a class=
           "ulink" href="https://github.com/kornelski/dssim">dssim</a>,
@@ -274,6 +288,12 @@
             needs to be installed before this package.
           </p>
         </div>
+        <p>
+          If you installed the optional <a class="xref" href="x265.html"
+          title="x265-4.1">x265-4.1</a> package, apply the following patch:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../gst-plugins-bad-1.24.9-x265_4.1-1.patch</kbd></pre>
         <p>
           Install <span class="application">GStreamer Bad Plug-ins</span> by
           running the following commands:
@@ -418,7 +438,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-730">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-737">
           Home</a>
         </li>
       </ul>
