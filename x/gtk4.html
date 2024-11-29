@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-737">
+  <body class="blfs" id="blfs-r12.2-743">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-737
+        "phrase">(systemd</span> Edition) - Version r12.2-743
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-737">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-743">
           Home</a>
         </li>
       </ul>
@@ -122,7 +122,7 @@
           "libepoxy.html" title="libepoxy-1.5.10">libepoxy-1.5.10</a>,
           <a class="xref" href="../general/libxkbcommon.html" title=
           "libxkbcommon-1.7.0">libxkbcommon-1.7.0</a>, <a class="xref" href=
-          "pango.html" title="Pango-1.54.0">Pango-1.54.0</a>, <a class="xref"
+          "pango.html" title="Pango-1.55.0">Pango-1.55.0</a>, <a class="xref"
           href="../general/python-modules.html#pygobject3" title=
           "PyGObject-3.50.0">PyGObject-3.50.0</a>, and <a class="xref" href=
           "../general/wayland-protocols.html" title=
@@ -220,9 +220,11 @@ ninja</kbd></pre>
         <p>
           To run the tests, issue:
         </p>
-        <pre class="userinput"><kbd class=
-        "command">env -u{GALLIUM_DRIVER,MESA_LOADER_DRIVER_OVERRIDE} LIBGL_ALWAYS_SOFTWARE=1 \
-dbus-run-session meson test --setup x11 --no-suite={headless,needs-udmabuf}</kbd></pre>
+        <pre class="userinput"><kbd class="command">
+env -u{GALLIUM_DRIVER,MESA_LOADER_DRIVER_OVERRIDE}          \
+    LIBGL_ALWAYS_SOFTWARE=1 VK_LOADER_DRIVERS_SELECT='lvp*' \
+    dbus-run-session meson test --setup x11                 \
+                                --no-suite={headless,needs-udmabuf}</kbd></pre>
         <p>
           If you are in a Wayland session, replace the one occurrence of
           <code class="literal">x11</code> with <code class=
@@ -312,10 +314,12 @@ dbus-run-session meson test --setup x11 --no-suite={headless,needs-udmabuf}</kbd
           prefers to use on Wayland-based graphical environments.
         </p>
         <p>
-          <code class="envar">LIBGL_ALWAYS_SOFTWARE=1</code>: Force the test
-          suite to use the softpipe or llvmpipe driver from Mesa. The test
-          suite is so sensitive that the minor differences caused by a
-          different Mesa driver can trigger test failures.
+          <code class="envar">LIBGL_ALWAYS_SOFTWARE=1</code> and <code class=
+          "envar">VK_LOADER_DRIVERS_SELECT='lvp*'</code>: Force the test
+          suite to use the softpipe or llvmpipe Gallium driver and the
+          lavapipe Vulkan driver from Mesa. The test suite is so sensitive
+          that the minor differences caused by a different Mesa driver can
+          trigger test failures.
         </p>
         <p>
           <span class="command"><strong>env
@@ -652,7 +656,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-737">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-743">
           Home</a>
         </li>
       </ul>

@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Pango-1.54.0
+      Pango-1.55.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-737">
+  <body class="blfs" id="blfs-r12.2-743">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-737
+        "phrase">(systemd</span> Edition) - Version r12.2-743
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-737">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-743">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="pango" name="pango"></a>Pango-1.54.0
+      <a id="pango" name="pango"></a>Pango-1.55.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -82,23 +82,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/pango/1.54/pango-1.54.0.tar.xz">
-                https://download.gnome.org/sources/pango/1.54/pango-1.54.0.tar.xz</a>
+                "https://download.gnome.org/sources/pango/1.55/pango-1.55.0.tar.xz">
+                https://download.gnome.org/sources/pango/1.55/pango-1.55.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 7ad89b03f6850e0be28f91522b793842
+                Download MD5 sum: 1a9d0b7e0924db907667d15aa6891a95
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 1.9 MB
+                Download size: 2.1 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 27 MB (with tests)
+                Estimated disk space required: 34 MB (with tests)
               </p>
             </li>
             <li class="listitem">
@@ -141,10 +141,8 @@
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="TTF-and-OTF-fonts.html#cantarell-fonts"
-          title="Cantarell fonts">Cantarell fonts</a> (for tests), <a class=
-          "xref" href="../general/python-modules.html#gi-docgen" title=
-          "Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> (to generate
+          <a class="xref" href="../general/python-modules.html#gi-docgen"
+          title="Gi-DocGen-2024.1">Gi-DocGen-2024.1</a> (to generate
           documentation), <a class="ulink" href=
           "https://ftpmirror.gnu.org/gnu/help2man">help2man</a>, <a class=
           "ulink" href="https://linux.thai.net/projects/libthai">libthai</a>,
@@ -175,13 +173,14 @@ ninja</kbd></pre>
           the API documentation for this package, issue:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed "/docs_dir =/s@\$@ / 'pango-1.54.0'@" -i ../docs/meson.build &amp;&amp;
+        "command">sed "/docs_dir =/s@\$@ / 'pango-1.55.0'@" -i ../docs/meson.build &amp;&amp;
 meson configure -D documentation=true                            &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
-          test</strong></span>. Two tests, testiter and test-font, are known
-          to fail for unknown reason.
+          test</strong></span>. One test named testboundaries_ucd is known to
+          fail because it expects Unicode 16.0 support from Glib 2.83 or
+          newer.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -244,7 +243,7 @@ ninja</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/pango-1.0 and
-              /usr/share/doc/pango-1.54.0 (if gi-docgen is available)</span>
+              /usr/share/doc/pango-1.55.0 (if gi-docgen is available)</span>
             </div>
           </div>
         </div>
@@ -346,7 +345,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-737">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-743">
           Home</a>
         </li>
       </ul>
