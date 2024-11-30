@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Protobuf-28.3
+      Protobuf-29.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-743">
+  <body class="blfs" id="blfs-r12.2-748">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-743
+        "phrase">(systemd</span> Edition) - Version r12.2-748
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-743">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-748">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="protobuf" name="protobuf"></a>Protobuf-28.3
+      <a id="protobuf" name="protobuf"></a>Protobuf-29.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,28 +78,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/protocolbuffers/protobuf/releases/download/v28.3/protobuf-28.3.tar.gz">
-                https://github.com/protocolbuffers/protobuf/releases/download/v28.3/protobuf-28.3.tar.gz</a>
+                "https://github.com/protocolbuffers/protobuf/releases/download/v29.0/protobuf-29.0.tar.gz">
+                https://github.com/protocolbuffers/protobuf/releases/download/v29.0/protobuf-29.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: e1ddab27d3904d06a96d2f7b8535e3ad
+                Download MD5 sum: 04ee9a60a4f3100ae52b2a85fabc66c3
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 8.8 MB
+                Download size: 8.9 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 124 MB
+                Estimated disk space required: 141 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 1.3 SBU (with parallelism=4)
+                Estimated build time: 1.4 SBU (with parallelism=4)
               </p>
             </li>
           </ul>
@@ -195,13 +195,13 @@ ninja</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">protoc-28.3.0 and protoc (a symlink to
-              protoc-28.3.0)</span>
+              <span class="segbody">protoc-29.0.0 and protoc (a symlink to
+              protoc-29.0.0)</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
               <span class="segbody">libprotobuf.so, libprotobuf-lite.so,
-              libprotoc.so, and libutf8_range.so</span>
+              libprotoc.so, libutf8_range.so, and libutf8_validity.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
@@ -297,6 +297,23 @@ ninja</kbd></pre>
                   </p>
                 </td>
               </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="libutf8_validity" name=
+                    "libutf8_validity"></a><span class="term"><code class=
+                    "filename">libutf8_validity.so</code></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    contains functions that allow a program to determine
+                    whether a sequence of bytes is a valid UTF-8 sequence,
+                    and to find what the longest valid prefix of the sequence
+                    is
+                  </p>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -323,7 +340,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-743">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-748">
           Home</a>
         </li>
       </ul>
