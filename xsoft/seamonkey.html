@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-748">
+  <body class="blfs" id="blfs-r12.2-758">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-748
+        "phrase">(systemd</span> Edition) - Version r12.2-758
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-748">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-758">
           Home</a>
         </li>
       </ul>
@@ -328,15 +328,18 @@ EOF</kbd></pre>
         </div>
         <p>
           First, if you are building with system ICU, adapt the line break
-          mapping for ICU-74 or later, and apply a patch to build this
-          package with the C++17 standard because the headers of ICU-75 or
-          later require some C++17 features:
+          mapping for ICU-74 or later, apply a patch to build this package
+          with the C++17 standard because the headers of ICU-75 or later
+          require some C++17 features, and adapt the build system to use the
+          correct library with ICU-76 or later:
         </p>
         <pre class="userinput"><kbd class="command">(for i in {43..47}; do
    sed '/ZWJ/s/$/,CLASS_CHARACTER/' -i intl/lwbrk/LineBreaker.cpp || exit $?
 done) &amp;&amp;
 
-patch -Np1 -i ../seamonkey-2.53.19-cxx17-1.patch</kbd></pre>
+patch -Np1 -i ../seamonkey-2.53.19-cxx17-1.patch &amp;&amp;
+
+sed -i 's/icu-i18n/icu-uc &amp;/' js/moz.configure</kbd></pre>
         <p>
           Next, remove a hunk of unused code violating the C++ standard.
           Clang has started to reject it even though it's unused since the
@@ -560,7 +563,7 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-748">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-758">
           Home</a>
         </li>
       </ul>
