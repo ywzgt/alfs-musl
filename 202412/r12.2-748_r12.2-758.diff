@@ -1,0 +1,40 @@
+diff --git a/wget-list b/wget-list
+index 5cf0cab936..e866dcc8cc 100644
+--- a/wget-list
++++ b/wget-list
+@@ -26,7 +26,7 @@ https://github.com/shadow-maint/shadow/releases/download/4.16.0/shadow-4.16.0.ta
+ https://www.stunnel.org/downloads/archive/5.x/stunnel-5.73.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.16p2.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+-https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.11.tar.xz
++https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.12.tar.xz
+ https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz
+ https://github.com/libfuse/libfuse/releases/download/fuse-3.16.2/fuse-3.16.2.tar.gz
+ https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
+@@ -283,7 +283,7 @@ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-018.tar.xz
+ https://ftp.gnu.org/gnu/which/which-2.21.tar.gz
+ https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz
+ https://downloads.sourceforge.net/infozip/zip30.tar.gz
+-https://github.com/lu-zero/cargo-c/archive/v0.10.5/cargo-c-0.10.5.tar.gz
++https://github.com/lu-zero/cargo-c/archive/v0.10.7/cargo-c-0.10.7.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.27.0/cbindgen-0.27.0.tar.gz
+ https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+@@ -530,7 +530,7 @@ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.0.7.tar.g
+ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.2.2.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+ https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.6.tar.xz
+-https://static.rust-lang.org/dist/rustc-1.82.0-src.tar.xz
++https://static.rust-lang.org/dist/rustc-1.83.0-src.tar.xz
+ https://github.com/rust-lang/rust-bindgen/archive/v0.70.1/rust-bindgen-0.70.1.tar.gz
+ https://downloads.sourceforge.net/scons/SCons-4.8.1.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+@@ -1034,7 +1034,7 @@ https://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/epdfview-gtk3/epdfview-gtk3-20200814.tar.xz
+ https://archive.apache.org/dist/xmlgraphics/fop/source/fop-2.10-src.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/fop-2.10-upstream_fixes-1.patch
+-https://www.mupdf.com/downloads/archive/mupdf-1.25.0-source.tar.gz
++https://www.mupdf.com/downloads/archive/mupdf-1.25.1-source.tar.gz
+ https://github.com/dov/paps/releases/download/v0.8.0/paps-0.8.0.tar.gz
+ https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312-source.tar.xz
