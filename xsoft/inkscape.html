@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-761">
+  <body class="blfs" id="blfs-r12.2-770">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-761
+        "phrase">(systemd</span> Edition) - Version r12.2-770
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-761">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-770">
           Home</a>
         </li>
       </ul>
@@ -104,6 +104,20 @@
             </li>
           </ul>
         </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4-poppler_fixes-2.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4-poppler_fixes-2.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -135,7 +149,7 @@
           "../general/libxslt.html" title=
           "libxslt-1.1.42">libxslt-1.1.42</a>, <a class="xref" href=
           "../general/poppler.html" title=
-          "Poppler-24.11.0">Poppler-24.11.0</a>, and <a class="xref" href=
+          "Poppler-24.12.0">Poppler-24.12.0</a>, and <a class="xref" href=
           "../general/popt.html" title="Popt-1.19">popt-1.19</a>
         </p>
         <h4>
@@ -190,6 +204,11 @@
           Installation of Inkscape
         </h2>
         <p>
+          First, fix build failures with recent versions of poppler:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../inkscape-1.4_2024-10-09_e7c3feb100-poppler_fixes-1.patch</kbd></pre>
+        <p>
           Install <span class="application">Inkscape</span> by running the
           following commands:
         </p>
@@ -199,8 +218,6 @@ cd    build                       &amp;&amp;
 
 cmake -D CMAKE_INSTALL_PREFIX=/usr  \
       -D CMAKE_BUILD_TYPE=Release   \
-      -D ENABLE_POPPLER=FALSE       \
-      -D ENABLE_POPPLER_CAIRO=FALSE \
       ..                          &amp;&amp;
 make</kbd></pre>
         <p>
@@ -246,11 +263,6 @@ update-desktop-database -q</kbd></pre>
           <em class="parameter"><code>-D
           CMAKE_BUILD_TYPE=Release</code></em>: This switch is used to build
           the release library without any debug `assert` in the code.
-        </p>
-        <p>
-          <em class="parameter"><code>-D ENABLE_POPPLER=FALSE</code></em>:
-          This switch disables PDF support because it does not build with
-          poppler-24.11.0.
         </p>
         <p>
           <code class="option">-D WITH_DBUS=ON</code>: use this if you wish
@@ -358,7 +370,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-761">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-770">
           Home</a>
         </li>
       </ul>
