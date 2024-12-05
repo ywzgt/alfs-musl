@@ -1,0 +1,71 @@
+diff --git a/wget-list b/wget-list
+index 0a6693f048..8d0fa6b922 100644
+--- a/wget-list
++++ b/wget-list
+@@ -201,8 +201,8 @@ https://releases.pagure.org/newt/newt-0.52.24.tar.gz
+ https://github.com/opencv/opencv/archive/4.10.0/opencv-4.10.0.tar.gz
+ https://github.com/opencv/opencv_contrib/archive/4.10.0/opencv_contrib-4.10.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.2/openjpeg-2.5.2.tar.gz
+-https://www.cairographics.org/releases/pixman-0.44.0.tar.gz
+-https://poppler.freedesktop.org/poppler-24.11.0.tar.xz
++https://www.cairographics.org/releases/pixman-0.44.2.tar.gz
++https://poppler.freedesktop.org/poppler-24.12.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+ https://github.com/qpdf/qpdf/releases/download/v11.9.1/qpdf-11.9.1.tar.gz
+@@ -646,7 +646,7 @@ https://www.x.org/pub/individual/driver/xf86-input-libinput-1.5.0.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-synaptics-1.9.2.tar.xz
+ https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-1.2.3/xf86-input-wacom-1.2.3.tar.bz2
+ https://www.x.org/pub/individual/app/twm-1.0.12.tar.xz
+-https://invisible-mirror.net/archives/xterm/xterm-395.tgz
++https://invisible-mirror.net/archives/xterm/xterm-396.tgz
+ https://www.x.org/pub/individual/app/xclock-1.1.1.tar.xz
+ https://www.x.org/pub/individual/app/xinit-1.4.2.tar.xz
+ https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz
+@@ -849,7 +849,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/menu-cache-1.1.0-consolidated_
+ https://github.com/lxqt/libfm-qt/releases/download/2.1.0/libfm-qt-2.1.0.tar.xz
+ https://github.com/lxqt/lxqt-globalkeys/releases/download/2.1.0/lxqt-globalkeys-2.1.0.tar.xz
+ https://github.com/lxqt/lxqt-qtplugin/releases/download/2.1.0/lxqt-qtplugin-2.1.0.tar.xz
+-https://github.com/lxqt/lxqt-panel/releases/download/2.1.2/lxqt-panel-2.1.2.tar.xz
++https://github.com/lxqt/lxqt-panel/releases/download/2.1.3/lxqt-panel-2.1.3.tar.xz
+ https://github.com/lxqt/pcmanfm-qt/releases/download/2.1.0/pcmanfm-qt-2.1.0.tar.xz
+ https://github.com/lxqt/lxqt-powermanagement/releases/download/2.1.0/lxqt-powermanagement-2.1.0.tar.xz
+ https://github.com/lxqt/lxqt-runner/releases/download/2.1.0/lxqt-runner-2.1.0.tar.xz
+@@ -865,7 +865,7 @@ https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/1.1.0/xdg-desk
+ https://github.com/lxqt/obconf-qt/releases/download/0.16.5/obconf-qt-0.16.5.tar.xz
+ https://github.com/lxqt/lximage-qt/releases/download/2.1.0/lximage-qt-2.1.0.tar.xz
+ https://github.com/lxqt/lxqt-archiver/releases/download/1.1.0/lxqt-archiver-1.1.0.tar.xz
+-https://github.com/lxqt/lxqt-notificationd/releases/download/2.1.0/lxqt-notificationd-2.1.0.tar.xz
++https://github.com/lxqt/lxqt-notificationd/releases/download/2.1.1/lxqt-notificationd-2.1.1.tar.xz
+ https://github.com/lxqt/pavucontrol-qt/releases/download/2.1.0/pavucontrol-qt-2.1.0.tar.xz
+ https://github.com/lxqt/qps/releases/download/2.10.0/qps-2.10.0.tar.xz
+ https://github.com/lxqt/qtermwidget/releases/download/2.1.0/qtermwidget-2.1.0.tar.xz
+@@ -880,7 +880,7 @@ https://download.documentfoundation.org/libreoffice/src/24.8.3/libreoffice-help-
+ https://download.documentfoundation.org/libreoffice/src/24.8.3/libreoffice-translations-24.8.3.2.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-24.8.3.2-boost_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-24.8.3.2-icu76_fixes-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-24.8.3.2-poppler_24.10-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-24.8.3.2-poppler_24.10-2.patch
+ https://download.gnome.org/sources/epiphany/47/epiphany-47.2.tar.xz
+ https://download.kde.org/stable/release-service/24.08.3/src/falkon-24.08.3.tar.xz
+ https://archive.seamonkey-project.org/releases/2.53.19/source/seamonkey-2.53.19.source.tar.xz
+@@ -895,8 +895,9 @@ https://anduin.linuxfromscratch.org/BLFS/gimp/gimp3-20240711.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/gimp/gimp3-help-20240711.tar.xz
+ https://downloads.sourceforge.net/gparted/gparted-1.6.0.tar.gz
+ https://inkscape.org/gallery/item/53679/inkscape-1.4.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4-poppler_fixes-2.patch
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/128.5.0esr/source/thunderbird-128.5.0esr.source.tar.xz
++https://archive.mozilla.org/pub/thunderbird/releases/128.5.1esr/source/thunderbird-128.5.1esr.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.14.1/tigervnc-1.14.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.14.1-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz
+@@ -970,7 +971,7 @@ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://taglib.org/releases/taglib-2.0.2.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.28.1.tar.xz
+-https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.6/wireplumber-0.5.6.tar.bz2
++https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.7/wireplumber-0.5.7.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20240812.tar.xz
+ https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz
+ https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
