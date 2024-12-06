@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Postfix-3.9.0
+      Postfix-3.9.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-776">
+  <body class="blfs" id="blfs-r12.2-787">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-776
+        "phrase">(systemd</span> Edition) - Version r12.2-787
       </h4>
       <h3>
         Chapter&nbsp;21.&nbsp;Mail Server Software
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-776">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-787">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="postfix" name="postfix"></a>Postfix-3.9.0
+      <a id="postfix" name="postfix"></a>Postfix-3.9.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,13 +80,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ghostarchive.org/postfix/postfix-release/official/postfix-3.9.0.tar.gz">
-                https://ghostarchive.org/postfix/postfix-release/official/postfix-3.9.0.tar.gz</a>
+                "https://ghostarchive.org/postfix/postfix-release/official/postfix-3.9.1.tar.gz">
+                https://ghostarchive.org/postfix/postfix-release/official/postfix-3.9.1.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 3eda9b945ed6cdf11ef58a731c574a04
+                Download MD5 sum: b2fe7ab1a37a05b24b595d441aa1247f
               </p>
             </li>
             <li class="listitem">
@@ -235,7 +235,7 @@ AUXLIBS=""</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58877" name="idm58877"></a>Cyrus-SASL
+                    <a id="idm58917" name="idm58917"></a>Cyrus-SASL
                   </h5>
                 </div>
               </div>
@@ -256,7 +256,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58884" name="idm58884"></a>LMDB
+                    <a id="idm58924" name="idm58924"></a>LMDB
                   </h5>
                 </div>
               </div>
@@ -276,7 +276,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58891" name="idm58891"></a>OpenLDAP
+                    <a id="idm58931" name="idm58931"></a>OpenLDAP
                   </h5>
                 </div>
               </div>
@@ -297,7 +297,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58898" name="idm58898"></a>Sqlite
+                    <a id="idm58938" name="idm58938"></a>Sqlite
                   </h5>
                 </div>
               </div>
@@ -318,7 +318,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58905" name="idm58905"></a>MySQL
+                    <a id="idm58945" name="idm58945"></a>MySQL
                   </h5>
                 </div>
               </div>
@@ -338,7 +338,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58912" name="idm58912"></a>PostgreSQL
+                    <a id="idm58952" name="idm58952"></a>PostgreSQL
                   </h5>
                 </div>
               </div>
@@ -359,7 +359,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58919" name="idm58919"></a>CDB/TinyCDB
+                    <a id="idm58959" name="idm58959"></a>CDB/TinyCDB
                   </h5>
                 </div>
               </div>
@@ -381,7 +381,7 @@ fi</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="idm58929" name="idm58929"></a>StartTLS
+                    <a id="idm58969" name="idm58969"></a>StartTLS
                     Authentication
                   </h5>
                 </div>
@@ -429,8 +429,8 @@ make</kbd></pre>
           "command">sh postfix-install -non-interactive \
    daemon_directory=/usr/lib/postfix \
    manpage_directory=/usr/share/man \
-   html_directory=/usr/share/doc/postfix-3.9.0/html \
-   readme_directory=/usr/share/doc/postfix-3.9.0/readme</kbd></pre>
+   html_directory=/usr/share/doc/postfix-3.9.1/html \
+   readme_directory=/usr/share/doc/postfix-3.9.1/readme</kbd></pre>
         </div>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -619,7 +619,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/{etc,usr/lib}/postfix,
-              /usr/share/doc/postfix-3.9.0 and
+              /usr/share/doc/postfix-3.9.1 and
               /var/{lib,spool}/postfix</span>
             </div>
           </div>
@@ -887,7 +887,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-776">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-787">
           Home</a>
         </li>
       </ul>
