@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-787">
+  <body class="blfs" id="blfs-r12.2-793">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-787
+        "phrase">(systemd</span> Edition) - Version r12.2-793
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-787">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-793">
           Home</a>
         </li>
       </ul>
@@ -140,11 +140,11 @@
           Installation of GPGME
         </h2>
         <p>
-          At first, allow the build system to detect Python-3.13. Also
-          prevent the build system from attaching the <code class=
+          First, allow the build system to detect Python-3.13. Also, prevent
+          the build system from attaching the <code class=
           "literal">-unknown</code> suffix to the version string when it's
-          regenerated out of a Git repository. Then regenerate the build
-          system;
+          regenerated outside of a Git repository. After this, regenerate the
+          build system:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed 's/\[3.12\]/&amp;,[3.13]/' -i configure.ac &amp;&amp;
@@ -356,7 +356,7 @@ fi</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-787">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-793">
           Home</a>
         </li>
       </ul>
