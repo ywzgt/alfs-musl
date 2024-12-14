@@ -1,0 +1,59 @@
+diff --git a/wget-list b/wget-list
+index 185185dc04..c056ddfaf4 100644
+--- a/wget-list
++++ b/wget-list
+@@ -58,7 +58,7 @@ https://github.com/vim/vim/archive/v9.1.0866/vim-9.1.0866.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.14.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+-https://download.qemu.org/qemu-9.1.2.tar.xz
++https://download.qemu.org/qemu-9.2.0.tar.xz
+ https://github.com/abseil/abseil-cpp/releases/download/20240722.0/abseil-cpp-20240722.0.tar.gz
+ https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.4.tar.xz
+ http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz
+@@ -66,8 +66,7 @@ https://archive.apache.org/dist/apr/apr-1.7.5.tar.bz2
+ https://archive.apache.org/dist/apr/apr-util-1.6.3.tar.bz2
+ https://ftp.gnu.org/gnu/aspell/aspell-0.60.8.1.tar.gz
+ https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2
+-https://github.com/boostorg/boost/releases/download/boost-1.86.0/boost-1.86.0-b2-nodocs.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/boost-1.86.0-upstream_fixes-1.patch
++https://github.com/boostorg/boost/releases/download/boost-1.87.0/boost-1.87.0-b2-nodocs.tar.xz
+ https://github.com/google/brotli/archive/v1.1.0/brotli-1.1.0.tar.gz
+ https://downloads.sourceforge.net/clucene/clucene-core-2.3.3.4.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/clucene-2.3.3.4-contribs_lib-1.patch
+@@ -78,7 +77,7 @@ https://github.com/rrthomas/enchant/releases/download/v2.8.2/enchant-2.8.2.tar.g
+ https://libopenraw.freedesktop.org/download/exempi-2.6.5.tar.xz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+ https://github.com/fmtlib/fmt/archive/11.0.2/fmt-11.0.2.tar.gz
+-https://download.gnome.org/sources/glib/2.82/glib-2.82.3.tar.xz
++https://download.gnome.org/sources/glib/2.82/glib-2.82.4.tar.xz
+ https://download.gnome.org/sources/gobject-introspection/1.82/gobject-introspection-1.82.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+ https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.7.tar.xz
+@@ -532,7 +531,7 @@ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.2.2.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+ https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.6.tar.xz
+ https://static.rust-lang.org/dist/rustc-1.83.0-src.tar.xz
+-https://github.com/rust-lang/rust-bindgen/archive/v0.70.1/rust-bindgen-0.70.1.tar.gz
++https://github.com/rust-lang/rust-bindgen/archive/v0.71.1/rust-bindgen-0.71.1.tar.gz
+ https://downloads.sourceforge.net/scons/SCons-4.8.1.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+ https://archive.apache.org/dist/subversion/subversion-1.14.5.tar.bz2
+@@ -552,7 +551,7 @@ https://www.kernel.org/pub/linux/utils/net/bridge-utils/bridge-utils-1.7.1.tar.x
+ https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.1.tar.bz2
+ https://www.ncftp.com/downloads/ncftp/ncftp-3.2.7-src.tar.xz
+ https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
+-https://www.kernel.org/pub/linux/utils/nfs-utils/2.8.1/nfs-utils-2.8.1.tar.xz
++https://www.kernel.org/pub/linux/utils/nfs-utils/2.8.2/nfs-utils-2.8.2.tar.xz
+ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
+ https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/rpcbind-1.2.7-vulnerability_fixes-1.patch
+@@ -1035,7 +1034,7 @@ https://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/epdfview-gtk3/epdfview-gtk3-20200814.tar.xz
+ https://archive.apache.org/dist/xmlgraphics/fop/source/fop-2.10-src.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/fop-2.10-upstream_fixes-1.patch
+-https://www.mupdf.com/downloads/archive/mupdf-1.25.1-source.tar.gz
++https://www.mupdf.com/downloads/archive/mupdf-1.25.2-source.tar.gz
+ https://github.com/dov/paps/releases/download/v0.8.0/paps-0.8.0.tar.gz
+ https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312-source.tar.xz
