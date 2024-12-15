@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-835">
+  <body class="blfs" id="blfs-r12.2-845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-835
+        "phrase">(systemd</span> Edition) - Version r12.2-845
       </h4>
       <h3>
         Chapter&nbsp;32.&nbsp;KDE Plasma
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-835">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-845">
           Home</a>
         </li>
       </ul>
@@ -77,7 +77,7 @@
           <li class="listitem">
             <p>
               Download (HTTP): <a class="ulink" href=
-              "https://download.kde.org/stable/plasma/6.2.3">https://download.kde.org/stable/plasma/6.2.3</a>
+              "https://download.kde.org/stable/plasma/6.2.4">https://download.kde.org/stable/plasma/6.2.4</a>
             </p>
           </li>
           <li class="listitem">
@@ -113,7 +113,7 @@
         "boost-1.87.0">Boost-1.87.0</a>, <a class="xref" href=
         "../x/gtk3.html" title="GTK+-3.24.43">GTK+-3.24.43</a>, <a class=
         "xref" href="frameworks6.html" title=
-        "Building KDE Frameworks 6.8.0 (KF6)">KDE Frameworks-6.8.0</a>,
+        "Building KDE Frameworks 6.9.0 (KF6)">KDE Frameworks-6.9.0</a>,
         <a class="xref" href="kirigami-addons.html" title=
         "kirigami-addons-1.4.0">kirigami-addons-1.4.0</a>, <a class="xref"
         href="../general/libdisplay-info.html" title=
@@ -156,7 +156,9 @@
         "../x/x7driver.html#libinput" title=
         "libinput-1.27.0">libinput-1.27.0</a>, <a class="xref" href=
         "../basicnet/libpcap.html" title="libpcap-1.10.5">libpcap-1.10.5</a>,
-        <a class="xref" href="../postlfs/linux-pam.html" title=
+        <a class="xref" href="../general/libwacom.html" title=
+        "libwacom-2.14.0">libwacom-2.14.0</a>, <a class="xref" href=
+        "../postlfs/linux-pam.html" title=
         "Linux-PAM-1.7.0">Linux-PAM-1.7.0</a>, <a class="xref" href=
         "../general/lm-sensors.html" title=
         "lm-sensors-3-6-0">lm-sensors-3-6-0</a>, <a class="xref" href=
@@ -184,8 +186,8 @@
         <a class="xref" href="../general/accountsservice.html" title=
         "AccountsService-23.13.9">AccountsService-23.13.9</a>, <a class=
         "xref" href="../x/breeze-icons.html" title=
-        "breeze-icons-6.8.0">breeze-icons-6.8.0</a>, <a class="xref" href=
-        "kio-extras.html" title="kio-extras-24.08.3">kio-extras-24.08.3</a>,
+        "breeze-icons-6.9.0">breeze-icons-6.9.0</a>, <a class="xref" href=
+        "kio-extras.html" title="kio-extras-24.12.0">kio-extras-24.12.0</a>,
         <a class="xref" href="../postlfs/smartmontools.html" title=
         "smartmontools-7.4">smartmontools-7.4</a>, <a class="xref" href=
         "../x/xdg-desktop-portal.html" title=
@@ -227,7 +229,7 @@
           all at once:
         </p>
         <pre class="userinput"><kbd class=
-        "command">url=https://download.kde.org/stable/plasma/6.2.3/
+        "command">url=https://download.kde.org/stable/plasma/6.2.4/
 wget -r -nH -nd -A '*.xz' -np $url</kbd>
 <code class="literal">
 The options used here are:
@@ -247,7 +249,7 @@ The options used here are:
           follows:
         </p>
         <pre class="userinput"><kbd class=
-        "command">cat &gt; plasma-6.2.3.md5 &lt;&lt; "EOF"
+        "command">cat &gt; plasma-6.2.4.md5 &lt;&lt; "EOF"
 <code class=
 "literal">2ff46f54fa0ed2984aa634ab8ed92f8c  kdecoration-6.2.3.tar.xz
 d673a0d084abd008f1b56c4a2479a7f2  libkscreen-6.2.3.tar.xz
@@ -309,7 +311,7 @@ dc548c81d9e3f2cad96391f790950a5c  oxygen-sounds-6.2.3.tar.xz
 166d2f5513667eaeb1f115bcccfbe20d  plasma-welcome-6.2.3.tar.xz
 a444d387e8a5f60d1539f3469a08ead6  ocean-sound-theme-6.2.3.tar.xz
 edb63b916fd2c60b58cfb78cee174ef4  print-manager-6.2.3.tar.xz
-#d063c75f86ba6e08301417c92658b16e  wacomtablet-6.2.3.tar.xz
+d063c75f86ba6e08301417c92658b16e  wacomtablet-6.2.3.tar.xz
 #b685048d3fa905b9236e8072bba52a71  kwayland-integration-6.2.3.tar.xz
 #347d06cf599e522a21cb0dbb4db543fb  krdp-6.2.3.tar.xz
 94675901de34a1f68c03c85a81f5f761  oxygen-6.2.3.tar.xz
@@ -394,8 +396,8 @@ EOF</kbd></pre>
               </li>
               <li class="listitem">
                 <p>
-                  The wacomtablet and kwayland-integration applications
-                  require plasma5 support.
+                  The kwayland-integration application requires plasma5
+                  support.
                 </p>
               </li>
             </ul>
@@ -493,7 +495,7 @@ export -f as_root</kbd></pre>
     as_root rm -rf $packagedir
     as_root /sbin/ldconfig
 
-done &lt; plasma-6.2.3.md5
+done &lt; plasma-6.2.4.md5
 
 exit</kbd></pre>
         <p>
@@ -680,7 +682,7 @@ startx</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-835">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-845">
           Home</a>
         </li>
       </ul>
