@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-847">
+  <body class="blfs" id="blfs-r12.2-854">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-847
+        "phrase">(systemd</span> Edition) - Version r12.2-854
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-847">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-854">
           Home</a>
         </li>
       </ul>
@@ -133,6 +133,14 @@
         <h2 class="sect2">
           Installation of ALSA Utilities
         </h2>
+        <p>
+          First correct a problem in the distributed udev rules:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e 's/acp-pdm-dmic/acp-dmic-codec/'                   \
+    -e '/LABEL="alsa_restore_go"/s/go/std/'               \
+    -e '/^ENV.ALSA_CARD_NUMBER/i LABEL="alsa_restore_go"' \
+    -i alsactl/90-alsa-restore.rules.in</kbd></pre>
         <p>
           Install <span class="application">ALSA Utilities</span> by running
           the following commands:
@@ -566,7 +574,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-847">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-854">
           Home</a>
         </li>
       </ul>
