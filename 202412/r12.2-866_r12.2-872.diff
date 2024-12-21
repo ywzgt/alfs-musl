@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 3b03161ab5..f6a43ab05e 100644
+--- a/wget-list
++++ b/wget-list
+@@ -148,7 +148,7 @@ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz
+ https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.44/pcre2-10.44.tar.bz2
+ https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
+-https://github.com/protocolbuffers/protobuf/releases/download/v29.1/protobuf-29.1.tar.gz
++https://github.com/protocolbuffers/protobuf/releases/download/v29.2/protobuf-29.2.tar.gz
+ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.0/protobuf-c-1.5.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.0-consolidated_fixes-1.patch
+ https://download.kde.org/stable/qca/2.3.9/qca-2.3.9.tar.xz
+@@ -894,7 +894,7 @@ https://feh.finalrewind.org/feh-3.10.3.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20230101/fontforge-20230101.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/fontforge-20230101-security_fixes-1.patch
+ https://github.com/freerdp/freerdp/archive/3.9.0/FreeRDP-3.9.0.tar.gz
+-https://anduin.linuxfromscratch.org/BLFS/gimp/gimp3-20240711.tar.xz
++https://download.gimp.org/gimp/v3.0/gimp-3.0.0-RC1.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/gimp/gimp3-help-20240711.tar.xz
+ https://downloads.sourceforge.net/gparted/gparted-1.6.0.tar.gz
+ https://inkscape.org/gallery/item/53679/inkscape-1.4.tar.xz
