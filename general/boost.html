@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-876">
+  <body class="blfs" id="blfs-r12.2-887">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-876
+        "phrase">(systemd</span> Edition) - Version r12.2-887
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-876">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-887">
           Home</a>
         </li>
       </ul>
@@ -155,15 +155,16 @@
 esac</kbd></pre>
         <p>
           This package can be built with several jobs running in parallel. In
-          the instructions below, <em class=
-          "parameter"><code>&lt;N&gt;</code></em> stands for the number of
-          jobs. Install <span class="application">Boost</span> by running the
+          the instructions below, all available logical cores are used.
+          Replace <em class="replaceable"><code>$(nproc)</code></em> with the
+          number of logical cores you want to use if you don't want to use
+          all. Install <span class="application">Boost</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
         "command">./bootstrap.sh --prefix=/usr --with-python=python3 &amp;&amp;
 ./b2 stage -j<em class=
-"replaceable"><code>&lt;N&gt;</code></em> threading=multi link=shared</kbd></pre>
+"replaceable"><code>$(nproc)</code></em> threading=multi link=shared</kbd></pre>
         <p>
           To run Boost.Build's regression tests, issue <span class=
           "command"><strong>pushd tools/build/test; python3 test_all.py;
@@ -171,11 +172,10 @@ esac</kbd></pre>
         </p>
         <p>
           To run every library's regression tests, issue <span class=
-          "command"><strong>pushd status; ../b2; popd</strong></span>. A few
-          tests may fail. They take a very long time (over 119 SBU at -j4)
-          and use a very large amount of disk space (46 GB). You should use
-          the <em class="parameter"><code>-jN</code></em> switch to speed
-          them up.
+          "command"><strong>pushd status; ../b2 -j$(nproc);
+          popd</strong></span>. A few tests may fail. They take a very long
+          time (over 119 SBU at -j4) and use a very large amount of disk
+          space (46 GB).
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -221,11 +221,6 @@ esac</kbd></pre>
         <p>
           <em class="parameter"><code>--with-python=python3</code></em>: This
           switch ensures Python3 is used if Python2 is installed.
-        </p>
-        <p>
-          <code class="option">-jN</code>: This switch may be added to the
-          <span class="command"><strong>b2</strong></span> command lines, to
-          run up to N processes in parallel.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -320,7 +315,7 @@ esac</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-876">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-887">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-876">
+  <body class="blfs" id="blfs-r12.2-887">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-876
+        "phrase">(systemd</span> Edition) - Version r12.2-887
       </h4>
       <h3>
         Chapter&nbsp;6.&nbsp;Text Editors
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-876">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-887">
           Home</a>
         </li>
       </ul>
@@ -221,7 +221,7 @@
           First, build the gfls library:
         </p>
         <pre class="userinput"><kbd class=
-        "command">tar -xf ../libgedit-gfls-0.2.1.tar.xz &amp;&amp;
+        "command">tar -xf ../libgedit-gfls-0.2.1.tar.bz2 &amp;&amp;
 pushd libgedit-gfls-0.2.1             &amp;&amp;
 
 mkdir gfls-build &amp;&amp;
@@ -239,13 +239,16 @@ ninja</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
-        <pre class="root"><kbd class="command">ninja install &amp;&amp;
-popd</kbd></pre>
+        <pre class="root"><kbd class="command">ninja install</kbd></pre>
+        <p>
+          Change back to the top build directory:
+        </p>
+        <pre class="userinput"><kbd class="command">popd</kbd></pre>
         <p>
           Second, build the tepl library:
         </p>
         <pre class="userinput"><kbd class=
-        "command">tar -xf ../libgedit-tepl-6.12.0.tar.xz &amp;&amp;
+        "command">tar -xf ../libgedit-tepl-6.12.0.tar.bz2 &amp;&amp;
 pushd libgedit-tepl-6.12.0             &amp;&amp;
 
 mkdir tepl-build &amp;&amp;
@@ -263,8 +266,11 @@ ninja</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
-        <pre class="root"><kbd class="command">ninja install &amp;&amp;
-popd</kbd></pre>
+        <pre class="root"><kbd class="command">ninja install</kbd></pre>
+        <p>
+          Again, change back to the top build directory:
+        </p>
+        <pre class="userinput"><kbd class="command">popd</kbd></pre>
         <p>
           Finally, install <span class="application">Gedit</span> by running
           the following commands:
@@ -389,7 +395,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-876">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-887">
           Home</a>
         </li>
       </ul>
