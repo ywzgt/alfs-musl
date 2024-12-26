@@ -1,0 +1,13 @@
+diff --git a/wget-list b/wget-list
+index 686835b836..4579e1593b 100644
+--- a/wget-list
++++ b/wget-list
+@@ -287,7 +287,7 @@ https://github.com/lu-zero/cargo-c/archive/v0.10.7/cargo-c-0.10.7.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.27.0/cbindgen-0.27.0.tar.gz
+ https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+-https://cmake.org/files/v3.31/cmake-3.31.2.tar.gz
++https://cmake.org/files/v3.31/cmake-3.31.3.tar.gz
+ https://doxygen.nl/files/doxygen-1.12.0.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
