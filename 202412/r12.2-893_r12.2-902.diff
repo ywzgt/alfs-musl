@@ -1,0 +1,62 @@
+diff --git a/wget-list b/wget-list
+index e472d559bd..f239d916c5 100644
+--- a/wget-list
++++ b/wget-list
+@@ -1,6 +1,6 @@
+ https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20241211.tar.xz
+ https://github.com/lfs-book/make-ca/archive/v1.14/make-ca-1.14.tar.gz
+-https://github.com/cracklib/cracklib/releases/download/v2.10.2/cracklib-2.10.2.tar.xz
++https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.tar.xz
+ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.5.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.7.tar.bz2
+@@ -117,7 +117,7 @@ https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
+ https://www.freedesktop.org/software/libmbim/libmbim-1.26.4.tar.xz
+ https://github.com/linux-nvme/libnvme/archive/v1.11.1/libnvme-1.11.1.tar.gz
+ https://github.com/rrthomas/libpaper/releases/download/v2.2.5/libpaper-2.2.5.tar.gz
+-https://github.com/flatpak/libportal/releases/download/0.8.1/libportal-0.8.1.tar.xz
++https://github.com/flatpak/libportal/releases/download/0.9.0/libportal-0.9.0.tar.xz
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+ https://github.com/Qalculate/libqalculate/releases/download/v5.4.0/libqalculate-5.4.0.tar.gz
+ https://www.freedesktop.org/software/libqmi/libqmi-1.30.8.tar.xz
+@@ -162,7 +162,7 @@ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+ https://github.com/martinpitt/umockdev/releases/download/0.18.4/umockdev-0.18.4.tar.xz
+ https://github.com/nemtrif/utfcpp/archive/v4.0.6/utfcpp-4.0.6.tar.gz
+ https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.0/downloads/wayland-1.23.0.tar.xz
+-https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.38/downloads/wayland-protocols-1.38.tar.xz
++https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.39/downloads/wayland-protocols-1.39.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+ https://oligarchy.co.uk/xapian/1.4.27/xapian-core-1.4.27.tar.xz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+@@ -462,7 +462,7 @@ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.2.0.tar.gz
+ https://github.com/psf/cachecontrol/archive/v0.14.1/cachecontrol-0.14.1.tar.gz
+ https://github.com/cython/cython/releases/download/3.0.11-1/cython-3.0.11.tar.gz
+-https://files.pythonhosted.org/packages/source/p/python-dbusmock/python-dbusmock-0.33.0.tar.gz
++https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.34.1.tar.gz
+ https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.3.2.tar.gz
+ https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.21.2.tar.gz
+ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.gz
+@@ -825,10 +825,10 @@ https://archive.xfce.org/src/xfce/xfce4-settings/4.20/xfce4-settings-4.20.0.tar.
+ https://archive.xfce.org/src/xfce/xfdesktop/4.20/xfdesktop-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/xfwm4/4.20/xfwm4-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-session/4.20/xfce4-session-4.20.0.tar.bz2
+-https://archive.xfce.org/src/apps/parole/4.18/parole-4.18.1.tar.bz2
+-https://archive.xfce.org/src/apps/xfce4-terminal/1.1/xfce4-terminal-1.1.3.tar.bz2
++https://archive.xfce.org/src/apps/parole/4.18/parole-4.18.2.tar.bz2
++https://archive.xfce.org/src/apps/xfce4-terminal/1.1/xfce4-terminal-1.1.4.tar.bz2
+ https://archive.xfce.org/src/apps/xfburn/0.7/xfburn-0.7.2.tar.bz2
+-https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.2.tar.bz2
++https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.3.tar.bz2
+ https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.6.tar.bz2
+ https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.4/xfce4-pulseaudio-plugin-0.4.9.tar.bz2
+ https://download.kde.org/stable/frameworks/6.9/kwindowsystem-6.9.0.tar.xz
+@@ -863,7 +863,7 @@ https://github.com/lxqt/lxqt-config/releases/download/2.1.0/lxqt-config-2.1.0.ta
+ https://github.com/lxqt/lxqt-policykit/releases/download/2.1.0/lxqt-policykit-2.1.0.tar.xz
+ https://github.com/lxqt/lxqt-sudo/releases/download/2.1.0/lxqt-sudo-2.1.0.tar.xz
+ https://github.com/lxqt/lxqt-openssh-askpass/releases/download/2.1.0/lxqt-openssh-askpass-2.1.0.tar.xz
+-https://github.com/lxqt/lxqt-session/releases/download/2.1.0/lxqt-session-2.1.0.tar.xz
++https://github.com/lxqt/lxqt-session/releases/download/2.1.1/lxqt-session-2.1.1.tar.xz
+ https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/1.1.0/xdg-desktop-portal-lxqt-1.1.0.tar.xz
+ https://github.com/lxqt/obconf-qt/releases/download/0.16.5/obconf-qt-0.16.5.tar.xz
+ https://github.com/lxqt/lximage-qt/releases/download/2.1.0/lximage-qt-2.1.0.tar.xz
