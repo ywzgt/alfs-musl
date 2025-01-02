@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-915">
+  <body class="blfs" id="blfs-r12.2-921">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-915
+        "phrase">(systemd</span> Edition) - Version r12.2-921
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-915">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-921">
           Home</a>
         </li>
       </ul>
@@ -150,7 +150,10 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr --buildtype=release --wrap-mode=nofallback .. &amp;&amp;
+meson setup --prefix=/usr          \
+            --buildtype=release    \
+            --wrap-mode=nofallback \</kbd><kbd class="command">
+            .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           See below for test instructions.
@@ -168,6 +171,17 @@ ninja</kbd></pre>
         <pre class="root"><kbd class=
         "command">chown -v root:messagebus /usr/libexec/dbus-daemon-launch-helper &amp;&amp;
 chmod -v      4750       /usr/libexec/dbus-daemon-launch-helper</kbd></pre>
+        <p>
+          Finally, still as the <code class="systemitem">root</code> user,
+          rename the documentation directory (it only exists if the optional
+          dependencies are satisfied for at least one documentation format)
+          to make it versioned:
+        </p>
+        <pre class="root"><kbd class=
+        "command">if [ -e /usr/share/doc/dbus ]; then
+  rm -rf /usr/share/doc/dbus-1.16.0    &amp;&amp;
+  mv -v  /usr/share/doc/dbus{,-1.16.0}
+fi</kbd></pre>
         <p>
           Many tests are disabled unless both <a class="xref" href=
           "python-modules.html#dbus-python" title="D-Bus Python-1.3.2">D-Bus
@@ -187,7 +201,7 @@ chmod -v      4750       /usr/libexec/dbus-daemon-launch-helper</kbd></pre>
           need to build the docs):
         </p>
         <pre class="userinput"><kbd class=
-        "command">meson configure -D asserts=true -D intrusive_tests=true --wrap-mode=nofallback .. &amp;&amp;
+        "command">meson configure -D asserts=true -D intrusive_tests=true &amp;&amp;
 ninja test</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -201,11 +215,6 @@ ninja test</kbd></pre>
           fallbacks for any dependency declarations in the build files,
           preventing it from downloading any optional dependencies which are
           not installed on the system.
-        </p>
-        <p>
-          <em class=
-          "parameter"><code>--with-system-socket=/run/dbus/system_bus_socket</code></em>:
-          This parameter specifies the location of the system bus socket.
         </p>
         <p>
           <em class="parameter"><code>-D intrusive_tests=true</code></em>:
@@ -367,7 +376,7 @@ kill $DBUS_SESSION_BUS_PID</code></kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-915">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-921">
           Home</a>
         </li>
       </ul>
