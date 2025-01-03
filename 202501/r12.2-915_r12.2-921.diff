@@ -1,0 +1,13 @@
+diff --git a/wget-list b/wget-list
+index 79c6c48950..a102b03163 100644
+--- a/wget-list
++++ b/wget-list
+@@ -22,7 +22,7 @@ https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.
+ https://github.com/polkit-org/polkit/archive/125/polkit-125.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+-https://github.com/shadow-maint/shadow/releases/download/4.17.0/shadow-4.17.0.tar.xz
++https://github.com/shadow-maint/shadow/releases/download/4.17.1/shadow-4.17.1.tar.xz
+ https://www.stunnel.org/downloads/archive/5.x/stunnel-5.73.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.16p2.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
