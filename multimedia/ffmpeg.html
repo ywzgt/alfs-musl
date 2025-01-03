@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-921">
+  <body class="blfs" id="blfs-r12.2-927">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-921
+        "phrase">(systemd</span> Edition) - Version r12.2-927
       </h4>
       <h3>
         Chapter&nbsp;44.&nbsp;Video Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-921">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-927">
           Home</a>
         </li>
       </ul>
@@ -125,6 +125,11 @@
                 "https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-7.1-chromium_method-1.patch">
                 https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-7.1-chromium_method-1.patch</a>
               </p>
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-7.1-texinfo_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-7.1-texinfo_fix-1.patch</a>
+              </p>
             </li>
           </ul>
         </div>
@@ -159,7 +164,7 @@
           <a class="xref" href="alsa-lib.html" title=
           "alsa-lib-1.2.13">alsa-lib-1.2.13</a>, <a class="xref" href=
           "libva.html" title="libva-2.22.0">libva-2.22.0</a>, <a class="xref"
-          href="sdl2.html" title="SDL2-2.30.10">SDL2-2.30.10</a>
+          href="sdl2.html" title="SDL2-2.30.11">SDL2-2.30.11</a>
         </p>
         <h4>
           Recommended for systems with Intel Video
@@ -262,12 +267,17 @@
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../ffmpeg-7.1-chromium_method-1.patch</kbd></pre>
         <p>
-          Now fix an issue with the latest version of <a class="xref" href=
-          "x265.html" title="x265-4.1">x265-4.1</a>:
+          Next, fix an issue caused by the latest version of <a class="xref"
+          href="x265.html" title="x265-4.1">x265-4.1</a>:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -e 's/X265_BUILD &gt;= 210/(&amp;) \&amp;\&amp; (X265_BUILD &lt; 213)/' \
     -i libavcodec/libx265.c</kbd></pre>
+        <p>
+          Next, fix an issue caused by Texinfo 7.2:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../ffmpeg-7.1-texinfo_fix-1.patch</kbd></pre>
         <p>
           Install <span class="application">FFmpeg</span> by running the
           following commands:
@@ -795,7 +805,7 @@ grep ^TEST ../fate.log | wc -l</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-921">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-927">
           Home</a>
         </li>
       </ul>
