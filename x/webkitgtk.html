@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      WebKitGTK-2.46.4
+      WebKitGTK-2.46.5
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-927">
+  <body class="blfs" id="blfs-r12.2-935">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-927
+        "phrase">(systemd</span> Edition) - Version r12.2-935
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-927">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-935">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="webkitgtk" name="webkitgtk"></a>WebKitGTK-2.46.4
+      <a id="webkitgtk" name="webkitgtk"></a>WebKitGTK-2.46.5
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,12 +80,12 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://webkitgtk.org/releases/webkitgtk-2.46.4.tar.xz">https://webkitgtk.org/releases/webkitgtk-2.46.4.tar.xz</a>
+                "https://webkitgtk.org/releases/webkitgtk-2.46.5.tar.xz">https://webkitgtk.org/releases/webkitgtk-2.46.5.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 97f2468a917bfd31c36753430b5a2494
+                Download MD5 sum: 095d7f72acb300839c9879a4f95bf941
               </p>
             </li>
             <li class="listitem">
@@ -103,21 +103,6 @@
               <p>
                 Estimated build time: 32 SBU (for GTK-3, using parallelism=8,
                 add 32 SBU for GTK-4)
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                <span class="phrase">Optional</span> patch: <a class="ulink"
-                href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/webkitgtk-2.46.4-upstream_fixes-2.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/webkitgtk-2.46.4-upstream_fixes-2.patch</a>
               </p>
             </li>
           </ul>
@@ -231,13 +216,6 @@
             "command"><strong>-D USE_GTK4</strong></span>
           </p>
         </div>
-        <p>
-          First, apply a patch to fix the build when no log facility is
-          enabled <span class="phrase">(it's optional because
-          systemd-journald is enabled as a log facility by default)</span>:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../webkitgtk-2.46.4-upstream_fixes-2.patch</kbd></pre>
         <p>
           Now fix a build failure that occurs when using ICU-76 or later:
         </p>
@@ -570,7 +548,7 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-927">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-935">
           Home</a>
         </li>
       </ul>
