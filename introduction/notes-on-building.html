@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-937">
+  <body class="blfs" id="blfs-r12.2-942">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-937
+        "phrase">(systemd</span> Edition) - Version r12.2-942
       </h4>
       <h3>
         Chapter&nbsp;2.&nbsp;Important Information
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-937">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-942">
           Home</a>
         </li>
       </ul>
@@ -756,10 +756,20 @@ chmod 755 blfs-yes-test2</kbd></pre>
                 "quote">runtime,</span>”</span> see below) for a clean and
                 trouble-free build, that won't have issues either during the
                 build process, or at run-time. The instructions in the book
-                assume these packages are installed. Some changes or
-                workarounds may be required if these packages are not
-                installed. If a recommended dependency is said to be
-                <span class="quote">“<span class=
+                assume these packages are installed. In many cases, if a
+                recommended dependency (not just <span class=
+                "quote">“<span class="quote">runtime</span>”</span>) is not
+                installed, the built package may lack some important
+                functionalities (for example, a video player may be only able
+                to play audio). Sometimes, it's needed to modify the book
+                instructions to disable those important functionalities. In
+                other cases, the build system of the package may build a copy
+                of the dependency (often outdated and sometimes with known
+                security vulnerabilities) shipped in the source tree, or may
+                be downloaded from the Internet during the build process.
+                This increases build time and disk usage. This could
+                potentially cause other problems. If a recommended dependency
+                is said to be <span class="quote">“<span class=
                 "quote">runtime,</span>”</span> it means that BLFS strongly
                 suggests that this dependency is installed before using the
                 package, for getting full functionality.
@@ -1571,7 +1581,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-937">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-942">
           Home</a>
         </li>
       </ul>
