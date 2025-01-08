@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-942">
+  <body class="blfs" id="blfs-r12.2-951">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-942
+        "phrase">(systemd</span> Edition) - Version r12.2-951
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-942">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-951">
           Home</a>
         </li>
       </ul>
@@ -147,8 +147,9 @@
         </h4>
         <p class="optional">
           <a class="xref" href="../gnome/gnome-bluetooth.html" title=
-          "gnome-bluetooth-47.1">gnome-bluetooth-47.1</a> and <a class=
-          "ulink" href=
+          "gnome-bluetooth-47.1">gnome-bluetooth-47.1</a>, <a class="xref"
+          href="../general/jansson.html" title=
+          "Jansson-2.14">jansson-2.14</a>, and <a class="ulink" href=
           "https://launchpad.net/libappindicator">libindicator</a>
         </p>
       </div>
@@ -167,7 +168,8 @@ meson setup ..            \
       --prefix=/usr       \
       --buildtype=release \
       -D appindicator=no  \
-      -D selinux=false    &amp;&amp;
+      -D selinux=false    \
+      -D team=false       &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
@@ -193,6 +195,13 @@ ninja</kbd></pre>
           switch forcibly disables <span class="application">SELinux</span>
           support since it is not currently in BLFS and the build will fail
           without it.
+        </p>
+        <p>
+          <em class="parameter"><code>-D team=false</code></em>: This switch
+          disables the team configuration editor since it requires <a class=
+          "xref" href="../general/jansson.html" title=
+          "Jansson-2.14">jansson-2.14</a>. If you have Jansson installed,
+          remove this option or set it to <code class="literal">true</code>.
         </p>
         <p>
           <code class="option">-D wwan=false</code>: This switch disables
@@ -271,7 +280,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-942">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-951">
           Home</a>
         </li>
       </ul>
