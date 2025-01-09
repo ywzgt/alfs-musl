@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Firefox-128.5.2esr
+      Firefox-128.6.0esr
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-951">
+  <body class="blfs" id="blfs-r12.2-979">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-951
+        "phrase">(systemd</span> Edition) - Version r12.2-979
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -30,9 +30,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="seamonkey.html" title=
-          "Seamonkey-2.53.19">Next</a>
+          "Seamonkey-2.53.20">Next</a>
           <p>
-            Seamonkey-2.53.19
+            Seamonkey-2.53.20
           </p>
         </li>
         <li class="up">
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-951">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-979">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="firefox" name="firefox"></a>Firefox-128.5.2esr
+      <a id="firefox" name="firefox"></a>Firefox-128.6.0esr
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,23 +77,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://archive.mozilla.org/pub/firefox/releases/128.5.2esr/source/firefox-128.5.2esr.source.tar.xz">
-                https://archive.mozilla.org/pub/firefox/releases/128.5.2esr/source/firefox-128.5.2esr.source.tar.xz</a>
+                "https://archive.mozilla.org/pub/firefox/releases/128.6.0esr/source/firefox-128.6.0esr.source.tar.xz">
+                https://archive.mozilla.org/pub/firefox/releases/128.6.0esr/source/firefox-128.6.0esr.source.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 22b603ecb9431b7d87328f2a32e042f3
+                Download MD5 sum: 4e4caf3470c2c922f9463fab97232d12
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 542 MB
+                Download size: 537 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 6.7 GB (224 MB installed)
+                Estimated disk space required: 6.6 GB (217 MB installed)
                 without tests
               </p>
             </li>
@@ -104,27 +104,13 @@
             </li>
           </ul>
         </div>
-        <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-128.5.2esr-upstream_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-128.5.2esr-upstream_fixes-1.patch</a>
-              </p>
-            </li>
-          </ul>
-        </div>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
             Note
           </h3>
           <p>
-            The directory name is firefox-128.5.2
+            The directory name is firefox-128.6.0
           </p>
           <p>
             Extracting the tarball will reset the permissions of the current
@@ -224,7 +210,7 @@
           <a class="xref" href="../basicnet/curl.html" title=
           "cURL-8.11.1">cURL-8.11.1</a>, <a class="xref" href=
           "../general/doxygen.html" title=
-          "Doxygen-1.13.0">Doxygen-1.13.0</a>, <a class="xref" href=
+          "Doxygen-1.13.1">Doxygen-1.13.1</a>, <a class="xref" href=
           "../multimedia/ffmpeg.html" title="FFmpeg-7.1">FFmpeg-7.1</a>
           (runtime, to play mov, mp3 or mp4 files), <a class="xref" href=
           "../basicnet/geoclue2.html" title="GeoClue-2.7.2">GeoClue-2.7.2</a>
@@ -363,11 +349,6 @@ done</kbd></pre>
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -i 's/icu-i18n/icu-uc &amp;/' js/moz.configure</kbd></pre>
-        <p>
-          Fix a build issue that occurs due to changes in Python:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../firefox-128.5.2esr-upstream_fixes-1.patch</kbd></pre>
         <p>
           Compile <span class="application">Firefox</span> by issuing the
           following commands:
@@ -685,9 +666,9 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="next">
           <a accesskey="n" href="seamonkey.html" title=
-          "Seamonkey-2.53.19">Next</a>
+          "Seamonkey-2.53.20">Next</a>
           <p>
-            Seamonkey-2.53.19
+            Seamonkey-2.53.20
           </p>
         </li>
         <li class="up">
@@ -696,7 +677,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-951">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-979">
           Home</a>
         </li>
       </ul>

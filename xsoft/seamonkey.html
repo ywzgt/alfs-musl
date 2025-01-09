@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Seamonkey-2.53.19
+      Seamonkey-2.53.20
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-951">
+  <body class="blfs" id="blfs-r12.2-979">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-951
+        "phrase">(systemd</span> Edition) - Version r12.2-979
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="firefox.html" title=
-          "Firefox-128.5.2esr">Prev</a>
+          "Firefox-128.6.0esr">Prev</a>
           <p>
-            Firefox-128.5.2esr
+            Firefox-128.6.0esr
           </p>
         </li>
         <li class="next">
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-951">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-979">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="seamonkey" name="seamonkey"></a>Seamonkey-2.53.19
+      <a id="seamonkey" name="seamonkey"></a>Seamonkey-2.53.20
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -66,9 +66,9 @@
           Suite, created after Mozilla decided to focus on separate
           applications for browsing and e-mail. Those applications are
           <a class="xref" href="firefox.html" title=
-          "Firefox-128.5.2esr">Firefox-128.5.2</a> and <a class="xref" href=
+          "Firefox-128.6.0esr">Firefox-128.6.0</a> and <a class="xref" href=
           "thunderbird.html" title=
-          "Thunderbird-128.5.2esr">Thunderbird-128.5.2esr</a>.
+          "Thunderbird-128.6.0esr">Thunderbird-128.6.0esr</a>.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -89,43 +89,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://archive.seamonkey-project.org/releases/2.53.19/source/seamonkey-2.53.19.source.tar.xz">
-                https://archive.seamonkey-project.org/releases/2.53.19/source/seamonkey-2.53.19.source.tar.xz</a>
+                "https://archive.seamonkey-project.org/releases/2.53.20/source/seamonkey-2.53.20.source.tar.xz">
+                https://archive.seamonkey-project.org/releases/2.53.20/source/seamonkey-2.53.20.source.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 0fbfbd69ab1ceb417528419324551510
+                Download MD5 sum: 1b506ff751f39b2480ba4e16afb86d6d
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 238 MB
+                Download size: 237 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 4.5 GB (149 MB installed)
+                Estimated disk space required: 4.4 GB (150 MB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 6.9 SBU (with parallelism=8)
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Recommended patch (required for building with system ICU-75
-                or newer): <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.19-cxx17-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.19-cxx17-1.patch</a>
+                Estimated build time: 6.8 SBU (with parallelism=8)
               </p>
             </li>
           </ul>
@@ -137,8 +122,8 @@
           </h3>
           <p>
             The tarball <span class=
-            "emphasis"><em>seamonkey-2.53.19.source.tar.xz</em></span> will
-            untar to <span class="emphasis"><em>seamonkey-2.53.19</em></span>
+            "emphasis"><em>seamonkey-2.53.20.source.tar.xz</em></span> will
+            untar to <span class="emphasis"><em>seamonkey-2.53.20</em></span>
             directory.
           </p>
         </div>
@@ -165,9 +150,7 @@
           Recommended
         </h4>
         <p class="recommended">
-          <a class="xref" href="../general/icu.html" title=
-          "icu-76.1">ICU-76.1</a>, <a class="xref" href=
-          "../basicnet/libevent.html" title=
+          <a class="xref" href="../basicnet/libevent.html" title=
           "libevent-2.1.12">libevent-2.1.12</a>, <a class="xref" href=
           "../general/libwebp.html" title="libwebp-1.5.0">libwebp-1.5.0</a>,
           <a class="xref" href="../general/llvm.html" title=
@@ -198,17 +181,13 @@
           "alsa-lib-1.2.13">alsa-lib-1.2.13</a>, <a class="xref" href=
           "../general/dbus-glib.html" title=
           "dbus-glib-0.112">dbus-glib-0.112</a>, <a class="xref" href=
-          "../x/startup-notification.html" title=
-          "startup-notification-0.12">startup-notification-0.12</a>,
-          <a class="xref" href="../general/valgrind.html" title=
+          "../general/valgrind.html" title=
           "Valgrind-3.24.0">Valgrind-3.24.0</a>, <a class="xref" href=
           "../basicnet/wget.html" title="Wget-1.25.0">Wget-1.25.0</a>,
           <a class="xref" href="../basicnet/wireless_tools.html" title=
           "Wireless Tools-29">Wireless Tools-29</a>, <a class="ulink" href=
-          "https://hunspell.sourceforge.net/">Hunspell</a>, <a class="ulink"
-          href="https://gitlab.gnome.org/Archive/gconf">Gconf</a>, and
-          <a class="ulink" href=
-          "https://facebook.github.io/watchman/">Watchman</a>
+          "https://hunspell.sourceforge.net/">Hunspell</a> and <a class=
+          "ulink" href="https://facebook.github.io/watchman/">Watchman</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -241,19 +220,17 @@ ac_add_options --disable-necko-wifi
 
 # Uncomment these lines if you have installed optional dependencies:
 #ac_add_options --enable-system-hunspell
-#ac_add_options --enable-startup-notification
 
 # Uncomment the following option if you have not installed PulseAudio
 #ac_add_options --disable-pulseaudio
 # and uncomment this if you installed alsa-lib instead of PulseAudio
 #ac_add_options --enable-alsa
 
-# Comment out the following option if you have gconf installed
-ac_add_options --disable-gconf
+# Comment out the following option
 
 # Comment out following options if you have not installed
 # recommended dependencies:
-ac_add_options --with-system-icu
+
 ac_add_options --with-system-libevent
 ac_add_options --with-system-nspr
 ac_add_options --with-system-nss
@@ -289,7 +266,7 @@ ac_add_options --disable-tests
 
 # The SIMD code relies on the unmaintained packed_simd crate which
 # fails to build with Rustc &gt;= 1.78.0.  We may re-enable it once
-# Mozilla port the code to use std::simd and std::simd is stabilized.
+# Mozilla ports the code to use std::simd and std::simd is stabilized.
 ac_add_options --disable-rust-simd
 
 ac_add_options --enable-strip
@@ -298,11 +275,8 @@ ac_add_options --enable-install-strip
 # You cannot distribute the binary if you do this.
 ac_add_options --enable-official-branding
 
-# The option to use system cairo was removed in 2.53.9.
 ac_add_options --enable-system-ffi
 ac_add_options --enable-system-pixman
-
-ac_add_options --with-system-bz2
 ac_add_options --with-system-jpeg
 ac_add_options --with-system-png
 ac_add_options --with-system-zlib
@@ -326,20 +300,6 @@ EOF</kbd></pre>
           <pre class="userinput"><kbd class=
           "command">mountpoint -q /dev/shm || mount -t tmpfs devshm /dev/shm</kbd></pre>
         </div>
-        <p>
-          First, if you are building with system ICU, adapt the line break
-          mapping for ICU-74 or later, apply a patch to build this package
-          with the C++17 standard because the headers of ICU-75 or later
-          require some C++17 features, and adapt the build system to use the
-          correct library with ICU-76 or later:
-        </p>
-        <pre class="userinput"><kbd class="command">(for i in {43..47}; do
-   sed '/ZWJ/s/$/,CLASS_CHARACTER/' -i intl/lwbrk/LineBreaker.cpp || exit $?
-done) &amp;&amp;
-
-patch -Np1 -i ../seamonkey-2.53.19-cxx17-1.patch &amp;&amp;
-
-sed -i 's/icu-i18n/icu-uc &amp;/' js/moz.configure</kbd></pre>
         <p>
           Next, remove a hunk of unused code violating the C++ standard.
           Clang has started to reject it even though it's unused since the
@@ -545,9 +505,9 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
       <ul>
         <li class="prev">
           <a accesskey="p" href="firefox.html" title=
-          "Firefox-128.5.2esr">Prev</a>
+          "Firefox-128.6.0esr">Prev</a>
           <p>
-            Firefox-128.5.2esr
+            Firefox-128.6.0esr
           </p>
         </li>
         <li class="next">
@@ -563,7 +523,7 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-951">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-979">
           Home</a>
         </li>
       </ul>
