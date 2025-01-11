@@ -1,0 +1,60 @@
+diff --git a/wget-list b/wget-list
+index d5219b7ae6..a659860399 100644
+--- a/wget-list
++++ b/wget-list
+@@ -143,12 +143,12 @@ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_2/log4cplus-2.1.2.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
+-https://nodejs.org/dist/v22.12.0/node-v22.12.0.tar.xz
++https://nodejs.org/dist/v22.13.0/node-v22.13.0.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz
+ https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.44/pcre2-10.44.tar.bz2
+ https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
+-https://github.com/protocolbuffers/protobuf/releases/download/v29.2/protobuf-29.2.tar.gz
++https://github.com/protocolbuffers/protobuf/releases/download/v29.3/protobuf-29.3.tar.gz
+ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.0/protobuf-c-1.5.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.0-consolidated_fixes-1.patch
+ https://download.kde.org/stable/qca/2.3.9/qca-2.3.9.tar.xz
+@@ -570,11 +570,11 @@ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-a
+ https://nmap.org/dist/nmap-7.95.tar.bz2
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.6.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
+-https://www.wireshark.org/download/src/all-versions/wireshark-4.4.2.tar.xz
++https://www.wireshark.org/download/src/all-versions/wireshark-4.4.3.tar.xz
+ https://github.com/c-ares/c-ares/releases/download/v1.34.4/c-ares-1.34.4.tar.gz
+ https://curl.se/download/curl-8.11.1.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.2/geoclue-2.7.2.tar.bz2
+-https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.0.tar.xz
++https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.1.tar.xz
+ https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.2.0/kdsoap-2.2.0.tar.gz
+ https://download.kde.org/stable/kdsoap-ws-discovery-client/kdsoap-ws-discovery-client-0.4.0.tar.xz
+ https://www.nlnetlabs.nl/downloads/ldns/ldns-1.8.4.tar.gz
+@@ -718,7 +718,7 @@ https://download.kde.org/stable/frameworks/6.9/extra-cmake-modules-6.9.0.tar.xz
+ https://download.kde.org/stable/phonon/4.12.0/phonon-4.12.0.tar.xz
+ https://download.kde.org/stable/phonon/phonon-backend-vlc/0.12.0/phonon-backend-vlc-0.12.0.tar.xz
+ https://download.kde.org/stable/polkit-qt-1/polkit-qt-1-0.200.0.tar.xz
+-https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.15.0.tar.xz
++https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.16.0.tar.xz
+ https://download.kde.org/stable/release-service/24.12.0/src/ark-24.12.0.tar.xz
+ https://download.kde.org/stable/release-service/24.12.0/src/dolphin-24.12.0.1.tar.xz
+ https://download.kde.org/stable/release-service/24.12.0/src/dolphin-plugins-24.12.0.tar.xz
+@@ -738,7 +738,7 @@ https://download.kde.org/stable/release-service/24.12.0/src/gwenview-24.12.0.tar
+ https://download.kde.org/stable/release-service/24.12.0/src/libkcddb-24.12.0.tar.xz
+ https://download.kde.org/stable/release-service/24.12.0/src/k3b-24.12.0.tar.xz
+ https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.4.0.tar.xz
+-https://download.kde.org/stable/pulseaudio-qt/pulseaudio-qt-1.6.0.tar.xz
++https://download.kde.org/stable/pulseaudio-qt/pulseaudio-qt-1.7.0.tar.xz
+ https://download.gnome.org/sources/gcr/3.41/gcr-3.41.2.tar.xz
+ https://download.gnome.org/sources/gcr/4.3/gcr-4.3.0.tar.xz
+ https://download.gnome.org/sources/gsettings-desktop-schemas/47/gsettings-desktop-schemas-47.1.tar.xz
+@@ -1002,7 +1002,7 @@ https://files.libburnia-project.org/releases/libburn-1.5.6.tar.gz
+ https://files.libburnia-project.org/releases/libisoburn-1.5.6.tar.gz
+ https://files.libburnia-project.org/releases/libisofs-1.5.6.tar.gz
+ https://github.com/OpenPrinting/cups/releases/download/v2.4.11/cups-2.4.11-source.tar.gz
+-https://github.com/OpenPrinting/cups-browsed/releases/download/2.1.0/cups-browsed-2.1.0.tar.xz
++https://github.com/OpenPrinting/cups-browsed/releases/download/2.1.1/cups-browsed-2.1.1.tar.xz
+ https://github.com/OpenPrinting/cups-filters/releases/download/2.0.1/cups-filters-2.0.1.tar.xz
+ https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10040/ghostscript-10.04.0.tar.xz
+ https://downloads.sourceforge.net/gs-fonts/ghostscript-fonts-std-8.11.tar.gz
