@@ -1,0 +1,53 @@
+diff --git a/wget-list b/wget-list
+index a659860399..3274dbba54 100644
+--- a/wget-list
++++ b/wget-list
+@@ -251,7 +251,7 @@ http://fcron.free.fr/archives/fcron-3.2.1.src.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/gpm/gpm-1.20.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch
+ https://downloads.sourceforge.net/hdparm/hdparm-9.65.tar.gz
+-https://github.com/vcrhonek/hwdata/archive/v0.390/hwdata-0.390.tar.gz
++https://github.com/vcrhonek/hwdata/archive/v0.391/hwdata-0.391.tar.gz
+ https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
+ https://github.com/lm-sensors/lm-sensors/archive/V3-6-0/lm-sensors-3-6-0.tar.gz
+ https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
+@@ -278,7 +278,7 @@ https://www.rarlab.com/rar/unrarsrc-7.1.2.tar.gz
+ https://downloads.sourceforge.net/infozip/unzip60.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-consolidated_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-gcc14-1.patch
+-https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.6/upower-v1.90.6.tar.bz2
++https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.7/upower-v1.90.7.tar.bz2
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-018.tar.xz
+ https://ftp.gnu.org/gnu/which/which-2.21.tar.gz
+ https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz
+@@ -293,9 +293,9 @@ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.8/gc-8.2.8.tar.gz
+ https://ftp.gnu.org/gnu/gdb/gdb-15.2.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-2.47.1.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-manpages-2.47.1.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.47.1.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-2.48.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-manpages-2.48.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.48.0.tar.xz
+ https://ftp.gnu.org/gnu/guile/guile-3.0.10.tar.xz
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.0/llvm-19.1.0.src.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-19.src.tar.xz
+@@ -630,7 +630,7 @@ https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.17.0.tar.xz
+ https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.17.0.tar.xz
+ https://www.x.org/pub/individual/lib/libxcvt-0.1.3.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-0.4.1.tar.xz
+-https://mesa.freedesktop.org/archive/mesa-24.3.2.tar.xz
++https://mesa.freedesktop.org/archive/mesa-24.3.3.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-4.patch
+ https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ https://invisible-mirror.net/archives/luit/luit-20240910.tgz
+@@ -666,7 +666,7 @@ https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
+ https://download.gnome.org/sources/goffice/0.10/goffice-0.10.57.tar.xz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+ https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz
+-https://download.gnome.org/sources/gtk/4.16/gtk-4.16.7.tar.xz
++https://download.gnome.org/sources/gtk/4.16/gtk-4.16.12.tar.xz
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.9.tar.xz
+ https://download.gnome.org/sources/gtkmm/4.16/gtkmm-4.16.0.tar.xz
+ https://download.gnome.org/sources/gtk-vnc/1.4/gtk-vnc-1.4.0.tar.xz
