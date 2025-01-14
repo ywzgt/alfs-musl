@@ -1,0 +1,23 @@
+diff --git a/wget-list b/wget-list
+index 3274dbba54..36945e7ebf 100644
+--- a/wget-list
++++ b/wget-list
+@@ -197,8 +197,8 @@ https://download.osgeo.org/libtiff/tiff-4.7.0.tar.gz
+ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.5.0.tar.gz
+ https://github.com/mypaint/mypaint-brushes/releases/download/v1.3.1/mypaint-brushes-1.3.1.tar.xz
+ https://releases.pagure.org/newt/newt-0.52.24.tar.gz
+-https://github.com/opencv/opencv/archive/4.10.0/opencv-4.10.0.tar.gz
+-https://github.com/opencv/opencv_contrib/archive/4.10.0/opencv_contrib-4.10.0.tar.gz
++https://github.com/opencv/opencv/archive/4.11.0/opencv-4.11.0.tar.gz
++https://github.com/opencv/opencv_contrib/archive/4.11.0/opencv_contrib-4.11.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.3/openjpeg-2.5.3.tar.gz
+ https://www.cairographics.org/releases/pixman-0.44.2.tar.gz
+ https://poppler.freedesktop.org/poppler-25.01.0.tar.xz
+@@ -404,6 +404,7 @@ https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/List-SomeUtils-0.59.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/List-SomeUtils-XS-0.58.tar.gz
+ https://cpan.metacpan.org/authors/id/P/PE/PEVANS/List-UtilsBy-0.12.tar.gz
+ https://cpan.metacpan.org/authors/id/O/OA/OALDERS/LWP-MediaTypes-6.04.tar.gz
++https://cpan.metacpan.org/authors/id/R/RE/REHSACK/MIME-Base32-1.303.tar.gz
+ https://cpan.metacpan.org/authors/id/N/NE/NEZUMI/MIME-Charset-1.013.1.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Module-Implementation-0.09.tar.gz
+ https://cpan.metacpan.org/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.016.tar.gz
