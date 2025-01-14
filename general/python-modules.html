@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1012">
+  <body class="blfs" id="blfs-r12.2-1030">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1012
+        "phrase">(systemd</span> Edition) - Version r12.2-1030
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1012">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1030">
           Home</a>
         </li>
       </ul>
@@ -1909,7 +1909,7 @@ done</kbd></pre>
           <p class="required">
             <a class="xref" href="python-dependencies.html#chardet" title=
             "Chardet-5.2.0">chardet-5.2.0</a> and <a class="xref" href=
-            "doxygen.html" title="Doxygen-1.13.1">Doxygen-1.13.1</a> (at run
+            "doxygen.html" title="Doxygen-1.13.2">Doxygen-1.13.2</a> (at run
             time)
           </p>
         </div>
@@ -2101,7 +2101,7 @@ done</kbd></pre>
           </h5>
           <p class="required">
             <a class="xref" href="doxygen.html" title=
-            "Doxygen-1.13.1">Doxygen-1.13.1</a>
+            "Doxygen-1.13.2">Doxygen-1.13.2</a>
           </p>
           <h5>
             Optional (for testing)
@@ -2126,9 +2126,11 @@ done</kbd></pre>
           <pre class="root"><kbd class=
           "command">pip3 install --no-index --find-links=dist --no-cache-dir --no-user doxyqml</kbd></pre>
           <p>
-            To test the installation, run:
+            To test the installation, issue:
           </p>
-          <pre class="userinput"><kbd class="command">pytest</kbd></pre>
+          <pre class="userinput"><kbd class=
+          "command">python3 tests/functional/tests.py &amp;&amp;
+python3 tests/unit/tests.py</kbd></pre>
           <p>
             The <span class="emphasis"><em>test_qmlclass.py</em></span> test
             is known to fail.
@@ -3902,7 +3904,7 @@ make test-python3-cpp</kbd></pre>
           </h5>
           <p class="recommended">
             <a class="xref" href="../x/at-spi2-core.html" title=
-            "at-spi2-core-2.54.0">at-spi2-core-2.54.0</a>
+            "at-spi2-core-2.54.1">at-spi2-core-2.54.1</a>
           </p>
         </div>
         <div class="installation" lang="en" xml:lang="en">
@@ -7091,7 +7093,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1012">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1030">
           Home</a>
         </li>
       </ul>
