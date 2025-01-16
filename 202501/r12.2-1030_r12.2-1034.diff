@@ -1,0 +1,42 @@
+diff --git a/wget-list b/wget-list
+index 9d69d118bd..720d48fadf 100644
+--- a/wget-list
++++ b/wget-list
+@@ -54,7 +54,7 @@ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/24.12.0/src/kate-24.12.0.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.3.tar.bz2
+ https://www.nano-editor.org/dist/v8/nano-8.3.tar.xz
+-https://github.com/vim/vim/archive/v9.1.0927/vim-9.1.0927.tar.gz
++https://github.com/vim/vim/archive/v9.1.1016/vim-9.1.1016.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.14.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+@@ -293,9 +293,9 @@ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.8/gc-8.2.8.tar.gz
+ https://ftp.gnu.org/gnu/gdb/gdb-15.2.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-2.48.0.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-manpages-2.48.0.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.48.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-2.48.1.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-manpages-2.48.1.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.48.1.tar.xz
+ https://ftp.gnu.org/gnu/guile/guile-3.0.10.tar.xz
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.0/llvm-19.1.0.src.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-19.src.tar.xz
+@@ -556,7 +556,7 @@ https://www.kernel.org/pub/linux/utils/nfs-utils/2.8.2/nfs-utils-2.8.2.tar.xz
+ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
+ https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/rpcbind-1.2.7-vulnerability_fixes-1.patch
+-https://www.samba.org/ftp/rsync/src/rsync-3.3.0.tar.gz
++https://www.samba.org/ftp/rsync/src/rsync-3.4.0.tar.gz
+ https://download.samba.org/pub/samba/stable/samba-4.21.3.tar.gz
+ https://ftp.gnu.org/gnu/wget/wget-1.25.0.tar.gz
+ https://www.kernel.org/pub/software/network/iw/iw-6.9.tar.xz
+@@ -1050,5 +1050,5 @@ https://github.com/mgieseki/dvisvgm/releases/download/3.4.3/dvisvgm-3.4.3.tar.gz
+ https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
+ https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20241209.tar.xz
+-https://github.com/elogind/elogind/archive/v255.5/elogind-255.5.tar.gz
++https://github.com/elogind/elogind/archive/v255.17/elogind-255.17.tar.gz
+ https://github.com/lfs-book/blocaled/releases/download/v0.7/blocaled-0.7.tar.xz
