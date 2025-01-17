@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1036">
+  <body class="blfs" id="blfs-r12.2-1070">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1036
+        "phrase">(systemd</span> Edition) - Version r12.2-1070
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1036">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1070">
           Home</a>
         </li>
       </ul>
@@ -135,7 +135,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="../general/cbindgen.html" title=
-          "Cbindgen-0.27.0">Cbindgen-0.27.0</a>, <a class="xref" href=
+          "Cbindgen-0.28.0">Cbindgen-0.28.0</a>, <a class="xref" href=
           "../x/gtk3.html" title="GTK+-3.24.43">GTK+-3.24.43</a>, <a class=
           "xref" href="../general/nodejs.html" title=
           "Node.js-22.13.0">nodejs-22.13.0</a>, <a class="xref" href=
@@ -150,11 +150,13 @@
           Recommended
         </h4>
         <p class="recommended">
-          <a class="xref" href="../basicnet/libevent.html" title=
+          <a class="xref" href="../general/icu.html" title=
+          "icu-76.1">ICU-76.1</a>, <a class="xref" href=
+          "../basicnet/libevent.html" title=
           "libevent-2.1.12">libevent-2.1.12</a>, <a class="xref" href=
           "../general/libwebp.html" title="libwebp-1.5.0">libwebp-1.5.0</a>,
           <a class="xref" href="../general/llvm.html" title=
-          "LLVM-19.1.0">LLVM-19.1.0</a> (with clang), <a class="xref" href=
+          "LLVM-19.1.7">LLVM-19.1.7</a> (with clang), <a class="xref" href=
           "../general/nasm.html" title="NASM-2.16.03">NASM-2.16.03</a>,
           <a class="xref" href="../general/nspr.html" title=
           "NSPR-4.36">NSPR-4.36</a>, <a class="xref" href=
@@ -230,7 +232,7 @@ ac_add_options --disable-necko-wifi
 
 # Comment out following options if you have not installed
 # recommended dependencies:
-
+ac_add_options --with-system-icu
 ac_add_options --with-system-libevent
 ac_add_options --with-system-nspr
 ac_add_options --with-system-nss
@@ -300,6 +302,20 @@ EOF</kbd></pre>
           <pre class="userinput"><kbd class=
           "command">mountpoint -q /dev/shm || mount -t tmpfs devshm /dev/shm</kbd></pre>
         </div>
+        <p>
+          First, if you are building with system ICU, adapt the line break
+          mapping for ICU-74 or later, apply a patch to build this package
+          with the C++17 standard because the headers of ICU-75 or later
+          require some C++17 features, and adapt the build system to use the
+          correct library with ICU-76 or later:
+        </p>
+        <pre class="userinput"><kbd class="command">(for i in {43..47}; do
+   sed '/ZWJ/s/$/,CLASS_CHARACTER/' -i intl/lwbrk/LineBreaker.cpp || exit $?
+done) &amp;&amp;
+
+patch -Np1 -i ../seamonkey-2.53.20-cxx17-1.patch &amp;&amp;
+
+sed -i 's/icu-i18n/icu-uc &amp;/' js/moz.configure</kbd></pre>
         <p>
           Next, remove a hunk of unused code violating the C++ standard.
           Clang has started to reject it even though it's unused since the
@@ -523,7 +539,7 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1036">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1070">
           Home</a>
         </li>
       </ul>

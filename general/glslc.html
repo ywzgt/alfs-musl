@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      glslc from shaderc-2024.3
+      glslc from shaderc-2024.4
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1036">
+  <body class="blfs" id="blfs-r12.2-1070">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1036
+        "phrase">(systemd</span> Edition) - Version r12.2-1070
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1036">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1070">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="glslc" name="glslc"></a>glslc from shaderc-2024.3
+      <a id="glslc" name="glslc"></a>glslc from shaderc-2024.4
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,13 +80,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/google/shaderc/archive/v2024.3/shaderc-2024.3.tar.gz">
-                https://github.com/google/shaderc/archive/v2024.3/shaderc-2024.3.tar.gz</a>
+                "https://github.com/google/shaderc/archive/v2024.4/shaderc-2024.4.tar.gz">
+                https://github.com/google/shaderc/archive/v2024.4/shaderc-2024.4.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: e8d45a77fe8bc954c3ca79aeba8476bd
+                Download MD5 sum: 31c4120c5bba0f79ad3bb6491be69d5a
               </p>
             </li>
             <li class="listitem">
@@ -96,7 +96,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 3.9 MB
+                Estimated disk space required: 4.0 MB
               </p>
             </li>
             <li class="listitem">
@@ -115,9 +115,9 @@
         <p class="required">
           <a class="xref" href="cmake.html" title=
           "CMake-3.31.4">CMake-3.31.4</a>, <a class="xref" href=
-          "../x/glslang.html" title="Glslang-15.0.0">Glslang-15.0.0</a>, and
+          "../x/glslang.html" title="Glslang-15.1.0">Glslang-15.1.0</a>, and
           <a class="xref" href="spirv-tools.html" title=
-          "SPIRV-Tools-1.3.296.0">SPIRV-Tools-1.3.296.0</a>
+          "SPIRV-Tools-1.4.304.0">SPIRV-Tools-1.4.304.0</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -126,16 +126,16 @@
         </h2>
         <p>
           First, allow building with system <a class="xref" href=
-          "../x/glslang.html" title="Glslang-15.0.0">Glslang-15.0.0</a> and
+          "../x/glslang.html" title="Glslang-15.1.0">Glslang-15.1.0</a> and
           <a class="xref" href="spirv-tools.html" title=
-          "SPIRV-Tools-1.3.296.0">SPIRV-Tools-1.3.296.0</a>:
+          "SPIRV-Tools-1.4.304.0">SPIRV-Tools-1.4.304.0</a>:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed '/build-version/d'   -i glslc/CMakeLists.txt            &amp;&amp;
 sed '/third_party/d'     -i CMakeLists.txt                  &amp;&amp;
 sed 's|SPIRV|glslang/&amp;|' -i libshaderc_util/src/compiler.cc &amp;&amp;
 
-echo '"2024.3"' &gt; glslc/src/build-version.inc</kbd></pre>
+echo '"2024.4"' &gt; glslc/src/build-version.inc</kbd></pre>
         <p>
           Now install <span class="application">glslc</span> by running the
           following commands:
@@ -226,7 +226,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1036">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1070">
           Home</a>
         </li>
       </ul>
