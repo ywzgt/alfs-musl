@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1072">
+  <body class="blfs" id="blfs-r12.2-1086">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1072
+        "phrase">(systemd</span> Edition) - Version r12.2-1086
       </h4>
       <h3>
         Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1072">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1086">
           Home</a>
         </li>
       </ul>
@@ -50,7 +50,7 @@
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <p>
-        This section did not provide instructions for all of the available
+        This chapter did not provide instructions for all of the available
         packages in the KDE Software Compilation (KDE Gear). The included
         packages were selected based on what most people would want to use on
         a standard desktop computer.
@@ -117,10 +117,15 @@
           what dependencies are needed, run from the top of the source tree:
         </p>
         <pre class="userinput"><kbd class=
-        "command">cmake -W no-dev -L .</kbd></pre>
+        "command">cmake -W no-dev -LH .</kbd></pre>
+        <p>
+          Note that this creates some files in the top of the source
+          directory, so that it is better to reextract a clean source before
+          proceeding to the build.
+        </p>
       </div>
       <p>
-        Most of these packages can be built with the standard KDE5
+        Most of these packages can be built with the standard KDE6
         instructions:
       </p>
       <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
@@ -156,7 +161,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1072">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1086">
           Home</a>
         </li>
       </ul>
