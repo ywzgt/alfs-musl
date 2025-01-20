@@ -1,0 +1,58 @@
+diff --git a/wget-list b/wget-list
+index 5a7f111db0..5e4c6da469 100644
+--- a/wget-list
++++ b/wget-list
+@@ -170,7 +170,7 @@ https://download.gimp.org/pub/babl/0.1/babl-0.1.110.tar.xz
+ https://github.com/Exiv2/exiv2/archive/v0.28.3/exiv2-0.28.3.tar.gz
+ https://downloads.sourceforge.net/freetype/freetype-2.13.3.tar.xz
+ https://downloads.sourceforge.net/freetype/freetype-doc-2.13.3.tar.xz
+-https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.15.0.tar.xz
++https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz
+ https://github.com/fribidi/fribidi/releases/download/v1.0.16/fribidi-1.0.16.tar.xz
+ https://download.gimp.org/pub/gegl/0.4/gegl-0.4.52.tar.xz
+ https://sourceforge.net/projects/giflib/files/giflib-5.2.2.tar.gz
+@@ -182,7 +182,7 @@ https://github.com/harfbuzz/harfbuzz/releases/download/10.2.0/harfbuzz-10.2.0.ta
+ https://github.com/jasper-software/jasper/archive/version-4.2.4/jasper-4.2.4.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.16/lcms2-2.16.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.1.1/libavif-1.1.1.tar.gz
+-https://github.com/libexif/libexif/releases/download/v0.6.24/libexif-0.6.24.tar.bz2
++https://github.com/libexif/libexif/releases/download/v0.6.25/libexif-0.6.25.tar.bz2
+ https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
+ https://downloads.sourceforge.net/libjpeg-turbo/libjpeg-turbo-3.0.1.tar.gz
+ https://github.com/libjxl/libjxl/archive/v0.11.1/libjxl-0.11.1.tar.gz
+@@ -274,7 +274,7 @@ https://github.com/lfs-book/sysmon3/releases/download/sysmon3-3.0.0/sysmon3-3.0.
+ https://sysstat.github.io/sysstat-packages/sysstat-12.7.6.tar.xz
+ https://github.com/systemd/systemd/archive/v257/systemd-257.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.10.1/udisks-2.10.1.tar.bz2
+-https://www.rarlab.com/rar/unrarsrc-7.1.2.tar.gz
++https://www.rarlab.com/rar/unrarsrc-7.1.3.tar.gz
+ https://downloads.sourceforge.net/infozip/unzip60.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-consolidated_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-gcc14-1.patch
+@@ -306,7 +306,7 @@ https://www.lua.org/ftp/lua-5.4.7.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.7-shared_library-1.patch
+ https://www.lua.org/tests/lua-5.4.7-tests.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/luajit/luajit-20240917.tar.xz
+-https://www.mercurial-scm.org/release/mercurial-6.9.tar.gz
++https://www.mercurial-scm.org/release/mercurial-6.9.1.tar.gz
+ https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.xz
+ https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03-xdoc.tar.xz
+ https://github.com/NixOS/patchelf/releases/download/0.18.0/patchelf-0.18.0.tar.gz
+@@ -590,7 +590,7 @@ https://www.tcpdump.org/release/libpcap-1.10.5.tar.gz
+ https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz
+ https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.8.0/libslirp-v4.8.0.tar.bz2
+ https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.3.tar.xz
+-https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.3.tar.xz
++https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.4.tar.xz
+ https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.6.tar.bz2
+ https://notroj.github.io/neon/neon-0.34.0.tar.gz
+ https://github.com/nghttp2/nghttp2/releases/download/v1.64.0/nghttp2-1.64.0.tar.xz
+@@ -755,7 +755,7 @@ https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.1.tar.xz
+ https://download.gnome.org/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
+ https://download.gnome.org/sources/gnome-online-accounts/3.52/gnome-online-accounts-3.52.3.1.tar.xz
+ https://download.gnome.org/sources/libgdata/0.18/libgdata-0.18.1.tar.xz
+-https://download.gnome.org/sources/libgee/0.20/libgee-0.20.6.tar.xz
++https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz
+ https://download.gnome.org/sources/libgtop/2.41/libgtop-2.41.3.tar.xz
+ https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.4.tar.xz
+ https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz
