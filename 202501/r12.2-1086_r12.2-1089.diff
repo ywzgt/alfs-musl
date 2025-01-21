@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index 5e4c6da469..30d91b278a 100644
+--- a/wget-list
++++ b/wget-list
+@@ -292,7 +292,7 @@ https://doxygen.nl/files/doxygen-1.13.2.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.8/gc-8.2.8.tar.gz
+-https://ftp.gnu.org/gnu/gdb/gdb-15.2.tar.xz
++https://ftp.gnu.org/gnu/gdb/gdb-16.1.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-2.48.1.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-manpages-2.48.1.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.48.1.tar.xz
+@@ -472,7 +472,7 @@ https://files.pythonhosted.org/packages/source/g/gi-docgen/gi_docgen-2024.1.tar.
+ https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
+ https://files.pythonhosted.org/packages/source/l/lxml/lxml-5.3.0.tar.gz
+ https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.8.tar.gz
+-https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.2.1.tar.gz
++https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.2.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/packaging/packaging-24.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/ply/ply-3.11.tar.gz
+ https://files.pythonhosted.org/packages/source/p/psutil/psutil-6.1.1.tar.gz
+@@ -687,7 +687,7 @@ https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz
+ https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
+ https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.3.tar.xz
+ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+-https://download.gnome.org/sources/pango/1.56/pango-1.56.0.tar.xz
++https://download.gnome.org/sources/pango/1.56/pango-1.56.1.tar.xz
+ https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
+ https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
+ https://download.qt.io/archive/qt/6.8/6.8.1/single/qt-everywhere-src-6.8.1.tar.xz
