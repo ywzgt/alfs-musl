@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1096">
+  <body class="blfs" id="blfs-r12.2-1099">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1096
+        "phrase">(systemd</span> Edition) - Version r12.2-1099
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1096">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1099">
           Home</a>
         </li>
       </ul>
@@ -71,26 +71,6 @@
             Development versions of BLFS may not build or run some packages
             properly if LFS or dependencies have been updated since the most
             recent stable versions of the books.
-          </p>
-        </div>
-        <div class="admon caution">
-          <img alt="[Caution]" src="../images/caution.png" />
-          <h3>
-            Caution
-          </h3>
-          <p>
-            The previous version of the <span class=
-            "application">UnZip</span> package had some locale related
-            issues. Currently there are no BLFS editors capable of testing
-            these locale issues. Therefore, the locale related information is
-            left on this page, but has not been tested. A more general
-            discussion of these problems can be found in the <a class="xref"
-            href="../introduction/locale-issues.html#locale-assumed-encoding"
-            title=
-            "The Program Assumes the Locale-Based Encoding of External Documents">
-            Program Assumes Encoding</a> section of the <a class="xref" href=
-            "../introduction/locale-issues.html" title=
-            "Locale Related Issues">Locale Related Issues</a> page.
           </p>
         </div>
         <h3>
@@ -169,9 +149,9 @@
           </p>
         </div>
         <p>
-          These issues are thought to be fixed in the patch. But since none
-          of the editors have data to test this, the following workarounds
-          are retained in case they might still be needed.
+          These issues were thought to be fixed in the consolidated patch,
+          but at least it does not work with some ZIP archives containing
+          Chinese file names. So the following workaround is retained.
         </p>
         <p>
           The <span class="application">UnZip</span> package assumes that
@@ -192,34 +172,28 @@
           unpack a ZIP archive containing non-ASCII filenames, the filenames
           are damaged because <span class=
           "command"><strong>unzip</strong></span> uses improper conversion
-          when any of its encoding assumptions are incorrect. For example, in
-          the ru_RU.KOI8-R locale, conversion of filenames from CP866 to
-          KOI8-R is required, but conversion from CP850 to ISO-8859-1 is
+          when any of its encoding assumptions are incorrect. For example, if
+          the ZIP archive was created on a Windows system and it contains
+          Simplified Chinese file names, and the current locale is
+          zh_CN.UTF-8 (or any UTF-8 locale), conversion of filenames from
+          CP936 to UTF-8 is required, but conversion from CP850 to UTF-8 is
           done, which produces filenames consisting of undecipherable
           characters instead of words (the closest equivalent understandable
-          example for English-only users is rot13). There are several ways
-          around this limitation:
+          example for English-only users is rot13).
         </p>
         <p>
-          1) For unpacking ZIP archives with filenames containing non-ASCII
-          characters, use <a class="ulink" href=
-          "https://www.winzip.com/">WinZip</a> while running the <a class=
-          "ulink" href="https://www.winehq.org/">Wine</a> Windows emulator.
-        </p>
-        <p>
-          2) Use <span class="command"><strong>bsdtar -xf</strong></span>
-          from <a class="xref" href="libarchive.html" title=
-          "libarchive-3.7.7">libarchive-3.7.7</a> to unpack the ZIP archive.
-          Then fix the damage made to the filenames using the <span class=
-          "command"><strong>convmv</strong></span> tool (<a class="ulink"
-          href=
-          "https://j3e.de/linux/convmv/">https://j3e.de/linux/convmv/</a>).
-          The following is an example for the zh_CN.UTF-8 locale:
+          The easiest way to work around this issue is using the <span class=
+          "command"><strong>bsdunzip</strong></span> utility from <a class=
+          "xref" href="libarchive.html" title=
+          "libarchive-3.7.7">libarchive-3.7.7</a> to unpack the archive, and
+          specifying the file name encoding in the ZIP archive with a
+          <em class="parameter"><code>-I</code></em> option. For example,
+          assuming <code class="filename">archive.zip</code> was created on
+          Windows and it contains Simplified Chinese file names, extract it
+          with:
         </p>
         <pre class="userinput"><kbd class=
-        "command">convmv -f cp936 -t utf-8 -r --nosmart --notest \
-    <em class=
-"replaceable"><code>&lt;/path/to/unzipped/files&gt;</code></em></kbd></pre>
+        "command">bsdunzip archive.zip -I cp936</kbd></pre>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -396,7 +370,7 @@ patch -Np1 -i ../unzip-6.0-gcc14-1.patch</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1096">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1099">
           Home</a>
         </li>
       </ul>
