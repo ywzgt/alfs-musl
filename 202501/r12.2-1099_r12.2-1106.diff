@@ -1,0 +1,57 @@
+diff --git a/wget-list b/wget-list
+index 2c8dbb758c..fba70dfa53 100644
+--- a/wget-list
++++ b/wget-list
+@@ -59,7 +59,7 @@ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.14.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+ https://download.qemu.org/qemu-9.2.0.tar.xz
+-https://github.com/abseil/abseil-cpp/releases/download/20240722.0/abseil-cpp-20240722.0.tar.gz
++https://github.com/abseil/abseil-cpp/releases/download/20240722.1/abseil-cpp-20240722.1.tar.gz
+ https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.4.tar.xz
+ http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz
+ https://archive.apache.org/dist/apr/apr-1.7.5.tar.bz2
+@@ -116,12 +116,12 @@ https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.7.tar.bz2
+ https://github.com/cjlin1/liblinear/archive/v248/liblinear-248.tar.gz
+ https://www.freedesktop.org/software/libmbim/libmbim-1.26.4.tar.xz
+ https://github.com/linux-nvme/libnvme/archive/v1.11.1/libnvme-1.11.1.tar.gz
+-https://github.com/rrthomas/libpaper/releases/download/v2.2.5/libpaper-2.2.5.tar.gz
++https://github.com/rrthomas/libpaper/releases/download/v2.2.6/libpaper-2.2.6.tar.gz
+ https://github.com/flatpak/libportal/releases/download/0.9.0/libportal-0.9.0.tar.xz
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+ https://github.com/Qalculate/libqalculate/releases/download/v5.5.0/libqalculate-5.5.0.tar.gz
+ https://www.freedesktop.org/software/libqmi/libqmi-1.30.8.tar.xz
+-https://github.com/seccomp/libseccomp/releases/download/v2.5.5/libseccomp-2.5.5.tar.gz
++https://github.com/seccomp/libseccomp/releases/download/v2.6.0/libseccomp-2.6.0.tar.gz
+ https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.1.tar.xz
+ https://download.gnome.org/sources/libsigc++/3.6/libsigc++-3.6.0.tar.xz
+ https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.14.tar.gz
+@@ -255,7 +255,7 @@ https://github.com/vcrhonek/hwdata/archive/v0.391/hwdata-0.391.tar.gz
+ https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
+ https://github.com/lm-sensors/lm-sensors/archive/V3-6-0/lm-sensors-3-6-0.tar.gz
+ https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
+-http://ftp.midnight-commander.org/mc-4.8.32.tar.xz
++http://ftp.midnight-commander.org/mc-4.8.33.tar.xz
+ https://www.freedesktop.org/software/ModemManager/ModemManager-1.18.12.tar.xz
+ https://download.gnome.org/sources/notification-daemon/3.20/notification-daemon-3.20.0.tar.xz
+ https://github.com/p7zip-project/p7zip/archive/v17.04/p7zip-17.04.tar.gz
+@@ -280,7 +280,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-consolidated_fixes-1
+ https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-gcc14-1.patch
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.7/upower-v1.90.7.tar.bz2
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-018.tar.xz
+-https://ftp.gnu.org/gnu/which/which-2.21.tar.gz
++https://ftp.gnu.org/gnu/which/which-2.22.tar.gz
+ https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz
+ https://downloads.sourceforge.net/infozip/zip30.tar.gz
+ https://github.com/lu-zero/cargo-c/archive/v0.10.9/cargo-c-0.10.9.tar.gz
+@@ -605,8 +605,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.pa
+ https://bitbucket.org/mutt/mutt/downloads/mutt-2.2.13.tar.gz
+ https://github.com/BuGlessRB/procmail/archive/refs/tags/v3.24/procmail-3.24.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.24-consolidated_fixes-1.patch
+-https://archive.apache.org/dist/httpd/httpd-2.4.62.tar.bz2
+-https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.62-blfs_layout-1.patch
++https://archive.apache.org/dist/httpd/httpd-2.4.63.tar.bz2
++https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.63-blfs_layout-1.patch
+ https://downloads.isc.org/isc/kea/2.6.1/kea-2.6.1.tar.gz
+ https://github.com/proftpd/proftpd/archive/v1.3.8b/proftpd-1.3.8b.tar.gz
+ https://www.dovecot.org/releases/2.3/dovecot-2.3.21.1.tar.gz
