@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1107">
+  <body class="blfs" id="blfs-r12.2-1119">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1107
+        "phrase">(systemd</span> Edition) - Version r12.2-1119
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1107">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1119">
           Home</a>
         </li>
       </ul>
@@ -115,10 +115,15 @@
           <a class="xref" href="../general/cmake.html" title=
           "CMake-3.31.4">CMake-3.31.4</a>, <a class="xref" href=
           "vulkan-headers.html" title=
-          "Vulkan-Headers-1.4.304">Vulkan-Headers-1.4.304</a>, <a class=
-          "xref" href="../general/wayland.html" title=
-          "Wayland-1.23.0">Wayland-1.23.0</a>, and <a class="xref" href=
-          "x7lib.html" title="Xorg Libraries">Xorg Libraries</a>
+          "Vulkan-Headers-1.4.304">Vulkan-Headers-1.4.304</a>, and <a class=
+          "xref" href="x7lib.html" title="Xorg Libraries">Xorg Libraries</a>
+        </p>
+        <h4>
+          Recommended
+        </h4>
+        <p class="recommended">
+          <a class="xref" href="../general/wayland.html" title=
+          "Wayland-1.23.0">Wayland-1.23.0</a>
         </p>
         <h4>
           Recommended (Runtime)
@@ -202,6 +207,12 @@ ninja test</kbd></pre>
           rpath once it's installed into the standard location, and rpath may
           sometimes cause unwanted effects or even security issues.
         </p>
+        <p>
+          <code class="option">-D BUILD_WSI_WAYLAND_SUPPORT=OFF</code>: This
+          option allows building without <a class="xref" href=
+          "../general/wayland.html" title="Wayland-1.23.0">Wayland-1.23.0</a>
+          support.
+        </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -274,7 +285,7 @@ ninja test</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1107">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1119">
           Home</a>
         </li>
       </ul>

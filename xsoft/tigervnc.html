@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1107">
+  <body class="blfs" id="blfs-r12.2-1119">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1107
+        "phrase">(systemd</span> Edition) - Version r12.2-1119
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="thunderbird.html" title=
-          "Thunderbird-128.6.0esr">Prev</a>
+          "Thunderbird-128.6.1esr">Prev</a>
           <p>
-            Thunderbird-128.6.0esr
+            Thunderbird-128.6.1esr
           </p>
         </li>
         <li class="next">
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1107">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1119">
           Home</a>
         </li>
       </ul>
@@ -158,8 +158,8 @@
         <p class="required">
           <a class="xref" href="../general/cmake.html" title=
           "CMake-3.31.4">CMake-3.31.4</a>, <a class="xref" href=
-          "../x/fltk.html" title="FLTK-1.3.10">FLTK-1.3.10</a>, <a class=
-          "xref" href="../postlfs/gnutls.html" title=
+          "../x/fltk.html" title="FLTK-1.4.1">FLTK-1.4.1</a>, <a class="xref"
+          href="../postlfs/gnutls.html" title=
           "GnuTLS-3.8.8">GnuTLS-3.8.8</a>, <a class="xref" href=
           "../general/libgcrypt.html" title=
           "libgcrypt-1.11.0">libgcrypt-1.11.0</a>, <a class="xref" href=
@@ -194,6 +194,11 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../tigervnc-1.14.1-configuration_fixes-1.patch</kbd></pre>
+        <p>
+          Now, make the package consistent with fltk-1.4.1 and later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i "s/maximize)/::&amp;/" vncviewer/DesktopWindow.cxx</kbd></pre>
         <p>
           Install <span class="application">tigervnc</span> by running the
           following commands:
@@ -456,9 +461,9 @@ EOF</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="thunderbird.html" title=
-          "Thunderbird-128.6.0esr">Prev</a>
+          "Thunderbird-128.6.1esr">Prev</a>
           <p>
-            Thunderbird-128.6.0esr
+            Thunderbird-128.6.1esr
           </p>
         </li>
         <li class="next">
@@ -474,7 +479,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1107">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1119">
           Home</a>
         </li>
       </ul>
