@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1119">
+  <body class="blfs" id="blfs-r12.2-1132">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1119
+        "phrase">(systemd</span> Edition) - Version r12.2-1132
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1119">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1132">
           Home</a>
         </li>
       </ul>
@@ -3647,7 +3647,11 @@ deactivate</kbd></pre>
             fail. And, one test named <code class=
             "literal">TestAvailProcessAPIs::test_io_counters</code> is known
             to fail if the kernel does not have <code class=
-            "option">CONFIG_TASK_IO_ACCOUNTING</code> enabled.
+            "option">CONFIG_TASK_IO_ACCOUNTING</code> enabled. <code class=
+            "literal">TestScripts.test_who</code> is known to fail if the
+            login manager does not write into <code class=
+            "filename">/run/utmp</code> (note that due to the potential year
+            2037 problem, Shadow has already stopped writing into it).
           </p>
         </div>
         <div class="commands" lang="en" xml:lang="en">
@@ -7093,7 +7097,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1119">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1132">
           Home</a>
         </li>
       </ul>
