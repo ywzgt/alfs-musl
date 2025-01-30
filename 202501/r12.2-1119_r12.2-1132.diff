@@ -1,0 +1,48 @@
+diff --git a/wget-list b/wget-list
+index ebf03d0c93..6bf07632fc 100644
+--- a/wget-list
++++ b/wget-list
+@@ -314,7 +314,7 @@ https://www.cpan.org/authors/id/P/PH/PHRED/Archive-Zip-1.68.tar.gz
+ https://www.cpan.org/authors/id/V/VP/VPIT/autovivification-0.18.tar.gz
+ https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISBN-3.011.tar.gz
+ https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISMN-1.204.tar.gz
+-https://www.cpan.org/authors/id/B/BD/BDFOY/Business-ISSN-1.005.tar.gz
++https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISSN-1.008.tar.gz
+ https://www.cpan.org/authors/id/K/KA/KASEI/Class-Accessor-0.51.tar.gz
+ https://www.cpan.org/authors/id/D/DC/DCANTRELL/Data-Compare-1.29.tar.gz
+ https://www.cpan.org/authors/id/G/GA/GARU/Data-Dump-1.25.tar.gz
+@@ -542,10 +542,10 @@ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+ https://download.gnome.org/sources/vala/0.56/vala-0.56.17.tar.xz
+ https://sourceware.org/pub/valgrind/valgrind-3.24.0.tar.bz2
+ https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
+-https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-23.0.1/OpenJDK-23.0.1+11-i686-bin.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-23.0.1/OpenJDK-23.0.1+11-x86_64-bin.tar.xz
+-https://github.com/openjdk/jdk23u/archive/jdk-23.0.1-ga.tar.gz
+-https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-23.0.1/jtreg-7.3.1+1.tar.gz
++https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-23.0.2/OpenJDK-23.0.2+7-i686-bin.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-23.0.2/OpenJDK-23.0.2+7-x86_64-bin.tar.xz
++https://github.com/openjdk/jdk23u/archive/jdk-23.0.2-ga.tar.gz
++https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-23.0.2/jtreg-7.3.1+1.tar.gz
+ https://archive.apache.org/dist/ant/source/apache-ant-1.10.15-src.tar.xz
+ https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.1.0/dhcpcd-10.1.0.tar.xz
+ https://www.kernel.org/pub/linux/utils/net/bridge-utils/bridge-utils-1.7.1.tar.xz
+@@ -609,9 +609,7 @@ https://archive.apache.org/dist/httpd/httpd-2.4.63.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.63-blfs_layout-1.patch
+ https://downloads.isc.org/isc/kea/2.6.1/kea-2.6.1.tar.gz
+ https://github.com/proftpd/proftpd/archive/v1.3.8b/proftpd-1.3.8b.tar.gz
+-https://www.dovecot.org/releases/2.3/dovecot-2.3.21.1.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/dovecot-2.3.21.1-openssl3_fixes-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/dovecot-2.3.21.1-security_fix-1.patch
++https://www.dovecot.org/releases/2.4/dovecot-2.4.0.tar.gz
+ https://ftp.exim.org/pub/exim/exim4/exim-4.98.tar.xz
+ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.9.1.tar.gz
+ https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
+@@ -667,7 +665,7 @@ https://github.com/KhronosGroup/glslang/archive/15.1.0/glslang-15.1.0.tar.gz
+ https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
+ https://download.gnome.org/sources/goffice/0.10/goffice-0.10.57.tar.xz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+-https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz
++https://download.gnome.org/sources/gtk/3.24/gtk-3.24.48.tar.xz
+ https://download.gnome.org/sources/gtk/4.16/gtk-4.16.12.tar.xz
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.9.tar.xz
+ https://download.gnome.org/sources/gtkmm/4.16/gtkmm-4.16.0.tar.xz
