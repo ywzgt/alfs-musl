@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1132">
+  <body class="blfs" id="blfs-r12.2-1145">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1132
+        "phrase">(systemd</span> Edition) - Version r12.2-1145
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1132">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1145">
           Home</a>
         </li>
       </ul>
@@ -226,23 +226,12 @@ ninja</kbd></pre>
         <p>
           If you are in a Wayland session, replace the one occurrence of
           <code class="literal">x11</code> with <code class=
-          "literal">wayland</code>. One test is known to fail if <a class=
-          "ulink" href=
-          "https://gitlab.gnome.org/GNOME/cantarell-fonts">Cantrell fonts</a>
-          are not installed. About a dozen of tests are known to fail with
-          minor (mostly invisible) differences between the render output and
-          the shipped reference image. Issue <span class=
-          "command"><strong>grep 'not ok' meson-logs/testlog-x11.txt
-          -B3</strong></span> (use <code class=
-          "filename">testlog-wayland.txt</code> if testing in a Wayland
-          session) to list them and the image files showing the render
-          output, the reference output, and the differences. You may take a
-          look at those images to ensure the differences are insignificant.
-          Many tests will fail if <code class=
+          "literal">wayland</code>. Many tests will fail if <code class=
           "filename">~/.config/gtk-4.0/settings.ini</code> exists and the
-          gtk-modules line is not commented out. Several other tests may fail
-          for unknown reason. On systems with NVIDIA graphics cards, the
-          tests may take significantly longer.
+          gtk-modules line is not commented out. 7 tests are known to fail
+          with libpng-1.6.45 or newer. Several other tests may fail for
+          unknown reason. On systems with NVIDIA graphics cards, the tests
+          may take significantly longer.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -653,7 +642,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1132">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1145">
           Home</a>
         </li>
       </ul>
