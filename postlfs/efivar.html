@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1145">
+  <body class="blfs" id="blfs-r12.2-1162">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1145
+        "phrase">(systemd</span> Edition) - Version r12.2-1162
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1145">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1162">
           Home</a>
         </li>
       </ul>
@@ -108,11 +108,11 @@
           efivar Dependencies
         </h3>
         <h4>
-          Recommended
+          Optional
         </h4>
-        <p class="recommended">
-          <a class="xref" href="../general/mandoc.html" title=
-          "mandoc-1.14.6">mandoc-1.14.6</a>
+        <p class="optional">
+          <a class="ulink" href="https://mandoc.bsd.lv/">mandoc</a> (for the
+          man page of <span class="command"><strong>efisecdb</strong></span>)
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -136,7 +136,8 @@
           Build <span class="application">efivar</span> with the following
           commands:
         </p>
-        <pre class="userinput"><kbd class="command">make</kbd></pre>
+        <pre class="userinput"><kbd class=
+        "command">make ENABLE_DOCS=0</kbd></pre>
         <p>
           The test suite of this package is dangerous. Running it may trigger
           firmware bugs and make your system unusable without using some
@@ -146,26 +147,35 @@
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">make install LIBDIR=/usr/lib</kbd></pre>
+        "command">make install ENABLE_DOCS=0 LIBDIR=/usr/lib</kbd></pre>
+        <p>
+          To avoid a hard dependency on <a class="ulink" href=
+          "https://mandoc.bsd.lv/">mandoc</a> we used <em class=
+          "parameter"><code>ENABLE_DOCS=0</code></em>, but it causes all the
+          man pages skipped from the installation even though most of them
+          actually does not need <a class="ulink" href=
+          "https://mandoc.bsd.lv/">mandoc</a>. Still as the <code class=
+          "systemitem">root</code> user, install these man pages:
+        </p>
+        <pre class="root"><kbd class=
+        "command">install -vm644 docs/efivar.1 /usr/share/man/man1 &amp;&amp;
+install -vm644 docs/*.3      /usr/share/man/man3</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
           Command Explanations
         </h2>
         <p>
+          <em class="parameter"><code>ENABLE_DOCS=0</code></em>: Disable the
+          generation of man pages, in order to allow building this package
+          without <a class="ulink" href="https://mandoc.bsd.lv/">mandoc</a>
+          installed.
+        </p>
+        <p>
           <em class="parameter"><code>LIBDIR=/usr/lib</code></em>: This
           option overrides the default library directory of the package
           (<code class="filename">/usr/lib64</code>, which is not used by
           LFS).
-        </p>
-        <p>
-          <code class="option">ENABLE_DOCS=0</code>: Disable the generation
-          of man pages. Append this option after the <span class=
-          "command"><strong>make</strong></span> and <span class=
-          "command"><strong>make install</strong></span> commands if you
-          don't need the man pages to allow building this package without
-          <a class="xref" href="../general/mandoc.html" title=
-          "mandoc-1.14.6">mandoc-1.14.6</a> installed.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -294,7 +304,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1145">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1162">
           Home</a>
         </li>
       </ul>
