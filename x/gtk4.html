@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1166">
+  <body class="blfs" id="blfs-r12.2-1181">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1166
+        "phrase">(systemd</span> Edition) - Version r12.2-1181
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1166">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1181">
           Home</a>
         </li>
       </ul>
@@ -106,6 +106,21 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Recommended patch (for fixing PNG colorspace deserialization
+                breakage with libpng-1.6.45 or later): <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/gtk-4.16.12-libpng_1_6_45-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/gtk-4.16.12-libpng_1_6_45-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           GTK 4 Dependencies
         </h3>
         <h4>
@@ -126,7 +141,7 @@
           href="../general/python-modules.html#pygobject3" title=
           "PyGObject-3.50.0">PyGObject-3.50.0</a>, and <a class="xref" href=
           "../general/wayland-protocols.html" title=
-          "Wayland-Protocols-1.39">wayland-protocols-1.39</a>
+          "Wayland-Protocols-1.40">wayland-protocols-1.40</a>
         </p>
         <h4>
           Recommended
@@ -136,11 +151,11 @@
           "adwaita-icon-theme-47.0">adwaita-icon-theme-47.0</a> (default for
           some gtk4 settings keys), <a class="xref" href=
           "../multimedia/gst10-plugins-bad.html" title=
-          "gst-plugins-bad-1.24.11">gst-plugins-bad-1.24.11</a>, <a class=
+          "gst-plugins-bad-1.24.12">gst-plugins-bad-1.24.12</a>, <a class=
           "xref" href="../general/glslc.html" title=
           "glslc from shaderc-2024.4">glslc from shaderc-2024.4</a>,
           <a class="xref" href="../multimedia/gst10-plugins-good.html" title=
-          "gst-plugins-good-1.24.11">gst-plugins-good-1.24.11</a> (runtime,
+          "gst-plugins-good-1.24.12">gst-plugins-good-1.24.12</a> (runtime,
           built with <a class="xref" href="../multimedia/libvpx.html" title=
           "libvpx-1.15.0">libvpx-1.15.0</a>), <a class="xref" href=
           "hicolor-icon-theme.html" title=
@@ -192,6 +207,12 @@
           Installation of GTK 4
         </h2>
         <p>
+          Fix the PNG colorspace deserialization breakage with libpng-1.6.45
+          or later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../gtk-4.16.12-libpng_1_6_45-1.patch</kbd></pre>
+        <p>
           Install <span class="application">GTK 4</span> by running the
           following commands:
         </p>
@@ -228,10 +249,9 @@ ninja</kbd></pre>
           <code class="literal">x11</code> with <code class=
           "literal">wayland</code>. Many tests will fail if <code class=
           "filename">~/.config/gtk-4.0/settings.ini</code> exists and the
-          gtk-modules line is not commented out. 7 tests are known to fail
-          with libpng-1.6.45 or newer. Several other tests may fail for
-          unknown reason. On systems with NVIDIA graphics cards, the tests
-          may take significantly longer.
+          gtk-modules line is not commented out. Several other tests may fail
+          for unknown reason. On systems with NVIDIA graphics cards, the
+          tests may take significantly longer.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -642,7 +662,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1166">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1181">
           Home</a>
         </li>
       </ul>
