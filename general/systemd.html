@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1184">
+  <body class="blfs" id="blfs-r12.2-1193">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1184
+        "phrase">(systemd</span> Edition) - Version r12.2-1193
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1184">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1193">
           Home</a>
         </li>
       </ul>
@@ -399,13 +399,14 @@ EOF</kbd></pre>
             "Shadow-4.17.2">Shadow-4.17.2</a> has been already rebuilt with
             <a class="xref" href="../postlfs/linux-pam.html" title=
             "Linux-PAM-1.7.0">Linux-PAM-1.7.0</a> support first, then logout,
-            and login again. This ensures the running login session
-            registered with <span class=
-            "command"><strong>systemd-logind</strong></span> and a per-user
-            systemd instance running for each user owning a login session.
-            Many BLFS packages listing Systemd as a dependency need the
-            <span class="command"><strong>systemd-logind</strong></span>
-            integration and/or a running per-user systemd instance.
+            and login again. This will ensure that the running login session
+            is registered with <span class=
+            "command"><strong>systemd-logind</strong></span>, and that a
+            per-user systemd instance is running for each user owning a login
+            session. Many BLFS packages listing systemd as a dependency need
+            the <span class="command"><strong>systemd-logind</strong></span>
+            integration and/or a running per-user systemd instance at
+            runtime.
           </p>
         </div>
         <div class="admon warning">
@@ -563,7 +564,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1184">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1193">
           Home</a>
         </li>
       </ul>

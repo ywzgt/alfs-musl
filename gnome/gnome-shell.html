@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1184">
+  <body class="blfs" id="blfs-r12.2-1193">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1184
+        "phrase">(systemd</span> Edition) - Version r12.2-1193
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1184">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1193">
           Home</a>
         </li>
       </ul>
@@ -188,10 +188,13 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr       \
             --buildtype=release \
+            -D tests=false      \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
-          To run the tests, issue: <span class="command"><strong>ninja
+          To run the tests, ensure <span class="application">Mutter</span> is
+          installed after running its test suite, and issue: <span class=
+          "command"><strong>meson configure -D tests=true &amp;&amp; ninja
           test</strong></span>. You must be running an X session to run the
           tests. Some will fail if <a class="xref" href="../x/gdm.html"
           title="GDM-47.0">GDM-47.0</a> is not installed. One test named
@@ -294,7 +297,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1184">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1193">
           Home</a>
         </li>
       </ul>

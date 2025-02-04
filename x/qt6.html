@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Qt-6.8.1
+      Qt-6.8.2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1184">
+  <body class="blfs" id="blfs-r12.2-1193">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1184
+        "phrase">(systemd</span> Edition) - Version r12.2-1193
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -31,9 +31,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="qtwebengine.html" title=
-          "QtWebEngine-6.8.1">Next</a>
+          "QtWebEngine-6.8.2">Next</a>
           <p>
-            QtWebEngine-6.8.1
+            QtWebEngine-6.8.2
           </p>
         </li>
         <li class="up">
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1184">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1193">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="qt6" name="qt6"></a>Qt-6.8.1
+      <a id="qt6" name="qt6"></a>Qt-6.8.2
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -82,13 +82,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.qt.io/archive/qt/6.8/6.8.1/single/qt-everywhere-src-6.8.1.tar.xz">
-                https://download.qt.io/archive/qt/6.8/6.8.1/single/qt-everywhere-src-6.8.1.tar.xz</a>
+                "https://download.qt.io/archive/qt/6.8/6.8.2/single/qt-everywhere-src-6.8.2.tar.xz">
+                https://download.qt.io/archive/qt/6.8/6.8.2/single/qt-everywhere-src-6.8.2.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 4068b07ca6366bcb9ba56508bbbf20e6
+                Download MD5 sum: ccc7100bc687005c167a8a43a4f99050
               </p>
             </li>
             <li class="listitem">
@@ -98,12 +98,12 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 45 GB (425 MB installed)
+                Estimated disk space required: 45 GB (429 MB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 20 SBU (using parallelism=8)
+                Estimated build time: 22 SBU (using parallelism=8)
               </p>
             </li>
           </ul>
@@ -221,12 +221,12 @@
             Sometimes the installation paths are hardcoded into installed
             files. This is the reason why <code class=
             "filename">/opt/qt6</code> is used as installation prefix instead
-            of <code class="filename">/opt/qt-6.8.1</code>. To create a
+            of <code class="filename">/opt/qt-6.8.2</code>. To create a
             versioned <span class="application">Qt6</span> directory, you may
             rename the directory and create a symlink:
           </p>
-          <pre class="root"><kbd class="command">mkdir -pv /opt/qt-6.8.1
-ln -sfnv qt-6.8.1 /opt/qt6</kbd></pre>
+          <pre class="root"><kbd class="command">mkdir -pv /opt/qt-6.8.2
+ln -sfnv qt-6.8.2 /opt/qt6</kbd></pre>
           <p>
             Later on, you may want to install other versions of <span class=
             "application">Qt6</span>. To do that, just remove the symlink,
@@ -326,7 +326,6 @@ fi</kbd></pre>
             -system-sqlite          \
             -nomake examples        \
             -no-rpath               \
-            -no-sbom                \
             -journald               \
             -skip qt3d              \
             -skip qtquick3dphysics  \
@@ -430,11 +429,6 @@ EOF</kbd></pre>
           source tarball. Remove it if you want to build them.
         </p>
         <p>
-          <em class="parameter"><code>-no-sbom</code></em>: This switch
-          disables generating the Software Bill Of Materials, which does not
-          work in this release of Qt6.
-        </p>
-        <p>
           <em class="parameter"><code>-skip qt3d</code></em>: This switch
           disables building qt3d support. There is a problem building these
           files without an external library and no packages in BLFS use qt3d.
@@ -462,7 +456,7 @@ EOF</kbd></pre>
           <em class="parameter"><code>-skip qtwebengine</code></em>: This
           switch disables building the QtWebEngine. The BLFS editors have
           chosen to build <a class="xref" href="qtwebengine.html" title=
-          "QtWebEngine-6.8.1">qtwebengine-6.8.1</a> separately.
+          "QtWebEngine-6.8.2">qtwebengine-6.8.2</a> separately.
         </p>
         <p>
           <em class="parameter"><code>-skip qtquick3dphysics</code></em>:
@@ -562,14 +556,15 @@ EOF</kbd></pre>
               libQt6DesignerComponents.so, libQt6DeviceDiscoverySupport.a,
               libQt6EglFSDeviceIntegration.so, libQt6EglFsKmsGbmSupport.so,
               libQt6EglFsKmsSupport.so, libQt6ExampleIcons.a,
-              libQt6FbSupport.a, libQt6Graphs.so, libQt6GraphsWidgets.so,
-              libQt6Grpc.so, libQt6GrpcQuick.so, libQt6Gui.so, libQt6Help.so,
+              libQt6ExamplesAssetDownloader.a, libQt6FbSupport.a,
+              libQt6Graphs.so, libQt6GraphsWidgets.so, libQt6Grpc.so,
+              libQt6GrpcQuick.so, libQt6Gui.so, libQt6Help.so,
               libQt6HttpServer.so, libQt6InputSupport.a, libQt6JsonRpc.so,
               libQt6KmsSupport.a, libQt6LabsAnimation.so,
               libQt6LabsFolderListModel.so, libQt6LabsPlatform.so,
               libQt6LabsQmlModels.so, libQt6LabsSettings.so,
               libQt6LabsSharedImage.so, libQt6LabsWavefrontMesh.so,
-              libQt6LanguageServer.so, libQt6Location.so, libQt6Mqtt.so,
+              libQt6LanguageServer.a, libQt6Location.so, libQt6Mqtt.so,
               libQt6Multimedia.so, libQt6MultimediaQuick.so,
               libQt6MultimediaTestLib.a, libQt6MultimediaWidgets.so,
               libQt6Network.so, libQt6NetworkAuth.so, libQt6Nfc.so,
@@ -580,9 +575,10 @@ EOF</kbd></pre>
               libQt6ProtobufQtGuiTypes.so, libQt6ProtobufQuick.so,
               libQt6ProtobufWellKnownTypes.so,
               libQt6QGstreamerMediaPluginImpl.a, libQt6Qml.so,
-              libQt6QmlCompiler.so, libQt6QmlCore.so, libQt6QmlDebug.a,
-              libQt6QmlDom.a, libQt6QmlLocalStorage.so, libQt6QmlLS.a,
-              libQt6QmlMeta.so, libQt6QmlModels.so, libQt6QmlNetwork.so,
+              libQt6QmlAssetDownloader.a, libQt6QmlCompiler.so,
+              libQt6QmlCore.so, libQt6QmlDebug.a, libQt6QmlDom.a,
+              libQt6QmlLocalStorage.so, libQt6QmlLS.a, libQt6QmlMeta.so,
+              libQt6QmlModels.so, libQt6QmlNetwork.so,
               libQt6QmlToolingSettings.a, libQt6QmlTypeRegistrar.a,
               libQt6QmlWorkerScript.so, libQt6QmlXmlListModel.so,
               libQt6Quick.so, libQt6Quick3D.so, libQt6Quick3DAssetImport.so,
@@ -633,7 +629,7 @@ EOF</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/opt/qt6 and /opt/qt-6.8.1</span>
+              <span class="segbody">/opt/qt6 and /opt/qt-6.8.2</span>
             </div>
           </div>
         </div>
@@ -1105,9 +1101,9 @@ EOF</kbd></pre>
         </li>
         <li class="next">
           <a accesskey="n" href="qtwebengine.html" title=
-          "QtWebEngine-6.8.1">Next</a>
+          "QtWebEngine-6.8.2">Next</a>
           <p>
-            QtWebEngine-6.8.1
+            QtWebEngine-6.8.2
           </p>
         </li>
         <li class="up">
@@ -1116,7 +1112,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1184">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1193">
           Home</a>
         </li>
       </ul>

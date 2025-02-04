@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1184">
+  <body class="blfs" id="blfs-r12.2-1193">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1184
+        "phrase">(systemd</span> Edition) - Version r12.2-1193
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1184">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1193">
           Home</a>
         </li>
       </ul>
@@ -185,28 +185,20 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr          \
-            --buildtype=release    \
-            -D clutter_tests=false \
-            -D profiler=false      \
-            ..                     &amp;&amp;
+meson setup --prefix=/usr       \
+            --buildtype=release \
+            -D tests=disabled   \
+            -D profiler=false   \
+            ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
-          The test suite requires the mutter schema to be installed on the
-          system, so it is better to run the tests after installing the
-          package. You can also test basic functions of <span class=
-          "application">Mutter</span> following <a class="xref" href=
-          "mutter.html#mutter-starting" title="Starting Mutter">the section
-          called “Starting Mutter,”</a> after installing it.
+          If you want to run the test suite, ensure <a class="xref" href=
+          "../general/python-modules.html#python-dbusmock" title=
+          "dbusmock-0.34.2">dbusmock-0.34.2</a> is installed and issue:
         </p>
-        <p>
-          Now, as the <code class="systemitem">root</code> user:
-        </p>
-        <pre class="root"><kbd class="command">ninja install</kbd></pre>
-        <p>
-          Now run the test suite:
-        </p>
-        <pre class="test"><kbd class="command">ninja test</kbd></pre>
+        <pre class="test"><kbd class=
+        "command">meson configure -D tests=enabled -D clutter_tests=false &amp;&amp;
+ninja test</kbd></pre>
         <p>
           The tests require an active X or wayland session. Some tests are
           flaky (especially under a high system load) so if a test fails you
@@ -215,8 +207,15 @@ ninja</kbd></pre>
           name&gt;</code></em></strong></span> command. A few tests may fail
           depending on some system configuration. Don't make any mouse or
           keyboard input while the test suite is running or some tests may
-          fail.
+          fail. You can also test basic functions of <span class=
+          "application">Mutter</span> following <a class="xref" href=
+          "mutter.html#mutter-starting" title="Starting Mutter">the section
+          called “Starting Mutter,”</a> after installing it.
         </p>
+        <p>
+          Now, as the <code class="systemitem">root</code> user:
+        </p>
+        <pre class="root"><kbd class="command">ninja install</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -226,6 +225,14 @@ ninja</kbd></pre>
           <em class="parameter"><code>--buildtype=release</code></em>:
           Specify a buildtype suitable for stable releases of the package, as
           the default may produce unoptimized binaries.
+        </p>
+        <p>
+          <em class="parameter"><code>-D tests=disabled</code></em>: Allow
+          building the package without <a class="xref" href=
+          "../general/python-modules.html#python-dbusmock" title=
+          "dbusmock-0.34.2">dbusmock-0.34.2</a> installed. It'll be
+          overridden with <span class="command"><strong>meson
+          configure</strong></span> if running the test suite.
         </p>
         <p>
           <em class="parameter"><code>-D clutter_tests=false</code></em>:
@@ -292,8 +299,8 @@ ninja</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libmutter-15.so and
-              libmutter-test-15.so</span>
+              <span class="segbody">libmutter-15.so and libmutter-test-15.so
+              (optional)</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
@@ -355,9 +362,9 @@ ninja</kbd></pre>
                   <p>
                     contains the <span class="application">Mutter</span> test
                     suite API functions; this library is only installed if
-                    the test suite of this package is enabled and it is
-                    needed by <span class="application">gnome-shell</span>
-                    test suite
+                    the test suite of this package is run and it is needed by
+                    the <span class="application">gnome-shell</span> test
+                    suite
                   </p>
                 </td>
               </tr>
@@ -388,7 +395,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1184">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1193">
           Home</a>
         </li>
       </ul>
