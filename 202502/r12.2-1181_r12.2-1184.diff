@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index c483fc26ca..6d149dd547 100644
+--- a/wget-list
++++ b/wget-list
+@@ -279,7 +279,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-consolidated_fixes-1
+ https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-gcc14-1.patch
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.7/upower-v1.90.7.tar.bz2
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-018.tar.xz
+-https://ftp.gnu.org/gnu/which/which-2.22.tar.gz
++https://ftp.gnu.org/gnu/which/which-2.23.tar.gz
+ https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz
+ https://downloads.sourceforge.net/infozip/zip30.tar.gz
+ https://github.com/lu-zero/cargo-c/archive/v0.10.9/cargo-c-0.10.9.tar.gz
+@@ -587,7 +587,7 @@ https://download.gnome.org/sources/libnma/1.10/libnma-1.10.6.tar.xz
+ https://github.com/thkukuk/libnsl/releases/download/v2.0.1/libnsl-2.0.1.tar.xz
+ https://www.tcpdump.org/release/libpcap-1.10.5.tar.gz
+ https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz
+-https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.8.0/libslirp-v4.8.0.tar.bz2
++https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.9.0/libslirp-v4.9.0.tar.bz2
+ https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.3.tar.xz
+ https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.4.tar.xz
+ https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.6.tar.bz2
