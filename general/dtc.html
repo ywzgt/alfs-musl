@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1193">
+  <body class="blfs" id="blfs-r12.2-1203">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1193
+        "phrase">(systemd</span> Edition) - Version r12.2-1203
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1193">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1203">
           Home</a>
         </li>
       </ul>
@@ -134,8 +134,8 @@ meson setup --prefix=/usr         \
             -D python=disabled .. &amp;&amp;
 ninja</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>meson
-          test -v</strong></span>.
+          To test the results, issue: <span class="command"><strong>CC='gcc
+          -Wl,-z,noexecstack' meson test -v</strong></span>.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -166,8 +166,7 @@ popd</kbd></pre>
         <p>
           If you have installed <a class="xref" href="swig.html" title=
           "SWIG-4.3.0">SWIG-4.3.0</a> and you wish to install the Python 3
-          bindings of this package, adapt the code to be compatible with
-          SWIG-4.3.0 or newer, and build the Python 3 module:
+          bindings of this package, build the Python 3 module:
         </p>
         <pre class="userinput"><kbd class=
         "command">pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir ..</kbd></pre>
@@ -194,6 +193,24 @@ popd</kbd></pre>
           "command"><strong>setup.py</strong></span> directly). We will build
           the Python 3 binding with the <span class="command"><strong>pip3
           wheel</strong></span> command separately if wanted.
+        </p>
+        <p>
+          <code class="envar">CC='gcc -Wl,-z,noexecstack'</code>: This
+          variable prevents marking the shared libraries in the test suite as
+          requiring executable stack. Glibc 2.41 or later has stopped
+          allowing <code class="function">dlopen</code>ing such a shared
+          library so the test suite would fail. But those shared libraries
+          don't really need an executable stack, so we can use <em class=
+          "parameter"><code>-Wl,-z,noexecstack</code></em> to fix up the test
+          suite. It's needed in the <code class="envar">CC</code> environment
+          for the <span class="command"><strong>meson test</strong></span>
+          because those shared libraries are built by a test script instead
+          of the <span class=
+          "command"><strong>meson</strong></span>/<span class=
+          "command"><strong>ninja</strong></span> building system, and the
+          test script does not recognize other <span class=
+          "quote">“<span class="quote">common</span>”</span> environment
+          variables like <code class="envar">LDFLAGS</code>.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -368,7 +385,7 @@ popd</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1193">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1203">
           Home</a>
         </li>
       </ul>
