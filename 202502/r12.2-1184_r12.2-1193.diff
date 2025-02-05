@@ -1,0 +1,35 @@
+diff --git a/wget-list b/wget-list
+index 6d149dd547..bc2941f869 100644
+--- a/wget-list
++++ b/wget-list
+@@ -54,7 +54,7 @@ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/24.12.0/src/kate-24.12.0.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.3.tar.bz2
+ https://www.nano-editor.org/dist/v8/nano-8.3.tar.xz
+-https://github.com/vim/vim/archive/v9.1.1016/vim-9.1.1016.tar.gz
++https://github.com/vim/vim/archive/v9.1.1071/vim-9.1.1071.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.14.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+@@ -689,8 +689,8 @@ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+ https://download.gnome.org/sources/pango/1.56/pango-1.56.1.tar.xz
+ https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
+ https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
+-https://download.qt.io/archive/qt/6.8/6.8.1/single/qt-everywhere-src-6.8.1.tar.xz
+-https://download.qt.io/official_releases/qt/6.8/6.8.1/submodules/qtwebengine-everywhere-src-6.8.1.tar.xz
++https://download.qt.io/archive/qt/6.8/6.8.2/single/qt-everywhere-src-6.8.2.tar.xz
++https://download.qt.io/official_releases/qt/6.8/6.8.2/submodules/qtwebengine-everywhere-src-6.8.2.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.304/Vulkan-Headers-1.4.304.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.304/Vulkan-Loader-1.4.304.tar.gz
+@@ -813,8 +813,8 @@ https://archive.xfce.org/src/xfce/exo/4.20/exo-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/garcon/4.20/garcon-4.20.0.tar.bz2
+ https://download.gnome.org/sources/libwnck/43/libwnck-43.2.tar.xz
+ http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.20/xfce4-dev-tools-4.20.0.tar.bz2
+-https://archive.xfce.org/src/xfce/libxfce4windowing/4.20/libxfce4windowing-4.20.0.tar.bz2
+-https://archive.xfce.org/src/xfce/xfce4-panel/4.20/xfce4-panel-4.20.0.tar.bz2
++https://archive.xfce.org/src/xfce/libxfce4windowing/4.20/libxfce4windowing-4.20.2.tar.bz2
++https://archive.xfce.org/src/xfce/xfce4-panel/4.20/xfce4-panel-4.20.2.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar/4.20/thunar-4.20.1.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar-volman/4.20/thunar-volman-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/tumbler/4.20/tumbler-4.20.0.tar.bz2
