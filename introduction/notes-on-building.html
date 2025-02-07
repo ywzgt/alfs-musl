@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1204">
+  <body class="blfs" id="blfs-r12.2-1219">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1204
+        "phrase">(systemd</span> Edition) - Version r12.2-1219
       </h4>
       <h3>
         Chapter&nbsp;2.&nbsp;Important Information
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1204">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1219">
           Home</a>
         </li>
       </ul>
@@ -334,14 +334,13 @@ tar -xvf filename.tar.bz2</kbd></pre>
           the parallel jobs started by <span class=
           "command"><strong>make</strong></span> or <span class=
           "command"><strong>ninja</strong></span>, but each job may still
-          spawn its own processes or threads. For example, <span class=
-          "command"><strong>ld.gold</strong></span> will use multiple threads
-          for linking, and some tests of packages can spawn multiple threads
-          for testing thread safety properties. There is no generic way for
-          the building system to know the number of processes or threads
-          spawned by a job. So generally we should not consider the value
-          passed with <code class="option">-j</code> a hard limit of the
-          number of logical cores to use. Read <a class="xref" href=
+          spawn its own processes or threads. For example, some tests of
+          packages can spawn multiple threads for testing thread safety
+          properties. There is no generic way for the building system to know
+          the number of processes or threads spawned by a job. So generally
+          we should not consider the value passed with <code class=
+          "option">-j</code> a hard limit of the number of logical cores to
+          use. Read <a class="xref" href=
           "notes-on-building.html#build-in-cgroup" title=
           "Use Linux Control Group to Limit the Resource Usage">the section
           called “Use Linux Control Group to Limit the Resource Usage”</a> if
@@ -1469,9 +1468,8 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
           carrying forward a part of its spirit by enabling PIE (<code class=
           "option">-fPIE -pie</code>) and SSP (<code class=
           "option">-fstack-protector-strong</code>) as the defaults for GCC
-          and clang. And, the linkers (<span class=
-          "command"><strong>ld.bfd</strong></span> and <span class=
-          "command"><strong>ld.gold</strong></span>) have also enabled
+          and clang. And, the linker (<span class=
+          "command"><strong>ld</strong></span>) have also enabled
           <code class="option">-Wl,-z,relro</code> which makes a part of the
           Global Offset Table (GOT) immutable, by default since Binutils
           2.27. What is being covered here is different - first you have to
@@ -1581,7 +1579,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1204">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1219">
           Home</a>
         </li>
       </ul>
