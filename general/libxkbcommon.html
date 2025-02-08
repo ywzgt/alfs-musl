@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      libxkbcommon-1.7.0
+      libxkbcommon-1.8.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1219">
+  <body class="blfs" id="blfs-r12.2-1232">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1219
+        "phrase">(systemd</span> Edition) - Version r12.2-1232
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1219">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1232">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="libxkbcommon" name="libxkbcommon"></a>libxkbcommon-1.7.0
+      <a id="libxkbcommon" name="libxkbcommon"></a>libxkbcommon-1.8.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -59,6 +59,20 @@
           and support library which processes a reduced subset of keymaps as
           defined by the XKB specification.
         </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            The upstream maintainers are no longer generating proper tarballs
+            for this application. To work around this issue, the BLFS editors
+            have downloaded a 'git clone' of the repository and created a
+            proper tarball that is availabe at the URL below. The original
+            code is at <a class="ulink" href=
+            "https://github.com/xkbcommon/libxkbcommon/">https://github.com/xkbcommon/libxkbcommon/</a>.
+          </p>
+        </div>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -78,27 +92,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://xkbcommon.org/download/libxkbcommon-1.7.0.tar.xz">https://xkbcommon.org/download/libxkbcommon-1.7.0.tar.xz</a>
+                "https://anduin.linuxfromscratch.org/BLFS/libxkbcommon/libxkbcommon-1.8.0.tar.xz">
+                https://anduin.linuxfromscratch.org/BLFS/libxkbcommon/libxkbcommon-1.8.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: b05b1a0d473189efb2dd995dd944f152
+                Download MD5 sum: c87f7b1284940e563a2666b0a83abd39
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 524 KB
+                Download size: 616 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 26 MB (with tests)
+                Estimated disk space required: 35 MB (with tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.5 SBU (with tests)
+                Estimated build time: 0.3 SBU (with tests)
               </p>
             </li>
           </ul>
@@ -134,7 +149,7 @@
           "../x/xorg-server.html" title=
           "Xorg-Server-21.1.15">Xorg-Server-21.1.15</a> or <a class="xref"
           href="../x/xwayland.html" title=
-          "Xwayland-24.1.4">Xwayland-24.1.4</a>)
+          "Xwayland-24.1.5">Xwayland-24.1.5</a>)
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -183,7 +198,7 @@ ninja</kbd></pre>
         </p>
         <p>
           <span class="command"><strong>mv -v
-          /usr/share/doc/libxkbcommon{,-1.7.0}</strong></span>: If you built
+          /usr/share/doc/libxkbcommon{,-1.8.0}</strong></span>: If you built
           the documentation, use this command to install it in a versioned
           directory.
         </p>
@@ -207,7 +222,7 @@ ninja</kbd></pre>
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/xkbcommon,
               /usr/libexec/xkbcommon, and
-              /usr/share/doc/libxkbcommon-1.7.0</span>
+              /usr/share/doc/libxkbcommon-1.8.0</span>
             </div>
           </div>
         </div>
@@ -307,7 +322,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1219">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1232">
           Home</a>
         </li>
       </ul>
