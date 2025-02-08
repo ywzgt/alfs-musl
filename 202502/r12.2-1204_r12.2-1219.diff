@@ -1,0 +1,97 @@
+diff --git a/wget-list b/wget-list
+index 3bf703ec0e..18afc5f5be 100644
+--- a/wget-list
++++ b/wget-list
+@@ -127,7 +127,7 @@ https://download.gnome.org/sources/libsigc++/3.6/libsigc++-3.6.0.tar.xz
+ https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.14.tar.gz
+ https://www.libssh2.org/download/libssh2-1.11.1.tar.gz
+ https://www.mirrorservice.org/sites/ftp.i-scream.org/pub/i-scream/libstatgrab/libstatgrab-0.92.1.tar.gz
+-https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.19.0.tar.gz
++https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.20.0.tar.gz
+ https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.xz
+ https://github.com/libunwind/libunwind/releases/download/v1.8.1/libunwind-1.8.1.tar.gz
+ https://lttng.org/files/urcu/userspace-rcu-0.15.0.tar.bz2
+@@ -152,7 +152,7 @@ https://github.com/protocolbuffers/protobuf/releases/download/v29.3/protobuf-29.
+ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.1/protobuf-c-1.5.1.tar.gz
+ https://download.kde.org/stable/qca/2.3.9/qca-2.3.9.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.11.0/qcoro-0.11.0.tar.gz
+-https://archive.mozilla.org/pub/firefox/releases/128.6.0esr/source/firefox-128.6.0esr.source.tar.xz
++https://archive.mozilla.org/pub/firefox/releases/128.7.0esr/source/firefox-128.7.0esr.source.tar.xz
+ https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.304.0/SPIRV-Headers-1.4.304.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.304.0/SPIRV-Tools-1.4.304.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v19.1.4/SPIRV-LLVM-Translator-19.1.4.tar.gz
+@@ -290,7 +290,7 @@ https://doxygen.nl/files/doxygen-1.13.2.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.8/gc-8.2.8.tar.gz
+-https://ftp.gnu.org/gnu/gdb/gdb-16.1.tar.xz
++https://ftp.gnu.org/gnu/gdb/gdb-16.2.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-2.48.1.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-manpages-2.48.1.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.48.1.tar.xz
+@@ -571,7 +571,7 @@ https://downloads.sourceforge.net/traceroute/traceroute-2.1.6.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.4.3/whois-5.4.3.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.4.3.tar.xz
+ https://github.com/c-ares/c-ares/releases/download/v1.34.4/c-ares-1.34.4.tar.gz
+-https://curl.se/download/curl-8.11.1.tar.xz
++https://curl.se/download/curl-8.12.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.2/geoclue-2.7.2.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.1.tar.xz
+ https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.2.0/kdsoap-2.2.0.tar.gz
+@@ -612,7 +612,7 @@ https://ftp.exim.org/pub/exim/exim4/exim-4.98.tar.xz
+ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.9.1.tar.gz
+ https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
+ https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
+-https://downloads.mariadb.org/interstitial/mariadb-11.4.4/source/mariadb-11.4.4.tar.gz
++https://downloads.mariadb.org/interstitial/mariadb-11.4.5/source/mariadb-11.4.5.tar.gz
+ https://ftp.postgresql.org/pub/source/v17.2/postgresql-17.2.tar.bz2
+ https://sqlite.org/2025/sqlite-autoconf-3480000.tar.gz
+ https://sqlite.org/2025/sqlite-doc-3480000.zip
+@@ -768,15 +768,15 @@ https://download.gnome.org/sources/dconf-editor/45/dconf-editor-45.0.1.tar.xz
+ https://download.gnome.org/sources/gnome-backgrounds/47/gnome-backgrounds-47.0.tar.xz
+ https://download.gnome.org/sources/gvfs/1.56/gvfs-1.56.1.tar.xz
+ https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.3.tar.xz
+-https://download.gnome.org/sources/nautilus/47/nautilus-47.1.tar.xz
++https://download.gnome.org/sources/nautilus/47/nautilus-47.2.tar.xz
+ https://download.gnome.org/sources/gnome-bluetooth/47/gnome-bluetooth-47.1.tar.xz
+ https://download.gnome.org/sources/gnome-keyring/46/gnome-keyring-46.2.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/47/gnome-settings-daemon-47.2.tar.xz
+ https://download.gnome.org/sources/tecla/47/tecla-47.0.tar.xz
+-https://download.gnome.org/sources/gnome-control-center/47/gnome-control-center-47.3.tar.xz
+-https://download.gnome.org/sources/mutter/47/mutter-47.4.tar.xz
+-https://download.gnome.org/sources/gnome-shell/47/gnome-shell-47.3.tar.xz
+-https://download.gnome.org/sources/gnome-shell-extensions/47/gnome-shell-extensions-47.3.tar.xz
++https://download.gnome.org/sources/gnome-control-center/47/gnome-control-center-47.4.tar.xz
++https://download.gnome.org/sources/mutter/47/mutter-47.5.tar.xz
++https://download.gnome.org/sources/gnome-shell/47/gnome-shell-47.4.tar.xz
++https://download.gnome.org/sources/gnome-shell-extensions/47/gnome-shell-extensions-47.4.tar.xz
+ https://download.gnome.org/sources/gnome-session/47/gnome-session-47.0.1.tar.xz
+ https://download.gnome.org/sources/gnome-tweaks/46/gnome-tweaks-46.1.tar.xz
+ https://download.gnome.org/sources/gnome-user-docs/47/gnome-user-docs-47.2.tar.xz
+@@ -798,7 +798,7 @@ https://download.gnome.org/sources/gnome-nettool/42/gnome-nettool-42.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gnome-nettool-42.0-ping_and_netstat_fixes-1.patch
+ https://download.gnome.org/sources/gnome-power-manager/43/gnome-power-manager-43.0.tar.xz
+ https://download.gnome.org/sources/gnome-screenshot/41/gnome-screenshot-41.0.tar.xz
+-https://download.gnome.org/sources/gnome-system-monitor/47/gnome-system-monitor-47.0.tar.xz
++https://download.gnome.org/sources/gnome-system-monitor/47/gnome-system-monitor-47.1.tar.xz
+ https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.54.2/gnome-terminal-3.54.2.tar.gz
+ https://download.gnome.org/sources/gnome-weather/47/gnome-weather-47.0.tar.xz
+ https://gitlab.gnome.org/GNOME/gucharmap/-/archive/16.0.2/gucharmap-16.0.2.tar.bz2
+@@ -813,7 +813,7 @@ https://archive.xfce.org/src/xfce/garcon/4.20/garcon-4.20.0.tar.bz2
+ https://download.gnome.org/sources/libwnck/43/libwnck-43.2.tar.xz
+ http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.20/xfce4-dev-tools-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/libxfce4windowing/4.20/libxfce4windowing-4.20.2.tar.bz2
+-https://archive.xfce.org/src/xfce/xfce4-panel/4.20/xfce4-panel-4.20.2.tar.bz2
++https://archive.xfce.org/src/xfce/xfce4-panel/4.20/xfce4-panel-4.20.3.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar/4.20/thunar-4.20.1.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar-volman/4.20/thunar-volman-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/tumbler/4.20/tumbler-4.20.0.tar.bz2
+@@ -898,7 +898,7 @@ https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
+ https://inkscape.org/gallery/item/53679/inkscape-1.4.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4-poppler_fixes-1.patch
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/128.6.1esr/source/thunderbird-128.6.1esr.source.tar.xz
++https://archive.mozilla.org/pub/thunderbird/releases/128.7.0esr/source/thunderbird-128.7.0esr.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.14.1/tigervnc-1.14.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.14.1-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz
