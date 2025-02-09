@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1232">
+  <body class="blfs" id="blfs-r12.2-1233">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1232
+        "phrase">(systemd</span> Edition) - Version r12.2-1233
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1232">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1233">
           Home</a>
         </li>
       </ul>
@@ -101,6 +101,20 @@
               <p>
                 Estimated build time: 4.1 SBU (with parallelism=4; add 12 SBU
                 for tests)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/kea-2.6.1-fix_boost_1_87-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/kea-2.6.1-fix_boost_1_87-1.patch</a>
               </p>
             </li>
           </ul>
@@ -166,6 +180,12 @@
         <h2 class="sect2">
           Installation of ISC Kea DHCP Server
         </h2>
+        <p>
+          First, apply a patch which fixes an issue with the most recent
+          version of <span class="application">boost</span>:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../kea-2.6.1-fix_boost_1_87-1.patch</kbd></pre>
         <p>
           Install <span class="application">ISC Kea DHCP Server</span> by
           running the following commands:
@@ -793,7 +813,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1232">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1233">
           Home</a>
         </li>
       </ul>
