@@ -1,0 +1,70 @@
+diff --git a/wget-list b/wget-list
+index 849af7be5f..cfcab45ec2 100644
+--- a/wget-list
++++ b/wget-list
+@@ -1,10 +1,10 @@
+ https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20241211.tar.xz
+-https://github.com/lfs-book/make-ca/archive/v1.14/make-ca-1.14.tar.gz
++https://github.com/lfs-book/make-ca/archive/v1.15/make-ca-1.15.tar.gz
+ https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.tar.xz
+ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.5.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.7.tar.bz2
+-https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.8.tar.xz
++https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.9.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.1.tar.bz2
+ https://www.netfilter.org/projects/iptables/files/iptables-1.8.11.tar.xz
+ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.73.tar.xz
+@@ -153,8 +153,8 @@ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.1/protobuf-c-1.5
+ https://download.kde.org/stable/qca/2.3.9/qca-2.3.9.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.11.0/qcoro-0.11.0.tar.gz
+ https://archive.mozilla.org/pub/firefox/releases/128.7.0esr/source/firefox-128.7.0esr.source.tar.xz
+-https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.304.0/SPIRV-Headers-1.4.304.0.tar.gz
+-https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.304.0/SPIRV-Tools-1.4.304.0.tar.gz
++https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.304.1/SPIRV-Headers-1.4.304.1.tar.gz
++https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.304.1/SPIRV-Tools-1.4.304.1.tar.gz
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v19.1.4/SPIRV-LLVM-Translator-19.1.4.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.4.3.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+@@ -669,7 +669,7 @@ https://download.gnome.org/sources/gtk/4.16/gtk-4.16.12.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gtk-4.16.12-libpng_1_6_45-1.patch
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.9.tar.xz
+ https://download.gnome.org/sources/gtkmm/4.16/gtkmm-4.16.0.tar.xz
+-https://download.gnome.org/sources/gtk-vnc/1.4/gtk-vnc-1.4.0.tar.xz
++https://download.gnome.org/sources/gtk-vnc/1.5/gtk-vnc-1.5.0.tar.xz
+ https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz
+ https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz
+ https://download.gnome.org/sources/gtksourceview/5.14/gtksourceview-5.14.2.tar.xz
+@@ -892,12 +892,12 @@ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.4-upstream_fixes-2.p
+ https://feh.finalrewind.org/feh-3.10.3.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20230101/fontforge-20230101.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/fontforge-20230101-security_fixes-1.patch
+-https://github.com/freerdp/freerdp/archive/3.11.0/FreeRDP-3.11.0.tar.gz
++https://github.com/freerdp/freerdp/archive/3.11.1/FreeRDP-3.11.1.tar.gz
+ https://download.gimp.org/gimp/v3.0/gimp-3.0.0-RC2.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/gimp/gimp3-help-20240711.tar.xz
+ https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
+ https://inkscape.org/gallery/item/53679/inkscape-1.4.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4-poppler_fixes-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4-poppler_fixes-2.patch
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+ https://archive.mozilla.org/pub/thunderbird/releases/128.7.0esr/source/thunderbird-128.7.0esr.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.14.1/tigervnc-1.14.1.tar.gz
+@@ -972,7 +972,7 @@ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://taglib.org/releases/taglib-2.0.2.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.28.1.tar.xz
+-https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.7/wireplumber-0.5.7.tar.bz2
++https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.8/wireplumber-0.5.8.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20240812.tar.xz
+ https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz
+ https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
+@@ -1044,7 +1044,7 @@ https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312-source.tar.xz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312-texmf.tar.xz
+ https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2024/texlive-20240312-extra.tar.xz
+-https://downloads.sourceforge.net/asymptote/asymptote-2.95.src.tgz
++https://downloads.sourceforge.net/asymptote/asymptote-2.98.src.tgz
+ https://github.com/plk/biber/archive/v2.20/biber-2.20.tar.gz
+ https://github.com/mgieseki/dvisvgm/releases/download/3.4.3/dvisvgm-3.4.3.tar.gz
+ https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
