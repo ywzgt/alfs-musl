@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1241">
+  <body class="blfs" id="blfs-r12.2-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1241
+        "phrase">(systemd</span> Edition) - Version r12.2-1258
       </h4>
       <h3>
         Chapter&nbsp;2.&nbsp;Important Information
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1241">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1258">
           Home</a>
         </li>
       </ul>
@@ -205,16 +205,20 @@
           buggy.
         </p>
         <p>
-          The <a class="xref" href="../general/zip.html" title=
-          "Zip-3.0">Zip-3.0</a> and <a class="xref" href=
-          "../general/unzip.html" title="UnZip-6.0">UnZip-6.0</a> have this
-          problem because they hard-code the expected filename encoding.
-          <span class="application">UnZip</span> contains a hard-coded
-          conversion table between the CP850 (DOS) and ISO-8859-1 (UNIX)
-          encodings and uses this table when extracting archives created
-          under DOS or Microsoft Windows. However, this assumption only works
-          for those in the US and not for anyone using a UTF-8 locale.
-          Non-ASCII characters will be mangled in the extracted filenames.
+          The <code class="filename">.zip</code> format has this problem
+          because it does not save the encoding for the names of the archived
+          files. When <span class="command"><strong>unzip</strong></span>
+          (actually, a symlink to <span class=
+          "command"><strong>bsdunzip</strong></span> from <a class="xref"
+          href="../general/libarchive.html" title=
+          "libarchive-3.7.7">libarchive-3.7.7</a>) extracts it, by default
+          the names are assumed to be encoded as CP850, the Windows code page
+          for Western European languages. But the names may be actually
+          encoded in a different way if it contains non-Latin characters (for
+          example, CP936 for Simplified Chinese). Then without manually
+          specifying the encoding, those non-Latin characters will be turned
+          into unreadable sequences by <span class=
+          "command"><strong>bsdunzip</strong></span>.
         </p>
         <p>
           The general rule for avoiding this class of problems is to avoid
@@ -405,7 +409,7 @@ done
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1241">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1258">
           Home</a>
         </li>
       </ul>

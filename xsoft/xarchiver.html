@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1241">
+  <body class="blfs" id="blfs-r12.2-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1241
+        "phrase">(systemd</span> Edition) - Version r12.2-1258
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1241">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1258">
           Home</a>
         </li>
       </ul>
@@ -131,21 +131,52 @@
           Optional (Runtime)
         </h4>
         <p class="optional">
-          <a class="xref" href="../general/cpio.html" title=
-          "cpio-2.15">cpio-2.15</a>, <a class="xref" href=
-          "../general/lzo.html" title="LZO-2.10">LZO-2.10</a>, <a class=
-          "xref" href="../general/p7zip.html" title=
-          "p7zip-17.04">p7zip-17.04</a>, <a class="xref" href=
-          "../general/unrar.html" title="UnRar-7.1.3">UnRar-7.1.3</a>,
-          <a class="xref" href="../general/unzip.html" title=
-          "UnZip-6.0">UnZip-6.0</a>, and <a class="xref" href=
-          "../general/zip.html" title="Zip-3.0">Zip-3.0</a>
+          <a class="xref" href="../general/7zip.html" title=
+          "7zip-24.09">7zip-24.09</a>, <a class="xref" href=
+          "../general/cpio.html" title="cpio-2.15">cpio-2.15</a>, <a class=
+          "xref" href="../general/lzo.html" title="LZO-2.10">LZO-2.10</a>,
+          <a class="xref" href="../general/unrar.html" title=
+          "UnRar-7.1.3">UnRar-7.1.3</a>, <a class="xref" href=
+          "../general/zip.html" title="Zip-3.0">Zip-3.0</a>, and <a class=
+          "ulink" href=
+          "https://sourceforge.net/projects/infozip/files/UnZip%206.x%20%28latest%29/">
+          unzip</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
           Installation of xarchiver
         </h2>
+        <p>
+          BLFS provides <span class="command"><strong>unzip</strong></span>
+          as a symlink to <span class=
+          "command"><strong>bsdunzip</strong></span> from <a class="xref"
+          href="../general/libarchive.html" title=
+          "libarchive-3.7.7">libarchive-3.7.7</a>, but it doesn't work for
+          xarchiver. Adapt xarchiver to use <a class="xref" href=
+          "../general/7zip.html" title="7zip-24.09">7zip-24.09</a> for
+          handling <code class="filename">.zip</code> files by default
+          instead:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed '/TOGGLE.*prefer_unzip/s/TRUE/FALSE/' -i src/pref_dialog.c</kbd></pre>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            If you've already installed and run this package before (maybe in
+            another distro if your <code class="filename">/home</code> is a
+            partition shared with that distro), it's likely already
+            configured to prefer <span class=
+            "command"><strong>unzip</strong></span>. Unset the <span class=
+            "quote">“<span class="quote">Prefer unzip for zip
+            files</span>”</span> checkbox in the <span class=
+            "quote">“<span class="quote">Action =&gt;
+            Preferences</span>”</span> dialog to change the configuration.
+          </p>
+        </div>
         <p>
           Install <span class="application">xarchiver</span> by running the
           following commands:
@@ -199,7 +230,7 @@ update-desktop-database -q</kbd></pre>
           "parameter"><code>--libexecdir=/usr/lib/xfce4</code></em>: This
           switch fixes the location for the thunar-archive-plugin, so it will
           work if <a class="xref" href="../xfce/thunar.html" title=
-          "thunar-4.20.1">thunar-4.20.1</a> is installed.
+          "thunar-4.20.2">thunar-4.20.2</a> is installed.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -276,7 +307,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1241">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1258">
           Home</a>
         </li>
       </ul>

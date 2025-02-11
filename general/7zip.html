@@ -5,34 +5,35 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      p7zip-17.04
+      7zip-24.09
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1241">
+  <body class="blfs" id="blfs-r12.2-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1241
+        "phrase">(systemd</span> Edition) - Version r12.2-1258
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="notification-daemon.html" title=
-          "notification-daemon-3.20.0">Prev</a>
+          <a accesskey="p" href="sysutils.html" title=
+          "System Utilities">Prev</a>
           <p>
-            notification-daemon-3.20.0
+            System Utilities
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="pax.html" title="Pax-20240817">Next</a>
+          <a accesskey="n" href="accountsservice.html" title=
+          "AccountsService-23.13.9">Next</a>
           <p>
-            Pax-20240817
+            AccountsService-23.13.9
           </p>
         </li>
         <li class="up">
@@ -41,26 +42,26 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1241">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1258">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="p7zip" name="p7zip"></a>p7zip-17.04
+      <a id="seven-zip" name="seven-zip"></a>7zip-24.09
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to p7zip
+          Introduction to 7zip
         </h2>
         <p>
-          <span class="application">p7zip</span> is the Unix command-line
-          port of 7-Zip, a file archiver that archives with high compression
-          ratios. It handles 7z, ZIP, GZIP, Brotli, BZIP2, XZ, TAR, APM, ARJ,
-          CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, Lizard, LZ5,
-          LZFSE, LZH, LZMA, LZMA2, MBR, MSI, MSLZ, NSIS, NTFS, RAR, RPM,
-          SquashFS, UDF, VHD, WIM, XAR, Z, and Zstd formats.
+          <span class="application">7zip</span> is a file archiver that
+          archives with high compression ratios. It handles 7z, ZIP, GZIP,
+          Brotli, BZIP2, XZ, TAR, APM, ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG,
+          FAT, HFS, ISO, Lizard, LZ5, LZFSE, LZH, LZMA, LZMA2, MBR, MSI,
+          MSLZ, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR, Z, and
+          Zstd formats.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -81,8 +82,8 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/p7zip-project/p7zip/archive/v17.04/p7zip-17.04.tar.gz">
-                https://github.com/p7zip-project/p7zip/archive/v17.04/p7zip-17.04.tar.gz</a>
+                "https://github.com/ip7z/7zip/archive/24.09/7zip-24.09.tar.gz">
+                https://github.com/ip7z/7zip/archive/24.09/7zip-24.09.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
@@ -108,68 +109,51 @@
           </ul>
         </div>
         <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/p7zip-17.04-consolidated_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/p7zip-17.04-consolidated_fixes-1.patch</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h3>
-          p7zip Dependencies
+          7zip Dependencies
         </h3>
         <h4>
           Optional
         </h4>
         <p class="optional">
-          <a class="ulink" href="https://www.wxwidgets.org/">wxWidgets</a>
+          <a class="ulink" href="https://github.com/Terraspace/UASM">UASM</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of p7zip
+          Installation of 7zip
         </h2>
         <p>
-          First, fix several security vulnerabilities:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../p7zip-17.04-consolidated_fixes-1.patch</kbd></pre>
-        <p>
-          Next, prevent <span class="application">p7zip</span> from
-          installing compressed manual pages:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed '/^gzip/d' -i install.sh</kbd></pre>
-        <p>
-          Install <span class="application">p7zip</span> by running the
+          Install <span class="application">7zip</span> by running the
           following commands:
         </p>
-        <pre class="userinput"><kbd class="command">make all3</kbd></pre>
+        <pre class="userinput"><kbd class=
+        "command">for i in Bundles/{Alone,Alone7z,Format7zF,SFXCon} UI/Console; do
+    make -C CPP/7zip/$i -f ../../cmpl_gcc.mak
+done</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>make
-          test</strong></span>.
+          This package does not have a test suite.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
-        <pre class="root"><kbd class="command">make DEST_HOME=/usr \
-     DEST_MAN=/usr/share/man \
-     DEST_SHARE_DOC=/usr/share/doc/p7zip-17.04 install</kbd></pre>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            If using DESTDIR techniques, use DEST_DIR instead.
-          </p>
-        </div>
+        <pre class="root"><kbd class=
+        "command">install -vDm755 CPP/7zip/Bundles/Alone{/b/g/7za,7z/b/g/7zr} \
+                CPP/7zip/Bundles/Format7zF/b/g/7z.so        \
+                CPP/7zip/UI/Console/b/g/7z                  \
+                -t /usr/lib/7zip/                              &amp;&amp;
+
+install -vm755 CPP/7zip/Bundles/SFXCon/b/g/7zCon \
+               /usr/lib/7zip/7zCon.sfx           &amp;&amp;
+
+(for i in 7z 7za 7zr; do
+    cat &gt; /usr/bin/$i &lt;&lt; EOF || exit
+<code class="literal">#!/bin/sh
+exec /usr/lib/7zip/$i "\$@"</code>
+EOF
+    chmod 755 /usr/bin/$i || exit
+done) &amp;&amp;
+
+cp -rv DOC -T /usr/share/doc/7zip-24.09</kbd></pre>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -187,8 +171,8 @@
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directory:</strong>
-              <span class="segbody">/usr/lib/p7zip and
-              /usr/share/doc/p7zip-17.04</span>
+              <span class="segbody">/usr/lib/7zip and
+              /usr/share/doc/7zip-24.09</span>
             </div>
           </div>
         </div>
@@ -255,16 +239,17 @@
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="notification-daemon.html" title=
-          "notification-daemon-3.20.0">Prev</a>
+          <a accesskey="p" href="sysutils.html" title=
+          "System Utilities">Prev</a>
           <p>
-            notification-daemon-3.20.0
+            System Utilities
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="pax.html" title="Pax-20240817">Next</a>
+          <a accesskey="n" href="accountsservice.html" title=
+          "AccountsService-23.13.9">Next</a>
           <p>
-            Pax-20240817
+            AccountsService-23.13.9
           </p>
         </li>
         <li class="up">
@@ -273,7 +258,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1241">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1258">
           Home</a>
         </li>
       </ul>

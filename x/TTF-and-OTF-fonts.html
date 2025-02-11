@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1241">
+  <body class="blfs" id="blfs-r12.2-1258">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1241
+        "phrase">(systemd</span> Edition) - Version r12.2-1258
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1241">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1258">
           Home</a>
         </li>
       </ul>
@@ -226,18 +226,20 @@
           website.
         </p>
         <p>
-          Fonts are often supplied in zip files, requiring <a class="xref"
-          href="../general/unzip.html" title="UnZip-6.0">UnZip-6.0</a> to
-          list and extract them, but even if the current release is a
-          tarball, you should still check to see if it will create a
-          directory (scattering the contents of a zipfile or tarball across
-          the current directory can be very messy, and a few fonts create
-          __MACOSX/ directories). In addition, many fonts are supplied with
-          permissions which do not let 'other' users read them - if a font is
-          to be installed for system-wide use, any directories must be mode
-          755 and all the files mode 644, so you need to change them if the
-          permissions are different. If you forget, the root user may be able
-          to see a particular font in <span class=
+          Fonts are often supplied in zip files, requiring tools from
+          <a class="xref" href="../general/libarchive.html" title=
+          "libarchive-3.7.7">libarchive-3.7.7</a> or <a class="xref" href=
+          "../general/7zip.html" title="7zip-24.09">7zip-24.09</a> to list
+          and extract them, but even if the current release is a tarball, you
+          should still check to see if it will create a directory (scattering
+          the contents of a zipfile or tarball across the current directory
+          can be very messy, and a few fonts create __MACOSX/ directories).
+          In addition, many fonts are supplied with permissions which do not
+          let 'other' users read them - if a font is to be installed for
+          system-wide use, any directories must be mode 755 and all the files
+          mode 644, so you need to change them if the permissions are
+          different. If you forget, the root user may be able to see a
+          particular font in <span class=
           "command"><strong>fc-list</strong></span>, but a normal user will
           not be able to use them.
         </p>
@@ -742,7 +744,7 @@ fc-cache -v /usr/share/fonts/dejavu</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1241">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1258">
           Home</a>
         </li>
       </ul>
