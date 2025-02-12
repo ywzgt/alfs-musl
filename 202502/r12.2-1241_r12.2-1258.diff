@@ -1,0 +1,145 @@
+diff --git a/wget-list b/wget-list
+index cfcab45ec2..e9a3cceaaf 100644
+--- a/wget-list
++++ b/wget-list
+@@ -171,7 +171,7 @@ https://downloads.sourceforge.net/freetype/freetype-2.13.3.tar.xz
+ https://downloads.sourceforge.net/freetype/freetype-doc-2.13.3.tar.xz
+ https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz
+ https://github.com/fribidi/fribidi/releases/download/v1.0.16/fribidi-1.0.16.tar.xz
+-https://download.gimp.org/pub/gegl/0.4/gegl-0.4.52.tar.xz
++https://download.gimp.org/pub/gegl/0.4/gegl-0.4.54.tar.xz
+ https://sourceforge.net/projects/giflib/files/giflib-5.2.2.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-upstream_fixes-1.patch
+ https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
+@@ -179,7 +179,7 @@ https://github.com/g-truc/glm/archive/1.0.1/glm-1.0.1.tar.gz
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+ https://github.com/harfbuzz/harfbuzz/releases/download/10.2.0/harfbuzz-10.2.0.tar.xz
+ https://github.com/jasper-software/jasper/archive/version-4.2.4/jasper-4.2.4.tar.gz
+-https://github.com/mm2/Little-CMS/releases/download/lcms2.16/lcms2-2.16.tar.gz
++https://github.com/mm2/Little-CMS/releases/download/lcms2.17/lcms2-2.17.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.1.1/libavif-1.1.1.tar.gz
+ https://github.com/libexif/libexif/releases/download/v0.6.25/libexif-0.6.25.tar.bz2
+ https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
+@@ -203,7 +203,7 @@ https://www.cairographics.org/releases/pixman-0.44.2.tar.gz
+ https://poppler.freedesktop.org/poppler-25.02.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+-https://github.com/qpdf/qpdf/releases/download/v11.9.1/qpdf-11.9.1.tar.gz
++https://github.com/qpdf/qpdf/releases/download/v11.10.0/qpdf-11.10.0.tar.gz
+ https://fukuchi.org/works/qrencode/qrencode-4.1.1.tar.bz2
+ https://github.com/sass/sassc/archive/3.6.2/sassc-3.6.2.tar.gz
+ https://github.com/sass/libsass/archive/3.6.6/libsass-3.6.6.tar.gz
+@@ -234,6 +234,7 @@ https://gitlab.com/OldManProgrammer/unix-tree/-/archive/2.2.1/unix-tree-2.2.1.ta
+ https://github.com/lurcher/unixODBC/releases/download/2.3.12/unixODBC-2.3.12.tar.gz
+ https://github.com/flatpak/xdg-dbus-proxy/releases/download/0.1.6/xdg-dbus-proxy-0.1.6.tar.xz
+ https://user-dirs.freedesktop.org/releases/xdg-user-dirs-0.18.tar.gz
++https://github.com/ip7z/7zip/archive/24.09/7zip-24.09.tar.gz
+ https://www.freedesktop.org/software/accountsservice/accountsservice-23.13.9.tar.xz
+ https://downloads.sourceforge.net/acpid2/acpid-2.0.34.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/at/at_3.2.5.orig.tar.gz
+@@ -256,8 +257,6 @@ https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0
+ http://ftp.midnight-commander.org/mc-4.8.33.tar.xz
+ https://www.freedesktop.org/software/ModemManager/ModemManager-1.18.12.tar.xz
+ https://download.gnome.org/sources/notification-daemon/3.20/notification-daemon-3.20.0.tar.xz
+-https://github.com/p7zip-project/p7zip/archive/v17.04/p7zip-17.04.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/p7zip-17.04-consolidated_fixes-1.patch
+ http://www.mirbsd.org/MirOS/dist/mir/cpio/paxmirabilis-20240817.tgz
+ https://mj.ucw.cz/download/linux/pci/pciutils-3.13.0.tar.gz
+ https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
+@@ -273,9 +272,6 @@ https://sysstat.github.io/sysstat-packages/sysstat-12.7.6.tar.xz
+ https://github.com/systemd/systemd/archive/v257/systemd-257.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.10.1/udisks-2.10.1.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-7.1.3.tar.gz
+-https://downloads.sourceforge.net/infozip/unzip60.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-consolidated_fixes-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-gcc14-1.patch
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.7/upower-v1.90.7.tar.bz2
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-018.tar.xz
+ https://ftp.gnu.org/gnu/which/which-2.23.tar.gz
+@@ -468,7 +464,7 @@ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.g
+ https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-0.5.3.tar.gz
+ https://files.pythonhosted.org/packages/source/g/gi-docgen/gi_docgen-2024.1.tar.gz
+ https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
+-https://files.pythonhosted.org/packages/source/l/lxml/lxml-5.3.0.tar.gz
++https://files.pythonhosted.org/packages/source/l/lxml/lxml-5.3.1.tar.gz
+ https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.9.tar.gz
+ https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.2.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/packaging/packaging-24.2.tar.gz
+@@ -553,7 +549,6 @@ https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
+ https://www.kernel.org/pub/linux/utils/nfs-utils/2.8.2/nfs-utils-2.8.2.tar.xz
+ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
+ https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.7.tar.bz2
+-https://www.linuxfromscratch.org/patches/blfs/svn/rpcbind-1.2.7-vulnerability_fixes-1.patch
+ https://www.samba.org/ftp/rsync/src/rsync-3.4.1.tar.gz
+ https://download.samba.org/pub/samba/stable/samba-4.21.3.tar.gz
+ https://ftp.gnu.org/gnu/wget/wget-1.25.0.tar.gz
+@@ -633,7 +628,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-4.patch
+ https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ https://invisible-mirror.net/archives/luit/luit-20240910.tgz
+ https://www.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
+-https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.43.tar.xz
++https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.44.tar.xz
+ https://www.x.org/pub/individual/xserver/xwayland-24.1.5.tar.xz
+ https://www.x.org/pub/individual/xserver/xorg-server-21.1.15.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.15-tearfree_backport-2.patch
+@@ -694,7 +689,7 @@ https://download.qt.io/official_releases/qt/6.8/6.8.2/submodules/qtwebengine-eve
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.304/Vulkan-Headers-1.4.304.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.304/Vulkan-Loader-1.4.304.tar.gz
+-https://webkitgtk.org/releases/webkitgtk-2.46.5.tar.xz
++https://webkitgtk.org/releases/webkitgtk-2.46.6.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.18.4/xdg-desktop-portal-1.18.4.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.2/xdg-desktop-portal-gtk-1.15.2.tar.xz
+ https://download.gnome.org/sources/gdm/47/gdm-47.0.tar.xz
+@@ -788,7 +783,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/brasero-3.12.3-upstream_fixes-
+ https://download.gnome.org/sources/eog/47/eog-47.0.tar.xz
+ https://download.gnome.org/sources/evince/46/evince-46.3.1.tar.xz
+ https://download.gnome.org/sources/evolution/3.54/evolution-3.54.3.tar.xz
+-https://download.gnome.org/sources/file-roller/44/file-roller-44.4.tar.xz
++https://download.gnome.org/sources/file-roller/44/file-roller-44.5.tar.xz
+ https://download.gnome.org/sources/gnome-calculator/47/gnome-calculator-47.1.tar.xz
+ https://download.gnome.org/sources/gnome-color-manager/3.36/gnome-color-manager-3.36.2.tar.xz
+ https://download.gnome.org/sources/gnome-connections/46/gnome-connections-46.0.tar.xz
+@@ -815,12 +810,12 @@ https://download.gnome.org/sources/libwnck/43/libwnck-43.2.tar.xz
+ http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.20/xfce4-dev-tools-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/libxfce4windowing/4.20/libxfce4windowing-4.20.2.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-panel/4.20/xfce4-panel-4.20.3.tar.bz2
+-https://archive.xfce.org/src/xfce/thunar/4.20/thunar-4.20.1.tar.bz2
++https://archive.xfce.org/src/xfce/thunar/4.20/thunar-4.20.2.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar-volman/4.20/thunar-volman-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/tumbler/4.20/tumbler-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-appfinder/4.20/xfce4-appfinder-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-power-manager/4.20/xfce4-power-manager-4.20.0.tar.bz2
+-https://archive.xfce.org/src/xfce/xfce4-settings/4.20/xfce4-settings-4.20.0.tar.bz2
++https://archive.xfce.org/src/xfce/xfce4-settings/4.20/xfce4-settings-4.20.1.tar.bz2
+ https://archive.xfce.org/src/xfce/xfdesktop/4.20/xfdesktop-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/xfwm4/4.20/xfwm4-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-session/4.20/xfce4-session-4.20.0.tar.bz2
+@@ -858,7 +853,7 @@ https://github.com/lxqt/lxqt-runner/releases/download/2.1.2/lxqt-runner-2.1.2.ta
+ https://github.com/lxqt/lxqt-themes/releases/download/2.1.0/lxqt-themes-2.1.0.tar.xz
+ https://github.com/lxqt/lxqt-admin/releases/download/2.1.0/lxqt-admin-2.1.0.tar.xz
+ https://github.com/lxqt/lxqt-about/releases/download/2.1.0/lxqt-about-2.1.0.tar.xz
+-https://github.com/lxqt/lxqt-config/releases/download/2.1.0/lxqt-config-2.1.0.tar.xz
++https://github.com/lxqt/lxqt-config/releases/download/2.1.1/lxqt-config-2.1.1.tar.xz
+ https://github.com/lxqt/lxqt-policykit/releases/download/2.1.0/lxqt-policykit-2.1.0.tar.xz
+ https://github.com/lxqt/lxqt-sudo/releases/download/2.1.0/lxqt-sudo-2.1.0.tar.xz
+ https://github.com/lxqt/lxqt-openssh-askpass/releases/download/2.1.0/lxqt-openssh-askpass-2.1.0.tar.xz
+@@ -876,13 +871,11 @@ https://github.com/lxqt/screengrab/releases/download/2.9.0/screengrab-2.9.0.tar.
+ https://anduin.linuxfromscratch.org/BLFS/abiword/abiword-3.0.5.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/abiword/abiword-docs-3.0.2.tar.gz
+ https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.57.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/24.8.4/libreoffice-24.8.4.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/24.8.4/libreoffice-dictionaries-24.8.4.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/24.8.4/libreoffice-help-24.8.4.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/24.8.4/libreoffice-translations-24.8.4.2.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-24.8.4.2-boost_fixes-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-24.8.4.2-icu76_fixes-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-24.8.4.2-poppler_24.10-2.patch
++https://download.documentfoundation.org/libreoffice/src/25.2.0/libreoffice-25.2.0.3.tar.xz
++https://download.documentfoundation.org/libreoffice/src/25.2.0/libreoffice-dictionaries-25.2.0.3.tar.xz
++https://download.documentfoundation.org/libreoffice/src/25.2.0/libreoffice-help-25.2.0.3.tar.xz
++https://download.documentfoundation.org/libreoffice/src/25.2.0/libreoffice-translations-25.2.0.3.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-25.2.0.3-icu76_fixes-1.patch
+ https://download.gnome.org/sources/epiphany/47/epiphany-47.3.1.tar.xz
+ https://download.kde.org/stable/release-service/24.12.0/src/falkon-24.12.0.tar.xz
+ https://archive.seamonkey-project.org/releases/2.53.20/source/seamonkey-2.53.20.source.tar.xz
