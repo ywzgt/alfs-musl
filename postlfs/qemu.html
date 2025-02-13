@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      qemu-9.2.0
+      qemu-9.2.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1262">
+  <body class="blfs" id="blfs-r12.2-1270">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1262
+        "phrase">(systemd</span> Edition) - Version r12.2-1270
       </h4>
       <h3>
         Chapter&nbsp;8.&nbsp;Virtualization
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1262">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1270">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="qemu" name="qemu"></a>qemu-9.2.0
+      <a id="qemu" name="qemu"></a>qemu-9.2.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -79,12 +79,12 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.qemu.org/qemu-9.2.0.tar.xz">https://download.qemu.org/qemu-9.2.0.tar.xz</a>
+                "https://download.qemu.org/qemu-9.2.1.tar.xz">https://download.qemu.org/qemu-9.2.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: ece615b98642720430236e20237dd936
+                Download MD5 sum: c33f4ef002f3d8d73f07079c9b4a157b
               </p>
             </li>
             <li class="listitem">
@@ -94,12 +94,12 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 2.2 GB (460 MB installed)
+                Estimated disk space required: 2.8 GB (488 MB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 1.2 SBU (add 0.6 SBU for tests, both
+                Estimated build time: 1.8 SBU (add 0.5 SBU for tests, both
                 using parallelism=4)
               </p>
             </li>
@@ -357,7 +357,7 @@ cd        build &amp;&amp;
              --audio-drv-list=alsa       \
              --disable-pa                \
              --enable-slirp              \
-             --docdir=/usr/share/doc/qemu-9.2.0 &amp;&amp;
+             --docdir=/usr/share/doc/qemu-9.2.1 &amp;&amp;
 
 unset QEMU_ARCH &amp;&amp;
 
@@ -427,7 +427,7 @@ chmod 4750 /usr/libexec/qemu-bridge-helper</kbd></pre>
         </p>
         <p>
           <em class="parameter"><code>--enable-slirp</code></em>: This switch
-          forces the building system to check for <a class="xref" href=
+          forces the build system to check for <a class="xref" href=
           "../basicnet/libslirp.html" title=
           "libslirp-4.9.0">libslirp-4.9.0</a>. Remove it if you don't need
           the <code class="option">-netdev user</code> support.
@@ -449,15 +449,15 @@ chmod 4750 /usr/libexec/qemu-bridge-helper</kbd></pre>
         <p>
           Since using qemu means using a virtual computer, the steps to set
           up the virtual machine are in close analogy with those to set up a
-          real computer. You'll need to decide about CPU, memory, disk, USB
-          devices, network card(s), screen size, etc. Once the <span class=
-          "quote">“<span class="quote">hardware</span>”</span> is decided,
-          you'll have for example to choose how to connect the machine to
-          internet, and/or to install an OS. In the following, we show basic
-          ways of performing those steps. But qemu is much more than this,
-          and it is strongly advised to read the qemu documentation in
-          <code class=
-          "filename">/usr/share/doc/qemu-9.2.0/qemu-doc.html</code>.
+          real computer. You'll need to make decisions about CPU, memory,
+          disk, USB devices, network card(s), screen size, etc. Once the
+          <span class="quote">“<span class="quote">hardware</span>”</span> is
+          decided, you'll have for example to choose how to connect the
+          machine to internet, and/or to install an OS. In the following
+          section, we show basic ways of performing those steps. However,
+          qemu is much more powerful than this, and it is strongly advised to
+          read the qemu documentation in <code class=
+          "filename">/usr/share/doc/qemu-9.2.1/qemu-doc.html</code>.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -469,7 +469,7 @@ chmod 4750 /usr/libexec/qemu-bridge-helper</kbd></pre>
             <span class="quote">“<span class="quote">host</span>”</span> and
             the emulated machine running under qemu the <span class=
             "quote">“<span class="quote">guest.</span>”</span> We'll use
-            those notations in the following.
+            these notations in the following text.
           </p>
         </div>
         <div class="admon note">
@@ -481,7 +481,7 @@ chmod 4750 /usr/libexec/qemu-bridge-helper</kbd></pre>
             The following instructions assume the optional symbolic link,
             <code class="filename">qemu</code>, has been created.
             Additionally, <span class="command"><strong>qemu</strong></span>
-            should be run in a graphical environment. But it is possible to
+            should be run in a graphical environment. It is also possible to
             use qemu <span class="quote">“<span class=
             "quote">headless</span>”</span> or through SSH. See the
             documentation for the various possibilities.
@@ -523,10 +523,10 @@ qemu-img create -f qcow2 $VDISK_FILENAME $VDISK_SIZE</kbd></pre>
           distribution. The <em class="parameter"><code>-boot</code></em>
           option specifies the boot order of drives as a string of drive
           letters. Valid drive letters are: a, b (floppy 1 and 2), c (first
-          hard disk), d (first CD-ROM). The <em class=
+          hard disk), and d (first CD-ROM). The <em class=
           "parameter"><code>-m</code></em> option is the amount of memory to
           use for the virtual machine. The choice depends on the load of the
-          host. Modern distributions should be comfortable with 1GB. The
+          host. Modern distributions should be comfortable with 4GB. The
           <em class="parameter"><code>-enable-kvm</code></em> option allows
           hardware acceleration. Without this switch, the emulation is much
           slower.
@@ -577,8 +577,8 @@ qemu-img create -f qcow2 $VDISK_FILENAME $VDISK_SIZE</kbd></pre>
         </p>
         <p>
           <em class="parameter"><code>-cdrom grub-img.iso</code></em>:
-          defines an iso formatted file to use as a cdrom. Here we use a grub
-          rescue disk, which may turn handy when something goes wrong at boot
+          defines an ISO formatted file to use as a cdrom. Here we use a grub
+          rescue disk, which may become handy if something goes wrong at boot
           time.
         </p>
         <p>
@@ -638,10 +638,10 @@ qemu-img create -f qcow2 $VDISK_FILENAME $VDISK_SIZE</kbd></pre>
         </p>
         <p>
           <code class="option">-drive file=&lt;filename&gt;,if=virtio</code>:
-          Provide Virtio interface to the guest kernel for accessing the disk
-          image, instead of simulating a real disk hardware. This can improve
-          disk I/O performance, but it requires a Virtio driver in guest
-          kernel. Use it instead of a plain <code class=
+          provides a Virtio interface to the guest kernel for accessing the
+          disk image, instead of simulating a real disk hardware. This can
+          improve disk I/O performance, but it requires a Virtio driver in
+          guest kernel. Use it instead of a plain <code class=
           "option">-drive</code> if the guest kernel supports Virtio. To
           build a Linux kernel with Virtio support for the guest, use
           <span class="command"><strong>make defconfig &amp;&amp; make
@@ -654,7 +654,7 @@ qemu-img create -f qcow2 $VDISK_FILENAME $VDISK_SIZE</kbd></pre>
         </p>
         <p>
           <code class="option">-net
-          nic,netdev=net0,model=virtio-net-pci</code>: Provide Virtio
+          nic,netdev=net0,model=virtio-net-pci</code>: provides a Virtio
           interface to the guest kernel for accessing the network interface,
           instead of simulating a real network interface card. This can
           improve network I/O performance, but it requires a Virtio driver in
@@ -684,7 +684,7 @@ qemu-img create -f qcow2 $VDISK_FILENAME $VDISK_SIZE</kbd></pre>
           purpose. For example, there is the <span class=
           "quote">“<span class="quote">socket</span>”</span> device, which
           allows several guests to share a common virtual network. In the
-          following, we describe in more details how to set up the
+          following section, we describe in more details how to set up the
           <span class="quote">“<span class="quote">bridge</span>”</span>
           device, which allows the guests to appear as if connected to the
           local network. All the commands below should be run as the
@@ -725,8 +725,8 @@ echo allow br0 &gt; /etc/qemu/bridge.conf</kbd></pre>
               <strong class="segtitle">Installed Programs:</strong>
               <span class="segbody">elf2dmp, qemu (symlink), qemu-edid,
               qemu-ga, qemu-img, qemu-io, qemu-keymap, qemu-nbd,
-              qemu-pr-helper, qemu-storage-daemon, and
-              qemu-system-&lt;arch&gt;</span>
+              qemu-pr-helper, qemu-storage-daemon, qemu-system-&lt;arch&gt;,
+              and qemu-vmsr-helper</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Library:</strong>
@@ -735,7 +735,7 @@ echo allow br0 &gt; /etc/qemu/bridge.conf</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/share/qemu and
-              /usr/share/doc/qemu-9.2.0 (optional)</span>
+              /usr/share/doc/qemu-9.2.1 (optional)</span>
             </div>
           </div>
         </div>
@@ -759,7 +759,7 @@ echo allow br0 &gt; /etc/qemu/bridge.conf</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    Converts files from elf to dmp format
+                    converts files from elf to dmp format
                   </p>
                 </td>
               </tr>
@@ -864,7 +864,7 @@ echo allow br0 &gt; /etc/qemu/bridge.conf</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    Implements the persistent reservation helper for QEMU
+                    implements the persistent reservation helper for QEMU
                   </p>
                 </td>
               </tr>
@@ -878,8 +878,8 @@ echo allow br0 &gt; /etc/qemu/bridge.conf</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    allows to modify disk images using the QEMU Monitor
-                    Protocol (QMP) without running a VM
+                    allows a user to modify disk images using the QEMU
+                    Monitor Protocol (QMP) without running a VM
                   </p>
                 </td>
               </tr>
@@ -894,6 +894,20 @@ echo allow br0 &gt; /etc/qemu/bridge.conf</kbd></pre>
                 <td>
                   <p>
                     is the QEMU PC System emulator
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="qemu-vmsr-helper" name=
+                    "qemu-vmsr-helper"></a><span class="term"><span class=
+                    "command"><strong>qemu-vmsr-helper</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    is a virtual RAPL MSR helper for qemu
                   </p>
                 </td>
               </tr>
@@ -924,7 +938,7 @@ echo allow br0 &gt; /etc/qemu/bridge.conf</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1262">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1270">
           Home</a>
         </li>
       </ul>
