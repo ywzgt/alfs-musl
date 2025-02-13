@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index e9a3cceaaf..ea44756ee3 100644
+--- a/wget-list
++++ b/wget-list
+@@ -166,7 +166,7 @@ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+ https://oligarchy.co.uk/xapian/1.4.27/xapian-core-1.4.27.tar.xz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+ https://download.gimp.org/pub/babl/0.1/babl-0.1.110.tar.xz
+-https://github.com/Exiv2/exiv2/archive/v0.28.3/exiv2-0.28.3.tar.gz
++https://github.com/Exiv2/exiv2/archive/v0.28.4/exiv2-0.28.4.tar.gz
+ https://downloads.sourceforge.net/freetype/freetype-2.13.3.tar.xz
+ https://downloads.sourceforge.net/freetype/freetype-doc-2.13.3.tar.xz
+ https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz
+@@ -911,7 +911,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/audiofile-0.3.6-consolidated_p
+ https://github.com/knik0/faac/archive/1_30/faac-1_30.tar.gz
+ https://github.com/knik0/faad2/archive/2.11.1/faad2-2.11.1.tar.gz
+ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
+-https://downloads.xiph.org/releases/flac/flac-1.4.3.tar.xz
++https://downloads.xiph.org/releases/flac/flac-1.5.0.tar.xz
+ https://files.dyne.org/frei0r/releases/frei0r-plugins-1.8.0.tar.gz
+ https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
+ https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.24.12.tar.xz
