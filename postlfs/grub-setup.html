@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1270">
+  <body class="blfs" id="blfs-r12.2-1296">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1270
+        "phrase">(systemd</span> Edition) - Version r12.2-1296
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1296">
           Home</a>
         </li>
       </ul>
@@ -87,23 +87,6 @@
     [*]     <span class=
 "blue">E</span>FI GUID Partition support                           [EFI_PARTITION]
 
-<span class="blue">D</span>evice Drivers ---&gt;
-  <span class="blue">F</span>irmware Drivers ---&gt;
-    [*] M<span class=
-"blue">a</span>rk VGA/VBE/EFI FB as generic system framebuffer       [SYSFB_SIMPLEFB]
-  <span class="blue">G</span>raphics support ---&gt;
-    &lt;*&gt; <span class=
-"blue">D</span>irect Rendering Manager (XFree86 4.1.0 and higher DRI support) ---&gt;
-                                                                      ...  [DRM]
-      [*] <span class=
-"blue">E</span>nable legacy fbdev support for your modesetting driver
-                                                      ...  [DRM_FBDEV_EMULATION]
-      &lt;*&gt; <span class=
-"blue">S</span>imple framebuffer driver                              [DRM_SIMPLEDRM]
-    <span class="blue">C</span>onsole display driver support ---&gt;
-      [*] <span class=
-"blue">F</span>ramebuffer Console support                      [FRAMEBUFFER_CONSOLE]
-
 <span class="blue">F</span>ile systems ---&gt;
   <span class="blue">D</span>OS/FAT/EXFAT/NT Filesystems ---&gt;
     &lt;*/M&gt; <span class=
@@ -133,25 +116,6 @@
                 enabled automatically. But when it's enabled, you must set
                 <em class="parameter"><code>CONFIG_EFI_PARTITION</code></em>
                 to enabled as well.
-              </p>
-            </dd>
-            <dt>
-              <span class="term"><em class=
-              "parameter"><code>CONFIG_SYSFB_SIMPLEFB</code></em>, <em class=
-              "parameter"><code>CONFIG_DRM</code></em>, <em class=
-              "parameter"><code>CONFIG_DRM_FBDEV_EMULATION</code></em>,
-              <em class="parameter"><code>CONFIG_DRM_SIMPLEDRM</code></em>,
-              <em class="parameter"><code>CONFIG_FB</code></em>, and
-              <em class=
-              "parameter"><code>CONFIG_FRAMEBUFFER_CONSOLE</code></em></span>
-            </dt>
-            <dd>
-              <p>
-                The combination of these options provides the Linux console
-                support on top of the UEFI framebuffer. To allow the kernel
-                to print debug messages at an early boot stage, they
-                shouldn't be built as kernel modules unless an initramfs will
-                be used.
               </p>
             </dd>
           </dl>
@@ -533,8 +497,8 @@ if loadfont /boot/grub/fonts/unicode.pf2; then
   terminal_output gfxterm
 fi
 
-menuentry "GNU/Linux, Linux 6.10.5-lfs-12.2" {
-  linux   /boot/vmlinuz-6.10.5-lfs-12.2 root=/dev/sda2 ro
+menuentry "GNU/Linux, Linux 6.13.2-lfs-12.3" {
+  linux   /boot/vmlinuz-6.13.2-lfs-12.3 root=/dev/sda2 ro
 }
 
 menuentry "Firmware Setup" {
@@ -547,7 +511,7 @@ menuentry "Firmware Setup" {
           for the basic knowledge about the <code class=
           "filename">grub.cfg</code> file. <code class=
           "literal">(hd0,2)</code>, <code class="literal">sda2</code>, and
-          <code class="literal">6.10.5-lfs-12.2</code> must match your
+          <code class="literal">6.13.2-lfs-12.3</code> must match your
           configuration.
         </p>
         <p>
@@ -640,7 +604,7 @@ menuentry "Windows 11" {
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1270">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1296">
           Home</a>
         </li>
       </ul>
