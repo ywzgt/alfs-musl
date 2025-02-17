@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      btrfs-progs-6.12
+      btrfs-progs-6.13
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1312">
+  <body class="blfs" id="blfs-r12.2-1320">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1312
+        "phrase">(systemd</span> Edition) - Version r12.2-1320
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1312">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1320">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="btrfs-progs" name="btrfs-progs"></a>btrfs-progs-6.12
+      <a id="btrfs-progs" name="btrfs-progs"></a>btrfs-progs-6.13
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -60,17 +60,10 @@
           administration and debugging tools for the B-tree file system
           (btrfs).
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.3
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -79,13 +72,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.12.tar.xz">
-                https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.12.tar.xz</a>
+                "https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.13.tar.xz">
+                https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.13.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: ca0132bf17e5e57b214faf160a43b446
+                Download MD5 sum: 9dced32d9f63118d214c01fed08c1439
               </p>
             </li>
             <li class="listitem">
@@ -200,7 +193,7 @@ make</kbd></pre>
           "systemitem">root</code>:
         </p>
         <pre class="userinput"><kbd class=
-        "command">mv tests/misc-tests/041-subvolume-delete-during-send/test.sh{,broken}</kbd></pre>
+        "command">mv tests/mkfs-tests/013-reserved-1M-for-single/test.sh{,.broken}</kbd></pre>
         <p>
           To test the results, issue (as the <code class=
           "systemitem">root</code> user):
@@ -428,7 +421,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1312">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1320">
           Home</a>
         </li>
       </ul>

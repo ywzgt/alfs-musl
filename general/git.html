@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1312">
+  <body class="blfs" id="blfs-r12.2-1320">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1312
+        "phrase">(systemd</span> Edition) - Version r12.2-1320
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1312">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1320">
           Home</a>
         </li>
       </ul>
@@ -71,17 +71,10 @@
           "application">Perforce</span>, and <span class="application">Team
           Foundation Server</span>.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.3
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -246,10 +239,17 @@ make</kbd></pre>
         <pre class="userinput"><kbd class="command">make man</kbd></pre>
         <p>
           The test suite can be run in parallel mode. To run the test suite,
-          issue: <span class="command"><strong>make test -k |&amp; tee
-          test.log</strong></span>. If some test fails, the list of failed
-          tests can be shown via <span class="command"><strong>grep '^not ok'
-          test.log | grep -v TODO</strong></span>.
+          issue: <span class="command"><strong>GIT_UNZIP=nonexist make test
+          -k |&amp; tee test.log</strong></span>. The <code class=
+          "envar">GIT_UNZIP</code> setting prevents the test suite from using
+          <span class="command"><strong>unzip</strong></span>, we need it
+          because in BLFS <span class="command"><strong>unzip</strong></span>
+          is a symlink to <span class=
+          "command"><strong>bsdunzip</strong></span> which does not satisfy
+          the assumption of some tests cases. If any test case fails, the
+          list of failed tests can be shown via <span class=
+          "command"><strong>grep '^not ok' test.log | grep -v
+          TODO</strong></span>.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -559,7 +559,7 @@ sed -i '/^\* link:/s|howto/|&amp;html/|' /usr/share/doc/git-2.48.1/howto-index.t
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1312">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1320">
           Home</a>
         </li>
       </ul>
