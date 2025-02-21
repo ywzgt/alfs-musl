@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1352">
+  <body class="blfs" id="blfs-r12.2-1367">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1352
+        "phrase">(systemd</span> Edition) - Version r12.2-1367
       </h4>
       <h3>
         Chapter&nbsp;7.&nbsp;Shells
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1352">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1367">
           Home</a>
         </li>
       </ul>
@@ -62,17 +62,10 @@
           <span class="application">ksh</span> but includes many
           enhancements.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.3
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -144,8 +137,9 @@
     -i Doc/Makefile.in</kbd></pre>
         <p>
           Some programs shipped in the building system for detecting system
-          features use pre-C99 syntax rejected by GCC-14.1 or later. Fix them
-          up or Zsh would be wrongly configured and fail to build:
+          features use pre-C99 syntax rejected by GCC-14.1 and later. Fix
+          them because Zsh will be configured incorrectly and fail to build
+          otherwise:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -e 's/^main/int &amp;/'      \
@@ -160,10 +154,10 @@ autoconf</kbd></pre>
           The documentation files contain references to zsh configuration
           files in <code class="filename">/etc</code>, but we'll use
           <code class="filename">/etc/zsh</code> to hold these configuration
-          files instead. The building system will fix up those references if
-          the <span class="application">yodl</span> package is available, but
-          it's out of the scope of BLFS. So we need to fix up the references
-          manually:
+          files instead. The build system will update those references if the
+          <span class="application">yodl</span> package is available, but
+          it's out of the scope of BLFS. As a result, we need to fix the
+          references manually:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -e 's|/etc/z|/etc/zsh/z|g' \
@@ -186,7 +180,7 @@ makeinfo  Doc/zsh.texi --html --no-split --no-headers -o zsh.html</kbd></pre>
         <p>
           If you have <a class="xref" href="../pst/texlive.html" title=
           "texlive-20240312-source">texlive-20240312</a> installed, you can
-          build PDF format of the documentation by issuing the following
+          build the documentation in PDF format by issuing the following
           command:
         </p>
         <pre class="userinput"><kbd class=
@@ -276,8 +270,8 @@ install -v -m644 zsh.{html,txt} Etc/FAQ /usr/share/doc/zsh-5.9</kbd></pre>
             available prompts with <span class="command"><strong>prompt
             -p</strong></span>. Except for the list and display commands
             above, you can insert the other ones in <code class=
-            "filename">~/.zshrc</code> to be automatically executed at shell
-            start, with the prompt you chose.
+            "filename">~/.zshrc</code> to be automatically executed when the
+            shell starts, with the prompt you chose.
           </p>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
@@ -371,7 +365,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1352">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1367">
           Home</a>
         </li>
       </ul>
