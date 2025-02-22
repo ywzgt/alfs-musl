@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1367">
+  <body class="blfs" id="blfs-r12.2-1384">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1367
+        "phrase">(systemd</span> Edition) - Version r12.2-1384
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1367">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1384">
           Home</a>
         </li>
       </ul>
@@ -330,9 +330,9 @@ ninja</kbd></pre>
           build the API documentation for this package, issue:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed 's/glib-2.0/glib-2.82.4/'        \
-    -i ../docs/reference/meson.build &amp;&amp;
-meson configure -D documentation=true &amp;&amp;
+        "command">sed "/docs_dir =/s|$| / 'glib-' + meson.project_version()|" \
+    -i ../docs/reference/meson.build                        &amp;&amp;
+meson configure -D documentation=true                       &amp;&amp;
 ninja</kbd></pre>
         <p>
           As the <code class="systemitem">root</code> user, install this
@@ -962,7 +962,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1367">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1384">
           Home</a>
         </li>
       </ul>

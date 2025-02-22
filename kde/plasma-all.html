@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1367">
+  <body class="blfs" id="blfs-r12.2-1384">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1367
+        "phrase">(systemd</span> Edition) - Version r12.2-1384
       </h4>
       <h3>
         Chapter&nbsp;32.&nbsp;KDE Plasma
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1367">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1384">
           Home</a>
         </li>
       </ul>
@@ -475,11 +475,11 @@ export -f as_root</kbd></pre>
     if $(echo $line | grep -E -q '^ *$|^#' ); then continue; fi
     file=$(echo $line | cut -d" " -f2)
 
-    pkg=$(echo $file|sed 's|^.*/||')          # Remove directory
-    srcdir=$(echo $pkg |sed 's|\.tar.*||')    # Source directory
+    pkg=$(echo $file|sed 's|^.*/||')           # Remove directory
+    packagedir=$(echo $pkg |sed 's|\.tar.*||') # Source directory
 
     tar -xf $file
-    pushd $srcdir
+    pushd $packagedir
 
        mkdir build
        cd    build
@@ -686,7 +686,7 @@ startx</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1367">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1384">
           Home</a>
         </li>
       </ul>

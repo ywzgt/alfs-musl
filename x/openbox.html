@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1367">
+  <body class="blfs" id="blfs-r12.2-1384">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1367
+        "phrase">(systemd</span> Edition) - Version r12.2-1384
       </h4>
       <h3>
         Chapter&nbsp;27.&nbsp;Window Managers
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1367">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1384">
           Home</a>
         </li>
       </ul>
@@ -59,17 +59,10 @@
           you to control almost every aspect of how you interact with your
           desktop.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.3
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -93,12 +86,26 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 21 MB
+                Estimated disk space required: 19 MB
               </p>
             </li>
             <li class="listitem">
               <p>
                 Estimated build time: 0.3 SBU
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Download
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/openbox-3.6.1-py3-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/openbox-3.6.1-py3-1.patch</a>
               </p>
             </li>
           </ul>
@@ -151,12 +158,10 @@
           "command">export LIBRARY_PATH=$XORG_PREFIX/lib</kbd></pre>
         </div>
         <p>
-          If you only installed the Python 3 PyXDG module convert one of the
-          scripts to Python 3:
+          Update the package scripts to enable Python 3:
         </p>
         <pre class="userinput"><kbd class=
-        "command">2to3-3.13 -w data/autostart/openbox-xdg-autostart &amp;&amp;
-sed 's/python/python3/' -i data/autostart/openbox-xdg-autostart</kbd></pre>
+        "command">patch -Np1 -i ../openbox-3.6.1-py3-1.patch</kbd></pre>
         <p>
           Install <span class="application">Openbox</span> by running the
           following commands:
@@ -525,7 +530,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1367">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1384">
           Home</a>
         </li>
       </ul>
