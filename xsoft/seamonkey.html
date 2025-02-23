@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1384">
+  <body class="blfs" id="blfs-r12.2-1392">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1384
+        "phrase">(systemd</span> Edition) - Version r12.2-1392
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1384">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1392">
           Home</a>
         </li>
       </ul>
@@ -70,17 +70,10 @@
           "thunderbird.html" title=
           "Thunderbird-128.7.1esr">Thunderbird-128.7.1esr</a>.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.3
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -338,7 +331,7 @@ sed -i 's/icu-i18n/icu-uc &amp;/' js/moz.configure</kbd></pre>
           19.1.0 release:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed '/ExclusiveData(ExclusiveData&amp;&amp;/,/^ *}/d' \
+        "command">sed -e '/ExclusiveData(ExclusiveData&amp;&amp;/,/^ *}/d' \
     -i js/src/threading/ExclusiveData.h</kbd></pre>
         <p>
           Next, fix a problem with the bundled 'distro' python module:
@@ -390,7 +383,7 @@ cp -v $(find -name seamonkey.1 | head -n1) /usr/share/man/man1</kbd></pre>
           Finally, unset the <code class="envar">PATH_PY311</code> variable:
         </p>
         <pre class="userinput"><kbd class=
-        "command">unset $PATH_PY311</kbd></pre>
+        "command">unset PATH_PY311</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -555,7 +548,7 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1384">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1392">
           Home</a>
         </li>
       </ul>
