@@ -1,0 +1,13 @@
+diff --git a/wget-list b/wget-list
+index a4bdd7dff6..3759c897ee 100644
+--- a/wget-list
++++ b/wget-list
+@@ -133,7 +133,7 @@ https://github.com/libunwind/libunwind/releases/download/v1.8.1/libunwind-1.8.1.
+ https://lttng.org/files/urcu/userspace-rcu-0.15.0.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.tar.bz2
+ https://dist.libuv.org/dist/v1.50.0/libuv-v1.50.0.tar.gz
+-https://github.com/xkbcommon/libxkbcommon/archive/xkbcommon-1.8.0/libxkbcommon-1.8.0.tar.gz
++https://github.com/xkbcommon/libxkbcommon/archive/xkbcommon-1.8.0/libxkbcommon-xkbcommon-1.8.0.tar.gz
+ https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.5.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.21/libxmlb-0.3.21.tar.xz
