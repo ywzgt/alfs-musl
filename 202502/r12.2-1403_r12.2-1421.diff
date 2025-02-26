@@ -1,0 +1,60 @@
+diff --git a/wget-list b/wget-list
+index 4647448b7c..2963eb069e 100644
+--- a/wget-list
++++ b/wget-list
+@@ -153,8 +153,8 @@ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.1/protobuf-c-1.5
+ https://download.kde.org/stable/qca/2.3.9/qca-2.3.9.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.11.0/qcoro-0.11.0.tar.gz
+ https://archive.mozilla.org/pub/firefox/releases/128.7.0esr/source/firefox-128.7.0esr.source.tar.xz
+-https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.304.1/SPIRV-Headers-1.4.304.1.tar.gz
+-https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.304.1/SPIRV-Tools-1.4.304.1.tar.gz
++https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.304.1/SPIRV-Headers-vulkan-sdk-1.4.304.1.tar.gz
++https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.304.1/SPIRV-Tools-vulkan-sdk-1.4.304.1.tar.gz
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v19.1.4/SPIRV-LLVM-Translator-19.1.4.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.4.3.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+@@ -178,7 +178,7 @@ https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
+ https://github.com/g-truc/glm/archive/1.0.1/glm-1.0.1.tar.gz
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+ https://github.com/harfbuzz/harfbuzz/releases/download/10.2.0/harfbuzz-10.2.0.tar.xz
+-https://github.com/jasper-software/jasper/archive/version-4.2.4/jasper-4.2.4.tar.gz
++https://github.com/jasper-software/jasper/archive/version-4.2.4/jasper-version-4.2.4.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.17/lcms2-2.17.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.1.1/libavif-1.1.1.tar.gz
+ https://github.com/libexif/libexif/releases/download/v0.6.25/libexif-0.6.25.tar.bz2
+@@ -511,7 +511,7 @@ https://files.pythonhosted.org/packages/source/p/pluggy/pluggy-1.5.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyproject-metadata/pyproject_metadata-0.9.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pytz/pytz-2025.1.tar.gz
+ https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-8.1.0.tar.gz
+-https://github.com/leohemsted/smartypants.py/archive/v2.0.1/smartypants-2.0.1.tar.gz
++https://github.com/leohemsted/smartypants.py/archive/v2.0.1/smartypants.py-2.0.1.tar.gz
+ https://files.pythonhosted.org/packages/source/s/snowballstemmer/snowballstemmer-2.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-applehelp/sphinxcontrib_applehelp-2.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-devhelp/sphinxcontrib_devhelp-2.0.0.tar.gz
+@@ -597,7 +597,7 @@ https://downloads.sourceforge.net/fetchmail/fetchmail-6.5.2.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/mailx/heirloom-mailx_12.5.orig.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.patch
+ https://bitbucket.org/mutt/mutt/downloads/mutt-2.2.13.tar.gz
+-https://github.com/BuGlessRB/procmail/archive/refs/tags/v3.24/procmail-3.24.tar.gz
++https://github.com/BuGlessRB/procmail/archive/v3.24/procmail-3.24.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.24-consolidated_fixes-1.patch
+ https://archive.apache.org/dist/httpd/httpd-2.4.63.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.63-blfs_layout-1.patch
+@@ -886,7 +886,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.4-upstream_fixes-2.p
+ https://feh.finalrewind.org/feh-3.10.3.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20230101/fontforge-20230101.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/fontforge-20230101-security_fixes-1.patch
+-https://github.com/freerdp/freerdp/archive/3.11.1/FreeRDP-3.11.1.tar.gz
++https://github.com/freerdp/freerdp/archive/3.12.0/FreeRDP-3.12.0.tar.gz
+ https://download.gimp.org/gimp/v3.0/gimp-3.0.0-RC3.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/gimp/gimp3-help-20240711.tar.xz
+ https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
+@@ -1038,7 +1038,7 @@ https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312-source.tar.xz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312-texmf.tar.xz
+ https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2024/texlive-20240312-extra.tar.xz
+-https://downloads.sourceforge.net/asymptote/asymptote-2.99.src.tgz
++https://downloads.sourceforge.net/asymptote/asymptote-3.01.src.tgz
+ https://github.com/plk/biber/archive/v2.20/biber-2.20.tar.gz
+ https://github.com/mgieseki/dvisvgm/releases/download/3.4.3/dvisvgm-3.4.3.tar.gz
+ https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
