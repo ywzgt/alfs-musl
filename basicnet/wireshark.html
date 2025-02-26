@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Wireshark-4.4.4
+      Wireshark-4.4.5
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1421">
+  <body class="blfs" id="blfs-r12.2-1427">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1421
+        "phrase">(systemd</span> Edition) - Version r12.2-1427
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1421">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1427">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="wireshark" name="wireshark"></a>Wireshark-4.4.4
+      <a id="wireshark" name="wireshark"></a>Wireshark-4.4.5
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,13 +80,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.wireshark.org/download/src/all-versions/wireshark-4.4.4.tar.xz">
-                https://www.wireshark.org/download/src/all-versions/wireshark-4.4.4.tar.xz</a>
+                "https://www.wireshark.org/download/src/all-versions/wireshark-4.4.5.tar.xz">
+                https://www.wireshark.org/download/src/all-versions/wireshark-4.4.5.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: c90234f69dc45aca7a570e004dac2e06
+                Download MD5 sum: 5082fa9d60d1d9e0b55087fbc0a2b3b9
               </p>
             </li>
             <li class="listitem">
@@ -230,7 +230,7 @@ cd    build &amp;&amp;
 
 cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -D CMAKE_BUILD_TYPE=Release  \
-      -D CMAKE_INSTALL_DOCDIR=/usr/share/doc/wireshark-4.4.4 \
+      -D CMAKE_INSTALL_DOCDIR=/usr/share/doc/wireshark-4.4.5 \
       -G Ninja \
       .. &amp;&amp;
 ninja</kbd></pre>
@@ -242,11 +242,11 @@ ninja</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">ninja install &amp;&amp;
 
-install -v -m755 -d /usr/share/doc/wireshark-4.4.4 &amp;&amp;
+install -v -m755 -d /usr/share/doc/wireshark-4.4.5 &amp;&amp;
 install -v -m644    ../README.linux ../doc/README.* ../doc/randpkt.txt \
-                    /usr/share/doc/wireshark-4.4.4 &amp;&amp;
+                    /usr/share/doc/wireshark-4.4.5 &amp;&amp;
 
-pushd /usr/share/doc/wireshark-4.4.4 &amp;&amp;
+pushd /usr/share/doc/wireshark-4.4.5 &amp;&amp;
    for FILENAME in ../../wireshark/*.html; do
       ln -s -v -f $FILENAME .
    done &amp;&amp;
@@ -260,7 +260,7 @@ unset FILENAME</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">install -v -m644 <em class=
         "replaceable"><code>&lt;Downloaded_Files&gt;</code></em> \
-                 /usr/share/doc/wireshark-4.4.4</kbd></pre>
+                 /usr/share/doc/wireshark-4.4.5</kbd></pre>
         <p>
           Now, set ownership and permissions of sensitive applications to
           only allow authorized users. As the <code class=
@@ -348,7 +348,7 @@ chmod -v 6550 /usr/bin/tshark</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/{lib,share}/wireshark and
-              /usr/share/doc/wireshark-4.4.4</span>
+              /usr/share/doc/wireshark-4.4.5</span>
             </div>
           </div>
         </div>
@@ -619,7 +619,7 @@ chmod -v 6550 /usr/bin/tshark</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1421">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1427">
           Home</a>
         </li>
       </ul>
