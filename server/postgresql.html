@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      PostgreSQL-17.3
+      PostgreSQL-17.4
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1430">
+  <body class="blfs" id="blfs-r12.2-1448">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1430
+        "phrase">(systemd</span> Edition) - Version r12.2-1448
       </h4>
       <h3>
         Chapter&nbsp;22.&nbsp;Databases
@@ -30,9 +30,9 @@
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="sqlite.html" title="SQLite-3.49.0">Next</a>
+          <a accesskey="n" href="sqlite.html" title="SQLite-3.49.1">Next</a>
           <p>
-            SQLite-3.49.0
+            SQLite-3.49.1
           </p>
         </li>
         <li class="up">
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1430">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1448">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="postgresql" name="postgresql"></a>PostgreSQL-17.3
+      <a id="postgresql" name="postgresql"></a>PostgreSQL-17.4
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -59,10 +59,17 @@
           object-relational database management system (ORDBMS), derived from
           the Berkeley Postgres database management system.
         </p>
-        <p>
-          This package is known to build and work properly using an LFS 12.3
-          platform.
-        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            Development versions of BLFS may not build or run some packages
+            properly if LFS or dependencies have been updated since the most
+            recent stable versions of the books.
+          </p>
+        </div>
         <h3>
           Package Information
         </h3>
@@ -71,18 +78,18 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ftp.postgresql.org/pub/source/v17.3/postgresql-17.3.tar.bz2">
-                https://ftp.postgresql.org/pub/source/v17.3/postgresql-17.3.tar.bz2</a>
+                "https://ftp.postgresql.org/pub/source/v17.4/postgresql-17.4.tar.bz2">
+                https://ftp.postgresql.org/pub/source/v17.4/postgresql-17.4.tar.bz2</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: d229389aae99b76dca2573ae898deb2d
+                Download MD5 sum: 4d5f4119cabe4adeb5ce8b5377928578
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 20.5 MB
+                Download size: 21 MB
               </p>
             </li>
             <li class="listitem">
@@ -108,7 +115,7 @@
           <a class="xref" href="../general/icu.html" title=
           "icu-76.1">ICU-76.1</a>, <a class="xref" href=
           "../general/libxml2.html" title=
-          "libxml2-2.13.5">libxml2-2.13.5</a>, <a class="xref" href=
+          "libxml2-2.13.6">libxml2-2.13.6</a>, <a class="xref" href=
           "../general/libxslt.html" title=
           "libxslt-1.1.42">libxslt-1.1.42</a>, <a class="xref" href=
           "openldap.html" title="OpenLDAP-2.6.9">OpenLDAP-2.6.9</a>,
@@ -174,7 +181,7 @@ useradd -c "PostgreSQL Server" -g postgres -d /srv/pgsql/data \
         "command">sed -i '/DEFAULT_PGSOCKET_DIR/s@/tmp@/run/postgresql@' src/include/pg_config_manual.h &amp;&amp;
 
 ./configure --prefix=/usr \
-            --docdir=/usr/share/doc/postgresql-17.3 &amp;&amp;
+            --docdir=/usr/share/doc/postgresql-17.4 &amp;&amp;
 make</kbd></pre>
         <p>
           There are a number of programs in the <code class=
@@ -385,7 +392,7 @@ chown -Rv postgres:postgres /srv/pgsql /run/postgresql</kbd></pre>
             <code class="filename">PGDATA/</code> directory. Details on the
             format of the files and the options that can be set in each can
             be found in <code class=
-            "filename">/usr/share/doc/postgresql-17.3/html/index.html</code>.
+            "filename">/usr/share/doc/postgresql-17.4/html/index.html</code>.
           </p>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
@@ -480,7 +487,7 @@ echo "select * from t1;" | (su - postgres -c '/usr/bin/psql test')</kbd></pre>
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/{libpq,postgresql},
               /usr/lib/postgresql,
-              /usr/share/{doc/postgresql-17.3,postgresql}, and
+              /usr/share/{doc/postgresql-17.4,postgresql}, and
               /srv/pgsql</span>
             </div>
           </div>
@@ -1144,9 +1151,9 @@ echo "select * from t1;" | (su - postgres -c '/usr/bin/psql test')</kbd></pre>
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="sqlite.html" title="SQLite-3.49.0">Next</a>
+          <a accesskey="n" href="sqlite.html" title="SQLite-3.49.1">Next</a>
           <p>
-            SQLite-3.49.0
+            SQLite-3.49.1
           </p>
         </li>
         <li class="up">
@@ -1155,7 +1162,7 @@ echo "select * from t1;" | (su - postgres -c '/usr/bin/psql test')</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1430">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1448">
           Home</a>
         </li>
       </ul>

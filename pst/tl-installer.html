@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1430">
+  <body class="blfs" id="blfs-r12.2-1448">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1430
+        "phrase">(systemd</span> Edition) - Version r12.2-1448
       </h4>
       <h3>
         Chapter&nbsp;51.&nbsp;Typesetting
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1430">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1448">
           Home</a>
         </li>
       </ul>
@@ -134,8 +134,8 @@
             <li class="listitem">
               <p>
                 Estimated disk space required: 85 MB for plain TeX, typically
-                2 to 4 MB for latex and later engines, 8.6 GB if everything
-                is included
+                320 MB for latex and later engines, 8.6 GB if everything is
+                included
               </p>
             </li>
             <li class="listitem">
@@ -155,7 +155,7 @@
           downloads, and also any updates you might later make using
           <span class="command"><strong>tlmgr</strong></span>) and <a class=
           "xref" href="../general/perl-modules.html#perl-libwww-perl" title=
-          "LWP (libwww-perl-6.77)">libwww-perl-6.77</a> (to use a single
+          "LWP (libwww-perl-6.78)">libwww-perl-6.78</a> (to use a single
           connection to the server, which will reduce its load and speed
           things up)
         </p>
@@ -319,36 +319,49 @@
         "command">TEXLIVE_INSTALL_PREFIX=/opt/texlive ./install-tl</kbd></pre>
         <p>
           This command is interactive and allows selection or modification of
-          platform, packages, directories, and other options. The full
-          installation scheme will require about 4.9 gigabytes of disk space.
-          The time to complete the download will depend on your internet
-          connection speed and the number of packages selected.
+          platform, packages, directories, and other options. The time to
+          complete the download will depend on your internet connection speed
+          and the number of packages selected.
         </p>
         <p>
-          It has been established by Debian that the <span class=
-          "command"><strong>python</strong></span> scripts in <code class=
-          "filename">latex-make</code> will work with <span class=
-          "command"><strong>python3</strong></span>, so update them to invoke
-          that by running the following command as the <code class=
-          "systemitem">root</code> user:
+          For a minimal install that will build documentation that is
+          referenced in BLFS, the only installation collections needed are
+          '[a] Essential programs and files' and '[D] LaTeX fundamental
+          packages'. This will download about 130 files and use about 320 MB.
+          Users can select other collections as needed but a full
+          installation will download several thousand files and use over 8GB.
         </p>
-        <pre class="root"><kbd class=
-        "command">for F in /opt/texlive/2024/texmf-dist/scripts/latex-make/*.py ; do
-  test -f $F &amp;&amp; sed -i 's%/usr/bin/env python%/usr/bin/python3%' $F || true
-done
-</kbd></pre>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            After installation the PATH environment variable will need to be
+            updated. If the path in the location specified above, run as the
+            <code class="systemitem">root</code> user:
+          </p>
+          <pre class="root"><kbd class=
+          "command">cat &gt; /etc/profile.d/texlive.sh &lt;&lt; EOF
+# Begin texlive setup
+TEXLIVE_PREFIX=/opt/texlive/2024
+export TEXLIVE_PREFIX
+
+pathappend $TEXLIVE_PREFIX/bin/x86_64-linux
+# End texlive setup
+EOF</kbd></pre>
+          <p>
+            Immediately after installation, update the current PATH for your
+            current shell as a normal user:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">source /etc/profile.d/texlive.sh</kbd></pre>
+        </div>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
           Command Explanations
         </h2>
-        <p>
-          <span class="command"><strong>test -f $F &amp;&amp; sed
-          ...</strong></span>: in a small install these files might not be
-          present, so test if they exist and if not return 'true' to avoid
-          any error if this command has been copied into one of your own
-          install scripts.
-        </p>
         <p>
           <code class="option">./install-tl --location
           http://mirror.aut.ac.nz/CTAN/systems/texlive/tlnet/</code>: use a
@@ -440,7 +453,7 @@ done
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1430">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1448">
           Home</a>
         </li>
       </ul>

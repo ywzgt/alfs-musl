@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Shadow-4.17.2
+      Shadow-4.17.3
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1430">
+  <body class="blfs" id="blfs-r12.2-1448">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1430
+        "phrase">(systemd</span> Edition) - Version r12.2-1448
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1430">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1448">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="shadow" name="shadow"></a>Shadow-4.17.2
+      <a id="shadow" name="shadow"></a>Shadow-4.17.3
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -65,10 +65,17 @@
           "command"><strong>login</strong></span> and <span class=
           "command"><strong>su</strong></span> to utilize PAM.
         </p>
-        <p>
-          This package is known to build and work properly using an LFS 12.3
-          platform.
-        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            Development versions of BLFS may not build or run some packages
+            properly if LFS or dependencies have been updated since the most
+            recent stable versions of the books.
+          </p>
+        </div>
         <h3>
           Package Information
         </h3>
@@ -77,13 +84,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/shadow-maint/shadow/releases/download/4.17.2/shadow-4.17.2.tar.xz">
-                https://github.com/shadow-maint/shadow/releases/download/4.17.2/shadow-4.17.2.tar.xz</a>
+                "https://github.com/shadow-maint/shadow/releases/download/4.17.3/shadow-4.17.3.tar.xz">
+                https://github.com/shadow-maint/shadow/releases/download/4.17.3/shadow-4.17.3.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: d9b6b8028ebb5971857b7f6b10ffba0e
+                Download MD5 sum: 0da190e53ecee76237e4c8f3f39531ed
               </p>
             </li>
             <li class="listitem">
@@ -93,7 +100,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 102 MB
+                Estimated disk space required: 103 MB
               </p>
             </li>
             <li class="listitem">
@@ -331,7 +338,7 @@ done</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11159" name="id11159"></a>Configuring the
+                    <a id="id11203" name="id11203"></a>Configuring the
                     /etc/pam.d/ Files
                   </h5>
                 </div>
@@ -362,7 +369,7 @@ done</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11170" name="id11170"></a>'login'
+                    <a id="id11214" name="id11214"></a>'login'
                   </h5>
                 </div>
               </div>
@@ -418,7 +425,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11175" name="id11175"></a>'passwd'
+                    <a id="id11219" name="id11219"></a>'passwd'
                   </h5>
                 </div>
               </div>
@@ -437,7 +444,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11180" name="id11180"></a>'su'
+                    <a id="id11224" name="id11224"></a>'su'
                   </h5>
                 </div>
               </div>
@@ -477,7 +484,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11185" name="id11185"></a>'chpasswd' and
+                    <a id="id11229" name="id11229"></a>'chpasswd' and
                     'newusers'
                   </h5>
                 </div>
@@ -505,7 +512,7 @@ sed -e s/chpasswd/newusers/ /etc/pam.d/chpasswd &gt;/etc/pam.d/newusers</kbd></p
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11190" name="id11190"></a>'chage'
+                    <a id="id11234" name="id11234"></a>'chage'
                   </h5>
                 </div>
               </div>
@@ -529,7 +536,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11195" name="id11195"></a>Other shadow utilities
+                    <a id="id11239" name="id11239"></a>Other shadow utilities
                   </h5>
                 </div>
               </div>
@@ -666,7 +673,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1430">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1448">
           Home</a>
         </li>
       </ul>

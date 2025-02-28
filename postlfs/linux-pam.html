@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1430">
+  <body class="blfs" id="blfs-r12.2-1448">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1430
+        "phrase">(systemd</span> Edition) - Version r12.2-1448
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1430">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1448">
           Home</a>
         </li>
       </ul>
@@ -61,10 +61,17 @@
           administrator to control how application programs authenticate
           users.
         </p>
-        <p>
-          This package is known to build and work properly using an LFS 12.3
-          platform.
-        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            Development versions of BLFS may not build or run some packages
+            properly if LFS or dependencies have been updated since the most
+            recent stable versions of the books.
+          </p>
+        </div>
         <h3>
           Package Information
         </h3>
@@ -166,9 +173,9 @@
           </h3>
           <p class="required">
             <a class="xref" href="shadow.html" title=
-            "Shadow-4.17.2">Shadow-4.17.2</a> <span class="phrase">and
+            "Shadow-4.17.3">Shadow-4.17.3</a> <span class="phrase">and
             <a class="xref" href="../general/systemd.html" title=
-            "Systemd-257">Systemd-257</a> must</span> be reinstalled and
+            "Systemd-257.3">Systemd-257.3</a> must</span> be reinstalled and
             reconfigured after installing and configuring <span class=
             "application">Linux PAM</span>.
           </p>
@@ -191,9 +198,9 @@
           (referred by the PAM configuration file <code class=
           "filename">system-session</code> if <span class="phrase"><a class=
           "xref" href="../general/systemd.html" title=
-          "Systemd-257">Systemd-257</a> is rebuilt with PAM support</span>
-          later) to work, a kernel configuration parameter need to be set or
-          the module will just do nothing:
+          "Systemd-257.3">Systemd-257.3</a> is rebuilt with PAM
+          support</span> later) to work, a kernel configuration parameter
+          need to be set or the module will just do nothing:
         </p>
         <pre class="screen"><span class="blue">G</span>eneral setup ---&gt;
   [*] <span class=
@@ -413,9 +420,9 @@ EOF</kbd></pre>
             </h3>
             <p>
               You should now reinstall the <a class="xref" href="shadow.html"
-              title="Shadow-4.17.2">Shadow-4.17.2</a> <span class=
+              title="Shadow-4.17.3">Shadow-4.17.3</a> <span class=
               "phrase">and <a class="xref" href="../general/systemd.html"
-              title="Systemd-257">Systemd-257</a> packages</span>.
+              title="Systemd-257.3">Systemd-257.3</a> packages</span>.
             </p>
           </div>
         </div>
@@ -598,7 +605,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1430">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1448">
           Home</a>
         </li>
       </ul>
