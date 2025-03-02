@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      libxkbcommon-xkbcommon-1.8.0
+      libxkbcommon-1.8.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1475">
+  <body class="blfs" id="blfs-r12.2-1504">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1475
+        "phrase">(systemd</span> Edition) - Version r12.2-1504
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,36 +41,28 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1475">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1504">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="libxkbcommon" name=
-      "libxkbcommon"></a>libxkbcommon-xkbcommon-1.8.0
+      <a id="libxkbcommon" name="libxkbcommon"></a>libxkbcommon-1.8.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to libxkbcommon-xkbcommon
+          Introduction to libxkbcommon
         </h2>
         <p>
-          <span class="application">libxkbcommon-xkbcommon</span> is a keymap
-          compiler and support library which processes a reduced subset of
-          keymaps as defined by the XKB specification.
+          <span class="application">libxkbcommon</span> is a keymap compiler
+          and support library which processes a reduced subset of keymaps as
+          defined by the XKB specification.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.3
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -79,13 +71,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/xkbcommon/libxkbcommon/archive/xkbcommon-1.8.0/libxkbcommon-xkbcommon-1.8.0.tar.gz">
-                https://github.com/xkbcommon/libxkbcommon/archive/xkbcommon-1.8.0/libxkbcommon-xkbcommon-1.8.0.tar.gz</a>
+                "https://github.com/lfs-book/libxkbcommon/archive/v1.8.0/libxkbcommon-1.8.0.tar.gz">
+                https://github.com/lfs-book/libxkbcommon/archive/v1.8.0/libxkbcommon-1.8.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: e0bdc3555b3530d729d6d01afda52579
+                Download MD5 sum: e63cb7f5a395a1575246717882b96664
               </p>
             </li>
             <li class="listitem">
@@ -105,8 +97,25 @@
             </li>
           </ul>
         </div>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            On GitHub we've forked the upstream repository into our own
+            <code class="literal">lfs-book</code> namespace and recreated a
+            tag for the release. This is done to ensure the downloaded
+            tarball file name to be correct and consistent (i.e. it shouldn't
+            change when using the browser instead of a tool like <span class=
+            "command"><strong>wget</strong></span>). Our tag and the upstream
+            release tag is on the same commit, so we've not introduced any
+            change to the tarball content except the name of its top-level
+            directory (that Git does not track).
+          </p>
+        </div>
         <h3>
-          libxkbcommon-xkbcommon Dependencies
+          libxkbcommon Dependencies
         </h3>
         <h4>
           Required
@@ -141,7 +150,7 @@
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of libxkbcommon-xkbcommon
+          Installation of libxkbcommon
         </h2>
         <p>
           Install <span class="application">libxkbcommon</span> by running
@@ -309,7 +318,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1475">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1504">
           Home</a>
         </li>
       </ul>

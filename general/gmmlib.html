@@ -5,33 +5,33 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      gmmlib-intel-gmmlib-22.5.5
+      gmmlib-22.5.5
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1475">
+  <body class="blfs" id="blfs-r12.2-1504">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1475
+        "phrase">(systemd</span> Edition) - Version r12.2-1504
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="inih.html" title="inih-58">Prev</a>
+          <a accesskey="p" href="gmime3.html" title="GMime-3.2.7">Prev</a>
           <p>
-            inih-58
+            GMime-3.2.7
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="jansson.html" title="Jansson-2.14">Next</a>
+          <a accesskey="n" href="gsl.html" title="gsl-2.8">Next</a>
           <p>
-            Jansson-2.14
+            gsl-2.8
           </p>
         </li>
         <li class="up">
@@ -40,25 +40,25 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1475">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1504">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="intel-gmmlib" name="intel-gmmlib"></a>gmmlib-intel-gmmlib-22.5.5
+      <a id="gmmlib" name="gmmlib"></a>gmmlib-22.5.5
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to gmmlib-intel-gmmlib
+          Introduction to gmmlib
         </h2>
         <p>
-          The <span class="application">gmmlib-intel-gmmlib</span> package
-          contains the Intel Graphics Memory Management Library, which
-          provides device specific memory and buffer management functions for
-          the Intel Media Driver for VAAPI and the Intel Graphics Computer
-          Runtime for OpenCL (TM).
+          The <span class="application">gmmlib</span> package contains the
+          Intel Graphics Memory Management Library, which provides device
+          specific memory and buffer management functions for the Intel Media
+          Driver for VAAPI and the Intel Graphics Computer Runtime for OpenCL
+          (TM).
         </p>
         <p>
           This package is known to build and work properly using an LFS 12.3
@@ -72,13 +72,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/intel/gmmlib/archive/intel-gmmlib-22.5.5/gmmlib-intel-gmmlib-22.5.5.tar.gz">
-                https://github.com/intel/gmmlib/archive/intel-gmmlib-22.5.5/gmmlib-intel-gmmlib-22.5.5.tar.gz</a>
+                "https://github.com/lfs-book/gmmlib/archive/v22.5.5/gmmlib-22.5.5.tar.gz">
+                https://github.com/lfs-book/gmmlib/archive/v22.5.5/gmmlib-22.5.5.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 1bf6f63da5f606de44c247c5f0f97571
+                Download MD5 sum: 3da09a09f49164c388fd6b002ca81443
               </p>
             </li>
             <li class="listitem">
@@ -98,8 +98,25 @@
             </li>
           </ul>
         </div>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            On GitHub we've forked the upstream repository into our own
+            <code class="literal">lfs-book</code> namespace and recreated a
+            tag for the release. This is done to ensure the downloaded
+            tarball file name to be correct and consistent (i.e. it shouldn't
+            change when using the browser instead of a tool like <span class=
+            "command"><strong>wget</strong></span>). Our tag and the upstream
+            release tag is on the same commit, so we've not introduced any
+            change to the tarball content except the name of its top-level
+            directory (that Git does not track).
+          </p>
+        </div>
         <h3>
-          gmmlib-intel-gmmlib Dependencies
+          gmmlib Dependencies
         </h3>
         <h4>
           Required
@@ -111,11 +128,11 @@
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of gmmlib-intel-gmmlib
+          Installation of gmmlib
         </h2>
         <p>
-          Install <span class="application">gmmlib-intel-gmmlib</span> by
-          running the following commands:
+          Install <span class="application">gmmlib</span> by running the
+          following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
@@ -187,15 +204,15 @@ ninja</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="inih.html" title="inih-58">Prev</a>
+          <a accesskey="p" href="gmime3.html" title="GMime-3.2.7">Prev</a>
           <p>
-            inih-58
+            GMime-3.2.7
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="jansson.html" title="Jansson-2.14">Next</a>
+          <a accesskey="n" href="gsl.html" title="gsl-2.8">Next</a>
           <p>
-            Jansson-2.14
+            gsl-2.8
           </p>
         </li>
         <li class="up">
@@ -204,7 +221,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1475">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1504">
           Home</a>
         </li>
       </ul>
