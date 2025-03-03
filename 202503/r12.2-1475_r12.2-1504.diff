@@ -1,0 +1,109 @@
+diff --git a/wget-list b/wget-list
+index b87a5ebdb8..c2adad31bc 100644
+--- a/wget-list
++++ b/wget-list
+@@ -83,19 +83,19 @@ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+ https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.7.tar.xz
+ https://download.gnome.org/sources/glibmm/2.82/glibmm-2.82.0.tar.xz
+ https://download.gnome.org/sources/gmime/3.2/gmime-3.2.7.tar.xz
++https://github.com/lfs-book/gmmlib/archive/v22.5.5/gmmlib-22.5.5.tar.gz
+ https://ftp.gnu.org/gnu/gsl/gsl-2.8.tar.gz
+ https://download.gnome.org/sources/gspell/1.14/gspell-1.14.0.tar.xz
+ https://github.com/google/highway/archive/1.2.0/highway-1.2.0.tar.gz
+ https://github.com/unicode-org/icu/releases/download/release-76-1/icu4c-76_1-src.tgz
+ https://github.com/benhoyt/inih/archive/r58/inih-r58.tar.gz
+-https://github.com/intel/gmmlib/archive/intel-gmmlib-22.5.5/gmmlib-intel-gmmlib-22.5.5.tar.gz
+ https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
+ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.18.tar.gz
+ https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.6.tar.xz
+ https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-1.6.3.tar.gz
+ https://pagure.io/libaio/archive/libaio-0.3.113/libaio-0.3.113.tar.gz
+ https://github.com/libarchive/libarchive/releases/download/v3.7.7/libarchive-3.7.7.tar.xz
+-https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.1.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2
+ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/ivmai/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz
+ https://github.com/storaged-project/libblockdev/releases/download/3.3.0/libblockdev-3.3.0.tar.gz
+@@ -119,7 +119,7 @@ https://github.com/linux-nvme/libnvme/archive/v1.11.1/libnvme-1.11.1.tar.gz
+ https://github.com/rrthomas/libpaper/releases/download/v2.2.6/libpaper-2.2.6.tar.gz
+ https://github.com/flatpak/libportal/releases/download/0.9.1/libportal-0.9.1.tar.xz
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+-https://github.com/Qalculate/libqalculate/releases/download/v5.5.0/libqalculate-5.5.0.tar.gz
++https://github.com/Qalculate/libqalculate/releases/download/v5.5.1/libqalculate-5.5.1.tar.gz
+ https://www.freedesktop.org/software/libqmi/libqmi-1.30.8.tar.xz
+ https://github.com/seccomp/libseccomp/releases/download/v2.6.0/libseccomp-2.6.0.tar.gz
+ https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.1.tar.xz
+@@ -133,7 +133,7 @@ https://github.com/libunwind/libunwind/releases/download/v1.8.1/libunwind-1.8.1.
+ https://lttng.org/files/urcu/userspace-rcu-0.15.1.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.tar.bz2
+ https://dist.libuv.org/dist/v1.50.0/libuv-v1.50.0.tar.gz
+-https://github.com/xkbcommon/libxkbcommon/archive/xkbcommon-1.8.0/libxkbcommon-xkbcommon-1.8.0.tar.gz
++https://github.com/lfs-book/libxkbcommon/archive/v1.8.0/libxkbcommon-1.8.0.tar.gz
+ https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.6.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.21/libxmlb-0.3.21.tar.xz
+@@ -177,10 +177,10 @@ https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-upstream_fixes-1.
+ https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
+ https://github.com/g-truc/glm/archive/1.0.1/glm-1.0.1.tar.gz
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+-https://github.com/harfbuzz/harfbuzz/releases/download/10.3.0/harfbuzz-10.3.0.tar.xz
++https://github.com/harfbuzz/harfbuzz/releases/download/10.4.0/harfbuzz-10.4.0.tar.xz
+ https://github.com/jasper-software/jasper/archive/version-4.2.4/jasper-version-4.2.4.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.17/lcms2-2.17.tar.gz
+-https://github.com/AOMediaCodec/libavif/archive/v1.1.1/libavif-1.1.1.tar.gz
++https://github.com/AOMediaCodec/libavif/archive/v1.2.0/libavif-1.2.0.tar.gz
+ https://github.com/libexif/libexif/releases/download/v0.6.25/libexif-0.6.25.tar.bz2
+ https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
+ https://downloads.sourceforge.net/libjpeg-turbo/libjpeg-turbo-3.0.1.tar.gz
+@@ -262,13 +262,13 @@ http://www.mirbsd.org/MirOS/dist/mir/cpio/paxmirabilis-20240817.tgz
+ https://mj.ucw.cz/download/linux/pci/pciutils-3.13.0.tar.gz
+ https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/pm-utils-1.4.1-bugfixes-1.patch
+-https://gitlab.freedesktop.org/upower/power-profiles-daemon/-/archive/0.23/power-profiles-daemon-0.23.tar.gz
++https://gitlab.freedesktop.org/upower/power-profiles-daemon/-/archive/0.30/power-profiles-daemon-0.30.tar.gz
+ https://download.librdf.org/source/raptor2-2.0.16.tar.gz
+ https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+ https://download.librdf.org/source/redland-1.0.17.tar.gz
+ https://sg.danny.cz/sg/p/sg3_utils-1.48.tar.xz
+ https://github.com/lfs-book/sysmond/releases/download/sysmond-1.0.0/sysmond-1.0.0.tar.xz
+-https://github.com/lfs-book/sysmon3/releases/download/sysmon3-3.0.0/sysmon3-3.0.0.tar.xz
++https://github.com/lfs-book/sysmon3/releases/download/sysmon3-3.0.1/sysmon3-3.0.1.tar.xz
+ https://sysstat.github.io/sysstat-packages/sysstat-12.7.7.tar.xz
+ https://github.com/systemd/systemd/archive/v257.3/systemd-257.3.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.10.1/udisks-2.10.1.tar.bz2
+@@ -457,7 +457,7 @@ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.2.0.tar.gz
+ https://github.com/psf/cachecontrol/archive/v0.14.2/cachecontrol-0.14.2.tar.gz
+ https://github.com/cython/cython/releases/download/3.0.12/cython-3.0.12.tar.gz
+-https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.34.2.tar.gz
++https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.34.3.tar.gz
+ https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.3.2.tar.gz
+ https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.21.2.tar.gz
+ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.gz
+@@ -680,7 +680,7 @@ https://gitlab.gnome.org/World/gedit/libgedit-gtksourceview/-/archive/299.4.0/li
+ https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
+ https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz
+ https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
+-https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.3.tar.xz
++https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.4.tar.xz
+ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+ https://download.gnome.org/sources/pango/1.56/pango-1.56.1.tar.xz
+ https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
+@@ -691,7 +691,7 @@ https://www.freedesktop.org/software/startup-notification/releases/startup-notif
+ https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.304/Vulkan-Headers-1.4.304.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.304/Vulkan-Loader-1.4.304.tar.gz
+ https://webkitgtk.org/releases/webkitgtk-2.46.6.tar.xz
+-https://github.com/flatpak/xdg-desktop-portal/releases/download/1.18.4/xdg-desktop-portal-1.18.4.tar.xz
++https://github.com/flatpak/xdg-desktop-portal/releases/download/1.20.0/xdg-desktop-portal-1.20.0.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.2/xdg-desktop-portal-gtk-1.15.2.tar.xz
+ https://download.gnome.org/sources/gdm/47/gdm-47.0.tar.xz
+ https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.tar.xz
+@@ -923,7 +923,7 @@ https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.24.12.
+ https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.24.12.tar.xz
+ https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+-https://github.com/intel/media-driver/archive/intel-media-24.4.4/media-driver-intel-media-24.4.4.tar.gz
++https://github.com/lfs-book/intel-media-driver/archive/v24.4.4/intel-media-driver-24.4.4.tar.gz
+ https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
+ https://distfiles.adelielinux.org/source/a52dec/a52dec-0.8.0.tar.gz
+ https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
