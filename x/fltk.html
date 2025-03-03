@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      FLTK-1.4.1
+      FLTK-1.4.2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1504">
+  <body class="blfs" id="blfs-r12.2-1535">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1504
+        "phrase">(systemd</span> Edition) - Version r12.2-1535
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1504">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1535">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="fltk" name="fltk"></a>FLTK-1.4.1
+      <a id="fltk" name="fltk"></a>FLTK-1.4.2
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -73,13 +73,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/fltk/fltk/releases/download/release-1.4.1/fltk-1.4.1-source.tar.gz">
-                https://github.com/fltk/fltk/releases/download/release-1.4.1/fltk-1.4.1-source.tar.gz</a>
+                "https://github.com/fltk/fltk/releases/download/release-1.4.2/fltk-1.4.2-source.tar.gz">
+                https://github.com/fltk/fltk/releases/download/release-1.4.2/fltk-1.4.2-source.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 203eed9e14a7bd6ff0373c0f3f32ef07
+                Download MD5 sum: 2df31c81fbf9ef79f9ac5895d4559e6b
               </p>
             </li>
             <li class="listitem">
@@ -107,8 +107,8 @@
             <li class="listitem">
               <p>
                 Optional Documentation: <a class="ulink" href=
-                "https://github.com/fltk/fltk/releases/download/release-1.4.1/fltk-1.4.1-docs-html.tar.gz">
-                https://github.com/fltk/fltk/releases/download/release-1.4.1/fltk-1.4.1-docs-html.tar.gz</a>
+                "https://github.com/fltk/fltk/releases/download/release-1.4.2/fltk-1.4.2-docs-html.tar.gz">
+                https://github.com/fltk/fltk/releases/download/release-1.4.2/fltk-1.4.2-docs-html.tar.gz</a>
               </p>
             </li>
           </ul>
@@ -162,8 +162,8 @@
             Note
           </h3>
           <p>
-            The tar extraction directory is fltk-1.4.1 and not
-            fltk-1.4.1-source as indicated by the tarball name.
+            The tar extraction directory is fltk-1.4.2 and not
+            fltk-1.4.2-source as indicated by the tarball name.
           </p>
         </div>
         <p>
@@ -193,7 +193,7 @@ make</kbd></pre>
           the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">make docdir=/usr/share/doc/fltk-1.4.1 install &amp;&amp;
+        "command">make docdir=/usr/share/doc/fltk-1.4.2 install &amp;&amp;
 rm -vf /usr/lib/libfltk*.a</kbd></pre>
         <p>
           If desired, install some example games built as a part of the
@@ -201,14 +201,14 @@ rm -vf /usr/lib/libfltk*.a</kbd></pre>
           <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">make -C test          docdir=/usr/share/doc/fltk-1.4.1 install-linux &amp;&amp;
-make -C documentation docdir=/usr/share/doc/fltk-1.4.1 install-linux</kbd></pre>
+        "command">make -C test          docdir=/usr/share/doc/fltk-1.4.2 install-linux &amp;&amp;
+make -C documentation docdir=/usr/share/doc/fltk-1.4.2 install-linux</kbd></pre>
         <p>
           If you downloaded the optional html documentation, install it as
           the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">tar -C /usr/share/doc/fltk-1.4.1 --strip-components=4 -xf ../fltk-1.4.1-docs-html.tar.gz
+        "command">tar -C /usr/share/doc/fltk-1.4.2 --strip-components=4 -xf ../fltk-1.4.2-docs-html.tar.gz
 </kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -240,7 +240,7 @@ make -C documentation docdir=/usr/share/doc/fltk-1.4.1 install-linux</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/FL and
-              /usr/share/doc/fltk-1.4.1</span>
+              /usr/share/doc/fltk-1.4.2</span>
             </div>
           </div>
         </div>
@@ -367,7 +367,7 @@ make -C documentation docdir=/usr/share/doc/fltk-1.4.1 install-linux</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1504">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1535">
           Home</a>
         </li>
       </ul>

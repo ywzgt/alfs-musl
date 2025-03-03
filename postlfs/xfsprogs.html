@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1504">
+  <body class="blfs" id="blfs-r12.2-1535">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1504
+        "phrase">(systemd</span> Edition) - Version r12.2-1535
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1504">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1535">
           Home</a>
         </li>
       </ul>
@@ -132,7 +132,7 @@
           Installation of xfsprogs
         </h2>
         <p>
-          First, adapt the configure script to ICU-76::
+          First, adapt the configure script to ICU-76:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -i 's/icu-i18n/icu-uc &amp;/' configure</kbd></pre>
@@ -140,7 +140,10 @@
           Install <span class="application">xfsprogs</span> by running the
           following commands:
         </p>
-        <pre class="userinput"><kbd class="command">make DEBUG=-DNDEBUG     \
+        <pre class="userinput"><kbd class="command">case "$(uname -m)" in
+  i?86) sed -e "s/static long filesize/static off_t filesize/" -i mkfs/proto.c ;;
+esac &amp;&amp;
+make DEBUG=-DNDEBUG     \
      INSTALL_USER=root  \
      INSTALL_GROUP=root \
      LOCAL_CONFIGURE_OPTIONS="--localstatedir=/var"</kbd></pre>
@@ -160,6 +163,12 @@ rm -rfv /usr/lib/libhandle.{a,la}</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <em class="parameter"><code>sed ... static long
+          filesize...</code></em>: That sed fixes an issue which appears when
+          building on 32 bit systems, only. There is a mismatch in prototype
+          and function header which results in error on that architecture.
+        </p>
         <p>
           <em class="parameter"><code>DEBUG=-DNDEBUG</code></em>: Turns off
           debugging symbols.
@@ -628,7 +637,7 @@ rm -rfv /usr/lib/libhandle.{a,la}</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1504">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1535">
           Home</a>
         </li>
       </ul>
