@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Postfix-3.9.2
+      Postfix-3.10.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1535">
+  <body class="blfs" id="blfs-r12.2-1556">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1535
+        "phrase">(systemd</span> Edition) - Version r12.2-1556
       </h4>
       <h3>
         Chapter&nbsp;21.&nbsp;Mail Server Software
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1535">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1556">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="postfix" name="postfix"></a>Postfix-3.9.2
+      <a id="postfix" name="postfix"></a>Postfix-3.10.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -61,17 +61,10 @@
           central mail server for your domain, a mail relay agent or simply a
           mail delivery agent to your local Internet Service Provider.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.3
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -80,23 +73,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ghostarchive.org/postfix/postfix-release/official/postfix-3.9.2.tar.gz">
-                https://ghostarchive.org/postfix/postfix-release/official/postfix-3.9.2.tar.gz</a>
+                "https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.1.tar.gz">
+                https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.1.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 405cdef9fc2cc794ab96846c68b9e957
+                Download MD5 sum: 9ba37162bba6128cb94704888bf77fac
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 4.7 MB
+                Download size: 4.8 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 156 MB
+                Estimated disk space required: 157 MB
               </p>
             </li>
             <li class="listitem">
@@ -235,7 +228,7 @@ AUXLIBS=""</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61416" name="id61416"></a>Cyrus-SASL
+                    <a id="id61436" name="id61436"></a>Cyrus-SASL
                   </h5>
                 </div>
               </div>
@@ -256,7 +249,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61423" name="id61423"></a>LMDB
+                    <a id="id61443" name="id61443"></a>LMDB
                   </h5>
                 </div>
               </div>
@@ -276,7 +269,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61430" name="id61430"></a>OpenLDAP
+                    <a id="id61450" name="id61450"></a>OpenLDAP
                   </h5>
                 </div>
               </div>
@@ -297,7 +290,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61437" name="id61437"></a>Sqlite
+                    <a id="id61457" name="id61457"></a>Sqlite
                   </h5>
                 </div>
               </div>
@@ -318,7 +311,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61444" name="id61444"></a>MySQL
+                    <a id="id61464" name="id61464"></a>MySQL
                   </h5>
                 </div>
               </div>
@@ -338,7 +331,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61451" name="id61451"></a>PostgreSQL
+                    <a id="id61471" name="id61471"></a>PostgreSQL
                   </h5>
                 </div>
               </div>
@@ -359,7 +352,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61458" name="id61458"></a>CDB/TinyCDB
+                    <a id="id61478" name="id61478"></a>CDB/TinyCDB
                   </h5>
                 </div>
               </div>
@@ -381,7 +374,7 @@ fi</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61468" name="id61468"></a>StartTLS
+                    <a id="id61488" name="id61488"></a>StartTLS
                     Authentication
                   </h5>
                 </div>
@@ -429,8 +422,8 @@ make</kbd></pre>
           "command">sh postfix-install -non-interactive \
    daemon_directory=/usr/lib/postfix \
    manpage_directory=/usr/share/man \
-   html_directory=/usr/share/doc/postfix-3.9.2/html \
-   readme_directory=/usr/share/doc/postfix-3.9.2/readme</kbd></pre>
+   html_directory=/usr/share/doc/postfix-3.10.1/html \
+   readme_directory=/usr/share/doc/postfix-3.10.1/readme</kbd></pre>
         </div>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -619,7 +612,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/{etc,usr/lib}/postfix,
-              /usr/share/doc/postfix-3.9.2 and
+              /usr/share/doc/postfix-3.10.1 and
               /var/{lib,spool}/postfix</span>
             </div>
           </div>
@@ -887,7 +880,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1535">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1556">
           Home</a>
         </li>
       </ul>

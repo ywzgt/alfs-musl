@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1535">
+  <body class="blfs" id="blfs-r12.2-1556">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1535
+        "phrase">(systemd</span> Edition) - Version r12.2-1556
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1535">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1556">
           Home</a>
         </li>
       </ul>
@@ -62,17 +62,10 @@
           a NetBIOS (RFC1001/1002) nameserver (which among other things
           provides LAN browsing support).
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.3
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -191,9 +184,10 @@
           "../postlfs/nss.html" title="NSS-3.108">nss-3.108</a>, <a class=
           "xref" href="../general/popt.html" title="Popt-1.19">popt-1.19</a>,
           <a class="xref" href="../general/talloc.html" title=
-          "Talloc-2.4.3">Talloc-2.4.3</a> (included), <a class="xref" href=
-          "../general/vala.html" title="Vala-0.56.17">Vala-0.56.17</a>,
-          <a class="xref" href="../general/valgrind.html" title=
+          "Talloc-2.4.3">Talloc-2.4.3</a> (used by the test suite), <a class=
+          "xref" href="../general/vala.html" title=
+          "Vala-0.56.17">Vala-0.56.17</a>, <a class="xref" href=
+          "../general/valgrind.html" title=
           "Valgrind-3.24.0">Valgrind-3.24.0</a> (optionally used by the test
           suite), <a class="xref" href="../postlfs/xfsprogs.html" title=
           "xfsprogs-6.13.0">xfsprogs-6.13.0</a>, <a class="ulink" href=
@@ -253,7 +247,7 @@
           or newer:
         </p>
         <pre class="userinput"><kbd class=
-        "command">python3 -m venv pyvenv &amp;&amp;
+        "command">python3 -m venv --system-site-packages pyvenv         &amp;&amp;
 ./pyvenv/bin/pip3 install cryptography pyasn1 iso8601 &amp;&amp;
 patch -Np1 -i ../samba-4.21.4-testsuite_linux_6_13-1.patch</kbd></pre>
         <p>
@@ -455,7 +449,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id54504" name="id54504"></a>Scenario 1: Minimal
+                    <a id="id54528" name="id54528"></a>Scenario 1: Minimal
                     Standalone Client-Only Installation
                   </h5>
                 </div>
@@ -506,7 +500,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id54529" name="id54529"></a>Scenario 2: Standalone
+                    <a id="id54553" name="id54553"></a>Scenario 2: Standalone
                     File/Print Server
                   </h5>
                 </div>
@@ -599,7 +593,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id54566" name="id54566"></a>Advanced Requirements
+                    <a id="id54590" name="id54590"></a>Advanced Requirements
                   </h5>
                 </div>
               </div>
@@ -620,7 +614,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id54571" name="id54571"></a>Guest account
+                    <a id="id54595" name="id54595"></a>Guest account
                   </h5>
                 </div>
               </div>
@@ -1620,7 +1614,7 @@ systemctl start smbd.socket</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1535">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1556">
           Home</a>
         </li>
       </ul>
