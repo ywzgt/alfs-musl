@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.2-1556">
+  <body class="blfs" id="blfs-r12.3-1">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.2-1556
+        "phrase">(systemd</span> Edition) - Version r12.3-1
       </h4>
       <h3>
         Chapter&nbsp;32.&nbsp;KDE Plasma
@@ -41,8 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1556">
-          Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1">Home</a>
         </li>
       </ul>
     </div>
@@ -54,10 +53,17 @@
         KDE Plasma is a collection of packages based on top of KDE Frameworks
         and QML. They implement the KDE Display Environment (Plasma).
       </p>
-      <p>
-        This package is known to build and work properly using an LFS 12.3
-        platform.
-      </p>
+      <div class="admon note">
+        <img alt="[Note]" src="../images/note.png" />
+        <h3>
+          Note
+        </h3>
+        <p>
+          Development versions of BLFS may not build or run some packages
+          properly if LFS or dependencies have been updated since the most
+          recent stable versions of the books.
+        </p>
+      </div>
       <p>
         The instructions below build all of the Plasma packages in one step
         by using a bash script.
@@ -204,12 +210,9 @@
         <a class="xref" href="../general/ibus.html" title=
         "ibus-1.5.31">ibus-1.5.31</a>, <a class="xref" href=
         "../x/qtwebengine.html" title=
-        "QtWebEngine-6.8.2">qtwebengine-6.8.2</a>, <a class="xref" href=
-        "../x/x7driver.html#xorg-synaptics-driver" title=
-        "Xorg Synaptics Driver-1.10.0">Xorg Synaptics Driver-1.10.0</a>,
-        <a class="ulink" href="https://www.kdevelop.org/">KDevPlatform</a>,
-        <a class="ulink" href="https://gpsd.gitlab.io/gpsd/">libgps</a>,
-        <a class="ulink" href=
+        "QtWebEngine-6.8.2">qtwebengine-6.8.2</a>, <a class="ulink" href=
+        "https://www.kdevelop.org/">KDevPlatform</a>, <a class="ulink" href=
+        "https://gpsd.gitlab.io/gpsd/">libgps</a>, <a class="ulink" href=
         "https://github.com/libhybris/libhybris">libhybris</a>, <a class=
         "ulink" href=
         "https://www.freedesktop.org/software/PackageKit/releases/">packagekit-qt</a>,
@@ -696,8 +699,7 @@ startx</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.2-1556">
-          Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1">Home</a>
         </li>
       </ul>
     </div>
