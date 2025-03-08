@@ -1,0 +1,69 @@
+diff --git a/wget-list b/wget-list
+index c1a656e8d4..7d06d04fd9 100644
+--- a/wget-list
++++ b/wget-list
+@@ -251,7 +251,7 @@ http://fcron.free.fr/archives/fcron-3.2.1.src.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/gpm/gpm-1.20.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch
+ https://downloads.sourceforge.net/hdparm/hdparm-9.65.tar.gz
+-https://github.com/vcrhonek/hwdata/archive/v0.392/hwdata-0.392.tar.gz
++https://github.com/vcrhonek/hwdata/archive/v0.393/hwdata-0.393.tar.gz
+ https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
+ https://github.com/lm-sensors/lm-sensors/archive/V3-6-0/lm-sensors-3-6-0.tar.gz
+ https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
+@@ -282,7 +282,7 @@ https://github.com/lu-zero/cargo-c/archive/v0.10.11/cargo-c-0.10.11.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.28.0/cbindgen-0.28.0.tar.gz
+ https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+-https://cmake.org/files/v3.31/cmake-3.31.5.tar.gz
++https://cmake.org/files/v3.31/cmake-3.31.6.tar.gz
+ https://doxygen.nl/files/doxygen-1.13.2.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
+@@ -344,7 +344,7 @@ https://www.cpan.org/authors/id/S/SA/SALVA/Sort-Key-1.33.tar.gz
+ https://www.cpan.org/authors/id/D/DA/DANBOO/Test-Command-0.11.tar.gz
+ https://www.cpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.71.tar.gz
+ https://www.cpan.org/authors/id/A/AM/AMBS/Text-BibTeX-0.91.tar.gz
+-https://www.cpan.org/authors/id/I/IS/ISHIGAKI/Text-CSV-2.05.tar.gz
++https://www.cpan.org/authors/id/I/IS/ISHIGAKI/Text-CSV-2.06.tar.gz
+ https://www.cpan.org/authors/id/S/SY/SYP/Text-Roman-3.5.tar.gz
+ https://www.cpan.org/authors/id/S/SA/SADAHIRO/Unicode-Collate-1.31.tar.gz
+ https://www.cpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz
+@@ -478,7 +478,7 @@ https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.19.1.tar.gz
+ https://download.gnome.org/sources/pygobject/3.50/pygobject-3.50.0.tar.xz
+ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.2.1.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+-https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.3.4.tar.gz
++https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.3.5.tar.gz
+ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
+ https://files.pythonhosted.org/packages/source/P/PyYAML/pyyaml-6.0.2.tar.gz
+ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
+@@ -487,7 +487,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/requests-2.32.3-use_system_cer
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+ https://github.com/getsentry/sentry-python/releases/download/2.22.0/sentry_sdk-2.22.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/six/six-1.17.0.tar.gz
+-https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-8.2.1.tar.gz
++https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-8.2.3.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-3.0.2.tar.gz
+ https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-1.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/a/attrs/attrs-25.1.0.tar.gz
+@@ -624,7 +624,7 @@ https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.17.0.tar.xz
+ https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.17.0.tar.xz
+ https://www.x.org/pub/individual/lib/libxcvt-0.1.3.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-0.4.1.tar.xz
+-https://mesa.freedesktop.org/archive/mesa-24.3.4.tar.xz
++https://mesa.freedesktop.org/archive/mesa-25.0.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-4.patch
+ https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ https://invisible-mirror.net/archives/luit/luit-20240910.tgz
+@@ -909,8 +909,8 @@ https://www.alsa-project.org/files/pub/tools/alsa-tools-1.2.11.tar.bz2
+ https://www.alsa-project.org/files/pub/firmware/alsa-firmware-1.2.4.tar.bz2
+ https://download.gnome.org/sources/audiofile/0.3/audiofile-0.3.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/audiofile-0.3.6-consolidated_patches-1.patch
+-https://github.com/lfs-book/faac/archive/v1.31/faac-1.31.tar.gz
+-https://github.com/knik0/faad2/archive/2.11.1/faad2-2.11.1.tar.gz
++https://github.com/lfs-book/faac/archive/v1.31.1/faac-1.31.1.tar.gz
++https://github.com/knik0/faad2/archive/2.11.2/faad2-2.11.2.tar.gz
+ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
+ https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
+ https://files.dyne.org/frei0r/releases/frei0r-plugins-1.8.0.tar.gz
