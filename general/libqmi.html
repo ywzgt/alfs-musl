@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-22">
+  <body class="blfs" id="blfs-r12.3-43">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-22
+        "phrase">(systemd</span> Edition) - Version r12.3-43
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-22">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-43">
           Home</a>
         </li>
       </ul>
@@ -95,7 +95,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 100 MB (with tests)
+                Estimated disk space required: 76 MB (with tests)
               </p>
             </li>
             <li class="listitem">
@@ -149,6 +149,7 @@ cd    build &amp;&amp;
 
 meson setup ..                 \
       --prefix=/usr            \
+      --buildtype=release      \
       -D bash_completion=false \
       -D qrtr=false            \
       -D man=false             &amp;&amp;
@@ -168,6 +169,11 @@ ninja</kbd></pre>
           Command Explanations
         </h2>
         <p>
+          <em class="parameter"><code>--buildtype=release</code></em>:
+          Specify a buildtype suitable for stable releases of the package, as
+          the default may produce unoptimized binaries.
+        </p>
+        <p>
           <em class="parameter"><code>-D bash_completion=false</code></em>:
           Use this option if the external <a class="ulink" href=
           "https://github.com/scop/bash-completion">bash-completion</a>
@@ -183,7 +189,8 @@ ninja</kbd></pre>
           <em class="parameter"><code>-D qrtr=false</code></em>: This switch
           disables support for the QRTR protocol which needs the external
           <a class="ulink" href=
-          "https://gitlab.freedesktop.org/mobile-broadband/libqrtr-glib">libqrtr-glib</a>package.
+          "https://gitlab.freedesktop.org/mobile-broadband/libqrtr-glib">libqrtr-glib</a>
+          package.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -304,7 +311,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-22">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-43">
           Home</a>
         </li>
       </ul>

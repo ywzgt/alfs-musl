@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-22">
+  <body class="blfs" id="blfs-r12.3-43">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-22
+        "phrase">(systemd</span> Edition) - Version r12.3-43
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-22">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-43">
           Home</a>
         </li>
       </ul>
@@ -365,10 +365,14 @@ ninja</kbd></pre>
           If you wish to run the test suite and you've downloaded
           compiler-rt, work around an issue causing test failures when
           building LLVM with GCC and <em class="parameter"><code>-D
-          CLANG_CONFIG_FILE_SYSTEM_DIR</code></em>:
+          CLANG_CONFIG_FILE_SYSTEM_DIR</code></em> and prevent some test
+          suite from using <span class=
+          "command"><strong>ld.gold</strong></span> that the LFS Binutils
+          package no longer provides:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -e 's/config.has_no_default_config_flag/True/' \
+    -e 's/"-fuse-ld=gold"//'                       \
     -i ../projects/compiler-rt/test/lit.common.cfg.py</kbd></pre>
         <p>
           LLVM test suite can produce many core dump files. They will occupy
@@ -405,9 +409,11 @@ systemd-run --user --pty -d -G -p LimitCORE=0 ninja check-all</kbd></pre>
           "Use Linux Control Group to Limit the Resource Usage">the section
           called “Use Linux Control Group to Limit the Resource Usage”</a>
           for details) to limit the number of logical cores for running the
-          tests. One test named <code class=
-          "filename">Linux/clone_setns.cpp</code> will fail if <code class=
-          "option">CONFIG_USER_NS</code> is not enabled in kernel
+          tests. 23 cfi tests are known to fail because their assumption
+          about the linker is not true with the BFD linker and we've had to
+          stop them from using the removed Gold linker. One test named
+          <code class="filename">Linux/clone_setns.cpp</code> will fail if
+          <code class="option">CONFIG_USER_NS</code> is not enabled in kernel
           configuration.
         </p>
         <p>
@@ -2008,7 +2014,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-22">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-43">
           Home</a>
         </li>
       </ul>
