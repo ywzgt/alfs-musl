@@ -1,0 +1,95 @@
+diff --git a/wget-list b/wget-list
+index 7e14e64180..952af93777 100644
+--- a/wget-list
++++ b/wget-list
+@@ -31,7 +31,7 @@ https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.t
+ https://github.com/libfuse/libfuse/releases/download/fuse-3.16.2/fuse-3.16.2.tar.gz
+ https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.patch
+-https://sourceware.org/ftp/lvm2/LVM2.2.03.30.tgz
++https://sourceware.org/ftp/lvm2/LVM2.2.03.31.tgz
+ https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.3.tar.xz
+ https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2022.10.3.tgz
+ https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
+@@ -161,7 +161,7 @@ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+ https://github.com/martinpitt/umockdev/releases/download/0.19.1/umockdev-0.19.1.tar.xz
+ https://github.com/nemtrif/utfcpp/archive/v4.0.6/utfcpp-4.0.6.tar.gz
+ https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.0/downloads/wayland-1.23.0.tar.xz
+-https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.40/downloads/wayland-protocols-1.40.tar.xz
++https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.41/downloads/wayland-protocols-1.41.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+ https://oligarchy.co.uk/xapian/1.4.27/xapian-core-1.4.27.tar.xz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+@@ -215,7 +215,7 @@ https://downloads.sourceforge.net/bogofilter/bogofilter-1.2.5.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
+ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.2.tar.gz
+-https://github.com/google/shaderc/archive/v2024.4/shaderc-2024.4.tar.gz
++https://github.com/google/shaderc/archive/v2025.1/shaderc-2025.1.tar.gz
+ https://gitlab.com/graphviz/graphviz/-/archive/12.2.1/graphviz-12.2.1.tar.bz2
+ https://download.gnome.org/sources/gtk-doc/1.34/gtk-doc-1.34.0.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.15.tar.bz2
+@@ -256,7 +256,7 @@ https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar
+ https://github.com/lm-sensors/lm-sensors/archive/V3-6-0/lm-sensors-3-6-0.tar.gz
+ https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
+ http://ftp.midnight-commander.org/mc-4.8.33.tar.xz
+-https://www.freedesktop.org/software/ModemManager/ModemManager-1.18.12.tar.xz
++https://gitlab.freedesktop.org/mobile-broadband/ModemManager/-/archive/1.22.0/ModemManager-1.22.0.tar.gz
+ https://download.gnome.org/sources/notification-daemon/3.20/notification-daemon-3.20.0.tar.xz
+ http://www.mirbsd.org/MirOS/dist/mir/cpio/paxmirabilis-20240817.tgz
+ https://mj.ucw.cz/download/linux/pci/pciutils-3.13.0.tar.gz
+@@ -527,13 +527,13 @@ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1
+ https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.2.tar.xz
+ https://static.rust-lang.org/dist/rustc-1.85.0-src.tar.xz
+ https://github.com/rust-lang/rust-bindgen/archive/v0.71.1/rust-bindgen-0.71.1.tar.gz
+-https://downloads.sourceforge.net/scons/SCons-4.8.1.tar.gz
++https://downloads.sourceforge.net/scons/SCons-4.9.0.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+ https://archive.apache.org/dist/subversion/subversion-1.14.5.tar.bz2
+ https://downloads.sourceforge.net/swig/swig-4.3.0.tar.gz
+ https://downloads.sourceforge.net/tcl/tk8.6.16-src.tar.gz
+ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+-https://download.gnome.org/sources/vala/0.56/vala-0.56.17.tar.xz
++https://download.gnome.org/sources/vala/0.56/vala-0.56.18.tar.xz
+ https://sourceware.org/pub/valgrind/valgrind-3.24.0.tar.bz2
+ https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-23.0.2/OpenJDK-23.0.2+7-i686-bin.tar.xz
+@@ -550,8 +550,7 @@ https://www.kernel.org/pub/linux/utils/nfs-utils/2.8.2/nfs-utils-2.8.2.tar.xz
+ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
+ https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.7.tar.bz2
+ https://www.samba.org/ftp/rsync/src/rsync-3.4.1.tar.gz
+-https://download.samba.org/pub/samba/stable/samba-4.21.4.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/samba-4.21.4-testsuite_linux_6_13-1.patch
++https://download.samba.org/pub/samba/stable/samba-4.22.0.tar.gz
+ https://ftp.gnu.org/gnu/wget/wget-1.25.0.tar.gz
+ https://www.kernel.org/pub/software/network/iw/iw-6.9.tar.xz
+ https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
+@@ -772,8 +771,8 @@ https://download.gnome.org/sources/gnome-keyring/46/gnome-keyring-46.2.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/47/gnome-settings-daemon-47.2.tar.xz
+ https://download.gnome.org/sources/tecla/47/tecla-47.0.tar.xz
+ https://download.gnome.org/sources/gnome-control-center/47/gnome-control-center-47.4.tar.xz
+-https://download.gnome.org/sources/mutter/47/mutter-47.5.tar.xz
+-https://download.gnome.org/sources/gnome-shell/47/gnome-shell-47.4.tar.xz
++https://download.gnome.org/sources/mutter/47/mutter-47.6.tar.xz
++https://download.gnome.org/sources/gnome-shell/47/gnome-shell-47.5.tar.xz
+ https://download.gnome.org/sources/gnome-shell-extensions/47/gnome-shell-extensions-47.4.tar.xz
+ https://download.gnome.org/sources/gnome-session/47/gnome-session-47.0.1.tar.xz
+ https://download.gnome.org/sources/gnome-tweaks/46/gnome-tweaks-46.1.tar.xz
+@@ -886,7 +885,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.4-upstream_fixes-2.p
+ https://feh.finalrewind.org/feh-3.10.3.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20230101/fontforge-20230101.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/fontforge-20230101-security_fixes-1.patch
+-https://github.com/freerdp/freerdp/archive/3.12.0/FreeRDP-3.12.0.tar.gz
++https://github.com/freerdp/freerdp/archive/3.13.0/FreeRDP-3.13.0.tar.gz
+ https://download.gimp.org/gimp/v3.0/gimp-3.0.0-RC3.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/gimp/gimp3-help-20240711.tar.xz
+ https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
+@@ -1040,7 +1039,7 @@ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312
+ https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2024/texlive-20240312-extra.tar.xz
+ https://downloads.sourceforge.net/asymptote/asymptote-3.01.src.tgz
+ https://github.com/plk/biber/archive/v2.20/biber-2.20.tar.gz
+-https://github.com/mgieseki/dvisvgm/releases/download/3.4.3/dvisvgm-3.4.3.tar.gz
++https://github.com/mgieseki/dvisvgm/releases/download/3.4.4/dvisvgm-3.4.4.tar.gz
+ https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
+ https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20250225.tar.xz
