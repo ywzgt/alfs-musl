@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-61">
+  <body class="blfs" id="blfs-r12.3-79">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-61
+        "phrase">(systemd</span> Edition) - Version r12.3-79
       </h4>
       <h3>
         Chapter&nbsp;6.&nbsp;Text Editors
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-61">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-79">
           Home</a>
         </li>
       </ul>
@@ -110,7 +110,7 @@
           title=
           "gsettings-desktop-schemas-47.1">gsettings-desktop-schemas-47.1</a>,
           <a class="xref" href="../x/gtk3.html" title=
-          "GTK-3.24.48">GTK-3.24.48</a>, <a class="xref" href=
+          "GTK-3.24.49">GTK-3.24.49</a>, <a class="xref" href=
           "../pst/itstool.html" title="itstool-2.0.7">itstool-2.0.7</a>,
           <a class="xref" href="../x/libhandy1.html" title=
           "libhandy-1.8.3">libhandy-1.8.3</a>, <a class="xref" href=
@@ -126,10 +126,12 @@
           "gspell-1.14.0">gspell-1.14.0</a>, <a class="xref" href=
           "../gnome/gvfs.html" title="Gvfs-1.56.1">Gvfs-1.56.1</a> (runtime),
           <a class="xref" href="../general/iso-codes.html" title=
-          "ISO Codes-4.17.0">ISO Codes-4.17.0</a>, and <a class="xref" href=
+          "ISO Codes-4.17.0">ISO Codes-4.17.0</a>, <a class="xref" href=
           "../general/python-modules.html#pygobject3" title=
           "PyGObject-3.52.1">PyGObject-3.52.1</a> (<span class=
-          "application">Python3</span> module)
+          "application">Python3</span> module), and <a class="xref" href=
+          "../basicnet/wget.html" title="Wget-1.25.0">Wget-1.25.0</a>
+          (required if using the book instructions to download the packages)
         </p>
         <h4>
           Optional
@@ -168,15 +170,18 @@ EOF</kbd></pre>
           "../basicnet/wget.html" title="Wget-1.25.0">Wget-1.25.0</a>, use
           the following commands:
         </p>
-        <pre class="userinput"><kbd class="command">mkdir -p gedit-pkgs 
-cd       gedit-pkgs 
+        <pre class="userinput"><kbd class=
+        "command">mkdir -p gedit-pkgs &amp;&amp;
+cd       gedit-pkgs &amp;&amp;
 
 rm -rf *
 
 while read -r line; do
 
+  # Skip blank lines or lines beginning with a hash (#) character.
   if $(echo $line | grep -E -q '^ *$|^#' ); then continue; fi
 
+  # Parse the input line into local variables.
   IFS=" " read -r md5 name ver &lt;&lt;&lt; "$line"
 
   if [ $name = "gedit" ]; then
@@ -190,13 +195,7 @@ while read -r line; do
 
   wget $url 2&gt;/dev/null
 
-  calc_md5=$(md5sum $filename | cut -d" " -f1) 
-
-  if [ "$calc_md5" = "$md5" ]; then
-    echo "$filename md5sum OK"
-  else
-    echo "$filename md5sum incorrect"
-  fi
+  echo "$md5 $filename" | md5sum -c
 
 done &lt; ../gedit-data.md5</kbd></pre>
       </div>
@@ -275,13 +274,13 @@ export -f as_root</kbd></pre>
         </p>
         <pre class="userinput"><kbd class="command">bash -e</kbd></pre>
         <p>
-          Install <span class="application">Gedit</span> and its dependencies
-          by running the following commands:
+          The order of builds is important. Install <span class=
+          "application">Gedit</span> and its dependencies by running the
+          following commands:
         </p>
         <pre class="userinput"><kbd class=
         "command">for package in *amtk* *gtk* *gfls* *tepl* gedit*
 do
-  package=$(basename "$package")
   packagedir=${package%.tar.?z*}
 
   echo "Building $packagedir"
@@ -301,7 +300,6 @@ do
     popd
 
   rm -rf $packagedir
-  as_root /sbin/ldconfig
 done</kbd></pre>
         <p>
           Finally, exit the shell that was started earlier:
@@ -494,7 +492,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-61">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-79">
           Home</a>
         </li>
       </ul>

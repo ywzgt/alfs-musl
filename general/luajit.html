@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      libssh2-1.11.1
+      luajit-20250212
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
@@ -19,26 +19,25 @@
         "phrase">(systemd</span> Edition) - Version r12.3-79
       </h4>
       <h3>
-        Chapter&nbsp;9.&nbsp;General Libraries
+        Chapter&nbsp;13.&nbsp;Programming
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="libsigsegv.html" title=
-          "libsigsegv-2.14">Prev</a>
+          <a accesskey="p" href="lua.html" title="Lua-5.4.7">Prev</a>
           <p>
-            libsigsegv-2.14
+            Lua-5.4.7
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="libstatgrab.html" title=
-          "libstatgrab-0.92.1">Next</a>
+          <a accesskey="n" href="mercurial.html" title=
+          "Mercurial-6.9.2">Next</a>
           <p>
-            libstatgrab-0.92.1
+            Mercurial-6.9.2
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="genlib.html" title=
-          "Chapter&nbsp;9.&nbsp;General Libraries">Up</a>
+          <a accesskey="u" href="prog.html" title=
+          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
@@ -48,16 +47,18 @@
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="libssh2" name="libssh2"></a>libssh2-1.11.1
+      <a id="luajit" name="luajit"></a>luajit-20250212
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to libssh2
+          Introduction to luajit
         </h2>
         <p>
-          <span class="application">Libssh2</span> package is a client-side C
-          library implementing the SSH2 protocol.
+          The <span class="application">luajit</span> package contains a
+          Just-In-Time compiler for Lua. It is often used as scripting
+          middleware, and it is high performance while also having a low
+          memory footprint.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -78,83 +79,61 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.libssh2.org/download/libssh2-1.11.1.tar.gz">https://www.libssh2.org/download/libssh2-1.11.1.tar.gz</a>
+                "https://anduin.linuxfromscratch.org/BLFS/luajit/luajit-20250212.tar.xz">
+                https://anduin.linuxfromscratch.org/BLFS/luajit/luajit-20250212.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 38857d10b5c5deb198d6989dacace2e6
+                Download MD5 sum: ac5d07d31cc46d97e577764e402921c7
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 1.0 MB
+                Download size: 728 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 15 MB (with tests)
+                Estimated disk space required: 9.0 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.2 SBU (with tests)
+                Estimated build time: 0.2 SBU
               </p>
             </li>
           </ul>
         </div>
-        <h3>
-          libssh2 Dependencies
-        </h3>
-        <h4>
-          Optional
-        </h4>
-        <p class="optional">
-          <a class="xref" href="cmake.html" title=
-          "CMake-3.31.6">CMake-3.31.6</a> (can be used instead of the
-          <span class="command"><strong>configure</strong></span> script),
-          <a class="xref" href="libgcrypt.html" title=
-          "libgcrypt-1.11.0">libgcrypt-1.11.0</a> (can be used instead of
-          OpenSSL), <a class="xref" href="../postlfs/openssh.html" title=
-          "OpenSSH-9.9p2">OpenSSH-9.9p2</a> (for some tests), and <a class=
-          "ulink" href="https://www.docker.com">Docker</a> (for some tests)
-        </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of libssh2
+          Installation of luajit
         </h2>
         <p>
-          Install <span class="application">libssh2</span> by running the
+          Install <span class="application">luajit</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr          \
-            --disable-docker-tests \
-            --disable-static       &amp;&amp;
-make</kbd></pre>
+        "command">make PREFIX=/usr amalg</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>make
-          check</strong></span>.
+          This package does not come with a test suite.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
-        <pre class="root"><kbd class="command">make install</kbd></pre>
+        <pre class="root"><kbd class=
+        "command">make PREFIX=/usr install &amp;&amp;
+rm -v /usr/lib/libluajit-5.1.a</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>--disable-docker-tests</code></em>:
-          Disable the tests requiring Docker, which is beyond the scope of
-          BLFS. Remove this switch if you've installed Docker and you wish to
-          run the test suite.
-        </p>
-        <p>
-          <em class="parameter"><code>--disable-static</code></em>: This
-          switch prevents installation of static versions of the libraries.
+          <em class="parameter"><code>amalg</code></em>: This ensures an
+          amalgamated build, i.e. the LuaJIT core is compiled as one huge C
+          file, allowing GCC to generate faster and shorter code.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -165,15 +144,17 @@ make</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">None</span>
+              <span class="segbody">luajit (symlink to luajit-2.1.ROLLING)
+              and luajit-2.1.ROLLING</span>
             </div>
             <div class="seg">
-              <strong class="segtitle">Installed Library:</strong>
-              <span class="segbody">libssh2.so</span>
+              <strong class="segtitle">Installed Libraries:</strong>
+              <span class="segbody">libluajit-5.1.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">None</span>
+              <span class="segbody">/usr/include/luajit-2.1 and
+              /usr/share/luajit-2.1</span>
             </div>
           </div>
         </div>
@@ -190,13 +171,28 @@ make</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="libssh2-lib" name="libssh2-lib"></a><span class=
-                    "term"><code class="filename">libssh2.so</code></span>
+                    <a id="luajit-prog" name="luajit-prog"></a><span class=
+                    "term"><span class=
+                    "command"><strong>luajit</strong></span></span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    contains functions to use the SSH2 protocol
+                    provides a Just-In-Time compiler for Lua
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="libluajit-5.1" name=
+                    "libluajit-5.1"></a><span class="term"><code class=
+                    "filename">libluajit-5.1.so</code></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    contains an API for the Just-In-Time compiler for Lua
                   </p>
                 </td>
               </tr>
@@ -208,22 +204,21 @@ make</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="libsigsegv.html" title=
-          "libsigsegv-2.14">Prev</a>
+          <a accesskey="p" href="lua.html" title="Lua-5.4.7">Prev</a>
           <p>
-            libsigsegv-2.14
+            Lua-5.4.7
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="libstatgrab.html" title=
-          "libstatgrab-0.92.1">Next</a>
+          <a accesskey="n" href="mercurial.html" title=
+          "Mercurial-6.9.2">Next</a>
           <p>
-            libstatgrab-0.92.1
+            Mercurial-6.9.2
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="genlib.html" title=
-          "Chapter&nbsp;9.&nbsp;General Libraries">Up</a>
+          <a accesskey="u" href="prog.html" title=
+          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
