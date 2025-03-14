@@ -133,8 +133,8 @@ https://dist.libuv.org/dist/v1.50.0/libuv-v1.50.0.tar.gz
 https://github.com/lfs-book/libxkbcommon/archive/v1.8.0/libxkbcommon-1.8.0.tar.gz
 https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.6.tar.xz
 https://www.w3.org/XML/Test/xmlts20130923.tar.gz
-https://github.com/hughsie/libxmlb/releases/download/0.3.21/libxmlb-0.3.21.tar.xz
-https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.42.tar.xz
+https://github.com/hughsie/libxmlb/releases/download/0.3.22/libxmlb-0.3.22.tar.xz
+https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.43.tar.xz
 https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.14.0/libwacom-2.14.0.tar.xz
 https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
 https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_2/log4cplus-2.1.2.tar.xz
@@ -472,7 +472,7 @@ https://download.gnome.org/sources/pyatspi/2.46/pyatspi-2.46.1.tar.xz
 https://github.com/pygobject/pycairo/releases/download/v1.26.1/pycairo-1.26.1.tar.gz
 https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
 https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.19.1.tar.gz
-https://download.gnome.org/sources/pygobject/3.52/pygobject-3.52.1.tar.gz
+https://download.gnome.org/sources/pygobject/3.52/pygobject-3.52.2.tar.gz
 https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.2.1.tar.gz
 https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
 https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.3.5.tar.gz
@@ -541,7 +541,7 @@ https://archive.apache.org/dist/ant/source/apache-ant-1.10.15-src.tar.xz
 https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.2.2/dhcpcd-10.2.2.tar.xz
 https://www.kernel.org/pub/linux/utils/net/bridge-utils/bridge-utils-1.7.1.tar.xz
 https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.2.tar.bz2
-https://www.ncftp.com/downloads/ncftp/ncftp-3.2.7-src.tar.xz
+https://www.ncftp.com/public_ftp/ncftp/ncftp-3.2.8-src.tar.gz
 https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
 https://www.kernel.org/pub/linux/utils/nfs-utils/2.8.2/nfs-utils-2.8.2.tar.xz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
@@ -675,7 +675,7 @@ https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz
 https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
 https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.4.tar.xz
 https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
-https://download.gnome.org/sources/pango/1.56/pango-1.56.1.tar.xz
+https://download.gnome.org/sources/pango/1.56/pango-1.56.2.tar.xz
 https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
 https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
 https://download.qt.io/archive/qt/6.8/6.8.2/single/qt-everywhere-src-6.8.2.tar.xz
@@ -1027,9 +1027,9 @@ https://www.linuxfromscratch.org/patches/blfs/svn/fop-2.10-upstream_fixes-1.patc
 https://www.mupdf.com/downloads/archive/mupdf-1.25.4-source.tar.gz
 https://github.com/dov/paps/releases/download/v0.8.0/paps-0.8.0.tar.gz
 https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312-source.tar.xz
-https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/texlive-20240312-texmf.tar.xz
-https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2024/texlive-20240312-extra.tar.xz
+https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-source.tar.xz
+https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-texmf.tar.xz
+https://ftp.tu-chemnitz.de/pub/tug/historic/systems/texlive/2025/texlive-20250308-extra.tar.xz
 https://downloads.sourceforge.net/asymptote/asymptote-3.01.src.tgz
 https://github.com/plk/biber/archive/v2.20/biber-2.20.tar.gz
 https://github.com/mgieseki/dvisvgm/releases/download/3.4.4/dvisvgm-3.4.4.tar.gz
