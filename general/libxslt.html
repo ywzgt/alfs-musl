@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-92">
+  <body class="blfs" id="blfs-r12.3-100">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-92
+        "phrase">(systemd</span> Edition) - Version r12.3-100
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-92">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-100">
           Home</a>
         </li>
       </ul>
@@ -144,7 +144,8 @@
         </h4>
         <p class="optional">
           <a class="xref" href="libgcrypt.html" title=
-          "libgcrypt-1.11.0">libgcrypt-1.11.0</a>
+          "libgcrypt-1.11.0">libgcrypt-1.11.0</a> (only needed for the
+          deprecated EXSLT crypto extension, see Command Explanations)
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -176,6 +177,13 @@ make</kbd></pre>
         <p>
           <em class="parameter"><code>--disable-static</code></em>: This
           switch prevents installation of static versions of the libraries.
+        </p>
+        <p>
+          <code class="option">--with-crypto</code>: Enable the non-standard
+          and deprecated EXSLT crypto extension feature. It needs <a class=
+          "xref" href="libgcrypt.html" title=
+          "libgcrypt-1.11.0">libgcrypt-1.11.0</a> and the upstream will
+          remove it in the future.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -300,7 +308,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-92">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-100">
           Home</a>
         </li>
       </ul>
