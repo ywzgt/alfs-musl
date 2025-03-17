@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-107">
+  <body class="blfs" id="blfs-r12.3-111">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-107
+        "phrase">(systemd</span> Edition) - Version r12.3-111
       </h4>
       <h3>
         Chapter&nbsp;51.&nbsp;Typesetting
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-107">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-111">
           Home</a>
         </li>
       </ul>
@@ -158,7 +158,9 @@
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -i 's/python/&amp;3/' tests/Makefile.in         &amp;&amp;
+        "command">TEXARCH=$(uname -m | sed -e 's/i.86/i386/' -e 's/$/-linux/') &amp;&amp;
+
+sed -i 's/python/&amp;3/' tests/Makefile.in         &amp;&amp;
 ./configure                                     \
     --bindir=$TEXLIVE_PREFIX/bin/${TEXARCH}     \
     --mandir=$TEXLIVE_PREFIX/texmf-dist/doc/man \
@@ -253,7 +255,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-107">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-111">
           Home</a>
         </li>
       </ul>
