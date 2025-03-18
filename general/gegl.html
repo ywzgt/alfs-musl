@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      gegl-0.4.54
+      gegl-0.4.56
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-111">
+  <body class="blfs" id="blfs-r12.3-126">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-111
+        "phrase">(systemd</span> Edition) - Version r12.3-126
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-111">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-126">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="gegl" name="gegl"></a>gegl-0.4.54
+      <a id="gegl" name="gegl"></a>gegl-0.4.56
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,12 +77,12 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gimp.org/pub/gegl/0.4/gegl-0.4.54.tar.xz">https://download.gimp.org/pub/gegl/0.4/gegl-0.4.54.tar.xz</a>
+                "https://download.gimp.org/pub/gegl/0.4/gegl-0.4.56.tar.xz">https://download.gimp.org/pub/gegl/0.4/gegl-0.4.56.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: e739f5c59b18d3813b7b4ae77372f53d
+                Download MD5 sum: fe24c679951f24216f9c3ad31ecc7bfa
               </p>
             </li>
             <li class="listitem">
@@ -92,7 +92,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 124 MB (Add 4 MB for tests)
+                Estimated disk space required: 125 MB (Add 4 MB for tests)
               </p>
             </li>
             <li class="listitem">
@@ -111,7 +111,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="babl.html" title=
-          "babl-0.1.110">babl-0.1.110</a> and <a class="xref" href=
+          "babl-0.1.112">babl-0.1.112</a> and <a class="xref" href=
           "json-glib.html" title="JSON-GLib-1.10.6">JSON-GLib-1.10.6</a>
         </p>
         <h4>
@@ -125,7 +125,7 @@
           libpng), <a class="xref" href="python-modules.html#pygments" title=
           "Pygments-2.19.1">Pygments-2.19.1</a>, and <a class="xref" href=
           "python-modules.html#pygobject3" title=
-          "PyGObject-3.52.2">PyGObject-3.52.2</a>
+          "PyGObject-3.52.3">PyGObject-3.52.3</a>
         </p>
         <h4>
           Optional
@@ -152,7 +152,7 @@
           "xref" href="libwebp.html" title="libwebp-1.5.0">libwebp-1.5.0</a>,
           <a class="xref" href="luajit.html" title=
           "luajit-20250212">luajit-20250212</a>, <a class="xref" href=
-          "../x/pango.html" title="Pango-1.56.2">Pango-1.56.2</a>, <a class=
+          "../x/pango.html" title="Pango-1.56.3">Pango-1.56.3</a>, <a class=
           "xref" href="poppler.html" title=
           "Poppler-25.03.0">Poppler-25.03.0</a>, <a class="xref" href=
           "ruby.html" title="Ruby-3.4.2">Ruby-3.4.2</a>, <a class="xref"
@@ -201,7 +201,9 @@ meson setup --prefix=/usr --buildtype=release .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           To run the tests, issue: <span class="command"><strong>ninja
-          test</strong></span>.
+          test</strong></span>. Fourteen tests are known to fail in the
+          <code class="filename">gegl:ff-load-save</code> portion of the test
+          suite due to incompatibilities with recent versions of ffmpeg.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -335,7 +337,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-111">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-126">
           Home</a>
         </li>
       </ul>

@@ -75,8 +75,9 @@ https://libopenraw.freedesktop.org/download/exempi-2.6.5.tar.xz
 https://www.fftw.org/fftw-3.3.10.tar.gz
 https://github.com/fmtlib/fmt/archive/11.1.4/fmt-11.1.4.tar.gz
 https://download.gnome.org/sources/glib/2.84/glib-2.84.0.tar.xz
-https://download.gnome.org/sources/gobject-introspection/1.82/gobject-introspection-1.82.0.tar.xz
+https://download.gnome.org/sources/gobject-introspection/1.82/gobject-introspection-1.84.0.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+https://www.linuxfromscratch.org/patches/blfs/svn/glib-2.84.0-upstream_fixes-1.patch
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.7.tar.xz
 https://download.gnome.org/sources/glibmm/2.84/glibmm-2.84.0.tar.xz
 https://download.gnome.org/sources/gmime/3.2/gmime-3.2.7.tar.xz
@@ -163,13 +164,13 @@ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.41/downloa
 https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
 https://oligarchy.co.uk/xapian/1.4.27/xapian-core-1.4.27.tar.xz
 https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
-https://download.gimp.org/pub/babl/0.1/babl-0.1.110.tar.xz
+https://download.gimp.org/pub/babl/0.1/babl-0.1.112.tar.xz
 https://github.com/Exiv2/exiv2/archive/v0.28.5/exiv2-0.28.5.tar.gz
 https://downloads.sourceforge.net/freetype/freetype-2.13.3.tar.xz
 https://downloads.sourceforge.net/freetype/freetype-doc-2.13.3.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz
 https://github.com/fribidi/fribidi/releases/download/v1.0.16/fribidi-1.0.16.tar.xz
-https://download.gimp.org/pub/gegl/0.4/gegl-0.4.54.tar.xz
+https://download.gimp.org/pub/gegl/0.4/gegl-0.4.56.tar.xz
 https://sourceforge.net/projects/giflib/files/giflib-5.2.2.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-upstream_fixes-1.patch
 https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
@@ -464,7 +465,7 @@ https://files.pythonhosted.org/packages/source/g/gi-docgen/gi_docgen-2025.3.tar.
 https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
 https://files.pythonhosted.org/packages/source/l/lxml/lxml-5.3.1.tar.gz
 https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.9.tar.gz
-https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.2.3.tar.gz
+https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.2.4.tar.gz
 https://files.pythonhosted.org/packages/source/p/packaging/packaging-24.2.tar.gz
 https://files.pythonhosted.org/packages/source/p/ply/ply-3.11.tar.gz
 https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.0.0.tar.gz
@@ -473,7 +474,7 @@ https://download.gnome.org/sources/pyatspi/2.46/pyatspi-2.46.1.tar.xz
 https://github.com/pygobject/pycairo/releases/download/v1.26.1/pycairo-1.26.1.tar.gz
 https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
 https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.19.1.tar.gz
-https://download.gnome.org/sources/pygobject/3.52/pygobject-3.52.2.tar.gz
+https://download.gnome.org/sources/pygobject/3.52/pygobject-3.52.3.tar.gz
 https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.2.1.tar.gz
 https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
 https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.3.5.tar.gz
@@ -600,7 +601,7 @@ https://archive.apache.org/dist/httpd/httpd-2.4.63.tar.bz2
 https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.63-blfs_layout-1.patch
 https://downloads.isc.org/isc/kea/2.6.1/kea-2.6.1.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/kea-2.6.1-fix_boost_1_87-1.patch
-https://github.com/proftpd/proftpd/archive/v1.3.8b/proftpd-1.3.8b.tar.gz
+https://github.com/proftpd/proftpd/archive/v1.3.9/proftpd-1.3.9.tar.gz
 https://www.dovecot.org/releases/2.4/dovecot-2.4.0.tar.gz
 https://ftp.exim.org/pub/exim/exim4/exim-4.98.1.tar.xz
 https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.1.tar.gz
@@ -676,7 +677,7 @@ https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz
 https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
 https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.4.tar.xz
 https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
-https://download.gnome.org/sources/pango/1.56/pango-1.56.2.tar.xz
+https://download.gnome.org/sources/pango/1.56/pango-1.56.3.tar.xz
 https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
 https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
 https://download.qt.io/archive/qt/6.8/6.8.2/single/qt-everywhere-src-6.8.2.tar.xz
@@ -732,7 +733,7 @@ https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.4.0.tar.xz
 https://download.kde.org/stable/pulseaudio-qt/pulseaudio-qt-1.7.0.tar.xz
 https://download.gnome.org/sources/gcr/3.41/gcr-3.41.2.tar.xz
 https://download.gnome.org/sources/gcr/4.3/gcr-4.3.1.tar.xz
-https://download.gnome.org/sources/gsettings-desktop-schemas/47/gsettings-desktop-schemas-47.1.tar.xz
+https://download.gnome.org/sources/gsettings-desktop-schemas/48/gsettings-desktop-schemas-48.0.tar.xz
 https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.6.tar.xz
 https://download.gnome.org/sources/rest/0.9/rest-0.9.1.tar.xz
 https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.6.tar.xz
@@ -881,8 +882,8 @@ https://feh.finalrewind.org/feh-3.10.3.tar.bz2
 https://github.com/fontforge/fontforge/releases/download/20230101/fontforge-20230101.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/fontforge-20230101-security_fixes-1.patch
 https://github.com/freerdp/freerdp/archive/3.13.0/FreeRDP-3.13.0.tar.gz
-https://download.gimp.org/gimp/v3.0/gimp-3.0.0-RC3.tar.xz
-https://anduin.linuxfromscratch.org/BLFS/gimp/gimp3-help-20240711.tar.xz
+https://download.gimp.org/gimp/v3.0/gimp-3.0.0.tar.xz
+https://download.gimp.org/pub/gimp/help/gimp-help-3.0.0.tar.bz2
 https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
 https://inkscape.org/gallery/item/53679/inkscape-1.4.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4-poppler_fixes-2.patch
@@ -892,7 +893,7 @@ https://github.com/TigerVNC/tigervnc/archive/v1.15.0/tigervnc-1.15.0.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.15.0-configuration_fixes-1.patch
 https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/transmission-4.0.6-build_fix-1.patch
-https://github.com/ib/xarchiver/archive/0.5.4.23/xarchiver-0.5.4.23.tar.gz
+https://github.com/ib/xarchiver/archive/0.5.4.24/xarchiver-0.5.4.24.tar.gz
 https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz
 https://www.jwz.org/xscreensaver/xscreensaver-6.09.tar.gz
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.13.tar.bz2
@@ -1025,7 +1026,7 @@ https://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/epdfview-gtk3/epdfview-gtk3-20200814.tar.xz
 https://archive.apache.org/dist/xmlgraphics/fop/source/fop-2.10-src.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/fop-2.10-upstream_fixes-1.patch
-https://www.mupdf.com/downloads/archive/mupdf-1.25.4-source.tar.gz
+https://www.mupdf.com/downloads/archive/mupdf-1.25.5-source.tar.gz
 https://github.com/dov/paps/releases/download/v0.8.0/paps-0.8.0.tar.gz
 https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-source.tar.xz
