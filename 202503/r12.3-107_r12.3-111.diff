@@ -1,0 +1,35 @@
+diff --git a/wget-list b/wget-list
+index 38ad43c5c3..fbc89be12b 100644
+--- a/wget-list
++++ b/wget-list
+@@ -84,7 +84,7 @@ https://github.com/lfs-book/gmmlib/archive/v22.5.5/gmmlib-22.5.5.tar.gz
+ https://ftp.gnu.org/gnu/gsl/gsl-2.8.tar.gz
+ https://download.gnome.org/sources/gspell/1.14/gspell-1.14.0.tar.xz
+ https://github.com/google/highway/archive/1.2.0/highway-1.2.0.tar.gz
+-https://github.com/unicode-org/icu/releases/download/release-76-1/icu4c-76_1-src.tgz
++https://github.com/unicode-org/icu/releases/download/release-77-1/icu4c-77_1-src.tgz
+ https://github.com/benhoyt/inih/archive/r58/inih-r58.tar.gz
+ https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
+ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.18.tar.gz
+@@ -286,9 +286,9 @@ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.8/gc-8.2.8.tar.gz
+ https://ftp.gnu.org/gnu/gdb/gdb-16.2.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-2.48.1.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-manpages-2.48.1.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.48.1.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-2.49.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-manpages-2.49.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.49.0.tar.xz
+ https://ftp.gnu.org/gnu/guile/guile-3.0.10.tar.xz
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/llvm-19.1.7.src.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-19.1.7.src.tar.xz
+@@ -995,7 +995,7 @@ https://github.com/OpenPrinting/cups-filters/releases/download/2.0.1/cups-filter
+ https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10040/ghostscript-10.04.0.tar.xz
+ https://downloads.sourceforge.net/gs-fonts/ghostscript-fonts-std-8.11.tar.gz
+ https://downloads.sourceforge.net/gs-fonts/gnu-gs-fonts-other-6.0.tar.gz
+-https://downloads.sourceforge.net/gimp-print/gutenprint-5.3.4.tar.xz
++https://downloads.sourceforge.net/gimp-print/gutenprint-5.3.5.tar.xz
+ https://github.com/OpenPrinting/libcupsfilters/releases/download/2.1.1/libcupsfilters-2.1.1.tar.xz
+ https://github.com/OpenPrinting/libppd/releases/download/2.1.1/libppd-2.1.1.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/sane/sane-backends-1.2.1.tar.gz
