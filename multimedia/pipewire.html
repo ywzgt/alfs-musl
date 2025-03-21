@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-144">
+  <body class="blfs" id="blfs-r12.3-176">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-144
+        "phrase">(systemd</span> Edition) - Version r12.3-176
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-144">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-176">
           Home</a>
         </li>
       </ul>
@@ -148,7 +148,7 @@
           <a class="xref" href="../general/valgrind.html" title=
           "Valgrind-3.24.0">Valgrind-3.24.0</a>, <a class="xref" href=
           "../x/vulkan-loader.html" title=
-          "Vulkan-Loader-1.4.304">Vulkan-Loader-1.4.304</a>, <a class="xref"
+          "Vulkan-Loader-1.4.309">Vulkan-Loader-1.4.309</a>, <a class="xref"
           href="../x/x7lib.html" title="Xorg Libraries">Xorg Libraries</a>,
           <a class="xref" href="../general/doxygen.html" title=
           "Doxygen-1.13.2">Doxygen-1.13.2</a> and <a class="xref" href=
@@ -174,6 +174,16 @@
         <h2 class="sect2">
           Installation of Pipewire
         </h2>
+        <p>
+          If building <a class="xref" href="../gnome/snapshot.html" title=
+          "Snapshot-47.1">Snapshot-47.1</a>, fix an issue causing <a class=
+          "xref" href="../gnome/snapshot.html" title=
+          "Snapshot-47.1">Snapshot-47.1</a> fails to detect any camera after
+          a user logged out and then logged in again:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed '/^Requires=pipewire.socket$/s/$/ dbus.service/' \
+    -i src/daemon/systemd/system/pipewire.service.in</kbd></pre>
         <p>
           Install <span class="application">pipewire</span> by running the
           following commands:
@@ -631,7 +641,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-144">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-176">
           Home</a>
         </li>
       </ul>

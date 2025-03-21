@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      tinysparql-3.8.2
+      tinysparql-3.9.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-144">
+  <body class="blfs" id="blfs-r12.3-176">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-144
+        "phrase">(systemd</span> Edition) - Version r12.3-176
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -31,9 +31,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="localsearch.html" title=
-          "localsearch-3.8.2">Next</a>
+          "localsearch-3.9.0">Next</a>
           <p>
-            localsearch-3.8.2
+            localsearch-3.9.0
           </p>
         </li>
         <li class="up">
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-144">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-176">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="tinysparql" name="tinysparql"></a>tinysparql-3.8.2
+      <a id="tinysparql" name="tinysparql"></a>tinysparql-3.9.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,13 +78,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/tinysparql/3.8/tinysparql-3.8.2.tar.xz">
-                https://download.gnome.org/sources/tinysparql/3.8/tinysparql-3.8.2.tar.xz</a>
+                "https://download.gnome.org/sources/tinysparql/3.9/tinysparql-3.9.1.tar.xz">
+                https://download.gnome.org/sources/tinysparql/3.9/tinysparql-3.9.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 9c3ab085fe15b55acfd956c039819a00
+                Download MD5 sum: 9b5a0e4b2f8baeb19f7f57eaf08eee47
               </p>
             </li>
             <li class="listitem">
@@ -94,7 +94,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 53 MB (with tests)
+                Estimated disk space required: 62 MB (with tests)
               </p>
             </li>
             <li class="listitem">
@@ -125,7 +125,7 @@
           "icu-77.1">ICU-77.1</a>, <a class="xref" href=
           "../basicnet/libsoup3.html" title=
           "libsoup-3.6.4">libsoup-3.6.4</a>, <a class="xref" href=
-          "localsearch.html" title="localsearch-3.8.2">localsearch-3.8.2</a>
+          "localsearch.html" title="localsearch-3.9.0">localsearch-3.9.0</a>
           (runtime), <a class="xref" href=
           "../general/python-modules.html#pygobject3" title=
           "PyGObject-3.52.3">PyGObject-3.52.3</a>, and <a class="xref" href=
@@ -139,8 +139,9 @@
           title="Asciidoc-10.2.1">asciidoc-10.2.1</a>, <a class="xref" href=
           "../basicnet/avahi.html" title="Avahi-0.8">Avahi-0.8</a>, <a class=
           "xref" href="../general/graphviz.html" title=
-          "Graphviz-12.2.1">Graphviz-12.2.1</a>, and <a class="ulink" href=
-          "https://github.com/scop/bash-completion/">bash-completion</a>
+          "Graphviz-12.2.1">Graphviz-12.2.1</a>, <a class="ulink" href=
+          "https://github.com/scop/bash-completion/">bash-completion</a>, and
+          <a class="ulink" href="https://snowballstem.org/">libstemmer</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -165,9 +166,9 @@
           Fix the location to install the documentation into:
         </p>
         <pre class="userinput"><kbd class=
-        "command">mv docs/reference/libtracker-sparql/doc/{Tsparql-3.0,tinysparql-3.8.2} &amp;&amp;
-sed '/docs_name/s/Tsparql-3.0/tinysparql-3.8.2/' \
-    -i docs/reference/libtracker-sparql/meson.build</kbd></pre>
+        "command">sed -e "s/'generate'/&amp;, '--no-namespace-dir'/"         \
+    -e "/--output-dir/s/@OUTPUT@/&amp;\/tinysparql-3.9.1/" \
+    -i docs/reference/meson.build</kbd></pre>
         <p>
           Install <span class="application">Tinysparql</span> by running the
           following commands:
@@ -186,7 +187,7 @@ ninja</kbd></pre>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>meson
-          configure -D debug=true &amp;&amp; LC_ALL=C ninja
+          configure -D debug=true &amp;&amp; LC_ALL=C.UTF-8 ninja
           test</strong></span>. The test suite should be run from a graphical
           session. One test is known to fail due to the manual pages not
           being generated.
@@ -235,7 +236,7 @@ ninja</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/{include,lib}/tinysparql-3.0 and
-              /usr/share/doc/tinysparql-3.8.2 (optional)</span>
+              /usr/share/doc/tinysparql-3.9.1 (optional)</span>
             </div>
           </div>
         </div>
@@ -307,9 +308,9 @@ ninja</kbd></pre>
         </li>
         <li class="next">
           <a accesskey="n" href="localsearch.html" title=
-          "localsearch-3.8.2">Next</a>
+          "localsearch-3.9.0">Next</a>
           <p>
-            localsearch-3.8.2
+            localsearch-3.9.0
           </p>
         </li>
         <li class="up">
@@ -318,7 +319,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-144">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-176">
           Home</a>
         </li>
       </ul>

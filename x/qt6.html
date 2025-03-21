@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-144">
+  <body class="blfs" id="blfs-r12.3-176">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-144
+        "phrase">(systemd</span> Edition) - Version r12.3-176
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-144">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-176">
           Home</a>
         </li>
       </ul>
@@ -104,6 +104,23 @@
             <li class="listitem">
               <p>
                 Estimated build time: 22 SBU (using parallelism=8)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch if <a class="xref" href=
+                "../general/protobuf.html" title=
+                "Protobuf-30.1">Protobuf-30.1</a> is installed: <a class=
+                "ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.8.2-protobuf_30-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.8.2-protobuf_30-1.patch</a>
               </p>
             </li>
           </ul>
@@ -171,7 +188,7 @@
           "GTK-3.24.49">GTK-3.24.49</a>, <a class="xref" href=
           "../general/ibus.html" title="ibus-1.5.31">ibus-1.5.31</a>,
           <a class="xref" href="../general/llvm.html" title=
-          "LLVM-19.1.7">LLVM-19.1.7</a> (with Clang), <a class="xref" href=
+          "LLVM-20.1.0">LLVM-20.1.0</a> (with Clang), <a class="xref" href=
           "../server/mariadb.html" title="MariaDB-11.4.5">MariaDB-11.4.5</a>
           or <a class="ulink" href="https://www.mysql.com/">MySQL</a>,
           <a class="xref" href="../postlfs/mitkrb.html" title=
@@ -180,6 +197,8 @@
           "pciutils-3.13.0">pciutils-3.13.0</a>, <a class="xref" href=
           "../server/postgresql.html" title=
           "PostgreSQL-17.4">PostgreSQL-17.4</a>, <a class="xref" href=
+          "../general/protobuf.html" title="Protobuf-30.1">Protobuf-30.1</a>
+          (requires a patch, see below), <a class="xref" href=
           "../multimedia/pulseaudio.html" title=
           "PulseAudio-17.0">PulseAudio-17.0</a>, <a class="xref" href=
           "../multimedia/sdl2.html" title="SDL2-2.30.11">SDL2-2.30.11</a>,
@@ -305,6 +324,13 @@ ln -sfnv qt-6.8.2 /opt/qt6</kbd></pre>
             version.
           </p>
         </div>
+        <p>
+          If <a class="xref" href="../general/protobuf.html" title=
+          "Protobuf-30.1">Protobuf-30.1</a> is installed, Qt6 needs to be
+          patched:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../qt-everywhere-src-6.8.2-protobuf_30-1.patch</kbd></pre>
         <p>
           Disable a conflicting declaration on i686 systems:
         </p>
@@ -1111,7 +1137,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-144">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-176">
           Home</a>
         </li>
       </ul>
