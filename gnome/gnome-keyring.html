@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-176">
+  <body class="blfs" id="blfs-r12.3-188">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-176
+        "phrase">(systemd</span> Edition) - Version r12.3-188
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-176">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-188">
           Home</a>
         </li>
       </ul>
@@ -126,6 +126,13 @@
           "libxslt-1.1.43">libxslt-1.1.43</a>, and <a class="xref" href=
           "../postlfs/openssh.html" title="OpenSSH-9.9p2">OpenSSH-9.9p2</a>
         </p>
+        <h4>
+          Optional
+        </h4>
+        <p class="optional">
+          <a class="ulink" href=
+          "https://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</a>
+        </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -138,8 +145,8 @@
         <pre class="userinput"><kbd class=
         "command">sed -i 's:"/desktop:"/org:' schema/*.xml &amp;&amp;
 
-mkdir build &amp;&amp;
-cd    build &amp;&amp;
+mkdir build-gkr &amp;&amp;
+cd    build-gkr &amp;&amp;
 
 meson setup --prefix=/usr --buildtype=release -D ssh-agent=true .. &amp;&amp;
 ninja</kbd></pre>
@@ -163,7 +170,7 @@ ninja</kbd></pre>
         </p>
         <p>
           <em class="parameter"><code>-D ssh-agent=true</code></em>: This
-          switch enables the SSH agent built in to gnome-keyring instead of
+          switch enables the SSH agent built into gnome-keyring instead of
           the one in GCR. This is done due to bugs in gcr which cause the
           agent to not work correctly.
         </p>
@@ -242,7 +249,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-176">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-188">
           Home</a>
         </li>
       </ul>
