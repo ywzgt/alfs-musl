@@ -1,0 +1,140 @@
+diff --git a/wget-list b/wget-list
+index 93124f7981..ea4e2dedc7 100644
+--- a/wget-list
++++ b/wget-list
+@@ -72,6 +72,7 @@ https://github.com/google/double-conversion/archive/v3.3.1/double-conversion-3.3
+ https://duktape.org/duktape-2.7.0.tar.xz
+ https://github.com/rrthomas/enchant/releases/download/v2.8.2/enchant-2.8.2.tar.gz
+ https://libopenraw.freedesktop.org/download/exempi-2.6.5.tar.xz
++https://github.com/fastfloat/fast_float/archive/v8.0.2/fast_float-8.0.2.tar.gz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+ https://github.com/fmtlib/fmt/archive/11.1.4/fmt-11.1.4.tar.gz
+ https://download.gnome.org/sources/glib/2.84/glib-2.84.0.tar.xz
+@@ -98,7 +99,7 @@ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/ivmai/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz
+ https://github.com/storaged-project/libblockdev/releases/download/3.3.0/libblockdev-3.3.0.tar.gz
+ https://github.com/storaged-project/libbytesize/releases/download/2.11/libbytesize-2.11.tar.gz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/libclc-19.1.7.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.0/libclc-20.1.0.src.tar.xz
+ https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6.tar.xz
+ https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+ https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.2.0/downloads/libdisplay-info-0.2.0.tar.xz
+@@ -152,9 +153,9 @@ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.1-upstream-prot
+ https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.11.0/qcoro-0.11.0.tar.gz
+ https://archive.mozilla.org/pub/firefox/releases/128.8.0esr/source/firefox-128.8.0esr.source.tar.xz
+-https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.304.1/SPIRV-Headers-vulkan-sdk-1.4.304.1.tar.gz
+-https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.304.1/SPIRV-Tools-vulkan-sdk-1.4.304.1.tar.gz
+-https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v19.1.4/SPIRV-LLVM-Translator-19.1.4.tar.gz
++https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.309.0/SPIRV-Headers-vulkan-sdk-1.4.309.0.tar.gz
++https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.309.0/SPIRV-Tools-vulkan-sdk-1.4.309.0.tar.gz
++https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v20.1.0/SPIRV-LLVM-Translator-20.1.0.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.4.3.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+ https://github.com/martinpitt/umockdev/releases/download/0.19.1/umockdev-0.19.1.tar.xz
+@@ -291,11 +292,11 @@ https://www.kernel.org/pub/software/scm/git/git-2.49.0.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-manpages-2.49.0.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.49.0.tar.xz
+ https://ftp.gnu.org/gnu/guile/guile-3.0.10.tar.xz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/llvm-19.1.7.src.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-19.1.7.src.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-third-party-19.1.7.src.tar.xz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/clang-19.1.7.src.tar.xz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/compiler-rt-19.1.7.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.0/llvm-20.1.0.src.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-20.1.0.src.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-third-party-20.1.0.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.0/clang-20.1.0.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.0/compiler-rt-20.1.0.src.tar.xz
+ https://www.lua.org/ftp/lua-5.4.7.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.7-shared_library-1.patch
+ https://www.lua.org/tests/lua-5.4.7-tests.tar.gz
+@@ -524,7 +525,8 @@ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.1.0.tar.g
+ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.3.0.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+ https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.2.tar.xz
+-https://static.rust-lang.org/dist/rustc-1.85.0-src.tar.xz
++https://static.rust-lang.org/dist/rustc-1.85.1-src.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/rustc-1.85.1-llvm_20-1.patch
+ https://github.com/rust-lang/rust-bindgen/archive/v0.71.1/rust-bindgen-0.71.1.tar.gz
+ https://downloads.sourceforge.net/scons/SCons-4.9.0.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+@@ -557,7 +559,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_s
+ https://w1.fi/releases/wpa_supplicant-2.11.tar.gz
+ https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+-https://ftp.isc.org/isc/bind9/9.20.6/bind-9.20.6.tar.xz
++https://ftp.isc.org/isc/bind9/9.20.7/bind-9.20.7.tar.xz
+ https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.52.0/downloads/NetworkManager-1.52.0.tar.xz
+ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
+ https://nmap.org/dist/nmap-7.95.tar.bz2
+@@ -658,8 +660,7 @@ https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
+ https://download.gnome.org/sources/goffice/0.10/goffice-0.10.59.tar.xz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+ https://download.gnome.org/sources/gtk/3.24/gtk-3.24.49.tar.xz
+-https://download.gnome.org/sources/gtk/4.16/gtk-4.16.12.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/gtk-4.16.12-libpng_1_6_45-1.patch
++https://download.gnome.org/sources/gtk/4.18/gtk-4.18.2.tar.xz
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.9.tar.xz
+ https://download.gnome.org/sources/gtkmm/4.16/gtkmm-4.16.0.tar.xz
+ https://download.gnome.org/sources/gtk-vnc/1.5/gtk-vnc-1.5.0.tar.xz
+@@ -681,10 +682,11 @@ https://download.gnome.org/sources/pango/1.56/pango-1.56.3.tar.xz
+ https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
+ https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
+ https://download.qt.io/archive/qt/6.8/6.8.2/single/qt-everywhere-src-6.8.2.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.8.2-protobuf_30-1.patch
+ https://download.qt.io/official_releases/qt/6.8/6.8.2/submodules/qtwebengine-everywhere-src-6.8.2.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.304/Vulkan-Headers-1.4.304.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.304/Vulkan-Loader-1.4.304.tar.gz
++https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.309/Vulkan-Headers-1.4.309.tar.gz
++https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.309/Vulkan-Loader-1.4.309.tar.gz
+ https://webkitgtk.org/releases/webkitgtk-2.46.6.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.20.0/xdg-desktop-portal-1.20.0.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.2/xdg-desktop-portal-gtk-1.15.2.tar.xz
+@@ -734,13 +736,13 @@ https://download.kde.org/stable/pulseaudio-qt/pulseaudio-qt-1.7.0.tar.xz
+ https://download.gnome.org/sources/gcr/3.41/gcr-3.41.2.tar.xz
+ https://download.gnome.org/sources/gcr/4.3/gcr-4.3.1.tar.xz
+ https://download.gnome.org/sources/gsettings-desktop-schemas/48/gsettings-desktop-schemas-48.0.tar.xz
+-https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.6.tar.xz
++https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.7.tar.xz
+ https://download.gnome.org/sources/rest/0.9/rest-0.9.1.tar.xz
+ https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.6.tar.xz
+-https://gitlab.gnome.org/GNOME/vte/-/archive/0.78.4/vte-0.78.4.tar.gz
++https://gitlab.gnome.org/GNOME/vte/-/archive/0.80.0/vte-0.80.0.tar.gz
+ https://download.gnome.org/sources/yelp-xsl/42/yelp-xsl-42.1.tar.xz
+ https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+-https://download.gnome.org/sources/gjs/1.82/gjs-1.82.1.tar.xz
++https://download.gnome.org/sources/gjs/1.84/gjs-1.84.1.tar.xz
+ https://download.gnome.org/sources/gnome-autoar/0.4/gnome-autoar-0.4.5.tar.xz
+ https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.1.tar.xz
+ https://download.gnome.org/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
+@@ -752,8 +754,8 @@ https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.4.tar.xz
+ https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz
+ https://download.gnome.org/sources/libshumate/1.3/libshumate-1.3.2.tar.xz
+ https://download.gnome.org/sources/evolution-data-server/3.54/evolution-data-server-3.54.3.tar.xz
+-https://download.gnome.org/sources/tinysparql/3.8/tinysparql-3.8.2.tar.xz
+-https://download.gnome.org/sources/localsearch/3.8/localsearch-3.8.2.tar.xz
++https://download.gnome.org/sources/tinysparql/3.9/tinysparql-3.9.1.tar.xz
++https://download.gnome.org/sources/localsearch/3.9/localsearch-3.9.0.tar.xz
+ https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz
+ https://download.gnome.org/sources/xdg-desktop-portal-gnome/47/xdg-desktop-portal-gnome-47.3.tar.xz
+ https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
+@@ -763,7 +765,7 @@ https://download.gnome.org/sources/gvfs/1.56/gvfs-1.56.1.tar.xz
+ https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.3.tar.xz
+ https://download.gnome.org/sources/nautilus/47/nautilus-47.2.tar.xz
+ https://download.gnome.org/sources/gnome-bluetooth/47/gnome-bluetooth-47.1.tar.xz
+-https://download.gnome.org/sources/gnome-keyring/46/gnome-keyring-46.2.tar.xz
++https://download.gnome.org/sources/gnome-keyring/48/gnome-keyring-48.0.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/47/gnome-settings-daemon-47.2.tar.xz
+ https://download.gnome.org/sources/tecla/47/tecla-47.0.tar.xz
+ https://download.gnome.org/sources/gnome-control-center/47/gnome-control-center-47.4.tar.xz
+@@ -888,7 +890,7 @@ https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
+ https://inkscape.org/gallery/item/53679/inkscape-1.4.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4-poppler_fixes-2.patch
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/128.8.0esr/source/thunderbird-128.8.0esr.source.tar.xz
++https://archive.mozilla.org/pub/thunderbird/releases/128.8.1esr/source/thunderbird-128.8.1esr.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.15.0/tigervnc-1.15.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.15.0-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz
