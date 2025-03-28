@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-249">
+  <body class="blfs" id="blfs-r12.3-264">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-249
+        "phrase">(systemd</span> Edition) - Version r12.3-264
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-249">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-264">
           Home</a>
         </li>
       </ul>
@@ -109,6 +109,13 @@
           Nmap Dependencies
         </h3>
         <h4>
+          Required
+        </h4>
+        <p class="required">
+          <a class="xref" href="../general/python-modules.html#pypa-build"
+          title="build-1.2.2.post1">build-1.2.2.post1</a>
+        </p>
+        <h4>
           Recommended
         </h4>
         <div class="admon note">
@@ -147,11 +154,6 @@
           Installation of Nmap
         </h2>
         <p>
-          First, if it is not already installed, add a needed Python module.
-          As the <code class="systemitem">root</code> user:
-        </p>
-        <pre class="root"><kbd class="command">pip3 install build</kbd></pre>
-        <p>
           Install <span class="application">Nmap</span> by running the
           following commands:
         </p>
@@ -166,10 +168,10 @@ make</kbd></pre>
     -e 's/^ndiff = .*$/import ndiff/' \
     -i ndiff/ndifftest.py</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>make
-          check</strong></span> as the <code class="systemitem">root</code>
-          user. Tests need a graphical session.
+          Tests need a graphical session and to be run as the <code class=
+          "systemitem">root</code> user. To test the results, issue:
         </p>
+        <pre class="root"><kbd class="command">make check</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
@@ -340,7 +342,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-249">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-264">
           Home</a>
         </li>
       </ul>

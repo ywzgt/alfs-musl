@@ -7,7 +7,7 @@ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.7.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.9.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.2.tar.bz2
 https://www.netfilter.org/projects/iptables/files/iptables-1.8.11.tar.xz
-https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.73.tar.xz
+https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.75.tar.xz
 https://github.com/linux-pam/linux-pam/releases/download/v1.7.0/Linux-PAM-1.7.0.tar.xz
 https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.0-docs.tar.xz
 https://downloads.sourceforge.net/liboauth/liboauth-1.0.3.tar.gz
@@ -54,13 +54,13 @@ https://gitlab.gnome.org/World/gedit/libgedit-gfls/-/archive/0.3.0/libgedit-gfls
 https://gitlab.gnome.org/World/gedit/libgedit-tepl/-/archive/6.13.0/libgedit-tepl-6.13.0.tar.bz2
 https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
 https://download.kde.org/stable/release-service/24.12.2/src/kate-24.12.2.tar.xz
-https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.3.tar.bz2
+https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.4.tar.xz
 https://www.nano-editor.org/dist/v8/nano-8.3.tar.xz
 https://github.com/vim/vim/archive/v9.1.1166/vim-9.1.1166.tar.gz
 http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.15.tar.gz
 https://www.zsh.org/pub/zsh-5.9.tar.xz
-https://download.qemu.org/qemu-9.2.2.tar.xz
+https://download.qemu.org/qemu-9.2.3.tar.xz
 https://github.com/abseil/abseil-cpp/releases/download/20250127.1/abseil-cpp-20250127.1.tar.gz
 https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.4.tar.xz
 http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz
@@ -459,6 +459,7 @@ https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz
 https://www.python.org/ftp/python/doc/3.13.2/python-3.13.2-docs-html.tar.bz2
 https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
 https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+https://files.pythonhosted.org/packages/source/b/build/build-1.2.2.post1.tar.gz
 https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.3.0.tar.gz
 https://github.com/psf/cachecontrol/archive/v0.14.2/cachecontrol-0.14.2.tar.gz
 https://github.com/cython/cython/releases/download/3.0.12/cython-3.0.12.tar.gz
@@ -481,7 +482,7 @@ https://github.com/pygobject/pycairo/releases/download/v1.26.1/pycairo-1.26.1.ta
 https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
 https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.19.1.tar.gz
 https://download.gnome.org/sources/pygobject/3.52/pygobject-3.52.3.tar.gz
-https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.2.2.tar.gz
+https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.2.3.tar.gz
 https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
 https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.3.5.tar.gz
 https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
@@ -513,6 +514,7 @@ https://files.pythonhosted.org/packages/source/m/meson_python/meson_python-0.17.
 https://files.pythonhosted.org/packages/source/m/msgpack/msgpack-1.1.0.tar.gz
 https://files.pythonhosted.org/packages/source/p/pathspec/pathspec-0.12.1.tar.gz
 https://files.pythonhosted.org/packages/source/p/pluggy/pluggy-1.5.0.tar.gz
+https://files.pythonhosted.org/packages/source/p/pyproject-hooks/pyproject_hooks-1.2.0.tar.gz
 https://files.pythonhosted.org/packages/source/p/pyproject-metadata/pyproject_metadata-0.9.0.tar.gz
 https://files.pythonhosted.org/packages/source/p/pytz/pytz-2025.1.tar.gz
 https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-8.1.0.tar.gz
@@ -606,8 +608,8 @@ https://github.com/BuGlessRB/procmail/archive/v3.24/procmail-3.24.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.24-consolidated_fixes-1.patch
 https://archive.apache.org/dist/httpd/httpd-2.4.63.tar.bz2
 https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.63-blfs_layout-1.patch
-https://downloads.isc.org/isc/kea/2.6.1/kea-2.6.1.tar.gz
-https://www.linuxfromscratch.org/patches/blfs/svn/kea-2.6.1-fix_boost_1_87-1.patch
+https://downloads.isc.org/isc/kea/2.6.2/kea-2.6.2.tar.gz
+https://www.linuxfromscratch.org/patches/blfs/svn/kea-2.6.2-fix_boost_1_87-1.patch
 https://github.com/proftpd/proftpd/archive/v1.3.9/proftpd-1.3.9.tar.gz
 https://www.dovecot.org/releases/2.4/dovecot-2.4.0.tar.gz
 https://ftp.exim.org/pub/exim/exim4/exim-4.98.1.tar.xz
@@ -686,9 +688,9 @@ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
 https://download.gnome.org/sources/pango/1.56/pango-1.56.3.tar.xz
 https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
 https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
-https://download.qt.io/archive/qt/6.8/6.8.2/single/qt-everywhere-src-6.8.2.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.8.2-protobuf_30-1.patch
-https://download.qt.io/official_releases/qt/6.8/6.8.2/submodules/qtwebengine-everywhere-src-6.8.2.tar.xz
+https://download.qt.io/archive/qt/6.8/6.8.3/single/qt-everywhere-src-6.8.3.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.8.3-protobuf_30-1.patch
+https://download.qt.io/official_releases/qt/6.8/6.8.3/submodules/qtwebengine-everywhere-src-6.8.3.tar.xz
 https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
 https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.309/Vulkan-Headers-1.4.309.tar.gz
 https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.309/Vulkan-Loader-1.4.309.tar.gz
@@ -807,7 +809,7 @@ https://download.gnome.org/sources/gnome-weather/48/gnome-weather-48.0.tar.xz
 https://gitlab.gnome.org/GNOME/gucharmap/-/archive/16.0.2/gucharmap-16.0.2.tar.bz2
 https://www.unicode.org/Public/zipped/16.0.0/Unihan.zip
 https://download.gnome.org/sources/seahorse/47/seahorse-47.0.1.tar.xz
-https://download.gnome.org/sources/snapshot/48/snapshot-48.0.tar.xz
+https://download.gnome.org/sources/snapshot/48/snapshot-48.0.1.tar.xz
 https://archive.xfce.org/src/xfce/libxfce4util/4.20/libxfce4util-4.20.1.tar.bz2
 https://archive.xfce.org/src/xfce/xfconf/4.20/xfconf-4.20.0.tar.bz2
 https://archive.xfce.org/src/xfce/libxfce4ui/4.20/libxfce4ui-4.20.1.tar.bz2
@@ -829,7 +831,7 @@ https://archive.xfce.org/src/xfce/xfce4-session/4.20/xfce4-session-4.20.2.tar.bz
 https://archive.xfce.org/src/apps/parole/4.18/parole-4.18.2.tar.bz2
 https://archive.xfce.org/src/apps/xfce4-terminal/1.1/xfce4-terminal-1.1.4.tar.bz2
 https://archive.xfce.org/src/apps/xfburn/0.7/xfburn-0.7.2.tar.bz2
-https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.3.tar.bz2
+https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.4.tar.xz
 https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.7.tar.bz2
 https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.4/xfce4-pulseaudio-plugin-0.4.9.tar.bz2
 https://download.kde.org/stable/frameworks/6.11/kwindowsystem-6.11.0.tar.xz
