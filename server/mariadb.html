@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-286">
+  <body class="blfs" id="blfs-r12.3-294">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-286
+        "phrase">(systemd</span> Edition) - Version r12.3-294
       </h4>
       <h3>
         Chapter&nbsp;22.&nbsp;Databases
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-286">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-294">
           Home</a>
         </li>
       </ul>
@@ -200,6 +200,7 @@ cd    build &amp;&amp;
 
 cmake -D CMAKE_BUILD_TYPE=Release                       \
       -D CMAKE_INSTALL_PREFIX=/usr                      \
+      -D CMAKE_POLICY_VERSION_MINIMUM=3.5               \
       -D GRN_LOG_PATH=/var/log/groonga.log              \
       -D INSTALL_DOCDIR=share/doc/mariadb-11.4.5        \
       -D INSTALL_DOCREADMEDIR=share/doc/mariadb-11.4.5  \
@@ -219,6 +220,7 @@ cmake -D CMAKE_BUILD_TYPE=Release                       \
       -D WITH_EMBEDDED_SERVER=ON                        \
       -D SKIP_TESTS=ON                                  \
       -D TOKUDB_OK=0                                    \
+      -W no-dev                                         \
       .. &amp;&amp;
 make</kbd></pre>
         <p>
@@ -254,6 +256,12 @@ popd</kbd></pre>
           Command Explanations
         </h2>
         <p>
+          <em class="parameter"><code>-D
+          CMAKE_POLICY_VERSION_MINIMUM=3.5</code></em>: This switch allows
+          <span class="application">MariaDB</span> to build with CMake 4.0
+          and later by working around some removed features.
+        </p>
+        <p>
           <em class="parameter"><code>-D WITH_EMBEDDED_SERVER=ON</code></em>:
           This switch enables compiling the embedded server library needed by
           certain applications, such as <span class=
@@ -273,6 +281,10 @@ popd</kbd></pre>
           <code class="option">-D WITHOUT_SERVER=ON</code>: Use this switch
           if you don't want the server and would like to build the client
           only.
+        </p>
+        <p>
+          <em class="parameter"><code>-W no-dev</code></em>: This switch
+          turns off some warnings that are only useful for developers.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -1401,7 +1413,7 @@ mariadbd-safe --user=mariadb 2&gt;&amp;1 &gt;/dev/null &amp;</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-286">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-294">
           Home</a>
         </li>
       </ul>
