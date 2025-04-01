@@ -1,0 +1,64 @@
+diff --git a/wget-list b/wget-list
+index 8ed4f281ef..c252913f59 100644
+--- a/wget-list
++++ b/wget-list
+@@ -15,7 +15,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3
+ https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2
+ https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz
+ https://ftp.gnu.org/gnu/nettle/nettle-3.10.1.tar.gz
+-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_109_RTM/src/nss-3.109.tar.gz
++https://archive.mozilla.org/pub/security/nss/releases/NSS_3_110_RTM/src/nss-3.110.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.9p2.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz
+@@ -92,7 +92,7 @@ https://ftp.gnu.org/gnu/gsl/gsl-2.8.tar.gz
+ https://download.gnome.org/sources/gspell/1.14/gspell-1.14.0.tar.xz
+ https://github.com/google/highway/archive/1.2.0/highway-1.2.0.tar.gz
+ https://github.com/unicode-org/icu/releases/download/release-77-1/icu4c-77_1-src.tgz
+-https://github.com/benhoyt/inih/archive/r58/inih-r58.tar.gz
++https://github.com/benhoyt/inih/archive/r59/inih-r59.tar.gz
+ https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
+ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.18.tar.gz
+ https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.6.tar.xz
+@@ -287,7 +287,7 @@ https://github.com/lu-zero/cargo-c/archive/v0.10.11/cargo-c-0.10.11.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.28.0/cbindgen-0.28.0.tar.gz
+ https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+-https://cmake.org/files/v3.31/cmake-3.31.6.tar.gz
++https://cmake.org/files/v4.0/cmake-4.0.0.tar.gz
+ https://doxygen.nl/files/doxygen-1.13.2.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
+@@ -652,7 +652,7 @@ https://www.x.org/pub/individual/app/xclock-1.1.1.tar.xz
+ https://www.x.org/pub/individual/app/xinit-1.4.4.tar.xz
+ https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz
+ https://download.gnome.org/sources/atkmm/2.36/atkmm-2.36.3.tar.xz
+-https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.0.tar.xz
++https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.1.tar.xz
+ https://www.cairographics.org/releases/cairo-1.18.4.tar.xz
+ https://www.cairographics.org/releases/cairomm-1.14.5.tar.xz
+ https://www.cairographics.org/releases/cairomm-1.18.0.tar.xz
+@@ -662,12 +662,12 @@ https://github.com/fltk/fltk/releases/download/release-1.4.2/fltk-1.4.2-docs-htm
+ https://downloads.sourceforge.net/freeglut/freeglut-3.6.0.tar.gz
+ https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz
+ https://downloads.sourceforge.net/glew/glew-2.2.0.tgz
+-https://github.com/KhronosGroup/glslang/archive/15.1.0/glslang-15.1.0.tar.gz
++https://github.com/KhronosGroup/glslang/archive/15.2.0/glslang-15.2.0.tar.gz
+ https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
+ https://download.gnome.org/sources/goffice/0.10/goffice-0.10.59.tar.xz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+ https://download.gnome.org/sources/gtk/3.24/gtk-3.24.49.tar.xz
+-https://download.gnome.org/sources/gtk/4.18/gtk-4.18.2.tar.xz
++https://download.gnome.org/sources/gtk/4.18/gtk-4.18.3.tar.xz
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.10.tar.xz
+ https://download.gnome.org/sources/gtkmm/4.18/gtkmm-4.18.0.tar.xz
+ https://download.gnome.org/sources/gtk-vnc/1.5/gtk-vnc-1.5.0.tar.xz
+@@ -683,7 +683,7 @@ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.4.0/libei-1.4.0.tar.bz
+ https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
+ https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz
+ https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
+-https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.4.tar.xz
++https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.6.tar.xz
+ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+ https://download.gnome.org/sources/pango/1.56/pango-1.56.3.tar.xz
+ https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
