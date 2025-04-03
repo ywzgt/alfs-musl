@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-303">
+  <body class="blfs" id="blfs-r12.3-311">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-303
+        "phrase">(systemd</span> Edition) - Version r12.3-311
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-303">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-311">
           Home</a>
         </li>
       </ul>
@@ -174,9 +174,12 @@
           </h5>
           <p class="optional">
             <a class="xref" href="../general/doxygen.html" title=
-            "Doxygen-1.13.2">Doxygen-1.13.2</a> and <a class="xref" href=
+            "Doxygen-1.13.2">Doxygen-1.13.2</a>, <a class="xref" href=
             "../general/valgrind.html" title=
-            "Valgrind-3.24.0">Valgrind-3.24.0</a> (optional for tests)
+            "Valgrind-3.24.0">Valgrind-3.24.0</a> (optional for tests), and
+            <a class="ulink" href=
+            "https://libcheck.github.io/check/">check</a> (required for
+            tests)
           </p>
         </div>
         <div class="kernel" lang="en" xml:lang="en">
@@ -227,25 +230,28 @@ cd    build &amp;&amp;
 meson setup ..                  \
       --prefix=$XORG_PREFIX     \
       --buildtype=release       \
-      -D documentation=disabled &amp;&amp;
+      -D documentation=disabled \
+      -D tests=disabled         &amp;&amp;
 ninja</kbd></pre>
           <p>
-            The regression tests can be run as the <code class=
-            "systemitem">root</code> user with <span class=
-            "command"><strong>ninja test</strong></span>, in a graphical
-            session. You need to have enabled the CONFIG_INPUT_UINPUT setting
-            in the kernel for full test coverage. If it is enabled as a
-            module, the module is named <span class=
-            "command"><strong>uinput</strong></span> and needs to be loaded
-            before running the tests. Note that on some systems, the tests
-            may cause a hard lockup and require a reboot. On laptops, the
-            system will go into Sleep and need to be woken up to finish the
-            test suites.
+            The test suite requires <span class="application">Check</span>
+            that we've removed from LFS.
           </p>
           <p>
             Now, as the <code class="systemitem">root</code> user:
           </p>
           <pre class="root"><kbd class="command">ninja install</kbd></pre>
+        </div>
+        <div class="commands" lang="en" xml:lang="en">
+          <h3 class="sect3">
+            Command Explanations
+          </h3>
+          <p>
+            <em class="parameter"><code>-D tests=disabled</code></em>: This
+            allows the package to compile if <span class=
+            "application">Check</span> is not installed. We've removed
+            <span class="application">Check</span> from LFS.
+          </p>
         </div>
         <div class="content" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -574,8 +580,11 @@ make</kbd></pre>
             build documentation), <a class="xref" href=
             "../general/python-modules.html#pyparsing" title=
             "pyparsing-3.2.3">pyparsing-3.2.3</a> (for one non-root test),
-            and <a class="xref" href="../general/python-modules.html#pytest"
-            title="Pytest-8.3.5">pytest-8.3.5</a> (for another non-root test)
+            <a class="xref" href="../general/python-modules.html#pytest"
+            title="Pytest-8.3.5">pytest-8.3.5</a> (for another non-root
+            test), and <a class="ulink" href=
+            "https://libcheck.github.io/check/">check</a> (for another
+            non-root test)
           </p>
         </div>
         <div class="kernel" lang="en" xml:lang="en">
@@ -632,30 +641,14 @@ meson setup ..                  \
       -D libwacom=false         \
       -D udev-dir=/usr/lib/udev &amp;&amp;
 ninja</kbd></pre>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              If you want to run the standard test suite, remove -D tests
-              from the <span class="command"><strong>meson</strong></span>
-              command above. Please read <span class="quote">“<span class=
-              "quote">Kernel Configuration for Running the Libinput Test
-              Suite</span>”</span> (above).
-            </p>
-            <p>
-              If you have decided the run the standard test suite, you can
-              run the tests <span class="emphasis"><em>as the root
-              user</em></span> by executing: <span class=
-              "command"><strong>ninja test</strong></span>. There are over 30
-              tests and all should pass if you installed the optional
-              dependencies. However, you can run 6 minor tests as the regular
-              user by running the same command, although you will not need to
-              remove the -D tests parameter. The test measurements are based
-              off of those tests alone.
-            </p>
-          </div>
+          <p>
+            To test the package, issue: <span class="command"><strong>meson
+            configure -D tests=true &amp;&amp; ninja test</strong></span>.
+            Many tests are skipped unless running the test suite as the
+            <code class="systemitem">root</code> user. To run those tests, as
+            the <code class="systemitem">root</code> user issue: <span class=
+            "command"><strong>meson test --suite=root</strong></span>.
+          </p>
           <p>
             Now, as the <code class="systemitem">root</code> user:
           </p>
@@ -1308,7 +1301,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-303">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-311">
           Home</a>
         </li>
       </ul>

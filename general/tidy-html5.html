@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-303">
+  <body class="blfs" id="blfs-r12.3-311">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-303
+        "phrase">(systemd</span> Edition) - Version r12.3-311
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-303">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-311">
           Home</a>
         </li>
       </ul>
@@ -108,6 +108,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/tidy-html5-5.8.0-cmake4_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/tidy-html5-5.8.0-cmake4_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Tidy HTML5 Dependencies
         </h3>
         <h4>
@@ -129,6 +143,12 @@
         <h2 class="sect2">
           Installation of Tidy HTML5
         </h2>
+        <p>
+          First, fix a build failure that occurs when using CMake 4.0 and
+          later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../tidy-html5-5.8.0-cmake4_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">Tidy HTML5</span> by running the
           following commands:
@@ -294,7 +314,7 @@ install -v -m755 tab2space /usr/bin</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-303">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-311">
           Home</a>
         </li>
       </ul>

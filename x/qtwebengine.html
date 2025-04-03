@@ -5,27 +5,27 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      QtWebEngine-6.8.3
+      QtWebEngine-6.9.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-303">
+  <body class="blfs" id="blfs-r12.3-311">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-303
+        "phrase">(systemd</span> Edition) - Version r12.3-311
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="qt6.html" title="Qt-6.8.3">Prev</a>
+          <a accesskey="p" href="qt6.html" title="Qt-6.9.0">Prev</a>
           <p>
-            Qt-6.8.3
+            Qt-6.9.0
           </p>
         </li>
         <li class="next">
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-303">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-311">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="qtwebengine" name="qtwebengine"></a>QtWebEngine-6.8.3
+      <a id="qtwebengine" name="qtwebengine"></a>QtWebEngine-6.9.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -131,28 +131,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.qt.io/official_releases/qt/6.8/6.8.3/submodules/qtwebengine-everywhere-src-6.8.3.tar.xz">
-                https://download.qt.io/official_releases/qt/6.8/6.8.3/submodules/qtwebengine-everywhere-src-6.8.3.tar.xz</a>
+                "https://download.qt.io/official_releases/qt/6.9/6.9.0/submodules/qtwebengine-everywhere-src-6.9.0.tar.xz">
+                https://download.qt.io/official_releases/qt/6.9/6.9.0/submodules/qtwebengine-everywhere-src-6.9.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 0c1c72b141b4ba24ce6ac9c1d149c3ce
+                Download MD5 sum: 3a029321d733cd4a420ab99bd0488013
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 540 MB
+                Download size: 541 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 9.0 GB (336 MB installed)
+                Estimated disk space required: 9.7 GB (357 MB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 41 SBU (Using parallelism=8)
+                Estimated build time: 46 SBU (Using parallelism=8)
               </p>
             </li>
           </ul>
@@ -173,7 +173,7 @@
           "../postlfs/nss.html" title="NSS-3.110">nss-3.110</a>, <a class=
           "xref" href="../general/pciutils.html" title=
           "pciutils-3.13.0">pciutils-3.13.0</a>, and <a class="xref" href=
-          "qt6.html" title="Qt-6.8.3">Qt-6.8.3</a>
+          "qt6.html" title="Qt-6.9.0">Qt-6.9.0</a>
         </p>
         <h4>
           Recommended
@@ -226,13 +226,17 @@
           Installation of qtwebengine
         </h2>
         <p>
-          First, fix a build failure that occurs because the BLFS build of
-          ffmpeg does not use OpenH264:
+          First, fix a build failure that occurs with the latest version of
+          pipewire. Also work around a very long file path:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -e '189 s/=/&amp; false/' \
-    -e '190 d'            \
-    -i.orig src/3rdparty/chromium/third_party/webrtc/webrtc.gni</kbd></pre>
+        "command">pushd src/3rdparty/chromium/third_party/webrtc/modules &amp;&amp;
+
+  sed -e "88 s/proxy_/reinterpret_cast&lt;pw_node*&gt;(&amp;)/"       \
+      -e "120s/that-&gt;proxy_/reinterpret_cast&lt;pw_node*&gt;(&amp;)/" \
+      -i video_capture/linux/pipewire_session.cc            &amp;&amp;
+
+popd</kbd></pre>
         <p>
           Install <span class="application">qtwebengine</span> by running the
           following commands:
@@ -247,8 +251,7 @@ cmake -D CMAKE_MESSAGE_LOG_LEVEL=STATUS             \
       -D QT_FEATURE_webengine_proprietary_codecs=ON \
       -D QT_FEATURE_webengine_webrtc_pipewire=ON    \
       -D QT_BUILD_EXAMPLES_BY_DEFAULT=OFF           \
-      -G Ninja .. &amp;&amp;
-
+      -G Ninja ..                                   &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -456,9 +459,9 @@ ninja</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="qt6.html" title="Qt-6.8.3">Prev</a>
+          <a accesskey="p" href="qt6.html" title="Qt-6.9.0">Prev</a>
           <p>
-            Qt-6.8.3
+            Qt-6.9.0
           </p>
         </li>
         <li class="next">
@@ -474,7 +477,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-303">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-311">
           Home</a>
         </li>
       </ul>

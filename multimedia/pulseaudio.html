@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-303">
+  <body class="blfs" id="blfs-r12.3-311">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-303
+        "phrase">(systemd</span> Edition) - Version r12.3-311
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-303">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-311">
           Home</a>
         </li>
       </ul>
@@ -150,7 +150,9 @@
           href="sbc.html" title="SBC-2.1">SBC-2.1</a> (Bluetooth support),
           <a class="xref" href="../general/valgrind.html" title=
           "Valgrind-3.24.0">Valgrind-3.24.0</a>, <a class="ulink" href=
-          "https://jackaudio.org/">JACK</a>, <a class="ulink" href=
+          "https://libcheck.github.io/check/">check</a> (for testing),
+          <a class="ulink" href="https://jackaudio.org/">JACK</a>, <a class=
+          "ulink" href=
           "https://0pointer.de/lennart/projects/libasyncns/">libasyncns</a>,
           <a class="ulink" href="https://www.lirc.org/">LIRC</a>, <a class=
           "ulink" href="https://gstreamer.freedesktop.org/src/orc/">ORC</a>,
@@ -177,12 +179,14 @@ meson setup --prefix=/usr       \
             -D database=gdbm    \
             -D doxygen=false    \
             -D bluez5=disabled  \
+            -D tests=false      \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
-          test</strong></span>. One test fails if the tests are not run as
-          the root user, but this can be ignored.
+          test</strong></span>. Only the shipped XML files are validated
+          because other tests need <span class="application">Check</span>
+          that we've removed from LFS.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -237,6 +241,12 @@ ninja</kbd></pre>
           "../general/doxygen.html" title="Doxygen-1.13.2">Doxygen-1.13.2</a>
           is not installed. Remove this if you have installed this and wish
           to build the documentation.
+        </p>
+        <p>
+          <em class="parameter"><code>-D tests=false</code></em>: This allows
+          the package to compile if <span class="application">Check</span> is
+          not installed. We've removed <span class="application">Check</span>
+          from LFS.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -579,7 +589,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-303">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-311">
           Home</a>
         </li>
       </ul>
