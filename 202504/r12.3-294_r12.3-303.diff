@@ -1,0 +1,49 @@
+diff --git a/wget-list b/wget-list
+index d85cdce4d2..3cf9ffe6a8 100644
+--- a/wget-list
++++ b/wget-list
+@@ -26,7 +26,7 @@ https://github.com/shadow-maint/shadow/releases/download/4.17.4/shadow-4.17.4.ta
+ https://www.stunnel.org/downloads/archive/5.x/stunnel-5.74.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.16p2.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+-https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.13.tar.xz
++https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.14.tar.xz
+ https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz
+ https://github.com/libfuse/libfuse/releases/download/fuse-3.16.2/fuse-3.16.2.tar.gz
+ https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
+@@ -44,7 +44,7 @@ https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
+ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
+ https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz
+ https://unifoundry.com/pub/unifont/unifont-16.0.01/font-builds/unifont-16.0.01.pcf.gz
+-https://www.bennewitz.com/bluefish/stable/source/bluefish-2.2.16.tar.bz2
++https://www.bennewitz.com/bluefish/stable/source/bluefish-2.2.17.tar.bz2
+ https://ftp.gnu.org/gnu/ed/ed-1.21.1.tar.lz
+ https://ftp.gnu.org/gnu/emacs/emacs-30.1.tar.xz
+ https://download.gnome.org/sources/gedit/48/gedit-48.1.tar.xz
+@@ -54,7 +54,7 @@ https://gitlab.gnome.org/World/gedit/libgedit-gfls/-/archive/0.3.0/libgedit-gfls
+ https://gitlab.gnome.org/World/gedit/libgedit-tepl/-/archive/6.13.0/libgedit-tepl-6.13.0.tar.bz2
+ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/24.12.2/src/kate-24.12.2.tar.xz
+-https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.4.tar.xz
++https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.5.tar.xz
+ https://www.nano-editor.org/dist/v8/nano-8.3.tar.xz
+ https://github.com/vim/vim/archive/v9.1.1263/vim-9.1.1263.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+@@ -278,7 +278,7 @@ https://sysstat.github.io/sysstat-packages/sysstat-12.7.7.tar.xz
+ https://github.com/systemd/systemd/archive/v257.3/systemd-257.3.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.10.1/udisks-2.10.1.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-7.1.6.tar.gz
+-https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.7/upower-v1.90.7.tar.bz2
++https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.8/upower-v1.90.8.tar.bz2
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-018.tar.xz
+ https://ftp.gnu.org/gnu/which/which-2.23.tar.gz
+ https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz
+@@ -1038,7 +1038,7 @@ https://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/epdfview-gtk3/epdfview-gtk3-20200814.tar.xz
+ https://archive.apache.org/dist/xmlgraphics/fop/source/fop-2.10-src.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/fop-2.10-upstream_fixes-1.patch
+-https://www.mupdf.com/downloads/archive/mupdf-1.25.5-source.tar.gz
++https://www.mupdf.com/downloads/archive/mupdf-1.25.6-source.tar.gz
+ https://github.com/dov/paps/releases/download/v0.8.0/paps-0.8.0.tar.gz
+ https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-source.tar.xz
