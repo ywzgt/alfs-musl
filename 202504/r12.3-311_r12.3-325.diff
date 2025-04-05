@@ -1,0 +1,49 @@
+diff --git a/wget-list b/wget-list
+index 1e159fa763..3e8e30a65d 100644
+--- a/wget-list
++++ b/wget-list
+@@ -138,7 +138,8 @@ https://lttng.org/files/urcu/userspace-rcu-0.15.1.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.28/libusb-1.0.28.tar.bz2
+ https://dist.libuv.org/dist/v1.50.0/libuv-v1.50.0.tar.gz
+ https://github.com/lfs-book/libxkbcommon/archive/v1.8.1/libxkbcommon-1.8.1.tar.gz
+-https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.6.tar.xz
++https://download.gnome.org/sources/libxml2/2.14/libxml2-2.14.0.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/libxml2-2.14.0-fix_parse_blanks-1.patch
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.22/libxmlb-0.3.22.tar.xz
+ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.43.tar.xz
+@@ -205,7 +206,7 @@ https://github.com/opencv/opencv/archive/4.11.0/opencv-4.11.0.tar.gz
+ https://github.com/opencv/opencv_contrib/archive/4.11.0/opencv_contrib-4.11.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.3/openjpeg-2.5.3.tar.gz
+ https://www.cairographics.org/releases/pixman-0.44.2.tar.gz
+-https://poppler.freedesktop.org/poppler-25.03.0.tar.xz
++https://poppler.freedesktop.org/poppler-25.04.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+ https://github.com/qpdf/qpdf/releases/download/v12.0.0/qpdf-12.0.0.tar.gz
+@@ -680,7 +681,7 @@ https://github.com/ksnip/kColorPicker/archive/v0.3.1/kColorPicker-0.3.1.tar.gz
+ https://github.com/ksnip/kImageAnnotator/archive/v0.7.1/kImageAnnotator-0.7.1.tar.gz
+ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
+ https://download.gnome.org/sources/libadwaita/1.7/libadwaita-1.7.0.tar.xz
+-https://gitlab.freedesktop.org/libinput/libei/-/archive/1.4.0/libei-1.4.0.tar.bz2
++https://gitlab.freedesktop.org/libinput/libei/-/archive/1.4.1/libei-1.4.1.tar.bz2
+ https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
+ https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz
+ https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
+@@ -880,11 +881,11 @@ https://github.com/lxqt/screengrab/releases/download/2.9.0/screengrab-2.9.0.tar.
+ https://anduin.linuxfromscratch.org/BLFS/abiword/abiword-3.0.5.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/abiword/abiword-docs-3.0.2.tar.gz
+ https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.59.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/25.2.1/libreoffice-25.2.1.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/25.2.1/libreoffice-dictionaries-25.2.1.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/25.2.1/libreoffice-help-25.2.1.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/25.2.1/libreoffice-translations-25.2.1.2.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-25.2.1.2-icu76_fixes-1.patch
++https://download.documentfoundation.org/libreoffice/src/25.2.2/libreoffice-25.2.2.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/25.2.2/libreoffice-dictionaries-25.2.2.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/25.2.2/libreoffice-help-25.2.2.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/25.2.2/libreoffice-translations-25.2.2.2.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-25.2.2.2-icu76_fixes-1.patch
+ https://download.gnome.org/sources/epiphany/48/epiphany-48.0.tar.xz
+ https://download.kde.org/stable/release-service/24.12.2/src/falkon-24.12.2.tar.xz
+ https://archive.seamonkey-project.org/releases/2.53.20/source/seamonkey-2.53.20.source.tar.xz
