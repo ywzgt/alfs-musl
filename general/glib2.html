@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-331">
+  <body class="blfs" id="blfs-r12.3-335">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-331
+        "phrase">(systemd</span> Edition) - Version r12.3-335
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-331">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-335">
           Home</a>
         </li>
       </ul>
@@ -342,20 +342,6 @@ ninja</kbd></pre>
     -i ../docs/reference/meson.build                        &amp;&amp;
 meson configure -D documentation=true                       &amp;&amp;
 ninja</kbd></pre>
-        <p>
-          As the <code class="systemitem">root</code> user, install this
-          package again for the introspection data (and optionally, the
-          documentation):
-        </p>
-        <pre class="root"><kbd class="command">ninja install</kbd></pre>
-        <p>
-          You should now install <a class="xref" href=
-          "desktop-file-utils.html" title=
-          "desktop-file-utils-0.28">desktop-file-utils-0.28</a> and <a class=
-          "xref" href="shared-mime-info.html" title=
-          "shared-mime-info-2.4">shared-mime-info-2.4</a> and proceed to run
-          the test suite.
-        </p>
         <div class="admon warning">
           <img alt="[Warning]" src="../images/warning.png" />
           <h3>
@@ -369,20 +355,16 @@ ninja</kbd></pre>
           </p>
         </div>
         <p>
-          To test the results, after having installed the packages, issue:
-          <span class="command"><strong>LC_ALL=C ninja test</strong></span>
-          as a non-<code class="systemitem">root</code> user.
+          To test the results, issue: <span class="command"><strong>LC_ALL=C
+          ninja test</strong></span> as a non-<code class=
+          "systemitem">root</code> user.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            If you have used the -D glib_debug=disabled option, 17 tests will
-            fail.
-          </p>
-        </div>
+        <p>
+          As the <code class="systemitem">root</code> user, install this
+          package again for the introspection data (and optionally, the
+          documentation):
+        </p>
+        <pre class="root"><kbd class="command">ninja install</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -980,7 +962,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-331">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-335">
           Home</a>
         </li>
       </ul>
