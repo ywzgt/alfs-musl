@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-335">
+  <body class="blfs" id="blfs-r12.3-344">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-335
+        "phrase">(systemd</span> Edition) - Version r12.3-344
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-335">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-344">
           Home</a>
         </li>
       </ul>
@@ -141,6 +141,7 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr        \
       -D CMAKE_BUILD_TYPE=RELEASE         \
       -D ENABLE_STATIC=FALSE              \
       -D CMAKE_INSTALL_DEFAULT_LIBDIR=lib \
+      -D CMAKE_POLICY_VERSION_MINIMUM=3.5 \
       -D CMAKE_SKIP_INSTALL_RPATH=ON      \
       -D CMAKE_INSTALL_DOCDIR=/usr/share/doc/libjpeg-turbo-3.0.1 \
       .. &amp;&amp;
@@ -158,6 +159,11 @@ make</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <em class="parameter"><code>-D
+          CMAKE_POLICY_VERSION_MINIMUM=3.5</code></em>: This switch allows
+          building this package with cmake-4.0 or newer.
+        </p>
         <p>
           <em class="parameter"><code>-D
           CMAKE_SKIP_INSTALL_RPATH=ON</code></em>: This switch makes
@@ -332,7 +338,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-335">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-344">
           Home</a>
         </li>
       </ul>
