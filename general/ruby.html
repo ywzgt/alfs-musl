@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-344">
+  <body class="blfs" id="blfs-r12.3-358">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-344
+        "phrase">(systemd</span> Edition) - Version r12.3-358
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-344">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-358">
           Home</a>
         </li>
       </ul>
@@ -185,7 +185,10 @@ make</kbd></pre>
           "envar">ALL_PROXY</code>, <code class="envar">http_proxy</code>,
           and etc.) set, the test suite will bail out early with messages
           like <code class="computeroutput">net/ftp is not found</code>. Make
-          sure that you unset these variables for the test suite.
+          sure that you unset these variables for the test suite. One test
+          named <code class=
+          "literal">TestGemExtCmakeBuilder#test_self_build</code> is known to
+          fail with CMake-4.0 or newer.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -475,7 +478,7 @@ bundle update rake</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-344">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-358">
           Home</a>
         </li>
       </ul>

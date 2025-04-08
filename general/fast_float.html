@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-344">
+  <body class="blfs" id="blfs-r12.3-358">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-344
+        "phrase">(systemd</span> Edition) - Version r12.3-358
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-344">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-358">
           Home</a>
         </li>
       </ul>
@@ -149,13 +149,24 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
 </kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>cmake ..
-          -D FASTFLOAT_TEST=ON &amp;&amp; ninja test</strong></span>. Note
-          that it'll download some test files from the Internet.
+          -D FASTFLOAT_TEST=ON -D CMAKE_POLICY_VERSION_MINIMUM=3.5 &amp;&amp;
+          ninja &amp;&amp; ninja test</strong></span>. Note that it'll
+          download some test files from the Internet.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
+      </div>
+      <div class="commands" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Command Explanations
+        </h2>
+        <p>
+          <em class="parameter"><code>-D
+          CMAKE_POLICY_VERSION_MINIMUM=3.5</code></em>: This switch allows
+          testing this package with cmake-4.0 or newer.
+        </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -200,7 +211,7 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-344">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-358">
           Home</a>
         </li>
       </ul>

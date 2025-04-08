@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-344">
+  <body class="blfs" id="blfs-r12.3-358">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-344
+        "phrase">(systemd</span> Edition) - Version r12.3-358
       </h4>
       <h3>
         Chapter&nbsp;2.&nbsp;Important Information
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-344">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-358">
           Home</a>
         </li>
       </ul>
@@ -248,9 +248,9 @@
                     files (specfile to control the build, various patches) or
                     the commits. If that fails, you can download an srpm
                     (source rpm) and using <span class=
-                    "application">rpm2cpio</span> (see the Tip at the bottom
-                    of the page). For rpms go to <a class="ulink" href=
-                    "https://dl.fedoraproject.org/pub/fedora/linux/">https://dl.fedoraproject.org/pub/fedora/linux/</a>
+                    "application">rpmextract</span> (see the Tip at the
+                    bottom of the page). For rpms go to <a class="ulink"
+                    href="https://dl.fedoraproject.org/pub/fedora/linux/">https://dl.fedoraproject.org/pub/fedora/linux/</a>
                     and then choose which repo you wish to look at -
                     development/rawhide is the latest development, or choose
                     releases for what was shipped in a release, updates for
@@ -337,27 +337,31 @@
         <p>
           If you have found a package that is only available in <code class=
           "filename">.deb</code> or <code class="filename">.rpm</code>
-          format, there are two small scripts, <span class=
-          "command"><strong>rpm2targz</strong></span> and <span class=
-          "command"><strong>deb2targz</strong></span> that are available at
-          <a class="ulink" href=
-          "https://anduin.linuxfromscratch.org/BLFS/extras/deb2targz.tar.bz2">
-          https://anduin.linuxfromscratch.org/BLFS/extras/deb2targz.tar.bz2</a>
-          and <a class="ulink" href=
-          "https://anduin.linuxfromscratch.org/BLFS/extras/rpm2targz.tar.bz2">
-          https://anduin.linuxfromscratch.org/BLFS/extras/rpm2targz.tar.bz2</a>
-          to convert the archives into a simple <code class=
-          "filename">tar.gz</code> format.
+          format, there are different methods of extracting them.
         </p>
         <p>
-          You may also find an rpm2cpio script useful. The Perl version in
-          the linux kernel archives at <a class="ulink" href=
-          "https://lore.kernel.org/all/20021016121842.GA2292@ncsu.edu/2-rpm2cpio">
-          https://lore.kernel.org/all/20021016121842.GA2292@ncsu.edu/2-rpm2cpio</a>
-          works for most source rpms. The rpm2targz script will use an
-          rpm2cpio script or binary if one is on your path. Note that
-          rpm2cpio will unpack a source rpm in the current directory, giving
-          a tarball, a spec file, and perhaps patches or other files.
+          <code class="filename">.deb</code> files are just archives that are
+          created and extracted by <span class="application">ar</span>. It
+          can be extracted by running: <span class="command"><strong>ar x
+          $PACKAGE.deb</strong></span>. It will extract many files; however,
+          the important one is <code class="filename">data.tar.gz</code>. It
+          contains all the files that would typically be installed from it.
+        </p>
+        <p>
+          For <code class="filename">.rpm</code> files, you can install
+          <a class="ulink" href=
+          "https://archlinux.org/packages/extra/any/rpmextract/">rpmextract</a>
+          (see the <a class="ulink" href=
+          "https://gitlab.archlinux.org/archlinux/packaging/packages/rpmextract/-/blob/main/PKGBUILD?ref_type=heads">
+          PKGBUILD</a> for how they install the package) and use <span class=
+          "command"><strong>rpmextract.sh</strong></span> from the package to
+          extract the file. It will extract to multiple directories, such as
+          <code class="filename">app</code> and <code class=
+          "filename">usr</code>. You can also use <a class="xref" href=
+          "../gnome/file-roller.html" title=
+          "File-Roller-44.5">File-Roller-44.5</a> or <a class="xref" href=
+          "../kde/ark.html" title="ark-24.12.2">ark-24.12.2</a> for the
+          extraction.
         </p>
       </div>
     </div>
@@ -383,7 +387,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-344">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-358">
           Home</a>
         </li>
       </ul>
