@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-358">
+  <body class="blfs" id="blfs-r12.3-374">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-358
+        "phrase">(systemd</span> Edition) - Version r12.3-374
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-358">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-374">
           Home</a>
         </li>
       </ul>
@@ -135,10 +135,11 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -D CMAKE_INSTALL_PREFIX=/usr       \
-      -D CMAKE_BUILD_TYPE=Release        \
-      -D FREEGLUT_BUILD_DEMOS=OFF        \
-      -D FREEGLUT_BUILD_STATIC_LIBS=OFF  \
+cmake -D CMAKE_INSTALL_PREFIX=/usr        \
+      -D CMAKE_BUILD_TYPE=Release         \
+      -D CMAKE_MINIMUM_POLICY_VERSION=3.5 \
+      -D FREEGLUT_BUILD_DEMOS=OFF         \
+      -D FREEGLUT_BUILD_STATIC_LIBS=OFF   \
       -W no-dev .. &amp;&amp;
 make</kbd></pre>
         <p>
@@ -153,6 +154,11 @@ make</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <em class="parameter"><code>-D
+          CMAKE_POLICY_VERSION_MINIMUM=3.5</code></em>: This switch allows
+          building this package with cmake-4.0 or newer.
+        </p>
         <p>
           <em class="parameter"><code>-D
           FREEGLUT_BUILD_DEMOS=OFF</code></em>: Disable building optional
@@ -236,7 +242,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-358">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-374">
           Home</a>
         </li>
       </ul>

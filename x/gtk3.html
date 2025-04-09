@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-358">
+  <body class="blfs" id="blfs-r12.3-374">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-358
+        "phrase">(systemd</span> Edition) - Version r12.3-374
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-358">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-374">
           Home</a>
         </li>
       </ul>
@@ -101,6 +101,21 @@
               <p>
                 Estimated build time: 0.8 SBU (using parallelism=4; add 0.2
                 SBU for tests)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Recommended patch (for fixing the GObject introspection
+                data): <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/gtk-3.24.49-upstream_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/gtk-3.24.49-upstream_fix-1.patch</a>
               </p>
             </li>
           </ul>
@@ -173,6 +188,12 @@
         <h2 class="sect2">
           Installation of GTK3
         </h2>
+        <p>
+          Fix an issue causing the GObject introspection data to be incorrect
+          with gobject-introspection-1.84 or newer:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../gtk-3.24.49-upstream_fix-1.patch</kbd></pre>
         <p>
           Install <span class="application">GTK3</span> by running the
           following commands:
@@ -630,7 +651,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-358">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-374">
           Home</a>
         </li>
       </ul>

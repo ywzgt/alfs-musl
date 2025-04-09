@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-358">
+  <body class="blfs" id="blfs-r12.3-374">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-358
+        "phrase">(systemd</span> Edition) - Version r12.3-374
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-358">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-374">
           Home</a>
         </li>
       </ul>
@@ -105,6 +105,21 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Optional patch (required if libxml2 is installed): <a class=
+                "ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/localsearch-3.9.0-libxml2_2_14-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/localsearch-3.9.0-libxml2_2_14-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Localsearch Dependencies
         </h3>
         <h4>
@@ -112,7 +127,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="../general/exempi.html" title=
-          "Exempi-2.6.5">Exempi-2.6.5</a>, <a class="xref" href="gexiv2.html"
+          "Exempi-2.6.6">Exempi-2.6.6</a>, <a class="xref" href="gexiv2.html"
           title="gexiv2-0.14.3">gexiv2-0.14.3</a>, <a class="xref" href=
           "../multimedia/gst10-plugins-base.html" title=
           "gst-plugins-base-1.26.0">gst-plugins-base-1.26.0</a>, and
@@ -148,6 +163,8 @@
           "DConf-0.40.0 / DConf-Editor-45.0.1">DConf-0.40.0</a>, <a class=
           "xref" href="../general/libgsf.html" title=
           "libgsf-1.14.53">libgsf-1.14.53</a>, <a class="xref" href=
+          "../general/libxml2.html" title=
+          "libxml2-2.14.1">libxml2-2.14.1</a>, <a class="xref" href=
           "../basicnet/networkmanager.html" title=
           "NetworkManager-1.52.0">NetworkManager-1.52.0</a>, <a class="xref"
           href="../multimedia/taglib.html" title=
@@ -227,6 +244,13 @@ rm -fv /usr/share/dbus-1/services/org.freedesktop.Tracker3.Miner.Files.Control.s
           <pre class="userinput"><kbd class="command">sed -i s/120/<em class=
           "replaceable"><code>200</code></em>/ tests/functional-tests/meson.build</kbd></pre>
         </div>
+        <p>
+          If <a class="xref" href="../general/libxml2.html" title=
+          "libxml2-2.14.1">libxml2-2.14.1</a> is installed, apply a patch to
+          make the HTML extractor compatible with libxml2-2.14 or newer:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../localsearch-3.9.0-libxml2_2_14-1.patch</kbd></pre>
         <p>
           Install <span class="application">Localsearch</span> by running the
           following commands:
@@ -383,7 +407,7 @@ rm -rf ~/tracker-tests</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-358">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-374">
           Home</a>
         </li>
       </ul>
