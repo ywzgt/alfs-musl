@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-380">
+  <body class="blfs" id="blfs-r12.3-391">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-380
+        "phrase">(systemd</span> Edition) - Version r12.3-391
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-380">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-391">
           Home</a>
         </li>
       </ul>
@@ -211,23 +211,29 @@
         <pre class="userinput"><kbd class=
         "command">tar -xf ../opencv_contrib-4.11.0.tar.gz</kbd></pre>
         <p>
+          Fix a build problem that occurs with CMake 4.0:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i 's/VERSION 2.8.12.2/VERSION 4.0.0/' cmake/OpenCVGenPkgconfig.cmake</kbd></pre>
+        <p>
           Install <span class="application">opencv</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -D CMAKE_INSTALL_PREFIX=/usr      \
-      -D CMAKE_BUILD_TYPE=Release       \
-      -D ENABLE_CXX11=ON                \
-      -D BUILD_PERF_TESTS=OFF           \
-      -D WITH_XINE=ON                   \
-      -D BUILD_TESTS=OFF                \
-      -D ENABLE_PRECOMPILED_HEADERS=OFF \
-      -D CMAKE_SKIP_INSTALL_RPATH=ON    \
-      -D BUILD_WITH_DEBUG_INFO=OFF      \
-      -D OPENCV_GENERATE_PKGCONFIG=ON   \
-      -W no-dev  ..                     &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr        \
+      -D CMAKE_BUILD_TYPE=Release         \
+      -D ENABLE_CXX11=ON                  \
+      -D BUILD_PERF_TESTS=OFF             \
+      -D WITH_XINE=ON                     \
+      -D BUILD_TESTS=OFF                  \
+      -D ENABLE_PRECOMPILED_HEADERS=OFF   \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON      \
+      -D BUILD_WITH_DEBUG_INFO=OFF        \
+      -D OPENCV_GENERATE_PKGCONFIG=ON     \
+      -D CMAKE_POLICY_VERSION_MINIMUM=3.5 \
+      -W no-dev  ..                       &amp;&amp;
 make</kbd></pre>
         <p>
           The package does not come with a test suite.
@@ -241,6 +247,11 @@ make</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <em class="parameter"><code>-D
+          CMAKE_POLICY_VERSION_MINIMUM=3.5</code></em>: This switch allows
+          building this package with cmake-4.0 or newer.
+        </p>
         <p>
           <em class="parameter"><code>-D
           CMAKE_SKIP_INSTALL_RPATH=ON</code></em>: This switch makes
@@ -332,7 +343,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-380">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-391">
           Home</a>
         </li>
       </ul>

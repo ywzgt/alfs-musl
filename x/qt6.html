@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-380">
+  <body class="blfs" id="blfs-r12.3-391">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-380
+        "phrase">(systemd</span> Edition) - Version r12.3-391
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-380">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-391">
           Home</a>
         </li>
       </ul>
@@ -332,12 +332,14 @@ ln -sfnv qt-6.9.0 /opt/qt6</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../qt-everywhere-src-6.9.0-protobuf_30-1.patch</kbd></pre>
         <p>
-          Disable a conflicting declaration on i686 systems:
+          Disable a conflicting declaration on i686 systems and fix a build
+          error due to SIMD intrinsics in QtMultimedia:
         </p>
         <pre class="userinput"><kbd class=
         "command">if [ "$(uname -m)" == "i686" ]; then
     sed -e "/^#elif defined(Q_CC_GNU_ONLY)/s/.*/&amp; \&amp;\&amp; 0/" \
-        -i qtbase/src/corelib/global/qtypes.h
+         -i qtbase/src/corelib/global/qtypes.h &amp;&amp;
+    export CXXFLAGS+="-DDISABLE_SIMD -DPFFFT_SIMD_DISABLE"
 fi</kbd></pre>
         <p>
           Install <span class="application">Qt6</span> by running the
@@ -1137,7 +1139,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-380">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-391">
           Home</a>
         </li>
       </ul>
