@@ -68,7 +68,7 @@ https://archive.apache.org/dist/apr/apr-1.7.5.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.3.tar.bz2
 https://ftp.gnu.org/gnu/aspell/aspell-0.60.8.1.tar.gz
 https://ftp.gnu.org/gnu/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2
-https://github.com/boostorg/boost/releases/download/boost-1.87.0/boost-1.87.0-b2-nodocs.tar.xz
+https://github.com/boostorg/boost/releases/download/boost-1.88.0/boost-1.88.0-b2-nodocs.tar.xz
 https://github.com/google/brotli/archive/v1.1.0/brotli-1.1.0.tar.gz
 https://downloads.sourceforge.net/clucene/clucene-core-2.3.3.4.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/clucene-2.3.3.4-contribs_lib-1.patch
@@ -123,7 +123,7 @@ https://github.com/rrthomas/libpaper/releases/download/v2.2.6/libpaper-2.2.6.tar
 https://github.com/flatpak/libportal/releases/download/0.9.1/libportal-0.9.1.tar.xz
 http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
 https://github.com/Qalculate/libqalculate/releases/download/v5.5.2/libqalculate-5.5.2.tar.gz
-https://gitlab.freedesktop.org/mobile-broadband/libqmi/-/archive/1.36.0/libqmi-1.34.0.tar.gz
+https://gitlab.freedesktop.org/mobile-broadband/libqmi/-/archive/1.36.0/libqmi-1.36.0.tar.gz
 https://github.com/seccomp/libseccomp/releases/download/v2.6.0/libseccomp-2.6.0.tar.gz
 https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.1.tar.xz
 https://download.gnome.org/sources/libsigc++/3.6/libsigc++-3.6.0.tar.xz
@@ -192,6 +192,7 @@ https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
 https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz
 https://downloads.sourceforge.net/libpng/libpng-1.6.47.tar.xz
 https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.47-apng.patch.gz
+https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
 https://www.libraw.org/data/LibRaw-0.21.3.tar.gz
 https://download.gnome.org/sources/librsvg/2.60/librsvg-2.60.0.tar.xz
 https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
@@ -207,7 +208,6 @@ https://poppler.freedesktop.org/poppler-25.04.0.tar.xz
 https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
 https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
 https://github.com/qpdf/qpdf/releases/download/v12.1.0/qpdf-12.1.0.tar.gz
-https://fukuchi.org/works/qrencode/qrencode-4.1.1.tar.bz2
 https://github.com/sass/sassc/archive/3.6.2/sassc-3.6.2.tar.gz
 https://github.com/sass/libsass/archive/3.6.6/libsass-3.6.6.tar.gz
 https://github.com/aruiz/webp-pixbuf-loader/archive/0.2.7/webp-pixbuf-loader-0.2.7.tar.gz
@@ -222,7 +222,7 @@ https://github.com/google/shaderc/archive/v2025.1/shaderc-2025.1.tar.gz
 https://gitlab.com/graphviz/graphviz/-/archive/12.2.1/graphviz-12.2.1.tar.bz2
 https://download.gnome.org/sources/gtk-doc/1.34/gtk-doc-1.34.0.tar.xz
 http://www.andre-simon.de/zip/highlight-4.15.tar.bz2
-https://github.com/ibus/ibus/archive/1.5.31/ibus-1.5.31.tar.gz
+https://github.com/ibus/ibus/archive/1.5.32/ibus-1.5.32.tar.gz
 https://www.unicode.org/Public/zipped/16.0.0/UCD.zip
 https://www.imagemagick.org/archive/releases/ImageMagick-7.1.1-43.tar.xz
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.17.0/iso-codes-v4.17.0.tar.gz
@@ -277,7 +277,7 @@ https://sysstat.github.io/sysstat-packages/sysstat-12.7.7.tar.xz
 https://github.com/systemd/systemd/archive/v257.3/systemd-257.3.tar.gz
 https://github.com/storaged-project/udisks/releases/download/udisks-2.10.1/udisks-2.10.1.tar.bz2
 https://www.rarlab.com/rar/unrarsrc-7.1.6.tar.gz
-https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.8/upower-v1.90.8.tar.bz2
+https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.9/upower-v1.90.9.tar.bz2
 https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-018.tar.xz
 https://ftp.gnu.org/gnu/which/which-2.23.tar.gz
 https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz
@@ -451,7 +451,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/XML-LibXML-2.0210-testsuite_fi
 https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
 https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
 https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
-https://www.php.net/distributions/php-8.4.5.tar.xz
+https://www.php.net/distributions/php-8.4.6.tar.xz
 https://www.php.net/distributions/manual/php_manual_en.html.gz
 https://www.php.net/distributions/manual/php_manual_en.tar.gz
 https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz
@@ -470,7 +470,7 @@ https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-0.5.3.tar.gz
 https://files.pythonhosted.org/packages/source/g/gi-docgen/gi_docgen-2025.3.tar.gz
 https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
 https://files.pythonhosted.org/packages/source/l/lxml/lxml-5.3.2.tar.gz
-https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.9.tar.gz
+https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.10.tar.gz
 https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.2.4.tar.gz
 https://files.pythonhosted.org/packages/source/p/packaging/packaging-24.2.tar.gz
 https://files.pythonhosted.org/packages/source/p/ply/ply-3.11.tar.gz
