@@ -7,7 +7,7 @@ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.7.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.9.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.2.tar.bz2
 https://www.netfilter.org/projects/iptables/files/iptables-1.8.11.tar.xz
-https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.75.tar.xz
+https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.76.tar.xz
 https://github.com/linux-pam/linux-pam/releases/download/v1.7.0/Linux-PAM-1.7.0.tar.xz
 https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.0-docs.tar.xz
 https://downloads.sourceforge.net/liboauth/liboauth-1.0.3.tar.gz
@@ -17,7 +17,7 @@ https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz
 https://ftp.gnu.org/gnu/nettle/nettle-3.10.1.tar.gz
 https://archive.mozilla.org/pub/security/nss/releases/NSS_3_110_RTM/src/nss-3.110.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
-https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.9p2.tar.gz
+https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.0p1.tar.gz
 https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz
 https://github.com/polkit-org/polkit/archive/126/polkit-126.tar.gz
 https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
@@ -155,7 +155,7 @@ https://github.com/protocolbuffers/protobuf/releases/download/v30.2/protobuf-30.
 https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
 https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
 https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
-https://archive.mozilla.org/pub/firefox/releases/128.8.0esr/source/firefox-128.8.0esr.source.tar.xz
+https://archive.mozilla.org/pub/firefox/releases/128.9.0esr/source/firefox-128.9.0esr.source.tar.xz
 https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.309.0/SPIRV-Headers-vulkan-sdk-1.4.309.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.309.0/SPIRV-Tools-vulkan-sdk-1.4.309.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v20.1.1/SPIRV-LLVM-Translator-20.1.1.tar.gz
@@ -454,8 +454,8 @@ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
 https://www.php.net/distributions/php-8.4.6.tar.xz
 https://www.php.net/distributions/manual/php_manual_en.html.gz
 https://www.php.net/distributions/manual/php_manual_en.tar.gz
-https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz
-https://www.python.org/ftp/python/doc/3.13.2/python-3.13.2-docs-html.tar.bz2
+https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tar.xz
+https://www.python.org/ftp/python/doc/3.13.3/python-3.13.3-docs-html.tar.bz2
 https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
 https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
 https://files.pythonhosted.org/packages/source/b/build/build-1.2.2.post1.tar.gz
@@ -750,7 +750,7 @@ https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.6.t
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.80.0/vte-0.80.0.tar.gz
 https://download.gnome.org/sources/yelp-xsl/42/yelp-xsl-42.1.tar.xz
 https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
-https://download.gnome.org/sources/gjs/1.84/gjs-1.84.1.tar.xz
+https://download.gnome.org/sources/gjs/1.84/gjs-1.84.2.tar.xz
 https://download.gnome.org/sources/gnome-autoar/0.4/gnome-autoar-0.4.5.tar.xz
 https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.1.tar.xz
 https://download.gnome.org/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
@@ -902,7 +902,7 @@ https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
 https://inkscape.org/gallery/item/53679/inkscape-1.4.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4-poppler_fixes-2.patch
 http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
-https://archive.mozilla.org/pub/thunderbird/releases/128.8.1esr/source/thunderbird-128.8.1esr.source.tar.xz
+https://archive.mozilla.org/pub/thunderbird/releases/128.9.1esr/source/thunderbird-128.9.1esr.source.tar.xz
 https://github.com/TigerVNC/tigervnc/archive/v1.15.0/tigervnc-1.15.0.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.15.0-configuration_fixes-1.patch
 https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz
@@ -912,6 +912,7 @@ https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.t
 https://www.jwz.org/xscreensaver/xscreensaver-6.09.tar.gz
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.13.tar.bz2
 https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-1.2.13.tar.bz2
+https://www.linuxfromscratch.org/patches/blfs/svn/alsa-ucm-conf-1.2.13-upstream_fix-1.patch
 https://www.alsa-project.org/files/pub/plugins/alsa-plugins-1.2.12.tar.bz2
 https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.13.tar.bz2
 https://www.alsa-project.org/files/pub/tools/alsa-tools-1.2.11.tar.bz2
@@ -990,7 +991,7 @@ https://downloads.sourceforge.net/lame/lame-3.100.tar.gz
 https://downloads.sourceforge.net/mpg123/mpg123-1.32.10.tar.bz2
 https://www.freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-6.1.tar.xz
 https://github.com/nicklan/pnmixer/releases/download/v0.7.2/pnmixer-v0.7.2.tar.gz
-https://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.2.tar.gz
+https://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.3.tar.gz
 https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-7.1.1-chromium_method-1.patch
 https://github.com/mpv-player/mpv/archive/v0.40.0/mpv-0.40.0.tar.gz
@@ -1004,7 +1005,7 @@ https://fy.chalmers.se/~appro/linux/DVD+RW/tools/dvd+rw-tools-7.1.tar.gz
 https://files.libburnia-project.org/releases/libburn-1.5.6.tar.gz
 https://files.libburnia-project.org/releases/libisoburn-1.5.6.tar.gz
 https://files.libburnia-project.org/releases/libisofs-1.5.6.tar.gz
-https://github.com/OpenPrinting/cups/releases/download/v2.4.11/cups-2.4.11-source.tar.gz
+https://github.com/OpenPrinting/cups/releases/download/v2.4.12/cups-2.4.12-source.tar.gz
 https://github.com/OpenPrinting/cups-browsed/releases/download/2.1.1/cups-browsed-2.1.1.tar.xz
 https://github.com/OpenPrinting/cups-filters/releases/download/2.0.1/cups-filters-2.0.1.tar.xz
 https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10040/ghostscript-10.04.0.tar.xz
