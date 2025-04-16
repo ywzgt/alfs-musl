@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-418">
+  <body class="blfs" id="blfs-r12.3-440">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-418
+        "phrase">(systemd</span> Edition) - Version r12.3-440
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="gnome-user-docs.html" title=
-          "gnome-user-docs-47.5">Prev</a>
+          "gnome-user-docs-48.1">Prev</a>
           <p>
-            gnome-user-docs-47.5
+            gnome-user-docs-48.1
           </p>
         </li>
         <li class="next">
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-418">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-440">
           Home</a>
         </li>
       </ul>
@@ -105,6 +105,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/yelp-42.2-security_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/yelp-42.2-security_fix-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Yelp Dependencies
         </h3>
         <h4>
@@ -113,8 +127,10 @@
         <p class="required">
           <a class="xref" href="gsettings-desktop-schemas.html" title=
           "gsettings-desktop-schemas-48.0">gsettings-desktop-schemas-48.0</a>,
-          <a class="xref" href="../x/webkitgtk.html" title=
-          "WebKitGTK-2.48.0">WebKitGTK-2.48.0</a> and <a class="xref" href=
+          <a class="xref" href="../x/libhandy1.html" title=
+          "libhandy-1.8.3">libhandy-1.8.3</a>, <a class="xref" href=
+          "../x/webkitgtk.html" title=
+          "WebKitGTK-2.48.1">WebKitGTK-2.48.1</a>, and <a class="xref" href=
           "yelp-xsl.html" title="yelp-xsl-42.1">yelp-xsl-42.1</a>
         </p>
         <h4>
@@ -150,6 +166,12 @@
         <h2 class="sect2">
           Installation of Yelp
         </h2>
+        <p>
+          First, fix a security vulnerability that allows for arbitrary file
+          reads:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../yelp-42.2-security_fix-1.patch</kbd></pre>
         <p>
           Install <span class="application">Yelp</span> by running the
           following commands:
@@ -259,9 +281,9 @@ make</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="gnome-user-docs.html" title=
-          "gnome-user-docs-47.5">Prev</a>
+          "gnome-user-docs-48.1">Prev</a>
           <p>
-            gnome-user-docs-47.5
+            gnome-user-docs-48.1
           </p>
         </li>
         <li class="next">
@@ -277,7 +299,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-418">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-440">
           Home</a>
         </li>
       </ul>

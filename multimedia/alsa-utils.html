@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      alsa-utils-1.2.13
+      alsa-utils-1.2.14
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-418">
+  <body class="blfs" id="blfs-r12.3-440">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-418
+        "phrase">(systemd</span> Edition) - Version r12.3-440
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -31,9 +31,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="alsa-tools.html" title=
-          "alsa-tools-1.2.11">Next</a>
+          "alsa-tools-1.2.14">Next</a>
           <p>
-            alsa-tools-1.2.11
+            alsa-tools-1.2.14
           </p>
         </li>
         <li class="up">
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-418">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-440">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="alsa-utils" name="alsa-utils"></a>alsa-utils-1.2.13
+      <a id="alsa-utils" name="alsa-utils"></a>alsa-utils-1.2.14
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -79,28 +79,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.13.tar.bz2">
-                https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.13.tar.bz2</a>
+                "https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.14.tar.bz2">
+                https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.14.tar.bz2</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: c04cdabee211a88bf3c6c2f45b2a4f3e
+                Download MD5 sum: d098c3d677ee80cf3d9f87783cce2e53
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 1.7 MB
+                Download size: 1.6 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 21 MB
+                Estimated disk space required: 22 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.1 SBU
+                Estimated build time: 0.2 SBU
               </p>
             </li>
           </ul>
@@ -113,7 +113,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="alsa-lib.html" title=
-          "alsa-lib-1.2.13">alsa-lib-1.2.13</a>
+          "alsa-lib-1.2.14">alsa-lib-1.2.14</a>
         </p>
         <h4>
           Optional
@@ -133,14 +133,6 @@
         <h2 class="sect2">
           Installation of ALSA Utilities
         </h2>
-        <p>
-          First correct a problem in the distributed udev rules:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e 's/acp-pdm-dmic/acp-dmic-codec/'                   \
-    -e '/LABEL="alsa_restore_go"/s/go/std/'               \
-    -e '/^ENV.ALSA_CARD_NUMBER/i LABEL="alsa_restore_go"' \
-    -i alsactl/90-alsa-restore.rules.in</kbd></pre>
         <p>
           Install <span class="application">ALSA Utilities</span> by running
           the following commands:
@@ -267,8 +259,9 @@ EOF</kbd></pre>
               <strong class="segtitle">Installed Programs:</strong>
               <span class="segbody">aconnect, alsactl, alsaloop, alsamixer,
               alsatplg, alsaucm, alsa-info.sh, amidi, amixer, aplay,
-              aplaymidi, arecord (symlink), arecordmidi, aseqdump, aseqnet,
-              axfer, iecset, and speaker-test</span>
+              aplaymidi, aplaymidi2, arecord (symlink), arecordmidi,
+              arecordmidi2, aseqdump, aseqnet, aseqsend, axfer, iecset,
+              nhlt-dmic-info, and speaker-test</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
@@ -276,8 +269,8 @@ EOF</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/share/sounds/alsa and
-              /var/lib/alsa</span>
+              <span class="segbody">/usr/lib/alsa-topology,
+              /usr/share/sounds/alsa, and /var/lib/alsa</span>
             </div>
           </div>
         </div>
@@ -444,6 +437,21 @@ EOF</kbd></pre>
               <tr>
                 <td>
                   <p>
+                    <a id="aplaymidi2" name="aplaymidi2"></a><span class=
+                    "term"><span class=
+                    "command"><strong>aplaymidi2</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    is a command-line utility that plays the specified MIDI
+                    clip file(s) to one or more ALSA sequencer ports
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
                     <a id="arecord" name="arecord"></a><span class=
                     "term"><span class=
                     "command"><strong>arecord</strong></span></span>
@@ -474,6 +482,21 @@ EOF</kbd></pre>
               <tr>
                 <td>
                   <p>
+                    <a id="arecordmidi2" name="arecordmidi2"></a><span class=
+                    "term"><span class=
+                    "command"><strong>arecordmidi2</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    is a command-line utility that records a MIDI Clip file
+                    from one or more ALSA sequencer ports
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
                     <a id="aseqdump" name="aseqdump"></a><span class=
                     "term"><span class=
                     "command"><strong>aseqdump</strong></span></span>
@@ -498,6 +521,21 @@ EOF</kbd></pre>
                   <p>
                     is an ALSA sequencer client which sends and receives
                     event packets over a network
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="aseqsend" name="aseqsend"></a><span class=
+                    "term"><span class=
+                    "command"><strong>aseqsend</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    is a command-line utility to send arbitrary messages to
+                    ALSA MIDI sequencer ports
                   </p>
                 </td>
               </tr>
@@ -536,6 +574,21 @@ EOF</kbd></pre>
               <tr>
                 <td>
                   <p>
+                    <a id="nhlt-dmic-info" name=
+                    "nhlt-dmic-info"></a><span class="term"><span class=
+                    "command"><strong>nhlt-dmic-info</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    is a command-line utility that dumps microphone array
+                    information from the ACPI NHLT table
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
                     <a id="speaker-test" name="speaker-test"></a><span class=
                     "term"><span class=
                     "command"><strong>speaker-test</strong></span></span>
@@ -563,9 +616,9 @@ EOF</kbd></pre>
         </li>
         <li class="next">
           <a accesskey="n" href="alsa-tools.html" title=
-          "alsa-tools-1.2.11">Next</a>
+          "alsa-tools-1.2.14">Next</a>
           <p>
-            alsa-tools-1.2.11
+            alsa-tools-1.2.14
           </p>
         </li>
         <li class="up">
@@ -574,7 +627,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-418">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-440">
           Home</a>
         </li>
       </ul>
