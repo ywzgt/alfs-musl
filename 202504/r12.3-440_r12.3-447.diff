@@ -1,0 +1,51 @@
+diff --git a/wget-list b/wget-list
+index a4e33aaf7d..8b5211cda2 100644
+--- a/wget-list
++++ b/wget-list
+@@ -172,7 +172,7 @@ https://download.gimp.org/pub/babl/0.1/babl-0.1.112.tar.xz
+ https://github.com/Exiv2/exiv2/archive/v0.28.5/exiv2-0.28.5.tar.gz
+ https://downloads.sourceforge.net/freetype/freetype-2.13.3.tar.xz
+ https://downloads.sourceforge.net/freetype/freetype-doc-2.13.3.tar.xz
+-https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz
++https://gitlab.freedesktop.org/api/v4/projects/890/packages/generic/fontconfig/2.16.2/fontconfig-2.16.2.tar.xz
+ https://github.com/fribidi/fribidi/releases/download/v1.0.16/fribidi-1.0.16.tar.xz
+ https://download.gimp.org/pub/gegl/0.4/gegl-0.4.58.tar.xz
+ https://sourceforge.net/projects/giflib/files/giflib-5.2.2.tar.gz
+@@ -193,7 +193,7 @@ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.
+ https://downloads.sourceforge.net/libpng/libpng-1.6.47.tar.xz
+ https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.47-apng.patch.gz
+ https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
+-https://www.libraw.org/data/LibRaw-0.21.3.tar.gz
++https://www.libraw.org/data/LibRaw-0.21.4.tar.gz
+ https://download.gnome.org/sources/librsvg/2.60/librsvg-2.60.0.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+ https://download.osgeo.org/libtiff/tiff-4.7.0.tar.gz
+@@ -225,7 +225,7 @@ http://www.andre-simon.de/zip/highlight-4.15.tar.bz2
+ https://github.com/ibus/ibus/archive/1.5.32/ibus-1.5.32.tar.gz
+ https://www.unicode.org/Public/zipped/16.0.0/UCD.zip
+ https://www.imagemagick.org/archive/releases/ImageMagick-7.1.1-43.tar.xz
+-https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.17.0/iso-codes-v4.17.0.tar.gz
++https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.18.0/iso-codes-v4.18.0.tar.gz
+ https://github.com/lsof-org/lsof/releases/download/4.99.0/lsof-4.99.0.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.3.1.tar.bz2
+ https://ftp.gnu.org/gnu/screen/screen-5.0.0.tar.gz
+@@ -311,8 +311,8 @@ https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03-xdoc.tar.xz
+ https://github.com/NixOS/patchelf/releases/download/0.18.0/patchelf-0.18.0.tar.gz
+ https://www.cpan.org/authors/id/P/PH/PHRED/Archive-Zip-1.68.tar.gz
+ https://www.cpan.org/authors/id/V/VP/VPIT/autovivification-0.18.tar.gz
+-https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISBN-3.011.tar.gz
+-https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISMN-1.204.tar.gz
++https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISBN-3.012.tar.gz
++https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISMN-1.205.tar.gz
+ https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISSN-1.008.tar.gz
+ https://www.cpan.org/authors/id/K/KA/KASEI/Class-Accessor-0.51.tar.gz
+ https://www.cpan.org/authors/id/D/DC/DCANTRELL/Data-Compare-1.29.tar.gz
+@@ -592,7 +592,7 @@ https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.9.0/libslirp-v4.9.0.t
+ https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.3.tar.xz
+ https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.5.tar.xz
+ https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.6.tar.bz2
+-https://notroj.github.io/neon/neon-0.34.1.tar.gz
++https://notroj.github.io/neon/neon-0.34.2.tar.gz
+ https://github.com/nghttp2/nghttp2/releases/download/v1.65.0/nghttp2-1.65.0.tar.xz
+ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.4.4.tar.xz
+ https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
