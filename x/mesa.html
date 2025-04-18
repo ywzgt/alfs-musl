@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-447">
+  <body class="blfs" id="blfs-r12.3-454">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-447
+        "phrase">(systemd</span> Edition) - Version r12.3-454
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-447">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-454">
           Home</a>
         </li>
       </ul>
@@ -237,7 +237,9 @@
           </h3>
           <p>
             An Internet connection is needed for building the Nouveau Vulkan
-            driver.
+            driver. The system certificate store may need to be set up with
+            <a class="xref" href="../postlfs/make-ca.html" title=
+            "make-ca-1.16">make-ca-1.16</a> before building this package.
           </p>
         </div>
         <div class="admon note">
@@ -354,6 +356,15 @@
       &lt; /*/M&gt; <span class=
 "blue">I</span>ntel 8xx/9xx/G3x/G4x/HD Graphics                       [DRM_I915]
       
+      # For iris:
+      &lt; /*/M&gt; <span class=
+"blue">I</span>ntel Xe Graphics                                         [DRM_XE]
+      [*]       <span class=
+"blue">E</span>nable display support                          [DRM_XE_DISPLAY]
+      (*)       <span class=
+"blue">F</span>orce probe xe for selected Intel hardware IDs
+                                                       ...  [DRM_XE_FORCE_PROBE]
+      
       # For llvmpipe or softpipe:
       &lt; /*&gt;   <span class=
 "blue">V</span>irtual GEM provider                                    [DRM_VGEM]
@@ -374,11 +385,29 @@
             below.
           </p>
           <p>
+            For the GPUs supported by the Iris Gallium3D driver, with
+            <code class="option">CONFIG_DRM_I915</code> enabled and
+            <code class="option">CONFIG_DRM_XE_FORCE_PROBE</code> set to the
+            string <code class="literal">*</code>, the i915 driver will be
+            used if it supports the GPU, and the Xe driver will be used if it
+            supports the GPU but the i915 driver does not. If you are sure
+            your GPU is supported by the i915 driver, you can disable the Xe
+            driver to save some build time. If your GPU is supported by both
+            drivers and you want to use the Xe driver, you can disable the
+            i915 driver, or make the i915 driver deny your GPU via the
+            <code class="option">CONFIG_DRM_I915_FORCE_PROBE</code> option,
+            for example setting it to <code class="literal">!7d55</code>
+            would make i915 deny the Meteor Lake integrated GPU (of which the
+            PCI ID is <code class="literal">8086:7d55</code>), leaving it for
+            the Xe driver.
+          </p>
+          <p>
             <code class="option">CONFIG_DRM_RADEON</code>, <code class=
             "option">CONFIG_DRM_AMDGPU</code>, <code class=
-            "option">CONFIG_DRM_NOUVEAU</code>, and <code class=
-            "option">CONFIG_DRM_I915</code> may require firmware. See
-            <a class="xref" href="../postlfs/firmware.html" title=
+            "option">CONFIG_DRM_NOUVEAU</code>, <code class=
+            "option">CONFIG_DRM_I915</code>, and <code class=
+            "option">CONFIG_DRM_XE</code> may require firmware. See <a class=
+            "xref" href="../postlfs/firmware.html" title=
             "About Firmware">About Firmware</a> for details.
           </p>
           <p>
@@ -952,7 +981,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-447">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-454">
           Home</a>
         </li>
       </ul>

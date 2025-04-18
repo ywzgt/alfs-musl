@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-447">
+  <body class="blfs" id="blfs-r12.3-454">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-447
+        "phrase">(systemd</span> Edition) - Version r12.3-454
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-447">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-454">
           Home</a>
         </li>
       </ul>
@@ -155,8 +155,18 @@
     &lt;*/M&gt; <span class=
 "blue">D</span>irect Rendering Manager (XFree86 4.1.0 and higher DRI support) ---&gt;
                                                                       ...  [DRM]
-      &lt;*/M&gt; <span class=
-"blue">I</span>ntel 8xx/9xx/G3x/G4x/HD Graphics                         [DRM_I915]</pre>
+      &lt; /*/M&gt; <span class=
+"blue">I</span>ntel 8xx/9xx/G3x/G4x/HD Graphics                       [DRM_I915]
+      &lt; /*/M&gt; <span class=
+"blue">I</span>ntel Xe Graphics                                         [DRM_XE]
+      (*)       <span class=
+"blue">F</span>orce probe xe for selected Intel hardware IDs
+                                                       ...  [DRM_XE_FORCE_PROBE]</pre>
+        <p>
+          See <a class="xref" href="../x/mesa.html#mesa-kernel" title=
+          "Kernel Configuration">Mesa Kernel Configuration</a> for more info
+          about the i915 driver and the Xe driver.
+        </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -175,9 +185,9 @@
           <p>
             If you know the model of your Intel GPU, you can pass the
             <code class=
-            "option">-D{GEN{8,9,11,12},MTL,ARL,LNL,BMG,XE2_HPG}=OFF</code>
-            option to the <span class="command"><strong>cmake</strong></span>
-            command but leaving the option for your GPU out. Note that the
+            "option">-D{GEN{8,9,11,12},MTL,ARL,LNL,BMG}=OFF</code> option to
+            the <span class="command"><strong>cmake</strong></span> command
+            but leaving the option for your GPU out. Note that the
             <span class="quote">“<span class="quote">GEN</span>”</span>
             number here is the generation of the GPU, not the CPU. For
             example, with an Intel Core i7-1065G7 CPU shipping a
@@ -306,7 +316,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-447">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-454">
           Home</a>
         </li>
       </ul>
