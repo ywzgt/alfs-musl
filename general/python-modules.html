@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-470">
+  <body class="blfs" id="blfs-r12.3-472">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-470
+        "phrase">(systemd</span> Edition) - Version r12.3-472
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-470">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-472">
           Home</a>
         </li>
       </ul>
@@ -193,13 +193,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="python-modules.html#numpy" title=
-                "NumPy-2.2.4">NumPy-2.2.4</a>
-              </p>
-            </li>
-            <li class="listitem">
-              <p>
-                <a class="xref" href="python-modules.html#packaging" title=
-                "Packaging-24.2">packaging-24.2</a>
+                "NumPy-2.2.5">NumPy-2.2.5</a>
               </p>
             </li>
             <li class="listitem">
@@ -604,10 +598,8 @@
             Required
           </h5>
           <p class="required">
-            <a class="xref" href="python-modules.html#packaging" title=
-            "Packaging-24.2">packaging-24.2</a> and <a class="xref" href=
-            "python-dependencies.html#pyproject-hooks" title=
-            "Pyproject_Hooks-1.2.0">pyproject_hooks-1.2.0</a>
+            <a class="xref" href="python-dependencies.html#pyproject-hooks"
+            title="Pyproject_Hooks-1.2.0">pyproject_hooks-1.2.0</a>
           </p>
           <h5>
             Optional (for tests)
@@ -2553,8 +2545,6 @@ python3 tests/unit/tests.py</kbd></pre>
           <p class="required">
             <a class="xref" href="python-dependencies.html#markdown" title=
             "Markdown-3.7">Markdown-3.7</a>, <a class="xref" href=
-            "python-modules.html#packaging" title=
-            "Packaging-24.2">packaging-24.2</a>, <a class="xref" href=
             "python-modules.html#pygments" title=
             "Pygments-2.19.1">Pygments-2.19.1</a>, and <a class="xref" href=
             "python-dependencies.html#typogrify" title=
@@ -3230,7 +3220,7 @@ python3 tests/unit/tests.py</kbd></pre>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          <a id="numpy" name="numpy"></a>NumPy-2.2.4
+          <a id="numpy" name="numpy"></a>NumPy-2.2.5
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -3259,13 +3249,13 @@ python3 tests/unit/tests.py</kbd></pre>
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.2.4.tar.gz">
-                  https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.2.4.tar.gz</a>
+                  "https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.2.5.tar.gz">
+                  https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.2.5.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: 56232f4a69b03dd7a87a55fffc5f2ebc
+                  Download MD5 sum: df2e46b468f9fdf06b13b04eca9a723f
                 </p>
               </li>
               <li class="listitem">
@@ -3448,183 +3438,6 @@ deactivate</kbd></pre>
                 </tr>
               </tbody>
             </table>
-          </div>
-        </div>
-      </div>
-      <div class="sect2" lang="en" xml:lang="en">
-        <h2 class="sect2">
-          <a id="packaging" name="packaging"></a>Packaging-24.2
-        </h2>
-        <div class="package" lang="en" xml:lang="en">
-          <h3 class="sect3">
-            Introduction to Packaging Module
-          </h3>
-          <p>
-            The <span class="application">Packaging</span> library provides
-            utilities that implement the interoperability specifications
-            which have clearly one correct behaviour (PEP440) or benefit
-            greatly from having a single shared implementation (PEP425). This
-            includes utilities for version handling, specifiers, markers,
-            tags, and requirements.
-          </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
-          <h4>
-            Package Information
-          </h4>
-          <div class="itemizedlist">
-            <ul class="compact">
-              <li class="listitem">
-                <p>
-                  Download (HTTP): <a class="ulink" href=
-                  "https://files.pythonhosted.org/packages/source/p/packaging/packaging-24.2.tar.gz">
-                  https://files.pythonhosted.org/packages/source/p/packaging/packaging-24.2.tar.gz</a>
-                </p>
-              </li>
-              <li class="listitem">
-                <p>
-                  Download MD5 sum: 97dbaca91e00d6b9fd86866e8c7897ae
-                </p>
-              </li>
-              <li class="listitem">
-                <p>
-                  Download size: 164 KB
-                </p>
-              </li>
-              <li class="listitem">
-                <p>
-                  Estimated disk space required: 2.7 MB (add 20 MB for tests)
-                </p>
-              </li>
-              <li class="listitem">
-                <p>
-                  Estimated build time: less than 0.1 SBU (0.1 SBU for tests)
-                </p>
-              </li>
-            </ul>
-          </div>
-          <h4>
-            Packaging Dependencies
-          </h4>
-          <h5>
-            Optional (for testing)
-          </h5>
-          <p class="optional">
-            <a class="xref" href="python-modules.html#pytest" title=
-            "Pytest-8.3.5">pytest-8.3.5</a> and <a class="ulink" href=
-            "https://pypi.org/project/pretend/">pretend</a>
-          </p>
-        </div>
-        <div class="installation" lang="en" xml:lang="en">
-          <h3 class="sect3">
-            Installation of Packaging
-          </h3>
-          <p>
-            Build the module:
-          </p>
-          <pre class="userinput"><kbd class=
-          "command">pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir $PWD</kbd></pre>
-          <p>
-            Now, as the <code class="systemitem">root</code> user:
-          </p>
-          <pre class="root"><kbd class=
-          "command">pip3 install --no-index --find-links dist --no-user packaging</kbd></pre>
-          <p>
-            Assuming <a class="xref" href="python-modules.html#pytest" title=
-            "Pytest-8.3.5">pytest-8.3.5</a> is installed, but the other
-            optional dependency is not, the installation can be tested with
-            the following commands:
-          </p>
-          <pre class="userinput"><kbd class=
-          "command">python3 -m venv --system-site-packages testenv &amp;&amp;
-source testenv/bin/activate                    &amp;&amp;
-pip3 install pretend                           &amp;&amp;
-python3 /usr/bin/pytest
-deactivate</kbd></pre>
-        </div>
-        <div class="commands" lang="en" xml:lang="en">
-          <h3 class="sect3">
-            Command Explanations
-          </h3>
-          <p>
-            <em class="parameter"><code>-w dist</code></em>: builds the
-            appropriate "wheel" for this module in the directory <code class=
-            "filename">dist</code>.
-          </p>
-          <p>
-            <em class="parameter"><code>--no-build-isolation</code></em>:
-            tells pip3 to run the build in the system environment instead of
-            creating a temporary build environment.
-          </p>
-          <p>
-            <em class="parameter"><code>--no-deps</code></em>: prevents pip3
-            from building wheels for the project's dependencies.
-          </p>
-          <p>
-            <em class="parameter"><code>--no-index</code></em>: ignores the
-            package index (only looking at --find-links URLs instead).
-          </p>
-          <p>
-            <em class="parameter"><code>--find-links dist</code></em>: looks
-            for links to archives such as wheel (.whl) files in the directory
-            <code class="filename">dist</code>.
-          </p>
-          <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
-            the cache to prevent a warning when installing as the
-            <code class="systemitem">root</code> user.
-          </p>
-          <p>
-            <em class="parameter"><code>--no-user</code></em>: Prevent
-            mistakenly running the install command as a non-root user.
-          </p>
-          <p>
-            <code class="option">--upgrade</code>: Upgrade the package to the
-            newest available version. This option is used with the install
-            command if a version of the package is already installed.
-          </p>
-          <p>
-            <code class="option">--force-reinstall</code>: Reinstall the
-            package even if it is up-to-date. This option is used with the
-            install command if reinstalling the package or reverting to an
-            earlier version of the package.
-          </p>
-          <p>
-            <code class="option">--no-deps</code>: Do not install package
-            dependencies. This option may be needed with the --upgrade or
-            --force-reinstall options.
-          </p>
-        </div>
-        <div class="content" lang="en" xml:lang="en">
-          <h3 class="sect3">
-            Contents
-          </h3>
-          <div class="segmentedlist">
-            <div class="seglistitem">
-              <div class="seg">
-                <strong class="segtitle">Installed Programs:</strong>
-                <span class="segbody">None</span>
-              </div>
-              <div class="seg">
-                <strong class="segtitle">Installed Libraries:</strong>
-                <span class="segbody">None</span>
-              </div>
-              <div class="seg">
-                <strong class="segtitle">Installed Directories:</strong>
-                <span class=
-                "segbody">/usr/lib/python3.13/site-packages/packaging and
-                /usr/lib/python3.13/site-packages/packaging-24.2.dist-info</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -5300,9 +5113,7 @@ deactivate</kbd></pre>
           </h5>
           <p class="required">
             <a class="xref" href="python-dependencies.html#iniconfig" title=
-            "Iniconfig-2.0.0">iniconfig-2.0.0</a>, <a class="xref" href=
-            "python-modules.html#packaging" title=
-            "Packaging-24.2">packaging-24.2</a>, and <a class="xref" href=
+            "Iniconfig-2.0.0">iniconfig-2.0.0</a> and <a class="xref" href=
             "python-dependencies.html#pluggy" title=
             "Pluggy-1.5.0">pluggy-1.5.0</a>
           </p>
@@ -6902,8 +6713,6 @@ deactivate</kbd></pre>
             "docutils-0.21.2">docutils-0.21.2</a>, <a class="xref" href=
             "python-dependencies.html#imagesize" title=
             "Imagesize-1.4.1">imagesize-1.4.1</a>, <a class="xref" href=
-            "python-modules.html#packaging" title=
-            "Packaging-24.2">packaging-24.2</a>, <a class="xref" href=
             "python-modules.html#pygments" title=
             "Pygments-2.19.1">Pygments-2.19.1</a>, <a class="xref" href=
             "python-modules.html#requests" title=
@@ -7343,7 +7152,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-470">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-472">
           Home</a>
         </li>
       </ul>
