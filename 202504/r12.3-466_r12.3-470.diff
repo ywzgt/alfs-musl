@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index 2e542a6e46..60ced93441 100644
+--- a/wget-list
++++ b/wget-list
+@@ -137,7 +137,7 @@ https://lttng.org/files/urcu/userspace-rcu-0.15.2.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.28/libusb-1.0.28.tar.bz2
+ https://dist.libuv.org/dist/v1.50.0/libuv-v1.50.0.tar.gz
+ https://github.com/lfs-book/libxkbcommon/archive/v1.8.1/libxkbcommon-1.8.1.tar.gz
+-https://download.gnome.org/sources/libxml2/2.14/libxml2-2.14.1.tar.xz
++https://download.gnome.org/sources/libxml2/2.14/libxml2-2.14.2.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.22/libxmlb-0.3.22.tar.xz
+ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.43.tar.xz
+@@ -166,7 +166,7 @@ https://github.com/nemtrif/utfcpp/archive/v4.0.6/utfcpp-4.0.6.tar.gz
+ https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.0/downloads/wayland-1.23.0.tar.xz
+ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.43/downloads/wayland-protocols-1.43.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+-https://oligarchy.co.uk/xapian/1.4.27/xapian-core-1.4.27.tar.xz
++https://oligarchy.co.uk/xapian/1.4.29/xapian-core-1.4.29.tar.xz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+ https://download.gimp.org/pub/babl/0.1/babl-0.1.112.tar.xz
+ https://github.com/Exiv2/exiv2/archive/v0.28.5/exiv2-0.28.5.tar.gz
+@@ -260,7 +260,7 @@ https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar
+ https://github.com/lm-sensors/lm-sensors/archive/V3-6-0/lm-sensors-3-6-0.tar.gz
+ https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
+ http://ftp.midnight-commander.org/mc-4.8.33.tar.xz
+-https://gitlab.freedesktop.org/mobile-broadband/ModemManager/-/archive/1.22.0/ModemManager-1.22.0.tar.gz
++https://gitlab.freedesktop.org/mobile-broadband/ModemManager/-/archive/1.24.0/ModemManager-1.24.0.tar.gz
+ https://download.gnome.org/sources/notification-daemon/3.20/notification-daemon-3.20.0.tar.xz
+ http://www.mirbsd.org/MirOS/dist/mir/cpio/paxmirabilis-20240817.tgz
+ https://mj.ucw.cz/download/linux/pci/pciutils-3.13.0.tar.gz
