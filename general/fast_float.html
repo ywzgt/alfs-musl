@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-502">
+  <body class="blfs" id="blfs-r12.3-518">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-502
+        "phrase">(systemd</span> Edition) - Version r12.3-518
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-502">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-518">
           Home</a>
         </li>
       </ul>
@@ -148,15 +148,18 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -G Ninja ..
 </kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>cmake ..
-          -D FASTFLOAT_TEST=ON -D CMAKE_POLICY_VERSION_MINIMUM=3.5 &amp;&amp;
-          ninja &amp;&amp; ninja test</strong></span>. Note that it'll
-          download some test files from the Internet.
-        </p>
-        <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
+        <p>
+          To test the results, issue: <span class="command"><strong>cmake ..
+          -D FASTFLOAT_TEST=ON -D CMAKE_POLICY_VERSION_MINIMUM=3.5 &amp;&amp;
+          ninja &amp;&amp; ninja test</strong></span>. Note that it'll
+          download some test files from the Internet, and those files would
+          be installed if the test suite had run before <span class=
+          "command"><strong>ninja install</strong></span>. So don't run the
+          test suite before installation.
+        </p>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -211,7 +214,7 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-502">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-518">
           Home</a>
         </li>
       </ul>
