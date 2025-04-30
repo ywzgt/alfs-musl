@@ -1,0 +1,40 @@
+diff --git a/wget-list b/wget-list
+index b0f649359b..38236cdd0f 100644
+--- a/wget-list
++++ b/wget-list
+@@ -495,7 +495,7 @@ https://files.pythonhosted.org/packages/source/s/six/six-1.17.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-8.2.3.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-3.0.2.tar.gz
+ https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-1.0.0.tar.gz
+-https://files.pythonhosted.org/packages/source/a/attrs/attrs-25.1.0.tar.gz
++https://files.pythonhosted.org/packages/source/a/attrs/attrs-25.3.0.tar.gz
+ https://files.pythonhosted.org/packages/source/B/Babel/babel-2.17.0.tar.gz
+ https://files.pythonhosted.org/packages/source/c/certifi/certifi-2025.1.31.tar.gz
+ https://files.pythonhosted.org/packages/source/c/chardet/chardet-5.2.0.tar.gz
+@@ -508,7 +508,7 @@ https://files.pythonhosted.org/packages/source/h/hatch-vcs/hatch_vcs-0.4.0.tar.g
+ https://files.pythonhosted.org/packages/source/i/idna/idna-3.10.tar.gz
+ https://files.pythonhosted.org/packages/source/i/imagesize/imagesize-1.4.1.tar.gz
+ https://files.pythonhosted.org/packages/source/i/iniconfig/iniconfig-2.0.0.tar.gz
+-https://files.pythonhosted.org/packages/source/M/Markdown/markdown-3.7.tar.gz
++https://files.pythonhosted.org/packages/source/M/Markdown/markdown-3.8.tar.gz
+ https://files.pythonhosted.org/packages/source/m/meson_python/meson_python-0.17.1.tar.gz
+ https://files.pythonhosted.org/packages/source/m/msgpack/msgpack-1.1.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pathspec/pathspec-0.12.1.tar.gz
+@@ -516,7 +516,7 @@ https://files.pythonhosted.org/packages/source/p/pluggy/pluggy-1.5.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyproject-hooks/pyproject_hooks-1.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyproject-metadata/pyproject_metadata-0.9.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pytz/pytz-2025.1.tar.gz
+-https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-8.1.0.tar.gz
++https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-8.3.0.tar.gz
+ https://github.com/leohemsted/smartypants.py/archive/v2.0.1/smartypants.py-2.0.1.tar.gz
+ https://files.pythonhosted.org/packages/source/s/snowballstemmer/snowballstemmer-2.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-applehelp/sphinxcontrib_applehelp-2.0.0.tar.gz
+@@ -526,7 +526,7 @@ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jquery/sphinxcont
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jsmath/sphinxcontrib-jsmath-1.0.1.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-qthelp/sphinxcontrib_qthelp-2.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib_serializinghtml/sphinxcontrib_serializinghtml-2.0.0.tar.gz
+-https://files.pythonhosted.org/packages/source/t/trove_classifiers/trove_classifiers-2025.1.15.22.tar.gz
++https://files.pythonhosted.org/packages/source/t/trove_classifiers/trove_classifiers-2025.4.11.15.tar.gz
+ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.1.0.tar.gz
+ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.3.0.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
