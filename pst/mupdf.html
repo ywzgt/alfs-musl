@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-531">
+  <body class="blfs" id="blfs-r12.3-544">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-531
+        "phrase">(systemd</span> Edition) - Version r12.3-544
       </h4>
       <h3>
         Chapter&nbsp;50.&nbsp;PostScript
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-531">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-544">
           Home</a>
         </li>
       </ul>
@@ -157,12 +157,12 @@ USE_SYSTEM_FREETYPE := yes
 USE_SYSTEM_HARFBUZZ := yes
 USE_SYSTEM_JBIG2DEC := no
 USE_SYSTEM_JPEGXR := no # not used without HAVE_JPEGXR
-USE_SYSTEM_LCMS2 := no # need lcms2-art fork
+USE_SYSTEM_LCMS2 := no # lcms2mt is strongly preferred
 USE_SYSTEM_LIBJPEG := yes
 USE_SYSTEM_MUJS := no # build needs source anyway
 USE_SYSTEM_OPENJPEG := yes
 USE_SYSTEM_ZLIB := yes
-USE_SYSTEM_GLUT := no # need freeglut2-art fork
+USE_SYSTEM_GLUT := yes
 USE_SYSTEM_CURL := yes
 USE_SYSTEM_GUMBO := no
 EOF
@@ -348,7 +348,7 @@ ln -sfv mupdf-x11 /usr/bin/mupdf</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-531">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-544">
           Home</a>
         </li>
       </ul>
