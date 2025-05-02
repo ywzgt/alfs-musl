@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-544">
+  <body class="blfs" id="blfs-r12.3-564">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-544
+        "phrase">(systemd</span> Edition) - Version r12.3-564
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-544">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-564">
           Home</a>
         </li>
       </ul>
@@ -197,6 +197,8 @@
           "alsa-lib-1.2.14">alsa-lib-1.2.14</a>, <a class="xref" href=
           "../general/dbus-glib.html" title=
           "dbus-glib-0.114">dbus-glib-0.114</a>, <a class="xref" href=
+          "../general/libproxy.html" title=
+          "libproxy-0.5.9">libproxy-0.5.9</a>, <a class="xref" href=
           "../general/nodejs.html" title=
           "Node.js-22.15.0">nodejs-22.15.0</a>, <a class="xref" href=
           "../general/valgrind.html" title=
@@ -235,6 +237,11 @@ ac_add_options --disable-dbus
 # wireless-tools, and you wish to use geolocation web services, comment out
 # this line
 ac_add_options --disable-necko-wifi
+
+
+# If you wish to use libproxy to determine proxy server information, you will
+# need to install the libproxy package and then uncomment the option below:
+#ac_add_options --enable-libproxy
 
 # Uncomment these lines if you have installed optional dependencies:
 #ac_add_options --enable-system-hunspell
@@ -555,7 +562,7 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-544">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-564">
           Home</a>
         </li>
       </ul>

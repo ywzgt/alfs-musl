@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-544">
+  <body class="blfs" id="blfs-r12.3-564">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-544
+        "phrase">(systemd</span> Edition) - Version r12.3-564
       </h4>
       <h3>
         Chapter&nbsp;22.&nbsp;Databases
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-544">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-564">
           Home</a>
         </li>
       </ul>
@@ -181,6 +181,18 @@ make</kbd></pre>
         <pre class="root"><kbd class=
         "command">install -v -m755 -d /usr/share/doc/sqlite-3.49.1 &amp;&amp;
 cp -v -R sqlite-doc-3490100/* /usr/share/doc/sqlite-3.49.1</kbd></pre>
+        <div class="admon important">
+          <img alt="[Important]" src="../images/important.png" />
+          <h3>
+            Important
+          </h3>
+          <p>
+            Several packages use an sqlite Python plugin. After installing
+            this package, <a class="xref" href="../general/python3.html"
+            title="Python-3.13.3">Python-3.13.3</a> should be rebuilt to
+            create this plugin.
+          </p>
+        </div>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -296,7 +308,7 @@ cp -v -R sqlite-doc-3490100/* /usr/share/doc/sqlite-3.49.1</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-544">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-564">
           Home</a>
         </li>
       </ul>

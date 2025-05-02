@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-544">
+  <body class="blfs" id="blfs-r12.3-564">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-544
+        "phrase">(systemd</span> Edition) - Version r12.3-564
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-544">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-564">
           Home</a>
         </li>
       </ul>
@@ -133,6 +133,8 @@
           "IO::Socket::SSL-2.089">IO-Socket-SSL-2.089</a> (for the test
           suite), <a class="xref" href="../general/libidn2.html" title=
           "libidn2-2.3.8">libidn2-2.3.8</a>, <a class="xref" href=
+          "../general/libproxy.html" title=
+          "libproxy-0.5.9">libproxy-0.5.9</a>, <a class="xref" href=
           "../general/pcre2.html" title="PCRE2-10.45">pcre2-10.45</a>, and
           <a class="xref" href="../general/valgrind.html" title=
           "Valgrind-3.25.0">Valgrind-3.25.0</a> (for the test suite)
@@ -176,6 +178,13 @@ make</kbd></pre>
           <em class="parameter"><code>--with-ssl=openssl</code></em>: This
           allows the program to use openssl instead of <a class="xref" href=
           "../postlfs/gnutls.html" title="GnuTLS-3.8.9">GnuTLS-3.8.9</a>.
+        </p>
+        <p>
+          <code class="option">--enable-libproxy</code>: This switch allows
+          wget to use libproxy for proxy configuration. Use it if you have
+          the <a class="xref" href="../general/libproxy.html" title=
+          "libproxy-0.5.9">libproxy-0.5.9</a> package installed and wish to
+          use a proxy server.
         </p>
         <p>
           <code class="option">--enable-valgrind-tests</code>: This allows
@@ -268,7 +277,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-544">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-564">
           Home</a>
         </li>
       </ul>

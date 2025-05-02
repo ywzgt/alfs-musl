@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-544">
+  <body class="blfs" id="blfs-r12.3-564">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-544
+        "phrase">(systemd</span> Edition) - Version r12.3-564
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-544">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-564">
           Home</a>
         </li>
       </ul>
@@ -161,7 +161,9 @@
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="../general/pciutils.html" title=
+          <a class="xref" href="../general/libproxy.html" title=
+          "libproxy-0.5.9">libproxy-0.5.9</a>, <a class="xref" href=
+          "../general/pciutils.html" title=
           "pciutils-3.13.0">pciutils-3.13.0</a> (runtime), <a class="xref"
           href="../basicnet/wget.html" title="Wget-1.25.0">Wget-1.25.0</a>,
           <a class="xref" href="../basicnet/wireless_tools.html" title=
@@ -202,6 +204,10 @@
 
 # If you have installed wireless-tools comment out this line:
 ac_add_options --disable-necko-wifi
+
+# If you wish to use libproxy to determine proxy server information, you will
+# need to install the libproxy package and then uncomment the option below:
+#ac_add_options --enable-libproxy
 
 # Uncomment the following option if you have not installed PulseAudio
 #ac_add_options --enable-audio-backends=alsa
@@ -468,7 +474,7 @@ ln -sfv /usr/lib/thunderbird/chrome/icons/default/default256.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-544">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-564">
           Home</a>
         </li>
       </ul>

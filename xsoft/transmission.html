@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-544">
+  <body class="blfs" id="blfs-r12.3-564">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-544
+        "phrase">(systemd</span> Edition) - Version r12.3-564
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-544">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-564">
           Home</a>
         </li>
       </ul>
@@ -184,6 +184,12 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../transmission-4.0.6-build_fix-1.patch</kbd></pre>
+        <p>
+          Next, adapt two of the third-party modules to changes in CMake 4.0:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e 's/2.8/4.0/' -i third-party/dht/CMakeLists.txt \
+                    -i third-party/libnatpmp/CMakeLists.txt</kbd></pre>
         <p>
           Install <span class="application">Transmission</span> by running
           the following commands:
@@ -406,7 +412,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-544">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-564">
           Home</a>
         </li>
       </ul>
