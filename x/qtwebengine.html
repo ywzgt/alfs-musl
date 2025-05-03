@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-564">
+  <body class="blfs" id="blfs-r12.3-576">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-564
+        "phrase">(systemd</span> Edition) - Version r12.3-576
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-564">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-576">
           Home</a>
         </li>
       </ul>
@@ -158,6 +158,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-6.9.0-fix_gpu_acceleration-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-6.9.0-fix_gpu_acceleration-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           qtwebengine Dependencies
         </h3>
         <h4>
@@ -226,7 +240,13 @@
           Installation of qtwebengine
         </h2>
         <p>
-          First, fix a build failure that occurs with the latest version of
+          First, fix GPU accelration issues in Falkon that can lead to
+          crashes when Hardware Acceleration support is enabled:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../qtwebengine-6.9.0-fix_gpu_acceleration-1.patch</kbd></pre>
+        <p>
+          Next, fix a build failure that occurs with the latest version of
           pipewire. Also work around a very long file path:
         </p>
         <pre class="userinput"><kbd class=
@@ -477,7 +497,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-564">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-576">
           Home</a>
         </li>
       </ul>
