@@ -1,0 +1,66 @@
+diff --git a/wget-list b/wget-list
+index 7956f3e073..2d92ad1dde 100644
+--- a/wget-list
++++ b/wget-list
+@@ -75,7 +75,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/clucene-2.3.3.4-contribs_lib-1
+ https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.114.tar.gz
+ https://github.com/google/double-conversion/archive/v3.3.1/double-conversion-3.3.1.tar.gz
+ https://duktape.org/duktape-2.7.0.tar.xz
+-https://github.com/rrthomas/enchant/releases/download/v2.8.2/enchant-2.8.2.tar.gz
++https://github.com/rrthomas/enchant/releases/download/v2.8.3/enchant-2.8.3.tar.gz
+ https://libopenraw.freedesktop.org/download/exempi-2.6.6.tar.xz
+ https://github.com/fastfloat/fast_float/archive/v8.0.2/fast_float-8.0.2.tar.gz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+@@ -138,7 +138,7 @@ https://github.com/libunwind/libunwind/releases/download/v1.8.1/libunwind-1.8.1.
+ https://lttng.org/files/urcu/userspace-rcu-0.15.2.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.28/libusb-1.0.28.tar.bz2
+ https://dist.libuv.org/dist/v1.51.0/libuv-v1.51.0.tar.gz
+-https://github.com/lfs-book/libxkbcommon/archive/v1.8.1/libxkbcommon-1.8.1.tar.gz
++https://github.com/lfs-book/libxkbcommon/archive/v1.9.0/libxkbcommon-1.9.0.tar.gz
+ https://download.gnome.org/sources/libxml2/2.14/libxml2-2.14.2.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.22/libxmlb-0.3.22.tar.xz
+@@ -551,7 +551,7 @@ https://archive.apache.org/dist/ant/source/apache-ant-1.10.15-src.tar.xz
+ https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.2.2/dhcpcd-10.2.2.tar.xz
+ https://www.kernel.org/pub/linux/utils/net/bridge-utils/bridge-utils-1.7.1.tar.xz
+ https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.3.tar.bz2
+-https://www.ncftp.com/public_ftp/ncftp/ncftp-3.2.9-src.tar.gz
++https://www.ncftp.com/public_ftp/ncftp/ncftp-3.3.0-src.tar.gz
+ https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
+ https://www.kernel.org/pub/linux/utils/nfs-utils/2.8.3/nfs-utils-2.8.3.tar.xz
+ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
+@@ -621,7 +621,7 @@ https://sqlite.org/2025/sqlite-autoconf-3490100.tar.gz
+ https://sqlite.org/2025/sqlite-doc-3490100.zip
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.9.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.9-consolidated-1.patch
+-https://nlnetlabs.nl/downloads/unbound/unbound-1.22.0.tar.gz
++https://nlnetlabs.nl/downloads/unbound/unbound-1.23.0.tar.gz
+ https://www.x.org/pub/individual/util/util-macros-1.20.2.tar.xz
+ https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2024.1.tar.xz
+ https://www.x.org/pub/individual/lib/libXau-1.0.12.tar.xz
+@@ -691,6 +691,7 @@ https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
+ https://download.qt.io/archive/qt/6.9/6.9.0/single/qt-everywhere-src-6.9.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.9.0-protobuf_30-1.patch
+ https://download.qt.io/official_releases/qt/6.9/6.9.0/submodules/qtwebengine-everywhere-src-6.9.0.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-6.9.0-fix_gpu_acceleration-1.patch
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.309/Vulkan-Headers-1.4.309.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.309/Vulkan-Loader-1.4.309.tar.gz
+@@ -835,7 +836,7 @@ https://archive.xfce.org/src/apps/xfce4-terminal/1.1/xfce4-terminal-1.1.5.tar.xz
+ https://archive.xfce.org/src/apps/xfburn/0.7/xfburn-0.7.2.tar.bz2
+ https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.4.tar.xz
+ https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.7.tar.bz2
+-https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.5/xfce4-pulseaudio-plugin-0.5.0.tar.xz
++https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.5/xfce4-pulseaudio-plugin-0.5.1.tar.xz
+ https://download.kde.org/stable/frameworks/6.13/kwindowsystem-6.13.0.tar.xz
+ https://download.kde.org/stable/frameworks/6.13/kconfig-6.13.0.tar.xz
+ https://download.kde.org/stable/frameworks/6.13/solid-6.13.0.tar.xz
+@@ -909,7 +910,7 @@ https://github.com/transmission/transmission/releases/download/4.0.6/transmissio
+ https://www.linuxfromscratch.org/patches/blfs/svn/transmission-4.0.6-build_fix-1.patch
+ https://github.com/ib/xarchiver/archive/0.5.4.25/xarchiver-0.5.4.25.tar.gz
+ https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz
+-https://www.jwz.org/xscreensaver/xscreensaver-6.09.tar.gz
++https://www.jwz.org/xscreensaver/xscreensaver-6.10.1.tar.gz
+ https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.14.tar.bz2
+ https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-1.2.14.tar.bz2
+ https://www.alsa-project.org/files/pub/plugins/alsa-plugins-1.2.12.tar.bz2
