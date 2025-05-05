@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-578">
+  <body class="blfs" id="blfs-r12.3-597">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-578
+        "phrase">(systemd</span> Edition) - Version r12.3-597
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-578">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-597">
           Home</a>
         </li>
       </ul>
@@ -300,19 +300,19 @@ make</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">make install &amp;&amp;
 
-install -v -m644    examples/smb.conf.default /etc/samba &amp;&amp;
+install -v -m644 examples/smb.conf.default /etc/samba &amp;&amp;
 
-sed -e "s;log file =.*;log file = /var/log/samba/%m.log;" \
+sed -e "s;log file =.*;log file = /var/log/samba/%m.log;"   \
     -e "s;path = /usr/spool/samba;path = /var/spool/samba;" \
     -i /etc/samba/smb.conf.default &amp;&amp;
 
-mkdir -pv /etc/openldap/schema                        &amp;&amp;
+mkdir -pv /etc/openldap/schema &amp;&amp;
 
-install -v -m644    examples/LDAP/README              \
+install -v -m644    examples/LDAP/README \
                     /etc/openldap/schema/README.samba &amp;&amp;
 
-install -v -m644    examples/LDAP/samba*              \
-                    /etc/openldap/schema              &amp;&amp;
+install -v -m644    examples/LDAP/samba* \
+                    /etc/openldap/schema &amp;&amp;
 
 install -v -m755    examples/LDAP/{get*,ol*} \
                     /etc/openldap/schema</kbd></pre>
@@ -438,7 +438,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id53490" name="id53490"></a>Scenario 1: Minimal
+                    <a id="id53529" name="id53529"></a>Scenario 1: Minimal
                     Standalone Client-Only Installation
                   </h5>
                 </div>
@@ -489,7 +489,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id53515" name="id53515"></a>Scenario 2: Standalone
+                    <a id="id53554" name="id53554"></a>Scenario 2: Standalone
                     File/Print Server
                   </h5>
                 </div>
@@ -582,7 +582,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id53552" name="id53552"></a>Advanced Requirements
+                    <a id="id53591" name="id53591"></a>Advanced Requirements
                   </h5>
                 </div>
               </div>
@@ -603,7 +603,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id53557" name="id53557"></a>Guest account
+                    <a id="id53596" name="id53596"></a>Guest account
                   </h5>
                 </div>
               </div>
@@ -1603,7 +1603,7 @@ systemctl start smbd.socket</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-578">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-597">
           Home</a>
         </li>
       </ul>

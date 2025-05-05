@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-578">
+  <body class="blfs" id="blfs-r12.3-597">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-578
+        "phrase">(systemd</span> Edition) - Version r12.3-597
       </h4>
       <h3>
         Chapter&nbsp;26.&nbsp;Display Managers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-578">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-597">
           Home</a>
         </li>
       </ul>
@@ -230,11 +230,13 @@ ninja</kbd></pre>
             have a newer version of <span class="application">GDM</span>.
           </p>
           <p>
-            On some systems with NVIDIA GPUs, GDM will hide Wayland sessions
-            by default. This is often done to prevent users from encountering
-            problems with buggy drivers, which can result in system lockups,
+            On some systems with NVIDIA GPUs or virtual GPUs (such as
+            provided by qemu), GDM will hide Wayland sessions by default.
+            This is often done to prevent users from encountering problems
+            with buggy drivers, which can result in system lockups,
             application crashes, power management problems, and graphics
-            slowdowns. If you have an NVIDIA GPU and still want to try
+            slowdowns. <span class="phrase">If your system is a virtual
+            machine or</span> you have an NVIDIA GPU and still want to try
             running Wayland sessions anyway, execute the following command as
             the <code class="systemitem">root</code> user:
           </p>
@@ -362,7 +364,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-578">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-597">
           Home</a>
         </li>
       </ul>

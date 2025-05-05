@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-578">
+  <body class="blfs" id="blfs-r12.3-597">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-578
+        "phrase">(systemd</span> Edition) - Version r12.3-597
       </h4>
       <h3>
         Chapter&nbsp;49.&nbsp;Extensible Markup Language (XML)
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-578">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-597">
           Home</a>
         </li>
       </ul>
@@ -216,6 +216,7 @@ ln -s VERSION /usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2/VERSION.xsl &am
 
 install -v -m644 -D README \
                     /usr/share/doc/docbook-xsl-nons-1.79.2/README.txt &amp;&amp;
+
 install -v -m644    RELEASE-NOTES* NEWS* \
                     /usr/share/doc/docbook-xsl-nons-1.79.2</kbd></pre>
         <p>
@@ -256,55 +257,55 @@ if [ ! -f /etc/xml/catalog ]; then
     xmlcatalog --noout --create /etc/xml/catalog
 fi &amp;&amp;
 
-xmlcatalog --noout --add "rewriteSystem" \
-           "http://cdn.docbook.org/release/xsl-nons/1.79.2" \
+xmlcatalog --noout --add "rewriteSystem"                        \
+           "http://cdn.docbook.org/release/xsl-nons/1.79.2"     \
            "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
-    /etc/xml/catalog &amp;&amp;
+           /etc/xml/catalog &amp;&amp;
 
-xmlcatalog --noout --add "rewriteSystem" \
-           "https://cdn.docbook.org/release/xsl-nons/1.79.2" \
+xmlcatalog --noout --add "rewriteSystem"                        \
+           "https://cdn.docbook.org/release/xsl-nons/1.79.2"    \
            "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
-    /etc/xml/catalog &amp;&amp;
+           /etc/xml/catalog &amp;&amp;
 
-xmlcatalog --noout --add "rewriteURI" \
-           "http://cdn.docbook.org/release/xsl-nons/1.79.2" \
+xmlcatalog --noout --add "rewriteURI"                           \
+           "http://cdn.docbook.org/release/xsl-nons/1.79.2"     \
            "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
-    /etc/xml/catalog &amp;&amp;
+           /etc/xml/catalog &amp;&amp;
 
-xmlcatalog --noout --add "rewriteURI" \
-           "https://cdn.docbook.org/release/xsl-nons/1.79.2" \
+xmlcatalog --noout --add "rewriteURI"                           \
+           "https://cdn.docbook.org/release/xsl-nons/1.79.2"    \
            "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
-    /etc/xml/catalog &amp;&amp;
+           /etc/xml/catalog &amp;&amp;
 
-xmlcatalog --noout --add "rewriteSystem" \
-           "http://cdn.docbook.org/release/xsl-nons/current" \
+xmlcatalog --noout --add "rewriteSystem"                        \
+           "http://cdn.docbook.org/release/xsl-nons/current"    \
            "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
-    /etc/xml/catalog &amp;&amp;
+           /etc/xml/catalog &amp;&amp;
 
-xmlcatalog --noout --add "rewriteSystem" \
-           "https://cdn.docbook.org/release/xsl-nons/current" \
+xmlcatalog --noout --add "rewriteSystem"                        \
+           "https://cdn.docbook.org/release/xsl-nons/current"   \
            "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
-    /etc/xml/catalog &amp;&amp;
+           /etc/xml/catalog &amp;&amp;
 
-xmlcatalog --noout --add "rewriteURI" \
-           "http://cdn.docbook.org/release/xsl-nons/current" \
+xmlcatalog --noout --add "rewriteURI"                           \
+           "http://cdn.docbook.org/release/xsl-nons/current"    \
            "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
-    /etc/xml/catalog &amp;&amp;
+           /etc/xml/catalog &amp;&amp;
 
-xmlcatalog --noout --add "rewriteURI" \
-           "https://cdn.docbook.org/release/xsl-nons/current" \
+xmlcatalog --noout --add "rewriteURI"                           \
+           "https://cdn.docbook.org/release/xsl-nons/current"   \
            "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
-    /etc/xml/catalog &amp;&amp;
+           /etc/xml/catalog &amp;&amp;
 
-xmlcatalog --noout --add "rewriteSystem" \
+xmlcatalog --noout --add "rewriteSystem"                        \
            "http://docbook.sourceforge.net/release/xsl/current" \
            "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
-    /etc/xml/catalog &amp;&amp;
+           /etc/xml/catalog &amp;&amp;
 
-xmlcatalog --noout --add "rewriteURI" \
+xmlcatalog --noout --add "rewriteURI"                           \
            "http://docbook.sourceforge.net/release/xsl/current" \
            "/usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2" \
-    /etc/xml/catalog</kbd></pre>
+           /etc/xml/catalog</kbd></pre>
           <p>
             Occasionally, you may find the need to install other versions of
             the XSL stylesheets as some projects reference a specific
@@ -315,19 +316,19 @@ xmlcatalog --noout --add "rewriteURI" \
             "replaceable"><code>&lt;version&gt;</code></em>):
           </p>
           <pre class="userinput"><kbd class=
-          "command">xmlcatalog --noout --add "rewriteSystem" \
+          "command">xmlcatalog --noout --add "rewriteSystem"                          \
            "http://docbook.sourceforge.net/release/xsl/<em class=
 "replaceable"><code>&lt;version&gt;</code></em>" \
            "/usr/share/xml/docbook/xsl-stylesheets-<em class=
-"replaceable"><code>&lt;version&gt;</code></em>" \
-    /etc/xml/catalog &amp;&amp;
+"replaceable"><code>&lt;version&gt;</code></em>"     \
+           /etc/xml/catalog &amp;&amp;
 
-xmlcatalog --noout --add "rewriteURI" \
+xmlcatalog --noout --add "rewriteURI"                             \
            "http://docbook.sourceforge.net/release/xsl/<em class=
 "replaceable"><code>&lt;version&gt;</code></em>" \
            "/usr/share/xml/docbook/xsl-stylesheets-<em class=
-"replaceable"><code>&lt;version&gt;</code></em>" \
-    /etc/xml/catalog</kbd></pre>
+"replaceable"><code>&lt;version&gt;</code></em>"     \
+           /etc/xml/catalog</kbd></pre>
         </div>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -399,7 +400,7 @@ xmlcatalog --noout --add "rewriteURI" \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-578">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-597">
           Home</a>
         </li>
       </ul>

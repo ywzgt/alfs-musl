@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-578">
+  <body class="blfs" id="blfs-r12.3-597">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-578
+        "phrase">(systemd</span> Edition) - Version r12.3-597
       </h4>
       <h3>
         Chapter&nbsp;49.&nbsp;Extensible Markup Language (XML)
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-578">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-597">
           Home</a>
         </li>
       </ul>
@@ -144,8 +144,8 @@
           user:
         </p>
         <pre class="root"><kbd class=
-        "command">install -v -d -m755 /usr/share/xml/docbook/xml-dtd-4.5 &amp;&amp;
-install -v -d -m755 /etc/xml &amp;&amp;
+        "command">install -v -d -m755 /usr/share/xml/docbook/xml-dtd-4.5         &amp;&amp;
+install -v -d -m755 /etc/xml                                   &amp;&amp;
 cp -v -af --no-preserve=ownership docbook.cat *.dtd ent/ *.mod \
     /usr/share/xml/docbook/xml-dtd-4.5</kbd></pre>
         <p>
@@ -158,47 +158,58 @@ cp -v -af --no-preserve=ownership docbook.cat *.dtd ent/ *.mod \
         "command">if [ ! -e /etc/xml/docbook ]; then
     xmlcatalog --noout --create /etc/xml/docbook
 fi &amp;&amp;
-xmlcatalog --noout --add "public" \
-    "-//OASIS//DTD DocBook XML V4.5//EN" \
+
+xmlcatalog --noout --add "public"                            \
+    "-//OASIS//DTD DocBook XML V4.5//EN"                     \
     "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" \
     /etc/xml/docbook &amp;&amp;
-xmlcatalog --noout --add "public" \
-    "-//OASIS//DTD DocBook XML CALS Table Model V4.5//EN" \
+
+xmlcatalog --noout --add "public"                            \
+    "-//OASIS//DTD DocBook XML CALS Table Model V4.5//EN"    \
     "file:///usr/share/xml/docbook/xml-dtd-4.5/calstblx.dtd" \
     /etc/xml/docbook &amp;&amp;
-xmlcatalog --noout --add "public" \
-    "-//OASIS//DTD XML Exchange Table Model 19990315//EN" \
+
+xmlcatalog --noout --add "public"                            \
+    "-//OASIS//DTD XML Exchange Table Model 19990315//EN"    \
     "file:///usr/share/xml/docbook/xml-dtd-4.5/soextblx.dtd" \
     /etc/xml/docbook &amp;&amp;
-xmlcatalog --noout --add "public" \
+
+xmlcatalog --noout --add "public"                              \
     "-//OASIS//ELEMENTS DocBook XML Information Pool V4.5//EN" \
-    "file:///usr/share/xml/docbook/xml-dtd-4.5/dbpoolx.mod" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5/dbpoolx.mod"    \
     /etc/xml/docbook &amp;&amp;
-xmlcatalog --noout --add "public" \
+
+xmlcatalog --noout --add "public"                                \
     "-//OASIS//ELEMENTS DocBook XML Document Hierarchy V4.5//EN" \
-    "file:///usr/share/xml/docbook/xml-dtd-4.5/dbhierx.mod" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5/dbhierx.mod"      \
     /etc/xml/docbook &amp;&amp;
-xmlcatalog --noout --add "public" \
-    "-//OASIS//ELEMENTS DocBook XML HTML Tables V4.5//EN" \
+
+xmlcatalog --noout --add "public"                            \
+    "-//OASIS//ELEMENTS DocBook XML HTML Tables V4.5//EN"    \
     "file:///usr/share/xml/docbook/xml-dtd-4.5/htmltblx.mod" \
     /etc/xml/docbook &amp;&amp;
-xmlcatalog --noout --add "public" \
-    "-//OASIS//ENTITIES DocBook XML Notations V4.5//EN" \
+
+xmlcatalog --noout --add "public"                           \
+    "-//OASIS//ENTITIES DocBook XML Notations V4.5//EN"     \
     "file:///usr/share/xml/docbook/xml-dtd-4.5/dbnotnx.mod" \
     /etc/xml/docbook &amp;&amp;
-xmlcatalog --noout --add "public" \
+
+xmlcatalog --noout --add "public"                                \
     "-//OASIS//ENTITIES DocBook XML Character Entities V4.5//EN" \
-    "file:///usr/share/xml/docbook/xml-dtd-4.5/dbcentx.mod" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5/dbcentx.mod"      \
     /etc/xml/docbook &amp;&amp;
-xmlcatalog --noout --add "public" \
+
+xmlcatalog --noout --add "public"                                         \
     "-//OASIS//ENTITIES DocBook XML Additional General Entities V4.5//EN" \
-    "file:///usr/share/xml/docbook/xml-dtd-4.5/dbgenent.mod" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5/dbgenent.mod"              \
     /etc/xml/docbook &amp;&amp;
-xmlcatalog --noout --add "rewriteSystem" \
+
+xmlcatalog --noout --add "rewriteSystem"        \
     "http://www.oasis-open.org/docbook/xml/4.5" \
     "file:///usr/share/xml/docbook/xml-dtd-4.5" \
     /etc/xml/docbook &amp;&amp;
-xmlcatalog --noout --add "rewriteURI" \
+
+xmlcatalog --noout --add "rewriteURI"           \
     "http://www.oasis-open.org/docbook/xml/4.5" \
     "file:///usr/share/xml/docbook/xml-dtd-4.5" \
     /etc/xml/docbook</kbd></pre>
@@ -212,21 +223,25 @@ xmlcatalog --noout --add "rewriteURI" \
         "command">if [ ! -e /etc/xml/catalog ]; then
     xmlcatalog --noout --create /etc/xml/catalog
 fi &amp;&amp;
+
 xmlcatalog --noout --add "delegatePublic" \
-    "-//OASIS//ENTITIES DocBook XML" \
-    "file:///etc/xml/docbook" \
-    /etc/xml/catalog &amp;&amp;
+    "-//OASIS//ENTITIES DocBook XML"      \
+    "file:///etc/xml/docbook"             \
+    /etc/xml/catalog                      &amp;&amp;
+
 xmlcatalog --noout --add "delegatePublic" \
-    "-//OASIS//DTD DocBook XML" \
-    "file:///etc/xml/docbook" \
-    /etc/xml/catalog &amp;&amp;
+    "-//OASIS//DTD DocBook XML"           \
+    "file:///etc/xml/docbook"             \
+    /etc/xml/catalog                      &amp;&amp;
+
 xmlcatalog --noout --add "delegateSystem" \
-    "http://www.oasis-open.org/docbook/" \
-    "file:///etc/xml/docbook" \
-    /etc/xml/catalog &amp;&amp;
-xmlcatalog --noout --add "delegateURI" \
-    "http://www.oasis-open.org/docbook/" \
-    "file:///etc/xml/docbook" \
+    "http://www.oasis-open.org/docbook/"  \
+    "file:///etc/xml/docbook"             \
+    /etc/xml/catalog                      &amp;&amp;
+
+xmlcatalog --noout --add "delegateURI"    \
+    "http://www.oasis-open.org/docbook/"  \
+    "file:///etc/xml/docbook"             \
     /etc/xml/catalog</kbd></pre>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -272,25 +287,29 @@ xmlcatalog --noout --add "delegateURI" \
           <pre class="root"><kbd class=
           "command">for DTDVERSION in 4.1.2 4.2 4.3 4.4
 do
-  xmlcatalog --noout --add "public" \
-    "-//OASIS//DTD DocBook XML V$DTDVERSION//EN" \
+  xmlcatalog --noout --add "public"                                  \
+    "-//OASIS//DTD DocBook XML V$DTDVERSION//EN"                     \
     "http://www.oasis-open.org/docbook/xml/$DTDVERSION/docbookx.dtd" \
     /etc/xml/docbook
-  xmlcatalog --noout --add "rewriteSystem" \
+
+  xmlcatalog --noout --add "rewriteSystem"              \
     "http://www.oasis-open.org/docbook/xml/$DTDVERSION" \
-    "file:///usr/share/xml/docbook/xml-dtd-4.5" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5"         \
     /etc/xml/docbook
-  xmlcatalog --noout --add "rewriteURI" \
+  
+  xmlcatalog --noout --add "rewriteURI"                 \
     "http://www.oasis-open.org/docbook/xml/$DTDVERSION" \
-    "file:///usr/share/xml/docbook/xml-dtd-4.5" \
+    "file:///usr/share/xml/docbook/xml-dtd-4.5"         \
     /etc/xml/docbook
-  xmlcatalog --noout --add "delegateSystem" \
+  
+  xmlcatalog --noout --add "delegateSystem"              \
     "http://www.oasis-open.org/docbook/xml/$DTDVERSION/" \
-    "file:///etc/xml/docbook" \
+    "file:///etc/xml/docbook"                            \
     /etc/xml/catalog
-  xmlcatalog --noout --add "delegateURI" \
+  
+  xmlcatalog --noout --add "delegateURI"                 \
     "http://www.oasis-open.org/docbook/xml/$DTDVERSION/" \
-    "file:///etc/xml/docbook" \
+    "file:///etc/xml/docbook"                            \
     /etc/xml/catalog
 done</kbd></pre>
         </div>
@@ -400,7 +419,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-578">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-597">
           Home</a>
         </li>
       </ul>

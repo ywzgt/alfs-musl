@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-578">
+  <body class="blfs" id="blfs-r12.3-597">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-578
+        "phrase">(systemd</span> Edition) - Version r12.3-597
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-578">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-597">
           Home</a>
         </li>
       </ul>
@@ -201,36 +201,6 @@ ninja</kbd></pre>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
-        <div class="admon caution">
-          <img alt="[Caution]" src="../images/caution.png" />
-          <h3>
-            Caution
-          </h3>
-          <p>
-            On some older systems power-profiles-daemon will appear to
-            install and indicate correct values, but will not actually work.
-            To check this run <strong class="userinput"><code>cat
-            /sys/devices/system/cpu/cpufreq/policy0/scaling_driver</code></strong>.
-            If the result is not "intel_pstate" but instead "intel_cpufreq"
-            (or similar on AMD systems), then power changes must be made
-            manually.
-          </p>
-          <p>
-            To change power states manually, first check to see what
-            governors are available with: <strong class="userinput"><code>cat
-            /sys/devices/system/cpu/cpufreq/policy0/scaling_available_governors</code></strong>.
-            Then set the desired governor as the <code class=
-            "systemitem">root</code> user with:
-          </p>
-          <pre class="userinput"><kbd class=
-          "command">for CPUFREQ in /sys/devices/system/cpu/cpufreq/policy*/scaling_governor
-  echo -n ${gov} &gt; ${CPUFREQ}"
-done</kbd></pre>
-          <p>
-            If you are setting to the scaling_governor to "performance", be
-            careful about heat and battery issues with extended use.
-          </p>
-        </div>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -297,6 +267,38 @@ done</kbd></pre>
             it out and activate it again on the next boot if the <span class=
             "phrase">Systemd unit is enabled</span> as above.
           </p>
+          <div class="admon caution">
+            <img alt="[Caution]" src="../images/caution.png" />
+            <h3>
+              Caution
+            </h3>
+            <p>
+              On some older systems power-profiles-daemon will appear to
+              install and indicate correct values, but will not actually
+              work. To check this, run <strong class="userinput"><code>cat
+              /sys/devices/system/cpu/cpufreq/policy0/scaling_driver</code></strong>.
+              If the result is not "intel_pstate" but instead "intel_cpufreq"
+              (or similar on AMD systems), then power changes must be made
+              manually.
+            </p>
+            <p>
+              To change power states manually, first check to see what
+              governors are available with: <strong class=
+              "userinput"><code>cat
+              /sys/devices/system/cpu/cpufreq/policy0/scaling_available_governors</code></strong>.
+              Then set the desired governor as the <code class=
+              "systemitem">root</code> user with:
+            </p>
+            <pre class="userinput"><kbd class="command">gov=<em class=
+            "replaceable"><code>performance</code></em>
+for CPUFREQ in /sys/devices/system/cpu/cpufreq/policy*/scaling_governor; do
+  echo -n ${gov} &gt; ${CPUFREQ}"
+done</kbd></pre>
+            <p>
+              If you are setting the scaling_governor to "performance", be
+              careful about heat and battery issues with extended use.
+            </p>
+          </div>
         </div>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -370,7 +372,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-578">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-597">
           Home</a>
         </li>
       </ul>
