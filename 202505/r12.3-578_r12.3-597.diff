@@ -1,0 +1,147 @@
+diff --git a/wget-list b/wget-list
+index 8b92cf6af9..d233ec394b 100644
+--- a/wget-list
++++ b/wget-list
+@@ -37,7 +37,7 @@ https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2022.10.3.tgz
+ https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.10-convenience-1.patch
+ https://ftp.gnu.org/gnu/parted/parted-3.6.tar.xz
+-https://downloads.sourceforge.net/smartmontools/smartmontools-7.4.tar.gz
++https://downloads.sourceforge.net/smartmontools/smartmontools-7.5.tar.gz
+ https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.3/sshfs-3.7.3.tar.xz
+ https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.14.0.tar.xz
+ https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
+@@ -79,7 +79,7 @@ https://github.com/rrthomas/enchant/releases/download/v2.8.4/enchant-2.8.4.tar.g
+ https://libopenraw.freedesktop.org/download/exempi-2.6.6.tar.xz
+ https://github.com/fastfloat/fast_float/archive/v8.0.2/fast_float-8.0.2.tar.gz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+-https://github.com/fmtlib/fmt/archive/11.1.4/fmt-11.1.4.tar.gz
++https://github.com/fmtlib/fmt/archive/11.2.0/fmt-11.2.0.tar.gz
+ https://download.gnome.org/sources/glib/2.84/glib-2.84.1.tar.xz
+ https://download.gnome.org/sources/gobject-introspection/1.84/gobject-introspection-1.84.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+@@ -160,7 +160,7 @@ https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
+ https://archive.mozilla.org/pub/firefox/releases/128.10.0esr/source/firefox-128.10.0esr.source.tar.xz
+ https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.309.0/SPIRV-Headers-vulkan-sdk-1.4.309.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.309.0/SPIRV-Tools-vulkan-sdk-1.4.309.0.tar.gz
+-https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v20.1.1/SPIRV-LLVM-Translator-20.1.1.tar.gz
++https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v20.1.2/SPIRV-LLVM-Translator-20.1.2.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.4.3.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+ https://github.com/martinpitt/umockdev/releases/download/0.19.1/umockdev-0.19.1.tar.xz
+@@ -182,7 +182,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-upstream_fixes-1.
+ https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
+ https://github.com/g-truc/glm/archive/1.0.1/glm-1.0.1.tar.gz
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+-https://github.com/harfbuzz/harfbuzz/releases/download/11.1.0/harfbuzz-11.1.0.tar.xz
++https://github.com/harfbuzz/harfbuzz/releases/download/11.2.0/harfbuzz-11.2.0.tar.xz
+ https://github.com/jasper-software/jasper/archive/version-4.2.5/jasper-version-4.2.5.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.17/lcms2-2.17.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.2.1/libavif-1.2.1.tar.gz
+@@ -192,7 +192,7 @@ https://downloads.sourceforge.net/libjpeg-turbo/libjpeg-turbo-3.0.1.tar.gz
+ https://github.com/libjxl/libjxl/archive/v0.11.1/libjxl-0.11.1.tar.gz
+ https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
+ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz
+-https://downloads.sourceforge.net/libpng/libpng-1.6.47.tar.xz
++https://downloads.sourceforge.net/libpng/libpng-1.6.48.tar.xz
+ https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.47-apng.patch.gz
+ https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
+ https://www.libraw.org/data/LibRaw-0.21.4.tar.gz
+@@ -205,7 +205,7 @@ https://releases.pagure.org/newt/newt-0.52.25.tar.gz
+ https://github.com/opencv/opencv/archive/4.11.0/opencv-4.11.0.tar.gz
+ https://github.com/opencv/opencv_contrib/archive/4.11.0/opencv_contrib-4.11.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.3/openjpeg-2.5.3.tar.gz
+-https://www.cairographics.org/releases/pixman-0.44.2.tar.gz
++https://www.cairographics.org/releases/pixman-0.46.0.tar.gz
+ https://poppler.freedesktop.org/poppler-25.04.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+@@ -256,34 +256,34 @@ https://dbus.freedesktop.org/releases/dbus/dbus-1.16.2.tar.xz
+ http://fcron.free.fr/archives/fcron-3.4.0.src.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/gpm/gpm-1.20.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch
+-https://downloads.sourceforge.net/hdparm/hdparm-9.65.tar.gz
+ https://github.com/vcrhonek/hwdata/archive/v0.394/hwdata-0.394.tar.gz
+ https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
+-https://github.com/lm-sensors/lm-sensors/archive/V3-6-0/lm-sensors-3-6-0.tar.gz
+ https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
+ http://ftp.midnight-commander.org/mc-4.8.33.tar.xz
+ https://gitlab.freedesktop.org/mobile-broadband/ModemManager/-/archive/1.24.0/ModemManager-1.24.0.tar.gz
+ https://download.gnome.org/sources/notification-daemon/3.20/notification-daemon-3.20.0.tar.xz
+ http://www.mirbsd.org/MirOS/dist/mir/cpio/paxmirabilis-20240817.tgz
+-https://mj.ucw.cz/download/linux/pci/pciutils-3.13.0.tar.gz
+ https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/pm-utils-1.4.1-bugfixes-1.patch
+ https://gitlab.freedesktop.org/upower/power-profiles-daemon/-/archive/0.30/power-profiles-daemon-0.30.tar.gz
+ https://download.librdf.org/source/raptor2-2.0.16.tar.gz
+ https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+ https://download.librdf.org/source/redland-1.0.17.tar.gz
+-https://sg.danny.cz/sg/p/sg3_utils-1.48.tar.xz
+-https://github.com/lfs-book/sysmond/releases/download/sysmond-1.0.0/sysmond-1.0.0.tar.xz
+-https://github.com/lfs-book/sysmon3/releases/download/sysmon3-3.0.1/sysmon3-3.0.1.tar.xz
+ https://sysstat.github.io/sysstat-packages/sysstat-12.7.7.tar.xz
+ https://github.com/systemd/systemd/archive/v257.3/systemd-257.3.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.10.1/udisks-2.10.1.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-7.1.6.tar.gz
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.9/upower-v1.90.9.tar.bz2
+-https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-018.tar.xz
+ https://ftp.gnu.org/gnu/which/which-2.23.tar.gz
+ https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz
+ https://downloads.sourceforge.net/infozip/zip30.tar.gz
++https://downloads.sourceforge.net/hdparm/hdparm-9.65.tar.gz
++https://github.com/lm-sensors/lm-sensors/archive/V3-6-0/lm-sensors-3-6-0.tar.gz
++https://mj.ucw.cz/download/linux/pci/pciutils-3.13.0.tar.gz
++https://sg.danny.cz/sg/p/sg3_utils-1.48.tar.xz
++https://github.com/lfs-book/sysmond/releases/download/sysmond-1.0.0/sysmond-1.0.0.tar.xz
++https://github.com/lfs-book/sysmon3/releases/download/sysmon3-3.0.1/sysmon3-3.0.1.tar.xz
++https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-018.tar.xz
+ https://github.com/lu-zero/cargo-c/archive/v0.10.12/cargo-c-0.10.12.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.28.0/cbindgen-0.28.0.tar.gz
+ https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+@@ -462,7 +462,7 @@ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+ https://files.pythonhosted.org/packages/source/b/build/build-1.2.2.post1.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.3.0.tar.gz
+-https://github.com/psf/cachecontrol/archive/v0.14.2/cachecontrol-0.14.2.tar.gz
++https://github.com/psf/cachecontrol/archive/v0.14.3/cachecontrol-0.14.3.tar.gz
+ https://github.com/cython/cython/releases/download/3.0.12/cython-3.0.12.tar.gz
+ https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.34.3.tar.gz
+ https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.4.0.tar.xz
+@@ -656,8 +656,8 @@ https://www.cairographics.org/releases/cairo-1.18.4.tar.xz
+ https://www.cairographics.org/releases/cairomm-1.14.5.tar.xz
+ https://www.cairographics.org/releases/cairomm-1.18.0.tar.xz
+ https://www.freedesktop.org/software/colord/releases/colord-gtk-0.3.1.tar.xz
+-https://github.com/fltk/fltk/releases/download/release-1.4.2/fltk-1.4.2-source.tar.gz
+-https://github.com/fltk/fltk/releases/download/release-1.4.2/fltk-1.4.2-docs-html.tar.gz
++https://github.com/fltk/fltk/releases/download/release-1.4.3/fltk-1.4.3-source.tar.gz
++https://github.com/fltk/fltk/releases/download/release-1.4.3/fltk-1.4.3-docs-html.tar.gz
+ https://downloads.sourceforge.net/freeglut/freeglut-3.6.0.tar.gz
+ https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz
+ https://downloads.sourceforge.net/glew/glew-2.2.0.tgz
+@@ -667,7 +667,7 @@ https://download.gnome.org/sources/goffice/0.10/goffice-0.10.59.tar.xz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+ https://download.gnome.org/sources/gtk/3.24/gtk-3.24.49.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gtk-3.24.49-upstream_fix-1.patch
+-https://download.gnome.org/sources/gtk/4.18/gtk-4.18.4.tar.xz
++https://download.gnome.org/sources/gtk/4.18/gtk-4.18.5.tar.xz
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.10.tar.xz
+ https://download.gnome.org/sources/gtkmm/4.18/gtkmm-4.18.0.tar.xz
+ https://download.gnome.org/sources/gtk-vnc/1.5/gtk-vnc-1.5.0.tar.xz
+@@ -975,7 +975,7 @@ https://www.surina.net/soundtouch/soundtouch-2.4.0.tar.gz
+ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://taglib.org/releases/taglib-2.0.2.tar.gz
+-https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.28.1.tar.xz
++https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.30.1.tar.xz
+ https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.8/wireplumber-0.5.8.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20250212.tar.xz
+ https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz
+@@ -1008,7 +1008,7 @@ https://files.libburnia-project.org/releases/libisofs-1.5.6.tar.gz
+ https://github.com/OpenPrinting/cups/releases/download/v2.4.12/cups-2.4.12-source.tar.gz
+ https://github.com/OpenPrinting/cups-browsed/releases/download/2.1.1/cups-browsed-2.1.1.tar.xz
+ https://github.com/OpenPrinting/cups-filters/releases/download/2.0.1/cups-filters-2.0.1.tar.xz
+-https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10050/ghostscript-10.05.0.tar.xz
++https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10051/ghostscript-10.05.1.tar.xz
+ https://downloads.sourceforge.net/gs-fonts/ghostscript-fonts-std-8.11.tar.gz
+ https://downloads.sourceforge.net/gs-fonts/gnu-gs-fonts-other-6.0.tar.gz
+ https://downloads.sourceforge.net/gimp-print/gutenprint-5.3.5.tar.xz
