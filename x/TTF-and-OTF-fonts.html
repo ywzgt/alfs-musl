@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-597">
+  <body class="blfs" id="blfs-r12.3-602">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-597
+        "phrase">(systemd</span> Edition) - Version r12.3-602
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-597">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-602">
           Home</a>
         </li>
       </ul>
@@ -221,9 +221,9 @@
         </p>
         <p>
           Rendered examples of most of these fonts, and many others, with
-          details of what languages they cover, can be found at a <a class=
-          "ulink" href="https://typosetting.co.uk">font-comparison</a>
-          website.
+          details of what languages they cover, can be found at <a class=
+          "ulink" href="https://typosetting.co.uk">typosetting.co.uk</a>
+          which aims to analyse and compare fonts.
         </p>
         <p>
           Fonts are often supplied in zip files, requiring tools from
@@ -285,9 +285,30 @@ fc-cache -v /usr/share/fonts/dejavu</kbd></pre>
           <p>
             Installation of the <a class="xref" href=
             "TTF-and-OTF-fonts.html#dejavu-fonts" title="DejaVu fonts">Dejavu
-            fonts</a> is strongly recommended.
+            fonts</a> used to be strongly recommended, but the <a class=
+            "xref" href="TTF-and-OTF-fonts.html#noto-fonts" title=
+            "Noto fonts">Noto fonts</a> will be used in preference if both
+            have been installed. The only likely reason to now prefer a
+            DejaVu font is that DejaVu-Serif has an open 'g' (Both DejaVu
+            Sans and Noto Sans also use an open 'g'). Other than that, Noto
+            is more up to date with fuller coverage.
           </p>
         </div>
+        <h3>
+          <a id="adwaita-fonts" name="adwaita-fonts"></a>Adwaita fonts
+        </h3>
+        <p>
+          <a class="ulink" href=
+          "https://download.gnome.org/sources/adwaita-fonts/48/">Adwaita
+          fonts</a> – The Adwaita family provides clear, modern and
+          maintained fonts. They are the preferred fonts for GNOME-48 and
+          later. The tarball includes update scripts for the source, as well
+          as TTF fonts in the mono/ and sans/ directories. The variable-width
+          sans fonts are adapted to fit in UI dialog messages and intended
+          for normal use. The mono fonts (normal and italic in regular and,
+          bold weights), are intended to match, for use in terminals and
+          programming.
+        </p>
         <h3>
           <a id="Caladea" name="Caladea"></a>Caladea
         </h3>
@@ -306,8 +327,8 @@ fc-cache -v /usr/share/fonts/dejavu</kbd></pre>
           "https://fonts.google.com/specimen/Cantarell">Cantarell fonts</a> –
           The Cantarell typeface family provides a contemporary Humanist Sans
           Serif. It is particularly optimised for legibility at small sizes
-          and is the preferred font family for the <span class=
-          "application">GNOME</span> user interface.
+          and was the preferred font family for the <span class=
+          "application">GNOME</span> user interface before GNOME-48.
         </p>
         <h3>
           <a id="Carlito" name="Carlito"></a>Carlito
@@ -744,7 +765,7 @@ fc-cache -v /usr/share/fonts/dejavu</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-597">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-602">
           Home</a>
         </li>
       </ul>
