@@ -15,7 +15,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3
 https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2
 https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz
 https://ftp.gnu.org/gnu/nettle/nettle-3.10.1.tar.gz
-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_110_RTM/src/nss-3.110.tar.gz
+https://archive.mozilla.org/pub/security/nss/releases/NSS_3_111_RTM/src/nss-3.111.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
 https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.0p1.tar.gz
 https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz
@@ -185,7 +185,7 @@ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tg
 https://github.com/harfbuzz/harfbuzz/releases/download/11.2.0/harfbuzz-11.2.0.tar.xz
 https://github.com/jasper-software/jasper/archive/version-4.2.5/jasper-version-4.2.5.tar.gz
 https://github.com/mm2/Little-CMS/releases/download/lcms2.17/lcms2-2.17.tar.gz
-https://github.com/AOMediaCodec/libavif/archive/v1.2.1/libavif-1.2.1.tar.gz
+https://github.com/AOMediaCodec/libavif/archive/v1.3.0/libavif-1.3.0.tar.gz
 https://github.com/libexif/libexif/releases/download/v0.6.25/libexif-0.6.25.tar.bz2
 https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
 https://downloads.sourceforge.net/libjpeg-turbo/libjpeg-turbo-3.0.1.tar.gz
@@ -453,7 +453,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/XML-LibXML-2.0210-testsuite_fi
 https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
 https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
 https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
-https://www.php.net/distributions/php-8.4.6.tar.xz
+https://www.php.net/distributions/php-8.4.7.tar.xz
 https://www.php.net/distributions/manual/php_manual_en.html.gz
 https://www.php.net/distributions/manual/php_manual_en.tar.gz
 https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tar.xz
@@ -463,7 +463,7 @@ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
 https://files.pythonhosted.org/packages/source/b/build/build-1.2.2.post1.tar.gz
 https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.3.0.tar.gz
 https://github.com/psf/cachecontrol/archive/v0.14.3/cachecontrol-0.14.3.tar.gz
-https://github.com/cython/cython/releases/download/3.0.12/cython-3.0.12.tar.gz
+https://github.com/cython/cython/releases/download/3.1.0/cython-3.1.0.tar.gz
 https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.34.3.tar.gz
 https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.4.0.tar.xz
 https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.21.2.tar.gz
@@ -616,7 +616,7 @@ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.2.tar.gz
 https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
 https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
 https://downloads.mariadb.org/interstitial/mariadb-11.4.5/source/mariadb-11.4.5.tar.gz
-https://ftp.postgresql.org/pub/source/v17.4/postgresql-17.4.tar.bz2
+https://ftp.postgresql.org/pub/source/v17.5/postgresql-17.5.tar.bz2
 https://sqlite.org/2025/sqlite-autoconf-3490200.tar.gz
 https://sqlite.org/2025/sqlite-doc-3490200.zip
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.9.tgz
@@ -969,7 +969,7 @@ https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.2/pipewire-1.4.2.
 https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
 https://www.kernel.org/pub/linux/bluetooth/sbc-2.1.tar.xz
 https://github.com/libsdl-org/sdl12-compat/archive/release-1.2.68/sdl12-compat-release-1.2.68.tar.gz
-https://www.libsdl.org/release/SDL2-2.30.11.tar.gz
+https://www.libsdl.org/release/SDL2-2.32.6.tar.gz
 https://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2
 https://www.surina.net/soundtouch/soundtouch-2.4.0.tar.gz
 https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
