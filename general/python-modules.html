@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-623">
+  <body class="blfs" id="blfs-r12.3-637">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-623
+        "phrase">(systemd</span> Edition) - Version r12.3-637
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-623">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-637">
           Home</a>
         </li>
       </ul>
@@ -443,7 +443,7 @@
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -685,13 +685,19 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
           <p>
             <em class="parameter"><code>--no-user</code></em>: Prevent
             mistakenly running the install command as a non-root user.
+          </p>
+          <p>
+            <em class="parameter"><code>--system-site-packages</code></em>:
+            Allow the <span class="application">Python3</span> venv module to
+            access the system-installed <code class=
+            "filename">/usr/lib/python3.13/site-packages</code> directory.
           </p>
           <p>
             <code class="option">--upgrade</code>: Upgrade the package to the
@@ -887,7 +893,7 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -1054,7 +1060,7 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -1234,7 +1240,7 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -1474,7 +1480,7 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -1653,7 +1659,7 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -1823,7 +1829,7 @@ done</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -2198,7 +2204,7 @@ done</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -2399,7 +2405,7 @@ python3 tests/unit/tests.py</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -2608,7 +2614,7 @@ python3 tests/unit/tests.py</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -2800,7 +2806,7 @@ python3 tests/unit/tests.py</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -2862,7 +2868,7 @@ python3 tests/unit/tests.py</kbd></pre>
             "application">Python</span> bindings for <a class="xref" href=
             "libxslt.html" title="libxslt-1.1.43">libxslt-1.1.43</a> and
             <a class="xref" href="libxml2.html" title=
-            "libxml2-2.14.2">libxml2-2.14.2</a>.
+            "libxml2-2.14.3">libxml2-2.14.3</a>.
           </p>
           <div class="admon note">
             <img alt="[Note]" src="../images/note.png" />
@@ -2965,7 +2971,7 @@ python3 tests/unit/tests.py</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -3142,7 +3148,7 @@ python3 tests/unit/tests.py</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -3365,13 +3371,19 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
           <p>
             <em class="parameter"><code>--no-user</code></em>: Prevent
             mistakenly running the install command as a non-root user.
+          </p>
+          <p>
+            <em class="parameter"><code>--system-site-packages</code></em>:
+            Allow the <span class="application">Python3</span> venv module to
+            access the system-installed <code class=
+            "filename">/usr/lib/python3.13/site-packages</code> directory.
           </p>
           <p>
             <code class="option">--upgrade</code>: Upgrade the package to the
@@ -3545,7 +3557,7 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -3731,7 +3743,7 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -4235,7 +4247,7 @@ ninja</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -4413,13 +4425,19 @@ testenv/bin/python -m pytest</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
           <p>
             <em class="parameter"><code>--no-user</code></em>: Prevent
             mistakenly running the install command as a non-root user.
+          </p>
+          <p>
+            <em class="parameter"><code>--system-site-packages</code></em>:
+            Allow the <span class="application">Python3</span> venv module to
+            access the system-installed <code class=
+            "filename">/usr/lib/python3.13/site-packages</code> directory.
           </p>
           <p>
             <code class="option">--upgrade</code>: Upgrade the package to the
@@ -4782,13 +4800,19 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
           <p>
             <em class="parameter"><code>--no-user</code></em>: Prevent
             mistakenly running the install command as a non-root user.
+          </p>
+          <p>
+            <em class="parameter"><code>--system-site-packages</code></em>:
+            Allow the <span class="application">Python3</span> venv module to
+            access the system-installed <code class=
+            "filename">/usr/lib/python3.13/site-packages</code> directory.
           </p>
           <p>
             <code class="option">--upgrade</code>: Upgrade the package to the
@@ -4954,7 +4978,7 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -5200,13 +5224,19 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
           <p>
             <em class="parameter"><code>--no-user</code></em>: Prevent
             mistakenly running the install command as a non-root user.
+          </p>
+          <p>
+            <em class="parameter"><code>--system-site-packages</code></em>:
+            Allow the <span class="application">Python3</span> venv module to
+            access the system-installed <code class=
+            "filename">/usr/lib/python3.13/site-packages</code> directory.
           </p>
           <p>
             <code class="option">--upgrade</code>: Upgrade the package to the
@@ -5382,7 +5412,7 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -5548,7 +5578,7 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -5734,7 +5764,7 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -6094,13 +6124,19 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
           <p>
             <em class="parameter"><code>--no-user</code></em>: Prevent
             mistakenly running the install command as a non-root user.
+          </p>
+          <p>
+            <em class="parameter"><code>--system-site-packages</code></em>:
+            Allow the <span class="application">Python3</span> venv module to
+            access the system-installed <code class=
+            "filename">/usr/lib/python3.13/site-packages</code> directory.
           </p>
           <p>
             <code class="option">--upgrade</code>: Upgrade the package to the
@@ -6256,7 +6292,7 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -6445,7 +6481,7 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -6597,7 +6633,7 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
@@ -6823,13 +6859,19 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
           <p>
             <em class="parameter"><code>--no-user</code></em>: Prevent
             mistakenly running the install command as a non-root user.
+          </p>
+          <p>
+            <em class="parameter"><code>--system-site-packages</code></em>:
+            Allow the <span class="application">Python3</span> venv module to
+            access the system-installed <code class=
+            "filename">/usr/lib/python3.13/site-packages</code> directory.
           </p>
           <p>
             <code class="option">--upgrade</code>: Upgrade the package to the
@@ -7085,13 +7127,19 @@ deactivate</kbd></pre>
             <code class="filename">dist</code>.
           </p>
           <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: disables
+            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
             the cache to prevent a warning when installing as the
             <code class="systemitem">root</code> user.
           </p>
           <p>
             <em class="parameter"><code>--no-user</code></em>: Prevent
             mistakenly running the install command as a non-root user.
+          </p>
+          <p>
+            <em class="parameter"><code>--system-site-packages</code></em>:
+            Allow the <span class="application">Python3</span> venv module to
+            access the system-installed <code class=
+            "filename">/usr/lib/python3.13/site-packages</code> directory.
           </p>
           <p>
             <code class="option">--upgrade</code>: Upgrade the package to the
@@ -7158,7 +7206,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-623">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-637">
           Home</a>
         </li>
       </ul>
