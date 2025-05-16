@@ -3,7 +3,7 @@ https://github.com/lfs-book/make-ca/archive/v1.16/make-ca-1.16.tar.gz
 https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.tar.xz
 https://www.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.5.tar.xz
 https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
-https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.7.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.8.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.9.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.2.tar.bz2
 https://www.netfilter.org/projects/iptables/files/iptables-1.8.11.tar.xz
@@ -61,7 +61,7 @@ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.15.tar.gz
 https://www.zsh.org/pub/zsh-5.9.tar.xz
 https://download.qemu.org/qemu-10.0.0.tar.xz
-https://github.com/abseil/abseil-cpp/releases/download/20250127.1/abseil-cpp-20250127.1.tar.gz
+https://github.com/abseil/abseil-cpp/releases/download/20250512.0/abseil-cpp-20250512.0.tar.gz
 https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.5.tar.xz
 http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz
 https://archive.apache.org/dist/apr/apr-1.7.5.tar.bz2
@@ -135,7 +135,7 @@ https://www.mirrorservice.org/sites/ftp.i-scream.org/pub/i-scream/libstatgrab/li
 https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.20.0.tar.gz
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.xz
 https://github.com/libunwind/libunwind/releases/download/v1.8.1/libunwind-1.8.1.tar.gz
-https://lttng.org/files/urcu/userspace-rcu-0.15.2.tar.bz2
+https://lttng.org/files/urcu/userspace-rcu-0.15.3.tar.bz2
 https://github.com/libusb/libusb/releases/download/v1.0.28/libusb-1.0.28.tar.bz2
 https://dist.libuv.org/dist/v1.51.0/libuv-v1.51.0.tar.gz
 https://github.com/lfs-book/libxkbcommon/archive/v1.9.2/libxkbcommon-1.9.2.tar.gz
@@ -148,12 +148,12 @@ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
 https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_2/log4cplus-2.1.2.tar.xz
 https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
 https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
-https://nodejs.org/dist/v22.15.0/node-v22.15.0.tar.xz
+https://nodejs.org/dist/v22.15.1/node-v22.15.1.tar.xz
 https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
 https://archive.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz
 https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.bz2
 https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
-https://github.com/protocolbuffers/protobuf/releases/download/v30.2/protobuf-30.2.tar.gz
+https://github.com/protocolbuffers/protobuf/releases/download/v31.0/protobuf-31.0.tar.gz
 https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
 https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
 https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
@@ -228,7 +228,7 @@ https://github.com/ibus/ibus/archive/1.5.32/ibus-1.5.32.tar.gz
 https://www.unicode.org/Public/zipped/16.0.0/UCD.zip
 https://www.imagemagick.org/archive/releases/ImageMagick-7.1.1-43.tar.xz
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.18.0/iso-codes-v4.18.0.tar.gz
-https://github.com/lsof-org/lsof/releases/download/4.99.0/lsof-4.99.0.tar.gz
+https://github.com/lsof-org/lsof/releases/download/4.99.4/lsof-4.99.4.tar.gz
 https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.3.1.tar.bz2
 https://ftp.gnu.org/gnu/screen/screen-5.0.0.tar.gz
 https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/2.4/shared-mime-info-2.4.tar.gz
@@ -354,7 +354,7 @@ https://www.cpan.org/authors/id/I/IS/ISHIGAKI/Text-CSV-2.06.tar.gz
 https://www.cpan.org/authors/id/S/SY/SYP/Text-Roman-3.5.tar.gz
 https://www.cpan.org/authors/id/S/SA/SADAHIRO/Unicode-Collate-1.31.tar.gz
 https://www.cpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz
-https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.31.tar.gz
+https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.32.tar.gz
 https://www.cpan.org/authors/id/M/MA/MARKOV/XML-LibXML-Simple-1.01.tar.gz
 https://www.cpan.org/authors/id/S/SH/SHLOMIF/XML-LibXSLT-2.003000.tar.gz
 https://www.cpan.org/authors/id/G/GR/GRANTM/XML-Simple-2.25.tar.gz
@@ -531,7 +531,7 @@ https://files.pythonhosted.org/packages/source/t/trove_classifiers/trove_classif
 https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.1.0.tar.gz
 https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.3.0.tar.gz
 https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
-https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.3.tar.xz
+https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.4.tar.xz
 https://static.rust-lang.org/dist/rustc-1.86.0-src.tar.xz
 https://github.com/rust-lang/rust-bindgen/archive/v0.71.1/rust-bindgen-0.71.1.tar.gz
 https://downloads.sourceforge.net/scons/SCons-4.9.1.tar.gz
