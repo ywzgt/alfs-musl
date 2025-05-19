@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-651">
+  <body class="blfs" id="blfs-r12.3-656">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-651
+        "phrase">(systemd</span> Edition) - Version r12.3-656
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-651">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-656">
           Home</a>
         </li>
       </ul>
@@ -168,17 +168,27 @@
           </p>
         </div>
         <p>
+          A part of a test cannot be run on <code class=
+          "literal">i686</code>. Avoid executing it when building for that
+          platform:
+        </p>
+        <pre class="userinput"><kbd class="command">case $(uname -m) in
+  i?86) sed -e "s/U_PLATFORM_IS_LINUX_BASED/__X86_64__ \&amp;\&amp; &amp;/" \
+            -i source/test/intltest/ustrtest.cpp ;;
+esac</kbd></pre>
+        <p>
           Install <span class="application">ICU</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
         "command">cd source                 &amp;&amp;
-
 ./configure --prefix=/usr &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
-          check</strong></span>.
+          check</strong></span>. One test (intltest) still fails for unknown
+          reasons on <code class="literal">i686</code> checking some thai
+          conversions.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -566,7 +576,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-651">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-656">
           Home</a>
         </li>
       </ul>
