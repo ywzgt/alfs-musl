@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-656">
+  <body class="blfs" id="blfs-r12.3-668">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-656
+        "phrase">(systemd</span> Edition) - Version r12.3-668
       </h4>
       <h3>
         Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-656">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-668">
           Home</a>
         </li>
       </ul>
@@ -626,24 +626,24 @@ cp -v &lt;YOUR_BLOBS&gt; /usr/lib/firmware/amdgpu</kbd></pre>
             <a class="ulink" href=
             "https://nouveau.freedesktop.org/CodeNames.html">the CodeNames
             page of the Nouveau wiki</a> to figure out the code name of your
-            NVIDIA GPU (for example, the code name of GeForce RTX 4060 Ti is
-            AD106). The directory for the firmware files you need is named as
+            NVIDIA GPU (for example, the code name of GeForce RTX 5080 is
+            GB203). The directory for the firmware files you need is named as
             the result converting the code name to lower case (<code class=
-            "filename">ad106</code> for the example). The directory (or some
+            "filename">gb203</code> for the example). The directory (or some
             of its contents) may be actually a symlink to another directory
             (or some files in another directory) and you'll then need to
             <a class="xref" href=
             "firmware.html#linux-firmware-symlink">create the symlink and
             download its target</a> yourself (for example, <code class=
-            "filename">ad106</code> is a symlink to <code class=
-            "filename">ad102</code>).
+            "filename">gb207</code> is a symlink to <code class=
+            "filename">gb202</code>).
           </p>
           <p>
             If you can find the directory for your GPU in neither the
             linux-firmware tree nor the <code class="filename">WHENCE</code>
             file (as a symlink), it means either your GPU does not need any
-            firmware, or it's newer than Ada Lovelace (RTX 40xx series) and
-            the firmware for it isn't released yet (as at late 2024).
+            firmware, or it's newer than Blackwell (RTX 50xx series) and the
+            firmware for it isn't released yet (as at mid 2025).
           </p>
           <p>
             For the NVIDIA GPUs from Tesla to Kepler, the Nouveau driver
@@ -869,7 +869,7 @@ make oldconfig</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-656">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-668">
           Home</a>
         </li>
       </ul>
