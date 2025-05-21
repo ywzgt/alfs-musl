@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-668">
+  <body class="blfs" id="blfs-r12.3-684">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-668
+        "phrase">(systemd</span> Edition) - Version r12.3-684
       </h4>
       <h3>
         Chapter&nbsp;1.&nbsp;Welcome to BLFS
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-668">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-684">
           Home</a>
         </li>
       </ul>
@@ -52,7 +52,7 @@
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <p>
-        Current release: r12.3-668 – May 19th, 2025
+        Current release: r12.3-684 – May 20th, 2025
       </p>
       <div class="itemizedlist">
         <p class="title">
@@ -61,10 +61,107 @@
         <ul>
           <li class="listitem">
             <p>
+              May 20th, 2025
+            </p>
+            <div class="itemizedlist">
+              <ul>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to asymptote-3.03. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/21557">#21557</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Fix known issues in texlive with xdvipdfmx,
+                    pdftex, and LuaTeX. Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/21577">#21577</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Fix CVE-2025-4516 in Python (Security Update).
+                    Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/21584">#21584</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [zeckma] - Update to thunderbird-128.10.2esr (security
+                    update). Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/21597">#21597</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [thomas] - Update to gimp-3.0.4 (Security Update). Fixes
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/21603">#21603</a>.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="listitem">
+            <p>
               May 19th, 2025
             </p>
             <div class="itemizedlist">
               <ul>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to OpenJDK-24.0.1 (Security Update).
+                    Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/21296">#21296</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to WebKitGTK-2.48.2 (Security Update).
+                    Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/21572">#21572</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Archive libsoup2. Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/21575">#21575</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Archive libgdata. It depends on libsoup2, and
+                    is no longer maintained.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Archive uhttpmock. It's no longer needed and
+                    was only used by libgdata, which is getting archived
+                    next.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Archive AbiWord. It is unmaintained, and the
+                    website is no longer available for it.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Fix several security vulnerabilities in
+                    giflib. Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/21574">#21574</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to libreoffice-25.2.3.2. Fixes
+                    <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/21524">#21524</a>.
+                  </p>
+                </li>
                 <li class="listitem">
                   <p>
                     [bdubbs] - Update to sessreg-1.1.4, smproxy-1.0.8, and
@@ -113,6 +210,13 @@
                     [bdubbs] - Update to plasma-wayland-protocols-1.18.0.
                     Fixes <a class="ulink" href=
                     "https://wiki.linuxfromscratch.org/blfs/ticket/21582">#21582</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to fop-2.11. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/21539">#21539</a>.
                   </p>
                 </li>
               </ul>
@@ -1790,8 +1894,8 @@
                 </li>
                 <li class="listitem">
                   <p>
-                    [bdubbs] - Update to libreoffice-25.2.2.2. Fixes
-                    <a class="ulink" href=
+                    [bdubbs] - Update to libreoffice-25.2.2.2 (Security
+                    Update). Fixes <a class="ulink" href=
                     "https://wiki.linuxfromscratch.org/blfs/ticket/21343">#21343</a>.
                   </p>
                 </li>
@@ -3518,7 +3622,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-668">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-684">
           Home</a>
         </li>
       </ul>

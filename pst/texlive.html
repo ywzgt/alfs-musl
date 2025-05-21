@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-668">
+  <body class="blfs" id="blfs-r12.3-684">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-668
+        "phrase">(systemd</span> Edition) - Version r12.3-684
       </h4>
       <h3>
         Chapter&nbsp;51.&nbsp;Typesetting
@@ -31,9 +31,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="asymptote.html" title=
-          "asymptote-3.02">Next</a>
+          "asymptote-3.03">Next</a>
           <p>
-            asymptote-3.02
+            asymptote-3.03
           </p>
         </li>
         <li class="up">
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-668">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-684">
           Home</a>
         </li>
       </ul>
@@ -205,6 +205,13 @@
                 Download size: 2.0 MB
               </p>
             </li>
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/texlive-20250308-source-upstream_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/texlive-20250308-source-upstream_fixes-1.patch</a>
+              </p>
+            </li>
           </ul>
         </div>
         <h3>
@@ -331,6 +338,8 @@
         <pre class="userinput"><kbd class=
         "command">export TEXARCH=$(uname -m | sed -e 's/i.86/i386/' -e 's/$/-linux/') &amp;&amp;
 
+patch -Np1 -i ../texlive-20250308-upstream_fixes-1.patch &amp;&amp;
+
 mkdir texlive-build &amp;&amp;
 cd    texlive-build &amp;&amp;
 
@@ -369,7 +378,10 @@ make</kbd></pre>
           "application">libpaper</span> which result in a difference in the
           final decimal places of the psresize test. The <span class=
           "application">libpaper</span> developer does not think this is
-          significant.
+          significant. Another test, <code class=
+          "filename">xdvipdfm-pdf.test</code>, is known to fail due to a
+          missing binary file from the upstream fixes patch. This does not
+          affect the functionality of the program.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -446,7 +458,7 @@ fmtutil-sys --all</kbd></pre>
         </div>
         <p>
           You can now proceed to <a class="xref" href="asymptote.html" title=
-          "asymptote-3.02">asymptote-3.02</a>, <a class="xref" href=
+          "asymptote-3.03">asymptote-3.03</a>, <a class="xref" href=
           "biber.html" title="biber-2.20">biber-2.20</a>, <a class="xref"
           href="dvisvgm.html" title="dvisvgm-3.4.4">dvisvgm-3.4.4</a> and /
           or <a class="xref" href="xindy.html" title=
@@ -691,9 +703,9 @@ fmtutil-sys --all</kbd></pre>
         </li>
         <li class="next">
           <a accesskey="n" href="asymptote.html" title=
-          "asymptote-3.02">Next</a>
+          "asymptote-3.03">Next</a>
           <p>
-            asymptote-3.02
+            asymptote-3.03
           </p>
         </li>
         <li class="up">
@@ -702,7 +714,7 @@ fmtutil-sys --all</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-668">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-684">
           Home</a>
         </li>
       </ul>
