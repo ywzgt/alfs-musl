@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      lm-sensors-3-6-0
+      lm-sensors-3-6-2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-699">
+  <body class="blfs" id="blfs-r12.3-710">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-699
+        "phrase">(systemd</span> Edition) - Version r12.3-710
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-699">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-710">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="lm_sensors" name="lm_sensors"></a>lm-sensors-3-6-0
+      <a id="lm_sensors" name="lm_sensors"></a>lm-sensors-3-6-2
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,23 +80,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/lm-sensors/lm-sensors/archive/V3-6-0/lm-sensors-3-6-0.tar.gz">
-                https://github.com/lm-sensors/lm-sensors/archive/V3-6-0/lm-sensors-3-6-0.tar.gz</a>
+                "https://github.com/hramrach/lm-sensors/archive/V3-6-2/lm-sensors-3-6-2.tar.gz">
+                https://github.com/hramrach/lm-sensors/archive/V3-6-2/lm-sensors-3-6-2.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: f60e47b5eb50bbeed48a9f43bb08dd5e
+                Download MD5 sum: 44c733f509cd4a31494fd3e355152b0a
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 268 KB
+                Download size: 288 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 2.6 MB
+                Estimated disk space required: 2.7 MB
               </p>
             </li>
             <li class="listitem">
@@ -184,11 +184,9 @@
           Install <span class="application">lm-sensors</span> by running the
           following commands:
         </p>
-        <pre class="userinput"><kbd class=
-        "command">make PREFIX=/usr           \
-     BUILD_STATIC_LIB=0    \
-     MANDIR=/usr/share/man \
-     EXLDFLAGS=</kbd></pre>
+        <pre class="userinput"><kbd class="command">make PREFIX=/usr        \
+     BUILD_STATIC_LIB=0 \
+     MANDIR=/usr/share/man</kbd></pre>
         <p>
           This package does not come with a test suite.
         </p>
@@ -199,9 +197,9 @@
      BUILD_STATIC_LIB=0 \
      MANDIR=/usr/share/man install &amp;&amp;
 
-install -v -m755 -d /usr/share/doc/lm-sensors-3-6-0 &amp;&amp;
+install -v -m755 -d /usr/share/doc/lm-sensors-3-6-2 &amp;&amp;
 cp -rv              README INSTALL doc/* \
-                    /usr/share/doc/lm-sensors-3-6-0</kbd></pre>
+                    /usr/share/doc/lm-sensors-3-6-2</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -211,13 +209,6 @@ cp -rv              README INSTALL doc/* \
           <em class="parameter"><code>BUILD_STATIC_LIB=0</code></em>: This
           parameter disables compiling and installing the static version of
           <code class="filename">libsensors</code>.
-        </p>
-        <p>
-          <em class="parameter"><code>EXLDFLAGS=</code></em>: This parameter
-          disables hard coding library search paths (rpath) into the binary
-          executable files and shared libraries. This package does not need
-          rpath for an installation into the standard location, and rpath may
-          sometimes cause unwanted effects or even security issues.
         </p>
         <p>
           <code class="option">PROG_EXTRA=sensord</code>: This parameter
@@ -264,7 +255,7 @@ cp -rv              README INSTALL doc/* \
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/etc/sensors.d, /usr/include/sensors and
-              /usr/share/doc/lm-sensors-3-6-0</span>
+              /usr/share/doc/lm-sensors-3-6-2</span>
             </div>
           </div>
         </div>
@@ -449,7 +440,7 @@ cp -rv              README INSTALL doc/* \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-699">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-710">
           Home</a>
         </li>
       </ul>

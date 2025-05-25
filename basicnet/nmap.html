@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-699">
+  <body class="blfs" id="blfs-r12.3-710">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-699
+        "phrase">(systemd</span> Edition) - Version r12.3-710
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-699">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-710">
           Home</a>
         </li>
       </ul>
@@ -160,10 +160,15 @@
         <p>
           Make the build system use the <span class=
           "application">Setuptools</span> Python module from LFS instead of
-          downloading a copy from the Internet:
+          downloading a copy from the Internet, and install the Python wheels
+          already created when running the <span class=
+          "command"><strong>make</strong></span> instead of rebuilding them
+          again on <span class="command"><strong>make
+          install</strong></span>:
         </p>
-        <pre class="userinput"><kbd class=
-        "command">sed 's/-m build/&amp; --no-isolation/' -i Makefile.in</kbd></pre>
+        <pre class="userinput"><kbd class="command">sed -ri Makefile.in \
+    -e 's#-m build#&amp; --no-isolation#'  \
+    -e '/pip install/s#(ZENMAP|NDIFF)DIR\)/#&amp;dist/*.whl#'</kbd></pre>
         <p>
           Install <span class="application">Nmap</span> by running the
           following commands:
@@ -353,7 +358,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-699">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-710">
           Home</a>
         </li>
       </ul>

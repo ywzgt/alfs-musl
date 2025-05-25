@@ -134,7 +134,7 @@ https://www.libssh2.org/download/libssh2-1.11.1.tar.gz
 https://www.mirrorservice.org/sites/ftp.i-scream.org/pub/i-scream/libstatgrab/libstatgrab-0.92.1.tar.gz
 https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.20.0.tar.gz
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.xz
-https://github.com/libunwind/libunwind/releases/download/v1.8.1/libunwind-1.8.1.tar.gz
+https://github.com/libunwind/libunwind/releases/download/v1.8.2/libunwind-1.8.2.tar.gz
 https://lttng.org/files/urcu/userspace-rcu-0.15.3.tar.bz2
 https://github.com/libusb/libusb/releases/download/v1.0.28/libusb-1.0.28.tar.bz2
 https://dist.libuv.org/dist/v1.51.0/libuv-v1.51.0.tar.gz
@@ -279,7 +279,7 @@ https://ftp.gnu.org/gnu/which/which-2.23.tar.gz
 https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz
 https://downloads.sourceforge.net/infozip/zip30.tar.gz
 https://downloads.sourceforge.net/hdparm/hdparm-9.65.tar.gz
-https://github.com/lm-sensors/lm-sensors/archive/V3-6-0/lm-sensors-3-6-0.tar.gz
+https://github.com/hramrach/lm-sensors/archive/V3-6-2/lm-sensors-3-6-2.tar.gz
 https://mj.ucw.cz/download/linux/pci/pciutils-3.13.0.tar.gz
 https://sg.danny.cz/sg/p/sg3_utils-1.48.tar.xz
 https://github.com/lfs-book/sysmond/releases/download/sysmond-1.0.0/sysmond-1.0.0.tar.xz
@@ -466,7 +466,7 @@ https://files.pythonhosted.org/packages/source/b/build/build-1.2.2.post1.tar.gz
 https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.3.0.tar.gz
 https://github.com/psf/cachecontrol/archive/v0.14.3/cachecontrol-0.14.3.tar.gz
 https://github.com/cython/cython/releases/download/3.1.1/cython-3.1.1.tar.gz
-https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.34.3.tar.gz
+https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.35.0.tar.gz
 https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.4.0.tar.xz
 https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.21.2.tar.gz
 https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.gz
@@ -567,7 +567,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_s
 https://w1.fi/releases/wpa_supplicant-2.11.tar.gz
 https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
-https://ftp.isc.org/isc/bind9/9.20.8/bind-9.20.8.tar.xz
+https://ftp.isc.org/isc/bind9/9.20.9/bind-9.20.9.tar.xz
 https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.52.0/downloads/NetworkManager-1.52.0.tar.xz
 https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
 https://nmap.org/dist/nmap-7.97.tar.bz2
@@ -619,8 +619,8 @@ https://downloads.mariadb.org/interstitial/mariadb-11.4.5/source/mariadb-11.4.5.
 https://ftp.postgresql.org/pub/source/v17.5/postgresql-17.5.tar.bz2
 https://sqlite.org/2025/sqlite-autoconf-3490200.tar.gz
 https://sqlite.org/2025/sqlite-doc-3490200.zip
-https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.9.tgz
-https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.9-consolidated-1.patch
+https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.10.tgz
+https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.10-consolidated-1.patch
 https://nlnetlabs.nl/downloads/unbound/unbound-1.23.0.tar.gz
 https://www.x.org/pub/individual/util/util-macros-1.20.2.tar.xz
 https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2024.1.tar.xz
@@ -678,7 +678,7 @@ https://downloads.sourceforge.net/enlightenment/imlib2-1.12.5.tar.xz
 https://github.com/ksnip/kColorPicker/archive/v0.3.1/kColorPicker-0.3.1.tar.gz
 https://github.com/ksnip/kImageAnnotator/archive/v0.7.1/kImageAnnotator-0.7.1.tar.gz
 https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
-https://download.gnome.org/sources/libadwaita/1.7/libadwaita-1.7.2.tar.xz
+https://download.gnome.org/sources/libadwaita/1.7/libadwaita-1.7.3.tar.xz
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.4.1/libei-1.4.1.tar.bz2
 https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz
@@ -819,7 +819,7 @@ https://archive.xfce.org/src/xfce/exo/4.20/exo-4.20.0.tar.bz2
 https://archive.xfce.org/src/xfce/garcon/4.20/garcon-4.20.0.tar.bz2
 https://download.gnome.org/sources/libwnck/43/libwnck-43.2.tar.xz
 http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.20/xfce4-dev-tools-4.20.0.tar.bz2
-https://archive.xfce.org/src/xfce/libxfce4windowing/4.20/libxfce4windowing-4.20.2.tar.bz2
+https://archive.xfce.org/src/xfce/libxfce4windowing/4.20/libxfce4windowing-4.20.3.tar.bz2
 https://archive.xfce.org/src/xfce/xfce4-panel/4.20/xfce4-panel-4.20.4.tar.bz2
 https://archive.xfce.org/src/xfce/thunar/4.20/thunar-4.20.3.tar.bz2
 https://archive.xfce.org/src/xfce/thunar-volman/4.20/thunar-volman-4.20.0.tar.bz2
@@ -830,7 +830,7 @@ https://archive.xfce.org/src/xfce/xfce4-settings/4.20/xfce4-settings-4.20.1.tar.
 https://archive.xfce.org/src/xfce/xfdesktop/4.20/xfdesktop-4.20.1.tar.bz2
 https://archive.xfce.org/src/xfce/xfwm4/4.20/xfwm4-4.20.0.tar.bz2
 https://archive.xfce.org/src/xfce/xfce4-session/4.20/xfce4-session-4.20.2.tar.bz2
-https://archive.xfce.org/src/apps/parole/4.18/parole-4.18.2.tar.bz2
+https://archive.xfce.org/src/apps/parole/4.20/parole-4.20.0.tar.bz2
 https://archive.xfce.org/src/apps/xfce4-terminal/1.1/xfce4-terminal-1.1.5.tar.xz
 https://archive.xfce.org/src/apps/xfburn/0.7/xfburn-0.7.2.tar.bz2
 https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.4.tar.xz
@@ -952,7 +952,7 @@ https://libmpeg2.sourceforge.net/files/libmpeg2-0.5.1.tar.gz
 https://github.com/metabrainz/libmusicbrainz/releases/download/release-5.1.0/libmusicbrainz-5.1.0.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/libmusicbrainz-5.1.0-cmake_fixes-1.patch
 https://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.xz
-https://github.com/haasn/libplacebo/archive/v7.349.0/libplacebo-7.349.0.tar.gz
+https://github.com/haasn/libplacebo/archive/v7.351.0/libplacebo-7.351.0.tar.gz
 https://github.com/libsndfile/libsamplerate/releases/download/0.2.2/libsamplerate-0.2.2.tar.xz
 https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz
 https://github.com/intel/libva/archive/2.22.0/libva-2.22.0.tar.gz
@@ -962,7 +962,7 @@ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
 https://github.com/webmproject/libvpx/archive/v1.15.1/libvpx-1.15.1.tar.gz
 https://github.com/mltframework/mlt/releases/download/v7.32.0/mlt-7.32.0.tar.gz
 https://downloads.xiph.org/releases/opus/opus-1.5.2.tar.gz
-https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.2/pipewire-1.4.2.tar.bz2
+https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.3/pipewire-1.4.3.tar.bz2
 https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
 https://www.kernel.org/pub/linux/bluetooth/sbc-2.1.tar.xz
 https://github.com/libsdl-org/sdl12-compat/archive/release-1.2.68/sdl12-compat-release-1.2.68.tar.gz
