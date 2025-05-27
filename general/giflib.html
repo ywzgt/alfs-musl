@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-711">
+  <body class="blfs" id="blfs-r12.3-719">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-711
+        "phrase">(systemd</span> Edition) - Version r12.3-719
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-711">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-719">
           Home</a>
         </li>
       </ul>
@@ -128,11 +128,15 @@
           giflib Dependencies
         </h3>
         <h4>
-          Required
+          Recommended
         </h4>
-        <p class="required">
+        <p class="recommended">
           <a class="xref" href="../pst/xmlto.html" title=
-          "xmlto-0.0.29">xmlto-0.0.29</a>
+          "xmlto-0.0.29">xmlto-0.0.29</a> (required if you run <span class=
+          "command"><strong>make</strong></span> after <span class=
+          "command"><strong>make clean</strong></span>) <a href=
+          "#ftn.id24674" class="footnote" id="id24674" name=
+          "id24674"><sup class="footnote">[1]</sup></a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -165,7 +169,8 @@
         </p>
         <pre class="userinput"><kbd class="command">make</kbd></pre>
         <p>
-          This package does not come with a test suite.
+          To test the results, issue: <span class="command"><strong>make
+          check</strong></span>.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -334,6 +339,26 @@ cp -v -R doc/* /usr/share/doc/giflib-5.2.2</kbd></pre>
           </table>
         </div>
       </div>
+      <div class="footnotes">
+        <br />
+        <hr width="100" align="left" />
+        <div id="ftn.id24674" class="footnote">
+          <p>
+            <a href="#id24674" class="para"><sup class="para">[1]</sup></a>
+            Pre-built documentation is present in this tarball. <span class=
+            "command"><strong>make</strong></span> will detect that
+            documentation already exists in the distribution if <span class=
+            "command"><strong>make clean</strong></span> was not run, and
+            will not require the <a class="xref" href="../pst/xmlto.html"
+            title="xmlto-0.0.29">xmlto-0.0.29</a> dependency. However,
+            running <span class="command"><strong>make clean</strong></span>
+            will result in the pre-built documentation being deleted, thus
+            requiring <span class="command"><strong>xmlto</strong></span> to
+            build the documentation if <span class=
+            "command"><strong>make</strong></span> is run afterwards.
+          </p>
+        </div>
+      </div>
     </div>
     <div class="navfooter">
       <ul>
@@ -355,7 +380,7 @@ cp -v -R doc/* /usr/share/doc/giflib-5.2.2</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-711">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-719">
           Home</a>
         </li>
       </ul>
