@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-723">
+  <body class="blfs" id="blfs-r12.3-729">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-723
+        "phrase">(systemd</span> Edition) - Version r12.3-729
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-723">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-729">
           Home</a>
         </li>
       </ul>
@@ -127,9 +127,10 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -D CMAKE_INSTALL_PREFIX=/usr \
-      -D BUILD_STATIC=OFF          \
-      -W no-dev ..                 &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr        \
+      -D BUILD_STATIC=OFF                 \
+      -D CMAKE_POLICY_VERSION_MINIMUM=3.5 \
+      -W no-dev ..                        &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
@@ -147,6 +148,11 @@ make</kbd></pre>
         <p>
           <em class="parameter"><code>-D BUILD_STATIC=OFF</code></em>: This
           switch disables building the static version of the library.
+        </p>
+        <p>
+          <em class="parameter"><code>-D
+          CMAKE_POLICY_VERSION_MINIMUM=3.5</code></em>: This switch allows
+          building this package with cmake-4.0 or newer.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -234,7 +240,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-723">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-729">
           Home</a>
         </li>
       </ul>
