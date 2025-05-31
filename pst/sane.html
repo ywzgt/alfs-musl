@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      SANE-1.2.1
+      SANE-1.4.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-750">
+  <body class="blfs" id="blfs-r12.3-755">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-750
+        "phrase">(systemd</span> Edition) - Version r12.3-755
       </h4>
       <h3>
         Chapter&nbsp;47.&nbsp;Scanning
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-750">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-755">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="sane" name="sane"></a>SANE-1.2.1
+      <a id="sane" name="sane"></a>SANE-1.4.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -88,29 +88,29 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://anduin.linuxfromscratch.org/BLFS/sane/sane-backends-1.2.1.tar.gz">
-                https://anduin.linuxfromscratch.org/BLFS/sane/sane-backends-1.2.1.tar.gz</a>
+                "https://anduin.linuxfromscratch.org/BLFS/sane/sane-backends-1.4.0.tar.gz">
+                https://anduin.linuxfromscratch.org/BLFS/sane/sane-backends-1.4.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 302159419ed1ee216c6e1edbe97c2a8c
+                Download MD5 sum: fddb8b164ff1b1ffb576c9ba4173610d
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 6.9 MB
+                Download size: 7.2 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 311 MB (with tests)
+                Estimated disk space required: 214 MB (Add 58 MB for tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.7 SBU (Using parallelism=4; with
-                tests)
+                Estimated build time: 0.4 SBU (Using parallelism=4; add 0.1
+                SBU for tests)
               </p>
             </li>
           </ul>
@@ -224,7 +224,7 @@ PYTHON=python3 ./configure --prefix=/usr        \
                            --sysconfdir=/etc    \
                            --localstatedir=/var \
                            --with-lockdir=/run/lock \
-                           --docdir=/usr/share/doc/sane-backends-1.2.1" &amp;&amp;
+                           --docdir=/usr/share/doc/sane-backends-1.4.0" &amp;&amp;
 make</kbd></pre>
           <p>
             To test the results, issue: <span class="command"><strong>make
@@ -290,7 +290,7 @@ chgrp -v scanner  /run/lock/sane</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id99643" name="id99643"></a>Backend Configuration
+                    <a id="id99661" name="id99661"></a>Backend Configuration
                   </h5>
                 </div>
               </div>
@@ -331,7 +331,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id99660" name="id99660"></a>General Information
+                    <a id="id99678" name="id99678"></a>General Information
                   </h5>
                 </div>
               </div>
@@ -351,7 +351,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id99667" name="id99667"></a>Configuration and
+                    <a id="id99685" name="id99685"></a>Configuration and
                     setup of the 'saned' daemon
                   </h5>
                 </div>
@@ -395,7 +395,7 @@ EOF</kbd></pre>
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/etc/sane.d,
               /usr/{include,lib,share}/sane, and
-              /usr/share/doc/sane-1.2.1</span>
+              /usr/share/doc/sane-1.4.0</span>
             </div>
           </div>
         </div>
@@ -564,7 +564,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-750">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-755">
           Home</a>
         </li>
       </ul>
