@@ -1,0 +1,70 @@
+diff --git a/wget-list b/wget-list
+index a229b4c228..b4887218f4 100644
+--- a/wget-list
++++ b/wget-list
+@@ -286,7 +286,7 @@ https://github.com/lfs-book/sysmond/releases/download/sysmond-1.0.0/sysmond-1.0.
+ https://github.com/lfs-book/sysmon3/releases/download/sysmon3-3.0.1/sysmon3-3.0.1.tar.xz
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-018.tar.xz
+ https://github.com/lu-zero/cargo-c/archive/v0.10.13/cargo-c-0.10.13.tar.gz
+-https://github.com/mozilla/cbindgen/archive/v0.28.0/cbindgen-0.28.0.tar.gz
++https://github.com/mozilla/cbindgen/archive/v0.29.0/cbindgen-0.29.0.tar.gz
+ https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+ https://cmake.org/files/v4.0/cmake-4.0.2.tar.gz
+@@ -617,8 +617,8 @@ https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
+ https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
+ https://downloads.mariadb.org/interstitial/mariadb-11.4.5/source/mariadb-11.4.5.tar.gz
+ https://ftp.postgresql.org/pub/source/v17.5/postgresql-17.5.tar.bz2
+-https://sqlite.org/2025/sqlite-autoconf-3490200.tar.gz
+-https://sqlite.org/2025/sqlite-doc-3490200.zip
++https://sqlite.org/2025/sqlite-autoconf-3450000.tar.gz
++https://sqlite.org/2025/sqlite-doc-3500000.zip
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.10.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.10-consolidated-1.patch
+ https://nlnetlabs.nl/downloads/unbound/unbound-1.23.0.tar.gz
+@@ -922,12 +922,12 @@ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
+ https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
+ https://files.dyne.org/frei0r/releases/frei0r-plugins-1.8.0.tar.gz
+ https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
+-https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.1.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.1.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.1.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.26.1.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.26.1.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.26.1.tar.xz
++https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.2.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.2.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.2.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.26.2.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.26.2.tar.xz
++https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.26.2.tar.xz
+ https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+ https://github.com/lfs-book/intel-media-driver/archive/v25.1.4/intel-media-driver-25.1.4.tar.gz
+@@ -945,7 +945,7 @@ https://get.videolan.org/libdvdcss/1.4.3/libdvdcss-1.4.3.tar.bz2
+ https://get.videolan.org/libdvdread/6.1.3/libdvdread-6.1.3.tar.bz2
+ https://get.videolan.org/libdvdnav/6.1.1/libdvdnav-6.1.1.tar.bz2
+ https://downloads.sourceforge.net/libdv/libdv-1.0.0.tar.gz
+-https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.1/gst-plugins-rs-gstreamer-1.26.1.tar.gz
++https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.2/gst-plugins-rs-gstreamer-1.26.2.tar.gz
+ https://downloads.sourceforge.net/mad/libmad-0.15.1b.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libmad-0.15.1b-fixes-1.patch
+ https://libmpeg2.sourceforge.net/files/libmpeg2-0.5.1.tar.gz
+@@ -962,7 +962,7 @@ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
+ https://github.com/webmproject/libvpx/archive/v1.15.1/libvpx-1.15.1.tar.gz
+ https://github.com/mltframework/mlt/releases/download/v7.32.0/mlt-7.32.0.tar.gz
+ https://downloads.xiph.org/releases/opus/opus-1.5.2.tar.gz
+-https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.3/pipewire-1.4.3.tar.bz2
++https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.4/pipewire-1.4.4.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.1.tar.xz
+ https://github.com/libsdl-org/sdl12-compat/archive/release-1.2.68/sdl12-compat-release-1.2.68.tar.gz
+@@ -1011,7 +1011,7 @@ https://downloads.sourceforge.net/gs-fonts/gnu-gs-fonts-other-6.0.tar.gz
+ https://downloads.sourceforge.net/gimp-print/gutenprint-5.3.5.tar.xz
+ https://github.com/OpenPrinting/libcupsfilters/releases/download/2.1.1/libcupsfilters-2.1.1.tar.xz
+ https://github.com/OpenPrinting/libppd/releases/download/2.1.1/libppd-2.1.1.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/sane/sane-backends-1.2.1.tar.gz
++https://anduin.linuxfromscratch.org/BLFS/sane/sane-backends-1.4.0.tar.gz
+ https://download.gnome.org/sources/simple-scan/46/simple-scan-46.0.tar.xz
+ https://sourceware.org/ftp/docbook-tools/new-trials/SOURCES/sgml-common-0.6.3.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/sgml-common-0.6.3-manpage-1.patch
