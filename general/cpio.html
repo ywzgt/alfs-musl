@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-755">
+  <body class="blfs" id="blfs-r12.3-759">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-755
+        "phrase">(systemd</span> Edition) - Version r12.3-759
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-755">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-759">
           Home</a>
         </li>
       </ul>
@@ -119,6 +119,14 @@
         <h2 class="sect2">
           Installation of cpio
         </h2>
+        <p>
+          Add a workaround for an issue shown by gcc15:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e "/^extern int (\*xstat)/s/()/(const char * restrict,  struct stat * restrict)/" \
+    -i src/extern.h
+sed -e "/^int (\*xstat)/s/()/(const char * restrict,  struct stat * restrict)/" \
+    -i src/global.c</kbd></pre>
         <p>
           Install <span class="application">cpio</span> by running the
           following commands:
@@ -263,7 +271,7 @@ install -v -m644    doc/cpio.{html,txt} \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-755">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-759">
           Home</a>
         </li>
       </ul>

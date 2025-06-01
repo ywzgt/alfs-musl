@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      GCC-14.2.0
+      GCC-15.1.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-755">
+  <body class="blfs" id="blfs-r12.3-759">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-755
+        "phrase">(systemd</span> Edition) - Version r12.3-759
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-755">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-759">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="gcc" name="gcc"></a>GCC-14.2.0
+      <a id="gcc" name="gcc"></a>GCC-15.1.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -67,14 +67,16 @@
             Note
           </h3>
           <p>
-            Additional languages, among which D and Ada, are available in the
-            collection. D and Ada have a binary bootstrap requirement for the
-            first installation, so their installation is not described here.
-            To install them, you can proceed along the same lines as below
-            after installing the corresponding compiler from a binary
-            package, adding <code class="option">ada</code> or <code class=
-            "option">d</code> to the <em class=
-            "parameter"><code>--enable-languages</code></em> line.
+            Additional languages, among which COBOL, D, and Ada, are
+            available in the collection. COBOL is currently only supported on
+            x86-64 systems. D and Ada have a binary bootstrap requirement for
+            the first installation, so their installation is not described
+            here. To install D or Ada, you can proceed along the same lines
+            as below after installing the corresponding compiler from a
+            binary package. Finally add <code class="option">ada</code> or
+            <code class="option">d</code> or <code class=
+            "option">cobol</code> to the <em class=
+            "parameter"><code>--enable-languages</code></em> line as desired.
           </p>
         </div>
         <div class="admon note">
@@ -95,7 +97,7 @@
           </h3>
           <p>
             If you are upgrading <span class="application">GCC</span> from
-            any other version prior to 14.2.0, then you must be careful
+            any other version prior to 15.1.0, then you must be careful
             compiling 3rd party kernel modules. You should ensure that the
             kernel and all its native modules are also compiled using the
             same version of <span class="application">GCC</span> that you use
@@ -115,28 +117,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz">https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz</a>
+                "https://ftp.gnu.org/gnu/gcc/gcc-15.1.0/gcc-15.1.0.tar.xz">https://ftp.gnu.org/gnu/gcc/gcc-15.1.0/gcc-15.1.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 2268420ba02dc01821960e274711bde0
+                Download MD5 sum: e55d13c55428bca27b4d2ea02f883135
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 88 MB
+                Download size: 94 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 11 GB (3.4 GB installed with
+                Estimated disk space required: 12 GB (3.8 GB installed with
                 all listed languages; add 1.6 GB for tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 14 SBU (add 34 SBU for tests; both with
+                Estimated build time: 16 SBU (add 30 SBU for tests; both with
                 parallelism=8)
               </p>
             </li>
@@ -221,26 +223,16 @@ cd    build               &amp;&amp;
     --enable-languages=c,c++,fortran,go,objc,obj-c++,m2 &amp;&amp;
 make</kbd></pre>
         <p>
-          If running tests, as in LFS, remove/fix several known test
-          failures:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e '/cpython/d'               -i ../gcc/testsuite/gcc.dg/plugin/plugin.exp
-sed -e 's/no-pic /&amp;-no-pie /'     -i ../gcc/testsuite/gcc.target/i386/pr113689-1.c
-sed -e 's/300000/(1|300000)/'     -i ../libgomp/testsuite/libgomp.c-c++-common/pr109062.c
-sed -e 's/{ target nonpic } //' \
-    -e '/GOTPCREL/d'              -i ../gcc/testsuite/gcc.target/i386/fentryname3.c</kbd></pre>
-        <p>
           If you have installed additional packages such as <span class=
           "application">valgrind</span> and <span class=
           "application">gdb</span>, the <span class="application">gcc</span>
           part of the test suite will run more tests than in LFS. Some of
           those will report FAIL and others XPASS (pass when expected to
-          FAIL). As of gcc-14.1.0, about 74 FAILs occur in the <span class=
+          FAIL). As of gcc-15.1.0, about 69 FAILs occur in the <span class=
           "quote">“<span class="quote">guality</span>”</span> suite, as well
           as miscellaneous failures throughout the rest of the test suite. If
-          all the compilers above are built, there will be a little over 110
-          unexpected failures out of over 617,000 tests. To run the tests,
+          all the compilers above are built, there will be about 107
+          unexpected failures out of over 610,000 tests. To run the tests,
           issue:
         </p>
         <pre class="userinput"><kbd class="command">make -k check</kbd></pre>
@@ -260,9 +252,9 @@ mkdir -pv /usr/share/gdb/auto-load/usr/lib              &amp;&amp;
 mv -v /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib &amp;&amp;
 
 chown -v -R root:root \
-    /usr/lib/gcc/*linux-gnu/14.2.0/include{,-fixed}     &amp;&amp;
+    /usr/lib/gcc/*linux-gnu/15.1.0/include{,-fixed}     &amp;&amp;
 
-ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/14.2.0/liblto_plugin.so \
+ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/15.1.0/liblto_plugin.so \
         /usr/lib/bfd-plugins/</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -509,7 +501,7 @@ ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/14.2.0/liblto_plugin.so \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-755">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-759">
           Home</a>
         </li>
       </ul>
