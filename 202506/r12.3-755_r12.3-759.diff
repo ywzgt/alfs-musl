@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index b4887218f4..a0e7b5d08d 100644
+--- a/wget-list
++++ b/wget-list
+@@ -271,7 +271,7 @@ https://download.librdf.org/source/raptor2-2.0.16.tar.gz
+ https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+ https://download.librdf.org/source/redland-1.0.17.tar.gz
+ https://sysstat.github.io/sysstat-packages/sysstat-12.7.7.tar.xz
+-https://github.com/systemd/systemd/archive/v257.3/systemd-257.3.tar.gz
++https://github.com/systemd/systemd/archive/v257.6/systemd-257.6.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.10.1/udisks-2.10.1.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-7.1.6.tar.gz
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.9/upower-v1.90.9.tar.bz2
+@@ -292,7 +292,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.p
+ https://cmake.org/files/v4.0/cmake-4.0.2.tar.gz
+ https://doxygen.nl/files/doxygen-1.14.0.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+-https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
++https://ftp.gnu.org/gnu/gcc/gcc-15.1.0/gcc-15.1.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.8/gc-8.2.8.tar.gz
+ https://ftp.gnu.org/gnu/gdb/gdb-16.3.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-2.49.0.tar.xz
+@@ -617,7 +617,7 @@ https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
+ https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
+ https://downloads.mariadb.org/interstitial/mariadb-11.4.5/source/mariadb-11.4.5.tar.gz
+ https://ftp.postgresql.org/pub/source/v17.5/postgresql-17.5.tar.bz2
+-https://sqlite.org/2025/sqlite-autoconf-3450000.tar.gz
++https://sqlite.org/2025/sqlite-autoconf-3500000.tar.gz
+ https://sqlite.org/2025/sqlite-doc-3500000.zip
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.10.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.10-consolidated-1.patch
