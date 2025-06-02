@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-759">
+  <body class="blfs" id="blfs-r12.3-768">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-759
+        "phrase">(systemd</span> Edition) - Version r12.3-768
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-759">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-768">
           Home</a>
         </li>
       </ul>
@@ -110,6 +110,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Cyrus SASL Dependencies
         </h3>
         <h4>
@@ -159,7 +173,13 @@
           </p>
         </div>
         <p>
-          First, fix a problem revealed by gcc-14:
+          First, fix a the package to be compatible with gcc-15:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../cyrus-sasl-2.1.28-gcc15_fixes-1.patch &amp;&amp;
+autoreconf -fiv</kbd></pre>
+        <p>
+          Also, fix a problem revealed by gcc-14 and later:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed '/saslint/a #include &lt;time.h&gt;'       -i lib/saslutil.c &amp;&amp;
@@ -472,7 +492,7 @@ install -v -dm700 /var/lib/sasl</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-759">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-768">
           Home</a>
         </li>
       </ul>

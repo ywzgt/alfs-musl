@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-759">
+  <body class="blfs" id="blfs-r12.3-768">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-759
+        "phrase">(systemd</span> Edition) - Version r12.3-768
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-759">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-768">
           Home</a>
         </li>
       </ul>
@@ -182,6 +182,11 @@
         "command">sed -i '/cmake_policy(SET CMP0012 NEW)/d' CMakeLists.txt &amp;&amp;
 sed -i 's/PythonInterp/Python3/' CMakeLists.txt          &amp;&amp;
 find . -name CMakeLists.txt | xargs sed -i 's/VERSION 2.8.0 FATAL_ERROR/VERSION 4.0.0/'</kbd></pre>
+        <p>
+          Now fix a problem when building with gcc-15:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i '/Font.h/i #include &lt;cstdint&gt;' tests/featuremap/featuremaptest.cpp</kbd></pre>
         <p>
           Install <span class="application">Graphite2</span> by running the
           following commands:
@@ -325,7 +330,7 @@ cp      -v -f    doc/{GTF,manual}.pdf \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-759">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-768">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-759">
+  <body class="blfs" id="blfs-r12.3-768">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-759
+        "phrase">(systemd</span> Edition) - Version r12.3-768
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-759">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-768">
           Home</a>
         </li>
       </ul>
@@ -142,6 +142,12 @@
           Installation of Aspell
         </h2>
         <p>
+          First, fix a problem when building with gcc-15:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e 's/; i.*size)/, e = end(); i != e; ++i, ++size_)/' \
+    -i modules/speller/default/vector_hash-t.hpp</kbd></pre>
+        <p>
           Install <span class="application">Aspell</span> by running the
           following commands:
         </p>
@@ -187,7 +193,7 @@ install -v -m644 manual/aspell-dev.html/* \
           <span class="command"><strong>ln -svfn aspell-0.60
           /usr/lib/aspell</strong></span>: This command is useful for
           configuration of other applications, such as <a class="xref" href=
-          "enchant.html" title="enchant-2.8.5">enchant-2.8.5</a>.
+          "enchant.html" title="enchant-2.8.6">enchant-2.8.6</a>.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -482,7 +488,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-759">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-768">
           Home</a>
         </li>
       </ul>

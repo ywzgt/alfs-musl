@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-759">
+  <body class="blfs" id="blfs-r12.3-768">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-759
+        "phrase">(systemd</span> Edition) - Version r12.3-768
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-759">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-768">
           Home</a>
         </li>
       </ul>
@@ -150,6 +150,11 @@
         <h2 class="sect2">
           Installation of parted
         </h2>
+        <p>
+          First, make the package compatible with gcc-15:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i 's/do_version ()/do_version (PedDevice** dev, PedDisk** diskp)/' parted/parted.c</kbd></pre>
         <p>
           Install <span class="application">Parted</span> by running the
           following commands:
@@ -320,7 +325,7 @@ install -v -m644    doc/{FAT,API,parted.{txt,html}} \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-759">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-768">
           Home</a>
         </li>
       </ul>
