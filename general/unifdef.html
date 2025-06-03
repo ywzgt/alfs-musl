@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-768">
+  <body class="blfs" id="blfs-r12.3-781">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-768
+        "phrase">(systemd</span> Edition) - Version r12.3-781
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-768">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-781">
           Home</a>
         </li>
       </ul>
@@ -108,6 +108,16 @@
           Installation of unifdef
         </h2>
         <p>
+          First, fix a problem when building with gcc-15:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i 's/constexpr/unifdef_&amp;/g' unifdef.c</kbd></pre>
+        <p>
+          Now fix a problem if reinstalling the package:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i 's/ln -s/ln -sf/' Makefile</kbd></pre>
+        <p>
           Install <span class="application">unifdef</span> by running the
           following commands:
         </p>
@@ -117,7 +127,8 @@
           test</strong></span>.
         </p>
         <p>
-          Now, as the <code class="systemitem">root</code> user:
+          Finally, finish the installation as the <code class=
+          "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
         "command">make prefix=/usr install</kbd></pre>
@@ -206,7 +217,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-768">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-781">
           Home</a>
         </li>
       </ul>

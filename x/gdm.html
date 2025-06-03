@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-768">
+  <body class="blfs" id="blfs-r12.3-781">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-768
+        "phrase">(systemd</span> Edition) - Version r12.3-781
       </h4>
       <h3>
         Chapter&nbsp;26.&nbsp;Display Managers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-768">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-781">
           Home</a>
         </li>
       </ul>
@@ -154,6 +154,11 @@
 useradd -c "GDM Daemon Owner" -d /var/lib/gdm -u 21 \
         -g gdm -s /bin/false gdm &amp;&amp;
 passwd -ql gdm</kbd></pre>
+        <p>
+          First, adapt GDM to build with GCC 15:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -r 's/([(*])bool([) ])/\1boolval\2/' -i common/gdm-settings-utils.*</kbd></pre>
         <p>
           Install <span class="application">GDM</span> by running the
           following commands:
@@ -364,7 +369,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-768">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-781">
           Home</a>
         </li>
       </ul>

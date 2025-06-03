@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-768">
+  <body class="blfs" id="blfs-r12.3-781">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-768
+        "phrase">(systemd</span> Edition) - Version r12.3-781
       </h4>
       <h3>
         Chapter&nbsp;34.&nbsp;<span class="phrase">GNOME Applications</span>
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-768">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-781">
           Home</a>
         </li>
       </ul>
@@ -137,7 +137,7 @@
           "../general/glib2.html" title="GLib-2.84.2">GLib-2.84.2</a> (with
           GObject Introspection), <a class="xref" href=
           "../general/libarchive.html" title=
-          "libarchive-3.8.0">libarchive-3.8.0</a>, <a class="xref" href=
+          "libarchive-3.8.1">libarchive-3.8.1</a>, <a class="xref" href=
           "libsecret.html" title="libsecret-0.21.7">libsecret-0.21.7</a>, and
           <a class="xref" href="../general/poppler.html" title=
           "Poppler-25.05.0">Poppler-25.05.0</a>
@@ -150,7 +150,7 @@
           "Cups-2.4.12">Cups-2.4.12</a> (to enable printing if support is
           built into <span class="application">GTK+ 3</span>), <a class=
           "xref" href="gnome-desktop.html" title=
-          "gnome-desktop-44.1">gnome-desktop-44.1</a>, <a class="xref" href=
+          "gnome-desktop-44.3">gnome-desktop-44.3</a>, <a class="xref" href=
           "../general/gspell.html" title="gspell-1.14.0">gspell-1.14.0</a>,
           <a class="xref" href="../multimedia/gst10-plugins-base.html" title=
           "gst-plugins-base-1.26.2">gst-plugins-base-1.26.2</a>, <a class=
@@ -181,7 +181,7 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-CPPFLAGS+=" -I/opt/texlive/2025/include" \
+CPPFLAGS+=" -I/opt/texlive/2025/include -DNO_DEBUG" \
 meson setup --prefix=/usr                \
             --buildtype=release          \
             -D gtk_doc=false             \
@@ -388,7 +388,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-768">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-781">
           Home</a>
         </li>
       </ul>

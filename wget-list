@@ -58,7 +58,7 @@ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
 https://download.kde.org/stable/release-service/25.04.0/src/kate-25.04.0.tar.xz
 https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.5.tar.xz
 https://www.nano-editor.org/dist/v8/nano-8.4.tar.xz
-https://github.com/vim/vim/archive/v9.1.1263/vim-9.1.1263.tar.gz
+https://github.com/vim/vim/archive/v9.1.1418/vim-9.1.1418.tar.gz
 http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.15.tar.gz
 https://www.zsh.org/pub/zsh-5.9.tar.xz
@@ -99,7 +99,7 @@ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.18.tar.gz
 https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.6.tar.xz
 https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-1.6.3.tar.gz
 https://pagure.io/libaio/archive/libaio-0.3.113/libaio-0.3.113.tar.gz
-https://github.com/libarchive/libarchive/releases/download/v3.8.0/libarchive-3.8.0.tar.xz
+https://github.com/libarchive/libarchive/releases/download/v3.8.1/libarchive-3.8.1.tar.xz
 https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2
 https://0pointer.de/public/libatasmart-0.19.tar.xz
 https://github.com/ivmai/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz
@@ -138,7 +138,7 @@ https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.20.0.tar.gz
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.xz
 https://github.com/libunwind/libunwind/releases/download/v1.8.2/libunwind-1.8.2.tar.gz
 https://lttng.org/files/urcu/userspace-rcu-0.15.3.tar.bz2
-https://github.com/libusb/libusb/releases/download/v1.0.28/libusb-1.0.28.tar.bz2
+https://github.com/libusb/libusb/releases/download/v1.0.29/libusb-1.0.29.tar.bz2
 https://dist.libuv.org/dist/v1.51.0/libuv-v1.51.0.tar.gz
 https://github.com/lfs-book/libxkbcommon/archive/v1.10.0/libxkbcommon-1.10.0.tar.gz
 https://download.gnome.org/sources/libxml2/2.14/libxml2-2.14.3.tar.xz
@@ -552,7 +552,7 @@ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-24.0.1/OpenJDK-24.0.1+9
 https://github.com/openjdk/jdk24u/archive/jdk-24.0.1-ga.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-24.0.1/jtreg-7.5.1+1.tar.gz
 https://archive.apache.org/dist/ant/source/apache-ant-1.10.15-src.tar.xz
-https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.2.3/dhcpcd-10.2.3.tar.xz
+https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.2.4/dhcpcd-10.2.4.tar.xz
 https://www.kernel.org/pub/linux/utils/net/bridge-utils/bridge-utils-1.7.1.tar.xz
 https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.3.tar.bz2
 https://www.ncftp.com/public_ftp/ncftp/ncftp-3.3.0-src.tar.gz
@@ -616,8 +616,9 @@ https://www.dovecot.org/releases/2.4/dovecot-2.4.0.tar.gz
 https://ftp.exim.org/pub/exim/exim4/exim-4.98.2.tar.xz
 https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.2.tar.gz
 https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
+https://www.linuxfromscratch.org/patches/blfs/svn/sendmail-8.18.1-gcc15_fixes-1.patch
 https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz
-https://downloads.mariadb.org/interstitial/mariadb-11.4.5/source/mariadb-11.4.5.tar.gz
+https://downloads.mariadb.org/interstitial/mariadb-11.4.7/source/mariadb-11.4.7.tar.gz
 https://ftp.postgresql.org/pub/source/v17.5/postgresql-17.5.tar.bz2
 https://sqlite.org/2025/sqlite-autoconf-3500000.tar.gz
 https://sqlite.org/2025/sqlite-doc-3500000.zip
@@ -755,7 +756,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/yelp-xsl-42.1-security_fix-1.p
 https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
 https://download.gnome.org/sources/gjs/1.84/gjs-1.84.2.tar.xz
 https://download.gnome.org/sources/gnome-autoar/0.4/gnome-autoar-0.4.5.tar.xz
-https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.1.tar.xz
+https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.3.tar.xz
 https://download.gnome.org/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
 https://download.gnome.org/sources/gnome-online-accounts/3.54/gnome-online-accounts-3.54.3.tar.xz
 https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz
