@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-781">
+  <body class="blfs" id="blfs-r12.3-801">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-781
+        "phrase">(systemd</span> Edition) - Version r12.3-801
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-781">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-801">
           Home</a>
         </li>
       </ul>
@@ -122,6 +122,13 @@
                 https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch</a>
               </p>
             </li>
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-gcc15_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-gcc15_fixes-1.patch</a>
+              </p>
+            </li>
           </ul>
         </div>
         <h3>
@@ -160,6 +167,7 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../gpm-1.20.7-consolidated-1.patch                &amp;&amp;
+patch -Np1 -i ../gpm-1.20.7-gcc15_fixes-1.patch                 &amp;&amp;
 ./autogen.sh                                                    &amp;&amp;
 ./configure --prefix=/usr --sysconfdir=/etc ac_cv_path_emacs=no &amp;&amp;
 make</kbd></pre>
@@ -493,7 +501,7 @@ ExecStart=/usr/sbin/gpm <em class=
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-781">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-801">
           Home</a>
         </li>
       </ul>

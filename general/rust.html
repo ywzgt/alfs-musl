@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-781">
+  <body class="blfs" id="blfs-r12.3-801">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-781
+        "phrase">(systemd</span> Edition) - Version r12.3-801
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-781">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-801">
           Home</a>
         </li>
       </ul>
@@ -307,14 +307,7 @@ link-shared = true
 targets = "X86"
 
 [build]
-description = "for BLFS r12.3-781"
-
-# Do a 2-stage bootstrap instead of a 3-stage one to save time and space.
-# Note that the numbers "1" below mean to *run* the stage-*1* compiler and
-# build the stage-2 compiler.
-build-stage = 1
-test-stage = 1
-doc-stage = 1
+description = "for BLFS r12.3-801"
 
 # Omit docs to save time and space (default is to build them).
 docs = false
@@ -458,9 +451,7 @@ EOF</kbd></pre>
             "option">-</code> or <code class="option">--login</code> options.
           </p>
         </div>
-        <pre class="root"><kbd class=
-        "command">./x.py install rustc std &amp;&amp;
-./x.py install --stage=1 cargo clippy rustfmt</kbd></pre>
+        <pre class="root"><kbd class="command">./x.py install</kbd></pre>
         <p>
           Still as the <code class="systemitem">root</code> user, fix the
           installation of documentation, symlink a <span class=
@@ -497,13 +488,6 @@ mv -v /etc/bash_completion.d/cargo /usr/share/bash-completion/completions</kbd><
           from e.g. <span class="command"><strong>ls -l</strong></span>.
         </p>
         <p>
-          <code class="literal">targets = "X86"</code>: this avoids building
-          all the available linux cross-compilers (AArch64, MIPS, PowerPC,
-          SystemZ, etc). Unfortunately, rust insists on installing source
-          files for these below <code class=
-          "filename">/opt/rustc/lib/src</code>.
-        </p>
-        <p>
           <code class="literal">tools = ["cargo", "clippy", "rustdoc",
           "rustfmt"]</code>: only build the tools from the 'default' profile
           in binary command <span class=
@@ -523,9 +507,9 @@ mv -v /etc/bash_completion.d/cargo /usr/share/bash-completion/completions</kbd><
           <code class="literal">llvm-config</code> entry for each target for
           which system-llvm is to be used. Change the target to <code class=
           "literal">[target.i686-unknown-linux-gnu]</code> if you are
-          building on 32-bit x86. This whole section may be omitted if you
-          wish to build against the shipped llvm, or do not have clang, but
-          the resulting build will be larger and take longer.
+          building on 32-bit x86. This whole section should be omitted if you
+          wish to build against the shipped llvm, but the resulting build
+          will be larger and take longer.
         </p>
         <p>
           <span class="command"><strong>export
@@ -544,12 +528,6 @@ mv -v /etc/bash_completion.d/cargo /usr/share/bash-completion/completions</kbd><
         <p>
           <em class="parameter"><code>--no-fail-fast</code></em>: this switch
           ensures that the test suite will not stop at the first error.
-        </p>
-        <p>
-          <em class="parameter"><code>--stage=1</code></em>: this switch
-          works around an issue causing some Rustc components unnecessarily
-          rebuilt running <span class="command"><strong>./x.py
-          install</strong></span>.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -809,7 +787,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-781">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-801">
           Home</a>
         </li>
       </ul>

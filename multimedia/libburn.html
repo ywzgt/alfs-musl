@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-781">
+  <body class="blfs" id="blfs-r12.3-801">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-781
+        "phrase">(systemd</span> Edition) - Version r12.3-801
       </h4>
       <h3>
         Chapter&nbsp;45.&nbsp;CD/DVD-Writing Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-781">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-801">
           Home</a>
         </li>
       </ul>
@@ -120,6 +120,11 @@
         <h2 class="sect2">
           Installation of libburn
         </h2>
+        <p>
+          First, fix a problem when building with gcc-15:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i 's/catch_int ()/catch_int (int signum)/' test/poll.c</kbd></pre>
         <p>
           Install <span class="application">libburn</span> by running the
           following commands:
@@ -236,7 +241,7 @@ install -v -m644 doc/html/* /usr/share/doc/libburn-1.5.6</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-781">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-801">
           Home</a>
         </li>
       </ul>
