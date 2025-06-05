@@ -1,0 +1,68 @@
+diff --git a/wget-list b/wget-list
+index 89437fe3fa..4e80e59378 100644
+--- a/wget-list
++++ b/wget-list
+@@ -249,7 +249,7 @@ https://www.freedesktop.org/software/accountsservice/accountsservice-23.13.9.tar
+ https://downloads.sourceforge.net/acpid2/acpid-2.0.34.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/at/at_3.2.5.orig.tar.gz
+ https://www.kernel.org/pub/linux/daemons/autofs/v5/autofs-5.1.9.tar.xz
+-https://www.kernel.org/pub/linux/bluetooth/bluez-5.82.tar.xz
++https://www.kernel.org/pub/linux/bluetooth/bluez-5.83.tar.xz
+ https://github.com/containers/bubblewrap/releases/download/v0.11.0/bubblewrap-0.11.0.tar.xz
+ https://www.freedesktop.org/software/colord/releases/colord-1.4.7.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/colord-1.4.7-upstream_fixes-1.patch
+@@ -259,6 +259,7 @@ https://dbus.freedesktop.org/releases/dbus/dbus-1.16.2.tar.xz
+ http://fcron.free.fr/archives/fcron-3.4.0.src.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/gpm/gpm-1.20.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-gcc15_fixes-1.patch
+ https://github.com/vcrhonek/hwdata/archive/v0.395/hwdata-0.395.tar.gz
+ https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
+ https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
+@@ -488,7 +489,7 @@ https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.19.1.tar.gz
+ https://download.gnome.org/sources/pygobject/3.52/pygobject-3.52.3.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.2.3.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+-https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.3.5.tar.gz
++https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.4.0.tar.gz
+ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
+ https://files.pythonhosted.org/packages/source/P/PyYAML/pyyaml-6.0.2.tar.gz
+ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
+@@ -596,6 +597,7 @@ https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.
+ https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.9.1/libslirp-v4.9.1.tar.bz2
+ https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.5.tar.xz
+ https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.6.tar.bz2
++https://www.linuxfromscratch.org/patches/blfs/svn/libtirpc-1.3.6-gcc15_fixes-1.patch
+ https://notroj.github.io/neon/neon-0.34.2.tar.gz
+ https://github.com/nghttp2/nghttp2/releases/download/v1.65.0/nghttp2-1.65.0.tar.xz
+ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.4.4.tar.xz
+@@ -691,10 +693,8 @@ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+ https://download.gnome.org/sources/pango/1.56/pango-1.56.3.tar.xz
+ https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
+ https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
+-https://download.qt.io/archive/qt/6.9/6.9.0/single/qt-everywhere-src-6.9.0.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.9.0-protobuf_30-1.patch
+-https://download.qt.io/official_releases/qt/6.9/6.9.0/submodules/qtwebengine-everywhere-src-6.9.0.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-6.9.0-fix_gpu_acceleration-1.patch
++https://download.qt.io/archive/qt/6.9/6.9.1/single/qt-everywhere-src-6.9.1.tar.xz
++https://download.qt.io/official_releases/qt/6.9/6.9.1/submodules/qtwebengine-everywhere-src-6.9.1.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.313/Vulkan-Headers-1.4.313.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.313/Vulkan-Loader-1.4.313.tar.gz
+@@ -783,7 +783,7 @@ https://download.gnome.org/sources/gnome-keyring/48/gnome-keyring-48.0.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/48/gnome-settings-daemon-48.1.tar.xz
+ https://download.gnome.org/sources/tecla/48/tecla-48.0.2.tar.xz
+ https://download.gnome.org/sources/gnome-control-center/48/gnome-control-center-48.2.tar.xz
+-https://download.gnome.org/sources/mutter/48/mutter-48.3.tar.xz
++https://download.gnome.org/sources/mutter/48/mutter-48.3.1.tar.xz
+ https://download.gnome.org/sources/gnome-shell/48/gnome-shell-48.2.tar.xz
+ https://download.gnome.org/sources/gnome-shell-extensions/48/gnome-shell-extensions-48.2.tar.xz
+ https://download.gnome.org/sources/gnome-session/48/gnome-session-48.0.tar.xz
+@@ -1009,6 +1009,7 @@ https://github.com/OpenPrinting/cups/releases/download/v2.4.12/cups-2.4.12-sourc
+ https://github.com/OpenPrinting/cups-browsed/releases/download/2.1.1/cups-browsed-2.1.1.tar.xz
+ https://github.com/OpenPrinting/cups-filters/releases/download/2.0.1/cups-filters-2.0.1.tar.xz
+ https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10051/ghostscript-10.05.1.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/ghostscript-10.05.1-gcc15_fixes-1.patch
+ https://downloads.sourceforge.net/gs-fonts/ghostscript-fonts-std-8.11.tar.gz
+ https://downloads.sourceforge.net/gs-fonts/gnu-gs-fonts-other-6.0.tar.gz
+ https://downloads.sourceforge.net/gimp-print/gutenprint-5.3.5.tar.xz
