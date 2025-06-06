@@ -1,0 +1,69 @@
+diff --git a/wget-list b/wget-list
+index 4e80e59378..a30a4512d6 100644
+--- a/wget-list
++++ b/wget-list
+@@ -1,5 +1,5 @@
+ https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20241211.tar.xz
+-https://github.com/lfs-book/make-ca/archive/v1.16/make-ca-1.16.tar.gz
++https://github.com/lfs-book/make-ca/archive/v1.16.1/make-ca-1.16.1.tar.gz
+ https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.tar.xz
+ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.5.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+@@ -209,7 +209,7 @@ https://github.com/opencv/opencv/archive/4.11.0/opencv-4.11.0.tar.gz
+ https://github.com/opencv/opencv_contrib/archive/4.11.0/opencv_contrib-4.11.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.3/openjpeg-2.5.3.tar.gz
+ https://www.cairographics.org/releases/pixman-0.46.0.tar.gz
+-https://poppler.freedesktop.org/poppler-25.05.0.tar.xz
++https://poppler.freedesktop.org/poppler-25.06.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+ https://github.com/qpdf/qpdf/releases/download/v12.2.0/qpdf-12.2.0.tar.gz
+@@ -260,7 +260,7 @@ http://fcron.free.fr/archives/fcron-3.4.0.src.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/gpm/gpm-1.20.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-gcc15_fixes-1.patch
+-https://github.com/vcrhonek/hwdata/archive/v0.395/hwdata-0.395.tar.gz
++https://github.com/vcrhonek/hwdata/archive/v0.396/hwdata-0.396.tar.gz
+ https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
+ https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
+ http://ftp.midnight-commander.org/mc-4.8.33.tar.xz
+@@ -334,7 +334,7 @@ https://www.cpan.org/authors/id/L/LE/LEONT/File-Slurper-0.014.tar.gz
+ https://www.cpan.org/authors/id/P/PL/PLICEASE/File-Which-1.27.tar.gz
+ https://www.cpan.org/authors/id/O/OA/OALDERS/HTML-Parser-3.83.tar.gz
+ https://www.cpan.org/authors/id/O/OA/OALDERS/HTTP-Daemon-6.16.tar.gz
+-https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.089.tar.gz
++https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.090.tar.gz
+ https://www.cpan.org/authors/id/G/GA/GAAS/IO-String-1.08.tar.gz
+ https://www.cpan.org/authors/id/R/RJ/RJBS/IPC-Run3-0.049.tar.gz
+ https://www.cpan.org/authors/id/A/AL/ALINKE/Lingua-Translit-0.29.tar.gz
+@@ -460,9 +460,8 @@ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+ https://www.php.net/distributions/php-8.4.7.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+-https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.13.3-security_fixes-1.patch
+-https://www.python.org/ftp/python/doc/3.13.3/python-3.13.3-docs-html.tar.bz2
++https://www.python.org/ftp/python/3.13.4/Python-3.13.4.tar.xz
++https://www.python.org/ftp/python/doc/3.13.4/python-3.13.4-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+ https://files.pythonhosted.org/packages/source/b/build/build-1.2.2.post1.tar.gz
+@@ -578,8 +577,7 @@ https://downloads.sourceforge.net/traceroute/traceroute-2.1.6.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.6.1/whois-5.6.1.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.4.6.tar.xz
+ https://github.com/c-ares/c-ares/releases/download/v1.34.5/c-ares-1.34.5.tar.gz
+-https://curl.se/download/curl-8.14.0.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/curl-8.14.0-upstream_fix-1.patch
++https://curl.se/download/curl-8.14.1.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.2/geoclue-2.7.2.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.1.tar.xz
+ https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.2.0/kdsoap-2.2.0.tar.gz
+@@ -969,7 +967,7 @@ https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.4/pipewire-1.4.4.
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.1.tar.xz
+ https://github.com/libsdl-org/sdl12-compat/archive/release-1.2.68/sdl12-compat-release-1.2.68.tar.gz
+-https://www.libsdl.org/release/SDL2-2.32.6.tar.gz
++https://www.libsdl.org/release/SDL2-2.32.8.tar.gz
+ https://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2
+ https://www.surina.net/soundtouch/soundtouch-2.4.0.tar.gz
+ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
