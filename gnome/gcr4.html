@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-826">
+  <body class="blfs" id="blfs-r12.3-833">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-826
+        "phrase">(systemd</span> Edition) - Version r12.3-833
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-826">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-833">
           Home</a>
         </li>
       </ul>
@@ -117,8 +117,6 @@
           "GLib-2.84.2">GLib-2.84.2</a> (GObject Introspection recommended),
           <a class="xref" href="../general/libgcrypt.html" title=
           "libgcrypt-1.11.1">libgcrypt-1.11.1</a>, <a class="xref" href=
-          "../postlfs/openssh.html" title=
-          "OpenSSH-10.0p1">OpenSSH-10.0p1</a>, and <a class="xref" href=
           "../postlfs/p11-kit.html" title="p11-kit-0.25.5">p11-kit-0.25.5</a>
         </p>
         <h4>
@@ -141,7 +139,9 @@
           <a class="xref" href="../general/python-modules.html#gi-docgen"
           title="Gi-DocGen-2025.3">Gi-DocGen-2025.3</a>, <a class="xref"
           href="../postlfs/gnutls.html" title=
-          "GnuTLS-3.8.9">GnuTLS-3.8.9</a>, and <a class="xref" href=
+          "GnuTLS-3.8.9">GnuTLS-3.8.9</a>, <a class="xref" href=
+          "../postlfs/openssh.html" title=
+          "OpenSSH-10.0p1">OpenSSH-10.0p1</a>, and <a class="xref" href=
           "../general/valgrind.html" title=
           "Valgrind-3.25.1">Valgrind-3.25.1</a>
         </p>
@@ -173,6 +173,7 @@ cd    build &amp;&amp;
 meson setup --prefix=/usr       \
             --buildtype=release \
             -D gtk_doc=false    \
+            -D ssh_agent=false  \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -213,15 +214,8 @@ ninja</kbd></pre>
           is passed to meson.
         </p>
         <p>
-          <code class="option">-D ssh_agent=false</code>: Use this switch if
-          you haven't installed <a class="xref" href=
-          "../postlfs/openssh.html" title=
-          "OpenSSH-10.0p1">OpenSSH-10.0p1</a>, and wish to disable ssh
-          capabilities.
-        </p>
-        <p>
-          <code class="option">-D gtk_doc=false</code>: Allow building this
-          package without <a class="xref" href=
+          <em class="parameter"><code>-D gtk_doc=false</code></em>: Allow
+          building this package without <a class="xref" href=
           "../general/python-modules.html#gi-docgen" title=
           "Gi-DocGen-2025.3">Gi-DocGen-2025.3</a> installed. If you have
           <a class="xref" href="../general/python-modules.html#gi-docgen"
@@ -229,6 +223,14 @@ ninja</kbd></pre>
           wish to rebuild and install the API documentation, a <span class=
           "command"><strong>meson configure</strong></span> command will
           reset this option.
+        </p>
+        <p>
+          <em class="parameter"><code>-D ssh_agent=false</code></em>: Disable
+          the ssh-agent implementation of this package. This implementation
+          is intended to replace the ssh-agent implementation of <a class=
+          "xref" href="gnome-keyring.html" title=
+          "gnome-keyring-48.0">gnome-keyring-48.0</a>, but it turns out the
+          replacement still has some unresolved issue.
         </p>
         <p>
           <code class="option">-D crypto=gnutls</code>: Use this switch if
@@ -336,7 +338,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-826">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-833">
           Home</a>
         </li>
       </ul>

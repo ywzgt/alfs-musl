@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-826">
+  <body class="blfs" id="blfs-r12.3-833">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-826
+        "phrase">(systemd</span> Edition) - Version r12.3-833
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-826">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-833">
           Home</a>
         </li>
       </ul>
@@ -116,9 +116,7 @@
           <a class="xref" href="../general/glib2.html" title=
           "GLib-2.84.2">GLib-2.84.2</a> (GObject Introspection recommended),
           <a class="xref" href="../general/libgcrypt.html" title=
-          "libgcrypt-1.11.1">libgcrypt-1.11.1</a>, <a class="xref" href=
-          "../postlfs/openssh.html" title=
-          "OpenSSH-10.0p1">OpenSSH-10.0p1</a>, and <a class="xref" href=
+          "libgcrypt-1.11.1">libgcrypt-1.11.1</a>, and <a class="xref" href=
           "../postlfs/p11-kit.html" title="p11-kit-0.25.5">p11-kit-0.25.5</a>
         </p>
         <h4>
@@ -148,6 +146,11 @@
         <h2 class="sect2">
           Installation of Gcr
         </h2>
+        <p>
+          First apply a fix for building without OpenSSH installed:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed '/ssh.add/d; /ssh.agent/d' -i meson.build</kbd></pre>
         <p>
           Install <span class="application">Gcr</span> by running the
           following commands:
@@ -195,12 +198,12 @@ ninja</kbd></pre>
           the default may produce unoptimized binaries.
         </p>
         <p>
-          <em class="parameter"><code>-D ssh_agent=false</code></em>: Prevent
-          a conflict with <a class="xref" href="gcr4.html" title=
-          "Gcr-4.4.0.1">Gcr-4.4.0.1</a>. Omit this switch if you do not plan
-          to install <a class="xref" href="gcr4.html" title=
-          "Gcr-4.4.0.1">Gcr-4.4.0.1</a> and you want to use <span class=
-          "command"><strong>gcr-ssh-agent</strong></span>.
+          <em class="parameter"><code>-D ssh_agent=false</code></em>: Disable
+          the ssh-agent implementation of this package. This implementation
+          is intended to replace the ssh-agent implementation of <a class=
+          "xref" href="gnome-keyring.html" title=
+          "gnome-keyring-48.0">gnome-keyring-48.0</a>, but it turns out the
+          replacement still has some unresolved issue.
         </p>
         <p>
           <code class="option">-D gtk=false</code>: Use this switch if you
@@ -306,7 +309,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-826">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-833">
           Home</a>
         </li>
       </ul>
