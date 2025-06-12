@@ -1,0 +1,33 @@
+diff --git a/wget-list b/wget-list
+index fb8e206bda..d3492586dd 100644
+--- a/wget-list
++++ b/wget-list
+@@ -208,7 +208,7 @@ https://releases.pagure.org/newt/newt-0.52.25.tar.gz
+ https://github.com/opencv/opencv/archive/4.11.0/opencv-4.11.0.tar.gz
+ https://github.com/opencv/opencv_contrib/archive/4.11.0/opencv_contrib-4.11.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.3/openjpeg-2.5.3.tar.gz
+-https://www.cairographics.org/releases/pixman-0.46.0.tar.gz
++https://www.cairographics.org/releases/pixman-0.46.2.tar.gz
+ https://poppler.freedesktop.org/poppler-25.06.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+@@ -467,7 +467,7 @@ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+ https://files.pythonhosted.org/packages/source/b/build/build-1.2.2.post1.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.3.0.tar.gz
+ https://github.com/psf/cachecontrol/archive/v0.14.3/cachecontrol-0.14.3.tar.gz
+-https://github.com/cython/cython/releases/download/3.1.1/cython-3.1.1.tar.gz
++https://github.com/cython/cython/releases/download/3.1.2/cython-3.1.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.35.0.tar.gz
+ https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.4.0.tar.xz
+ https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.21.2.tar.gz
+@@ -492,8 +492,8 @@ https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.4.0.tar.gz
+ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
+ https://files.pythonhosted.org/packages/source/P/PyYAML/pyyaml-6.0.2.tar.gz
+ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
+-https://files.pythonhosted.org/packages/source/r/requests/requests-2.32.3.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/requests-2.32.3-use_system_certs-1.patch
++https://files.pythonhosted.org/packages/source/r/requests/requests-2.32.4.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/requests-use_system_certs-1.patch
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+ https://github.com/getsentry/sentry-python/releases/download/2.29.1/sentry_sdk-2.29.1.tar.gz
+ https://files.pythonhosted.org/packages/source/s/six/six-1.17.0.tar.gz
