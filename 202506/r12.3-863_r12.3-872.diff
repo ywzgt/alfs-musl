@@ -1,0 +1,58 @@
+diff --git a/wget-list b/wget-list
+index 117b92f84d..21218c1435 100644
+--- a/wget-list
++++ b/wget-list
+@@ -57,7 +57,7 @@ https://gitlab.gnome.org/World/gedit/libgedit-tepl/-/archive/6.13.0/libgedit-tep
+ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/25.04.0/src/kate-25.04.0.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.5.tar.xz
+-https://www.nano-editor.org/dist/v8/nano-8.4.tar.xz
++https://www.nano-editor.org/dist/v8/nano-8.5.tar.xz
+ https://github.com/vim/vim/archive/v9.1.1418/vim-9.1.1418.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.15.tar.gz
+@@ -145,7 +145,7 @@ https://download.gnome.org/sources/libxml2/2.14/libxml2-2.14.3.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.22/libxmlb-0.3.22.tar.xz
+ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.43.tar.xz
+-https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.15.0/libwacom-2.15.0.tar.xz
++https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.16.0/libwacom-2.16.0.tar.xz
+ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_2/log4cplus-2.1.2.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+@@ -276,7 +276,7 @@ https://download.librdf.org/source/redland-1.0.17.tar.gz
+ https://sysstat.github.io/sysstat-packages/sysstat-12.7.7.tar.xz
+ https://github.com/systemd/systemd/archive/v257.6/systemd-257.6.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.10.1/udisks-2.10.1.tar.bz2
+-https://www.rarlab.com/rar/unrarsrc-7.1.6.tar.gz
++https://www.rarlab.com/rar/unrarsrc-7.1.7.tar.gz
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.9/upower-v1.90.9.tar.bz2
+ https://ftp.gnu.org/gnu/which/which-2.23.tar.gz
+ https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz
+@@ -554,7 +554,7 @@ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-24.0.1/jtreg-7.5.1+1.ta
+ https://archive.apache.org/dist/ant/source/apache-ant-1.10.15-src.tar.xz
+ https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.2.4/dhcpcd-10.2.4.tar.xz
+ https://www.kernel.org/pub/linux/utils/net/bridge-utils/bridge-utils-1.7.1.tar.xz
+-https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.3.tar.bz2
++https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.4.tar.bz2
+ https://www.ncftp.com/public_ftp/ncftp/ncftp-3.3.0-src.tar.gz
+ https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
+ https://www.kernel.org/pub/linux/utils/nfs-utils/2.8.3/nfs-utils-2.8.3.tar.xz
+@@ -602,7 +602,7 @@ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.
+ https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
+ http://links.twibright.com/download/links-2.30.tar.bz2
+ https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.bz2
+-https://downloads.sourceforge.net/fetchmail/fetchmail-6.5.2.tar.xz
++https://downloads.sourceforge.net/fetchmail/fetchmail-6.5.3.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/mailx/heirloom-mailx_12.5.orig.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.patch
+ https://bitbucket.org/mutt/mutt/downloads/mutt-2.2.14.tar.gz
+@@ -670,7 +670,7 @@ https://download.gnome.org/sources/goffice/0.10/goffice-0.10.59.tar.xz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+ https://download.gnome.org/sources/gtk/3.24/gtk-3.24.49.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gtk-3.24.49-upstream_fix-1.patch
+-https://download.gnome.org/sources/gtk/4.18/gtk-4.18.5.tar.xz
++https://download.gnome.org/sources/gtk/4.18/gtk-4.18.6.tar.xz
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.10.tar.xz
+ https://download.gnome.org/sources/gtkmm/4.18/gtkmm-4.18.0.tar.xz
+ https://download.gnome.org/sources/gtk-vnc/1.5/gtk-vnc-1.5.0.tar.xz
