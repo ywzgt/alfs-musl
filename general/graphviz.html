@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Graphviz-12.2.1
+      Graphviz-13.0.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-872">
+  <body class="blfs" id="blfs-r12.3-877">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-872
+        "phrase">(systemd</span> Edition) - Version r12.3-877
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-872">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-877">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="graphviz" name="graphviz"></a>Graphviz-12.2.1
+      <a id="graphviz" name="graphviz"></a>Graphviz-13.0.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -83,8 +83,8 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://gitlab.com/graphviz/graphviz/-/archive/12.2.1/graphviz-12.2.1.tar.bz2">
-                https://gitlab.com/graphviz/graphviz/-/archive/12.2.1/graphviz-12.2.1.tar.bz2</a>
+                "https://gitlab.com/graphviz/graphviz/-/archive/13.0.0/graphviz-13.0.0.tar.bz2">
+                https://gitlab.com/graphviz/graphviz/-/archive/13.0.0/graphviz-13.0.0.tar.bz2</a>
               </p>
             </li>
             <li class="listitem">
@@ -144,12 +144,21 @@
           "../x/cairo.html" title="Cairo-1.18.4">Cairo-1.18.4</a>, <a class=
           "xref" href="../x/x7lib.html" title="Xorg Libraries">Xorg
           Libraries</a>, <a class="xref" href="fontconfig.html" title=
-          "Fontconfig-2.16.2">Fontconfig-2.16.2</a>, and <a class="xref"
-          href="libpng.html" title="libpng-1.6.48">libpng-1.6.48</a>, to
-          generate images in bitmap SVG, postscript, PNG, and PDF formats, or
-          to display the image on screen. The PNG output is required for
+          "Fontconfig-2.16.2">Fontconfig-2.16.2</a>, <a class="xref" href=
+          "libpng.html" title="libpng-1.6.48">libpng-1.6.48</a>, to generate
+          images in bitmap SVG, postscript, PNG, and PDF formats, or to
+          display the image on screen. The PNG output is required for
           building <a class="xref" href="gegl.html" title=
-          "gegl-0.4.62">gegl-0.4.62</a>
+          "gegl-0.4.62">gegl-0.4.62</a>.
+        </p>
+        <p class="optional">
+          <a class="xref" href="aalib.html" title=
+          "AAlib-1.4rc5">AAlib-1.4rc5</a> (for outputting images in ASCII
+          art), <a class="xref" href="../pst/cups.html" title=
+          "Cups-2.4.12">Cups-2.4.12</a> (for formatting graphs for printing),
+          <a class="xref" href="../x/qt6.html" title="Qt-6.9.1">Qt-6.9.1</a>,
+          and <a class="xref" href="../x/webkitgtk.html" title=
+          "WebKitGTK-2.48.3">WebKitGTK-2.48.3</a>
         </p>
         <p class="optional">
           Adding <a class="ulink" href=
@@ -168,8 +177,7 @@
         </p>
         <p class="optional">
           Other formats may be added with <a class="xref" href="libwebp.html"
-          title="libwebp-1.5.0">libwebp-1.5.0</a> (WebP support is considered
-          experimental), <a class="ulink" href=
+          title="libwebp-1.5.0">libwebp-1.5.0</a>, <a class="ulink" href=
           "https://openil.sourceforge.net/projects.php">DevIL</a>, <a class=
           "ulink" href="https://sourceforge.net/projects/lasi/">libLASi</a>,
           and <a class="ulink" href=
@@ -191,8 +199,10 @@
           Optional (to build more tools)
         </h4>
         <p class="optional">
-          <a class="xref" href="../x/freeglut.html" title=
-          "Freeglut-3.6.0">Freeglut-3.6.0</a> (with <a class="ulink" href=
+          <a class="ulink" href=
+          "http://www.cs.umd.edu/~mount/ANN/">libANN</a> and <a class="xref"
+          href="../x/freeglut.html" title="Freeglut-3.6.0">Freeglut-3.6.0</a>
+          (with <a class="ulink" href=
           "https://sourceforge.net/projects/gtkglext/">GtkGLExt</a> and
           <a class="ulink" href="https://gts.sourceforge.net/">libGTS</a> for
           building the <span class="command"><strong>smyrna</strong></span>
@@ -212,11 +222,8 @@
           "lua.html" title="Lua-5.4.8">Lua-5.4.8</a>, <a class="xref" href=
           "php.html" title="PHP-8.4.8">PHP-8.4.8</a>, <a class="xref" href=
           "ruby.html" title="Ruby-3.4.4">Ruby-3.4.4</a>, <a class="xref"
-          href="tk.html" title="Tk-8.6.16">Tk-8.6.16</a>, <a class="ulink"
-          href="https://iolanguage.org/">Io</a>, <a class="ulink" href=
-          "https://www.mono-project.com/Main_Page">Mono</a>, <a class="ulink"
-          href="https://ocaml.org/">OCaml</a>, and <a class="ulink" href=
-          "https://www.r-project.org/">R</a>
+          href="tk.html" title="Tk-8.6.16">Tk-8.6.16</a>, and <a class=
+          "ulink" href="https://www.r-project.org/">R</a>
         </p>
         <h4>
           Optional (building tools)
@@ -245,31 +252,16 @@
           Install <span class="application">Graphviz</span> by running the
           following commands:
         </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -i '/LIBPOSTFIX="64"/s/64//' configure.ac &amp;&amp;
+        <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
+cd    build &amp;&amp;
 
-./autogen.sh              &amp;&amp;
-./configure --prefix=/usr \
-            --docdir=/usr/share/doc/graphviz-12.2.1</kbd></pre>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            A warning is generated by <span class=
-            "command"><strong>autogen.sh</strong></span> because the build
-            tree is not a git repository. As a result, the build date is set
-            to 0. To get a meaningful date in the version string, you can
-            run:
-          </p>
-          <pre class="userinput"><kbd class=
-          "command">sed -i "s/0/$(date +%Y%m%d)/" builddate.h</kbd></pre>
-        </div>
-        <p>
-          Whether or not you fix the date, proceed to compile the package:
-        </p>
-        <pre class="userinput"><kbd class="command">make</kbd></pre>
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
+      ..                           &amp;&amp;
+
+sed -i '/GZIP/s/:.*$/=/' CMakeCache.txt &amp;&amp;
+
+make</kbd></pre>
         <p>
           This package does not come with a test suite that provides
           meaningful results.
@@ -284,44 +276,15 @@
           Command Explanations
         </h2>
         <p>
-          <span class="command"><strong>sed ... configure.ac</strong></span>:
-          This command is needed to avoid installing files in /usr/lib64.
-        </p>
-        <p>
-          <code class="option">--with-javaincludedir="$JAVA_HOME/include
-          -I$JAVA_HOME/include/linux"</code>: If you have built <a class=
-          "xref" href="openjdk.html" title=
-          "OpenJDK-24.0.1">OpenJDK-24.0.1</a> in /opt, and you want to build
-          the JAVA bindings, it is necessary to specify the location of the
-          JAVA header files to configure. The configure switch is designed
-          for only one directory, but two directories need to be included.
-          This is possible nevertheless by using the -I switch inside the
-          variable.
-        </p>
-        <p>
-          <code class="option">--with-webp</code>: Even if <a class="xref"
-          href="libwebp.html" title="libwebp-1.5.0">libwebp-1.5.0</a> is
-          installed, it is not included in the build without this option.
-        </p>
-        <p>
-          <code class="option">--with-smyrna</code>: Even if the needed
-          dependencies are installed, the interactive graph viewer
-          <span class="command"><strong>smyrna</strong></span> is not built
-          without this option.
+          <span class="command"><strong>sed ...
+          CMakeCache.txt</strong></span>: This command is needed to prevent
+          compressing the packages's man pages.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
         <h2 class="sect2">
           Configuring Graphviz
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3">
-            <a id="graphviz-config" name="graphviz-config"></a>Config Files
-          </h3>
-          <p>
-            <code class="filename">/usr/lib/graphviz/config</code>
-          </p>
-        </div>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
             Configuration Information
@@ -349,25 +312,22 @@
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
               <span class="segbody">acyclic, bcomps, ccomps, circo, cluster,
-              dijkstra, dot, dot2gxl, dot_builtins, edgepaint, fdp, gc,
-              gml2gv, graphml2gv, gv2gml, gv2gxl, gvcolor, gvedit, gvgen,
-              gvmap, gvmap.sh, gvpack, gvpr, gxl2dot, gxl2gv, mm2gv, neato,
-              nop, osage, patchwork, prune, sccmap, sfdp, tred, twopi,
+              dijkstra, dot, dot2gxl, dot_builtins, dot_sandbox, edgepaint,
+              fdp, gc, gml2gv, graphml2gv, gv2gml, gv2gxl, gvcolor, gvedit,
+              gvgen, gvmap, gvmap.sh, gvpack, gvpr, gxl2dot, gxl2gv, mm2gv,
+              neato, nop, osage, patchwork, prune, sccmap, sfdp, tred, twopi,
               unflatten, and vimdot</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
               <span class="segbody">libcdt.so, libcgraph.so, libgvc.so,
-              libgvpr.so, liblab_gamut.so, libpathplan.so, libxdot.so, and
-              several plugins in /usr/lib/graphviz. There are also several in
-              subdirectories of /usr/lib/{lua,perl5,php,python3.13,tcl8.6}.
-              Unfortunately, some libraries are duplicated.</span>
+              libgvpr.so, libpathplan.so, libxdot.so, and several plugins in
+              /usr/lib/graphviz/.</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/graphviz, /usr/lib/graphviz,
-              /usr/lib/tcl8.6/graphviz, /usr/share/doc/graphviz-12.2.1, and
-              /usr/share/graphviz</span>
+              /usr/lib/cmake/graphviz, and /usr/share/graphviz</span>
             </div>
           </div>
         </div>
@@ -460,23 +420,6 @@
               <tr>
                 <td>
                   <p>
-                    <a id="diffimg" name="diffimg"></a><span class=
-                    "term"><span class=
-                    "command"><strong>diffimg</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    (needs <a class="ulink" href="https://www.libgd.org/">GD
-                    Library</a>) generates an image where each pixel is the
-                    difference between the corresponding pixel in each of the
-                    two source images
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
                     <a id="dijkstra" name="dijkstra"></a><span class=
                     "term"><span class=
                     "command"><strong>dijkstra</strong></span></span>
@@ -531,6 +474,22 @@
               <tr>
                 <td>
                   <p>
+                    <a id="dot_sandbox" name="dot_sandbox"></a><span class=
+                    "term"><span class=
+                    "command"><strong>dot_sandbox</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    is a wrapper around graphviz. It aims to provide a safe
+                    environment for the processing of untrusted input graphs
+                    and command line options.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
                     <a id="edgepaint" name="edgepaint"></a><span class=
                     "term"><span class=
                     "command"><strong>edgepaint</strong></span></span>
@@ -555,25 +514,6 @@
                     "quote">“<span class="quote">spring</span>”</span> model.
                     It relies on a force-directed approach in the spirit of
                     Fruchterman and Reingold
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="gc-graphviz" name="gc-graphviz"></a><span class=
-                    "term"><span class=
-                    "command"><strong>gc</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is a graph analogue to <span class=
-                    "command"><strong>wc</strong></span> in that it prints to
-                    standard output the number of nodes, edges, connected
-                    components or clusters contained in the input files. It
-                    also prints a total count for all graphs if more than one
-                    graph is given
                   </p>
                 </td>
               </tr>
@@ -783,6 +723,37 @@
                   <p>
                     converts between graphs represented in GXL and in the GV
                     language
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="lefty" name="lefty"></a><span class=
+                    "term"><span class=
+                    "command"><strong>lefty</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    is a two-view graphics editor for technical pictures
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="lneato" name="lneato"></a><span class=
+                    "term"><span class=
+                    "command"><strong>lneato</strong></span></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    is a graph editor for the X Window System. It may be run
+                    as a standalone editor, or as a front end for
+                    applications that use graphs. It can control multiple
+                    windows viewing different graphs
                   </p>
                 </td>
               </tr>
@@ -1091,7 +1062,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-872">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-877">
           Home</a>
         </li>
       </ul>
