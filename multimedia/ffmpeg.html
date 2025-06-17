@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-884">
+  <body class="blfs" id="blfs-r12.3-889">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-884
+        "phrase">(systemd</span> Edition) - Version r12.3-889
       </h4>
       <h3>
         Chapter&nbsp;44.&nbsp;Video Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-884">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-889">
           Home</a>
         </li>
       </ul>
@@ -188,8 +188,11 @@
           "quote">“<span class="quote">kmsgrab</span>”</span> input),
           <a class="xref" href="../general/libjxl.html" title=
           "libjxl-0.11.1">libjxl-0.11.1</a>, <a class="xref" href=
-          "../general/libwebp.html" title="libwebp-1.5.0">libwebp-1.5.0</a>,
-          <a class="xref" href="../general/openjpeg2.html" title=
+          "libplacebo.html" title="libplacebo-7.351.0">libplacebo-7.351.0</a>
+          (for hardware accelerated color spaces and HDR tonemapping),
+          <a class="xref" href="../general/libwebp.html" title=
+          "libwebp-1.5.0">libwebp-1.5.0</a>, <a class="xref" href=
+          "../general/openjpeg2.html" title=
           "OpenJPEG-2.5.3">OpenJPEG-2.5.3</a>, <a class="xref" href=
           "../postlfs/gnutls.html" title="GnuTLS-3.8.9">GnuTLS-3.8.9</a>,
           <a class="xref" href="pulseaudio.html" title=
@@ -503,6 +506,11 @@ grep ^TEST ../fate.log | wc -l</kbd></pre>
           <span class="application">Pulseaudio</span> for audio output.
         </p>
         <p>
+          <code class="option">--enable-libplacebo</code>: Enables support
+          for <span class="application">libpulse</span> for hardware
+          accelerated color spaces.
+        </p>
+        <p>
           <span class="command"><strong>gcc tools/qt-faststart.c -o
           tools/qt-faststart</strong></span>: This builds the <span class=
           "command"><strong>qt-faststart</strong></span> program which can
@@ -786,7 +794,7 @@ grep ^TEST ../fate.log | wc -l</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-884">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-889">
           Home</a>
         </li>
       </ul>
