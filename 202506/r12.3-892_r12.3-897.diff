@@ -1,0 +1,53 @@
+diff --git a/wget-list b/wget-list
+index d5e12046d0..834bf7d9f4 100644
+--- a/wget-list
++++ b/wget-list
+@@ -35,7 +35,7 @@ https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.patch
+ https://sourceware.org/ftp/lvm2/LVM2.2.03.32.tgz
+ https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.3.tar.xz
+-https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2022.10.3.tgz
++https://github.com/tuxera/ntfs-3g/archive/2022.10.3/ntfs-3g-2022.10.3.tar.gz
+ https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.10-convenience-1.patch
+ https://ftp.gnu.org/gnu/parted/parted-3.6.tar.xz
+@@ -141,7 +141,7 @@ https://lttng.org/files/urcu/userspace-rcu-0.15.3.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.29/libusb-1.0.29.tar.bz2
+ https://dist.libuv.org/dist/v1.51.0/libuv-v1.51.0.tar.gz
+ https://github.com/lfs-book/libxkbcommon/archive/v1.10.0/libxkbcommon-1.10.0.tar.gz
+-https://download.gnome.org/sources/libxml2/2.14/libxml2-2.14.3.tar.xz
++https://download.gnome.org/sources/libxml2/2.14/libxml2-2.14.4.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.22/libxmlb-0.3.22.tar.xz
+ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.43.tar.xz
+@@ -298,9 +298,9 @@ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-15.1.0/gcc-15.1.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.8/gc-8.2.8.tar.gz
+ https://ftp.gnu.org/gnu/gdb/gdb-16.3.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-2.49.0.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-manpages-2.49.0.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.49.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-2.50.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-manpages-2.50.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.50.0.tar.xz
+ https://ftp.gnu.org/gnu/guile/guile-3.0.10.tar.xz
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.1/llvm-20.1.1.src.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-20.1.1.src.tar.xz
+@@ -334,7 +334,7 @@ https://www.cpan.org/authors/id/L/LE/LEONT/File-Slurper-0.014.tar.gz
+ https://www.cpan.org/authors/id/P/PL/PLICEASE/File-Which-1.27.tar.gz
+ https://www.cpan.org/authors/id/O/OA/OALDERS/HTML-Parser-3.83.tar.gz
+ https://www.cpan.org/authors/id/O/OA/OALDERS/HTTP-Daemon-6.16.tar.gz
+-https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.091.tar.gz
++https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.094.tar.gz
+ https://www.cpan.org/authors/id/G/GA/GAAS/IO-String-1.08.tar.gz
+ https://www.cpan.org/authors/id/R/RJ/RJBS/IPC-Run3-0.049.tar.gz
+ https://www.cpan.org/authors/id/A/AL/ALINKE/Lingua-Translit-0.29.tar.gz
+@@ -953,7 +953,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/libmad-0.15.1b-fixes-1.patch
+ https://libmpeg2.sourceforge.net/files/libmpeg2-0.5.1.tar.gz
+ https://github.com/metabrainz/libmusicbrainz/releases/download/release-5.1.0/libmusicbrainz-5.1.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libmusicbrainz-5.1.0-cmake_fixes-1.patch
+-https://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.xz
++https://downloads.xiph.org/releases/ogg/libogg-1.3.6.tar.xz
+ https://github.com/haasn/libplacebo/archive/v7.351.0/libplacebo-7.351.0.tar.gz
+ https://github.com/libsndfile/libsamplerate/releases/download/0.2.2/libsamplerate-0.2.2.tar.xz
+ https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz
