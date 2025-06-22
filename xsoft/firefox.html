@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-907">
+  <body class="blfs" id="blfs-r12.3-913">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-907
+        "phrase">(systemd</span> Edition) - Version r12.3-913
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-907">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-913">
           Home</a>
         </li>
       </ul>
@@ -190,7 +190,7 @@
           "../general/libwebp.html" title="libwebp-1.5.0">libwebp-1.5.0</a>,
           <a class="xref" href="../general/nasm.html" title=
           "NASM-2.16.03">NASM-2.16.03</a>, and <a class="xref" href=
-          "../postlfs/nss.html" title="NSS-3.112">nss-3.112</a>
+          "../postlfs/nss.html" title="NSS-3.113">nss-3.113</a>
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -336,7 +336,13 @@ ac_add_options --without-wasm-sandboxed-libraries
 # telemetry reporting in Firefox.
 unset MOZ_TELEMETRY_REPORTING
 
-mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir</code>
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir
+
+# By default firefox will attempt to use the window class firefox-default on launch. 
+This makes the icon not work properly because wayland does not support the X11 property 
+class header. Change the remoting name to fix this. This is also reflected in the .desktop
+file where StartupWMClass is set to firefox
+MOZ_APP_REMOTINGNAME=firefox</code>
 EOF</kbd></pre>
         <p>
           If you are building with system ICU, adapt the line break mapping
@@ -510,7 +516,8 @@ Type=Application
 Icon=firefox
 Categories=GNOME;GTK;Network;WebBrowser;
 MimeType=$MIMETYPE
-StartupNotify=true</code>
+StartupNotify=true
+StartupWMClass=firefox</code>
 EOF
 
 unset MIMETYPE &amp;&amp;
@@ -680,7 +687,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-907">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-913">
           Home</a>
         </li>
       </ul>
