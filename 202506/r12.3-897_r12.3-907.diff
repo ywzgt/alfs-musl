@@ -1,0 +1,71 @@
+diff --git a/wget-list b/wget-list
+index 834bf7d9f4..e3c43bb92f 100644
+--- a/wget-list
++++ b/wget-list
+@@ -63,7 +63,7 @@ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.15.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+ https://download.qemu.org/qemu-10.0.2.tar.xz
+-https://github.com/abseil/abseil-cpp/releases/download/20250512.0/abseil-cpp-20250512.0.tar.gz
++https://github.com/abseil/abseil-cpp/releases/download/20250512.1/abseil-cpp-20250512.1.tar.gz
+ https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.5.tar.xz
+ http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz
+ https://archive.apache.org/dist/apr/apr-1.7.6.tar.bz2
+@@ -77,7 +77,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/clucene-2.3.3.4-contribs_lib-1
+ https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.114.tar.gz
+ https://github.com/google/double-conversion/archive/v3.3.1/double-conversion-3.3.1.tar.gz
+ https://duktape.org/duktape-2.7.0.tar.xz
+-https://github.com/rrthomas/enchant/releases/download/v2.8.6/enchant-2.8.6.tar.gz
++https://github.com/rrthomas/enchant/releases/download/v2.8.9/enchant-2.8.9.tar.gz
+ https://libopenraw.freedesktop.org/download/exempi-2.6.6.tar.xz
+ https://github.com/fastfloat/fast_float/archive/v8.0.2/fast_float-8.0.2.tar.gz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+@@ -103,7 +103,7 @@ https://github.com/libarchive/libarchive/releases/download/v3.8.1/libarchive-3.8
+ https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2
+ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/ivmai/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz
+-https://github.com/storaged-project/libblockdev/releases/download/3.3.0/libblockdev-3.3.0.tar.gz
++https://github.com/storaged-project/libblockdev/releases/download/3.3.1/libblockdev-3.3.1.tar.gz
+ https://github.com/storaged-project/libbytesize/releases/download/2.11/libbytesize-2.11.tar.gz
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.1/libclc-20.1.1.src.tar.xz
+ https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6.tar.xz
+@@ -569,7 +569,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_s
+ https://w1.fi/releases/wpa_supplicant-2.11.tar.gz
+ https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+-https://ftp.isc.org/isc/bind9/9.20.9/bind-9.20.9.tar.xz
++https://ftp.isc.org/isc/bind9/9.20.10/bind-9.20.10.tar.xz
+ https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.52.0/downloads/NetworkManager-1.52.0.tar.xz
+ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
+ https://nmap.org/dist/nmap-7.97.tar.bz2
+@@ -597,7 +597,7 @@ https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.5.tar.xz
+ https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.6.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/libtirpc-1.3.6-gcc15_fixes-1.patch
+ https://notroj.github.io/neon/neon-0.34.2.tar.gz
+-https://github.com/nghttp2/nghttp2/releases/download/v1.65.0/nghttp2-1.65.0.tar.xz
++https://github.com/nghttp2/nghttp2/releases/download/v1.66.0/nghttp2-1.66.0.tar.xz
+ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.4.4.tar.xz
+ https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
+ http://links.twibright.com/download/links-2.30.tar.bz2
+@@ -639,9 +639,9 @@ https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ https://invisible-mirror.net/archives/luit/luit-20240910.tgz
+ https://www.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
+ https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.45.tar.xz
+-https://www.x.org/pub/individual/xserver/xwayland-24.1.7.tar.xz
+-https://www.x.org/pub/individual/xserver/xorg-server-21.1.17.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.17-tearfree_backport-1.patch
++https://www.x.org/pub/individual/xserver/xwayland-24.1.8.tar.xz
++https://www.x.org/pub/individual/xserver/xorg-server-21.1.18.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.18-tearfree_backport-1.patch
+ https://www.freedesktop.org/software/libevdev/libevdev-1.13.4.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-evdev-2.11.0.tar.xz
+ https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.28.1/libinput-1.28.1.tar.gz
+@@ -707,7 +707,7 @@ https://downloads.sourceforge.net/fluxbox/fluxbox-1.3.7.tar.xz
+ https://github.com/ice-wm/icewm/archive/3.7.5/icewm-3.7.5.tar.gz
+ http://openbox.org/dist/openbox/openbox-3.6.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openbox-3.6.1-py3-1.patch
+-https://download.gnome.org/sources/adwaita-icon-theme/48/adwaita-icon-theme-48.0.tar.xz
++https://download.gnome.org/sources/adwaita-icon-theme/48/adwaita-icon-theme-48.1.tar.xz
+ https://download.kde.org/stable/frameworks/6.13/breeze-icons-6.13.0.tar.xz
+ https://download.gnome.org/sources/gnome-icon-theme/3.12/gnome-icon-theme-3.12.0.tar.xz
+ https://download.gnome.org/sources/gnome-icon-theme-extras/3.12/gnome-icon-theme-extras-3.12.0.tar.xz
