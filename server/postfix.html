@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-913">
+  <body class="blfs" id="blfs-r12.3-930">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-913
+        "phrase">(systemd</span> Edition) - Version r12.3-930
       </h4>
       <h3>
         Chapter&nbsp;21.&nbsp;Mail Server Software
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-913">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-930">
           Home</a>
         </li>
       </ul>
@@ -235,7 +235,7 @@ AUXLIBS=""</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61291" name="id61291"></a>Cyrus-SASL
+                    <a id="id61336" name="id61336"></a>Cyrus-SASL
                   </h5>
                 </div>
               </div>
@@ -256,7 +256,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61298" name="id61298"></a>LMDB
+                    <a id="id61343" name="id61343"></a>LMDB
                   </h5>
                 </div>
               </div>
@@ -276,7 +276,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61305" name="id61305"></a>OpenLDAP
+                    <a id="id61350" name="id61350"></a>OpenLDAP
                   </h5>
                 </div>
               </div>
@@ -297,7 +297,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61312" name="id61312"></a>Sqlite
+                    <a id="id61357" name="id61357"></a>Sqlite
                   </h5>
                 </div>
               </div>
@@ -318,7 +318,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61319" name="id61319"></a>MySQL
+                    <a id="id61364" name="id61364"></a>MySQL
                   </h5>
                 </div>
               </div>
@@ -338,7 +338,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61326" name="id61326"></a>PostgreSQL
+                    <a id="id61371" name="id61371"></a>PostgreSQL
                   </h5>
                 </div>
               </div>
@@ -359,7 +359,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61333" name="id61333"></a>CDB/TinyCDB
+                    <a id="id61378" name="id61378"></a>CDB/TinyCDB
                   </h5>
                 </div>
               </div>
@@ -381,7 +381,7 @@ fi</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id61343" name="id61343"></a>StartTLS
+                    <a id="id61388" name="id61388"></a>StartTLS
                     Authentication
                   </h5>
                 </div>
@@ -417,7 +417,7 @@ fi</kbd></pre>
             following commands:
           </p>
           <pre class="userinput"><kbd class=
-          "command">make CCARGS="$CCARGS" AUXLIBS="$AUXLIBS" makefiles &amp;&amp;
+          "command">make CC="gcc -std=gnu17" CCARGS="$CCARGS" AUXLIBS="$AUXLIBS" makefiles &amp;&amp;
 make</kbd></pre>
           <p>
             This package does not come with a useful test suite.
@@ -451,6 +451,12 @@ make</kbd></pre>
           "option">html_directory</code> and <code class=
           "option">readme_directory</code> options are not set then the
           documentation will not be installed.
+        </p>
+        <p>
+          <code class="option">CC="gcc -std=gnu17"</code>: this is used to
+          overcome an issue with gcc-15. This version of gcc uses
+          <code class="literal">-std=gnu23</code> by default which exposes
+          several issues in the source code.
         </p>
         <p>
           <code class="option">CCARGS="-DNO_EAI ..."</code>: this will turn
@@ -887,7 +893,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-913">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-930">
           Home</a>
         </li>
       </ul>
