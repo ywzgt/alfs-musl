@@ -1,0 +1,48 @@
+diff --git a/wget-list b/wget-list
+index 2e3baeaa08..fd612d0381 100644
+--- a/wget-list
++++ b/wget-list
+@@ -41,7 +41,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.10-convenience-1.
+ https://ftp.gnu.org/gnu/parted/parted-3.6.tar.xz
+ https://downloads.sourceforge.net/smartmontools/smartmontools-7.5.tar.gz
+ https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.3/sshfs-3.7.3.tar.xz
+-https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.14.0.tar.xz
++https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.15.0.tar.xz
+ https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
+ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
+ https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz
+@@ -150,7 +150,7 @@ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_2/log4cplus-2.1.2.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
+-https://nodejs.org/dist/v22.16.0/node-v22.16.0.tar.xz
++https://nodejs.org/dist/v22.17.0/node-v22.17.0.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz
+ https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.bz2
+@@ -223,7 +223,7 @@ https://downloads.sourceforge.net/bogofilter/bogofilter-1.2.5.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
+ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.2.tar.gz
+-https://github.com/google/shaderc/archive/v2025.2/shaderc-2025.2.tar.gz
++https://github.com/google/shaderc/archive/v2025.3/shaderc-2025.3.tar.gz
+ https://gitlab.com/graphviz/graphviz/-/archive/13.0.1/graphviz-13.0.1.tar.bz2
+ https://download.gnome.org/sources/gtk-doc/1.34/gtk-doc-1.34.0.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.16.tar.bz2
+@@ -275,7 +275,7 @@ https://download.librdf.org/source/redland-1.0.17.tar.gz
+ https://sysstat.github.io/sysstat-packages/sysstat-12.7.7.tar.xz
+ https://github.com/systemd/systemd/archive/v257.6/systemd-257.6.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.10.1/udisks-2.10.1.tar.bz2
+-https://www.rarlab.com/rar/unrarsrc-7.1.7.tar.gz
++https://www.rarlab.com/rar/unrarsrc-7.1.8.tar.gz
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.9/upower-v1.90.9.tar.bz2
+ https://ftp.gnu.org/gnu/which/which-2.23.tar.gz
+ https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz
+@@ -885,6 +885,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-25.2.3.2-icu76_fix
+ https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-25.2.3.2-poppler_fixes-1.patch
+ https://download.gnome.org/sources/epiphany/48/epiphany-48.3.tar.xz
+ https://download.kde.org/stable/release-service/25.04.0/src/falkon-25.04.0.tar.xz
++https://archive.mozilla.org/pub/firefox/releases/140.0esr/source/firefox-140.0esr.source.tar.xz
+ https://archive.seamonkey-project.org/releases/2.53.20/source/seamonkey-2.53.20.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.20-cxx17-1.patch
+ https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
