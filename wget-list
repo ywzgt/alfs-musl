@@ -16,7 +16,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3
 https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2
 https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.21.3-gcc15_fixes-1.patch
-https://ftp.gnu.org/gnu/nettle/nettle-3.10.1.tar.gz
+https://ftp.gnu.org/gnu/nettle/nettle-3.10.2.tar.gz
 https://archive.mozilla.org/pub/security/nss/releases/NSS_3_113_RTM/src/nss-3.113.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
 https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.0p1.tar.gz
@@ -176,7 +176,7 @@ https://download.gimp.org/pub/babl/0.1/babl-0.1.114.tar.xz
 https://github.com/Exiv2/exiv2/archive/v0.28.5/exiv2-0.28.5.tar.gz
 https://downloads.sourceforge.net/freetype/freetype-2.13.3.tar.xz
 https://downloads.sourceforge.net/freetype/freetype-doc-2.13.3.tar.xz
-https://gitlab.freedesktop.org/api/v4/projects/890/packages/generic/fontconfig/2.16.2/fontconfig-2.16.2.tar.xz
+https://gitlab.freedesktop.org/api/v4/projects/890/packages/generic/fontconfig/2.17.0/fontconfig-2.17.0.tar.xz
 https://github.com/fribidi/fribidi/releases/download/v1.0.16/fribidi-1.0.16.tar.xz
 https://download.gimp.org/pub/gegl/0.4/gegl-0.4.62.tar.xz
 https://sourceforge.net/projects/giflib/files/giflib-5.2.2.tar.gz
@@ -337,7 +337,7 @@ https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.094.tar.gz
 https://www.cpan.org/authors/id/G/GA/GAAS/IO-String-1.08.tar.gz
 https://www.cpan.org/authors/id/R/RJ/RJBS/IPC-Run3-0.049.tar.gz
 https://www.cpan.org/authors/id/A/AL/ALINKE/Lingua-Translit-0.29.tar.gz
-https://www.cpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.78.tar.gz
+https://www.cpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.79.tar.gz
 https://www.cpan.org/authors/id/D/DR/DROLSKY/List-AllUtils-0.19.tar.gz
 https://www.cpan.org/authors/id/R/RE/REHSACK/List-MoreUtils-0.430.tar.gz
 https://www.cpan.org/authors/id/E/ET/ETJ/Log-Log4perl-1.57.tar.gz
@@ -474,7 +474,7 @@ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.g
 https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-0.5.3.tar.gz
 https://files.pythonhosted.org/packages/source/g/gi-docgen/gi_docgen-2025.3.tar.gz
 https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
-https://files.pythonhosted.org/packages/source/l/lxml/lxml-5.4.0.tar.gz
+https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.0.0.tar.gz
 https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.10.tar.gz
 https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.3.1.tar.gz
 https://files.pythonhosted.org/packages/source/p/ply/ply-3.11.tar.gz
@@ -663,7 +663,7 @@ https://github.com/fltk/fltk/releases/download/release-1.4.3/fltk-1.4.3-docs-htm
 https://downloads.sourceforge.net/freeglut/freeglut-3.6.0.tar.gz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz
 https://downloads.sourceforge.net/glew/glew-2.2.0.tgz
-https://github.com/KhronosGroup/glslang/archive/15.3.0/glslang-15.3.0.tar.gz
+https://github.com/KhronosGroup/glslang/archive/15.4.0/glslang-15.4.0.tar.gz
 https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
 https://download.gnome.org/sources/goffice/0.10/goffice-0.10.59.tar.xz
 https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
@@ -687,7 +687,7 @@ https://dri.freedesktop.org/libdrm/libdrm-2.4.125.tar.xz
 https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
 https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.6.tar.xz
 https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
-https://download.gnome.org/sources/pango/1.56/pango-1.56.3.tar.xz
+https://download.gnome.org/sources/pango/1.56/pango-1.56.4.tar.xz
 https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
 https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
 https://download.qt.io/archive/qt/6.9/6.9.1/single/qt-everywhere-src-6.9.1.tar.xz

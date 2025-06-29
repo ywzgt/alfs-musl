@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-946">
+  <body class="blfs" id="blfs-r12.3-954">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-946
+        "phrase">(systemd</span> Edition) - Version r12.3-954
       </h4>
       <h3>
         Chapter&nbsp;34.&nbsp;<span class="phrase">GNOME Applications</span>
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-946">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-954">
           Home</a>
         </li>
       </ul>
@@ -174,6 +174,14 @@
         <h2 class="sect2">
           Installation of Evince
         </h2>
+        <p>
+          Fix a bug causing the documentation scaled incorrectly in the
+          presentation mode if a scaling factor greater than 100% has been
+          set for the monitor:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e 's/GTK_CHECK_VERSION/!GTK_CHECK_VERSION(3, 24, 42) \&amp;\&amp; &amp;/' \
+    -i libview/ev-view-presentation.c</kbd></pre>
         <p>
           Install <span class="application">Evince</span> by running the
           following commands:
@@ -388,7 +396,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-946">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-954">
           Home</a>
         </li>
       </ul>
