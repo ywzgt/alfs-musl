@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 6920d3b141..e5f39fce75 100644
+--- a/wget-list
++++ b/wget-list
+@@ -24,7 +24,7 @@ https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.
+ https://github.com/polkit-org/polkit/archive/126/polkit-126.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+-https://github.com/shadow-maint/shadow/releases/download/4.17.4/shadow-4.17.4.tar.xz
++https://github.com/shadow-maint/shadow/releases/download/4.18.0/shadow-4.18.0.tar.xz
+ https://www.stunnel.org/downloads/archive/5.x/stunnel-5.75.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.17.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+@@ -58,7 +58,7 @@ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/25.04.0/src/kate-25.04.0.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.5.tar.xz
+ https://www.nano-editor.org/dist/v8/nano-8.5.tar.xz
+-https://github.com/vim/vim/archive/v9.1.1418/vim-9.1.1418.tar.gz
++https://github.com/vim/vim/archive/v9.1.1497/vim-9.1.1497.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.15.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
