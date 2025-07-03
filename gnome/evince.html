@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Evince-48.0
+      Evince-48.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-968">
+  <body class="blfs" id="blfs-r12.3-990">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-968
+        "phrase">(systemd</span> Edition) - Version r12.3-990
       </h4>
       <h3>
         Chapter&nbsp;34.&nbsp;<span class="phrase">GNOME Applications</span>
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-968">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-990">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="evince" name="evince"></a>Evince-48.0
+      <a id="evince" name="evince"></a>Evince-48.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -81,13 +81,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/evince/48/evince-48.0.tar.xz">
-                https://download.gnome.org/sources/evince/48/evince-48.0.tar.xz</a>
+                "https://download.gnome.org/sources/evince/48/evince-48.1.tar.xz">
+                https://download.gnome.org/sources/evince/48/evince-48.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: ffbe9e52580033231855478a18b90dc5
+                Download MD5 sum: a29c7fcd047073d69d910778b29bde14
               </p>
             </li>
             <li class="listitem">
@@ -97,7 +97,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 68 MB
+                Estimated disk space required: 49 MB
               </p>
             </li>
             <li class="listitem">
@@ -153,7 +153,7 @@
           "gnome-desktop-44.3">gnome-desktop-44.3</a>, <a class="xref" href=
           "../general/gspell.html" title="gspell-1.14.0">gspell-1.14.0</a>,
           <a class="xref" href="../multimedia/gst10-plugins-base.html" title=
-          "gst-plugins-base-1.26.2">gst-plugins-base-1.26.2</a>, <a class=
+          "gst-plugins-base-1.26.3">gst-plugins-base-1.26.3</a>, <a class=
           "xref" href="../general/python-modules.html#gi-docgen" title=
           "Gi-DocGen-2025.3">Gi-DocGen-2025.3</a>, <a class="xref" href=
           "../general/libgxps.html" title="libgxps-0.3.2">libgxps-0.3.2</a>,
@@ -175,14 +175,6 @@
           Installation of Evince
         </h2>
         <p>
-          Fix a bug causing the documentation scaled incorrectly in the
-          presentation mode if a scaling factor greater than 100% has been
-          set for the monitor:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e 's/GTK_CHECK_VERSION/!GTK_CHECK_VERSION(3, 24, 42) \&amp;\&amp; &amp;/' \
-    -i libview/ev-view-presentation.c</kbd></pre>
-        <p>
           Install <span class="application">Evince</span> by running the
           following commands:
         </p>
@@ -203,7 +195,7 @@ ninja</kbd></pre>
           the API documentation for this package, issue:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed "/docs_dir/s@\$@ / 'evince-48.0'@" -i ../help/meson.build &amp;&amp;
+        "command">sed "/docs_dir/s@\$@ / 'evince-48.1'@" -i ../help/meson.build &amp;&amp;
 meson configure -D gtk_doc=true                                 &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -396,7 +388,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-968">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-990">
           Home</a>
         </li>
       </ul>

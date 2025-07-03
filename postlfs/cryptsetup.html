@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      cryptsetup-2.7.5
+      cryptsetup-2.8.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-968">
+  <body class="blfs" id="blfs-r12.3-990">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-968
+        "phrase">(systemd</span> Edition) - Version r12.3-990
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-968">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-990">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="cryptsetup" name="cryptsetup"></a>cryptsetup-2.7.5
+      <a id="cryptsetup" name="cryptsetup"></a>cryptsetup-2.8.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,13 +78,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.5.tar.xz">
-                https://www.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.5.tar.xz</a>
+                "https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.0.tar.xz">
+                https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: f663f37dd478484f61ace54902c17274
+                Download MD5 sum: 1485c47cb08d440cb0a73fc25316e8b4
               </p>
             </li>
             <li class="listitem">
@@ -94,7 +94,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 33 MB (add 5 MB for tests)
+                Estimated disk space required: 37 MB (add 5 MB for tests)
               </p>
             </li>
             <li class="listitem">
@@ -113,7 +113,7 @@
         <p class="required">
           <a class="xref" href="../general/json-c.html" title=
           "JSON-C-0.18">JSON-C-0.18</a>, <a class="xref" href="lvm2.html"
-          title="LVM2-2.03.32">LVM2-2.03.32</a>, and <a class="xref" href=
+          title="LVM2-2.03.33">LVM2-2.03.33</a>, and <a class="xref" href=
           "../general/popt.html" title="Popt-1.19">popt-1.19</a>
         </p>
         <h4>
@@ -125,8 +125,10 @@
           "libpwquality.html" title=
           "libpwquality-1.4.5">libpwquality-1.4.5</a>, <a class="ulink" href=
           "https://github.com/P-H-C/phc-winner-argon2">argon2</a>, <a class=
-          "ulink" href="https://www.libssh.org/">libssh</a>, and <a class=
-          "ulink" href="https://www.openwall.com/passwdqc/">passwdqc</a>
+          "ulink" href="https://www.libssh.org/">libssh</a>, <a class="ulink"
+          href="https://github.com/Mbed-TLS/mbedtls">mbedtls</a>, and
+          <a class="ulink" href=
+          "https://www.openwall.com/passwdqc/">passwdqc</a>
         </p>
       </div>
       <div class="kernel" lang="en" xml:lang="en">
@@ -246,8 +248,8 @@ CONFIG_CRYPTO_TWOFISH_X86_64</code></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">cryptsetup, cryptsetup-reencrypt,
-              integritysetup, and veritysetup</span>
+              <span class="segbody">cryptsetup, integritysetup, and
+              veritysetup</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
@@ -280,20 +282,6 @@ CONFIG_CRYPTO_TWOFISH_X86_64</code></pre>
                 <td>
                   <p>
                     is used to setup dm-crypt managed device-mapper mappings
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="cryptsetup-reencrypt" name=
-                    "cryptsetup-reencrypt"></a><span class=
-                    "term"><span class="command"><strong>cryptsetup-reencrypt</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is a tool for offline LUKS device re-encryption
                   </p>
                 </td>
               </tr>
@@ -356,7 +344,7 @@ CONFIG_CRYPTO_TWOFISH_X86_64</code></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-968">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-990">
           Home</a>
         </li>
       </ul>
