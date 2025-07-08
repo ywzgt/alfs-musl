@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 0b04a63fa0..07d6a3bda6 100644
+--- a/wget-list
++++ b/wget-list
+@@ -209,7 +209,7 @@ https://github.com/opencv/opencv/archive/4.11.0/opencv-4.11.0.tar.gz
+ https://github.com/opencv/opencv_contrib/archive/4.11.0/opencv_contrib-4.11.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.3/openjpeg-2.5.3.tar.gz
+ https://www.cairographics.org/releases/pixman-0.46.2.tar.gz
+-https://poppler.freedesktop.org/poppler-25.06.0.tar.xz
++https://poppler.freedesktop.org/poppler-25.07.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+ https://github.com/qpdf/qpdf/releases/download/v12.2.0/qpdf-12.2.0.tar.gz
+@@ -343,7 +343,7 @@ https://www.cpan.org/authors/id/R/RE/REHSACK/List-MoreUtils-0.430.tar.gz
+ https://www.cpan.org/authors/id/E/ET/ETJ/Log-Log4perl-1.57.tar.gz
+ https://www.cpan.org/authors/id/O/OA/OALDERS/LWP-Protocol-https-6.14.tar.gz
+ https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-0.4234.tar.gz
+-https://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-1.50.tar.gz
++https://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-1.51.tar.gz
+ https://www.cpan.org/authors/id/J/JT/JTBRAUN/Parse-RecDescent-1.967015.tar.gz
+ https://www.cpan.org/authors/id/W/WB/WBRASWELL/Parse-Yapp-1.21.tar.gz
+ https://www.cpan.org/authors/id/L/LE/LEONT/PerlIO-utf8_strict-0.010.tar.gz
