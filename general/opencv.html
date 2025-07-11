@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      opencv-4.11.0
+      opencv-4.12.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1016">
+  <body class="blfs" id="blfs-r12.3-1025">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1016
+        "phrase">(systemd</span> Edition) - Version r12.3-1025
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1016">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1025">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="opencv" name="opencv"></a>opencv-4.11.0
+      <a id="opencv" name="opencv"></a>opencv-4.12.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,13 +77,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/opencv/opencv/archive/4.11.0/opencv-4.11.0.tar.gz">
-                https://github.com/opencv/opencv/archive/4.11.0/opencv-4.11.0.tar.gz</a>
+                "https://github.com/opencv/opencv/archive/4.12.0/opencv-4.12.0.tar.gz">
+                https://github.com/opencv/opencv/archive/4.12.0/opencv-4.12.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: f35fbd46350cc677af13e198805b58f7
+                Download MD5 sum: eb6f8ff4f4cd16ef1b97bc21edc74de9
               </p>
             </li>
             <li class="listitem">
@@ -93,7 +93,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 832 MB (with opencv-contrib)
+                Estimated disk space required: 1.0 GB (with opencv-contrib)
               </p>
             </li>
             <li class="listitem">
@@ -111,14 +111,14 @@
             <li class="listitem">
               <p>
                 Optional additional modules: <a class="ulink" href=
-                "https://github.com/opencv/opencv_contrib/archive/4.11.0/opencv_contrib-4.11.0.tar.gz">
-                https://github.com/opencv/opencv_contrib/archive/4.11.0/opencv_contrib-4.11.0.tar.gz</a>
+                "https://github.com/opencv/opencv_contrib/archive/4.12.0/opencv_contrib-4.12.0.tar.gz">
+                https://github.com/opencv/opencv_contrib/archive/4.12.0/opencv_contrib-4.12.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
                 Optional additional modules md5sum:
-                7dd4bc67eb67faff96ce71745a5e3abe
+                55603c033cc5f3d5e307b699ad72e25a
               </p>
             </li>
             <li class="listitem">
@@ -162,14 +162,15 @@
           "xref" href="../x/gtk3.html" title="GTK-3.24.49">GTK-3.24.49</a>,
           <a class="xref" href="jasper.html" title=
           "jasper-4.2.5">jasper-4.2.5</a>, <a class="xref" href=
-          "libexif.html" title="libexif-0.6.25">libexif-0.6.25</a>, <a class=
-          "xref" href="libjpeg.html" title=
-          "libjpeg-turbo-3.0.1">libjpeg-turbo-3.0.1</a>, <a class="xref"
-          href="libpng.html" title="libpng-1.6.50">libpng-1.6.50</a>,
-          <a class="xref" href="libtiff.html" title=
-          "libtiff-4.7.0">libtiff-4.7.0</a>, <a class="xref" href=
-          "libwebp.html" title="libwebp-1.5.0">libwebp-1.5.0</a>, <a class=
-          "xref" href="openjpeg2.html" title=
+          "libavif.html" title="libavif-1.3.0">libavif-1.3.0</a>, <a class=
+          "xref" href="libexif.html" title=
+          "libexif-0.6.25">libexif-0.6.25</a>, <a class="xref" href=
+          "libjpeg.html" title="libjpeg-turbo-3.0.1">libjpeg-turbo-3.0.1</a>,
+          <a class="xref" href="libpng.html" title=
+          "libpng-1.6.50">libpng-1.6.50</a>, <a class="xref" href=
+          "libtiff.html" title="libtiff-4.7.0">libtiff-4.7.0</a>, <a class=
+          "xref" href="libwebp.html" title="libwebp-1.6.0">libwebp-1.6.0</a>,
+          <a class="xref" href="openjpeg2.html" title=
           "OpenJPEG-2.5.3">OpenJPEG-2.5.3</a>, <a class="xref" href=
           "../multimedia/v4l-utils.html" title=
           "v4l-utils-1.30.1">v4l-utils-1.30.1</a>, and <a class="xref" href=
@@ -209,12 +210,7 @@
           If you downloaded the optional modules, unpack them now:
         </p>
         <pre class="userinput"><kbd class=
-        "command">tar -xf ../opencv_contrib-4.11.0.tar.gz</kbd></pre>
-        <p>
-          Fix a build problem that occurs with CMake 4.0:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -i 's/VERSION 2.8.12.2/VERSION 4.0.0/' cmake/OpenCVGenPkgconfig.cmake</kbd></pre>
+        "command">tar -xf ../opencv_contrib-4.12.0.tar.gz</kbd></pre>
         <p>
           Install <span class="application">opencv</span> by running the
           following commands:
@@ -280,7 +276,7 @@ make</kbd></pre>
         </p>
         <p>
           <code class="option">-D
-          OPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.11.0/modules</code>:
+          OPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.12.0/modules</code>:
           instructs the build system to build additional modules. Some
           packages in BLFS (such as <a class="xref" href=
           "../multimedia/gst10-plugins-bad.html" title=
@@ -298,18 +294,34 @@ make</kbd></pre>
               <strong class="segtitle">Installed Programs:</strong>
               <span class="segbody">opencv_annotation,
               opencv_interactive-calibration, opencv_model_diagnostics,
-              opencv_version, opencv_visualisation, and
-              setup_vars_opencv4.sh</span>
+              opencv_version, opencv_visualisation,
+              opencv_waldboost_detector, and setup_vars_opencv4.sh</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libopencv_calib3d.so, libopencv_core.so,
-              libopencv_dnn.so, libopencv_features2d.so, libopencv_flann.so,
-              libopencv_gapi.so, libopencv_highgui.so,
-              libopencv_imgcodecs.so, libopencv_imgproc.so, libopencv_ml.so,
-              libopencv_objdetect.so, libopencv_photo.so,
-              libopencv_stitching.so, libopencv_video.so, and
-              libopencv_videoio.so</span>
+              <span class="segbody">libopencv_aruco.so, libopencv_bgsegm.so,
+              libopencv_bioinspired.so, libopencv_calib3d.so,
+              libopencv_ccalib.so, libopencv_core.so, libopencv_datasets.so,
+              libopencv_dnn_objdetect.so, libopencv_dnn.so,
+              libopencv_dnn_superres.so, libopencv_dpm.so, libopencv_face.so,
+              libopencv_features2d.so, libopencv_flann.so,
+              libopencv_freetype.so, libopencv_gapi.so, libopencv_hfs.so,
+              libopencv_highgui.so, libopencv_imgcodecs.so,
+              libopencv_img_hash.so, libopencv_imgproc.so,
+              libopencv_intensity_transform.so, libopencv_line_descriptor.so,
+              libopencv_mcc.so, libopencv_ml.so, libopencv_objdetect.so,
+              libopencv_optflow.so, libopencv_phase_unwrapping.so,
+              libopencv_photo.so, libopencv_plot.so, libopencv_quality.so,
+              libopencv_rapid.so, libopencv_reg.so, libopencv_rgbd.so,
+              libopencv_saliency.so, libopencv_shape.so, libopencv_signal.so,
+              libopencv_stereo.so, libopencv_stitching.so,
+              libopencv_structured_light.so, libopencv_superres.so,
+              libopencv_surface_matching.so, libopencv_text.so,
+              libopenct_tracking.so, libopencv_video.so,
+              libopencv_videoio.so, libopencv_videostage.so,
+              libopencv_wechat_qrcode.so, libopencv_xfeatures2d.so,
+              libopencv_ximgproc.so, libopencv_xobjdetect.so, and
+              libopencv_xphoto.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
@@ -343,7 +355,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1016">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1025">
           Home</a>
         </li>
       </ul>
