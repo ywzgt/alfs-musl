@@ -1,0 +1,23 @@
+diff --git a/wget-list b/wget-list
+index a4b8349bb6..ccfdcc6fc3 100644
+--- a/wget-list
++++ b/wget-list
+@@ -6,7 +6,8 @@ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyru
+ https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
+ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.8.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.9.tar.xz
+-https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.3.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-2.0.0.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/gpgmepp/gpgmepp-2.0.0.tar.xz
+ https://www.netfilter.org/projects/iptables/files/iptables-1.8.11.tar.xz
+ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.76.tar.xz
+ https://github.com/linux-pam/linux-pam/releases/download/v1.7.1/Linux-PAM-1.7.1.tar.xz
+@@ -87,7 +88,7 @@ https://download.gnome.org/sources/gobject-introspection/1.84/gobject-introspect
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+ https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.8.tar.xz
+ https://download.gnome.org/sources/glibmm/2.84/glibmm-2.84.0.tar.xz
+-https://download.gnome.org/sources/gmime/3.2/gmime-3.2.7.tar.xz
++https://github.com/jstedfast/gmime/releases/download/3.2.15/gmime-3.2.15.tar.xz
+ https://github.com/lfs-book/gmmlib/archive/v22.7.1/gmmlib-22.7.1.tar.gz
+ https://ftp.gnu.org/gnu/gsl/gsl-2.8.tar.gz
+ https://download.gnome.org/sources/gspell/1.14/gspell-1.14.0.tar.xz
