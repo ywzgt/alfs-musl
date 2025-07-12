@@ -1,0 +1,68 @@
+diff --git a/wget-list b/wget-list
+index ccfdcc6fc3..21580341bd 100644
+--- a/wget-list
++++ b/wget-list
+@@ -5,7 +5,7 @@ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.0.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
+ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.8.tar.bz2
+-https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.9.tar.xz
++https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.10.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-2.0.0.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/gpgmepp/gpgmepp-2.0.0.tar.xz
+ https://www.netfilter.org/projects/iptables/files/iptables-1.8.11.tar.xz
+@@ -61,7 +61,7 @@ https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.5.tar.xz
+ https://www.nano-editor.org/dist/v8/nano-8.5.tar.xz
+ https://github.com/vim/vim/archive/v9.1.1497/vim-9.1.1497.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+-https://astron.com/pub/tcsh/tcsh-6.24.15.tar.gz
++https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+ https://download.qemu.org/qemu-10.0.2.tar.xz
+ https://github.com/abseil/abseil-cpp/releases/download/20250512.1/abseil-cpp-20250512.1.tar.gz
+@@ -203,11 +203,11 @@ https://www.libraw.org/data/LibRaw-0.21.4.tar.gz
+ https://download.gnome.org/sources/librsvg/2.60/librsvg-2.60.0.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+ https://download.osgeo.org/libtiff/tiff-4.7.0.tar.gz
+-https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.5.0.tar.gz
++https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz
+ https://github.com/mypaint/mypaint-brushes/releases/download/v1.3.1/mypaint-brushes-1.3.1.tar.xz
+ https://releases.pagure.org/newt/newt-0.52.25.tar.gz
+-https://github.com/opencv/opencv/archive/4.11.0/opencv-4.11.0.tar.gz
+-https://github.com/opencv/opencv_contrib/archive/4.11.0/opencv_contrib-4.11.0.tar.gz
++https://github.com/opencv/opencv/archive/4.12.0/opencv-4.12.0.tar.gz
++https://github.com/opencv/opencv_contrib/archive/4.12.0/opencv_contrib-4.12.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.3/openjpeg-2.5.3.tar.gz
+ https://www.cairographics.org/releases/pixman-0.46.2.tar.gz
+ https://poppler.freedesktop.org/poppler-25.07.0.tar.xz
+@@ -298,9 +298,9 @@ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-15.1.0/gcc-15.1.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.8/gc-8.2.8.tar.gz
+ https://ftp.gnu.org/gnu/gdb/gdb-16.3.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-2.50.0.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-manpages-2.50.0.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.50.0.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-2.50.1.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-manpages-2.50.1.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.50.1.tar.xz
+ https://ftp.gnu.org/gnu/guile/guile-3.0.10.tar.xz
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.7/llvm-20.1.7.src.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-20.1.7.src.tar.xz
+@@ -571,7 +571,7 @@ https://w1.fi/releases/wpa_supplicant-2.11.tar.gz
+ https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+ https://ftp.isc.org/isc/bind9/9.20.10/bind-9.20.10.tar.xz
+-https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.52.0/downloads/NetworkManager-1.52.0.tar.xz
++https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.52.1/downloads/NetworkManager-1.52.1.tar.xz
+ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
+ https://nmap.org/dist/nmap-7.97.tar.bz2
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.6.tar.gz
+@@ -902,7 +902,7 @@ https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
+ https://inkscape.org/gallery/item/56344/inkscape-1.4.2.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.2-poppler_fixes-1.patch
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/140.0esr/source/thunderbird-140.0esr.source.tar.xz
++https://archive.mozilla.org/pub/thunderbird/releases/140.0.1esr/source/thunderbird-140.0.1esr.source.tar.xz
+ https://github.com/TigerVNC/tigervnc/archive/v1.15.0/tigervnc-1.15.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.15.0-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz
