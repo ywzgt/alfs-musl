@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Audacious-4.4.2
+      Audacious-4.5
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1043">
+  <body class="blfs" id="blfs-r12.3-1047">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1043
+        "phrase">(systemd</span> Edition) - Version r12.3-1047
       </h4>
       <h3>
         Chapter&nbsp;43.&nbsp;Audio Utilities
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1043">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1047">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="audacious" name="audacious"></a>Audacious-4.4.2
+      <a id="audacious" name="audacious"></a>Audacious-4.5
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,18 +77,18 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://distfiles.audacious-media-player.org/audacious-4.4.2.tar.bz2">
-                https://distfiles.audacious-media-player.org/audacious-4.4.2.tar.bz2</a>
+                "https://distfiles.audacious-media-player.org/audacious-4.5.tar.bz2">
+                https://distfiles.audacious-media-player.org/audacious-4.5.tar.bz2</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 5866219d45b199f882cb5c31aa320528
+                Download MD5 sum: 205931bb7abd8f308d75d6f433a41573
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 624 KB
+                Download size: 628 KB
               </p>
             </li>
             <li class="listitem">
@@ -115,28 +115,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://distfiles.audacious-media-player.org/audacious-plugins-4.4.2.tar.bz2">
-                https://distfiles.audacious-media-player.org/audacious-plugins-4.4.2.tar.bz2</a>
+                "https://distfiles.audacious-media-player.org/audacious-plugins-4.5.tar.bz2">
+                https://distfiles.audacious-media-player.org/audacious-plugins-4.5.tar.bz2</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 07cc198e6961b84e5945f889cb88ea75
+                Download MD5 sum: 34656f489242488be0ce2ca413ea2ea0
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 1.7 MB
+                Download size: 1.8 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 40 MB (with GTK support)
+                Estimated disk space required: 36 MB (with GTK support)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.4 SBU (Using parallelism=4; with GTK
+                Estimated build time: 0.2 SBU (Using parallelism=4; with GTK
                 support)
               </p>
             </li>
@@ -175,7 +175,7 @@
           "mpg123-1.33.0">mpg123-1.33.0</a>, <a class="xref" href=
           "ffmpeg.html" title="FFmpeg-7.1.1">FFmpeg-7.1.1</a>, and <a class=
           "xref" href="../basicnet/neon.html" title=
-          "neon-0.34.2">neon-0.34.2</a> (for online mp3 and ogg radio)
+          "neon-0.35.0">neon-0.35.0</a> (for online mp3 and ogg radio)
         </p>
         <h4>
           Optional (for Plugins)
@@ -196,7 +196,8 @@
           "libsndfile.html" title="libsndfile-1.2.2">libsndfile-1.2.2</a>,
           <a class="xref" href="libvorbis.html" title=
           "libvorbis-1.3.7">libvorbis-1.3.7</a>, <a class="xref" href=
-          "pipewire.html" title="Pipewire-1.4.6">pipewire-1.4.6</a>,
+          "opus.html" title="Opus-1.5.2">Opus-1.5.2</a>, <a class="xref"
+          href="pipewire.html" title="Pipewire-1.4.6">pipewire-1.4.6</a>,
           <a class="xref" href="pulseaudio.html" title=
           "PulseAudio-17.0">PulseAudio-17.0</a>, <a class="xref" href=
           "sdl2.html" title="SDL2-2.32.8">SDL2-2.32.8</a>, <a class="ulink"
@@ -238,14 +239,13 @@
           <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr       \
-            --buildtype=release \
-            -D gtk=true         \
-            -D qt=true          \
-            -D buildstamp=BLFS  \
-            -D libarchive=true  \
-            ..                  &amp;&amp;
-
+meson setup ..            \
+      --prefix=/usr       \
+      --buildtype=release \
+      -D gtk=true         \
+      -D qt=true          \
+      -D buildstamp=BLFS  \
+      -D libarchive=true  &amp;&amp;
 ninja</kbd></pre>
           <p>
             This package does not come with a test suite.
@@ -264,19 +264,19 @@ ninja</kbd></pre>
             commands:
           </p>
           <pre class="userinput"><kbd class=
-          "command">tar -xf ../../audacious-plugins-4.4.2.tar.bz2 &amp;&amp;
-cd audacious-plugins-4.4.2                    &amp;&amp;
+          "command">tar -xf ../../audacious-plugins-4.5.tar.bz2 &amp;&amp;
+cd audacious-plugins-4.5                    &amp;&amp;
 
 mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup           \
-  --prefix=/usr       \
-  --buildtype=release \
-  -D gtk=true         \
-  -D qt=true          \
-  ..                  &amp;&amp;
-
+meson setup ..            \
+      --prefix=/usr       \
+      --buildtype=release \
+      -D gtk=true         \
+      -D qt=true          \
+      -D opus=false       \
+      -D wavepack=false   &amp;&amp;
 ninja</kbd></pre>
           <p>
             Now, as the <code class="systemitem">root</code> user:
@@ -402,7 +402,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1043">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1047">
           Home</a>
         </li>
       </ul>
