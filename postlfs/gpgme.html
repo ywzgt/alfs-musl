@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1053">
+  <body class="blfs" id="blfs-r12.3-1060">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1053
+        "phrase">(systemd</span> Edition) - Version r12.3-1060
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1053">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1060">
           Home</a>
         </li>
       </ul>
@@ -121,7 +121,9 @@
         </h4>
         <p class="optional">
           <a class="xref" href="../general/doxygen.html" title=
-          "Doxygen-1.14.0">Doxygen-1.14.0</a>
+          "Doxygen-1.14.0">Doxygen-1.14.0</a> and <a class="xref" href=
+          "gnupg.html" title="GnuPG-2.4.8">GnuPG-2.4.8</a> (for building the
+          tests)
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -135,16 +137,35 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-../configure --prefix=/usr --disable-static &amp;&amp;
+../configure --prefix=/usr       \
+             --disable-gpg-test  \
+             --disable-static    &amp;&amp;
 make</kbd></pre>
         <p>
-          To test the results, run:
+          To test the results, you should have <a class="xref" href=
+          "gnupg.html" title="GnuPG-2.4.8">GnuPG-2.4.8</a> installed and
+          remove the <code class="option">--disable-gpg-test</code> above. If
+          so, run:
         </p>
         <pre class="userinput"><kbd class="command">make -k check</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">make install</kbd></pre>
+      </div>
+      <div class="commands" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Command Explanations
+        </h2>
+        <p>
+          <em class="parameter"><code>--disable-static</code></em>: This
+          switch prevents installation of static versions of the libraries.
+        </p>
+        <p>
+          <em class="parameter"><code>--disable-gpg-test</code></em>: The
+          build fails if this switch is not passed and <a class="xref" href=
+          "gnupg.html" title="GnuPG-2.4.8">GnuPG-2.4.8</a> is not installed.
+        </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -247,7 +268,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1053">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1060">
           Home</a>
         </li>
       </ul>
