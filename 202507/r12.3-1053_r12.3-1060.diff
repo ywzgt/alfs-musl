@@ -1,0 +1,61 @@
+diff --git a/wget-list b/wget-list
+index 0bfef1687b..c62a8b65c3 100644
+--- a/wget-list
++++ b/wget-list
+@@ -18,7 +18,7 @@ https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.
+ https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.21.3-gcc15_fixes-1.patch
+ https://ftp.gnu.org/gnu/nettle/nettle-3.10.2.tar.gz
+-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_113_1_RTM/src/nss-3.113.1.tar.gz
++https://archive.mozilla.org/pub/security/nss/releases/NSS_3_114_RTM/src/nss-3.114.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.0p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz
+@@ -621,8 +621,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/sendmail-8.18.1-gcc15_fixes-1.
+ https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.33.tar.bz2
+ https://downloads.mariadb.org/interstitial/mariadb-11.4.7/source/mariadb-11.4.7.tar.gz
+ https://ftp.postgresql.org/pub/source/v17.5/postgresql-17.5.tar.bz2
+-https://sqlite.org/2025/sqlite-autoconf-3500200.tar.gz
+-https://sqlite.org/2025/sqlite-doc-3500200.zip
++https://sqlite.org/2025/sqlite-autoconf-3500300.tar.gz
++https://sqlite.org/2025/sqlite-doc-3500300.zip
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.10.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.10-consolidated-1.patch
+ https://nlnetlabs.nl/downloads/unbound/unbound-1.23.1.tar.gz
+@@ -821,7 +821,7 @@ https://download.gnome.org/sources/libwnck/43/libwnck-43.2.tar.xz
+ http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.20/xfce4-dev-tools-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/libxfce4windowing/4.20/libxfce4windowing-4.20.3.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-panel/4.20/xfce4-panel-4.20.4.tar.bz2
+-https://archive.xfce.org/src/xfce/thunar/4.20/thunar-4.20.3.tar.bz2
++https://archive.xfce.org/src/xfce/thunar/4.20/thunar-4.20.4.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar-volman/4.20/thunar-volman-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/tumbler/4.20/tumbler-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-appfinder/4.20/xfce4-appfinder-4.20.0.tar.bz2
+@@ -923,12 +923,12 @@ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
+ https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
+ https://github.com/dyne/frei0r/archive/v2.3.3/frei0r-2.3.3.tar.gz
+ https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
+-https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.3.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.3.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.3.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.26.3.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.26.3.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.26.3.tar.xz
++https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.4.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.4.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.4.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.26.4.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.26.4.tar.xz
++https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.26.4.tar.xz
+ https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+ https://github.com/lfs-book/intel-media-driver/archive/v25.1.4/intel-media-driver-25.1.4.tar.gz
+@@ -946,7 +946,7 @@ https://get.videolan.org/libdvdcss/1.4.3/libdvdcss-1.4.3.tar.bz2
+ https://get.videolan.org/libdvdread/6.1.3/libdvdread-6.1.3.tar.bz2
+ https://get.videolan.org/libdvdnav/6.1.1/libdvdnav-6.1.1.tar.bz2
+ https://downloads.sourceforge.net/libdv/libdv-1.0.0.tar.gz
+-https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.3/gst-plugins-rs-gstreamer-1.26.3.tar.gz
++https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.4/gst-plugins-rs-gstreamer-1.26.4.tar.gz
+ https://downloads.sourceforge.net/mad/libmad-0.15.1b.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libmad-0.15.1b-fixes-1.patch
+ https://libmpeg2.sourceforge.net/files/libmpeg2-0.5.1.tar.gz
