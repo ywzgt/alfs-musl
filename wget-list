@@ -31,7 +31,7 @@ https://www.sudo.ws/dist/sudo-1.9.17p1.tar.gz
 https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.15.tar.xz
 https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz
-https://github.com/libfuse/libfuse/releases/download/fuse-3.17.2/fuse-3.17.2.tar.gz
+https://github.com/libfuse/libfuse/releases/download/fuse-3.17.3/fuse-3.17.3.tar.gz
 https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.patch
 https://sourceware.org/ftp/lvm2/LVM2.2.03.33.tgz
@@ -160,7 +160,7 @@ https://github.com/protocolbuffers/protobuf/releases/download/v31.1/protobuf-31.
 https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
 https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
 https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
-https://archive.mozilla.org/pub/firefox/releases/128.11.0esr/source/firefox-128.11.0esr.source.tar.xz
+https://archive.mozilla.org/pub/firefox/releases/128.13.0esr/source/firefox-128.13.0esr.source.tar.xz
 https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.321.0/SPIRV-Headers-vulkan-sdk-1.4.321.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.321.0/SPIRV-Tools-vulkan-sdk-1.4.321.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v20.1.4/SPIRV-LLVM-Translator-20.1.4.tar.gz
@@ -186,7 +186,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-security_fixes-1.
 https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
 https://github.com/g-truc/glm/archive/1.0.1/glm-1.0.1.tar.gz
 https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
-https://github.com/harfbuzz/harfbuzz/releases/download/11.2.1/harfbuzz-11.2.1.tar.xz
+https://github.com/harfbuzz/harfbuzz/releases/download/11.3.2/harfbuzz-11.3.2.tar.xz
 https://github.com/jasper-software/jasper/archive/version-4.2.5/jasper-version-4.2.5.tar.gz
 https://github.com/mm2/Little-CMS/releases/download/lcms2.17/lcms2-2.17.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/v1.3.0/libavif-1.3.0.tar.gz
@@ -209,7 +209,7 @@ https://releases.pagure.org/newt/newt-0.52.25.tar.gz
 https://github.com/opencv/opencv/archive/4.12.0/opencv-4.12.0.tar.gz
 https://github.com/opencv/opencv_contrib/archive/4.12.0/opencv_contrib-4.12.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/v2.5.3/openjpeg-2.5.3.tar.gz
-https://www.cairographics.org/releases/pixman-0.46.2.tar.gz
+https://www.cairographics.org/releases/pixman-0.46.4.tar.gz
 https://poppler.freedesktop.org/poppler-25.07.0.tar.xz
 https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
 https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
@@ -245,7 +245,7 @@ https://gitlab.com/OldManProgrammer/unix-tree/-/archive/2.2.1/unix-tree-2.2.1.ta
 https://github.com/lurcher/unixODBC/releases/download/2.3.12/unixODBC-2.3.12.tar.gz
 https://github.com/flatpak/xdg-dbus-proxy/releases/download/0.1.6/xdg-dbus-proxy-0.1.6.tar.xz
 https://user-dirs.freedesktop.org/releases/xdg-user-dirs-0.18.tar.gz
-https://github.com/ip7z/7zip/archive/24.09/7zip-24.09.tar.gz
+https://github.com/ip7z/7zip/archive/25.00/7zip-25.00.tar.gz
 https://www.freedesktop.org/software/accountsservice/accountsservice-23.13.9.tar.xz
 https://downloads.sourceforge.net/acpid2/acpid-2.0.34.tar.xz
 https://anduin.linuxfromscratch.org/BLFS/at/at_3.2.5.orig.tar.gz
@@ -660,8 +660,8 @@ https://www.cairographics.org/releases/cairo-1.18.4.tar.xz
 https://www.cairographics.org/releases/cairomm-1.14.5.tar.xz
 https://www.cairographics.org/releases/cairomm-1.18.0.tar.xz
 https://www.freedesktop.org/software/colord/releases/colord-gtk-0.3.1.tar.xz
-https://github.com/fltk/fltk/releases/download/release-1.4.3/fltk-1.4.3-source.tar.gz
-https://github.com/fltk/fltk/releases/download/release-1.4.3/fltk-1.4.3-docs-html.tar.gz
+https://github.com/fltk/fltk/releases/download/release-1.4.4/fltk-1.4.4-source.tar.gz
+https://github.com/fltk/fltk/releases/download/release-1.4.4/fltk-1.4.4-docs-html.tar.gz
 https://downloads.sourceforge.net/freeglut/freeglut-3.6.0.tar.gz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz
 https://downloads.sourceforge.net/glew/glew-2.2.0.tgz
@@ -887,7 +887,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-25.2.3.2-icu76_fix
 https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-25.2.3.2-poppler_fixes-1.patch
 https://download.gnome.org/sources/epiphany/48/epiphany-48.3.tar.xz
 https://download.kde.org/stable/release-service/25.04.0/src/falkon-25.04.0.tar.xz
-https://archive.mozilla.org/pub/firefox/releases/140.0esr/source/firefox-140.0esr.source.tar.xz
+https://archive.mozilla.org/pub/firefox/releases/140.1.0esr/source/firefox-140.1.0esr.source.tar.xz
 https://archive.seamonkey-project.org/releases/2.53.20/source/seamonkey-2.53.20.source.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.20-cxx17-1.patch
 https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
@@ -901,7 +901,7 @@ https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
 https://inkscape.org/gallery/item/56344/inkscape-1.4.2.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.2-poppler_fixes-3.patch
 http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
-https://archive.mozilla.org/pub/thunderbird/releases/140.0.1esr/source/thunderbird-140.0.1esr.source.tar.xz
+https://archive.mozilla.org/pub/thunderbird/releases/140.1.0esr/source/thunderbird-140.1.0esr.source.tar.xz
 https://github.com/TigerVNC/tigervnc/archive/v1.15.0/tigervnc-1.15.0.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.15.0-configuration_fixes-1.patch
 https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz

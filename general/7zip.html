@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      7zip-24.09
+      7zip-25.00
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1060">
+  <body class="blfs" id="blfs-r12.3-1069">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1060
+        "phrase">(systemd</span> Edition) - Version r12.3-1069
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1060">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1069">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="seven-zip" name="seven-zip"></a>7zip-24.09
+      <a id="seven-zip" name="seven-zip"></a>7zip-25.00
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -82,13 +82,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/ip7z/7zip/archive/24.09/7zip-24.09.tar.gz">
-                https://github.com/ip7z/7zip/archive/24.09/7zip-24.09.tar.gz</a>
+                "https://github.com/ip7z/7zip/archive/25.00/7zip-25.00.tar.gz">
+                https://github.com/ip7z/7zip/archive/25.00/7zip-25.00.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 41d0d31a3b0e39a1cbd848c10574fb0b
+                Download MD5 sum: 17bb2208e230fc189865bd9a1aa3075c
               </p>
             </li>
             <li class="listitem">
@@ -98,12 +98,12 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 39 MB
+                Estimated disk space required: 40 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 2.3 SBU (with tests)
+                Estimated build time: 1.4 SBU
               </p>
             </li>
           </ul>
@@ -142,9 +142,6 @@ done</kbd></pre>
                 CPP/7zip/UI/Console/b/g/7z                  \
                 -t /usr/lib/7zip/                              &amp;&amp;
 
-install -vm755 CPP/7zip/Bundles/SFXCon/b/g/7zCon \
-               /usr/lib/7zip/7zCon.sfx           &amp;&amp;
-
 (for i in 7z 7za 7zr; do
     cat &gt; /usr/bin/$i &lt;&lt; EOF || exit
 <code class="literal">#!/bin/sh
@@ -153,7 +150,7 @@ EOF
     chmod 755 /usr/bin/$i || exit
 done) &amp;&amp;
 
-cp -rv DOC -T /usr/share/doc/7zip-24.09</kbd></pre>
+cp -rv DOC -T /usr/share/doc/7zip-25.00</kbd></pre>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -172,7 +169,7 @@ cp -rv DOC -T /usr/share/doc/7zip-24.09</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directory:</strong>
               <span class="segbody">/usr/lib/7zip and
-              /usr/share/doc/7zip-24.09</span>
+              /usr/share/doc/7zip-25.00</span>
             </div>
           </div>
         </div>
@@ -258,7 +255,7 @@ cp -rv DOC -T /usr/share/doc/7zip-24.09</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1060">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1069">
           Home</a>
         </li>
       </ul>
