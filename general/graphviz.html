@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1071">
+  <body class="blfs" id="blfs-r12.3-1077">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1071
+        "phrase">(systemd</span> Edition) - Version r12.3-1077
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1071">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1077">
           Home</a>
         </li>
       </ul>
@@ -135,6 +135,13 @@
             you have built enough packages to suit your needs.
           </p>
         </div>
+        <h4>
+          Required
+        </h4>
+        <p class="required">
+          <a class="xref" href="cmake.html" title=
+          "CMake-4.0.3">CMake-4.0.3</a>
+        </p>
         <h4>
           Recommended, for needed bitmap outputs
         </h4>
@@ -258,9 +265,10 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -D CMAKE_INSTALL_PREFIX=/usr \
-      -D CMAKE_BUILD_TYPE=Release  \
-      ..                           &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr   \
+      -D CMAKE_BUILD_TYPE=Release    \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON \
+      ..                             &amp;&amp;
 
 sed -i '/GZIP/s/:.*$/=/' CMakeCache.txt &amp;&amp;
 
@@ -278,6 +286,15 @@ make</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <em class="parameter"><code>-D
+          CMAKE_SKIP_INSTALL_RPATH=ON</code></em>: This switch makes
+          <span class="command"><strong>cmake</strong></span> remove
+          hardcoded library search paths (rpath) when installing a binary
+          executable file or a shared library. This package does not need
+          rpath once it's installed into the standard location, and rpath may
+          sometimes cause unwanted effects or even security issues.
+        </p>
         <p>
           <span class="command"><strong>sed ...
           CMakeCache.txt</strong></span>: This command is needed to prevent
@@ -1065,7 +1082,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1071">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1077">
           Home</a>
         </li>
       </ul>

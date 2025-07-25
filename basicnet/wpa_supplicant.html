@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1071">
+  <body class="blfs" id="blfs-r12.3-1077">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1071
+        "phrase">(systemd</span> Edition) - Version r12.3-1077
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1071">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1077">
           Home</a>
         </li>
       </ul>
@@ -192,7 +192,7 @@ EOF</kbd></pre>
         <p>
           If you wish to use <span class="application">WPA Supplicant</span>
           with <a class="xref" href="networkmanager.html" title=
-          "NetworkManager-1.52.1">NetworkManager-1.52.1</a>, then add the
+          "NetworkManager-1.52.1">NetworkManager-1.52.1</a>, add the
           following options to the <span class="application">WPA
           Supplicant</span> build configuration file by running the following
           command:
@@ -297,8 +297,12 @@ install -v -m644 dbus/dbus-wpa_supplicant.conf \
           </p>
           <pre class="userinput"><kbd class=
           "command">install -v -dm755 /etc/wpa_supplicant &amp;&amp;
-wpa_passphrase <em class="replaceable"><code>SSID</code></em> <em class=
-"replaceable"><code>SECRET_PASSWORD</code></em> &gt; /etc/wpa_supplicant/wpa_supplicant-<em class="replaceable"><code>wifi0</code></em>.conf</kbd></pre>
+wpa_passphrase <em class=
+"replaceable"><code>SSID</code></em> | sed '/^\t#/d' &gt; /etc/wpa_supplicant/wpa_supplicant-<em class="replaceable"><code>wifi0</code></em>.conf</kbd></pre>
+          <p>
+            The <span class="command"><strong>wpa_supplicant</strong></span>
+            command will ask you to input the password of the access point.
+          </p>
           <p>
             <span class="phrase"><code class=
             "filename">/etc/wpa_supplicant/wpa_supplicant-<em class=
@@ -512,7 +516,7 @@ update_config=1</pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1071">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1077">
           Home</a>
         </li>
       </ul>
