@@ -1,0 +1,13 @@
+diff --git a/wget-list b/wget-list
+index 21fe005ce6..72b4da15bc 100644
+--- a/wget-list
++++ b/wget-list
+@@ -48,7 +48,7 @@ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
+ https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz
+ https://unifoundry.com/pub/unifont/unifont-16.0.01/font-builds/unifont-16.0.01.pcf.gz
+ https://www.bennewitz.com/bluefish/stable/source/bluefish-2.2.17.tar.bz2
+-https://ftp.gnu.org/gnu/ed/ed-1.21.1.tar.lz
++https://ftp.gnu.org/gnu/ed/ed-1.22.tar.lz
+ https://ftp.gnu.org/gnu/emacs/emacs-30.1.tar.xz
+ https://download.gnome.org/sources/gedit/48/gedit-48.1.tar.xz
+ https://gitlab.gnome.org/World/gedit/libgedit-amtk/-/archive/5.9.1/libgedit-amtk-5.9.1.tar.bz2
