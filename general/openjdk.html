@@ -5,27 +5,27 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      OpenJDK-24.0.1
+      OpenJDK-24.0.2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1101">
+  <body class="blfs" id="blfs-r12.3-1108">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1101
+        "phrase">(systemd</span> Edition) - Version r12.3-1108
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="java.html" title="Java-24.0.1">Prev</a>
+          <a accesskey="p" href="java.html" title="Java-24.0.2">Prev</a>
           <p>
-            Java-24.0.1
+            Java-24.0.2
           </p>
         </li>
         <li class="next">
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1101">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1108">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="openjdk" name="openjdk"></a>OpenJDK-24.0.1
+      <a id="openjdk" name="openjdk"></a>OpenJDK-24.0.2
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -106,7 +106,7 @@
             basis, to a closed toolkit to ensure 100% compatibility with its
             proprietary JDK. Neither the binary version provided on the
             <a class="xref" href="java.html" title=
-            "Java-24.0.1">Java-24.0.1</a> page nor the JVM built with the
+            "Java-24.0.2">Java-24.0.2</a> page nor the JVM built with the
             instructions below have been tested against the <a class="ulink"
             href=
             "https://openjdk.java.net/groups/conformance/JckAccess/jck-access.html">
@@ -132,13 +132,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/openjdk/jdk24u/archive/jdk-24.0.1-ga.tar.gz">
-                https://github.com/openjdk/jdk24u/archive/jdk-24.0.1-ga.tar.gz</a>
+                "https://github.com/openjdk/jdk24u/archive/jdk-24.0.2-ga.tar.gz">
+                https://github.com/openjdk/jdk24u/archive/jdk-24.0.2-ga.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 69a690032d2a50c746363d4e4fac15fd
+                Download MD5 sum: 160e4f0de98c13fddba4f1dc0bad3615
               </p>
             </li>
             <li class="listitem">
@@ -153,7 +153,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 3.5 SBU with 4 jobs (add 32 SBU for
+                Estimated build time: 4.3 SBU with 4 jobs (add 35 SBU for
                 tests with 4 jobs)
               </p>
             </li>
@@ -170,8 +170,8 @@
             <li class="listitem">
               <p>
                 <a class="ulink" href=
-                "https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-24.0.1/jtreg-7.5.1+1.tar.gz">
-                https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-24.0.1/jtreg-7.5.1+1.tar.gz</a>
+                "https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-24.0.2/jtreg-7.5.1+1.tar.gz">
+                https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-24.0.2/jtreg-7.5.1+1.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
@@ -194,7 +194,7 @@
         </h4>
         <p class="required">
           An existing binary (<a class="xref" href="java.html" title=
-          "Java-24.0.1">Java-24.0.1</a> or an earlier built version of this
+          "Java-24.0.2">Java-24.0.2</a> or an earlier built version of this
           package. The instructions below assume that you are using <a class=
           "xref" href="ojdk-conf.html" title=
           "Configuring the Java environment">Configuring the Java
@@ -291,7 +291,7 @@ bash configure --enable-unlimited-crypto    \
                --with-libjpeg=system        \
                --with-libpng=system         \
                --with-zlib=system           \
-               --with-version-build="9"     \
+               --with-version-build="12"     \
                --with-version-pre=""        \
                --with-version-opt=""        \
                --with-jobs=<em class=
@@ -325,9 +325,9 @@ unset JT_JAVA</kbd></pre>
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">install -vdm755 /opt/jdk-24.0.1+9             &amp;&amp;
-cp -Rv build/*/images/jdk/* /opt/jdk-24.0.1+9 &amp;&amp;
-chown -R root:root /opt/jdk-24.0.1+9          &amp;&amp;
+        "command">install -vdm755 /opt/jdk-24.0.2+12             &amp;&amp;
+cp -Rv build/*/images/jdk/* /opt/jdk-24.0.2+12 &amp;&amp;
+chown -R root:root /opt/jdk-24.0.2+12          &amp;&amp;
 for s in 16 24 32 48; do
   install -vDm644 src/java.desktop/unix/classes/sun/awt/X11/java-icon${s}.png \
                   /usr/share/icons/hicolor/${s}x${s}/apps/java.png
@@ -350,7 +350,7 @@ done</kbd></pre>
           can remove the info:
         </p>
         <pre class="userinput"><kbd class=
-        "command">find /opt/jdk-24.0.1+9 -name *.debuginfo -delete</kbd></pre>
+        "command">find /opt/jdk-24.0.2+12 -name *.debuginfo -delete</kbd></pre>
         <p>
           Restore the <code class="envar">MAKEFLAGS</code> variable:
         </p>
@@ -366,7 +366,7 @@ unset  MAKEFLAGS_HOLD</kbd></pre>
           <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">ln -v -nsf jdk-24.0.1+9 /opt/jdk</kbd></pre>
+        "command">ln -v -nsf jdk-24.0.2+12 /opt/jdk</kbd></pre>
         <p>
           If desired, you can create .desktop files to add entries in the
           menu for <span class="command"><strong>java</strong></span> and
@@ -379,8 +379,8 @@ unset  MAKEFLAGS_HOLD</kbd></pre>
 
 cat &gt; /usr/share/applications/openjdk-java.desktop &lt;&lt; "EOF" &amp;&amp;
 <code class="literal">[Desktop Entry]
-Name=OpenJDK Java 24.0.1 Runtime
-Comment=OpenJDK Java 24.0.1 Runtime
+Name=OpenJDK Java 24.0.2 Runtime
+Comment=OpenJDK Java 24.0.2 Runtime
 Exec=/opt/jdk/bin/java -jar
 Terminal=false
 Type=Application
@@ -390,8 +390,8 @@ NoDisplay=true</code>
 EOF
 cat &gt; /usr/share/applications/openjdk-jconsole.desktop &lt;&lt; "EOF"
 <code class="literal">[Desktop Entry]
-Name=OpenJDK Java 24.0.1 Console
-Comment=OpenJDK Java 24.0.1 Console
+Name=OpenJDK Java 24.0.2 Console
+Comment=OpenJDK Java 24.0.2 Console
 Keywords=java;console;monitoring
 Exec=/opt/jdk/bin/jconsole
 Terminal=false
@@ -554,11 +554,11 @@ bin/keytool -list -cacerts</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
               <span class="segbody">37 libraries in
-              /opt/jdk-24.0.1+9/lib/</span>
+              /opt/jdk-24.0.2+12/lib/</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directory:</strong>
-              <span class="segbody">/opt/jdk-24.0.1+9</span>
+              <span class="segbody">/opt/jdk-24.0.2+12</span>
             </div>
           </div>
         </div>
@@ -1025,9 +1025,9 @@ bin/keytool -list -cacerts</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="java.html" title="Java-24.0.1">Prev</a>
+          <a accesskey="p" href="java.html" title="Java-24.0.2">Prev</a>
           <p>
-            Java-24.0.1
+            Java-24.0.2
           </p>
         </li>
         <li class="next">
@@ -1043,7 +1043,7 @@ bin/keytool -list -cacerts</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1101">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1108">
           Home</a>
         </li>
       </ul>

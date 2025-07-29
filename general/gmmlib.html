@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      gmmlib-22.7.1
+      gmmlib-22.8.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1101">
+  <body class="blfs" id="blfs-r12.3-1108">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1101
+        "phrase">(systemd</span> Edition) - Version r12.3-1108
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1101">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1108">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="gmmlib" name="gmmlib"></a>gmmlib-22.7.1
+      <a id="gmmlib" name="gmmlib"></a>gmmlib-22.8.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -79,13 +79,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/lfs-book/gmmlib/archive/v22.7.1/gmmlib-22.7.1.tar.gz">
-                https://github.com/lfs-book/gmmlib/archive/v22.7.1/gmmlib-22.7.1.tar.gz</a>
+                "https://github.com/lfs-book/gmmlib/archive/v22.8.1/gmmlib-22.8.1.tar.gz">
+                https://github.com/lfs-book/gmmlib/archive/v22.8.1/gmmlib-22.8.1.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: b6283546c084e830ccb57d873ef57fbe
+                Download MD5 sum: 23869643d5e37c73854bd76964a124d8
               </p>
             </li>
             <li class="listitem">
@@ -95,7 +95,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 57 MB
+                Estimated disk space required: 58 MB
               </p>
             </li>
             <li class="listitem">
@@ -144,11 +144,10 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -D CMAKE_INSTALL_PREFIX=/usr        \
-      -D CMAKE_POLICY_VERSION_MINIMUM=3.5 \
-      -D BUILD_TYPE=Release               \
-      -G Ninja                            \
-      -W no-dev ..                        &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D BUILD_TYPE=Release        \
+      -G Ninja                     \
+      -W no-dev ..                 &amp;&amp;
 ninja</kbd></pre>
         <p>
           The test suite is normally run by <span class=
@@ -229,7 +228,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1101">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1108">
           Home</a>
         </li>
       </ul>

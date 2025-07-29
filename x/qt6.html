@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1101">
+  <body class="blfs" id="blfs-r12.3-1108">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1101
+        "phrase">(systemd</span> Edition) - Version r12.3-1108
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1101">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1108">
           Home</a>
         </li>
       </ul>
@@ -104,6 +104,20 @@
             <li class="listitem">
               <p>
                 Estimated build time: 14 SBU (using parallelism=8)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.9.1-upstream_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.9.1-upstream_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -308,6 +322,12 @@ ln -sfnv qt-6.9.1 /opt/qt6</kbd></pre>
             version.
           </p>
         </div>
+        <p>
+          Fix some crashes that occur in KDE Plasma and a security
+          vulnerability:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../qt-everywhere-src-6.9.1-upstream_fixes-1.patch</kbd></pre>
         <p>
           Disable a conflicting declaration on i686 systems and fix a build
           error due to SIMD intrinsics in QtMultimedia:
@@ -1121,7 +1141,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1101">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1108">
           Home</a>
         </li>
       </ul>
