@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1138">
+  <body class="blfs" id="blfs-r12.3-1159">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1138
+        "phrase">(systemd</span> Edition) - Version r12.3-1159
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1138">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1159">
           Home</a>
         </li>
       </ul>
@@ -185,9 +185,6 @@ sed -e '/HTTPD_ROOT/s:${ap_prefix}:/etc/httpd:'       \
     -e '/AP_TYPES_CONFIG_FILE/s:${rel_sysconfdir}/::' \
     -i configure  &amp;&amp;
 
-sed -e '/encoding.h/a # include &lt;libxml/xmlstring.h&gt;' \
-    -i modules/filters/mod_xml2enc.c  &amp;&amp;
-
 ./configure --enable-authnz-fcgi                    \
             --enable-layout=BLFS                    \
             --enable-mods-shared="all cgi"          \
@@ -229,10 +226,6 @@ chown -v -R apache:apache /srv/www</kbd></pre>
         <p>
           <span class="command"><strong>sed -e '/HTTPD_ROOT/s
           ...</strong></span>: Fixes some paths.
-        </p>
-        <p>
-          <span class="command"><strong>sed -e '/encoding.h/a
-          ...</strong></span>; Fix building against libxml-2.12.x.
         </p>
         <p>
           <em class="parameter"><code>--enable-authnz-fcgi</code></em>: Build
@@ -630,7 +623,7 @@ chown -v -R apache:apache /srv/www</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1138">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1159">
           Home</a>
         </li>
       </ul>
