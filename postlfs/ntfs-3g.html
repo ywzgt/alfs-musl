@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1159">
+  <body class="blfs" id="blfs-r12.3-1172">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1159
+        "phrase">(systemd</span> Edition) - Version r12.3-1172
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1159">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1172">
           Home</a>
         </li>
       </ul>
@@ -70,17 +70,11 @@
           <pre class="screen"><span class="blue">F</span>ile systems ---&gt;
   <span class="blue">D</span>OS/FAT/EXFAT/NT Filesystems ---&gt;
     &lt;*/M&gt; N<span class=
-"blue">T</span>FS Read-Write file system support                         [NTFS3_FS]</pre>
-          <p>
-            To ensure the <span class="command"><strong>mount</strong></span>
-            command uses NTFS3 for ntfs partitions, create a wrapper script:
-          </p>
-          <pre class="userinput"><kbd class=
-          "command">cat &gt; /usr/sbin/mount.ntfs &lt;&lt; "EOF" &amp;&amp;
-<code class="literal">#!/bin/sh
-exec mount -t ntfs3 "$@"</code>
-EOF
-chmod -v 755 /usr/sbin/mount.ntfs</kbd></pre>
+"blue">T</span>FS Read-Write file system support                         [NTFS3_FS]
+    # This makes the kernel use NTFS3 when the userspace requests the old
+    # read-only NTFS driver:
+    &lt;*/M&gt; N<span class=
+"blue">T</span>FS file system support                                     [NTFS_FS]</pre>
           <p>
             With the kernel support available, ntfs-3g is only needed if you
             need the utilities from it (for example, to create NTFS
@@ -605,7 +599,7 @@ ln -svf ntfs-3g.8 /usr/share/man/man8/mount.ntfs.8</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1159">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1172">
           Home</a>
         </li>
       </ul>

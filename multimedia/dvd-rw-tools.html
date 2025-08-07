@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1159">
+  <body class="blfs" id="blfs-r12.3-1172">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1159
+        "phrase">(systemd</span> Edition) - Version r12.3-1172
       </h4>
       <h3>
         Chapter&nbsp;45.&nbsp;CD/DVD-Writing Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1159">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1172">
           Home</a>
         </li>
       </ul>
@@ -111,6 +111,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/dvd+rw-tools-7.1-consolidated_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/dvd+rw-tools-7.1-consolidated_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           dvd+rw-tools Dependencies
         </h3>
         <h4>
@@ -126,13 +140,17 @@
           Installation of dvd+rw-tools
         </h2>
         <p>
+          First, apply a patch that fixes several bugs and fixes compiling
+          with newer versions of glibc and the kernel headers:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../dvd+rw-tools-7.1-consolidated_fixes-1.patch</kbd></pre>
+        <p>
           Install <span class="application">dvd+rw-tools</span> by running
           the following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -i '/stat.h/a #include &lt;sys/sysmacros.h&gt;' growisofs.c &amp;&amp;
-sed -i '/stdlib/a #include &lt;limits.h&gt;' transport.hxx &amp;&amp;
-make all rpl8 btcflash</kbd></pre>
+        "command">make all rpl8 btcflash</kbd></pre>
         <p>
           This package does not come with a test suite.
         </p>
@@ -148,12 +166,6 @@ install -v -m644 -D index.html \
         <h2 class="sect2">
           Command Explanations
         </h2>
-        <p>
-          <span class="command"><strong>sed -i '/stdlib/a #include
-          &lt;limits.h&gt;' ...</strong></span>: This sed includes
-          <code class="filename">limits.h</code>, one of the kernel headers.
-          This is needed due to a change in the 2.6.23 kernel headers.
-        </p>
         <p>
           <span class="command"><strong>make all rpl8
           btcflash</strong></span>: This command uses additional targets so
@@ -233,7 +245,7 @@ install -v -m644 -D index.html \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1159">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1172">
           Home</a>
         </li>
       </ul>

@@ -265,7 +265,7 @@ https://github.com/vcrhonek/hwdata/archive/v0.398/hwdata-0.398.tar.gz
 https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
 https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
 http://ftp.midnight-commander.org/mc-4.8.33.tar.xz
-https://gitlab.freedesktop.org/mobile-broadband/ModemManager/-/archive/1.24.0/ModemManager-1.24.0.tar.gz
+https://gitlab.freedesktop.org/mobile-broadband/ModemManager/-/archive/1.24.2/ModemManager-1.24.2.tar.gz
 https://download.gnome.org/sources/notification-daemon/3.20/notification-daemon-3.20.0.tar.xz
 http://www.mirbsd.org/MirOS/dist/mir/cpio/paxmirabilis-20240817.tgz
 https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
@@ -699,7 +699,7 @@ https://download.qt.io/official_releases/qt/6.9/6.9.1/submodules/qtwebengine-eve
 https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
 https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.321/Vulkan-Headers-1.4.321.tar.gz
 https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.321/Vulkan-Loader-1.4.321.tar.gz
-https://webkitgtk.org/releases/webkitgtk-2.48.3.tar.xz
+https://webkitgtk.org/releases/webkitgtk-2.48.5.tar.xz
 https://github.com/flatpak/xdg-desktop-portal/releases/download/1.20.3/xdg-desktop-portal-1.20.3.tar.xz
 https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
 https://download.gnome.org/sources/gdm/48/gdm-48.0.tar.xz
@@ -758,7 +758,7 @@ https://download.gnome.org/sources/gjs/1.84/gjs-1.84.2.tar.xz
 https://download.gnome.org/sources/gnome-autoar/0.4/gnome-autoar-0.4.5.tar.xz
 https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.3.tar.xz
 https://download.gnome.org/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
-https://download.gnome.org/sources/gnome-online-accounts/3.54/gnome-online-accounts-3.54.4.tar.xz
+https://download.gnome.org/sources/gnome-online-accounts/3.54/gnome-online-accounts-3.54.5.tar.xz
 https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz
 https://download.gnome.org/sources/libgtop/2.41/libgtop-2.41.3.tar.xz
 https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.4.tar.xz
@@ -782,9 +782,9 @@ https://www.linuxfromscratch.org/patches/blfs/svn/gnome-bluetooth-47.1-build_fix
 https://download.gnome.org/sources/gnome-keyring/48/gnome-keyring-48.0.tar.xz
 https://download.gnome.org/sources/gnome-settings-daemon/48/gnome-settings-daemon-48.1.tar.xz
 https://download.gnome.org/sources/tecla/48/tecla-48.0.2.tar.xz
-https://download.gnome.org/sources/gnome-control-center/48/gnome-control-center-48.3.tar.xz
+https://download.gnome.org/sources/gnome-control-center/48/gnome-control-center-48.4.tar.xz
 https://download.gnome.org/sources/mutter/48/mutter-48.4.tar.xz
-https://download.gnome.org/sources/gnome-shell/48/gnome-shell-48.3.tar.xz
+https://download.gnome.org/sources/gnome-shell/48/gnome-shell-48.4.tar.xz
 https://download.gnome.org/sources/gnome-shell-extensions/48/gnome-shell-extensions-48.3.tar.xz
 https://download.gnome.org/sources/gnome-session/48/gnome-session-48.0.tar.xz
 https://download.gnome.org/sources/gnome-tweaks/46/gnome-tweaks-46.1.tar.xz
@@ -802,7 +802,7 @@ https://download.gnome.org/sources/gnome-color-manager/3.36/gnome-color-manager-
 https://download.gnome.org/sources/gnome-connections/48/gnome-connections-48.0.tar.xz
 https://download.gnome.org/sources/gnome-disk-utility/46/gnome-disk-utility-46.1.tar.xz
 https://download.gnome.org/sources/gnome-logs/45/gnome-logs-45.0.tar.xz
-https://download.gnome.org/sources/gnome-maps/48/gnome-maps-48.5.tar.xz
+https://download.gnome.org/sources/gnome-maps/48/gnome-maps-48.6.tar.xz
 https://download.gnome.org/sources/gnome-nettool/42/gnome-nettool-42.0.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/gnome-nettool-42.0-ping_and_netstat_fixes-1.patch
 https://download.gnome.org/sources/gnome-power-manager/43/gnome-power-manager-43.0.tar.xz
@@ -881,13 +881,12 @@ https://github.com/lxqt/qtermwidget/releases/download/2.2.0/qtermwidget-2.2.0.ta
 https://github.com/lxqt/qterminal/releases/download/2.2.1/qterminal-2.2.1.tar.xz
 https://github.com/lxqt/screengrab/releases/download/3.0.0/screengrab-3.0.0.tar.xz
 https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.59.tar.xz
-https://download.documentfoundation.org/libreoffice/src/25.2.3/libreoffice-25.2.3.2.tar.xz
-https://download.documentfoundation.org/libreoffice/src/25.2.3/libreoffice-dictionaries-25.2.3.2.tar.xz
-https://download.documentfoundation.org/libreoffice/src/25.2.3/libreoffice-help-25.2.3.2.tar.xz
-https://download.documentfoundation.org/libreoffice/src/25.2.3/libreoffice-translations-25.2.3.2.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-25.2.3.2-icu76_fixes-1.patch
-https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-25.2.3.2-poppler_fixes-1.patch
-https://download.gnome.org/sources/epiphany/48/epiphany-48.3.tar.xz
+https://download.documentfoundation.org/libreoffice/src/25.2.5/libreoffice-25.2.5.2.tar.xz
+https://download.documentfoundation.org/libreoffice/src/25.2.5/libreoffice-dictionaries-25.2.5.2.tar.xz
+https://download.documentfoundation.org/libreoffice/src/25.2.5/libreoffice-help-25.2.5.2.tar.xz
+https://download.documentfoundation.org/libreoffice/src/25.2.5/libreoffice-translations-25.2.5.2.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-25.2.5.2-icu76_fixes-1.patch
+https://download.gnome.org/sources/epiphany/48/epiphany-48.5.tar.xz
 https://download.kde.org/stable/release-service/25.04.0/src/falkon-25.04.0.tar.xz
 https://archive.mozilla.org/pub/firefox/releases/140.1.0esr/source/firefox-140.1.0esr.source.tar.xz
 https://archive.seamonkey-project.org/releases/2.53.20/source/seamonkey-2.53.20.source.tar.xz
@@ -988,7 +987,7 @@ https://downloads.xiph.org/releases/cdparanoia/cdparanoia-III-10.2.src.tgz
 https://www.linuxfromscratch.org/patches/blfs/svn/cdparanoia-III-10.2-gcc_fixes-1.patch
 https://download.kde.org/stable/release-service/25.04.0/src/kwave-25.04.0.tar.xz
 https://downloads.sourceforge.net/lame/lame-3.100.tar.gz
-https://downloads.sourceforge.net/mpg123/mpg123-1.33.1.tar.bz2
+https://downloads.sourceforge.net/mpg123/mpg123-1.33.2.tar.bz2
 https://www.freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-6.1.tar.xz
 https://github.com/nicklan/pnmixer/releases/download/v0.7.2/pnmixer-v0.7.2.tar.gz
 https://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.3.tar.gz
@@ -1002,6 +1001,7 @@ https://downloads.sourceforge.net/xine/xine-ui-0.99.14.tar.xz
 https://downloads.sourceforge.net/cdrdao/cdrdao-1.2.4.tar.bz2
 https://downloads.sourceforge.net/cdrtools/cdrtools-3.02a09.tar.bz2
 https://anduin.linuxfromscratch.org/BLFS/dvd+rw-tools/dvd+rw-tools-7.1.tar.gz
+https://www.linuxfromscratch.org/patches/blfs/svn/dvd+rw-tools-7.1-consolidated_fixes-1.patch
 https://files.libburnia-project.org/releases/libburn-1.5.6.tar.gz
 https://files.libburnia-project.org/releases/libisoburn-1.5.6.tar.gz
 https://files.libburnia-project.org/releases/libisofs-1.5.6.tar.gz
