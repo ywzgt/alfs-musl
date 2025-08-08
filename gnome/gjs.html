@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1172">
+  <body class="blfs" id="blfs-r12.3-1179">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1172
+        "phrase">(systemd</span> Edition) - Version r12.3-1179
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1172">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1179">
           Home</a>
         </li>
       </ul>
@@ -106,6 +106,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/gjs-1.84.2-spidermonkey_140-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/gjs-1.84.2-spidermonkey_140-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Gjs Dependencies
         </h3>
         <h4>
@@ -118,8 +132,8 @@
           <a class="xref" href="../general/glib2.html" title=
           "GLib-2.84.3">GLib-2.84.3</a> (with GObject Introspection), and
           <a class="xref" href="../general/spidermonkey.html" title=
-          "SpiderMonkey from firefox-128.13.0">SpiderMonkey from
-          Firefox-128.13.0</a>
+          "SpiderMonkey from firefox-140.1.0">SpiderMonkey from
+          Firefox-140.1.0</a>
         </p>
         <h4>
           Recommended (required for GNOME)
@@ -146,6 +160,11 @@
         <h2 class="sect2">
           Installation of Gjs
         </h2>
+        <p>
+          Apply a patch to allow building this package with SpiderMonkey 140:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../gjs-1.84.2-spidermonkey_140-1.patch</kbd></pre>
         <p>
           Install <span class="application">Gjs</span> by running the
           following commands:
@@ -279,7 +298,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1172">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1179">
           Home</a>
         </li>
       </ul>

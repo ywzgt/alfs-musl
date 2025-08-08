@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Seamonkey-2.53.20
+      Seamonkey-2.53.21
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1172">
+  <body class="blfs" id="blfs-r12.3-1179">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1172
+        "phrase">(systemd</span> Edition) - Version r12.3-1179
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1172">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1179">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="seamonkey" name="seamonkey"></a>Seamonkey-2.53.20
+      <a id="seamonkey" name="seamonkey"></a>Seamonkey-2.53.21
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -68,7 +68,7 @@
           <a class="xref" href="firefox.html" title=
           "Firefox-140.1.0esr">Firefox-140.1.0</a> and <a class="xref" href=
           "thunderbird.html" title=
-          "Thunderbird-140.1.0esr">Thunderbird-140.1.0esr</a>.
+          "Thunderbird-140.1.1esr">Thunderbird-140.1.1esr</a>.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -89,13 +89,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://archive.seamonkey-project.org/releases/2.53.20/source/seamonkey-2.53.20.source.tar.xz">
-                https://archive.seamonkey-project.org/releases/2.53.20/source/seamonkey-2.53.20.source.tar.xz</a>
+                "https://archive.seamonkey-project.org/releases/2.53.21/source/seamonkey-2.53.21.source.tar.xz">
+                https://archive.seamonkey-project.org/releases/2.53.21/source/seamonkey-2.53.21.source.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 1b506ff751f39b2480ba4e16afb86d6d
+                Download MD5 sum: 388a3a89245c3c3aa0e2303fba7ed253
               </p>
             </li>
             <li class="listitem">
@@ -105,12 +105,12 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 4.4 GB (150 MB installed)
+                Estimated disk space required: 3 GB (138 MB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 6.8 SBU (with parallelism=8)
+                Estimated build time: 6 SBU (with parallelism=8)
               </p>
             </li>
           </ul>
@@ -124,8 +124,8 @@
               <p>
                 Recommended patch (required for building with system ICU-75
                 or newer): <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.20-cxx17-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.20-cxx17-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.21-cxx17-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.21-cxx17-1.patch</a>
               </p>
             </li>
           </ul>
@@ -137,8 +137,8 @@
           </h3>
           <p>
             The tarball <span class=
-            "emphasis"><em>seamonkey-2.53.20.source.tar.xz</em></span> will
-            untar to <span class="emphasis"><em>seamonkey-2.53.20</em></span>
+            "emphasis"><em>seamonkey-2.53.21.source.tar.xz</em></span> will
+            untar to <span class="emphasis"><em>seamonkey-2.53.21</em></span>
             directory.
           </p>
         </div>
@@ -334,7 +334,7 @@ EOF</kbd></pre>
    sed '/ZWJ/s/$/,CLASS_CHARACTER/' -i intl/lwbrk/LineBreaker.cpp || exit $?
 done) &amp;&amp;
 
-patch -Np1 -i ../seamonkey-2.53.20-cxx17-1.patch &amp;&amp;
+patch -Np1 -i ../seamonkey-2.53.21-cxx17-1.patch &amp;&amp;
 
 sed -i 's/icu-i18n/icu-uc &amp;/' js/moz.configure</kbd></pre>
         <p>
@@ -560,7 +560,7 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1172">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1179">
           Home</a>
         </li>
       </ul>

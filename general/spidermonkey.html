@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      SpiderMonkey from firefox-128.13.0
+      SpiderMonkey from firefox-140.1.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1172">
+  <body class="blfs" id="blfs-r12.3-1179">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1172
+        "phrase">(systemd</span> Edition) - Version r12.3-1179
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,14 +41,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1172">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1179">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="spidermonkey" name="spidermonkey"></a>SpiderMonkey from
-      firefox-128.13.0
+      firefox-140.1.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -79,18 +79,18 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://archive.mozilla.org/pub/firefox/releases/128.13.0esr/source/firefox-128.13.0esr.source.tar.xz">
-                https://archive.mozilla.org/pub/firefox/releases/128.13.0esr/source/firefox-128.13.0esr.source.tar.xz</a>
+                "https://archive.mozilla.org/pub/firefox/releases/140.1.0esr/source/firefox-140.1.0esr.source.tar.xz">
+                https://archive.mozilla.org/pub/firefox/releases/140.1.0esr/source/firefox-140.1.0esr.source.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: d8d9076132588e326ffea4ea11b7ec40
+                Download MD5 sum: 20522833dabb50dce12504fe2c03d818
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 535 MB
+                Download size: 610 MB
               </p>
             </li>
             <li class="listitem">
@@ -154,8 +154,8 @@
           <p>
             Unlike most other packages in BLFS, the instructions below
             require you to untar <code class=
-            "filename">firefox-128.13.0esr.tar.xz</code> and change into the
-            <code class="filename">firefox-128.13.0</code> directory.
+            "filename">firefox-140.1.0esr.tar.xz</code> and change into the
+            <code class="filename">firefox-140.1.0</code> directory.
           </p>
           <p>
             Extracting the tarball will reset the permissions of the current
@@ -180,12 +180,6 @@
             directory where the sticky bit is set - that will unset it.
           </p>
         </div>
-        <p>
-          If you are using ICU-76.1 or later, adapt the build system to use
-          the correct library:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -i 's/icu-i18n/icu-uc &amp;/' js/moz.configure</kbd></pre>
         <p>
           Install <span class="application">SpiderMonkey</span> by running
           the following commands:
@@ -276,19 +270,26 @@ make</kbd></pre>
             An issue in the installation process causes any running program
             which links to SpiderMonkey shared library (for example, GNOME
             Shell) to crash if SpiderMonkey is reinstalled, or upgraded or
-            downgraded without a change of the major version number (128 in
-            128.13.0). To work around this issue, remove the old version of
+            downgraded without a change of the major version number (140 in
+            140.1.0). To work around this issue, remove the old version of
             the SpiderMonkey shared library before installation:
           </p>
           <pre class="root"><kbd class=
-          "command">rm -fv /usr/lib/libmozjs-128.so</kbd></pre>
+          "command">rm -fv /usr/lib/libmozjs-140.so</kbd></pre>
         </div>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">make install &amp;&amp;
 rm -v /usr/lib/libjs_static.ajs &amp;&amp;
-sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js128-config</kbd></pre>
+sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js140-config</kbd></pre>
+        <p>
+          Still as the <code class="systemitem">root</code> user, fix two
+          issues with the installed headers:
+        </p>
+        <pre class="root"><kbd class=
+        "command">ln -sfv js/ProfilingCategoryList.h /usr/include/mozjs-140 &amp;&amp;
+sed '$i#define XP_UNIX' -i /usr/include/mozjs-140/js-config.h</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -333,8 +334,8 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js128-config</kbd></pre>
         </p>
         <p>
           <span class="command"><strong>sed -i '/@NSPR_CFLAGS@/d'
-          /usr/bin/js128-config</strong></span>: Prevent <span class=
-          "command"><strong>js128-config</strong></span> from using buggy
+          /usr/bin/js140-config</strong></span>: Prevent <span class=
+          "command"><strong>js140-config</strong></span> from using buggy
           CFLAGS.
         </p>
         <p>
@@ -373,15 +374,15 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js128-config</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">js128 and js128-config</span>
+              <span class="segbody">js140 and js140-config</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libmozjs-128.so</span>
+              <span class="segbody">libmozjs-140.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/include/mozjs-128</span>
+              <span class="segbody">/usr/include/mozjs-140</span>
             </div>
           </div>
         </div>
@@ -398,9 +399,9 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js128-config</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="js128" name="js128"></a><span class=
+                    <a id="js140" name="js140"></a><span class=
                     "term"><span class=
-                    "command"><strong>js128</strong></span></span>
+                    "command"><strong>js140</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -413,9 +414,9 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js128-config</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="js128-config" name="js128-config"></a><span class=
+                    <a id="js140-config" name="js140-config"></a><span class=
                     "term"><span class=
-                    "command"><strong>js128-config</strong></span></span>
+                    "command"><strong>js140-config</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -428,9 +429,9 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js128-config</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="libmozjs-128" name="libmozjs-128"></a>
+                    <a id="libmozjs-140" name="libmozjs-140"></a>
                     <span class="term"><code class=
-                    "filename">libmozjs-128.so</code></span>
+                    "filename">libmozjs-140.so</code></span>
                   </p>
                 </td>
                 <td>
@@ -465,7 +466,7 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js128-config</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1172">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1179">
           Home</a>
         </li>
       </ul>
