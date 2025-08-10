@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1184">
+  <body class="blfs" id="blfs-r12.3-1188">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1184
+        "phrase">(systemd</span> Edition) - Version r12.3-1188
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1184">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1188">
           Home</a>
         </li>
       </ul>
@@ -126,7 +126,7 @@
         <p class="optional">
           <a class="xref" href="doxygen.html" title=
           "Doxygen-1.14.0">Doxygen-1.14.0</a>, <a class="xref" href=
-          "gcc.html" title="GCC-15.1.0">GCC-15.1.0</a> (ada, gfortran, and go
+          "gcc.html" title="GCC-15.2.0">GCC-15.2.0</a> (ada, gfortran, and go
           are used for tests), <a class="xref" href="guile.html" title=
           "Guile-3.0.10">Guile-3.0.10</a>, <a class="xref" href="rust.html"
           title="Rustc-1.89.0">rustc-1.89.0</a> (used for some tests),
@@ -149,6 +149,7 @@ cd    build &amp;&amp;
 
 ../configure --prefix=/usr          \
              --with-system-readline \
+             --with-system-zlib     \
              --with-python=/usr/bin/python3 &amp;&amp;
 make</kbd></pre>
         <p>
@@ -263,6 +264,11 @@ cp -Rv gdb/doc/doxy /usr/share/doc/gdb-16.3</kbd></pre>
           <em class="parameter"><code>--with-system-readline</code></em>:
           This switch forces <span class="application">GDB</span> to use the
           copy of <span class="application">Readline</span> installed in LFS.
+        </p>
+        <p>
+          <em class="parameter"><code>--with-system-readline</code></em>:
+          This switch forces <span class="application">GDB</span> to use the
+          copy of <span class="application">Zlib</span> installed in LFS.
         </p>
         <p>
           <em class=
@@ -418,7 +424,7 @@ cp -Rv gdb/doc/doxy /usr/share/doc/gdb-16.3</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1184">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1188">
           Home</a>
         </li>
       </ul>
