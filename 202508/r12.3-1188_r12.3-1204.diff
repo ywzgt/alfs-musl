@@ -1,0 +1,176 @@
+diff --git a/wget-list b/wget-list
+index 28ad4e257d..2f68a5766b 100644
+--- a/wget-list
++++ b/wget-list
+@@ -64,6 +64,7 @@ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+ https://download.qemu.org/qemu-10.0.3.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/qemu-10.0.3-python_fixes-1.patch
+ https://github.com/abseil/abseil-cpp/releases/download/20250512.1/abseil-cpp-20250512.1.tar.gz
+ https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.5.tar.xz
+ http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz
+@@ -225,7 +226,7 @@ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
+ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.2.tar.gz
+ https://github.com/google/shaderc/archive/v2025.3/shaderc-2025.3.tar.gz
+-https://gitlab.com/graphviz/graphviz/-/archive/13.1.1/graphviz-13.1.1.tar.bz2
++https://gitlab.com/graphviz/graphviz/-/archive/13.1.2/graphviz-13.1.2.tar.bz2
+ https://download.gnome.org/sources/gtk-doc/1.34/gtk-doc-1.34.0.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.16.tar.bz2
+ https://github.com/ibus/ibus/archive/1.5.32/ibus-1.5.32.tar.gz
+@@ -293,7 +294,7 @@ https://github.com/lu-zero/cargo-c/archive/v0.10.14/cargo-c-0.10.14.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.29.0/cbindgen-0.29.0.tar.gz
+ https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
+-https://cmake.org/files/v4.0/cmake-4.0.3.tar.gz
++https://cmake.org/files/v4.1/cmake-4.1.0.tar.gz
+ https://doxygen.nl/files/doxygen-1.14.0.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-15.2.0/gcc-15.2.0.tar.xz
+@@ -509,21 +510,21 @@ https://files.pythonhosted.org/packages/source/c/charset-normalizer/charset_norm
+ https://files.pythonhosted.org/packages/source/c/commonmark/commonmark-0.9.1.tar.gz
+ https://files.pythonhosted.org/packages/source/e/editables/editables-0.5.tar.gz
+ https://files.pythonhosted.org/packages/source/h/hatchling/hatchling-1.27.0.tar.gz
+-https://files.pythonhosted.org/packages/source/h/hatch-fancy-pypi-readme/hatch_fancy_pypi_readme-24.1.0.tar.gz
+-https://files.pythonhosted.org/packages/source/h/hatch-vcs/hatch_vcs-0.4.0.tar.gz
++https://files.pythonhosted.org/packages/source/h/hatch-fancy-pypi-readme/hatch_fancy_pypi_readme-25.1.0.tar.gz
++https://files.pythonhosted.org/packages/source/h/hatch-vcs/hatch_vcs-0.5.0.tar.gz
+ https://files.pythonhosted.org/packages/source/i/idna/idna-3.10.tar.gz
+ https://files.pythonhosted.org/packages/source/i/imagesize/imagesize-1.4.1.tar.gz
+-https://files.pythonhosted.org/packages/source/i/iniconfig/iniconfig-2.0.0.tar.gz
+-https://files.pythonhosted.org/packages/source/M/Markdown/markdown-3.8.tar.gz
+-https://files.pythonhosted.org/packages/source/m/meson_python/meson_python-0.17.1.tar.gz
++https://files.pythonhosted.org/packages/source/i/iniconfig/iniconfig-2.1.0.tar.gz
++https://files.pythonhosted.org/packages/source/M/Markdown/markdown-3.8.2.tar.gz
++https://files.pythonhosted.org/packages/source/m/meson_python/meson_python-0.18.0.tar.gz
+ https://files.pythonhosted.org/packages/source/m/msgpack/msgpack-1.1.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pathspec/pathspec-0.12.1.tar.gz
+-https://files.pythonhosted.org/packages/source/p/pluggy/pluggy-1.5.0.tar.gz
++https://files.pythonhosted.org/packages/source/p/pluggy/pluggy-1.6.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyproject-hooks/pyproject_hooks-1.2.0.tar.gz
+-https://files.pythonhosted.org/packages/source/p/pyproject-metadata/pyproject_metadata-0.9.0.tar.gz
++https://files.pythonhosted.org/packages/source/p/pyproject-metadata/pyproject_metadata-0.9.1.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pytz/pytz-2025.1.tar.gz
+-https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-8.3.0.tar.gz
+-https://github.com/leohemsted/smartypants.py/archive/v2.0.1/smartypants.py-2.0.1.tar.gz
++https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-8.3.1.tar.gz
++https://files.pythonhosted.org/packages/source/s/smartypants/smartypants-2.0.2.tar.gz
+ https://files.pythonhosted.org/packages/source/s/snowballstemmer/snowballstemmer-2.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-applehelp/sphinxcontrib_applehelp-2.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-devhelp/sphinxcontrib_devhelp-2.0.0.tar.gz
+@@ -532,7 +533,7 @@ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jquery/sphinxcont
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jsmath/sphinxcontrib-jsmath-1.0.1.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-qthelp/sphinxcontrib_qthelp-2.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib_serializinghtml/sphinxcontrib_serializinghtml-2.0.0.tar.gz
+-https://files.pythonhosted.org/packages/source/t/trove_classifiers/trove_classifiers-2025.4.11.15.tar.gz
++https://files.pythonhosted.org/packages/source/t/trove_classifiers/trove_classifiers-2025.8.6.13.tar.gz
+ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.1.0.tar.gz
+ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.3.0.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+@@ -619,7 +620,7 @@ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.3.tar.gz
+ https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/sendmail-8.18.1-gcc15_fixes-1.patch
+ https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.33.tar.bz2
+-https://downloads.mariadb.org/interstitial/mariadb-11.8.2/source/mariadb-11.8.2.tar.gz
++https://downloads.mariadb.org/interstitial/mariadb-11.8.3/source/mariadb-11.8.3.tar.gz
+ https://ftp.postgresql.org/pub/source/v17.5/postgresql-17.5.tar.bz2
+ https://sqlite.org/2025/sqlite-autoconf-3500400.tar.gz
+ https://sqlite.org/2025/sqlite-doc-3500400.zip
+@@ -669,8 +670,7 @@ https://github.com/KhronosGroup/glslang/archive/15.4.0/glslang-15.4.0.tar.gz
+ https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
+ https://download.gnome.org/sources/goffice/0.10/goffice-0.10.59.tar.xz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+-https://download.gnome.org/sources/gtk/3.24/gtk-3.24.49.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/gtk-3.24.49-upstream_fix-1.patch
++https://download.gnome.org/sources/gtk/3.24/gtk-3.24.50.tar.xz
+ https://download.gnome.org/sources/gtk/4.18/gtk-4.18.6.tar.xz
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.10.tar.xz
+ https://download.gnome.org/sources/gtkmm/4.18/gtkmm-4.18.0.tar.xz
+@@ -710,7 +710,7 @@ https://github.com/ice-wm/icewm/archive/3.8.2/icewm-3.8.2.tar.gz
+ http://openbox.org/dist/openbox/openbox-3.6.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openbox-3.6.1-py3-1.patch
+ https://download.gnome.org/sources/adwaita-icon-theme/48/adwaita-icon-theme-48.1.tar.xz
+-https://download.kde.org/stable/frameworks/6.13/breeze-icons-6.13.0.tar.xz
++https://download.kde.org/stable/frameworks/6.17/breeze-icons-6.17.0.tar.xz
+ https://download.gnome.org/sources/gnome-icon-theme/3.12/gnome-icon-theme-3.12.0.tar.xz
+ https://download.gnome.org/sources/gnome-icon-theme-extras/3.12/gnome-icon-theme-extras-3.12.0.tar.xz
+ https://download.gnome.org/sources/gnome-icon-theme-symbolic/3.12/gnome-icon-theme-symbolic-3.12.0.tar.xz
+@@ -719,7 +719,8 @@ https://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.18.tar.xz
+ https://tango.freedesktop.org/releases/icon-naming-utils-0.8.90.tar.bz2
+ https://downloads.sourceforge.net/lxde/lxde-icon-theme-0.5.1.tar.xz
+ https://download.kde.org/stable/oxygen-icons/oxygen-icons-6.0.0.tar.xz
+-https://download.kde.org/stable/frameworks/6.13/extra-cmake-modules-6.13.0.tar.xz
++https://download.kde.org/stable/frameworks/6.17/extra-cmake-modules-6.17.0.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/extra-cmake-modules-6.17.0-upstream_fix-1.patch
+ https://download.kde.org/stable/phonon/4.12.0/phonon-4.12.0.tar.xz
+ https://download.kde.org/stable/phonon/phonon-backend-vlc/0.12.0/phonon-backend-vlc-0.12.0.tar.xz
+ https://download.kde.org/stable/polkit-qt-1/polkit-qt-1-0.200.0.tar.xz
+@@ -734,15 +735,15 @@ https://download.kde.org/stable/release-service/25.04.2/src/konsole-25.04.2.tar.
+ https://www.linuxfromscratch.org/patches/blfs/svn/konsole-adjust_scrollbar-1.patch
+ https://download.kde.org/stable/release-service/25.04.0/src/konversation-25.04.0.tar.xz
+ https://download.kde.org/stable/release-service/25.04.0/src/libkexiv2-25.04.0.tar.xz
+-https://download.kde.org/stable/plasma/6.3.4/plasma-activities-6.3.4.tar.xz
+-https://download.kde.org/stable/plasma/6.3.4/plasma-activities-stats-6.3.4.tar.xz
++https://download.kde.org/stable/plasma/6.4.4/plasma-activities-6.4.4.tar.xz
++https://download.kde.org/stable/plasma/6.4.4/plasma-activities-stats-6.4.4.tar.xz
+ https://download.kde.org/stable/release-service/25.04.0/src/kio-extras-25.04.0.tar.xz
+ https://download.kde.org/stable/release-service/25.04.0/src/okular-25.04.0.tar.xz
+ https://download.kde.org/stable/release-service/25.04.0/src/libkdcraw-25.04.0.tar.xz
+ https://download.kde.org/stable/release-service/25.04.0/src/gwenview-25.04.0.tar.xz
+ https://download.kde.org/stable/release-service/25.04.0/src/libkcddb-25.04.0.tar.xz
+ https://download.kde.org/stable/release-service/25.04.0/src/k3b-25.04.0.tar.xz
+-https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.7.0.tar.xz
++https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.9.0.tar.xz
+ https://download.kde.org/stable/pulseaudio-qt/pulseaudio-qt-1.7.0.tar.xz
+ https://download.gnome.org/sources/gcr/3.41/gcr-3.41.2.tar.xz
+ https://download.gnome.org/sources/gcr/4.4/gcr-4.4.0.1.tar.xz
+@@ -838,13 +839,13 @@ https://archive.xfce.org/src/apps/xfburn/0.8/xfburn-0.8.0.tar.bz2
+ https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.4.tar.xz
+ https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.7.tar.bz2
+ https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.5/xfce4-pulseaudio-plugin-0.5.1.tar.xz
+-https://download.kde.org/stable/frameworks/6.13/kwindowsystem-6.13.0.tar.xz
+-https://download.kde.org/stable/frameworks/6.13/kconfig-6.13.0.tar.xz
+-https://download.kde.org/stable/frameworks/6.13/solid-6.13.0.tar.xz
+-https://download.kde.org/stable/frameworks/6.13/kidletime-6.13.0.tar.xz
+-https://download.kde.org/stable/plasma/6.3.4/kwayland-6.3.4.tar.xz
+-https://download.kde.org/stable/plasma/6.3.4/libkscreen-6.3.4.tar.xz
+-https://download.kde.org/stable/plasma/6.3.4/layer-shell-qt-6.3.4.tar.xz
++https://download.kde.org/stable/frameworks/6.17/kwindowsystem-6.17.0.tar.xz
++https://download.kde.org/stable/frameworks/6.17/kconfig-6.17.0.tar.xz
++https://download.kde.org/stable/frameworks/6.17/solid-6.17.0.tar.xz
++https://download.kde.org/stable/frameworks/6.17/kidletime-6.17.0.tar.xz
++https://download.kde.org/stable/plasma/6.4.4/kwayland-6.4.4.tar.xz
++https://download.kde.org/stable/plasma/6.4.4/libkscreen-6.4.4.tar.xz
++https://download.kde.org/stable/plasma/6.4.4/layer-shell-qt-6.4.4.tar.xz
+ https://github.com/beltoforion/muparser/archive/v2.3.5/muparser-2.3.5.tar.gz
+ https://github.com/lxqt/lxqt-build-tools/releases/download/2.2.1/lxqt-build-tools-2.2.1.tar.xz
+ https://github.com/lxqt/libdbusmenu-lxqt/releases/download/0.3.0/libdbusmenu-lxqt-0.3.0.tar.xz
+@@ -923,12 +924,12 @@ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
+ https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
+ https://github.com/dyne/frei0r/archive/v2.3.3/frei0r-2.3.3.tar.gz
+ https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
+-https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.4.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.4.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.4.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.26.4.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.26.4.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.26.4.tar.xz
++https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.5.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.5.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.5.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.26.5.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.26.5.tar.xz
++https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.26.5.tar.xz
+ https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+ https://github.com/lfs-book/intel-media-driver/archive/v25.2.6/intel-media-driver-25.2.6.tar.gz
+@@ -946,7 +947,7 @@ https://get.videolan.org/libdvdcss/1.4.3/libdvdcss-1.4.3.tar.bz2
+ https://get.videolan.org/libdvdread/6.1.3/libdvdread-6.1.3.tar.bz2
+ https://get.videolan.org/libdvdnav/6.1.1/libdvdnav-6.1.1.tar.bz2
+ https://downloads.sourceforge.net/libdv/libdv-1.0.0.tar.gz
+-https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.4/gst-plugins-rs-gstreamer-1.26.4.tar.gz
++https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.5/gst-plugins-rs-gstreamer-1.26.5.tar.gz
+ https://downloads.sourceforge.net/mad/libmad-0.15.1b.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libmad-0.15.1b-fixes-1.patch
+ https://download.videolan.org/contrib/libmpeg2/libmpeg2-0.5.1.tar.gz
