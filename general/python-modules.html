@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1226">
+  <body class="blfs" id="blfs-r12.3-1250">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1226
+        "phrase">(systemd</span> Edition) - Version r12.3-1250
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1226">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1250">
           Home</a>
         </li>
       </ul>
@@ -72,7 +72,7 @@
             that has not been built in LFS. It is therefore recommended to
             rebuild Python after installing the recommended dependency listed
             in <a class="xref" href="python3.html" title=
-            "Python-3.13.6">Python-3.13.6</a>.
+            "Python-3.13.7">Python-3.13.7</a>.
           </p>
         </div>
         <div class="admon important">
@@ -122,7 +122,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="python-modules.html#pypa-build" title=
-                "build-1.2.2.post1">build-1.2.2.post1</a>
+                "build-1.3.0">build-1.3.0</a>
               </p>
             </li>
             <li class="listitem">
@@ -140,7 +140,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="python-modules.html#cython" title=
-                "Cython-3.1.2">cython-3.1.2</a>
+                "Cython-3.1.3">cython-3.1.3</a>
               </p>
             </li>
             <li class="listitem">
@@ -230,7 +230,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="python-modules.html#pycairo" title=
-                "PyCairo-1.26.1">PyCairo-1.26.1</a>
+                "PyCairo-1.28.0">PyCairo-1.28.0</a>
               </p>
             </li>
             <li class="listitem">
@@ -296,7 +296,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="python-modules.html#sentry-sdk" title=
-                "sentry-sdk-2.29.1">sentry-sdk-2.29.1</a>
+                "sentry-sdk-2.35.0">sentry-sdk-2.35.0</a>
               </p>
             </li>
             <li class="listitem">
@@ -543,7 +543,7 @@
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          <a id="pypa-build" name="pypa-build"></a>build-1.2.2.post1
+          <a id="pypa-build" name="pypa-build"></a>build-1.3.0
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -572,23 +572,23 @@
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://files.pythonhosted.org/packages/source/b/build/build-1.2.2.post1.tar.gz">
-                  https://files.pythonhosted.org/packages/source/b/build/build-1.2.2.post1.tar.gz</a>
+                  "https://files.pythonhosted.org/packages/source/b/build/build-1.3.0.tar.gz">
+                  https://files.pythonhosted.org/packages/source/b/build/build-1.3.0.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: 5492ba887b363f483d64a11bbec0c34a
+                  Download MD5 sum: 48f7fbc11051430eab3c1abe216bed7a
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download size: 47 KB
+                  Download size: 48 KB
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Estimated disk space required: 772 KB (63 MB for tests)
+                  Estimated disk space required: 772 KB (62 MB for tests)
                 </p>
               </li>
               <li class="listitem">
@@ -614,7 +614,7 @@
           <p class="optional">
             <a class="xref" href="python-modules.html#pytest" title=
             "Pytest-8.4.1">pytest-8.4.1</a>, <a class="xref" href=
-            "python3.html" title="Python-3.13.6">Python-3.13.6</a> (rebuilt
+            "python3.html" title="Python-3.13.7">Python-3.13.7</a> (rebuilt
             with <a class="xref" href="../server/sqlite.html" title=
             "SQLite-3.50.4">SQLite-3.50.4</a>), <a class="ulink" href=
             "https://pypi.org/project/filelock/">filelock</a>, <a class=
@@ -647,7 +647,7 @@
           <p>
             Assuming <a class="xref" href="python-modules.html#pytest" title=
             "Pytest-8.4.1">pytest-8.4.1</a> is installed and <a class="xref"
-            href="python3.html" title="Python-3.13.6">Python-3.13.6</a> has
+            href="python3.html" title="Python-3.13.7">Python-3.13.7</a> has
             been rebuilt with <a class="xref" href="../server/sqlite.html"
             title="SQLite-3.50.4">SQLite-3.50.4</a>, but the other optional
             dependencies are not, the installation can be tested with the
@@ -656,12 +656,18 @@
           <pre class="userinput"><kbd class=
           "command">python3 -m venv --system-site-packages testenv &amp;&amp;
 source testenv/bin/activate                    &amp;&amp;
-pip3 install build[test]                       &amp;&amp;
+pip3 install filelock                          \
+             pytest-cov                        \
+             pytest-mock                       \
+             pytest-rerunfailures              \
+             pytest-xdist                      \
+             uv                                &amp;&amp;
 python3 -m pytest
 deactivate</kbd></pre>
           <p>
-            Two tests in <code class="filename">test_self_packaging.py</code>
-            are known to fail.
+            One test in <code class="filename">test_projectbuilder.py</code>
+            is known to fail due to a conflict with the system copy of
+            flit_core.
           </p>
         </div>
         <div class="commands" lang="en" xml:lang="en">
@@ -741,7 +747,7 @@ deactivate</kbd></pre>
                 <strong class="segtitle">Installed Directories:</strong>
                 <span class="segbody">/usr/lib/python3.13/site-packages/build
                 and
-                /usr/lib/python3.13/site-packages/build-1.2.2.post1.dist-info</span>
+                /usr/lib/python3.13/site-packages/build-1.3.0.dist-info</span>
               </div>
             </div>
           </div>
@@ -1016,7 +1022,7 @@ deactivate</kbd></pre>
           </h5>
           <p class="required">
             <a class="xref" href="python-dependencies.html#msgpack" title=
-            "Msgpack-1.1.0">msgpack-1.1.0</a> and <a class="xref" href=
+            "Msgpack-1.1.1">msgpack-1.1.1</a> and <a class="xref" href=
             "python-modules.html#requests" title=
             "Requests-2.32.4">requests-2.32.4</a>
           </p>
@@ -1145,7 +1151,7 @@ deactivate</kbd></pre>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          <a id="cython" name="cython"></a>Cython-3.1.2
+          <a id="cython" name="cython"></a>Cython-3.1.3
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -1174,18 +1180,18 @@ deactivate</kbd></pre>
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://github.com/cython/cython/releases/download/3.1.2/cython-3.1.2.tar.gz">
-                  https://github.com/cython/cython/releases/download/3.1.2/cython-3.1.2.tar.gz</a>
+                  "https://github.com/cython/cython/releases/download/3.1.3/cython-3.1.3.tar.gz">
+                  https://github.com/cython/cython/releases/download/3.1.3/cython-3.1.3.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: 6fb2dc869f4d00b4a13e130ec1197bfd
+                  Download MD5 sum: f508595cc0951a77b70c07100df1b4ff
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download size: 3.0 MB
+                  Download size: 3.1 MB
                 </p>
               </li>
               <li class="listitem">
@@ -1290,7 +1296,7 @@ deactivate</kbd></pre>
                 <strong class="segtitle">Installed Directories:</strong>
                 <span class=
                 "segbody">/usr/lib/python3.13/site-packages/Cython,
-                /usr/lib/python3.13/site-packages/Cython-3.1.2.dist-info, and
+                /usr/lib/python3.13/site-packages/Cython-3.1.3.dist-info, and
                 /usr/lib/python3.13/site-packages/pyximport</span>
               </div>
             </div>
@@ -3296,7 +3302,7 @@ python3 tests/unit/tests.py</kbd></pre>
           </h5>
           <p class="required">
             <a class="xref" href="python-modules.html#cython" title=
-            "Cython-3.1.2">cython-3.1.2</a>, <a class="xref" href=
+            "Cython-3.1.3">cython-3.1.3</a>, <a class="xref" href=
             "python-dependencies.html#meson_python" title=
             "Meson_python-0.18.0">meson_python-0.18.0</a>, and <a class=
             "xref" href="python-dependencies.html#pyproject-metadata" title=
@@ -3320,7 +3326,7 @@ python3 tests/unit/tests.py</kbd></pre>
             "python-modules.html#pytest" title=
             "Pytest-8.4.1">pytest-8.4.1</a>, <a class="xref" href=
             "python-dependencies.html#pytz" title=
-            "Pytz-2025.1">pytz-2025.1</a>, and <a class="ulink" href=
+            "Pytz-2025.2">pytz-2025.2</a>, and <a class="ulink" href=
             "https://pypi.org/project/hypothesis/">hypothesis</a>
           </p>
         </div>
@@ -4031,7 +4037,7 @@ make test-python3-cpp</kbd></pre>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          <a id="pycairo" name="pycairo"></a>PyCairo-1.26.1
+          <a id="pycairo" name="pycairo"></a>PyCairo-1.28.0
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -4060,23 +4066,23 @@ make test-python3-cpp</kbd></pre>
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://github.com/pygobject/pycairo/releases/download/v1.26.1/pycairo-1.26.1.tar.gz">
-                  https://github.com/pygobject/pycairo/releases/download/v1.26.1/pycairo-1.26.1.tar.gz</a>
+                  "https://github.com/pygobject/pycairo/releases/download/v1.28.0/pycairo-1.28.0.tar.gz">
+                  https://github.com/pygobject/pycairo/releases/download/v1.28.0/pycairo-1.28.0.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: 36504ac01533ae14f0d2337516bbae2e
+                  Download MD5 sum: f1bb0ee59ddd78a452f27ffda3ed68ae
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download size: 340 KB
+                  Download size: 648 KB
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Estimated disk space required: 3.1 MB
+                  Estimated disk space required: 3.5 MB
                 </p>
               </li>
               <li class="listitem">
@@ -4100,9 +4106,7 @@ make test-python3-cpp</kbd></pre>
             Optional
           </h5>
           <p class="optional">
-            <a class="ulink" href=
-            "https://hypothesis.readthedocs.io">Hypothesis</a> and <a class=
-            "xref" href="python-modules.html#pytest" title=
+            <a class="xref" href="python-modules.html#pytest" title=
             "Pytest-8.4.1">pytest-8.4.1</a> (for tests)
           </p>
         </div>
@@ -4111,8 +4115,8 @@ make test-python3-cpp</kbd></pre>
             Installation of PyCairo
           </h3>
           <p>
-            Install <span class="application">PyCairo</span> for Python3 by
-            running the following commands:
+            Install <span class="application">PyCairo</span> by running the
+            following commands:
           </p>
           <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
@@ -4147,7 +4151,7 @@ ninja</kbd></pre>
                 <strong class="segtitle">Installed Directories:</strong>
                 <span class="segbody">/usr/include/pycairo,
                 /usr/lib/python3.13/site-packages/cairo, and
-                /usr/lib/python3.13/site-packages/pycairo-1.26.1.egg-info</span>
+                /usr/lib/python3.13/site-packages/pycairo-1.28.0.egg-info</span>
               </div>
             </div>
           </div>
@@ -4594,7 +4598,7 @@ testenv/bin/python -m pytest</kbd></pre>
           </h5>
           <p class="recommended">
             <a class="xref" href="python-modules.html#pycairo" title=
-            "PyCairo-1.26.1">PyCairo-1.26.1</a>
+            "PyCairo-1.28.0">PyCairo-1.28.0</a>
           </p>
           <h5>
             Optional (for the tests)
@@ -4652,7 +4656,7 @@ ninja</kbd></pre>
             <code class="option">-D pycairo=disabled</code>: use this switch
             if you do not have <a class="xref" href=
             "python-modules.html#pycairo" title=
-            "PyCairo-1.26.1">PyCairo-1.26.1</a> installed.
+            "PyCairo-1.28.0">PyCairo-1.28.0</a> installed.
           </p>
         </div>
         <div class="content" lang="en" xml:lang="en">
@@ -5530,7 +5534,7 @@ deactivate</kbd></pre>
           </h5>
           <p class="required">
             <a class="xref" href="python-modules.html#cython" title=
-            "Cython-3.1.2">cython-3.1.2</a> and <a class="xref" href=
+            "Cython-3.1.3">cython-3.1.3</a> and <a class="xref" href=
             "libyaml.html" title="libyaml-0.2.5">libyaml-0.2.5</a>
           </p>
           <h5>
@@ -6003,11 +6007,11 @@ deactivate</kbd></pre>
           <p class="required">
             <a class="xref" href=
             "python-dependencies.html#charset-normalizer" title=
-            "Charset-normalizer-3.4.1">charset-normalizer-3.4.1</a>,
+            "Charset-normalizer-3.4.3">charset-normalizer-3.4.3</a>,
             <a class="xref" href="python-dependencies.html#idna" title=
             "Idna-3.10">idna-3.10</a>, and <a class="xref" href=
             "python-dependencies.html#urllib3" title=
-            "Urllib3-2.3.0">urllib3-2.3.0</a>
+            "Urllib3-2.5.0">urllib3-2.5.0</a>
           </p>
           <h5>
             Recommended
@@ -6402,7 +6406,7 @@ deactivate</kbd></pre>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          <a id="sentry-sdk" name="sentry-sdk"></a>sentry-sdk-2.29.1
+          <a id="sentry-sdk" name="sentry-sdk"></a>sentry-sdk-2.35.0
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -6431,23 +6435,23 @@ deactivate</kbd></pre>
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://github.com/getsentry/sentry-python/releases/download/2.29.1/sentry_sdk-2.29.1.tar.gz">
-                  https://github.com/getsentry/sentry-python/releases/download/2.29.1/sentry_sdk-2.29.1.tar.gz</a>
+                  "https://github.com/getsentry/sentry-python/releases/download/2.35.0/sentry_sdk-2.35.0.tar.gz">
+                  https://github.com/getsentry/sentry-python/releases/download/2.35.0/sentry_sdk-2.35.0.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: 8f30ba14c2efe0c75194fb22f220c3e7
+                  Download MD5 sum: 2c43b7b5df268aea76fbabe869562325
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download size: 320 KB
+                  Download size: 336 KB
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Estimated disk space required: 3.7 MB
+                  Estimated disk space required: 4.1 MB
                 </p>
               </li>
               <li class="listitem">
@@ -6465,9 +6469,9 @@ deactivate</kbd></pre>
           </h5>
           <p class="required">
             <a class="xref" href="python-dependencies.html#certifi" title=
-            "certifi-2025.1.31">certifi-2025.1.31</a> and <a class="xref"
-            href="python-dependencies.html#urllib3" title=
-            "Urllib3-2.3.0">urllib3-2.3.0</a>
+            "certifi-2025.8.3">certifi-2025.8.3</a> and <a class="xref" href=
+            "python-dependencies.html#urllib3" title=
+            "Urllib3-2.5.0">urllib3-2.5.0</a>
           </p>
         </div>
         <div class="installation" lang="en" xml:lang="en">
@@ -6555,7 +6559,7 @@ deactivate</kbd></pre>
               <div class="seg">
                 <strong class="segtitle">Installed Directories:</strong>
                 <span class=
-                "segbody">/usr/lib/python3.13/site-packages/sentry_sdk-2.29.1.dist-info
+                "segbody">/usr/lib/python3.13/site-packages/sentry_sdk-2.35.0.dist-info
                 and /usr/lib/python3.13/site-packages/sentry_sdk</span>
               </div>
             </div>
@@ -6791,8 +6795,10 @@ deactivate</kbd></pre>
             "Pygments-2.19.2">Pygments-2.19.2</a>, <a class="xref" href=
             "python-modules.html#requests" title=
             "Requests-2.32.4">requests-2.32.4</a>, <a class="xref" href=
-            "python-dependencies.html#snowballstemmer" title=
-            "Snowballstemmer-2.2.0">snowballstemmer-2.2.0</a>, <a class=
+            "python-dependencies.html#roman-numerals-py" title=
+            "Roman-numerals-py-3.1.0">roman-numerals-py-3.1.0</a>, <a class=
+            "xref" href="python-dependencies.html#snowballstemmer" title=
+            "Snowballstemmer-3.0.1">snowballstemmer-3.0.1</a>, <a class=
             "xref" href="python-dependencies.html#sc-applehelp" title=
             "Sphinxcontrib-applehelp-2.0.0">sphinxcontrib-applehelp-2.0.0</a>,
             <a class="xref" href="python-dependencies.html#sc-devhelp" title=
@@ -6812,7 +6818,7 @@ deactivate</kbd></pre>
           </h5>
           <p class="optional">
             <a class="xref" href="python-modules.html#cython" title=
-            "Cython-3.1.2">cython-3.1.2</a>, <a class="xref" href=
+            "Cython-3.1.3">cython-3.1.3</a>, <a class="xref" href=
             "python-modules.html#html5lib" title=
             "html5lib-1.1">html5lib-1.1</a>, <a class="xref" href=
             "python-modules.html#pytest" title=
@@ -6829,12 +6835,6 @@ deactivate</kbd></pre>
             Installation of Sphinx
           </h3>
           <p>
-            First install a new dependency as the <code class=
-            "systemitem">root</code> user:
-          </p>
-          <pre class="root"><kbd class=
-          "command">pip3 install roman-numerals-py</kbd></pre>
-          <p>
             Build the module:
           </p>
           <pre class="userinput"><kbd class=
@@ -6846,7 +6846,7 @@ deactivate</kbd></pre>
           "command">pip3 install --no-index --find-links dist --no-user sphinx</kbd></pre>
           <p>
             Assuming <a class="xref" href="python-modules.html#cython" title=
-            "Cython-3.1.2">cython-3.1.2</a> and <a class="xref" href=
+            "Cython-3.1.3">cython-3.1.3</a> and <a class="xref" href=
             "python-modules.html#pytest" title=
             "Pytest-8.4.1">pytest-8.4.1</a> are installed, but the other
             optional dependencies are not, the installation can be tested
@@ -7238,7 +7238,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1226">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1250">
           Home</a>
         </li>
       </ul>

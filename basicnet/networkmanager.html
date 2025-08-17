@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1226">
+  <body class="blfs" id="blfs-r12.3-1250">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1226
+        "phrase">(systemd</span> Edition) - Version r12.3-1250
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1226">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1250">
           Home</a>
         </li>
       </ul>
@@ -147,13 +147,13 @@
           "xref" href="../general/newt.html" title=
           "newt-0.52.25">newt-0.52.25</a> (for <span class=
           "command"><strong>nmtui</strong></span>), <a class="xref" href=
-          "../postlfs/nss.html" title="NSS-3.114">nss-3.114</a>, <a class=
+          "../postlfs/nss.html" title="NSS-3.115">nss-3.115</a>, <a class=
           "xref" href="../postlfs/polkit.html" title=
           "Polkit-126">Polkit-126</a> (runtime), <a class="xref" href=
           "../general/python-modules.html#pygobject3" title=
           "PyGObject-3.52.3">PyGObject-3.52.3</a>, <span class=
           "phrase"><a class="xref" href="../general/systemd.html" title=
-          "Systemd-257.6">Systemd-257.6</a>,</span> <a class="xref" href=
+          "Systemd-257.8">Systemd-257.8</a>,</span> <a class="xref" href=
           "../general/vala.html" title="Vala-0.56.18">Vala-0.56.18</a>, and
           <a class="xref" href="wpa_supplicant.html" title=
           "wpa_supplicant-2.11">wpa_supplicant-2.11</a> (runtime, built with
@@ -169,12 +169,13 @@
           "D-Bus Python-1.4.0">D-Bus Python-1.4.0</a> (for the test suite),
           <a class="xref" href="../postlfs/gnutls.html" title=
           "GnuTLS-3.8.10">GnuTLS-3.8.10</a> (can be used instead of <a class=
-          "xref" href="../postlfs/nss.html" title="NSS-3.114">nss-3.114</a>),
+          "xref" href="../postlfs/nss.html" title="NSS-3.115">nss-3.115</a>),
           <a class="xref" href="../general/gtk-doc.html" title=
           "GTK-Doc-1.34.0">GTK-Doc-1.34.0</a>, <a class="xref" href=
           "../general/jansson.html" title=
           "Jansson-2.14.1">jansson-2.14.1</a>, <a class="xref" href=
-          "../general/ModemManager.html" title=
+          "../general/libnvme.html" title="libnvme-1.15">libnvme-1.15</a>,
+          <a class="xref" href="../general/ModemManager.html" title=
           "ModemManager-1.24.2">ModemManager-1.24.2</a>, <a class="xref"
           href="../general/upower.html" title=
           "UPower-1.90.9">UPower-1.90.9</a>, <a class="xref" href=
@@ -287,6 +288,7 @@ meson setup ..                    \
       -D nmtui=true               \
       -D ovs=false                \
       -D ppp=false                \
+      -D nbft=false               \
       -D selinux=false            \
       -D qt=false                 \
       -D session_tracking=systemd \
@@ -363,6 +365,14 @@ done</kbd></pre>
           "application">mobile-broadband-provider-info</span>.
         </p>
         <p>
+          <em class="parameter"><code>-D nbft=false</code></em>: This switch
+          is required if <a class="xref" href="../general/libnvme.html"
+          title="libnvme-1.15">libnvme-1.15</a> is not installed, and
+          disabled NBFT support in the initrd generator. Note that BLFS does
+          not use the initrd generator provided from NetworkManager by
+          default.
+        </p>
+        <p>
           <em class="parameter"><code>-D
           session_tracking=systemd</code></em>: This switch is used to set
           <span class="command"><strong>systemd-logind</strong></span> as the
@@ -387,6 +397,14 @@ done</kbd></pre>
           disables the <span class="application">Qt 5</span> examples.
         </p>
         <p>
+          <em class="parameter"><code>-D nm_cloud_setup=false</code></em>:
+          Use this switch if you have not installed <a class="xref" href=
+          "../general/jansson.html" title=
+          "Jansson-2.14.1">jansson-2.14.1</a>. This disables nm-cloud-setup
+          which is used to automatically configure the network in a public
+          cloud environment within a VM.
+        </p>
+        <p>
           <code class="option">-D crypto=gnutls</code>: Use this switch if
           you have GnuTLS installed and want to use it for certificate and
           key operations in NetworkManager, instead of using NSS (the
@@ -397,14 +415,6 @@ done</kbd></pre>
           neither NSS nor GnuTLS is installed but you want to build
           NetworkManager anyway. This switch will make NetworkManager lack
           some features (for example 802.1X).
-        </p>
-        <p>
-          <code class="option">-D nm_cloud_setup=false</code>: Use this
-          switch if you have not installed <a class="xref" href=
-          "../general/jansson.html" title=
-          "Jansson-2.14.1">jansson-2.14.1</a>. This disables nm-cloud-setup
-          which is used to automatically configure the network in a public
-          cloud environment within a VM.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -720,7 +730,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1226">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1250">
           Home</a>
         </li>
       </ul>
