@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1257">
+  <body class="blfs" id="blfs-r12.3-1264">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1257
+        "phrase">(systemd</span> Edition) - Version r12.3-1264
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1257">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1264">
           Home</a>
         </li>
       </ul>
@@ -219,13 +219,29 @@
             "command"><strong>-D USE_GTK4</strong></span>
           </p>
           <p>
-            If you are building this package on a 32-bit system, or a 64-bit
-            system with less than 16GB of memory, you must add the
+            With the default <span class="quote">“<span class=
+            "quote">release</span>”</span> build configuration, some source
+            files of this package require more than 4 GiB of RAM to be built.
+            As the result, you should pass <em class=
+            "parameter"><code>-j<em class=
+            "replaceable"><code>&lt;N&gt;</code></em></code></em> to
+            <span class="command"><strong>ninja</strong></span> (replacing
+            <em class="replaceable"><code>&lt;N&gt;</code></em> with the
+            quotient of the amount of available RAM and 4 GiB) to limit the
+            number of parallel jobs and avoid the job from being killed by
+            the kernel OOM killer.
+          </p>
+          <p>
+            On a 32-bit system, the sum of RAM and swap space used by a build
+            job (in fact, any single process) cannot exceed 4 GiB. So if you
+            are building this package on a 32-bit system, you must add the
             <span class="command"><strong>-D CMAKE_CXX_FLAGS_RELEASE="-O2
-            -DNDEBUG"</strong></span> option to the CMake line to prevent
-            build failures relating to running out of memory. Performance
-            will be impacted slightly, but not at a level where it is
-            noticeable during normal usage.
+            -DNDEBUG"</strong></span> option to the <span class=
+            "command"><strong>cmake</strong></span> to disable some
+            optimizations which need a lot of memory to limit the memory
+            usage of individual build jobs. Performance will be impacted
+            slightly, but not at a level where it is noticeable during normal
+            usage.
           </p>
         </div>
         <p>
@@ -566,7 +582,7 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1257">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1264">
           Home</a>
         </li>
       </ul>
