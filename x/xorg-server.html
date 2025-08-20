@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1264">
+  <body class="blfs" id="blfs-r12.3-1282">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1264
+        "phrase">(systemd</span> Edition) - Version r12.3-1282
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1264">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1282">
           Home</a>
         </li>
       </ul>
@@ -224,16 +224,15 @@
         </p>
         <pre class="screen"><span class="blue">D</span>evice Drivers ---&gt;
   <span class="blue">G</span>raphics support ---&gt;
-    &lt;*/M&gt; <span class=
+    &lt;*/M&gt;   <span class=
 "blue">D</span>irect Rendering Manager (XFree86 4.1.0 and higher DRI support) ---&gt;
                                                                       ...  [DRM]
-      &lt; /*/M&gt; <span class=
-"blue">D</span>RM driver for VMware Virtual GPU                     [DRM_VMWGFX]
-      &lt; /*/M&gt; <span class=
-"blue">D</span>RM Support for bochs dispi vga interface (qemu stdvga)
-                                                                ...  [DRM_BOCHS]
-      &lt; /*/M&gt; <span class=
-"blue">V</span>irtual Box Graphics Card                          [DRM_VBOXVIDEO]</pre>
+    &lt; /*/M&gt; <span class=
+"blue">D</span>RM driver for VMware Virtual GPU                       [DRM_VMWGFX]
+    &lt; /*/M&gt; <span class=
+"blue">D</span>RM Support for bochs dispi vga interface (qemu stdvga)  [DRM_BOCHS]
+    &lt; /*/M&gt; <span class=
+"blue">V</span>irtual Box Graphics Card                            [DRM_VBOXVIDEO]</pre>
         <p>
           If the kernel does not provide a DRM driver for your GPU, on most
           x86 systems the <span class="quote">“<span class="quote">simple
@@ -251,6 +250,7 @@
     &lt;*&gt; <span class=
 "blue">D</span>irect Rendering Manager (XFree86 4.1.0 and higher DRI support) ---&gt;
                                                                       ...  [DRM]
+    <span class="blue">D</span>rivers for system framebuffers ---&gt;
       &lt;*&gt; <span class=
 "blue">S</span>imple framebuffer driver                              [DRM_SIMPLEDRM]</pre>
         <p>
@@ -508,7 +508,7 @@ mkdir -pv /etc/X11/xorg.conf.d</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1264">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1282">
           Home</a>
         </li>
       </ul>
