@@ -1,0 +1,23 @@
+diff --git a/wget-list b/wget-list
+index a466a17474..65aa3c7051 100644
+--- a/wget-list
++++ b/wget-list
+@@ -291,8 +291,7 @@ https://github.com/lfs-book/sysmon3/releases/download/sysmon3-3.0.1/sysmon3-3.0.
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-018.tar.xz
+ https://github.com/lu-zero/cargo-c/archive/v0.10.15/cargo-c-0.10.15.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.29.0/cbindgen-0.29.0.tar.gz
+-https://ftp.gnu.org/gnu/clisp/latest/clisp-2.49.tar.bz2
+-https://www.linuxfromscratch.org/patches/blfs/svn/clisp-2.49-readline7_fixes-1.patch
++https://anduin.linuxfromscratch.org/BLFS/clisp/clisp-2.49.95.tar.xz
+ https://cmake.org/files/v4.1/cmake-4.1.0.tar.gz
+ https://doxygen.nl/files/doxygen-1.14.0.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+@@ -427,7 +426,7 @@ https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Params-ValidationCompiler-0.31
+ https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.150.tar.gz
+ https://cpan.metacpan.org/authors/id/H/HA/HAARG/Role-Tiny-2.002004.tar.gz
+ https://cpan.metacpan.org/authors/id/C/CH/CHOCOLATE/Scope-Guard-0.21.tar.gz
+-https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Specio-0.49.tar.gz
++https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Specio-0.52.tar.gz
+ https://cpan.metacpan.org/authors/id/F/FR/FREW/Sub-Exporter-Progressive-0.001013.tar.gz
+ https://cpan.metacpan.org/authors/id/H/HA/HAARG/Sub-Quote-2.006008.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz
