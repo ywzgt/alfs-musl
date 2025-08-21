@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1282">
+  <body class="blfs" id="blfs-r12.3-1303">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1282
+        "phrase">(systemd</span> Edition) - Version r12.3-1303
       </h4>
       <h3>
         Chapter&nbsp;22.&nbsp;Databases
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1282">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1303">
           Home</a>
         </li>
       </ul>
@@ -59,17 +59,10 @@
           fork and a drop-in replacement for the <span class=
           "application">MySQL</span> relational database management system.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.4
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -154,8 +147,13 @@
         <p class="optional">
           <a class="xref" href="../general/boost.html" title=
           "boost-1.89.0">Boost-1.89.0</a>, <a class="xref" href=
-          "../general/libaio.html" title="libaio-0.3.113">libaio-0.3.113</a>,
-          <a class="xref" href="../general/libxml2.html" title=
+          "../general/fmt.html" title="fmt-11.2.0">fmt-11.2.0</a>, <a class=
+          "xref" href="../general/git.html" title=
+          "Git-2.50.1">git-2.50.1</a>, <a class="xref" href=
+          "../general/java.html" title="Java-24.0.2">Java-24.0.2</a>,
+          <a class="xref" href="../general/libaio.html" title=
+          "libaio-0.3.113">libaio-0.3.113</a>, <a class="xref" href=
+          "../general/libxml2.html" title=
           "libxml2-2.14.5">libxml2-2.14.5</a>, <a class="xref" href=
           "../postlfs/linux-pam.html" title=
           "Linux-PAM-1.7.1">Linux-PAM-1.7.1</a>, <a class="xref" href=
@@ -174,6 +172,7 @@
           "https://groonga.org/">Groonga</a>, <a class="ulink" href=
           "https://www.phontron.com/kytea/">KyTea</a>, <a class="ulink" href=
           "https://sourceforge.net/projects/judy/">Judy</a>, <a class="ulink"
+          href="https://snowballstem.org/">libstemmer</a>, <a class="ulink"
           href="https://taku910.github.io/mecab">MeCab</a>, <a class="ulink"
           href="https://msgpack.org/">MessagePack</a>, <a class="ulink" href=
           "https://www.mruby.org/">mruby</a>, <a class="ulink" href=
@@ -205,6 +204,12 @@
         <pre class="root"><kbd class=
         "command">groupadd -g 40 mariadb &amp;&amp;
 useradd -c "MariaDB Server" -d /srv/mariadb -g mariadb -s /bin/false -u 40 mariadb</kbd></pre>
+        <p>
+          Fix an issue with detecting Boost-1.89.0 and later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i 's/regex system/regex/' \
+       storage/columnstore/columnstore/cmake/boost.cmake</kbd></pre>
         <p>
           Install <span class="application">MariaDB</span> by running the
           following commands:
@@ -1420,7 +1425,7 @@ mariadbd-safe --user=mariadb 2&gt;&amp;1 &gt;/dev/null &amp;</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1282">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1303">
           Home</a>
         </li>
       </ul>

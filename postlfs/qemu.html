@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1282">
+  <body class="blfs" id="blfs-r12.3-1303">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1282
+        "phrase">(systemd</span> Edition) - Version r12.3-1303
       </h4>
       <h3>
         Chapter&nbsp;8.&nbsp;Virtualization
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1282">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1303">
           Home</a>
         </li>
       </ul>
@@ -166,7 +166,7 @@
           "../basicnet/curl.html" title="cURL-8.15.0">cURL-8.15.0</a>,
           <a class="xref" href="cyrus-sasl.html" title=
           "Cyrus SASL-2.1.28">Cyrus SASL-2.1.28</a>, <a class="xref" href=
-          "fuse.html" title="Fuse-3.17.3">Fuse-3.17.3</a>, <a class="xref"
+          "fuse.html" title="Fuse-3.17.4">Fuse-3.17.4</a>, <a class="xref"
           href="gnutls.html" title="GnuTLS-3.8.10">GnuTLS-3.8.10</a>,
           <a class="xref" href="../x/gtk3.html" title=
           "GTK-3.24.50">GTK-3.24.50</a>, <a class="xref" href=
@@ -387,7 +387,9 @@ make</kbd></pre>
           <span class="application">qemu</span> uses <span class=
           "command"><strong>ninja</strong></span> as a subprocess when
           building. To run the tests, issue: <span class=
-          "command"><strong>ninja test</strong></span>.
+          "command"><strong>ninja test</strong></span>. Three tests are known
+          to fail due to some indent change in the shell output message with
+          bash-5.3 or newer.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -958,7 +960,7 @@ echo allow br0 &gt; /etc/qemu/bridge.conf</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1282">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1303">
           Home</a>
         </li>
       </ul>

@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      librsvg-2.60.0
+      librsvg-2.61.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1282">
+  <body class="blfs" id="blfs-r12.3-1303">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1282
+        "phrase">(systemd</span> Edition) - Version r12.3-1303
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1282">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1303">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="librsvg" name="librsvg"></a>librsvg-2.60.0
+      <a id="librsvg" name="librsvg"></a>librsvg-2.61.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -59,17 +59,10 @@
           library and tools used to manipulate, convert and view Scalable
           Vector Graphic (SVG) images.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.4
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -78,13 +71,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/librsvg/2.60/librsvg-2.60.0.tar.xz">
-                https://download.gnome.org/sources/librsvg/2.60/librsvg-2.60.0.tar.xz</a>
+                "https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.0.tar.xz">
+                https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: ba3320798fec656c58c849df030dd7d3
+                Download MD5 sum: 7ed4ffdee87e0d7f356fedfea77744ca
               </p>
             </li>
             <li class="listitem">
@@ -95,12 +88,12 @@
             <li class="listitem">
               <p>
                 Estimated disk space required: 1.1 GB (17 MB installed), add
-                494 MB for tests
+                385 MB for tests
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 1.4 SBU (add 1.0 SBU for tests; both
+                Estimated build time: 0.7 SBU (add 0.3 SBU for tests; both
                 using parallelism=4)
               </p>
             </li>
@@ -161,8 +154,8 @@
           First, fix the installation path of the API documentation:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -e "/OUTDIR/s|,| / 'librsvg-2.60.0', '--no-namespace-dir',|" \
-    -e '/output/s|Rsvg-2.0|librsvg-2.60.0|'                      \
+        "command">sed -e "/OUTDIR/s|,| / 'librsvg-2.61.0', '--no-namespace-dir',|" \
+    -e '/output/s|Rsvg-2.0|librsvg-2.61.0|'                      \
     -i doc/meson.build</kbd></pre>
         <p>
           Install <span class="application">librsvg</span> by running the
@@ -203,7 +196,7 @@ ninja</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/librsvg-2.0 and
-              /usr/share/doc/librsvg-2.60.0</span>
+              /usr/share/doc/librsvg-2.61.0</span>
             </div>
           </div>
         </div>
@@ -287,7 +280,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1282">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1303">
           Home</a>
         </li>
       </ul>
