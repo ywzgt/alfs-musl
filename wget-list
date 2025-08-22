@@ -28,13 +28,13 @@ https://github.com/shadow-maint/shadow/releases/download/4.18.0/shadow-4.18.0.ta
 https://www.stunnel.org/downloads/archive/5.x/stunnel-5.75.tar.gz
 https://www.sudo.ws/dist/sudo-1.9.17p2.tar.gz
 https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
-https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.15.tar.xz
+https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.16.tar.xz
 https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz
 https://github.com/libfuse/libfuse/releases/download/fuse-3.17.4/fuse-3.17.4.tar.gz
 https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.patch
 https://sourceware.org/ftp/lvm2/LVM2.2.03.34.tgz
-https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.3.tar.xz
+https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.4.tar.xz
 https://github.com/tuxera/ntfs-3g/archive/2022.10.3/ntfs-3g-2022.10.3.tar.gz
 https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.10-convenience-1.patch
@@ -47,8 +47,8 @@ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
 https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz
 https://unifoundry.com/pub/unifont/unifont-16.0.01/font-builds/unifont-16.0.01.pcf.gz
 https://www.bennewitz.com/bluefish/stable/source/bluefish-2.2.17.tar.bz2
-https://ftp.gnu.org/gnu/ed/ed-1.22.tar.lz
-https://ftp.gnu.org/gnu/emacs/emacs-30.1.tar.xz
+https://ftp.gnu.org/gnu/ed/ed-1.22.2.tar.lz
+https://ftp.gnu.org/gnu/emacs/emacs-30.2.tar.xz
 https://download.gnome.org/sources/gedit/48/gedit-48.1.tar.xz
 https://gitlab.gnome.org/World/gedit/libgedit-amtk/-/archive/5.9.1/libgedit-amtk-5.9.1.tar.bz2
 https://gitlab.gnome.org/World/gedit/libgedit-gtksourceview/-/archive/299.5.0/libgedit-gtksourceview-299.5.0.tar.bz2
@@ -160,7 +160,7 @@ https://github.com/protocolbuffers/protobuf/releases/download/v32.0/protobuf-32.
 https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
 https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
 https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
-https://archive.mozilla.org/pub/firefox/releases/140.1.0esr/source/firefox-140.1.0esr.source.tar.xz
+https://archive.mozilla.org/pub/firefox/releases/140.2.0esr/source/firefox-140.2.0esr.source.tar.xz
 https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.321.0/SPIRV-Headers-vulkan-sdk-1.4.321.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.321.0/SPIRV-Tools-vulkan-sdk-1.4.321.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v20.1.5/SPIRV-LLVM-Translator-20.1.5.tar.gz
@@ -902,7 +902,7 @@ https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
 https://inkscape.org/gallery/item/56344/inkscape-1.4.2.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.2-poppler_fixes-3.patch
 http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
-https://archive.mozilla.org/pub/thunderbird/releases/140.1.1esr/source/thunderbird-140.1.1esr.source.tar.xz
+https://archive.mozilla.org/pub/thunderbird/releases/140.2.0esr/source/thunderbird-140.2.0esr.source.tar.xz
 https://github.com/TigerVNC/tigervnc/archive/v1.15.0/tigervnc-1.15.0.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.15.0-configuration_fixes-1.patch
 https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz
