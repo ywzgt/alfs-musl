@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1337">
+  <body class="blfs" id="blfs-r12.3-1348">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1337
+        "phrase">(systemd</span> Edition) - Version r12.3-1348
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1337">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1348">
           Home</a>
         </li>
       </ul>
@@ -195,7 +195,11 @@ fi</kbd></pre>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr --buildtype=release -D docs=false .. &amp;&amp;
+meson setup --prefix=/usr       \
+            --buildtype=release \
+            -D vapi=false       \
+            -D docs=false       \
+            .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           If you have <a class="xref" href="python-modules.html#gi-docgen"
@@ -225,6 +229,12 @@ ninja</kbd></pre>
           <em class="parameter"><code>--buildtype=release</code></em>:
           Specify a buildtype suitable for stable releases of the package, as
           the default may produce unoptimized binaries.
+        </p>
+        <p>
+          <em class="parameter"><code>-D vapi=false</code></em>: This
+          parameter disables using <a class="xref" href="vala.html" title=
+          "Vala-0.56.18">Vala-0.56.18</a>. Remove this parameter if you have
+          it installed.
         </p>
         <p>
           <em class="parameter"><code>-D docs=false</code></em>: Allow
@@ -356,7 +366,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1337">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1348">
           Home</a>
         </li>
       </ul>
