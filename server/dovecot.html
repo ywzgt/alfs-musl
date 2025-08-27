@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1370">
+  <body class="blfs" id="blfs-r12.3-1373">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1370
+        "phrase">(systemd</span> Edition) - Version r12.3-1373
       </h4>
       <h3>
         Chapter&nbsp;21.&nbsp;Mail Server Software
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1370">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1373">
           Home</a>
         </li>
       </ul>
@@ -62,17 +62,10 @@
           to set up as well as highly configurable and easily extensible with
           plugins.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.4
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -186,7 +179,6 @@ useradd -c "Dovecot login user" -d /dev/null -u 43 \
         "command">./configure --prefix=/usr                          \
             --sysconfdir=/etc                      \
             --localstatedir=/var                   \
-            --with-lua=no                          \
             --docdir=/usr/share/doc/dovecot-2.4.0  \
             --disable-static                       &amp;&amp;
 make</kbd></pre>
@@ -226,8 +218,7 @@ make</kbd></pre>
         <p>
           <code class="option">--with-lua=no</code>: This switch enables
           <span class="application">Lua</span> plugin support. This includes
-          a mail and push notification plugin. The support is currently
-          broken with Lua 5.4.
+          a mail and push notification plugin.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -438,7 +429,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1370">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1373">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1370">
+  <body class="blfs" id="blfs-r12.3-1373">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1370
+        "phrase">(systemd</span> Edition) - Version r12.3-1373
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1370">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1373">
           Home</a>
         </li>
       </ul>
@@ -143,7 +143,11 @@
         </h4>
         <p class="optional">
           <a class="ulink" href=
-          "http://code.google.com/p/libdnet/">libdnet</a>
+          "http://code.google.com/p/libdnet/">libdnet</a> and <a class=
+          "ulink" href=
+          "https://pypi.org/project/setuptools-gettext/">setuptools-gettext</a>
+          (currently <a class="ulink" href=
+          "https://github.com/pypa/build/issues/729">useless</a>)
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -162,6 +166,11 @@
         <pre class="userinput"><kbd class="command">sed -ri Makefile.in \
     -e 's#-m build#&amp; --no-isolation#'  \
     -e '/pip install/s#(ZENMAP|NDIFF)DIR\)/#&amp;dist/*.whl#'</kbd></pre>
+        <p>
+          Remove a useless dependency on setuptools-gettext:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed 's/, "setuptools-gettext"//' -i zenmap/pyproject.toml</kbd></pre>
         <p>
           Install <span class="application">Nmap</span> by running the
           following commands:
@@ -351,7 +360,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1370">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1373">
           Home</a>
         </li>
       </ul>
