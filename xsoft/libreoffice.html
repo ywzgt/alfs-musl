@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      LibreOffice-25.2.5
+      LibreOffice-25.8.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1373">
+  <body class="blfs" id="blfs-r12.3-1376">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1373
+        "phrase">(systemd</span> Edition) - Version r12.3-1376
       </h4>
       <h3>
         Chapter&nbsp;39.&nbsp;Office Programs
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1373">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1376">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="libreoffice" name="libreoffice"></a>LibreOffice-25.2.5
+      <a id="libreoffice" name="libreoffice"></a>LibreOffice-25.8.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -61,17 +61,10 @@
           "application">Microsoft Office</span> and is descended from
           <span class="application">OpenOffice.org</span>.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
-          </p>
-        </div>
+        <p>
+          This package is known to build and work properly using an LFS 12.4
+          platform.
+        </p>
         <h3>
           Package Information
         </h3>
@@ -80,31 +73,31 @@
             <li class="listitem">
               <p>
                 Core Download: <a class="ulink" href=
-                "https://download.documentfoundation.org/libreoffice/src/25.2.5/libreoffice-25.2.5.2.tar.xz">
-                https://download.documentfoundation.org/libreoffice/src/25.2.5/libreoffice-25.2.5.2.tar.xz</a>
+                "https://download.documentfoundation.org/libreoffice/src/25.8.0/libreoffice-25.8.0.4.tar.xz">
+                https://download.documentfoundation.org/libreoffice/src/25.8.0/libreoffice-25.8.0.4.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Core Download MD5 sum: f215c051d230755251e32b4112459950
+                Core Download MD5 sum: b10b6fb7211b0332318fe9a04e639878
               </p>
             </li>
             <li class="listitem">
               <p>
-                Core Download size: 270 MB
+                Core Download size: 272 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 10.8 GB including the
-                additional files if downloaded during the build (776 MB
-                installed). Installing the whole set of languages requires
-                more than 25 GB (around 3 GB installed)
+                Estimated disk space required: 11 GB including the additional
+                files if downloaded during the build (778 MB installed).
+                Installing the whole set of languages requires more than 25
+                GB (around 3 GB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 24 SBU with parallelism=8 (will vary
+                Estimated build time: 23 SBU with parallelism=8 (will vary
                 due to download time)
               </p>
             </li>
@@ -133,24 +126,24 @@
             <li class="listitem">
               <p>
                 Dictionaries: <a class="ulink" href=
-                "https://download.documentfoundation.org/libreoffice/src/25.2.5/libreoffice-dictionaries-25.2.5.2.tar.xz">
-                https://download.documentfoundation.org/libreoffice/src/25.2.5/libreoffice-dictionaries-25.2.5.2.tar.xz</a>
+                "https://download.documentfoundation.org/libreoffice/src/25.8.0/libreoffice-dictionaries-25.8.0.4.tar.xz">
+                https://download.documentfoundation.org/libreoffice/src/25.8.0/libreoffice-dictionaries-25.8.0.4.tar.xz</a>
               </p>
               <p>
-                Dictionaries MD5 sum: ad9f78b23c0d1321ba478d574416660f
+                Dictionaries MD5 sum: 7b11cc1005d9cf90505288af7798f9cc
               </p>
               <p>
-                Dictionaries size: 56 MB
+                Dictionaries size: 60 MB
               </p>
             </li>
             <li class="listitem">
               <p>
                 Help Files: <a class="ulink" href=
-                "https://download.documentfoundation.org/libreoffice/src/25.2.5/libreoffice-help-25.2.5.2.tar.xz">
-                https://download.documentfoundation.org/libreoffice/src/25.2.5/libreoffice-help-25.2.5.2.tar.xz</a>
+                "https://download.documentfoundation.org/libreoffice/src/25.8.0/libreoffice-help-25.8.0.4.tar.xz">
+                https://download.documentfoundation.org/libreoffice/src/25.8.0/libreoffice-help-25.8.0.4.tar.xz</a>
               </p>
               <p>
-                Help Files MD5 sum: f91a96cc0b3bc2f60d95e5cd5fc28630
+                Help Files MD5 sum: c7e060ab843bd22701012d3b4107b45b
               </p>
               <p>
                 Help Files size: 58 MB
@@ -159,23 +152,14 @@
             <li class="listitem">
               <p>
                 Translations: <a class="ulink" href=
-                "https://download.documentfoundation.org/libreoffice/src/25.2.5/libreoffice-translations-25.2.5.2.tar.xz">
-                https://download.documentfoundation.org/libreoffice/src/25.2.5/libreoffice-translations-25.2.5.2.tar.xz</a>
+                "https://download.documentfoundation.org/libreoffice/src/25.8.0/libreoffice-translations-25.8.0.4.tar.xz">
+                https://download.documentfoundation.org/libreoffice/src/25.8.0/libreoffice-translations-25.8.0.4.tar.xz</a>
               </p>
               <p>
-                Translations MD5 sum: a4425c16a73f098a3d6a57abca754abc
+                Translations MD5 sum: e235a9295bedbe114a7acde5404dfba1
               </p>
               <p>
-                Translations size: 219 MB
-              </p>
-            </li>
-            <li class="listitem">
-              <p>
-                Required patch to fix building with <a class="xref" href=
-                "../general/icu.html" title="icu-77.1">ICU-77.1</a>:
-                <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-25.2.5.2-icu76_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-25.2.5.2-icu76_fixes-1.patch</a>
+                Translations size: 220 MB
               </p>
             </li>
           </ul>
@@ -233,11 +217,6 @@
           "../pst/cups.html" title="Cups-2.4.12">Cups-2.4.12</a>, <a class=
           "xref" href="../basicnet/curl.html" title=
           "cURL-8.15.0">cURL-8.15.0</a>, <a class="xref" href=
-          "../x/libepoxy.html" title="libepoxy-1.5.10">libepoxy-1.5.10</a>,
-          <a class="xref" href="../general/libjpeg.html" title=
-          "libjpeg-turbo-3.0.1">libjpeg-turbo-3.0.1</a>, <a class="xref"
-          href="../general/llvm.html" title="LLVM-20.1.8">LLVM-20.1.8</a>
-          (clang is preferred for rendering with skia), <a class="xref" href=
           "../general/glm.html" title="GLM-1.0.1">GLM-1.0.1</a>, <a class=
           "xref" href="../x/glu.html" title="GLU-9.0.3">GLU-9.0.3</a>,
           <a class="xref" href="../postlfs/gpgme.html" title=
@@ -252,8 +231,11 @@
           "../general/icu.html" title="icu-77.1">ICU-77.1</a>, <a class=
           "xref" href="../general/libatomic_ops.html" title=
           "libatomic_ops-7.8.2">libatomic_ops-7.8.2</a>, <a class="xref"
-          href="../general/lcms2.html" title="Little CMS-2.17">Little
-          CMS-2.17</a>, <a class="xref" href="../general/librsvg.html" title=
+          href="../x/libepoxy.html" title=
+          "libepoxy-1.5.10">libepoxy-1.5.10</a>, <a class="xref" href=
+          "../general/libjpeg.html" title=
+          "libjpeg-turbo-3.0.1">libjpeg-turbo-3.0.1</a>, <a class="xref"
+          href="../general/librsvg.html" title=
           "librsvg-2.61.0">librsvg-2.61.0</a>, <a class="xref" href=
           "../general/libtiff.html" title="libtiff-4.7.0">libtiff-4.7.0</a>,
           <a class="xref" href="../general/libwebp.html" title=
@@ -261,6 +243,10 @@
           "../general/libxml2.html" title="libxml2-2.14.5">libxml2-2.14.5</a>
           and <a class="xref" href="../general/libxslt.html" title=
           "libxslt-1.1.43">libxslt-1.1.43</a>, <a class="xref" href=
+          "../general/lcms2.html" title="Little CMS-2.17">Little
+          CMS-2.17</a>, <a class="xref" href="../general/llvm.html" title=
+          "LLVM-20.1.8">LLVM-20.1.8</a> (clang is preferred for rendering
+          with skia), <a class="xref" href=
           "../general/python-modules.html#lxml" title=
           "lxml-6.0.0">lxml-6.0.0</a>, <a class="xref" href="../x/mesa.html"
           title="Mesa-25.1.8">Mesa-25.1.8</a>, <a class="xref" href=
@@ -314,15 +300,8 @@
           "../general/valgrind.html" title=
           "Valgrind-3.25.1">Valgrind-3.25.1</a>, <a class="xref" href=
           "../multimedia/vlc.html" title="VLC-3.0.21">VLC-3.0.21</a>,
-          <a class="ulink" href=
-          "https://commons.apache.org/proper/commons-codec/">Apache Commons
-          Codec</a>, <a class="ulink" href=
-          "https://hc.apache.org/httpcomponents-client-ga/index.html">Apache
-          Commons HttpClient</a>, <a class="ulink" href=
-          "https://commons.apache.org/proper/commons-lang/">Apache Commons
-          Lang</a>, <a class="ulink" href=
-          "https://commons.apache.org/proper/commons-logging/">Apache Commons
-          Logging</a>, <a class="ulink" href=
+          <a class="xref" href="../general/zxing-cpp.html" title=
+          "zxing-cpp-2.3.0">zxing-cpp-2.3.0</a>, <a class="ulink" href=
           "https://beanshell.github.io/">BeanShell</a>, <a class="ulink"
           href="https://box2d.org/documentation/">box2d</a>, <a class="ulink"
           href="https://projects.coin-or.org/CoinMP/">CoinMP</a>, <a class=
@@ -333,18 +312,17 @@
           "ulink" href="https://www.firebirdsql.org/">Firebird</a>, <a class=
           "ulink" href=
           "https://github.com/serge-sans-paille/frozen">frozen</a>, <a class=
-          "ulink" href="https://github.com/behdad/glyphy">glyphy</a>,
-          <a class="ulink" href=
-          "https://download.gnome.org/sources/gnome-vfs/">Gnome VFS</a>,
-          <a class="ulink" href=
+          "ulink" href=
           "https://github.com/hamcrest/JavaHamcrest/releases">hamcrest</a>,
           <a class="ulink" href="https://hunspell.github.io/">Hunspell</a>,
           <a class="ulink" href=
           "https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</a>,
-          <a class="ulink" href="https://include-what-you-use.org/">iwyu</a>,
           <a class="ulink" href=
           "https://github.com/TooTallNate/Java-WebSocket">Java-WebSocket</a>,
           <a class="ulink" href=
+          "https://sourceforge.net/projects/jfreereport/">jfreereport</a>,
+          <a class="ulink" href="https://jqlang.org/">jq</a>, <a class=
+          "ulink" href=
           "https://github.com/junit-team/junit4/releases">junit4</a>,
           <a class="ulink" href=
           "https://wiki.documentfoundation.org/DLP/Libraries/libabw">libabw</a>,
@@ -355,7 +333,8 @@
           "ulink" href=
           "https://www.sourceforge.net/projects/libebook/">libebook</a>,
           <a class="ulink" href=
-          "https://sourceforge.net/projects/libepubgen/">libepubgen</a>,
+          "https://github.com/umanwizard/libeot">libeot</a>, <a class="ulink"
+          href="https://sourceforge.net/projects/libepubgen/">libepubgen</a>,
           <a class="ulink" href=
           "https://wiki.documentfoundation.org/DLP/Libraries/libetonyek">libetonyek</a>,
           <a class="ulink" href=
@@ -376,8 +355,6 @@
           "https://sourceforge.net/projects/libwpd/files/libodfgen/">libodfgen</a>,
           <a class="ulink" href=
           "https://wiki.documentfoundation.org/DLP/Libraries/libpagemaker">libpagemaker</a>,
-          <a class="ulink" href=
-          "https://github.com/nayuki/QR-Code-generator">libqrcodegen</a>,
           <a class="ulink" href=
           "https://wiki.documentfoundation.org/DLP/Libraries/libqxp">libqxp</a>,
           <a class="ulink" href=
@@ -400,12 +377,11 @@
           "https://odftoolkit.org/conformance/ODFValidator.html">odfvalidator</a>,
           <a class="ulink" href=
           "https://code.google.com/archive/p/officeotron/">officeotron</a>,
-          <a class="ulink" href=
-          "https://github.com/KhronosGroup/OpenCOLLADA/">OpenCOLLADA</a>,
           <a class="ulink" href="https://gitlab.com/orcus/orcus">Orcus</a>,
-          <a class="ulink" href=
-          "https://sourceware.org/systemtap/">SystemTap</a>, and <a class=
-          "ulink" href="https://ukoethe.github.io/vigra/">VIGRA</a>
+          <a class="ulink" href="https://github.com/mozilla/rhino">rhino</a>,
+          and <a class="ulink" href=
+          "https://people.engr.tamu.edu/davis/suitesparse.html">suitesparse
+          (colamd)</a>
         </p>
         <p>
           There are many optional dependencies not listed here. They can be
@@ -422,16 +398,11 @@
           Installation of LibreOffice
         </h2>
         <p>
-          First, fix build failures introduced by the latest version of ICU:
+          Next, fix a problem with detecting Boost::System, which was changed
+          from a library to a series of headers in Boost-1.89.0:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../libreoffice-25.2.5.2-icu76_fixes-1.patch</kbd></pre>
-        <p>
-          Next, fix a problem with OpenJDK-24 and later that occurs due to
-          the removal of deprecated API in Java:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -i 's/-Djava.security.manager=allow//' external/hsqldb/ExternalProject_hsqldb.mk</kbd></pre>
+        "command">export boost_cv_lib_system=yes</kbd></pre>
         <p>
           Next, fix a bug with linking to zlib, fix a bug which would cause
           an install failure, and prevent compression of man pages:
@@ -449,18 +420,18 @@ sed -e "/gzip -f/d"   \
         </p>
         <pre class="userinput"><kbd class=
         "command">install -dm755 external/tarballs &amp;&amp;
-ln -sv ../../../libreoffice-dictionaries-25.2.5.2.tar.xz external/tarballs/ &amp;&amp;
-ln -sv ../../../libreoffice-help-25.2.5.2.tar.xz         external/tarballs/ &amp;&amp;
-ln -sv ../../../libreoffice-translations-25.2.5.2.tar.xz external/tarballs/</kbd></pre>
+ln -sv ../../../libreoffice-dictionaries-25.8.0.4.tar.xz external/tarballs/ &amp;&amp;
+ln -sv ../../../libreoffice-help-25.8.0.4.tar.xz         external/tarballs/ &amp;&amp;
+ln -sv ../../../libreoffice-translations-25.8.0.4.tar.xz external/tarballs/</kbd></pre>
         <p>
           The instructions in the package unpack some tarballs into a
           location it cannot find later. Create some symlinks to help the
           build system out:
         </p>
         <pre class="userinput"><kbd class=
-        "command">ln -sv src/libreoffice-help-25.2.5.2/helpcontent2/ &amp;&amp;
-ln -sv src/libreoffice-dictionaries-25.2.5.2/dictionaries/ &amp;&amp;
-ln -sv src/libreoffice-translations-25.2.5.2/translations/</kbd></pre>
+        "command">ln -sv src/libreoffice-help-25.8.0.4/helpcontent2/ &amp;&amp;
+ln -sv src/libreoffice-dictionaries-25.8.0.4/dictionaries/ &amp;&amp;
+ln -sv src/libreoffice-translations-25.8.0.4/translations/</kbd></pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -480,7 +451,7 @@ ln -sv src/libreoffice-translations-25.2.5.2/translations/</kbd></pre>
           "filename">/usr</code>. Depending on your choice, replace
           <em class="replaceable"><code>&lt;PREFIX&gt;</code></em> by
           <code class="filename">/usr</code> or by <code class=
-          "filename">/opt/libreoffice-25.2.5.2</code>:
+          "filename">/opt/libreoffice-25.8.0.4</code>:
         </p>
         <pre class="userinput"><kbd class=
         "command">export LO_PREFIX=<em class=
@@ -537,11 +508,14 @@ esac</kbd></pre>
              --with-system-gpgmepp       \
              --with-system-graphite      \
              --with-system-harfbuzz      \
+             --with-system-icu           \
              --with-system-jpeg          \
              --with-system-lcms2         \
              --with-system-libatomic_ops \
+             --with-system-libtiff       \
              --with-system-libpng        \
              --with-system-libxml        \
+             --with-system-libwebp       \
              --with-system-nss           \
              --with-system-odbc          \
              --with-system-openldap      \
@@ -549,10 +523,8 @@ esac</kbd></pre>
              --with-system-poppler       \
              --with-system-postgresql    \
              --with-system-redland       \
-             --with-system-libtiff       \
-             --with-system-libwebp       \
-             --with-system-icu           \
-             --with-system-zlib</kbd></pre>
+             --with-system-zlib          \
+             --with-system-zstd</kbd></pre>
         <p>
           Build the package:
         </p>
@@ -564,7 +536,7 @@ esac</kbd></pre>
         "command">make distro-pack-install</kbd></pre>
         <p>
           If installed in <code class=
-          "filename">/opt/libreoffice-25.2.5.2</code> some additional steps
+          "filename">/opt/libreoffice-25.8.0.4</code> some additional steps
           are necessary. Issue the following commands as the <code class=
           "systemitem">root</code> user:
         </p>
@@ -833,7 +805,15 @@ fi</kbd></pre>
           of the bundled copy. Add this switch if <a class="xref" href=
           "../general/abseil-cpp.html" title=
           "Abseil-cpp-20250814.0">Abseil-cpp-20250814.0</a> is installed and
-          you wish to use it instead of the bundled copy.
+          you want to use it instead of the bundled copy.
+        </p>
+        <p>
+          <code class="option">--with-system-zxing</code>: This switch
+          enables using a system version of zxing-cpp instead of the bundled
+          copy. Add this switch if <a class="xref" href=
+          "../general/zxing-cpp.html" title=
+          "zxing-cpp-2.3.0">zxing-cpp-2.3.0</a> is installed and you want to
+          use it instead of the bundled copy.
         </p>
         <p>
           <code class="option">--enable-gtk4</code>: This switch enables
@@ -1035,7 +1015,7 @@ fi</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1373">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1376">
           Home</a>
         </li>
       </ul>
