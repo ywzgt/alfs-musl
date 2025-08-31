@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1378">
+  <body class="blfs" id="blfs-r12.3-1385">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1378
+        "phrase">(systemd</span> Edition) - Version r12.3-1385
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1378">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1385">
           Home</a>
         </li>
       </ul>
@@ -158,8 +158,19 @@
           Installation of ISC Kea DHCP Server
         </h2>
         <p>
-          Install <span class="application">ISC Kea DHCP Server</span> by
-          running the following commands:
+          First, apply a few fixes required for boost-1.89.0:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e "s/, modules: \['system'\]//" -i meson.build                      &amp;&amp;
+sed -e "/shared_ptr.hpp/a#include &lt;boost/asio/deadline_timer.hpp&gt;"       \
+    -i src/lib/asiolink/interval_timer.cc                                &amp;&amp;
+sed -e "/posix_time_types.hpp/a#include &lt;boost/asio/deadline_timer.hpp&gt;" \
+    -i src/lib/asiodns/io_fetch.cc                                       &amp;&amp;
+sed -e "/posix_time_types.hpp/a#include &lt;boost/asio/deadline_timer.hpp&gt;" \
+    -i src/lib/asiodns/tests/io_fetch_unittest.cc</kbd></pre>
+        <p>
+          Now, install <span class="application">ISC Kea DHCP Server</span>
+          by running the following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
@@ -175,7 +186,7 @@ meson setup ..             \
 ninja</kbd></pre>
         <p>
           If tests were enabled, run <span class="command"><strong>ninja
-          check</strong></span> to test the results. There are tests which
+          test</strong></span> to test the results. There are tests which
           require a live database when any of the database hooks are built.
         </p>
         <p>
@@ -184,6 +195,12 @@ ninja</kbd></pre>
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
+        <p>
+          Fix some paths coded in the <span class=
+          "command"><strong>keactrl</strong></span> script:
+        </p>
+        <pre class="root"><kbd class=
+        "command">sed -e "s;\${prefix}/;;" -i /usr/sbin/keactrl</kbd></pre>
         <p>
           Create some directories and fix their permission settings as the
           <code class="systemitem">root</code> user:
@@ -782,7 +799,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1378">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1385">
           Home</a>
         </li>
       </ul>
