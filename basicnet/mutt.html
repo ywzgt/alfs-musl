@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1385">
+  <body class="blfs" id="blfs-r12.4">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1385
+        "phrase">(systemd</span> Edition) - Version r12.4
       </h4>
       <h3>
         Chapter&nbsp;19.&nbsp;Mail/News Clients
@@ -41,8 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1385">
-          Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4">Home</a>
         </li>
       </ul>
     </div>
@@ -127,8 +126,8 @@
           "gpgme-2.0.0">gpgme-2.0.0</a> (currently broken), <a class="xref"
           href="../general/libidn.html" title="libidn-1.43">libidn-1.43</a>,
           <a class="xref" href="../postlfs/mitkrb.html" title=
-          "MIT Kerberos V5-1.22">MIT Kerberos V5-1.22</a>, an <a class="xref"
-          href="../server/mail.html" title=
+          "MIT Kerberos V5-1.22.1">MIT Kerberos V5-1.22.1</a>, an <a class=
+          "xref" href="../server/mail.html" title=
           "Chapter&nbsp;21.&nbsp;Mail Server Software">MTA</a> (that provides
           a <span class="command"><strong>sendmail</strong></span> command),
           <a class="xref" href="../general/slang.html" title=
@@ -328,6 +327,14 @@ chmod -v 2755 /usr/bin/mutt_dotlock</kbd></pre>
           the server configuration, this may not be needed for POP3 or IMAP.
           However, it is needed for SMTP authentication.
         </p>
+        <p>
+          <code class="option">--with-gss</code>: This parameter adds
+          authentication support for Kerberos. If you need to use this
+          support, make sure that <a class="xref" href=
+          "../postlfs/mitkrb.html" title="MIT Kerberos V5-1.22.1">MIT
+          Kerberos V5-1.22.1</a> is installed and configured correctly, and
+          then use this option while building this package.
+        </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -524,8 +531,7 @@ chmod -v 2755 /usr/bin/mutt_dotlock</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1385">
-          Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4">Home</a>
         </li>
       </ul>
     </div>

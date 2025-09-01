@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1385">
+  <body class="blfs" id="blfs-r12.4">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1385
+        "phrase">(systemd</span> Edition) - Version r12.4
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,8 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1385">
-          Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4">Home</a>
         </li>
       </ul>
     </div>
@@ -99,6 +98,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch on 32-bit systems: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/guile-3.0.10-32bit_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/guile-3.0.10-32bit_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Guile Dependencies
         </h3>
         <h4>
@@ -122,6 +135,12 @@
         <h2 class="sect2">
           Installation of Guile
         </h2>
+        <p>
+          First, if you are on a 32-bit system, fix a build failure:
+        </p>
+        <pre class="userinput"><kbd class="command">case $(uname -m) in
+    i?86) patch -Np1 -i ../guile-3.0.10-32bit_fixes-1.patch ;;
+esac</kbd></pre>
         <p>
           Install <span class="application">Guile</span> by running the
           following commands:
@@ -312,8 +331,7 @@ unset DIRNAME</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1385">
-          Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4">Home</a>
         </li>
       </ul>
     </div>

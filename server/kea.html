@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.3-1385">
+  <body class="blfs" id="blfs-r12.4">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.3-1385
+        "phrase">(systemd</span> Edition) - Version r12.4
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -40,8 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1385">
-          Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4">Home</a>
         </li>
       </ul>
     </div>
@@ -115,8 +114,8 @@
         <p class="optional">
           <a class="ulink" href="https://botan.randombit.net/">botan</a>,
           <a class="xref" href="../postlfs/mitkrb.html" title=
-          "MIT Kerberos V5-1.22">MIT Kerberos V5-1.22</a>, <a class="xref"
-          href="../general/valgrind.html" title=
+          "MIT Kerberos V5-1.22.1">MIT Kerberos V5-1.22.1</a>, <a class=
+          "xref" href="../general/valgrind.html" title=
           "Valgrind-3.25.1">Valgrind-3.25.1</a>; for documentation: <a class=
           "xref" href="../general/doxygen.html" title=
           "Doxygen-1.14.0">Doxygen-1.14.0</a>, <a class="xref" href=
@@ -230,6 +229,11 @@ install -dm0750 /var/log/kea</kbd></pre>
           <code class="option">-D tests=enabled</code>: This option is
           required to build the test suite. Drop it if you are not going to
           run the tests.
+        </p>
+        <p>
+          <code class="option">-D krb5=enabled</code>: This switch enables
+          integration with Kerberos for authenticating client computers in an
+          enterprise environment.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -799,8 +803,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.3-1385">
-          Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4">Home</a>
         </li>
       </ul>
     </div>
