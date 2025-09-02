@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4">
+  <body class="blfs" id="blfs-r12.4-5">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4
+        "phrase">(systemd</span> Edition) - Version r12.4-5
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-5">Home</a>
         </li>
       </ul>
     </div>
@@ -60,10 +60,17 @@
           an Xorg server not tied to a physical console and also provides a
           client for viewing of the remote graphical desktop.
         </p>
-        <p>
-          This package is known to build and work properly using an LFS 12.4
-          platform.
-        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            Development versions of BLFS may not build or run some packages
+            properly if LFS or dependencies have been updated since the most
+            recent stable versions of the books.
+          </p>
+        </div>
         <h3>
           Package Information
         </h3>
@@ -174,6 +181,13 @@
         <p class="recommended">
           <a class="xref" href="../general/imagemagick.html" title=
           "ImageMagick-7.1.2-1">ImageMagick-7.1.2-1</a>
+        </p>
+        <h4>
+          Optional
+        </h4>
+        <p class="optional">
+          <a class="xref" href="../multimedia/ffmpeg.html" title=
+          "FFmpeg-7.1.1">FFmpeg-7.1.1</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -325,6 +339,20 @@ EOF</kbd></pre>
         <pre class="root"><kbd class=
         "command">systemctl enable vncserver@:1</kbd></pre>
       </div>
+      <div class="commands" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Command Explanations
+        </h2>
+        <p>
+          <code class="option">-D ENABLE_H264=ON</code>: Append this switch
+          to the <span class="command"><strong>cmake</strong></span> command
+          to enable the H264 decoding support for the viewer. It requires
+          <a class="xref" href="../multimedia/ffmpeg.html" title=
+          "FFmpeg-7.1.1">FFmpeg-7.1.1</a>. Note that even with this, the
+          <span class="command"><strong>Xvnc</strong></span> server from this
+          package still does not support H264 encoding.
+        </p>
+      </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
           Contents
@@ -472,7 +500,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-5">Home</a>
         </li>
       </ul>
     </div>
