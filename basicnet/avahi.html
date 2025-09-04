@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-7">
+  <body class="blfs" id="blfs-r12.4-11">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-7
+        "phrase">(systemd</span> Edition) - Version r12.4-11
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -42,7 +42,8 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-7">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-11">
+          Home</a>
         </li>
       </ul>
     </div>
@@ -317,22 +318,37 @@ make</kbd></pre>
             <a id="avahi-init" name="avahi-init"></a>Boot Script
           </h3>
           <p>
-            To start the <span class=
-            "command"><strong>avahi-daemon</strong></span> daemon at boot,
-            enable the previously installed systemd unit by running the
-            following command as the <code class="systemitem">root</code>
-            user:
+            The <span class="command"><strong>avahi-daemon</strong></span>
+            will conflict with <span class=
+            "command"><strong>systemd-resolved</strong></span> under the
+            default configuration if both are running simultaneously on a
+            system because both will act as a Multicast DNS resolver and
+            responder. If you must run the Avahi daemon (the BLFS editors
+            don't recommend to do that unless you really need its
+            functionality), disable the Multicast DNS support of <span class=
+            "command"><strong>systemd-resolved</strong></span> and enable the
+            previously installed systemd unit by running the following
+            command as the <code class="systemitem">root</code> user:
           </p>
-          <pre class="root"><kbd class=
-          "command">systemctl enable avahi-daemon</kbd></pre>
+          <pre class="userinput"><kbd class=
+          "command">mkdir /etc/systemd/resolved.conf.d &amp;&amp;
+cat &gt; /etc/systemd/resolved.conf.d/no-mdns.conf &lt;&lt; EOF &amp;&amp;
+[Resolve]
+MulticastDNS=no
+EOF
+systemctl enable avahi-daemon</kbd></pre>
           <p>
             To start the <span class=
             "command"><strong>avahi-dnsconfd</strong></span> daemon at boot,
             enable the previously installed systemd unit by running the
             following command as the <code class="systemitem">root</code>
-            user:
+            user (note that the following command will also implicitly enable
+            <span class="command"><strong>avahi-daemon</strong></span>, so if
+            you are runing it, you need to make sure you've disabled the
+            <span class="command"><strong>systemd-resolved</strong></span>
+            Multicast DNS support as mentioned above):
           </p>
-          <pre class="root"><kbd class=
+          <pre class="userinput"><kbd class=
           "command">systemctl enable avahi-dnsconfd</kbd></pre>
         </div>
       </div>
@@ -637,7 +653,8 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-7">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-11">
+          Home</a>
         </li>
       </ul>
     </div>
