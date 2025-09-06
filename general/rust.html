@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-11">
+  <body class="blfs" id="blfs-r12.4-22">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-11
+        "phrase">(systemd</span> Edition) - Version r12.4-22
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-11">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-22">
           Home</a>
         </li>
       </ul>
@@ -211,11 +211,10 @@
         </h4>
         <p class="recommended">
           <a class="xref" href="libssh2.html" title=
-          "libssh2-1.11.1">libssh2-1.11.1</a>, <a class="xref" href=
+          "libssh2-1.11.1">libssh2-1.11.1</a> and <a class="xref" href=
           "llvm.html" title="LLVM-20.1.8">LLVM-20.1.8</a> (built with -D
           LLVM_LINK_LLVM_DYLIB=ON so that rust can link to system LLVM
-          instead of building its shipped version), and <a class="xref" href=
-          "../server/sqlite.html" title="SQLite-3.50.4">SQLite-3.50.4</a>
+          instead of building its shipped version)
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -223,8 +222,10 @@
             Note
           </h3>
           <p>
-            If a recommended dependency is not installed, a shipped copy in
-            the Rustc source tarball will be built and used.
+            If a recommended dependency is not installed, you'll need to
+            modify the instructions to build and use a shipped copy in the
+            Rustc source tarball instead. See the Command Explanations
+            section for details.
           </p>
         </div>
         <h4>
@@ -233,7 +234,7 @@
         <p class="optional">
           <a class="xref" href="gdb.html" title="GDB-16.3">GDB-16.3</a> (used
           by the test suite if it is present), <a class="xref" href=
-          "git.html" title="Git-2.50.1">git-2.50.1</a> (required by the test
+          "git.html" title="Git-2.51.0">git-2.51.0</a> (required by the test
           suite), <a class="ulink" href=
           "https://github.com/bytecodealliance/wasmtime/tree/main/cranelift">cranelift</a>,
           <a class="ulink" href="https://jemalloc.net/">jemalloc</a>,
@@ -298,7 +299,7 @@ link-shared = true
 targets = "X86"
 
 [build]
-description = "for BLFS r12.4-11"
+description = "for BLFS r12.4-22"
 
 # Omit docs to save time and space (default is to build them).
 docs = false
@@ -340,8 +341,8 @@ EOF</kbd></pre>
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">[ ! -e /usr/include/libssh2.h ] || export LIBSSH2_SYS_USE_PKG_CONFIG=1
-[ ! -e /usr/include/sqlite3.h ] || export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
+        "command">export LIBSSH2_SYS_USE_PKG_CONFIG=1
+export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
 ./x.py build</kbd></pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -396,8 +397,8 @@ EOF</kbd></pre>
             SIGSEGV.
           </p>
           <p>
-            We are still investigating the root cause of this issue, but for
-            now we've replaced <em class=
+            It's caused by a Glibc bug affecting Glibc-2.42 and several prior
+            releases, so for now we've replaced <em class=
             "parameter"><code>--strip-unneeded</code></em> with <em class=
             "parameter"><code>--strip-debug</code></em> in both the LFS book
             and <a class="xref" href=
@@ -520,6 +521,8 @@ mv -v /etc/bash_completion.d/cargo /usr/share/bash-completion/completions</kbd><
           <span class="command"><strong>export
           LIBSSH2_SYS_USE_PKG_CONFIG=1</strong></span>: Allow <span class=
           "command"><strong>cargo</strong></span> to link to system libssh2.
+          Omit this command if you've not installed <a class="xref" href=
+          "libssh2.html" title="libssh2-1.11.1">libssh2-1.11.1</a>.
         </p>
         <p>
           <span class="command"><strong>export
@@ -792,7 +795,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-11">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-22">
           Home</a>
         </li>
       </ul>
