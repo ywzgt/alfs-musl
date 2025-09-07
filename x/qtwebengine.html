@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-22">
+  <body class="blfs" id="blfs-r12.4-42">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-22
+        "phrase">(systemd</span> Edition) - Version r12.4-42
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-22">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-42">
           Home</a>
         </li>
       </ul>
@@ -171,6 +171,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-6.9.2-ffmpeg_8.0-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-6.9.2-ffmpeg_8.0-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           qtwebengine Dependencies
         </h3>
         <h4>
@@ -183,8 +197,8 @@
           "html5lib-1.1">html5lib-1.1</a>, <a class="xref" href=
           "../general/nodejs.html" title=
           "Node.js-22.19.0">nodejs-22.19.0</a>, <a class="xref" href=
-          "../postlfs/nss.html" title="NSS-3.115">nss-3.115</a>, <a class=
-          "xref" href="../general/pciutils.html" title=
+          "../postlfs/nss.html" title="NSS-3.115.1">nss-3.115.1</a>,
+          <a class="xref" href="../general/pciutils.html" title=
           "pciutils-3.14.0">pciutils-3.14.0</a>, and <a class="xref" href=
           "qt6.html" title="Qt-6.9.2">Qt-6.9.2</a>
         </p>
@@ -208,10 +222,10 @@
           "alsa-lib-1.2.14">alsa-lib-1.2.14</a> or <a class="xref" href=
           "../multimedia/pulseaudio.html" title=
           "PulseAudio-17.0">PulseAudio-17.0</a> (or both), <a class="xref"
-          href="../multimedia/ffmpeg.html" title=
-          "FFmpeg-7.1.1">FFmpeg-7.1.1</a>, <a class="xref" href=
-          "../general/icu.html" title="icu-77.1">ICU-77.1</a>, <a class=
-          "xref" href="../basicnet/libevent.html" title=
+          href="../multimedia/ffmpeg.html" title="FFmpeg-8.0">FFmpeg-8.0</a>,
+          <a class="xref" href="../general/icu.html" title=
+          "icu-77.1">ICU-77.1</a>, <a class="xref" href=
+          "../basicnet/libevent.html" title=
           "libevent-2.1.12">libevent-2.1.12</a>, <a class="xref" href=
           "../general/libwebp.html" title="libwebp-1.6.0">libwebp-1.6.0</a>,
           <a class="xref" href="../general/libxslt.html" title=
@@ -238,6 +252,11 @@
         <h2 class="sect2">
           Installation of qtwebengine
         </h2>
+        <p>
+          Adjust the FFMpeg profiles to support FFMPEG 8.0
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../qtwebengine-6.9.2-ffmpeg_8.0-1.patch</kbd></pre>
         <p>
           Install <span class="application">qtwebengine</span> by running the
           following commands:
@@ -479,7 +498,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-22">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-42">
           Home</a>
         </li>
       </ul>

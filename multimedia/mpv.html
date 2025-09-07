@@ -12,20 +12,20 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-22">
+  <body class="blfs" id="blfs-r12.4-42">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-22
+        "phrase">(systemd</span> Edition) - Version r12.4-42
       </h4>
       <h3>
         Chapter&nbsp;44.&nbsp;Video Utilities
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="ffmpeg.html" title="FFmpeg-7.1.1">Prev</a>
+          <a accesskey="p" href="ffmpeg.html" title="FFmpeg-8.0">Prev</a>
           <p>
-            FFmpeg-7.1.1
+            FFmpeg-8.0
           </p>
         </li>
         <li class="next">
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-22">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-42">
           Home</a>
         </li>
       </ul>
@@ -112,8 +112,8 @@
         <p class="required">
           <a class="xref" href="alsa-lib.html" title=
           "alsa-lib-1.2.14">alsa-lib-1.2.14</a>, <a class="xref" href=
-          "ffmpeg.html" title="FFmpeg-7.1.1">FFmpeg-7.1.1</a>, <a class=
-          "xref" href="libass.html" title="libass-0.17.4">libass-0.17.4</a>,
+          "ffmpeg.html" title="FFmpeg-8.0">FFmpeg-8.0</a>, <a class="xref"
+          href="libass.html" title="libass-0.17.4">libass-0.17.4</a>,
           <a class="xref" href="libplacebo.html" title=
           "libplacebo-7.351.0">libplacebo-7.351.0</a>, <a class="xref" href=
           "../x/mesa.html" title="Mesa-25.1.8">Mesa-25.1.8</a>, and <a class=
@@ -177,10 +177,15 @@
           Installation of mpv
         </h2>
         <p>
-          Add a fix to build with FFMpeg &gt; 7.0
+          Add a fix to build with FFMpeg &gt; 7.0+
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -i 's/AV_OPT_TYPE_CHANNEL_LAYOUT/AV_OPT_TYPE_CHLAYOUT/' filters/f_lavfi.c</kbd></pre>
+        <p>
+          Add a fix to build with FFMpeg &gt; 8.0
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i 's/FF_PROFILE_/AV_PROFILE_/' demux/demux_mkv.c</kbd></pre>
         <p>
           Install <span class="application">mpv</span> by running the
           following commands:
@@ -315,9 +320,9 @@ update-desktop-database -q</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="ffmpeg.html" title="FFmpeg-7.1.1">Prev</a>
+          <a accesskey="p" href="ffmpeg.html" title="FFmpeg-8.0">Prev</a>
           <p>
-            FFmpeg-7.1.1
+            FFmpeg-8.0
           </p>
         </li>
         <li class="next">
@@ -332,7 +337,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-22">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-42">
           Home</a>
         </li>
       </ul>
