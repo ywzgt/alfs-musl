@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-42">
+  <body class="blfs" id="blfs-r12.4-61">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-42
+        "phrase">(systemd</span> Edition) - Version r12.4-61
       </h4>
       <h3>
         Chapter&nbsp;8.&nbsp;Virtualization
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-42">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-61">
           Home</a>
         </li>
       </ul>
@@ -106,20 +106,6 @@
           </ul>
         </div>
         <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/qemu-10.1.0-python_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/qemu-10.1.0-python_fixes-1.patch</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h3>
           Qemu Dependencies
         </h3>
         <h4>
@@ -139,7 +125,7 @@
           "../general/dtc.html" title="dtc-1.7.2">dtc-1.7.2</a>, <a class=
           "xref" href="../basicnet/libslirp.html" title=
           "libslirp-4.9.1">libslirp-4.9.1</a>, and <a class="xref" href=
-          "../multimedia/sdl2.html" title="SDL2-2.32.8">SDL2-2.32.8</a>
+          "../multimedia/sdl2.html" title="SDL2-2.32.10">SDL2-2.32.10</a>
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -337,11 +323,6 @@
         </p>
         <pre class="root"><kbd class="command">usermod -a -G kvm <em class=
         "replaceable"><code>&lt;username&gt;</code></em></kbd></pre>
-        <p>
-          Fix an incompatibility with pip-25.2 and later:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../qemu-10.1.0-python_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">qemu</span> by running the
           following commands:
@@ -960,7 +941,7 @@ echo allow br0 &gt; /etc/qemu/bridge.conf</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-42">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-61">
           Home</a>
         </li>
       </ul>

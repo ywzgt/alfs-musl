@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-42">
+  <body class="blfs" id="blfs-r12.4-61">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-42
+        "phrase">(systemd</span> Edition) - Version r12.4-61
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-42">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-61">
           Home</a>
         </li>
       </ul>
@@ -331,11 +331,11 @@ make</kbd></pre>
             command as the <code class="systemitem">root</code> user:
           </p>
           <pre class="userinput"><kbd class=
-          "command">mkdir /etc/systemd/resolved.conf.d &amp;&amp;
+          "command">mkdir -pv /etc/systemd/resolved.conf.d &amp;&amp;
 cat &gt; /etc/systemd/resolved.conf.d/no-mdns.conf &lt;&lt; EOF &amp;&amp;
-[Resolve]
+<code class="literal">[Resolve]
 MulticastDNS=no
-EOF
+</code>EOF
 systemctl enable avahi-daemon</kbd></pre>
           <p>
             To start the <span class=
@@ -653,7 +653,7 @@ systemctl enable avahi-daemon</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-42">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-61">
           Home</a>
         </li>
       </ul>

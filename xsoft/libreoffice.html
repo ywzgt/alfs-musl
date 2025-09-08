@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-42">
+  <body class="blfs" id="blfs-r12.4-61">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-42
+        "phrase">(systemd</span> Edition) - Version r12.4-61
       </h4>
       <h3>
         Chapter&nbsp;39.&nbsp;Office Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-42">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-61">
           Home</a>
         </li>
       </ul>
@@ -237,7 +237,7 @@
           "harfBuzz-11.4.5">harfBuzz-11.4.5</a>, <a class="xref" href=
           "../general/icu.html" title="icu-77.1">ICU-77.1</a>, <a class=
           "xref" href="../general/libatomic_ops.html" title=
-          "libatomic_ops-7.8.2">libatomic_ops-7.8.2</a>, <a class="xref"
+          "libatomic_ops-7.8.4">libatomic_ops-7.8.4</a>, <a class="xref"
           href="../x/libepoxy.html" title=
           "libepoxy-1.5.10">libepoxy-1.5.10</a>, <a class="xref" href=
           "../general/libjpeg.html" title=
@@ -261,7 +261,7 @@
           <a class="xref" href="../server/openldap.html" title=
           "OpenLDAP-2.6.10">OpenLDAP-2.6.10</a> (if connecting to an LDAP
           server), <a class="xref" href="../general/poppler.html" title=
-          "Poppler-25.08.0">Poppler-25.08.0</a>, <a class="xref" href=
+          "Poppler-25.09.0">Poppler-25.09.0</a>, <a class="xref" href=
           "../server/postgresql.html" title=
           "PostgreSQL-17.6">PostgreSQL-17.6</a>, <a class="xref" href=
           "../general/redland.html" title=
@@ -404,6 +404,15 @@
         <h2 class="sect2">
           Installation of LibreOffice
         </h2>
+        <p>
+          First, fix build failures introduced by the latest version of
+          poppler:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e '/double \*mat/   s/double \*/std::array&lt;double, 6&gt; \&amp;/' \
+    -e '/double \*pBbox/ s/double \*/std::array&lt;double, 4&gt; \&amp;/' \
+    -i sdext/source/pdfimport/xpdfwrapper/pdfioutdev_gpl.cxx    \
+       sdext/source/pdfimport/xpdfwrapper/pdfioutdev_gpl.hxx</kbd></pre>
         <p>
           Next, fix a problem with detecting Boost::System, which was changed
           from a library to a series of headers in Boost-1.89.0:
@@ -1022,7 +1031,7 @@ fi</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-42">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-61">
           Home</a>
         </li>
       </ul>
