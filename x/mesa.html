@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Mesa-25.1.8
+      Mesa-25.2.2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-65">
+  <body class="blfs" id="blfs-r12.4-70">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-65
+        "phrase">(systemd</span> Edition) - Version r12.4-70
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-65">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-70">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="mesa" name="mesa"></a>Mesa-25.1.8
+      <a id="mesa" name="mesa"></a>Mesa-25.2.2
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -56,8 +56,8 @@
           Introduction to Mesa
         </h2>
         <p>
-          <span class="application">Mesa</span> is an OpenGL compatible 3D
-          graphics library.
+          <span class="application">Mesa</span> contains several libraries
+          and drivers for multiple APIs like OpenGL and Vulkan.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -78,28 +78,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://mesa.freedesktop.org/archive/mesa-25.1.8.tar.xz">https://mesa.freedesktop.org/archive/mesa-25.1.8.tar.xz</a>
+                "https://mesa.freedesktop.org/archive/mesa-25.2.2.tar.xz">https://mesa.freedesktop.org/archive/mesa-25.2.2.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: fe3eb39e8a3c6fbb36eb3da57be022e7
+                Download MD5 sum: 0f5efeb82427fb841fc89df51b487ed5
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 45 MB
+                Download size: 42 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 1.1 GB (with docs; add 576 MB
+                Estimated disk space required: 1.2 GB (with docs; add 483 MB
                 for tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 3.8 SBU (with docs; add 1.7 SBU for
+                Estimated build time: 3.8 SBU (with docs; add 1.9 SBU for
                 tests; both with parallelism=4)
               </p>
             </li>
@@ -302,7 +302,7 @@
           OpenMAX Integration Layer</a> (for mobile platforms), and <a class=
           "ulink" href=
           "https://github.com/tizonia/tizonia-openmax-il/wiki/Tizonia-OpenMAX-IL/">
-          libtizonia</a>,
+          libtizonia</a>
         </p>
       </div>
       <div class="kernel" lang="en" xml:lang="en">
@@ -487,7 +487,7 @@ ninja test</kbd></pre>
           user:
         </p>
         <pre class="root"><kbd class=
-        "command">cp -rv ../docs -T /usr/share/doc/mesa-25.1.8</kbd></pre>
+        "command">cp -rv ../docs -T /usr/share/doc/mesa-25.2.2</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -700,12 +700,6 @@ ninja test</kbd></pre>
           built. Available linux options are auto (default), x11, wayland,
           surfaceless, and drm.
         </p>
-        <p>
-          <code class="option">-D legacy-x11="..."</code> This parameter
-          controls which legacy X11 features get built-in support. Available
-          linux options are none (default) and dri2. These features are
-          rarely needed anymore.
-        </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -715,30 +709,28 @@ ninja test</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">glxgears, glxinfo, mme_fermi_sim_hw_test,
-              and mme_tu104_sim_hw_test</span>
+              <span class="segbody">glxgears and glxinfo</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
               <span class="segbody">libEGL.so, libGL.so, libGLESv1_CM.so,
-              libGLESv2.so, libgbm.so, libglapi.so, libgallium-25.1.8.so, and
-              libxatracker.so</span>
+              libGLESv2.so, libgbm.so, and libgallium-25.2.2.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed DRI Driver Stubs:</strong>
               <span class="segbody">libdril_dri.so and symlinks to it:
               crocus_dri.so, i915_dri.so, iris_dri.so, kms_swrast_dri.so,
-              nouveau_dri.so, r300_dri.so, r600_dri.so, r600_drv_video.so,
-              radeonsi_dri.so, swrast_dri.so, virtio_gpu_dri.so,
-              vmwgfx_dri.so, and zink_dri.so</span>
+              nouveau_dri.so, r300_dri.so, r600_dri.so, radeonsi_dri.so,
+              swrast_dri.so, virtio_gpu_dri.so, vmwgfx_dri.so, and
+              zink_dri.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed VA-API Drivers:</strong>
-              <span class="segbody">nouveau_drv_video.so,
+              <span class="segbody">nouveau_drv_video.so, r600_drv_video.so,
               radeonsi_drv_video.so, and virtio_gpu_drv_video.so</span>
             </div>
             <div class="seg">
-              <strong class="segtitle">Installed GBM Backends:</strong>
+              <strong class="segtitle">Installed GBM Drivers:</strong>
               <span class="segbody">dri_gbm.so</span>
             </div>
             <div class="seg">
@@ -756,11 +748,11 @@ ninja test</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class=
-              "segbody">$XORG_PREFIX/{include/{EGL,GLES,GLES2,GLES3,KHR},
-              $XORG_PREFIX/lib/{dri,gbm,vdpau}}, $XORG_PREFIX/share/drirc.d
+              "segbody">$XORG_PREFIX/include/{EGL,GLES,GLES2,GLES3,KHR},
+              $XORG_PREFIX/lib/{dri,gbm,vdpau}, $XORG_PREFIX/share/drirc.d
               (contains workarounds for various applications, particularly
               browsers and games), $XORG_PREFIX/share/vulkan, and
-              /usr/share/doc/mesa-25.1.8</span>
+              /usr/share/doc/mesa-25.2.2</span>
             </div>
           </div>
         </div>
@@ -812,9 +804,8 @@ ninja test</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    implements Graphics Buffer Management functions needed by
-                    <code class="systemitem">libgbm</code> on top of
-                    <code class="systemitem">libdrm</code>
+                    is the GBM driver for <span class=
+                    "application">Mesa</span>
                   </p>
                 </td>
               </tr>
@@ -852,7 +843,7 @@ ninja test</kbd></pre>
                   <p>
                     <a id="libgallium" name="libgallium"></a><span class=
                     "term"><code class=
-                    "filename">libgallium-25.1.8.so</code></span>
+                    "filename">libgallium-25.2.2.so</code></span>
                   </p>
                 </td>
                 <td>
@@ -872,20 +863,6 @@ ninja test</kbd></pre>
                   <p>
                     is the <span class="application">Mesa</span> Graphics
                     Buffer Manager library
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="libglapi" name="libglapi"></a><span class=
-                    "term"><code class="filename">libglapi.so</code></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is the <span class="application">Mesa</span>
-                    implementation of the OpenGL API
                   </p>
                 </td>
               </tr>
@@ -932,20 +909,6 @@ ninja test</kbd></pre>
                   </p>
                 </td>
               </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="libxatracker" name="libxatracker"></a><span class=
-                    "term"><code class=
-                    "filename">libxatracker.so</code></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is the XA state tracker for the VMWare vmwgfx driver
-                  </p>
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
@@ -973,7 +936,7 @@ ninja test</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-65">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-70">
           Home</a>
         </li>
       </ul>
