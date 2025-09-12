@@ -1,0 +1,40 @@
+diff --git a/wget-list b/wget-list
+index b25a583481..a3b146d9f5 100644
+--- a/wget-list
++++ b/wget-list
+@@ -141,7 +141,7 @@ https://lttng.org/files/urcu/userspace-rcu-0.15.3.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.29/libusb-1.0.29.tar.bz2
+ https://dist.libuv.org/dist/v1.51.0/libuv-v1.51.0.tar.gz
+ https://github.com/lfs-book/libxkbcommon/archive/v1.11.0/libxkbcommon-1.11.0.tar.gz
+-https://download.gnome.org/sources/libxml2/2.14/libxml2-2.14.5.tar.xz
++https://download.gnome.org/sources/libxml2/2.14/libxml2-2.14.6.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.23/libxmlb-0.3.23.tar.xz
+ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.43.tar.xz
+@@ -632,7 +632,7 @@ https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.17.0.tar.xz
+ https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.17.0.tar.xz
+ https://www.x.org/pub/individual/lib/libxcvt-0.1.3.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-0.4.1.tar.xz
+-https://mesa.freedesktop.org/archive/mesa-25.1.8.tar.xz
++https://mesa.freedesktop.org/archive/mesa-25.2.2.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-4.patch
+ https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ https://invisible-mirror.net/archives/luit/luit-20240910.tgz
+@@ -648,7 +648,7 @@ https://www.x.org/pub/individual/driver/xf86-input-libinput-1.5.0.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-synaptics-1.10.0.tar.xz
+ https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-1.2.3/xf86-input-wacom-1.2.3.tar.bz2
+ https://www.x.org/pub/individual/app/twm-1.0.13.1.tar.xz
+-https://invisible-mirror.net/archives/xterm/xterm-401.tgz
++https://invisible-mirror.net/archives/xterm/xterm-402.tgz
+ https://www.x.org/pub/individual/app/xclock-1.1.1.tar.xz
+ https://www.x.org/pub/individual/app/xinit-1.4.4.tar.xz
+ https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz
+@@ -668,7 +668,7 @@ https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
+ https://download.gnome.org/sources/goffice/0.10/goffice-0.10.59.tar.xz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+ https://download.gnome.org/sources/gtk/3.24/gtk-3.24.50.tar.xz
+-https://download.gnome.org/sources/gtk/4.20/gtk-4.20.0.tar.xz
++https://download.gnome.org/sources/gtk/4.20/gtk-4.20.1.tar.xz
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.10.tar.xz
+ https://download.gnome.org/sources/gtkmm/4.18/gtkmm-4.18.0.tar.xz
+ https://download.gnome.org/sources/gtk-vnc/1.5/gtk-vnc-1.5.0.tar.xz
