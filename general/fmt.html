@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-82">
+  <body class="blfs" id="blfs-r12.4-90">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-82
+        "phrase">(systemd</span> Edition) - Version r12.4-90
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-82">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-90">
           Home</a>
         </li>
       </ul>
@@ -123,9 +123,12 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr     \
       -G Ninja ..                      &amp;&amp;
 ninja</kbd></pre>
         <p>
-          If you have enabled tests, issue: <span class=
-          "command"><strong>ninja test</strong></span>.
+          To test the results, issue:
         </p>
+        <pre class="userinput"><kbd class=
+        "command">cmake -D FMT_TEST=ON .. &amp;&amp;
+ninja                   &amp;&amp;
+ninja test</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
@@ -137,8 +140,8 @@ ninja</kbd></pre>
         </h2>
         <p>
           <em class="parameter"><code>-D FMT_TEST=OFF</code></em>: This
-          switch initializes the package tests. Set to ON if you wish to run
-          tests.
+          switch initializes the package tests. It will be overriden if the
+          instructions for running the test suite is used.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -184,7 +187,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-82">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-90">
           Home</a>
         </li>
       </ul>
