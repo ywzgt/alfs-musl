@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index ebe32dc068..d9f994df28 100644
+--- a/wget-list
++++ b/wget-list
+@@ -20,7 +20,7 @@ https://ftp.gnu.org/gnu/nettle/nettle-3.10.2.tar.gz
+ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_115_1_RTM/src/nss-3.115.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.0p1.tar.gz
+-https://github.com/p11-glue/p11-kit/releases/download/0.25.7/p11-kit-0.25.7.tar.xz
++https://github.com/p11-glue/p11-kit/releases/download/0.25.8/p11-kit-0.25.8.tar.xz
+ https://github.com/polkit-org/polkit/archive/126/polkit-126.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+@@ -544,7 +544,7 @@ https://downloads.sourceforge.net/scons/SCons-4.9.1.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+ https://archive.apache.org/dist/subversion/subversion-1.14.5.tar.bz2
+ https://downloads.sourceforge.net/swig/swig-4.3.1.tar.gz
+-https://downloads.sourceforge.net/tcl/tk8.6.16-src.tar.gz
++https://downloads.sourceforge.net/tcl/tk8.6.17-src.tar.gz
+ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+ https://download.gnome.org/sources/vala/0.56/vala-0.56.18.tar.xz
+ https://sourceware.org/pub/valgrind/valgrind-3.25.1.tar.bz2
