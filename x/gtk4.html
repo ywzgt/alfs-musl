@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-99">
+  <body class="blfs" id="blfs-r12.4-112">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-99
+        "phrase">(systemd</span> Edition) - Version r12.4-112
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-99">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-112">
           Home</a>
         </li>
       </ul>
@@ -187,6 +187,19 @@
           "https://wiki.gnome.org/Apps/Sysprof">sysprof</a>
         </p>
       </div>
+      <div class="kernel" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          <a id="gtk4-kernel" name="gtk4-kernel"></a>Kernel Configuration
+        </h2>
+        <p>
+          Some GTK-4 features need the the following options in the kernel
+          configuration. It's also needed by the test suite.
+        </p>
+        <pre class="screen"><span class="blue">D</span>evice Drivers ---&gt;
+  <span class="blue">D</span>MABUF options ---&gt;
+    [*] <span class=
+"blue">u</span>serspace dmabuf misc driver                                   [UDMABUF]</pre>
+      </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
           Installation of GTK 4
@@ -222,7 +235,7 @@ ninja</kbd></pre>
         "command">env -u{GALLIUM_DRIVER,MESA_LOADER_DRIVER_OVERRIDE}          \
     LIBGL_ALWAYS_SOFTWARE=1 VK_LOADER_DRIVERS_SELECT='lvp*' \
     dbus-run-session meson test --setup x11                 \
-                                --no-suite={headless,needs-udmabuf}</kbd></pre>
+                                --no-suite=headless</kbd></pre>
         <p>
           If you are in a Wayland session, replace the one occurrence of
           <code class="literal">x11</code> with <code class=
@@ -314,12 +327,8 @@ ninja</kbd></pre>
           "envar">LIBGL_ALWAYS_SOFTWARE=1</code>.
         </p>
         <p>
-          <em class=
-          "parameter"><code>--no-suite={headless,needs-udmabuf}</code></em>:
-          Disable the tests requiring the external dependency pydbus, and the
-          tests requiring the device node <code class=
-          "filename">/dev/udmabuf</code>. The device node does not exist if
-          the feature is not enabled in the kernel configuration.
+          <em class="parameter"><code>--no-suite=headless</code></em>:
+          Disable the tests requiring the external dependency pydbus.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -675,7 +684,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-99">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-112">
           Home</a>
         </li>
       </ul>
