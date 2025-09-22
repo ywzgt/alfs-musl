@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-116">
+  <body class="blfs" id="blfs-r12.4-119">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-116
+        "phrase">(systemd</span> Edition) - Version r12.4-119
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-116">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-119">
           Home</a>
         </li>
       </ul>
@@ -2918,6 +2918,20 @@ python3 tests/unit/tests.py</kbd></pre>
             </ul>
           </div>
           <h4>
+            Additional Download
+          </h4>
+          <div class="itemizedlist">
+            <ul class="compact">
+              <li class="listitem">
+                <p>
+                  Required patch: <a class="ulink" href=
+                  "https://www.linuxfromscratch.org/patches/blfs/svn/lxml-6.0.1-libxml2_2_15-2.patch">
+                  https://www.linuxfromscratch.org/patches/blfs/svn/lxml-6.0.1-libxml2_2_15-2.patch</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <h4>
             lxml Dependencies
           </h4>
           <h5>
@@ -2932,6 +2946,11 @@ python3 tests/unit/tests.py</kbd></pre>
           <h3 class="sect3">
             Installation of lxml
           </h3>
+          <p>
+            Apply a patch to fix build failure with libxml2-2.15 or newer:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">patch -Np1 -i ../lxml-6.0.1-libxml2_2_15-2.patch</kbd></pre>
           <p>
             To build the <span class="application">Python 3</span> module,
             run:
@@ -7232,7 +7251,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-116">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-119">
           Home</a>
         </li>
       </ul>
