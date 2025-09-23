@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-119">
+  <body class="blfs" id="blfs-r12.4-132">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-119
+        "phrase">(systemd</span> Edition) - Version r12.4-132
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-119">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-132">
           Home</a>
         </li>
       </ul>
@@ -112,6 +112,13 @@
           <ul class="compact">
             <li class="listitem">
               <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/libxml2-2.15.0-upstream_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/libxml2-2.15.0-upstream_fix-1.patch</a>
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
                 Optional Test Suite: <a class="ulink" href=
                 "https://www.w3.org/XML/Test/xmlts20130923.tar.gz">https://www.w3.org/XML/Test/xmlts20130923.tar.gz</a>
                 - This enables <span class="command"><strong>make
@@ -141,6 +148,15 @@
         <h2 class="sect2">
           Installation of libxml2
         </h2>
+        <p>
+          First, apply a patch from upstream to fix a failure parsing not
+          normalized yet attribute values (for example, the source of the
+          <a class="xref" href="../server/postgresql.html" title=
+          "PostgreSQL-17.6">PostgreSQL-17.6</a> documentation contains such
+          values):
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../libxml2-2.15.0-upstream_fix-1.patch</kbd></pre>
         <p>
           Install <span class="application">libxml2</span> by running the
           following commands:
@@ -348,7 +364,7 @@ sed '/libs=/s/xml2.*/xml2"/' -i /usr/bin/xml2-config</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-119">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-132">
           Home</a>
         </li>
       </ul>

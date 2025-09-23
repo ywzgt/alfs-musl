@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-119">
+  <body class="blfs" id="blfs-r12.4-132">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-119
+        "phrase">(systemd</span> Edition) - Version r12.4-132
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-119">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-132">
           Home</a>
         </li>
       </ul>
@@ -110,15 +110,20 @@
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="../multimedia/libaom.html" title=
-          "libaom-3.12.1">libaom-3.12.1</a>
+          <a class="xref" href="../multimedia/dav1d.html" title=
+          "dav1d-1.5.1">dav1d-1.5.1</a> and <a class="xref" href=
+          "../multimedia/svt-av1.html" title=
+          "SVT-AV1-3.1.2">SVT-AV1-3.1.2</a> (only supports YUV420)
         </p>
         <h4>
           Recommended
         </h4>
         <p class="recommended">
           <a class="xref" href="../x/gdk-pixbuf.html" title=
-          "gdk-pixbuf-2.42.12">gdk-pixbuf-2.42.12</a>
+          "gdk-pixbuf-2.42.12">gdk-pixbuf-2.42.12</a> and <a class="xref"
+          href="../multimedia/libaom.html" title=
+          "libaom-3.12.1">libaom-3.12.1</a> (for chroma subsampling outside
+          YUV420)
         </p>
         <h4>
           Optional
@@ -126,12 +131,8 @@
         <p class="optional">
           <a class="ulink" href=
           "https://github.com/google/googletest">gtest</a>, <a class="ulink"
-          href="https://code.videolan.org/videolan/dav1d">libdav1d</a>,
-          <a class="ulink" href=
-          "https://chromium.googlesource.com/libyuv/libyuv/">libyuv</a>,
-          <a class="ulink" href="https://github.com/xiph/rav1e">rav1e</a>,
-          and <a class="ulink" href=
-          "https://gitlab.com/AOMediaCodec/SVT-AV1">svt-av1</a>
+          href="https://chromium.googlesource.com/libyuv/libyuv/">libyuv</a>,
+          and <a class="ulink" href="https://github.com/xiph/rav1e">rav1e</a>
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -160,6 +161,8 @@ cd    build &amp;&amp;
 cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -D CMAKE_BUILD_TYPE=Release  \
       -D AVIF_CODEC_AOM=SYSTEM     \
+      -D AVIF_CODEC_DAV1D=SYSTEM   \
+      -D AVIF_CODEC_SVT=SYSTEM     \
       -D AVIF_BUILD_GDK_PIXBUF=ON  \
       -D AVIF_LIBYUV=OFF           \
       -G Ninja .. &amp;&amp;
@@ -189,9 +192,10 @@ ninja &amp;&amp; ninja test</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-D AVIF_CODEC_AOM=SYSTEM</code></em>:
-          This switch enables using the AOM codec. This package is useless
-          without at least one codec built in.
+          <em class="parameter"><code>-D
+          AVIF_CODEC_{AOM,DAV1D,SVT}=SYSTEM</code></em>: These switches
+          enable using the AV1 codec via dav1d, libaom, and SVT-AV1. This
+          package is useless without and AV1 encoder and decoder.
         </p>
         <p>
           <em class="parameter"><code>-D
@@ -206,22 +210,10 @@ ninja &amp;&amp; ninja test</kbd></pre>
           "https://chromium.googlesource.com/libyuv/libyuv/">libyuv</a>.
         </p>
         <p>
-          <code class="option">-D AVIF_CODEC_DAV1D=SYSTEM</code>: Use this
-          switch if you have installed <a class="ulink" href=
-          "https://code.videolan.org/videolan/dav1d">libdav1d</a> and wish to
-          use it as a codec.
-        </p>
-        <p>
           <code class="option">-D AVIF_CODEC_RAV1E=SYSTEM</code>: Use this
           switch if you have installed <a class="ulink" href=
           "https://github.com/xiph/rav1e">rav1e</a> and wish to use it as a
           codec.
-        </p>
-        <p>
-          <code class="option">-D AVIF_CODEC_SVT=SYSTEM</code>: Use this
-          switch if you have installed <a class="ulink" href=
-          "https://gitlab.com/AOMediaCodec/SVT-AV1">svt-av1</a> and wish to
-          use it as a codec.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -311,7 +303,7 @@ ninja &amp;&amp; ninja test</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-119">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-132">
           Home</a>
         </li>
       </ul>

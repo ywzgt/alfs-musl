@@ -5,33 +5,35 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      libgstgtk4 from gst-plugins-rs-1.26.5
+      gst-plugins-rs-1.26.5
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-119">
+  <body class="blfs" id="blfs-r12.4-132">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-119
+        "phrase">(systemd</span> Edition) - Version r12.4-132
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="libdv.html" title="Libdv-1.0.0">Prev</a>
+          <a accesskey="p" href="gst10-plugins-ugly.html" title=
+          "gst-plugins-ugly-1.26.5">Prev</a>
           <p>
-            Libdv-1.0.0
+            gst-plugins-ugly-1.26.5
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="libmad.html" title="libmad-0.15.1b">Next</a>
+          <a accesskey="n" href="gst10-libav.html" title=
+          "gst-libav-1.26.5">Next</a>
           <p>
-            libmad-0.15.1b
+            gst-libav-1.26.5
           </p>
         </li>
         <li class="up">
@@ -40,23 +42,31 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-119">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-132">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="libgstgtk4" name="libgstgtk4"></a>libgstgtk4 from
-      gst-plugins-rs-1.26.5
+      <a id="gst-plugins-rs" name="gst-plugins-rs"></a>gst-plugins-rs-1.26.5
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to libgstgtk4
+          Introduction to gst-plugins-rs
         </h2>
         <p>
-          The <span class="application">libgstgtk4</span> package contains a
-          library that binds the gstreamer multimedia framework to GTK-4.
+          The <span class="application">gst-plugins-rs</span> package several
+          Rust plugins for interacting with the gstreamer multimedia
+          framework. This page has instructions for libgstdav1d and
+          libgstgtk4.
+        </p>
+        <p>
+          The libgstdav1d plugin provides AV1 decoding via dav1d through
+          gstreamer.
+        </p>
+        <p>
+          The libgstgtk4 plugin binds gstreamer to GTK-4.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -93,18 +103,32 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 831 MB (51 MB installed)
+                Estimated disk space required for libgstdav1d: 416 MB (19 MB
+                installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.5 SBU (with parallelism=8)
+                Estimated build time for libgstdav1d: 0.3 SBU (with
+                parallelism=8)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                Estimated disk space required for libgstgtk4: 831 MB (51 MB
+                installed)
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                Estimated build time for libgstgtk4: 0.5 SBU (with
+                parallelism=8)
               </p>
             </li>
           </ul>
         </div>
         <h3>
-          libgstgtk4 Dependencies
+          gst-plugins-rs Dependencies
         </h3>
         <h4>
           Required
@@ -113,10 +137,23 @@
           <a class="xref" href="../general/git.html" title=
           "Git-2.51.0">git-2.51.0</a>, <a class="xref" href=
           "gst10-plugins-base.html" title=
-          "gst-plugins-base-1.26.5">gst-plugins-base-1.26.5</a>, <a class=
-          "xref" href="../x/gtk4.html" title="GTK-4.20.1">GTK-4.20.1</a>, and
+          "gst-plugins-base-1.26.5">gst-plugins-base-1.26.5</a>, and
           <a class="xref" href="../general/rust.html" title=
           "Rustc-1.89.0">rustc-1.89.0</a>
+        </p>
+        <h4>
+          Required for libgstdav1d
+        </h4>
+        <p class="required">
+          <a class="xref" href="dav1d.html" title=
+          "dav1d-1.5.1">dav1d-1.5.1</a>
+        </p>
+        <h4>
+          Required for libgstgtk4
+        </h4>
+        <p class="required">
+          <a class="xref" href="../x/gtk4.html" title=
+          "GTK-4.20.1">GTK-4.20.1</a>
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -133,29 +170,56 @@
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of libgstgtk4
+          Installation of gst-plugins-rs
         </h2>
-        <p>
-          Install <span class="application">libgstgtk4</span> by running the
-          following commands:
-        </p>
-        <pre class="userinput"><kbd class="command">cd video/gtk4 &amp;&amp;
+        <div class="sect3" lang="en" xml:lang="en">
+          <h3 class="sect3">
+            Installation of libgstdav1d
+          </h3>
+          <p>
+            Install <span class="application">libgstdav1d</span> by running
+            the following commands:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">cd video/dav1d &amp;&amp;
 cargo build --release</kbd></pre>
-        <p>
-          This package does not come with a test suite, but its basic
-          functionality can be tested after installation.
-        </p>
-        <p>
-          Now, as the <code class="systemitem">root</code> user:
-        </p>
-        <pre class="root"><kbd class=
-        "command">install -vm755 ../../target/release/libgstgtk4.so /usr/lib/gstreamer-1.0</kbd></pre>
-        <p>
-          To test the basic functionality of the package, issue: <span class=
-          "command"><strong>gst-launch-1.0 videotestsrc num-buffers=60 !
-          gtk4paintablesink</strong></span> in a graphical terminal emulator.
-          It should play a test video in a GTK-4 window for 2 seconds.
-        </p>
+          <p>
+            This package does not come with a test suite.
+          </p>
+          <p>
+            Now, as the <code class="systemitem">root</code> user:
+          </p>
+          <pre class="root"><kbd class=
+          "command">install -vm755 ../../target/release/libgstdav1d.so /usr/lib/gstreamer-1.0</kbd></pre>
+        </div>
+        <div class="sect3" lang="en" xml:lang="en">
+          <h3 class="sect3">
+            Installation of libgstgtk4
+          </h3>
+          <p>
+            Install <span class="application">libgstgtk4</span> by running
+            the following commands:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">cd video/gtk4 &amp;&amp;
+cargo build --release</kbd></pre>
+          <p>
+            This package does not come with a test suite, but its basic
+            functionality can be tested after installation.
+          </p>
+          <p>
+            Now, as the <code class="systemitem">root</code> user:
+          </p>
+          <pre class="root"><kbd class=
+          "command">install -vm755 ../../target/release/libgstgtk4.so /usr/lib/gstreamer-1.0</kbd></pre>
+          <p>
+            To test the basic functionality of the package, issue:
+            <span class="command"><strong>gst-launch-1.0 videotestsrc
+            num-buffers=60 ! gtk4paintablesink</strong></span> in a graphical
+            terminal emulator. It should play a test video in a GTK-4 window
+            for 2 seconds.
+          </p>
+        </div>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -169,7 +233,7 @@ cargo build --release</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libgstgtk4.so</span>
+              <span class="segbody">libgstdav1d.so and libgstgtk4.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
@@ -190,9 +254,23 @@ cargo build --release</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="libgstgtk4-lib" name=
-                    "libgstgtk4-lib"></a><span class="term"><code class=
-                    "filename">libgstgtk4.so</code></span>
+                    <a id="libgstdav1d" name="libgstdav1d"></a><span class=
+                    "term"><code class=
+                    "filename">libgstdav1d.so</code></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    provides a binding between dav1d and the gstreamer
+                    multimedia framework
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="libgstgtk4" name="libgstgtk4"></a><span class=
+                    "term"><code class="filename">libgstgtk4.so</code></span>
                   </p>
                 </td>
                 <td>
@@ -210,15 +288,17 @@ cargo build --release</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="libdv.html" title="Libdv-1.0.0">Prev</a>
+          <a accesskey="p" href="gst10-plugins-ugly.html" title=
+          "gst-plugins-ugly-1.26.5">Prev</a>
           <p>
-            Libdv-1.0.0
+            gst-plugins-ugly-1.26.5
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="libmad.html" title="libmad-0.15.1b">Next</a>
+          <a accesskey="n" href="gst10-libav.html" title=
+          "gst-libav-1.26.5">Next</a>
           <p>
-            libmad-0.15.1b
+            gst-libav-1.26.5
           </p>
         </li>
         <li class="up">
@@ -227,7 +307,7 @@ cargo build --release</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-119">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-132">
           Home</a>
         </li>
       </ul>
