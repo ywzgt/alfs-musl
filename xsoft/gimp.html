@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-132">
+  <body class="blfs" id="blfs-r12.4-141">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-132
+        "phrase">(systemd</span> Edition) - Version r12.4-141
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-132">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-141">
           Home</a>
         </li>
       </ul>
@@ -137,14 +137,12 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: From 351 MB (74 MB installed)
-                for en only to 1.5 GB for all languages
+                Estimated disk space required: 351 MB (74 MB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.4 SBU (en only), 5.1 SBU for all
-                languages; using parallelism=4
+                Estimated build time: 0.4 SBU
               </p>
             </li>
           </ul>
@@ -328,13 +326,14 @@ update-desktop-database -q</kbd></pre>
         "command">tar -xf ../../gimp-help-3.0.0.tar.bz2 &amp;&amp;
 cd gimp-help-3.0.0
 
-ALL_LINGUAS="ca cs da de en en_GB es fa fr hr ko lt nl nn pt pt_BR ro sl sv uk zh_CN" \
+sed -i 's/import libxml2//' configure &amp;&amp;
+
+ALL_LINGUAS="en" \
 ./configure --prefix=/usr</kbd></pre>
         <p>
-          Remove from <code class="envar">ALL_LINGUAS</code> the codes for
-          any languages which you do not wish to install. Alternatively,
-          remove the line starting with <code class=
-          "envar">ALL_LINGUAS</code>, if you wish to build all languages.
+          Building non-English languages is only possible with the libxml2
+          Python 3 module, which is deprecated and no longer enabled in the
+          BLFS libxml2 build.
         </p>
         <p>
           Now build the help files:
@@ -358,12 +357,6 @@ chown -R root:root /usr/share/gimp/3.0/help</kbd></pre>
           "command"><strong>xvfb-run</strong></span> for running the tests.
           Without this switch, many tests fail if <span class=
           "command"><strong>xvfb-run</strong></span> has been installed.
-        </p>
-        <p>
-          <code class="envar">ALL_LINGUAS="ca cs da de en en_GB es
-          fa..."</code>: by default, the help files will be rendered in all
-          the available languages. Remove the codes of any languages you do
-          not wish to build.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -643,7 +636,7 @@ chown -R root:root /usr/share/gimp/3.0/help</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-132">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-141">
           Home</a>
         </li>
       </ul>

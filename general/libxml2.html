@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-132">
+  <body class="blfs" id="blfs-r12.4-141">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-132
+        "phrase">(systemd</span> Edition) - Version r12.4-141
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-132">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-141">
           Home</a>
         </li>
       </ul>
@@ -150,10 +150,10 @@
         </h2>
         <p>
           First, apply a patch from upstream to fix a failure parsing not
-          normalized yet attribute values (for example, the source of the
-          <a class="xref" href="../server/postgresql.html" title=
-          "PostgreSQL-17.6">PostgreSQL-17.6</a> documentation contains such
-          values):
+          normalized yet attribute values (for example, the source of BLFS
+          itself and the source of <a class="xref" href=
+          "../server/postgresql.html" title=
+          "PostgreSQL-17.6">PostgreSQL-17.6</a> contain such values):
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../libxml2-2.15.0-upstream_fix-1.patch</kbd></pre>
@@ -167,7 +167,6 @@
             --disable-static  \
             --with-history    \
             --with-icu        \
-            PYTHON=/usr/bin/python3 \
             --docdir=/usr/share/doc/libxml2-2.15.0 &amp;&amp;
 make</kbd></pre>
         <p>
@@ -241,8 +240,10 @@ sed '/libs=/s/xml2.*/xml2"/' -i /usr/bin/xml2-config</kbd></pre>
           packages in BLFS, such as for QtWebEngine.
         </p>
         <p>
-          <em class="parameter"><code>PYTHON=/usr/bin/python3</code></em>:
-          Allows building the libxml2 module with Python3 instead of Python2.
+          <code class="option">--with-python PYTHON=/usr/bin/python3</code>:
+          This combination of switches enable the libxml2 bindings for Python
+          3. Note that those bindings are deprecated due to flaws in the API
+          design and they will be removed in libxml2-2.16.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -364,7 +365,7 @@ sed '/libs=/s/xml2.*/xml2"/' -i /usr/bin/xml2-config</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-132">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-141">
           Home</a>
         </li>
       </ul>
