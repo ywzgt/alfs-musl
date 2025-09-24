@@ -1,0 +1,71 @@
+diff --git a/wget-list b/wget-list
+index 5ae6e5e230..45aefb03cd 100644
+--- a/wget-list
++++ b/wget-list
+@@ -59,7 +59,7 @@ https://download.kde.org/stable/release-service/25.08.0/src/kate-25.08.0.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.5.tar.xz
+ https://www.nano-editor.org/dist/v8/nano-8.6.tar.xz
+ https://github.com/vim/vim/archive/v9.1.1629/vim-9.1.1629.tar.gz
+-http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
++http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+ https://download.qemu.org/qemu-10.1.0.tar.xz
+@@ -142,6 +142,7 @@ https://github.com/libusb/libusb/releases/download/v1.0.29/libusb-1.0.29.tar.bz2
+ https://dist.libuv.org/dist/v1.51.0/libuv-v1.51.0.tar.gz
+ https://github.com/lfs-book/libxkbcommon/archive/v1.11.0/libxkbcommon-1.11.0.tar.gz
+ https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.0.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/libxml2-2.15.0-upstream_fix-1.patch
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.24/libxmlb-0.3.24.tar.xz
+ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.43.tar.xz
+@@ -201,7 +202,7 @@ https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
+ https://www.libraw.org/data/LibRaw-0.21.4.tar.gz
+ https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.1.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+-https://download.osgeo.org/libtiff/tiff-4.7.0.tar.gz
++https://download.osgeo.org/libtiff/tiff-4.7.1.tar.gz
+ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz
+ https://github.com/mypaint/mypaint-brushes/releases/download/v1.3.1/mypaint-brushes-1.3.1.tar.xz
+ https://releases.pagure.org/newt/newt-0.52.25.tar.gz
+@@ -244,7 +245,7 @@ https://ftp.gnu.org/gnu/time/time-1.9.tar.gz
+ https://gitlab.com/OldManProgrammer/unix-tree/-/archive/2.2.1/unix-tree-2.2.1.tar.bz2
+ https://github.com/lurcher/unixODBC/releases/download/2.3.12/unixODBC-2.3.12.tar.gz
+ https://github.com/flatpak/xdg-dbus-proxy/releases/download/0.1.6/xdg-dbus-proxy-0.1.6.tar.xz
+-https://user-dirs.freedesktop.org/releases/xdg-user-dirs-0.18.tar.gz
++https://gitlab.freedesktop.org/xdg/xdg-user-dirs/-/archive/v0.19/xdg-user-dirs-v0.19.tar.gz
+ https://github.com/ip7z/7zip/archive/25.01/7zip-25.01.tar.gz
+ https://www.freedesktop.org/software/accountsservice/accountsservice-23.13.9.tar.xz
+ https://downloads.sourceforge.net/acpid2/acpid-2.0.34.tar.xz
+@@ -915,6 +916,7 @@ https://www.alsa-project.org/files/pub/tools/alsa-tools-1.2.14.tar.bz2
+ https://www.alsa-project.org/files/pub/firmware/alsa-firmware-1.2.4.tar.bz2
+ https://download.gnome.org/sources/audiofile/0.3/audiofile-0.3.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/audiofile-0.3.6-consolidated_patches-1.patch
++https://code.videolan.org/videolan/dav1d/-/archive/1.5.1/dav1d-1.5.1.tar.gz
+ https://github.com/lfs-book/faac/archive/v1.31.1/faac-1.31.1.tar.gz
+ https://github.com/knik0/faad2/archive/2.11.2/faad2-2.11.2.tar.gz
+ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
+@@ -926,6 +928,7 @@ https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.5.t
+ https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.5.tar.xz
+ https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.26.5.tar.xz
+ https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.26.5.tar.xz
++https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.5/gst-plugins-rs-gstreamer-1.26.5.tar.gz
+ https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.26.5.tar.xz
+ https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+@@ -944,7 +947,6 @@ https://get.videolan.org/libdvdcss/1.4.3/libdvdcss-1.4.3.tar.bz2
+ https://get.videolan.org/libdvdread/6.1.3/libdvdread-6.1.3.tar.bz2
+ https://get.videolan.org/libdvdnav/6.1.1/libdvdnav-6.1.1.tar.bz2
+ https://downloads.sourceforge.net/libdv/libdv-1.0.0.tar.gz
+-https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.5/gst-plugins-rs-gstreamer-1.26.5.tar.gz
+ https://downloads.sourceforge.net/mad/libmad-0.15.1b.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libmad-0.15.1b-fixes-1.patch
+ https://download.videolan.org/contrib/libmpeg2/libmpeg2-0.5.1.tar.gz
+@@ -970,6 +972,7 @@ https://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2
+ https://www.surina.net/soundtouch/soundtouch-2.4.0.tar.gz
+ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
++https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.1.2/SVT-AV1-v3.1.2.tar.gz
+ https://taglib.org/releases/taglib-2.1.1.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.30.1.tar.xz
+ https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.11/wireplumber-0.5.11.tar.bz2
