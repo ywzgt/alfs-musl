@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 45aefb03cd..7c312d6d0d 100644
+--- a/wget-list
++++ b/wget-list
+@@ -159,7 +159,7 @@ https://github.com/protocolbuffers/protobuf/releases/download/v32.1/protobuf-32.
+ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
+ https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
+-https://archive.mozilla.org/pub/firefox/releases/140.3.0esr/source/firefox-140.3.0esr.source.tar.xz
++https://archive.mozilla.org/pub/firefox/releases/140.3.1esr/source/firefox-140.3.1esr.source.tar.xz
+ https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.321.0/SPIRV-Headers-vulkan-sdk-1.4.321.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.321.0/SPIRV-Tools-vulkan-sdk-1.4.321.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v20.1.5/SPIRV-LLVM-Translator-20.1.5.tar.gz
+@@ -1037,7 +1037,7 @@ https://github.com/docbook/xslt10-stylesheets/releases/download/release/1.79.2/d
+ https://github.com/docbook/xslt10-stylesheets/releases/download/release/1.79.2/docbook-xsl-1.79.2.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/docbook-xsl-1.79.2-stack_fix-1.patch
+ https://github.com/itstool/itstool/archive/2.0.7/itstool-2.0.7.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svnitstool-2.0.7-lxml-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/itstool-2.0.7-lxml-1.patch
+ https://pagure.io/xmlto/archive/0.0.29/xmlto-0.0.29.tar.gz
+ https://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/epdfview-gtk3/epdfview-gtk3-20200814.tar.xz
