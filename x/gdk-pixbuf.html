@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      gdk-pixbuf-2.42.12
+      gdk-pixbuf-2.44.2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-141">
+  <body class="blfs" id="blfs-r12.4-166">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-141
+        "phrase">(systemd</span> Edition) - Version r12.4-166
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-141">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-166">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="gdk-pixbuf" name="gdk-pixbuf"></a>gdk-pixbuf-2.42.12
+      <a id="gdk-pixbuf" name="gdk-pixbuf"></a>gdk-pixbuf-2.44.2
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -82,13 +82,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz">
-                https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz</a>
+                "https://download.gnome.org/sources/gdk-pixbuf/2.44/gdk-pixbuf-2.44.2.tar.xz">
+                https://download.gnome.org/sources/gdk-pixbuf/2.44/gdk-pixbuf-2.44.2.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: f986fdbba5ec6233c96f8b6535811780
+                Download MD5 sum: 75f9cae9bd3c82d4648673e86a77c7bb
               </p>
             </li>
             <li class="listitem">
@@ -98,7 +98,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 33 MB (with tests)
+                Estimated disk space required: 35 MB (with tests)
               </p>
             </li>
             <li class="listitem">
@@ -141,12 +141,15 @@
         <p class="optional">
           <a class="xref" href="../general/python-modules.html#gi-docgen"
           title="Gi-DocGen-2025.4">Gi-DocGen-2025.4</a> (to generate
-          documentation), <a class="xref" href="../general/libavif.html"
-          title="libavif-1.3.0">libavif-1.3.0</a> (runtime dependency, needed
-          for loading AVIF images), <a class="xref" href=
-          "../general/libjxl.html" title="libjxl-0.11.1">libjxl-0.11.1</a>
-          (runtime dependency, needed for loading JPEG XL images), and
-          <a class="xref" href="../general/webp-pixbuf-loader.html" title=
+          documentation), <a class="ulink" href=
+          "https://gitlab.gnome.org/GNOME/glycin/">glycin</a> (to implement
+          animations and sandboxed image decoding), <a class="xref" href=
+          "../general/libavif.html" title="libavif-1.3.0">libavif-1.3.0</a>
+          (runtime dependency, needed for loading AVIF images), <a class=
+          "xref" href="../general/libjxl.html" title=
+          "libjxl-0.11.1">libjxl-0.11.1</a> (runtime dependency, needed for
+          loading JPEG XL images), and <a class="xref" href=
+          "../general/webp-pixbuf-loader.html" title=
           "webp-pixbuf-loader-0.2.7">webp-pixbuf-loader-0.2.7</a> (runtime
           dependency, needed for loading WebP images)
         </p>
@@ -166,6 +169,7 @@ meson setup ..            \
       --prefix=/usr       \
       --buildtype=release \
       -D others=enabled   \
+      -D glycin=disabled  \
       --wrap-mode=nofallback &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -175,7 +179,7 @@ ninja</kbd></pre>
           the API documentation for this package, issue:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed "/docs_dir =/s@\$@ / 'gdk-pixbuf-2.42.12'@" -i ../docs/meson.build &amp;&amp;
+        "command">sed "/docs_dir =/s@\$@ / 'gdk-pixbuf-2.44.2'@" -i ../docs/meson.build &amp;&amp;
 meson configure -D gtk_doc=true                                        &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -224,10 +228,9 @@ ninja</kbd></pre>
           the loaders for various image formats, for example BMP and XPM.
         </p>
         <p>
-          <code class="option">-D man=false</code>: Use this option if you do
-          not want to generate manual pages, or if you do not want to install
-          <a class="xref" href="../general/python-modules.html#docutils"
-          title="docutils-0.21.2">docutils-0.21.2</a>.
+          <code class="option">-D glycin=disabled</code>: This option is
+          needed if the optional dependency <span class=
+          "application">glycin</span> is not installed.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -367,7 +370,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-141">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-166">
           Home</a>
         </li>
       </ul>

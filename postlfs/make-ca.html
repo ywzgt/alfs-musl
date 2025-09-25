@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-141">
+  <body class="blfs" id="blfs-r12.4-166">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-141
+        "phrase">(systemd</span> Edition) - Version r12.4-166
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-141">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-166">
           Home</a>
         </li>
       </ul>
@@ -149,8 +149,8 @@
         </h4>
         <p class="required">
           <a class="xref" href="p11-kit.html" title=
-          "p11-kit-0.25.8">p11-kit-0.25.8</a> (runtime, built after <a class=
-          "xref" href="../general/libtasn1.html" title=
+          "p11-kit-0.25.10">p11-kit-0.25.10</a> (runtime, built after
+          <a class="xref" href="../general/libtasn1.html" title=
           "libtasn1-4.20.0">libtasn1-4.20.0</a>, required in the following
           instructions to generate certificate stores from trust anchors, and
           each time <span class="command"><strong>make-ca</strong></span> is
@@ -174,18 +174,19 @@
           and process the certificates included in the <code class=
           "filename">certdata.txt</code> file for use as trust anchors for
           the <a class="xref" href="p11-kit.html" title=
-          "p11-kit-0.25.8">p11-kit-0.25.8</a> trust module. Additionally, it
-          will generate system certificate stores used by BLFS applications
-          (if the recommended and optional applications are present on the
-          system). Any local certificates stored in <code class=
-          "filename">/etc/ssl/local</code> will be imported to both the trust
-          anchors and the generated certificate stores (overriding Mozilla's
-          trust). Additionally, any modified trust values will be copied from
-          the trust anchors to <code class="filename">/etc/ssl/local</code>
-          prior to any updates, preserving custom trust values that differ
-          from Mozilla when using the <span class=
-          "command"><strong>trust</strong></span> utility from <span class=
-          "application">p11-kit</span> to operate on the trust store.
+          "p11-kit-0.25.10">p11-kit-0.25.10</a> trust module. Additionally,
+          it will generate system certificate stores used by BLFS
+          applications (if the recommended and optional applications are
+          present on the system). Any local certificates stored in
+          <code class="filename">/etc/ssl/local</code> will be imported to
+          both the trust anchors and the generated certificate stores
+          (overriding Mozilla's trust). Additionally, any modified trust
+          values will be copied from the trust anchors to <code class=
+          "filename">/etc/ssl/local</code> prior to any updates, preserving
+          custom trust values that differ from Mozilla when using the
+          <span class="command"><strong>trust</strong></span> utility from
+          <span class="application">p11-kit</span> to operate on the trust
+          store.
         </p>
         <p>
           To install the various certificate stores, first install the
@@ -303,15 +304,15 @@ install -vdm755 /etc/ssl/local</kbd></pre>
           available to add additional CA certificates to the system trust
           store. This directory is also used to store certificates that were
           added to or modified in the system trust store by <a class="xref"
-          href="p11-kit.html" title="p11-kit-0.25.8">p11-kit-0.25.8</a> so
+          href="p11-kit.html" title="p11-kit-0.25.10">p11-kit-0.25.10</a> so
           that trust values are maintained across upgrades. Files in this
           directory must be in the <span class="application">OpenSSL</span>
           trusted certificate format. Certificates imported using the
           <span class="command"><strong>trust</strong></span> utility from
           <a class="xref" href="p11-kit.html" title=
-          "p11-kit-0.25.8">p11-kit-0.25.8</a> will utilize the x509 Extended
-          Key Usage values to assign default trust values for the system
-          anchors.
+          "p11-kit-0.25.10">p11-kit-0.25.10</a> will utilize the x509
+          Extended Key Usage values to assign default trust values for the
+          system anchors.
         </p>
         <p>
           If you need to override trust values, or otherwise need to create
@@ -381,9 +382,9 @@ openssl x509 -in class3.crt -text -fingerprint -setalias "CAcert Class 3 root" \
           in charge of which certificates are available. Now that <a class=
           "xref" href="make-ca.html" title=
           "make-ca-1.16.1">make-ca-1.16.1</a> and <a class="xref" href=
-          "p11-kit.html" title="p11-kit-0.25.8">p11-kit-0.25.8</a> have been
-          installed and <span class="application">make-ca</span> has been
-          configured, it is possible to make <span class=
+          "p11-kit.html" title="p11-kit-0.25.10">p11-kit-0.25.10</a> have
+          been installed and <span class="application">make-ca</span> has
+          been configured, it is possible to make <span class=
           "command"><strong>pip3</strong></span> use the system certificates.
         </p>
         <p>
@@ -500,7 +501,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-141">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-166">
           Home</a>
         </li>
       </ul>
