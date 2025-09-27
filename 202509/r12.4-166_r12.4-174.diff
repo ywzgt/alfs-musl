@@ -1,0 +1,49 @@
+diff --git a/wget-list b/wget-list
+index c834b7d0f0..0967794612 100644
+--- a/wget-list
++++ b/wget-list
+@@ -81,7 +81,7 @@ https://github.com/rrthomas/enchant/releases/download/v2.8.12/enchant-2.8.12.tar
+ https://libopenraw.freedesktop.org/download/exempi-2.6.6.tar.xz
+ https://github.com/fastfloat/fast_float/archive/v8.1.0/fast_float-8.1.0.tar.gz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+-https://github.com/fmtlib/fmt/archive/11.2.0/fmt-11.2.0.tar.gz
++https://github.com/fmtlib/fmt/archive/12.0.0/fmt-12.0.0.tar.gz
+ https://download.gnome.org/sources/glib/2.84/glib-2.84.4.tar.xz
+ https://download.gnome.org/sources/gobject-introspection/1.84/gobject-introspection-1.84.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+@@ -538,7 +538,7 @@ https://files.pythonhosted.org/packages/source/t/trove_classifiers/trove_classif
+ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.1.0.tar.gz
+ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.5.0.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+-https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.5.tar.xz
++https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.6.tar.xz
+ https://static.rust-lang.org/dist/rustc-1.89.0-src.tar.xz
+ https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.1/rust-bindgen-0.72.1.tar.gz
+ https://downloads.sourceforge.net/scons/SCons-4.9.1.tar.gz
+@@ -671,7 +671,7 @@ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+ https://download.gnome.org/sources/gtk/3.24/gtk-3.24.50.tar.xz
+ https://download.gnome.org/sources/gtk/4.20/gtk-4.20.1.tar.xz
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.10.tar.xz
+-https://download.gnome.org/sources/gtkmm/4.18/gtkmm-4.18.0.tar.xz
++https://download.gnome.org/sources/gtkmm/4.20/gtkmm-4.20.0.tar.xz
+ https://download.gnome.org/sources/gtk-vnc/1.5/gtk-vnc-1.5.0.tar.xz
+ https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz
+ https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz
+@@ -987,7 +987,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/cdparanoia-III-10.2-gcc_fixes-
+ https://download.kde.org/stable/release-service/25.08.0/src/kwave-25.08.0.tar.xz
+ https://downloads.sourceforge.net/lame/lame-3.100.tar.gz
+ https://downloads.sourceforge.net/mpg123/mpg123-1.33.2.tar.bz2
+-https://www.freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-6.1.tar.xz
++https://www.freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-6.2.tar.xz
+ https://github.com/nicklan/pnmixer/releases/download/v0.7.2/pnmixer-v0.7.2.tar.gz
+ https://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.3.tar.gz
+ https://ffmpeg.org/releases/ffmpeg-7.1.2.tar.xz
+@@ -1000,7 +1000,7 @@ https://downloads.sourceforge.net/xine/xine-ui-0.99.14.tar.xz
+ https://downloads.sourceforge.net/cdrdao/cdrdao-1.2.5.tar.bz2
+ https://downloads.sourceforge.net/cdrtools/cdrtools-3.02a09.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/dvd+rw-tools/dvd+rw-tools-7.1.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/dvd+rw-tools-7.1-consolidated_fixes-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/dvd+rw-tools-7.1-consolidated_fixes-2.patch
+ https://files.libburnia-project.org/releases/libburn-1.5.6.tar.gz
+ https://files.libburnia-project.org/releases/libisoburn-1.5.6.tar.gz
+ https://files.libburnia-project.org/releases/libisofs-1.5.6.tar.gz
