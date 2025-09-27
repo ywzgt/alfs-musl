@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-174">
+  <body class="blfs" id="blfs-r12.4-176">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-174
+        "phrase">(systemd</span> Edition) - Version r12.4-176
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-174">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-176">
           Home</a>
         </li>
       </ul>
@@ -3698,10 +3698,15 @@ deactivate</kbd></pre>
           </h5>
           <p class="optional">
             <a class="xref" href="python-modules.html#pytest" title=
-            "Pytest-8.4.2">pytest-8.4.2</a>, <a class="xref" href=
-            "python-modules.html#requests" title=
-            "Requests-2.32.5">requests-2.32.5</a>, and <a class="ulink" href=
-            "https://pypi.org/project/pyinfo/">pypinfo</a>
+            "Pytest-8.4.2">pytest-8.4.2</a>, <a class="ulink" href=
+            "https://pypi.org/project/pyperf/">pyperf</a>, <a class="ulink"
+            href="https://pypi.org/project/pypinfo/">pypinfo</a>, <a class=
+            "ulink" href=
+            "https://pypi.org/project/pytest-instafail/">pytest-instafail</a>,
+            <a class="ulink" href=
+            "https://pypi.org/project/pytest-subtests/">pytest-subtests</a>,
+            and <a class="ulink" href=
+            "https://pypi.org/project/pytest-xdist/">pytest-xdist</a>
           </p>
         </div>
         <div class="installation" lang="en" xml:lang="en">
@@ -3719,27 +3724,27 @@ deactivate</kbd></pre>
           <pre class="root"><kbd class=
           "command">pip3 install --no-index --find-links dist --no-user psutil</kbd></pre>
           <p>
-            To test the results, issue: <span class="command"><strong>make
-            test</strong></span>.
+            To test the results, issue:
           </p>
+          <pre class="userinput"><kbd class=
+          "command">python3 -m venv --system-site-packages testenv                            &amp;&amp;
+testenv/bin/pip3 install pytest-{instafail,subtests,xdist} pyperf pypinfo &amp;&amp;
+testenv/bin/python3 -m pytest</kbd></pre>
           <p>
-            Two tests, <code class=
-            "literal">TestSystemAPIs::test_disk_usage</code> and <code class=
-            "literal">TestNetAPIs::test_net_if_addrs</code>, are known to
-            fail. One test named <code class=
+            The test named <code class=
+            "literal">TestSystemAPIs::test_disk_usage</code> is known to
+            fail. The test named <code class=
             "literal">TestAvailProcessAPIs::test_io_counters</code> is known
             to fail if the kernel does not have <code class=
-            "option">CONFIG_TASK_IO_ACCOUNTING</code> enabled. <code class=
-            "literal">TestExampleScripts.test_who</code> is known to fail if
-            the login manager does not write into <code class=
-            "filename">/run/utmp</code> (note that due to the potential year
-            2037 problem, Shadow has already stopped writing into it).
-            <code class="literal">TestInternalScripts.test_import_all</code>
-            is known to fail if <a class="xref" href=
-            "python-modules.html#requests" title=
-            "Requests-2.32.5">requests-2.32.5</a> is not installed.
-            <code class="literal">TestInternalScripts::test_import_all</code>
-            is known to fail if the external module pyinfo is not installed.
+            "option">CONFIG_TASK_IO_ACCOUNTING</code> enabled. The test named
+            <code class="literal">TestExampleScripts::test_who</code> is
+            known to fail if the login manager does not write into
+            <code class="filename">/run/utmp</code> (note that due to the
+            potential year 2037 problem, Shadow has already stopped writing
+            into it). The test named <code class=
+            "literal">TestSystemAPIs::test_users</code> is known to fail if
+            the <code class="filename">/run/utmp</code> file contains an
+            entry for the login screen.
           </p>
         </div>
         <div class="commands" lang="en" xml:lang="en">
@@ -7251,7 +7256,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-174">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-176">
           Home</a>
         </li>
       </ul>
