@@ -1,0 +1,85 @@
+diff --git a/wget-list b/wget-list
+index df9bce3fe8..1f0eacec6b 100644
+--- a/wget-list
++++ b/wget-list
+@@ -6,8 +6,8 @@ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyru
+ https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
+ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.8.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.10.tar.xz
+-https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-2.0.0.tar.bz2
+-https://www.gnupg.org/ftp/gcrypt/gpgmepp/gpgmepp-2.0.0.tar.xz
++https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-2.0.1.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/gpgmepp/gpgmepp-2.0.1.tar.xz
+ https://www.netfilter.org/projects/iptables/files/iptables-1.8.11.tar.xz
+ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.76.tar.xz
+ https://github.com/linux-pam/linux-pam/releases/download/v1.7.1/Linux-PAM-1.7.1.tar.xz
+@@ -103,7 +103,7 @@ https://github.com/libarchive/libarchive/releases/download/v3.8.1/libarchive-3.8
+ https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2
+ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/bdwgc/libatomic_ops/releases/download/v7.8.4/libatomic_ops-7.8.4.tar.gz
+-https://github.com/storaged-project/libblockdev/releases/download/3.3.1/libblockdev-3.3.1.tar.gz
++https://github.com/storaged-project/libblockdev/releases/download/3.4.0/libblockdev-3.4.0.tar.gz
+ https://github.com/storaged-project/libbytesize/releases/download/2.11/libbytesize-2.11.tar.gz
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/libclc-20.1.8.src.tar.xz
+ https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6.tar.xz
+@@ -185,7 +185,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-security_fixes-1.
+ https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
+ https://github.com/g-truc/glm/archive/1.0.1/glm-1.0.1.tar.gz
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+-https://github.com/harfbuzz/harfbuzz/releases/download/11.5.0/harfbuzz-11.5.0.tar.xz
++https://github.com/harfbuzz/harfbuzz/releases/download/11.5.1/harfbuzz-11.5.1.tar.xz
+ https://github.com/jasper-software/jasper/archive/version-4.2.8/jasper-version-4.2.8.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.17/lcms2-2.17.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.3.0/libavif-1.3.0.tar.gz
+@@ -250,7 +250,7 @@ https://www.freedesktop.org/software/accountsservice/accountsservice-23.13.9.tar
+ https://downloads.sourceforge.net/acpid2/acpid-2.0.34.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/at/at_3.2.5.orig.tar.gz
+ https://www.kernel.org/pub/linux/daemons/autofs/v5/autofs-5.1.9.tar.xz
+-https://www.kernel.org/pub/linux/bluetooth/bluez-5.83.tar.xz
++https://www.kernel.org/pub/linux/bluetooth/bluez-5.84.tar.xz
+ https://github.com/containers/bubblewrap/releases/download/v0.11.0/bubblewrap-0.11.0.tar.xz
+ https://www.freedesktop.org/software/colord/releases/colord-1.4.8.tar.xz
+ https://ftp.gnu.org/gnu/cpio/cpio-2.15.tar.bz2
+@@ -476,8 +476,8 @@ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.g
+ https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-0.5.3.tar.gz
+ https://files.pythonhosted.org/packages/source/g/gi-docgen/gi_docgen-2025.4.tar.gz
+ https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
+-https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.0.1.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/lxml-6.0.1-libxml2_2_15-2.patch
++https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.0.2.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/lxml-6.0.2-libxml2_2_15-2.patch
+ https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.10.tar.gz
+ https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.3.3.tar.gz
+ https://files.pythonhosted.org/packages/source/p/ply/ply-3.11.tar.gz
+@@ -488,11 +488,11 @@ https://github.com/pygobject/pycairo/releases/download/v1.28.0/pycairo-1.28.0.ta
+ https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.19.2.tar.gz
+ https://download.gnome.org/sources/pygobject/3.52/pygobject-3.52.3.tar.gz
+-https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.2.4.tar.gz
++https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.2.5.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.4.2.tar.gz
+ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
+-https://files.pythonhosted.org/packages/source/P/PyYAML/pyyaml-6.0.2.tar.gz
++https://files.pythonhosted.org/packages/source/P/PyYAML/pyyaml-6.0.3.tar.gz
+ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
+ https://files.pythonhosted.org/packages/source/r/requests/requests-2.32.5.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/requests-use_system_certs-1.patch
+@@ -685,7 +685,7 @@ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.5.0/libei-1.5.0.tar.bz
+ https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
+ https://dri.freedesktop.org/libdrm/libdrm-2.4.125.tar.xz
+ https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
+-https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.6.tar.xz
++https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.7.tar.xz
+ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+ https://download.gnome.org/sources/pango/1.57/pango-1.57.0.tar.xz
+ https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
+@@ -1040,7 +1040,7 @@ https://pagure.io/xmlto/archive/0.0.29/xmlto-0.0.29.tar.gz
+ https://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/epdfview-gtk3/epdfview-gtk3-20200814.tar.xz
+ https://archive.apache.org/dist/xmlgraphics/fop/source/fop-2.11-src.tar.gz
+-https://www.mupdf.com/downloads/archive/mupdf-1.26.8-source.tar.gz
++https://www.mupdf.com/downloads/archive/mupdf-1.26.10-source.tar.gz
+ https://github.com/dov/paps/releases/download/v0.8.0/paps-0.8.0.tar.gz
+ https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-source.tar.xz
