@@ -1,0 +1,77 @@
+diff --git a/wget-list b/wget-list
+index 1f0eacec6b..23f5b699b5 100644
+--- a/wget-list
++++ b/wget-list
+@@ -7,7 +7,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-
+ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.8.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.10.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-2.0.1.tar.bz2
+-https://www.gnupg.org/ftp/gcrypt/gpgmepp/gpgmepp-2.0.1.tar.xz
++https://www.gnupg.org/ftp/gcrypt/gpgmepp/gpgmepp-2.0.0.tar.xz
+ https://www.netfilter.org/projects/iptables/files/iptables-1.8.11.tar.xz
+ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.76.tar.xz
+ https://github.com/linux-pam/linux-pam/releases/download/v1.7.1/Linux-PAM-1.7.1.tar.xz
+@@ -63,7 +63,7 @@ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+ https://download.qemu.org/qemu-10.1.0.tar.xz
+-https://github.com/abseil/abseil-cpp/releases/download/20250814.0/abseil-cpp-20250814.0.tar.gz
++https://github.com/abseil/abseil-cpp/releases/download/20250814.1/abseil-cpp-20250814.1.tar.gz
+ https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.6.tar.xz
+ http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz
+ https://archive.apache.org/dist/apr/apr-1.7.6.tar.bz2
+@@ -82,8 +82,8 @@ https://libopenraw.freedesktop.org/download/exempi-2.6.6.tar.xz
+ https://github.com/fastfloat/fast_float/archive/v8.1.0/fast_float-8.1.0.tar.gz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+ https://github.com/fmtlib/fmt/archive/12.0.0/fmt-12.0.0.tar.gz
+-https://download.gnome.org/sources/glib/2.84/glib-2.84.4.tar.xz
+-https://download.gnome.org/sources/gobject-introspection/1.84/gobject-introspection-1.84.0.tar.xz
++https://download.gnome.org/sources/glib/2.86/glib-2.86.0.tar.xz
++https://download.gnome.org/sources/gobject-introspection/1.86/gobject-introspection-1.86.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+ https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.8.tar.xz
+ https://download.gnome.org/sources/glibmm/2.84/glibmm-2.84.0.tar.xz
+@@ -223,7 +223,7 @@ https://downloads.sourceforge.net/bogofilter/bogofilter-1.2.5.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
+ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.2.tar.gz
+-https://github.com/google/shaderc/archive/v2025.3/shaderc-2025.3.tar.gz
++https://github.com/google/shaderc/archive/v2025.4/shaderc-2025.4.tar.gz
+ https://gitlab.com/graphviz/graphviz/-/archive/13.1.2/graphviz-13.1.2.tar.bz2
+ https://download.gnome.org/sources/gtk-doc/1.34/gtk-doc-1.34.0.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.16.tar.bz2
+@@ -458,7 +458,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/XML-LibXML-2.0210-testsuite_fi
+ https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+-https://www.php.net/distributions/php-8.4.12.tar.xz
++https://www.php.net/distributions/php-8.4.13.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/3.13.7/Python-3.13.7.tar.xz
+@@ -477,7 +477,6 @@ https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-0.5.3.tar.gz
+ https://files.pythonhosted.org/packages/source/g/gi-docgen/gi_docgen-2025.4.tar.gz
+ https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
+ https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.0.2.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/lxml-6.0.2-libxml2_2_15-2.patch
+ https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.10.tar.gz
+ https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.3.3.tar.gz
+ https://files.pythonhosted.org/packages/source/p/ply/ply-3.11.tar.gz
+@@ -572,7 +571,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_s
+ https://w1.fi/releases/wpa_supplicant-2.11.tar.gz
+ https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+-https://ftp.isc.org/isc/bind9/9.20.12/bind-9.20.12.tar.xz
++https://ftp.isc.org/isc/bind9/9.20.13/bind-9.20.13.tar.xz
+ https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.54.1/downloads/NetworkManager-1.54.1.tar.xz
+ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
+ https://nmap.org/dist/nmap-7.98.tar.bz2
+@@ -891,7 +890,7 @@ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+ https://feh.finalrewind.org/feh-3.11.2.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20230101/fontforge-20230101.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/fontforge-20230101-security_fixes-1.patch
+-https://github.com/freerdp/freerdp/archive/3.17.1/FreeRDP-3.17.1.tar.gz
++https://github.com/freerdp/freerdp/archive/3.17.2/FreeRDP-3.17.2.tar.gz
+ https://download.gimp.org/gimp/v3.0/gimp-3.0.4.tar.xz
+ https://download.gimp.org/pub/gimp/help/gimp-help-3.0.0.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
