@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      libaom-3.12.1
+      libaom-3.13.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-208">
+  <body class="blfs" id="blfs-r12.4-226">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-208
+        "phrase">(systemd</span> Edition) - Version r12.4-226
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-208">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-226">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="libaom" name="libaom"></a>libaom-3.12.1
+      <a id="libaom" name="libaom"></a>libaom-3.13.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,29 +78,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://storage.googleapis.com/aom-releases/libaom-3.12.1.tar.gz">
-                https://storage.googleapis.com/aom-releases/libaom-3.12.1.tar.gz</a>
+                "https://storage.googleapis.com/aom-releases/libaom-3.13.1.tar.gz">
+                https://storage.googleapis.com/aom-releases/libaom-3.13.1.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 51e4e369c41f66d2f8f1ed83e2206908
+                Download MD5 sum: d615c4dbe062fc307d70d7fb85b678b2
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 5.3 MB
+                Download size: 6.0 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 125 MB (add 1 GB for tests)
+                Estimated disk space required: 142 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.8 SBU (with parallelism=4, add 128
-                SBU for tests)
+                Estimated build time: 0.8 SBU (with parallelism=4)
               </p>
             </li>
           </ul>
@@ -123,18 +122,6 @@
           <a class="xref" href="../general/doxygen.html" title=
           "Doxygen-1.14.0">Doxygen-1.14.0</a>
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            An Internet connection is needed for some tests of this package.
-            The system certificate store may need to be set up with <a class=
-            "xref" href="../postlfs/make-ca.html" title=
-            "make-ca-1.16.1">make-ca-1.16.1</a> before testing this package.
-          </p>
-        </div>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -155,9 +142,7 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -G Ninja .. &amp;&amp;
 ninja</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>ninja
-          testdata &amp;&amp; ninja runtests</strong></span>. Note that the
-          tests take an extremely long time to run.
+          This package does not come with a working test suite.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -287,7 +272,7 @@ rm -v /usr/lib/libaom.a</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-208">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-226">
           Home</a>
         </li>
       </ul>

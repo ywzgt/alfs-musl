@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-208">
+  <body class="blfs" id="blfs-r12.4-226">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-208
+        "phrase">(systemd</span> Edition) - Version r12.4-226
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-208">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-226">
           Home</a>
         </li>
       </ul>
@@ -116,7 +116,7 @@
         </h4>
         <p class="recommended">
           <a class="xref" href="../basicnet/curl.html" title=
-          "cURL-8.15.0">cURL-8.15.0</a>, <a class="xref" href=
+          "cURL-8.16.0">cURL-8.16.0</a>, <a class="xref" href=
           "libarchive.html" title="libarchive-3.8.1">libarchive-3.8.1</a>,
           <a class="xref" href="libuv.html" title=
           "libuv-1.51.0">libuv-1.51.0</a>, and <a class="xref" href=
@@ -149,6 +149,11 @@
         <h2 class="sect2">
           Installation of CMake
         </h2>
+        <p>
+          First, adapt CMake to changes in the latest version of cURL:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i 's/curl_proxytype/long/' Source/CTest/cmCTestCurl.h</kbd></pre>
         <p>
           Install <span class="application">CMake</span> by running the
           following commands:
@@ -375,7 +380,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-208">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-226">
           Home</a>
         </li>
       </ul>
