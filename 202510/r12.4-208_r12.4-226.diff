@@ -1,0 +1,75 @@
+diff --git a/wget-list b/wget-list
+index 16e5ca40c4..f3e3274e95 100644
+--- a/wget-list
++++ b/wget-list
+@@ -58,7 +58,7 @@ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/25.08.0/src/kate-25.08.0.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.5.tar.xz
+ https://www.nano-editor.org/dist/v8/nano-8.6.tar.xz
+-https://github.com/vim/vim/archive/v9.1.1629/vim-9.1.1629.tar.gz
++https://github.com/vim/vim/archive/v9.1.1806/vim-9.1.1806.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+@@ -173,7 +173,7 @@ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+ https://oligarchy.co.uk/xapian/1.4.29/xapian-core-1.4.29.tar.xz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+ https://download.gimp.org/pub/babl/0.1/babl-0.1.114.tar.xz
+-https://github.com/Exiv2/exiv2/archive/v0.28.5/exiv2-0.28.5.tar.gz
++https://github.com/Exiv2/exiv2/archive/v0.28.7/exiv2-0.28.7.tar.gz
+ https://downloads.sourceforge.net/freetype/freetype-2.14.1.tar.xz
+ https://downloads.sourceforge.net/freetype/freetype-doc-2.14.1.tar.xz
+ https://gitlab.freedesktop.org/api/v4/projects/890/packages/generic/fontconfig/2.17.1/fontconfig-2.17.1.tar.xz
+@@ -207,7 +207,7 @@ https://github.com/mypaint/mypaint-brushes/releases/download/v1.3.1/mypaint-brus
+ https://releases.pagure.org/newt/newt-0.52.25.tar.gz
+ https://github.com/opencv/opencv/archive/4.12.0/opencv-4.12.0.tar.gz
+ https://github.com/opencv/opencv_contrib/archive/4.12.0/opencv_contrib-4.12.0.tar.gz
+-https://github.com/uclouvain/openjpeg/archive/v2.5.3/openjpeg-2.5.3.tar.gz
++https://github.com/uclouvain/openjpeg/archive/v2.5.4/openjpeg-2.5.4.tar.gz
+ https://www.cairographics.org/releases/pixman-0.46.4.tar.gz
+ https://poppler.freedesktop.org/poppler-25.09.1.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+@@ -547,6 +547,7 @@ https://downloads.sourceforge.net/swig/swig-4.3.1.tar.gz
+ https://downloads.sourceforge.net/tcl/tk8.6.17-src.tar.gz
+ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+ https://download.gnome.org/sources/vala/0.56/vala-0.56.18.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/vala-0.56.18-graphviz_13_fix-1.patch
+ https://sourceware.org/pub/valgrind/valgrind-3.25.1.tar.bz2
+ https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-24.0.2/OpenJDK-24.0.2+12-i686-bin.tar.xz
+@@ -579,7 +580,7 @@ https://downloads.sourceforge.net/traceroute/traceroute-2.1.6.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.6.4/whois-5.6.4.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.4.8.tar.xz
+ https://github.com/c-ares/c-ares/releases/download/v1.34.5/c-ares-1.34.5.tar.gz
+-https://curl.se/download/curl-8.15.0.tar.xz
++https://curl.se/download/curl-8.16.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.8.0/geoclue-2.8.0.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.1.tar.xz
+ https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.2.0/kdsoap-2.2.0.tar.gz
+@@ -603,7 +604,7 @@ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.
+ https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
+ http://links.twibright.com/download/links-2.30.tar.bz2
+ https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.bz2
+-https://downloads.sourceforge.net/fetchmail/fetchmail-6.5.4.tar.xz
++https://downloads.sourceforge.net/fetchmail/fetchmail-6.5.5.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/mailx/heirloom-mailx_12.5.orig.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.patch
+ https://bitbucket.org/mutt/mutt/downloads/mutt-2.2.14.tar.gz
+@@ -933,7 +934,7 @@ https://github.com/lfs-book/intel-media-driver/archive/v25.2.6/intel-media-drive
+ https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
+ https://distfiles.adelielinux.org/source/a52dec/a52dec-0.8.0.tar.gz
+ https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
+-https://storage.googleapis.com/aom-releases/libaom-3.12.1.tar.gz
++https://storage.googleapis.com/aom-releases/libaom-3.13.1.tar.gz
+ https://github.com/libass/libass/releases/download/0.17.4/libass-0.17.4.tar.xz
+ https://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libcanberra-0.30-wayland-1.patch
+@@ -1003,7 +1004,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/dvd+rw-tools-7.1-consolidated_
+ https://files.libburnia-project.org/releases/libburn-1.5.6.tar.gz
+ https://files.libburnia-project.org/releases/libisoburn-1.5.6.tar.gz
+ https://files.libburnia-project.org/releases/libisofs-1.5.6.tar.gz
+-https://github.com/OpenPrinting/cups/releases/download/v2.4.12/cups-2.4.12-source.tar.gz
++https://github.com/OpenPrinting/cups/releases/download/v2.4.14/cups-2.4.14-source.tar.gz
+ https://github.com/OpenPrinting/cups-browsed/releases/download/2.1.1/cups-browsed-2.1.1.tar.xz
+ https://github.com/OpenPrinting/cups-filters/releases/download/2.0.1/cups-filters-2.0.1.tar.xz
+ https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10060/ghostscript-10.06.0.tar.xz
