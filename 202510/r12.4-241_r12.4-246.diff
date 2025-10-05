@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index 2a64b456c2..82d02b011a 100644
+--- a/wget-list
++++ b/wget-list
+@@ -172,7 +172,7 @@ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.45/downloa
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+ https://oligarchy.co.uk/xapian/1.4.29/xapian-core-1.4.29.tar.xz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+-https://download.gimp.org/pub/babl/0.1/babl-0.1.114.tar.xz
++https://download.gimp.org/pub/babl/0.1/babl-0.1.116.tar.xz
+ https://github.com/Exiv2/exiv2/archive/v0.28.7/exiv2-0.28.7.tar.gz
+ https://downloads.sourceforge.net/freetype/freetype-2.14.1.tar.xz
+ https://downloads.sourceforge.net/freetype/freetype-doc-2.14.1.tar.xz
+@@ -540,7 +540,7 @@ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1
+ https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.6.tar.xz
+ https://static.rust-lang.org/dist/rustc-1.89.0-src.tar.xz
+ https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.1/rust-bindgen-0.72.1.tar.gz
+-https://downloads.sourceforge.net/scons/SCons-4.9.1.tar.gz
++https://downloads.sourceforge.net/scons/SCons-4.10.0.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+ https://archive.apache.org/dist/subversion/subversion-1.14.5.tar.bz2
+ https://downloads.sourceforge.net/swig/swig-4.3.1.tar.gz
+@@ -607,7 +607,7 @@ https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.bz2
+ https://downloads.sourceforge.net/fetchmail/fetchmail-6.5.5.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/mailx/heirloom-mailx_12.5.orig.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.patch
+-https://bitbucket.org/mutt/mutt/downloads/mutt-2.2.14.tar.gz
++http://ftp.mutt.org/pub/mutt/mutt-2.2.15.tar.gz
+ https://github.com/BuGlessRB/procmail/archive/v3.24/procmail-3.24.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.24-consolidated_fixes-1.patch
+ https://archive.apache.org/dist/httpd/httpd-2.4.65.tar.bz2
