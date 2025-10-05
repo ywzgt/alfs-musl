@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-246">
+  <body class="blfs" id="blfs-r12.4-256">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-246
+        "phrase">(systemd</span> Edition) - Version r12.4-256
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-246">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-256">
           Home</a>
         </li>
       </ul>
@@ -126,11 +126,12 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -D CMAKE_INSTALL_PREFIX=/usr \
-      -D CMAKE_BUILD_TYPE=Release  \
-      -D ABSL_PROPAGATE_CXX_STD=ON \
-      -D BUILD_SHARED_LIBS=ON      \
-      -G Ninja ..                  &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr   \
+      -D CMAKE_BUILD_TYPE=Release    \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON \
+      -D ABSL_PROPAGATE_CXX_STD=ON   \
+      -D BUILD_SHARED_LIBS=ON        \
+      -G Ninja ..                    &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -144,6 +145,15 @@ ninja</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <em class="parameter"><code>-D
+          CMAKE_SKIP_INSTALL_RPATH=ON</code></em>: This switch makes
+          <span class="command"><strong>cmake</strong></span> remove
+          hardcoded library search paths (rpath) when installing a binary
+          executable file or a shared library. This package does not need
+          rpath once it's installed into the standard location, and rpath may
+          sometimes cause unwanted effects or even security issues.
+        </p>
         <p>
           <em class="parameter"><code>-D
           ABSL_PROPAGATE_CXX_STD=ON</code></em>: This parameter enables
@@ -202,9 +212,9 @@ ninja</kbd></pre>
               libabsl_log_internal_message.so,
               libabsl_log_internal_nullguard.so,
               libabsl_log_internal_proto.so, libabsl_log_severity.so,
-              libabsl_log_sink.so, libabsl_low_level_hash.so,
-              libabsl_malloc_internal.so, libabsl_periodic_sampler.so,
-              libabsl_poison.so, libabsl_random_distributions.so,
+              libabsl_log_sink.so, libabsl_malloc_internal.so,
+              libabsl_periodic_sampler.so, libabsl_poison.so,
+              libabsl_random_distributions.so,
               libabsl_random_internal_distribution_test_util.so,
               libabsl_random_internal_platform.so,
               libabsl_random_internal_pool_urbg.so,
@@ -256,7 +266,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-246">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-256">
           Home</a>
         </li>
       </ul>
