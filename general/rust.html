@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Rustc-1.89.0
+      Rustc-1.90.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-257">
+  <body class="blfs" id="blfs-r12.4-268">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-257
+        "phrase">(systemd</span> Edition) - Version r12.4-268
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-257">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-268">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="rust" name="rust"></a>Rustc-1.89.0
+      <a id="rust" name="rust"></a>Rustc-1.90.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -84,7 +84,7 @@
             broken <span class="command"><strong>cargo</strong></span>
             program. In such a situation, either remove the existing
             installation first, or use a different prefix such as
-            /opt/rustc-1.89.0-build2.
+            /opt/rustc-1.90.0-build2.
           </p>
           <p>
             If you prefer, you can of course change the prefix to
@@ -156,17 +156,17 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://static.rust-lang.org/dist/rustc-1.89.0-src.tar.xz">https://static.rust-lang.org/dist/rustc-1.89.0-src.tar.xz</a>
+                "https://static.rust-lang.org/dist/rustc-1.90.0-src.tar.xz">https://static.rust-lang.org/dist/rustc-1.90.0-src.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 982f087479302e6d91432efc81852b00
+                Download MD5 sum: a6e15778947c83cb6cf7b2fcf58a2cd0
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 256 MB
+                Download size: 260 MB
               </p>
             </li>
             <li class="listitem">
@@ -212,7 +212,7 @@
         <p class="recommended">
           <a class="xref" href="libssh2.html" title=
           "libssh2-1.11.1">libssh2-1.11.1</a> and <a class="xref" href=
-          "llvm.html" title="LLVM-20.1.8">LLVM-20.1.8</a> (built with -D
+          "llvm.html" title="LLVM-21.1.2">LLVM-21.1.2</a> (built with -D
           LLVM_LINK_LLVM_DYLIB=ON so that rust can link to system LLVM
           instead of building its shipped version)
         </p>
@@ -259,8 +259,8 @@
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">mkdir -pv /opt/rustc-1.89.0      &amp;&amp;
-ln -svfn rustc-1.89.0 /opt/rustc</kbd></pre>
+        "command">mkdir -pv /opt/rustc-1.90.0      &amp;&amp;
+ln -svfn rustc-1.90.0 /opt/rustc</kbd></pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -288,7 +288,7 @@ ln -svfn rustc-1.89.0 /opt/rustc</kbd></pre>
 # Tell x.py the editors have reviewed the content of this file
 # and updated it to follow the major changes of the building system,
 # so x.py will not warn us to do such a review.
-change-id = 142379
+change-id = 144675
 
 [llvm]
 # When using system llvm prefer shared libraries
@@ -299,7 +299,7 @@ link-shared = true
 targets = "X86"
 
 [build]
-description = "for BLFS r12.4-257"
+description = "for BLFS r12.4-268"
 
 # Omit docs to save time and space (default is to build them).
 docs = false
@@ -311,8 +311,8 @@ locked-deps = true
 tools = ["cargo", "clippy", "rustdoc", "rustfmt"]
 
 [install]
-prefix = "/opt/rustc-1.89.0"
-docdir = "share/doc/rustc-1.89.0"
+prefix = "/opt/rustc-1.90.0"
+docdir = "share/doc/rustc-1.90.0"
 
 [rust]
 channel = "stable"
@@ -320,11 +320,6 @@ channel = "stable"
 # Enable the same optimizations as the official upstream build.
 lto = "thin"
 codegen-units = 1
-
-# Don't build lld which does not belong to this package and seems not
-# so useful for BLFS.  Even if it turns out to be really useful we'd build
-# it as a part of the LLVM package instead.
-lld = false
 
 # Don't build llvm-bitcode-linker which is only useful for the NVPTX
 # backend that we don't enable.
@@ -362,18 +357,10 @@ export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
         <pre class="userinput"><kbd class=
         "command">./x.py test --verbose --no-fail-fast | tee rustc-testlog</kbd></pre>
         <p>
-          Eight tests in the ui test suite are known to fail with
-          <code class="literal">description</code> set in the <code class=
-          "literal">build</code> section of the <code class=
-          "filename">bootstrap.toml</code> file. Four tests in the bootstrap
-          test suite are known to fail because they expect to run in the Rust
-          Git repository. The test named <code class=
-          "filename">tests/run-make/musl-default-linking</code> is known to
-          fail because we've not enabled the AArch64 target in <a class=
-          "xref" href="llvm.html" title="LLVM-20.1.8">LLVM-20.1.8</a>. The
-          test named <code class=
-          "filename">tests/run-make/linker-warning</code> is known to fail
-          due to some reason unknown yet.
+          The test named <code class=
+          "filename">tests/run-make/rustdoc-target-modifiers</code> is known
+          to fail because we've not enabled the AArch64 target in <a class=
+          "xref" href="llvm.html" title="LLVM-21.1.2">LLVM-21.1.2</a>.
         </p>
         <p>
           As with all large test suites, some tests might fail on some
@@ -467,9 +454,9 @@ export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
           "application">Bash</span> completion maintainers:
         </p>
         <pre class="root"><kbd class=
-        "command">rm -fv /opt/rustc-1.89.0/share/doc/rustc-1.89.0/*.old   &amp;&amp;
+        "command">rm -fv /opt/rustc-1.90.0/share/doc/rustc-1.90.0/*.old   &amp;&amp;
 install -vm644 README.md                                \
-               /opt/rustc-1.89.0/share/doc/rustc-1.89.0 &amp;&amp;
+               /opt/rustc-1.90.0/share/doc/rustc-1.90.0 &amp;&amp;
 
 install -vdm755 /usr/share/zsh/site-functions      &amp;&amp;
 ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
@@ -487,7 +474,7 @@ mv -v /etc/bash_completion.d/cargo /usr/share/bash-completion/completions</kbd><
           Command Explanations
         </h2>
         <p>
-          <span class="command"><strong>ln -svfn rustc-1.89.0
+          <span class="command"><strong>ln -svfn rustc-1.90.0
           /opt/rustc</strong></span>: if this is not the first use of the
           <code class="filename">/opt/rustc</code> symlink, overwrite it by
           forcing, and use the '-n' flag to avoid getting confusing results
@@ -595,7 +582,7 @@ EOF</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">~/.cargo, /opt/rustc, symbolic link to
-              /opt/rustc-1.89.0</span>
+              /opt/rustc-1.90.0</span>
             </div>
           </div>
         </div>
@@ -678,7 +665,7 @@ EOF</kbd></pre>
                   <p>
                     is a wrapper script for gdb, pulling in Python
                     pretty-printing modules installed in <code class=
-                    "filename">/opt/rustc-1.89.0/lib/rustlib/etc</code>
+                    "filename">/opt/rustc-1.90.0/lib/rustlib/etc</code>
                   </p>
                 </td>
               </tr>
@@ -795,7 +782,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-257">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-268">
           Home</a>
         </li>
       </ul>

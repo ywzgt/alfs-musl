@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-257">
+  <body class="blfs" id="blfs-r12.4-268">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-257
+        "phrase">(systemd</span> Edition) - Version r12.4-268
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-257">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-268">
           Home</a>
         </li>
       </ul>
@@ -115,7 +115,7 @@
         <p class="required">
           <a class="xref" href="../x/cairo.html" title=
           "Cairo-1.18.4">Cairo-1.18.4</a>, <a class="xref" href=
-          "cargo-c.html" title="cargo-c-0.10.15">cargo-c-0.10.15</a>,
+          "cargo-c.html" title="cargo-c-0.10.16">cargo-c-0.10.16</a>,
           <a class="xref" href="../x/gdk-pixbuf.html" title=
           "gdk-pixbuf-2.44.2">gdk-pixbuf-2.44.2</a>, and <a class="xref"
           href="../x/pango.html" title="Pango-1.57.0">Pango-1.57.0</a>
@@ -176,9 +176,12 @@ ninja</kbd></pre>
         <p>
           To test the results, issue:
         </p>
-        <pre class="userinput"><kbd class="command">ninja test</kbd></pre>
+        <pre class="userinput"><kbd class="command">meson test -v</kbd></pre>
         <p>
-          One test, Rust tests (rsvg), is known to fail.
+          One subtest named <code class="literal">too_many_elements</code> in
+          the <span class="quote">“<span class="quote">Rust tests
+          (rsvg)</span>”</span> test is known to fail with libxml2-2.15.0 or
+          newer.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -287,7 +290,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-257">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-268">
           Home</a>
         </li>
       </ul>
