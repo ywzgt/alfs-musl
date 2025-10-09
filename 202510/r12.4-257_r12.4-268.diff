@@ -1,0 +1,95 @@
+diff --git a/wget-list b/wget-list
+index 7ae8dde436..b064d985a3 100644
+--- a/wget-list
++++ b/wget-list
+@@ -105,7 +105,7 @@ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/bdwgc/libatomic_ops/releases/download/v7.8.4/libatomic_ops-7.8.4.tar.gz
+ https://github.com/storaged-project/libblockdev/releases/download/3.4.0/libblockdev-3.4.0.tar.gz
+ https://github.com/storaged-project/libbytesize/releases/download/2.11/libbytesize-2.11.tar.gz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/libclc-20.1.8.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.2/libclc-21.1.2.src.tar.xz
+ https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6.tar.xz
+ https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+ https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.3.0/downloads/libdisplay-info-0.3.0.tar.xz
+@@ -135,7 +135,7 @@ https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.15.tar.gz
+ https://www.libssh2.org/download/libssh2-1.11.1.tar.gz
+ https://www.mirrorservice.org/sites/ftp.i-scream.org/pub/i-scream/libstatgrab/libstatgrab-0.92.1.tar.gz
+ https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.20.0.tar.gz
+-https://ftp.gnu.org/gnu/libunistring/libunistring-1.4.tar.xz
++https://ftp.gnu.org/gnu/libunistring/libunistring-1.4.1.tar.xz
+ https://github.com/libunwind/libunwind/releases/download/v1.8.3/libunwind-1.8.3.tar.gz
+ https://lttng.org/files/urcu/userspace-rcu-0.15.3.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.29/libusb-1.0.29.tar.bz2
+@@ -160,9 +160,9 @@ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5
+ https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
+ https://archive.mozilla.org/pub/firefox/releases/140.3.1esr/source/firefox-140.3.1esr.source.tar.xz
+-https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.321.0/SPIRV-Headers-vulkan-sdk-1.4.321.0.tar.gz
+-https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.321.0/SPIRV-Tools-vulkan-sdk-1.4.321.0.tar.gz
+-https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v20.1.5/SPIRV-LLVM-Translator-20.1.5.tar.gz
++https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.328.0/SPIRV-Headers-vulkan-sdk-1.4.328.0.tar.gz
++https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.328.0/SPIRV-Tools-vulkan-sdk-1.4.328.0.tar.gz
++https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v21.1.1/SPIRV-LLVM-Translator-21.1.1.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.4.3.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+ https://github.com/martinpitt/umockdev/releases/download/0.19.3/umockdev-0.19.3.tar.xz
+@@ -224,7 +224,7 @@ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
+ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.2.tar.gz
+ https://github.com/google/shaderc/archive/v2025.4/shaderc-2025.4.tar.gz
+-https://gitlab.com/graphviz/graphviz/-/archive/14.0.0/graphviz-14.0.0.tar.bz2
++https://gitlab.com/graphviz/graphviz/-/archive/14.0.1/graphviz-14.0.1.tar.bz2
+ https://download.gnome.org/sources/gtk-doc/1.35/gtk-doc-1.35.1.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.17.tar.bz2
+ https://github.com/ibus/ibus/archive/1.5.32/ibus-1.5.32.tar.gz
+@@ -288,7 +288,7 @@ https://sg.danny.cz/sg/p/sg3_utils-1.48.tar.xz
+ https://github.com/lfs-book/sysmond/releases/download/sysmond-1.0.0/sysmond-1.0.0.tar.xz
+ https://github.com/lfs-book/sysmon3/releases/download/sysmon3-3.0.1/sysmon3-3.0.1.tar.xz
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-018.tar.xz
+-https://github.com/lu-zero/cargo-c/archive/v0.10.15/cargo-c-0.10.15.tar.gz
++https://github.com/lu-zero/cargo-c/archive/v0.10.16/cargo-c-0.10.16.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.29.0/cbindgen-0.29.0.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/clisp/clisp-2.49.95.tar.xz
+ https://cmake.org/files/v4.1/cmake-4.1.2.tar.gz
+@@ -302,11 +302,11 @@ https://www.kernel.org/pub/software/scm/git/git-manpages-2.51.0.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.51.0.tar.xz
+ https://ftp.gnu.org/gnu/guile/guile-3.0.10.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/guile-3.0.10-32bit_fixes-1.patch
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/llvm-20.1.8.src.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-20.1.8.src.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-third-party-20.1.8.src.tar.xz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/clang-20.1.8.src.tar.xz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/compiler-rt-20.1.8.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.2/llvm-21.1.2.src.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-21.1.2.src.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-third-party-21.1.2.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.2/clang-21.1.2.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.2/compiler-rt-21.1.2.src.tar.xz
+ https://www.lua.org/ftp/lua-5.4.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.8-shared_library-1.patch
+ https://www.lua.org/tests/lua-5.4.8-tests.tar.gz
+@@ -538,7 +538,7 @@ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.1.0.tar.g
+ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.5.0.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+ https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.6.tar.xz
+-https://static.rust-lang.org/dist/rustc-1.89.0-src.tar.xz
++https://static.rust-lang.org/dist/rustc-1.90.0-src.tar.xz
+ https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.1/rust-bindgen-0.72.1.tar.gz
+ https://downloads.sourceforge.net/scons/SCons-4.10.0.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+@@ -690,11 +690,11 @@ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+ https://download.gnome.org/sources/pango/1.57/pango-1.57.0.tar.xz
+ https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
+ https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
+-https://download.qt.io/archive/qt/6.9/6.9.3/single/qt-everywhere-src-6.9.3.tar.xz
+-https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtwebengine-everywhere-src-6.9.3.tar.xz
++https://download.qt.io/archive/qt/6.10/6.10.0/single/qt-everywhere-src-6.10.0.tar.xz
++https://download.qt.io/official_releases/qt/6.10/6.10.0/submodules/qtwebengine-everywhere-src-6.10.0.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.321/Vulkan-Headers-1.4.321.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.321/Vulkan-Loader-1.4.321.tar.gz
++https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.328/Vulkan-Headers-1.4.328.tar.gz
++https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.328/Vulkan-Loader-1.4.328.tar.gz
+ https://webkitgtk.org/releases/webkitgtk-2.48.5.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.20.3/xdg-desktop-portal-1.20.3.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
