@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-280">
+  <body class="blfs" id="blfs-r12.4-282">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-280
+        "phrase">(systemd</span> Edition) - Version r12.4-282
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-280">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-282">
           Home</a>
         </li>
       </ul>
@@ -191,8 +191,11 @@
           Recommended
         </h4>
         <p class="recommended">
-          <a class="xref" href="../general/icu.html" title=
-          "icu-77.1">ICU-77.1</a>, <a class="xref" href=
+          <a class="xref" href="../multimedia/dav1d.html" title=
+          "dav1d-1.5.1">dav1d-1.5.1</a>, <a class="xref" href=
+          "../general/icu.html" title="icu-77.1">ICU-77.1</a>, <a class=
+          "xref" href="../multimedia/libaom.html" title=
+          "libaom-3.13.1">libaom-3.13.1</a>, <a class="xref" href=
           "../basicnet/libevent.html" title=
           "libevent-2.1.12">libevent-2.1.12</a>, <a class="xref" href=
           "../multimedia/libvpx.html" title=
@@ -285,6 +288,7 @@ ac_add_options --with-google-location-service-api-keyfile=$PWD/google-key
 
 # Comment out following options if you have not installed
 # recommended dependencies:
+ac_add_options --with-system-av1
 ac_add_options --with-system-icu
 ac_add_options --with-system-libevent
 ac_add_options --with-system-libvpx
@@ -684,7 +688,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-280">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-282">
           Home</a>
         </li>
       </ul>
