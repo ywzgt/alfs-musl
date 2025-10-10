@@ -1,0 +1,49 @@
+diff --git a/wget-list b/wget-list
+index b064d985a3..c8b54794db 100644
+--- a/wget-list
++++ b/wget-list
+@@ -19,7 +19,7 @@ https://kerberos.org/dist/krb5/1.22/krb5-1.22.1.tar.gz
+ https://ftp.gnu.org/gnu/nettle/nettle-3.10.2.tar.gz
+ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_117_RTM/src/nss-3.117.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+-https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.0p1.tar.gz
++https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.1p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.25.10/p11-kit-0.25.10.tar.xz
+ https://github.com/polkit-org/polkit/archive/126/polkit-126.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+@@ -110,7 +110,7 @@ https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6
+ https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+ https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.3.0/downloads/libdisplay-info-0.3.0.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.2.tar.bz2
+-https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.55.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.56.tar.bz2
+ https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.53.tar.xz
+ https://download.gnome.org/sources/libgudev/238/libgudev-238.tar.xz
+ https://github.com/hughsie/libgusb/releases/download/0.4.9/libgusb-0.4.9.tar.xz
+@@ -242,7 +242,7 @@ https://github.com/htacg/tidy-html5/archive/5.8.0/tidy-html5-5.8.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tidy-html5-5.8.0-cmake4_fixes-1.patch
+ https://ftp.gnu.org/gnu/time/time-1.9.tar.gz
+ https://gitlab.com/OldManProgrammer/unix-tree/-/archive/2.2.1/unix-tree-2.2.1.tar.bz2
+-https://github.com/lurcher/unixODBC/archive/v2.3.13/unixODBC-2.3.13.tar.gz
++https://github.com/lurcher/unixODBC/archive/v2.3.14/unixODBC-2.3.14.tar.gz
+ https://github.com/flatpak/xdg-dbus-proxy/releases/download/0.1.6/xdg-dbus-proxy-0.1.6.tar.xz
+ https://gitlab.freedesktop.org/xdg/xdg-user-dirs/-/archive/v0.19/xdg-user-dirs-v0.19.tar.gz
+ https://github.com/ip7z/7zip/archive/25.01/7zip-25.01.tar.gz
+@@ -537,7 +537,7 @@ https://files.pythonhosted.org/packages/source/t/trove_classifiers/trove_classif
+ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.1.0.tar.gz
+ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.5.0.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+-https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.6.tar.xz
++https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
+ https://static.rust-lang.org/dist/rustc-1.90.0-src.tar.xz
+ https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.1/rust-bindgen-0.72.1.tar.gz
+ https://downloads.sourceforge.net/scons/SCons-4.10.0.tar.gz
+@@ -972,7 +972,7 @@ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.1.2/SVT-AV1-v3.1.2.tar.gz
+ https://taglib.org/releases/taglib-2.1.1.tar.gz
+-https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.30.1.tar.xz
++https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.32.0.tar.xz
+ https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.11/wireplumber-0.5.11.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20250815.tar.xz
+ https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz
