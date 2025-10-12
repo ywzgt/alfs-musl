@@ -1,0 +1,76 @@
+diff --git a/wget-list b/wget-list
+index c8b54794db..a56d25fbce 100644
+--- a/wget-list
++++ b/wget-list
+@@ -19,7 +19,7 @@ https://kerberos.org/dist/krb5/1.22/krb5-1.22.1.tar.gz
+ https://ftp.gnu.org/gnu/nettle/nettle-3.10.2.tar.gz
+ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_117_RTM/src/nss-3.117.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+-https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.1p1.tar.gz
++https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.2p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.25.10/p11-kit-0.25.10.tar.xz
+ https://github.com/polkit-org/polkit/archive/126/polkit-126.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+@@ -160,8 +160,8 @@ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5
+ https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
+ https://archive.mozilla.org/pub/firefox/releases/140.3.1esr/source/firefox-140.3.1esr.source.tar.xz
+-https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.328.0/SPIRV-Headers-vulkan-sdk-1.4.328.0.tar.gz
+-https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.328.0/SPIRV-Tools-vulkan-sdk-1.4.328.0.tar.gz
++https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.328.1/SPIRV-Headers-vulkan-sdk-1.4.328.1.tar.gz
++https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.328.1/SPIRV-Tools-vulkan-sdk-1.4.328.1.tar.gz
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v21.1.1/SPIRV-LLVM-Translator-21.1.1.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.4.3.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+@@ -469,7 +469,7 @@ https://files.pythonhosted.org/packages/source/b/build/build-1.3.0.tar.gz
+ https://github.com/psf/cachecontrol/archive/v0.14.3/cachecontrol-0.14.3.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.3.0.tar.gz
+ https://github.com/cython/cython/releases/download/3.1.4/cython-3.1.4.tar.gz
+-https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.37.0.tar.gz
++https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.37.1.tar.gz
+ https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.4.0.tar.xz
+ https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.21.2.tar.gz
+ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.gz
+@@ -604,7 +604,7 @@ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.
+ https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
+ http://links.twibright.com/download/links-2.30.tar.bz2
+ https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.bz2
+-https://downloads.sourceforge.net/fetchmail/fetchmail-6.5.5.tar.xz
++https://downloads.sourceforge.net/fetchmail/fetchmail-6.5.6.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/mailx/heirloom-mailx_12.5.orig.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.patch
+ http://ftp.mutt.org/pub/mutt/mutt-2.2.15.tar.gz
+@@ -680,7 +680,7 @@ https://downloads.sourceforge.net/enlightenment/imlib2-1.12.5.tar.xz
+ https://github.com/ksnip/kColorPicker/archive/v0.3.1/kColorPicker-0.3.1.tar.gz
+ https://github.com/ksnip/kImageAnnotator/archive/v0.7.1/kImageAnnotator-0.7.1.tar.gz
+ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
+-https://download.gnome.org/sources/libadwaita/1.8/libadwaita-1.8.0.tar.xz
++https://download.gnome.org/sources/libadwaita/1.8/libadwaita-1.8.1.tar.xz
+ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.5.0/libei-1.5.0.tar.bz2
+ https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
+ https://dri.freedesktop.org/libdrm/libdrm-2.4.126.tar.xz
+@@ -693,8 +693,8 @@ https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
+ https://download.qt.io/archive/qt/6.10/6.10.0/single/qt-everywhere-src-6.10.0.tar.xz
+ https://download.qt.io/official_releases/qt/6.10/6.10.0/submodules/qtwebengine-everywhere-src-6.10.0.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.328/Vulkan-Headers-1.4.328.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.328/Vulkan-Loader-1.4.328.tar.gz
++https://github.com/KhronosGroup/Vulkan-Headers/archive/vulkan-sdk-1.4.328.1/Vulkan-Headers-vulkan-sdk-1.4.328.1.tar.gz
++https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.328.1/Vulkan-Loader-vulkan-sdk-1.4.328.1.tar.gz
+ https://webkitgtk.org/releases/webkitgtk-2.48.5.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.20.3/xdg-desktop-portal-1.20.3.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
+@@ -889,10 +889,10 @@ https://archive.seamonkey-project.org/releases/2.53.21/source/seamonkey-2.53.21.
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.21-cxx17-1.patch
+ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+ https://feh.finalrewind.org/feh-3.11.2.tar.bz2
+-https://github.com/fontforge/fontforge/releases/download/20230101/fontforge-20230101.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/fontforge-20230101-security_fixes-1.patch
++https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/fontforge-20251009-security_fixes-1.patch
+ https://github.com/freerdp/freerdp/archive/3.17.2/FreeRDP-3.17.2.tar.gz
+-https://download.gimp.org/gimp/v3.0/gimp-3.0.4.tar.xz
++https://download.gimp.org/gimp/v3.0/gimp-3.0.6.tar.xz
+ https://download.gimp.org/pub/gimp/help/gimp-help-3.0.0.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
+ https://inkscape.org/gallery/item/56344/inkscape-1.4.2.tar.xz
