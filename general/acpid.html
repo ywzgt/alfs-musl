@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-312">
+  <body class="blfs" id="blfs-r12.4-325">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-312
+        "phrase">(systemd</span> Edition) - Version r12.4-325
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-312">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-325">
           Home</a>
         </li>
       </ul>
@@ -72,9 +72,9 @@
             Some other packages may handle some ACPI events as well and they
             may conflict with this package. For example, <span class=
             "phrase"><a class="xref" href="systemd.html" title=
-            "Systemd-258">Systemd-258</a></span> (read the documentation for
-            <code class="option">Handle*=</code> in <a class="ulink" href=
-            "https://man.archlinux.org/man/logind.conf.5">logind.conf(5)</a>
+            "Systemd-258.1">Systemd-258.1</a></span> (read the documentation
+            for <code class="option">Handle*=</code> in <a class="ulink"
+            href="https://man.archlinux.org/man/logind.conf.5">logind.conf(5)</a>
             for details) and <a class="xref" href="upower.html" title=
             "UPower-1.90.10">UPower-1.90.10</a> (used by many desktop
             environments such as GNOME, KDE, and XFCE for handling ACPI
@@ -83,11 +83,11 @@
             need this package, you must be careful configuring it and the
             other packages handling ACPI events to avoid conflicts. Notably,
             <span class="phrase"><a class="xref" href="systemd.html" title=
-            "Systemd-258">Systemd-258</a></span> handles some ACPI events by
-            default, so the handling of these events by <span class=
+            "Systemd-258.1">Systemd-258.1</a></span> handles some ACPI events
+            by default, so the handling of these events by <span class=
             "phrase"><a class="xref" href="systemd.html" title=
-            "Systemd-258">Systemd-258</a></span> should be disabled first if
-            handling these events with acpid (again, read <a class="ulink"
+            "Systemd-258.1">Systemd-258.1</a></span> should be disabled first
+            if handling these events with acpid (again, read <a class="ulink"
             href=
             "https://man.archlinux.org/man/logind.conf.5">logind.conf(5)</a>
             for details).
@@ -178,9 +178,9 @@ cp -r samples /usr/share/doc/acpid-2.0.34</kbd></pre>
           The following brief example will suspend the system when the laptop
           lid is closed. The example also disables the default handling of
           the lid close event by <span class="phrase"><a class="xref" href=
-          "systemd.html" title="Systemd-258">Systemd-258</a></span> when the
-          system is on battery and not connected to any external monitor, in
-          order to avoid a conflict:
+          "systemd.html" title="Systemd-258.1">Systemd-258.1</a></span> when
+          the system is on battery and not connected to any external monitor,
+          in order to avoid a conflict:
         </p>
         <pre class="userinput"><kbd class=
         "command">cat &gt; /etc/acpi/events/lid &lt;&lt; "EOF"
@@ -340,7 +340,7 @@ echo <code class=
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-312">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-325">
           Home</a>
         </li>
       </ul>

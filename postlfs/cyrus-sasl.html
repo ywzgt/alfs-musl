@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-312">
+  <body class="blfs" id="blfs-r12.4-325">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-312
+        "phrase">(systemd</span> Edition) - Version r12.4-325
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-312">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-325">
           Home</a>
         </li>
       </ul>
@@ -148,13 +148,15 @@
           "../server/postgresql.html" title=
           "PostgreSQL-18.0">PostgreSQL-18.0</a>, <a class="xref" href=
           "../general/python-modules.html#sphinx" title=
-          "Sphinx-8.2.3">sphinx-8.2.3</a>, <a class="ulink" href=
+          "Sphinx-8.2.3">sphinx-8.2.3</a> (needed for regenerating the
+          documentation), <a class="ulink" href=
           "https://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz">Berkeley
           DB</a> (deprecated), <a class="ulink" href=
           "https://stuff.mit.edu/afs/net.mit.edu/project/attic/krb4/">krb4</a>,
           <a class="ulink" href="https://dmalloc.com/">Dmalloc</a>, and
           <a class="ulink" href=
           "https://metacpan.org/pod/Pod::POM::View::Restructured">Pod::POM::View::Restructured</a>
+          (needed for regenerating the documentation)
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -171,7 +173,7 @@
           </p>
         </div>
         <p>
-          First, fix a the package to be compatible with gcc-15:
+          First, fix the package to be compatible with gcc-15:
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../cyrus-sasl-2.1.28-gcc15_fixes-1.patch &amp;&amp;
@@ -490,7 +492,7 @@ install -v -dm700 /var/lib/sasl</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-312">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-325">
           Home</a>
         </li>
       </ul>

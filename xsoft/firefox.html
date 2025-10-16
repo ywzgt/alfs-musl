@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-312">
+  <body class="blfs" id="blfs-r12.4-325">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-312
+        "phrase">(systemd</span> Edition) - Version r12.4-325
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-312">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-325">
           Home</a>
         </li>
       </ul>
@@ -296,9 +296,8 @@ ac_add_options --with-system-nspr
 ac_add_options --with-system-nss
 ac_add_options --with-system-webp
 
-# The libdav1d library (av1 decoder) requires nasm. Uncomment this
-# if nasm has not been installed. Do not uncomment this if you have
-# ffmpeg installed.
+# Firefox provides a copy of dav1d if it has not been installed. If you have
+# not installed nasm and ffmpeg, uncomment the following line:
 #ac_add_options --disable-av1
 
 # You cannot distribute the binary if you do this.
@@ -688,7 +687,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-312">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-325">
           Home</a>
         </li>
       </ul>
