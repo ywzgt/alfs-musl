@@ -1,0 +1,13 @@
+diff --git a/wget-list b/wget-list
+index 971bda8abd..14ab04d8f9 100644
+--- a/wget-list
++++ b/wget-list
+@@ -160,7 +160,7 @@ https://github.com/protocolbuffers/protobuf/releases/download/v32.1/protobuf-32.
+ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
+ https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
+-https://archive.mozilla.org/pub/firefox/releases/140.3.1esr/source/firefox-140.3.1esr.source.tar.xz
++https://archive.mozilla.org/pub/firefox/releases/140.4.0esr/source/firefox-140.4.0esr.source.tar.xz
+ https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.328.1/SPIRV-Headers-vulkan-sdk-1.4.328.1.tar.gz
+ https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.328.1/SPIRV-Tools-vulkan-sdk-1.4.328.1.tar.gz
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v21.1.1/SPIRV-LLVM-Translator-21.1.1.tar.gz
