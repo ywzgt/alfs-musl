@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-325">
+  <body class="blfs" id="blfs-r12.4-339">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-325
+        "phrase">(systemd</span> Edition) - Version r12.4-339
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-325">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-339">
           Home</a>
         </li>
       </ul>
@@ -117,9 +117,9 @@
           "libical.html" title="libical-3.0.20">libical-3.0.20</a>
         </p>
         <h4>
-          Optional
+          Recommended
         </h4>
-        <p class="optional">
+        <p class="recommended">
           <a class="xref" href="python-modules.html#docutils" title=
           "docutils-0.21.2">docutils-0.21.2</a> (to generate man pages)
         </p>
@@ -212,7 +212,6 @@
         "command">./configure --prefix=/usr         \
             --sysconfdir=/etc     \
             --localstatedir=/var  \
-            --disable-manpages    \
             --enable-library      &amp;&amp;
 make</kbd></pre>
         <p>
@@ -244,17 +243,15 @@ install -v -m644 doc/*.txt /usr/share/doc/bluez-5.84</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>--disable-manpages</code></em>: This
-          switch disables generating the manual pages because of the reliance
-          on 'rst2man' in docutils. Remove this switch if you have <a class=
-          "xref" href="python-modules.html#docutils" title=
-          "docutils-0.21.2">docutils-0.21.2</a> installed and wish to
-          generate the manual pages.
-        </p>
-        <p>
           <em class="parameter"><code>--enable-library</code></em>: This
           switch enables building the <span class="application">BlueZ</span>
           4 compatibility library which is required by some applications.
+        </p>
+        <p>
+          <code class="option">--disable-manpages</code>: This switch
+          disables generating the manual pages. Add this switch if you don't
+          have <a class="xref" href="python-modules.html#docutils" title=
+          "docutils-0.21.2">docutils-0.21.2</a> installed.
         </p>
         <p>
           <span class="command"><strong>ln -svf
@@ -523,7 +520,7 @@ EOF</pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-325">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-339">
           Home</a>
         </li>
       </ul>
