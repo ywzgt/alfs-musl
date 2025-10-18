@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-339">
+  <body class="blfs" id="blfs-r12.4-349">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-339
+        "phrase">(systemd</span> Edition) - Version r12.4-349
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-339">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-349">
           Home</a>
         </li>
       </ul>
@@ -247,16 +247,16 @@ make</kbd></pre>
         <p>
           The test suite can be run in parallel mode. To run the test suite,
           issue: <span class="command"><strong>GIT_UNZIP=nonexist make test
-          -k |&amp; tee test.log</strong></span>. The <code class=
-          "envar">GIT_UNZIP</code> setting prevents the test suite from using
-          <span class="command"><strong>unzip</strong></span>, we need it
-          because in BLFS <span class="command"><strong>unzip</strong></span>
-          is a symlink to <span class=
-          "command"><strong>bsdunzip</strong></span> which does not satisfy
-          the assumption of some tests cases. If any test case fails, the
-          list of failed tests can be shown via <span class=
-          "command"><strong>grep '^not ok' test.log | grep -v
-          TODO</strong></span>.
+          -k</strong></span>. The <code class="envar">GIT_UNZIP</code>
+          setting prevents the test suite from using <span class=
+          "command"><strong>unzip</strong></span>, we need it because in BLFS
+          <span class="command"><strong>unzip</strong></span> is a symlink to
+          <span class="command"><strong>bsdunzip</strong></span> which does
+          not satisfy the assumption of some tests cases. If any test case
+          fails, the list of failed tests can be shown via <span class=
+          "command"><strong>make -C t aggregate-results</strong></span>. One
+          test, <code class="literal">t7528</code>, is known to fail with
+          OpenSSH 10.1 or newer.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -570,7 +570,7 @@ sed -i '/^\* link:/s|howto/|&amp;html/|' /usr/share/doc/git-2.51.1/howto-index.a
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-339">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-349">
           Home</a>
         </li>
       </ul>
