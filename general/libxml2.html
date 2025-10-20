@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-350">
+  <body class="blfs" id="blfs-r12.4-359">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-350
+        "phrase">(systemd</span> Edition) - Version r12.4-359
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-350">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-359">
           Home</a>
         </li>
       </ul>
@@ -130,17 +130,32 @@
         <p class="recommended">
           <a class="xref" href="icu.html" title="icu-77.1">ICU-77.1</a>
         </p>
+        <h4>
+          Optional (for generating the documentation)
+        </h4>
+        <p class="optional">
+          <a class="xref" href="doxygen.html" title=
+          "Doxygen-1.14.0">Doxygen-1.14.0</a> and <a class="xref" href=
+          "libxslt.html" title="libxslt-1.1.43">libxslt-1.1.43</a>
+        </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
           Installation of libxml2
         </h2>
         <p>
+          First, remove an unnecessary call to <span class=
+          "command"><strong>git</strong></span> in <code class=
+          "filename">meson.build</code>:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i "/'git'/,+3d" meson.build</kbd></pre>
+        <p>
           Install <span class="application">libxml2</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
-cd    build
+cd    build &amp;&amp;
 
 meson setup ..           \
       --prefix=/usr      \
@@ -154,7 +169,7 @@ ninja</kbd></pre>
           "doxygen.html" title="Doxygen-1.14.0">Doxygen-1.14.0</a> installed,
           and run:
         </p>
-        <pre class="doc"><kbd class=
+        <pre class="userinput"><kbd class=
         "command">sed -e "/^dir_doc/s/\$/ + '-' + meson.project_version()/" \
     -i ../meson.build                                     &amp;&amp;
 meson configure -D docs=enabled                           &amp;&amp;
@@ -162,7 +177,7 @@ ninja</kbd></pre>
         <p>
           If you downloaded the test suite, issue the following command:
         </p>
-        <pre class="test"><kbd class=
+        <pre class="userinput"><kbd class=
         "command">tar xf ../../xmlts20130923.tar.gz -C ..</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
@@ -333,7 +348,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-350">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-359">
           Home</a>
         </li>
       </ul>
