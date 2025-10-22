@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-363">
+  <body class="blfs" id="blfs-r12.4-366">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-363
+        "phrase">(systemd</span> Edition) - Version r12.4-366
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-363">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-366">
           Home</a>
         </li>
       </ul>
@@ -184,8 +184,7 @@ Syncing disks.</code></pre>
           it:
         </p>
         <pre class="userinput"><kbd class=
-        "command">mount --mkdir -v -t vfat /dev/sdx1 -o codepage=437,iocharset=iso8859-1 \
-      /mnt/rescue</kbd></pre>
+        "command">mount --mkdir -v -t vfat /dev/sdx1 -o codepage=437,iocharset=iso8859-1 /mnt/rescue</kbd></pre>
         <p>
           Install GRUB for EFI on the partition:
         </p>
@@ -254,8 +253,7 @@ Syncing disks.</code></pre>
           corresponding to the ESP):
         </p>
         <pre class="userinput"><kbd class=
-        "command">mount --mkdir -v -t vfat /dev/sda1 -o codepage=437,iocharset=iso8859-1 \
-      /boot/efi</kbd></pre>
+        "command">mount --mkdir -v -t vfat /dev/sda1 -o codepage=437,iocharset=iso8859-1 /boot/efi</kbd></pre>
         <p>
           If you want to mount the ESP automatically during system boot, as
           the <code class="systemitem">root</code> user, add an entry for the
@@ -367,9 +365,10 @@ Syncing disks.</code></pre>
         </div>
         <p>
           If you've followed the instructions in this section and set up a
-          minimal boot configuration, now skip ahead to <span class=
-          "quote">“<span class="quote">Creating the GRUB Configuration
-          File.</span>”</span>
+          minimal boot configuration, now skip ahead to the section <a class=
+          "xref" href="grub-setup.html#grub-config" title=
+          "Creating the GRUB Configuration File">Creating the GRUB
+          Configuration File</a>.
         </p>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
@@ -475,7 +474,8 @@ Boot0005* LFS</code></pre>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Creating the GRUB Configuration File
+          <a id="grub-config" name="grub-config"></a>Creating the GRUB
+          Configuration File
         </h2>
         <p>
           Generate <code class="filename">/boot/grub/grub.cfg</code> to
@@ -547,10 +547,10 @@ menuentry "Firmware Setup" {
           </p>
         </div>
         <p>
-          The <code class="literal">Firmware Setup</code> entry can be used
-          to enter the configuration interface provided by the firmware
-          (sometimes called <span class="quote">“<span class="quote">BIOS
-          configuration</span>”</span>).
+          The <code class="literal">Firmware Setup</code> entry (fwsetup) can
+          be used to enter the configuration interface provided by the system
+          firmware (sometimes called <span class="quote">“<span class=
+          "quote">BIOS configuration</span>”</span>).
         </p>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
@@ -604,7 +604,7 @@ menuentry "Windows 11" {
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-363">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-366">
           Home</a>
         </li>
       </ul>

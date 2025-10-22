@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-363">
+  <body class="blfs" id="blfs-r12.4-366">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-363
+        "phrase">(systemd</span> Edition) - Version r12.4-366
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-363">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-366">
           Home</a>
         </li>
       </ul>
@@ -264,16 +264,26 @@
         <pre class="userinput"><kbd class=
         "command">sed -i '/ldflags/ s/ $.*&amp;&amp;//' cmake/FindPHP.cmake</kbd></pre>
         <p>
+          Now prevent hard coding library search paths (rpath) into the
+          shared libraries. The libraries does not need rpath for an
+          installation into the standard location, and rpath may sometimes
+          cause unwanted effects or even security issues. We cannot use
+          <code class="option">-D CMAKE_SKIP_INSTALL_RPATH=ON</code> for this
+          package because the rpath is really needed for the programs
+          installed by this package, so we need to edit the build system:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed '/ORIGIN/d' -i lib/CMakeLists.txt</kbd></pre>
+        <p>
           Install <span class="application">Graphviz</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -D CMAKE_INSTALL_PREFIX=/usr   \
-      -D CMAKE_BUILD_TYPE=Release    \
-      -D CMAKE_SKIP_INSTALL_RPATH=ON \
-      ..                             &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
+      ..                           &amp;&amp;
 
 sed -i '/GZIP/s/:.*$/=/' CMakeCache.txt &amp;&amp;
 
@@ -291,15 +301,6 @@ make</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
-        <p>
-          <em class="parameter"><code>-D
-          CMAKE_SKIP_INSTALL_RPATH=ON</code></em>: This switch makes
-          <span class="command"><strong>cmake</strong></span> remove
-          hardcoded library search paths (rpath) when installing a binary
-          executable file or a shared library. This package does not need
-          rpath once it's installed into the standard location, and rpath may
-          sometimes cause unwanted effects or even security issues.
-        </p>
         <p>
           <span class="command"><strong>sed ...
           CMakeCache.txt</strong></span>: This command is needed to prevent
@@ -1087,7 +1088,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-363">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-366">
           Home</a>
         </li>
       </ul>
