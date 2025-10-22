@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 81a8302f5b..c9371d49fa 100644
+--- a/wget-list
++++ b/wget-list
+@@ -140,7 +140,7 @@ https://github.com/libunwind/libunwind/releases/download/v1.8.3/libunwind-1.8.3.
+ https://lttng.org/files/urcu/userspace-rcu-0.15.3.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.29/libusb-1.0.29.tar.bz2
+ https://dist.libuv.org/dist/v1.51.0/libuv-v1.51.0.tar.gz
+-https://github.com/xkbcommon/libxkbcommon/archive/xkbcommon-1.12.0.tar.gz
++https://github.com/lfs-book/libxkbcommon/archive/v1.12.1/libxkbcommon-1.12.1.tar.gz
+ https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.1.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.24/libxmlb-0.3.24.tar.xz
+@@ -649,7 +649,7 @@ https://www.x.org/pub/individual/driver/xf86-input-libinput-1.5.0.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-synaptics-1.10.0.tar.xz
+ https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-1.2.3/xf86-input-wacom-1.2.3.tar.bz2
+ https://www.x.org/pub/individual/app/twm-1.0.13.1.tar.xz
+-https://invisible-mirror.net/archives/xterm/xterm-402.tgz
++https://invisible-mirror.net/archives/xterm/xterm-403.tgz
+ https://www.x.org/pub/individual/app/xclock-1.1.1.tar.xz
+ https://www.x.org/pub/individual/app/xinit-1.4.4.tar.xz
+ https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz
