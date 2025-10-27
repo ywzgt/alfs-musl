@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-389">
+  <body class="blfs" id="blfs-r12.4-395">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-389
+        "phrase">(systemd</span> Edition) - Version r12.4-395
       </h4>
       <h3>
         Chapter&nbsp;38.&nbsp;LXQt Applications
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-389">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-395">
           Home</a>
         </li>
       </ul>
@@ -105,6 +105,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/screengrab-3.0.0_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/screengrab-3.0.0_fix-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           screengrab Dependencies
         </h3>
         <h4>
@@ -123,6 +137,11 @@
         <h2 class="sect2">
           Installation of screengrab
         </h2>
+        <p>
+          First, fix a build failure with Qt-6.10:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../screengrab-3.0.0_fix-1.patch</kbd></pre>
         <p>
           Install <span class="application">screengrab</span> by running the
           following commands:
@@ -221,7 +240,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-389">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-395">
           Home</a>
         </li>
       </ul>
