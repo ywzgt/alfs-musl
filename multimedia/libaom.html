@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-395">
+  <body class="blfs" id="blfs-r12.4-402">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-395
+        "phrase">(systemd</span> Edition) - Version r12.4-402
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-395">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-402">
           Home</a>
         </li>
       </ul>
@@ -105,6 +105,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/libaom-3.13.1-nasm3-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/libaom-3.13.1-nasm3-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           libaom Dependencies
         </h3>
         <h4>
@@ -127,6 +141,15 @@
         <h2 class="sect2">
           Installation of libaom
         </h2>
+        <p>
+          NASM-3 made a change where the help screen now shows different text
+          based on different parameters, instead of displaying all the info
+          upfront. This package depends on all the information being there.
+          Fix how this package gets that information to prevent a
+          configuration failure with only NASM-3 installed:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../libaom-3.13.1-nasm3-1.patch</kbd></pre>
         <p>
           Install <span class="application">libaom</span> by running the
           following commands:
@@ -272,7 +295,7 @@ rm -v /usr/lib/libaom.a</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-395">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-402">
           Home</a>
         </li>
       </ul>

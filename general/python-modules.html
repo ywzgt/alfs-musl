@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-395">
+  <body class="blfs" id="blfs-r12.4-402">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-395
+        "phrase">(systemd</span> Edition) - Version r12.4-402
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-395">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-402">
           Home</a>
         </li>
       </ul>
@@ -3658,12 +3658,13 @@ deactivate</kbd></pre>
               </li>
               <li class="listitem">
                 <p>
-                  Estimated disk space required: 4.0 MB
+                  Estimated disk space required: 6.2 MB (add 57 MB for tests)
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Estimated build time: less than 0.1 SBU
+                  Estimated build time: less than 0.1 SBU (0.1 SBU with
+                  tests)
                 </p>
               </li>
             </ul>
@@ -3702,8 +3703,68 @@ deactivate</kbd></pre>
           <pre class="root"><kbd class=
           "command">pip3 install --no-index --find-links dist --no-user psutil</kbd></pre>
           <p>
-            This package does not have a working test suite.
+            In order to run the tests, the binary modules have to be copied:
           </p>
+          <pre class="userinput"><kbd class=
+          "command">cp build/lib*/psutil/*.so psutil</kbd></pre>
+          <p>
+            If using Python-3.14.0 or higher, one test needs to be fixed to
+            prevent hanging:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">sed "/multiprocessing.Pool/i\            multiprocessing.set_start_method('fork')" \
+    -i psutil/tests/test_process_all.py</kbd></pre>
+          <p>
+            To test the results, issue:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">python3 -m venv --system-site-packages testenv                            &amp;&amp;
+testenv/bin/pip3 install pytest-{instafail,subtests,xdist} pyperf pypinfo &amp;&amp;
+testenv/bin/python3 -m pytest</kbd></pre>
+          <div class="itemizedlist">
+            <ul class="compact">
+              <li class="listitem">
+                <p>
+                  The test named <code class=
+                  "literal">TestSystemAPIs::test_disk_usage</code> is known
+                  to fail.
+                </p>
+              </li>
+              <li class="listitem">
+                <p>
+                  The test named <code class=
+                  "literal">TestSystemNetIfAddrs::test_ips</code> is known to
+                  fail if IPv6 tunelling is enabled in the kernel.
+                </p>
+              </li>
+              <li class="listitem">
+                <p>
+                  The test named <code class=
+                  "literal">TestAvailProcessAPIs::test_io_counters</code> is
+                  known to fail if the kernel does not have <code class=
+                  "option">CONFIG_TASK_IO_ACCOUNTING</code> enabled.
+                </p>
+              </li>
+              <li class="listitem">
+                <p>
+                  The test named <code class=
+                  "literal">TestExampleScripts::test_who</code> is known to
+                  fail if the login manager does not write into <code class=
+                  "filename">/run/utmp</code> (note that due to the potential
+                  year 2037 problem, Shadow has already stopped writing into
+                  it).
+                </p>
+              </li>
+              <li class="listitem">
+                <p>
+                  The test named <code class=
+                  "literal">TestSystemAPIs::test_users</code> is known to
+                  fail if the <code class="filename">/run/utmp</code> file
+                  contains an entry for the login screen.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="commands" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -7228,7 +7289,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-395">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-402">
           Home</a>
         </li>
       </ul>
