@@ -1,0 +1,30 @@
+diff --git a/wget-list b/wget-list
+index de9a02107c..7a118f3026 100644
+--- a/wget-list
++++ b/wget-list
+@@ -218,7 +218,7 @@ https://github.com/sass/libsass/archive/3.6.6/libsass-3.6.6.tar.gz
+ https://github.com/aruiz/webp-pixbuf-loader/archive/0.2.7/webp-pixbuf-loader-0.2.7.tar.gz
+ https://github.com/google/woff2/archive/v1.0.2/woff2-1.0.2.tar.gz
+ https://github.com/zxing-cpp/zxing-cpp/archive/v2.3.0/zxing-cpp-2.3.0.tar.gz
+-https://github.com/asciidoctor/asciidoctor/archive/v2.0.25/asciidoctor-2.0.25.tar.gz
++https://github.com/asciidoctor/asciidoctor/archive/v2.0.26/asciidoctor-2.0.26.tar.gz
+ https://downloads.sourceforge.net/bogofilter/bogofilter-1.2.5.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
+@@ -458,7 +458,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/XML-LibXML-2.0210-testsuite_fi
+ https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+-https://www.php.net/distributions/php-8.4.13.tar.xz
++https://www.php.net/distributions/php-8.4.14.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/3.13.7/Python-3.13.7.tar.xz
+@@ -940,6 +940,7 @@ https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-
+ https://distfiles.adelielinux.org/source/a52dec/a52dec-0.8.0.tar.gz
+ https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
+ https://storage.googleapis.com/aom-releases/libaom-3.13.1.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/libaom-3.13.1-nasm3-1.patch
+ https://github.com/libass/libass/releases/download/0.17.4/libass-0.17.4.tar.xz
+ https://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libcanberra-0.30-wayland-1.patch
