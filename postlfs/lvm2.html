@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      LVM2-2.03.35
+      LVM2-2.03.36
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-402">
+  <body class="blfs" id="blfs-r12.4-408">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-402
+        "phrase">(systemd</span> Edition) - Version r12.4-408
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-402">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-408">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="lvm2" name="lvm2"></a>LVM2-2.03.35
+      <a id="lvm2" name="lvm2"></a>LVM2-2.03.36
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -81,12 +81,12 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://sourceware.org/ftp/lvm2/LVM2.2.03.35.tgz">https://sourceware.org/ftp/lvm2/LVM2.2.03.35.tgz</a>
+                "https://sourceware.org/ftp/lvm2/LVM2.2.03.36.tgz">https://sourceware.org/ftp/lvm2/LVM2.2.03.36.tgz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: d1527944d496d602f479e8fe9138c94a
+                Download MD5 sum: 62a7c701fe07a5c30ff9fcb624cd3437
               </p>
             </li>
             <li class="listitem">
@@ -96,16 +96,14 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 39 MB (add 20 MB for tests;
-                transient files can grow up to around 300 MB in the /tmp
-                directory during tests)
+                Estimated disk space required: 39 MB (add up to 300 MB for
+                transient files for tests in the /tmp directory)
               </p>
             </li>
             <li class="listitem">
               <p>
                 Estimated build time: 0.4 SBU (add 9 to 48 SBU for tests,
-                depending on disk speed and whether ram block device is
-                enabled in the kernel)
+                depending on disk speed and options enabled in the kernel)
               </p>
             </li>
           </ul>
@@ -121,19 +119,22 @@
           "libaio-0.3.113">libaio-0.3.113</a>
         </p>
         <h4>
-          Optional
+          Optional for tests
         </h4>
         <p class="optional">
-          <a class="xref" href="../general/libnvme.html" title=
-          "libnvme-1.15">libnvme-1.15</a>, <a class="xref" href="mdadm.html"
-          title="mdadm-4.4">mdadm-4.4</a>, <a class="xref" href=
-          "../general/valgrind.html" title=
-          "Valgrind-3.25.1">Valgrind-3.25.1</a>, <a class="xref" href=
+          <a class="xref" href="btrfs-progs.html" title=
+          "btrfs-progs-6.17">btrfs-progs-6.17</a>, <a class="xref" href=
+          "dosfstools.html" title="dosfstools-4.2">dosfstools-4.2</a>,
+          <a class="xref" href="jfsutils.html" title=
+          "jfsutils-1.1.15">jfsutils-1.1.15</a>, <a class="xref" href=
+          "mdadm.html" title="mdadm-4.4">mdadm-4.4</a>, <a class="xref" href=
+          "parted.html" title="parted-3.6">parted-3.6</a>, <a class="xref"
+          href="../general/valgrind.html" title=
+          "Valgrind-3.26.0">Valgrind-3.26.0</a>, <a class="xref" href=
           "../general/which.html" title=
           "Which-2.23 and Alternatives">Which-2.23</a>, <a class="xref" href=
-          "xfsprogs.html" title="xfsprogs-6.17.0">xfsprogs-6.17.0</a> (latter
-          four may be used, but are not required, for tests), <a class=
-          "ulink" href=
+          "xfsprogs.html" title="xfsprogs-6.17.0">xfsprogs-6.17.0</a>,
+          <a class="ulink" href=
           "https://mirrors.edge.kernel.org/pub/linux/kernel/people/jeffm/reiserfsprogs/">
           reiserfsprogs</a>, <a class="ulink" href=
           "https://github.com/jthornber/thin-provisioning-tools">thin-provisioning-tools</a>,
@@ -159,6 +160,12 @@
             running the regression tests, all must be enabled either
             internally or as a module. The tests will all time out if Magic
             SysRq key is not enabled.
+          </p>
+          <p>
+            In addition most of the optional packages for tests require
+            kernel options that are needed. If the optional packages or their
+            kernel options are not installed the tests will be flagged as
+            either failed or skipped in an inconsistent way.
           </p>
         </div>
         <pre class="screen"><span class="blue">D</span>evice Drivers ---&gt;
@@ -236,19 +243,43 @@ make -C libdm install</kbd></pre>
         </p>
         <p>
           The tests do not implement the <span class="quote">“<span class=
-          "quote">expected fail</span>”</span> possibility, and a small
-          number of test failures is expected by upstream. More failures may
-          happen because some kernel options are missing. For example, the
-          lack of the <span class="emphasis"><em>dm-delay</em></span> device
-          mapper target explains some failures. Some tests may fail if there
-          is insufficient free space available in the partition with the /tmp
-          directory. At least one test fails if 16 TB is not available. Some
-          tests are flagged <span class="quote">“<span class=
-          "quote">warned</span>”</span> if <a class="ulink" href=
-          "https://github.com/jthornber/thin-provisioning-tools">thin-provisioning-tools</a>
-          are not installed. A workaround is to add the following flags to
-          <span class="command"><strong>configure</strong></span>:
+          "quote">expected fail</span>”</span> possibility and some test
+          failures are expected by upstream.
         </p>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Most tests will fail if the kernel does not have all the
+                device drivers listed above.
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                More failures may happen because some kernel options are
+                missing. For example, the lack of the <span class=
+                "emphasis"><em>dm-delay</em></span> device mapper target
+                explains some failures.
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                Some tests may fail if there is insufficient free space
+                available in the partition with the /tmp directory. At least
+                one test fails if 16 TB is not available.
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                Some tests are flagged <span class="quote">“<span class=
+                "quote">warned</span>”</span> if <a class="ulink" href=
+                "https://github.com/jthornber/thin-provisioning-tools">thin-provisioning-tools</a>
+                are not installed. A workaround is to add the following flags
+                to <span class="command"><strong>configure</strong></span>:
+              </p>
+            </li>
+          </ul>
+        </div>
         <pre class="userinput"><kbd class=
         "command">     --with-thin-check=    \
      --with-thin-dump=     \
@@ -535,7 +566,7 @@ make install_systemd_units</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-402">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-408">
           Home</a>
         </li>
       </ul>
