@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-408">
+  <body class="blfs" id="blfs-r12.4-419">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-408
+        "phrase">(systemd</span> Edition) - Version r12.4-419
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-408">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-419">
           Home</a>
         </li>
       </ul>
@@ -102,7 +102,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="python-dependencies.html#attrs" title=
-                "Attrs-25.3.0">attrs-25.3.0</a>
+                "Attrs-25.4.0">attrs-25.4.0</a>
               </p>
             </li>
             <li class="listitem">
@@ -489,7 +489,7 @@
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          <a id="attrs" name="attrs"></a>Attrs-25.3.0
+          <a id="attrs" name="attrs"></a>Attrs-25.4.0
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -519,28 +519,28 @@
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://files.pythonhosted.org/packages/source/a/attrs/attrs-25.3.0.tar.gz">
-                  https://files.pythonhosted.org/packages/source/a/attrs/attrs-25.3.0.tar.gz</a>
+                  "https://files.pythonhosted.org/packages/source/a/attrs/attrs-25.4.0.tar.gz">
+                  https://files.pythonhosted.org/packages/source/a/attrs/attrs-25.4.0.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: 173fe452e1fe986051d9bc194ed59525
+                  Download MD5 sum: 6197561dfec99660529830edcfeee0ba
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download size: 776 KB
+                  Download size: 912 KB
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Estimated disk space required: 7 MB (add 78 MB for tests)
+                  Estimated disk space required: 2.9 MB (add 89 MB for tests)
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Estimated build time: less than 0.1 SBU (0.2 SBU for tests)
+                  Estimated build time: less than 0.1 SBU (0.3 SBU for tests)
                 </p>
               </li>
             </ul>
@@ -595,12 +595,13 @@
             To test the installation, run:
           </p>
           <pre class="userinput"><kbd class=
-          "command">python3 -m venv --system-site-packages testenv           &amp;&amp;
-testenv/bin/pip3 install 'attrs[tests]'                  &amp;&amp;
+          "command">python3 -m venv --system-site-packages testenv &amp;&amp;
+testenv/bin/pip3 install hypothesis   \
+                         cloudpickle  \
+                         pympler      \
+                         pytest-xdist \
+                         pytest-mypy-plugins   &amp;&amp;
 PATH=$PWD/testenv/bin:$PATH testenv/bin/python -m pytest</kbd></pre>
-          <p>
-            Three tests related to Mypy are known to fail.
-          </p>
         </div>
         <div class="commands" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -679,7 +680,7 @@ PATH=$PWD/testenv/bin:$PATH testenv/bin/python -m pytest</kbd></pre>
                 <strong class="segtitle">Installed Directories:</strong>
                 <span class="segbody">/usr/lib/python3.13/site-packages/attr,
                 /usr/lib/python3.13/site-packages/attrs, and
-                /usr/lib/python3.13/site-packages/attrs-25.3.0.dist-info</span>
+                /usr/lib/python3.13/site-packages/attrs-25.4.0.dist-info</span>
               </div>
             </div>
           </div>
@@ -6994,7 +6995,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-408">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-419">
           Home</a>
         </li>
       </ul>
