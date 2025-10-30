@@ -1,0 +1,62 @@
+diff --git a/wget-list b/wget-list
+index 7a118f3026..3985c1489f 100644
+--- a/wget-list
++++ b/wget-list
+@@ -33,7 +33,7 @@ https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.t
+ https://github.com/libfuse/libfuse/releases/download/fuse-3.17.4/fuse-3.17.4.tar.gz
+ https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.patch
+-https://sourceware.org/ftp/lvm2/LVM2.2.03.35.tgz
++https://sourceware.org/ftp/lvm2/LVM2.2.03.36.tgz
+ https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.4.tar.xz
+ https://github.com/tuxera/ntfs-3g/archive/2022.10.3/ntfs-3g-2022.10.3.tar.gz
+ https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
+@@ -140,7 +140,7 @@ https://github.com/libunwind/libunwind/releases/download/v1.8.3/libunwind-1.8.3.
+ https://lttng.org/files/urcu/userspace-rcu-0.15.3.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.29/libusb-1.0.29.tar.bz2
+ https://dist.libuv.org/dist/v1.51.0/libuv-v1.51.0.tar.gz
+-https://github.com/lfs-book/libxkbcommon/archive/v1.12.1/libxkbcommon-1.12.1.tar.gz
++https://github.com/lfs-book/libxkbcommon/archive/v1.12.2/libxkbcommon-1.12.2.tar.gz
+ https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.1.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.24/libxmlb-0.3.24.tar.xz
+@@ -297,9 +297,9 @@ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-15.2.0/gcc-15.2.0.tar.xz
+ https://github.com/ivmai/bdwgc/releases/download/v8.2.10/gc-8.2.10.tar.gz
+ https://ftp.gnu.org/gnu/gdb/gdb-16.3.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-2.51.1.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-manpages-2.51.1.tar.xz
+-https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.51.1.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-2.51.2.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-manpages-2.51.2.tar.xz
++https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.51.2.tar.xz
+ https://ftp.gnu.org/gnu/guile/guile-3.0.10.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/guile-3.0.10-32bit_fixes-1.patch
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.2/llvm-21.1.2.src.tar.xz
+@@ -548,7 +548,7 @@ https://downloads.sourceforge.net/tcl/tk8.6.17-src.tar.gz
+ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+ https://download.gnome.org/sources/vala/0.56/vala-0.56.18.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/vala-0.56.18-graphviz_13_fix-1.patch
+-https://sourceware.org/pub/valgrind/valgrind-3.25.1.tar.bz2
++https://sourceware.org/pub/valgrind/valgrind-3.26.0.tar.bz2
+ https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-24.0.2/OpenJDK-24.0.2+12-i686-bin.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-24.0.2/OpenJDK-24.0.2+12-x86_64-bin.tar.xz
+@@ -599,7 +599,7 @@ https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.9.1/libslirp-v4.9.1.t
+ https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.5.tar.xz
+ https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.7.tar.bz2
+ https://notroj.github.io/neon/neon-0.35.0.tar.gz
+-https://github.com/nghttp2/nghttp2/releases/download/v1.67.1/nghttp2-1.67.1.tar.xz
++https://github.com/nghttp2/nghttp2/releases/download/v1.68.0/nghttp2-1.68.0.tar.xz
+ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.4.4.tar.xz
+ https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
+ http://links.twibright.com/download/links-2.30.tar.bz2
+@@ -624,7 +624,7 @@ https://downloads.mariadb.org/interstitial/mariadb-11.8.3/source/mariadb-11.8.3.
+ https://ftp.postgresql.org/pub/source/v18.0/postgresql-18.0.tar.bz2
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.10.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.10-consolidated-1.patch
+-https://nlnetlabs.nl/downloads/unbound/unbound-1.24.0.tar.gz
++https://nlnetlabs.nl/downloads/unbound/unbound-1.24.1.tar.gz
+ https://www.x.org/pub/individual/util/util-macros-1.20.2.tar.xz
+ https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2024.1.tar.xz
+ https://www.x.org/pub/individual/lib/libXau-1.0.12.tar.xz
