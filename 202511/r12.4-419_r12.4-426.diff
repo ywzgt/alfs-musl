@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index 3d3e8cfc68..aee395a901 100644
+--- a/wget-list
++++ b/wget-list
+@@ -81,7 +81,7 @@ https://github.com/rrthomas/enchant/releases/download/v2.8.12/enchant-2.8.12.tar
+ https://libopenraw.freedesktop.org/download/exempi-2.6.6.tar.xz
+ https://github.com/fastfloat/fast_float/archive/v8.1.0/fast_float-8.1.0.tar.gz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+-https://github.com/fmtlib/fmt/archive/12.0.0/fmt-12.0.0.tar.gz
++https://github.com/fmtlib/fmt/archive/12.1.0/fmt-12.1.0.tar.gz
+ https://download.gnome.org/sources/glib/2.86/glib-2.86.1.tar.xz
+ https://download.gnome.org/sources/gobject-introspection/1.86/gobject-introspection-1.86.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+@@ -140,7 +140,7 @@ https://github.com/libunwind/libunwind/releases/download/v1.8.3/libunwind-1.8.3.
+ https://lttng.org/files/urcu/userspace-rcu-0.15.3.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.29/libusb-1.0.29.tar.bz2
+ https://dist.libuv.org/dist/v1.51.0/libuv-v1.51.0.tar.gz
+-https://github.com/lfs-book/libxkbcommon/archive/v1.12.2/libxkbcommon-1.12.2.tar.gz
++https://github.com/lfs-book/libxkbcommon/archive/v1.12.3/libxkbcommon-1.12.3.tar.gz
+ https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.1.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.24/libxmlb-0.3.24.tar.xz
+@@ -276,7 +276,7 @@ https://download.librdf.org/source/redland-1.0.17.tar.gz
+ https://sysstat.github.io/sysstat-packages/sysstat-12.7.8.tar.xz
+ https://github.com/systemd/systemd/archive/v258.1/systemd-258.1.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.10.2/udisks-2.10.2.tar.bz2
+-https://www.rarlab.com/rar/unrarsrc-7.1.10.tar.gz
++https://www.rarlab.com/rar/unrarsrc-7.2.1.tar.gz
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.10/upower-v1.90.10.tar.bz2
+ https://ftp.gnu.org/gnu/which/which-2.23.tar.gz
+ https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz
