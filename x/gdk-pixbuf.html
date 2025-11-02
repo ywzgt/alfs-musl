@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-427">
+  <body class="blfs" id="blfs-r12.4-434">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-427
+        "phrase">(systemd</span> Edition) - Version r12.4-434
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-427">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-434">
           Home</a>
         </li>
       </ul>
@@ -117,23 +117,16 @@
         <p class="required">
           <a class="xref" href="../general/glib2.html" title=
           "GLib-2.86.1">GLib-2.86.1</a> (GObject Introspection required for
-          GNOME), <a class="xref" href="../general/libjpeg.html" title=
-          "libjpeg-turbo-3.0.1">libjpeg-turbo-3.0.1</a>, <a class="xref"
-          href="../general/libpng.html" title=
-          "libpng-1.6.50">libpng-1.6.50</a>, and <a class="xref" href=
-          "../general/shared-mime-info.html" title=
-          "shared-mime-info-2.4">shared-mime-info-2.4</a>
+          GNOME) and <a class="xref" href="../general/shared-mime-info.html"
+          title="shared-mime-info-2.4">shared-mime-info-2.4</a>
         </p>
         <h4>
           Recommended
         </h4>
         <p class="recommended">
           <a class="xref" href="../general/python-modules.html#docutils"
-          title="docutils-0.22.2">docutils-0.22.2</a>, <a class="xref" href=
-          "../general/librsvg.html" title="librsvg-2.61.2">librsvg-2.61.2</a>
-          (runtime dependency, needed for loading symbolic icons) and
-          <a class="xref" href="../general/libtiff.html" title=
-          "libtiff-4.7.1">libtiff-4.7.1</a>
+          title="docutils-0.22.2">docutils-0.22.2</a> and <a class="xref"
+          href="../general/glycin.html" title="glycin-2.0.4">glycin-2.0.4</a>
         </p>
         <h4>
           Optional
@@ -141,17 +134,18 @@
         <p class="optional">
           <a class="xref" href="../general/python-modules.html#gi-docgen"
           title="Gi-DocGen-2025.5">Gi-DocGen-2025.5</a> (to generate
-          documentation), <a class="ulink" href=
-          "https://gitlab.gnome.org/GNOME/glycin/">glycin</a> (to implement
-          animations and sandboxed image decoding), <a class="xref" href=
-          "../general/libavif.html" title="libavif-1.3.0">libavif-1.3.0</a>
-          (runtime dependency, needed for loading AVIF images), <a class=
-          "xref" href="../general/libjxl.html" title=
-          "libjxl-0.11.1">libjxl-0.11.1</a> (runtime dependency, needed for
-          loading JPEG XL images), and <a class="xref" href=
-          "../general/webp-pixbuf-loader.html" title=
-          "webp-pixbuf-loader-0.2.7">webp-pixbuf-loader-0.2.7</a> (runtime
-          dependency, needed for loading WebP images)
+          documentation), <a class="xref" href="../general/libavif.html"
+          title="libavif-1.3.0">libavif-1.3.0</a> (runtime, deprecated),
+          <a class="xref" href="../general/libjpeg.html" title=
+          "libjpeg-turbo-3.0.1">libjpeg-turbo-3.0.1</a> (deprecated),
+          <a class="xref" href="../general/libjxl.html" title=
+          "libjxl-0.11.1">libjxl-0.11.1</a> (runtime, deprecated), <a class=
+          "xref" href="../general/libpng.html" title=
+          "libpng-1.6.50">libpng-1.6.50</a> (deprecated), <a class="xref"
+          href="../general/librsvg.html" title=
+          "librsvg-2.61.2">librsvg-2.61.2</a> (runtime, deprecated), and
+          <a class="xref" href="../general/libtiff.html" title=
+          "libtiff-4.7.1">libtiff-4.7.1</a> (deprecated)
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -169,7 +163,6 @@ meson setup ..            \
       --prefix=/usr       \
       --buildtype=release \
       -D others=enabled   \
-      -D glycin=disabled  \
       --wrap-mode=nofallback &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -183,8 +176,7 @@ ninja</kbd></pre>
 meson configure -D gtk_doc=true                                        &amp;&amp;
 ninja</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>ninja
-          test</strong></span>. The tests make a heavy use of disk.
+          The test suite of this package does not provide meaningful results.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -224,13 +216,9 @@ ninja</kbd></pre>
           not installed on the system.
         </p>
         <p>
-          <em class="parameter"><code>-D others=enabled</code></em>: Enable
-          the loaders for various image formats, for example BMP and XPM.
-        </p>
-        <p>
-          <code class="option">-D glycin=disabled</code>: This option is
-          needed if the optional dependency <span class=
-          "application">glycin</span> is not installed.
+          <em class="parameter"><code>-D others=enabled</code></em>: Build
+          the loaders for some formats not supported by glycin yet, notably
+          XBM and XPM.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -242,7 +230,7 @@ ninja</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
               <span class="segbody">gdk-pixbuf-csource, gdk-pixbuf-pixdata,
-              gdk-pixbuf-query-loaders, and gdk-pixbuf-thumbnailer</span>
+              and gdk-pixbuf-query-loaders</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
@@ -250,7 +238,7 @@ ninja</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/{include,lib}/gdk-pixbuf-2.0,
+              <span class="segbody">/usr/include/gdk-pixbuf-2.0,
               /usr/libexec/installed-tests/gdk-pixbuf,
               /usr/share/installed-tests/gdk-pixbuf,
               /usr/share/gtk-doc/html/gdk-pixbuf, and
@@ -317,22 +305,6 @@ ninja</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="gdk-pixbuf-thumbnailer" name=
-                    "gdk-pixbuf-thumbnailer"></a><span class=
-                    "term"><span class=
-                    "command"><strong>gdk-pixbuf-thumbnailer</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    creates thumbnails of pictures for use in other
-                    applications
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
                     <a id="libgdk_pixbuf-2" name=
                     "libgdk_pixbuf-2"></a><span class="term"><code class=
                     "filename">libgdk_pixbuf-2.0.so</code></span>
@@ -370,7 +342,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-427">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-434">
           Home</a>
         </li>
       </ul>
