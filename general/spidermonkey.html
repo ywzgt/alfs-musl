@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-434">
+  <body class="blfs" id="blfs-r12.4-440">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-434
+        "phrase">(systemd</span> Edition) - Version r12.4-440
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-434">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-440">
           Home</a>
         </li>
       </ul>
@@ -117,7 +117,7 @@
         <p class="required">
           <a class="xref" href="cbindgen.html" title=
           "Cbindgen-0.29.2">Cbindgen-0.29.2</a>, <a class="xref" href=
-          "icu.html" title="icu-77.1">ICU-77.1</a>, <a class="xref" href=
+          "icu.html" title="icu-78.1">ICU-78.1</a>, <a class="xref" href=
           "which.html" title="Which-2.23 and Alternatives">Which-2.23</a>
         </p>
         <h4>
@@ -224,13 +224,13 @@ make</kbd></pre>
         "command">make -C js/src check-jstests \
      JSTESTS_EXTRA_ARGS="--timeout 300 --wpt=disabled" | tee jstest.log</kbd></pre>
         <p>
-          Because we are building with system ICU, 24 tests (out of a total
-          of more than 50,000) are known to fail. The list of failed tests
-          can be extracted via <span class="command"><strong>grep
-          'UNEXPECTED-FAIL' jstest.log</strong></span>. Pass the <code class=
-          "option">-c</code> option to <span class=
-          "command"><strong>grep</strong></span> if you only want the total
-          number of failed tests.
+          Because we are building with system ICU, a little over 100 tests,
+          depending on ICU version, (out of a total of more than 50,000) are
+          known to fail. The list of failed tests can be extracted via
+          <span class="command"><strong>grep 'UNEXPECTED-FAIL'
+          jstest.log</strong></span>. Pass the <code class="option">-c</code>
+          option to <span class="command"><strong>grep</strong></span> if you
+          only want the total number of failed tests.
         </p>
         <p>
           The test suite is executed with all CPU cores available: even in a
@@ -465,7 +465,7 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js140-config</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-434">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-440">
           Home</a>
         </li>
       </ul>

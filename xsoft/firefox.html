@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-434">
+  <body class="blfs" id="blfs-r12.4-440">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-434
+        "phrase">(systemd</span> Edition) - Version r12.4-440
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-434">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-440">
           Home</a>
         </li>
       </ul>
@@ -193,7 +193,7 @@
         <p class="recommended">
           <a class="xref" href="../multimedia/dav1d.html" title=
           "dav1d-1.5.1">dav1d-1.5.1</a>, <a class="xref" href=
-          "../general/icu.html" title="icu-77.1">ICU-77.1</a>, <a class=
+          "../general/icu.html" title="icu-78.1">ICU-78.1</a>, <a class=
           "xref" href="../multimedia/libaom.html" title=
           "libaom-3.13.1">libaom-3.13.1</a>, <a class="xref" href=
           "../basicnet/libevent.html" title=
@@ -358,6 +358,11 @@ mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir
 # firefox.
 MOZ_APP_REMOTINGNAME=firefox</code>
 EOF</kbd></pre>
+        <p>
+          If you are building with system ICU-78.1 or later, update one file:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i '/VIRAMA = 47/a CLASS_CHARACTER,' intl/lwbrk/LineBreaker.cpp</kbd></pre>
         <p>
           Compile <span class="application">Firefox</span> by issuing the
           following commands:
@@ -687,7 +692,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-434">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-440">
           Home</a>
         </li>
       </ul>
