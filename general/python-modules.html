@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-440">
+  <body class="blfs" id="blfs-r12.4-445">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-440
+        "phrase">(systemd</span> Edition) - Version r12.4-445
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-440">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-445">
           Home</a>
         </li>
       </ul>
@@ -212,7 +212,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="python-modules.html#psutil" title=
-                "psutil-7.1.2">psutil-7.1.2</a>
+                "psutil-7.1.3">psutil-7.1.3</a>
               </p>
             </li>
             <li class="listitem">
@@ -3607,7 +3607,7 @@ deactivate</kbd></pre>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          <a id="psutil" name="psutil"></a>psutil-7.1.2
+          <a id="psutil" name="psutil"></a>psutil-7.1.3
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -3642,13 +3642,13 @@ deactivate</kbd></pre>
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.1.2.tar.gz">
-                  https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.1.2.tar.gz</a>
+                  "https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.1.3.tar.gz">
+                  https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.1.3.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: e902c543cf504469297517ad58bf1688
+                  Download MD5 sum: 99dbbe92985d5e5a3a45574ea521af67
                 </p>
               </li>
               <li class="listitem">
@@ -3678,9 +3678,11 @@ deactivate</kbd></pre>
           <p class="optional">
             <a class="xref" href="python-modules.html#pytest" title=
             "Pytest-8.4.2">pytest-8.4.2</a>, <a class="ulink" href=
-            "https://pypi.org/project/pyperf/">pyperf</a>, <a class="ulink"
-            href="https://pypi.org/project/pypinfo/">pypinfo</a>, <a class=
-            "ulink" href=
+            "https://pypi.org/project/colorama/">colorama</a>, <a class=
+            "ulink" href="https://pypi.org/project/pyperf/">pyperf</a>,
+            <a class="ulink" href=
+            "https://pypi.org/project/pypinfo/">pypinfo</a>, <a class="ulink"
+            href=
             "https://pypi.org/project/pytest-instafail/">pytest-instafail</a>,
             <a class="ulink" href=
             "https://pypi.org/project/pytest-subtests/">pytest-subtests</a>,
@@ -3708,19 +3710,13 @@ deactivate</kbd></pre>
           <pre class="userinput"><kbd class=
           "command">cp build/lib*/psutil/*.so psutil</kbd></pre>
           <p>
-            If using Python-3.14.0 or higher, one test needs to be fixed to
-            prevent hanging:
-          </p>
-          <pre class="userinput"><kbd class=
-          "command">sed "/multiprocessing.Pool/i\            multiprocessing.set_start_method('fork')" \
-    -i psutil/tests/test_process_all.py</kbd></pre>
-          <p>
             To test the results, issue:
           </p>
           <pre class="userinput"><kbd class=
           "command">python3 -m venv --system-site-packages testenv                            &amp;&amp;
-testenv/bin/pip3 install pytest-{instafail,subtests,xdist} pyperf pypinfo &amp;&amp;
-testenv/bin/python3 -m pytest</kbd></pre>
+testenv/bin/pip3 install colorama pytest-{instafail,subtests,xdist} pyperf \
+                         pypinfo &amp;&amp;
+PSUTIL_DEBUG=1 testenv/bin/python3 -m pytest</kbd></pre>
           <div class="itemizedlist">
             <ul class="compact">
               <li class="listitem">
@@ -3836,7 +3832,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
               <div class="seg">
                 <strong class="segtitle">Installed Directories:</strong>
                 <span class=
-                "segbody">/usr/lib/python3.13/site-packages/psutil-7.1.2.dist-info</span>
+                "segbody">/usr/lib/python3.13/site-packages/psutil-7.1.3.dist-info</span>
               </div>
             </div>
           </div>
@@ -7289,7 +7285,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-440">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-445">
           Home</a>
         </li>
       </ul>
