@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-445">
+  <body class="blfs" id="blfs-r12.4-455">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-445
+        "phrase">(systemd</span> Edition) - Version r12.4-455
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-445">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-455">
           Home</a>
         </li>
       </ul>
@@ -127,6 +127,8 @@
           <a class="xref" href="../general/python-modules.html#docutils"
           title="docutils-0.22.2">docutils-0.22.2</a> and <a class="xref"
           href="../general/glycin.html" title="glycin-2.0.4">glycin-2.0.4</a>
+          (circular: build gdk-pixbuf without glycin first, then build glycin
+          with all its recommended dependencies, finally rebuild gdk-pixbuf)
         </p>
         <h4>
           Optional
@@ -159,11 +161,16 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup ..            \
-      --prefix=/usr       \
-      --buildtype=release \
-      -D others=enabled   \
-      --wrap-mode=nofallback &amp;&amp;
+meson setup ..                \
+      --prefix=/usr           \
+      --buildtype=release     \
+      -D others=enabled       \
+      -D png=disabled         \
+      -D gif=disabled         \
+      -D jpeg=disabled        \
+      -D tiff=disabled        \
+      -D thumbnailer=disabled \
+      --wrap-mode=nofallback  &amp;&amp;
 ninja</kbd></pre>
         <p>
           If you have <a class="xref" href=
@@ -219,6 +226,13 @@ ninja</kbd></pre>
           <em class="parameter"><code>-D others=enabled</code></em>: Build
           the loaders for some formats not supported by glycin yet, notably
           XBM and XPM.
+        </p>
+        <p>
+          <em class="parameter"><code>-D *=disabled</code></em>: Don't build
+          the components obsoleted in favor of glycin. Those components are
+          automatically disabled when building this package with glycin
+          installed, explicitly specify those options to make the
+          configuration of the first build (without glycin) consistent.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -343,7 +357,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-445">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-455">
           Home</a>
         </li>
       </ul>

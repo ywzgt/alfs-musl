@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-445">
+  <body class="blfs" id="blfs-r12.4-455">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-445
+        "phrase">(systemd</span> Edition) - Version r12.4-455
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-445">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-455">
           Home</a>
         </li>
       </ul>
@@ -111,7 +111,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="../multimedia/dav1d.html" title=
-          "dav1d-1.5.1">dav1d-1.5.1</a> and <a class="xref" href=
+          "dav1d-1.5.2">dav1d-1.5.2</a> and <a class="xref" href=
           "../multimedia/svt-av1.html" title=
           "SVT-AV1-3.1.2">SVT-AV1-3.1.2</a> (only supports YUV420)
         </p>
@@ -119,16 +119,16 @@
           Recommended
         </h4>
         <p class="recommended">
-          <a class="xref" href="../x/gdk-pixbuf.html" title=
-          "gdk-pixbuf-2.44.4">gdk-pixbuf-2.44.4</a> and <a class="xref" href=
-          "../multimedia/libaom.html" title="libaom-3.13.1">libaom-3.13.1</a>
-          (for chroma subsampling outside YUV420)
+          <a class="xref" href="../multimedia/libaom.html" title=
+          "libaom-3.13.1">libaom-3.13.1</a> (for chroma subsampling outside
+          YUV420)
         </p>
         <h4>
           Optional
         </h4>
         <p class="optional">
-          <a class="ulink" href=
+          <a class="xref" href="../x/gdk-pixbuf.html" title=
+          "gdk-pixbuf-2.44.4">gdk-pixbuf-2.44.4</a>, <a class="ulink" href=
           "https://github.com/google/googletest">gtest</a>, <a class="ulink"
           href="https://chromium.googlesource.com/libyuv/libyuv/">libyuv</a>,
           and <a class="ulink" href="https://github.com/xiph/rav1e">rav1e</a>
@@ -162,7 +162,7 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -D AVIF_CODEC_AOM=SYSTEM     \
       -D AVIF_CODEC_DAV1D=SYSTEM   \
       -D AVIF_CODEC_SVT=SYSTEM     \
-      -D AVIF_BUILD_GDK_PIXBUF=ON  \
+      -D AVIF_BUILD_GDK_PIXBUF=OFF \
       -D AVIF_LIBYUV=OFF           \
       -G Ninja .. &amp;&amp;
 ninja</kbd></pre>
@@ -198,10 +198,10 @@ ninja &amp;&amp; ninja test</kbd></pre>
         </p>
         <p>
           <em class="parameter"><code>-D
-          AVIF_BUILD_GDK_PIXBUF=ON</code></em>: This switch builds the AVIF
-          loader for applications which use gdk-pixbuf. Remove it if you have
-          not installed <a class="xref" href="../x/gdk-pixbuf.html" title=
-          "gdk-pixbuf-2.44.4">gdk-pixbuf-2.44.4</a>.
+          AVIF_BUILD_GDK_PIXBUF=OFF</code></em>: This switch disables
+          building the AVIF loader for applications which use gdk-pixbuf. The
+          loader is useless when gdk-pixbuf is built with its recommended
+          dependency glycin.
         </p>
         <p>
           <code class="option">-D AVIF_LIBYUV=OFF</code>: Use this switch if
@@ -227,8 +227,7 @@ ninja &amp;&amp; ninja test</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libavif.so and libpixbbufloader-avif.so
-              (in /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders)</span>
+              <span class="segbody">libavif.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
@@ -302,7 +301,7 @@ ninja &amp;&amp; ninja test</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-445">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-455">
           Home</a>
         </li>
       </ul>

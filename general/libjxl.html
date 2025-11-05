@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-445">
+  <body class="blfs" id="blfs-r12.4-455">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-445
+        "phrase">(systemd</span> Edition) - Version r12.4-455
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-445">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-455">
           Home</a>
         </li>
       </ul>
@@ -121,13 +121,6 @@
           href="libpng.html" title="libpng-1.6.50">libpng-1.6.50</a>
         </p>
         <h4>
-          Recommended
-        </h4>
-        <p class="recommended">
-          <a class="xref" href="../x/gdk-pixbuf.html" title=
-          "gdk-pixbuf-2.44.4">gdk-pixbuf-2.44.4</a> (for the plugin)
-        </p>
-        <h4>
           Optional
         </h4>
         <p class="optional">
@@ -136,7 +129,9 @@
           "xref" href="doxygen.html" title=
           "Doxygen-1.15.0">Doxygen-1.15.0</a> and <a class="xref" href=
           "graphviz.html" title="Graphviz-14.0.2">Graphviz-14.0.2</a> (for
-          documentation), <a class="xref" href="java.html" title=
+          documentation), <a class="xref" href="../x/gdk-pixbuf.html" title=
+          "gdk-pixbuf-2.44.4">gdk-pixbuf-2.44.4</a> (for the plugin),
+          <a class="xref" href="java.html" title=
           "Java-24.0.2">Java-24.0.2</a> (for the JAR), <a class="xref" href=
           "libavif.html" title="libavif-1.3.0">libavif-1.3.0</a>, <a class=
           "xref" href="libwebp.html" title="libwebp-1.6.0">libwebp-1.6.0</a>,
@@ -164,7 +159,7 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr             \
       -D BUILD_SHARED_LIBS=ON                  \
       -D JPEGXL_ENABLE_SKCMS=OFF               \
       -D JPEGXL_ENABLE_SJPEG=OFF               \
-      -D JPEGXL_ENABLE_PLUGINS=ON              \
+      -D JPEGXL_ENABLE_PLUGINS=OFF             \
       -D JPEGXL_INSTALL_JARDIR=/usr/share/java \
       -G Ninja ..                              &amp;&amp;
 ninja</kbd></pre>
@@ -217,11 +212,11 @@ gdk-pixbuf-query-loaders --update-cache</kbd></pre>
         </p>
         <p>
           <em class="parameter"><code>-D
-          JPEGXL_ENABLE_PLUGINS=ON</code></em>: This parameter enables Plugin
-          support, which creates plugins for <a class="xref" href=
-          "../x/gdk-pixbuf.html" title=
-          "gdk-pixbuf-2.44.4">gdk-pixbuf-2.44.4</a> if the package is
-          installed.
+          JPEGXL_ENABLE_PLUGINS=OFF</code></em>: This parameter disables
+          building the JPEG XL loader plugins for GIMP and gdk-pixbuf. The
+          GIMP plugin isn't compatible with the GIMP version in the book, and
+          the gdk-pixbuf plugin is useless when gdk-pixbuf is built with its
+          recommended dependency glycin.
         </p>
         <p>
           <em class="parameter"><code>-D
@@ -245,9 +240,8 @@ gdk-pixbuf-query-loaders --update-cache</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
               <span class="segbody">libjxl.so, libjxl_cms.so,
-              libjxl_extras_codec.so, libjxl_jni.so, libjxl_threads.so, and
-              libpixbufloader-jxl.so (in
-              /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders)</span>
+              libjxl_extras_codec.so, libjxl_jni.so, and
+              libjxl_threads.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
@@ -433,7 +427,7 @@ gdk-pixbuf-query-loaders --update-cache</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-445">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-455">
           Home</a>
         </li>
       </ul>

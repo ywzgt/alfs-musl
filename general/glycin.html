@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-445">
+  <body class="blfs" id="blfs-r12.4-455">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-445
+        "phrase">(systemd</span> Edition) - Version r12.4-455
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-445">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-455">
           Home</a>
         </li>
       </ul>
@@ -151,8 +151,10 @@
         <p class="optional">
           <a class="xref" href="python-modules.html#gi-docgen" title=
           "Gi-DocGen-2025.5">Gi-DocGen-2025.5</a>, <a class="xref" href=
-          "../x/gtk4.html" title="GTK-4.20.2">GTK-4.20.2</a>, and <a class=
-          "ulink" href="https://libopenraw.freedesktop.org/">libopenraw</a>
+          "../x/gtk4.html" title="GTK-4.20.2">GTK-4.20.2</a> (for
+          <code class="systemitem">libglycin-gtk4</code> and the test suite),
+          and <a class="ulink" href=
+          "https://libopenraw.freedesktop.org/">libopenraw</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -168,7 +170,8 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr           \
             --buildtype=release     \
-            -D libglycin-gtk4=false &amp;&amp;
+            -D libglycin-gtk4=false \
+            -D tests=false          &amp;&amp;
 ninja</kbd></pre>
         <p>
           If you have installed <a class="xref" href=
@@ -183,8 +186,10 @@ ninja</kbd></pre>
 meson configure -D capi_docs=true &amp;&amp;
 ninja</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>ninja
-          test</strong></span>.
+          To test the results, ensure <a class="xref" href="../x/gtk4.html"
+          title="GTK-4.20.2">GTK-4.20.2</a> is installed, then issue:
+          <span class="command"><strong>meson configure -D tests=true
+          &amp;&amp; ninja test</strong></span>.
         </p>
         <p>
           Now as the <code class="systemitem">root</code> user:
@@ -310,7 +315,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-445">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-455">
           Home</a>
         </li>
       </ul>
