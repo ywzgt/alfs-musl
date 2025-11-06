@@ -1,0 +1,33 @@
+diff --git a/wget-list b/wget-list
+index 2c49b25a2a..97d7306b10 100644
+--- a/wget-list
++++ b/wget-list
+@@ -684,7 +684,7 @@ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3
+ https://download.gnome.org/sources/libadwaita/1.8/libadwaita-1.8.1.tar.xz
+ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.5.0/libei-1.5.0.tar.bz2
+ https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
+-https://dri.freedesktop.org/libdrm/libdrm-2.4.127.tar.xz
++https://dri.freedesktop.org/libdrm/libdrm-2.4.128.tar.xz
+ https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
+ https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.7.tar.xz
+ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+@@ -892,8 +892,8 @@ https://download.documentfoundation.org/libreoffice/src/25.8.1/libreoffice-help-
+ https://download.documentfoundation.org/libreoffice/src/25.8.1/libreoffice-translations-25.8.1.1.tar.xz
+ https://download.gnome.org/sources/epiphany/48/epiphany-48.5.tar.xz
+ https://download.kde.org/stable/release-service/25.08.0/src/falkon-25.08.0.tar.xz
+-https://archive.seamonkey-project.org/releases/2.53.21/source/seamonkey-2.53.21.source.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.21-cxx17-1.patch
++https://archive.seamonkey-project.org/releases/2.53.22/source/seamonkey-2.53.22.source.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.22-cxx17-1.patch
+ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+ https://feh.finalrewind.org/feh-3.11.2.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
+@@ -920,7 +920,7 @@ https://www.alsa-project.org/files/pub/tools/alsa-tools-1.2.14.tar.bz2
+ https://www.alsa-project.org/files/pub/firmware/alsa-firmware-1.2.4.tar.bz2
+ https://download.gnome.org/sources/audiofile/0.3/audiofile-0.3.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/audiofile-0.3.6-consolidated_patches-1.patch
+-https://code.videolan.org/videolan/dav1d/-/archive/1.5.1/dav1d-1.5.1.tar.gz
++https://code.videolan.org/videolan/dav1d/-/archive/1.5.2/dav1d-1.5.2.tar.gz
+ https://github.com/lfs-book/faac/archive/v1.31.1/faac-1.31.1.tar.gz
+ https://github.com/knik0/faad2/archive/2.11.2/faad2-2.11.2.tar.gz
+ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
