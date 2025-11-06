@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-455">
+  <body class="blfs" id="blfs-r12.4-464">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-455
+        "phrase">(systemd</span> Edition) - Version r12.4-464
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-455">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-464">
           Home</a>
         </li>
       </ul>
@@ -150,9 +150,7 @@
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr                      \
-            --without-javascript               \
-            --without-maximum-compile-warnings &amp;&amp;
+        "command">./configure --prefix=/usr &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
@@ -165,7 +163,8 @@ make</kbd></pre>
           as mere orders of magnitude. According to <span class=
           "application">SWIG</span>'s documentation, the failure of some
           tests should not be considered harmful. The go tests are buggy and
-          may generate a lot of meaningless output.
+          may generate a lot of meaningless output. 8 of the tests in the
+          JavaScript suite are known to fail.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -178,20 +177,10 @@ cp -v -R Doc -T /usr/share/doc/swig-4.4.0</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class=
-          "parameter"><code>--without-maximum-compile-warnings</code></em>:
-          disables compiler ansi conformance enforcement, which triggers
-          errors in the <span class="application">Lua</span> headers
-          (starting with Lua 5.3).
-        </p>
-        <p>
           <code class="option">--without-&lt;language&gt;</code>: allows
           disabling the building of tests and examples for &lt;language&gt;,
           but all the languages capabilities of <span class=
-          "application">SWIG</span> are always built. This switch is used for
-          <span class="application">JavaScript</span> because the SWIG
-          implementation is incomplete and a lot of tests fail due to API
-          changes in Node-20.
+          "application">SWIG</span> are always built.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -283,7 +272,7 @@ cp -v -R Doc -T /usr/share/doc/swig-4.4.0</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-455">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-464">
           Home</a>
         </li>
       </ul>

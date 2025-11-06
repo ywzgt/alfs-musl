@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      librsvg-2.61.2
+      librsvg-2.61.3
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-455">
+  <body class="blfs" id="blfs-r12.4-464">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-455
+        "phrase">(systemd</span> Edition) - Version r12.4-464
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-455">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-464">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="librsvg" name="librsvg"></a>librsvg-2.61.2
+      <a id="librsvg" name="librsvg"></a>librsvg-2.61.3
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,18 +78,18 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.2.tar.xz">
-                https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.2.tar.xz</a>
+                "https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.3.tar.xz">
+                https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.3.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: ea1e31b9d65fe905fa0cb730c2c7e82f
+                Download MD5 sum: f015a7dca4952ba9a2e3b8b536695f1f
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 6.4 MB
+                Download size: 6.5 MB
               </p>
             </li>
             <li class="listitem">
@@ -146,11 +146,9 @@
         </h4>
         <p class="optional">
           <a class="xref" href="python-modules.html#docutils" title=
-          "docutils-0.22.2">docutils-0.22.2</a> (for man pages), <a class=
+          "docutils-0.22.2">docutils-0.22.2</a> (for man pages) and <a class=
           "xref" href="python-modules.html#gi-docgen" title=
-          "Gi-DocGen-2025.5">Gi-DocGen-2025.5</a> (for documentation), and
-          <a class="xref" href="../x/x7font.html" title="Xorg Fonts">Xorg
-          Fonts</a> (for tests)
+          "Gi-DocGen-2025.5">Gi-DocGen-2025.5</a> (for documentation)
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -161,8 +159,8 @@
           First, fix the installation path of the API documentation:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -e "/OUTDIR/s|,| / 'librsvg-2.61.2', '--no-namespace-dir',|" \
-    -e '/output/s|Rsvg-2.0|librsvg-2.61.2|'                      \
+        "command">sed -e "/OUTDIR/s|,| / 'librsvg-2.61.3', '--no-namespace-dir',|" \
+    -e '/output/s|Rsvg-2.0|librsvg-2.61.3|'                      \
     -i doc/meson.build</kbd></pre>
         <p>
           Install <span class="application">librsvg</span> by running the
@@ -177,12 +175,6 @@ ninja</kbd></pre>
           To test the results, issue:
         </p>
         <pre class="userinput"><kbd class="command">meson test -v</kbd></pre>
-        <p>
-          One subtest named <code class="literal">too_many_elements</code> in
-          the <span class="quote">“<span class="quote">Rust tests
-          (rsvg)</span>”</span> test is known to fail with libxml2-2.15.0 or
-          newer. One subtest in the C API tests is also known to fail.
-        </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
@@ -200,13 +192,12 @@ ninja</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Library:</strong>
-              <span class="segbody">librsvg-2.so and libpixbufloader-svg.so
-              (installed in /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders)</span>
+              <span class="segbody">librsvg-2.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/librsvg-2.0 and
-              /usr/share/doc/librsvg-2.61.2</span>
+              /usr/share/doc/librsvg-2.61.3</span>
             </div>
           </div>
         </div>
@@ -248,22 +239,6 @@ ninja</kbd></pre>
                   </p>
                 </td>
               </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="libpixbufloader-svg" name=
-                    "libpixbufloader-svg"></a><span class="term"><code class=
-                    "filename">libpixbufloader-svg.so</code></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is the <span class="application">Gdk Pixbuf</span> plugin
-                    that allows <span class="application">GTK+</span>
-                    applications to render Scalable Vector Graphics images
-                  </p>
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
@@ -290,7 +265,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-455">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-464">
           Home</a>
         </li>
       </ul>
