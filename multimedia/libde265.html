@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-464">
+  <body class="blfs" id="blfs-r12.4-494">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-464
+        "phrase">(systemd</span> Edition) - Version r12.4-494
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-464">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-494">
           Home</a>
         </li>
       </ul>
@@ -56,7 +56,7 @@
         </h2>
         <p>
           The <span class="application">libde265</span> package contains an
-          open H.265 video codec implementation.
+          open source H.265 video codec implementation.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -125,8 +125,8 @@
           Installation of libde265
         </h2>
         <p>
-          At first, prevent the installation of some programs only useful for
-          hacking libde265:
+          First, prevent the installation of some programs which are only
+          useful for hacking libde265:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed '/tools/d' -i Makefile.am &amp;&amp;
@@ -136,7 +136,9 @@
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr --disable-static &amp;&amp;
+        "command">./configure --prefix=/usr         \
+            --disable-sherlock265 \
+            --disable-static      &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -151,9 +153,16 @@ make</kbd></pre>
           Command Explanations
         </h2>
         <p>
+          <em class="parameter"><code>--disable-sherlock265</code></em>: This
+          switch disables the sherlock265 program because it requires Qt5,
+          which is no longer in BLFS. The sherlock265 program is mostly
+          useful for users who are editing H.265 videos.
+        </p>
+        <p>
           <code class="option">--enable-encoder</code>: This option enables
           the H.265 encoder, in addition to the decoder. The encoder is still
-          experimental so the instruction above does not contain this option.
+          experimental though so the instructions above do not contain this
+          option.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -196,7 +205,7 @@ make</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    decodes H.265 data (raw bitstream of a stream with NAL
+                    decodes H.265 data (a raw bitstream of a stream with NAL
                     units)
                   </p>
                 </td>
@@ -240,7 +249,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-464">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-494">
           Home</a>
         </li>
       </ul>
