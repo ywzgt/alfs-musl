@@ -1,0 +1,165 @@
+diff --git a/wget-list b/wget-list
+index 8ccb9b3c01..1ef456caf2 100644
+--- a/wget-list
++++ b/wget-list
+@@ -140,7 +140,7 @@ https://github.com/libunwind/libunwind/releases/download/v1.8.3/libunwind-1.8.3.
+ https://lttng.org/files/urcu/userspace-rcu-0.15.4.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.29/libusb-1.0.29.tar.bz2
+ https://dist.libuv.org/dist/v1.51.0/libuv-v1.51.0.tar.gz
+-https://github.com/lfs-book/libxkbcommon/archive/v1.12.3/libxkbcommon-1.12.3.tar.gz
++https://github.com/lfs-book/libxkbcommon/archive/v1.13.0/libxkbcommon-1.13.0.tar.gz
+ https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.1.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.24/libxmlb-0.3.24.tar.xz
+@@ -276,7 +276,7 @@ https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+ https://download.librdf.org/source/redland-1.0.17.tar.gz
+ https://sysstat.github.io/sysstat-packages/sysstat-12.7.8.tar.xz
+ https://github.com/systemd/systemd/archive/v258.1/systemd-258.1.tar.gz
+-https://github.com/storaged-project/udisks/releases/download/udisks-2.10.2/udisks-2.10.2.tar.bz2
++https://github.com/storaged-project/udisks/releases/download/udisks-2.11.0/udisks-2.11.0.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-7.2.1.tar.gz
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.10/upower-v1.90.10.tar.bz2
+ https://ftp.gnu.org/gnu/which/which-2.23.tar.gz
+@@ -469,10 +469,10 @@ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+ https://files.pythonhosted.org/packages/source/b/build/build-1.3.0.tar.gz
+ https://github.com/psf/cachecontrol/archive/v0.14.3/cachecontrol-0.14.3.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.3.0.tar.gz
+-https://github.com/cython/cython/releases/download/3.1.6/cython-3.1.6.tar.gz
++https://github.com/cython/cython/releases/download/3.2.0/cython-3.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.37.1.tar.gz
+ https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.4.0.tar.xz
+-https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.22.2.tar.gz
++https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.22.3.tar.gz
+ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.gz
+ https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-0.5.3.tar.gz
+ https://files.pythonhosted.org/packages/source/g/gi-docgen/gi_docgen-2025.5.tar.gz
+@@ -487,7 +487,7 @@ https://download.gnome.org/sources/pyatspi/2.58/pyatspi-2.58.0.tar.xz
+ https://github.com/pygobject/pycairo/releases/download/v1.28.0/pycairo-1.28.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.19.2.tar.gz
+-https://download.gnome.org/sources/pygobject/3.52/pygobject-3.52.3.tar.gz
++https://download.gnome.org/sources/pygobject/3.54/pygobject-3.54.5.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.2.5.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pytest/pytest-8.4.2.tar.gz
+@@ -565,7 +565,7 @@ https://www.kernel.org/pub/linux/utils/nfs-utils/2.8.4/nfs-utils-2.8.4.tar.xz
+ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
+ https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.8.tar.bz2
+ https://www.samba.org/ftp/rsync/src/rsync-3.4.1.tar.gz
+-https://download.samba.org/pub/samba/stable/samba-4.23.1.tar.gz
++https://download.samba.org/pub/samba/stable/samba-4.23.3.tar.gz
+ https://ftp.gnu.org/gnu/wget/wget-1.25.0.tar.gz
+ https://www.kernel.org/pub/software/network/iw/iw-6.17.tar.xz
+ https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
+@@ -581,7 +581,7 @@ https://downloads.sourceforge.net/traceroute/traceroute-2.1.6.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.6.5/whois-5.6.5.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.6.0.tar.xz
+ https://github.com/c-ares/c-ares/releases/download/v1.34.5/c-ares-1.34.5.tar.gz
+-https://curl.se/download/curl-8.16.0.tar.xz
++https://curl.se/download/curl-8.17.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.8.0/geoclue-2.8.0.tar.bz2
+ https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.1.tar.xz
+ https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.2.0/kdsoap-2.2.0.tar.gz
+@@ -605,7 +605,7 @@ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.
+ https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
+ http://links.twibright.com/download/links-2.30.tar.bz2
+ https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.bz2
+-https://downloads.sourceforge.net/fetchmail/fetchmail-6.5.6.tar.xz
++https://downloads.sourceforge.net/fetchmail/fetchmail-6.6.0.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/mailx/heirloom-mailx_12.5.orig.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.patch
+ http://ftp.mutt.org/pub/mutt/mutt-2.2.15.tar.gz
+@@ -615,7 +615,7 @@ https://archive.apache.org/dist/httpd/httpd-2.4.65.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/httpd-blfs_layout-1.patch
+ https://downloads.isc.org/isc/kea/3.0.1/kea-3.0.1.tar.xz
+ https://github.com/proftpd/proftpd/archive/v1.3.9/proftpd-1.3.9.tar.gz
+-https://www.dovecot.org/releases/2.4/dovecot-2.4.0.tar.gz
++https://www.dovecot.org/releases/2.4/dovecot-2.4.2.tar.gz
+ https://ftp.exim.org/pub/exim/exim4/exim-4.98.2.tar.xz
+ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.5.tar.gz
+ https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
+@@ -707,7 +707,7 @@ https://downloads.sourceforge.net/fluxbox/fluxbox-1.3.7.tar.xz
+ https://github.com/ice-wm/icewm/archive/3.9.0/icewm-3.9.0.tar.gz
+ http://openbox.org/dist/openbox/openbox-3.6.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openbox-3.6.1-py3-1.patch
+-https://download.gnome.org/sources/adwaita-icon-theme/48/adwaita-icon-theme-48.1.tar.xz
++https://download.gnome.org/sources/adwaita-icon-theme/49/adwaita-icon-theme-49.0.tar.xz
+ https://download.kde.org/stable/frameworks/6.17/breeze-icons-6.17.0.tar.xz
+ https://download.gnome.org/sources/gnome-icon-theme/3.12/gnome-icon-theme-3.12.0.tar.xz
+ https://download.gnome.org/sources/gnome-icon-theme-extras/3.12/gnome-icon-theme-extras-3.12.0.tar.xz
+@@ -845,46 +845,40 @@ https://download.kde.org/stable/plasma/6.4.4/kwayland-6.4.4.tar.xz
+ https://download.kde.org/stable/plasma/6.4.4/libkscreen-6.4.4.tar.xz
+ https://download.kde.org/stable/plasma/6.4.4/layer-shell-qt-6.4.4.tar.xz
+ https://github.com/beltoforion/muparser/archive/v2.3.5/muparser-2.3.5.tar.gz
+-https://github.com/lxqt/lxqt-build-tools/releases/download/2.2.1/lxqt-build-tools-2.2.1.tar.xz
++https://github.com/lxqt/lxqt-build-tools/releases/download/2.3.0/lxqt-build-tools-2.3.0.tar.xz
+ https://github.com/lxqt/libdbusmenu-lxqt/releases/download/0.3.0/libdbusmenu-lxqt-0.3.0.tar.xz
+-https://github.com/lxqt/libqtxdg/releases/download/4.2.0/libqtxdg-4.2.0.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libqtxdg-4.2.0_fix-1.patch
+-https://github.com/lxqt/lxqt-menu-data/releases/download/2.2.0/lxqt-menu-data-2.2.0.tar.xz
+-https://github.com/lxqt/liblxqt/releases/download/2.2.0/liblxqt-2.2.0.tar.xz
++https://github.com/lxqt/libqtxdg/releases/download/4.3.0/libqtxdg-4.3.0.tar.xz
++https://github.com/lxqt/lxqt-menu-data/releases/download/2.3.0/lxqt-menu-data-2.3.0.tar.xz
++https://github.com/lxqt/liblxqt/releases/download/2.3.0/liblxqt-2.3.0.tar.xz
+ https://github.com/lxqt/libsysstat/releases/download/1.1.0/libsysstat-1.1.0.tar.xz
+-https://github.com/lxqt/qtxdg-tools/releases/download/4.2.0/qtxdg-tools-4.2.0.tar.xz
++https://github.com/lxqt/qtxdg-tools/releases/download/4.3.0/qtxdg-tools-4.3.0.tar.xz
+ https://downloads.sourceforge.net/pcmanfm/libfm-1.3.2.tar.xz
+ https://github.com/lxde/menu-cache/archive/1.1.1/menu-cache-1.1.1.tar.gz
+-https://github.com/lxqt/libfm-qt/releases/download/2.2.0/libfm-qt-2.2.0.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libfm-qt-2.2.0_fix-1.patch
+-https://github.com/lxqt/lxqt-globalkeys/releases/download/2.2.0/lxqt-globalkeys-2.2.0.tar.xz
+-https://github.com/lxqt/lxqt-qtplugin/releases/download/2.2.0/lxqt-qtplugin-2.2.0.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/lxqt-qtplugin-2.2.0_fix-1.patch
+-https://github.com/lxqt/lxqt-panel/releases/download/2.2.2/lxqt-panel-2.2.2.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/lxqt-panel-2.2.2_fix-1.patch
+-https://github.com/lxqt/pcmanfm-qt/releases/download/2.2.0/pcmanfm-qt-2.2.0.tar.xz
+-https://github.com/lxqt/lxqt-powermanagement/releases/download/2.2.1/lxqt-powermanagement-2.2.1.tar.xz
+-https://github.com/lxqt/lxqt-runner/releases/download/2.2.0/lxqt-runner-2.2.0.tar.xz
+-https://github.com/lxqt/lxqt-themes/releases/download/2.2.0/lxqt-themes-2.2.0.tar.xz
+-https://github.com/lxqt/lxqt-admin/releases/download/2.2.0/lxqt-admin-2.2.0.tar.xz
+-https://github.com/lxqt/lxqt-about/releases/download/2.2.0/lxqt-about-2.2.0.tar.xz
+-https://github.com/lxqt/lxqt-config/releases/download/2.2.0/lxqt-config-2.2.0.tar.xz
+-https://github.com/lxqt/lxqt-policykit/releases/download/2.2.0/lxqt-policykit-2.2.0.tar.xz
+-https://github.com/lxqt/lxqt-sudo/releases/download/2.2.0/lxqt-sudo-2.2.0.tar.xz
+-https://github.com/lxqt/lxqt-openssh-askpass/releases/download/2.2.0/lxqt-openssh-askpass-2.2.0.tar.xz
+-https://github.com/lxqt/lxqt-session/releases/download/2.2.0/lxqt-session-2.2.0.tar.xz
+-https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/1.2.0/xdg-desktop-portal-lxqt-1.2.0.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/xdg-desktop-portal-lxqt-1.2.0_fix-1.patch
++https://github.com/lxqt/libfm-qt/releases/download/2.3.0/libfm-qt-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-globalkeys/releases/download/2.3.0/lxqt-globalkeys-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-qtplugin/releases/download/2.3.0/lxqt-qtplugin-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-panel/releases/download/2.3.0/lxqt-panel-2.3.0.tar.xz
++https://github.com/lxqt/pcmanfm-qt/releases/download/2.3.0/pcmanfm-qt-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-powermanagement/releases/download/2.3.0/lxqt-powermanagement-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-runner/releases/download/2.3.0/lxqt-runner-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-themes/releases/download/2.3.0/lxqt-themes-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-admin/releases/download/2.3.0/lxqt-admin-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-about/releases/download/2.3.0/lxqt-about-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-config/releases/download/2.3.0/lxqt-config-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-policykit/releases/download/2.3.0/lxqt-policykit-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-sudo/releases/download/2.3.0/lxqt-sudo-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-openssh-askpass/releases/download/2.3.0/lxqt-openssh-askpass-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-session/releases/download/2.3.0/lxqt-session-2.3.0.tar.xz
++https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/1.3.0/xdg-desktop-portal-lxqt-1.3.0.tar.xz
+ https://github.com/lxqt/obconf-qt/releases/download/0.16.5/obconf-qt-0.16.5.tar.xz
+-https://github.com/lxqt/lximage-qt/releases/download/2.2.0/lximage-qt-2.2.0.tar.xz
+-https://github.com/lxqt/lxqt-archiver/releases/download/1.2.0/lxqt-archiver-1.2.0.tar.xz
+-https://github.com/lxqt/lxqt-notificationd/releases/download/2.2.0/lxqt-notificationd-2.2.0.tar.xz
+-https://github.com/lxqt/pavucontrol-qt/releases/download/2.2.0/pavucontrol-qt-2.2.0.tar.xz
+-https://github.com/lxqt/qps/releases/download/2.11.1/qps-2.11.1.tar.xz
+-https://github.com/lxqt/qtermwidget/releases/download/2.2.0/qtermwidget-2.2.0.tar.xz
+-https://github.com/lxqt/qterminal/releases/download/2.2.1/qterminal-2.2.1.tar.xz
+-https://github.com/lxqt/screengrab/releases/download/3.0.0/screengrab-3.0.0.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/screengrab-3.0.0_fix-1.patch
++https://github.com/lxqt/lximage-qt/releases/download/2.3.0/lximage-qt-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-archiver/releases/download/1.3.0/lxqt-archiver-1.3.0.tar.xz
++https://github.com/lxqt/lxqt-notificationd/releases/download/2.3.0/lxqt-notificationd-2.3.0.tar.xz
++https://github.com/lxqt/pavucontrol-qt/releases/download/2.3.0/pavucontrol-qt-2.3.0.tar.xz
++https://github.com/lxqt/qps/releases/download/2.12.0/qps-2.12.0.tar.xz
++https://github.com/lxqt/qtermwidget/releases/download/2.3.0/qtermwidget-2.3.0.tar.xz
++https://github.com/lxqt/qterminal/releases/download/2.3.0/qterminal-2.3.0.tar.xz
++https://github.com/lxqt/screengrab/releases/download/3.1.0/screengrab-3.1.0.tar.xz
+ https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.59.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/25.8.1/libreoffice-25.8.1.1.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/25.8.1/libreoffice-dictionaries-25.8.1.1.tar.xz
