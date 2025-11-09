@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-494">
+  <body class="blfs" id="blfs-r12.4-498">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-494
+        "phrase">(systemd</span> Edition) - Version r12.4-498
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-494">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-498">
           Home</a>
         </li>
       </ul>
@@ -171,7 +171,8 @@ meson setup ..                \
       -D jpeg=disabled        \
       -D tiff=disabled        \
       -D thumbnailer=disabled \
-      --wrap-mode=nofallback  &amp;&amp;
+      --wrap-mode=nofallback  \
+      $(pkgconf glycin-2 || echo -D glycin=disabled) &amp;&amp;
 ninja</kbd></pre>
         <p>
           If you have <a class="xref" href=
@@ -358,7 +359,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-494">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-498">
           Home</a>
         </li>
       </ul>

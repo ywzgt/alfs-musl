@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-494">
+  <body class="blfs" id="blfs-r12.4-498">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-494
+        "phrase">(systemd</span> Edition) - Version r12.4-498
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-494">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-498">
           Home</a>
         </li>
       </ul>
@@ -6720,23 +6720,23 @@ testenv/bin/python -m pytest</kbd></pre>
           <pre class="userinput"><kbd class=
           "command">python3 -m venv --system-site-packages testenv &amp;&amp;
 source testenv/bin/activate                    &amp;&amp;
-pip3 install trustme         \
-             tornado         \
-             python-dateutil \
-             mock            \
-             pysocks         \
-             pytest-timeout  \
-             trio            \
-             hypercorn       \
-             quart           \
-             quart_trio      \
-             httpx           &amp;&amp;
-python3 /usr/bin/pytest
+pip3 install --group dev                       &amp;&amp;
+python3 /usr/bin/pytest --timeout 10
 deactivate</kbd></pre>
           <p>
-            As many as 34 failures are known to occur due to slight behavior
-            changes in the external Python modules above, when combined with
-            Python 3.13.7.
+            More than 50 failures are expected with the instructions above.
+            There are several reasons. First, upstream uses a patched version
+            of the hypercorn module for their own testing, that can only be
+            obtained through <span class=
+            "command"><strong>git</strong></span> at <a class="ulink" href=
+            "https://github.com/urllib3/hypercorn.git">https://github.com/urllib3/hypercorn.git</a>,
+            at revision <span class="quote">“<span class=
+            "quote">urllib3-changes</span>”</span>, and should be installed
+            first in the virtual environment. Second, it seems the test suite
+            has not been adapted to recent versions of Python, and of the
+            external Python modules. In particular, some tests hang, so that
+            <span class="command"><strong>pytest</strong></span> needs the
+            <em class="parameter"><code>--timeout</code></em> switch.
           </p>
         </div>
         <div class="commands" lang="en" xml:lang="en">
@@ -6995,7 +6995,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-494">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-498">
           Home</a>
         </li>
       </ul>
