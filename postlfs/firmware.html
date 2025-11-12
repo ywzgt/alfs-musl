@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-500">
+  <body class="blfs" id="blfs-r12.4-503">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-500
+        "phrase">(systemd</span> Edition) - Version r12.4-503
       </h4>
       <h3>
         Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-500">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-503">
           Home</a>
         </li>
       </ul>
@@ -312,7 +312,7 @@
             "https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/">
             https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/</a>
             and downloading the latest file there. As of this writing the
-            most secure version of the microcode is microcode-20250812.
+            most secure version of the microcode is microcode-20251111.
             Extract this file in the normal way, the microcode is in the
             <code class="filename">intel-ucode</code> directory, containing
             various blobs with names in the form XX-YY-ZZ. There are also
@@ -337,17 +337,18 @@
             https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/index.html</a>.
           </p>
           <p>
-            For an Tigerlake mobile (described as Intel(R) Core(TM) i5-11300H
-            CPU) the relevant values are cpu family 6, model 140, stepping 1
-            so in this case the required identification is 06-8c-01. The
-            releasenote says the latest microcode for it is versioned 0xb8.
-            If the value of the <span class="quote">“<span class=
-            "quote">microcode</span>”</span> field in <code class=
-            "filename">/proc/cpuinfo</code> is 0xb8 or greater, it indicates
-            the microcode update is already applied by the BIOS. Otherwise,
-            proceed to <a class="xref" href="firmware.html#early-microcode"
-            title="Early loading of microcode">the section called “Early
-            loading of microcode”</a>.
+            For a Meteor Lake mobile (described as Intel(R) Core(TM) Ultra 5
+            125H CPU) the relevant values are cpu family 6, model 140,
+            stepping 4 so in this case the required identification is
+            06-aa-04. The releasenote says the latest microcode for it is
+            versioned 0x25. If the value of the <span class=
+            "quote">“<span class="quote">microcode</span>”</span> field in
+            <code class="filename">/proc/cpuinfo</code> is 0x25 or greater,
+            it indicates the microcode update is already applied by the BIOS.
+            Otherwise, proceed to <a class="xref" href=
+            "firmware.html#early-microcode" title=
+            "Early loading of microcode">the section called “Early loading of
+            microcode”</a>.
           </p>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
@@ -475,13 +476,13 @@ cd initrd</kbd></pre>
           <p>
             The places and times where early loading happens are very
             different in AMD and Intel machines. First, an example of an
-            Intel (Tigerlake mobile) with early loading:
+            Intel (Meteor Lake mobile) with early loading:
           </p>
           <pre class="screen"><code class=
-          "literal">[    0.000000] Linux version 6.10.4 (xry111@stargazer) (gcc (GCC) 14.2.0, GNU ld (GNU Binutils) 2.43) #4 SMP PREEMPT_DYNAMIC Tue Aug 15 18:04:11 CST 2024
-[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-6.10.0 root=PARTUUID=<em class="replaceable"><code>&lt;CLASSIFIED&gt;</code></em> ro
-[    0.585605] microcode: Current revision: 0x000000b8
-[    0.585611] microcode: Updated early from: 0x00000086</code></pre>
+          "literal">[    0.000000] Linux version 6.17.6 (xry111@stargazer) (gcc (GCC) 15.2.0, GNU ld (GNU Binutils) 2.45) #1 SMP PREEMPT_DYNAMIC Sun Nov  9 21:03:48 CST 2025
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-6.17.6 root=/dev/nvme0n1p6 ro
+[    1.459687] microcode: Current revision: 0x00000025
+[    1.459699] microcode: Updated early from: 0x00000024</code></pre>
           <p>
             A historic AMD example:
           </p>
@@ -869,7 +870,7 @@ make oldconfig</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-500">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-503">
           Home</a>
         </li>
       </ul>
