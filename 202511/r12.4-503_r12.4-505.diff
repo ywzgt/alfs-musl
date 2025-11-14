@@ -1,0 +1,12 @@
+diff --git a/wget-list b/wget-list
+index 6285fd366f..b53ef5e8f7 100644
+--- a/wget-list
++++ b/wget-list
+@@ -598,6 +598,7 @@ https://www.tcpdump.org/release/libpcap-1.10.5.tar.gz
+ https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz
+ https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.9.1/libslirp-v4.9.1.tar.bz2
+ https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.5.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/libsoup-3.6.5-upstream_fixes-1.patch
+ https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.7.tar.bz2
+ https://notroj.github.io/neon/neon-0.35.0.tar.gz
+ https://github.com/nghttp2/nghttp2/releases/download/v1.68.0/nghttp2-1.68.0.tar.xz
