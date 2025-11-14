@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-505">
+  <body class="blfs" id="blfs-r12.4-513">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-505
+        "phrase">(systemd</span> Edition) - Version r12.4-513
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-505">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-513">
           Home</a>
         </li>
       </ul>
@@ -622,8 +622,10 @@
             <a class="ulink" href=
             "https://pypi.org/project/pytest-rerunfailures/">pytest-rerunfailures</a>,
             <a class="ulink" href=
-            "https://pypi.org/project/pytest-xdist/">pytest-xdist</a>, and
-            <a class="ulink" href="https://pypi.org/project/uv/">uv</a>
+            "https://pypi.org/project/pytest-xdist/">pytest-xdist</a>,
+            <a class="ulink" href="https://pypi.org/project/uv/">uv</a>, and
+            <a class="ulink" href=
+            "https://pypi.org/project/virtualenv/">virtualenv</a>
           </p>
         </div>
         <div class="installation" lang="en" xml:lang="en">
@@ -5235,7 +5237,7 @@ deactivate</kbd></pre>
           <pre class="userinput"><kbd class=
           "command">python3 -m venv --system-site-packages testenv &amp;&amp;
 source testenv/bin/activate                    &amp;&amp;
-pip3 install pytest[dev] xmlschema hypothesis  &amp;&amp;
+pip3 install pytest[dev]                       &amp;&amp;
 python3 /usr/bin/pytest
 deactivate</kbd></pre>
           <p>
@@ -6070,19 +6072,15 @@ deactivate</kbd></pre>
           <p class="optional">
             <a class="xref" href="python-modules.html#pytest" title=
             "Pytest-8.4.2">pytest-8.4.2</a>, <a class="ulink" href=
-            "https://pypi.org/project/Flask/">Flask</a>&lt;2, <a class=
-            "ulink" href="https://pypi.org/project/httpbin/">httpbin</a>,
-            <a class="ulink" href=
-            "https://pypi.org/project/MarkupSafe/">MarkupSafe</a>&lt;2.1,
-            <a class="ulink" href=
             "https://pypi.org/project/pytest-mock/">pytest-mock</a>,
             <a class="ulink" href=
             "https://pypi.org/project/pytest-httpbin/">pytest-httpbin</a>,
             <a class="ulink" href=
-            "https://pypi.org/project/sphinx/">sphinx</a>&lt;5, <a class=
-            "ulink" href="https://pypi.org/project/trustme/">trustme</a>, and
+            "https://pypi.org/project/pytest-cov/">pytest-cov</a>, <a class=
+            "ulink" href=
+            "https://pypi.org/project/pytest-xdist/">pytest-xdist</a>, and
             <a class="ulink" href=
-            "https://pypi.org/project/Werkzeug/">Werkzeug</a>&lt;2
+            "https://pypi.org/project/trustme/">trustme</a>
           </p>
         </div>
         <div class="installation" lang="en" xml:lang="en">
@@ -6128,14 +6126,12 @@ deactivate</kbd></pre>
           <pre class="userinput"><kbd class=
           "command">python3 -m venv --system-site-packages testenv &amp;&amp;
 source testenv/bin/activate                    &amp;&amp;
-pip3 install --force-reinstall sphinx\&lt;5       &amp;&amp;
 pip3 install pytest-mock    \
-             werkzeug\&lt;2    \
-             flask\&lt;2       \
              pytest-httpbin \
+             pytest-cov     \
+             pytest-xdist   \
              pysocks        \
              trustme                           &amp;&amp;
-pip3 install --force-reinstall Markupsafe\&lt;2.1 &amp;&amp;
 python3 /usr/bin/pytest tests
 deactivate</kbd></pre>
           <div class="admon note">
@@ -7284,7 +7280,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-505">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-513">
           Home</a>
         </li>
       </ul>
