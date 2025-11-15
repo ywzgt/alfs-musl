@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-513">
+  <body class="blfs" id="blfs-r12.4-524">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-513
+        "phrase">(systemd</span> Edition) - Version r12.4-524
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-513">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-524">
           Home</a>
         </li>
       </ul>
@@ -140,8 +140,7 @@
         </h4>
         <p class="recommended">
           <a class="xref" href="harfbuzz.html" title=
-          "harfBuzz-12.2.0">harfBuzz-12.2.0</a> (circular: build freetype,
-          then harfbuzz, then reinstall freetype), <a class="xref" href=
+          "harfBuzz-12.2.0">harfBuzz-12.2.0</a>, <a class="xref" href=
           "libpng.html" title="libpng-1.6.50">libpng-1.6.50</a>, and
           <a class="xref" href="which.html" title=
           "Which-2.23 and Alternatives">Which-2.23</a>
@@ -182,7 +181,10 @@
 sed -r "s:.*(#.*SUBPIXEL_RENDERING) .*:\1:" \
     -i include/freetype/config/ftoption.h  &amp;&amp;
 
-./configure --prefix=/usr --enable-freetype-config --disable-static &amp;&amp;
+./configure --prefix=/usr            \
+            --disable-static         \
+            --enable-freetype-config \
+            --with-harfbuzz=dynamic &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -214,8 +216,18 @@ rm -v /usr/share/doc/freetype-2.14.1/freetype-config.1</kbd></pre>
           before enabling this option.
         </p>
         <p>
+          <em class="parameter"><code>--disable-static</code></em>: This
+          switch prevents installation of static versions of the libraries.
+        </p>
+        <p>
           <em class="parameter"><code>--enable-freetype-config</code></em>:
-          This switch ensure that the man page for freetype-config is
+          This switch ensures that the man page for freetype-config is
+          installed.
+        </p>
+        <p>
+          <em class="parameter"><code>--with-harfbuzz=dynamic</code></em>:
+          This switch ensures that HarfBuzz is loaded dynamically, skipping
+          the requirement to rebuild this package after HarfBuzz is
           installed.
         </p>
         <p>
@@ -224,10 +236,6 @@ rm -v /usr/share/doc/freetype-2.14.1/freetype-config.1</kbd></pre>
           "application">freetype</span> without <span class=
           "application">freetype</span> support, use this switch to avoid a
           build failure.
-        </p>
-        <p>
-          <em class="parameter"><code>--disable-static</code></em>: This
-          switch prevents installation of static versions of the libraries.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -317,7 +325,7 @@ rm -v /usr/share/doc/freetype-2.14.1/freetype-config.1</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-513">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-524">
           Home</a>
         </li>
       </ul>

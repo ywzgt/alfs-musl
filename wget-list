@@ -40,7 +40,7 @@ https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.10-convenience-1.patch
 https://ftp.gnu.org/gnu/parted/parted-3.6.tar.xz
 https://downloads.sourceforge.net/smartmontools/smartmontools-7.5.tar.gz
-https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.3/sshfs-3.7.3.tar.xz
+https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.5/sshfs-3.7.5.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.17.0.tar.xz
 https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
 https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
@@ -137,7 +137,7 @@ https://www.mirrorservice.org/sites/ftp.i-scream.org/pub/i-scream/libstatgrab/li
 https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.20.0.tar.gz
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.4.1.tar.xz
 https://github.com/libunwind/libunwind/releases/download/v1.8.3/libunwind-1.8.3.tar.gz
-https://lttng.org/files/urcu/userspace-rcu-0.15.4.tar.bz2
+https://lttng.org/files/urcu/userspace-rcu-0.15.5.tar.bz2
 https://github.com/libusb/libusb/releases/download/v1.0.29/libusb-1.0.29.tar.bz2
 https://dist.libuv.org/dist/v1.51.0/libuv-v1.51.0.tar.gz
 https://github.com/lfs-book/libxkbcommon/archive/v1.13.0/libxkbcommon-1.13.0.tar.gz
@@ -145,7 +145,7 @@ https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.1.tar.xz
 https://www.w3.org/XML/Test/xmlts20130923.tar.gz
 https://github.com/hughsie/libxmlb/releases/download/0.3.24/libxmlb-0.3.24.tar.xz
 https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.43.tar.xz
-https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.16.1/libwacom-2.16.1.tar.xz
+https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.17.0/libwacom-2.17.0.tar.xz
 https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
 https://github.com/pantoniou/libfyaml/releases/download/v0.9/libfyaml-0.9.tar.gz
 https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_2/log4cplus-2.1.2.tar.xz
@@ -153,16 +153,16 @@ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
 https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
 https://nodejs.org/dist/v22.20.0/node-v22.20.0.tar.xz
 https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
-https://archive.mozilla.org/pub/nspr/releases/v4.37/src/nspr-4.37.tar.gz
+https://archive.mozilla.org/pub/nspr/releases/v4.38.2/src/nspr-4.38.2.tar.gz
 https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
-https://github.com/protocolbuffers/protobuf/releases/download/v33.0/protobuf-33.0.tar.gz
+https://github.com/protocolbuffers/protobuf/releases/download/v33.1/protobuf-33.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
 https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
 https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
 https://archive.mozilla.org/pub/firefox/releases/140.4.0esr/source/firefox-140.4.0esr.source.tar.xz
 https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.328.1/SPIRV-Headers-vulkan-sdk-1.4.328.1.tar.gz
 https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.328.1/SPIRV-Tools-vulkan-sdk-1.4.328.1.tar.gz
-https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v21.1.1/SPIRV-LLVM-Translator-21.1.1.tar.gz
+https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v21.1.2/SPIRV-LLVM-Translator-21.1.2.tar.gz
 https://www.samba.org/ftp/talloc/talloc-2.4.3.tar.gz
 https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
 https://github.com/martinpitt/umockdev/releases/download/0.19.4/umockdev-0.19.4.tar.xz
@@ -227,8 +227,8 @@ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.3.tar.gz
 https://github.com/google/shaderc/archive/v2025.4/shaderc-2025.4.tar.gz
 https://gitlab.com/graphviz/graphviz/-/archive/14.0.2/graphviz-14.0.2.tar.bz2
 https://download.gnome.org/sources/gtk-doc/1.35/gtk-doc-1.35.1.tar.xz
-http://www.andre-simon.de/zip/highlight-4.17.tar.bz2
-https://github.com/ibus/ibus/archive/1.5.32/ibus-1.5.32.tar.gz
+http://www.andre-simon.de/zip/highlight-4.18.tar.bz2
+https://github.com/ibus/ibus/archive/1.5.33/ibus-1.5.33.tar.gz
 https://www.unicode.org/Public/zipped/16.0.0/UCD.zip
 https://www.imagemagick.org/archive/releases/ImageMagick-7.1.2-1.tar.xz
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.18.0/iso-codes-v4.18.0.tar.gz
@@ -261,7 +261,7 @@ http://fcron.free.fr/archives/fcron-3.4.0.src.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/gpm/gpm-1.20.7.tar.bz2
 https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch
 https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-gcc15_fixes-1.patch
-https://github.com/vcrhonek/hwdata/archive/v0.400/hwdata-0.400.tar.gz
+https://github.com/vcrhonek/hwdata/archive/v0.401/hwdata-0.401.tar.gz
 https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
 https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
 http://ftp.midnight-commander.org/mc-4.8.33.tar.xz
