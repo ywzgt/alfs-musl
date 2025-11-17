@@ -1,0 +1,132 @@
+diff --git a/wget-list b/wget-list
+index f1c2af5b97..ed5d9596cb 100644
+--- a/wget-list
++++ b/wget-list
+@@ -55,7 +55,7 @@ https://gitlab.gnome.org/World/gedit/libgedit-gtksourceview/-/archive/299.5.0/li
+ https://gitlab.gnome.org/World/gedit/libgedit-gfls/-/archive/0.3.0/libgedit-gfls-0.3.0.tar.bz2
+ https://gitlab.gnome.org/World/gedit/libgedit-tepl/-/archive/6.13.0/libgedit-tepl-6.13.0.tar.bz2
+ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+-https://download.kde.org/stable/release-service/25.08.0/src/kate-25.08.0.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/kate-25.08.3.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.5.tar.xz
+ https://www.nano-editor.org/dist/v8/nano-8.6.tar.xz
+ https://github.com/vim/vim/archive/v9.1.1806/vim-9.1.1806.tar.gz
+@@ -231,7 +231,7 @@ http://www.andre-simon.de/zip/highlight-4.18.tar.bz2
+ https://github.com/ibus/ibus/archive/1.5.33/ibus-1.5.33.tar.gz
+ https://www.unicode.org/Public/zipped/16.0.0/UCD.zip
+ https://www.imagemagick.org/archive/releases/ImageMagick-7.1.2-1.tar.xz
+-https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.18.0/iso-codes-v4.18.0.tar.gz
++https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.19.0/iso-codes-v4.19.0.tar.gz
+ https://github.com/lsof-org/lsof/releases/download/4.99.5/lsof-4.99.5.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.3.2.tar.bz2
+ https://ftp.gnu.org/gnu/screen/screen-5.0.1.tar.gz
+@@ -296,7 +296,7 @@ https://cmake.org/files/v4.1/cmake-4.1.2.tar.gz
+ https://doxygen.nl/files/doxygen-1.15.0.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+ https://ftp.gnu.org/gnu/gcc/gcc-15.2.0/gcc-15.2.0.tar.xz
+-https://github.com/ivmai/bdwgc/releases/download/v8.2.10/gc-8.2.10.tar.gz
++https://github.com/bdwgc/bdwgc/releases/download/v8.2.10/gc-8.2.10.tar.gz
+ https://ftp.gnu.org/gnu/gdb/gdb-16.3.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-2.51.2.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-manpages-2.51.2.tar.xz
+@@ -709,7 +709,7 @@ https://github.com/ice-wm/icewm/archive/3.9.0/icewm-3.9.0.tar.gz
+ http://openbox.org/dist/openbox/openbox-3.6.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openbox-3.6.1-py3-1.patch
+ https://download.gnome.org/sources/adwaita-icon-theme/49/adwaita-icon-theme-49.0.tar.xz
+-https://download.kde.org/stable/frameworks/6.17/breeze-icons-6.17.0.tar.xz
++https://download.kde.org/stable/frameworks/6.20/breeze-icons-6.20.0.tar.xz
+ https://download.gnome.org/sources/gnome-icon-theme/3.12/gnome-icon-theme-3.12.0.tar.xz
+ https://download.gnome.org/sources/gnome-icon-theme-extras/3.12/gnome-icon-theme-extras-3.12.0.tar.xz
+ https://download.gnome.org/sources/gnome-icon-theme-symbolic/3.12/gnome-icon-theme-symbolic-3.12.0.tar.xz
+@@ -718,31 +718,31 @@ https://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.18.tar.xz
+ https://tango.freedesktop.org/releases/icon-naming-utils-0.8.90.tar.bz2
+ https://downloads.sourceforge.net/lxde/lxde-icon-theme-0.5.1.tar.xz
+ https://download.kde.org/stable/oxygen-icons/oxygen-icons-6.0.0.tar.xz
+-https://download.kde.org/stable/frameworks/6.17/extra-cmake-modules-6.17.0.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/extra-cmake-modules-6.17.0-upstream_fix-1.patch
++https://download.kde.org/stable/frameworks/6.20/extra-cmake-modules-6.20.0.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/extra-cmake-modules-6.20.0-upstream_fix-1.patch
+ https://download.kde.org/stable/phonon/4.12.0/phonon-4.12.0.tar.xz
+ https://download.kde.org/stable/phonon/phonon-backend-vlc/0.12.0/phonon-backend-vlc-0.12.0.tar.xz
+ https://download.kde.org/stable/polkit-qt-1/polkit-qt-1-0.200.0.tar.xz
+-https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.18.0.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/ark-25.08.0.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/dolphin-25.08.0.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/dolphin-plugins-25.08.0.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/kdenlive-25.08.0.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/kmix-25.08.0.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/khelpcenter-25.08.0.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/konsole-25.08.0.tar.xz
++https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.19.0.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/ark-25.08.3.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/dolphin-25.08.3.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/dolphin-plugins-25.08.3.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/kdenlive-25.08.3.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/kmix-25.08.3.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/khelpcenter-25.08.3.tar.xz
++https://download.kde.org/stable/release-service/25.08.2/src/konsole-25.08.2.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/konsole-adjust_scrollbar-1.patch
+-https://download.kde.org/stable/release-service/25.08.0/src/konversation-25.08.0.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/libkexiv2-25.08.0.tar.xz
+-https://download.kde.org/stable/plasma/6.4.4/plasma-activities-6.4.4.tar.xz
+-https://download.kde.org/stable/plasma/6.4.4/plasma-activities-stats-6.4.4.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/kio-extras-25.08.0.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/okular-25.08.0.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/libkdcraw-25.08.0.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/gwenview-25.08.0.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/libkcddb-25.08.0.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/k3b-25.08.0.tar.xz
+-https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.9.0.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/konversation-25.08.3.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/libkexiv2-25.08.3.tar.xz
++https://download.kde.org/stable/plasma/6.5.2/plasma-activities-6.5.2.tar.xz
++https://download.kde.org/stable/plasma/6.5.2/plasma-activities-stats-6.5.2.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/kio-extras-25.08.3.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/okular-25.08.3.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/libkdcraw-25.08.3.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/gwenview-25.08.3.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/libkcddb-25.08.3.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/k3b-25.08.3.tar.xz
++https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.10.0.tar.xz
+ https://download.kde.org/stable/pulseaudio-qt/pulseaudio-qt-1.7.0.tar.xz
+ https://download.gnome.org/sources/gcr/3.41/gcr-3.41.2.tar.xz
+ https://download.gnome.org/sources/gcr/4.4/gcr-4.4.0.1.tar.xz
+@@ -838,13 +838,13 @@ https://archive.xfce.org/src/apps/xfburn/0.8/xfburn-0.8.0.tar.bz2
+ https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.4.tar.xz
+ https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.7.tar.bz2
+ https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.5/xfce4-pulseaudio-plugin-0.5.1.tar.xz
+-https://download.kde.org/stable/frameworks/6.17/kwindowsystem-6.17.0.tar.xz
+-https://download.kde.org/stable/frameworks/6.17/kconfig-6.17.0.tar.xz
+-https://download.kde.org/stable/frameworks/6.17/solid-6.17.0.tar.xz
+-https://download.kde.org/stable/frameworks/6.17/kidletime-6.17.0.tar.xz
+-https://download.kde.org/stable/plasma/6.4.4/kwayland-6.4.4.tar.xz
+-https://download.kde.org/stable/plasma/6.4.4/libkscreen-6.4.4.tar.xz
+-https://download.kde.org/stable/plasma/6.4.4/layer-shell-qt-6.4.4.tar.xz
++https://download.kde.org/stable/frameworks/6.20/kwindowsystem-6.20.0.tar.xz
++https://download.kde.org/stable/frameworks/6.20/kconfig-6.20.0.tar.xz
++https://download.kde.org/stable/frameworks/6.20/solid-6.20.0.tar.xz
++https://download.kde.org/stable/frameworks/6.20/kidletime-6.20.0.tar.xz
++https://download.kde.org/stable/plasma/6.5.2/kwayland-6.5.2.tar.xz
++https://download.kde.org/stable/plasma/6.5.2/libkscreen-6.5.2.tar.xz
++https://download.kde.org/stable/plasma/6.5.2/layer-shell-qt-6.5.2.tar.xz
+ https://github.com/beltoforion/muparser/archive/v2.3.5/muparser-2.3.5.tar.gz
+ https://github.com/lxqt/lxqt-build-tools/releases/download/2.3.0/lxqt-build-tools-2.3.0.tar.xz
+ https://github.com/lxqt/libdbusmenu-lxqt/releases/download/0.3.0/libdbusmenu-lxqt-0.3.0.tar.xz
+@@ -886,7 +886,7 @@ https://download.documentfoundation.org/libreoffice/src/25.8.1/libreoffice-dicti
+ https://download.documentfoundation.org/libreoffice/src/25.8.1/libreoffice-help-25.8.1.1.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/25.8.1/libreoffice-translations-25.8.1.1.tar.xz
+ https://download.gnome.org/sources/epiphany/48/epiphany-48.5.tar.xz
+-https://download.kde.org/stable/release-service/25.08.0/src/falkon-25.08.0.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/falkon-25.08.3.tar.xz
+ https://archive.seamonkey-project.org/releases/2.53.22/source/seamonkey-2.53.22.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.22-cxx17-1.patch
+ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+@@ -987,7 +987,7 @@ https://distfiles.audacious-media-player.org/audacious-4.5.1.tar.bz2
+ https://distfiles.audacious-media-player.org/audacious-plugins-4.5.1.tar.bz2
+ https://downloads.xiph.org/releases/cdparanoia/cdparanoia-III-10.2.src.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/cdparanoia-III-10.2-gcc_fixes-1.patch
+-https://download.kde.org/stable/release-service/25.08.0/src/kwave-25.08.0.tar.xz
++https://download.kde.org/stable/release-service/25.08.3/src/kwave-25.08.3.tar.xz
+ https://downloads.sourceforge.net/lame/lame-3.100.tar.gz
+ https://downloads.sourceforge.net/mpg123/mpg123-1.33.3.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-6.2.tar.xz
