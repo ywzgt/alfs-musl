@@ -184,7 +184,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-upstream_fixes-1.
 https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-security_fixes-1.patch
 https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
 https://github.com/g-truc/glm/archive/1.0.2/glm-1.0.2.tar.gz
-https://download.gnome.org/sources/glycin/2.0/glycin-2.0.5.tar.xz
+https://download.gnome.org/sources/glycin/2.0/glycin-2.0.7.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.7-xorg_prefix-1.patch
 https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
 https://github.com/harfbuzz/harfbuzz/releases/download/12.2.0/harfbuzz-12.2.0.tar.xz
 https://github.com/jasper-software/jasper/archive/version-4.2.8/jasper-version-4.2.8.tar.gz
@@ -225,7 +226,7 @@ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
 https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
 https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.3.tar.gz
 https://github.com/google/shaderc/archive/v2025.4/shaderc-2025.4.tar.gz
-https://gitlab.com/graphviz/graphviz/-/archive/14.0.2/graphviz-14.0.2.tar.bz2
+https://gitlab.com/graphviz/graphviz/-/archive/14.0.4/graphviz-14.0.4.tar.bz2
 https://download.gnome.org/sources/gtk-doc/1.35/gtk-doc-1.35.1.tar.xz
 http://www.andre-simon.de/zip/highlight-4.18.tar.bz2
 https://github.com/ibus/ibus/archive/1.5.33/ibus-1.5.33.tar.gz
@@ -469,7 +470,7 @@ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
 https://files.pythonhosted.org/packages/source/b/build/build-1.3.0.tar.gz
 https://github.com/psf/cachecontrol/archive/v0.14.3/cachecontrol-0.14.3.tar.gz
 https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.3.0.tar.gz
-https://github.com/cython/cython/releases/download/3.2.0/cython-3.2.0.tar.gz
+https://github.com/cython/cython/releases/download/3.2.1/cython-3.2.1.tar.gz
 https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.37.1.tar.gz
 https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.4.0.tar.xz
 https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.22.3.tar.gz
@@ -477,6 +478,7 @@ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.g
 https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-0.5.3.tar.gz
 https://files.pythonhosted.org/packages/source/g/gi-docgen/gi_docgen-2025.5.tar.gz
 https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
+https://www.linuxfromscratch.org/patches/blfs/svn/html5lib-1.1-python_3.14_buildfix-1.patch
 https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.0.2.tar.gz
 https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.10.tar.gz
 https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.3.4.tar.gz
@@ -541,7 +543,7 @@ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1
 https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
 https://static.rust-lang.org/dist/rustc-1.91.0-src.tar.xz
 https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.1/rust-bindgen-0.72.1.tar.gz
-https://downloads.sourceforge.net/scons/SCons-4.10.0.tar.gz
+https://downloads.sourceforge.net/scons/SCons-4.10.1.tar.gz
 https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.5.tar.bz2
 https://downloads.sourceforge.net/swig/swig-4.4.0.tar.gz
@@ -622,7 +624,7 @@ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.5.tar.gz
 https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/sendmail-8.18.1-gcc15_fixes-1.patch
 https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.33.tar.bz2
-https://downloads.mariadb.org/interstitial/mariadb-11.8.3/source/mariadb-11.8.3.tar.gz
+https://downloads.mariadb.org/interstitial/mariadb-11.8.4/source/mariadb-11.8.4.tar.gz
 https://ftp.postgresql.org/pub/source/v18.0/postgresql-18.0.tar.bz2
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.10.tgz
 https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.10-consolidated-1.patch
@@ -685,7 +687,7 @@ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3
 https://download.gnome.org/sources/libadwaita/1.8/libadwaita-1.8.1.tar.xz
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.5.0/libei-1.5.0.tar.bz2
 https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
-https://dri.freedesktop.org/libdrm/libdrm-2.4.128.tar.xz
+https://dri.freedesktop.org/libdrm/libdrm-2.4.129.tar.xz
 https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
 https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.7.tar.xz
 https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
@@ -921,13 +923,13 @@ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
 https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
 https://github.com/dyne/frei0r/archive/v2.5.0/frei0r-2.5.0.tar.gz
 https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
-https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.6.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.6.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.6.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.26.6.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.26.6.tar.xz
-https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.6/gst-plugins-rs-gstreamer-1.26.6.tar.gz
-https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.26.6.tar.xz
+https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.8.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.8.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.8.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.26.8.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.26.8.tar.xz
+https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.8/gst-plugins-rs-gstreamer-1.26.8.tar.gz
+https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.26.8.tar.xz
 https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
 https://github.com/lfs-book/intel-media-driver/archive/v25.3.4/intel-media-driver-25.3.4.tar.gz
@@ -992,8 +994,8 @@ https://downloads.sourceforge.net/mpg123/mpg123-1.33.3.tar.bz2
 https://www.freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-6.2.tar.xz
 https://github.com/nicklan/pnmixer/releases/download/v0.7.2/pnmixer-v0.7.2.tar.gz
 https://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.3.tar.gz
-https://ffmpeg.org/releases/ffmpeg-8.0.0.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-8.0.0-chromium_method-1.patch
+https://ffmpeg.org/releases/ffmpeg-8.0.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-8.0-chromium_method-1.patch
 https://github.com/mpv-player/mpv/archive/v0.40.0/mpv-0.40.0.tar.gz
 https://download.videolan.org/vlc/3.0.21/vlc-3.0.21.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/vlc-3.0.21-taglib-1.patch

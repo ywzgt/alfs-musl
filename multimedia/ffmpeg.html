@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      FFmpeg-8.0.0
+      FFmpeg-8.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-543">
+  <body class="blfs" id="blfs-r12.4-556">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-543
+        "phrase">(systemd</span> Edition) - Version r12.4-556
       </h4>
       <h3>
         Chapter&nbsp;44.&nbsp;Video Utilities
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-543">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-556">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="ffmpeg" name="ffmpeg"></a>FFmpeg-8.0.0
+      <a id="ffmpeg" name="ffmpeg"></a>FFmpeg-8.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -86,7 +86,7 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ffmpeg.org/releases/ffmpeg-8.0.0.tar.xz">https://ffmpeg.org/releases/ffmpeg-8.0.0.tar.xz</a>
+                "https://ffmpeg.org/releases/ffmpeg-8.0.tar.xz">https://ffmpeg.org/releases/ffmpeg-8.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
@@ -122,8 +122,8 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-8.0.0-chromium_method-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-8.0.0-chromium_method-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-8.0-chromium_method-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-8.0-chromium_method-1.patch</a>
               </p>
             </li>
           </ul>
@@ -185,7 +185,7 @@
           "frei0r.html" title="frei0r-2.5.0">frei0r-2.5.0</a>, <a class=
           "xref" href="libcdio.html" title="libcdio-2.1.0">libcdio-2.1.0</a>
           (to identify and play CDs), <a class="xref" href="../x/libdrm.html"
-          title="Libdrm-2.4.128">libdrm-2.4.128</a> (for <span class=
+          title="Libdrm-2.4.129">libdrm-2.4.129</a> (for <span class=
           "quote">“<span class="quote">kmsgrab</span>”</span> input),
           <a class="xref" href="../general/libjxl.html" title=
           "libjxl-0.11.1">libjxl-0.11.1</a>, <a class="xref" href=
@@ -268,7 +268,7 @@
           to build:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../ffmpeg-8.0.0-chromium_method-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../ffmpeg-8.0-chromium_method-1.patch</kbd></pre>
         <p>
           Install <span class="application">FFmpeg</span> by running the
           following commands:
@@ -295,7 +295,7 @@
             --enable-libdav1d    \
             --enable-libsvtav1   \
             --ignore-tests=enhanced-flv-av1,enhanced-flv-multitrack \
-            --docdir=/usr/share/doc/ffmpeg-8.0.0 &amp;&amp;
+            --docdir=/usr/share/doc/ffmpeg-8.0 &amp;&amp;
 
 make &amp;&amp;
 
@@ -337,16 +337,16 @@ unset DOCNAME</kbd></pre>
         <pre class="root"><kbd class="command">make install &amp;&amp;
 
 install -v -m755    tools/qt-faststart /usr/bin &amp;&amp;
-install -v -m755 -d           /usr/share/doc/ffmpeg-8.0.0 &amp;&amp;
-install -v -m644    doc/*.txt /usr/share/doc/ffmpeg-8.0.0</kbd></pre>
+install -v -m755 -d           /usr/share/doc/ffmpeg-8.0 &amp;&amp;
+install -v -m644    doc/*.txt /usr/share/doc/ffmpeg-8.0</kbd></pre>
         <p>
           If the PDF and Postscript documentation was built, issue the
           following commands, as the <code class="systemitem">root</code>
           user, to install them:
         </p>
         <pre class="root"><kbd class=
-        "command">install -v -m644 doc/*.pdf /usr/share/doc/ffmpeg-8.0.0 &amp;&amp;
-install -v -m644 doc/*.ps  /usr/share/doc/ffmpeg-8.0.0</kbd></pre>
+        "command">install -v -m644 doc/*.pdf /usr/share/doc/ffmpeg-8.0 &amp;&amp;
+install -v -m644 doc/*.ps  /usr/share/doc/ffmpeg-8.0</kbd></pre>
         <p>
           If you used <span class="command"><strong>doxygen</strong></span>
           to manually create the API documentation, install it by issuing the
@@ -354,10 +354,10 @@ install -v -m644 doc/*.ps  /usr/share/doc/ffmpeg-8.0.0</kbd></pre>
           user:
         </p>
         <pre class="root"><kbd class=
-        "command">install -v -m755 -d /usr/share/doc/ffmpeg-8.0.0/api                     &amp;&amp;
-cp -vr doc/doxy/html/* /usr/share/doc/ffmpeg-8.0.0/api                  &amp;&amp;
-find /usr/share/doc/ffmpeg-8.0.0/api -type f -exec chmod -c 0644 \{} \; &amp;&amp;
-find /usr/share/doc/ffmpeg-8.0.0/api -type d -exec chmod -c 0755 \{} \;</kbd></pre>
+        "command">install -v -m755 -d /usr/share/doc/ffmpeg-8.0/api                     &amp;&amp;
+cp -vr doc/doxy/html/* /usr/share/doc/ffmpeg-8.0/api                  &amp;&amp;
+find /usr/share/doc/ffmpeg-8.0/api -type f -exec chmod -c 0644 \{} \; &amp;&amp;
+find /usr/share/doc/ffmpeg-8.0/api -type d -exec chmod -c 0755 \{} \;</kbd></pre>
         <p>
           To properly test the installation you must have <a class="xref"
           href="../basicnet/rsync.html" title="rsync-3.4.1">rsync-3.4.1</a>
@@ -455,7 +455,7 @@ grep ^TEST ../fate.log | wc -l</kbd></pre>
         <p>
           <code class="option">--enable-libdrm</code>: Use this switch if
           <a class="xref" href="../x/libdrm.html" title=
-          "Libdrm-2.4.128">libdrm-2.4.128</a> is installed to build the
+          "Libdrm-2.4.129">libdrm-2.4.129</a> is installed to build the
           <span class="quote">“<span class="quote">kmsgrab</span>”</span>
           input module which is useful for screen capturing or streaming.
         </p>
@@ -574,7 +574,7 @@ grep ^TEST ../fate.log | wc -l</kbd></pre>
               <span class=
               "segbody">/usr/include/libav{codec,device,filter,format,util},
               /usr/include/libpostproc, /usr/include/libsw{resample,scale},
-              /usr/share/doc/ffmpeg-8.0.0, and /usr/share/ffmpeg</span>
+              /usr/share/doc/ffmpeg-8.0, and /usr/share/ffmpeg</span>
             </div>
           </div>
         </div>
@@ -811,7 +811,7 @@ grep ^TEST ../fate.log | wc -l</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-543">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-556">
           Home</a>
         </li>
       </ul>
