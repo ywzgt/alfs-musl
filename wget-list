@@ -152,6 +152,7 @@ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_2/log4cplus-2.1
 https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
 https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
 https://nodejs.org/dist/v22.20.0/node-v22.20.0.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/node-v22.20.0-python_build_fix-1.patch
 https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
 https://archive.mozilla.org/pub/nspr/releases/v4.38.2/src/nspr-4.38.2.tar.gz
 https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
@@ -624,7 +625,7 @@ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.5.tar.gz
 https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/sendmail-8.18.1-gcc15_fixes-1.patch
 https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.33.tar.bz2
-https://downloads.mariadb.org/interstitial/mariadb-11.8.4/source/mariadb-11.8.4.tar.gz
+https://downloads.mariadb.org/interstitial/mariadb-11.8.5/source/mariadb-11.8.5.tar.gz
 https://ftp.postgresql.org/pub/source/v18.0/postgresql-18.0.tar.bz2
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.10.tgz
 https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.10-consolidated-1.patch
@@ -888,6 +889,7 @@ https://download.documentfoundation.org/libreoffice/src/25.8.1/libreoffice-help-
 https://download.documentfoundation.org/libreoffice/src/25.8.1/libreoffice-translations-25.8.1.1.tar.xz
 https://download.gnome.org/sources/epiphany/48/epiphany-48.5.tar.xz
 https://download.kde.org/stable/release-service/25.08.3/src/falkon-25.08.3.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.4.0esr-ffmpeg-8.0.patch
 https://archive.seamonkey-project.org/releases/2.53.22/source/seamonkey-2.53.22.source.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.22-cxx17-1.patch
 https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
@@ -968,8 +970,8 @@ https://downloads.xiph.org/releases/opus/opus-1.5.2.tar.gz
 https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.9/pipewire-1.4.9.tar.bz2
 https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
 https://www.kernel.org/pub/linux/bluetooth/sbc-2.1.tar.xz
-https://github.com/libsdl-org/sdl12-compat/archive/release-1.2.70/sdl12-compat-release-1.2.70.tar.gz
-https://www.libsdl.org/release/SDL2-2.32.10.tar.gz
+https://www.libsdl.org/release/sdl2-compat-2.32.58.tar.gz
+https://www.libsdl.org/release/SDL3-3.2.26.tar.gz
 https://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2
 https://www.surina.net/soundtouch/soundtouch-2.4.0.tar.gz
 https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
@@ -983,6 +985,7 @@ https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz
 https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-upstream_fixes-1.patch
 https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-gcc15_fixes-1.patch
+https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-ffmpeg8.patch
 https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.gz
 https://distfiles.audacious-media-player.org/audacious-4.5.1.tar.bz2
 https://distfiles.audacious-media-player.org/audacious-plugins-4.5.1.tar.bz2

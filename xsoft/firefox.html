@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-556">
+  <body class="blfs" id="blfs-r12.4-568">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-556
+        "phrase">(systemd</span> Edition) - Version r12.4-568
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-556">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-568">
           Home</a>
         </li>
       </ul>
@@ -113,6 +113,20 @@
             <li class="listitem">
               <p>
                 Estimated build time: 16 SBU using -j8, without tests
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.4.0esr-ffmpeg-8.0.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.4.0esr-ffmpeg-8.0.patch</a>
               </p>
             </li>
           </ul>
@@ -249,6 +263,13 @@
         <h2 class="sect2">
           Installation of Firefox
         </h2>
+        <p>
+          First, apply a patch to fix video functionality with <a class=
+          "xref" href="../multimedia/ffmpeg.html" title=
+          "FFmpeg-8.0">FFmpeg-8.0</a>:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../firefox-140.4.0esr-ffmpeg-8.0.patch</kbd></pre>
         <p>
           The configuration of <span class="application">Firefox</span> is
           accomplished by creating a <code class="filename">mozconfig</code>
@@ -692,7 +713,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-556">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-568">
           Home</a>
         </li>
       </ul>

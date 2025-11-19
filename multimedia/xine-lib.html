@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-556">
+  <body class="blfs" id="blfs-r12.4-568">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-556
+        "phrase">(systemd</span> Edition) - Version r12.4-568
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-556">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-568">
           Home</a>
         </li>
       </ul>
@@ -121,6 +121,11 @@
                 "https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-gcc15_fixes-1.patch">
                 https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-gcc15_fixes-1.patch</a>
               </p>
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-ffmpeg8.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-ffmpeg8.patch</a>
+              </p>
             </li>
           </ul>
         </div>
@@ -176,13 +181,12 @@
           "libvpx.html" title="libvpx-1.15.2">libvpx-1.15.2</a>, <a class=
           "xref" href="../x/mesa.html" title="Mesa-25.2.2">Mesa-25.2.2</a>,
           <a class="xref" href="../basicnet/samba.html" title=
-          "Samba-4.23.3">Samba-4.23.3</a>, <a class="xref" href="sdl.html"
-          title="sdl12-compat-1.2.70">sdl12-compat-1.2.70</a>, <a class=
-          "xref" href="speex.html" title="Speex-1.2.1">Speex-1.2.1</a>,
-          <a class="xref" href="../general/doxygen.html" title=
-          "Doxygen-1.15.0">Doxygen-1.15.0</a> (to create the API
-          documentation), <a class="xref" href="v4l-utils.html" title=
-          "v4l-utils-1.32.0">v4l-utils-1.32.0</a> <a class="ulink" href=
+          "Samba-4.23.3">Samba-4.23.3</a>, <a class="xref" href="speex.html"
+          title="Speex-1.2.1">Speex-1.2.1</a>, <a class="xref" href=
+          "../general/doxygen.html" title="Doxygen-1.15.0">Doxygen-1.15.0</a>
+          (to create the API documentation), <a class="xref" href=
+          "v4l-utils.html" title="v4l-utils-1.32.0">v4l-utils-1.32.0</a>
+          <a class="ulink" href=
           "https://pkgs.fedoraproject.org/repo/pkgs/directfb/">DirectFB</a>,
           <a class="ulink" href=
           "https://www.videolan.org/developers/libbluray.html">libbluray</a>,
@@ -195,8 +199,9 @@
           <a class="ulink" href="https://www.theora.org">libtheora</a>,
           <a class="ulink" href="https://www.musepack.net/">musepack</a>,
           <a class="ulink" href=
-          "https://ftp.gnu.org/gnu/vcdimager/">VCDImager</a>, and <a class=
-          "ulink" href="https://www.wavpack.com/">WavPack</a>,
+          "https://github.com/libsdl-org/sdl12-compat">SDL1</a>, <a class=
+          "ulink" href="https://ftp.gnu.org/gnu/vcdimager/">VCDImager</a>,
+          and <a class="ulink" href="https://www.wavpack.com/">WavPack</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -213,6 +218,11 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../xine-lib-1.2.13-gcc15_fixes-1.patch</kbd></pre>
+        <p>
+          Next, fix building this package with ffmpeg-8:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../xine-lib-1.2.13-ffmpeg8.patch</kbd></pre>
         <p>
           Install <span class="application">Xine Libraries</span> by running
           the following commands:
@@ -395,7 +405,7 @@ install -v -m644    doc/api/* \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-556">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-568">
           Home</a>
         </li>
       </ul>

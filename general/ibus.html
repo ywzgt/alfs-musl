@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-556">
+  <body class="blfs" id="blfs-r12.4-568">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-556
+        "phrase">(systemd</span> Edition) - Version r12.4-568
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-556">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-568">
           Home</a>
         </li>
       </ul>
@@ -149,15 +149,15 @@
           Optional
         </h4>
         <p class="optional">
+          <a class="xref" href="../gnome/gnome-desktop.html" title=
+          "gnome-desktop-44.3">gnome-desktop-44.3</a> (for one test),
           <a class="xref" href="gtk-doc.html" title=
           "GTK-Doc-1.35.1">GTK-Doc-1.35.1</a> (for generating API
-          documentation), <a class="xref" href=
-          "python-modules.html#dbus-python" title="D-Bus Python-1.4.0">D-Bus
-          Python-1.4.0</a> and <a class="xref" href=
-          "python-modules.html#pygobject3" title=
-          "PyGObject-3.54.5">PyGObject-3.54.5</a> (both to build the Python
-          support library), <a class="xref" href="libxkbcommon.html" title=
+          documentation), <a class="xref" href="libxkbcommon.html" title=
           "libxkbcommon-1.13.0">libxkbcommon-1.13.0</a>, <a class="xref"
+          href="python-modules.html#pygobject3" title=
+          "PyGObject-3.54.5">PyGObject-3.54.5</a> (for <span class=
+          "command"><strong>ibus-setup</strong></span>), <a class="xref"
           href="wayland.html" title="Wayland-1.24.0">Wayland-1.24.0</a> (both
           to build the Wayland support programs), <a class="ulink" href=
           "https://www.joypixels.com/">EmojiOne</a>, and <a class="ulink"
@@ -198,7 +198,6 @@ fi</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">SAVE_DIST_FILES=1 NOCONFIGURE=1 ./autogen.sh &amp;&amp;
 
-PYTHON=python3                     \
 ./configure --prefix=/usr          \
             --sysconfdir=/etc      \
             --disable-python2      \
@@ -242,12 +241,6 @@ make</kbd></pre>
           4</span>.
         </p>
         <p>
-          <code class="option">--enable-python-library</code>: This switch
-          enables building the <span class="application">Python</span>
-          support library. Use it if you have installed the optional Python
-          modules.
-        </p>
-        <p>
           <code class="option">--enable-wayland</code>: This switch enables
           building the <span class="application">Wayland</span> support
           programs. It's automatically enabled if both <a class="xref" href=
@@ -268,14 +261,6 @@ make</kbd></pre>
           <span class="command"><strong>configure</strong></span>, but those
           compiler options are not suitable for productive use and they may
           also cause a build failure.
-        </p>
-        <p>
-          <code class="envar">PYTHON=python3</code>: This environment
-          variable makes the <span class=
-          "command"><strong>configure</strong></span> script look for
-          <span class="application">Python 3</span>. Use it if you want to
-          build the <span class="application">Python 3</span> support
-          library.
         </p>
         <p>
           <code class="envar">SAVE_DIST_FILES=1</code>: This environment
@@ -415,7 +400,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-556">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-568">
           Home</a>
         </li>
       </ul>

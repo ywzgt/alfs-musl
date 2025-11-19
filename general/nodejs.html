@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-556">
+  <body class="blfs" id="blfs-r12.4-568">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-556
+        "phrase">(systemd</span> Edition) - Version r12.4-568
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-556">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-568">
           Home</a>
         </li>
       </ul>
@@ -105,6 +105,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/node-v22.20.0-python_build_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/node-v22.20.0-python_build_fix-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Node.js Dependencies
         </h3>
         <h4>
@@ -154,6 +168,11 @@
         <h2 class="sect2">
           Installation of Node.js
         </h2>
+        <p>
+          First, fix building this package with Python 3.14:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../node-v22.20.0-python_build_fix-1.patch</kbd></pre>
         <p>
           Build <span class="application">Node.js</span> by running the
           following commands:
@@ -336,7 +355,7 @@ ln -sf node /usr/share/doc/node-22.20.0</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-556">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-568">
           Home</a>
         </li>
       </ul>
