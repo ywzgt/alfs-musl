@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      NetworkManager-1.54.1
+      NetworkManager-1.54.2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-568">
+  <body class="blfs" id="blfs-r12.4-606">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-568
+        "phrase">(systemd</span> Edition) - Version r12.4-606
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-568">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-606">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="NetworkManager" name="NetworkManager"></a>NetworkManager-1.54.1
+      <a id="NetworkManager" name="NetworkManager"></a>NetworkManager-1.54.2
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -94,13 +94,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.54.1/downloads/NetworkManager-1.54.1.tar.xz">
-                https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.54.1/downloads/NetworkManager-1.54.1.tar.xz</a>
+                "https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.54.2/downloads/NetworkManager-1.54.2.tar.xz">
+                https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.54.2/downloads/NetworkManager-1.54.2.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: f06d954fc89da2bafde389e94741ea61
+                Download MD5 sum: 7b9fccbd69b402fbc93f273ca41b9ee3
               </p>
             </li>
             <li class="listitem">
@@ -110,7 +110,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 328 MB (with tests and
+                Estimated disk space required: 307 MB (with tests and
                 documentation)
               </p>
             </li>
@@ -139,7 +139,7 @@
           <a class="xref" href="curl.html" title=
           "cURL-8.17.0">cURL-8.17.0</a>, <a class="xref" href="dhcpcd.html"
           title="dhcpcd-10.2.4">dhcpcd-10.2.4</a>, <a class="xref" href=
-          "../general/glib2.html" title="GLib-2.86.1">GLib-2.86.1</a> (with
+          "../general/glib2.html" title="GLib-2.86.2">GLib-2.86.2</a> (with
           GObject Introspection), <a class="xref" href=
           "../postlfs/iptables.html" title=
           "iptables-1.8.11">iptables-1.8.11</a>, <a class="xref" href=
@@ -147,8 +147,8 @@
           "xref" href="../general/newt.html" title=
           "newt-0.52.25">newt-0.52.25</a> (for <span class=
           "command"><strong>nmtui</strong></span>), <a class="xref" href=
-          "../postlfs/nss.html" title="NSS-3.117">nss-3.117</a>, <a class=
-          "xref" href="../postlfs/polkit.html" title=
+          "../postlfs/nss.html" title="NSS-3.118.1">nss-3.118.1</a>,
+          <a class="xref" href="../postlfs/polkit.html" title=
           "Polkit-126">Polkit-126</a> (runtime), <a class="xref" href=
           "../general/python-modules.html#pygobject3" title=
           "PyGObject-3.54.5">PyGObject-3.54.5</a>, <span class=
@@ -169,8 +169,9 @@
           "D-Bus Python-1.4.0">D-Bus Python-1.4.0</a> (for the test suite),
           <a class="xref" href="../postlfs/gnutls.html" title=
           "GnuTLS-3.8.10">GnuTLS-3.8.10</a> (can be used instead of <a class=
-          "xref" href="../postlfs/nss.html" title="NSS-3.117">nss-3.117</a>),
-          <a class="xref" href="../general/gtk-doc.html" title=
+          "xref" href="../postlfs/nss.html" title=
+          "NSS-3.118.1">nss-3.118.1</a>), <a class="xref" href=
+          "../general/gtk-doc.html" title=
           "GTK-Doc-1.35.1">GTK-Doc-1.35.1</a>, <a class="xref" href=
           "../general/jansson.html" title=
           "Jansson-2.14.1">jansson-2.14.1</a>, <a class="xref" href=
@@ -308,8 +309,8 @@ ninja</kbd></pre>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">ninja install &amp;&amp;
-rm -rf /usr/share/doc/NetworkManager-1.54.1 &amp;&amp;
-mv -v /usr/share/doc/NetworkManager{,-1.54.1}</kbd></pre>
+rm -rf /usr/share/doc/NetworkManager-1.54.2 &amp;&amp;
+mv -v /usr/share/doc/NetworkManager{,-1.54.2}</kbd></pre>
         <p>
           If you have not passed the <code class="option">-D docs=true</code>
           option to <span class="command"><strong>meson</strong></span>, you
@@ -328,7 +329,7 @@ done</kbd></pre>
           <code class="systemitem">root</code> user):
         </p>
         <pre class="root"><kbd class=
-        "command">cp -Rv ../docs/{api,libnm} /usr/share/doc/NetworkManager-1.54.1</kbd></pre>
+        "command">cp -Rv ../docs/{api,libnm} /usr/share/doc/NetworkManager-1.54.2</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -571,7 +572,7 @@ EOF</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/etc/NetworkManager, /usr/include/libnm,
-              /usr/lib/NetworkManager, /usr/share/doc/NetworkManager-1.54.1,
+              /usr/lib/NetworkManager, /usr/share/doc/NetworkManager-1.54.2,
               /usr/share/gtk-doc/html/{libnm,NetworkManager} (if the
               documentation is built), and /var/lib/NetworkManager</span>
             </div>
@@ -732,7 +733,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-568">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-606">
           Home</a>
         </li>
       </ul>
