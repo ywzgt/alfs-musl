@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-606">
+  <body class="blfs" id="blfs-r12.4-630">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-606
+        "phrase">(systemd</span> Edition) - Version r12.4-630
       </h4>
       <h3>
         Chapter&nbsp;46.&nbsp;Printing
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-606">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-630">
           Home</a>
         </li>
       </ul>
@@ -107,6 +107,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/libcupsfilters-2.1.1-security_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/libcupsfilters-2.1.1-security_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           libcupsfilters Dependencies
         </h3>
         <h4>
@@ -122,7 +136,7 @@
           <a class="xref" href="../general/lcms2.html" title=
           "Little CMS-2.17">Little CMS-2.17</a>, <a class="xref" href=
           "../general/poppler.html" title=
-          "Poppler-25.10.0">Poppler-25.10.0</a>, and <a class="xref" href=
+          "Poppler-25.11.0">Poppler-25.11.0</a>, and <a class="xref" href=
           "../general/qpdf.html" title="Qpdf-12.2.0">Qpdf-12.2.0</a>
         </p>
         <h4>
@@ -145,6 +159,11 @@
         <h2 class="sect2">
           Installation of libcupsfilters
         </h2>
+        <p>
+          First, fix 2 security vulnerabilities:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../libcupsfilters-2.1.1-security_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">libcupsfilters</span> by running
           the following commands:
@@ -253,7 +272,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-606">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-630">
           Home</a>
         </li>
       </ul>
