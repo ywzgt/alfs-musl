@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-664">
+  <body class="blfs" id="blfs-r12.4-674">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-664
+        "phrase">(systemd</span> Edition) - Version r12.4-674
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-664">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-674">
           Home</a>
         </li>
       </ul>
@@ -127,6 +127,13 @@
                 Required patch: <a class="ulink" href=
                 "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.4.0esr-ffmpeg-8.0.patch">
                 https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.4.0esr-ffmpeg-8.0.patch</a>
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.4.0esr-python_3.14_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.4.0esr-python_3.14_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -270,6 +277,11 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../firefox-140.4.0esr-ffmpeg-8.0.patch</kbd></pre>
+        <p>
+          Next, fix building this package with Python 3.14:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../firefox-140.4.0esr-python_3.14_fixes-1.patch</kbd></pre>
         <p>
           The configuration of <span class="application">Firefox</span> is
           accomplished by creating a <code class="filename">mozconfig</code>
@@ -713,7 +725,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-664">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-674">
           Home</a>
         </li>
       </ul>

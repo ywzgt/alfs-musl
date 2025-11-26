@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-664">
+  <body class="blfs" id="blfs-r12.4-674">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-664
+        "phrase">(systemd</span> Edition) - Version r12.4-674
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-664">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-674">
           Home</a>
         </li>
       </ul>
@@ -206,11 +206,12 @@ make</kbd></pre>
           "Net::DNS-1.53">Net-DNS-1.53</a> is not installed. One test,
           <code class="filename">dnssec</code>, is known to fail. The tests
           require the <a class="ulink" href=
-          "https://hypothesis.readthedocs.org/">hypothesis</a> python module,
-          which is not in BLFS. To work around this, the instructions below
-          create a Python virtual environment and then install the module in
-          there before running the tests. To run the tests, as an
-          unprivileged user, execute:
+          "https://hypothesis.readthedocs.org/">hypothesis</a> and <a class=
+          "ulink" href="https://www.dnspython.org/">dnspython</a> Python
+          modules, which are not in BLFS. To work around this, the
+          instructions below create a Python virtual environment and then
+          install the modules in there prior to running the tests. To run the
+          tests, as an unprivileged user, execute:
         </p>
         <pre class="userinput"><kbd class=
         "command">python3 -m venv --system-site-packages testenv &amp;&amp;
@@ -265,7 +266,7 @@ deactivate</kbd></pre>
           <em class="parameter"><code>--system-site-packages</code></em>:
           Allow the <span class="application">Python3</span> venv module to
           access the system-installed <code class=
-          "filename">/usr/lib/python3.13/site-packages</code> directory.
+          "filename">/usr/lib/python3.14/site-packages</code> directory.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -1057,7 +1058,7 @@ dig www.linuxfromscratch.org</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-664">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-674">
           Home</a>
         </li>
       </ul>
