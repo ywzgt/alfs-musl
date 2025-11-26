@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index ddbb5dd86d..7da261d53d 100644
+--- a/wget-list
++++ b/wget-list
+@@ -169,7 +169,7 @@ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+ https://github.com/martinpitt/umockdev/releases/download/0.19.4/umockdev-0.19.4.tar.xz
+ https://github.com/nemtrif/utfcpp/archive/v4.0.8/utfcpp-4.0.8.tar.gz
+ https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.24.0/downloads/wayland-1.24.0.tar.xz
+-https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.45/downloads/wayland-protocols-1.45.tar.xz
++https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.46/downloads/wayland-protocols-1.46.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+ https://oligarchy.co.uk/xapian/1.4.30/xapian-core-1.4.30.tar.xz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+@@ -611,7 +611,7 @@ https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.9.1/libslirp-v4.9.1.t
+ https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.5.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libsoup-3.6.5-upstream_fixes-1.patch
+ https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.7.tar.bz2
+-https://notroj.github.io/neon/neon-0.35.0.tar.gz
++https://notroj.github.io/neon/neon-0.36.0.tar.gz
+ https://github.com/nghttp2/nghttp2/releases/download/v1.68.0/nghttp2-1.68.0.tar.xz
+ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.4.4.tar.xz
+ https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
