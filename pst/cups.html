@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-680">
+  <body class="blfs" id="blfs-r12.4-685">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-680
+        "phrase">(systemd</span> Edition) - Version r12.4-685
       </h4>
       <h3>
         Chapter&nbsp;46.&nbsp;Printing
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-680">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-685">
           Home</a>
         </li>
       </ul>
@@ -101,6 +101,20 @@
             <li class="listitem">
               <p>
                 Estimated build time: 0.4 SBU (Add 1.4 SBU for tests)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/cups-2.4.14-security_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/cups-2.4.14-security_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -245,6 +259,11 @@
           Replace <span class="command"><strong>firefox</strong></span> with
           the web browser of your choice.
         </p>
+        <p>
+          Fix 2 security vulnerabilities identified upstream:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../cups-2.4.14-security_fixes-1.patch</kbd></pre>
         <p>
           Build <span class="application">Cups</span> by running the
           following commands:
@@ -897,7 +916,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-680">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-685">
           Home</a>
         </li>
       </ul>

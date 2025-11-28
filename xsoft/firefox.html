@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Firefox-140.4.0esr
+      Firefox-140.5.0esr
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-680">
+  <body class="blfs" id="blfs-r12.4-685">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-680
+        "phrase">(systemd</span> Edition) - Version r12.4-685
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-680">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-685">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="firefox" name="firefox"></a>Firefox-140.4.0esr
+      <a id="firefox" name="firefox"></a>Firefox-140.5.0esr
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -90,29 +90,29 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://archive.mozilla.org/pub/firefox/releases/140.4.0esr/source/firefox-140.4.0esr.source.tar.xz">
-                https://archive.mozilla.org/pub/firefox/releases/140.4.0esr/source/firefox-140.4.0esr.source.tar.xz</a>
+                "https://archive.mozilla.org/pub/firefox/releases/140.5.0esr/source/firefox-140.5.0esr.source.tar.xz">
+                https://archive.mozilla.org/pub/firefox/releases/140.5.0esr/source/firefox-140.5.0esr.source.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 2a65419433afc5e1e9876078d857dceb
+                Download MD5 sum: c9b54b9d49c18146a3aada80bc8de65f
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 610 MB
+                Download size: 608 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 7.7 GB (233 MB installed)
+                Estimated disk space required: 7.7 GB (232 MB installed)
                 without tests
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 16 SBU using -j8, without tests
+                Estimated build time: 15 SBU using -j8, without tests
               </p>
             </li>
           </ul>
@@ -125,15 +125,15 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.4.0esr-ffmpeg-8.0.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.4.0esr-ffmpeg-8.0.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.5.0esr-ffmpeg-8.0.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.5.0esr-ffmpeg-8.0.patch</a>
               </p>
             </li>
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.4.0esr-python_3.14_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.4.0esr-python_3.14_fixes-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.5.0esr-python_3.14_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.5.0esr-python_3.14_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -144,7 +144,7 @@
             Note
           </h3>
           <p>
-            The directory name is firefox-140.4.0
+            The directory name is firefox-140.5.0
           </p>
           <p>
             Extracting the tarball will reset the permissions of the current
@@ -198,7 +198,7 @@
           "../general/llvm.html" title="LLVM-21.1.2">LLVM-21.1.2</a> (with
           clang, used for bindgen even if using gcc), <a class="xref" href=
           "../general/nodejs.html" title=
-          "Node.js-22.20.0">nodejs-22.20.0</a>, <a class="xref" href=
+          "Node.js-22.21.1">nodejs-22.21.1</a>, <a class="xref" href=
           "../multimedia/pulseaudio.html" title=
           "PulseAudio-17.0">PulseAudio-17.0</a> (or <a class="xref" href=
           "../multimedia/alsa-lib.html" title=
@@ -276,12 +276,12 @@
           "FFmpeg-8.0.1">FFmpeg-8.0.1</a>:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../firefox-140.4.0esr-ffmpeg-8.0.patch</kbd></pre>
+        "command">patch -Np1 -i ../firefox-140.5.0esr-ffmpeg-8.0.patch</kbd></pre>
         <p>
           Next, fix building this package with Python 3.14:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../firefox-140.4.0esr-python_3.14_fixes-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../firefox-140.5.0esr-python_3.14_fixes-1.patch</kbd></pre>
         <p>
           The configuration of <span class="application">Firefox</span> is
           accomplished by creating a <code class="filename">mozconfig</code>
@@ -397,10 +397,6 @@ EOF</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">sed -i '/VIRAMA = 47/a CLASS_CHARACTER,' intl/lwbrk/LineBreaker.cpp</kbd></pre>
         <p>
-          Compile <span class="application">Firefox</span> by issuing the
-          following commands:
-        </p>
-        <p>
           If the geolocation APIs are needed:
         </p>
         <div class="admon note">
@@ -437,9 +433,8 @@ EOF</kbd></pre>
           "command">mountpoint -q /dev/shm || mount -t tmpfs devshm /dev/shm</kbd></pre>
         </div>
         <p>
-          Now invoke the Python <span class=
-          "command"><strong>mach</strong></span> script to compile the
-          package.
+          Compile <span class="application">Firefox</span> by issuing the
+          following commands:
         </p>
         <pre class="userinput"><kbd class=
         "command">export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none &amp;&amp;
@@ -725,7 +720,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-680">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-685">
           Home</a>
         </li>
       </ul>
