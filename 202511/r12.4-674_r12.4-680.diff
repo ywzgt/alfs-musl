@@ -1,0 +1,24 @@
+diff --git a/wget-list b/wget-list
+index cb857ac66a..a847121c11 100644
+--- a/wget-list
++++ b/wget-list
+@@ -654,8 +654,8 @@ https://invisible-mirror.net/archives/luit/luit-20250912.tgz
+ https://www.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
+ https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.46.tar.xz
+ https://www.x.org/pub/individual/xserver/xwayland-24.1.9.tar.xz
+-https://www.x.org/pub/individual/xserver/xorg-server-21.1.20.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.20-tearfree_backport-1.patch
++https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.21-tearfree_backport-1.patch
+ https://www.freedesktop.org/software/libevdev/libevdev-1.13.5.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-evdev-2.11.0.tar.xz
+ https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.29.2/libinput-1.29.2.tar.gz
+@@ -869,7 +869,7 @@ https://github.com/lxde/menu-cache/archive/1.1.1/menu-cache-1.1.1.tar.gz
+ https://github.com/lxqt/libfm-qt/releases/download/2.3.0/libfm-qt-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-globalkeys/releases/download/2.3.0/lxqt-globalkeys-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-qtplugin/releases/download/2.3.0/lxqt-qtplugin-2.3.0.tar.xz
+-https://github.com/lxqt/lxqt-panel/releases/download/2.3.0/lxqt-panel-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-panel/releases/download/2.3.1/lxqt-panel-2.3.1.tar.xz
+ https://github.com/lxqt/pcmanfm-qt/releases/download/2.3.0/pcmanfm-qt-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-powermanagement/releases/download/2.3.0/lxqt-powermanagement-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-runner/releases/download/2.3.0/lxqt-runner-2.3.0.tar.xz
