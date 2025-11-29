@@ -1,0 +1,67 @@
+diff --git a/wget-list b/wget-list
+index a847121c11..9b763c0075 100644
+--- a/wget-list
++++ b/wget-list
+@@ -151,8 +151,8 @@ https://github.com/pantoniou/libfyaml/releases/download/v0.9/libfyaml-0.9.tar.gz
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_2/log4cplus-2.1.2.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
+-https://nodejs.org/dist/v22.20.0/node-v22.20.0.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/node-v22.20.0-python_build_fix-1.patch
++https://nodejs.org/dist/v22.21.1/node-v22.21.1.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/node-v22.21.1-python_build_fix-1.patch
+ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.38.2/src/nspr-4.38.2.tar.gz
+ https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
+@@ -160,8 +160,8 @@ https://github.com/protocolbuffers/protobuf/releases/download/v33.1/protobuf-33.
+ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
+ https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
+-https://archive.mozilla.org/pub/firefox/releases/140.4.0esr/source/firefox-140.4.0esr.source.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.4.0-python_3_14_fixes-1.patch
++https://archive.mozilla.org/pub/firefox/releases/140.5.0esr/source/firefox-140.5.0esr.source.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.5.0-python_3.14_fixes-1.patch
+ https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.328.1/SPIRV-Headers-vulkan-sdk-1.4.328.1.tar.gz
+ https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.328.1/SPIRV-Tools-vulkan-sdk-1.4.328.1.tar.gz
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v21.1.2/SPIRV-LLVM-Translator-21.1.2.tar.gz
+@@ -200,8 +200,8 @@ https://downloads.sourceforge.net/libjpeg-turbo/libjpeg-turbo-3.0.1.tar.gz
+ https://github.com/libjxl/libjxl/archive/v0.11.1/libjxl-0.11.1.tar.gz
+ https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
+ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz
+-https://downloads.sourceforge.net/libpng/libpng-1.6.50.tar.xz
+-https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.47-apng.patch.gz
++https://downloads.sourceforge.net/libpng/libpng-1.6.51.tar.xz
++https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.51-apng.patch.gz
+ https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
+ https://www.libraw.org/data/LibRaw-0.21.4.tar.gz
+ https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.3.tar.xz
+@@ -898,8 +898,8 @@ https://download.documentfoundation.org/libreoffice/src/25.8.3/libreoffice-help-
+ https://download.documentfoundation.org/libreoffice/src/25.8.3/libreoffice-translations-25.8.3.2.tar.xz
+ https://download.gnome.org/sources/epiphany/48/epiphany-48.5.tar.xz
+ https://download.kde.org/stable/release-service/25.08.3/src/falkon-25.08.3.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.4.0esr-ffmpeg-8.0.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.4.0esr-python_3.14_fixes-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.5.0esr-ffmpeg-8.0.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.5.0esr-python_3.14_fixes-1.patch
+ https://archive.seamonkey-project.org/releases/2.53.22/source/seamonkey-2.53.22.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.22-cxx17-1.patch
+ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+@@ -912,8 +912,8 @@ https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
+ https://inkscape.org/gallery/item/56344/inkscape-1.4.2.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.2-poppler_fixes-5.patch
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/140.4.0esr/source/thunderbird-140.4.0esr.source.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.4.0esr-python_3.14_fixes-1.patch
++https://archive.mozilla.org/pub/thunderbird/releases/140.5.0esr/source/thunderbird-140.5.0esr.source.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.5.0esr-python_3.14_fixes-1.patch
+ https://github.com/TigerVNC/tigervnc/archive/v1.15.0/tigervnc-1.15.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.15.0-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz
+@@ -1024,6 +1024,7 @@ https://files.libburnia-project.org/releases/libburn-1.5.6.tar.gz
+ https://files.libburnia-project.org/releases/libisoburn-1.5.6.tar.gz
+ https://files.libburnia-project.org/releases/libisofs-1.5.6.tar.gz
+ https://github.com/OpenPrinting/cups/releases/download/v2.4.14/cups-2.4.14-source.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/cups-2.4.14-security_fixes-1.patch
+ https://github.com/OpenPrinting/cups-browsed/releases/download/2.1.1/cups-browsed-2.1.1.tar.xz
+ https://github.com/OpenPrinting/cups-filters/releases/download/2.0.1/cups-filters-2.0.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/cups-filters-2.0.1-security_fix-1.patch
