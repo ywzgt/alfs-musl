@@ -1,0 +1,32 @@
+diff --git a/wget-list b/wget-list
+index 9b763c0075..33ac4990d9 100644
+--- a/wget-list
++++ b/wget-list
+@@ -124,7 +124,7 @@ https://github.com/linux-nvme/libnvme/archive/v1.16.1/libnvme-1.16.1.tar.gz
+ https://github.com/rrthomas/libpaper/releases/download/v2.2.6/libpaper-2.2.6.tar.gz
+ https://github.com/flatpak/libportal/releases/download/0.9.1/libportal-0.9.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libportal-0.9.1-qt6.9_fixes-1.patch
+-https://github.com/libproxy/libproxy/archive/0.5.11/libproxy-0.5.11.tar.gz
++https://github.com/libproxy/libproxy/archive/0.5.12/libproxy-0.5.12.tar.gz
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+ https://github.com/Qalculate/libqalculate/releases/download/v5.8.2/libqalculate-5.8.2.tar.gz
+ https://gitlab.freedesktop.org/mobile-broadband/libqmi/-/archive/1.36.0/libqmi-1.36.0.tar.gz
+@@ -866,7 +866,7 @@ https://github.com/lxqt/libsysstat/releases/download/1.1.0/libsysstat-1.1.0.tar.
+ https://github.com/lxqt/qtxdg-tools/releases/download/4.3.0/qtxdg-tools-4.3.0.tar.xz
+ https://downloads.sourceforge.net/pcmanfm/libfm-1.3.2.tar.xz
+ https://github.com/lxde/menu-cache/archive/1.1.1/menu-cache-1.1.1.tar.gz
+-https://github.com/lxqt/libfm-qt/releases/download/2.3.0/libfm-qt-2.3.0.tar.xz
++https://github.com/lxqt/libfm-qt/releases/download/2.3.1/libfm-qt-2.3.1.tar.xz
+ https://github.com/lxqt/lxqt-globalkeys/releases/download/2.3.0/lxqt-globalkeys-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-qtplugin/releases/download/2.3.0/lxqt-qtplugin-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-panel/releases/download/2.3.1/lxqt-panel-2.3.1.tar.xz
+@@ -1023,8 +1023,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/dvd+rw-tools-7.1-consolidated_
+ https://files.libburnia-project.org/releases/libburn-1.5.6.tar.gz
+ https://files.libburnia-project.org/releases/libisoburn-1.5.6.tar.gz
+ https://files.libburnia-project.org/releases/libisofs-1.5.6.tar.gz
+-https://github.com/OpenPrinting/cups/releases/download/v2.4.14/cups-2.4.14-source.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/cups-2.4.14-security_fixes-1.patch
++https://github.com/OpenPrinting/cups/releases/download/v2.4.15/cups-2.4.15-source.tar.gz
+ https://github.com/OpenPrinting/cups-browsed/releases/download/2.1.1/cups-browsed-2.1.1.tar.xz
+ https://github.com/OpenPrinting/cups-filters/releases/download/2.0.1/cups-filters-2.0.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/cups-filters-2.0.1-security_fix-1.patch
