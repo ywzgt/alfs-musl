@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-688">
+  <body class="blfs" id="blfs-r12.4-697">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-688
+        "phrase">(systemd</span> Edition) - Version r12.4-697
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-688">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-697">
           Home</a>
         </li>
       </ul>
@@ -108,6 +108,13 @@
         </h3>
         <div class="itemizedlist">
           <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/opencv-4.12.0=ffmpeg8-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/opencv-4.12.0=ffmpeg8-1.patch</a>
+              </p>
+            </li>
             <li class="listitem">
               <p>
                 Optional additional modules: <a class="ulink" href=
@@ -206,6 +213,12 @@
         <h2 class="sect2">
           Installation of opencv
         </h2>
+        <p>
+          First, apply a patch to make the package compatible with
+          <span class="application">ffmpeg-8</span>:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../opencv-4.12.0-ffmpeg8-1.patch</kbd></pre>
         <p>
           If you downloaded the optional modules, unpack them now:
         </p>
@@ -355,7 +368,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-688">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-697">
           Home</a>
         </li>
       </ul>
