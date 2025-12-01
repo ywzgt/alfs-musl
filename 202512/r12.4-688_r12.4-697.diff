@@ -1,0 +1,75 @@
+diff --git a/wget-list b/wget-list
+index 33ac4990d9..416db1e858 100644
+--- a/wget-list
++++ b/wget-list
+@@ -90,7 +90,7 @@ https://download.gnome.org/sources/glibmm/2.86/glibmm-2.86.0.tar.xz
+ https://github.com/jstedfast/gmime/releases/download/3.2.15/gmime-3.2.15.tar.xz
+ https://github.com/lfs-book/gmmlib/archive/v22.8.2/gmmlib-22.8.2.tar.gz
+ https://ftp.gnu.org/gnu/gsl/gsl-2.8.tar.gz
+-https://download.gnome.org/sources/gspell/1.14/gspell-1.14.0.tar.xz
++https://download.gnome.org/sources/gspell/1.14/gspell-1.14.2.tar.xz
+ https://github.com/google/highway/archive/1.3.0/highway-1.3.0.tar.gz
+ https://github.com/unicode-org/icu/releases/download/release-78.1/icu4c-78.1-sources.tgz
+ https://github.com/benhoyt/inih/archive/r62/inih-r62.tar.gz
+@@ -102,7 +102,7 @@ https://pagure.io/libaio/archive/libaio-0.3.113/libaio-0.3.113.tar.gz
+ https://github.com/libarchive/libarchive/releases/download/v3.8.3/libarchive-3.8.3.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2
+ https://0pointer.de/public/libatasmart-0.19.tar.xz
+-https://github.com/bdwgc/libatomic_ops/releases/download/v7.8.4/libatomic_ops-7.8.4.tar.gz
++https://github.com/bdwgc/libatomic_ops/releases/download/v7.10.0/libatomic_ops-7.10.0.tar.gz
+ https://github.com/storaged-project/libblockdev/releases/download/3.4.0/libblockdev-3.4.0.tar.gz
+ https://github.com/storaged-project/libbytesize/releases/download/2.11/libbytesize-2.11.tar.gz
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.2/libclc-21.1.2.src.tar.xz
+@@ -211,6 +211,7 @@ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1
+ https://github.com/mypaint/mypaint-brushes/releases/download/v1.3.1/mypaint-brushes-1.3.1.tar.xz
+ https://releases.pagure.org/newt/newt-0.52.25.tar.gz
+ https://github.com/opencv/opencv/archive/4.12.0/opencv-4.12.0.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/opencv-4.12.0=ffmpeg8-1.patch
+ https://github.com/opencv/opencv_contrib/archive/4.12.0/opencv_contrib-4.12.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.4/openjpeg-2.5.4.tar.gz
+ https://www.cairographics.org/releases/pixman-0.46.4.tar.gz
+@@ -227,7 +228,7 @@ https://downloads.sourceforge.net/bogofilter/bogofilter-1.2.5.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
+ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.3.tar.gz
+-https://github.com/google/shaderc/archive/v2025.4/shaderc-2025.4.tar.gz
++https://github.com/google/shaderc/archive/v2025.5/shaderc-2025.5.tar.gz
+ https://gitlab.com/graphviz/graphviz/-/archive/14.0.4/graphviz-14.0.4.tar.bz2
+ https://download.gnome.org/sources/gtk-doc/1.35/gtk-doc-1.35.1.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.18.tar.bz2
+@@ -281,7 +282,7 @@ https://sysstat.github.io/sysstat-packages/sysstat-12.7.8.tar.xz
+ https://github.com/systemd/systemd/archive/v258.1/systemd-258.1.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.11.0/udisks-2.11.0.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-7.2.2.tar.gz
+-https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.10/upower-v1.90.10.tar.bz2
++https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.0/upower-v1.91.0.tar.bz2
+ https://ftp.gnu.org/gnu/which/which-2.23.tar.gz
+ https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz
+ https://downloads.sourceforge.net/infozip/zip30.tar.gz
+@@ -630,7 +631,7 @@ https://downloads.isc.org/isc/kea/3.0.1/kea-3.0.1.tar.xz
+ https://github.com/proftpd/proftpd/archive/v1.3.9/proftpd-1.3.9.tar.gz
+ https://www.dovecot.org/releases/2.4/dovecot-2.4.2.tar.gz
+ https://ftp.exim.org/pub/exim/exim4/exim-4.99.tar.xz
+-https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.5.tar.gz
++https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.6.tar.gz
+ https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/sendmail-8.18.1-gcc15_fixes-1.patch
+ https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.33.tar.bz2
+@@ -638,7 +639,7 @@ https://downloads.mariadb.org/interstitial/mariadb-11.8.5/source/mariadb-11.8.5.
+ https://ftp.postgresql.org/pub/source/v18.1/postgresql-18.1.tar.bz2
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.10.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.10-consolidated-1.patch
+-https://nlnetlabs.nl/downloads/unbound/unbound-1.24.1.tar.gz
++https://nlnetlabs.nl/downloads/unbound/unbound-1.24.2.tar.gz
+ https://www.x.org/pub/individual/util/util-macros-1.20.2.tar.xz
+ https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2024.1.tar.xz
+ https://www.x.org/pub/individual/lib/libXau-1.0.12.tar.xz
+@@ -658,7 +659,7 @@ https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.21-tearfree_backport-1.patch
+ https://www.freedesktop.org/software/libevdev/libevdev-1.13.5.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-evdev-2.11.0.tar.xz
+-https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.29.2/libinput-1.29.2.tar.gz
++https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.30.0/libinput-1.30.0.tar.gz
+ https://www.x.org/pub/individual/driver/xf86-input-libinput-1.5.0.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-synaptics-1.10.0.tar.xz
+ https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-1.2.4/xf86-input-wacom-1.2.4.tar.bz2
