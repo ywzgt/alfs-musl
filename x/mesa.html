@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-699">
+  <body class="blfs" id="blfs-r12.4-707">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-699
+        "phrase">(systemd</span> Edition) - Version r12.4-707
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-699">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-707">
           Home</a>
         </li>
       </ul>
@@ -59,6 +59,26 @@
           <span class="application">Mesa</span> contains several libraries
           and drivers for multiple APIs like OpenGL and Vulkan.
         </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            This package provides OpenGL libraries like <code class=
+            "filename">libGL.so</code>. Packages and binaries outside of
+            BLFS, like AppImages, can have trouble with both building and
+            running on systems with OpenGL libraries installed from this
+            package. If you find that you cannot build or run a given package
+            or binary, then install the GLFS package <a class="ulink" href=
+            "https://glfs-book.github.io/glfs/shareddeps/libglvnd.html">libglvnd</a>.
+            It provides OpenGL libraries of its own and allows using drivers
+            outside of BLFS. You will have to rebuild many packages using
+            OpenGL in order to allow packages to use <span class=
+            "application">libglvnd</span>. Doing this is not supported by the
+            BLFS editors.
+          </p>
+        </div>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -299,8 +319,10 @@
           than 300 extra demos to test <span class="application">Mesa</span>;
           this includes the same programs added by the patch above),
           <a class="ulink" href="https://omxil.sourceforge.net/">Bellagio
-          OpenMAX Integration Layer</a> (for mobile platforms), and <a class=
+          OpenMAX Integration Layer</a> (for mobile platforms), <a class=
           "ulink" href=
+          "https://glfs-book.github.io/glfs/shareddeps/libglvnd.html">libglvnd</a>
+          (provides OpenGL libraries), and <a class="ulink" href=
           "https://github.com/tizonia/tizonia-openmax-il/wiki/Tizonia-OpenMAX-IL/">
           libtizonia</a>
         </p>
@@ -936,7 +958,7 @@ ninja test</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-699">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-707">
           Home</a>
         </li>
       </ul>
