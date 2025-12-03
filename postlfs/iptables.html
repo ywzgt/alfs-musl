@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-707">
+  <body class="blfs" id="blfs-r12.4-716">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-707
+        "phrase">(systemd</span> Edition) - Version r12.4-716
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-707">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-716">
           Home</a>
         </li>
       </ul>
@@ -147,12 +147,16 @@
         &lt;*/M&gt; N<span class=
 "blue">e</span>tfilter Xtables support (required for ip_tables)
                                                         ...  [NETFILTER_XTABLES]
+        [*]     N<span class=
+"blue">e</span>tfilter legacy tables support       [NETFILTER_XTABLES_LEGACY]
         &lt;*/M&gt;   <span class=
 "blue">L</span>OG target support                     [NETFILTER_XT_TARGET_LOG]
       <span class="blue">I</span>P: Netfilter Configuration ---&gt;
         &lt;*/M&gt; <span class=
 "blue">I</span>P tables support (required for filtering/masq/NAT)
-                                                           ...  [IP_NF_IPTABLES]</pre>
+                                                           ...  [IP_NF_IPTABLES]
+        &lt;*/M&gt;   <span class=
+"blue">i</span>ptables NAT support                                 [IP_NF_NAT]</pre>
         <p>
           Include any connection tracking protocols that will be used, as
           well as any protocols that you wish to use for match support under
@@ -919,7 +923,7 @@ iptables -A INPUT -i WAN1 -s 192.168.0.0/16 -j DROP</code></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-707">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-716">
           Home</a>
         </li>
       </ul>
