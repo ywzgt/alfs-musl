@@ -265,7 +265,7 @@ http://fcron.free.fr/archives/fcron-3.4.0.src.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/gpm/gpm-1.20.7.tar.bz2
 https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch
 https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-gcc15_fixes-1.patch
-https://github.com/vcrhonek/hwdata/archive/v0.401/hwdata-0.401.tar.gz
+https://github.com/vcrhonek/hwdata/archive/v0.402/hwdata-0.402.tar.gz
 https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
 https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
 http://ftp.midnight-commander.org/mc-4.8.33.tar.xz
@@ -473,7 +473,7 @@ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
 https://files.pythonhosted.org/packages/source/b/build/build-1.3.0.tar.gz
 https://github.com/psf/cachecontrol/archive/v0.14.4/cachecontrol-0.14.4.tar.gz
 https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.3.0.tar.gz
-https://github.com/cython/cython/releases/download/3.2.1/cython-3.2.1.tar.gz
+https://github.com/cython/cython/releases/download/3.2.2/cython-3.2.2.tar.gz
 https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.37.1.tar.gz
 https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.4.0.tar.xz
 https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.22.3.tar.gz
@@ -505,7 +505,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/requests-use_system_certs-1.pa
 https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
 https://github.com/getsentry/sentry-python/releases/download/2.35.0/sentry_sdk-2.35.0.tar.gz
 https://files.pythonhosted.org/packages/source/s/six/six-1.17.0.tar.gz
-https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-8.2.3.tar.gz
+https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-9.0.0.tar.gz
 https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-3.0.2.tar.gz
 https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-1.0.0.tar.gz
 https://files.pythonhosted.org/packages/source/a/attrs/attrs-25.4.0.tar.gz
@@ -678,7 +678,7 @@ https://github.com/fltk/fltk/releases/download/release-1.4.4/fltk-1.4.4-docs-htm
 https://downloads.sourceforge.net/freeglut/freeglut-3.8.0.tar.gz
 https://download.gnome.org/sources/gdk-pixbuf/2.44/gdk-pixbuf-2.44.4.tar.xz
 https://downloads.sourceforge.net/glew/glew-2.2.0.tgz
-https://github.com/KhronosGroup/glslang/archive/16.0.0/glslang-16.0.0.tar.gz
+https://github.com/KhronosGroup/glslang/archive/16.1.0/glslang-16.1.0.tar.gz
 https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
 https://download.gnome.org/sources/goffice/0.10/goffice-0.10.59.tar.xz
 https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
@@ -920,7 +920,7 @@ https://github.com/transmission/transmission/releases/download/4.0.6/transmissio
 https://www.linuxfromscratch.org/patches/blfs/svn/transmission-4.0.6-build_fix-1.patch
 https://github.com/ib/xarchiver/archive/0.5.4.26/xarchiver-0.5.4.26.tar.gz
 https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz
-https://www.jwz.org/xscreensaver/xscreensaver-6.12.tar.gz
+https://www.jwz.org/xscreensaver/xscreensaver-6.13.tar.gz
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.14.tar.bz2
 https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-1.2.14.tar.bz2
 https://www.alsa-project.org/files/pub/plugins/alsa-plugins-1.2.12.tar.bz2
@@ -934,15 +934,15 @@ https://github.com/lfs-book/faac/archive/v1.31.1/faac-1.31.1.tar.gz
 https://github.com/knik0/faad2/archive/2.11.2/faad2-2.11.2.tar.gz
 https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
 https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
-https://github.com/dyne/frei0r/archive/v2.5.0/frei0r-2.5.0.tar.gz
+https://github.com/dyne/frei0r/archive/v2.5.1/frei0r-v2.5.1.tar.gz
 https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
-https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.8.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.8.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.8.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.26.8.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.26.8.tar.xz
-https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.8/gst-plugins-rs-gstreamer-1.26.8.tar.gz
-https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.26.8.tar.xz
+https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.9.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.9.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.9.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.26.9.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.26.9.tar.xz
+https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.9/gst-plugins-rs-gstreamer-1.26.9.tar.gz
+https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.26.9.tar.xz
 https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
 https://github.com/lfs-book/intel-media-driver/archive/v25.3.4/intel-media-driver-25.3.4.tar.gz
@@ -1061,7 +1061,7 @@ https://pagure.io/xmlto/archive/0.0.29/xmlto-0.0.29.tar.gz
 https://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/epdfview-gtk3/epdfview-gtk3-20200814.tar.xz
 https://archive.apache.org/dist/xmlgraphics/fop/source/fop-2.11-src.tar.gz
-https://www.mupdf.com/downloads/archive/mupdf-1.26.11-source.tar.gz
+https://www.mupdf.com/downloads/archive/mupdf-1.26.12-source.tar.gz
 https://github.com/dov/paps/releases/download/v0.8.0/paps-0.8.0.tar.gz
 https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-source.tar.xz
