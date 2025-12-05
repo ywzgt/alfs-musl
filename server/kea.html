@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Kea 3.0.1 DHCP Server
+      Kea 3.0.2 DHCP Server
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-723">
+  <body class="blfs" id="blfs-r12.4-737">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-723
+        "phrase">(systemd</span> Edition) - Version r12.4-737
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-723">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-737">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="kea" name="kea"></a>Kea 3.0.1 DHCP Server
+      <a id="kea" name="kea"></a>Kea 3.0.2 DHCP Server
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,12 +77,12 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://downloads.isc.org/isc/kea/3.0.1/kea-3.0.1.tar.xz">https://downloads.isc.org/isc/kea/3.0.1/kea-3.0.1.tar.xz</a>
+                "https://downloads.isc.org/isc/kea/3.0.2/kea-3.0.2.tar.xz">https://downloads.isc.org/isc/kea/3.0.2/kea-3.0.2.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: fc0e6d43f0afbab9e2abc458bded16ac
+                Download MD5 sum: a673e95637b708b3b1926c696cdf168b
               </p>
             </li>
             <li class="listitem">
@@ -92,13 +92,13 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 1.5 GB (332 MB installed; add
-                4 GB for tests)
+                Estimated disk space required: 231 MB (47 MB installed; add
+                425 MB for tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 4.1 SBU (with parallelism=4; add 12 SBU
+                Estimated build time: 6.4 SBU (with parallelism=4; add 17 SBU
                 for tests)
               </p>
             </li>
@@ -120,17 +120,29 @@
           Optional
         </h4>
         <p class="optional">
-          <a class="ulink" href="https://botan.randombit.net/">botan</a>,
           <a class="xref" href="../postlfs/mitkrb.html" title=
           "MIT Kerberos V5-1.22.1">MIT Kerberos V5-1.22.1</a>, <a class=
           "xref" href="../general/valgrind.html" title=
-          "Valgrind-3.26.0">Valgrind-3.26.0</a>; for documentation: <a class=
-          "xref" href="../general/doxygen.html" title=
+          "Valgrind-3.26.0">Valgrind-3.26.0</a>, <a class="ulink" href=
+          "https://botan.randombit.net/">botan</a>, <a class="ulink" href=
+          "https://cppcheck.sourceforge.io/">cppcheck</a>, <a class="ulink"
+          href="https://github.com/CESNET/libyang">libyang</a>, and <a class=
+          "ulink" href="https://plantuml.com/">plantuml</a>
+        </p>
+        <h4>
+          Optional (for regenerating documentation)
+        </h4>
+        <p class="optional">
+          <a class="xref" href="../general/doxygen.html" title=
           "Doxygen-1.15.0">Doxygen-1.15.0</a>, <a class="xref" href=
           "../general/graphviz.html" title=
-          "Graphviz-14.0.5">Graphviz-14.0.5</a>, and <a class="xref" href=
+          "Graphviz-14.0.5">Graphviz-14.0.5</a>, <a class="xref" href=
           "../general/python-modules.html#sphinx_rtd_theme" title=
-          "Sphinx_rtd_theme-3.0.2">sphinx_rtd_theme-3.0.2</a>
+          "Sphinx_rtd_theme-3.0.2">sphinx_rtd_theme-3.0.2</a>, and <a class=
+          "xref" href="../pst/texlive.html" title=
+          "texlive-20250308-source">texlive-20250308</a> (or <a class="xref"
+          href="../pst/tl-installer.html" title=
+          "install-tl-unx">install-tl-unx</a>)
         </p>
         <h4>
           Optional database backends
@@ -195,6 +207,7 @@ ninja</kbd></pre>
           If tests were enabled, run <span class="command"><strong>ninja
           test</strong></span> to test the results. There are tests which
           require a live database when any of the database hooks are built.
+          Some tests may fail if IPv6 support is not functional.
         </p>
         <p>
           To install the <span class="application">ISC Kea DHCP Server</span>
@@ -223,7 +236,7 @@ install -dm0750 /var/log/kea</kbd></pre>
           <code class="option">-D crypto=openssl</code>: Allows using OpenSSL
           for communicating with the control-agent and for DNS updates. Use
           <code class="option">-D crypto=botan</code> if you want to use
-          botan. Default is openssl.
+          botan. The default provider is openssl.
         </p>
         <p>
           <code class="option">-D postgresql=enabled</code> or <code class=
@@ -235,8 +248,9 @@ install -dm0750 /var/log/kea</kbd></pre>
         </p>
         <p>
           <code class="option">-D tests=enabled</code>: This option is
-          required to build the test suite. Drop it if you are not going to
-          run the tests.
+          required to build the test suite. Using this option causes the
+          build size to increase significantly, so it should only be enabled
+          if you are going to run the test suite.
         </p>
         <p>
           <code class="option">-D krb5=enabled</code>: This switch enables
@@ -260,26 +274,27 @@ install -dm0750 /var/log/kea</kbd></pre>
         </p>
         <p>
           Consult the <a class="ulink" href=
-          "https://kea.readthedocs.io/en/kea-3.0.1/">Kea Administrator
+          "https://kea.readthedocs.io/en/kea-3.0.2/">Kea Administrator
           Reference Manual</a> for detailed information about the
           configuration of <span class="application">ISC Kea</span> as it is
           a quite capable system. The configuration shown below is a bare
           minimum to get a DHCP server running but it already includes
-          configuration for DDNS (Dynamic DNS). That setup might be working
-          for small networks with a few clients and low traffic. For greater
-          installations with thousands of clients, <span class=
+          configuration for DDNS (Dynamic DNS). That setup is best for small
+          networks with a few clients and low amounts of network traffic. For
+          larger installations with thousands of clients, <span class=
           "application">ISC Kea</span> can be configured to use databases
-          (mariadb or postgresql) to store the leases and build a cluster
-          with multiple nodes. It can be integrated to <a class="ulink" href=
-          "https://www.isc.org/categories/stork/">ISC Stork</a> which is a
-          management dashboard to <span class="application">ISC Kea</span>.
+          such as (mariadb or postgresql) to store the leases and build a
+          cluster with multiple nodes. It can be integrated with <a class=
+          "ulink" href="https://www.isc.org/categories/stork/">ISC Stork</a>,
+          which is a management dashboard to <span class="application">ISC
+          Kea</span>.
         </p>
         <p>
           If you want to start the DHCP Server at boot, install the
           <span class="phrase"><code class=
           "filename">kea-dhcpd.service</code> unit</span> included in the
           <a class="xref" href="../introduction/systemd-units.html" title=
-          "BLFS Systemd Units">blfs-systemd-units-20241211</a> package:
+          "BLFS Systemd Units">blfs-systemd-units-20251204</a> package:
         </p>
         <pre class="root"><kbd class=
         "command">make install-kea-dhcpd</kbd></pre>
@@ -353,8 +368,9 @@ install -dm0750 /var/log/kea</kbd></pre>
             </ul>
           </div>
           <p>
-            The Netconf service is not installed because required
-            dependencies are not covered by the current BLFS book.
+            The Netconf service is not installed because the required
+            dependencies are not installed by BLFS, and configuring it
+            correctly is complicated.
           </p>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
@@ -363,8 +379,8 @@ install -dm0750 /var/log/kea</kbd></pre>
             "kea-ctrl-agent-config"></a>Control Agent Configuration
           </h3>
           <p>
-            The provided configuration could be used without changes but in
-            BLFS, objects like sockets are stored in <code class=
+            The provided configuration could be used without changes.
+            However, in BLFS, objects like sockets are stored in <code class=
             "filename">/run</code> rather than in <code class=
             "filename">/tmp</code>.
           </p>
@@ -373,7 +389,7 @@ install -dm0750 /var/log/kea</kbd></pre>
 <code class="literal">// Begin /etc/kea/kea-ctrl-agent.conf
 {
   // This is a basic configuration for the Kea Control Agent.
-  // RESTful interface to be available at http://127.0.0.1:8000/
+  // The RESTful interface will be available at http://127.0.0.1:8000/
   "Control-agent": {
     "http-host": "127.0.0.1",
     "http-port": 8000,
@@ -424,7 +440,7 @@ EOF</kbd></pre>
             "emphasis"><em>interfaces</em></span> field, the <span class=
             "emphasis"><em>ddns-qualifying-suffix</em></span> field, and
             almost all the fields in <span class=
-            "emphasis"><em>Subnet4</em></span>:
+            "emphasis"><em>Subnet4</em></span>):
           </p>
           <pre class="userinput"><kbd class=
           "command">cat &gt; /etc/kea/kea-dhcp4.conf &lt;&lt; "EOF"
@@ -460,7 +476,7 @@ EOF</kbd></pre>
     "rebind-timer": 1800,
     "valid-lifetime": 3600,
 
-    // Enable DDNS - Kea will dynamically update the DNS
+    // Enable DDNS - Kea will dynamically update the BIND DNS server
     "ddns-send-updates" : true,
     "ddns-qualifying-suffix": "your.domain.tld",
     "dhcp-ddns" : {
@@ -530,12 +546,12 @@ EOF</kbd></pre>
           <p>
             If there is a <a class="xref" href="bind.html" title=
             "BIND-9.20.16">BIND-9.20.16</a> server running, <span class=
-            "application">ISC Kea</span> can update the DNS when it gives an
-            IP address to a client. A sample configuration file is created in
-            <code class="filename">/etc/kea/kea-dhcp-ddns.conf</code>. Adjust
-            the file to suit your needs or overwrite it by running the
-            following command as the <code class="systemitem">root</code>
-            user:
+            "application">ISC Kea</span> can update the DNS records when it
+            gives an IP address to a client. A sample configuration file is
+            created in <code class=
+            "filename">/etc/kea/kea-dhcp-ddns.conf</code>. Adjust the file to
+            suit your needs or overwrite it by running the following command
+            as the <code class="systemitem">root</code> user:
           </p>
           <pre class="userinput"><kbd class=
           "command">cat &gt; /etc/kea/kea-dhcp-ddns.conf &lt;&lt; "EOF"
@@ -636,24 +652,26 @@ EOF</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
               <span class="segbody">keactrl, kea-admin, kea-ctrl-agent,
-              kea-dhcp4, kea-dhcp6, kea-dhcp-ddns, kea-lfc, kea-shell</span>
+              kea-dhcp4, kea-dhcp6, kea-dhcp-ddns, kea-lfc, kea-msg-compiler,
+              and kea-shell</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
               <span class="segbody">libkea-asiodns.so, libkea-asiolink.so,
-              libkea-cc.so, libkea-cgfclient.so, libkea-cryptolink.so,
-              libkea-d2srv.so, libkea-database.so, libkea-dhcp_ddns.so,
-              libkea-dhcp++.so, libkea-dhcpsrv.so, libkea-dns++.so,
-              libkea-eval.so, libkea-exceptions.so, libkea-hooks.so,
-              libkea-http.so, libkea-log.so, libkea-process.so,
-              libkea-stats.so, libkea-tcp.so, libkea-util.so, and
-              libkea-util-io.so</span>
+              libkea-cc.so, libkea-cfgrpt.so, libkea-config.so,
+              libkea-cryptolink.so, libkea-d2srv.so, libkea-database.so,
+              libkea-dhcp_ddns.so, libkea-dhcp.so, libkea-dhcpsrv.so,
+              libkea-dns.so, libkea-eval.so, libkea-exceptions.so,
+              libkea-hooks.so, libkea-http.so, libkea-log.so,
+              libkea-log-interprocess.so, libkea-mysql.so, libkea-pgsql.so,
+              libkea-process.so, libkea-stats.so, libkea-tcp.so,
+              libkea-util.so, and libkea-util-io.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/etc/kea, /run/kea, /usr/include/kea,
               /usr/lib/kea, /usr/lib/python3.14/site-packages/kea,
-              /usr/share/kea, /usr/share/doc/kea-3.0.1, /var/lib/kea, and
+              /usr/share/kea, /usr/share/doc/kea-3.0.2, /var/lib/kea, and
               /var/log/kea</span>
             </div>
           </div>
@@ -678,7 +696,7 @@ EOF</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    Tool to control (start/stop) the server processes.
+                    is a tool to control (start/stop) the server processes
                   </p>
                 </td>
               </tr>
@@ -692,8 +710,8 @@ EOF</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    kea-admin is a shell script which offers database
-                    maintenance.
+                    is a shell script which performs DHCP database
+                    maintenance
                   </p>
                 </td>
               </tr>
@@ -707,8 +725,8 @@ EOF</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    Daemon which exposes a RESTful control interface for
-                    managing Kea servers.
+                    is a daemon which exposes a RESTful control interface for
+                    managing Kea servers
                   </p>
                 </td>
               </tr>
@@ -722,7 +740,7 @@ EOF</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    The server daemon providing IPv4 addresses.
+                    is the DHCP server daemon providing IPv4 addresses
                   </p>
                 </td>
               </tr>
@@ -736,7 +754,7 @@ EOF</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    The server daemon providing IPv6 addresses.
+                    is the DHCP server daemon providing IPv6 addresses
                   </p>
                 </td>
               </tr>
@@ -750,7 +768,8 @@ EOF</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    The server daemon performing the dynamic DNS updates.
+                    is the DHCP server daemon that performs Dynamic DNS
+                    updates
                   </p>
                 </td>
               </tr>
@@ -764,10 +783,10 @@ EOF</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    The kea-lfc service process removes redundant information
+                    is the service process that removes redundant information
                     from the files used to provide persistent storage for the
                     memfile database backend. It is run by the Kea DHCP
-                    server.
+                    server
                   </p>
                 </td>
               </tr>
@@ -781,8 +800,8 @@ EOF</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    RESTful client to the <span class="application">ISC
-                    Kea</span> services.
+                    is a RESTful client to the <span class="application">ISC
+                    Kea</span> DHCP services
                   </p>
                 </td>
               </tr>
@@ -811,7 +830,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-723">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-737">
           Home</a>
         </li>
       </ul>
