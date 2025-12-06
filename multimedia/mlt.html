@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      mlt-7.34.0
+      MLT-7.34.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-737">
+  <body class="blfs" id="blfs-r12.4-762">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-737
+        "phrase">(systemd</span> Edition) - Version r12.4-762
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -40,21 +40,21 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-737">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-762">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="mlt" name="mlt"></a>mlt-7.34.0
+      <a id="mlt" name="mlt"></a>MLT-7.34.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to mlt
+          Introduction to MLT
         </h2>
         <p>
-          The <span class="application">mlt</span> package is the Media Lovin
+          The <span class="application">MLT</span> package is the Media Lovin
           Toolkit. It is an open source multimedia framework, designed and
           developed for television broadcasting. It provides a toolkit for
           broadcasters, video editors, media players, transcoders, web
@@ -106,34 +106,42 @@
           </ul>
         </div>
         <h3>
-          mlt Dependencies
+          MLT Dependencies
         </h3>
         <h4>
-          Required
+          Recommended
         </h4>
-        <p>
-          <a class="xref" href="frei0r.html" title=
-          "frei0r-2.5.1">frei0r-2.5.1</a> and <a class="xref" href=
-          "../x/qt6.html" title="Qt-6.10.1">Qt-6.10.1</a>
+        <p class="recommended">
+          <a class="xref" href="ffmpeg.html" title=
+          "FFmpeg-8.0.1">FFmpeg-8.0.1</a>, <a class="xref" href="frei0r.html"
+          title="frei0r-2.5.1">frei0r-2.5.1</a>, <a class="xref" href=
+          "libsamplerate.html" title=
+          "libsamplerate-0.2.2">libsamplerate-0.2.2</a>, and <a class="xref"
+          href="../x/qt6.html" title="Qt-6.10.1">Qt-6.10.1</a>
         </p>
         <h4>
           Optional
         </h4>
-        <p>
+        <p class="optional">
           <a class="xref" href="../general/doxygen.html" title=
           "Doxygen-1.15.0">Doxygen-1.15.0</a>, <a class="xref" href=
           "../general/fftw.html" title="fftw-3.3.10">fftw-3.3.10</a>,
           <a class="xref" href="../general/libexif.html" title=
           "libexif-0.6.25">libexif-0.6.25</a>, <a class="xref" href=
-          "sdl2.html" title="sdl2-compat-2.32.60">sdl2-compat-2.32.60</a>,
+          "../general/opencv.html" title="opencv-4.12.0">opencv-4.12.0</a>,
+          <a class="xref" href="sdl2.html" title=
+          "sdl2-compat-2.32.60">sdl2-compat-2.32.60</a>, <a class="xref"
+          href="../general/swig.html" title="SWIG-4.4.0">SWIG-4.4.0</a>,
           <a class="ulink" href="https://eigen.tuxfamily.org">eigen</a>,
           <a class="ulink" href="https://jackaudio.org">JACK</a>, <a class=
-          "ulink" href="https://www.ladspa.org">LADSPA</a>, <a class="ulink"
-          href="https://github.com/jiixyj/libebur128/">libebur128</a>,
-          <a class="ulink" href="https://movit.sesse.net">movit</a>,
+          "ulink" href=
+          "https://glfs-book.github.io/slfs/general/ladspa-sdk.html">LADSPA-SDK</a>,
           <a class="ulink" href=
-          "https://github.com/thestk/rtaudio/">rtaudio</a>, <a class="ulink"
-          href="https://github.com/breakfastquay/rubberband">rubberband</a>,
+          "https://github.com/jiixyj/libebur128/">libebur128</a>, <a class=
+          "ulink" href="https://movit.sesse.net">movit</a>, <a class="ulink"
+          href="https://github.com/thestk/rtaudio/">rtaudio</a>, <a class=
+          "ulink" href=
+          "https://glfs-book.github.io/slfs/general/rubberband.html">rubberband</a>,
           <a class="ulink" href="https://sox.sourceforge.net/">SoX</a>, and
           <a class="ulink" href=
           "http://public.hronopik.de/vid.stab/">vid.stab</a>
@@ -141,10 +149,10 @@
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of mlt
+          Installation of MLT
         </h2>
         <p>
-          Install <span class="application">mlt</span> by running the
+          Install <span class="application">MLT</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
@@ -190,8 +198,28 @@ make</kbd></pre>
         </h2>
         <p>
           <em class="parameter"><code>-D MOD_*=OFF</code></em>: These
-          switches allow the package to build without the optional external
-          packages.
+          switches allow the package to build without some of the optional
+          external packages.
+        </p>
+        <p>
+          <code class="option">-D MOD_AVFORMAT=OFF</code>: This option allows
+          building without <a class="xref" href="ffmpeg.html" title=
+          "FFmpeg-8.0.1">FFmpeg-8.0.1</a>.
+        </p>
+        <p>
+          <code class="option">-D MOD_FREI0R=OFF</code>: This option allows
+          building without <a class="xref" href="frei0r.html" title=
+          "frei0r-2.5.1">frei0r-2.5.1</a>.
+        </p>
+        <p>
+          <code class="option">-D MOD_RESAMPLE=OFF</code>: This option allows
+          building without <a class="xref" href="libsamplerate.html" title=
+          "libsamplerate-0.2.2">libsamplerate-0.2.2</a>.
+        </p>
+        <p>
+          <code class="option">-D MOD_QT6=OFF</code>: This option allows
+          building without <a class="xref" href="../x/qt6.html" title=
+          "Qt-6.10.1">Qt-6.10.1</a>.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -237,7 +265,7 @@ make</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    is a test tool for mlt
+                    is a test tool for MLT
                   </p>
                 </td>
               </tr>
@@ -266,7 +294,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-737">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-762">
           Home</a>
         </li>
       </ul>

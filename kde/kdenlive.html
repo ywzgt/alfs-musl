@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-737">
+  <body class="blfs" id="blfs-r12.4-762">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-737
+        "phrase">(systemd</span> Edition) - Version r12.4-762
       </h4>
       <h3>
         Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-737">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-762">
           Home</a>
         </li>
       </ul>
@@ -110,11 +110,12 @@
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="frameworks6.html" title=
-          "Building KDE Frameworks 6.20.0 (KF6)">KDE Frameworks-6.20.0</a>,
-          <a class="xref" href="../multimedia/mlt.html" title=
-          "mlt-7.34.0">mlt-7.34.0</a>, and <a class="xref" href=
-          "../multimedia/v4l-utils.html" title=
+          <a class="xref" href="../general/git.html" title=
+          "Git-2.52.0">git-2.52.0</a>, <a class="xref" href=
+          "frameworks6.html" title="Building KDE Frameworks 6.20.0 (KF6)">KDE
+          Frameworks-6.20.0</a>, <a class="xref" href=
+          "../multimedia/mlt.html" title="MLT-7.34.0">MLT-7.34.0</a>, and
+          <a class="xref" href="../multimedia/v4l-utils.html" title=
           "v4l-utils-1.32.0">v4l-utils-1.32.0</a> (runtime)
         </p>
         <h4>
@@ -124,6 +125,27 @@
           <a class="xref" href="../x/breeze-icons.html" title=
           "breeze-icons-6.20.0">breeze-icons-6.20.0</a>
         </p>
+        <h4>
+          Optional
+        </h4>
+        <p class="optional">
+          <a class="ulink" href=
+          "https://glfs-book.github.io/slfs/general/ladspa-sdk.html">LADSPA-SDK</a>
+          and <a class="ulink" href=
+          "https://glfs-book.github.io/slfs/general/noise-suppression.html">Noise-Suppression</a>
+        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            An Internet connection is needed for building this package. The
+            system certificate store may need to be set up with <a class=
+            "xref" href="../postlfs/make-ca.html" title=
+            "make-ca-1.16.1">make-ca-1.16.1</a> before building this package.
+          </p>
+        </div>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -141,6 +163,21 @@ cmake -D CMAKE_INSTALL_PREFIX=$KF6_PREFIX \
       -D BUILD_TESTING=OFF                \
       -W no-dev .. &amp;&amp;
 make</kbd></pre>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            The build process will download a Git repository of <span class=
+            "application">OpenTimelineIO</span>, totaling around 100 MB.
+            Configuration will seem to hang right after <span class=
+            "command"><strong>cmake</strong></span> begins running. This is
+            normal, it is fetching that Git repository. If it hangs for a
+            while, it's most likely due to a poor download speed during the
+            download process.
+          </p>
+        </div>
         <p>
           This package does not come with a test suite.
         </p>
@@ -236,7 +273,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-737">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-762">
           Home</a>
         </li>
       </ul>

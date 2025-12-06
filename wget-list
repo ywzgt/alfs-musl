@@ -104,7 +104,7 @@ https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2
 https://0pointer.de/public/libatasmart-0.19.tar.xz
 https://github.com/bdwgc/libatomic_ops/releases/download/v7.10.0/libatomic_ops-7.10.0.tar.gz
 https://github.com/storaged-project/libblockdev/releases/download/3.4.0/libblockdev-3.4.0.tar.gz
-https://github.com/storaged-project/libbytesize/releases/download/2.11/libbytesize-2.11.tar.gz
+https://github.com/storaged-project/libbytesize/releases/download/2.12/libbytesize-2.12.tar.gz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.2/libclc-21.1.2.src.tar.xz
 https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6.tar.xz
 https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
@@ -121,7 +121,7 @@ https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.7.tar.bz2
 https://github.com/cjlin1/liblinear/archive/v249/liblinear-249.tar.gz
 https://gitlab.freedesktop.org/mobile-broadband/libmbim/-/archive/1.32.0/libmbim-1.32.0.tar.gz
 https://github.com/linux-nvme/libnvme/archive/v1.16.1/libnvme-1.16.1.tar.gz
-https://github.com/rrthomas/libpaper/releases/download/v2.2.6/libpaper-2.2.6.tar.gz
+https://github.com/rrthomas/libpaper/releases/download/v2.2.7/libpaper-2.2.7.tar.gz
 https://github.com/flatpak/libportal/releases/download/0.9.1/libportal-0.9.1.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/libportal-0.9.1-qt6.9_fixes-1.patch
 https://github.com/libproxy/libproxy/archive/0.5.12/libproxy-0.5.12.tar.gz
@@ -470,6 +470,7 @@ https://www.python.org/ftp/python/3.14.0/Python-3.14.0.tar.xz
 https://www.python.org/ftp/python/doc/3.14.0/python-3.14.0-docs-html.tar.bz2
 https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
 https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+https://download.gnome.org/sources/blueprint-compiler/0.18/blueprint-compiler-0.18.0.tar.xz
 https://files.pythonhosted.org/packages/source/b/build/build-1.3.0.tar.gz
 https://github.com/psf/cachecontrol/archive/v0.14.4/cachecontrol-0.14.4.tar.gz
 https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.3.0.tar.gz
@@ -530,7 +531,7 @@ https://files.pythonhosted.org/packages/source/p/pluggy/pluggy-1.6.0.tar.gz
 https://files.pythonhosted.org/packages/source/p/pyproject-hooks/pyproject_hooks-1.2.0.tar.gz
 https://files.pythonhosted.org/packages/source/p/pyproject-metadata/pyproject_metadata-0.9.1.tar.gz
 https://files.pythonhosted.org/packages/source/p/pytz/pytz-2025.2.tar.gz
-https://files.pythonhosted.org/packages/source/r/roman-numerals-py/roman_numerals_py-3.1.0.tar.gz
+https://files.pythonhosted.org/packages/source/r/roman-numerals/roman_numerals-3.1.0.tar.gz
 https://files.pythonhosted.org/packages/source/s/semantic_version/semantic_version-2.10.0.tar.gz
 https://files.pythonhosted.org/packages/source/s/setuptools_rust/setuptools_rust-1.12.0.tar.gz
 https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-9.2.2.tar.gz
@@ -545,7 +546,7 @@ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-qthelp/sphinxcont
 https://files.pythonhosted.org/packages/source/s/sphinxcontrib_serializinghtml/sphinxcontrib_serializinghtml-2.0.0.tar.gz
 https://files.pythonhosted.org/packages/source/t/trove_classifiers/trove_classifiers-2025.11.14.15.tar.gz
 https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.1.0.tar.gz
-https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.5.0.tar.gz
+https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.6.0.tar.gz
 https://files.pythonhosted.org/packages/source/u/uv_build/uv_build-0.9.10.tar.gz
 https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
 https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
@@ -598,12 +599,12 @@ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.8.0/geoclue-2.8.0.tar
 https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.1.tar.xz
 https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.2.0/kdsoap-2.2.0.tar.gz
 https://download.kde.org/stable/kdsoap-ws-discovery-client/kdsoap-ws-discovery-client-0.4.0.tar.xz
-https://www.nlnetlabs.nl/downloads/ldns/ldns-1.8.4.tar.gz
+https://www.nlnetlabs.nl/downloads/ldns/ldns-1.9.0.tar.gz
 https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
 https://netfilter.org/projects/libmnl/files/libmnl-1.0.5.tar.bz2
 http://libndp.org/files/libndp-1.9.tar.gz
-https://github.com/thom311/libnl/releases/download/libnl3_11_0/libnl-3.11.0.tar.gz
-https://github.com/thom311/libnl/releases/download/libnl3_11_0/libnl-doc-3.11.0.tar.gz
+https://github.com/thom311/libnl/releases/download/libnl3_12_0/libnl-3.12.0.tar.gz
+https://github.com/thom311/libnl/releases/download/libnl3_12_0/libnl-doc-3.12.0.tar.gz
 https://download.gnome.org/sources/libnma/1.10/libnma-1.10.6.tar.xz
 https://github.com/thkukuk/libnsl/releases/download/v2.0.1/libnsl-2.0.1.tar.xz
 https://www.tcpdump.org/release/libpcap-1.10.5.tar.gz
@@ -709,7 +710,7 @@ https://download.qt.io/official_releases/qt/6.10/6.10.1/submodules/qtwebengine-e
 https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
 https://github.com/KhronosGroup/Vulkan-Headers/archive/vulkan-sdk-1.4.328.1/Vulkan-Headers-vulkan-sdk-1.4.328.1.tar.gz
 https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.328.1/Vulkan-Loader-vulkan-sdk-1.4.328.1.tar.gz
-https://webkitgtk.org/releases/webkitgtk-2.48.5.tar.xz
+https://webkitgtk.org/releases/webkitgtk-2.50.3.tar.xz
 https://github.com/flatpak/xdg-desktop-portal/releases/download/1.20.3/xdg-desktop-portal-1.20.3.tar.xz
 https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
 https://download.gnome.org/sources/gdm/48/gdm-48.0.tar.xz
@@ -767,7 +768,7 @@ https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
 https://download.gnome.org/sources/gjs/1.84/gjs-1.84.2.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/gjs-1.84.2-spidermonkey_140-1.patch
 https://download.gnome.org/sources/gnome-autoar/0.4/gnome-autoar-0.4.5.tar.xz
-https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.3.tar.xz
+https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.4.tar.xz
 https://download.gnome.org/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
 https://download.gnome.org/sources/gnome-online-accounts/3.54/gnome-online-accounts-3.54.5.tar.xz
 https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz
@@ -781,7 +782,7 @@ https://download.gnome.org/sources/tinysparql/3.9/tinysparql-3.9.2.tar.xz
 https://download.gnome.org/sources/localsearch/3.9/localsearch-3.9.0.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/localsearch-3.9.0-libxml2_2_14-1.patch
 https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz
-https://download.gnome.org/sources/xdg-desktop-portal-gnome/48/xdg-desktop-portal-gnome-48.0.tar.xz
+https://download.gnome.org/sources/xdg-desktop-portal-gnome/49/xdg-desktop-portal-gnome-49.0.tar.xz
 https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
 https://download.gnome.org/sources/dconf-editor/45/dconf-editor-45.0.1.tar.xz
 https://download.gnome.org/sources/gnome-backgrounds/48/gnome-backgrounds-48.2.1.tar.xz
@@ -896,7 +897,7 @@ https://download.documentfoundation.org/libreoffice/src/25.8.3/libreoffice-25.8.
 https://download.documentfoundation.org/libreoffice/src/25.8.3/libreoffice-dictionaries-25.8.3.2.tar.xz
 https://download.documentfoundation.org/libreoffice/src/25.8.3/libreoffice-help-25.8.3.2.tar.xz
 https://download.documentfoundation.org/libreoffice/src/25.8.3/libreoffice-translations-25.8.3.2.tar.xz
-https://download.gnome.org/sources/epiphany/48/epiphany-48.5.tar.xz
+https://download.gnome.org/sources/epiphany/49/epiphany-49.2.tar.xz
 https://download.kde.org/stable/release-service/25.08.3/src/falkon-25.08.3.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.5.0esr-ffmpeg-8.0.patch
 https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.5.0esr-python_3.14_fixes-1.patch
@@ -1021,7 +1022,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/dvd+rw-tools-7.1-consolidated_
 https://files.libburnia-project.org/releases/libburn-1.5.6.tar.gz
 https://files.libburnia-project.org/releases/libisoburn-1.5.6.tar.gz
 https://files.libburnia-project.org/releases/libisofs-1.5.6.tar.gz
-https://github.com/OpenPrinting/cups/releases/download/v2.4.15/cups-2.4.15-source.tar.gz
+https://github.com/OpenPrinting/cups/releases/download/v2.4.16/cups-2.4.16-source.tar.gz
 https://github.com/OpenPrinting/cups-browsed/releases/download/2.1.1/cups-browsed-2.1.1.tar.xz
 https://github.com/OpenPrinting/cups-filters/releases/download/2.0.1/cups-filters-2.0.1.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/cups-filters-2.0.1-security_fix-1.patch
