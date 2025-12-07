@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-762">
+  <body class="blfs" id="blfs-r12.4-816">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-762
+        "phrase">(systemd</span> Edition) - Version r12.4-816
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-762">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-816">
           Home</a>
         </li>
       </ul>
@@ -160,7 +160,7 @@
             Both gcr-3 and gcr-4 are coinstallable. This version of the
             package is used to support GTK-4 applications, such as <a class=
             "xref" href="gnome-shell.html" title=
-            "gnome-shell-48.4">gnome-shell-48.4</a> and <a class="xref" href=
+            "gnome-shell-49.2">gnome-shell-49.2</a> and <a class="xref" href=
             "../xsoft/epiphany.html" title="Epiphany-49.2">Epiphany-49.2</a>.
           </p>
         </div>
@@ -174,7 +174,6 @@ cd    build &amp;&amp;
 meson setup --prefix=/usr       \
             --buildtype=release \
             -D gtk_doc=false    \
-            -D ssh_agent=false  \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -224,14 +223,6 @@ ninja</kbd></pre>
           wish to rebuild and install the API documentation, a <span class=
           "command"><strong>meson configure</strong></span> command will
           reset this option.
-        </p>
-        <p>
-          <em class="parameter"><code>-D ssh_agent=false</code></em>: Disable
-          the ssh-agent implementation of this package. This implementation
-          is intended to replace the ssh-agent implementation of <a class=
-          "xref" href="gnome-keyring.html" title=
-          "gnome-keyring-48.0">gnome-keyring-48.0</a>, but the replacement
-          still has several unresolved issues.
         </p>
         <p>
           <code class="option">-D crypto=gnutls</code>: Use this switch if
@@ -339,7 +330,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-762">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-816">
           Home</a>
         </li>
       </ul>

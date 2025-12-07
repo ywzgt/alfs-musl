@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      GDM-48.0
+      GDM-49.2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-762">
+  <body class="blfs" id="blfs-r12.4-816">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-762
+        "phrase">(systemd</span> Edition) - Version r12.4-816
       </h4>
       <h3>
         Chapter&nbsp;26.&nbsp;Display Managers
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-762">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-816">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="gdm" name="gdm"></a>GDM-48.0
+      <a id="gdm" name="gdm"></a>GDM-49.2
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,22 +78,22 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/gdm/48/gdm-48.0.tar.xz">https://download.gnome.org/sources/gdm/48/gdm-48.0.tar.xz</a>
+                "https://download.gnome.org/sources/gdm/49/gdm-49.2.tar.xz">https://download.gnome.org/sources/gdm/49/gdm-49.2.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: a17868752c9a90ed560891886f2882f2
+                Download MD5 sum: 14d92ca52faf7f18ce59a8f3f961a07c
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 920 KB
+                Download size: 948 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 44 MB
+                Estimated disk space required: 35 MB
               </p>
             </li>
             <li class="listitem">
@@ -113,7 +113,7 @@
           <a class="xref" href="../general/accountsservice.html" title=
           "AccountsService-23.13.9">AccountsService-23.13.9</a>, <a class=
           "xref" href="../gnome/dconf.html" title=
-          "DConf-0.40.0 / DConf-Editor-45.0.1">DConf-0.40.0</a>, <a class=
+          "DConf-0.49.0 / DConf-Editor-49.0">DConf-0.49.0</a>, <a class=
           "xref" href="../multimedia/libcanberra.html" title=
           "libcanberra-0.30">libcanberra-0.30</a> (built after <a class=
           "xref" href="gtk3.html" title="GTK-3.24.51">GTK-3.24.51</a>), and
@@ -133,9 +133,9 @@
         </h4>
         <p class="required">
           <a class="xref" href="../gnome/gnome-session.html" title=
-          "gnome-session-48.0">gnome-session-48.0</a>, <a class="xref" href=
+          "gnome-session-49.2">gnome-session-49.2</a>, <a class="xref" href=
           "../gnome/gnome-shell.html" title=
-          "gnome-shell-48.4">gnome-shell-48.4</a>, and <span class=
+          "gnome-shell-49.2">gnome-shell-49.2</a>, and <span class=
           "phrase"><a class="xref" href="../general/systemd.html" title=
           "Systemd-258.1">Systemd-258.1</a></span>
         </p>
@@ -154,11 +154,6 @@
 useradd -c "GDM Daemon Owner" -d /var/lib/gdm -u 21 \
         -g gdm -s /bin/false gdm &amp;&amp;
 passwd -ql gdm</kbd></pre>
-        <p>
-          First, adapt GDM to build with GCC 15:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -r 's/([(*])bool([) ])/\1boolval\2/' -i common/gdm-settings-utils.*</kbd></pre>
         <p>
           Install <span class="application">GDM</span> by running the
           following commands:
@@ -364,7 +359,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-762">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-816">
           Home</a>
         </li>
       </ul>
