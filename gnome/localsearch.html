@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-825">
+  <body class="blfs" id="blfs-r12.4-839">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-825
+        "phrase">(systemd</span> Edition) - Version r12.4-839
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-825">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-839">
           Home</a>
         </li>
       </ul>
@@ -143,11 +143,17 @@
         </h4>
         <p class="optional">
           <a class="xref" href="../general/python-modules.html#asciidoc"
-          title="Asciidoc-10.2.1">asciidoc-10.2.1</a>, <a class="xref" href=
-          "../general/cmake.html" title="CMake-4.2.0">CMake-4.2.0</a>,
-          <a class="xref" href="../general/libgsf.html" title=
+          title="Asciidoc-10.2.1">asciidoc-10.2.1</a> (to build manual pages;
+          note that manual pages are required for some tests), <a class=
+          "xref" href="../general/cmake.html" title=
+          "CMake-4.2.0">CMake-4.2.0</a>, <a class="xref" href=
+          "../multimedia/gst10-plugins-good.html" title=
+          "gst-plugins-good-1.26.9">gst-plugins-good-1.26.9</a> (for one
+          test), <a class="xref" href="../general/libgsf.html" title=
           "libgsf-1.14.53">libgsf-1.14.53</a>, <a class="xref" href=
-          "totem-pl-parser.html" title=
+          "../general/python-modules.html#python-dbusmock" title=
+          "dbusmock-0.37.1">dbusmock-0.37.1</a> (for functional tests),
+          <a class="xref" href="totem-pl-parser.html" title=
           "totem-pl-parser-3.26.6">totem-pl-parser-3.26.6</a>, <a class=
           "ulink" href="https://github.com/lipnitsk/libcue">libcue</a>,
           <a class="ulink" href=
@@ -229,35 +235,27 @@ rm -fv /usr/share/dbus-1/services/org.freedesktop.Tracker3.Miner.Files.Control.s
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr       \
-            --buildtype=release \
-            -D man=false        \
-            ..                  &amp;&amp;
+meson setup --prefix=/usr             \
+            --buildtype=release       \
+            -D man=false              \
+            -D functional_tests=false \
+            ..                        &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue the following commands. Make sure that
           you adjust the individual test timeout to a value suitable for your
-          machine, please read the note above for more details. One test,
-          <code class="filename">test_cli_inhibit</code>, is known to fail.
+          machine, please read the note above for more details.
         </p>
-        <pre class="userinput"><kbd class=
-        "command">dbus-run-session env LC_ALL=C.UTF-8 TRACKER_TESTS_AWAIT_TIMEOUT=<em class="replaceable"><code>20</code></em> \
-                 ninja test &amp;&amp;
-rm -rf ~/tracker-tests</kbd></pre>
+        <pre class="userinput"><kbd class="command">
+meson configure -D man=true -D functional_tests=true &amp;&amp;
+ninja                                                &amp;&amp;
+dbus-run-session env LC_ALL=C.UTF-8 TRACKER_TESTS_AWAIT_TIMEOUT=<em class=
+"replaceable"><code>20</code></em> \
+                 ninja test</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            The tests create files in the user directory (up to 24 MB), so
-            they have to be removed afterwards.
-          </p>
-        </div>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -275,6 +273,13 @@ rm -rf ~/tracker-tests</kbd></pre>
           "../general/python-modules.html#asciidoc" title=
           "Asciidoc-10.2.1">asciidoc-10.2.1</a> installed and wish to
           generate and install the man pages.
+        </p>
+        <p>
+          <em class="parameter"><code>-D functional_tests=false</code></em>:
+          This switch prevents the setup process to require <a class="xref"
+          href="../general/python-modules.html#python-dbusmock" title=
+          "dbusmock-0.37.1">dbusmock-0.37.1</a> and fail if it is not
+          installed. You can remove this switch if it is installed.
         </p>
         <p>
           <code class="option">-D seccomp=false</code>: This option disables
@@ -382,7 +387,7 @@ rm -rf ~/tracker-tests</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-825">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-839">
           Home</a>
         </li>
       </ul>

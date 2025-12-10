@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-825">
+  <body class="blfs" id="blfs-r12.4-839">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-825
+        "phrase">(systemd</span> Edition) - Version r12.4-839
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-825">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-839">
           Home</a>
         </li>
       </ul>
@@ -136,7 +136,7 @@
           <a class="xref" href="../general/doxygen.html" title=
           "Doxygen-1.15.0">Doxygen-1.15.0</a>, <a class="xref" href=
           "../general/graphviz.html" title=
-          "Graphviz-14.0.5">Graphviz-14.0.5</a>, <a class="xref" href=
+          "Graphviz-14.1.0">Graphviz-14.1.0</a>, <a class="xref" href=
           "../general/python-modules.html#sphinx_rtd_theme" title=
           "Sphinx_rtd_theme-3.0.2">sphinx_rtd_theme-3.0.2</a>, and <a class=
           "xref" href="../pst/texlive.html" title=
@@ -180,13 +180,10 @@
           First, apply a few fixes required for boost-1.89.0:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -e "s/, modules: \['system'\]//" -i meson.build                      &amp;&amp;
-sed -e "/shared_ptr.hpp/a#include &lt;boost/asio/deadline_timer.hpp&gt;"       \
-    -i src/lib/asiolink/interval_timer.cc                                &amp;&amp;
-sed -e "/posix_time_types.hpp/a#include &lt;boost/asio/deadline_timer.hpp&gt;" \
-    -i src/lib/asiodns/io_fetch.cc                                       &amp;&amp;
-sed -e "/posix_time_types.hpp/a#include &lt;boost/asio/deadline_timer.hpp&gt;" \
-    -i src/lib/asiodns/tests/io_fetch_unittest.cc</kbd></pre>
+        "command">sed -e "/asio_wrapper/a#include &lt;boost/asio/deadline_timer.hpp&gt;" \
+    -i src/lib/asiolink/interval_timer.cc                        \
+       src/lib/asiodns/io_fetch.cc                               \
+       src/lib/asiodns/tests/io_fetch_unittest.cc</kbd></pre>
         <p>
           Now, install <span class="application">ISC Kea DHCP Server</span>
           by running the following commands:
@@ -830,7 +827,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-825">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-839">
           Home</a>
         </li>
       </ul>
