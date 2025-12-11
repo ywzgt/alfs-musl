@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-839">
+  <body class="blfs" id="blfs-r12.4-845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-839
+        "phrase">(systemd</span> Edition) - Version r12.4-845
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-839">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-845">
           Home</a>
         </li>
       </ul>
@@ -170,7 +170,7 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">./configure --prefix=/usr &amp;&amp;
-make</kbd></pre>
+make bootstrap</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
           check</strong></span>.
@@ -185,17 +185,18 @@ make</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <code class="option">bootstrap</code>: This <span class=
-          "command"><strong>make</strong></span> target forces the building
-          system to build the package twice and use the <span class=
-          "command"><strong>vala</strong></span> executable produced in the
-          first build to regenerate the <code class="filename">.c</code>
-          files from the <code class="filename">.vala</code> files if needed.
-          If a <span class="command"><strong>vala</strong></span> executable
-          is not installed yet and you've modified any <code class=
-          "filename">.vala</code> files in the source tree, run <span class=
-          "command"><strong>make bootstrap</strong></span> instead of
-          <span class="command"><strong>make</strong></span>.
+          <em class="parameter"><code>bootstrap</code></em>: This
+          <span class="command"><strong>make</strong></span> target forces
+          the building system to build the package twice and use the
+          <span class="command"><strong>valac</strong></span> executable
+          produced in the first build to regenerate the <code class=
+          "filename">.c</code> files from the <code class=
+          "filename">.vala</code> files. This is needed because the patch
+          changes one of the <code class="filename">.vala</code> files. But
+          it is not needed if a <span class=
+          "command"><strong>valac</strong></span> executable is already
+          installed on the system. In this case, just run <span class=
+          "command"><strong>make</strong></span>.
         </p>
         <p>
           <code class="option">--disable-valadoc</code>: This option is
@@ -343,7 +344,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-839">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-845">
           Home</a>
         </li>
       </ul>
