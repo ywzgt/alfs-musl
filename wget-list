@@ -17,7 +17,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3
 https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2
 https://kerberos.org/dist/krb5/1.22/krb5-1.22.1.tar.gz
 https://ftp.gnu.org/gnu/nettle/nettle-3.10.2.tar.gz
-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_119_RTM/src/nss-3.119.tar.gz
+https://archive.mozilla.org/pub/security/nss/releases/NSS_3_119_1_RTM/src/nss-3_119_1.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
 https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.2p1.tar.gz
 https://github.com/p11-glue/p11-kit/releases/download/0.25.10/p11-kit-0.25.10.tar.xz
@@ -110,7 +110,7 @@ https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6
 https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
 https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.3.0/downloads/libdisplay-info-0.3.0.tar.xz
 https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.2.tar.bz2
-https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.56.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.57.tar.bz2
 https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.54.tar.xz
 https://download.gnome.org/sources/libgudev/238/libgudev-238.tar.xz
 https://github.com/hughsie/libgusb/releases/download/0.4.9/libgusb-0.4.9.tar.xz
@@ -163,8 +163,8 @@ https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
 https://github.com/simdutf/simdutf/archive/v7.7.0/simdutf-7.7.0.tar.gz
 https://archive.mozilla.org/pub/firefox/releases/140.5.0esr/source/firefox-140.5.0esr.source.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.5.0-python_3.14_fixes-1.patch
-https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.328.1/SPIRV-Headers-vulkan-sdk-1.4.328.1.tar.gz
-https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.328.1/SPIRV-Tools-vulkan-sdk-1.4.328.1.tar.gz
+https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.335.0/SPIRV-Headers-vulkan-sdk-1.4.335.0.tar.gz
+https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.335.0/SPIRV-Tools-vulkan-sdk-1.4.335.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v21.1.3/SPIRV-LLVM-Translator-21.1.3.tar.gz
 https://www.samba.org/ftp/talloc/talloc-2.4.3.tar.gz
 https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
@@ -507,7 +507,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/requests-use_system_certs-1.pa
 https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
 https://github.com/getsentry/sentry-python/releases/download/2.35.0/sentry_sdk-2.35.0.tar.gz
 https://files.pythonhosted.org/packages/source/s/six/six-1.17.0.tar.gz
-https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-9.0.3.tar.gz
+https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-9.0.4.tar.gz
 https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-3.0.2.tar.gz
 https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-1.0.0.tar.gz
 https://files.pythonhosted.org/packages/source/a/attrs/attrs-25.4.0.tar.gz
@@ -709,8 +709,8 @@ https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
 https://download.qt.io/archive/qt/6.10/6.10.1/single/qt-everywhere-src-6.10.1.tar.xz
 https://download.qt.io/official_releases/qt/6.10/6.10.1/submodules/qtwebengine-everywhere-src-6.10.1.tar.xz
 https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
-https://github.com/KhronosGroup/Vulkan-Headers/archive/vulkan-sdk-1.4.328.1/Vulkan-Headers-vulkan-sdk-1.4.328.1.tar.gz
-https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.328.1/Vulkan-Loader-vulkan-sdk-1.4.328.1.tar.gz
+https://github.com/KhronosGroup/Vulkan-Headers/archive/vulkan-sdk-1.4.335.0/Vulkan-Headers-vulkan-sdk-1.4.335.0.tar.gz
+https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.335.0/Vulkan-Loader-vulkan-sdk-1.4.335.0.tar.gz
 https://webkitgtk.org/releases/webkitgtk-2.50.3.tar.xz
 https://github.com/flatpak/xdg-desktop-portal/releases/download/1.20.3/xdg-desktop-portal-1.20.3.tar.xz
 https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
@@ -779,7 +779,7 @@ https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz
 https://download.gnome.org/sources/libshumate/1.5/libshumate-1.5.1.tar.xz
 https://download.gnome.org/sources/evolution-data-server/3.58/evolution-data-server-3.58.2.tar.xz
 https://download.gnome.org/sources/tinysparql/3.10/tinysparql-3.10.1.tar.xz
-https://download.gnome.org/sources/localsearch/3.10/localsearch-3.10.1.tar.xz
+https://download.gnome.org/sources/localsearch/3.10/localsearch-3.10.2.tar.xz
 https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz
 https://download.gnome.org/sources/xdg-desktop-portal-gnome/49/xdg-desktop-portal-gnome-49.0.tar.xz
 https://download.gnome.org/sources/dconf/0.49/dconf-0.49.0.tar.xz
