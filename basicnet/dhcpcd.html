@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-855">
+  <body class="blfs" id="blfs-r12.4-862">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-855
+        "phrase">(systemd</span> Edition) - Version r12.4-862
       </h4>
       <h3>
         Chapter&nbsp;14.&nbsp;Connecting to a Network
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-855">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-862">
           Home</a>
         </li>
       </ul>
@@ -312,6 +312,25 @@ make</kbd></pre>
             Replace <em class="replaceable"><code>eth0</code></em> with the
             actual interface name.
           </p>
+          <p>
+            The <span class="command"><strong>dhcpcd</strong></span> service
+            has options or lack thereof that might be unsatisfactory. You can
+            override them by running the following commands as the
+            <code class="systemitem">root</code> user:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">install -v -dm755 /etc/systemd/system/dhcpcd\@<em class=
+          "replaceable"><code>eth0</code></em>.service.d &amp;&amp;
+cat &gt; /etc/systemd/system/dhcpcd\@<em class=
+"replaceable"><code>eth0</code></em>.service.d/99-user.conf &lt;&lt; EOF
+<code class="literal">[Service]
+ExecStart=
+ExecStart=/sbin/dhcpcd -q -w <em class=
+"replaceable"><code>&lt;list of parameters&gt;</code></em> %I
+ExecStop=
+ExecStop=/sbin/dhcpcd -x <em class=
+"replaceable"><code>&lt;list of parameters&gt;</code></em> %I
+</code>EOF</kbd></pre>
         </div>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -402,7 +421,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-855">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-862">
           Home</a>
         </li>
       </ul>
