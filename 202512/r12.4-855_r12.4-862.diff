@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index f5c30ea9c6..b945e2fe7c 100644
+--- a/wget-list
++++ b/wget-list
+@@ -110,7 +110,7 @@ https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6
+ https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+ https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.3.0/downloads/libdisplay-info-0.3.0.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.2.tar.bz2
+-https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.57.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.58.tar.bz2
+ https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.54.tar.xz
+ https://download.gnome.org/sources/libgudev/238/libgudev-238.tar.xz
+ https://github.com/hughsie/libgusb/releases/download/0.4.9/libgusb-0.4.9.tar.xz
+@@ -588,7 +588,7 @@ https://w1.fi/releases/wpa_supplicant-2.11.tar.gz
+ https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+ https://ftp.isc.org/isc/bind9/9.20.16/bind-9.20.16.tar.xz
+-https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.54.2/downloads/NetworkManager-1.54.2.tar.xz
++https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.54.3/downloads/NetworkManager-1.54.3.tar.xz
+ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
+ https://nmap.org/dist/nmap-7.98.tar.bz2
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.6.tar.gz
+@@ -906,7 +906,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.22-cxx17-1.patc
+ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+ https://feh.finalrewind.org/feh-3.11.2.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
+-https://github.com/freerdp/freerdp/archive/3.19.0/FreeRDP-3.19.0.tar.gz
++https://github.com/freerdp/freerdp/archive/3.19.1/FreeRDP-3.19.1.tar.gz
+ https://download.gimp.org/gimp/v3.0/gimp-3.0.6.tar.xz
+ https://download.gimp.org/pub/gimp/help/gimp-help-3.0.0.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
