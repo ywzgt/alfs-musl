@@ -1,7 +1,7 @@
 https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20251204.tar.xz
 https://github.com/lfs-book/make-ca/archive/v1.16.1/make-ca-1.16.1.tar.gz
 https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.tar.xz
-https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.1.tar.xz
+https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.2.tar.xz
 https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.8.tar.bz2
@@ -21,7 +21,7 @@ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_119_1_RTM/src/nss-3_
 https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
 https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.2p1.tar.gz
 https://github.com/p11-glue/p11-kit/releases/download/0.25.10/p11-kit-0.25.10.tar.xz
-https://github.com/polkit-org/polkit/archive/126/polkit-126.tar.gz
+https://github.com/polkit-org/polkit/archive/127/polkit-127.tar.gz
 https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
 https://github.com/shadow-maint/shadow/releases/download/4.18.0/shadow-4.18.0.tar.xz
@@ -282,7 +282,7 @@ https://download.librdf.org/source/redland-1.0.17.tar.gz
 https://sysstat.github.io/sysstat-packages/sysstat-12.7.9.tar.xz
 https://github.com/systemd/systemd/archive/v258.1/systemd-258.1.tar.gz
 https://github.com/storaged-project/udisks/releases/download/udisks-2.11.0/udisks-2.11.0.tar.bz2
-https://www.rarlab.com/rar/unrarsrc-7.2.2.tar.gz
+https://www.rarlab.com/rar/unrarsrc-7.2.3.tar.gz
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.0/upower-v1.91.0.tar.bz2
 https://ftpmirror.gnu.org/which/which-2.23.tar.gz
 https://github.com/jordansissel/xdotool/releases/download/v4.20251130.1/xdotool-4.20251130.1.tar.gz
@@ -587,7 +587,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_s
 https://w1.fi/releases/wpa_supplicant-2.11.tar.gz
 https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
-https://ftp.isc.org/isc/bind9/9.20.16/bind-9.20.16.tar.xz
+https://ftp.isc.org/isc/bind9/9.20.17/bind-9.20.17.tar.xz
 https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.54.3/downloads/NetworkManager-1.54.3.tar.xz
 https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
 https://nmap.org/dist/nmap-7.98.tar.bz2
@@ -906,7 +906,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.22-cxx17-1.patc
 https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
 https://feh.finalrewind.org/feh-3.11.2.tar.bz2
 https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
-https://github.com/freerdp/freerdp/archive/3.19.1/FreeRDP-3.19.1.tar.gz
+https://github.com/freerdp/freerdp/archive/3.20.0/FreeRDP-3.20.0.tar.gz
 https://download.gimp.org/gimp/v3.0/gimp-3.0.6.tar.xz
 https://download.gimp.org/pub/gimp/help/gimp-help-3.0.0.tar.bz2
 https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
