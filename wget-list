@@ -1,7 +1,7 @@
 https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20251204.tar.xz
 https://github.com/lfs-book/make-ca/archive/v1.16.1/make-ca-1.16.1.tar.gz
 https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.tar.xz
-https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.2.tar.xz
+https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.3.tar.xz
 https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.8.tar.bz2
@@ -30,7 +30,7 @@ https://www.sudo.ws/dist/sudo-1.9.17p2.tar.gz
 https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.17.1.tar.xz
 https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz
-https://github.com/libfuse/libfuse/releases/download/fuse-3.17.4/fuse-3.17.4.tar.gz
+https://github.com/libfuse/libfuse/releases/download/fuse-3.18.0/fuse-3.18.0.tar.gz
 https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.patch
 https://sourceware.org/ftp/lvm2/LVM2.2.03.38.tgz
@@ -464,7 +464,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/XML-LibXML-2.0210-testsuite_fi
 https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
 https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
 https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
-https://www.php.net/distributions/php-8.5.0.tar.xz
+https://www.php.net/distributions/php-8.5.1.tar.xz
 https://www.php.net/distributions/manual/php_manual_en.html.gz
 https://www.php.net/distributions/manual/php_manual_en.tar.gz
 https://www.python.org/ftp/python/3.14.2/Python-3.14.2.tar.xz
@@ -478,7 +478,7 @@ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.3.0.tar.g
 https://github.com/cython/cython/releases/download/3.2.3-1/cython-3.2.3.tar.gz
 https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.37.2.tar.gz
 https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.4.0.tar.xz
-https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.22.3.tar.gz
+https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.22.4.tar.gz
 https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.gz
 https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-0.5.3.tar.gz
 https://files.pythonhosted.org/packages/source/g/gi-docgen/gi_docgen-2025.5.tar.gz
@@ -631,7 +631,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/httpd-blfs_layout-1.patch
 https://downloads.isc.org/isc/kea/3.0.2/kea-3.0.2.tar.xz
 https://github.com/proftpd/proftpd/archive/v1.3.9/proftpd-1.3.9.tar.gz
 https://www.dovecot.org/releases/2.4/dovecot-2.4.2.tar.gz
-https://ftp.exim.org/pub/exim/exim4/exim-4.99.tar.xz
+https://ftp.exim.org/pub/exim/exim4/exim-4.99.1.tar.xz
 https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.7.tar.gz
 https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/sendmail-8.18.1-gcc15_fixes-1.patch
@@ -642,7 +642,7 @@ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.
 https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.10-consolidated-1.patch
 https://nlnetlabs.nl/downloads/unbound/unbound-1.24.2.tar.gz
 https://www.x.org/pub/individual/util/util-macros-1.20.2.tar.xz
-https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2024.1.tar.xz
+https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2025.1.tar.xz
 https://www.x.org/pub/individual/lib/libXau-1.0.12.tar.xz
 https://www.x.org/pub/individual/lib/libXdmcp-1.1.5.tar.xz
 https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.17.0.tar.xz
@@ -893,10 +893,10 @@ https://github.com/lxqt/qtermwidget/releases/download/2.3.0/qtermwidget-2.3.0.ta
 https://github.com/lxqt/qterminal/releases/download/2.3.0/qterminal-2.3.0.tar.xz
 https://github.com/lxqt/screengrab/releases/download/3.1.0/screengrab-3.1.0.tar.xz
 https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.59.tar.xz
-https://download.documentfoundation.org/libreoffice/src/25.8.3/libreoffice-25.8.3.2.tar.xz
-https://download.documentfoundation.org/libreoffice/src/25.8.3/libreoffice-dictionaries-25.8.3.2.tar.xz
-https://download.documentfoundation.org/libreoffice/src/25.8.3/libreoffice-help-25.8.3.2.tar.xz
-https://download.documentfoundation.org/libreoffice/src/25.8.3/libreoffice-translations-25.8.3.2.tar.xz
+https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-25.8.4.2.tar.xz
+https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-dictionaries-25.8.4.2.tar.xz
+https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-help-25.8.4.2.tar.xz
+https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-translations-25.8.4.2.tar.xz
 https://download.gnome.org/sources/epiphany/49/epiphany-49.2.tar.xz
 https://download.kde.org/stable/release-service/25.08.3/src/falkon-25.08.3.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.6.0esr-ffmpeg-8.0.patch
@@ -922,10 +922,10 @@ https://www.linuxfromscratch.org/patches/blfs/svn/transmission-4.0.6-build_fix-1
 https://github.com/ib/xarchiver/archive/0.5.4.26/xarchiver-0.5.4.26.tar.gz
 https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz
 https://www.jwz.org/xscreensaver/xscreensaver-6.13.tar.gz
-https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.15.tar.bz2
-https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-1.2.15.tar.bz2
+https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.15.1.tar.bz2
+https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-1.2.15.1.tar.bz2
 https://www.alsa-project.org/files/pub/plugins/alsa-plugins-1.2.12.tar.bz2
-https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.15.tar.bz2
+https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.15.1.tar.bz2
 https://www.alsa-project.org/files/pub/tools/alsa-tools-1.2.15.tar.bz2
 https://www.alsa-project.org/files/pub/firmware/alsa-firmware-1.2.4.tar.bz2
 https://download.gnome.org/sources/audiofile/0.3/audiofile-0.3.6.tar.xz
@@ -1069,6 +1069,6 @@ https://github.com/plk/biber/archive/v2.21/biber-2.21.tar.gz
 https://github.com/mgieseki/dvisvgm/releases/download/3.6/dvisvgm-3.6.tar.gz
 https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
-https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20250225.tar.xz
+https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20251220.tar.xz
 https://github.com/elogind/elogind/archive/V255.22/elogind-255.22.tar.gz
 https://github.com/lfs-book/blocaled/releases/download/v0.7/blocaled-0.7.tar.xz

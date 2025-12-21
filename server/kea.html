@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-884">
+  <body class="blfs" id="blfs-r12.4-898">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-884
+        "phrase">(systemd</span> Edition) - Version r12.4-898
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-884">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-898">
           Home</a>
         </li>
       </ul>
@@ -120,9 +120,11 @@
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="../postlfs/mitkrb.html" title=
-          "MIT Kerberos V5-1.22.1">MIT Kerberos V5-1.22.1</a>, <a class=
-          "xref" href="../general/valgrind.html" title=
+          <a class="xref" href="bind.html" title=
+          "BIND-9.20.17">BIND-9.20.17</a>, <a class="xref" href=
+          "../postlfs/mitkrb.html" title="MIT Kerberos V5-1.22.1">MIT
+          Kerberos V5-1.22.1</a>, <a class="xref" href=
+          "../general/valgrind.html" title=
           "Valgrind-3.26.0">Valgrind-3.26.0</a>, <a class="ulink" href=
           "https://botan.randombit.net/">botan</a>, <a class="ulink" href=
           "https://cppcheck.sourceforge.io/">cppcheck</a>, <a class="ulink"
@@ -183,7 +185,9 @@
         "command">sed -e "/asio_wrapper/a#include &lt;boost/asio/deadline_timer.hpp&gt;" \
     -i src/lib/asiolink/interval_timer.cc                        \
        src/lib/asiodns/io_fetch.cc                               \
-       src/lib/asiodns/tests/io_fetch_unittest.cc</kbd></pre>
+       src/lib/asiodns/tests/io_fetch_unittest.cc                &amp;&amp;
+sed -e "/lexical_cast.hpp/a #include &lt;boost/static_assert.hpp&gt;"  \
+    -i src/lib/log/logger_level_impl.cc</kbd></pre>
         <p>
           Now, install <span class="application">ISC Kea DHCP Server</span>
           by running the following commands:
@@ -213,11 +217,13 @@ ninja</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
         <p>
-          Fix some paths coded in the <span class=
-          "command"><strong>keactrl</strong></span> script:
+          Fix some hard coded paths in the <span class=
+          "command"><strong>keactrl</strong></span> script and in it's
+          configuration file:
         </p>
         <pre class="root"><kbd class=
-        "command">sed -e "s;\${prefix}/;;" -i /usr/sbin/keactrl</kbd></pre>
+        "command">sed -e "s:\${prefix}/::" -i /usr/sbin/keactrl             &amp;&amp;
+sed -e "s:\${prefix}//etc:/etc:" -i /etc/kea/keactrl.conf</kbd></pre>
         <p>
           Create some directories and fix their permission settings as the
           <code class="systemitem">root</code> user:
@@ -827,7 +833,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-884">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-898">
           Home</a>
         </li>
       </ul>
