@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-898">
+  <body class="blfs" id="blfs-r12.4-906">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-898
+        "phrase">(systemd</span> Edition) - Version r12.4-906
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-898">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-906">
           Home</a>
         </li>
       </ul>
@@ -104,6 +104,20 @@
             <li class="listitem">
               <p>
                 Estimated build time: 12 SBU (using parallelism=8)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.10.1-upstream_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.10.1-upstream_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -319,6 +333,11 @@ ln -sfnv qt-6.10.1 /opt/qt6</kbd></pre>
          -i qtbase/src/corelib/global/qtypes.h &amp;&amp;
     export CXXFLAGS+="-DDISABLE_SIMD -DPFFFT_SIMD_DISABLE"
 fi</kbd></pre>
+        <p>
+          First install a patch from upstream:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../qt-everywhere-src-6.10.1-upstream_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">Qt6</span> by running the
           following commands:
@@ -1159,7 +1178,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-898">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-906">
           Home</a>
         </li>
       </ul>

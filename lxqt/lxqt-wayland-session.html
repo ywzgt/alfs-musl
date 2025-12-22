@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      lxqt-sudo-2.3.0
+      lxqt-wayland-session-0.3.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
@@ -23,17 +23,17 @@
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="lxqt-policykit.html" title=
-          "lxqt-policykit-2.3.0">Prev</a>
+          <a accesskey="p" href="lxqt-session.html" title=
+          "lxqt-session-2.3.0">Prev</a>
           <p>
-            lxqt-policykit-2.3.0
+            lxqt-session-2.3.0
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="lxqt-openssh-askpass.html" title=
-          "lxqt-openssh-askpass-2.3.0">Next</a>
+          <a accesskey="n" href="xdg-desktop-portal-lxqt.html" title=
+          "xdg-desktop-portal-lxqt-1.3.0">Next</a>
           <p>
-            lxqt-openssh-askpass-2.3.0
+            xdg-desktop-portal-lxqt-1.3.0
           </p>
         </li>
         <li class="up">
@@ -48,17 +48,18 @@
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="lxqt-sudo" name="lxqt-sudo"></a>lxqt-sudo-2.3.0
+      <a id="lxqt-wayland-session" name=
+      "lxqt-wayland-session"></a>lxqt-wayland-session-0.3.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to lxqt-sudo
+          Introduction to lxqt-wayland-session
         </h2>
         <p>
-          The <span class="application">lxqt-sudo</span> package is a
-          graphical front end to <span class="application">sudo</span> and
-          <span class="application">su</span> respectively.
+          The <span class="application">lxqt-wayland-session</span> package
+          contains the wayland based session manager for <span class=
+          "application">LXQt</span>.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -79,50 +80,54 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/lxqt/lxqt-sudo/releases/download/2.3.0/lxqt-sudo-2.3.0.tar.xz">
-                https://github.com/lxqt/lxqt-sudo/releases/download/2.3.0/lxqt-sudo-2.3.0.tar.xz</a>
+                "https://github.com/lxqt/lxqt-wayland-session/releases/download/0.3.0/lxqt-wayland-session-0.3.0.tar.xz">
+                https://github.com/lxqt/lxqt-wayland-session/releases/download/0.3.0/lxqt-wayland-session-0.3.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 3e6001b5f4556abc57281e44a7663a45
+                Download MD5 sum: 81dcd869239227986e4ebc5e6fa088bd
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 40 KB
+                Download size: 356 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 3.0 MB
+                Estimated disk space required: 2.6 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.1 SBU
+                Estimated build time: less than 0.1 SBU
               </p>
             </li>
           </ul>
         </div>
         <h3>
-          lxqt-sudo Dependencies
+          lxqt-wayland-session Dependencies
         </h3>
         <h4>
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="liblxqt.html" title=
-          "liblxqt-2.3.0">liblxqt-2.3.0</a>
+          <a class="xref" href="lxqt-session.html" title=
+          "lxqt-session-2.3.0">lxqt-session-2.3.0</a>, <a class="xref" href=
+          "lxqt-layer-shell-qt.html" title=
+          "layer-shell-qt-6.5.2 for lxqt">layer-shell-qt-6.5.2 for lxqt</a>,
+          and <a class="xref" href="qtxdg-tools.html" title=
+          "qtxdg-tools-4.3.0">qtxdg-tools-4.3.0</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of lxqt-sudo
+          Installation of lxqt-wayland-session
         </h2>
         <p>
-          Install <span class="application">lxqt-sudo</span> by running the
-          following commands:
+          Install <span class="application">lxqt-wayland-session</span> by
+          running the following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
@@ -139,6 +144,35 @@ make</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">make install</kbd></pre>
       </div>
+      <div class="configuration" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Configuring lxqt-wayland-session
+        </h2>
+        <p>
+          Window Managers other than <a class="xref" href="../x/openbox.html"
+          title="openbox-3.6.1">openbox-3.6.1</a> may be used, e.g. <a class=
+          "xref" href="../xfce/xfwm4.html" title=
+          "Xfwm4-4.20.0">Xfwm4-4.20.0</a>. Please note that <a class="xref"
+          href="../x/icewm.html" title="IceWM-3.9.0">IceWM-3.9.0</a> is not a
+          good substitute. <span class="application">Fluxbox</span> does
+          work, although in this context (with <a class="xref" href=
+          "lxqt-config.html" title=
+          "lxqt-config-2.3.0">lxqt-config-2.3.0</a>), <a class="xref" href=
+          "../x/openbox.html" title="openbox-3.6.1">openbox-3.6.1</a> is
+          better. The configuration file <code class=
+          "filename">/usr/share/lxqt/windowmanagers.conf</code> comes with
+          many examples of Window Managers and the ones which are installed
+          will appear in a drop down list of <span class=
+          "command"><strong>lxqt-config-session</strong></span>. For the ones
+          not included in <code class=
+          "filename">/usr/share/lxqt/windowmanagers.conf</code>, you can use
+          <span class="command"><strong>lxqt-config-session</strong></span>'s
+          "search" button, e.g. for <a class="xref" href="../x/fluxbox.html"
+          title="Fluxbox-1.3.7">Fluxbox-1.3.7</a>, navigating through the
+          file system until you can choose <span class=
+          "command"><strong>fluxbox</strong></span>.
+        </p>
+      </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
           Contents
@@ -147,9 +181,7 @@ make</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">lxdoas (symlinkk to lxqt-sudo),
-              lxqt-sudo, lxsu (symlinkk to lxqt-sudo), and lxsudo (symlinkk
-              to lxqt-sudo)</span>
+              <span class="segbody">lxqt-qdbus and startlxqtwayland</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
@@ -157,8 +189,8 @@ make</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class=
-              "segbody">/usr/share/lxqt/translations/lxqt-sudo</span>
+              <span class="segbody">/usr/share/lxqt/wayland, and
+              /usr/share/themes/Vent{,dark},</span>
             </div>
           </div>
         </div>
@@ -175,60 +207,29 @@ make</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="lxdoas" name="lxdoas"></a><span class=
+                    <a id="lxqt-qdbus" name="lxqt-qdbus"></a><span class=
                     "term"><span class=
-                    "command"><strong>lxdoas</strong></span></span>
+                    "command"><strong>lxqt-qdbus</strong></span></span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    is a graphical frontend for <span class=
-                    "command"><strong>doas</strong></span>
+                    is a dbus wrapper for keybinds on wayland compositors.
                   </p>
                 </td>
               </tr>
               <tr>
                 <td>
                   <p>
-                    <a id="lxqt-sudo-prog" name=
-                    "lxqt-sudo-prog"></a><span class="term"><span class=
-                    "command"><strong>lxqt-sudo</strong></span></span>
+                    <a id="startlxqtwayland" name=
+                    "startlxqtwayland"></a><span class="term"><span class=
+                    "command"><strong>startlxqtwayland</strong></span></span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    is a graphical frontend for <span class=
-                    "command"><strong>sudo</strong></span>
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="lxsudo" name="lxsudo"></a><span class=
-                    "term"><span class=
-                    "command"><strong>lxsudo</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is a graphical frontend for <span class=
-                    "command"><strong>sudo</strong></span>
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="lxsu" name="lxsu"></a><span class=
-                    "term"><span class=
-                    "command"><strong>lxsu</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is a graphical frontend for <span class=
-                    "command"><strong>su</strong></span>
+                    is used to start the desktop wayland session for
+                    <span class="application">LXQt</span>
                   </p>
                 </td>
               </tr>
@@ -240,17 +241,17 @@ make</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="lxqt-policykit.html" title=
-          "lxqt-policykit-2.3.0">Prev</a>
+          <a accesskey="p" href="lxqt-session.html" title=
+          "lxqt-session-2.3.0">Prev</a>
           <p>
-            lxqt-policykit-2.3.0
+            lxqt-session-2.3.0
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="lxqt-openssh-askpass.html" title=
-          "lxqt-openssh-askpass-2.3.0">Next</a>
+          <a accesskey="n" href="xdg-desktop-portal-lxqt.html" title=
+          "xdg-desktop-portal-lxqt-1.3.0">Next</a>
           <p>
-            lxqt-openssh-askpass-2.3.0
+            xdg-desktop-portal-lxqt-1.3.0
           </p>
         </li>
         <li class="up">
