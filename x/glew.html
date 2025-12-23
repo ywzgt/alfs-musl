@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      GLEW-2.2.0
+      GLEW-2.3.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-906">
+  <body class="blfs" id="blfs-r12.4-911">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-906
+        "phrase">(systemd</span> Edition) - Version r12.4-911
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-906">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-911">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="glew" name="glew"></a>GLEW-2.2.0
+      <a id="glew" name="glew"></a>GLEW-2.3.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,22 +78,22 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://downloads.sourceforge.net/glew/glew-2.2.0.tgz">https://downloads.sourceforge.net/glew/glew-2.2.0.tgz</a>
+                "https://downloads.sourceforge.net/glew/glew-2.3.0.tgz">https://downloads.sourceforge.net/glew/glew-2.3.0.tgz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 3579164bccaef09e36c0af7f4fd5c7c7
+                Download MD5 sum: 1b321240e1f6651175e953b46bccb3f2
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 820 KB
+                Download size: 848 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 16 MB
+                Estimated disk space required: 15 MB
               </p>
             </li>
             <li class="listitem">
@@ -124,9 +124,11 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -i 's%lib64%lib%g' config/Makefile.linux &amp;&amp;
-sed -i -e '/glew.lib.static:/d' \
-       -e '/0644 .*STATIC/d'    \
-       -e 's/glew.lib.static//' Makefile     &amp;&amp;
+sed -e '/glew.lib.static:/d' \
+    -e '/0644 .*STATIC/d'    \
+    -e 's/glew.lib.static//' \
+    -e 's|/local||'          \
+    -i Makefile              &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -148,6 +150,11 @@ make</kbd></pre>
         <p>
           <span class="command"><strong>sed -i -e '/glew.lib.static:/d'
           ...</strong></span>: This suppresses the static library.
+        </p>
+        <p>
+          <span class="command"><strong>sed -i -e 's|/local||'
+          ...</strong></span>: This ensures the package is installed in
+          <code class="filename">/usr</code>.
         </p>
         <p>
           <span class="command"><strong>make install.all</strong></span>:
@@ -252,7 +259,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-906">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-911">
           Home</a>
         </li>
       </ul>
