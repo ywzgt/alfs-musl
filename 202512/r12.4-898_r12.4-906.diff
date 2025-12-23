@@ -1,0 +1,65 @@
+diff --git a/wget-list b/wget-list
+index 3ce30bb971..e2c0a4232b 100644
+--- a/wget-list
++++ b/wget-list
+@@ -30,7 +30,7 @@ https://www.sudo.ws/dist/sudo-1.9.17p2.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+ https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.17.1.tar.xz
+ https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz
+-https://github.com/libfuse/libfuse/releases/download/fuse-3.18.0/fuse-3.18.0.tar.gz
++https://github.com/libfuse/libfuse/releases/download/fuse-3.18.1/fuse-3.18.1.tar.gz
+ https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.patch
+ https://sourceware.org/ftp/lvm2/LVM2.2.03.38.tgz
+@@ -160,7 +160,7 @@ https://github.com/protocolbuffers/protobuf/releases/download/v33.2/protobuf-33.
+ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
+ https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
+-https://github.com/simdutf/simdutf/archive/v7.7.0/simdutf-7.7.0.tar.gz
++https://github.com/simdutf/simdutf/archive/v7.7.1/simdutf-7.7.1.tar.gz
+ https://archive.mozilla.org/pub/firefox/releases/140.6.0esr/source/firefox-140.6.0esr.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.6.0-python_3.14_fixes-1.patch
+ https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.335.0/SPIRV-Headers-vulkan-sdk-1.4.335.0.tar.gz
+@@ -303,7 +303,7 @@ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+ https://ftpmirror.gnu.org/gcc/gcc-15.2.0/gcc-15.2.0.tar.xz
+ https://github.com/bdwgc/bdwgc/releases/download/v8.2.10/gc-8.2.10.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gc-8.2.10-fork_workaround-1.patch
+-https://ftpmirror.gnu.org/gdb/gdb-16.3.tar.xz
++https://ftpmirror.gnu.org/gdb/gdb-17.1.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-2.52.0.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-manpages-2.52.0.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.52.0.tar.xz
+@@ -486,7 +486,7 @@ https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/html5lib-1.1-python_3.14_buildfix-1.patch
+ https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.0.2.tar.gz
+ https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.10.tar.gz
+-https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.3.5.tar.gz
++https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.4.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/ply/ply-3.11.tar.gz
+ https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.1.3.tar.gz
+ https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
+@@ -707,6 +707,7 @@ https://download.gnome.org/sources/pango/1.57/pango-1.57.0.tar.xz
+ https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
+ https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
+ https://download.qt.io/archive/qt/6.10/6.10.1/single/qt-everywhere-src-6.10.1.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.10.1-upstream_fixes-1.patch
+ https://download.qt.io/official_releases/qt/6.10/6.10.1/submodules/qtwebengine-everywhere-src-6.10.1.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Headers/archive/vulkan-sdk-1.4.335.0/Vulkan-Headers-vulkan-sdk-1.4.335.0.tar.gz
+@@ -882,6 +883,7 @@ https://github.com/lxqt/lxqt-policykit/releases/download/2.3.0/lxqt-policykit-2.
+ https://github.com/lxqt/lxqt-sudo/releases/download/2.3.0/lxqt-sudo-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-openssh-askpass/releases/download/2.3.0/lxqt-openssh-askpass-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-session/releases/download/2.3.0/lxqt-session-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-wayland-session/releases/download/0.3.0/lxqt-wayland-session-0.3.0.tar.xz
+ https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/1.3.0/xdg-desktop-portal-lxqt-1.3.0.tar.xz
+ https://github.com/lxqt/obconf-qt/releases/download/0.16.5/obconf-qt-0.16.5.tar.xz
+ https://github.com/lxqt/lximage-qt/releases/download/2.3.0/lximage-qt-2.3.0.tar.xz
+@@ -1003,7 +1005,7 @@ https://downloads.xiph.org/releases/cdparanoia/cdparanoia-III-10.2.src.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/cdparanoia-III-10.2-gcc_fixes-1.patch
+ https://download.kde.org/stable/release-service/25.08.3/src/kwave-25.08.3.tar.xz
+ https://downloads.sourceforge.net/lame/lame-3.100.tar.gz
+-https://downloads.sourceforge.net/mpg123/mpg123-1.33.3.tar.bz2
++https://downloads.sourceforge.net/mpg123/mpg123-1.33.4.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-6.2.tar.xz
+ https://github.com/nicklan/pnmixer/releases/download/v0.7.2/pnmixer-v0.7.2.tar.gz
+ https://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.3.tar.gz
