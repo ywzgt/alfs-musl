@@ -1,0 +1,34 @@
+diff --git a/wget-list b/wget-list
+index b4b28243ab..39efd49591 100644
+--- a/wget-list
++++ b/wget-list
+@@ -204,7 +204,7 @@ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.
+ https://downloads.sourceforge.net/libpng/libpng-1.6.52.tar.xz
+ https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.51-apng.patch.gz
+ https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
+-https://www.libraw.org/data/LibRaw-0.21.4.tar.gz
++https://www.libraw.org/data/LibRaw-0.21.5.tar.gz
+ https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.3.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+ https://download.osgeo.org/libtiff/tiff-4.7.1.tar.gz
+@@ -939,13 +939,13 @@ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
+ https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
+ https://github.com/dyne/frei0r/archive/v2.5.1/frei0r-v2.5.1.tar.gz
+ https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
+-https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.9.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.9.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.9.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.26.9.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.26.9.tar.xz
+-https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.9/gst-plugins-rs-gstreamer-1.26.9.tar.gz
+-https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.26.9.tar.xz
++https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.10.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.10.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.10.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.26.10.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.26.10.tar.xz
++https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.10/gst-plugins-rs-gstreamer-1.26.10.tar.gz
++https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.26.10.tar.xz
+ https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+ https://github.com/lfs-book/intel-media-driver/archive/v25.3.4/intel-media-driver-25.3.4.tar.gz
