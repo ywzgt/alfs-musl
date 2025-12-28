@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-921">
+  <body class="blfs" id="blfs-r12.4-926">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-921
+        "phrase">(systemd</span> Edition) - Version r12.4-926
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-921">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-926">
           Home</a>
         </li>
       </ul>
@@ -167,8 +167,7 @@
             the following commands:
           </p>
           <pre class="userinput"><kbd class=
-          "command">cd video/dav1d &amp;&amp;
-cargo build --release</kbd></pre>
+          "command">cargo build --package gst-plugin-dav1d --release</kbd></pre>
           <p>
             This package does not come with a test suite.
           </p>
@@ -176,7 +175,7 @@ cargo build --release</kbd></pre>
             Now, as the <code class="systemitem">root</code> user:
           </p>
           <pre class="root"><kbd class=
-          "command">install -vm755 ../../target/release/libgstdav1d.so /usr/lib/gstreamer-1.0</kbd></pre>
+          "command">install -vm755 target/release/libgstdav1d.so /usr/lib/gstreamer-1.0</kbd></pre>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -187,8 +186,7 @@ cargo build --release</kbd></pre>
             the following commands:
           </p>
           <pre class="userinput"><kbd class=
-          "command">cd ../../video/gtk4 &amp;&amp;
-cargo build --release</kbd></pre>
+          "command">cargo build --package gst-plugin-gtk4 --release</kbd></pre>
           <p>
             This package does not come with a test suite, but its basic
             functionality can be tested after installation.
@@ -197,7 +195,7 @@ cargo build --release</kbd></pre>
             Now, as the <code class="systemitem">root</code> user:
           </p>
           <pre class="root"><kbd class=
-          "command">install -vm755 ../../target/release/libgstgtk4.so /usr/lib/gstreamer-1.0</kbd></pre>
+          "command">install -vm755 target/release/libgstgtk4.so /usr/lib/gstreamer-1.0</kbd></pre>
           <p>
             To test the basic functionality of the package, issue:
             <span class="command"><strong>gst-launch-1.0 videotestsrc
@@ -293,7 +291,7 @@ cargo build --release</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-921">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-926">
           Home</a>
         </li>
       </ul>
