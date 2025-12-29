@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-926">
+  <body class="blfs" id="blfs-r12.4-932">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-926
+        "phrase">(systemd</span> Edition) - Version r12.4-932
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-926">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-932">
           Home</a>
         </li>
       </ul>
@@ -205,7 +205,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="python-modules.html#psutil" title=
-                "psutil-7.1.3">psutil-7.1.3</a>
+                "psutil-7.2.0">psutil-7.2.0</a>
               </p>
             </li>
             <li class="listitem">
@@ -3861,7 +3861,7 @@ popd</kbd></pre>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          <a id="psutil" name="psutil"></a>psutil-7.1.3
+          <a id="psutil" name="psutil"></a>psutil-7.2.0
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -3896,29 +3896,28 @@ popd</kbd></pre>
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.1.3.tar.gz">
-                  https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.1.3.tar.gz</a>
+                  "https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.2.0.tar.gz">
+                  https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.2.0.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: 99dbbe92985d5e5a3a45574ea521af67
+                  Download MD5 sum: 9d8ee00a4b3ea9279df6bbe0a307c541
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download size: 476 KB
+                  Download size: 480 KB
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Estimated disk space required: 6.2 MB (add 57 MB for tests)
+                  Estimated disk space required: 58 MB (with tests)
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Estimated build time: less than 0.1 SBU (add 0.1 SBU with
-                  tests)
+                  Estimated build time: 0.2 SBU (with tests)
                 </p>
               </li>
             </ul>
@@ -3933,10 +3932,11 @@ popd</kbd></pre>
             <a class="xref" href="python-modules.html#pytest" title=
             "Pytest-9.0.2">pytest-9.0.2</a>, <a class="ulink" href=
             "https://pypi.org/project/colorama/">colorama</a>, <a class=
-            "ulink" href="https://pypi.org/project/pyperf/">pyperf</a>,
+            "ulink" href="https://pypi.org/project/pyleak/">pyleak</a>,
             <a class="ulink" href=
-            "https://pypi.org/project/pypinfo/">pypinfo</a>, <a class="ulink"
-            href=
+            "https://pypi.org/project/pyperf/">pyperf</a>, <a class="ulink"
+            href="https://pypi.org/project/pypinfo/">pypinfo</a>, <a class=
+            "ulink" href=
             "https://pypi.org/project/pytest-instafail/">pytest-instafail</a>,
             <a class="ulink" href=
             "https://pypi.org/project/pytest-subtests/">pytest-subtests</a>,
@@ -3967,17 +3967,20 @@ popd</kbd></pre>
             To test the results, issue:
           </p>
           <pre class="userinput"><kbd class=
-          "command">python3 -m venv --system-site-packages testenv                            &amp;&amp;
-testenv/bin/pip3 install colorama pytest-{instafail,subtests,xdist} pyperf \
-                         pypinfo &amp;&amp;
+          "command">python3 -m venv --system-site-packages testenv                      &amp;&amp;
+testenv/bin/pip3 install colorama pytest-{instafail,subtests,xdist} \
+                         psleak pyperf pypinfo                      &amp;&amp;
 PSUTIL_DEBUG=1 testenv/bin/python3 -m pytest</kbd></pre>
           <div class="itemizedlist">
             <ul class="compact">
               <li class="listitem">
                 <p>
-                  The test named <code class=
-                  "literal">TestSystemAPIs::test_disk_usage</code> is known
-                  to fail.
+                  The tests named <code class=
+                  "literal">TestSystemAPIs::test_disk_usage</code>,
+                  <code class=
+                  "literal">TestFetchAllProcesses::test_all</code>, and
+                  <code class="literal">TestNetAPIs::test_net_if_addrs</code>
+                  are known to fail.
                 </p>
               </li>
               <li class="listitem">
@@ -4086,7 +4089,7 @@ PSUTIL_DEBUG=1 testenv/bin/python3 -m pytest</kbd></pre>
               <div class="seg">
                 <strong class="segtitle">Installed Directories:</strong>
                 <span class=
-                "segbody">/usr/lib/python3.14/site-packages/psutil-7.1.3.dist-info</span>
+                "segbody">/usr/lib/python3.14/site-packages/psutil-7.2.0.dist-info</span>
               </div>
             </div>
           </div>
@@ -7577,7 +7580,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-926">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-932">
           Home</a>
         </li>
       </ul>
