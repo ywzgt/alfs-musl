@@ -1,0 +1,49 @@
+diff --git a/wget-list b/wget-list
+index 39efd49591..7c1d099f44 100644
+--- a/wget-list
++++ b/wget-list
+@@ -105,7 +105,7 @@ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/bdwgc/libatomic_ops/releases/download/v7.10.0/libatomic_ops-7.10.0.tar.gz
+ https://github.com/storaged-project/libblockdev/releases/download/3.4.0/libblockdev-3.4.0.tar.gz
+ https://github.com/storaged-project/libbytesize/releases/download/2.12/libbytesize-2.12.tar.gz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.2/libclc-21.1.2.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/libclc-21.1.8.src.tar.xz
+ https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6.tar.xz
+ https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+ https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.3.0/downloads/libdisplay-info-0.3.0.tar.xz
+@@ -308,11 +308,11 @@ https://www.kernel.org/pub/software/scm/git/git-2.52.0.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-manpages-2.52.0.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.52.0.tar.xz
+ https://ftpmirror.gnu.org/guile/guile-3.0.11.tar.xz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.2/llvm-21.1.2.src.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-21.1.2.src.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-third-party-21.1.2.src.tar.xz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.2/clang-21.1.2.src.tar.xz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.2/compiler-rt-21.1.2.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/llvm-21.1.8.src.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-21.1.8.src.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-third-party-21.1.8.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/clang-21.1.8.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/compiler-rt-21.1.8.src.tar.xz
+ https://www.lua.org/ftp/lua-5.4.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.8-shared_library-1.patch
+ https://www.lua.org/tests/lua-5.4.8-tests.tar.gz
+@@ -912,8 +912,7 @@ https://github.com/freerdp/freerdp/archive/3.20.0/FreeRDP-3.20.0.tar.gz
+ https://download.gimp.org/gimp/v3.0/gimp-3.0.6.tar.xz
+ https://download.gimp.org/pub/gimp/help/gimp-help-3.0.0.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.7.0.tar.gz
+-https://inkscape.org/gallery/item/56344/inkscape-1.4.2.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.2-poppler_fixes-5.patch
++https://inkscape.org/gallery/item/58914/inkscape-1.4.3.tar.xz
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+ https://archive.mozilla.org/pub/thunderbird/releases/140.6.0esr/source/thunderbird-140.6.0esr.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.6.0esr-python_3.14_fixes-1.patch
+@@ -991,7 +990,7 @@ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.1.2/SVT-AV1-v3.1.2.tar.gz
+ https://taglib.org/releases/taglib-2.1.1.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.32.0.tar.xz
+-https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.12/wireplumber-0.5.12.tar.bz2
++https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.13/wireplumber-0.5.13.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20250815.tar.xz
+ https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz
+ https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
