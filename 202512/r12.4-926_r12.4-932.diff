@@ -1,0 +1,58 @@
+diff --git a/wget-list b/wget-list
+index 7c1d099f44..86a0b7ab71 100644
+--- a/wget-list
++++ b/wget-list
+@@ -79,7 +79,7 @@ https://github.com/google/double-conversion/archive/v3.4.0/double-conversion-3.4
+ https://duktape.org/duktape-2.7.0.tar.xz
+ https://github.com/rrthomas/enchant/releases/download/v2.8.14/enchant-2.8.14.tar.gz
+ https://libopenraw.freedesktop.org/download/exempi-2.6.6.tar.xz
+-https://github.com/fastfloat/fast_float/archive/v8.1.0/fast_float-8.1.0.tar.gz
++https://github.com/fastfloat/fast_float/archive/v8.2.0/fast_float-8.2.0.tar.gz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+ https://github.com/fmtlib/fmt/archive/12.1.0/fmt-12.1.0.tar.gz
+ https://download.gnome.org/sources/glib/2.86/glib-2.86.3.tar.xz
+@@ -190,7 +190,7 @@ https://github.com/g-truc/glm/archive/1.0.2/glm-1.0.2.tar.gz
+ https://download.gnome.org/sources/glycin/2.0/glycin-2.0.7.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.7-xorg_prefix-1.patch
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+-https://github.com/harfbuzz/harfbuzz/releases/download/12.2.0/harfbuzz-12.2.0.tar.xz
++https://github.com/harfbuzz/harfbuzz/releases/download/12.3.0/harfbuzz-12.3.0.tar.xz
+ https://github.com/jasper-software/jasper/archive/version-4.2.8/jasper-version-4.2.8.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.17/lcms2-2.17.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.3.0/libavif-1.3.0.tar.gz
+@@ -488,7 +488,7 @@ https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.0.2.tar.gz
+ https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.10.tar.gz
+ https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.4.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/ply/ply-3.11.tar.gz
+-https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.1.3.tar.gz
++https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.2.0.tar.gz
+ https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
+ https://download.gnome.org/sources/pyatspi/2.58/pyatspi-2.58.0.tar.xz
+ https://github.com/pygobject/pycairo/releases/download/v1.29.0/pycairo-1.29.0.tar.gz
+@@ -550,7 +550,7 @@ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.1.0.tar.g
+ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.6.0.tar.gz
+ https://files.pythonhosted.org/packages/source/u/uv_build/uv_build-0.9.10.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+-https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.8.tar.xz
++https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.0.tar.xz
+ https://static.rust-lang.org/dist/rustc-1.92.0-src.tar.xz
+ https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.1/rust-bindgen-0.72.1.tar.gz
+ https://downloads.sourceforge.net/scons/SCons-4.10.1.tar.gz
+@@ -633,8 +633,6 @@ https://github.com/proftpd/proftpd/archive/v1.3.9/proftpd-1.3.9.tar.gz
+ https://www.dovecot.org/releases/2.4/dovecot-2.4.2.tar.gz
+ https://ftp.exim.org/pub/exim/exim4/exim-4.99.1.tar.xz
+ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.7.tar.gz
+-https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/sendmail-8.18.1-gcc15_fixes-1.patch
+ https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.33.tar.bz2
+ https://downloads.mariadb.org/interstitial/mariadb-11.8.5/source/mariadb-11.8.5.tar.gz
+ https://ftp.postgresql.org/pub/source/v18.1/postgresql-18.1.tar.bz2
+@@ -888,7 +886,7 @@ https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/1.3.0/xdg-desk
+ https://github.com/lxqt/obconf-qt/releases/download/0.16.5/obconf-qt-0.16.5.tar.xz
+ https://github.com/lxqt/lximage-qt/releases/download/2.3.0/lximage-qt-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-archiver/releases/download/1.3.0/lxqt-archiver-1.3.0.tar.xz
+-https://github.com/lxqt/lxqt-notificationd/releases/download/2.3.0/lxqt-notificationd-2.3.0.tar.xz
++https://github.com/lxqt/lxqt-notificationd/releases/download/2.3.1/lxqt-notificationd-2.3.1.tar.xz
+ https://github.com/lxqt/pavucontrol-qt/releases/download/2.3.0/pavucontrol-qt-2.3.0.tar.xz
+ https://github.com/lxqt/qps/releases/download/2.12.0/qps-2.12.0.tar.xz
+ https://github.com/lxqt/qtermwidget/releases/download/2.3.0/qtermwidget-2.3.0.tar.xz
