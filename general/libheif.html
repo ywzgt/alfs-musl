@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-959">
+  <body class="blfs" id="blfs-r12.4-974">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-959
+        "phrase">(systemd</span> Edition) - Version r12.4-974
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-959">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-974">
           Home</a>
         </li>
       </ul>
@@ -136,9 +136,11 @@
           <a class="xref" href="openjpeg2.html" title=
           "OpenJPEG-2.5.4">OpenJPEG-2.5.4</a>, <a class="xref" href=
           "../multimedia/sdl2.html" title=
-          "sdl2-compat-2.32.60">sdl2-compat-2.32.60</a>, <a class="xref"
+          "sdl2-compat-2.32.62">sdl2-compat-2.32.62</a>, <a class="xref"
           href="../multimedia/svt-av1.html" title=
-          "SVT-AV1-3.1.2">SVT-AV1-3.1.2</a>, <a class="ulink" href=
+          "SVT-AV1-3.1.2">SVT-AV1-3.1.2</a>, <a class="xref" href=
+          "../multimedia/x264.html" title="x264-20250815">x264-20250815</a>,
+          <a class="ulink" href=
           "https://github.com/ultravideo/kvazaar">kvaaar</a>, <a class=
           "ulink" href="https://www.openh264.org/">openh264</a>, <a class=
           "ulink" href="https://github.com/aous72/OpenJPH">openjph</a>,
@@ -162,6 +164,7 @@ cd    build &amp;&amp;
 
 cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -D CMAKE_BUILD_TYPE=Release  \
+      -D WITH_GDK_PIXBUF=OFF       \
       -G Ninja ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -177,6 +180,14 @@ ninja</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <em class="parameter"><code>-D WITH_GDK_PIXBUF=OFF</code></em>:
+          This option disables building the gdk-pixbuf loader, as <a class=
+          "xref" href="../x/gdk-pixbuf.html" title=
+          "gdk-pixbuf-2.44.4">gdk-pixbuf-2.44.4</a> is supposed to use this
+          package via <a class="xref" href="glycin.html" title=
+          "glycin-2.0.7">glycin-2.0.7</a> instead of the loader.
+        </p>
         <p>
           <code class="option">-D DAV1D=ON</code>: This option allows using
           <a class="xref" href="../multimedia/dav1d.html" title=
@@ -351,7 +362,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-959">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-974">
           Home</a>
         </li>
       </ul>

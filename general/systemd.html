@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-959">
+  <body class="blfs" id="blfs-r12.4-974">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-959
+        "phrase">(systemd</span> Edition) - Version r12.4-974
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-959">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-974">
           Home</a>
         </li>
       </ul>
@@ -171,7 +171,7 @@
           "libqrencode-4.1.1">libqrencode-4.1.1</a>, <a class="xref" href=
           "../basicnet/rsync.html" title="rsync-3.4.1">rsync-3.4.1</a>,
           <a class="xref" href="python-modules.html#sphinx" title=
-          "Sphinx-9.0.4">sphinx-9.0.4</a>, <a class="xref" href=
+          "Sphinx-9.1.0">sphinx-9.1.0</a>, <a class="xref" href=
           "valgrind.html" title="Valgrind-3.26.0">Valgrind-3.26.0</a>,
           <a class="xref" href="../postlfs/zsh.html" title=
           "zsh-5.9">zsh-5.9</a> (for the zsh completions), <a class="ulink"
@@ -230,7 +230,8 @@
           </h3>
           <p>
             If a previous version of systemd has been installed, remove a
-            service that will generate errors on following boots.
+            service that will generate errors on following boots. As the
+            <code class="systemitem">root</code> user:
           </p>
           <pre class="root"><kbd class=
           "command">rm -fv /usr/lib/systemd/system/systemd-update-utmp-runlevel.service</kbd></pre>
@@ -399,7 +400,7 @@ EOF</kbd></pre>
           </h3>
           <p>
             Now ensure <a class="xref" href="../postlfs/shadow.html" title=
-            "Shadow-4.18.0">Shadow-4.18.0</a> has been already rebuilt with
+            "Shadow-4.19.0">Shadow-4.19.0</a> has been already rebuilt with
             <a class="xref" href="../postlfs/linux-pam.html" title=
             "Linux-PAM-1.7.1">Linux-PAM-1.7.1</a> support first, then logout,
             and login again. This will ensure that the running login session
@@ -552,7 +553,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-959">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-974">
           Home</a>
         </li>
       </ul>
