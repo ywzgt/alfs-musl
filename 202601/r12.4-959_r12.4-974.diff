@@ -1,0 +1,87 @@
+diff --git a/wget-list b/wget-list
+index d21d426110..3955bb07f6 100644
+--- a/wget-list
++++ b/wget-list
+@@ -4,7 +4,7 @@ https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.t
+ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.3.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
+-https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.8.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.16.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.11.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-2.0.1.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/gpgmepp/gpgmepp-2.0.0.tar.xz
+@@ -24,7 +24,7 @@ https://github.com/p11-glue/p11-kit/releases/download/0.25.10/p11-kit-0.25.10.ta
+ https://github.com/polkit-org/polkit/archive/127/polkit-127.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+-https://github.com/shadow-maint/shadow/releases/download/4.18.0/shadow-4.18.0.tar.xz
++https://github.com/shadow-maint/shadow/releases/download/4.19.0/shadow-4.19.0.tar.xz
+ https://www.stunnel.org/downloads/archive/5.x/stunnel-5.76.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.17p2.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+@@ -41,7 +41,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.10-convenience-1.
+ https://ftpmirror.gnu.org/parted/parted-3.6.tar.xz
+ https://downloads.sourceforge.net/smartmontools/smartmontools-7.5.tar.gz
+ https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.5/sshfs-3.7.5.tar.xz
+-https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.17.0.tar.xz
++https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.18.0.tar.xz
+ https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
+ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
+ https://ftpmirror.gnu.org/grub/grub-2.12.tar.xz
+@@ -58,7 +58,7 @@ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/25.08.3/src/kate-25.08.3.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.5.tar.xz
+ https://www.nano-editor.org/dist/v8/nano-8.7.tar.xz
+-https://github.com/vim/vim/archive/v9.1.1934/vim-9.1.1934.tar.gz
++https://github.com/vim/vim/archive/v9.1.2031/vim-9.1.2031.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+@@ -127,7 +127,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/libportal-0.9.1-qt6.9_fixes-1.
+ https://github.com/libproxy/libproxy/archive/0.5.12/libproxy-0.5.12.tar.gz
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+ https://github.com/Qalculate/libqalculate/releases/download/v5.8.2/libqalculate-5.8.2.tar.gz
+-https://gitlab.freedesktop.org/mobile-broadband/libqmi/-/archive/1.36.0/libqmi-1.36.0.tar.gz
++https://gitlab.freedesktop.org/mobile-broadband/libqmi/-/archive/1.38.0/libqmi-1.38.0.tar.gz
+ https://github.com/seccomp/libseccomp/releases/download/v2.6.0/libseccomp-2.6.0.tar.gz
+ https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.1.tar.xz
+ https://download.gnome.org/sources/libsigc++/3.6/libsigc++-3.6.0.tar.xz
+@@ -186,7 +186,7 @@ https://sourceforge.net/projects/giflib/files/giflib-5.2.2.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-upstream_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-security_fixes-1.patch
+ https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
+-https://github.com/g-truc/glm/archive/1.0.2/glm-1.0.2.tar.gz
++https://github.com/g-truc/glm/archive/1.0.3/glm-1.0.3.tar.gz
+ https://download.gnome.org/sources/glycin/2.0/glycin-2.0.7.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.7-xorg_prefix-1.patch
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+@@ -507,7 +507,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/requests-use_system_certs-1.pa
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+ https://github.com/getsentry/sentry-python/releases/download/2.35.0/sentry_sdk-2.35.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/six/six-1.17.0.tar.gz
+-https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-9.0.4.tar.gz
++https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-9.1.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-3.0.2.tar.gz
+ https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-1.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/a/attrs/attrs-25.4.0.tar.gz
+@@ -718,7 +718,7 @@ https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.
+ https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.9/lightdm-gtk-greeter-2.0.9.tar.gz
+ https://github.com/sddm/sddm/archive/v0.21.0/sddm-0.21.0.tar.gz
+ https://downloads.sourceforge.net/fluxbox/fluxbox-1.3.7.tar.xz
+-https://github.com/ice-wm/icewm/archive/3.9.0/icewm-3.9.0.tar.gz
++https://github.com/ice-wm/icewm/archive/4.0.0/icewm-4.0.0.tar.gz
+ http://openbox.org/dist/openbox/openbox-3.6.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openbox-3.6.1-py3-1.patch
+ https://download.gnome.org/sources/adwaita-icon-theme/49/adwaita-icon-theme-49.0.tar.xz
+@@ -979,8 +979,8 @@ https://downloads.xiph.org/releases/opus/opus-1.6.tar.gz
+ https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.9/pipewire-1.4.9.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.1.tar.xz
+-https://www.libsdl.org/release/sdl2-compat-2.32.60.tar.gz
+-https://www.libsdl.org/release/SDL3-3.2.28.tar.gz
++https://www.libsdl.org/release/sdl2-compat-2.32.62.tar.gz
++https://www.libsdl.org/release/SDL3-3.4.0.tar.gz
+ https://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2
+ https://www.surina.net/soundtouch/soundtouch-2.4.0.tar.gz
+ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
