@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      opencv-4.12.0
+      opencv-4.13.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-980">
+  <body class="blfs" id="blfs-r12.4-1001">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-980
+        "phrase">(systemd</span> Edition) - Version r12.4-1001
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-980">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1001">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="opencv" name="opencv"></a>opencv-4.12.0
+      <a id="opencv" name="opencv"></a>opencv-4.13.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,13 +77,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/opencv/opencv/archive/4.12.0/opencv-4.12.0.tar.gz">
-                https://github.com/opencv/opencv/archive/4.12.0/opencv-4.12.0.tar.gz</a>
+                "https://github.com/opencv/opencv/archive/4.13.0/opencv-4.13.0.tar.gz">
+                https://github.com/opencv/opencv/archive/4.13.0/opencv-4.13.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: eb6f8ff4f4cd16ef1b97bc21edc74de9
+                Download MD5 sum: f33c0ace3add57aba7b9d3fe3c41feb4
               </p>
             </li>
             <li class="listitem">
@@ -98,7 +98,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 3.6 SBU (using parallelism=8)
+                Estimated build time: 4.1 SBU (using parallelism=8)
               </p>
             </li>
           </ul>
@@ -110,22 +110,15 @@
           <ul class="compact">
             <li class="listitem">
               <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/opencv-4.12.0-ffmpeg8-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/opencv-4.12.0-ffmpeg8-1.patch</a>
-              </p>
-            </li>
-            <li class="listitem">
-              <p>
                 Optional additional modules: <a class="ulink" href=
-                "https://github.com/opencv/opencv_contrib/archive/4.12.0/opencv_contrib-4.12.0.tar.gz">
-                https://github.com/opencv/opencv_contrib/archive/4.12.0/opencv_contrib-4.12.0.tar.gz</a>
+                "https://github.com/opencv/opencv_contrib/archive/4.13.0/opencv_contrib-4.13.0.tar.gz">
+                https://github.com/opencv/opencv_contrib/archive/4.13.0/opencv_contrib-4.13.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
                 Optional additional modules md5sum:
-                55603c033cc5f3d5e307b699ad72e25a
+                8ed522edaefc2d55df685438acae9beb
               </p>
             </li>
             <li class="listitem">
@@ -214,16 +207,10 @@
           Installation of opencv
         </h2>
         <p>
-          First, apply a patch to make the package compatible with
-          <span class="application">ffmpeg-8</span>:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../opencv-4.12.0-ffmpeg8-1.patch</kbd></pre>
-        <p>
           If you downloaded the optional modules, unpack them now:
         </p>
         <pre class="userinput"><kbd class=
-        "command">tar -xf ../opencv_contrib-4.12.0.tar.gz</kbd></pre>
+        "command">tar -xf ../opencv_contrib-4.13.0.tar.gz</kbd></pre>
         <p>
           Install <span class="application">opencv</span> by running the
           following commands:
@@ -231,18 +218,17 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -D CMAKE_INSTALL_PREFIX=/usr        \
-      -D CMAKE_BUILD_TYPE=Release         \
-      -D ENABLE_CXX11=ON                  \
-      -D BUILD_PERF_TESTS=OFF             \
-      -D WITH_XINE=ON                     \
-      -D BUILD_TESTS=OFF                  \
-      -D ENABLE_PRECOMPILED_HEADERS=OFF   \
-      -D CMAKE_SKIP_INSTALL_RPATH=ON      \
-      -D BUILD_WITH_DEBUG_INFO=OFF        \
-      -D OPENCV_GENERATE_PKGCONFIG=ON     \
-      -D CMAKE_POLICY_VERSION_MINIMUM=3.5 \
-      -W no-dev  ..                       &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr      \
+      -D CMAKE_BUILD_TYPE=Release       \
+      -D ENABLE_CXX11=ON                \
+      -D BUILD_PERF_TESTS=OFF           \
+      -D WITH_XINE=ON                   \
+      -D BUILD_TESTS=OFF                \
+      -D ENABLE_PRECOMPILED_HEADERS=OFF \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON    \
+      -D BUILD_WITH_DEBUG_INFO=OFF      \
+      -D OPENCV_GENERATE_PKGCONFIG=ON   \
+      -W no-dev  ..                     &amp;&amp;
 make</kbd></pre>
         <p>
           The package does not come with a test suite.
@@ -256,11 +242,6 @@ make</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
-        <p>
-          <em class="parameter"><code>-D
-          CMAKE_POLICY_VERSION_MINIMUM=3.5</code></em>: This switch allows
-          building this package with cmake-4.0 or newer.
-        </p>
         <p>
           <em class="parameter"><code>-D
           CMAKE_SKIP_INSTALL_RPATH=ON</code></em>: This switch makes
@@ -289,7 +270,7 @@ make</kbd></pre>
         </p>
         <p>
           <code class="option">-D
-          OPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.12.0/modules</code>:
+          OPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.13.0/modules</code>:
           instructs the build system to build additional modules. Some
           packages in BLFS (such as <a class="xref" href=
           "../multimedia/gst10-plugins-bad.html" title=
@@ -318,8 +299,8 @@ make</kbd></pre>
               libopencv_dnn_objdetect.so, libopencv_dnn.so,
               libopencv_dnn_superres.so, libopencv_dpm.so, libopencv_face.so,
               libopencv_features2d.so, libopencv_flann.so,
-              libopencv_freetype.so, libopencv_gapi.so, libopencv_hfs.so,
-              libopencv_highgui.so, libopencv_imgcodecs.so,
+              libopencv_freetype.so, libopencv_fuzzy.so, libopencv_gapi.so,
+              libopencv_hfs.so, libopencv_highgui.so, libopencv_imgcodecs.so,
               libopencv_img_hash.so, libopencv_imgproc.so,
               libopencv_intensity_transform.so, libopencv_line_descriptor.so,
               libopencv_mcc.so, libopencv_ml.so, libopencv_objdetect.so,
@@ -368,7 +349,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-980">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1001">
           Home</a>
         </li>
       </ul>
