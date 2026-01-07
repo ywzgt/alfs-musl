@@ -1,0 +1,94 @@
+diff --git a/wget-list b/wget-list
+index 1f878cc1a0..f70ab18eb3 100644
+--- a/wget-list
++++ b/wget-list
+@@ -211,9 +211,8 @@ https://download.osgeo.org/libtiff/tiff-4.7.1.tar.gz
+ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz
+ https://github.com/mypaint/mypaint-brushes/releases/download/v1.3.1/mypaint-brushes-1.3.1.tar.xz
+ https://releases.pagure.org/newt/newt-0.52.25.tar.gz
+-https://github.com/opencv/opencv/archive/4.12.0/opencv-4.12.0.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/opencv-4.12.0-ffmpeg8-1.patch
+-https://github.com/opencv/opencv_contrib/archive/4.12.0/opencv_contrib-4.12.0.tar.gz
++https://github.com/opencv/opencv/archive/4.13.0/opencv-4.13.0.tar.gz
++https://github.com/opencv/opencv_contrib/archive/4.13.0/opencv_contrib-4.13.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.4/openjpeg-2.5.4.tar.gz
+ https://www.cairographics.org/releases/pixman-0.46.4.tar.gz
+ https://poppler.freedesktop.org/poppler-25.12.0.tar.xz
+@@ -340,7 +339,7 @@ https://www.cpan.org/authors/id/L/LE/LEONT/File-Slurper-0.014.tar.gz
+ https://www.cpan.org/authors/id/P/PL/PLICEASE/File-Which-1.27.tar.gz
+ https://www.cpan.org/authors/id/O/OA/OALDERS/HTML-Parser-3.83.tar.gz
+ https://www.cpan.org/authors/id/O/OA/OALDERS/HTTP-Daemon-6.16.tar.gz
+-https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.095.tar.gz
++https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.096.tar.gz
+ https://www.cpan.org/authors/id/G/GA/GAAS/IO-String-1.08.tar.gz
+ https://www.cpan.org/authors/id/R/RJ/RJBS/IPC-Run3-0.049.tar.gz
+ https://www.cpan.org/authors/id/A/AL/ALINKE/Lingua-Translit-0.29.tar.gz
+@@ -475,7 +474,7 @@ https://download.gnome.org/sources/blueprint-compiler/0.18/blueprint-compiler-0.
+ https://files.pythonhosted.org/packages/source/b/build/build-1.3.0.tar.gz
+ https://github.com/psf/cachecontrol/archive/v0.14.4/cachecontrol-0.14.4.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.3.0.tar.gz
+-https://github.com/cython/cython/releases/download/3.2.3-1/cython-3.2.3.tar.gz
++https://github.com/cython/cython/releases/download/3.2.4/cython-3.2.4.tar.gz
+ https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.37.2.tar.gz
+ https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.4.0.tar.xz
+ https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.22.4.tar.gz
+@@ -694,7 +693,7 @@ https://downloads.sourceforge.net/enlightenment/imlib2-1.12.6.tar.xz
+ https://github.com/ksnip/kColorPicker/archive/v0.3.1/kColorPicker-0.3.1.tar.gz
+ https://github.com/ksnip/kImageAnnotator/archive/v0.7.2/kImageAnnotator-0.7.2.tar.gz
+ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
+-https://download.gnome.org/sources/libadwaita/1.8/libadwaita-1.8.2.tar.xz
++https://download.gnome.org/sources/libadwaita/1.8/libadwaita-1.8.3.tar.xz
+ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.5.0/libei-1.5.0.tar.bz2
+ https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
+ https://dri.freedesktop.org/libdrm/libdrm-2.4.131.tar.xz
+@@ -762,20 +761,20 @@ https://download.gnome.org/sources/gsettings-desktop-schemas/49/gsettings-deskto
+ https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.7.tar.xz
+ https://download.gnome.org/sources/librest/0.10/librest-0.10.2.tar.xz
+ https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.6.tar.xz
+-https://gitlab.gnome.org/GNOME/vte/-/archive/0.82.2/vte-0.82.2.tar.gz
++https://gitlab.gnome.org/GNOME/vte/-/archive/0.82.3/vte-0.82.3.tar.gz
+ https://download.gnome.org/sources/yelp-xsl/49/yelp-xsl-49.0.tar.xz
+ https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+ https://download.gnome.org/sources/gjs/1.86/gjs-1.86.0.tar.xz
+ https://download.gnome.org/sources/gnome-autoar/0.4/gnome-autoar-0.4.5.tar.xz
+ https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.4.tar.xz
+ https://download.gnome.org/sources/gnome-menus/3.38/gnome-menus-3.38.1.tar.xz
+-https://download.gnome.org/sources/gnome-online-accounts/3.56/gnome-online-accounts-3.56.2.tar.xz
++https://download.gnome.org/sources/gnome-online-accounts/3.56/gnome-online-accounts-3.56.3.tar.xz
+ https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz
+ https://download.gnome.org/sources/libgtop/2.41/libgtop-2.41.3.tar.xz
+ https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.4.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libgweather-4.4.4-upstream_fix-1.patch
+ https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz
+-https://download.gnome.org/sources/libshumate/1.5/libshumate-1.5.1.tar.xz
++https://download.gnome.org/sources/libshumate/1.5/libshumate-1.5.2.tar.xz
+ https://download.gnome.org/sources/evolution-data-server/3.58/evolution-data-server-3.58.2.tar.xz
+ https://download.gnome.org/sources/tinysparql/3.10/tinysparql-3.10.1.tar.xz
+ https://download.gnome.org/sources/localsearch/3.10/localsearch-3.10.2.tar.xz
+@@ -821,7 +820,7 @@ https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.58.0/gnome-terminal-3.
+ https://download.gnome.org/sources/gnome-weather/48/gnome-weather-48.0.tar.xz
+ https://gitlab.gnome.org/GNOME/gucharmap/-/archive/16.0.2/gucharmap-16.0.2.tar.bz2
+ https://www.unicode.org/Public/zipped/16.0.0/Unihan.zip
+-https://download.gnome.org/sources/loupe/49/loupe-49.1.tar.xz
++https://download.gnome.org/sources/loupe/49/loupe-49.2.tar.xz
+ https://download.gnome.org/sources/seahorse/47/seahorse-47.0.1.tar.xz
+ https://download.gnome.org/sources/showtime/49/showtime-49.1.tar.xz
+ https://download.gnome.org/sources/snapshot/49/snapshot-49.1.tar.xz
+@@ -929,7 +928,7 @@ https://www.alsa-project.org/files/pub/tools/alsa-tools-1.2.15.tar.bz2
+ https://www.alsa-project.org/files/pub/firmware/alsa-firmware-1.2.4.tar.bz2
+ https://download.gnome.org/sources/audiofile/0.3/audiofile-0.3.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/audiofile-0.3.6-consolidated_patches-1.patch
+-https://code.videolan.org/videolan/dav1d/-/archive/1.5.2/dav1d-1.5.2.tar.gz
++https://code.videolan.org/videolan/dav1d/-/archive/1.5.3/dav1d-1.5.3.tar.gz
+ https://github.com/lfs-book/faac/archive/v1.31.1/faac-1.31.1.tar.gz
+ https://github.com/knik0/faad2/archive/2.11.2/faad2-2.11.2.tar.gz
+ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
+@@ -974,7 +973,7 @@ https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.
+ https://github.com/intel/libva/archive/2.23.0/libva-2.23.0.tar.gz
+ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
+ https://github.com/webmproject/libvpx/archive/v1.15.2/libvpx-1.15.2.tar.gz
+-https://github.com/mltframework/mlt/releases/download/v7.34.0/mlt-7.34.0.tar.gz
++https://github.com/mltframework/mlt/releases/download/v7.36.1/mlt-7.36.1.tar.gz
+ https://downloads.xiph.org/releases/opus/opus-1.6.tar.gz
+ https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.9/pipewire-1.4.9.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
