@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1007">
+  <body class="blfs" id="blfs-r12.4-1018">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1007
+        "phrase">(systemd</span> Edition) - Version r12.4-1018
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1007">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1018">
           Home</a>
         </li>
       </ul>
@@ -229,6 +229,7 @@
         <pre class="userinput"><kbd class=
         "command">./configure --prefix=/usr          \
             --disable-vcd          \
+            --disable-w32dll       \
             --with-external-dvdnav \
             --docdir=/usr/share/doc/xine-lib-1.2.13 &amp;&amp;
 make</kbd></pre>
@@ -283,6 +284,11 @@ install -v -m644    doc/api/* \
           <em class="parameter"><code>--with-external-dvdnav</code></em>:
           This switch is required, because internal libraries cannot decrypt
           DVD.
+        </p>
+        <p>
+          <em class="parameter"><code>--disable-win32dll</code></em>: This
+          switch disables building Win32 support into the libraries, and
+          fixes a compilation failure on 32-bit systems.
         </p>
         <p>
           <em class=
@@ -404,7 +410,7 @@ install -v -m644    doc/api/* \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1007">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1018">
           Home</a>
         </li>
       </ul>
