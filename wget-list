@@ -17,7 +17,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3
 https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2
 https://kerberos.org/dist/krb5/1.22/krb5-1.22.1.tar.gz
 https://ftpmirror.gnu.org/nettle/nettle-3.10.2.tar.gz
-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_119_1_RTM/src/nss-3_119_1.tar.gz
+https://archive.mozilla.org/pub/security/nss/releases/NSS_3_120_RTM/src/nss-3.120.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
 https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.2p1.tar.gz
 https://github.com/p11-glue/p11-kit/releases/download/0.25.10/p11-kit-0.25.10.tar.xz
@@ -47,7 +47,7 @@ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
 https://ftpmirror.gnu.org/grub/grub-2.12.tar.xz
 https://unifoundry.com/pub/unifont/unifont-17.0.01/font-builds/unifont-17.0.01.pcf.gz
 https://www.bennewitz.com/bluefish/stable/source/bluefish-2.2.19.tar.bz2
-https://ftpmirror.gnu.org/ed/ed-1.22.3.tar.lz
+https://ftpmirror.gnu.org/ed/ed-1.22.4.tar.lz
 https://ftpmirror.gnu.org/emacs/emacs-30.2.tar.xz
 https://download.gnome.org/sources/gedit/48/gedit-48.1.tar.xz
 https://gitlab.gnome.org/World/gedit/libgedit-amtk/-/archive/5.9.2/libgedit-amtk-5.9.2.tar.bz2
@@ -63,7 +63,7 @@ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
 https://www.zsh.org/pub/zsh-5.9.tar.xz
 https://download.qemu.org/qemu-10.2.0.tar.xz
-https://github.com/abseil/abseil-cpp/releases/download/20250814.1/abseil-cpp-20250814.1.tar.gz
+https://github.com/abseil/abseil-cpp/releases/download/20260107.0/abseil-cpp-20260107.0.tar.gz
 https://www.freedesktop.org/software/appstream/releases/AppStream-1.1.1.tar.xz
 http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz
 https://archive.apache.org/dist/apr/apr-1.7.6.tar.bz2
@@ -92,7 +92,7 @@ https://github.com/lfs-book/gmmlib/archive/v22.8.2/gmmlib-22.8.2.tar.gz
 https://ftpmirror.gnu.org/gsl/gsl-2.8.tar.gz
 https://download.gnome.org/sources/gspell/1.14/gspell-1.14.2.tar.xz
 https://github.com/google/highway/archive/1.3.0/highway-1.3.0.tar.gz
-https://github.com/unicode-org/icu/releases/download/release-78.1/icu4c-78.1-sources.tgz
+https://github.com/unicode-org/icu/releases/download/release-78.2/icu4c-78.2-sources.tgz
 https://github.com/benhoyt/inih/archive/r62/inih-r62.tar.gz
 https://github.com/akheron/jansson/releases/download/v2.14.1/jansson-2.14.1.tar.bz2
 https://s3.amazonaws.com/json-c_releases/releases/json-c-0.18.tar.gz
@@ -156,7 +156,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/node-v22.21.1-python_build_fix
 https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
 https://archive.mozilla.org/pub/nspr/releases/v4.38.2/src/nspr-4.38.2.tar.gz
 https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
-https://github.com/protocolbuffers/protobuf/releases/download/v33.2/protobuf-33.2.tar.gz
+https://github.com/protocolbuffers/protobuf/releases/download/v33.3/protobuf-33.3.tar.gz
 https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
 https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
 https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
@@ -192,7 +192,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.7-xorg_prefix-1.pat
 https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
 https://github.com/harfbuzz/harfbuzz/releases/download/12.3.0/harfbuzz-12.3.0.tar.xz
 https://github.com/jasper-software/jasper/archive/version-4.2.8/jasper-version-4.2.8.tar.gz
-https://github.com/mm2/Little-CMS/releases/download/lcms2.17/lcms2-2.17.tar.gz
+https://github.com/mm2/Little-CMS/releases/download/lcms2.18/lcms2-2.18.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/v1.3.0/libavif-1.3.0.tar.gz
 https://github.com/libexif/libexif/releases/download/v0.6.25/libexif-0.6.25.tar.bz2
 https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
@@ -471,7 +471,7 @@ https://www.python.org/ftp/python/doc/3.14.2/python-3.14.2-docs-html.tar.bz2
 https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
 https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
 https://download.gnome.org/sources/blueprint-compiler/0.18/blueprint-compiler-0.18.0.tar.xz
-https://files.pythonhosted.org/packages/source/b/build/build-1.3.0.tar.gz
+https://files.pythonhosted.org/packages/source/b/build/build-1.4.0.tar.gz
 https://github.com/psf/cachecontrol/archive/v0.14.4/cachecontrol-0.14.4.tar.gz
 https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.3.0.tar.gz
 https://github.com/cython/cython/releases/download/3.2.4/cython-3.2.4.tar.gz
@@ -698,7 +698,7 @@ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.5.0/libei-1.5.0.tar.bz
 https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.131.tar.xz
 https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
-https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.7.tar.xz
+https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.8.tar.xz
 https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
 https://download.gnome.org/sources/pango/1.57/pango-1.57.0.tar.xz
 https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
@@ -920,10 +920,10 @@ https://www.linuxfromscratch.org/patches/blfs/svn/transmission-4.0.6-build_fix-1
 https://github.com/ib/xarchiver/archive/0.5.4.26/xarchiver-0.5.4.26.tar.gz
 https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz
 https://www.jwz.org/xscreensaver/xscreensaver-6.13.tar.gz
-https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.15.1.tar.bz2
-https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-1.2.15.1.tar.bz2
+https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.15.2.tar.bz2
+https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-1.2.15.2.tar.bz2
 https://www.alsa-project.org/files/pub/plugins/alsa-plugins-1.2.12.tar.bz2
-https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.15.1.tar.bz2
+https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.15.2.tar.bz2
 https://www.alsa-project.org/files/pub/tools/alsa-tools-1.2.15.tar.bz2
 https://www.alsa-project.org/files/pub/firmware/alsa-firmware-1.2.4.tar.bz2
 https://download.gnome.org/sources/audiofile/0.3/audiofile-0.3.6.tar.xz

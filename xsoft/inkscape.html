@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1019">
+  <body class="blfs" id="blfs-r12.4-1029">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1019
+        "phrase">(systemd</span> Edition) - Version r12.4-1029
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1019">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1029">
           Home</a>
         </li>
       </ul>
@@ -142,8 +142,8 @@
         <p class="recommended">
           <a class="xref" href="../general/imagemagick.html" title=
           "ImageMagick-7.1.2-1">ImageMagick-7.1.2-1</a> (runtime), <a class=
-          "xref" href="../general/lcms2.html" title="Little CMS-2.17">Little
-          CMS-2.17</a>, <a class="xref" href="../multimedia/libcanberra.html"
+          "xref" href="../general/lcms2.html" title="Little CMS-2.18">Little
+          CMS-2.18</a>, <a class="xref" href="../multimedia/libcanberra.html"
           title="libcanberra-0.30">libcanberra-0.30</a> (to eliminate plugin
           warnings), <a class="xref" href="../general/potrace.html" title=
           "Potrace-1.16">Potrace-1.16</a> (for the bucket-fill tool), also
@@ -186,6 +186,16 @@
         <h2 class="sect2">
           Installation of Inkscape
         </h2>
+        <p>
+          First, fix build failures with versions of poppler-26.01.0 and
+          later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i 's/gfree/g_free/' src/extension/internal/pdfinput/pdf-input.cpp &amp;&amp;
+
+sed -e '/Stream.h/a#include &lt;poppler/goo/gmem.h&gt;' \
+    -e 's/reset/rewind/'                          \
+    -i src/extension/internal/pdfinput/svg-builder.cpp</kbd></pre>
         <p>
           Install <span class="application">Inkscape</span> by running the
           following commands:
@@ -353,7 +363,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1019">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1029">
           Home</a>
         </li>
       </ul>
