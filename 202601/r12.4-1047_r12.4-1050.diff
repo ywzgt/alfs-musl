@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index 4dbfa87f66..ec274c3ff6 100644
+--- a/wget-list
++++ b/wget-list
+@@ -175,7 +175,7 @@ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.47/downloa
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+ https://oligarchy.co.uk/xapian/1.4.30/xapian-core-1.4.30.tar.xz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+-https://download.gimp.org/pub/babl/0.1/babl-0.1.118.tar.xz
++https://download.gimp.org/pub/babl/0.1/babl-0.1.120.tar.xz
+ https://github.com/Exiv2/exiv2/archive/v0.28.7/exiv2-0.28.7.tar.gz
+ https://downloads.sourceforge.net/freetype/freetype-2.14.1.tar.xz
+ https://downloads.sourceforge.net/freetype/freetype-doc-2.14.1.tar.xz
+@@ -919,7 +919,7 @@ https://github.com/transmission/transmission/releases/download/4.0.6/transmissio
+ https://www.linuxfromscratch.org/patches/blfs/svn/transmission-4.0.6-build_fix-1.patch
+ https://github.com/ib/xarchiver/archive/0.5.4.26/xarchiver-0.5.4.26.tar.gz
+ https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz
+-https://www.jwz.org/xscreensaver/xscreensaver-6.13.tar.gz
++https://www.jwz.org/xscreensaver/xscreensaver-6.14.tar.gz
+ https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.15.3.tar.bz2
+ https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-1.2.15.3.tar.bz2
+ https://www.alsa-project.org/files/pub/plugins/alsa-plugins-1.2.12.tar.bz2
+@@ -974,7 +974,7 @@ https://github.com/intel/libva/archive/2.23.0/libva-2.23.0.tar.gz
+ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
+ https://github.com/webmproject/libvpx/archive/v1.15.2/libvpx-1.15.2.tar.gz
+ https://github.com/mltframework/mlt/releases/download/v7.36.1/mlt-7.36.1.tar.gz
+-https://downloads.xiph.org/releases/opus/opus-1.6.tar.gz
++https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz
+ https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.9/pipewire-1.4.9.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.1.tar.xz
