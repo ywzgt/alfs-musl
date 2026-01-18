@@ -20,7 +20,7 @@ https://ftpmirror.gnu.org/nettle/nettle-3.10.2.tar.gz
 https://archive.mozilla.org/pub/security/nss/releases/NSS_3_120_RTM/src/nss-3.120.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
 https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.2p1.tar.gz
-https://github.com/p11-glue/p11-kit/releases/download/0.25.10/p11-kit-0.25.10.tar.xz
+https://github.com/p11-glue/p11-kit/releases/download/0.26.0/p11-kit-0.26.0.tar.xz
 https://github.com/polkit-org/polkit/archive/127/polkit-127.tar.gz
 https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
@@ -196,7 +196,7 @@ https://github.com/mm2/Little-CMS/releases/download/lcms2.18/lcms2-2.18.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/v1.3.0/libavif-1.3.0.tar.gz
 https://github.com/libexif/libexif/releases/download/v0.6.25/libexif-0.6.25.tar.bz2
 https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
-https://github.com/strukturag/libheif/releases/download/v1.21.1/libheif-1.21.1.tar.gz
+https://github.com/strukturag/libheif/releases/download/v1.21.2/libheif-1.21.2.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.3/libjpeg-turbo-3.1.3.tar.gz
 https://github.com/libjxl/libjxl/archive/v0.11.1/libjxl-0.11.1.tar.gz
 https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
@@ -204,7 +204,7 @@ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.
 https://downloads.sourceforge.net/libpng/libpng-1.6.54.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/libpng-1.6.54-apng.patch
 https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
-https://www.libraw.org/data/LibRaw-0.21.5.tar.gz
+https://www.libraw.org/data/LibRaw-0.22.0.tar.gz
 https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.3.tar.xz
 https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
 https://download.osgeo.org/libtiff/tiff-4.7.1.tar.gz
@@ -349,7 +349,7 @@ https://www.cpan.org/authors/id/R/RE/REHSACK/List-MoreUtils-0.430.tar.gz
 https://www.cpan.org/authors/id/E/ET/ETJ/Log-Log4perl-1.57.tar.gz
 https://www.cpan.org/authors/id/O/OA/OALDERS/LWP-Protocol-https-6.14.tar.gz
 https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-0.4234.tar.gz
-https://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-1.53.tar.gz
+https://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-1.54.tar.gz
 https://www.cpan.org/authors/id/J/JT/JTBRAUN/Parse-RecDescent-1.967015.tar.gz
 https://www.cpan.org/authors/id/W/WB/WBRASWELL/Parse-Yapp-1.21.tar.gz
 https://www.cpan.org/authors/id/L/LE/LEONT/PerlIO-utf8_strict-0.010.tar.gz
@@ -463,7 +463,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/XML-LibXML-2.0210-testsuite_fi
 https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
 https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
 https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
-https://www.php.net/distributions/php-8.5.1.tar.xz
+https://www.php.net/distributions/php-8.5.2.tar.xz
 https://www.php.net/distributions/manual/php_manual_en.html.gz
 https://www.php.net/distributions/manual/php_manual_en.tar.gz
 https://www.python.org/ftp/python/3.14.2/Python-3.14.2.tar.xz
@@ -507,7 +507,7 @@ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
 https://github.com/getsentry/sentry-python/releases/download/2.35.0/sentry_sdk-2.35.0.tar.gz
 https://files.pythonhosted.org/packages/source/s/six/six-1.17.0.tar.gz
 https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-9.1.0.tar.gz
-https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-3.0.2.tar.gz
+https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-3.1.0.tar.gz
 https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-1.0.0.tar.gz
 https://files.pythonhosted.org/packages/source/a/attrs/attrs-25.4.0.tar.gz
 https://files.pythonhosted.org/packages/source/B/Babel/babel-2.17.0.tar.gz
@@ -975,7 +975,7 @@ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
 https://github.com/webmproject/libvpx/archive/v1.15.2/libvpx-1.15.2.tar.gz
 https://github.com/mltframework/mlt/releases/download/v7.36.1/mlt-7.36.1.tar.gz
 https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz
-https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.9/pipewire-1.4.9.tar.bz2
+https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.10/pipewire-1.4.10.tar.bz2
 https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
 https://www.kernel.org/pub/linux/bluetooth/sbc-2.1.tar.xz
 https://www.libsdl.org/release/sdl2-compat-2.32.62.tar.gz
