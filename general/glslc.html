@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      glslc from shaderc-2025.5
+      glslc from shaderc-2026.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1076">
+  <body class="blfs" id="blfs-r12.4-1080">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1076
+        "phrase">(systemd</span> Edition) - Version r12.4-1080
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1076">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1080">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="glslc" name="glslc"></a>glslc from shaderc-2025.5
+      <a id="glslc" name="glslc"></a>glslc from shaderc-2026.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,13 +80,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/google/shaderc/archive/v2025.5/shaderc-2025.5.tar.gz">
-                https://github.com/google/shaderc/archive/v2025.5/shaderc-2025.5.tar.gz</a>
+                "https://github.com/google/shaderc/archive/v2026.1/shaderc-2026.1.tar.gz">
+                https://github.com/google/shaderc/archive/v2026.1/shaderc-2026.1.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: f4c5202686d4256cdc2acf95ce514c24
+                Download MD5 sum: 40b0c03215e94a32b38e6cdfbb068bb5
               </p>
             </li>
             <li class="listitem">
@@ -96,7 +96,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 3.4 MB
+                Estimated disk space required: 3.7 MB
               </p>
             </li>
             <li class="listitem">
@@ -115,7 +115,7 @@
         <p class="required">
           <a class="xref" href="cmake.html" title=
           "CMake-4.2.2">CMake-4.2.2</a>, <a class="xref" href=
-          "../x/glslang.html" title="glslang-16.1.0">Glslang-16.1.0</a>, and
+          "../x/glslang.html" title="glslang-16.2.0">Glslang-16.2.0</a>, and
           <a class="xref" href="spirv-tools.html" title=
           "SPIRV-Tools-1.4.335.0">SPIRV-Tools-1.4.335.0</a>
         </p>
@@ -126,7 +126,7 @@
         </h2>
         <p>
           First, allow building with system <a class="xref" href=
-          "../x/glslang.html" title="glslang-16.1.0">Glslang-16.1.0</a> and
+          "../x/glslang.html" title="glslang-16.2.0">Glslang-16.2.0</a> and
           <a class="xref" href="spirv-tools.html" title=
           "SPIRV-Tools-1.4.335.0">SPIRV-Tools-1.4.335.0</a>:
         </p>
@@ -135,7 +135,7 @@
 sed '/third_party/d'     -i CMakeLists.txt                  &amp;&amp;
 sed 's|SPIRV|glslang/&amp;|' -i libshaderc_util/src/compiler.cc &amp;&amp;
 
-echo '"2025.5"' &gt; glslc/src/build-version.inc</kbd></pre>
+echo '"2026.1"' &gt; glslc/src/build-version.inc</kbd></pre>
         <p>
           Now install <span class="application">glslc</span> by running the
           following commands:
@@ -226,7 +226,7 @@ ninja glslc/glslc</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1076">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1080">
           Home</a>
         </li>
       </ul>
