@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1084">
+  <body class="blfs" id="blfs-r12.4-1087">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1084
+        "phrase">(systemd</span> Edition) - Version r12.4-1087
       </h4>
       <h3>
         Chapter&nbsp;44.&nbsp;Video Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1084">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1087">
           Home</a>
         </li>
       </ul>
@@ -148,7 +148,7 @@
           <a class="xref" href="libvpx.html" title=
           "libvpx-1.15.2">libvpx-1.15.2</a>, <a class="xref" href="opus.html"
           title="Opus-1.6.1">Opus-1.6.1</a>, <a class="xref" href=
-          "svt-av1.html" title="SVT-AV1-3.1.2">SVT-AV1-3.1.2</a> (only
+          "svt-av1.html" title="SVT-AV1-4.0.0">SVT-AV1-4.0.0</a> (only
           supports YUV420), <a class="xref" href="x264.html" title=
           "x264-20250815">x264-20250815</a>, <a class="xref" href="x265.html"
           title="x265-4.1">x265-4.1</a>, and <a class="xref" href=
@@ -261,6 +261,13 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../ffmpeg-8.0.1-chromium_method-1.patch</kbd></pre>
+        <p>
+          Now add a fix from upstream to make be compatible with
+          SVT-AV1-4.0.0 and later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e '/adaptive/c\ param-&gt;aq_mode = 0;' \
+    -i libavcodec/libsvtav1.c</kbd></pre>
         <p>
           Install <span class="application">FFmpeg</span> by running the
           following commands:
@@ -803,7 +810,7 @@ grep ^TEST ../fate.log | wc -l</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1084">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1087">
           Home</a>
         </li>
       </ul>
