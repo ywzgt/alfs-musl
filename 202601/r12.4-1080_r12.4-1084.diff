@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index 55c8a603b3..03fe904bb3 100644
+--- a/wget-list
++++ b/wget-list
+@@ -94,7 +94,7 @@ https://download.gnome.org/sources/gspell/1.14/gspell-1.14.2.tar.xz
+ https://github.com/google/highway/archive/1.3.0/highway-1.3.0.tar.gz
+ https://github.com/unicode-org/icu/releases/download/release-78.2/icu4c-78.2-sources.tgz
+ https://github.com/benhoyt/inih/archive/r62/inih-r62.tar.gz
+-https://github.com/akheron/jansson/releases/download/v2.14.1/jansson-2.14.1.tar.bz2
++https://github.com/akheron/jansson/releases/download/v2.15.0/jansson-2.15.0.tar.bz2
+ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.18.tar.gz
+ https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.8.tar.xz
+ https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-1.6.3.tar.gz
+@@ -190,7 +190,7 @@ https://github.com/g-truc/glm/archive/1.0.3/glm-1.0.3.tar.gz
+ https://download.gnome.org/sources/glycin/2.0/glycin-2.0.7.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.7-xorg_prefix-1.patch
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+-https://github.com/harfbuzz/harfbuzz/releases/download/12.3.1/harfbuzz-12.3.1.tar.xz
++https://github.com/harfbuzz/harfbuzz/releases/download/12.3.2/harfbuzz-12.3.2.tar.xz
+ https://github.com/jasper-software/jasper/archive/version-4.2.8/jasper-version-4.2.8.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.18/lcms2-2.18.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.3.0/libavif-1.3.0.tar.gz
+@@ -218,7 +218,7 @@ https://www.cairographics.org/releases/pixman-0.46.4.tar.gz
+ https://poppler.freedesktop.org/poppler-26.01.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+-https://github.com/qpdf/qpdf/releases/download/v12.3.1/qpdf-12.3.1.tar.gz
++https://github.com/qpdf/qpdf/releases/download/v12.3.2/qpdf-12.3.2.tar.gz
+ https://github.com/sass/sassc/archive/3.6.2/sassc-3.6.2.tar.gz
+ https://github.com/sass/libsass/archive/3.6.6/libsass-3.6.6.tar.gz
+ https://github.com/google/woff2/archive/v1.0.2/woff2-1.0.2.tar.gz
