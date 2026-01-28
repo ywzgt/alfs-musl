@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1087">
+  <body class="blfs" id="blfs-r12.4-1105">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1087
+        "phrase">(systemd</span> Edition) - Version r12.4-1105
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1087">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1105">
           Home</a>
         </li>
       </ul>
@@ -182,7 +182,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="python-dependencies.html#markdown"
-                title="Markdown-3.10">Markdown-3.10</a>
+                title="Markdown-3.10.1">Markdown-3.10.1</a>
               </p>
             </li>
             <li class="listitem">
@@ -206,7 +206,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="python-dependencies.html#pathspec"
-                title="Pathspec-1.0.3">pathspec-1.0.3</a>
+                title="Pathspec-1.0.4">pathspec-1.0.4</a>
               </p>
             </li>
             <li class="listitem">
@@ -226,7 +226,7 @@
               <p>
                 <a class="xref" href=
                 "python-dependencies.html#pyproject-metadata" title=
-                "Pyproject-Metadata-0.9.1">pyproject-metadata-0.9.1</a>
+                "Pyproject-Metadata-0.10.0">pyproject-metadata-0.10.0</a>
               </p>
             </li>
             <li class="listitem">
@@ -1917,7 +1917,7 @@ deactivate</kbd></pre>
             <a class="xref" href="python-dependencies.html#editables" title=
             "Editables-0.5">editables-0.5</a>, <a class="xref" href=
             "python-dependencies.html#pathspec" title=
-            "Pathspec-1.0.3">pathspec-1.0.3</a>, <a class="xref" href=
+            "Pathspec-1.0.4">pathspec-1.0.4</a>, <a class="xref" href=
             "python-dependencies.html#pluggy" title=
             "Pluggy-1.6.0">pluggy-1.6.0</a>, and <a class="xref" href=
             "python-dependencies.html#trove-classifiers" title=
@@ -3133,7 +3133,7 @@ PATH=$PWD/testenv/bin:$PATH cargo test</kbd></pre>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          <a id="markdown" name="markdown"></a>Markdown-3.10
+          <a id="markdown" name="markdown"></a>Markdown-3.10.1
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -3162,13 +3162,13 @@ PATH=$PWD/testenv/bin:$PATH cargo test</kbd></pre>
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://files.pythonhosted.org/packages/source/M/Markdown/markdown-3.10.tar.gz">
-                  https://files.pythonhosted.org/packages/source/M/Markdown/markdown-3.10.tar.gz</a>
+                  "https://files.pythonhosted.org/packages/source/M/Markdown/markdown-3.10.1.tar.gz">
+                  https://files.pythonhosted.org/packages/source/M/Markdown/markdown-3.10.1.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: 357bb6397bf50ee1b15f2de751a8e44f
+                  Download MD5 sum: 14e98f6c10c5b2d1a53489fe6adf3e34
                 </p>
               </li>
               <li class="listitem">
@@ -3229,12 +3229,6 @@ source testenv/bin/activate                    &amp;&amp;
 pip3 install coverage                          &amp;&amp;
 python3 /usr/bin/pytest --ignore=tests/test_syntax/extensions/test_md_in_html.py
 deactivate</kbd></pre>
-          <p>
-            Two tests in the <code class=
-            "filename">tests/test_syntax/blocks/test_html_blocks.py</code>
-            file are known to fail due to changes in Python-3.13.6 and
-            later's HTML Parser module.
-          </p>
         </div>
         <div class="commands" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -3313,7 +3307,7 @@ deactivate</kbd></pre>
                 <strong class="segtitle">Installed Directories:</strong>
                 <span class=
                 "segbody">/usr/lib/python3.14/site-packages/markdown and
-                /usr/lib/python3.14/site-packages/Markdown-3.10.dist-info</span>
+                /usr/lib/python3.14/site-packages/Markdown-3.10.1.dist-info</span>
               </div>
             </div>
           </div>
@@ -3412,7 +3406,7 @@ deactivate</kbd></pre>
           <p class="required">
             <a class="xref" href=
             "python-dependencies.html#pyproject-metadata" title=
-            "Pyproject-Metadata-0.9.1">pyproject-metadata-0.9.1</a>
+            "Pyproject-Metadata-0.10.0">pyproject-metadata-0.10.0</a>
           </p>
           <h5>
             Recommended (Runtime)
@@ -3461,7 +3455,7 @@ deactivate</kbd></pre>
           </p>
           <pre class="userinput"><kbd class=
           "command">python3 -m venv --system-site-packages testenv &amp;&amp;
-testenv/bin/pip3 install 'meson_python[test]'  &amp;&amp;
+testenv/bin/pip3 install --group=test          &amp;&amp;
 HOME= testenv/bin/python -m pytest</kbd></pre>
         </div>
         <div class="commands" lang="en" xml:lang="en">
@@ -3723,7 +3717,7 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          <a id="pathspec" name="pathspec"></a>Pathspec-1.0.3
+          <a id="pathspec" name="pathspec"></a>Pathspec-1.0.4
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -3752,13 +3746,13 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://files.pythonhosted.org/packages/source/p/pathspec/pathspec-1.0.3.tar.gz">
-                  https://files.pythonhosted.org/packages/source/p/pathspec/pathspec-1.0.3.tar.gz</a>
+                  "https://files.pythonhosted.org/packages/source/p/pathspec/pathspec-1.0.4.tar.gz">
+                  https://files.pythonhosted.org/packages/source/p/pathspec/pathspec-1.0.4.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: cdb838648278f2c90013a0b947b15d1a
+                  Download MD5 sum: 18d9e6adb72e544b56a88c3e53094b4e
                 </p>
               </li>
               <li class="listitem">
@@ -3879,7 +3873,7 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
                 <strong class="segtitle">Installed Directories:</strong>
                 <span class=
                 "segbody">/usr/lib/python3.14/site-packages/pathspec and
-                /usr/lib/python3.14/site-packages/pathspec-1.0.3.dist-info</span>
+                /usr/lib/python3.14/site-packages/pathspec-1.0.4.dist-info</span>
               </div>
             </div>
           </div>
@@ -4247,7 +4241,7 @@ deactivate</kbd></pre>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
           <a id="pyproject-metadata" name=
-          "pyproject-metadata"></a>Pyproject-Metadata-0.9.1
+          "pyproject-metadata"></a>Pyproject-Metadata-0.10.0
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -4278,13 +4272,13 @@ deactivate</kbd></pre>
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://files.pythonhosted.org/packages/source/p/pyproject-metadata/pyproject_metadata-0.9.1.tar.gz">
-                  https://files.pythonhosted.org/packages/source/p/pyproject-metadata/pyproject_metadata-0.9.1.tar.gz</a>
+                  "https://files.pythonhosted.org/packages/source/p/pyproject-metadata/pyproject_metadata-0.10.0.tar.gz">
+                  https://files.pythonhosted.org/packages/source/p/pyproject-metadata/pyproject_metadata-0.10.0.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: d897e16dca18204e421f912487730668
+                  Download MD5 sum: 748ebfaeb5c1ca2390450e48d95c20d6
                 </p>
               </li>
               <li class="listitem">
@@ -4406,7 +4400,7 @@ deactivate</kbd></pre>
                 <span class=
                 "segbody">/usr/lib/python3.14/site-packages/pyproject_metadata
                 and
-                /usr/lib/python3.14/site-packages/pyproject_metadata-0.9.1.dist-info</span>
+                /usr/lib/python3.14/site-packages/pyproject_metadata-0.10.0.dist-info</span>
               </div>
             </div>
           </div>
@@ -7783,7 +7777,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1087">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1105">
           Home</a>
         </li>
       </ul>

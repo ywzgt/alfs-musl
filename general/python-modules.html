@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1087">
+  <body class="blfs" id="blfs-r12.4-1105">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1087
+        "phrase">(systemd</span> Edition) - Version r12.4-1105
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1087">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1105">
           Home</a>
         </li>
       </ul>
@@ -2765,7 +2765,7 @@ python3 tests/unit/tests.py</kbd></pre>
           </h5>
           <p class="required">
             <a class="xref" href="python-dependencies.html#markdown" title=
-            "Markdown-3.10">Markdown-3.10</a>, <a class="xref" href=
+            "Markdown-3.10.1">Markdown-3.10.1</a>, <a class="xref" href=
             "python-modules.html#pygments" title=
             "Pygments-2.19.2">Pygments-2.19.2</a>, and <a class="xref" href=
             "python-dependencies.html#typogrify" title=
@@ -3533,7 +3533,7 @@ python3 tests/unit/tests.py</kbd></pre>
             "python-dependencies.html#meson_python" title=
             "Meson_python-0.19.0">meson_python-0.19.0</a>, and <a class=
             "xref" href="python-dependencies.html#pyproject-metadata" title=
-            "Pyproject-Metadata-0.9.1">pyproject-metadata-0.9.1</a>
+            "Pyproject-Metadata-0.10.0">pyproject-metadata-0.10.0</a>
           </p>
           <h5>
             Optional
@@ -3998,9 +3998,11 @@ PSUTIL_DEBUG=1 testenv/bin/python3 -m pytest</kbd></pre>
                   The test named <code class=
                   "literal">TestExampleScripts::test_who</code> is known to
                   fail if the login manager does not write into <code class=
-                  "filename">/run/utmp</code> (note that due to the potential
-                  year 2037 problem, Shadow has already stopped writing into
-                  it).
+                  "filename">/run/utmp</code> <span class="phrase">(note that
+                  due to the potential year 2038 problem, if <a class="xref"
+                  href="../postlfs/shadow.html" title=
+                  "Shadow-4.19.0">Shadow-4.19.0</a> is already rebuilt in
+                  BLFS, it will stop writing into the file)</span>.
                 </p>
               </li>
               <li class="listitem">
@@ -4008,7 +4010,9 @@ PSUTIL_DEBUG=1 testenv/bin/python3 -m pytest</kbd></pre>
                   The test named <code class=
                   "literal">TestSystemAPIs::test_users</code> is known to
                   fail if the <code class="filename">/run/utmp</code> file
-                  contains an entry for the login screen.
+                  contains an entry for the login screen. It can also fail
+                  due to the same reason as <code class=
+                  "literal">TestExampleScripts::test_who</code>.
                 </p>
               </li>
             </ul>
@@ -5850,9 +5854,9 @@ deactivate</kbd></pre>
             PyYAML Dependencies
           </h4>
           <h5>
-            Required
+            Recommended
           </h5>
-          <p class="required">
+          <p class="recommended">
             <a class="xref" href="python-modules.html#cython" title=
             "Cython-3.2.4">cython-3.2.4</a> and <a class="xref" href=
             "libyaml.html" title="libyaml-0.2.5">libyaml-0.2.5</a>
@@ -7563,7 +7567,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1087">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1105">
           Home</a>
         </li>
       </ul>
