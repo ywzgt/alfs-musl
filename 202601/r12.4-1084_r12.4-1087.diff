@@ -1,0 +1,24 @@
+diff --git a/wget-list b/wget-list
+index 03fe904bb3..c3c6cb541e 100644
+--- a/wget-list
++++ b/wget-list
+@@ -10,8 +10,8 @@ https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-2.0.1.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/gpgmepp/gpgmepp-2.0.0.tar.xz
+ https://www.netfilter.org/projects/iptables/files/iptables-1.8.11.tar.xz
+ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.77.tar.xz
+-https://github.com/linux-pam/linux-pam/releases/download/v1.7.1/Linux-PAM-1.7.1.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.1-docs.tar.xz
++https://github.com/linux-pam/linux-pam/releases/download/v1.7.2/Linux-PAM-1.7.2.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.2-docs.tar.xz
+ https://downloads.sourceforge.net/liboauth/liboauth-1.0.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3.patch
+ https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2
+@@ -984,7 +984,7 @@ https://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2
+ https://www.surina.net/soundtouch/soundtouch-2.4.0.tar.gz
+ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+-https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.1.2/SVT-AV1-v3.1.2.tar.gz
++https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v4.0.0/SVT-AV1-v4.0.0.tar.gz
+ https://taglib.org/releases/taglib-2.1.1.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.32.0.tar.xz
+ https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.13/wireplumber-0.5.13.tar.bz2
