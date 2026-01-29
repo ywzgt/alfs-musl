@@ -1,10 +1,10 @@
 https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20251204.tar.xz
 https://github.com/lfs-book/make-ca/archive/v1.16.1/make-ca-1.16.1.tar.gz
 https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.tar.xz
-https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.3.tar.xz
+https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.4.tar.xz
 https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
-https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.16.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.17.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.11.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-2.0.1.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gpgmepp/gpgmepp-2.0.0.tar.xz
@@ -24,7 +24,7 @@ https://github.com/p11-glue/p11-kit/releases/download/0.26.1/p11-kit-0.26.1.tar.
 https://github.com/polkit-org/polkit/archive/127/polkit-127.tar.gz
 https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
-https://github.com/shadow-maint/shadow/releases/download/4.19.0/shadow-4.19.0.tar.xz
+https://github.com/shadow-maint/shadow/releases/download/4.19.2/shadow-4.19.2.tar.xz
 https://www.stunnel.org/downloads/archive/5.x/stunnel-5.76.tar.gz
 https://www.sudo.ws/dist/sudo-1.9.17p2.tar.gz
 https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
@@ -44,7 +44,7 @@ https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.5/sshfs-3.7.5.tar.x
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.18.0.tar.xz
 https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
 https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
-https://ftpmirror.gnu.org/grub/grub-2.12.tar.xz
+https://ftpmirror.gnu.org/grub/grub-2.14.tar.xz
 https://unifoundry.com/pub/unifont/unifont-17.0.01/font-builds/unifont-17.0.01.pcf.gz
 https://www.bennewitz.com/bluefish/stable/source/bluefish-2.2.19.tar.bz2
 https://ftpmirror.gnu.org/ed/ed-1.22.4.tar.lz
@@ -296,7 +296,7 @@ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-019.tar.xz
 https://github.com/lu-zero/cargo-c/archive/v0.10.19/cargo-c-0.10.19.tar.gz
 https://github.com/mozilla/cbindgen/archive/v0.29.2/cbindgen-0.29.2.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/clisp/clisp-2.49.95.tar.xz
-https://cmake.org/files/v4.2/cmake-4.2.2.tar.gz
+https://cmake.org/files/v4.2/cmake-4.2.3.tar.gz
 https://doxygen.nl/files/doxygen-1.16.1.src.tar.gz
 https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
 https://ftpmirror.gnu.org/gcc/gcc-15.2.0/gcc-15.2.0.tar.xz
@@ -622,7 +622,7 @@ https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.bz2
 https://downloads.sourceforge.net/fetchmail/fetchmail-6.6.2.tar.xz
 https://anduin.linuxfromscratch.org/BLFS/mailx/heirloom-mailx_12.5.orig.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.patch
-http://ftp.mutt.org/pub/mutt/mutt-2.2.16.tar.gz
+http://ftp.mutt.org/pub/mutt/mutt-2.3.0.tar.gz
 https://github.com/BuGlessRB/procmail/archive/v3.24/procmail-3.24.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.24-consolidated_fixes-1.patch
 https://archive.apache.org/dist/httpd/httpd-2.4.66.tar.bz2
@@ -915,8 +915,7 @@ https://archive.mozilla.org/pub/thunderbird/releases/140.7.0esr/source/thunderbi
 https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.7.0esr-python_3.14_fixes-1.patch
 https://github.com/TigerVNC/tigervnc/archive/v1.15.0/tigervnc-1.15.0.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.15.0-configuration_fixes-1.patch
-https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/transmission-4.0.6-build_fix-1.patch
+https://github.com/transmission/transmission/releases/download/4.1.0/transmission-4.1.0.tar.xz
 https://github.com/ib/xarchiver/archive/0.5.4.26/xarchiver-0.5.4.26.tar.gz
 https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz
 https://www.jwz.org/xscreensaver/xscreensaver-6.14.tar.gz
@@ -939,6 +938,7 @@ https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.10.tar.xz
 https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.10.tar.xz
 https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.10.tar.xz
 https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.26.10.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/gst-plugins-bad-1.26.10-svt_av1_4-1.patch
 https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.26.10.tar.xz
 https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.26.10/gst-plugins-rs-gstreamer-1.26.10.tar.gz
 https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.26.10.tar.xz
@@ -972,7 +972,7 @@ https://github.com/libsndfile/libsamplerate/releases/download/0.2.2/libsamplerat
 https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz
 https://github.com/intel/libva/archive/2.23.0/libva-2.23.0.tar.gz
 https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
-https://github.com/webmproject/libvpx/archive/v1.15.2/libvpx-1.15.2.tar.gz
+https://github.com/webmproject/libvpx/archive/v1.16.0/libvpx-1.16.0.tar.gz
 https://github.com/mltframework/mlt/releases/download/v7.36.1/mlt-7.36.1.tar.gz
 https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz
 https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.10/pipewire-1.4.10.tar.bz2

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1105">
+  <body class="blfs" id="blfs-r12.4-1118">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1105
+        "phrase">(systemd</span> Edition) - Version r12.4-1118
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1105">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1118">
           Home</a>
         </li>
       </ul>
@@ -114,12 +114,8 @@
         <p class="required">
           <a class="xref" href="gsettings-desktop-schemas.html" title=
           "gsettings-desktop-schemas-49.1">gsettings-desktop-schemas-49.1</a>,
-          <a class="xref" href="../x/gtk3.html" title=
-          "GTK-3.24.51">GTK-3.24.51</a>, <a class="xref" href=
-          "../x/gtk4.html" title="GTK-4.20.3">GTK-4.20.3</a>, <a class="xref"
-          href="../general/iso-codes.html" title="ISO Codes-4.20.1">ISO
-          Codes-4.20.1</a>, <a class="xref" href="../pst/itstool.html" title=
-          "itstool-2.0.7">itstool-2.0.7</a>, <a class="xref" href=
+          <a class="xref" href="../general/iso-codes.html" title=
+          "ISO Codes-4.20.1">ISO Codes-4.20.1</a>, <a class="xref" href=
           "../general/libseccomp.html" title=
           "libseccomp-2.6.0">libseccomp-2.6.0</a>, and <a class="xref" href=
           "../x/xkeyboard-config.html" title=
@@ -129,17 +125,22 @@
           Recommended
         </h4>
         <p class="recommended">
-          <a class="xref" href="../general/bubblewrap.html" title=
+          <a class="xref" href="../x/gtk3.html" title=
+          "GTK-3.24.51">GTK-3.24.51</a>, <a class="xref" href=
+          "../x/gtk4.html" title="GTK-4.20.3">GTK-4.20.3</a>, <a class="xref"
+          href="../general/bubblewrap.html" title=
           "Bubblewrap-0.11.0">bubblewrap-0.11.0</a> (needed for thumbnailers
-          in Nautilus) and <a class="xref" href="../general/glib2.html"
+          in Nautilus), and <a class="xref" href="../general/glib2.html"
           title="GLib-2.86.3">GLib-2.86.3</a> (with GObject Introspection)
         </p>
         <h4>
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="../general/gtk-doc.html" title=
-          "GTK-Doc-1.35.1">GTK-Doc-1.35.1</a> and <a class="xref" href=
+          <a class="xref" href="../pst/itstool.html" title=
+          "itstool-2.0.7">itstool-2.0.7</a>, <a class="xref" href=
+          "../general/gtk-doc.html" title=
+          "GTK-Doc-1.35.1">GTK-Doc-1.35.1</a>, and <a class="xref" href=
           "../general/libxkbcommon.html" title=
           "libxkbcommon-1.13.1">libxkbcommon-1.13.1</a>
         </p>
@@ -155,9 +156,10 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr       \
-            --buildtype=release \
-            ..                  &amp;&amp;
+meson setup --prefix=/usr         \
+            --buildtype=release   \
+            -D desktop_docs=false \
+            ..                    &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -175,6 +177,27 @@ ninja</kbd></pre>
           <em class="parameter"><code>--buildtype=release</code></em>:
           Specify a buildtype suitable for stable releases of the package, as
           the default may produce unoptimized binaries.
+        </p>
+        <p>
+          <em class="parameter"><code>-D desktop_docs=false</code></em>: This
+          allows building the package without <a class="xref" href=
+          "../pst/itstool.html" title="itstool-2.0.7">itstool-2.0.7</a> by
+          disabling the installation of the copies and translations of the
+          GNU FDL, GPL, and LGPL licenses.
+        </p>
+        <p>
+          <code class="option">-D build_gtk4=false</code>: Use this option if
+          you wish to build this package without <a class="xref" href=
+          "../x/gtk4.html" title="GTK-4.20.3">GTK-4.20.3</a> installed. Note
+          that it will likely cause GTK-4 applications depending on this
+          package fail to build.
+        </p>
+        <p>
+          <code class="option">-D legacy_library=false</code>: Use this
+          option if you wish to build this package without <a class="xref"
+          href="../x/gtk3.html" title="GTK-3.24.51">GTK-3.24.51</a>
+          installed. Note that it will likely cause GTK-3 applications
+          depending on this package fail to build.
         </p>
         <p>
           <code class="option">-D gtk_doc=true</code>: Use this parameter if
@@ -206,7 +229,7 @@ ninja</kbd></pre>
               /usr/include/gnome-desktop-4.0,
               /usr/libexec/gnome-desktop-debug,
               /usr/share/gtk-doc/html/gnome-desktop3 (optional), and
-              /usr/share/help/*/{fdl,gpl,lgpl}</span>
+              /usr/share/help/*/{fdl,gpl,lgpl} (optional)</span>
             </div>
           </div>
         </div>
@@ -262,7 +285,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1105">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1118">
           Home</a>
         </li>
       </ul>

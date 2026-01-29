@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1105">
+  <body class="blfs" id="blfs-r12.4-1118">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1105
+        "phrase">(systemd</span> Edition) - Version r12.4-1118
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1105">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1118">
           Home</a>
         </li>
       </ul>
@@ -105,6 +105,20 @@
               <p>
                 Estimated build time: 0.7 SBU (Using parallelism=4; with
                 tests)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Recommended patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/gst-plugins-bad-1.26.10-svt_av1_4-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/gst-plugins-bad-1.26.10-svt_av1_4-1.patch</a>
               </p>
             </li>
           </ul>
@@ -281,6 +295,13 @@
           </p>
         </div>
         <p>
+          If you installed the recommended <a class="xref" href=
+          "svt-av1.html" title="SVT-AV1-4.0.0">SVT-AV1-4.0.0</a> package,
+          apply the following patch:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../gst-plugins-bad-1.26.10-svt_av1_4-1.patch</kbd></pre>
+        <p>
           Install <span class="application">GStreamer Bad Plug-ins</span> by
           running the following commands:
         </p>
@@ -423,7 +444,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1105">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1118">
           Home</a>
         </li>
       </ul>
