@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1118">
+  <body class="blfs" id="blfs-r12.4-1130">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1118
+        "phrase">(systemd</span> Edition) - Version r12.4-1130
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1118">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1130">
           Home</a>
         </li>
       </ul>
@@ -112,9 +112,8 @@
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="../x/gtk3.html" title=
-          "GTK-3.24.51">GTK-3.24.51</a> and <a class="xref" href=
-          "../general/libxml2.html" title="libxml2-2.15.1">libxml2-2.15.1</a>
+          <a class="xref" href="../general/libxml2.html" title=
+          "libxml2-2.15.1">libxml2-2.15.1</a>
         </p>
         <h4>
           Recommended
@@ -127,8 +126,10 @@
           <a class="xref" href="../postlfs/gnutls.html" title=
           "GnuTLS-3.8.11">GnuTLS-3.8.11</a>, <a class="xref" href=
           "../general/glib2.html" title="GLib-2.86.3">GLib-2.86.3</a> (with
-          GObject Introspection), <a class="xref" href="../x/gtk4.html"
-          title="GTK-4.20.3">GTK-4.20.3</a>, <a class="xref" href=
+          GObject Introspection), <a class="xref" href="../x/gtk3.html"
+          title="GTK-3.24.51">GTK-3.24.51</a>, <a class="xref" href=
+          "../x/gtk4.html" title="GTK-4.20.3">GTK-4.20.3</a> (at least one
+          GTK version is required), <a class="xref" href=
           "../general/simdutf.html" title="simdutf-8.0.0">simdutf-8.0.0</a>,
           and <a class="xref" href="../general/vala.html" title=
           "Vala-0.56.18">Vala-0.56.18</a>
@@ -201,6 +202,10 @@ rm -v /etc/profile.d/vte.*</kbd></pre>
         <p>
           <code class="option">-D vapi=false</code>: Add this switch if you
           do not want to enable vala bindings.
+        </p>
+        <p>
+          <code class="option">-D gtk3=false</code>: Add this switch if you
+          do not want to build the GTK-3 version of VTE.
         </p>
         <p>
           <code class="option">-D gtk4=false</code>: Add this switch if you
@@ -327,7 +332,7 @@ rm -v /etc/profile.d/vte.*</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1118">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1130">
           Home</a>
         </li>
       </ul>

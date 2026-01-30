@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1118">
+  <body class="blfs" id="blfs-r12.4-1130">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1118
+        "phrase">(systemd</span> Edition) - Version r12.4-1130
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1118">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1130">
           Home</a>
         </li>
       </ul>
@@ -393,6 +393,55 @@ EOF</kbd></pre>
         </p>
         <pre class="root"><kbd class=
         "command">systemctl daemon-reexec</kbd></pre>
+        <p>
+          A desktop environment often run as a group of systemd user
+          services. Those services are spawned by the systemd per-user
+          instance, instead of the login shell. To ensure those services get
+          the environment variables we've set via <code class=
+          "filename">/etc/profile.d</code>, as the <code class=
+          "systemitem">root</code> user, install a systemd environment
+          generator to dump all the relevant exported environment variables
+          into the systemd per-user instance when the instance starts to run:
+        </p>
+        <pre class="root"><kbd class=
+        "command">install -vdm755 /etc/systemd/user-environment-generators &amp;&amp;
+cat &gt; /etc/systemd/user-environment-generators/50-profile.sh &lt;&lt; "EOF"
+<code class="literal">#!/usr/bin/env -S -i /usr/bin/bash
+# SPDX-License-Identifier: MIT
+
+. /etc/profile
+
+# Systemd should have already set a better value for them.
+unset XDG_RUNTIME_DIR
+for i in $(locale); do
+  unset ${i%=*}
+done
+
+# Some shell magic that we don't want to expose.
+unset SHLVL
+
+python3 &lt;&lt; _EOF
+import os
+for var in os.environ:
+  # Simply unsetting them in shell does not work.
+  if var in ['LC_CTYPE', '_']:
+    continue
+
+  print(var + '=' + os.environ[var])
+_EOF</code>
+EOF</kbd></pre>
+        <p>
+          Read <a class="ulink" href=
+          "https://man.archlinux.org/man/systemd.environment-generator(7)">systemd.environment-generator(7)</a>
+          for details about the systemd environment generators. Note that if
+          you've edited the content of <code class=
+          "filename">/etc/profile.d</code> when a desktop environment is
+          running, you need to run the <span class=
+          "command"><strong>systemctl --user --daemon-reload</strong></span>
+          command to sync the change into the systemd per-user instance, and
+          then log out and log in again to sync the change into the desktop
+          environment.
+        </p>
         <div class="admon important">
           <img alt="[Important]" src="../images/important.png" />
           <h3>
@@ -553,7 +602,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1118">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1130">
           Home</a>
         </li>
       </ul>
