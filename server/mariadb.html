@@ -12,20 +12,20 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1130">
+  <body class="blfs" id="blfs-r12.4-1145">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1130
+        "phrase">(systemd</span> Edition) - Version r12.4-1145
       </h4>
       <h3>
         Chapter&nbsp;22.&nbsp;Databases
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="lmdb.html" title="lmdb-0.9.34">Prev</a>
+          <a accesskey="p" href="lmdb.html" title="lmdb-0.9.35">Prev</a>
           <p>
-            lmdb-0.9.34
+            lmdb-0.9.35
           </p>
         </li>
         <li class="next">
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1130">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1145">
           Home</a>
         </li>
       </ul>
@@ -166,7 +166,7 @@
           "Linux-PAM-1.7.2">Linux-PAM-1.7.2</a>, <a class="xref" href=
           "../general/lzo.html" title="LZO-2.10">LZO-2.10</a>, <a class=
           "xref" href="../postlfs/mitkrb.html" title=
-          "MIT Kerberos V5-1.22.1">MIT Kerberos V5-1.22.1</a>, <a class=
+          "MIT Kerberos V5-1.22.2">MIT Kerberos V5-1.22.2</a>, <a class=
           "xref" href="../general/ruby.html" title=
           "Ruby-4.0.1">Ruby-4.0.1</a>, <a class="xref" href=
           "../general/python-modules.html#sphinx" title=
@@ -322,8 +322,7 @@ make</kbd></pre>
             "systemitem">root</code> user:
           </p>
           <pre class="root"><kbd class=
-          "command">install -v -dm 755 /etc/mariadb &amp;&amp;
-cat &gt; /etc/mariadb/my.cnf &lt;&lt; "EOF"
+          "command">cat &gt; /etc/my.cnf &lt;&lt; "EOF"
 <code class="literal"># Begin /etc/mariadb/my.cnf
 
 # The following options will be passed to all MySQL clients
@@ -371,7 +370,7 @@ innodb_lock_wait_timeout = 50
 quick
 max_allowed_packet = 16M
 
-[mariadb]
+[client]
 no-auto-rehash
 # Remove the next comment character if you are not familiar with SQL
 #safe-updates
@@ -1395,9 +1394,9 @@ mariadbd-safe --user=mariadb 2&gt;&amp;1 &gt;/dev/null &amp;</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="lmdb.html" title="lmdb-0.9.34">Prev</a>
+          <a accesskey="p" href="lmdb.html" title="lmdb-0.9.35">Prev</a>
           <p>
-            lmdb-0.9.34
+            lmdb-0.9.35
           </p>
         </li>
         <li class="next">
@@ -1413,7 +1412,7 @@ mariadbd-safe --user=mariadb 2&gt;&amp;1 &gt;/dev/null &amp;</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1130">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1145">
           Home</a>
         </li>
       </ul>
