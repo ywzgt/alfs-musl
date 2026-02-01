@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1145">
+  <body class="blfs" id="blfs-r12.4-1155">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1145
+        "phrase">(systemd</span> Edition) - Version r12.4-1155
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1145">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1155">
           Home</a>
         </li>
       </ul>
@@ -159,6 +159,7 @@
         <pre class="userinput"><kbd class=
         "command">./configure --prefix=/usr    \
             --disable-static \
+            --without-python \
             --docdir=/usr/share/doc/libxslt-1.1.45 &amp;&amp;
 make</kbd></pre>
         <p>
@@ -177,6 +178,14 @@ make</kbd></pre>
         <p>
           <em class="parameter"><code>--disable-static</code></em>: This
           switch prevents installation of static versions of the libraries.
+        </p>
+        <p>
+          <em class="parameter"><code>--without-python</code></em>: Disable
+          the Python binding of this package. The binding only works if the
+          Python binding of <a class="xref" href="libxml2.html" title=
+          "libxml2-2.15.1">libxml2-2.15.1</a> is installed, but we've not
+          enabled the deprecated Python binding when we built <a class="xref"
+          href="libxml2.html" title="libxml2-2.15.1">libxml2-2.15.1</a>.
         </p>
         <p>
           <code class="option">--with-crypto</code>: Enable the non-standard
@@ -314,7 +323,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1145">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1155">
           Home</a>
         </li>
       </ul>
