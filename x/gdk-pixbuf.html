@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1155">
+  <body class="blfs" id="blfs-r12.4-1168">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1155
+        "phrase">(systemd</span> Edition) - Version r12.4-1168
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1155">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1168">
           Home</a>
         </li>
       </ul>
@@ -165,7 +165,6 @@ cd    build &amp;&amp;
 meson setup ..                \
       --prefix=/usr           \
       --buildtype=release     \
-      -D others=enabled       \
       -D png=disabled         \
       -D gif=disabled         \
       -D jpeg=disabled        \
@@ -185,7 +184,8 @@ ninja</kbd></pre>
 meson configure -D gtk_doc=true                                        &amp;&amp;
 ninja</kbd></pre>
         <p>
-          The test suite of this package does not provide meaningful results.
+          To test the results, issue: <span class="command"><strong>ninja
+          test</strong></span>
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -223,11 +223,6 @@ ninja</kbd></pre>
           fallbacks for any dependency declarations in the build files,
           preventing it from downloading any optional dependencies which are
           not installed on the system.
-        </p>
-        <p>
-          <em class="parameter"><code>-D others=enabled</code></em>: Build
-          the loaders for some formats not supported by glycin yet, notably
-          XBM and XPM.
         </p>
         <p>
           <em class="parameter"><code>-D *=disabled</code></em>: Don't build
@@ -359,7 +354,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1155">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1168">
           Home</a>
         </li>
       </ul>

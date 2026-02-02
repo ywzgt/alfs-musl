@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1155">
+  <body class="blfs" id="blfs-r12.4-1168">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1155
+        "phrase">(systemd</span> Edition) - Version r12.4-1168
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1155">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1168">
           Home</a>
         </li>
       </ul>
@@ -117,6 +117,14 @@
                 https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.7-xorg_prefix-1.patch</a>
               </p>
             </li>
+            <li class="listitem">
+              <p>
+                Recommended patch (required to load XBM and XPM images):
+                <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.7-xbm_xpm-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.7-xbm_xpm-1.patch</a>
+              </p>
+            </li>
           </ul>
         </div>
         <h3>
@@ -135,7 +143,7 @@
           title="Little CMS-2.18">Little CMS-2.18</a>, <a class="xref" href=
           "libseccomp.html" title="libseccomp-2.6.0">libseccomp-2.6.0</a>,
           and <a class="xref" href="rust.html" title=
-          "Rustc-1.92.0">rustc-1.92.0</a>
+          "Rustc-1.93.0">rustc-1.93.0</a>
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -189,6 +197,29 @@
         </p>
         <pre class="userinput"><kbd class="command">cargo vendor &amp;&amp;
 patch -Np1 -i ../glycin-2.0.7-xorg_prefix-1.patch</kbd></pre>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            The XBM and XPM support patch below implicitly depends on the
+            patch and instructions above, so ensure you've issued the
+            instructions before applying the XBM and XPM support patch. They
+            make no harm for a Xorg installation in <code class=
+            "filename">/usr</code> anyway.
+          </p>
+        </div>
+        <p>
+          Now backport an upstream change to make glycin able to load XBM and
+          XPM images. The upstream change introduces a new dependent Rust
+          crate (<code class="literal">image-extras</code>) which needs to be
+          synced into the vendored sources by running <span class=
+          "command"><strong>cargo vendor</strong></span> again:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../glycin-2.0.7-xbm_xpm-1.patch &amp;&amp;
+cargo vendor</kbd></pre>
         <p>
           Install <span class="application">glycin</span> by running the
           following commands:
@@ -343,7 +374,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1155">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1168">
           Home</a>
         </li>
       </ul>
