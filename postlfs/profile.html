@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1168">
+  <body class="blfs" id="blfs-r12.4-1172">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1168
+        "phrase">(systemd</span> Edition) - Version r12.4-1172
       </h4>
       <h3>
         Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1168">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1172">
           Home</a>
         </li>
       </ul>
@@ -234,77 +234,6 @@ EOF</kbd></pre>
           </p>
           <pre class="root"><kbd class=
           "command">install --directory --mode=0755 --owner=root --group=root /etc/profile.d</kbd></pre>
-        </div>
-        <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3">
-            <a id="etc-profile.d-bash-completion.sh" name=
-            "etc-profile.d-bash-completion.sh"></a>/etc/profile.d/bash_completion.sh
-          </h3>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Using the bash completion script below is controversial. Not
-              all users like it. It adds many (usually over 1000) lines to
-              the bash environment and makes it difficult to use the 'set'
-              command to examine simple environment variables. Omitting this
-              script does not interfere with the ability of bash to use the
-              tab key for file name completion.
-            </p>
-          </div>
-          <p>
-            This script imports bash completion scripts, installed by many
-            other BLFS packages, to allow TAB command line completion.
-          </p>
-          <pre class="root"><kbd class=
-          "command">cat &gt; /etc/profile.d/bash_completion.sh &lt;&lt; "EOF"
-<code class="literal"># Begin /etc/profile.d/bash_completion.sh
-# Import bash completion scripts
-
-# If the bash-completion package is installed, use its configuration instead
-if [ -f /usr/share/bash-completion/bash_completion ]; then
-
-  # Check for interactive bash and that we haven't already been sourced.
-  if [ -n "${BASH_VERSION-}" -a -n "${PS1-}" -a -z "${BASH_COMPLETION_VERSINFO-}" ]; then
-
-    # Check for recent enough version of bash.
-    if [ ${BASH_VERSINFO[0]} -gt 4 ] || \
-       [ ${BASH_VERSINFO[0]} -eq 4 -a ${BASH_VERSINFO[1]} -ge 1 ]; then
-       [ -r "${XDG_CONFIG_HOME:-$HOME/.config}/bash_completion" ] &amp;&amp; \
-            . "${XDG_CONFIG_HOME:-$HOME/.config}/bash_completion"
-       if shopt -q progcomp &amp;&amp; [ -r /usr/share/bash-completion/bash_completion ]; then
-          # Source completion code.
-          . /usr/share/bash-completion/bash_completion
-       fi
-    fi
-  fi
-
-else
-
-  # bash-completions are not installed, use only bash completion directory
-  if shopt -q progcomp; then
-    for script in /usr/share/bash-completion/completions/* ; do
-      if [ -r $script ] ; then
-        . $script
-      fi
-    done
-  fi
-fi
-
-# End /etc/profile.d/bash_completion.sh</code>
-EOF</kbd></pre>
-          <p>
-            Make sure that the directory exists:
-          </p>
-          <pre class="root"><kbd class=
-          "command">install --directory --mode=0755 --owner=root --group=root /etc/bash_completion.d</kbd></pre>
-          <p>
-            For a more complete installation, see <a class="ulink" href=
-            "https://wiki.linuxfromscratch.org/blfs/wiki/bash-shell-startup-files#bash-completions">
-            https://wiki.linuxfromscratch.org/blfs/wiki/bash-shell-startup-files#bash-completions</a>.
-          </p>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -703,7 +632,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1168">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1172">
           Home</a>
         </li>
       </ul>
