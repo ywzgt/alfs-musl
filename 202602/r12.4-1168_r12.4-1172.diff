@@ -1,0 +1,24 @@
+diff --git a/wget-list b/wget-list
+index b03c1b6466..07870be087 100644
+--- a/wget-list
++++ b/wget-list
+@@ -295,7 +295,7 @@ https://sg.danny.cz/sg/p/sg3_utils-1.48.tar.xz
+ https://github.com/lfs-book/sysmond/releases/download/sysmond-1.0.0/sysmond-1.0.0.tar.xz
+ https://github.com/lfs-book/sysmon3/releases/download/sysmon3-3.0.1/sysmon3-3.0.1.tar.xz
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-019.tar.xz
+-https://github.com/lu-zero/cargo-c/archive/v0.10.19/cargo-c-0.10.19.tar.gz
++https://github.com/lu-zero/cargo-c/archive/v0.10.20/cargo-c-0.10.20.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.29.2/cbindgen-0.29.2.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/clisp/clisp-2.49.95.tar.xz
+ https://cmake.org/files/v4.2/cmake-4.2.3.tar.gz
+@@ -915,8 +915,8 @@ https://inkscape.org/gallery/item/58914/inkscape-1.4.3.tar.xz
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+ https://archive.mozilla.org/pub/thunderbird/releases/140.7.0esr/source/thunderbird-140.7.0esr.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.7.0esr-python_3.14_fixes-1.patch
+-https://github.com/TigerVNC/tigervnc/archive/v1.15.0/tigervnc-1.15.0.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.15.0-configuration_fixes-1.patch
++https://github.com/TigerVNC/tigervnc/archive/v1.16.0/tigervnc-1.16.0.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.16.0-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.1.0/transmission-4.1.0.tar.xz
+ https://github.com/ib/xarchiver/archive/0.5.4.26/xarchiver-0.5.4.26.tar.gz
+ https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz
