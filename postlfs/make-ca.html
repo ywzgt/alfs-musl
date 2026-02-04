@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1172">
+  <body class="blfs" id="blfs-r12.4-1174">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1172
+        "phrase">(systemd</span> Edition) - Version r12.4-1174
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1172">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1174">
           Home</a>
         </li>
       </ul>
@@ -169,6 +169,15 @@
           Installation of make-ca and Generation of the CA-certificates
           stores
         </h2>
+        <p>
+          At first, remove the <em class="parameter"><code>-t</code></em>
+          option from the <span class=
+          "command"><strong>mktemp</strong></span> commands in the script.
+          This option is deprecated and it can cause unwanted effects if
+          <code class="envar">TMPDIR</code> is set in the environment:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed '/mktemp/s/-t //' -i make-ca</kbd></pre>
         <p>
           The <span class="application">make-ca</span> script will download
           and process the certificates included in the <code class=
@@ -500,7 +509,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1172">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1174">
           Home</a>
         </li>
       </ul>
