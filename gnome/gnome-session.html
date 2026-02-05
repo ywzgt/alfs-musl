@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1174">
+  <body class="blfs" id="blfs-r12.4-1188">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1174
+        "phrase">(systemd</span> Edition) - Version r12.4-1188
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1174">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1188">
           Home</a>
         </li>
       </ul>
@@ -218,33 +218,15 @@ rm -v /usr/share/wayland-sessions/gnome.desktop</kbd></pre>
           does not need to be enabled to start gnome-shell from the command
           line.
         </p>
-        <div class="admon warning">
-          <img alt="[Warning]" src="../images/warning.png" />
-          <h3>
-            Warning
-          </h3>
-          <p>
-            X11 support is deprecated and will be removed in GNOME 50. Please
-            use the Wayland session wherever possible.
-          </p>
-        </div>
         <p>
-          To start <span class="application">GNOME</span> using <a class=
-          "xref" href="../x/xinit.html" title="xinit-1.4.4">xinit-1.4.4</a>,
-          run the following commands:
+          To start <span class="application">GNOME</span> without a display
+          manager you need to determine your session ID, using <span class=
+          "command"><strong>loginctl</strong></span>. Once it is done, issue
+          (we suppose the session ID is 1):
         </p>
         <pre class="userinput"><kbd class=
-        "command">cat &gt; ~/.xinitrc &lt;&lt; "EOF"
-<code class="literal">dbus-run-session gnome-session</code>
-EOF
-
-startx</kbd></pre>
-        <p>
-          Alternatively, to start <span class="application">GNOME</span> with
-          Wayland support, run the following command:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">XDG_SESSION_TYPE=wayland dbus-run-session gnome-session</kbd></pre>
+        "command">systemctl --user set-environment XDG_SESSION_TYPE=wayland XDG_SESSION_ID=<em class="replaceable"><code>1</code></em> &amp;&amp;
+systemctl --user start gnome-session-wayland@gnome.target</kbd></pre>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -352,7 +334,7 @@ startx</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1174">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1188">
           Home</a>
         </li>
       </ul>
