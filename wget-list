@@ -5,7 +5,7 @@ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.4.tar.xz
 https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.17.tar.bz2
-https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.11.tar.xz
+https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.12.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-2.0.1.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gpgmepp/gpgmepp-2.0.0.tar.xz
 https://www.netfilter.org/projects/iptables/files/iptables-1.8.11.tar.xz
@@ -203,8 +203,8 @@ https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.3/libjpeg-t
 https://github.com/libjxl/libjxl/archive/v0.11.1/libjxl-0.11.1.tar.gz
 https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
 https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz
-https://downloads.sourceforge.net/libpng/libpng-1.6.54.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/libpng-1.6.54-apng.patch
+https://downloads.sourceforge.net/libpng/libpng-1.6.55.tar.xz
+https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.54-apng.patch.gz
 https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
 https://www.libraw.org/data/LibRaw-0.22.0.tar.gz
 https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.3.tar.xz
@@ -257,7 +257,7 @@ https://www.freedesktop.org/software/accountsservice/accountsservice-23.13.9.tar
 https://downloads.sourceforge.net/acpid2/acpid-2.0.34.tar.xz
 https://anduin.linuxfromscratch.org/BLFS/at/at_3.2.5.orig.tar.gz
 https://www.kernel.org/pub/linux/daemons/autofs/v5/autofs-5.1.9.tar.xz
-https://www.kernel.org/pub/linux/bluetooth/bluez-5.85.tar.xz
+https://www.kernel.org/pub/linux/bluetooth/bluez-5.86.tar.xz
 https://github.com/containers/bubblewrap/releases/download/v0.11.0/bubblewrap-0.11.0.tar.xz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.8.tar.xz
 https://ftpmirror.gnu.org/cpio/cpio-2.15.tar.bz2
@@ -487,7 +487,6 @@ https://www.linuxfromscratch.org/patches/blfs/svn/html5lib-1.1-python_3.14_build
 https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.0.2.tar.gz
 https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.10.tar.gz
 https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.4.2.tar.gz
-https://files.pythonhosted.org/packages/source/p/ply/ply-3.11.tar.gz
 https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.2.2.tar.gz
 https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
 https://download.gnome.org/sources/pyatspi/2.58/pyatspi-2.58.1.tar.xz
@@ -524,7 +523,7 @@ https://files.pythonhosted.org/packages/source/i/idna/idna-3.11.tar.gz
 https://files.pythonhosted.org/packages/source/i/imagesize/imagesize-1.4.1.tar.gz
 https://files.pythonhosted.org/packages/source/i/iniconfig/iniconfig-2.3.0.tar.gz
 https://github.com/PyO3/maturin/archive/v1.11.5/maturin-1.11.5.tar.gz
-https://files.pythonhosted.org/packages/source/M/Markdown/markdown-3.10.1.tar.gz
+https://files.pythonhosted.org/packages/source/M/Markdown/markdown-3.10.2.tar.gz
 https://files.pythonhosted.org/packages/source/m/meson_python/meson_python-0.19.0.tar.gz
 https://files.pythonhosted.org/packages/source/m/msgpack/msgpack-1.1.2.tar.gz
 https://files.pythonhosted.org/packages/source/p/pathspec/pathspec-1.0.4.tar.gz
@@ -634,7 +633,7 @@ https://www.dovecot.org/releases/2.4/dovecot-2.4.2.tar.gz
 https://ftp.exim.org/pub/exim/exim4/exim-4.99.1.tar.xz
 https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.7.tar.gz
 https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.35/LMDB_0.9.35.tar.bz2
-https://downloads.mariadb.org/interstitial/mariadb-11.8.5/source/mariadb-11.8.5.tar.gz
+https://downloads.mariadb.org/interstitial/mariadb-11.8.6/source/mariadb-11.8.6.tar.gz
 https://ftp.postgresql.org/pub/source/v18.1/postgresql-18.1.tar.bz2
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.12.tgz
 https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.12-consolidated-1.patch

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1224">
+  <body class="blfs" id="blfs-r12.4-1238">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1224
+        "phrase">(systemd</span> Edition) - Version r12.4-1238
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1224">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1238">
           Home</a>
         </li>
       </ul>
@@ -279,6 +279,10 @@ do
   tar -xf $package
   pushd $packagedir
   docdir="--docdir=$XORG_PREFIX/share/doc/$packagedir"
+
+  do_build() { make; }
+  do_test() { make check; }
+  do_install() { as_root make install; }
   
   case $packagedir in
     libXfont2-[0-9]* )
@@ -295,14 +299,10 @@ do
     ;;
   
     libpciaccess* | libxkbfile* )
-      mkdir build
-      cd    build
-        meson setup --prefix=$XORG_PREFIX --buildtype=release ..
-        ninja
-        #ninja test
-        as_root ninja install
-      popd     # $packagedir
-      continue # for loop
+      meson setup --prefix=$XORG_PREFIX --buildtype=release build
+      do_build()  { ninja -C build; }
+      do_test() { ninja -C build test; }
+      do_install() { as_root ninja -C build install; }
     ;;
 
     * )
@@ -310,9 +310,11 @@ do
     ;;
   esac
 
-  make
-  #make check 2&gt;&amp;1 | tee ../$packagedir-make_check.log
-  as_root make install
+  do_build
+  #do_test |&amp; tee ../$packagedir-test.log
+  do_install
+  unset do_build do_test do_install
+
   popd
   rm -rf $packagedir
   as_root /sbin/ldconfig
@@ -939,7 +941,7 @@ ln -sv $XORG_PREFIX/include/X11 /usr/include/X11</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1224">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1238">
           Home</a>
         </li>
       </ul>
