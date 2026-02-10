@@ -1,0 +1,47 @@
+diff --git a/wget-list b/wget-list
+index 40b70537c5..4ea0551acd 100644
+--- a/wget-list
++++ b/wget-list
+@@ -21,11 +21,11 @@ https://ftpmirror.gnu.org/nettle/nettle-3.10.2.tar.gz
+ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_120_RTM/src/nss-3.120.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.2p1.tar.gz
+-https://github.com/p11-glue/p11-kit/releases/download/0.26.1/p11-kit-0.26.1.tar.xz
++https://github.com/p11-glue/p11-kit/releases/download/0.26.2/p11-kit-0.26.2.tar.xz
+ https://github.com/polkit-org/polkit/archive/127/polkit-127.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+-https://github.com/shadow-maint/shadow/releases/download/4.19.2/shadow-4.19.2.tar.xz
++https://github.com/shadow-maint/shadow/releases/download/4.19.3/shadow-4.19.3.tar.xz
+ https://www.stunnel.org/downloads/archive/5.x/stunnel-5.76.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.17p2.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+@@ -267,7 +267,7 @@ http://fcron.free.fr/archives/fcron-3.4.0.src.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/gpm/gpm-1.20.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-gcc15_fixes-1.patch
+-https://github.com/vcrhonek/hwdata/archive/v0.403/hwdata-0.403.tar.gz
++https://github.com/vcrhonek/hwdata/archive/v0.404/hwdata-0.404.tar.gz
+ https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
+ https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
+ http://ftp.midnight-commander.org/mc-4.8.33.tar.xz
+@@ -281,7 +281,7 @@ https://download.librdf.org/source/raptor2-2.0.16.tar.gz
+ https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+ https://download.librdf.org/source/redland-1.0.17.tar.gz
+ https://sysstat.github.io/sysstat-packages/sysstat-12.7.9.tar.xz
+-https://github.com/systemd/systemd/archive/v259/systemd-259.tar.gz
++https://github.com/systemd/systemd/archive/v259.1/systemd-259.1.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.11.0/udisks-2.11.0.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-7.2.3.tar.gz
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.0/upower-v1.91.0.tar.bz2
+@@ -467,8 +467,8 @@ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+ https://www.php.net/distributions/php-8.5.2.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+-https://www.python.org/ftp/python/3.14.2/Python-3.14.2.tar.xz
+-https://www.python.org/ftp/python/doc/3.14.2/python-3.14.2-docs-html.tar.bz2
++https://www.python.org/ftp/python/3.14.3/Python-3.14.3.tar.xz
++https://www.python.org/ftp/python/doc/3.14.3/python-3.14.3-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+ https://download.gnome.org/sources/blueprint-compiler/0.18/blueprint-compiler-0.18.0.tar.xz
