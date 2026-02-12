@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1240">
+  <body class="blfs" id="blfs-r12.4-1255">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1240
+        "phrase">(systemd</span> Edition) - Version r12.4-1255
       </h4>
       <h3>
         Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1240">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1255">
           Home</a>
         </li>
       </ul>
@@ -192,10 +192,11 @@
           Although not needed to load a firmware blob, the following tools
           may be useful for determining, obtaining, or preparing the needed
           firmware in order to load it into the system: <a class="xref" href=
-          "../general/cpio.html" title="cpio-2.15">cpio-2.15</a>, <a class=
-          "xref" href="../general/git.html" title=
-          "Git-2.53.0">git-2.53.0</a>, <a class="xref" href=
-          "../general/pciutils.html" title=
+          "../general/cpio.html" title="cpio-2.15">cpio-2.15</a> (or
+          <a class="xref" href="../general/libarchive.html" title=
+          "libarchive-3.8.5">libarchive-3.8.5</a>), <a class="xref" href=
+          "../general/git.html" title="Git-2.53.0">git-2.53.0</a>, <a class=
+          "xref" href="../general/pciutils.html" title=
           "pciutils-3.14.0">pciutils-3.14.0</a>, and <a class="xref" href=
           "../basicnet/wget.html" title="Wget-1.25.0">Wget-1.25.0</a>
         </p>
@@ -312,7 +313,7 @@
             "https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/">
             https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/</a>
             and downloading the latest file there. As of this writing the
-            most secure version of the microcode is microcode-20251111.
+            most secure version of the microcode is microcode-20260210.
             Extract this file in the normal way, the microcode is in the
             <code class="filename">intel-ucode</code> directory, containing
             various blobs with names in the form XX-YY-ZZ. There are also
@@ -402,8 +403,10 @@
             If you have established that updated microcode is available for
             your system, it is time to prepare it for early loading. This
             requires an additional package, <a class="xref" href=
-            "../general/cpio.html" title="cpio-2.15">cpio-2.15</a> and the
-            creation of an initrd which will need to be added to grub.cfg.
+            "../general/cpio.html" title="cpio-2.15">cpio-2.15</a> (or
+            <a class="xref" href="../general/libarchive.html" title=
+            "libarchive-3.8.5">libarchive-3.8.5</a>) and the creation of an
+            initrd which will need to be added to grub.cfg.
           </p>
           <p>
             It does not matter where you prepare the initrd, and once it is
@@ -428,10 +431,14 @@ cd initrd</kbd></pre>
           <pre class="userinput"><kbd class=
           "command">cp -v ../intel-ucode/&lt;XX-YY-ZZ&gt; kernel/x86/microcode/GenuineIntel.bin</kbd></pre>
           <p>
-            Now prepare the initrd:
+            Now prepare the initrd (you may also use <span class=
+            "command"><strong>bsdcpio</strong></span> from <a class="xref"
+            href="../general/libarchive.html" title=
+            "libarchive-3.8.5">libarchive-3.8.5</a> instead of <span class=
+            "command"><strong>cpio</strong></span>):
           </p>
           <pre class="userinput"><kbd class=
-          "command">find . | cpio -o -H newc &gt; /boot/microcode.img</kbd></pre>
+          "command">find * | cpio -o -H newc &gt; /boot/microcode.img</kbd></pre>
           <p>
             You now need to add a new entry to /boot/grub/grub.cfg and here
             you should add a new line after the linux line within the stanza.
@@ -870,7 +877,7 @@ make oldconfig</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1240">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1255">
           Home</a>
         </li>
       </ul>
