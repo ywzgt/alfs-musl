@@ -1,0 +1,91 @@
+diff --git a/wget-list b/wget-list
+index cc3b3dddf6..895a406060 100644
+--- a/wget-list
++++ b/wget-list
+@@ -188,9 +188,9 @@ https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-upstream_fixes-1.
+ https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-security_fixes-1.patch
+ https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
+ https://github.com/g-truc/glm/archive/1.0.3/glm-1.0.3.tar.gz
+-https://download.gnome.org/sources/glycin/2.0/glycin-2.0.7.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.7-xorg_prefix-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.7-xbm_xpm-1.patch
++https://download.gnome.org/sources/glycin/2.0/glycin-2.0.8.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.8-xorg_prefix-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.8-xbm_xpm-1.patch
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+ https://github.com/harfbuzz/harfbuzz/releases/download/12.3.2/harfbuzz-12.3.2.tar.xz
+ https://github.com/jasper-software/jasper/archive/version-4.2.8/jasper-version-4.2.8.tar.gz
+@@ -200,7 +200,7 @@ https://github.com/libexif/libexif/releases/download/v0.6.25/libexif-0.6.25.tar.
+ https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
+ https://github.com/strukturag/libheif/releases/download/v1.21.2/libheif-1.21.2.tar.gz
+ https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.3/libjpeg-turbo-3.1.3.tar.gz
+-https://github.com/libjxl/libjxl/archive/v0.11.1/libjxl-0.11.1.tar.gz
++https://github.com/libjxl/libjxl/archive/v0.11.2/libjxl-0.11.2.tar.gz
+ https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
+ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz
+ https://downloads.sourceforge.net/libpng/libpng-1.6.55.tar.xz
+@@ -284,7 +284,7 @@ https://sysstat.github.io/sysstat-packages/sysstat-12.7.9.tar.xz
+ https://github.com/systemd/systemd/archive/v259.1/systemd-259.1.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.11.0/udisks-2.11.0.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-7.2.3.tar.gz
+-https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.0/upower-v1.91.0.tar.bz2
++https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.1/upower-v1.91.1.tar.bz2
+ https://ftpmirror.gnu.org/which/which-2.23.tar.gz
+ https://github.com/jordansissel/xdotool/releases/download/v4.20251130.1/xdotool-4.20251130.1.tar.gz
+ https://downloads.sourceforge.net/infozip/zip30.tar.gz
+@@ -317,7 +317,7 @@ https://www.lua.org/ftp/lua-5.4.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.8-shared_library-1.patch
+ https://www.lua.org/tests/lua-5.4.8-tests.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/luajit/luajit-20250816.tar.xz
+-https://www.mercurial-scm.org/release/mercurial-7.1.2.tar.gz
++https://www.mercurial-scm.org/release/mercurial-7.2.tar.gz
+ https://www.nasm.us/pub/nasm/releasebuilds/3.01/nasm-3.01.tar.xz
+ https://www.nasm.us/pub/nasm/releasebuilds/3.01/nasm-3.01-xdoc.tar.xz
+ https://github.com/NixOS/patchelf/releases/download/0.18.0/patchelf-0.18.0.tar.gz
+@@ -679,7 +679,7 @@ https://download.gnome.org/sources/gdk-pixbuf/2.44/gdk-pixbuf-2.44.5.tar.xz
+ https://downloads.sourceforge.net/glew/glew-2.3.1.tgz
+ https://github.com/KhronosGroup/glslang/archive/16.2.0/glslang-16.2.0.tar.gz
+ https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
+-https://download.gnome.org/sources/goffice/0.10/goffice-0.10.59.tar.xz
++https://download.gnome.org/sources/goffice/0.10/goffice-0.10.60.tar.xz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+ https://download.gnome.org/sources/gtk/3.24/gtk-3.24.51.tar.xz
+ https://download.gnome.org/sources/gtk/4.20/gtk-4.20.3.tar.xz
+@@ -708,7 +708,7 @@ https://download.qt.io/official_releases/qt/6.10/6.10.2/submodules/qtwebengine-e
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Headers/archive/vulkan-sdk-1.4.341.0/Vulkan-Headers-vulkan-sdk-1.4.341.0.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.341.0/Vulkan-Loader-vulkan-sdk-1.4.341.0.tar.gz
+-https://webkitgtk.org/releases/webkitgtk-2.50.4.tar.xz
++https://webkitgtk.org/releases/webkitgtk-2.50.5.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.20.3/xdg-desktop-portal-1.20.3.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
+ https://download.gnome.org/sources/gdm/49/gdm-49.2.tar.xz
+@@ -765,7 +765,7 @@ https://download.gnome.org/sources/yelp-xsl/49/yelp-xsl-49.0.tar.xz
+ https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+ https://download.gnome.org/sources/gjs/1.86/gjs-1.86.0.tar.xz
+ https://download.gnome.org/sources/gnome-autoar/0.4/gnome-autoar-0.4.5.tar.xz
+-https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.4.tar.xz
++https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.5.tar.xz
+ https://download.gnome.org/sources/gnome-menus/3.38/gnome-menus-3.38.1.tar.xz
+ https://download.gnome.org/sources/gnome-online-accounts/3.56/gnome-online-accounts-3.56.4.tar.xz
+ https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz
+@@ -791,8 +791,8 @@ https://download.gnome.org/sources/gnome-keyring/48/gnome-keyring-48.0.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/49/gnome-settings-daemon-49.1.tar.xz
+ https://download.gnome.org/sources/tecla/49/tecla-49.0.tar.xz
+ https://download.gnome.org/sources/gnome-control-center/49/gnome-control-center-49.4.tar.xz
+-https://download.gnome.org/sources/mutter/49/mutter-49.3.tar.xz
+-https://download.gnome.org/sources/gnome-shell/49/gnome-shell-49.3.tar.xz
++https://download.gnome.org/sources/mutter/49/mutter-49.4.tar.xz
++https://download.gnome.org/sources/gnome-shell/49/gnome-shell-49.4.tar.xz
+ https://download.gnome.org/sources/gnome-shell-extensions/49/gnome-shell-extensions-49.0.tar.xz
+ https://download.gnome.org/sources/gnome-session/49/gnome-session-49.2.tar.xz
+ https://download.gnome.org/sources/gnome-tweaks/49/gnome-tweaks-49.0.tar.xz
+@@ -891,7 +891,7 @@ https://github.com/lxqt/qps/releases/download/2.12.0/qps-2.12.0.tar.xz
+ https://github.com/lxqt/qtermwidget/releases/download/2.3.0/qtermwidget-2.3.0.tar.xz
+ https://github.com/lxqt/qterminal/releases/download/2.3.0/qterminal-2.3.0.tar.xz
+ https://github.com/lxqt/screengrab/releases/download/3.1.0/screengrab-3.1.0.tar.xz
+-https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.59.tar.xz
++https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.60.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-25.8.4.2.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-dictionaries-25.8.4.2.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-help-25.8.4.2.tar.xz
