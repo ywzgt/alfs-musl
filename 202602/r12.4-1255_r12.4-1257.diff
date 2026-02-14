@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 895a406060..91a55c3a57 100644
+--- a/wget-list
++++ b/wget-list
+@@ -64,7 +64,7 @@ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.1.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+ https://download.qemu.org/qemu-10.2.0.tar.xz
+-https://github.com/abseil/abseil-cpp/releases/download/20260107.0/abseil-cpp-20260107.0.tar.gz
++https://github.com/abseil/abseil-cpp/releases/download/20260107.1/abseil-cpp-20260107.1.tar.gz
+ https://www.freedesktop.org/software/appstream/releases/AppStream-1.1.2.tar.xz
+ http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz
+ https://archive.apache.org/dist/apr/apr-1.7.6.tar.bz2
+@@ -140,7 +140,7 @@ https://ftpmirror.gnu.org/libunistring/libunistring-1.4.1.tar.xz
+ https://github.com/libunwind/libunwind/releases/download/v1.8.3/libunwind-1.8.3.tar.gz
+ https://lttng.org/files/urcu/userspace-rcu-0.15.6.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.29/libusb-1.0.29.tar.bz2
+-https://dist.libuv.org/dist/v1.51.0/libuv-v1.51.0.tar.gz
++https://dist.libuv.org/dist/v1.52.0/libuv-v1.52.0.tar.gz
+ https://github.com/lfs-book/libxkbcommon/archive/v1.13.1/libxkbcommon-1.13.1.tar.gz
+ https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.1.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
