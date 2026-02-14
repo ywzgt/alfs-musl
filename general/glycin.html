@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1257">
+  <body class="blfs" id="blfs-r12.4-1267">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1257
+        "phrase">(systemd</span> Edition) - Version r12.4-1267
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1257">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1267">
           Home</a>
         </li>
       </ul>
@@ -143,7 +143,7 @@
           title="Little CMS-2.18">Little CMS-2.18</a>, <a class="xref" href=
           "libseccomp.html" title="libseccomp-2.6.0">libseccomp-2.6.0</a>,
           and <a class="xref" href="rust.html" title=
-          "Rustc-1.93.0">rustc-1.93.0</a>
+          "Rustc-1.93.1">rustc-1.93.1</a>
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -189,9 +189,9 @@
           download the needed Rust crates now and apply a patch to allow
           accessing <code class="filename">$XORG_PREFIX/lib</code> from the
           sandbox (note that the patch requires <code class=
-          "envar">XORG_PREFIX</code> set properly for the current user and
-          <code class="systemitem">root</code> following <a class="xref"
-          href="../x/xorg7.html#xorg-env" title=
+          "envar">XORG_PREFIX</code> to be set properly for both the current
+          user and for <code class="systemitem">root</code> following
+          <a class="xref" href="../x/xorg7.html#xorg-env" title=
           "Setting up the Xorg Build Environment">Xorg build environment</a>
           before building glycin):
         </p>
@@ -205,9 +205,9 @@ patch -Np1 -i ../glycin-2.0.8-xorg_prefix-1.patch</kbd></pre>
           <p>
             The XBM and XPM support patch below implicitly depends on the
             patch and instructions above, so ensure you've issued the
-            instructions before applying the XBM and XPM support patch. They
-            make no harm for a Xorg installation in <code class=
-            "filename">/usr</code> anyway.
+            instructions before applying the XBM and XPM support patch. The
+            instructions don't cause any problems for a Xorg installation in
+            <code class="filename">/usr</code>.
           </p>
         </div>
         <p>
@@ -271,7 +271,7 @@ ninja</kbd></pre>
           to specify the image loaders to be built. The default is
           <code class=
           "literal">glycin-heif,glycin-image-rs,glycin-jxl,glycin-svg</code>,
-          covering the support for all commonly used image formats. You may
+          covering support for all commonly used image formats. You may
           remove the <code class="literal">glycin-heif</code>, <code class=
           "literal">glycin-jxl</code>, or <code class=
           "literal">glycin-svg</code> loader if the corresponding recommended
@@ -343,7 +343,7 @@ ninja</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    contains image load functions which work by running
+                    contains image loading functions which work by running
                     glycin loaders in a sandbox environment
                   </p>
                 </td>
@@ -374,7 +374,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1257">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1267">
           Home</a>
         </li>
       </ul>
