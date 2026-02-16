@@ -1,0 +1,202 @@
+diff --git a/wget-list b/wget-list
+index bad672bfdf..45b16066c2 100644
+--- a/wget-list
++++ b/wget-list
+@@ -59,7 +59,7 @@ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/25.08.3/src/kate-25.08.3.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.5.tar.xz
+ https://www.nano-editor.org/dist/v8/nano-8.7.1.tar.xz
+-https://github.com/vim/vim/archive/v9.1.2031/vim-9.1.2031.tar.gz
++https://github.com/vim/vim/archive/v9.1.2144/vim-9.1.2144.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.1.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+@@ -78,12 +78,12 @@ https://www.linuxfromscratch.org/patches/blfs/svn/clucene-2.3.3.4-contribs_lib-1
+ https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.114.tar.gz
+ https://github.com/google/double-conversion/archive/v3.4.0/double-conversion-3.4.0.tar.gz
+ https://duktape.org/duktape-2.7.0.tar.xz
+-https://github.com/rrthomas/enchant/releases/download/v2.8.14/enchant-2.8.14.tar.gz
++https://github.com/rrthomas/enchant/releases/download/v2.8.15/enchant-2.8.15.tar.gz
+ https://libopenraw.freedesktop.org/download/exempi-2.6.6.tar.xz
+ https://github.com/fastfloat/fast_float/archive/v8.2.3/fast_float-8.2.3.tar.gz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+ https://github.com/fmtlib/fmt/archive/12.1.0/fmt-12.1.0.tar.gz
+-https://download.gnome.org/sources/glib/2.86/glib-2.86.3.tar.xz
++https://download.gnome.org/sources/glib/2.86/glib-2.86.4.tar.xz
+ https://download.gnome.org/sources/gobject-introspection/1.86/gobject-introspection-1.86.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+ https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.8.tar.xz
+@@ -160,7 +160,7 @@ https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
+ https://github.com/protocolbuffers/protobuf/releases/download/v33.5/protobuf-33.5.tar.gz
+ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
+ https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
+-https://github.com/danvratil/qcoro/archive/v0.12.0/qcoro-0.12.0.tar.gz
++https://github.com/danvratil/qcoro/archive/v0.13.0/qcoro-0.13.0.tar.gz
+ https://github.com/simdutf/simdutf/archive/v8.0.0/simdutf-8.0.0.tar.gz
+ https://archive.mozilla.org/pub/firefox/releases/140.7.0esr/source/firefox-140.7.0esr.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.7.0-python_3.14_fixes-1.patch
+@@ -207,7 +207,7 @@ https://downloads.sourceforge.net/libpng/libpng-1.6.55.tar.xz
+ https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.54-apng.patch.gz
+ https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
+ https://www.libraw.org/data/LibRaw-0.22.0.tar.gz
+-https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.3.tar.xz
++https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.4.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+ https://download.osgeo.org/libtiff/tiff-4.7.1.tar.gz
+ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz
+@@ -236,7 +236,7 @@ https://download.gnome.org/sources/gtk-doc/1.35/gtk-doc-1.35.1.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.18.tar.bz2
+ https://github.com/ibus/ibus/archive/1.5.33/ibus-1.5.33.tar.gz
+ https://www.unicode.org/Public/zipped/17.0.0/UCD.zip
+-https://www.imagemagick.org/archive/releases/ImageMagick-7.1.2-1.tar.xz
++https://www.imagemagick.org/archive/releases/ImageMagick-7.1.2-13.tar.xz
+ https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.20.1/iso-codes-v4.20.1.tar.gz
+ https://github.com/lsof-org/lsof/releases/download/4.99.5/lsof-4.99.5.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.3.2.tar.bz2
+@@ -316,7 +316,7 @@ https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/compiler-r
+ https://www.lua.org/ftp/lua-5.4.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.8-shared_library-1.patch
+ https://www.lua.org/tests/lua-5.4.8-tests.tar.gz
+-https://anduin.linuxfromscratch.org/BLFS/luajit/luajit-20250816.tar.xz
++https://anduin.linuxfromscratch.org/BLFS/luajit/luajit-20260213.tar.xz
+ https://www.mercurial-scm.org/release/mercurial-7.2.tar.gz
+ https://www.nasm.us/pub/nasm/releasebuilds/3.01/nasm-3.01.tar.xz
+ https://www.nasm.us/pub/nasm/releasebuilds/3.01/nasm-3.01-xdoc.tar.xz
+@@ -375,7 +375,7 @@ https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Alien-Build-Plugin-Download-G
+ https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Alien-Libxml2-0.20.tar.gz
+ https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/B-COW-0.007.tar.gz
+ https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Hooks-EndOfScope-0.28.tar.gz
+-https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Business-ISBN-Data-20250815.001.tar.gz
++https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Business-ISBN-Data-20260203.001.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Capture-Tiny-0.50.tar.gz
+ https://cpan.metacpan.org/authors/id/R/RS/RSHERER/Class-Data-Inheritable-0.10.tar.gz
+ https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Class-Inspector-1.36.tar.gz
+@@ -386,15 +386,15 @@ https://cpan.metacpan.org/authors/id/N/NE/NEILB/Clone-PP-1.08.tar.gz
+ https://cpan.metacpan.org/authors/id/A/AM/AMBS/Config-AutoConf-0.320.tar.gz
+ https://cpan.metacpan.org/authors/id/L/LE/LEONT/CPAN-Meta-Check-0.018.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-1.66.tar.gz
+-https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-Format-Strptime-1.79.tar.gz
++https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-Format-Strptime-1.80.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-Locale-1.45.tar.gz
+-https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-TimeZone-2.65.tar.gz
++https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-TimeZone-2.66.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Devel-StackTrace-2.05.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DO/DOY/Dist-CheckConflicts-0.11.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GA/GAAS/Encode-Locale-1.05.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DO/DOY/Eval-Closure-0.14.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Exception-Class-1.45.tar.gz
+-https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Exporter-Tiny-1.006002.tar.gz
++https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Exporter-Tiny-1.006003.tar.gz
+ https://cpan.metacpan.org/authors/id/A/AM/AMBS/ExtUtils-LibBuilder-0.09.tar.gz
+ https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/FFI-CheckLib-0.31.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-chdir-0.1011.tar.gz
+@@ -407,7 +407,7 @@ https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/HTML-Tagset-3.24.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/HTTP-CookieJar-0.014.tar.gz
+ https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Cookies-6.11.tar.gz
+ https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Date-6.06.tar.gz
+-https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Message-7.00.tar.gz
++https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Message-7.01.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GA/GAAS/HTTP-Negotiate-6.01.tar.gz
+ https://cpan.metacpan.org/authors/id/C/CJ/CJM/IO-HTML-1.004.tar.gz
+ https://cpan.metacpan.org/authors/id/J/JK/JKEENAN/IPC-System-Simple-1.30.tar.gz
+@@ -423,7 +423,7 @@ https://cpan.metacpan.org/authors/id/H/HA/HAARG/Module-Runtime-0.018.tar.gz
+ https://cpan.metacpan.org/authors/id/H/HA/HAARG/MRO-Compat-0.15.tar.gz
+ https://cpan.metacpan.org/authors/id/E/ET/ETHER/namespace-autoclean-0.31.tar.gz
+ https://cpan.metacpan.org/authors/id/R/RI/RIBASUSHI/namespace-clean-0.27.tar.gz
+-https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.23.tar.gz
++https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.24.tar.gz
+ https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.94.tar.gz
+ https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/Number-Compare-0.03.tar.gz
+ https://cpan.metacpan.org/authors/id/E/ET/ETHER/Package-Stash-0.40.tar.gz
+@@ -432,21 +432,21 @@ https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Params-ValidationCompiler-0.31
+ https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.150.tar.gz
+ https://cpan.metacpan.org/authors/id/H/HA/HAARG/Role-Tiny-2.002004.tar.gz
+ https://cpan.metacpan.org/authors/id/C/CH/CHOCOLATE/Scope-Guard-0.21.tar.gz
+-https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Specio-0.52.tar.gz
++https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Specio-0.53.tar.gz
+ https://cpan.metacpan.org/authors/id/F/FR/FREW/Sub-Exporter-Progressive-0.001013.tar.gz
+-https://cpan.metacpan.org/authors/id/H/HA/HAARG/Sub-Quote-2.006008.tar.gz
++https://cpan.metacpan.org/authors/id/H/HA/HAARG/Sub-Quote-2.006009.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz
+-https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Term-Table-0.024.tar.gz
++https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Term-Table-0.028.tar.gz
+ https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Test-Deep-1.205.tar.gz
+ https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Test-Exception-0.43.tar.gz
+-https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Test-Fatal-0.017.tar.gz
++https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Test-Fatal-0.018.tar.gz
+ https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Test-File-1.995.tar.gz
+ https://cpan.metacpan.org/authors/id/K/KE/KENTNL/Test-File-ShareDir-1.001002.tar.gz
+ https://cpan.metacpan.org/authors/id/L/LE/LEEJO/Test-LeakTrace-0.17.tar.gz
+ https://cpan.metacpan.org/authors/id/H/HA/HAARG/Test-Needs-0.002010.tar.gz
+ https://cpan.metacpan.org/authors/id/T/TO/TOKUHIROM/Test-Requires-0.11.tar.gz
+ https://cpan.metacpan.org/authors/id/M/MA/MALLEN/Test-RequiresInternet-0.05.tar.gz
+-https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Test-Simple-1.302214.tar.gz
++https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Test-Simple-1.302219.tar.gz
+ https://cpan.metacpan.org/authors/id/S/SC/SCHWIGON/Test-utf8-1.03.tar.gz
+ https://cpan.metacpan.org/authors/id/E/ET/ETHER/Test-Warnings-0.038.tar.gz
+ https://cpan.metacpan.org/authors/id/C/CO/CORION/Test-Without-Module-0.23.tar.gz
+@@ -454,7 +454,7 @@ https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Test2-Plugin-NoWarnings-0.10.t
+ https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.61.tgz
+ https://cpan.metacpan.org/authors/id/N/NE/NEILB/Text-Diff-1.45.tar.gz
+ https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/Text-Glob-0.11.tar.gz
+-https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Tie-Cycle-1.231.tar.gz
++https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Tie-Cycle-1.233.tar.gz
+ https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/TimeDate-2.33.tar.gz
+ https://cpan.metacpan.org/authors/id/E/ET/ETHER/Try-Tiny-0.32.tar.gz
+ https://cpan.metacpan.org/authors/id/V/VP/VPIT/Variable-Magic-0.64.tar.gz
+@@ -511,7 +511,7 @@ https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_the
+ https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-1.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/a/attrs/attrs-25.4.0.tar.gz
+ https://files.pythonhosted.org/packages/source/B/Babel/babel-2.18.0.tar.gz
+-https://files.pythonhosted.org/packages/source/c/certifi/certifi-2025.11.12.tar.gz
++https://files.pythonhosted.org/packages/source/c/certifi/certifi-2026.1.4.tar.gz
+ https://files.pythonhosted.org/packages/source/c/chardet/chardet-5.2.0.tar.gz
+ https://files.pythonhosted.org/packages/source/c/charset-normalizer/charset_normalizer-3.4.4.tar.gz
+ https://files.pythonhosted.org/packages/source/c/commonmark/commonmark-0.9.1.tar.gz
+@@ -529,7 +529,7 @@ https://files.pythonhosted.org/packages/source/m/msgpack/msgpack-1.1.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pathspec/pathspec-1.0.4.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pluggy/pluggy-1.6.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyproject-hooks/pyproject_hooks-1.2.0.tar.gz
+-https://files.pythonhosted.org/packages/source/p/pyproject-metadata/pyproject_metadata-0.10.0.tar.gz
++https://files.pythonhosted.org/packages/source/p/pyproject-metadata/pyproject_metadata-0.11.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pytz/pytz-2025.2.tar.gz
+ https://files.pythonhosted.org/packages/source/r/roman-numerals/roman_numerals-4.1.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/semantic_version/semantic_version-2.10.0.tar.gz
+@@ -546,8 +546,8 @@ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-qthelp/sphinxcont
+ https://files.pythonhosted.org/packages/source/s/sphinxcontrib_serializinghtml/sphinxcontrib_serializinghtml-2.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/t/trove_classifiers/trove_classifiers-2026.1.14.14.tar.gz
+ https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.1.0.tar.gz
+-https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.6.0.tar.gz
+-https://files.pythonhosted.org/packages/source/u/uv_build/uv_build-0.9.10.tar.gz
++https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.6.3.tar.gz
++https://files.pythonhosted.org/packages/source/u/uv_build/uv_build-0.10.2.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+ https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.1.tar.xz
+ https://static.rust-lang.org/dist/rustc-1.93.1-src.tar.xz
+@@ -634,7 +634,7 @@ https://ftp.exim.org/pub/exim/exim4/exim-4.99.1.tar.xz
+ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.7.tar.gz
+ https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.35/LMDB_0.9.35.tar.bz2
+ https://downloads.mariadb.org/interstitial/mariadb-11.8.6/source/mariadb-11.8.6.tar.gz
+-https://ftp.postgresql.org/pub/source/v18.1/postgresql-18.1.tar.bz2
++https://ftp.postgresql.org/pub/source/v18.2/postgresql-18.2.tar.bz2
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.12.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.12-consolidated-1.patch
+ https://nlnetlabs.nl/downloads/unbound/unbound-1.24.2.tar.gz
+@@ -646,7 +646,7 @@ https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.17.0.tar.xz
+ https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.17.0.tar.xz
+ https://www.x.org/pub/individual/lib/libxcvt-0.1.3.tar.xz
+ https://xcb.freedesktop.org/dist/xcb-util-0.4.1.tar.xz
+-https://mesa.freedesktop.org/archive/mesa-25.3.1.tar.xz
++https://mesa.freedesktop.org/archive/mesa-25.3.5.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-4.patch
+ https://www.x.org/pub/individual/data/xbitmaps-1.1.3.tar.xz
+ https://invisible-mirror.net/archives/luit/luit-20250912.tgz
+@@ -1009,7 +1009,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-8.0.1-chromium_method-1
+ https://github.com/mpv-player/mpv/archive/v0.41.0/mpv-0.41.0.tar.gz
+ https://download.videolan.org/vlc/3.0.23/vlc-3.0.23.tar.xz
+ https://downloads.sourceforge.net/xine/xine-ui-0.99.14.tar.xz
+-https://downloads.sourceforge.net/cdrdao/cdrdao-1.2.5.tar.bz2
++https://downloads.sourceforge.net/cdrdao/cdrdao-1.2.6.tar.bz2
+ https://downloads.sourceforge.net/cdrtools/cdrtools-3.02a09.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/dvd+rw-tools/dvd+rw-tools-7.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/dvd+rw-tools-7.1-consolidated_fixes-2.patch
