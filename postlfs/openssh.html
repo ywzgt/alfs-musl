@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1282">
+  <body class="blfs" id="blfs-r12.4-1287">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1282
+        "phrase">(systemd</span> Edition) - Version r12.4-1287
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1282">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1287">
           Home</a>
         </li>
       </ul>
@@ -63,7 +63,7 @@
           <span class="command"><strong>scp</strong></span> commands are
           secure implementations of <span class=
           "command"><strong>telnet</strong></span> and <span class=
-          "command"><strong>rcp</strong></span> respectively.
+          "command"><strong>rcp</strong></span>.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -71,9 +71,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <h3>
@@ -140,7 +139,7 @@
           "http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</a>
         </p>
         <h4>
-          Optional Runtime (Used only to gather entropy)
+          Optional at runtime (used only to gather entropy)
         </h4>
         <p class="optional">
           <a class="xref" href="../basicnet/net-tools.html" title=
@@ -212,21 +211,24 @@ install -v -m644    INSTALL LICENCE OVERVIEW README* \
           "parameter"><code>--with-default-path=/usr/bin</code></em> and
           <em class=
           "parameter"><code>--with-superuser-path=/usr/sbin:/usr/bin</code></em>:
-          These set <code class="envar">PATH</code> consistent with LFS and
-          BLFS <span class="application">Shadow</span> package.
+          These set the <code class="envar">PATH</code> setting to be
+          consistent with the LFS and BLFS <span class=
+          "application">Shadow</span> package.
         </p>
         <p>
           <em class="parameter"><code>--with-pid-dir=/run</code></em>: This
           prevents <span class="application">OpenSSH</span> from referring to
-          deprecated <code class="filename">/var/run</code>.
+          the deprecated <code class="filename">/var/run</code> directory.
         </p>
         <p>
-          <code class="option">--with-pam</code>: This parameter enables
-          <span class="application">Linux-PAM</span> support in the build.
+          <code class="option">--with-pam</code>: This option enables
+          <span class="application">Linux-PAM</span> support in the build. If
+          you use this option, ensure that you create the PAM configuration
+          in the Configuration Information section below.
         </p>
         <p>
           <code class="option">--with-xauth=$XORG_PREFIX/bin/xauth</code>:
-          Set the default location for the <span class=
+          This sets the default location for the <span class=
           "command"><strong>xauth</strong></span> binary for X
           authentication. The environment variable <code class=
           "envar">XORG_PREFIX</code> should be set following <a class="xref"
@@ -388,8 +390,8 @@ echo "UsePAM yes" &gt;&gt; /etc/ssh/sshd_config</kbd></pre>
                 <td>
                   <p>
                     is a file copy program that acts like <span class=
-                    "command"><strong>rcp</strong></span> except it uses an
-                    encrypted protocol
+                    "command"><strong>rcp</strong></span> except that it uses
+                    an encrypted protocol
                   </p>
                 </td>
               </tr>
@@ -420,7 +422,7 @@ echo "UsePAM yes" &gt;&gt; /etc/ssh/sshd_config</kbd></pre>
                     is an <span class=
                     "command"><strong>rlogin</strong></span>/<span class=
                     "command"><strong>rsh</strong></span>-like client program
-                    except it uses an encrypted protocol
+                    except that it uses an encrypted protocol
                   </p>
                 </td>
               </tr>
@@ -538,7 +540,7 @@ echo "UsePAM yes" &gt;&gt; /etc/ssh/sshd_config</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1282">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1287">
           Home</a>
         </li>
       </ul>
