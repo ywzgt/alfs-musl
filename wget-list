@@ -542,6 +542,7 @@ https://files.pythonhosted.org/packages/source/s/sphinxcontrib-devhelp/sphinxcon
 https://files.pythonhosted.org/packages/source/s/sphinxcontrib-htmlhelp/sphinxcontrib_htmlhelp-2.1.0.tar.gz
 https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jquery/sphinxcontrib-jquery-4.1.tar.gz
 https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jsmath/sphinxcontrib-jsmath-1.0.1.tar.gz
+https://www.linuxfromscratch.org/patches/blfs/svn/sphinxcontrib-jsmath-1.0.1-sphinx9_fixes-1.patch
 https://files.pythonhosted.org/packages/source/s/sphinxcontrib-qthelp/sphinxcontrib_qthelp-2.0.0.tar.gz
 https://files.pythonhosted.org/packages/source/s/sphinxcontrib_serializinghtml/sphinxcontrib_serializinghtml-2.0.0.tar.gz
 https://files.pythonhosted.org/packages/source/t/trove_classifiers/trove_classifiers-2026.1.14.14.tar.gz
@@ -562,6 +563,7 @@ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
 https://download.gnome.org/sources/vala/0.56/vala-0.56.18.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/vala-0.56.18-graphviz_13_fix-1.patch
 https://sourceware.org/pub/valgrind/valgrind-3.26.0.tar.bz2
+https://www.linuxfromscratch.org/patches/blfs/svn/valgrind-3.26.0-upstream_fixes-1.patch
 https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.9/OpenJDK-21.0.9+10-i686-bin.tar.xz
 https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.9/OpenJDK-21.0.9+10-x86_64-bin.tar.xz
@@ -938,6 +940,7 @@ https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.0.tar.xz
 https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.28.0.tar.xz
 https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.28.0.tar.xz
 https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.28.0.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/gst-plugins-bad-1.28.0-zxing_cpp_3-1.patch
 https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.28.0.tar.xz
 https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.28.0/gst-plugins-rs-gstreamer-1.28.0.tar.gz
 https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.28.0.tar.xz
