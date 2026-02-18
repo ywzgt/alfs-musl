@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1301">
+  <body class="blfs" id="blfs-r12.4-1323">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1301
+        "phrase">(systemd</span> Edition) - Version r12.4-1323
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1301">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1323">
           Home</a>
         </li>
       </ul>
@@ -66,9 +66,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <h3>
@@ -105,6 +104,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/dtc-1.7.2-glibc_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/dtc-1.7.2-glibc_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Dtc Dependencies
         </h3>
         <h4>
@@ -122,6 +135,11 @@
         <h2 class="sect2">
           Installation of Dtc
         </h2>
+        <p>
+          First, fix compiling this package with glibc-2.43:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../dtc-1.7.2-glibc_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">dtc</span> by running the
           following commands:
@@ -386,7 +404,7 @@ popd</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1301">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1323">
           Home</a>
         </li>
       </ul>

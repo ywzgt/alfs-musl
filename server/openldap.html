@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1301">
+  <body class="blfs" id="blfs-r12.4-1323">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1301
+        "phrase">(systemd</span> Edition) - Version r12.4-1323
       </h4>
       <h3>
         Chapter&nbsp;23.&nbsp;Other Server Software
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1301">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1323">
           Home</a>
         </li>
       </ul>
@@ -304,6 +304,14 @@ cp      -vfr      doc/{drafts,rfc,guide} \
           explicitly disables the WiredTiger backend. Omit this switch if
           WiredTiger is installed and you are going to use a WiredTiger
           backend.
+        </p>
+        <p>
+          <em class="parameter"><code>--without-systemd</code></em>: This
+          switch explicitly disables the bundled systemd units from being
+          installed. These units do not work correctly because of
+          configuration assumptions that are overridden by the consolidated
+          patch, and also do not install a working basic configuration file
+          like the BLFS systemd units provide.
         </p>
         <p>
           <em class="parameter"><code>--libexecdir=/usr/lib</code></em>: This
@@ -947,7 +955,7 @@ result: 0 Success
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1301">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1323">
           Home</a>
         </li>
       </ul>
