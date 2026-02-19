@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1323">
+  <body class="blfs" id="blfs-r12.4-1338">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1323
+        "phrase">(systemd</span> Edition) - Version r12.4-1338
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1323">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1338">
           Home</a>
         </li>
       </ul>
@@ -68,9 +68,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <h3>
@@ -285,7 +284,7 @@ cp -vfr ../doc -T /usr/share/doc/krb5-1.22.2</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id9819" name="id9819"></a>Kerberos Configuration
+                    <a id="id9836" name="id9836"></a>Kerberos Configuration
                   </h5>
                 </div>
               </div>
@@ -458,7 +457,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id9898" name="id9898"></a>Additional Information
+                    <a id="id9915" name="id9915"></a>Additional Information
                   </h5>
                 </div>
               </div>
@@ -477,8 +476,10 @@ EOF</kbd></pre>
           <p>
             If you want to start <span class="application">Kerberos</span>
             services at boot, install the <code class=
-            "filename">krb5.service</code> unit included in the <a class=
-            "xref" href="../introduction/systemd-units.html" title=
+            "filename">krb5-krdc.service</code>, <code class=
+            "filename">krb5-kpropd</code>, and <code class=
+            "filename">krb5-kadmind.service</code> units included in the
+            <a class="xref" href="../introduction/systemd-units.html" title=
             "BLFS Systemd Units">blfs-systemd-units-20251204</a> package
             using the following command:
           </p>
@@ -1063,7 +1064,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1323">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1338">
           Home</a>
         </li>
       </ul>
