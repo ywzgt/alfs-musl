@@ -1,0 +1,83 @@
+diff --git a/wget-list b/wget-list
+index c63f1fbc49..4909a2dde4 100644
+--- a/wget-list
++++ b/wget-list
+@@ -18,7 +18,7 @@ https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.
+ https://kerberos.org/dist/krb5/1.22/krb5-1.22.2.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-upstream_fix-1.patch
+ https://ftpmirror.gnu.org/nettle/nettle-3.10.2.tar.gz
+-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_120_RTM/src/nss-3.120.tar.gz
++https://archive.mozilla.org/pub/security/nss/releases/NSS_3_120_1_RTM/src/nss-3.120.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.2p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.26.2/p11-kit-0.26.2.tar.xz
+@@ -48,7 +48,7 @@ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
+ https://ftpmirror.gnu.org/grub/grub-2.14.tar.xz
+ https://unifoundry.com/pub/unifont/unifont-17.0.01/font-builds/unifont-17.0.01.pcf.gz
+ https://www.bennewitz.com/bluefish/stable/source/bluefish-2.4.0.tar.bz2
+-https://ftpmirror.gnu.org/ed/ed-1.22.4.tar.lz
++https://ftpmirror.gnu.org/ed/ed-1.22.5.tar.lz
+ https://ftpmirror.gnu.org/emacs/emacs-30.2.tar.xz
+ https://download.gnome.org/sources/gedit/48/gedit-48.1.tar.xz
+ https://gitlab.gnome.org/World/gedit/libgedit-amtk/-/archive/5.9.2/libgedit-amtk-5.9.2.tar.bz2
+@@ -301,6 +301,7 @@ https://anduin.linuxfromscratch.org/BLFS/clisp/clisp-2.49.95.tar.xz
+ https://cmake.org/files/v4.2/cmake-4.2.3.tar.gz
+ https://doxygen.nl/files/doxygen-1.16.1.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/dtc-1.7.2-glibc_fixes-1.patch
+ https://ftpmirror.gnu.org/gcc/gcc-15.2.0/gcc-15.2.0.tar.xz
+ https://github.com/bdwgc/bdwgc/releases/download/v8.2.12/gc-8.2.12.tar.gz
+ https://ftpmirror.gnu.org/gdb/gdb-17.1.tar.xz
+@@ -375,7 +376,7 @@ https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Alien-Build-Plugin-Download-G
+ https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Alien-Libxml2-0.20.tar.gz
+ https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/B-COW-0.007.tar.gz
+ https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Hooks-EndOfScope-0.28.tar.gz
+-https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Business-ISBN-Data-20260203.001.tar.gz
++https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Business-ISBN-Data-20260214.001.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Capture-Tiny-0.50.tar.gz
+ https://cpan.metacpan.org/authors/id/R/RS/RSHERER/Class-Data-Inheritable-0.10.tar.gz
+ https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Class-Inspector-1.36.tar.gz
+@@ -464,7 +465,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/XML-LibXML-2.0210-testsuite_fi
+ https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+-https://www.php.net/distributions/php-8.5.2.tar.xz
++https://www.php.net/distributions/php-8.5.3.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/3.14.3/Python-3.14.3.tar.xz
+@@ -522,7 +523,7 @@ https://files.pythonhosted.org/packages/source/h/hatch-vcs/hatch_vcs-0.5.0.tar.g
+ https://files.pythonhosted.org/packages/source/i/idna/idna-3.11.tar.gz
+ https://files.pythonhosted.org/packages/source/i/imagesize/imagesize-1.4.1.tar.gz
+ https://files.pythonhosted.org/packages/source/i/iniconfig/iniconfig-2.3.0.tar.gz
+-https://github.com/PyO3/maturin/archive/v1.11.5/maturin-1.11.5.tar.gz
++https://github.com/PyO3/maturin/archive/v1.12.0/maturin-1.12.0.tar.gz
+ https://files.pythonhosted.org/packages/source/M/Markdown/markdown-3.10.2.tar.gz
+ https://files.pythonhosted.org/packages/source/m/meson_python/meson_python-0.19.0.tar.gz
+ https://files.pythonhosted.org/packages/source/m/msgpack/msgpack-1.1.2.tar.gz
+@@ -593,7 +594,7 @@ https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.56.0/d
+ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
+ https://nmap.org/dist/nmap-7.98.tar.bz2
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.6.tar.gz
+-https://github.com/rfc1036/whois/archive/v5.6.5/whois-5.6.5.tar.gz
++https://github.com/rfc1036/whois/archive/v5.6.6/whois-5.6.6.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.6.3.tar.xz
+ https://github.com/c-ares/c-ares/releases/download/v1.34.6/c-ares-1.34.6.tar.gz
+ https://curl.se/download/curl-8.18.0.tar.xz
+@@ -664,7 +665,7 @@ https://www.x.org/pub/individual/driver/xf86-input-libinput-1.5.0.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-synaptics-1.10.0.tar.xz
+ https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-1.2.4/xf86-input-wacom-1.2.4.tar.bz2
+ https://www.x.org/pub/individual/app/twm-1.0.13.1.tar.xz
+-https://invisible-mirror.net/archives/xterm/xterm-406.tgz
++https://invisible-mirror.net/archives/xterm/xterm-407.tgz
+ https://www.x.org/pub/individual/app/xclock-1.1.1.tar.xz
+ https://www.x.org/pub/individual/app/xinit-1.4.4.tar.xz
+ https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz
+@@ -975,6 +976,7 @@ https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.
+ https://github.com/intel/libva/archive/2.23.0/libva-2.23.0.tar.gz
+ https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz
+ https://github.com/webmproject/libvpx/archive/v1.16.0/libvpx-1.16.0.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/libvpx-1.16.0-security_fix-1.patch
+ https://github.com/mltframework/mlt/releases/download/v7.36.1/mlt-7.36.1.tar.gz
+ https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz
+ https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.4.10/pipewire-1.4.10.tar.bz2
