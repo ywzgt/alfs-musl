@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1338">
+  <body class="blfs" id="blfs-r12.4-1348">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1338
+        "phrase">(systemd</span> Edition) - Version r12.4-1348
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1338">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1348">
           Home</a>
         </li>
       </ul>
@@ -225,6 +225,16 @@ make</kbd></pre>
         "command">make -C tools install_tools_dynamic &amp;&amp;
 make -C udev  install               &amp;&amp;
 make -C libdm install</kbd></pre>
+        <p>
+          The tests need the ability to create and remove device nodes in the
+          /tmp directory. On systemd systems, the default is to mount /tmp
+          with the nodev option. Rather than disabling this behavior
+          permanently (since it does have valid security reasons to be doing
+          this), remount the /tmp filesystem temporarily as the <code class=
+          "systemitem">root</code> user:
+        </p>
+        <pre class="root"><kbd class=
+        "command">mount -o remount,dev /tmp</kbd></pre>
         <p>
           To test the results, issue, as the <code class=
           "systemitem">root</code> user:
@@ -565,7 +575,7 @@ make install_systemd_units</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1338">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1348">
           Home</a>
         </li>
       </ul>
