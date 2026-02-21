@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1348">
+  <body class="blfs" id="blfs-r12.4-1383">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1348
+        "phrase">(systemd</span> Edition) - Version r12.4-1383
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1348">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1383">
           Home</a>
         </li>
       </ul>
@@ -64,9 +64,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <h3>
@@ -189,8 +188,12 @@
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
-          test-only</strong></span>. Out of over 4500 tests, 4 in the
-          'parallel' test suite are known to fail.
+          test-only</strong></span>. Out of over 4600 tests, about 10 in the
+          'parallel' test suite are known to fail. Some failures are due to
+          assumptions about dependent packages like icu and nghttp2 versions
+          that are earlier than what is in BLFS. Also note that if you pass a
+          high parallelism option (like -j20; -j8 is fine) to the test
+          procedure, additional tests will run out of memory and fail.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -359,7 +362,7 @@ ln -sf node /usr/share/doc/node-22.22.0</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1348">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1383">
           Home</a>
         </li>
       </ul>

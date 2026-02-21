@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1348">
+  <body class="blfs" id="blfs-r12.4-1383">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1348
+        "phrase">(systemd</span> Edition) - Version r12.4-1383
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1348">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1383">
           Home</a>
         </li>
       </ul>
@@ -66,9 +66,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <h3>
@@ -124,7 +123,9 @@
           <a class="xref" href="lvm2.html" title=
           "LVM2-2.03.38">LVM2-2.03.38</a> (<span class=
           "command"><strong>dmsetup</strong></span> is used in tests),
-          <a class="xref" href="../general/python-modules.html#sphinx" title=
+          <a class="xref" href="ntfs-3g.html" title=
+          "ntfs-3g-2022.10.3">ntfs-3g-2022.10.3</a>, <a class="xref" href=
+          "../general/python-modules.html#sphinx" title=
           "Sphinx-9.1.0">sphinx-9.1.0</a> and <a class="xref" href=
           "../general/python-modules.html#sphinx_rtd_theme" title=
           "Sphinx_rtd_theme-3.1.0">sphinx_rtd_theme-3.1.0</a> (required to
@@ -184,11 +185,13 @@ make</kbd></pre>
         </p>
         <pre class="userinput"><kbd class="command">make fssum</kbd></pre>
         <p>
-          Now remove one test known to fail. As <code class=
+          Now, remove three tests that are known to fail. As <code class=
           "systemitem">root</code>:
         </p>
         <pre class="userinput"><kbd class=
-        "command">rm -rf tests/fuzz-tests/010-simple-sb</kbd></pre>
+        "command">rm -rf tests/convert-tests/024-ntfs-basic                &amp;&amp;
+rm -rf tests/misc-tests/041-subvolume-delete-during-send &amp;&amp;
+rm -rf tests/fuzz-tests/010-simple-sb</kbd></pre>
         <p>
           To test the results, issue (as the <code class=
           "systemitem">root</code> user):
@@ -416,7 +419,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1348">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1383">
           Home</a>
         </li>
       </ul>

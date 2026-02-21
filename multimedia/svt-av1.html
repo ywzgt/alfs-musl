@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1348">
+  <body class="blfs" id="blfs-r12.4-1383">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1348
+        "phrase">(systemd</span> Edition) - Version r12.4-1383
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1348">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1383">
           Home</a>
         </li>
       </ul>
@@ -62,9 +62,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <h3>
@@ -167,9 +166,9 @@ ninja TestVectors            &amp;&amp;
 SVT_AV1_TEST_VECTOR_PATH=$PWD/../test/vectors \
 ctest -V -O testlog.txt --timeout 10800</kbd></pre>
         <p>
-          On a relatively slow system it's needed to increase the timeout
-          (see the SBU value for tests on top of the page). In the
-          SvtAv1ApiTests test, 12 <code class=
+          On a relatively slow system, you may need need to increase the
+          timeout for the tests (see the SBU value for the tests on top of
+          the page). In the SvtAv1ApiTests test, 12 <code class=
           "literal">run_paramter_check</code> subtests are known to fail. The
           test harness will download a copy of libaom (even if <a class=
           "xref" href="libaom.html" title="libaom-3.13.1">libaom-3.13.1</a>
@@ -257,7 +256,8 @@ ctest -V -O testlog.txt --timeout 10800</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    contains functions that enable encoding AV1
+                    contains functions that enable encoding files with the
+                    AV1 codec
                   </p>
                 </td>
               </tr>
@@ -286,7 +286,7 @@ ctest -V -O testlog.txt --timeout 10800</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1348">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1383">
           Home</a>
         </li>
       </ul>

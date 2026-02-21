@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1348">
+  <body class="blfs" id="blfs-r12.4-1383">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1348
+        "phrase">(systemd</span> Edition) - Version r12.4-1383
       </h4>
       <h3>
         Chapter&nbsp;48.&nbsp;Standard Generalized Markup Language (SGML)
@@ -43,7 +43,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1348">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1383">
           Home</a>
         </li>
       </ul>
@@ -68,9 +68,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <h3>
@@ -149,23 +148,26 @@
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../OpenSP-1.5.2-gcc14-1.patch          &amp;&amp;
-sed -i 's/32,/253,/' lib/Syntax.cxx                  &amp;&amp;
-sed -i 's/LITLEN          240 /LITLEN          8092/' \
-    unicode/{gensyntax.pl,unicode.syn}               &amp;&amp;
+        "command">patch -Np1 -i ../OpenSP-1.5.2-gcc14-1.patch              &amp;&amp;
+sed -i 's/32,/253,/' lib/Syntax.cxx                      &amp;&amp;
+sed -i 's/LITLEN          240 /LITLEN          8092/'    \
+    unicode/{gensyntax.pl,unicode.syn}                   &amp;&amp;
 
-./configure --prefix=/usr                              \
-            --disable-static                           \
-            --disable-doc-build                        \
-            --enable-default-catalog=/etc/sgml/catalog \
-            --enable-http                              \
+./configure --prefix=/usr                                \
+            --disable-static                             \
+            --disable-doc-build                          \
+            --enable-default-catalog=/etc/sgml/catalog   \
+            --enable-http                                \
             --enable-default-search-path=/usr/share/sgml &amp;&amp;
 
 make pkgdatadir=/usr/share/sgml/OpenSP-1.5.2</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
-          check</strong></span>. As many as nine of the 23 tests may fail. Do
-          not be alarmed.
+          check</strong></span>. The <code class="filename">catalog-2</code>,
+          <code class="filename">af-7</code>, <code class=
+          "filename">af-8</code>, <code class="filename">af-9</code>,
+          <code class="filename">af-10</code>, and <code class=
+          "filename">af-11</code> tests are known to fail.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -522,7 +524,7 @@ ln -v -sf libosp.so /usr/lib/libsp.so</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1348">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1383">
           Home</a>
         </li>
       </ul>
