@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 3bd0f689c2..592c28f406 100644
+--- a/wget-list
++++ b/wget-list
+@@ -111,7 +111,7 @@ https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6
+ https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+ https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.3.0/downloads/libdisplay-info-0.3.0.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.12.0.tar.bz2
+-https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.58.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.59.tar.bz2
+ https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.55.tar.xz
+ https://download.gnome.org/sources/libgudev/238/libgudev-238.tar.xz
+ https://github.com/hughsie/libgusb/releases/download/0.4.9/libgusb-0.4.9.tar.xz
+@@ -989,7 +989,7 @@ https://www.surina.net/soundtouch/soundtouch-2.4.0.tar.gz
+ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v4.0.1/SVT-AV1-v4.0.1.tar.gz
+-https://taglib.org/releases/taglib-2.1.1.tar.gz
++https://taglib.org/releases/taglib-2.2.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.32.0.tar.xz
+ https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.13/wireplumber-0.5.13.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20250815.tar.xz
