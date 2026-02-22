@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1383">
+  <body class="blfs" id="blfs-r12.4-1397">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1383
+        "phrase">(systemd</span> Edition) - Version r12.4-1397
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1383">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1397">
           Home</a>
         </li>
       </ul>
@@ -113,9 +113,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <div class="admon warning">
@@ -218,7 +217,7 @@
           "libxslt-1.1.45">libxslt-1.1.45</a>, <a class="xref" href=
           "../multimedia/opus.html" title="Opus-1.6.1">Opus-1.6.1</a>, and
           <a class="xref" href="../multimedia/pipewire.html" title=
-          "Pipewire-1.4.10">pipewire-1.4.10</a>
+          "Pipewire-1.6.0">pipewire-1.6.0</a>
         </p>
         <h4>
           Optional
@@ -238,6 +237,12 @@
         <h2 class="sect2">
           Installation of qtwebengine
         </h2>
+        <p>
+          First, make a fix to be compatible with glibc-2.43 and later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e '/ifndef SYS_SECCOMP/,+2 d' \
+    -i src/3rdparty/chromium/sandbox/linux/system_headers/linux_seccomp.h</kbd></pre>
         <p>
           Install <span class="application">qtwebengine</span> by running the
           following commands:
@@ -479,7 +484,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1383">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1397">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1383">
+  <body class="blfs" id="blfs-r12.4-1397">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1383
+        "phrase">(systemd</span> Edition) - Version r12.4-1397
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="firefox.html" title=
-          "Firefox-140.7.0esr">Prev</a>
+          "Firefox-140.7.1esr">Prev</a>
           <p>
-            Firefox-140.7.0esr
+            Firefox-140.7.1esr
           </p>
         </li>
         <li class="next">
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1383">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1397">
           Home</a>
         </li>
       </ul>
@@ -66,9 +66,9 @@
           Suite, created after Mozilla decided to focus on separate
           applications for browsing and e-mail. Those applications are
           <a class="xref" href="firefox.html" title=
-          "Firefox-140.7.0esr">Firefox-140.7.0</a> and <a class="xref" href=
+          "Firefox-140.7.1esr">Firefox-140.7.1</a> and <a class="xref" href=
           "thunderbird.html" title=
-          "Thunderbird-140.7.1esr">Thunderbird-140.7.1esr</a>.
+          "Thunderbird-140.7.2esr">Thunderbird-140.7.2esr</a>.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -76,9 +76,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <div class="admon important">
@@ -133,6 +132,13 @@
         </h3>
         <div class="itemizedlist">
           <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-libvpx_security_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-libvpx_security_fixes-1.patch</a>
+              </p>
+            </li>
             <li class="listitem">
               <p>
                 Recommended patch (required for building with system ICU-75
@@ -339,14 +345,16 @@ EOF</kbd></pre>
           First, if you are building with system ICU, adapt the line break
           mapping for ICU-74 or later, apply a patch to build this package
           with the C++17 standard because the headers of ICU-75 or later
-          require some C++17 features, and adapt the build system to use the
-          correct library with ICU-76 or later:
+          require some C++17 features, fix a security issue in the bundled
+          version of libvpx, and adapt the build system to use the correct
+          library with ICU-76 or later:
         </p>
         <pre class="userinput"><kbd class="command">(for i in {43..48}; do
    sed '/ZWJ/s/$/,CLASS_CHARACTER/' -i intl/lwbrk/LineBreaker.cpp || exit $?
 done) &amp;&amp;
 
-patch -Np1 -i ../seamonkey-2.53.23-cxx17-1.patch &amp;&amp;
+patch -Np1 -i ../seamonkey-2.53.23-cxx17-1.patch                 &amp;&amp;
+patch -Np1 -i ../seamonkey-2.53.23-libvpx_security_fixes-1.patch &amp;&amp;
 
 sed -i 's/icu-i18n/icu-uc &amp;/' js/moz.configure</kbd></pre>
         <p>
@@ -570,9 +578,9 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
       <ul>
         <li class="prev">
           <a accesskey="p" href="firefox.html" title=
-          "Firefox-140.7.0esr">Prev</a>
+          "Firefox-140.7.1esr">Prev</a>
           <p>
-            Firefox-140.7.0esr
+            Firefox-140.7.1esr
           </p>
         </li>
         <li class="next">
@@ -588,7 +596,7 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1383">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1397">
           Home</a>
         </li>
       </ul>
