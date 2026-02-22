@@ -1,0 +1,23 @@
+diff --git a/wget-list b/wget-list
+index 592c28f406..10175bac82 100644
+--- a/wget-list
++++ b/wget-list
+@@ -199,6 +199,7 @@ https://github.com/AOMediaCodec/libavif/archive/v1.3.0/libavif-1.3.0.tar.gz
+ https://github.com/libexif/libexif/releases/download/v0.6.25/libexif-0.6.25.tar.bz2
+ https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
+ https://github.com/strukturag/libheif/releases/download/v1.21.2/libheif-1.21.2.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/libheif-1.21.2-svt_av1_build_fix-1.patch
+ https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.3/libjpeg-turbo-3.1.3.tar.gz
+ https://github.com/libjxl/libjxl/archive/v0.11.2/libjxl-0.11.2.tar.gz
+ https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
+@@ -613,8 +614,8 @@ https://github.com/thkukuk/libnsl/releases/download/v2.0.1/libnsl-2.0.1.tar.xz
+ https://www.tcpdump.org/release/libpcap-1.10.6.tar.gz
+ https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz
+ https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.9.1/libslirp-v4.9.1.tar.bz2
+-https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.5.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libsoup-3.6.5-upstream_fixes-1.patch
++https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.6.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/libsoup-3.6.6-upstream_fixes-1.patch
+ https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.7.tar.bz2
+ https://notroj.github.io/neon/neon-0.36.0.tar.gz
+ https://github.com/nghttp2/nghttp2/releases/download/v1.68.0/nghttp2-1.68.0.tar.xz
