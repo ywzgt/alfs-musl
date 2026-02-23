@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1397">
+  <body class="blfs" id="blfs-r12.4-1404">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1397
+        "phrase">(systemd</span> Edition) - Version r12.4-1404
       </h4>
       <h3>
         Chapter&nbsp;28.&nbsp;Icons
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1397">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1404">
           Home</a>
         </li>
       </ul>
@@ -141,6 +141,7 @@ cd    build &amp;&amp;
 
 cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -D BUILD_TESTING=OFF         \
+      -D WITH_ICON_GENERATION=OFF  \
       -W no-dev ..                 &amp;&amp;
 make</kbd></pre>
         <p>
@@ -161,6 +162,16 @@ make</kbd></pre>
           some modules from <a class="xref" href="../kde/frameworks6.html"
           title="Building KDE Frameworks 6.20.0 (KF6)">KDE
           Frameworks-6.20.0</a>.
+        </p>
+        <p>
+          <em class="parameter"><code>-D
+          WITH_ICON_GENERATION=OFF</code></em>: This parameter disables
+          generation of 24x24 dark icons, which requires the <a class="xref"
+          href="../general/python-modules.html#lxml" title=
+          "lxml-6.0.2">lxml-6.0.2</a> python module. This parameter can be
+          removed if <a class="xref" href=
+          "../general/python-modules.html#lxml" title=
+          "lxml-6.0.2">lxml-6.0.2</a> is installed.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -209,7 +220,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1397">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1404">
           Home</a>
         </li>
       </ul>
