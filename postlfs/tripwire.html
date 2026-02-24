@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1404">
+  <body class="blfs" id="blfs-r12.4-1411">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1404
+        "phrase">(systemd</span> Edition) - Version r12.4-1411
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1404">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1411">
           Home</a>
         </li>
       </ul>
@@ -65,9 +65,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <h3>
@@ -171,9 +170,10 @@ cp -v policy/*.txt /usr/share/doc/tripwire-2.4.3.7</kbd></pre>
             "command"><strong>make install</strong></span>:
           </p>
           <pre class="userinput"><kbd class=
-          "command">sed -i -e 's@installer/install.sh@&amp; -n -s <em class=
+          "command">sed -e 's@installer/install.sh@&amp; -n -s <em class=
           "replaceable"><code>&lt;site-password&gt;</code></em> -l <em class=
-          "replaceable"><code>&lt;local-password&gt;</code></em>@' Makefile</kbd></pre>
+          "replaceable"><code>&lt;local-password&gt;</code></em>@' \ 
+    -i Makefile</kbd></pre>
           <p>
             Of course, you should do this with dummy passwords and change
             them later.
@@ -477,7 +477,7 @@ tripwire --init</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1404">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1411">
           Home</a>
         </li>
       </ul>

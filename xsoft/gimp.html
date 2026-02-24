@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1404">
+  <body class="blfs" id="blfs-r12.4-1411">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1404
+        "phrase">(systemd</span> Edition) - Version r12.4-1411
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1404">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1411">
           Home</a>
         </li>
       </ul>
@@ -106,6 +106,17 @@
         <h3>
           Additional Downloads
         </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/gimp-3.0.6-security_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/gimp-3.0.6-security_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -264,6 +275,11 @@ rm -f  /usr/lib/libgimp*-3.0.so*</kbd></pre>
           Install <span class="application">Gimp</span> by running the
           following commands:
         </p>
+        <p>
+          First, fix some security vulnerabilities identified upstream:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../gimp-3.0.6-security_fixes-1.patch</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">mkdir gimp-build &amp;&amp;
 cd    gimp-build &amp;&amp;
@@ -638,7 +654,7 @@ chown -R root:root /usr/share/gimp/3.0/help</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1404">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1411">
           Home</a>
         </li>
       </ul>
