@@ -1,0 +1,53 @@
+diff --git a/wget-list b/wget-list
+index fcb78e500c..bb451e65d7 100644
+--- a/wget-list
++++ b/wget-list
+@@ -44,6 +44,7 @@ https://downloads.sourceforge.net/smartmontools/smartmontools-7.5.tar.gz
+ https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.5/sshfs-3.7.5.tar.xz
+ https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.18.0.tar.xz
+ https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/efivar-39-upstream_fixes-1.patch
+ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
+ https://ftpmirror.gnu.org/grub/grub-2.14.tar.xz
+ https://unifoundry.com/pub/unifont/unifont-17.0.01/font-builds/unifont-17.0.01.pcf.gz
+@@ -59,7 +60,7 @@ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/25.08.3/src/kate-25.08.3.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.6/mousepad-0.6.5.tar.xz
+ https://www.nano-editor.org/dist/v8/nano-8.7.1.tar.xz
+-https://github.com/vim/vim/archive/v9.1.2144/vim-9.1.2144.tar.gz
++https://github.com/vim/vim/archive/v9.2.0000/vim-9.2.0000.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.1.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+@@ -572,8 +573,6 @@ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.9/OpenJDK-21.0.9+1
+ https://github.com/openjdk/jdk21u/archive/jdk-21.0.9-ga.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.9/jtreg-7.5.1+1.tar.gz
+ https://archive.apache.org/dist/ant/source/apache-ant-1.10.15-src.tar.xz
+-https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.3.0/dhcpcd-10.3.0.tar.xz
+-https://www.kernel.org/pub/linux/utils/net/bridge-utils/bridge-utils-1.7.1.tar.xz
+ https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.5.tar.bz2
+ https://www.ncftp.com/public_ftp/ncftp/ncftp-3.3.0-src.tar.gz
+ https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
+@@ -731,7 +730,7 @@ https://download.gnome.org/sources/gnome-themes-extra/3.28/gnome-themes-extra-3.
+ https://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.18.tar.xz
+ https://tango.freedesktop.org/releases/icon-naming-utils-0.8.90.tar.bz2
+ https://downloads.sourceforge.net/lxde/lxde-icon-theme-0.5.1.tar.xz
+-https://download.kde.org/stable/oxygen-icons/oxygen-icons-6.0.0.tar.xz
++https://download.kde.org/stable/oxygen-icons/oxygen-icons-6.1.0.tar.xz
+ https://download.kde.org/stable/frameworks/6.20/extra-cmake-modules-6.20.0.tar.xz
+ https://download.kde.org/stable/phonon/4.12.0/phonon-4.12.0.tar.xz
+ https://download.kde.org/stable/phonon/phonon-backend-vlc/0.12.0/phonon-backend-vlc-0.12.0.tar.xz
+@@ -911,6 +910,7 @@ https://feh.finalrewind.org/feh-3.11.2.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
+ https://github.com/freerdp/freerdp/archive/3.22.0/FreeRDP-3.22.0.tar.gz
+ https://download.gimp.org/gimp/v3.0/gimp-3.0.6.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/gimp-3.0.6-security_fixes-1.patch
+ https://download.gimp.org/pub/gimp/help/gimp-help-3.0.2.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.8.0.tar.gz
+ https://inkscape.org/gallery/item/58914/inkscape-1.4.3.tar.xz
+@@ -1075,3 +1075,5 @@ https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.p
+ https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20251220.tar.xz
+ https://github.com/elogind/elogind/archive/V255.22/elogind-255.22.tar.gz
+ https://github.com/lfs-book/blocaled/releases/download/v0.7/blocaled-0.7.tar.xz
++https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.3.0/dhcpcd-10.3.0.tar.xz
++https://www.kernel.org/pub/linux/utils/net/bridge-utils/bridge-utils-1.7.1.tar.xz
