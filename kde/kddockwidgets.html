@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      obconf-qt-0.16.5
+      kddockwidgets-2.4.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
@@ -19,26 +19,26 @@
         "phrase">(systemd</span> Edition) - Version r12.4-1423
       </h4>
       <h3>
-        Chapter&nbsp;37.&nbsp;LXQt Desktop
+        Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="xdg-desktop-portal-lxqt.html" title=
-          "xdg-desktop-portal-lxqt-1.3.0">Prev</a>
+          <a accesskey="p" href="dolphin-plugins.html" title=
+          "dolphin-plugins-25.12.3">Prev</a>
           <p>
-            xdg-desktop-portal-lxqt-1.3.0
+            dolphin-plugins-25.12.3
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="post-install.html" title=
-          "LXQt Desktop Final Instructions">Next</a>
+          <a accesskey="n" href="kdenlive.html" title=
+          "kdenlive-25.12.3">Next</a>
           <p>
-            LXQt Desktop Final Instructions
+            kdenlive-25.12.3
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="lxqt-desktop.html" title=
-          "Chapter&nbsp;37.&nbsp;LXQt Desktop">Up</a>
+          <a accesskey="u" href="kf-apps.html" title=
+          "Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
@@ -48,17 +48,17 @@
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="obconf-qt" name="obconf-qt"></a>obconf-qt-0.16.5
+      <a id="kddockwidgets" name="kddockwidgets"></a>kddockwidgets-2.4.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Introduction to obconf-qt
+          Introduction to KDDockWidgets
         </h2>
         <p>
-          The <span class="application">obconf-qt</span> package is a
-          Qt-based configuration tool for <span class=
-          "application">Openbox</span>.
+          The <span class="application">KDDockWidgets</span> package is a Qt
+          dock widget library suitable for replacing QDockWidget and
+          implementing advanced functionalities missing in Qt.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -78,62 +78,60 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/lxqt/obconf-qt/releases/download/0.16.5/obconf-qt-0.16.5.tar.xz">
-                https://github.com/lxqt/obconf-qt/releases/download/0.16.5/obconf-qt-0.16.5.tar.xz</a>
+                "https://github.com/KDAB/KDDockWidgets/releases/download/v2.4.0/kddockwidgets-2.4.0.tar.gz">
+                https://github.com/KDAB/KDDockWidgets/releases/download/v2.4.0/kddockwidgets-2.4.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: d5575e961c56676ed7cff32d87564f26
+                Download MD5 sum: 6ad73ca8501c207d99116210054814aa
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 124 KB
+                Download size: 5.4 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 5.1 MB
+                Estimated disk space required: 112 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.2 SBU
+                Estimated build time: 0.6 SBU (using parallelism=4)
               </p>
             </li>
           </ul>
         </div>
         <h3>
-          obconf-qt Dependencies
+          KDDockWidgets Dependencies
         </h3>
         <h4>
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="../x/hicolor-icon-theme.html" title=
-          "hicolor-icon-theme-0.18">hicolor-icon-theme-0.18</a>, <a class=
-          "xref" href="lxqt-build-tools.html" title=
-          "lxqt-build-tools-2.3.0">lxqt-build-tools-2.3.0</a>, <a class=
-          "xref" href="../x/openbox.html" title=
-          "openbox-3.6.1">openbox-3.6.1</a>, and <a class="xref" href=
-          "../x/qt6.html" title="Qt-6.10.2">Qt-6.10.2</a>
+          <a class="xref" href="../general/fmt.html" title=
+          "fmt-12.1.0">fmt-12.1.0</a>, <a class="xref" href="../x/qt6.html"
+          title="Qt-6.10.2">Qt-6.10.2</a>, and <a class="xref" href=
+          "../x/vulkan-loader.html" title=
+          "Vulkan-Loader-1.4.341.0">Vulkan-Loader-1.4.341.0</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Installation of obconf-qt
+          Installation of KDDockWidgets
         </h2>
         <p>
-          Install <span class="application">obconf-qt</span> by running the
-          following commands:
+          Install <span class="application">KDDockWidgets</span> by running
+          the following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -D CMAKE_INSTALL_PREFIX=/usr \
-      -D CMAKE_BUILD_TYPE=Release  \
-      ..                           &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=$KF6_PREFIX \
+      -D CMAKE_BUILD_TYPE=Release         \
+      -W no-dev .. &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -150,16 +148,18 @@ make</kbd></pre>
         <div class="segmentedlist">
           <div class="seglistitem">
             <div class="seg">
-              <strong class="segtitle">Installed Program:</strong>
-              <span class="segbody">obconf-qt</span>
+              <strong class="segtitle">Installed Programs:</strong>
+              <span class="segbody">None</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">None</span>
+              <span class="segbody">libkddockwidgets-qt6.so</span>
             </div>
             <div class="seg">
-              <strong class="segtitle">Installed Directory:</strong>
-              <span class="segbody">None</span>
+              <strong class="segtitle">Installed Directories:</strong>
+              <span class="segbody">$KF6_PREFIX/cmake/KDDockWidgets-qt6,
+              $KF6_PREFIX/include/kddockwidgets-qt6, and
+              $KF6_PREFIX/share/doc/kddockwidgets</span>
             </div>
           </div>
         </div>
@@ -176,15 +176,14 @@ make</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="obconf-qt-prog" name=
-                    "obconf-qt-prog"></a><span class="term"><span class=
-                    "command"><strong>obconf-qt</strong></span></span>
+                    <a id="libkddockwidgets-qt6.so" name=
+                    "libkddockwidgets-qt6.so"></a><span class=
+                    "term">libkddockwidgets-qt6.so</span>
                   </p>
                 </td>
                 <td>
                   <p>
-                    is a Qt-based configuration tool for <span class=
-                    "application">Openbox</span>
+                    is a Qt dock widget library
                   </p>
                 </td>
               </tr>
@@ -196,22 +195,22 @@ make</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="xdg-desktop-portal-lxqt.html" title=
-          "xdg-desktop-portal-lxqt-1.3.0">Prev</a>
+          <a accesskey="p" href="dolphin-plugins.html" title=
+          "dolphin-plugins-25.12.3">Prev</a>
           <p>
-            xdg-desktop-portal-lxqt-1.3.0
+            dolphin-plugins-25.12.3
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="post-install.html" title=
-          "LXQt Desktop Final Instructions">Next</a>
+          <a accesskey="n" href="kdenlive.html" title=
+          "kdenlive-25.12.3">Next</a>
           <p>
-            LXQt Desktop Final Instructions
+            kdenlive-25.12.3
           </p>
         </li>
         <li class="up">
-          <a accesskey="u" href="lxqt-desktop.html" title=
-          "Chapter&nbsp;37.&nbsp;LXQt Desktop">Up</a>
+          <a accesskey="u" href="kf-apps.html" title=
+          "Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=

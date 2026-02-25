@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1411">
+  <body class="blfs" id="blfs-r12.4-1423">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1411
+        "phrase">(systemd</span> Edition) - Version r12.4-1423
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1411">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
           Home</a>
         </li>
       </ul>
@@ -103,6 +103,17 @@
             </li>
           </ul>
         </div>
+        <h3>
+          libcddb Dependencies
+        </h3>
+        <h4>
+          Optional
+        </h4>
+        <p class="optional">
+          <a class="xref" href="libcdio.html" title=
+          "libcdio-2.1.0">libcdio-2.1.0</a> (for <span class=
+          "command"><strong>cddb_query</strong></span> to read CD)
+        </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -147,7 +158,12 @@ make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
           check -k</strong></span>. The test suite needs the Internet
-          connection. One test fails due to missing test server.
+          connection. The test named <span class="quote">“<span class=
+          "quote">Check non-existing disc server read</span>”</span> fails
+          because the test incorrectly assumes no discs have the ID
+          <code class="literal">0x11111111</code>. Another test fails due to
+          the attempt to use the closed <code class="uri">freedb2.org</code>
+          server.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -224,7 +240,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1411">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
           Home</a>
         </li>
       </ul>
