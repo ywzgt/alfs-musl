@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1423">
+  <body class="blfs" id="blfs-r12.4-1470">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1423
+        "phrase">(systemd</span> Edition) - Version r12.4-1470
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>
@@ -136,7 +136,12 @@
         <p class="optional">
           <a class="xref" href="../general/python-modules.html#gi-docgen"
           title="Gi-DocGen-2026.1">Gi-DocGen-2026.1</a> and <a class="xref"
-          href="../pst/xmlto.html" title="xmlto-0.0.29">xmlto-0.0.29</a>
+          href="../pst/xmlto.html" title="xmlto-0.0.29">xmlto-0.0.29</a> (for
+          documentation), <a class="xref" href=
+          "../general/python-modules.html#python-dbusmock" title=
+          "dbusmock-0.38.1">dbusmock-0.38.1</a> and <a class="ulink" href=
+          "https://anduin.linuxfromscratch.org/BLFS/mutter/xvfb-run">xvfb-run</a>
+          (to run the test suite)
         </p>
         <h4>
           Required (runtime)
@@ -180,8 +185,9 @@ meson setup --prefix=/usr       \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>ninja
-          test</strong></span>
+          To test the results, you must have the xvfb-run program installed
+          into /usr/bin. If you have xvfb-run, issue: <span class=
+          "command"><strong>ninja test</strong></span> to run the tests.
         </p>
         <p>
           If you have <a class="xref" href=
@@ -305,7 +311,7 @@ fi</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>

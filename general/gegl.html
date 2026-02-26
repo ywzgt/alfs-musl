@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1423">
+  <body class="blfs" id="blfs-r12.4-1470">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1423
+        "phrase">(systemd</span> Edition) - Version r12.4-1470
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>
@@ -198,7 +198,10 @@ ninja</kbd></pre>
         <p>
           To run the tests, issue: <span class="command"><strong>ninja
           test</strong></span>. Many tests are skipped depending on what
-          optional dependencies are installed.
+          optional dependencies are installed. Fourteen tests are known to
+          fail in the <code class="filename">gegl:ff-load-save</code> portion
+          of the test suite due to incompatibilities with recent versions of
+          ffmpeg.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -332,7 +335,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>

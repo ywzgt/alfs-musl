@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Postfix-3.10.7
+      Postfix-3.10.8
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1423">
+  <body class="blfs" id="blfs-r12.4-1470">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1423
+        "phrase">(systemd</span> Edition) - Version r12.4-1470
       </h4>
       <h3>
         Chapter&nbsp;21.&nbsp;Mail Server Software
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="postfix" name="postfix"></a>Postfix-3.10.7
+      <a id="postfix" name="postfix"></a>Postfix-3.10.8
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -79,13 +79,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.7.tar.gz">
-                https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.7.tar.gz</a>
+                "https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.8.tar.gz">
+                https://ghostarchive.org/postfix/postfix-release/official/postfix-3.10.8.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 604e00614fa14f5d109a176420fde7c3
+                Download MD5 sum: ca4d82e7cabb7fb725ee00599e8b65fd
               </p>
             </li>
             <li class="listitem">
@@ -95,7 +95,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 157 MB
+                Estimated disk space required: 158 MB
               </p>
             </li>
             <li class="listitem">
@@ -231,7 +231,7 @@ AUXLIBS=""</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id63503" name="id63503"></a>Cyrus-SASL
+                    <a id="id63561" name="id63561"></a>Cyrus-SASL
                   </h5>
                 </div>
               </div>
@@ -252,7 +252,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id63510" name="id63510"></a>LMDB
+                    <a id="id63568" name="id63568"></a>LMDB
                   </h5>
                 </div>
               </div>
@@ -272,7 +272,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id63517" name="id63517"></a>OpenLDAP
+                    <a id="id63575" name="id63575"></a>OpenLDAP
                   </h5>
                 </div>
               </div>
@@ -293,7 +293,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id63524" name="id63524"></a>Sqlite
+                    <a id="id63582" name="id63582"></a>Sqlite
                   </h5>
                 </div>
               </div>
@@ -314,7 +314,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id63531" name="id63531"></a>MySQL
+                    <a id="id63589" name="id63589"></a>MySQL
                   </h5>
                 </div>
               </div>
@@ -334,7 +334,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id63538" name="id63538"></a>PostgreSQL
+                    <a id="id63596" name="id63596"></a>PostgreSQL
                   </h5>
                 </div>
               </div>
@@ -355,7 +355,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id63545" name="id63545"></a>CDB/TinyCDB
+                    <a id="id63603" name="id63603"></a>CDB/TinyCDB
                   </h5>
                 </div>
               </div>
@@ -377,7 +377,7 @@ fi</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id63555" name="id63555"></a>StartTLS
+                    <a id="id63613" name="id63613"></a>StartTLS
                     Authentication
                   </h5>
                 </div>
@@ -425,8 +425,8 @@ make</kbd></pre>
           "command">sh postfix-install -non-interactive  \
    daemon_directory=/usr/lib/postfix \
    manpage_directory=/usr/share/man  \
-   html_directory=/usr/share/doc/postfix-3.10.7/html \
-   readme_directory=/usr/share/doc/postfix-3.10.7/readme</kbd></pre>
+   html_directory=/usr/share/doc/postfix-3.10.8/html \
+   readme_directory=/usr/share/doc/postfix-3.10.8/readme</kbd></pre>
         </div>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -621,7 +621,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/{etc,usr/lib}/postfix,
-              /usr/share/doc/postfix-3.10.7 and
+              /usr/share/doc/postfix-3.10.8 and
               /var/{lib,spool}/postfix</span>
             </div>
           </div>
@@ -888,7 +888,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>

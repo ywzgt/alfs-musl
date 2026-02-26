@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1423">
+  <body class="blfs" id="blfs-r12.4-1470">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1423
+        "phrase">(systemd</span> Edition) - Version r12.4-1470
       </h4>
       <h3>
         Chapter&nbsp;50.&nbsp;PostScript
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>
@@ -68,9 +68,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <h3>
@@ -108,6 +107,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/paps-0.8.0-fmt_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/paps-0.8.0-fmt_fix-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           paps Dependencies
         </h3>
         <h4>
@@ -131,10 +144,11 @@
           Installation of paps
         </h2>
         <p>
-          First fix a problem with glib-2.81.0 or later:
+          First fix problemis with glib-2.81.0 and fmt-12.1.0 or later:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -i -r 's/g_utf8_(next|offset)/(char*) &amp;/' src/paps.cc</kbd></pre>
+        "command">sed -i -r 's/g_utf8_(next|offset)/(char*) &amp;/' src/paps.cc &amp;&amp;
+patch -Np1 -i ../paps-0.8.0-fmt_fix-1.patch</kbd></pre>
         <p>
           Install <span class="application">paps</span> by running the
           following commands:
@@ -223,7 +237,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>

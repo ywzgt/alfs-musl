@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1423">
+  <body class="blfs" id="blfs-r12.4-1470">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1423
+        "phrase">(systemd</span> Edition) - Version r12.4-1470
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>
@@ -67,13 +67,13 @@
             Note
           </h3>
           <p>
-            Additional languages, among which COBOL, D, and Ada, are
-            available in the collection. COBOL is currently only supported on
-            x86-64 systems. D and Ada have a binary bootstrap requirement for
-            the first installation, so their installation is not described
-            here. To install D or Ada, you can proceed along the same lines
-            as below after installing the corresponding compiler from a
-            binary package. Finally add <code class="option">ada</code> or
+            Additional languages, including COBOL, D, and Ada, are available
+            in the collection. COBOL is currently only supported on x86-64
+            systems. D and Ada have a binary bootstrap requirement for the
+            first installation, so their installation is not described here.
+            To install D or Ada, you can proceed along the same lines as
+            below after installing the corresponding compiler from a binary
+            package. Finally add <code class="option">ada</code> or
             <code class="option">d</code> or <code class=
             "option">cobol</code> to the <em class=
             "parameter"><code>--enable-languages</code></em> line as desired.
@@ -175,7 +175,8 @@
             <span class="command"><strong>./configure</strong></span> command
             below, the installation process will overwrite your existing
             <span class="application">GCC</span> C and C++ compilers and
-            libraries. Running the full suite of tests is recommended.
+            libraries. Running the full suite of tests is recommended because
+            of this.
           </p>
           <p>
             Do not continue with the <span class="command"><strong>make
@@ -193,10 +194,11 @@
           The instructions below are intentionally performing a <span class=
           "quote">“<span class="quote">bootstrap</span>”</span> process.
           Bootstrapping is needed for robustness and is highly recommended
-          when upgrading the compilers version. To disable bootstrap anyway,
-          add <em class="parameter"><code>--disable-bootstrap</code></em> to
-          the <span class="command"><strong>./configure</strong></span>
-          options below.
+          when upgrading the compilers version. To disable bootstrapping
+          anyway, add <em class=
+          "parameter"><code>--disable-bootstrap</code></em> to the
+          <span class="command"><strong>./configure</strong></span> options
+          below.
         </p>
         <p>
           First, make a fix required by glibc-2.43 and later:
@@ -260,16 +262,6 @@ chown -v -R root:root \
 
 ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/15.2.0/liblto_plugin.so \
         /usr/lib/bfd-plugins/</kbd></pre>
-        <div class="admon important">
-          <img alt="[Important]" src="../images/important.png" />
-          <h3>
-            Important
-          </h3>
-          <p>
-            Now you should upgrade readline to 8.3-rc1 or newer following the
-            LFS book, or packages using readline may fail to build.
-          </p>
-        </div>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -288,9 +280,9 @@ ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/15.2.0/liblto_plugin.so \
         </p>
         <p>
           <em class="parameter"><code>--with-system-zlib</code></em>: Uses
-          the system <span class="application">zlib</span> instead of the
-          bundled one. <span class="application">zlib</span> is used for
-          compressing and decompressing <span class=
+          the system version of <span class="application">zlib</span> instead
+          of the bundled copy. <span class="application">zlib</span> is used
+          for compressing and decompressing <span class=
           "application">GCC</span>'s intermediate language in LTO (Link Time
           Optimization) object files.
         </p>
@@ -300,15 +292,15 @@ ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/15.2.0/liblto_plugin.so \
           compiling programs. Together with the <a class="xref" href=
           "../appendices/glossary.html#gASLR" title="ASLR"><acronym class=
           "acronym">ASLR</acronym></a> feature enabled in the kernel, this
-          defeats some kind of attacks based on known memory layouts.
+          defeats some types of attacks based on known memory layouts.
         </p>
         <p>
           <em class="parameter"><code>--enable-default-ssp</code></em>: Makes
           the <code class="option">-fstack-protector-strong</code> option the
           default when compiling programs. <a class="xref" href=
           "../appendices/glossary.html#gSSP" title="SSP"><acronym class=
-          "acronym">SSP</acronym></a> is a technique preventing alteration of
-          the program flow by corrupting the parameter stack.
+          "acronym">SSP</acronym></a> is a technique preventing attacks that
+          alter the flow of a program by corruptiong the parameter stack.
         </p>
         <p>
           <em class="parameter"><code>--enable-host-pie</code></em>: Makes
@@ -323,7 +315,9 @@ ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/15.2.0/liblto_plugin.so \
           This command identifies which languages to build. You may modify
           this command to remove undesired languages. GCC also supports Ada
           and D, but building GCC with Ada (or D) support needs an existing
-          Ada (or D) compiler. So they are not enabled here.
+          Ada (or D) compiler. So they are not enabled here. You can also
+          enable COBOL support by adding cobol to the command, but note that
+          it only works properly on x86_64 systems.
         </p>
         <p>
           <span class="command"><strong>make -k check</strong></span>: This
@@ -374,7 +368,7 @@ ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/15.2.0/liblto_plugin.so \
           "command"><strong>make -C gcc jit.install-common
           jit.install-info</strong></span> as the <code class=
           "systemitem">root</code> user. This library is not used by any BLFS
-          package, nor tested by the BLFS developers.
+          package, nor is it tested by the BLFS developers.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -515,7 +509,7 @@ ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/15.2.0/liblto_plugin.so \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>

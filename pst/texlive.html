@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1423">
+  <body class="blfs" id="blfs-r12.4-1470">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1423
+        "phrase">(systemd</span> Edition) - Version r12.4-1470
       </h4>
       <h3>
         Chapter&nbsp;51.&nbsp;Typesetting
@@ -31,9 +31,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="asymptote.html" title=
-          "asymptote-3.06">Next</a>
+          "asymptote-3.09">Next</a>
           <p>
-            asymptote-3.06
+            asymptote-3.09
           </p>
         </li>
         <li class="up">
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>
@@ -101,9 +101,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <h3>
@@ -289,7 +288,7 @@
           "https://cpan.metacpan.org/authors/id/S/SR/SREZIC/Tk-804.036.tar.gz">
           Tk</a>, which needs to be run from an X11 session to run the tests
           and requires <a class="xref" href="../general/tk.html" title=
-          "Tk-8.6.17">Tk-8.6.17</a> is used by one of the scripts for ptex
+          "Tk-8.6.17">Tk-8.6.17</a>, is used by one of the scripts for ptex
           and is needed for texdoctk (a GUI interface for finding
           documentation files and opening them with the appropriate viewer).
           <span class="command"><strong>ps2pdf</strong></span>, from
@@ -371,8 +370,8 @@ cd    texlive-build &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make -k
-          check</strong></span>. One test <code class=
-          "filename">psutils.test</code> is known to fail if using system
+          check</strong></span>. One test, <code class=
+          "filename">psutils.test</code>, is known to fail if using system
           libpaper because TeX Live includes old versions of both
           <span class="application">psutils</span> and <span class=
           "application">libpaper</span> which result in a difference in the
@@ -398,8 +397,8 @@ tar -xf ../../texlive-20250308-extra.tar.xz -C $TEXLIVE_PREFIX/tlpkg --strip-com
           </h3>
           <p>
             Only run <span class="command"><strong>make
-            texlinks</strong></span> once. If it is rerun, it can change all
-            the program symlinks so that they point to themselves and are
+            texlinks</strong></span> once. If it is run again, it can change
+            all the program symlinks so that they point to themselves and are
             useless.
           </p>
         </div>
@@ -458,7 +457,7 @@ fmtutil-sys --all</kbd></pre>
         </div>
         <p>
           You can now proceed to <a class="xref" href="asymptote.html" title=
-          "asymptote-3.06">asymptote-3.06</a>, <a class="xref" href=
+          "asymptote-3.09">asymptote-3.09</a>, <a class="xref" href=
           "biber.html" title="biber-2.21">biber-2.21</a>, <a class="xref"
           href="dvisvgm.html" title="dvisvgm-3.6">dvisvgm-3.6</a> and / or
           <a class="xref" href="xindy.html" title=
@@ -524,7 +523,7 @@ fmtutil-sys --all</kbd></pre>
         </p>
         <p>
           <span class="command"><strong>tar -xf texlive-20250308-texmf.tar.xz
-          -C $TEXLIVE_PREFIX --strip-components=1</strong></span>: the
+          -C $TEXLIVE_PREFIX --strip-components=1</strong></span>: this
           tarball contains the files for the texmf-dist directory, and
           because of its size we do not want to waste time and space
           untarring it and then copying the files.
@@ -540,7 +539,7 @@ fmtutil-sys --all</kbd></pre>
           Without these modules, texlive is unusable.
         </p>
         <p>
-          <span class="command"><strong>mktexlsr</strong></span>: Create an
+          <span class="command"><strong>mktexlsr</strong></span>: Creates an
           <code class="filename">ls-R</code> file which lists what was
           installed - this is used by kpathsea to find files.
         </p>
@@ -549,8 +548,8 @@ fmtutil-sys --all</kbd></pre>
           This initializes the TeX formats, Metafont bases and Metapost mems.
         </p>
         <p>
-          <code class="option">--without-x</code>: use this if you do not
-          have Xorg installed.
+          <code class="option">--without-x</code>: Use this option if you do
+          not have Xorg installed.
         </p>
         <p>
           There are many other '--disable' or '--without' options. Some of
@@ -703,9 +702,9 @@ fmtutil-sys --all</kbd></pre>
         </li>
         <li class="next">
           <a accesskey="n" href="asymptote.html" title=
-          "asymptote-3.06">Next</a>
+          "asymptote-3.09">Next</a>
           <p>
-            asymptote-3.06
+            asymptote-3.09
           </p>
         </li>
         <li class="up">
@@ -714,7 +713,7 @@ fmtutil-sys --all</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>

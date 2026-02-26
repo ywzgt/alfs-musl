@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1423">
+  <body class="blfs" id="blfs-r12.4-1470">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1423
+        "phrase">(systemd</span> Edition) - Version r12.4-1470
       </h4>
       <h3>
         Chapter&nbsp;1.&nbsp;Welcome to BLFS
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>
@@ -52,7 +52,7 @@
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <p>
-        Current release: r12.4-1423 – February 24th, 2026
+        Current release: r12.4-1470 – February 25th, 2026
       </p>
       <div class="itemizedlist">
         <p class="title">
@@ -61,10 +61,89 @@
         <ul>
           <li class="listitem">
             <p>
+              February 25th, 2026
+            </p>
+            <div class="itemizedlist">
+              <ul>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Fix a regression in BlueZ that prevents it
+                    from initailizing adapters and setting their default
+                    configurations.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Update to asymptote-3.09. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/22846">#22846</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Backport five security vulnerability fixes to
+                    localsearch (Security Update). Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/22836">#22836</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Backport three security vulnerability fixes to
+                    evolution-data-server (Security Update). Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/22835">#22835</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Update to feh-3.11.3. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/22837">#22837</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Update to postfix-3.10.8. Fixes <a class=
+                    "ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/22833">#22833</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Update to plasma-6.6.1. Fixes <a class="ulink"
+                    href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/22407">#22407</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Add qtkeychain-0.15.0 in support of
+                    plasma-6.6.1.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [bdubbs] - Add kquickimageeditor-0.6.0 in support of
+                    plasma-6.6.1.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="listitem">
+            <p>
               February 24th, 2026
             </p>
             <div class="itemizedlist">
               <ul>
+                <li class="listitem">
+                  <p>
+                    [zeckma] - Update to firefox and spidermonkey 140.8.0esr
+                    (security update). Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/22822">#22822</a>.
+                  </p>
+                </li>
                 <li class="listitem">
                   <p>
                     [zeckma] - Update to thunderbird-140.8.0 (security
@@ -123,9 +202,23 @@
                 </li>
                 <li class="listitem">
                   <p>
+                    [renodr] - Adjust the permissions for creating
+                    /etc/bluetooth in BlueZ. This is to silence a warning
+                    from the systemd unit for bluetooth.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
                     [jlocash] - Add security patch for gimp (Security
                     Update). Fixes <a class="ulink" href=
                     "https://wiki.linuxfromscratch.org/blfs/ticket/22834">#22834</a>.
+                  </p>
+                </li>
+                <li class="listitem">
+                  <p>
+                    [renodr] - Fix a memory corruption problem in glib2
+                    exposed by glibc-2.43. Fixes <a class="ulink" href=
+                    "https://wiki.linuxfromscratch.org/blfs/ticket/22847">#22847</a>.
                   </p>
                 </li>
               </ul>
@@ -7268,7 +7361,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>

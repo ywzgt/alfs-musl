@@ -12,21 +12,21 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1423">
+  <body class="blfs" id="blfs-r12.4-1470">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1423
+        "phrase">(systemd</span> Edition) - Version r12.4-1470
       </h4>
       <h3>
         Chapter&nbsp;32.&nbsp;KDE Plasma
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="pulseaudio-qt.html" title=
-          "pulseaudio-qt-1.7.0">Prev</a>
+          <a accesskey="p" href="kquickimageeditor.html" title=
+          "kquickimageeditor-0.6.0">Prev</a>
           <p>
-            pulseaudio-qt-1.7.0
+            kquickimageeditor-0.6.0
           </p>
         </li>
         <li class="next">
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>
@@ -60,9 +60,8 @@
           Note
         </h3>
         <p>
-          Development versions of BLFS may not build or run some packages
-          properly if LFS or dependencies have been updated since the most
-          recent stable versions of the books.
+          <span class="phrase">This package is known to build and work
+          properly using an LFS 13.0 platform.</span>
         </p>
       </div>
       <p>
@@ -117,6 +116,8 @@
         "frameworks6.html" title="Building KDE Frameworks 6.23.0 (KF6)">KDE
         Frameworks-6.23.0</a>, <a class="xref" href="kirigami-addons.html"
         title="kirigami-addons-1.10.0">kirigami-addons-1.10.0</a>, <a class=
+        "xref" href="kquickimageeditor.html" title=
+        "kquickimageeditor-0.6.0">kquickimageeditor-0.6.0</a>, <a class=
         "xref" href="../general/libdisplay-info.html" title=
         "libdisplay-info-0.3.0">libdisplay-info-0.3.0</a>, <a class="xref"
         href="../postlfs/libpwquality.html" title=
@@ -141,10 +142,11 @@
         "../general/qca.html" title="Qca-2.3.10">qca-2.3.10</a>, <a class=
         "xref" href="../general/qcoro.html" title=
         "qcoro-0.13.0">qcoro-0.13.0</a>, <a class="xref" href=
-        "../general/sassc.html" title="sassc-3.6.2">sassc-3.6.2</a>,
-        <a class="xref" href="../multimedia/taglib.html" title=
-        "Taglib-2.2">taglib-2.2</a>, <a class="xref" href=
-        "../general/xdotool.html" title=
+        "qtkeychain.html" title="qtkeychain-0.15.0">qtkeychain-0.15.0</a>,
+        <a class="xref" href="../general/sassc.html" title=
+        "sassc-3.6.2">sassc-3.6.2</a>, <a class="xref" href=
+        "../multimedia/taglib.html" title="Taglib-2.2">taglib-2.2</a>,
+        <a class="xref" href="../general/xdotool.html" title=
         "xdotool-4.20251130.1">xdotool-4.20251130.1</a>, and <a class="xref"
         href="../x/x7driver.html#xorg-evdev-driver" title=
         "Xorg Evdev Driver-2.11.0">Xorg Evdev Driver-2.11.0</a>
@@ -193,7 +195,7 @@
         "AccountsService-23.13.9">AccountsService-23.13.9</a>, <a class=
         "xref" href="../x/breeze-icons.html" title=
         "breeze-icons-6.23.0">breeze-icons-6.23.0</a>, <a class="xref" href=
-        "kio-extras.html" title="kio-extras-25.12.3">kio-extras-25.12.3</a>,
+        "kio-extras.html" title="kio-extras-25.12.2">kio-extras-25.12.2</a>,
         <a class="xref" href="../postlfs/smartmontools.html" title=
         "smartmontools-7.5">smartmontools-7.5</a>, <a class="xref" href=
         "../x/xdg-desktop-portal.html" title=
@@ -253,10 +255,8 @@ The options used here are:
         </p>
         <pre class="userinput"><kbd class=
         "command">cat &gt; plasma-6.6.1.md5 &lt;&lt; "EOF"
-<code class="literal">#
-#  Preliminary layout - not finalized
-#
-4f409dfbea58c0194bb71342d0ce8f4b  kdecoration-6.6.1.tar.xz
+<code class=
+"literal">4f409dfbea58c0194bb71342d0ce8f4b  kdecoration-6.6.1.tar.xz
 161fb91c028b345ca3cbf2757373b3ab  libkscreen-6.6.1.tar.xz
 9c7a297514843a3ddddc13aa47abb5d7  libksysguard-6.6.1.tar.xz
 8879fbb3390fefba522a604250b03f3f  breeze-6.6.1.tar.xz
@@ -291,7 +291,7 @@ c8d4056e3ecff197fd8ce32b7ac3cd33  plasma-pa-6.6.1.tar.xz
 d1a5fc36ebf96509b1b7cbafc6c50db7  powerdevil-6.6.1.tar.xz
 4a28478ef792b30c1be1122043334e2e  plasma-desktop-6.6.1.tar.xz
 83fc20fc249fafaaff2726e05386f6c0  kgamma-6.6.1.tar.xz
-####333d6df6a2d508082658bbef39f978a0057  ksshaskpass-6.6.1.tar.xz
+d6df6a2d508082658bbef39f978a0057  ksshaskpass-6.6.1.tar.xz
 #6c1b423684c274fe8aa241f744947726  plasma-sdk-6.6.1.tar.xz
 2097fac4cc8921235bda91a799c14072  sddm-kcm-6.6.1.tar.xz
 #6a838f81134545b07981cd415abf2b43  discover-6.6.1.tar.xz
@@ -324,8 +324,8 @@ a6c3248da1dae904438e3adf88a4abec  wacomtablet-6.6.1.tar.xz
 33349b83b2a2415704544ea2300dbee1  oxygen-6.6.1.tar.xz
 #0eb4c0b91699d639960d4d2270335522  plasma-dialer-6.6.1.tar.xz
 #7a647c072b8b53fae615d3e66380d27b  spacebar-6.6.1.tar.xz
-######3311a7dcf6aec63d51bfba2e40ec669ac6  spectacle-6.6.1.tar.xz
-1c707b638d35a7f4c76536dfc6cc3d1a  plasma-login-manager-6.6.1.tar.xz
+11a7dcf6aec63d51bfba2e40ec669ac6  spectacle-6.6.1.tar.xz
+#1c707b638d35a7f4c76536dfc6cc3d1a  plasma-login-manager-6.6.1.tar.xz
 859c41b0e80c7b30e91f5f37f9060b0e  plasma-setup-6.6.1.tar.xz</code>
 EOF</kbd></pre>
         <div class="admon note">
@@ -408,6 +408,14 @@ EOF</kbd></pre>
                 <p>
                   The kwayland-integration application requires plasma5
                   support.
+                </p>
+              </li>
+              <li class="listitem">
+                <p>
+                  The plasma-login-manager application provides a display
+                  manager for KDE Plasma, forked from SDDM and with an new
+                  frontend providing a greeter, wallpaper plugin integration
+                  and System Settings module (KCM).
                 </p>
               </li>
             </ul>
@@ -675,10 +683,10 @@ startx</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="pulseaudio-qt.html" title=
-          "pulseaudio-qt-1.7.0">Prev</a>
+          <a accesskey="p" href="kquickimageeditor.html" title=
+          "kquickimageeditor-0.6.0">Prev</a>
           <p>
-            pulseaudio-qt-1.7.0
+            kquickimageeditor-0.6.0
           </p>
         </li>
         <li class="next">
@@ -693,7 +701,7 @@ startx</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1423">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
           Home</a>
         </li>
       </ul>
