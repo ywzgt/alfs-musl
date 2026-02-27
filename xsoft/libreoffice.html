@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      LibreOffice-25.8.4
+      LibreOffice-26.2.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1470">
+  <body class="blfs" id="blfs-r12.4-1483">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1470
+        "phrase">(systemd</span> Edition) - Version r12.4-1483
       </h4>
       <h3>
         Chapter&nbsp;39.&nbsp;Office Programs
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1483">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="libreoffice" name="libreoffice"></a>LibreOffice-25.8.4
+      <a id="libreoffice" name="libreoffice"></a>LibreOffice-26.2.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -67,9 +67,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <h3>
@@ -80,31 +79,31 @@
             <li class="listitem">
               <p>
                 Core Download: <a class="ulink" href=
-                "https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-25.8.4.2.tar.xz">
-                https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-25.8.4.2.tar.xz</a>
+                "https://download.documentfoundation.org/libreoffice/src/26.2.0/libreoffice-26.2.0.3.tar.xz">
+                https://download.documentfoundation.org/libreoffice/src/26.2.0/libreoffice-26.2.0.3.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Core Download MD5 sum: 4207b73da25f6c21b941136f75ee1e25
+                Core Download MD5 sum: 39bb3c455f49034d68507a2831552ce4
               </p>
             </li>
             <li class="listitem">
               <p>
-                Core Download size: 274 MB
+                Core Download size: 278 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 7.6 GB including the
-                additional files if downloaded during the build (740 MB
-                installed). Installing the whole set of languages requires
-                more than 25 GB (around 3 GB installed)
+                Estimated disk space required: 11 GB including the additional
+                files if downloaded during the build (827 MB installed).
+                Installing the whole set of languages requires more than 25
+                GB (around 3 GB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 22 SBU with parallelism=8 (will vary
+                Estimated build time: 49 SBU with parallelism=4 (will vary
                 due to download time)
               </p>
             </li>
@@ -133,11 +132,11 @@
             <li class="listitem">
               <p>
                 Dictionaries: <a class="ulink" href=
-                "https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-dictionaries-25.8.4.2.tar.xz">
-                https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-dictionaries-25.8.4.2.tar.xz</a>
+                "https://download.documentfoundation.org/libreoffice/src/26.2.0/libreoffice-dictionaries-26.2.0.3.tar.xz">
+                https://download.documentfoundation.org/libreoffice/src/26.2.0/libreoffice-dictionaries-26.2.0.3.tar.xz</a>
               </p>
               <p>
-                Dictionaries MD5 sum: 6eb5789e04ccbe82bb3e3236e1450626
+                Dictionaries MD5 sum: 108cff89442b1d7ae8ebe8f4b36b65a3
               </p>
               <p>
                 Dictionaries size: 60 MB
@@ -146,27 +145,36 @@
             <li class="listitem">
               <p>
                 Help Files: <a class="ulink" href=
-                "https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-help-25.8.4.2.tar.xz">
-                https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-help-25.8.4.2.tar.xz</a>
+                "https://download.documentfoundation.org/libreoffice/src/26.2.0/libreoffice-help-26.2.0.3.tar.xz">
+                https://download.documentfoundation.org/libreoffice/src/26.2.0/libreoffice-help-26.2.0.3.tar.xz</a>
               </p>
               <p>
-                Help Files MD5 sum: 9e45a4dee0e56290788562bcbfa4eb4b
+                Help Files MD5 sum: ecd4a63ce01a5a9153833ffc7c903298
               </p>
               <p>
-                Help Files size: 58 MB
+                Help Files size: 56 MB
               </p>
             </li>
             <li class="listitem">
               <p>
                 Translations: <a class="ulink" href=
-                "https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-translations-25.8.4.2.tar.xz">
-                https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-translations-25.8.4.2.tar.xz</a>
+                "https://download.documentfoundation.org/libreoffice/src/26.2.0/libreoffice-translations-26.2.0.3.tar.xz">
+                https://download.documentfoundation.org/libreoffice/src/26.2.0/libreoffice-translations-26.2.0.3.tar.xz</a>
               </p>
               <p>
-                Translations MD5 sum: 38a6b691d21d234f5c79bce91b979646
+                Translations MD5 sum: d99745411fa430827c04426630ede1c8
               </p>
               <p>
-                Translations size: 221 MB
+                Translations size: 223 MB
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                Required patch to fix building with <a class="xref" href=
+                "../general/poppler.html" title=
+                "Poppler-26.02.0">Poppler-26.02.0</a>: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-26.2.0.3-poppler_26.02-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-26.2.0.3-poppler_26.02-1.patch</a>
               </p>
             </li>
           </ul>
@@ -409,15 +417,7 @@
           poppler:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -e 's/&gt;reset/&gt;rewind/' \
-    -i sdext/source/pdfimport/xpdfwrapper/pdfioutdev_gpl.cxx \
-       sdext/source/pdfimport/xpdfwrapper/pnghelper.cxx</kbd></pre>
-        <p>
-          First, fix a problem with detecting Boost::System, which was
-          changed from a library to a series of headers in Boost-1.89.0:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">export boost_cv_lib_system=yes</kbd></pre>
+        "command">patch -Np1 -i ../libreoffice-26.2.0.3-poppler_26.02-1.patch</kbd></pre>
         <p>
           Next, fix a bug with linking to zlib, fix a bug which would cause
           an install failure, and prevent compression of man pages:
@@ -435,18 +435,18 @@ sed -e "/gzip -f/d"   \
         </p>
         <pre class="userinput"><kbd class=
         "command">install -dm755 external/tarballs &amp;&amp;
-ln -sv ../../../libreoffice-dictionaries-25.8.4.2.tar.xz external/tarballs/ &amp;&amp;
-ln -sv ../../../libreoffice-help-25.8.4.2.tar.xz         external/tarballs/ &amp;&amp;
-ln -sv ../../../libreoffice-translations-25.8.4.2.tar.xz external/tarballs/</kbd></pre>
+ln -sv ../../../libreoffice-dictionaries-26.2.0.3.tar.xz external/tarballs/ &amp;&amp;
+ln -sv ../../../libreoffice-help-26.2.0.3.tar.xz         external/tarballs/ &amp;&amp;
+ln -sv ../../../libreoffice-translations-26.2.0.3.tar.xz external/tarballs/</kbd></pre>
         <p>
           The instructions in the package unpack some tarballs into a
           location it cannot find later. Create some symlinks to help the
           build system out:
         </p>
         <pre class="userinput"><kbd class=
-        "command">ln -sv src/libreoffice-help-25.8.4.2/helpcontent2/ &amp;&amp;
-ln -sv src/libreoffice-dictionaries-25.8.4.2/dictionaries/ &amp;&amp;
-ln -sv src/libreoffice-translations-25.8.4.2/translations/</kbd></pre>
+        "command">ln -sv src/libreoffice-help-26.2.0.3/helpcontent2/ &amp;&amp;
+ln -sv src/libreoffice-dictionaries-26.2.0.3/dictionaries/ &amp;&amp;
+ln -sv src/libreoffice-translations-26.2.0.3/translations/</kbd></pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -466,7 +466,7 @@ ln -sv src/libreoffice-translations-25.8.4.2/translations/</kbd></pre>
           "filename">/usr</code>. Depending on your choice, replace
           <em class="replaceable"><code>&lt;PREFIX&gt;</code></em> by
           <code class="filename">/usr</code> or by <code class=
-          "filename">/opt/libreoffice-25.8.4.2</code>:
+          "filename">/opt/libreoffice-26.2.0.3</code>:
         </p>
         <pre class="userinput"><kbd class=
         "command">export LO_PREFIX=<em class=
@@ -551,7 +551,7 @@ esac</kbd></pre>
         "command">make distro-pack-install</kbd></pre>
         <p>
           If installed in <code class=
-          "filename">/opt/libreoffice-25.8.4.2</code> some additional steps
+          "filename">/opt/libreoffice-26.2.0.3</code> some additional steps
           are necessary. Issue the following commands as the <code class=
           "systemitem">root</code> user:
         </p>
@@ -562,10 +562,10 @@ esac</kbd></pre>
   ln -svf $LO_PREFIX/lib/libreoffice/program/soffice /usr/bin/libreoffice &amp;&amp;
 
   # Set up a generic location independent of version number
-  ln -sfv $LO_PREFIX /opt/libreoffice
+  ln -sfv $LO_PREFIX /opt/libreoffice &amp;&amp;
 
   # Icons
-  mkdir -vp /usr/share/pixmaps
+  mkdir -vp /usr/share/pixmaps &amp;&amp;
   for i in $LO_PREFIX/share/icons/hicolor/32x32/apps/*; do
     ln -svf $i /usr/share/pixmaps
   done &amp;&amp;
@@ -578,7 +578,7 @@ esac</kbd></pre>
   # Man pages
   for i in $LO_PREFIX/share/man/man1/*; do
     ln -svf $i /usr/share/man/man1/
-  done
+  done &amp;&amp;
 
   unset i
 fi</kbd></pre>
@@ -1030,7 +1030,7 @@ fi</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1483">
           Home</a>
         </li>
       </ul>

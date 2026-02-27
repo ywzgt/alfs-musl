@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1470">
+  <body class="blfs" id="blfs-r12.4-1483">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1470
+        "phrase">(systemd</span> Edition) - Version r12.4-1483
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1483">
           Home</a>
         </li>
       </ul>
@@ -65,9 +65,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <h3>
@@ -100,6 +99,20 @@
             <li class="listitem">
               <p>
                 Estimated build time: 2.2 SBU (with parallelism=8)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.3-poppler_26.02-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.3-poppler_26.02-1.patch</a>
               </p>
             </li>
           </ul>
@@ -188,8 +201,12 @@
           Installation of Inkscape
         </h2>
         <p>
-          First, fix build failures with versions of poppler-26.01.0 and
-          later:
+          First, fix build failures appeared with poppler-26.02.0:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i inkscape-1.4.3-poppler_26.02-1.patch</kbd></pre>
+        <p>
+          Then, fix build failures appeared with poppler-26.01.0:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -i 's/gfree/g_free/' src/extension/internal/pdfinput/pdf-input.cpp &amp;&amp;
@@ -364,7 +381,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1470">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1483">
           Home</a>
         </li>
       </ul>
