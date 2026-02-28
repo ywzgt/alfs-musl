@@ -1,0 +1,50 @@
+diff --git a/wget-list b/wget-list
+index cd2418b940..578f5b481b 100644
+--- a/wget-list
++++ b/wget-list
+@@ -47,7 +47,7 @@ https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/efivar-39-upstream_fixes-1.patch
+ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
+ https://ftpmirror.gnu.org/grub/grub-2.14.tar.xz
+-https://unifoundry.com/pub/unifont/unifont-17.0.01/font-builds/unifont-17.0.01.pcf.gz
++https://unifoundry.com/pub/unifont/unifont-17.0.03/font-builds/unifont-17.0.03.pcf.gz
+ https://www.bennewitz.com/bluefish/stable/source/bluefish-2.4.0.tar.bz2
+ https://ftpmirror.gnu.org/ed/ed-1.22.5.tar.lz
+ https://ftpmirror.gnu.org/emacs/emacs-30.2.tar.xz
+@@ -641,7 +641,6 @@ https://downloads.mariadb.org/interstitial/mariadb-11.8.6/source/mariadb-11.8.6.
+ https://ftp.postgresql.org/pub/source/v18.2/postgresql-18.2.tar.bz2
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.12.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.12-consolidated-1.patch
+-https://nlnetlabs.nl/downloads/unbound/unbound-1.24.2.tar.gz
+ https://www.x.org/pub/individual/util/util-macros-1.20.2.tar.xz
+ https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2025.1.tar.xz
+ https://www.x.org/pub/individual/lib/libXau-1.0.12.tar.xz
+@@ -899,10 +898,11 @@ https://github.com/lxqt/qtermwidget/releases/download/2.3.0/qtermwidget-2.3.0.ta
+ https://github.com/lxqt/qterminal/releases/download/2.3.0/qterminal-2.3.0.tar.xz
+ https://github.com/lxqt/screengrab/releases/download/3.1.0/screengrab-3.1.0.tar.xz
+ https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.60.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-25.8.4.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-dictionaries-25.8.4.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-help-25.8.4.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/25.8.4/libreoffice-translations-25.8.4.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/26.2.0/libreoffice-26.2.0.3.tar.xz
++https://download.documentfoundation.org/libreoffice/src/26.2.0/libreoffice-dictionaries-26.2.0.3.tar.xz
++https://download.documentfoundation.org/libreoffice/src/26.2.0/libreoffice-help-26.2.0.3.tar.xz
++https://download.documentfoundation.org/libreoffice/src/26.2.0/libreoffice-translations-26.2.0.3.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-26.2.0.3-poppler_26.02-1.patch
+ https://download.gnome.org/sources/epiphany/49/epiphany-49.2.tar.xz
+ https://download.kde.org/stable/release-service/25.12.2/src/falkon-25.12.2.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.8.0esr-ffmpeg-8.0.patch
+@@ -920,6 +920,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/gimp-3.0.6-security_fixes-1.pa
+ https://download.gimp.org/pub/gimp/help/gimp-help-3.0.2.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.8.0.tar.gz
+ https://inkscape.org/gallery/item/58914/inkscape-1.4.3.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.3-poppler_26.02-1.patch
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+ https://archive.mozilla.org/pub/thunderbird/releases/140.8.0esr/source/thunderbird-140.8.0esr.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.0esr-python_3.14_fixes-1.patch
+@@ -1084,3 +1085,4 @@ https://github.com/elogind/elogind/archive/V255.22/elogind-255.22.tar.gz
+ https://github.com/lfs-book/blocaled/releases/download/v0.7/blocaled-0.7.tar.xz
+ https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.3.0/dhcpcd-10.3.0.tar.xz
+ https://www.kernel.org/pub/linux/utils/net/bridge-utils/bridge-utils-1.7.1.tar.xz
++https://nlnetlabs.nl/downloads/unbound/unbound-1.24.2.tar.gz
