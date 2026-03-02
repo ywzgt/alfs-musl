@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1505">
+  <body class="blfs" id="blfs-r12.4-1530">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1505
+        "phrase">(systemd</span> Edition) - Version r12.4-1530
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1505">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1530">
           Home</a>
         </li>
       </ul>
@@ -143,16 +143,15 @@
             <a class="xref" href="../kde/frameworks6.html" title=
             "Building KDE Frameworks 6.23.0 (KF6)">KDE Frameworks-6.23.0</a>
             and use the build instructions on that page, changing the
-            $KF6_PREFIX to /usr.
+            $KF6_PREFIX variable to /usr.
           </p>
         </div>
         <h4>
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="../gnome/gnome-keyring.html" title=
-          "gnome-keyring-48.0">gnome-keyring-48.0</a>, <a class="ulink" href=
-          "https://pypi.org/project/PySide2/">PySide2</a>, and <a class=
+          <a class="ulink" href=
+          "https://pypi.org/project/PySide2/">PySide2</a> and <a class=
           "ulink" href="https://pypi.org/project/shiboken2/">Shiboken2</a>
         </p>
         <p class="usernotes">
@@ -177,7 +176,9 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
 
 make</kbd></pre>
         <p>
-          Tests should be run after installation.
+          The tests need the package to be installed first because they
+          depend on functionality that is only present after the package is
+          installed.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -198,13 +199,13 @@ ldconfig</kbd></pre>
           <p>
             When upgrading this package, it is possible that the contents of
             the application will remain empty even though everything else
-            appears to be working properly. In this case try removing
+            appears to be working properly. If this happens, try removing
             <code class="filename">~/.cache/falkon</code> and restarting the
             program.
           </p>
         </div>
         <p>
-          If you have installed <span class="application">Pyside2</span> you
+          If you have installed <span class="application">Pyside2</span>, you
           will want to examine <span class=
           "command"><strong>hellopython.py</strong></span> which is in the
           <code class="filename">scripts/</code> directory, and perhaps copy
@@ -219,7 +220,8 @@ ldconfig</kbd></pre>
             If you are on a non-x86_64 architecture and run into problems
             with missing text, you may wish to export <code class=
             "envar">QTWEBENGINE_CHROMIUM_FLAGS="--no-sandbox"</code> prior to
-            running Falkon.
+            running Falkon. Note that doing this amplifies the severity of
+            any security vulnerabilities in QtWebEngine.
           </p>
         </div>
       </div>
@@ -229,8 +231,8 @@ ldconfig</kbd></pre>
         </h2>
         <p>
           <code class="option">-D BUILD_TESTING=OFF</code>: This will save a
-          little time and space by not building the test programs, use this
-          if you do not wish to run the test.
+          little time and space by not building the test programs. Use this
+          switch if you are not planning on running the tests.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -319,7 +321,7 @@ ldconfig</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1505">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1530">
           Home</a>
         </li>
       </ul>

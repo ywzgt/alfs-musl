@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1505">
+  <body class="blfs" id="blfs-r12.4-1530">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1505
+        "phrase">(systemd</span> Edition) - Version r12.4-1530
       </h4>
       <h3>
         Chapter&nbsp;19.&nbsp;Mail/News Clients
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1505">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1530">
           Home</a>
         </li>
       </ul>
@@ -187,15 +187,16 @@ install -v -m644 README /usr/share/doc/heirloom-mailx-12.5</kbd></pre>
         <p>
           <span class="command"><strong>make
           SENDMAIL=/usr/sbin/sendmail</strong></span>: This changes the
-          default MTA path of <span class=
-          "command"><strong>/usr/lib/sendmail</strong></span>.
+          default MTA path of sendmail to <code class=
+          "filename">/usr/sbin/sendmail</code>, instead of using <code class=
+          "filename">/usr/lib/sendmail</code>.
         </p>
         <p>
           <span class="command"><strong>make PREFIX=/usr
           UCBINSTALL=/usr/bin/install install</strong></span>: This changes
-          the default installation path of <code class=
+          the default installation path from <code class=
           "filename">/usr/local</code> and the default <span class=
-          "command"><strong>install</strong></span> command path of
+          "command"><strong>install</strong></span> command path from
           <code class="filename">/usr/ucb</code>.
         </p>
       </div>
@@ -220,21 +221,23 @@ install -v -m644 README /usr/share/doc/heirloom-mailx-12.5</kbd></pre>
             For displaying mails, <span class="application">mailx</span> uses
             a pager program. Since the default of <span class=
             "command"><strong>pg</strong></span> is not available on a LFS
-            system, its required to specify which pager is to use. By
-            default, there is <span class=
-            "command"><strong>more</strong></span> and the more comfortable
-            <span class="command"><strong>less</strong></span> installed. If
-            the variable PAGER is not set in <code class=
-            "filename">/etc/profile</code> or <code class=
-            "filename">~/.bash_profile</code>, or if it should be another
-            pager just for reading mails, it can be set system wide in
-            <code class="filename">/etc/nail.rc</code>:
+            system, you need to specify which pager the <span class=
+            "command"><strong>mail</strong></span> is supposed to use. By
+            default, the <span class="command"><strong>more</strong></span>
+            and the more comfortable <span class=
+            "command"><strong>less</strong></span> commands are installed. If
+            the <code class="envar">PAGER</code> environment variable is not
+            set in <code class="filename">/etc/profile</code> or <code class=
+            "filename">~/.bash_profile</code>, or if it should be set to
+            another pager specifically for reading mails, it can be set
+            system wide in <code class="filename">/etc/nail.rc</code> as the
+            <code class="systemitem">root</code> user:
           </p>
           <pre class="userinput"><kbd class=
           "command">echo "set PAGER=<em class=
           "replaceable"><code>&lt;more|less&gt;</code></em>" &gt;&gt; /etc/nail.rc</kbd></pre>
           <p>
-            or individually for the actual user in <code class=
+            or for the current user in <code class=
             "filename">~/.mailrc</code>:
           </p>
           <pre class="userinput"><kbd class=
@@ -245,8 +248,9 @@ install -v -m644 README /usr/share/doc/heirloom-mailx-12.5</kbd></pre>
             EDITOR and MAILDIR.
           </p>
           <p>
-            If not set in the environment for other packages, the default
-            editor can be set by:
+            If the default editor is not set in the environment for other
+            packages, it can be set by running the following command as the
+            <code class="systemitem">root</code> user:
           </p>
           <pre class="userinput"><kbd class=
           "command">echo "set EDITOR=<em class=
@@ -255,8 +259,9 @@ install -v -m644 README /usr/share/doc/heirloom-mailx-12.5</kbd></pre>
             Depending on which kind of <a class="xref" href=
             "../server/mail.html" title=
             "Chapter&nbsp;21.&nbsp;Mail Server Software">MTA</a> is
-            installed, it might be required to set the MAILDIR variable so
-            <span class="application">mailx</span> is able to find the mails:
+            installed, it might be necessary to set the MAILDIR variable so
+            that <span class="application">mailx</span> is able to find mail
+            as the <code class="systemitem">root</code> user:
           </p>
           <pre class="userinput"><kbd class=
           "command">echo "set MAILDIR=Maildir" &gt;&gt; /etc/nail.rc</kbd></pre>
@@ -304,7 +309,7 @@ install -v -m644 README /usr/share/doc/heirloom-mailx-12.5</kbd></pre>
                   <p>
                     is a command-line mail user agent compatible with the
                     <span class="command"><strong>mailx</strong></span>
-                    command found on commercial Unix versions
+                    command found on commercial UNIX variants
                   </p>
                 </td>
               </tr>
@@ -364,7 +369,7 @@ install -v -m644 README /usr/share/doc/heirloom-mailx-12.5</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1505">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1530">
           Home</a>
         </li>
       </ul>

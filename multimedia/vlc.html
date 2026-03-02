@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1505">
+  <body class="blfs" id="blfs-r12.4-1530">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1505
+        "phrase">(systemd</span> Edition) - Version r12.4-1530
       </h4>
       <h3>
         Chapter&nbsp;44.&nbsp;Video Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1505">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1530">
           Home</a>
         </li>
       </ul>
@@ -334,11 +334,12 @@
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">BUILDCC=gcc ./configure --prefix=/usr --disable-libplacebo &amp;&amp;
+        "command">BUILDCC=gcc ./configure --prefix=/usr &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
-          check</strong></span>.
+          check</strong></span>. One test will fail if you are not in a
+          graphical environment.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -382,17 +383,18 @@ update-desktop-database -q</kbd></pre>
           to get a graphical interface that this package is known for. It now
           supports <span class="application">Qt-6</span>, but comes with a
           lot of downsides as it is a fresh port of the previous interface.
-          Things are in a broken state. For example, pausing and other
-          navigation features are broken, video positioning is incorrect,
-          among other issues.
+          Several bits of functionality are broken. For example, pausing and
+          other navigation features are broken, video positioning is
+          incorrect, among other issues.
         </p>
         <p>
           Another issue is that video playback, despite audio playback with
           image metadata being fine, is broken on Wayland without the use of
-          the <code class="envar">QT_QPA_PLATFORM</code> variable. If you're
-          on Wayland, you should run <span class=
+          the <code class="envar">QT_QPA_PLATFORM</code> variable. The exact
+          issue is that the video never plays, and the window moves all over
+          the screen. If you're on Wayland, you should run <span class=
           "command"><strong>QT_QPA_PLATFORM=xcb vlc -I "qt"</strong></span>
-          to run the Qt interface. This forces the <code class=
+          to use the Qt interface. This forces the <code class=
           "literal">xcb</code> window interface to be used instead of
           <code class="literal">wayland</code>, since video playback will try
           to use <code class="literal">xcb</code> anyway and fail. On
@@ -409,14 +411,8 @@ update-desktop-database -q</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>--disable-libplacebo</code></em>: This
-          switch is required to disable support for using libplacebo as a
-          rendering pipeline because VLC is incompatible with the latest
-          version of libplacebo.
-        </p>
-        <p>
-          <code class="option">--disable-vpx</code>: Use this switch to
-          disable <span class="application">libvpx</span>.
+          <code class="option">--disable-vpx</code>: Use this switch if you
+          don't have <span class="application">libvpx</span> installed.
         </p>
         <p>
           <code class="option">--disable-mad</code>: Use this switch if you
@@ -610,7 +606,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1505">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1530">
           Home</a>
         </li>
       </ul>

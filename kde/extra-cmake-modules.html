@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1505">
+  <body class="blfs" id="blfs-r12.4-1530">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1505
+        "phrase">(systemd</span> Edition) - Version r12.4-1530
       </h4>
       <h3>
         Chapter&nbsp;29.&nbsp;Introduction to KDE
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1505">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1530">
           Home</a>
         </li>
       </ul>
@@ -127,9 +127,7 @@
         </h4>
         <p class="optional">
           <a class="xref" href="../general/python-modules.html#sphinx" title=
-          "Sphinx-9.1.0">sphinx-9.1.0</a> (for building documentation),
-          <a class="ulink" href="https://pypi.org/project/PyQt5/">PyQt</a>
-          (experimental support for building KDE Python bindings), and
+          "Sphinx-9.1.0">sphinx-9.1.0</a> (for building documentation) and
           <a class="ulink" href=
           "https://github.com/fsfe/reuse-tool/">ReuseTool</a> (for running
           internal tests)
@@ -183,18 +181,18 @@ make</kbd></pre>
         <p>
           <span class="command"><strong>sed ...
           Modules/KDEInstallDirs.cmake</strong></span>: This command disables
-          applications using cmake from attempting to install files in a
+          applications using CMake from attempting to install files in a
           <code class="filename">lib64</code> sub-directory.
         </p>
         <p>
           <span class="command"><strong>sed ...
           ECMConfig.cmake.in</strong></span>: This command protects the
-          global <span class="application">cmake</span> variable <code class=
+          global <span class="application">CMake</span> variable <code class=
           "envar">PACKAGE_PREFIX_DIR</code> from being changed when checking
-          ECM presence: since we install ECM into <code class=
+          for the presence of ECM. Since we install ECM into <code class=
           "filename">/usr</code>, the check would set that variable to
-          <code class="filename">/usr</code>, while most KDE packages expect
-          it to be set to <code class="filename">/opt/kf6</code> and would
+          <code class="filename">/usr</code>, but most KDE packages expect it
+          to be set to <code class="filename">/opt/kf6</code> and they will
           fail to build if it is set to something else.
         </p>
         <p>
@@ -202,7 +200,7 @@ make</kbd></pre>
           DOC_INSTALL-DIR=/usr/share/doc/extra...</code></em>: This switch
           allows installing the documentation (which is built if <a class=
           "xref" href="../general/python-modules.html#sphinx" title=
-          "Sphinx-9.1.0">sphinx-9.1.0</a> is installed) in a versioned
+          "Sphinx-9.1.0">sphinx-9.1.0</a> is installed) into a versioned
           directory.
         </p>
       </div>
@@ -222,8 +220,9 @@ make</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/share/ECM and /usr/share/doc/ECM (if
-              documentation was built)</span>
+              <span class="segbody">/usr/share/ECM and
+              /usr/share/doc/extra-cmake-modules-6.23.0 (if documentation was
+              built)</span>
             </div>
           </div>
         </div>
@@ -250,7 +249,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1505">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1530">
           Home</a>
         </li>
       </ul>
