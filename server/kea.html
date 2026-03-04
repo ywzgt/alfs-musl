@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1536">
+  <body class="blfs" id="blfs-r12.4-1547">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1536
+        "phrase">(systemd</span> Edition) - Version r12.4-1547
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1536">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1547">
           Home</a>
         </li>
       </ul>
@@ -55,8 +55,8 @@
         </h2>
         <p>
           The <span class="application">ISC Kea</span> package contains the
-          server programs for DHCP. It is the successor of the old ISC DHCP
-          server which is end-of-life since December 2022.
+          server programs for DHCP. This is the successor of the old ISC DHCP
+          server which went out of support in December 2022.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -64,9 +64,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.0 platform.</span>
           </p>
         </div>
         <h3>
@@ -126,7 +125,7 @@
           Kerberos V5-1.22.2</a>, <a class="xref" href=
           "../general/valgrind.html" title=
           "Valgrind-3.26.0">Valgrind-3.26.0</a>, <a class="ulink" href=
-          "https://botan.randombit.net/">botan</a>, <a class="ulink" href=
+          "https://botan.randombit.net/">Botan</a>, <a class="ulink" href=
           "https://cppcheck.sourceforge.io/">cppcheck</a>, <a class="ulink"
           href="https://github.com/CESNET/libyang">libyang</a>, and <a class=
           "ulink" href="https://plantuml.com/">plantuml</a>
@@ -163,6 +162,7 @@
         </h2>
         <p>
           You must have Packet Socket support. IPv6 support is optional.
+          Enable the following options in the kernel and reboot if necessary:
         </p>
         <pre class="screen">[*] N<span class=
         "blue">e</span>tworking support ---&gt;                                                [NET]
@@ -239,15 +239,16 @@ install -dm0750 /var/log/kea</kbd></pre>
           <em class="parameter"><code>-D crypto=openssl</code></em>: Allows
           using OpenSSL for communicating with the control-agent and for DNS
           updates. Use <code class="option">-D crypto=botan</code> if you
-          want to use botan. The default provider is openssl.
+          want to use Botan. The default provider is OpenSSL.
         </p>
         <p>
           <code class="option">-D postgresql=enabled</code> or <code class=
           "option">-D mysql=enabled</code>: <span class="application">ISC
-          Kea</span> can store the leases on a database. This might be useful
-          in large environments running a cluster of DHCP servers. Using the
-          <span class="emphasis"><em>memfile</em></span> backend (which is a
-          CSV file stored locally) is possible anyhow.
+          Kea</span> can store the leases inside of a database. This might be
+          useful in large environments running a cluster of DHCP servers.
+          Using the <span class="emphasis"><em>memfile</em></span> backend
+          (which is a CSV file stored locally) is possible, and this method
+          is what the default configuration presented here uses.
         </p>
         <p>
           <code class="option">-D tests=enabled</code>: This option is
@@ -833,7 +834,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1536">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1547">
           Home</a>
         </li>
       </ul>

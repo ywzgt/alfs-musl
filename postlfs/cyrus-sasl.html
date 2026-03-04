@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1536">
+  <body class="blfs" id="blfs-r12.4-1547">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1536
+        "phrase">(systemd</span> Edition) - Version r12.4-1547
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1536">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1547">
           Home</a>
         </li>
       </ul>
@@ -236,33 +236,39 @@ install -v -dm700 /var/lib/sasl</kbd></pre>
         </p>
         <p>
           <em class="parameter"><code>--enable-auth-sasldb</code></em>: This
-          switch enables SASLDB authentication backend.
+          switch enables the SASLDB authentication backend.
         </p>
         <p>
           <code class="option">--with-dblib=gdbm</code>: This switch forces
           <span class="application">GDBM</span> to be used instead of
-          <span class="application">LMDB</span>.
+          <span class="application">LMDB</span>. Use this if you have not
+          installed <span class="application">LMDB</span>.
         </p>
         <p>
-          <code class="option">--with-ldap</code>: This switch enables the
-          <span class="application">OpenLDAP</span> support.
+          <code class="option">--with-ldap</code>: This switch enables LDAP
+          support through <span class="application">OpenLDAP</span>.
         </p>
         <p>
           <code class="option">--enable-ldapdb</code>: This switch enables
           the LDAPDB authentication backend.
         </p>
         <p>
-          <code class="option">--enable-login</code>: This option enables
-          unsupported LOGIN authentication.
+          <code class="option">--enable-login</code>: This option enables the
+          unsupported LOGIN authentication method. Do not use it unless you
+          have a specific reason to do so as it is insecure by nature.
         </p>
         <p>
-          <code class="option">--enable-ntlm</code>: This option enables
-          unsupported NTLM authentication.
+          <code class="option">--enable-ntlm</code>: This option enables the
+          unsupported NTLM authentication method. Do not use it unless you
+          have a specific reason to do so as it is insecure by nature, and
+          the protocol has been phased out from the latest versions of
+          Windows.
         </p>
         <p>
           <span class="command"><strong>install -v -m644 ...</strong></span>:
-          These commands install documentation which is not installed by the
-          <span class="command"><strong>make install</strong></span> command.
+          These commands install additional documentation which is not
+          installed by the <span class="command"><strong>make
+          install</strong></span> command.
         </p>
         <p>
           <span class="command"><strong>install -v -m700 -d
@@ -491,7 +497,7 @@ install -v -dm700 /var/lib/sasl</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1536">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1547">
           Home</a>
         </li>
       </ul>
