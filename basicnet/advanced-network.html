@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1547">
+  <body class="blfs" id="blfs-r12.4-1553">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1547
+        "phrase">(systemd</span> Edition) - Version r12.4-1553
       </h4>
       <h3>
         Chapter&nbsp;14.&nbsp;Connecting to a Network
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1547">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1553">
           Home</a>
         </li>
       </ul>
@@ -145,6 +145,14 @@ Gateway=192.168.0.1
 DNS=192.168.0.1</code>
 EOF</kbd></pre>
           <p>
+            If you want to contact another system connected to the bridge,
+            for example a qemu instance, then you also need to enable IP
+            forwarding. Again as the <code class="systemitem">root</code>
+            user, do:
+          </p>
+          <pre class="root"><kbd class=
+          "command">echo 'IPForward=ipv4' &gt;&gt; /etc/systemd/network/60-br0.network</kbd></pre>
+          <p>
             To bring up the bridge interface, simply restart the <span class=
             "command"><strong>systemd-networkd</strong></span> daemon by
             running the following command as the <code class=
@@ -177,7 +185,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1547">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1553">
           Home</a>
         </li>
       </ul>
