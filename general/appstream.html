@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r12.4-1553">
+  <body class="blfs" id="blfs-r13.0-1">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r12.4-1553
+        "phrase">(systemd</span> Edition) - Version r13.0-1
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,8 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1553">
-          Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1">Home</a>
         </li>
       </ul>
     </div>
@@ -66,8 +65,9 @@
             Note
           </h3>
           <p>
-            <span class="phrase">This package is known to build and work
-            properly using an LFS 13.0 platform.</span>
+            Development versions of BLFS may not build or run some packages
+            properly if LFS or dependencies have been updated since the most
+            recent stable versions of the books.
           </p>
         </div>
         <h3>
@@ -253,6 +253,13 @@ cat &gt; /usr/share/metainfo/org.linuxfromscratch.lfs.xml &lt;&lt; EOF
   &lt;/developer&gt;
 
   &lt;releases&gt;
+    &lt;release version="13.0" type="stable" date="2026-03-05"&gt;
+      &lt;description&gt;
+        &lt;p&gt;Now contains Binutils 2.46.0, GCC-15.2.0, Glibc-2.43,
+        Linux kernel 6.18, and six security updates.&lt;/p&gt;
+      &lt;/description&gt;
+    &lt;/release&gt;
+
     &lt;release version="12.4" type="stable" date="2025-09-01"&gt;
       &lt;description&gt;
         &lt;p&gt;Now contains Binutils 2.45, GCC-15.2.0, Glibc-2.42,
@@ -380,8 +387,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r12.4-1553">
-          Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1">Home</a>
         </li>
       </ul>
     </div>
