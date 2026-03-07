@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1">
+  <body class="blfs" id="blfs-r13.0-35">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1
+        "phrase">(systemd</span> Edition) - Version r13.0-35
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="protobuf.html" title=
-          "Protobuf-33.5">Prev</a>
+          "Protobuf-34.0">Prev</a>
           <p>
-            Protobuf-33.5
+            Protobuf-34.0
           </p>
         </li>
         <li class="next">
@@ -41,7 +41,8 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-35">
+          Home</a>
         </li>
       </ul>
     </div>
@@ -104,6 +105,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.2-protobuf34_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.2-protobuf34_fix-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Protobuf-c Dependencies
         </h3>
         <h4>
@@ -111,7 +126,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="protobuf.html" title=
-          "Protobuf-33.5">Protobuf-33.5</a>
+          "Protobuf-34.0">Protobuf-34.0</a>
         </p>
         <h4>
           Optional
@@ -126,12 +141,18 @@
           Installation of Protobuf-c
         </h2>
         <p>
+          First fix issues casue by <a class="xref" href="protobuf.html"
+          title="Protobuf-34.0">Protobuf-34.0</a> and later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../protobuf-c-1.5.2-protobuf34_fix-1.patch</kbd></pre>
+        <p>
           Install <span class="application">Protobuf-c</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
         "command">./configure --prefix=/usr --disable-static &amp;&amp;
-make -j1</kbd></pre>
+make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
           check</strong></span>.
@@ -220,9 +241,9 @@ make -j1</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="protobuf.html" title=
-          "Protobuf-33.5">Prev</a>
+          "Protobuf-34.0">Prev</a>
           <p>
-            Protobuf-33.5
+            Protobuf-34.0
           </p>
         </li>
         <li class="next">
@@ -237,7 +258,8 @@ make -j1</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-35">
+          Home</a>
         </li>
       </ul>
     </div>
