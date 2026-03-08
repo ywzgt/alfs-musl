@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-35">
+  <body class="blfs" id="blfs-r13.0-61">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-35
+        "phrase">(systemd</span> Edition) - Version r13.0-61
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-35">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-61">
           Home</a>
         </li>
       </ul>
@@ -126,6 +126,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/gnutls-3.8.12-nettle4_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/gnutls-3.8.12-nettle4_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           GnuTLS Dependencies
         </h3>
         <h4>
@@ -133,7 +147,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="nettle.html" title=
-          "Nettle-3.10.2">Nettle-3.10.2</a>
+          "Nettle-4.0">Nettle-4.0</a>
         </p>
         <h4>
           Recommended
@@ -197,6 +211,13 @@
         <h2 class="sect2">
           Installation of GnuTLS
         </h2>
+        <p>
+          First, apply a patch to allow the package to build with <a class=
+          "xref" href="nettle.html" title="Nettle-4.0">Nettle-4.0</a> and
+          later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../gnutls-3.8.12-nettle4_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">GnuTLS</span> by running the
           following commands:
@@ -474,7 +495,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-35">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-61">
           Home</a>
         </li>
       </ul>

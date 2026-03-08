@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-35">
+  <body class="blfs" id="blfs-r13.0-61">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-35
+        "phrase">(systemd</span> Edition) - Version r13.0-61
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-35">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-61">
           Home</a>
         </li>
       </ul>
@@ -143,7 +143,7 @@
           "libei-1.5.0">libei-1.5.0</a>, <a class="xref" href=
           "../general/libgcrypt.html" title=
           "libgcrypt-1.12.1">libgcrypt-1.12.1</a>, <a class="xref" href=
-          "../postlfs/nettle.html" title="Nettle-3.10.2">Nettle-3.10.2</a>,
+          "../postlfs/nettle.html" title="Nettle-4.0">Nettle-4.0</a>,
           <a class="xref" href="../pst/xmlto.html" title=
           "xmlto-0.0.29">xmlto-0.0.29</a>, <a class="xref" href=
           "x7legacy.html" title="Xorg Legacy">Xorg Legacy Fonts</a> (only
@@ -159,6 +159,16 @@
         <h2 class="sect2">
           Installation of Xwayland
         </h2>
+        <p>
+          First, make the package compatible with <a class="xref" href=
+          "../postlfs/nettle.html" title="Nettle-4.0">Nettle-4.0</a> and
+          later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e '/nettle.sha.h/s/sha/sha1/'                  \
+    -e '/nettle.sha1/a #include &lt;nettle/version.h&gt;' \
+    -e '/digest/s/ctx, 20/ctx/'                     \
+    -i os/xsha1.c</kbd></pre>
         <p>
           Install <span class="application">xwayland</span> by running the
           following commands:
@@ -326,7 +336,7 @@ popd</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-35">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-61">
           Home</a>
         </li>
       </ul>
