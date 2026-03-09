@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-61">
+  <body class="blfs" id="blfs-r13.0-81">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-61
+        "phrase">(systemd</span> Edition) - Version r13.0-81
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-61">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-81">
           Home</a>
         </li>
       </ul>
@@ -143,6 +143,13 @@
                 https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.8.0esr-python_3.14_fixes-1.patch</a>
               </p>
             </li>
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.8.0esr-llvm_22-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.8.0esr-llvm_22-1.patch</a>
+              </p>
+            </li>
           </ul>
         </div>
         <div class="admon note">
@@ -202,7 +209,7 @@
           "libnotify-0.8.8">libnotify-0.8.8</a>, <a class="xref" href=
           "../general/libarchive.html" title=
           "libarchive-3.8.5">libarchive-3.8.5</a>, <a class="xref" href=
-          "../general/llvm.html" title="LLVM-21.1.8">LLVM-21.1.8</a> (with
+          "../general/llvm.html" title="LLVM-22.1.0">LLVM-22.1.0</a> (with
           clang, used for bindgen even if using gcc), <a class="xref" href=
           "../general/nodejs.html" title=
           "Node.js-22.22.0">nodejs-22.22.0</a>, <a class="xref" href=
@@ -285,20 +292,26 @@
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../firefox-140.8.0esr-ffmpeg-8.0.patch</kbd></pre>
         <p>
-          Fix building this package with glibc-2.43 and adapt the checksums:
+          We need a patch to fix building this package with glibc-2.43. This
+          patch changes the vendored rust crate, so we need to edit the build
+          system to make <span class="command"><strong>cargo</strong></span>
+          to skip the checksum verification:
         </p>
         <pre class="userinput"><kbd class=
-        "command">GLSL_PTHREAD="third_party/rust/glslopt/glsl-optimizer/include/c11/threads_posix.h"
-OLDSHA=`sha256sum $GLSL_PTHREAD | awk '{ print $1 }'` &amp;&amp;
-patch -Np1 -i ../firefox-140.8.0esr-glibc-2.43.patch &amp;&amp;
-NEWSHA=`sha256sum $GLSL_PTHREAD | awk '{ print $1 }'` &amp;&amp;
-sed "s/$OLDSHA/$NEWSHA/" \
-  -i third_party/rust/glslopt/.cargo-checksum.json</kbd></pre>
+        "command">patch -Np1 -i ../firefox-140.8.0esr-glibc-2.43.patch &amp;&amp;
+sed '/patch.crates-io/a glslopt={path="third_party/rust/glslopt"}' \
+    -i Cargo.toml &amp;&amp;
+sed '/name = "glslopt"/,/^$/{/source/d;/checksum/d}' -i Cargo.lock</kbd></pre>
         <p>
           Next, fix building this package with Python-3.14:
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../firefox-140.8.0esr-python_3.14_fixes-1.patch</kbd></pre>
+        <p>
+          Next, fix building this package with LLVM-22:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../firefox-140.8.0esr-llvm_22-1.patch</kbd></pre>
         <p>
           The configuration of <span class="application">Firefox</span> is
           accomplished by creating a <code class="filename">mozconfig</code>
@@ -737,7 +750,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-61">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-81">
           Home</a>
         </li>
       </ul>

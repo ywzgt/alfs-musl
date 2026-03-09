@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-61">
+  <body class="blfs" id="blfs-r13.0-81">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-61
+        "phrase">(systemd</span> Edition) - Version r13.0-81
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-61">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-81">
           Home</a>
         </li>
       </ul>
@@ -138,6 +138,13 @@
                 https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.0esr-glibc-2.43.patch</a>
               </p>
             </li>
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.0esr-llvm_22-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.0esr-llvm_22-1.patch</a>
+              </p>
+            </li>
           </ul>
         </div>
         <h3>
@@ -152,7 +159,7 @@
           "../x/gtk3.html" title="GTK-3.24.51">GTK-3.24.51</a>, <a class=
           "xref" href="../general/libarchive.html" title=
           "libarchive-3.8.5">libarchive-3.8.5</a>, <a class="xref" href=
-          "../general/llvm.html" title="LLVM-21.1.8">LLVM-21.1.8</a>
+          "../general/llvm.html" title="LLVM-22.1.0">LLVM-22.1.0</a>
           including clang, <a class="xref" href="../general/nodejs.html"
           title="Node.js-22.22.0">nodejs-22.22.0</a>, <a class="xref" href=
           "../multimedia/pulseaudio.html" title=
@@ -223,7 +230,7 @@
           </p>
         </div>
         <p>
-          Next, fix building this package with Python-3.14:
+          At first, fix building this package with Python-3.14:
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../thunderbird-140.8.0esr-python_3.14_fixes-1.patch</kbd></pre>
@@ -231,21 +238,22 @@
           Remove checksums from cargo crates for files that don't exist:
         </p>
         <pre class="userinput"><kbd class=
-        "command">for crate in {minimal-lexical,lmdb-rkv,cubeb-sys,wasi,glslopt,sfv}; do
-  sed -e 's|,"[^"]*.gitmodules[^,]*[^,]||' \
-      -e '$a\'                             \
-      -i comm/third_party/rust/$crate/.cargo-checksum.json
-done</kbd></pre>
+        "command">find -name .cargo-checksum.json | \
+     xargs sed -ri 's|"[^"]*.gitmodules":"[^"]*",?||'</kbd></pre>
         <p>
           Fix building this package with glibc-2.43 and adapt the checksums:
         </p>
         <pre class="userinput"><kbd class=
-        "command">GLSL_PTHREAD="comm/third_party/rust/glslopt/glsl-optimizer/include/c11/threads_posix.h"
-OLDSHA=`sha256sum $GLSL_PTHREAD | awk '{ print $1 }'` &amp;&amp;
-patch -Np1 -i ../thunderbird-140.8.0esr-glibc-2.43.patch &amp;&amp;
-NEWSHA=`sha256sum $GLSL_PTHREAD | awk '{ print $1 }'` &amp;&amp;
-sed "s/$OLDSHA/$NEWSHA/" \
-  -i comm/third_party/rust/glslopt/.cargo-checksum.json</kbd></pre>
+        "command">patch -Np1 -i ../thunderbird-140.8.0esr-glibc-2.43.patch &amp;&amp;
+sed '/patch.crates-io/a glslopt={path="../../third_party/rust/glslopt"}' \
+    -i comm/rust/Cargo.toml &amp;&amp;
+sed '/name = "glslopt"/,/^$/{/source/d;/checksum/d}' \
+    -i comm/rust/Cargo.lock</kbd></pre>
+        <p>
+          Next, fix building this package with LLVM-22:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../thunderbird-140.8.0esr-llvm_22-1.patch</kbd></pre>
         <p>
           The configuration of <span class="application">Thunderbird</span>
           is accomplished by creating a <code class=
@@ -539,7 +547,7 @@ ln -sfv /usr/lib/thunderbird/chrome/icons/default/default256.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-61">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-81">
           Home</a>
         </li>
       </ul>

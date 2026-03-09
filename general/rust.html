@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Rustc-1.93.1
+      Rustc-1.94.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-61">
+  <body class="blfs" id="blfs-r13.0-81">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-61
+        "phrase">(systemd</span> Edition) - Version r13.0-81
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-61">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-81">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="rust" name="rust"></a>Rustc-1.93.1
+      <a id="rust" name="rust"></a>Rustc-1.94.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -84,7 +84,7 @@
             leave a broken <span class=
             "command"><strong>cargo</strong></span> program. If this occurs,
             you should either remove the existing installation first, or use
-            a different prefix such as /opt/rustc-1.93.1-build2.
+            a different prefix such as /opt/rustc-1.94.0-build2.
           </p>
           <p>
             If you prefer, you can of course change the prefix to
@@ -157,17 +157,17 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://static.rust-lang.org/dist/rustc-1.93.1-src.tar.xz">https://static.rust-lang.org/dist/rustc-1.93.1-src.tar.xz</a>
+                "https://static.rust-lang.org/dist/rustc-1.94.0-src.tar.xz">https://static.rust-lang.org/dist/rustc-1.94.0-src.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 65de3c1b0a9304b16ff27433a0dafb95
+                Download MD5 sum: cd01d7a97f98940567663652ac9747a0
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 258 MB
+                Download size: 262 MB
               </p>
             </li>
             <li class="listitem">
@@ -213,7 +213,7 @@
         <p class="recommended">
           <a class="xref" href="libssh2.html" title=
           "libssh2-1.11.1">libssh2-1.11.1</a> and <a class="xref" href=
-          "llvm.html" title="LLVM-21.1.8">LLVM-21.1.8</a> (built with -D
+          "llvm.html" title="LLVM-22.1.0">LLVM-22.1.0</a> (built with -D
           LLVM_LINK_LLVM_DYLIB=ON so that rust can link to the system
           installed version of LLVM instead of building its shipped version)
         </p>
@@ -260,8 +260,8 @@
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">mkdir -pv /opt/rustc-1.93.1      &amp;&amp;
-ln -svfn rustc-1.93.1 /opt/rustc</kbd></pre>
+        "command">mkdir -pv /opt/rustc-1.94.0      &amp;&amp;
+ln -svfn rustc-1.94.0 /opt/rustc</kbd></pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -289,7 +289,7 @@ ln -svfn rustc-1.93.1 /opt/rustc</kbd></pre>
 # Tell x.py that the editors have reviewed the content of this file
 # and updated it to follow the major changes of the building system,
 # so x.py will not warn users to review that information.
-change-id = 148795
+change-id = 148671
 
 [llvm]
 # When using the system installed copy of LLVM, prefer the shared libraries
@@ -300,7 +300,7 @@ link-shared = true
 targets = "X86"
 
 [build]
-description = "for BLFS r13.0-61"
+description = "for BLFS r13.0-81"
 
 # Omit the documentation to save time and space (the default is to build them).
 docs = false
@@ -315,8 +315,8 @@ locked-deps = true
 tools = ["cargo", "clippy", "rustdoc", "rustfmt", "src"]
 
 [install]
-prefix = "/opt/rustc-1.93.1"
-docdir = "share/doc/rustc-1.93.1"
+prefix = "/opt/rustc-1.94.0"
+docdir = "share/doc/rustc-1.94.0"
 
 [rust]
 channel = "stable"
@@ -364,7 +364,7 @@ export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
           The test named <code class=
           "filename">tests/run-make/rustdoc-target-modifiers</code> is known
           to fail because we've not enabled the AArch64 target in <a class=
-          "xref" href="llvm.html" title="LLVM-21.1.8">LLVM-21.1.8</a>. The
+          "xref" href="llvm.html" title="LLVM-22.1.0">LLVM-22.1.0</a>. The
           tests named <code class=
           "filename">missing_span_in_backtrace.rs</code> and <code class=
           "filename">trimmed_multiline_suggestion.rs</code> may fail because
@@ -377,34 +377,6 @@ export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
           'stderr:' lines. Any mention of a SIGSEGV or signal 11 in a failing
           test is a cause for concern.
         </p>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            If you've stripped <code class="filename">/usr/lib/libc.a</code>
-            with <span class="command"><strong>strip
-            --strip-unneeded</strong></span>, all statically-linked Rust
-            programs will crash with SIGSEGV on start-up, causing several
-            tests (for example <code class=
-            "filename">tests/ui/process/nofile-limit.rs</code>) to fail with
-            SIGSEGV.
-          </p>
-          <p>
-            It's caused by a Glibc bug affecting Glibc-2.42 and several prior
-            releases, so for now we've replaced <em class=
-            "parameter"><code>--strip-unneeded</code></em> with <em class=
-            "parameter"><code>--strip-debug</code></em> in both the LFS book
-            and <a class="xref" href=
-            "../introduction/notes-on-building.html#stripping" title=
-            "Stripping One More Time">the section called “Stripping One More
-            Time”</a> to work around the problem. If you hit this issue,
-            rebuild Glibc and replace the <code class=
-            "filename">/usr/lib/libc.a</code> file with the unstripped
-            <code class="filename">libc.a</code> from the fresh build.
-          </p>
-        </div>
         <p>
           If you get any <span class="emphasis"><em>other</em></span> failing
           test which reports an issue number then you should search for that
@@ -462,9 +434,9 @@ export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
           "application">Bash</span> completion maintainers:
         </p>
         <pre class="root"><kbd class=
-        "command">rm -fv /opt/rustc-1.93.1/share/doc/rustc-1.93.1/*.old   &amp;&amp;
+        "command">rm -fv /opt/rustc-1.94.0/share/doc/rustc-1.94.0/*.old   &amp;&amp;
 install -vm644 README.md                                \
-               /opt/rustc-1.93.1/share/doc/rustc-1.93.1 &amp;&amp;
+               /opt/rustc-1.94.0/share/doc/rustc-1.94.0 &amp;&amp;
 
 install -vdm755 /usr/share/zsh/site-functions      &amp;&amp;
 ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
@@ -482,7 +454,7 @@ mv -v /etc/bash_completion.d/cargo /usr/share/bash-completion/completions</kbd><
           Command Explanations
         </h2>
         <p>
-          <span class="command"><strong>ln -svfn rustc-1.93.1
+          <span class="command"><strong>ln -svfn rustc-1.94.0
           /opt/rustc</strong></span>: if this is not the first use of the
           <code class="filename">/opt/rustc</code> symlink, overwrite it by
           force, and use the '-n' flag to avoid getting confusing results
@@ -591,7 +563,7 @@ EOF</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">~/.cargo, /opt/rustc, symbolic link to
-              /opt/rustc-1.93.1</span>
+              /opt/rustc-1.94.0</span>
             </div>
           </div>
         </div>
@@ -674,7 +646,7 @@ EOF</kbd></pre>
                   <p>
                     is a wrapper script for gdb which pulls in the Python
                     pretty-printing modules installed in <code class=
-                    "filename">/opt/rustc-1.93.1/lib/rustlib/etc</code>
+                    "filename">/opt/rustc-1.94.0/lib/rustlib/etc</code>
                   </p>
                 </td>
               </tr>
@@ -791,7 +763,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-61">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-81">
           Home</a>
         </li>
       </ul>
