@@ -1,0 +1,110 @@
+diff --git a/wget-list b/wget-list
+index 9259980b7a..b2dc44588d 100644
+--- a/wget-list
++++ b/wget-list
+@@ -109,7 +109,7 @@ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/bdwgc/libatomic_ops/releases/download/v7.10.0/libatomic_ops-7.10.0.tar.gz
+ https://github.com/storaged-project/libblockdev/releases/download/3.4.0/libblockdev-3.4.0.tar.gz
+ https://github.com/storaged-project/libbytesize/releases/download/2.12/libbytesize-2.12.tar.gz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/libclc-21.1.8.src.tar.xz
++https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.0/llvm-project-22.1.0.src.tar.xz
+ https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6.tar.xz
+ https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+ https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.3.0/downloads/libdisplay-info-0.3.0.tar.xz
+@@ -165,12 +165,12 @@ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5
+ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.2-protobuf34_fix-1.patch
+ https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.13.0/qcoro-0.13.0.tar.gz
+-https://github.com/simdutf/simdutf/archive/v8.0.0/simdutf-8.0.0.tar.gz
++https://github.com/simdutf/simdutf/archive/v8.1.0/simdutf-8.1.0.tar.gz
+ https://archive.mozilla.org/pub/firefox/releases/140.8.0esr/source/firefox-140.8.0esr.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.8.0-python_3.14_fixes-1.patch
+ https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.341.0/SPIRV-Headers-vulkan-sdk-1.4.341.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.341.0/SPIRV-Tools-vulkan-sdk-1.4.341.0.tar.gz
+-https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v21.1.4/SPIRV-LLVM-Translator-21.1.4.tar.gz
++https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v22.1.0/SPIRV-LLVM-Translator-22.1.0.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.4.4.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+ https://github.com/martinpitt/umockdev/releases/download/0.19.5/umockdev-0.19.5.tar.xz
+@@ -196,7 +196,7 @@ https://download.gnome.org/sources/glycin/2.0/glycin-2.0.8.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.8-xorg_prefix-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.8-xbm_xpm-1.patch
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+-https://github.com/harfbuzz/harfbuzz/releases/download/13.0.0/harfbuzz-13.0.0.tar.xz
++https://github.com/harfbuzz/harfbuzz/releases/download/13.0.1/harfbuzz-13.0.1.tar.xz
+ https://github.com/jasper-software/jasper/archive/version-4.2.9/jasper-version-4.2.9.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.18/lcms2-2.18.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.4.0/libavif-1.4.0.tar.gz
+@@ -212,7 +212,7 @@ https://downloads.sourceforge.net/libpng/libpng-1.6.55.tar.xz
+ https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.54-apng.patch.gz
+ https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
+ https://www.libraw.org/data/LibRaw-0.22.0.tar.gz
+-https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.4.tar.xz
++https://download.gnome.org/sources/librsvg/2.62/librsvg-2.62.0.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+ https://download.osgeo.org/libtiff/tiff-4.7.1.tar.gz
+ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz
+@@ -300,7 +300,7 @@ https://sg.danny.cz/sg/p/sg3_utils-1.48.tar.xz
+ https://github.com/lfs-book/sysmond/releases/download/sysmond-1.0.0/sysmond-1.0.0.tar.xz
+ https://github.com/lfs-book/sysmon3/releases/download/sysmon3-3.0.1/sysmon3-3.0.1.tar.xz
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-019.tar.xz
+-https://github.com/lu-zero/cargo-c/archive/v0.10.20/cargo-c-0.10.20.tar.gz
++https://github.com/lu-zero/cargo-c/archive/v0.10.21/cargo-c-0.10.21.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.29.2/cbindgen-0.29.2.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/clisp/clisp-2.49.95.tar.xz
+ https://cmake.org/files/v4.2/cmake-4.2.3.tar.gz
+@@ -314,11 +314,6 @@ https://www.kernel.org/pub/software/scm/git/git-2.53.0.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-manpages-2.53.0.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.53.0.tar.xz
+ https://ftpmirror.gnu.org/guile/guile-3.0.11.tar.xz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/llvm-21.1.8.src.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-cmake-21.1.8.src.tar.xz
+-https://anduin.linuxfromscratch.org/BLFS/llvm/llvm-third-party-21.1.8.src.tar.xz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/clang-21.1.8.src.tar.xz
+-https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/compiler-rt-21.1.8.src.tar.xz
+ https://www.lua.org/ftp/lua-5.4.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.8-shared_library-1.patch
+ https://www.lua.org/tests/lua-5.4.8-tests.tar.gz
+@@ -529,7 +524,7 @@ https://files.pythonhosted.org/packages/source/h/hatch-vcs/hatch_vcs-0.5.0.tar.g
+ https://files.pythonhosted.org/packages/source/i/idna/idna-3.11.tar.gz
+ https://files.pythonhosted.org/packages/source/i/imagesize/imagesize-1.4.1.tar.gz
+ https://files.pythonhosted.org/packages/source/i/iniconfig/iniconfig-2.3.0.tar.gz
+-https://github.com/PyO3/maturin/archive/v1.12.5/maturin-1.12.5.tar.gz
++https://github.com/PyO3/maturin/archive/v1.12.6/maturin-1.12.6.tar.gz
+ https://files.pythonhosted.org/packages/source/M/Markdown/markdown-3.10.2.tar.gz
+ https://files.pythonhosted.org/packages/source/m/meson_python/meson_python-0.19.0.tar.gz
+ https://files.pythonhosted.org/packages/source/m/msgpack/msgpack-1.1.2.tar.gz
+@@ -558,7 +553,7 @@ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.6.3.tar.gz
+ https://files.pythonhosted.org/packages/source/u/uv_build/uv_build-0.10.2.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+ https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.1.tar.xz
+-https://static.rust-lang.org/dist/rustc-1.93.1-src.tar.xz
++https://static.rust-lang.org/dist/rustc-1.94.0-src.tar.xz
+ https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.1/rust-bindgen-0.72.1.tar.gz
+ https://downloads.sourceforge.net/scons/SCons-4.10.1.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+@@ -888,7 +883,7 @@ https://github.com/lxqt/lxqt-policykit/releases/download/2.3.0/lxqt-policykit-2.
+ https://github.com/lxqt/lxqt-sudo/releases/download/2.3.0/lxqt-sudo-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-openssh-askpass/releases/download/2.3.0/lxqt-openssh-askpass-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-session/releases/download/2.3.0/lxqt-session-2.3.0.tar.xz
+-https://github.com/lxqt/lxqt-wayland-session/releases/download/0.3.1/lxqt-wayland-session-0.3.1.tar.xz
++https://github.com/lxqt/lxqt-wayland-session/releases/download/0.3.2/lxqt-wayland-session-0.3.2.tar.xz
+ https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/1.3.0/xdg-desktop-portal-lxqt-1.3.0.tar.xz
+ https://github.com/lxqt/obconf-qt/releases/download/0.16.5/obconf-qt-0.16.5.tar.xz
+ https://github.com/lxqt/lximage-qt/releases/download/2.3.0/lximage-qt-2.3.0.tar.xz
+@@ -910,6 +905,7 @@ https://download.kde.org/stable/release-service/25.12.2/src/falkon-25.12.2.tar.x
+ https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.8.0esr-ffmpeg-8.0.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.8.0esr-glibc-2.43.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.8.0esr-python_3.14_fixes-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.8.0esr-llvm_22-1.patch
+ https://archive.seamonkey-project.org/releases/2.53.23/source/seamonkey-2.53.23.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-libvpx_security_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-cxx17-1.patch
+@@ -927,6 +923,7 @@ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+ https://archive.mozilla.org/pub/thunderbird/releases/140.8.0esr/source/thunderbird-140.8.0esr.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.0esr-python_3.14_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.0esr-glibc-2.43.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.0esr-llvm_22-1.patch
+ https://github.com/TigerVNC/tigervnc/archive/v1.16.0/tigervnc-1.16.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.16.0-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.1.1/transmission-4.1.1.tar.xz
