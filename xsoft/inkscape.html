@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-112">
+  <body class="blfs" id="blfs-r13.0-114">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-112
+        "phrase">(systemd</span> Edition) - Version r13.0-114
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-112">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-114">
           Home</a>
         </li>
       </ul>
@@ -112,8 +112,8 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.3-poppler_26.02-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.3-poppler_26.02-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.3-poppler-26_fixes.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.3-poppler-26_fixes.patch</a>
               </p>
             </li>
           </ul>
@@ -202,19 +202,11 @@
           Installation of Inkscape
         </h2>
         <p>
-          First, fix build failures that appeared with poppler-26.02.0:
+          First, fix build failures that appeared beginning with
+          poppler-26.01.0:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i inkscape-1.4.3-poppler_26.02-1.patch</kbd></pre>
-        <p>
-          Then, fix build failures that appeared with poppler-26.01.0:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -i 's/gfree/g_free/' src/extension/internal/pdfinput/pdf-input.cpp &amp;&amp;
-
-sed -e '/Stream.h/a#include &lt;poppler/goo/gmem.h&gt;' \
-    -e 's/reset/rewind/'                          \
-    -i src/extension/internal/pdfinput/svg-builder.cpp</kbd></pre>
+        "command">patch -Np1 -i inkscape-1.4.3-poppler-26_fixes.patch</kbd></pre>
         <p>
           Install <span class="application">Inkscape</span> by running the
           following commands:
@@ -382,7 +374,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-112">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-114">
           Home</a>
         </li>
       </ul>
