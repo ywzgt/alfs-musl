@@ -1,0 +1,78 @@
+diff --git a/wget-list b/wget-list
+index 2b24b80500..01f060ae8f 100644
+--- a/wget-list
++++ b/wget-list
+@@ -82,7 +82,7 @@ https://github.com/google/double-conversion/archive/v3.4.0/double-conversion-3.4
+ https://duktape.org/duktape-2.7.0.tar.xz
+ https://github.com/rrthomas/enchant/releases/download/v2.8.15/enchant-2.8.15.tar.gz
+ https://libopenraw.freedesktop.org/download/exempi-2.6.6.tar.xz
+-https://github.com/fastfloat/fast_float/archive/v8.2.3/fast_float-8.2.3.tar.gz
++https://github.com/fastfloat/fast_float/archive/v8.2.4/fast_float-8.2.4.tar.gz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+ https://github.com/fmtlib/fmt/archive/12.1.0/fmt-12.1.0.tar.gz
+ https://download.gnome.org/sources/glib/2.86/glib-2.86.4.tar.xz
+@@ -103,7 +103,7 @@ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.18.tar.gz
+ https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.8.tar.xz
+ https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-1.6.3.tar.gz
+ https://pagure.io/libaio/archive/libaio-0.3.113/libaio-0.3.113.tar.gz
+-https://github.com/libarchive/libarchive/releases/download/v3.8.5/libarchive-3.8.5.tar.xz
++https://github.com/libarchive/libarchive/releases/download/v3.8.6/libarchive-3.8.6.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2
+ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/bdwgc/libatomic_ops/releases/download/v7.10.0/libatomic_ops-7.10.0.tar.gz
+@@ -235,7 +235,7 @@ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-ut
+ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.4.tar.gz
+ https://github.com/google/shaderc/archive/v2026.1/shaderc-2026.1.tar.gz
+ https://gitlab.com/graphviz/graphviz/-/archive/14.1.3/graphviz-14.1.3.tar.bz2
+-https://download.gnome.org/sources/gtk-doc/1.35/gtk-doc-1.35.1.tar.xz
++https://download.gnome.org/sources/gtk-doc/1.36/gtk-doc-1.36.0.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.19.tar.bz2
+ https://github.com/ibus/ibus/archive/1.5.33/ibus-1.5.33.tar.gz
+ https://www.unicode.org/Public/17.0.0/ucd/UCD.zip
+@@ -295,7 +295,7 @@ https://downloads.sourceforge.net/hdparm/hdparm-9.65.tar.gz
+ https://github.com/hramrach/lm-sensors/archive/V3-6-2/lm-sensors-3-6-2.tar.gz
+ https://mj.ucw.cz/download/linux/pci/pciutils-3.14.0.tar.gz
+ https://sg.danny.cz/sg/p/sg3_utils-1.48.tar.xz
+-https://github.com/lfs-book/sysmond/releases/download/sysmond-1.0.0/sysmond-1.0.0.tar.xz
++https://github.com/lfs-book/sysmond/releases/download/sysmond-1.0.1/sysmond-1.0.1.tar.xz
+ https://github.com/lfs-book/sysmon3/releases/download/sysmon3-3.0.1/sysmon3-3.0.1.tar.xz
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-019.tar.xz
+ https://github.com/lu-zero/cargo-c/archive/v0.10.21/cargo-c-0.10.21.tar.gz
+@@ -322,7 +322,7 @@ https://www.nasm.us/pub/nasm/releasebuilds/3.01/nasm-3.01-xdoc.tar.xz
+ https://github.com/NixOS/patchelf/releases/download/0.18.0/patchelf-0.18.0.tar.gz
+ https://www.cpan.org/authors/id/P/PH/PHRED/Archive-Zip-1.68.tar.gz
+ https://www.cpan.org/authors/id/V/VP/VPIT/autovivification-0.18.tar.gz
+-https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISBN-3.012.tar.gz
++https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISBN-3.013.tar.gz
+ https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISMN-1.205.tar.gz
+ https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISSN-1.008.tar.gz
+ https://www.cpan.org/authors/id/K/KA/KASEI/Class-Accessor-0.51.tar.gz
+@@ -374,7 +374,7 @@ https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Alien-Build-Plugin-Download-G
+ https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Alien-Libxml2-0.20.tar.gz
+ https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/B-COW-0.007.tar.gz
+ https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Hooks-EndOfScope-0.28.tar.gz
+-https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Business-ISBN-Data-20260214.001.tar.gz
++https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Business-ISBN-Data-20260311.001.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Capture-Tiny-0.50.tar.gz
+ https://cpan.metacpan.org/authors/id/R/RS/RSHERER/Class-Data-Inheritable-0.10.tar.gz
+ https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Class-Inspector-1.36.tar.gz
+@@ -493,7 +493,7 @@ https://download.gnome.org/sources/pyatspi/2.58/pyatspi-2.58.1.tar.xz
+ https://github.com/pygobject/pycairo/releases/download/v1.29.0/pycairo-1.29.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.19.2.tar.gz
+-https://download.gnome.org/sources/pygobject/3.56/pygobject-3.56.0.tar.gz
++https://download.gnome.org/sources/pygobject/3.56/pygobject-3.56.1.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.3.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pytest/pytest-9.0.2.tar.gz
+@@ -635,8 +635,8 @@ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.1.tar.gz
+ https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.35/LMDB_0.9.35.tar.bz2
+ https://downloads.mariadb.org/interstitial/mariadb-11.8.6/source/mariadb-11.8.6.tar.gz
+ https://ftp.postgresql.org/pub/source/v18.3/postgresql-18.3.tar.bz2
+-https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.12.tgz
+-https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.12-consolidated-1.patch
++https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.13.tgz
++https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.13-consolidated-1.patch
+ https://www.x.org/pub/individual/util/util-macros-1.20.2.tar.xz
+ https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2025.1.tar.xz
+ https://www.x.org/pub/individual/lib/libXau-1.0.12.tar.xz
