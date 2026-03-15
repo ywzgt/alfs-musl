@@ -26,16 +26,16 @@ https://github.com/p11-glue/p11-kit/releases/download/0.26.2/p11-kit-0.26.2.tar.
 https://github.com/polkit-org/polkit/archive/127/polkit-127.tar.gz
 https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
-https://github.com/shadow-maint/shadow/releases/download/4.19.3/shadow-4.19.3.tar.xz
+https://github.com/shadow-maint/shadow/releases/download/4.19.4/shadow-4.19.4.tar.xz
 https://www.stunnel.org/downloads/archive/5.x/stunnel-5.77.tar.gz
 https://www.sudo.ws/dist/sudo-1.9.17p2.tar.gz
 https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
-https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.17.1.tar.xz
+https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.19.tar.xz
 https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz
 https://github.com/libfuse/libfuse/releases/download/fuse-3.18.1/fuse-3.18.1.tar.gz
 https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.patch
-https://sourceware.org/ftp/lvm2/LVM2.2.03.38.tgz
+https://sourceware.org/ftp/lvm2/LVM2.2.03.39.tgz
 https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.4.tar.xz
 https://github.com/tuxera/ntfs-3g/archive/2022.10.3/ntfs-3g-2022.10.3.tar.gz
 https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
@@ -165,7 +165,7 @@ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5
 https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.2-protobuf34_fix-1.patch
 https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
 https://github.com/danvratil/qcoro/archive/v0.13.0/qcoro-0.13.0.tar.gz
-https://github.com/simdutf/simdutf/archive/v8.1.0/simdutf-8.1.0.tar.gz
+https://github.com/simdutf/simdutf/archive/v8.2.0/simdutf-8.2.0.tar.gz
 https://archive.mozilla.org/pub/firefox/releases/140.8.0esr/source/firefox-140.8.0esr.source.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.8.0-python_3.14_fixes-1.patch
 https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.341.0/SPIRV-Headers-vulkan-sdk-1.4.341.0.tar.gz
@@ -284,7 +284,7 @@ https://download.librdf.org/source/raptor2-2.0.16.tar.gz
 https://download.librdf.org/source/rasqal-0.9.33.tar.gz
 https://download.librdf.org/source/redland-1.0.17.tar.gz
 https://sysstat.github.io/sysstat-packages/sysstat-12.7.9.tar.xz
-https://github.com/systemd/systemd/archive/v259.1/systemd-259.1.tar.gz
+https://github.com/systemd/systemd/archive/v259.5/systemd-259.5.tar.gz
 https://github.com/storaged-project/udisks/releases/download/udisks-2.11.1/udisks-2.11.1.tar.bz2
 https://www.rarlab.com/rar/unrarsrc-7.2.4.tar.gz
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.1/upower-v1.91.1.tar.bz2
@@ -573,7 +573,7 @@ https://archive.apache.org/dist/ant/source/apache-ant-1.10.15-src.tar.xz
 https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.5.tar.bz2
 https://www.ncftp.com/public_ftp/ncftp/ncftp-3.3.0-src.tar.gz
 https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
-https://www.kernel.org/pub/linux/utils/nfs-utils/2.8.6/nfs-utils-2.8.6.tar.xz
+https://www.kernel.org/pub/linux/utils/nfs-utils/2.8.7/nfs-utils-2.8.7.tar.xz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
 https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.8.tar.bz2
 https://www.samba.org/ftp/rsync/src/rsync-3.4.1.tar.gz
@@ -680,7 +680,7 @@ https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
 https://download.gnome.org/sources/goffice/0.10/goffice-0.10.60.tar.xz
 https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
 https://download.gnome.org/sources/gtk/3.24/gtk-3.24.51.tar.xz
-https://download.gnome.org/sources/gtk/4.22/gtk-4.22.0.tar.xz
+https://download.gnome.org/sources/gtk/4.22/gtk-4.22.1.tar.xz
 https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.10.tar.xz
 https://download.gnome.org/sources/gtkmm/4.20/gtkmm-4.20.0.tar.xz
 https://download.gnome.org/sources/gtk-vnc/1.5/gtk-vnc-1.5.0.tar.xz
@@ -691,7 +691,7 @@ https://downloads.sourceforge.net/enlightenment/imlib2-1.12.6.tar.xz
 https://github.com/ksnip/kColorPicker/archive/v0.3.1/kColorPicker-0.3.1.tar.gz
 https://github.com/ksnip/kImageAnnotator/archive/v0.7.2/kImageAnnotator-0.7.2.tar.gz
 https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
-https://download.gnome.org/sources/libadwaita/1.8/libadwaita-1.8.4.tar.xz
+https://download.gnome.org/sources/libadwaita/1.9/libadwaita-1.9.0.tar.xz
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.5.0/libei-1.5.0.tar.bz2
 https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.131.tar.xz
@@ -735,7 +735,7 @@ https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocol
 https://download.kde.org/stable/release-service/25.12.2/src/ark-25.12.2.tar.xz
 https://download.kde.org/stable/release-service/25.12.2/src/dolphin-25.12.2.tar.xz
 https://download.kde.org/stable/release-service/25.12.2/src/dolphin-plugins-25.12.2.tar.xz
-https://github.com/KDAB/KDDockWidgets/releases/download/v2.4.0/kddockwidgets-2.4.0.tar.gz
+https://github.com/KDAB/KDDockWidgets/releases/download/v2.4.0/KDDockWidgets-2.4.0.tar.gz
 https://download.kde.org/stable/release-service/25.12.2/src/kdenlive-25.12.2.tar.xz
 https://download.kde.org/stable/release-service/25.12.2/src/kmix-25.12.2.tar.xz
 https://download.kde.org/stable/release-service/25.12.2/src/khelpcenter-25.12.2.tar.xz

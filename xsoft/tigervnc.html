@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-114">
+  <body class="blfs" id="blfs-r13.0-126">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-114
+        "phrase">(systemd</span> Edition) - Version r13.0-126
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-114">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-126">
           Home</a>
         </li>
       </ul>
@@ -168,7 +168,7 @@
           href="../general/pixman.html" title=
           "Pixman-0.46.4">Pixman-0.46.4</a>, <span class="phrase"><a class=
           "xref" href="../general/systemd.html" title=
-          "Systemd-259.1">Systemd-259.1</a> (with <a class="xref" href=
+          "Systemd-259.5">Systemd-259.5</a> (with <a class="xref" href=
           "../postlfs/linux-pam.html" title=
           "Linux-PAM-1.7.2">Linux-PAM-1.7.2</a>),</span> <a class="xref"
           href="../x/x7app.html" title="Xorg Applications">Xorg
@@ -207,6 +207,12 @@
         <pre class="userinput"><kbd class=
         "command">sed -i "/FL_MINOR_VERSION/s/3/4/" CMakeLists.txt</kbd></pre>
         <p>
+          Next, adapt to nettle-4 and higher:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">grep -rl _digest | xargs sed -Ei '/digest/s/([^,]*),.*,(.*)/\1,\2/' &amp;&amp;
+grep -rl _DIGEST | xargs sed -i '/DIGEST/s/, 16//'</kbd></pre>
+        <p>
           Install <span class="application">tigervnc</span> by running the
           following commands:
         </p>
@@ -215,8 +221,12 @@ mkdir -p unix/xserver &amp;&amp;
 tar -xf ../xorg-server-21.1.21.tar.xz \
     --strip-components=1              \
     -C unix/xserver                   &amp;&amp;
-( cd unix/xserver &amp;&amp;
-  patch -Np1 -i ../xserver21.patch ) &amp;&amp;
+( cd unix/xserver                              &amp;&amp;
+  patch -Np1 -i ../xserver21.patch             &amp;&amp;
+  sed -e '/sha.h/s/sha/sha1/'                  \
+      -e '/sha1/a #include &lt;nettle/version.h&gt;' \
+      -e 's/ctx, 20/ctx/'                      \
+      -i os/xsha1.c )                 &amp;&amp;
 
 # Build viewer
 cmake -G "Unix Makefiles"          \
@@ -231,12 +241,11 @@ pushd unix/xserver &amp;&amp;
 
   CPPFLAGS="-I/usr/include/drm"       \
   ./configure $XORG_CONFIG            \
-      --disable-xwayland    --disable-dri        --disable-dmx         \
       --disable-xorg        --disable-xnest      --disable-xvfb        \
       --disable-xwin        --disable-xephyr     --disable-kdrive      \
       --disable-devel-docs  --disable-config-hal --disable-config-udev \
       --disable-unit-tests  --disable-selective-werror                 \
-      --disable-static      --enable-dri3                              \
+      --disable-static      --enable-dri3        --disable-dri         \
       --without-dtrace      --enable-dri2        --enable-glx          \
       --with-pic &amp;&amp;
   make  &amp;&amp;
@@ -500,7 +509,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-114">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-126">
           Home</a>
         </li>
       </ul>
