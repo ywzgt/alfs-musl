@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-126">
+  <body class="blfs" id="blfs-r13.0-136">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-126
+        "phrase">(systemd</span> Edition) - Version r13.0-136
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-126">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-136">
           Home</a>
         </li>
       </ul>
@@ -118,7 +118,8 @@
         </h4>
         <p class="optional">
           <a class="xref" href="git.html" title="Git-2.53.0">git-2.53.0</a>
-          (for downloading some tests)
+          (for downloading some tests) and <a class="ulink" href=
+          "https://github.com/doctest/doctest">doctest</a>
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -156,10 +157,10 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
           To test the results, issue: <span class="command"><strong>cmake ..
           -D FASTFLOAT_TEST=ON &amp;&amp; ninja &amp;&amp; ninja
           test</strong></span>. Note that the tests download some test files
-          from the Internet, and those files would have been installed if the
-          test suite had run before <span class="command"><strong>ninja
-          install</strong></span>, so don't run the test suite before
-          installation.
+          and the external doctest test framework from the Internet, and the
+          doctest package would have been installed if the test suite had run
+          before <span class="command"><strong>ninja install</strong></span>,
+          so don't run the test suite before installation.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -205,7 +206,7 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-126">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-136">
           Home</a>
         </li>
       </ul>
