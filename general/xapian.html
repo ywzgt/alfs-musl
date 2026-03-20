@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Xapian-1.4.31
+      Xapian-2.0.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-154">
+  <body class="blfs" id="blfs-r13.0-164">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-154
+        "phrase">(systemd</span> Edition) - Version r13.0-164
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-154">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-164">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="xapian" name="xapian"></a>Xapian-1.4.31
+      <a id="xapian" name="xapian"></a>Xapian-2.0.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -76,28 +76,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://oligarchy.co.uk/xapian/1.4.31/xapian-core-1.4.31.tar.xz">
-                https://oligarchy.co.uk/xapian/1.4.31/xapian-core-1.4.31.tar.xz</a>
+                "https://oligarchy.co.uk/xapian/2.0.0/xapian-core-2.0.0.tar.xz">
+                https://oligarchy.co.uk/xapian/2.0.0/xapian-core-2.0.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: da6d569a7bd0eff2ea738ec12d824355
+                Download MD5 sum: 8105ac73b1a6510501ecea8f0e78b9b3
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 3.1 MB
+                Download size: 3.3 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 147 MB (add 172 MB for tests)
+                Estimated disk space required: 174 MB (add 157 MB for tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.4 SBU (add 8.9 SBU for tests; both
+                Estimated build time: 0.6 SBU (add 7.0 SBU for tests; both
                 using parallelism=4)
               </p>
             </li>
@@ -125,7 +125,7 @@
         <pre class="userinput"><kbd class=
         "command">./configure --prefix=/usr    \
             --disable-static \
-            --docdir=/usr/share/doc/xapian-core-1.4.31 &amp;&amp;
+            --docdir=/usr/share/doc/xapian-core-2.0.0 &amp;&amp;
 make</kbd></pre>
         <p>
           To run the test suite, issue: <span class="command"><strong>make
@@ -144,10 +144,10 @@ make</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">copydatabase, quest, simpleexpand,
-              simpleindex, simplesearch, xapian-check, xapian-compact,
-              xapian-config, xapian-delve, xapian-metadata, xapian-pos,
-              xapian-progsrv, xapian-replicate, xapian-replicate-server and
+              <span class="segbody">copydatabase, simpleexpand, simpleindex,
+              simplesearch, xapian-check, xapian-compact, xapian-config,
+              xapian-delve, xapian-metadata, xapian-pos, xapian-progsrv,
+              xapian-quest, xapian-replicate, xapian-replicate-server, and
               xapian-tcpsrv</span>
             </div>
             <div class="seg">
@@ -157,7 +157,7 @@ make</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/xapian,
-              /usr/lib/cmake/xapian, /usr/share/doc/xapian-core-1.4.31, and
+              /usr/lib/cmake/xapian, /usr/share/doc/xapian-core-2.0.0, and
               /usr/share/xapian-core</span>
             </div>
           </div>
@@ -190,9 +190,9 @@ make</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="quest" name="quest"></a><span class=
+                    <a id="xapian-quest" name="xapian-quest"></a><span class=
                     "term"><span class=
-                    "command"><strong>quest</strong></span></span>
+                    "command"><strong>xapian-quest</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -417,7 +417,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-154">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-164">
           Home</a>
         </li>
       </ul>
