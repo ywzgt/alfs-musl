@@ -1,0 +1,102 @@
+diff --git a/wget-list b/wget-list
+index 3c022af1a4..2d615d1d93 100644
+--- a/wget-list
++++ b/wget-list
+@@ -96,7 +96,7 @@ https://github.com/lfs-book/gmmlib/archive/v22.9.0/gmmlib-22.9.0.tar.gz
+ https://ftpmirror.gnu.org/gsl/gsl-2.8.tar.gz
+ https://download.gnome.org/sources/gspell/1.14/gspell-1.14.3.tar.xz
+ https://github.com/google/highway/archive/1.3.0/highway-1.3.0.tar.gz
+-https://github.com/unicode-org/icu/releases/download/release-78.2/icu4c-78.2-sources.tgz
++https://github.com/unicode-org/icu/releases/download/release-78.3/icu4c-78.3-sources.tgz
+ https://github.com/benhoyt/inih/archive/r62/inih-r62.tar.gz
+ https://github.com/akheron/jansson/releases/download/v2.15.0/jansson-2.15.0.tar.bz2
+ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.18.tar.gz
+@@ -115,7 +115,7 @@ https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+ https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.3.0/downloads/libdisplay-info-0.3.0.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.12.1.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.59.tar.bz2
+-https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.55.tar.xz
++https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.56.tar.xz
+ https://download.gnome.org/sources/libgudev/238/libgudev-238.tar.xz
+ https://github.com/hughsie/libgusb/releases/download/0.4.9/libgusb-0.4.9.tar.xz
+ https://github.com/libical/libical/releases/download/v3.0.20/libical-3.0.20.tar.gz
+@@ -177,7 +177,7 @@ https://github.com/nemtrif/utfcpp/archive/v4.0.9/utfcpp-4.0.9.tar.gz
+ https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.24.0/downloads/wayland-1.24.0.tar.xz
+ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.47/downloads/wayland-protocols-1.47.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+-https://oligarchy.co.uk/xapian/1.4.31/xapian-core-1.4.31.tar.xz
++https://oligarchy.co.uk/xapian/2.0.0/xapian-core-2.0.0.tar.xz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+ https://download.gimp.org/pub/babl/0.1/babl-0.1.124.tar.xz
+ https://github.com/Exiv2/exiv2/archive/v0.28.8/exiv2-0.28.8.tar.gz
+@@ -193,7 +193,7 @@ https://download.gnome.org/sources/glycin/2.0/glycin-2.0.8.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.8-xorg_prefix-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.8-xbm_xpm-1.patch
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+-https://github.com/harfbuzz/harfbuzz/releases/download/13.1.1/harfbuzz-13.1.1.tar.xz
++https://github.com/harfbuzz/harfbuzz/releases/download/13.2.0/harfbuzz-13.2.0.tar.xz
+ https://github.com/jasper-software/jasper/archive/version-4.2.9/jasper-version-4.2.9.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.18/lcms2-2.18.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.4.0/libavif-1.4.0.tar.gz
+@@ -613,7 +613,7 @@ https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libsoup-3.6.6-upstream_fixes-1.patch
+ https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.7.tar.bz2
+ https://notroj.github.io/neon/neon-0.37.1.tar.gz
+-https://github.com/nghttp2/nghttp2/releases/download/v1.68.0/nghttp2-1.68.0.tar.xz
++https://github.com/nghttp2/nghttp2/releases/download/v1.68.1/nghttp2-1.68.1.tar.xz
+ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.4.4.tar.xz
+ https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
+ http://links.twibright.com/download/links-2.30.tar.bz2
+@@ -916,10 +916,10 @@ https://downloads.sourceforge.net/gparted/gparted-1.8.1.tar.gz
+ https://inkscape.org/gallery/item/58914/inkscape-1.4.3.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.3-poppler-26_fixes.patch
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/140.8.0esr/source/thunderbird-140.8.0esr.source.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.0esr-python_3.14_fixes-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.0esr-glibc-2.43.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.0esr-llvm_22-1.patch
++https://archive.mozilla.org/pub/thunderbird/releases/140.8.1esr/source/thunderbird-140.8.1esr.source.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.1esr-python_3.14_fixes-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.1esr-glibc-2.43.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.1esr-llvm_22-1.patch
+ https://github.com/TigerVNC/tigervnc/archive/v1.16.0/tigervnc-1.16.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.16.0-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.1.1/transmission-4.1.1.tar.xz
+@@ -962,7 +962,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/libcanberra-0.30-wayland-1.pat
+ https://downloads.sourceforge.net/libcddb/libcddb-1.3.2.tar.bz2
+ https://ftpmirror.gnu.org/libcdio/libcdio-2.1.0.tar.bz2
+ https://ftpmirror.gnu.org/libcdio/libcdio-paranoia-10.2+2.0.2.tar.bz2
+-https://github.com/strukturag/libde265/releases/download/v1.0.16/libde265-1.0.16.tar.gz
++https://github.com/strukturag/libde265/releases/download/v1.0.18/libde265-1.0.18.tar.gz
+ https://get.videolan.org/libdvdcss/1.5.0/libdvdcss-1.5.0.tar.xz
+ https://get.videolan.org/libdvdread/7.0.1/libdvdread-7.0.1.tar.xz
+ https://get.videolan.org/libdvdnav/7.0.0/libdvdnav-7.0.0.tar.xz
+@@ -982,7 +982,7 @@ https://github.com/webmproject/libvpx/archive/v1.16.0/libvpx-1.16.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libvpx-1.16.0-security_fix-1.patch
+ https://github.com/mltframework/mlt/releases/download/v7.36.1/mlt-7.36.1.tar.gz
+ https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz
+-https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.1/pipewire-1.6.1.tar.bz2
++https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.2/pipewire-1.6.2.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.2.tar.xz
+ https://www.libsdl.org/release/sdl2-compat-2.32.64.tar.gz
+@@ -1012,8 +1012,8 @@ https://downloads.sourceforge.net/mpg123/mpg123-1.33.4.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-6.2.tar.xz
+ https://github.com/nicklan/pnmixer/releases/download/v0.7.2/pnmixer-v0.7.2.tar.gz
+ https://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.3.tar.gz
+-https://ffmpeg.org/releases/ffmpeg-8.0.1.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-8.0.1-chromium_method-1.patch
++https://ffmpeg.org/releases/ffmpeg-8.1.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-8.1-chromium_method-1.patch
+ https://github.com/mpv-player/mpv/archive/v0.41.0/mpv-0.41.0.tar.gz
+ https://download.videolan.org/vlc/3.0.23/vlc-3.0.23.tar.xz
+ https://downloads.sourceforge.net/xine/xine-ui-0.99.14.tar.xz
+@@ -1028,7 +1028,7 @@ https://github.com/OpenPrinting/cups/releases/download/v2.4.16/cups-2.4.16-sourc
+ https://github.com/OpenPrinting/cups-browsed/releases/download/2.1.1/cups-browsed-2.1.1.tar.xz
+ https://github.com/OpenPrinting/cups-filters/releases/download/2.0.1/cups-filters-2.0.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/cups-filters-2.0.1-security_fix-1.patch
+-https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10060/ghostscript-10.07.0.tar.xz
++https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10070/ghostscript-10.07.0.tar.xz
+ https://downloads.sourceforge.net/gs-fonts/ghostscript-fonts-std-8.11.tar.gz
+ https://downloads.sourceforge.net/gs-fonts/gnu-gs-fonts-other-6.0.tar.gz
+ https://downloads.sourceforge.net/gimp-print/gutenprint-5.3.5.tar.xz
