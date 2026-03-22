@@ -1,0 +1,32 @@
+diff --git a/wget-list b/wget-list
+index 2d615d1d93..a2a06c7646 100644
+--- a/wget-list
++++ b/wget-list
+@@ -159,7 +159,7 @@ https://nodejs.org/dist/v22.22.1/node-v22.22.1.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.38.2/src/nspr-4.38.2.tar.gz
+ https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
+-https://github.com/protocolbuffers/protobuf/releases/download/v34.0/protobuf-34.0.tar.gz
++https://github.com/protocolbuffers/protobuf/releases/download/v34.1/protobuf-34.1.tar.gz
+ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.2-protobuf34_fix-1.patch
+ https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
+@@ -193,7 +193,7 @@ https://download.gnome.org/sources/glycin/2.0/glycin-2.0.8.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.8-xorg_prefix-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.0.8-xbm_xpm-1.patch
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+-https://github.com/harfbuzz/harfbuzz/releases/download/13.2.0/harfbuzz-13.2.0.tar.xz
++https://github.com/harfbuzz/harfbuzz/releases/download/13.2.1/harfbuzz-13.2.1.tar.xz
+ https://github.com/jasper-software/jasper/archive/version-4.2.9/jasper-version-4.2.9.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.18/lcms2-2.18.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.4.0/libavif-1.4.0.tar.gz
+@@ -954,8 +954,7 @@ https://github.com/lfs-book/intel-media-driver/archive/v25.4.6/intel-media-drive
+ https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
+ https://distfiles.adelielinux.org/source/a52dec/a52dec-0.8.0.tar.gz
+ https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
+-https://storage.googleapis.com/aom-releases/libaom-3.13.1.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libaom-3.13.1-nasm3-1.patch
++https://storage.googleapis.com/aom-releases/libaom-3.13.2.tar.gz
+ https://github.com/libass/libass/releases/download/0.17.4/libass-0.17.4.tar.xz
+ https://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libcanberra-0.30-wayland-1.patch
