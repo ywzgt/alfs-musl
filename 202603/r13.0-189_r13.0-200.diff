@@ -1,0 +1,124 @@
+diff --git a/wget-list b/wget-list
+index 1c3b01bc5f..7fbbd5befe 100644
+--- a/wget-list
++++ b/wget-list
+@@ -155,7 +155,7 @@ https://github.com/pantoniou/libfyaml/releases/download/v0.9.6/libfyaml-0.9.6.ta
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_2/log4cplus-2.1.2.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
+-https://nodejs.org/dist/v22.22.1/node-v22.22.1.tar.xz
++https://nodejs.org/dist/v24.14.1/node-v24.14.1.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.38.2/src/nspr-4.38.2.tar.gz
+ https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
+@@ -165,8 +165,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.2-protobuf34_fi
+ https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.13.0/qcoro-0.13.0.tar.gz
+ https://github.com/simdutf/simdutf/archive/v8.2.0/simdutf-8.2.0.tar.gz
+-https://archive.mozilla.org/pub/firefox/releases/140.8.0esr/source/firefox-140.8.0esr.source.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.8.0-python_3.14_fixes-1.patch
++https://archive.mozilla.org/pub/firefox/releases/140.9.0esr/source/firefox-140.9.0esr.source.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.9.0-python_3.14_fixes-1.patch
+ https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.341.0/SPIRV-Headers-vulkan-sdk-1.4.341.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.341.0/SPIRV-Tools-vulkan-sdk-1.4.341.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v22.1.0/SPIRV-LLVM-Translator-22.1.0.tar.gz
+@@ -205,8 +205,8 @@ https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.3/libjpeg-t
+ https://github.com/libjxl/libjxl/archive/v0.11.2/libjxl-0.11.2.tar.gz
+ https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
+ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz
+-https://downloads.sourceforge.net/libpng/libpng-1.6.55.tar.xz
+-https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.54-apng.patch.gz
++https://downloads.sourceforge.net/libpng/libpng-1.6.56.tar.xz
++https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.55-apng.patch.gz
+ https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
+ https://www.libraw.org/data/LibRaw-0.22.0.tar.gz
+ https://download.gnome.org/sources/librsvg/2.62/librsvg-2.62.1.tar.xz
+@@ -467,6 +467,7 @@ https://www.php.net/distributions/php-8.5.4.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/3.14.3/Python-3.14.3.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.3-security_fixes-1.patch
+ https://www.python.org/ftp/python/doc/3.14.3/python-3.14.3-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+@@ -492,7 +493,7 @@ https://download.gnome.org/sources/pyatspi/2.58/pyatspi-2.58.2.tar.xz
+ https://github.com/pygobject/pycairo/releases/download/v1.29.0/pycairo-1.29.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.19.2.tar.gz
+-https://download.gnome.org/sources/pygobject/3.56/pygobject-3.56.1.tar.gz
++https://download.gnome.org/sources/pygobject/3.56/pygobject-3.56.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.3.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pytest/pytest-9.0.2.tar.gz
+@@ -500,8 +501,8 @@ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603f
+ https://www.linuxfromscratch.org/patches/blfs/svn/pyxdg-0.28-python3_14-fixes-1.patch
+ https://files.pythonhosted.org/packages/source/P/PyYAML/pyyaml-6.0.3.tar.gz
+ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
+-https://files.pythonhosted.org/packages/source/r/requests/requests-2.32.5.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/requests-use_system_certs-1.patch
++https://files.pythonhosted.org/packages/source/r/requests/requests-2.33.0.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/requests-use_system_certs-2.patch
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+ https://github.com/getsentry/sentry-python/releases/download/2.53.0/sentry_sdk-2.53.0.tar.gz
+ https://files.pythonhosted.org/packages/source/s/six/six-1.17.0.tar.gz
+@@ -678,7 +679,7 @@ https://github.com/KhronosGroup/glslang/archive/16.2.0/glslang-16.2.0.tar.gz
+ https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
+ https://download.gnome.org/sources/goffice/0.10/goffice-0.10.60.tar.xz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+-https://download.gnome.org/sources/gtk/3.24/gtk-3.24.51.tar.xz
++https://download.gnome.org/sources/gtk/3.24/gtk-3.24.52.tar.xz
+ https://download.gnome.org/sources/gtk/4.22/gtk-4.22.1.tar.xz
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.10.tar.xz
+ https://download.gnome.org/sources/gtkmm/4.22/gtkmm-4.22.0.tar.xz
+@@ -899,10 +900,10 @@ https://download.documentfoundation.org/libreoffice/src/26.2.1/libreoffice-trans
+ https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-26.2.1.2-poppler_26.02-1.patch
+ https://download.gnome.org/sources/epiphany/49/epiphany-49.3.tar.xz
+ https://download.kde.org/stable/release-service/25.12.2/src/falkon-25.12.2.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.8.0esr-ffmpeg-8.0.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.8.0esr-glibc-2.43.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.8.0esr-python_3.14_fixes-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.8.0esr-llvm_22-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.9.0esr-ffmpeg-8.0.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.9.0esr-glibc-2.43.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.9.0esr-python_3.14_fixes-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.9.0esr-llvm_22-1.patch
+ https://archive.seamonkey-project.org/releases/2.53.23/source/seamonkey-2.53.23.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-libvpx_security_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-cxx17-1.patch
+@@ -916,10 +917,10 @@ https://downloads.sourceforge.net/gparted/gparted-1.8.1.tar.gz
+ https://inkscape.org/gallery/item/58914/inkscape-1.4.3.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.3-poppler-26_fixes.patch
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/140.8.1esr/source/thunderbird-140.8.1esr.source.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.1esr-python_3.14_fixes-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.1esr-glibc-2.43.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.8.1esr-llvm_22-1.patch
++https://archive.mozilla.org/pub/thunderbird/releases/140.9.0esr/source/thunderbird-140.9.0esr.source.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.9.0esr-python_3.14_fixes-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.9.0esr-glibc-2.43.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.9.0esr-llvm_22-1.patch
+ https://github.com/TigerVNC/tigervnc/archive/v1.16.0/tigervnc-1.16.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.16.0-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.1.1/transmission-4.1.1.tar.xz
+@@ -939,7 +940,7 @@ https://github.com/lfs-book/faac/archive/v1.40/faac-1.40.tar.gz
+ https://github.com/knik0/faad2/archive/2.11.2/faad2-2.11.2.tar.gz
+ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
+ https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
+-https://github.com/dyne/frei0r/archive/v2.5.4/frei0r-2.5.4.tar.gz
++https://github.com/dyne/frei0r/archive/v2.5.6/frei0r-2.5.6.tar.gz
+ https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
+ https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.1.tar.xz
+ https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.28.1.tar.xz
+@@ -990,10 +991,10 @@ https://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2
+ https://www.surina.net/soundtouch/soundtouch-2.4.0.tar.gz
+ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+-https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v4.0.1/SVT-AV1-v4.0.1.tar.gz
++https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v4.1.0/SVT-AV1-v4.1.0.tar.gz
+ https://taglib.org/releases/taglib-2.2.1.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.32.0.tar.xz
+-https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.13/wireplumber-0.5.13.tar.bz2
++https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.14/wireplumber-0.5.14.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20250815.tar.xz
+ https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz
+ https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
