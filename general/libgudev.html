@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-200">
+  <body class="blfs" id="blfs-r13.0-204">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-200
+        "phrase">(systemd</span> Edition) - Version r13.0-204
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-200">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-204">
           Home</a>
         </li>
       </ul>
@@ -116,7 +116,7 @@
         <p class="optional">
           <a class="xref" href="gtk-doc.html" title=
           "GTK-Doc-1.36.0">GTK-Doc-1.36.0</a> and <a class="xref" href=
-          "umockdev.html" title="Umockdev-0.19.6">umockdev-0.19.6</a> (for
+          "umockdev.html" title="Umockdev-0.19.7">umockdev-0.19.7</a> (for
           testing)
         </p>
       </div>
@@ -135,7 +135,9 @@ meson setup --prefix=/usr --buildtype=release .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
-          test</strong></span>.
+          test</strong></span>. One test, <code class=
+          "filename">libgudev:test-gudevdevice</code>, is known to fail with
+          systemd-259.4 and later.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -227,7 +229,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-200">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-204">
           Home</a>
         </li>
       </ul>
