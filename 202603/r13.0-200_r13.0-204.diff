@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index 7fbbd5befe..ab3db71576 100644
+--- a/wget-list
++++ b/wget-list
+@@ -172,7 +172,7 @@ https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.341.0/SPIRV-T
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v22.1.0/SPIRV-LLVM-Translator-22.1.0.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.4.4.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+-https://github.com/martinpitt/umockdev/releases/download/0.19.6/umockdev-0.19.6.tar.xz
++https://github.com/martinpitt/umockdev/releases/download/0.19.7/umockdev-0.19.7.tar.xz
+ https://github.com/nemtrif/utfcpp/archive/v4.0.9/utfcpp-4.0.9.tar.gz
+ https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.24.0/downloads/wayland-1.24.0.tar.xz
+ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.47/downloads/wayland-protocols-1.47.tar.xz
+@@ -201,7 +201,7 @@ https://github.com/libexif/libexif/releases/download/v0.6.25/libexif-0.6.25.tar.
+ https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
+ https://github.com/strukturag/libheif/releases/download/v1.21.2/libheif-1.21.2.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libheif-1.21.2-svt_av1_build_fix-1.patch
+-https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.3/libjpeg-turbo-3.1.3.tar.gz
++https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.3/libjpeg-turbo-3.1.4.tar.gz
+ https://github.com/libjxl/libjxl/archive/v0.11.2/libjxl-0.11.2.tar.gz
+ https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
+ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz
+@@ -840,7 +840,7 @@ https://archive.xfce.org/src/xfce/tumbler/4.20/tumbler-4.20.1.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-appfinder/4.20/xfce4-appfinder-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-power-manager/4.20/xfce4-power-manager-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-settings/4.20/xfce4-settings-4.20.4.tar.bz2
+-https://archive.xfce.org/src/xfce/xfdesktop/4.20/xfdesktop-4.20.1.tar.bz2
++https://archive.xfce.org/src/xfce/xfdesktop/4.20/xfdesktop-4.20.2.tar.bz2
+ https://archive.xfce.org/src/xfce/xfwm4/4.20/xfwm4-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-session/4.20/xfce4-session-4.20.4.tar.bz2
+ https://archive.xfce.org/src/apps/parole/4.20/parole-4.20.0.tar.xz
