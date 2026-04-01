@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-216">
+  <body class="blfs" id="blfs-r13.0-230">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-216
+        "phrase">(systemd</span> Edition) - Version r13.0-230
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-216">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-230">
           Home</a>
         </li>
       </ul>
@@ -98,12 +98,12 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 71 GB (943 MB installed)
+                Estimated disk space required: 48 GB (499 MB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 36 SBU (using parallelism=8)
+                Estimated build time: 12 SBU (using parallelism=8)
               </p>
             </li>
           </ul>
@@ -330,8 +330,9 @@ ln -sfnv qt-6.11.0 /opt/qt6</kbd></pre>
           </p>
         </div>
         <p>
-          Disable a conflicting declaration on i686 systems and fix a build
-          error due to SIMD intrinsics in QtMultimedia:
+          First, if you are on an i686 system, disable a conflicting
+          declaration and fix a build error due to SIMD intrinsics in
+          QtMultimedia:
         </p>
         <pre class="userinput"><kbd class=
         "command">if [ "$(uname -m)" == "i686" ]; then
@@ -340,22 +341,26 @@ ln -sfnv qt-6.11.0 /opt/qt6</kbd></pre>
     export CXXFLAGS+="-DDISABLE_SIMD -DPFFFT_SIMD_DISABLE"
 fi</kbd></pre>
         <p>
+          Next, remove two components that are not used in BLFS and take a
+          long time to build. Also, remove qtwebengine because we build that
+          component separately with system-installed components.
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">rm -rf qtwebengine qt3d qtquick3dphysics</kbd></pre>
+        <p>
           Install <span class="application">Qt6</span> by running the
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure -prefix $QT6PREFIX      \
-            -sysconfdir /etc/xdg    \
-            -dbus-linked            \
-            -openssl-linked         \
-            -system-sqlite          \
-            -nomake examples        \
-            -no-rpath               \
-            -no-sbom                \
-            -journald               \
-            -skip qt3d              \
-            -skip qtquick3dphysics  \
-            -skip qtwebengine       &amp;&amp;
+        "command">./configure -prefix $QT6PREFIX   \
+            -sysconfdir /etc/xdg \
+            -dbus-linked         \
+            -openssl-linked      \
+            -system-sqlite       \
+            -nomake examples     \
+            -no-rpath            \
+            -no-sbom             \
+            -journald            &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -1179,7 +1184,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-216">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-230">
           Home</a>
         </li>
       </ul>
