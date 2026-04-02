@@ -1,0 +1,111 @@
+diff --git a/wget-list b/wget-list
+index 0996652148..b7e375ba04 100644
+--- a/wget-list
++++ b/wget-list
+@@ -61,7 +61,7 @@ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/25.12.2/src/kate-25.12.2.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.7/mousepad-0.7.0.tar.xz
+ https://www.nano-editor.org/dist/v8/nano-8.7.1.tar.xz
+-https://github.com/vim/vim/archive/v9.2.0161/vim-9.2.0161.tar.gz
++https://github.com/vim/vim/archive/v9.2.0272/vim-9.2.0272.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.2.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+@@ -130,7 +130,7 @@ https://github.com/flatpak/libportal/releases/download/0.9.1/libportal-0.9.1.tar
+ https://www.linuxfromscratch.org/patches/blfs/svn/libportal-0.9.1-qt6.9_fixes-1.patch
+ https://github.com/libproxy/libproxy/archive/0.5.12/libproxy-0.5.12.tar.gz
+ http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+-https://github.com/Qalculate/libqalculate/releases/download/v5.9.0/libqalculate-5.9.0.tar.gz
++https://github.com/Qalculate/libqalculate/releases/download/v5.10.0/libqalculate-5.10.0.tar.gz
+ https://gitlab.freedesktop.org/mobile-broadband/libqmi/-/archive/1.38.0/libqmi-1.38.0.tar.gz
+ https://github.com/seccomp/libseccomp/releases/download/v2.6.0/libseccomp-2.6.0.tar.gz
+ https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.1.tar.xz
+@@ -282,7 +282,7 @@ https://download.librdf.org/source/raptor2-2.0.16.tar.gz
+ https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+ https://download.librdf.org/source/redland-1.0.17.tar.gz
+ https://sysstat.github.io/sysstat-packages/sysstat-12.7.9.tar.xz
+-https://github.com/systemd/systemd/archive/v259.5/systemd-259.5.tar.gz
++https://github.com/systemd/systemd/archive/v260.1/systemd-260.1.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.11.1/udisks-2.11.1.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-7.2.4.tar.gz
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.1/upower-v1.91.1.tar.bz2
+@@ -341,7 +341,7 @@ https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.098.tar.gz
+ https://www.cpan.org/authors/id/G/GA/GAAS/IO-String-1.08.tar.gz
+ https://www.cpan.org/authors/id/R/RJ/RJBS/IPC-Run3-0.049.tar.gz
+ https://www.cpan.org/authors/id/A/AL/ALINKE/Lingua-Translit-0.29.tar.gz
+-https://www.cpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.81.tar.gz
++https://www.cpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.82.tar.gz
+ https://www.cpan.org/authors/id/D/DR/DROLSKY/List-AllUtils-0.19.tar.gz
+ https://www.cpan.org/authors/id/R/RE/REHSACK/List-MoreUtils-0.430.tar.gz
+ https://www.cpan.org/authors/id/E/ET/ETJ/Log-Log4perl-1.57.tar.gz
+@@ -485,13 +485,13 @@ https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/html5lib-1.1-python_3.14_buildfix-1.patch
+ https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.0.2.tar.gz
+ https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.10.tar.gz
+-https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.4.3.tar.gz
++https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.4.4.tar.gz
+ https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.2.2.tar.gz
+ https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
+ https://download.gnome.org/sources/pyatspi/2.58/pyatspi-2.58.2.tar.xz
+ https://github.com/pygobject/pycairo/releases/download/v1.29.0/pycairo-1.29.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
+-https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.19.2.tar.gz
++https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.20.0.tar.gz
+ https://download.gnome.org/sources/pygobject/3.56/pygobject-3.56.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.3.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+@@ -500,7 +500,7 @@ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603f
+ https://www.linuxfromscratch.org/patches/blfs/svn/pyxdg-0.28-python3_14-fixes-1.patch
+ https://files.pythonhosted.org/packages/source/P/PyYAML/pyyaml-6.0.3.tar.gz
+ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
+-https://files.pythonhosted.org/packages/source/r/requests/requests-2.33.0.tar.gz
++https://files.pythonhosted.org/packages/source/r/requests/requests-2.33.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/requests-use_system_certs-2.patch
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+ https://github.com/getsentry/sentry-python/releases/download/2.53.0/sentry_sdk-2.53.0.tar.gz
+@@ -559,8 +559,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/subversion-1.14.5-upstream_fix
+ https://downloads.sourceforge.net/swig/swig-4.4.1.tar.gz
+ https://downloads.sourceforge.net/tcl/tk8.6.17-src.tar.gz
+ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+-https://download.gnome.org/sources/vala/0.56/vala-0.56.18.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/vala-0.56.18-graphviz_13_fix-1.patch
++https://download.gnome.org/sources/vala/0.56/vala-0.56.19.tar.xz
+ https://sourceware.org/pub/valgrind/valgrind-3.26.0.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/valgrind-3.26.0-upstream_fixes-1.patch
+ https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
+@@ -577,7 +576,7 @@ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
+ https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.8.tar.bz2
+ https://www.samba.org/ftp/rsync/src/rsync-3.4.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/rsync-3.4.1-security_fix-1.patch
+-https://download.samba.org/pub/samba/stable/samba-4.23.6.tar.gz
++https://download.samba.org/pub/samba/stable/samba-4.24.0.tar.gz
+ https://ftpmirror.gnu.org/wget/wget-1.25.0.tar.gz
+ https://www.kernel.org/pub/software/network/iw/iw-6.17.tar.xz
+ https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
+@@ -909,7 +908,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-cxx17-1.patc
+ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+ https://feh.finalrewind.org/feh-3.11.3.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
+-https://github.com/freerdp/freerdp/archive/3.24.1/FreeRDP-3.24.1.tar.gz
++https://github.com/freerdp/freerdp/archive/3.24.2/FreeRDP-3.24.2.tar.gz
+ https://download.gimp.org/gimp/v3.2/gimp-3.2.0.tar.xz
+ https://download.gimp.org/pub/gimp/help/gimp-help-3.0.2.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.8.1.tar.gz
+@@ -925,7 +924,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.16.0-configuration_
+ https://github.com/transmission/transmission/releases/download/4.1.1/transmission-4.1.1.tar.xz
+ https://github.com/ib/xarchiver/archive/0.5.4.26/xarchiver-0.5.4.26.tar.gz
+ https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz
+-https://www.jwz.org/xscreensaver/xscreensaver-6.14.tar.gz
++https://www.jwz.org/xscreensaver/xscreensaver-6.15.tar.gz
+ https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.15.3.tar.bz2
+ https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-1.2.15.3.tar.bz2
+ https://www.alsa-project.org/files/pub/plugins/alsa-plugins-1.2.12.tar.bz2
+@@ -987,7 +986,7 @@ https://www.kernel.org/pub/linux/bluetooth/sbc-2.2.tar.xz
+ https://www.libsdl.org/release/sdl2-compat-2.32.64.tar.gz
+ https://www.libsdl.org/release/SDL3-3.4.2.tar.gz
+ https://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2
+-https://www.surina.net/soundtouch/soundtouch-2.4.0.tar.gz
++https://www.surina.net/soundtouch/soundtouch-2.4.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v4.1.0/SVT-AV1-v4.1.0.tar.gz
