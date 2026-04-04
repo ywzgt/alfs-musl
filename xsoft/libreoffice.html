@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-244">
+  <body class="blfs" id="blfs-r13.0-264">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-244
+        "phrase">(systemd</span> Edition) - Version r13.0-264
       </h4>
       <h3>
         Chapter&nbsp;39.&nbsp;Office Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-244">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-264">
           Home</a>
         </li>
       </ul>
@@ -234,7 +234,7 @@
           "gst-plugins-base-1.28.1">gst-plugins-base-1.28.1</a>, <a class=
           "xref" href="../x/gtk3.html" title="GTK-3.24.52">GTK-3.24.52</a>,
           <a class="xref" href="../general/harfbuzz.html" title=
-          "harfBuzz-13.2.1">harfBuzz-13.2.1</a>, <a class="xref" href=
+          "harfBuzz-14.0.0">harfBuzz-14.0.0</a>, <a class="xref" href=
           "../general/icu.html" title="icu-78.3">ICU-78.3</a>, <a class=
           "xref" href="../general/libatomic_ops.html" title=
           "libatomic_ops-7.10.0">libatomic_ops-7.10.0</a>, <a class="xref"
@@ -261,7 +261,7 @@
           "xref" href="../server/openldap.html" title=
           "OpenLDAP-2.6.13">OpenLDAP-2.6.13</a> (if connecting to an LDAP
           server), <a class="xref" href="../general/poppler.html" title=
-          "Poppler-26.03.0">Poppler-26.03.0</a>, <a class="xref" href=
+          "Poppler-26.04.0">Poppler-26.04.0</a>, <a class="xref" href=
           "../server/postgresql.html" title=
           "PostgreSQL-18.3">PostgreSQL-18.3</a>, <a class="xref" href=
           "../general/redland.html" title=
@@ -404,6 +404,14 @@
         <h2 class="sect2">
           Installation of LibreOffice
         </h2>
+        <p>
+          First, fix build failures introduced by the latest version of
+          poppler:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e '/, const GooString/ s/GooString *\*/std::string \&amp;/' \
+    -i sdext/source/pdfimport/xpdfwrapper/pdfioutdev_gpl.cxx \
+       sdext/source/pdfimport/xpdfwrapper/pdfioutdev_gpl.hxx</kbd></pre>
         <p>
           First, fix a bug with linking to zlib, fix a bug which would cause
           an install failure, and prevent compression of man pages:
@@ -1016,7 +1024,7 @@ fi</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-244">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-264">
           Home</a>
         </li>
       </ul>
