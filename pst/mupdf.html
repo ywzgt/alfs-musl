@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-264">
+  <body class="blfs" id="blfs-r13.0-270">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-264
+        "phrase">(systemd</span> Edition) - Version r13.0-270
       </h4>
       <h3>
         Chapter&nbsp;50.&nbsp;PostScript
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-264">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-270">
           Home</a>
         </li>
       </ul>
@@ -116,9 +116,10 @@
           Recommended
         </h4>
         <p class="recommended">
-          <a class="xref" href="../x/freeglut.html" title=
-          "Freeglut-3.8.0">Freeglut-3.8.0</a>, <a class="xref" href=
-          "../general/harfbuzz.html" title=
+          <a class="xref" href="../general/brotli.html" title=
+          "brotli-1.2.0">Brotli-1.2.0</a>, <a class="xref" href=
+          "../x/freeglut.html" title="Freeglut-3.8.0">Freeglut-3.8.0</a>,
+          <a class="xref" href="../general/harfbuzz.html" title=
           "harfBuzz-14.0.0">harfBuzz-14.0.0</a>, <a class="xref" href=
           "../general/libjpeg.html" title=
           "libjpeg-turbo-3.1.4.1">libjpeg-turbo-3.1.4.1</a>, <a class="xref"
@@ -130,7 +131,9 @@
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="../xsoft/xdg-utils.html" title=
+          <a class="xref" href="../general/zxing-cpp.html" title=
+          "zxing-cpp-3.0.2">zxing-cpp-3.0.2</a>, <a class="xref" href=
+          "../xsoft/xdg-utils.html" title=
           "xdg-utils-1.2.1">xdg-utils-1.2.1</a> (runtime), <a class="ulink"
           href="https://jbig2dec.com">jbig2dec</a>, and <a class="ulink"
           href="https://mujs.com/">MuJS</a>
@@ -154,6 +157,7 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">cat &gt; user.make &lt;&lt; EOF &amp;&amp;
+USE_SYSTEM_BROTLI := yes
 USE_SYSTEM_FREETYPE := yes
 USE_SYSTEM_HARFBUZZ := yes
 USE_SYSTEM_JBIG2DEC := no
@@ -199,6 +203,17 @@ ln -sfv mupdf-x11 /usr/bin/mupdf</kbd></pre>
           <span class="command"><strong>mupdf-gl</strong></span> and
           <span class="command"><strong>mupdf-x11</strong></span> when
           running <span class="command"><strong>mupdf</strong></span>.
+        </p>
+        <p>
+          <code class="option">barcode=yes</code>: Pass this option to
+          <span class="command"><strong>make</strong></span> if you want
+          barcode support. This will use the <span class=
+          "application">zxing-cpp</span> library included in the package. If
+          you want to use the system <a class="xref" href=
+          "../general/zxing-cpp.html" title=
+          "zxing-cpp-3.0.2">zxing-cpp-3.0.2</a>, you should add <span class=
+          "command"><strong>USE_SYSTEM_ZXINGCPP := yes</strong></span> to
+          <code class="filename">user.make</code>.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -349,7 +364,7 @@ ln -sfv mupdf-x11 /usr/bin/mupdf</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-264">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-270">
           Home</a>
         </li>
       </ul>

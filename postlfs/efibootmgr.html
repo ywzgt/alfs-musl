@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-264">
+  <body class="blfs" id="blfs-r13.0-270">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-264
+        "phrase">(systemd</span> Edition) - Version r13.0-270
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -29,10 +29,9 @@
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="grub-efi.html" title=
-          "GRUB-2.14 for EFI">Next</a>
+          <a accesskey="n" href="editors.html" title="Text Editors">Next</a>
           <p>
-            GRUB-2.14 for EFI
+            Text Editors
           </p>
         </li>
         <li class="up">
@@ -41,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-264">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-270">
           Home</a>
         </li>
       </ul>
@@ -150,6 +149,33 @@
           is set to match the EFI boot loader provided by GRUB.
         </p>
       </div>
+      <div class="using" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Using efibootmgr
+        </h2>
+        <p>
+          In LFS, the instructions go over how to install GRUB for UEFI. The
+          process installs the EFI in a hardcoded location searched by most
+          UEFI firmware implementations. If you reinstall GRUB however, GRUB
+          will use this package to install the EFI in a place GRUB prefers,
+          which allows greater control over EFI management. The <code class=
+          "option">--removable</code> option will no longer be necessary when
+          running <span class="command"><strong>grub-install</strong></span>.
+          This package may be necessary in scenarios where the UEFI firmware
+          doesn't look for the hardcoded EFI location. The LFS book addresses
+          this situation.
+        </p>
+        <p>
+          In order for <span class=
+          "command"><strong>efibootmgr</strong></span> to work, the EFI
+          variable file system must be mounted beforehand. If you're still in
+          a chroot and haven't rebooted, mount it as the <code class=
+          "systemitem">root</code> user:
+        </p>
+        <pre class="root"><kbd class=
+        "command">mountpoint /sys/firmware/efi/efivars ||
+  mount -v -t efivarfs efivarfs /sys/firmware/efi/efivars</kbd></pre>
+      </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
           Contents
@@ -215,10 +241,9 @@
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="grub-efi.html" title=
-          "GRUB-2.14 for EFI">Next</a>
+          <a accesskey="n" href="editors.html" title="Text Editors">Next</a>
           <p>
-            GRUB-2.14 for EFI
+            Text Editors
           </p>
         </li>
         <li class="up">
@@ -227,7 +252,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-264">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-270">
           Home</a>
         </li>
       </ul>
