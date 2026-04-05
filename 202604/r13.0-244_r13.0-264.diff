@@ -1,0 +1,110 @@
+diff --git a/wget-list b/wget-list
+index 5103c46561..e507bab9f6 100644
+--- a/wget-list
++++ b/wget-list
+@@ -1,7 +1,7 @@
+ https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20251204.tar.xz
+ https://github.com/lfs-book/make-ca/archive/v1.16.1/make-ca-1.16.1.tar.gz
+ https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.tar.xz
+-https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.4.tar.xz
++https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.6.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
+ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.18.tar.bz2
+@@ -21,7 +21,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-upstream_fix-1.p
+ https://ftpmirror.gnu.org/nettle/nettle-4.0.tar.gz
+ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_121_RTM/src/nss-3.121.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+-https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.2p1.tar.gz
++https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.3p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.26.2/p11-kit-0.26.2.tar.xz
+ https://github.com/polkit-org/polkit/archive/127/polkit-127.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+@@ -85,10 +85,10 @@ https://libopenraw.freedesktop.org/download/exempi-2.6.6.tar.xz
+ https://github.com/fastfloat/fast_float/archive/v8.2.4/fast_float-8.2.4.tar.gz
+ https://www.fftw.org/fftw-3.3.10.tar.gz
+ https://github.com/fmtlib/fmt/archive/12.1.0/fmt-12.1.0.tar.gz
+-https://download.gnome.org/sources/glib/2.86/glib-2.86.4.tar.xz
++https://download.gnome.org/sources/glib/2.86/glib-2.86.5.tar.xz
+ https://download.gnome.org/sources/gobject-introspection/1.86/gobject-introspection-1.86.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/glib-2.86.4-upstream_fixes-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/glib-2.86.5-upstream_fixes-1.patch
+ https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.8.tar.xz
+ https://download.gnome.org/sources/glibmm/2.86/glibmm-2.86.0.tar.xz
+ https://github.com/jstedfast/gmime/releases/download/3.2.15/gmime-3.2.15.tar.xz
+@@ -175,7 +175,7 @@ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+ https://github.com/martinpitt/umockdev/releases/download/0.19.7/umockdev-0.19.7.tar.xz
+ https://github.com/nemtrif/utfcpp/archive/v4.0.9/utfcpp-4.0.9.tar.gz
+ https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.24.0/downloads/wayland-1.24.0.tar.xz
+-https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.47/downloads/wayland-protocols-1.47.tar.xz
++https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.48/downloads/wayland-protocols-1.48.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+ https://oligarchy.co.uk/xapian/2.0.0/xapian-core-2.0.0.tar.xz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+@@ -192,7 +192,7 @@ https://github.com/g-truc/glm/archive/1.0.3/glm-1.0.3.tar.gz
+ https://download.gnome.org/sources/glycin/2.1/glycin-2.1.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.1.1-xorg_prefix-1.patch
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+-https://github.com/harfbuzz/harfbuzz/releases/download/13.2.1/harfbuzz-13.2.1.tar.xz
++https://github.com/harfbuzz/harfbuzz/releases/download/14.0.0/harfbuzz-14.0.0.tar.xz
+ https://github.com/jasper-software/jasper/archive/version-4.2.9/jasper-version-4.2.9.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.18/lcms2-2.18.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.4.1/libavif-1.4.1.tar.gz
+@@ -218,7 +218,7 @@ https://github.com/opencv/opencv/archive/4.13.0/opencv-4.13.0.tar.gz
+ https://github.com/opencv/opencv_contrib/archive/4.13.0/opencv_contrib-4.13.0.tar.gz
+ https://github.com/uclouvain/openjpeg/archive/v2.5.4/openjpeg-2.5.4.tar.gz
+ https://www.cairographics.org/releases/pixman-0.46.4.tar.gz
+-https://poppler.freedesktop.org/poppler-26.03.0.tar.xz
++https://poppler.freedesktop.org/poppler-26.04.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
+ https://github.com/qpdf/qpdf/releases/download/v12.3.2/qpdf-12.3.2.tar.gz
+@@ -268,7 +268,7 @@ http://fcron.free.fr/archives/fcron-3.4.0.src.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/gpm/gpm-1.20.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-gcc15_fixes-1.patch
+-https://github.com/vcrhonek/hwdata/archive/v0.405/hwdata-0.405.tar.gz
++https://github.com/vcrhonek/hwdata/archive/v0.406/hwdata-0.406.tar.gz
+ https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
+ https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
+ http://ftp.midnight-commander.org/mc-4.8.33.tar.xz
+@@ -867,14 +867,14 @@ https://github.com/lxde/menu-cache/archive/1.1.1/menu-cache-1.1.1.tar.gz
+ https://github.com/lxqt/libfm-qt/releases/download/2.3.1/libfm-qt-2.3.1.tar.xz
+ https://github.com/lxqt/lxqt-globalkeys/releases/download/2.3.0/lxqt-globalkeys-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-qtplugin/releases/download/2.3.0/lxqt-qtplugin-2.3.0.tar.xz
+-https://github.com/lxqt/lxqt-panel/releases/download/2.3.2/lxqt-panel-2.3.2.tar.xz
++https://github.com/lxqt/lxqt-panel/releases/download/2.3.3/lxqt-panel-2.3.3.tar.xz
+ https://github.com/lxqt/pcmanfm-qt/releases/download/2.3.0/pcmanfm-qt-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-powermanagement/releases/download/2.3.0/lxqt-powermanagement-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-runner/releases/download/2.3.0/lxqt-runner-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-themes/releases/download/2.3.0/lxqt-themes-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-admin/releases/download/2.3.0/lxqt-admin-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-about/releases/download/2.3.0/lxqt-about-2.3.0.tar.xz
+-https://github.com/lxqt/lxqt-config/releases/download/2.3.1/lxqt-config-2.3.1.tar.xz
++https://github.com/lxqt/lxqt-config/releases/download/2.3.2/lxqt-config-2.3.2.tar.xz
+ https://github.com/lxqt/lxqt-policykit/releases/download/2.3.0/lxqt-policykit-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-sudo/releases/download/2.3.0/lxqt-sudo-2.3.0.tar.xz
+ https://github.com/lxqt/lxqt-openssh-askpass/releases/download/2.3.0/lxqt-openssh-askpass-2.3.0.tar.xz
+@@ -952,7 +952,7 @@ https://github.com/lfs-book/intel-media-driver/archive/v25.4.6/intel-media-drive
+ https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
+ https://distfiles.adelielinux.org/source/a52dec/a52dec-0.8.0.tar.gz
+ https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
+-https://storage.googleapis.com/aom-releases/libaom-3.13.2.tar.gz
++https://storage.googleapis.com/aom-releases/libaom-3.13.3.tar.gz
+ https://github.com/libass/libass/releases/download/0.17.4/libass-0.17.4.tar.xz
+ https://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libcanberra-0.30-wayland-1.patch
+@@ -1018,9 +1018,9 @@ https://downloads.sourceforge.net/cdrdao/cdrdao-1.2.6.tar.bz2
+ https://downloads.sourceforge.net/cdrtools/cdrtools-3.02a09.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/dvd+rw-tools/dvd+rw-tools-7.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/dvd+rw-tools-7.1-consolidated_fixes-2.patch
+-https://files.libburnia-project.org/releases/libburn-1.5.6.tar.gz
+-https://files.libburnia-project.org/releases/libisoburn-1.5.6.tar.gz
+-https://files.libburnia-project.org/releases/libisofs-1.5.6.tar.gz
++https://files.libburnia-project.org/releases/libburn-1.5.8.tar.gz
++https://files.libburnia-project.org/releases/libisoburn-1.5.8.tar.gz
++https://files.libburnia-project.org/releases/libisofs-1.5.8.tar.gz
+ https://github.com/OpenPrinting/cups/releases/download/v2.4.16/cups-2.4.16-source.tar.gz
+ https://github.com/OpenPrinting/cups-browsed/releases/download/2.1.1/cups-browsed-2.1.1.tar.xz
+ https://github.com/OpenPrinting/cups-filters/releases/download/2.0.1/cups-filters-2.0.1.tar.xz
