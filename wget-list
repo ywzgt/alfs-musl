@@ -47,7 +47,7 @@ https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.19.0.tar.xz
 https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/efivar-39-upstream_fixes-1.patch
 https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
-https://www.bennewitz.com/bluefish/stable/source/bluefish-2.4.0.tar.bz2
+https://www.bennewitz.com/bluefish/stable/source/bluefish-2.4.1.tar.bz2
 https://ftpmirror.gnu.org/ed/ed-1.22.5.tar.lz
 https://ftpmirror.gnu.org/emacs/emacs-30.2.tar.xz
 https://download.gnome.org/sources/gedit/48/gedit-48.1.tar.xz
@@ -190,7 +190,7 @@ https://github.com/g-truc/glm/archive/1.0.3/glm-1.0.3.tar.gz
 https://download.gnome.org/sources/glycin/2.1/glycin-2.1.1.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.1.1-xorg_prefix-1.patch
 https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
-https://github.com/harfbuzz/harfbuzz/releases/download/14.0.0/harfbuzz-14.0.0.tar.xz
+https://github.com/harfbuzz/harfbuzz/releases/download/14.1.0/harfbuzz-14.1.0.tar.xz
 https://github.com/jasper-software/jasper/archive/version-4.2.9/jasper-version-4.2.9.tar.gz
 https://github.com/mm2/Little-CMS/releases/download/lcms2.18/lcms2-2.18.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/v1.4.1/libavif-1.4.1.tar.gz
@@ -283,7 +283,7 @@ https://sysstat.github.io/sysstat-packages/sysstat-12.7.9.tar.xz
 https://github.com/systemd/systemd/archive/v260.1/systemd-260.1.tar.gz
 https://github.com/storaged-project/udisks/releases/download/udisks-2.11.1/udisks-2.11.1.tar.bz2
 https://www.rarlab.com/rar/unrarsrc-7.2.4.tar.gz
-https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.1/upower-v1.91.1.tar.bz2
+https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.2/upower-v1.91.2.tar.bz2
 https://ftpmirror.gnu.org/which/which-2.23.tar.gz
 https://github.com/jordansissel/xdotool/archive/v4.20260303.1/xdotool-4.20260303.1.tar.gz
 https://downloads.sourceforge.net/infozip/zip30.tar.gz
@@ -565,11 +565,11 @@ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.10/OpenJDK-21.0.10
 https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.10/OpenJDK-21.0.10+6-x86_64-bin.tar.xz
 https://github.com/openjdk/jdk21u/archive/jdk-21.0.10-ga.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.10/jtreg-8.2.1+1.tar.gz
-https://archive.apache.org/dist/ant/source/apache-ant-1.10.15-src.tar.xz
+https://archive.apache.org/dist/ant/source/apache-ant-1.10.16-src.tar.xz
 https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.5.tar.bz2
 https://www.ncftp.com/public_ftp/ncftp/ncftp-3.3.0-src.tar.gz
 https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
-https://www.kernel.org/pub/linux/utils/nfs-utils/2.8.7/nfs-utils-2.8.7.tar.xz
+https://www.kernel.org/pub/linux/utils/nfs-utils/2.9.1/nfs-utils-2.9.1.tar.xz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
 https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.8.tar.bz2
 https://www.samba.org/ftp/rsync/src/rsync-3.4.1.tar.gz
@@ -652,7 +652,7 @@ https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.21-tearfree_backport-1.patch
 https://www.freedesktop.org/software/libevdev/libevdev-1.13.6.tar.xz
 https://www.x.org/pub/individual/driver/xf86-input-evdev-2.11.0.tar.xz
-https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.31.0/libinput-1.31.0.tar.gz
+https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.31.1/libinput-1.31.1.tar.gz
 https://www.x.org/pub/individual/driver/xf86-input-libinput-1.5.0.tar.xz
 https://www.x.org/pub/individual/driver/xf86-input-synaptics-1.10.0.tar.xz
 https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-1.2.4/xf86-input-wacom-1.2.4.tar.bz2
@@ -903,7 +903,7 @@ https://archive.seamonkey-project.org/releases/2.53.23/source/seamonkey-2.53.23.
 https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-libvpx_security_fixes-1.patch
 https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-cxx17-1.patch
 https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
-https://feh.finalrewind.org/feh-3.11.3.tar.bz2
+https://feh.finalrewind.org/feh-3.11.4.tar.bz2
 https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
 https://github.com/freerdp/freerdp/archive/3.24.2/FreeRDP-3.24.2.tar.gz
 https://download.gimp.org/gimp/v3.2/gimp-3.2.2.tar.xz
@@ -980,8 +980,8 @@ https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz
 https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.2/pipewire-1.6.2.tar.bz2
 https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
 https://www.kernel.org/pub/linux/bluetooth/sbc-2.2.tar.xz
-https://www.libsdl.org/release/sdl2-compat-2.32.64.tar.gz
-https://www.libsdl.org/release/SDL3-3.4.2.tar.gz
+https://www.libsdl.org/release/sdl2-compat-2.32.66.tar.gz
+https://www.libsdl.org/release/SDL3-3.4.4.tar.gz
 https://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2
 https://www.surina.net/soundtouch/soundtouch-2.4.1.tar.gz
 https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
