@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-281">
+  <body class="blfs" id="blfs-r13.0-289">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-281
+        "phrase">(systemd</span> Edition) - Version r13.0-289
       </h4>
       <h3>
         Chapter&nbsp;2.&nbsp;Important Information
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-281">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-289">
           Home</a>
         </li>
       </ul>
@@ -1319,6 +1319,60 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
           building rustc, some of them will nevertheless use all online CPUs,
           at least as of rustc-1.42.0.
         </p>
+        <h4>
+          <a id="cargo-offline" name="cargo-offline"></a>Building offline
+          with Cargo
+        </h4>
+        <p>
+          One of the problems with <span class="application">Cargo</span> is
+          that the needed crates are downloaded on the fly, which makes it so
+          that <span class="command"><strong>cargo build</strong></span>
+          cannot be run offline. Another annoyance is that the needed crates
+          are downloaded to the directory <code class=
+          "filename">~/.cargo</code>, which may clutter the user's or
+          <code class="systemitem">root</code>'s home directory. For those
+          who want to have some more control on the download location for the
+          crates, it is possible to set the variable <code class=
+          "envar">CARGO_HOME</code> to the desired location in the
+          environment, for example:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">export CARGO_HOME=<em class=
+        "replaceable"><code>/sources/cargo</code></em></kbd></pre>
+        <p>
+          It is also possible to have all the needed crates downloaded at
+          once before building a package. We'll give two methods, which may
+          have to be adapted to the particular package that is built. The
+          simplest one is to download the needed packages by running
+          <span class="command"><strong>cargo fetch</strong></span> from the
+          directory containing the top-level <code class=
+          "filename">Cargo.toml</code> file. The packages are downloaded to
+          <code class="envar">$CARGO_HOME</code> (or <code class=
+          "filename">~/.cargo</code>), and can be used offline in the build
+          instructions. But this may fail in some cases, for example for
+          packages that redefine <code class="envar">CARGO_HOME</code> in
+          their build system. In this case, the following instructions (run
+          from the directory containing the top <code class=
+          "filename">Cargo.toml</code>), will create a <span class=
+          "quote">“<span class="quote">vendor</span>”</span> directory
+          containing the source crates and will use it offline. Note that the
+          crates are also downloaded to <code class=
+          "envar">$CARGO_HOME</code> by the <span class=
+          "command"><strong>cargo vendor</strong></span> command:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">cargo vendor    &amp;&amp;
+mkdir -v .cargo &amp;&amp;
+cat &gt; .cargo/config.toml &lt;&lt; EOF
+<code class="literal">[source.crates-io]
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"</code>
+EOF</kbd></pre>
+        <p>
+          After this, the instructions can be run as in the book.
+        </p>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -1586,7 +1640,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-281">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-289">
           Home</a>
         </li>
       </ul>

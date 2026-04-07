@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-281">
+  <body class="blfs" id="blfs-r13.0-289">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-281
+        "phrase">(systemd</span> Edition) - Version r13.0-289
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-281">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-289">
           Home</a>
         </li>
       </ul>
@@ -169,7 +169,7 @@
           "enchant-2.8.15">enchant-2.8.15</a>, <a class="xref" href=
           "../basicnet/geoclue2.html" title="GeoClue-2.8.0">GeoClue-2.8.0</a>
           (runtime), <a class="xref" href="../general/glib2.html" title=
-          "GLib-2.86.5">GLib-2.86.5</a> (with GObject Introspection),
+          "GLib-2.88.0">GLib-2.88.0</a> (with GObject Introspection),
           <a class="xref" href="hicolor-icon-theme.html" title=
           "hicolor-icon-theme-0.18">hicolor-icon-theme-0.18</a>, <a class=
           "xref" href="../general/libavif.html" title=
@@ -190,10 +190,10 @@
           "harfBuzz-14.1.0">harfBuzz-14.1.0</a>, <a class="xref" href=
           "../general/wayland.html" title=
           "Wayland-1.24.0">Wayland-1.24.0</a>, <a class="xref" href=
-          "../general/woff2.html" title="woff2-1.0.2">WOFF2-1.0.2</a>,
-          <a class="ulink" href="https://ccache.dev/">ccache</a>, <a class=
-          "ulink" href="http://www.festvox.org/flite/">flite</a>, <a class=
-          "ulink" href=
+          "../general/woff2.html" title="woff2-1.0.2">WOFF2-1.0.2</a>
+          (deprecated), <a class="ulink" href=
+          "https://ccache.dev/">ccache</a>, <a class="ulink" href=
+          "http://www.festvox.org/flite/">flite</a>, <a class="ulink" href=
           "https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</a>,
           <a class="ulink" href=
           "https://github.com/ianlancetaylor/libbacktrace">libbacktrace</a>,
@@ -363,6 +363,15 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
           the switch).
         </p>
         <p>
+          <em class="parameter"><code>-D USE_WOFF2=OFF</code></em>: Disable
+          the use of the <a class="xref" href="../general/woff2.html" title=
+          "woff2-1.0.2">WOFF2-1.0.2</a> package. The upstream now prefers to
+          use <a class="xref" href="../general/freetype2.html" title=
+          "FreeType-2.14.3">FreeType-2.14.3</a> (built with its optional
+          dependency <a class="xref" href="../general/brotli.html" title=
+          "brotli-1.2.0">Brotli-1.2.0</a>) for the WOFF support instead.
+        </p>
+        <p>
           <em class="parameter"><code>-D
           ENABLE_DOCUMENTATION=OFF</code></em>: This switch disables
           regenerating the documentation. Remove this switch if you have
@@ -435,12 +444,6 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
           don't want to install <a class="xref" href=
           "../general/libavif.html" title="libavif-1.4.1">libavif-1.4.1</a>.
           Note that you will not have support for AVIF images if you do this.
-        </p>
-        <p>
-          <code class="option">-D USE_WOFF2=ON</code>: Use this switch if the
-          optional package <a class="xref" href="../general/woff2.html"
-          title="woff2-1.0.2">WOFF2-1.0.2</a> is installed. This adds
-          additional support for fonts.
         </p>
         <p>
           <code class="option">-D USE_JPEGXL=OFF</code>: Use this switch if
@@ -592,7 +595,7 @@ cp -rv ../Documentation/* /usr/share/gtk-doc/html</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-281">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-289">
           Home</a>
         </li>
       </ul>
