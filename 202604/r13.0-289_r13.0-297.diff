@@ -1,0 +1,40 @@
+diff --git a/wget-list b/wget-list
+index d1efcb55da..07bee088df 100644
+--- a/wget-list
++++ b/wget-list
+@@ -204,7 +204,7 @@ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.
+ https://downloads.sourceforge.net/libpng/libpng-1.6.56.tar.xz
+ https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.55-apng.patch.gz
+ https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
+-https://www.libraw.org/data/LibRaw-0.22.0.tar.gz
++https://www.libraw.org/data/LibRaw-0.22.1.tar.gz
+ https://download.gnome.org/sources/librsvg/2.62/librsvg-2.62.1.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+ https://download.osgeo.org/libtiff/tiff-4.7.1.tar.gz
+@@ -311,7 +311,7 @@ https://www.lua.org/ftp/lua-5.4.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.8-shared_library-1.patch
+ https://www.lua.org/tests/lua-5.4.8-tests.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/luajit/luajit-20260213.tar.xz
+-https://www.mercurial-scm.org/release/mercurial-7.2.tar.gz
++https://www.mercurial-scm.org/release/mercurial-7.2.1.tar.gz
+ https://www.nasm.us/pub/nasm/releasebuilds/3.01/nasm-3.01.tar.xz
+ https://www.nasm.us/pub/nasm/releasebuilds/3.01/nasm-3.01-xdoc.tar.xz
+ https://github.com/NixOS/patchelf/releases/download/0.18.0/patchelf-0.18.0.tar.gz
+@@ -468,7 +468,7 @@ https://www.python.org/ftp/python/doc/3.14.3/python-3.14.3-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+ https://download.gnome.org/sources/blueprint-compiler/0.18/blueprint-compiler-0.18.0.tar.xz
+-https://files.pythonhosted.org/packages/source/b/build/build-1.4.0.tar.gz
++https://files.pythonhosted.org/packages/source/b/build/build-1.4.2.tar.gz
+ https://github.com/psf/cachecontrol/archive/v0.14.4/cachecontrol-0.14.4.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.4.0.tar.gz
+ https://github.com/cython/cython/releases/download/3.2.4/cython-3.2.4.tar.gz
+@@ -902,7 +902,7 @@ https://archive.seamonkey-project.org/releases/2.53.23/source/seamonkey-2.53.23.
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-libvpx_security_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-cxx17-1.patch
+ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+-https://feh.finalrewind.org/feh-3.11.4.tar.bz2
++https://feh.finalrewind.org/feh-3.12.1.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
+ https://github.com/freerdp/freerdp/archive/3.24.2/FreeRDP-3.24.2.tar.gz
+ https://download.gimp.org/gimp/v3.2/gimp-3.2.2.tar.xz
