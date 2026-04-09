@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-297">
+  <body class="blfs" id="blfs-r13.0-301">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-297
+        "phrase">(systemd</span> Edition) - Version r13.0-301
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-297">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-301">
           Home</a>
         </li>
       </ul>
@@ -212,13 +212,14 @@
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">mkdir build                       &amp;&amp;
-cd    build                       &amp;&amp;
+        "command">mkdir build                        &amp;&amp;
+cd    build                        &amp;&amp;
 
-cmake -D CMAKE_INSTALL_PREFIX=/usr        \
-      -D CMAKE_BUILD_TYPE=Release         \
-      -W no-dev                           \
-      ..                                  &amp;&amp;
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
+      -D WITH_INTERNAL_2GEOM=ON    \
+      -W no-dev                    \
+      ..                           &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a working test suite.
@@ -265,6 +266,13 @@ update-desktop-database -q</kbd></pre>
           the release library without any debug `assert` in the code.
         </p>
         <p>
+          <em class="parameter"><code>-D WITH_INTERNAL_2GEOM=ON</code></em>:
+          This switch is useless for the first build of <span class=
+          "application">Inkscape</span>, but it prevents linking to the
+          previously installed <code class="filename">lib2geom.so</code>
+          library when upgrading <span class="application">Inkscape</span>.
+        </p>
+        <p>
           <em class="parameter"><code>-W no-dev</code></em>: This parameter
           silences several warnings only intended for project developers.
         </p>
@@ -286,13 +294,13 @@ update-desktop-database -q</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Library:</strong>
-              <span class="segbody">libinkscape_base.so (in
+              <span class="segbody">lib2geom.so and libinkscape_base.so (in
               /usr/lib/inkscape)</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/lib/inkscape, and
-              /usr/share/inkscape</span>
+              <span class="segbody">/usr/include/2geom-1.4.0,
+              /usr/lib/inkscape, and /usr/share/inkscape</span>
             </div>
           </div>
         </div>
@@ -348,6 +356,19 @@ update-desktop-database -q</kbd></pre>
                   </p>
                 </td>
               </tr>
+              <tr>
+                <td>
+                  <p>
+                    <a id="lib2geom" name="lib2geom"></a><span class=
+                    "term"><code class="filename">lib2geom.so</code></span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    is a C++ 2D geometry library for vector graphics
+                  </p>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -374,7 +395,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-297">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-301">
           Home</a>
         </li>
       </ul>
