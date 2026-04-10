@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-301">
+  <body class="blfs" id="blfs-r13.0-306">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-301
+        "phrase">(systemd</span> Edition) - Version r13.0-306
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-301">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-306">
           Home</a>
         </li>
       </ul>
@@ -190,6 +190,12 @@
         </p>
         <pre class="userinput"><kbd class="command">cargo vendor &amp;&amp;
 patch -Np1 -i ../glycin-2.1.1-xorg_prefix-1.patch</kbd></pre>
+        <p>
+          Fix a build error when a system <span class=
+          "application">libglycin</span> is not yet installed:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i "s/get_option('libglycin-gtk4')/(&amp; or get_option('glycin-thumbnailer'))/" meson.build</kbd></pre>
         <p>
           Install <span class="application">glycin</span> by running the
           following commands:
@@ -344,7 +350,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-301">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-306">
           Home</a>
         </li>
       </ul>
