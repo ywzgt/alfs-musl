@@ -1,0 +1,105 @@
+diff --git a/wget-list b/wget-list
+index 2bd7e3d69d..2857b4d367 100644
+--- a/wget-list
++++ b/wget-list
+@@ -27,7 +27,7 @@ https://github.com/polkit-org/polkit/archive/127/polkit-127.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+ https://github.com/shadow-maint/shadow/releases/download/4.19.4/shadow-4.19.4.tar.xz
+-https://www.stunnel.org/downloads/archive/5.x/stunnel-5.77.tar.gz
++https://www.stunnel.org/downloads/archive/5.x/stunnel-5.78.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.17p2.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+ https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.19.1.tar.xz
+@@ -40,7 +40,7 @@ https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.4.tar.xz
+ https://github.com/tuxera/ntfs-3g/archive/2022.10.3/ntfs-3g-2022.10.3.tar.gz
+ https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.10-convenience-1.patch
+-https://ftpmirror.gnu.org/parted/parted-3.6.tar.xz
++https://ftpmirror.gnu.org/parted/parted-3.7.tar.xz
+ https://downloads.sourceforge.net/smartmontools/smartmontools-7.5.tar.gz
+ https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.5/sshfs-3.7.5.tar.xz
+ https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.19.0.tar.xz
+@@ -58,7 +58,7 @@ https://gitlab.gnome.org/World/gedit/libgedit-tepl/-/archive/6.13.0/libgedit-tep
+ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/25.12.2/src/kate-25.12.2.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.7/mousepad-0.7.0.tar.xz
+-https://www.nano-editor.org/dist/v8/nano-9.0.tar.xz
++https://www.nano-editor.org/dist/v9/nano-9.0.tar.xz
+ https://github.com/vim/vim/archive/v9.2.0272/vim-9.2.0272.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.2.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+@@ -176,7 +176,7 @@ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.48/downloa
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+ https://oligarchy.co.uk/xapian/2.0.0/xapian-core-2.0.0.tar.xz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+-https://download.gimp.org/pub/babl/0.1/babl-0.1.124.tar.xz
++https://download.gimp.org/pub/babl/0.1/babl-0.1.126.tar.xz
+ https://github.com/Exiv2/exiv2/archive/v0.28.8/exiv2-0.28.8.tar.gz
+ https://downloads.sourceforge.net/freetype/freetype-2.14.3.tar.xz
+ https://downloads.sourceforge.net/freetype/freetype-doc-2.14.3.tar.xz
+@@ -201,8 +201,8 @@ https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.4.1/libjpeg
+ https://github.com/libjxl/libjxl/archive/v0.11.2/libjxl-0.11.2.tar.gz
+ https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
+ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz
+-https://downloads.sourceforge.net/libpng/libpng-1.6.56.tar.xz
+-https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.55-apng.patch.gz
++https://downloads.sourceforge.net/libpng/libpng-1.6.57.tar.xz
++https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.57-apng.patch.gz
+ https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
+ https://www.libraw.org/data/LibRaw-0.22.1.tar.gz
+ https://download.gnome.org/sources/librsvg/2.62/librsvg-2.62.1.tar.xz
+@@ -480,7 +480,7 @@ https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-0.5.3.tar.gz
+ https://files.pythonhosted.org/packages/source/g/gi-docgen/gi_docgen-2026.1.tar.gz
+ https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/html5lib-1.1-python_3.14_buildfix-1.patch
+-https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.0.2.tar.gz
++https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.0.3.tar.gz
+ https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.10.tar.gz
+ https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.4.4.tar.gz
+ https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.2.2.tar.gz
+@@ -614,7 +614,7 @@ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.
+ https://archive.apache.org/dist/serf/serf-1.3.10.tar.bz2
+ http://links.twibright.com/download/links-2.30.tar.bz2
+ https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.bz2
+-https://downloads.sourceforge.net/fetchmail/fetchmail-6.6.2.tar.xz
++https://downloads.sourceforge.net/fetchmail/fetchmail-6.6.3.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/mailx/heirloom-mailx_12.5.orig.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.patch
+ http://ftp.mutt.org/pub/mutt/mutt-2.3.1.tar.gz
+@@ -702,7 +702,7 @@ https://www.freedesktop.org/software/startup-notification/releases/startup-notif
+ https://github.com/KhronosGroup/Vulkan-Headers/archive/vulkan-sdk-1.4.341.0/Vulkan-Headers-vulkan-sdk-1.4.341.0.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.341.0/Vulkan-Loader-vulkan-sdk-1.4.341.0.tar.gz
+ https://webkitgtk.org/releases/webkitgtk-2.52.0.tar.xz
+-https://github.com/flatpak/xdg-desktop-portal/releases/download/1.20.3/xdg-desktop-portal-1.20.3.tar.xz
++https://github.com/flatpak/xdg-desktop-portal/releases/download/1.20.4/xdg-desktop-portal-1.20.4.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
+ https://download.gnome.org/sources/gdm/49/gdm-49.2.tar.xz
+ https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.tar.xz
+@@ -934,7 +934,7 @@ https://github.com/lfs-book/faac/archive/v1.40/faac-1.40.tar.gz
+ https://github.com/knik0/faad2/archive/2.11.2/faad2-2.11.2.tar.gz
+ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
+ https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
+-https://github.com/dyne/frei0r/archive/v2.5.6/frei0r-2.5.6.tar.gz
++https://github.com/dyne/frei0r/archive/v3.0.1/frei0r-3.0.1.tar.gz
+ https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
+ https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.2.tar.xz
+ https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.28.2.tar.xz
+@@ -976,7 +976,7 @@ https://github.com/webmproject/libvpx/archive/v1.16.0/libvpx-1.16.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libvpx-1.16.0-security_fix-1.patch
+ https://github.com/mltframework/mlt/releases/download/v7.36.1/mlt-7.36.1.tar.gz
+ https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz
+-https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.2/pipewire-1.6.2.tar.bz2
++https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.3/pipewire-1.6.3.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.2.tar.xz
+ https://www.libsdl.org/release/sdl2-compat-2.32.66.tar.gz
+@@ -1063,7 +1063,7 @@ https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-source.tar.xz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-texmf.tar.xz
+ https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-extra.tar.xz
+-https://downloads.sourceforge.net/asymptote/asymptote-3.09.src.tgz
++https://downloads.sourceforge.net/asymptote/asymptote-3.10.src.tgz
+ https://github.com/plk/biber/archive/v2.21/biber-2.21.tar.gz
+ https://github.com/mgieseki/dvisvgm/releases/download/3.6/dvisvgm-3.6.tar.gz
+ https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
