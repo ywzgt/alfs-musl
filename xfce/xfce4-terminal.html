@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-355">
+  <body class="blfs" id="blfs-r13.0-364">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-355
+        "phrase">(systemd</span> Edition) - Version r13.0-364
       </h4>
       <h3>
         Chapter&nbsp;36.&nbsp;Xfce Applications
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-355">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-364">
           Home</a>
         </li>
       </ul>
@@ -129,8 +129,8 @@
           Installation of Xfce4 Terminal
         </h2>
         <p>
-          First, prevent trying to use some commands from a package not in
-          BLFS:
+          First, work around a problem where functions from a package not in
+          BLFS are used accidentally:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -e '570i #ifdef HAVE_GTK_LAYER_SHELL' \
@@ -225,7 +225,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-355">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-364">
           Home</a>
         </li>
       </ul>

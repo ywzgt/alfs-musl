@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-355">
+  <body class="blfs" id="blfs-r13.0-364">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-355
+        "phrase">(systemd</span> Edition) - Version r13.0-364
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-355">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-364">
           Home</a>
         </li>
       </ul>
@@ -116,7 +116,7 @@
           "evolution-data-server-3.58.3">evolution-data-server-3.58.3</a>,
           <a class="xref" href="gcr4.html" title=
           "Gcr-4.4.0.1">Gcr-4.4.0.1</a>, <a class="xref" href="gjs.html"
-          title="Gjs-1.86.0">Gjs-1.86.0</a>, <a class="xref" href=
+          title="Gjs-1.88.0">Gjs-1.88.0</a>, <a class="xref" href=
           "gnome-desktop.html" title=
           "gnome-desktop-44.5">gnome-desktop-44.5</a>, <a class="xref" href=
           "../general/ibus.html" title="ibus-1.5.33">ibus-1.5.33</a>,
@@ -194,13 +194,17 @@ meson setup --prefix=/usr       \
 ninja</kbd></pre>
         <p>
           To run the tests, ensure <span class="application">Mutter</span> is
-          installed after running its test suite, and issue: <span class=
-          "command"><strong>meson configure -D tests=true &amp;&amp; ninja
-          test</strong></span>. You must be running in a Wayland session to
-          run the tests. Some will fail if <a class="xref" href=
-          "../x/gdm.html" title="GDM-49.2">GDM-49.2</a> is not installed. One
-          test named <code class="filename">CSS styling support</code> is
-          known to fail with some multi-monitor configurations.
+          installed after running its test suite, and issue:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">meson configure -D tests=true &amp;&amp;
+ninja test</kbd></pre>
+        <p>
+          You must be running in a Wayland session to run the tests. Some
+          will fail if <a class="xref" href="../x/gdm.html" title=
+          "GDM-49.2">GDM-49.2</a> is not installed. One test named
+          <code class="filename">CSS styling support</code> is known to fail
+          with some multi-monitor configurations.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -298,7 +302,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-355">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-364">
           Home</a>
         </li>
       </ul>
