@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 4a4c9ec337..afc6bdafb5 100644
+--- a/wget-list
++++ b/wget-list
+@@ -110,7 +110,7 @@ https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.0/llvm-proje
+ https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6.tar.xz
+ https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+ https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.3.0/downloads/libdisplay-info-0.3.0.tar.xz
+-https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.12.1.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.12.2.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.59.tar.bz2
+ https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.56.tar.xz
+ https://download.gnome.org/sources/libgudev/238/libgudev-238.tar.xz
+@@ -761,7 +761,7 @@ https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.7.t
+ https://gitlab.gnome.org/GNOME/vte/-/archive/0.82.3/vte-0.82.3.tar.gz
+ https://download.gnome.org/sources/yelp-xsl/49/yelp-xsl-49.0.tar.xz
+ https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+-https://download.gnome.org/sources/gjs/1.86/gjs-1.86.0.tar.xz
++https://download.gnome.org/sources/gjs/1.88/gjs-1.88.0.tar.xz
+ https://download.gnome.org/sources/gnome-autoar/0.4/gnome-autoar-0.4.5.tar.xz
+ https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.5.tar.xz
+ https://download.gnome.org/sources/gnome-menus/3.38/gnome-menus-3.38.1.tar.xz
