@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-382">
+  <body class="blfs" id="blfs-r13.0-396">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-382
+        "phrase">(systemd</span> Edition) - Version r13.0-396
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-382">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-396">
           Home</a>
         </li>
       </ul>
@@ -141,6 +141,11 @@
             brace character in the sequence '\${' resulting in '\$\{'.
           </p>
         </div>
+        <p>
+          First fix a warning that is caused by perl-5.22 and later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i 's:\\\${:\\\$\\{:' intltool-update.in</kbd></pre>
         <p>
           Install <span class="application">Intltool</span> by running the
           following commands:
@@ -291,7 +296,7 @@ install -v -m644 -D doc/I18N-HOWTO \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-382">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-396">
           Home</a>
         </li>
       </ul>
