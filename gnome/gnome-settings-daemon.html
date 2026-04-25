@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      gnome-settings-daemon-49.1
+      gnome-settings-daemon-50.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-413">
+  <body class="blfs" id="blfs-r13.0-421">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-413
+        "phrase">(systemd</span> Edition) - Version r13.0-421
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -24,15 +24,15 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="gnome-keyring.html" title=
-          "gnome-keyring-48.0">Prev</a>
+          "gnome-keyring-50.0">Prev</a>
           <p>
-            gnome-keyring-48.0
+            gnome-keyring-50.0
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="tecla.html" title="Tecla-49.0">Next</a>
+          <a accesskey="n" href="tecla.html" title="Tecla-50.0">Next</a>
           <p>
-            Tecla-49.0
+            Tecla-50.0
           </p>
         </li>
         <li class="up">
@@ -41,14 +41,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-413">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-421">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="gnome-settings-daemon" name=
-      "gnome-settings-daemon"></a>gnome-settings-daemon-49.1
+      "gnome-settings-daemon"></a>gnome-settings-daemon-50.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,13 +80,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/gnome-settings-daemon/49/gnome-settings-daemon-49.1.tar.xz">
-                https://download.gnome.org/sources/gnome-settings-daemon/49/gnome-settings-daemon-49.1.tar.xz</a>
+                "https://download.gnome.org/sources/gnome-settings-daemon/50/gnome-settings-daemon-50.1.tar.xz">
+                https://download.gnome.org/sources/gnome-settings-daemon/50/gnome-settings-daemon-50.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 054a3deb8d4e1a0a854b62938ec0bcee
+                Download MD5 sum: 76c9f7b0a9ef25a3ade1afc77b32e04b
               </p>
             </li>
             <li class="listitem">
@@ -96,12 +96,12 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 32 MB
+                Estimated disk space required: 29 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.1 SBU (using parallelism=4, add 0.5
+                Estimated build time: 0.1 SBU (using parallelism=4, add 1.7
                 SBU for tests)
               </p>
             </li>
@@ -127,7 +127,7 @@
           "gnome-desktop-44.5">gnome-desktop-44.5</a>, <a class="xref" href=
           "../multimedia/libcanberra.html" title=
           "libcanberra-0.30">libcanberra-0.30</a>, <a class="xref" href=
-          "libgweather.html" title="libgweather-4.4.4">libgweather-4.4.4</a>,
+          "libgweather.html" title="libgweather-4.6.0">libgweather-4.6.0</a>,
           <a class="xref" href="../x/libnotify.html" title=
           "libnotify-0.8.8">libnotify-0.8.8</a>, <a class="xref" href=
           "../general/libwacom.html" title=
@@ -147,7 +147,7 @@
           "NetworkManager-1.56.0">NetworkManager-1.56.0</a>, <a class="xref"
           href="../general/ModemManager.html" title=
           "ModemManager-1.24.2">ModemManager-1.24.2</a>, <a class="xref"
-          href="../postlfs/nss.html" title="NSS-3.123">nss-3.123</a>, and
+          href="../postlfs/nss.html" title="NSS-3.123.1">nss-3.123.1</a>, and
           <a class="xref" href="../general/wayland.html" title=
           "Wayland-1.24.0">Wayland-1.24.0</a>
         </p>
@@ -167,8 +167,8 @@
         </h4>
         <p class="optional">
           <a class="xref" href="gnome-session.html" title=
-          "gnome-session-49.2">gnome-session-49.2</a>, <a class="xref" href=
-          "mutter.html" title="Mutter-49.4">Mutter-49.4</a>, <a class="xref"
+          "gnome-session-50.0">gnome-session-50.0</a>, <a class="xref" href=
+          "mutter.html" title="Mutter-50.1">Mutter-50.1</a>, <a class="xref"
           href="../general/python-modules.html#python-dbusmock" title=
           "dbusmock-0.38.1">dbusmock-0.38.1</a>, <a class="xref" href=
           "../general/umockdev.html" title=
@@ -194,7 +194,10 @@ cd    build &amp;&amp;
 meson setup --prefix=/usr --buildtype=release .. &amp;&amp;
 ninja</kbd></pre>
         <p>
-          This package does not come with a working test suite.
+          To check the results, execute: <span class="command"><strong>ninja
+          test</strong></span>. Note that you must have <span class=
+          "application">python-dbusmock</span> installed in order for the
+          tests to complete successfully.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -240,15 +243,15 @@ ninja</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="gnome-keyring.html" title=
-          "gnome-keyring-48.0">Prev</a>
+          "gnome-keyring-50.0">Prev</a>
           <p>
-            gnome-keyring-48.0
+            gnome-keyring-50.0
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="tecla.html" title="Tecla-49.0">Next</a>
+          <a accesskey="n" href="tecla.html" title="Tecla-50.0">Next</a>
           <p>
-            Tecla-49.0
+            Tecla-50.0
           </p>
         </li>
         <li class="up">
@@ -257,7 +260,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-413">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-421">
           Home</a>
         </li>
       </ul>

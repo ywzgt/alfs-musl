@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      localsearch-3.10.2
+      localsearch-3.11.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-413">
+  <body class="blfs" id="blfs-r13.0-421">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-413
+        "phrase">(systemd</span> Edition) - Version r13.0-421
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="tinysparql.html" title=
-          "tinysparql-3.10.1">Prev</a>
+          "tinysparql-3.11.1">Prev</a>
           <p>
-            tinysparql-3.10.1
+            tinysparql-3.11.1
           </p>
         </li>
         <li class="next">
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-413">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-421">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="localsearch" name="localsearch"></a>localsearch-3.10.2
+      <a id="localsearch" name="localsearch"></a>localsearch-3.11.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,13 +77,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/localsearch/3.10/localsearch-3.10.2.tar.xz">
-                https://download.gnome.org/sources/localsearch/3.10/localsearch-3.10.2.tar.xz</a>
+                "https://download.gnome.org/sources/localsearch/3.11/localsearch-3.11.1.tar.xz">
+                https://download.gnome.org/sources/localsearch/3.11/localsearch-3.11.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 7d625f99a4e9e1ef80d314793ff7b8c7
+                Download MD5 sum: 1406955c072af72776fdcbb9b12dc103
               </p>
             </li>
             <li class="listitem">
@@ -93,27 +93,13 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 35 MB (with tests)
+                Estimated disk space required: 79 MB
               </p>
             </li>
             <li class="listitem">
               <p>
                 Estimated build time: 0.2 SBU (with parallelism=4; add as
                 much as 1.3 SBU for tests, dependent on disk speed)
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/localsearch-3.10.2-security_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/localsearch-3.10.2-security_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -126,11 +112,11 @@
         </h4>
         <p class="required">
           <a class="xref" href="gexiv2.html" title=
-          "gexiv2-0.14.6">gexiv2-0.14.6</a>, <a class="xref" href=
+          "gexiv2-0.16.0">gexiv2-0.16.0</a>, <a class="xref" href=
           "../multimedia/gst10-plugins-base.html" title=
           "gst-plugins-base-1.28.2">gst-plugins-base-1.28.2</a>, and
           <a class="xref" href="tinysparql.html" title=
-          "tinysparql-3.10.1">tinysparql-3.10.1</a>
+          "tinysparql-3.11.1">tinysparql-3.11.1</a>
         </p>
         <h4>
           Recommended
@@ -242,12 +228,6 @@ rm -fv /usr/share/dbus-1/services/org.freedesktop.Tracker3.Miner.Files.Control.s
           <pre class="userinput"><kbd class="command">sed -i s/120/<em class=
           "replaceable"><code>200</code></em>/ tests/functional-tests/meson.build</kbd></pre>
         </div>
-        <p>
-          First, apply a patch to fix five security vulnerabilities in the
-          MP3 parser:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../localsearch-3.10.2-security_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">Localsearch</span> by running the
           following commands:
@@ -390,9 +370,9 @@ dbus-run-session env LC_ALL=C.UTF-8 TRACKER_TESTS_AWAIT_TIMEOUT=<em class=
       <ul>
         <li class="prev">
           <a accesskey="p" href="tinysparql.html" title=
-          "tinysparql-3.10.1">Prev</a>
+          "tinysparql-3.11.1">Prev</a>
           <p>
-            tinysparql-3.10.1
+            tinysparql-3.11.1
           </p>
         </li>
         <li class="next">
@@ -407,7 +387,7 @@ dbus-run-session env LC_ALL=C.UTF-8 TRACKER_TESTS_AWAIT_TIMEOUT=<em class=
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-413">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-421">
           Home</a>
         </li>
       </ul>

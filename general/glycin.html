@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-413">
+  <body class="blfs" id="blfs-r13.0-421">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-413
+        "phrase">(systemd</span> Edition) - Version r13.0-421
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-413">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-421">
           Home</a>
         </li>
       </ul>
@@ -128,7 +128,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="bubblewrap.html" title=
-          "Bubblewrap-0.11.1">bubblewrap-0.11.1</a> (runtime), <a class=
+          "Bubblewrap-0.11.2">bubblewrap-0.11.2</a> (runtime), <a class=
           "xref" href="fontconfig.html" title=
           "Fontconfig-2.17.1">Fontconfig-2.17.1</a>, <a class="xref" href=
           "glib2.html" title="GLib-2.88.0">GLib-2.88.0</a> (GObject
@@ -195,7 +195,8 @@ patch -Np1 -i ../glycin-2.1.1-xorg_prefix-1.patch</kbd></pre>
           "application">libglycin</span> is not yet installed:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -i "s/get_option('libglycin-gtk4')/(&amp; or get_option('glycin-thumbnailer'))/" meson.build</kbd></pre>
+        "command">sed -e "s/get_option('libglycin-gtk4')/(&amp; or get_option('glycin-thumbnailer'))/" \
+    -i meson.build</kbd></pre>
         <p>
           Install <span class="application">glycin</span> by running the
           following commands:
@@ -205,7 +206,6 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr           \
             --buildtype=release     \
-            -D libglycin-gtk4=false \
             -D tests=false ..       &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -238,9 +238,11 @@ ninja</kbd></pre>
         <p>
           <em class="parameter"><code>-D glycin_gtk4=false</code></em>: This
           parameter disables the build of <code class=
-          "systemitem">libglycin-gtk4</code> (which is not used by any BLFS
-          packages yet) so this package can be built without <a class="xref"
-          href="../x/gtk4.html" title="GTK-4.22.3">GTK-4.22.3</a> installed.
+          "systemitem">libglycin-gtk4</code> (which is needed by <a class=
+          "xref" href="../gnome/nautilus.html" title=
+          "Nautilus-50.1">Nautilus-50.1</a>). If this is not needed this
+          package can be built without <a class="xref" href="../x/gtk4.html"
+          title="GTK-4.22.3">GTK-4.22.3</a> installed.
         </p>
         <p>
           <code class="option">-D glycin-loaders=...</code>: Use this option
@@ -350,7 +352,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-413">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-421">
           Home</a>
         </li>
       </ul>
