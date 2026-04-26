@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-421">
+  <body class="blfs" id="blfs-r13.0-429">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-421
+        "phrase">(systemd</span> Edition) - Version r13.0-429
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-421">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-429">
           Home</a>
         </li>
       </ul>
@@ -113,11 +113,12 @@
         <p class="required">
           <a class="xref" href=
           "../general/python-modules.html#blueprint-compiler" title=
-          "blueprint-compiler-0.18.0">blueprint-compiler-0.18.0</a>,
+          "blueprint-compiler-0.20.4">blueprint-compiler-0.20.4</a>,
           <a class="xref" href="gexiv2.html" title=
           "gexiv2-0.16.0">gexiv2-0.16.0</a>, <a class="xref" href=
-          "../general/glycin.html" title="glycin-2.1.1">glycin-2.1.1</a>
-          (built with gtk4), <a class="xref" href="gnome-autoar.html" title=
+          "../general/glycin-gtk4.html" title=
+          "libglycin-gtk4 from glycin-2.1.1">libglycin-gtk4 from
+          glycin-2.1.1</a>, <a class="xref" href="gnome-autoar.html" title=
           "gnome-autoar-0.4.5">gnome-autoar-0.4.5</a>, <a class="xref" href=
           "gnome-desktop.html" title=
           "gnome-desktop-44.5">gnome-desktop-44.5</a>, <a class="xref" href=
@@ -187,6 +188,7 @@ cd    build &amp;&amp;
 
 meson setup --prefix=/usr       \
             --buildtype=release \
+            -D selinux=false    \
             ..                  &amp;&amp;
 
 ninja</kbd></pre>
@@ -346,7 +348,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-421">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-429">
           Home</a>
         </li>
       </ul>
