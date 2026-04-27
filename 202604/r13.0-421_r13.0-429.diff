@@ -1,0 +1,61 @@
+diff --git a/wget-list b/wget-list
+index 3db0a6f8dc..e309cbb824 100644
+--- a/wget-list
++++ b/wget-list
+@@ -19,7 +19,7 @@ https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.
+ https://kerberos.org/dist/krb5/1.22/krb5-1.22.2.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-upstream_fix-1.patch
+ https://ftpmirror.gnu.org/nettle/nettle-4.0.tar.gz
+-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_123_RTM/src/nss-3.123.1.tar.gz
++https://archive.mozilla.org/pub/security/nss/releases/NSS_3_123_1_RTM/src/nss-3.123.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.3p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.26.2/p11-kit-0.26.2.tar.xz
+@@ -50,11 +50,6 @@ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
+ https://www.bennewitz.com/bluefish/stable/source/bluefish-2.4.1.tar.bz2
+ https://ftpmirror.gnu.org/ed/ed-1.22.5.tar.lz
+ https://ftpmirror.gnu.org/emacs/emacs-30.2.tar.xz
+-https://download.gnome.org/sources/gedit/48/gedit-48.1.tar.xz
+-https://gitlab.gnome.org/World/gedit/libgedit-amtk/-/archive/5.9.2/libgedit-amtk-5.9.2.tar.bz2
+-https://gitlab.gnome.org/World/gedit/libgedit-gtksourceview/-/archive/299.5.0/libgedit-gtksourceview-299.5.0.tar.bz2
+-https://gitlab.gnome.org/World/gedit/libgedit-gfls/-/archive/0.3.1/libgedit-gfls-0.3.1.tar.bz2
+-https://gitlab.gnome.org/World/gedit/libgedit-tepl/-/archive/6.13.0/libgedit-tepl-6.13.0.tar.bz2
+ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/25.12.2/src/kate-25.12.2.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.7/mousepad-0.7.0.tar.xz
+@@ -228,6 +223,7 @@ https://downloads.sourceforge.net/bogofilter/bogofilter-1.2.5.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
+ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.5.tar.gz
++https://github.com/editorconfig/editorconfig-core-c/archive/v0.12.11/editorconfig-core-c-0.12.11.tar.gz
+ https://github.com/google/shaderc/archive/v2026.1/shaderc-2026.1.tar.gz
+ https://gitlab.com/graphviz/graphviz/-/archive/14.1.5/graphviz-14.1.5.tar.bz2
+ https://download.gnome.org/sources/gtk-doc/1.36/gtk-doc-1.36.1.tar.xz
+@@ -469,7 +465,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.4-security_fixes-2
+ https://www.python.org/ftp/python/doc/3.14.4/python-3.14.4-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+-https://download.gnome.org/sources/blueprint-compiler/0.18/blueprint-compiler-0.18.0.tar.xz
++https://download.gnome.org/sources/blueprint-compiler/0.20/blueprint-compiler-0.20.4.tar.xz
+ https://files.pythonhosted.org/packages/source/b/build/build-1.4.4.tar.gz
+ https://github.com/psf/cachecontrol/archive/v0.14.4/cachecontrol-0.14.4.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.4.0.tar.gz
+@@ -549,7 +545,8 @@ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.6.3.tar.gz
+ https://files.pythonhosted.org/packages/source/u/uv_build/uv_build-0.10.2.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+ https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.3.tar.xz
+-https://static.rust-lang.org/dist/rustc-1.94.0-src.tar.xz
++https://static.rust-lang.org/dist/rustc-1.95.0-src.tar.xz
++https://github.com/lfs-book/rust-openssl/archive/v0.10.78/rust-openssl-v0.10.78.tar.gz
+ https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.1/rust-bindgen-0.72.1.tar.gz
+ https://downloads.sourceforge.net/scons/SCons-4.10.1.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+@@ -768,7 +765,7 @@ https://download.gnome.org/sources/gnome-menus/3.38/gnome-menus-3.38.1.tar.xz
+ https://download.gnome.org/sources/gnome-online-accounts/3.58/gnome-online-accounts-3.58.1.tar.xz
+ https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz
+ https://download.gnome.org/sources/libgtop/2.41/libgtop-2.41.3.tar.xz
+-https://gitlab.gnome.org/GNOME/gweather-locations/-/archive/2026.2/gweather-locations-2026.2.tar.bz2
++https://download.gnome.org/sources/gweather-locations/2026/gweather-locations-2026.2.tar.xz
+ https://download.gnome.org/sources/libgweather/4.6/libgweather-4.6.0.tar.xz
+ https://download.gnome.org/sources/libpeas/1.38/libpeas-1.38.1.tar.xz
+ https://download.gnome.org/sources/libshumate/1.6/libshumate-1.6.1.tar.xz
