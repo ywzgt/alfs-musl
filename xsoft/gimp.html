@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-438">
+  <body class="blfs" id="blfs-r13.0-445">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-438
+        "phrase">(systemd</span> Edition) - Version r13.0-445
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-438">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-445">
           Home</a>
         </li>
       </ul>
@@ -258,6 +258,12 @@
 rm -f  /usr/share/gir-1.0/Gimp-3.0.gir &amp;&amp;
 rm -f  /usr/lib/girepository-1.0/Gimp-3.0.typelib &amp;&amp;
 rm -f  /usr/lib/libgimp*-3.0.so*</kbd></pre>
+        <p>
+          Upstream provides a patch for building against gexiv2-0.16.0 and
+          later. Use it as follows:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i build/macos/patches/0001-build-macos-Do-not-require-gexiv2-0.14-on-homebrew.patch</kbd></pre>
         <p>
           Install <span class="application">Gimp</span> by running the
           following commands:
@@ -636,7 +642,7 @@ chown -R root:root /usr/share/gimp/3.0/help</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-438">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-445">
           Home</a>
         </li>
       </ul>
