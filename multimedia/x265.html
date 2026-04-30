@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      x265-4.1
+      x265-4.2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-449">
+  <body class="blfs" id="blfs-r13.0-460">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-449
+        "phrase">(systemd</span> Edition) - Version r13.0-460
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-449">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-460">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="x265" name="x265"></a>x265-4.1
+      <a id="x265" name="x265"></a>x265-4.2
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,23 +77,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz">
-                https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz</a>
+                "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.2.tar.gz">
+                https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.2.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: f1c3c80248d8574378a4aac8f374f6de
+                Download MD5 sum: 0a7edcf495aba9f320047d61647d610b
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 1.6 MB
+                Download size: 1.8 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 39 MB
+                Estimated disk space required: 49 MB
               </p>
             </li>
             <li class="listitem">
@@ -133,11 +133,10 @@
           Installation of x265
         </h2>
         <p>
-          First, remove some CMake policy settings that are no longer
-          compatible with CMake-4.0 and later:
+          First, fix building this package for 32-bit platforms:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -r '/cmake_policy.*(0025|0054)/d' -i source/CMakeLists.txt</kbd></pre>
+        "command">sed -i 's/FORMAT_ELF/UNIX64 &amp;&amp; FORMAT_ELF/' source/common/x86/cpu-a.asm</kbd></pre>
         <p>
           Install <span class="application">x265</span> by running the
           following commands:
@@ -147,7 +146,6 @@ cd    bld &amp;&amp;
 
 cmake -D CMAKE_INSTALL_PREFIX=/usr        \
       -D GIT_ARCHETYPE=1                  \
-      -D CMAKE_POLICY_VERSION_MINIMUM=3.5 \
       -W no-dev                           \
       ../source                           &amp;&amp;
 make</kbd></pre>
@@ -174,11 +172,6 @@ rm -vf /usr/lib/libx265.a</kbd></pre>
           installed. Git isn't required for anything else in this package, so
           this switch is used to work around it for users who do not want to
           install Git as a build dependency.
-        </p>
-        <p>
-          <em class="parameter"><code>-D
-          CMAKE_POLICY_VERSION_MINIMUM=3.5</code></em>: This switch allows
-          building this package with cmake-4.0 or newer.
         </p>
         <p>
           <em class="parameter"><code>-W no-dev</code></em>: This switch is
@@ -260,7 +253,7 @@ rm -vf /usr/lib/libx265.a</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-449">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-460">
           Home</a>
         </li>
       </ul>

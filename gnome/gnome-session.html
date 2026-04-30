@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-449">
+  <body class="blfs" id="blfs-r13.0-460">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-449
+        "phrase">(systemd</span> Edition) - Version r13.0-460
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-449">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-460">
           Home</a>
         </li>
       </ul>
@@ -165,16 +165,6 @@ ninja</kbd></pre>
         </p>
         <pre class="root"><kbd class=
         "command">mv -v /usr/share/doc/gnome-session{,-50.0}</kbd></pre>
-        <p>
-          This package creates two Xorg based <code class=
-          "filename">.desktop</code> files in the <code class=
-          "filename">/usr/share/wayland-sessions/</code> directory. Only one
-          is needed on a BLFS system, so we prevent the extra file showing up
-          as an option in a display manager. As the <code class=
-          "systemitem">root</code> user:
-        </p>
-        <pre class="root"><kbd class=
-        "command">rm -v /usr/share/wayland-sessions/gnome.desktop</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -203,13 +193,13 @@ ninja</kbd></pre>
         </h2>
         <p>
           The easiest way to start GNOME is to use a display manager.
-          <a class="xref" href="../x/gdm.html" title="GDM-49.2">GDM-49.2</a>
+          <a class="xref" href="../x/gdm.html" title="GDM-50.0">GDM-50.0</a>
           is the recommended display manager.
         </p>
         <p>
           It is also possible to start <span class="application">GNOME</span>
           from the command line. However, you must still have <a class="xref"
-          href="../x/gdm.html" title="GDM-49.2">GDM-49.2</a> installed for
+          href="../x/gdm.html" title="GDM-50.0">GDM-50.0</a> installed for
           the desktop to work. In previous releases of GNOME, gnome-shell
           would start without it installed, but this changed in 48.0. GDM
           does not need to be enabled to start gnome-shell from the command
@@ -223,7 +213,7 @@ ninja</kbd></pre>
         </p>
         <pre class="userinput"><kbd class=
         "command">systemctl --user set-environment XDG_SESSION_TYPE=wayland XDG_SESSION_ID=<em class="replaceable"><code>1</code></em> &amp;&amp;
-systemctl --user start gnome-session-wayland@gnome.target</kbd></pre>
+systemctl --user start gnome-session@gnome.target</kbd></pre>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -331,7 +321,7 @@ systemctl --user start gnome-session-wayland@gnome.target</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-449">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-460">
           Home</a>
         </li>
       </ul>
