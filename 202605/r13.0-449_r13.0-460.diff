@@ -1,0 +1,66 @@
+diff --git a/wget-list b/wget-list
+index f49371c317..9e6ec27671 100644
+--- a/wget-list
++++ b/wget-list
+@@ -99,7 +99,7 @@ https://github.com/libarchive/libarchive/releases/download/v3.8.7/libarchive-3.8
+ https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2
+ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/bdwgc/libatomic_ops/releases/download/v7.10.0/libatomic_ops-7.10.0.tar.gz
+-https://github.com/storaged-project/libblockdev/releases/download/3.4.0/libblockdev-3.4.0.tar.gz
++https://github.com/storaged-project/libblockdev/releases/download/3.5.0/libblockdev-3.5.0.tar.gz
+ https://github.com/storaged-project/libbytesize/releases/download/2.12/libbytesize-2.12.tar.gz
+ https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.0/llvm-project-22.1.0.src.tar.xz
+ https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.6.tar.xz
+@@ -479,7 +479,7 @@ https://files.pythonhosted.org/packages/source/g/gi-docgen/gi_docgen-2026.1.tar.
+ https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/html5lib-1.1-python_3.14_buildfix-1.patch
+ https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.1.0.tar.gz
+-https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.11.tar.gz
++https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.12.tar.gz
+ https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.4.4.tar.gz
+ https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.2.2.tar.gz
+ https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
+@@ -645,7 +645,7 @@ https://www.x.org/pub/individual/data/xbitmaps-1.1.4.tar.xz
+ https://invisible-mirror.net/archives/luit/luit-20250912.tgz
+ https://www.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
+ https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.47.tar.xz
+-https://www.x.org/pub/individual/xserver/xwayland-24.1.10.tar.xz
++https://www.x.org/pub/individual/xserver/xwayland-24.1.11.tar.xz
+ https://www.x.org/pub/individual/xserver/xorg-server-21.1.22.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.22-tearfree_backport-1.patch
+ https://www.freedesktop.org/software/libevdev/libevdev-1.13.6.tar.xz
+@@ -688,7 +688,7 @@ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3
+ https://download.gnome.org/sources/libadwaita/1.9/libadwaita-1.9.0.tar.xz
+ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.5.0/libei-1.5.0.tar.bz2
+ https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
+-https://dri.freedesktop.org/libdrm/libdrm-2.4.131.tar.xz
++https://dri.freedesktop.org/libdrm/libdrm-2.4.133.tar.xz
+ https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
+ https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.8.tar.xz
+ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+@@ -703,7 +703,7 @@ https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.341.0/Vulka
+ https://webkitgtk.org/releases/webkitgtk-2.52.0.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.20.4/xdg-desktop-portal-1.20.4.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
+-https://download.gnome.org/sources/gdm/49/gdm-49.2.tar.xz
++https://download.gnome.org/sources/gdm/50/gdm-50.0.tar.xz
+ https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.tar.xz
+ https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.9/lightdm-gtk-greeter-2.0.9.tar.gz
+ https://github.com/sddm/sddm/archive/v0.21.0/sddm-0.21.0.tar.gz
+@@ -901,6 +901,7 @@ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+ https://feh.finalrewind.org/feh-3.12.1.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
+ https://github.com/freerdp/freerdp/archive/3.25.0/FreeRDP-3.25.0.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/FreeRDP-3.25.0-upstream_fixes-1.patch
+ https://download.gimp.org/gimp/v3.2/gimp-3.2.4.tar.xz
+ https://download.gimp.org/pub/gimp/help/gimp-help-3.0.2.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.8.1.tar.gz
+@@ -986,7 +987,7 @@ https://taglib.org/releases/taglib-2.2.1.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.32.0.tar.xz
+ https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.14/wireplumber-0.5.14.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20250815.tar.xz
+-https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz
++https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.2.tar.gz
+ https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-upstream_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-gcc15_fixes-1.patch
