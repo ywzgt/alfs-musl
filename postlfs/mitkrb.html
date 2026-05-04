@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-483">
+  <body class="blfs" id="blfs-r13.0-490">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-483
+        "phrase">(systemd</span> Edition) - Version r13.0-490
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-483">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-490">
           Home</a>
         </li>
       </ul>
@@ -119,6 +119,13 @@
                 https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-upstream_fix-1.patch</a>
               </p>
             </li>
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-security_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-security_fix-1.patch</a>
+              </p>
+            </li>
           </ul>
         </div>
         <h3>
@@ -170,6 +177,11 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../mitkrb-1.22.2-upstream_fix-1.patch</kbd></pre>
+        <p>
+          Next, fix two security issues identified upstream:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../mitkrb-1.22.2-security_fix-1.patch</kbd></pre>
         <p>
           Build <span class="application">MIT Kerberos V5</span> by running
           the following commands:
@@ -284,7 +296,7 @@ cp -vfr ../doc -T /usr/share/doc/krb5-1.22.2</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id8096" name="id8096"></a>Kerberos Configuration
+                    <a id="id8120" name="id8120"></a>Kerberos Configuration
                   </h5>
                 </div>
               </div>
@@ -457,7 +469,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id8175" name="id8175"></a>Additional Information
+                    <a id="id8199" name="id8199"></a>Additional Information
                   </h5>
                 </div>
               </div>
@@ -1064,7 +1076,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-483">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-490">
           Home</a>
         </li>
       </ul>

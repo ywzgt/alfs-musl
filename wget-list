@@ -17,6 +17,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3
 https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2
 https://kerberos.org/dist/krb5/1.22/krb5-1.22.2.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-upstream_fix-1.patch
+https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-security_fix-1.patch
 https://ftpmirror.gnu.org/nettle/nettle-4.0.tar.gz
 https://archive.mozilla.org/pub/security/nss/releases/NSS_3_123_1_RTM/src/nss-3.123.1.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
@@ -106,7 +107,7 @@ https://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
 https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.3.0/downloads/libdisplay-info-0.3.0.tar.xz
 https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.12.2.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.60.tar.bz2
-https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.56.tar.xz
+https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.57.tar.xz
 https://download.gnome.org/sources/libgudev/238/libgudev-238.tar.xz
 https://github.com/hughsie/libgusb/releases/download/0.4.9/libgusb-0.4.9.tar.xz
 https://github.com/libical/libical/releases/download/v3.0.20/libical-3.0.20.tar.gz
@@ -185,7 +186,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.1.1-xorg_prefix-1.pat
 https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
 https://github.com/harfbuzz/harfbuzz/releases/download/14.2.0/harfbuzz-14.2.0.tar.xz
 https://github.com/jasper-software/jasper/archive/version-4.2.9/jasper-version-4.2.9.tar.gz
-https://github.com/mm2/Little-CMS/releases/download/lcms2.18/lcms2-2.18.tar.gz
+https://github.com/mm2/Little-CMS/releases/download/lcms2.19/lcms2-2.19.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/v1.4.1/libavif-1.4.1.tar.gz
 https://github.com/libexif/libexif/releases/download/v0.6.26/libexif-0.6.26.tar.bz2
 https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
@@ -443,7 +444,7 @@ https://cpan.metacpan.org/authors/id/S/SC/SCHWIGON/Test-utf8-1.03.tar.gz
 https://cpan.metacpan.org/authors/id/E/ET/ETHER/Test-Warnings-0.038.tar.gz
 https://cpan.metacpan.org/authors/id/C/CO/CORION/Test-Without-Module-0.23.tar.gz
 https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Test2-Plugin-NoWarnings-0.10.tar.gz
-https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.61.tgz
+https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.62.tgz
 https://cpan.metacpan.org/authors/id/N/NE/NEILB/Text-Diff-1.45.tar.gz
 https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/Text-Glob-0.11.tar.gz
 https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Tie-Cycle-1.233.tar.gz
@@ -620,7 +621,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.24-consolidated_fix
 https://archive.apache.org/dist/httpd/httpd-2.4.66.tar.bz2
 https://www.linuxfromscratch.org/patches/blfs/svn/httpd-blfs_layout-1.patch
 https://downloads.isc.org/isc/kea/3.0.2/kea-3.0.2.tar.xz
-https://github.com/proftpd/proftpd/archive/v1.3.9/proftpd-1.3.9.tar.gz
+https://github.com/proftpd/proftpd/archive/v1.3.9a/proftpd-1.3.9a.tar.gz
 https://www.dovecot.org/releases/2.4/dovecot-2.4.2.tar.gz
 https://ftp.exim.org/pub/exim/exim4/exim-4.99.1.tar.xz
 https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.1.tar.gz
