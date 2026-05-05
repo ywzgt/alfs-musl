@@ -157,8 +157,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.2-protobuf34_fi
 https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz
 https://github.com/danvratil/qcoro/archive/v0.13.0/qcoro-0.13.0.tar.gz
 https://github.com/simdutf/simdutf/archive/v9.0.0/simdutf-9.0.0.tar.gz
-https://archive.mozilla.org/pub/firefox/releases/140.9.0esr/source/firefox-140.9.0esr.source.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.9.0-python_3.14_fixes-1.patch
+https://archive.mozilla.org/pub/firefox/releases/140.10.1esr/source/firefox-140.10.1esr.source.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.10.1-python_3.14_fixes-1.patch
 https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.341.0/SPIRV-Headers-vulkan-sdk-1.4.341.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.341.0/SPIRV-Tools-vulkan-sdk-1.4.341.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v22.1.2/SPIRV-LLVM-Translator-22.1.2.tar.gz
@@ -889,10 +889,9 @@ https://download.documentfoundation.org/libreoffice/src/26.2.2/libreoffice-help-
 https://download.documentfoundation.org/libreoffice/src/26.2.2/libreoffice-translations-26.2.2.2.tar.xz
 https://download.gnome.org/sources/epiphany/49/epiphany-49.3.tar.xz
 https://download.kde.org/stable/release-service/25.12.2/src/falkon-25.12.2.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.9.0esr-ffmpeg-8.0.patch
-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.9.0esr-glibc-2.43.patch
-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.9.0esr-python_3.14_fixes-1.patch
-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.9.0esr-llvm_22-1.patch
+https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.10.1esr-glibc-2.43.patch
+https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.10.1esr-python_3.14_fixes-1.patch
+https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.10.1esr-llvm_22-1.patch
 https://archive.seamonkey-project.org/releases/2.53.23/source/seamonkey-2.53.23.source.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-libvpx_security_fixes-1.patch
 https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-cxx17-1.patch
