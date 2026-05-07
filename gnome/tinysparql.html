@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-496">
+  <body class="blfs" id="blfs-r13.0-501">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-496
+        "phrase">(systemd</span> Edition) - Version r13.0-501
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-496">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-501">
           Home</a>
         </li>
       </ul>
@@ -124,11 +124,9 @@
           <a class="xref" href="../general/icu.html" title=
           "icu-78.3">ICU-78.3</a>, <a class="xref" href=
           "../basicnet/libsoup3.html" title=
-          "libsoup-3.6.6">libsoup-3.6.6</a>, <a class="xref" href=
+          "libsoup-3.6.6">libsoup-3.6.6</a>, and <a class="xref" href=
           "localsearch.html" title=
-          "localsearch-3.11.1">localsearch-3.11.1</a> (runtime), and
-          <a class="xref" href="../general/python-modules.html#pygobject3"
-          title="PyGObject-3.56.2">PyGObject-3.56.2</a>
+          "localsearch-3.11.1">localsearch-3.11.1</a> (runtime)
         </p>
         <h4>
           Optional
@@ -138,7 +136,9 @@
           title="Asciidoc-10.2.1">asciidoc-10.2.1</a>, <a class="xref" href=
           "../basicnet/avahi.html" title="Avahi-0.8">Avahi-0.8</a>, <a class=
           "xref" href="../general/graphviz.html" title=
-          "Graphviz-14.1.5">Graphviz-14.1.5</a>, <a class="ulink" href=
+          "Graphviz-14.1.5">Graphviz-14.1.5</a>, <a class="xref" href=
+          "../general/python-modules.html#pygobject3" title=
+          "PyGObject-3.56.2">PyGObject-3.56.2</a>, <a class="ulink" href=
           "https://github.com/scop/bash-completion/">bash-completion</a>, and
           <a class="ulink" href="https://snowballstem.org/">libstemmer</a>
         </p>
@@ -178,6 +178,7 @@ cd    build &amp;&amp;
 meson setup --prefix=/usr       \
             --buildtype=release \
             -D man=false        \
+            -D tests=false      \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -185,13 +186,16 @@ ninja</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>meson
-          configure -D debug=true &amp;&amp; LC_ALL=C.UTF-8 ninja
-          test</strong></span>. The test suite should be run from a graphical
-          session. One test, test_cli, is known to fail due to the manual
-          pages not being generated, but will pass if "-D man=false" is
-          omitted when configuring the package. One other test, resource, is
-          also known to fail.
+          To test the results, ensure <a class="xref" href=
+          "../general/python-modules.html#pygobject3" title=
+          "PyGObject-3.56.2">PyGObject-3.56.2</a> is installed and issue:
+          <span class="command"><strong>meson configure -D debug=true -D
+          tests=true &amp;&amp; LC_ALL=C.UTF-8 ninja test</strong></span>.
+          The test suite should be run from a graphical session. One test,
+          test_cli, is known to fail due to the manual pages not being
+          generated, but will pass if "-D man=false" is omitted when
+          configuring the package. One other test, resource, is also known to
+          fail.
         </p>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -320,7 +324,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-496">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-501">
           Home</a>
         </li>
       </ul>
