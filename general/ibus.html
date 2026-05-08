@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-501">
+  <body class="blfs" id="blfs-r13.0-513">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-501
+        "phrase">(systemd</span> Edition) - Version r13.0-513
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-501">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-513">
           Home</a>
         </li>
       </ul>
@@ -206,10 +206,14 @@ fi</kbd></pre>
             --disable-emoji-dict   &amp;&amp;
 make</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>make -k
+          To test the results, issue: <span class="command"><strong>sed
+          's/python$/&amp;3/' -i engine/test-gnome.py &amp;&amp; make -k
           check</strong></span>. The test named ibus-compose fails because it
-          uses some locales not installed in LFS. The xkb-latin-layouts test
-          is also known to fail on some systems.
+          uses some locales not installed in LFS. The test named
+          ibus-keypress requires <code class=
+          "literal">CONFIG_INPUT_UINPUT</code> enabled in the kernel
+          configuration and it would fail otherwise. The xkb-latin-layouts
+          test is also known to fail on some systems.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -400,7 +404,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-501">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-513">
           Home</a>
         </li>
       </ul>

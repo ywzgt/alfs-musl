@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Valgrind-3.26.0
+      Valgrind-3.27.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-501">
+  <body class="blfs" id="blfs-r13.0-513">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-501
+        "phrase">(systemd</span> Edition) - Version r13.0-513
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,13 +40,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-501">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-513">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="valgrind" name="valgrind"></a>Valgrind-3.26.0
+      <a id="valgrind" name="valgrind"></a>Valgrind-3.27.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -79,13 +79,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://sourceware.org/pub/valgrind/valgrind-3.26.0.tar.bz2">
-                https://sourceware.org/pub/valgrind/valgrind-3.26.0.tar.bz2</a>
+                "https://sourceware.org/pub/valgrind/valgrind-3.27.0.tar.bz2">
+                https://sourceware.org/pub/valgrind/valgrind-3.27.0.tar.bz2</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 856da1bc568212df6df502295a0439c0
+                Download MD5 sum: 72ea4b0c8cd42919438e575956fd4a4d
               </p>
             </li>
             <li class="listitem">
@@ -95,27 +95,13 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 414 MB (add 86 MB for tests)
+                Estimated disk space required: 416 MB (add 107 MB for tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.5 SBU (add 6.4 SBU for tests; both
+                Estimated build time: 0.7 SBU (add 7.6 SBU for tests; both
                 using parallelism=4)
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/valgrind-3.26.0-upstream_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/valgrind-3.26.0-upstream_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -142,17 +128,6 @@
           Installation of Valgrind
         </h2>
         <p>
-          First, make several changes that are required for Valgrind to
-          function on systems with glibc-2.43 and Linux 6.18.x installed:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../valgrind-3.26.0-upstream_fixes-1.patch</kbd></pre>
-        <p>
-          Next, regenerate the build system since we adjusted the Makefiles:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">autoreconf -fiv</kbd></pre>
-        <p>
           Install <span class="application">Valgrind</span> by running the
           following commands:
         </p>
@@ -160,7 +135,7 @@
         "command">sed -i 's|/doc/valgrind||' docs/Makefile.in &amp;&amp;
 
 ./configure --prefix=/usr \
-            --datadir=/usr/share/doc/valgrind-3.26.0 &amp;&amp;
+            --datadir=/usr/share/doc/valgrind-3.27.0 &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
@@ -250,7 +225,7 @@ make</kbd></pre>
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/lib/valgrind, /usr/libexec/valgrind,
               /usr/include/valgrind, and
-              /usr/share/doc/valgrind-3.26.0</span>
+              /usr/share/doc/valgrind-3.27.0</span>
             </div>
           </div>
         </div>
@@ -437,7 +412,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-501">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-513">
           Home</a>
         </li>
       </ul>
