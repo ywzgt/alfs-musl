@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-513">
+  <body class="blfs" id="blfs-r13.0-555">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-513
+        "phrase">(systemd</span> Edition) - Version r13.0-555
       </h4>
       <h3>
         Chapter&nbsp;22.&nbsp;Databases
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-513">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-555">
           Home</a>
         </li>
       </ul>
@@ -101,6 +101,20 @@
               <p>
                 Estimated build time: 3.8 SBU (with parallelism=8, add 2.9
                 SBU for tests)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/mariadb-11.8.6-openssl4_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/mariadb-11.8.6-openssl4_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -216,6 +230,11 @@ useradd -c "MariaDB Server" -d /srv/mariadb -g mariadb -s /bin/false -u 40 maria
         <pre class="userinput"><kbd class=
         "command">sed -i 's/regex system/regex/' \
        storage/columnstore/columnstore/cmake/boost.cmake</kbd></pre>
+        <p>
+          Fix runtime issues with OpenSSL-4.0 and later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../mariadb-11.8.6-openssl4_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">MariaDB</span> by running the
           following commands:
@@ -1412,7 +1431,7 @@ mariadbd-safe --user=mariadb 2&gt;&amp;1 &gt;/dev/null &amp;</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-513">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-555">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-513">
+  <body class="blfs" id="blfs-r13.0-555">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-513
+        "phrase">(systemd</span> Edition) - Version r13.0-555
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-513">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-555">
           Home</a>
         </li>
       </ul>
@@ -143,6 +143,18 @@
         <h2 class="sect2">
           Installation of Wget
         </h2>
+        <p>
+          First, make a fix to make the package compatible with OpenSSL 4.
+          The bash variable is for presentation purposes due to the long
+          line.
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">NEW_LINE="#if !defined OPENSSL_NO_SSL3_METHOD "
+NEW_LINE+="&amp;&amp; OPENSSL_VERSION_NUMBER &lt; 0x40000000L"
+
+sed -i "/SSL3/c $NEW_LINE" src/openssl.c
+
+unset NEW_LINE </kbd></pre>
         <p>
           Install <span class="application">Wget</span> by running the
           following commands:
@@ -273,7 +285,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-513">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-555">
           Home</a>
         </li>
       </ul>

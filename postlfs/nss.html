@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-513">
+  <body class="blfs" id="blfs-r13.0-555">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-513
+        "phrase">(systemd</span> Edition) - Version r13.0-555
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-513">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-555">
           Home</a>
         </li>
       </ul>
@@ -162,6 +162,12 @@
         <h2 class="sect2">
           Installation of NSS
         </h2>
+        <p>
+          First, if you are going to run the test suite, adapt some tests to
+          sqlite-3.53.0 and later:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i "490 s/,X'/,[xX]'/" nss/tests/dbtests/dbtests.sh</kbd></pre>
         <p>
           Install <span class="application">NSS</span> by running the
           following commands:
@@ -446,7 +452,7 @@ install -v -m644 Linux*/lib/pkgconfig/nss.pc  /usr/lib/pkgconfig</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-513">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-555">
           Home</a>
         </li>
       </ul>
