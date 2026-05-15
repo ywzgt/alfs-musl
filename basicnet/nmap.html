@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-555">
+  <body class="blfs" id="blfs-r13.0-572">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-555
+        "phrase">(systemd</span> Edition) - Version r13.0-572
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-555">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-572">
           Home</a>
         </li>
       </ul>
@@ -106,6 +106,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Recommended patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/nmap-7.99-openssl4_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/nmap-7.99-openssl4_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Nmap Dependencies
         </h3>
         <h4>
@@ -141,7 +155,7 @@
           "libssh2-1.11.1">libssh2-1.11.1</a>, <a class="xref" href=
           "../general/lua.html" title="Lua-5.4.8">Lua-5.4.8</a>, and
           <a class="xref" href="../general/python-modules.html#pygobject3"
-          title="PyGObject-3.56.2">PyGObject-3.56.2</a>
+          title="PyGObject-3.56.3">PyGObject-3.56.3</a>
         </p>
         <h4>
           Optional
@@ -177,10 +191,15 @@
         <pre class="userinput"><kbd class=
         "command">sed 's/, "setuptools-gettext"//' -i zenmap/pyproject.toml</kbd></pre>
         <p>
-          fix a packaging error that makes the build fail:
+          Fix a packaging error that makes the build fail:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed '/py-modules/s/f"/&amp;, "Version"/' -i ndiff/pyproject.toml</kbd></pre>
+        <p>
+          Fix compiling this package against OpenSSL-4:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../nmap-7.99-openssl4_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">Nmap</span> by running the
           following commands:
@@ -369,7 +388,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-555">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-572">
           Home</a>
         </li>
       </ul>

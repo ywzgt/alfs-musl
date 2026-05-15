@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-555">
+  <body class="blfs" id="blfs-r13.0-572">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-555
+        "phrase">(systemd</span> Edition) - Version r13.0-572
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-555">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-572">
           Home</a>
         </li>
       </ul>
@@ -254,7 +254,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="perl-modules.html#perl-libwww-perl"
-                title="LWP (libwww-perl-6.82)">libwww-perl-6.82</a>
+                title="LWP (libwww-perl-6.83)">libwww-perl-6.83</a>
               </p>
             </li>
             <li class="listitem">
@@ -2120,7 +2120,7 @@ make test</kbd></pre>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
           <a id="perl-libwww-perl" name="perl-libwww-perl"></a>LWP
-          (libwww-perl-6.82)
+          (libwww-perl-6.83)
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -2154,13 +2154,13 @@ make test</kbd></pre>
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://www.cpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.82.tar.gz">
-                  https://www.cpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.82.tar.gz</a>
+                  "https://www.cpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.83.tar.gz">
+                  https://www.cpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.83.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: 50ff700dbb03d3ba06e950cd896e1e91
+                  Download MD5 sum: dfca8f917f4727ddbdf3d81d0979172f
                 </p>
               </li>
             </ul>
@@ -2574,7 +2574,7 @@ make test</kbd></pre>
           <p>
             LWP::Protocol::https provides https support for LWP::UserAgent
             (i.e. <a class="xref" href="perl-modules.html#perl-libwww-perl"
-            title="LWP (libwww-perl-6.82)">libwww-perl-6.82</a>). Once the
+            title="LWP (libwww-perl-6.83)">libwww-perl-6.83</a>). Once the
             module is installed LWP is able to access sites using HTTP over
             SSL/TLS.
           </p>
@@ -2618,7 +2618,7 @@ make test</kbd></pre>
             <a class="xref" href="perl-modules.html#perl-io-socket-ssl"
             title="IO::Socket::SSL-2.098">IO-Socket-SSL-2.098</a>, <a class=
             "xref" href="perl-modules.html#perl-libwww-perl" title=
-            "LWP (libwww-perl-6.82)">libwww-perl-6.82</a>, and <a class=
+            "LWP (libwww-perl-6.83)">libwww-perl-6.83</a>, and <a class=
             "xref" href="../postlfs/make-ca.html" title=
             "make-ca-1.16.1">make-ca-1.16.1</a> with <code class=
             "literal">/etc/pki/tls/certs/ca-bundle.crt</code>.
@@ -4265,14 +4265,19 @@ make test</kbd></pre>
             XML::Simple Dependencies
           </h4>
           <h5>
+            Recommended
+          </h5>
+          <p class="recommended">
+            <a class="xref" href="perl-modules.html#perl-xml-parser" title=
+            "XML::Parser-2.58">XML-Parser-2.58</a>
+          </p>
+          <h5>
             Optional
           </h5>
           <p class="optional">
             <a class="xref" href="perl-deps.html#perl-xml-sax" title=
             "XML::SAX-1.02">XML-SAX-1.02</a> (for an alternative parser which
-            will be used if available, otherwise <span class=
-            "application">XML::Parser</span> (which was installed in LFS)
-            will be used)
+            will be used if available)
           </p>
         </div>
         <div class="installation" lang="en" xml:lang="en">
@@ -4291,9 +4296,9 @@ make test</kbd></pre>
               "application">XML::SAX</span> is installed, this module is not
               necessary as <span class="application">XML::SAX</span> will use
               the <span class="application">libxml2</span> package instead.
-              However, if it is not installed, the <span class=
-              "application">XML::Parser</span> module which was installed in
-              LFS will get used instead.
+              However, if it is not installed, <a class="xref" href=
+              "perl-modules.html#perl-xml-parser" title=
+              "XML::Parser-2.58">XML-Parser-2.58</a> will get used instead.
             </p>
           </div>
           <p>
@@ -4466,7 +4471,7 @@ make test</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-555">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-572">
           Home</a>
         </li>
       </ul>
