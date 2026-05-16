@@ -1,0 +1,87 @@
+diff --git a/wget-list b/wget-list
+index efc01ca2ff..2e98f95d71 100644
+--- a/wget-list
++++ b/wget-list
+@@ -4,7 +4,7 @@ https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.t
+ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.6.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
+-https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.19.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.20.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.13.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-2.0.1.tar.bz2
+ https://www.gnupg.org/ftp/gcrypt/gpgmepp/gpgmepp-2.0.0.tar.xz
+@@ -149,7 +149,7 @@ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
+ https://nodejs.org/dist/v24.15.0/node-v24.15.0.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
+-https://archive.mozilla.org/pub/nspr/releases/v4.38.2/src/nspr-4.38.2.tar.gz
++https://archive.mozilla.org/pub/nspr/releases/v4.39/src/nspr-4.39.tar.gz
+ https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
+ https://github.com/protocolbuffers/protobuf/releases/download/v34.1/protobuf-34.1.tar.gz
+ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
+@@ -166,7 +166,7 @@ https://www.samba.org/ftp/talloc/talloc-2.4.4.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+ https://github.com/martinpitt/umockdev/releases/download/0.19.7/umockdev-0.19.7.tar.xz
+ https://github.com/nemtrif/utfcpp/archive/v4.0.9/utfcpp-4.0.9.tar.gz
+-https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.24.0/downloads/wayland-1.24.0.tar.xz
++https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.25.0/downloads/wayland-1.25.0.tar.xz
+ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.48/downloads/wayland-protocols-1.48.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+ https://oligarchy.co.uk/xapian/2.0.0/xapian-core-2.0.0.tar.xz
+@@ -335,7 +335,7 @@ https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.098.tar.gz
+ https://www.cpan.org/authors/id/G/GA/GAAS/IO-String-1.08.tar.gz
+ https://www.cpan.org/authors/id/R/RJ/RJBS/IPC-Run3-0.049.tar.gz
+ https://www.cpan.org/authors/id/A/AL/ALINKE/Lingua-Translit-0.29.tar.gz
+-https://www.cpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.82.tar.gz
++https://www.cpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.83.tar.gz
+ https://www.cpan.org/authors/id/D/DR/DROLSKY/List-AllUtils-0.19.tar.gz
+ https://www.cpan.org/authors/id/R/RE/REHSACK/List-MoreUtils-0.430.tar.gz
+ https://www.cpan.org/authors/id/E/ET/ETJ/Log-Log4perl-1.57.tar.gz
+@@ -487,7 +487,7 @@ https://download.gnome.org/sources/pyatspi/2.58/pyatspi-2.58.2.tar.xz
+ https://github.com/pygobject/pycairo/releases/download/v1.29.0/pycairo-1.29.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
+ https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.20.0.tar.gz
+-https://download.gnome.org/sources/pygobject/3.56/pygobject-3.56.2.tar.gz
++https://download.gnome.org/sources/pygobject/3.56/pygobject-3.56.3.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.3.2.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+ https://files.pythonhosted.org/packages/source/p/pytest/pytest-9.0.3.tar.gz
+@@ -495,7 +495,7 @@ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603f
+ https://www.linuxfromscratch.org/patches/blfs/svn/pyxdg-0.28-python3_14-fixes-1.patch
+ https://files.pythonhosted.org/packages/source/P/PyYAML/pyyaml-6.0.3.tar.gz
+ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
+-https://files.pythonhosted.org/packages/source/r/requests/requests-2.33.1.tar.gz
++https://files.pythonhosted.org/packages/source/r/requests/requests-2.34.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/requests-use_system_certs-2.patch
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+ https://github.com/getsentry/sentry-python/releases/download/2.53.0/sentry_sdk-2.53.0.tar.gz
+@@ -582,6 +582,7 @@ https://ftp.isc.org/isc/bind9/9.20.20/bind-9.20.20.tar.xz
+ https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.56.0/downloads/NetworkManager-1.56.0.tar.xz
+ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
+ https://nmap.org/dist/nmap-7.99.tar.bz2
++https://www.linuxfromscratch.org/patches/blfs/svn/nmap-7.99-openssl4_fixes-1.patch
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.6.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.6.6/whois-5.6.6.tar.gz
+ https://www.wireshark.org/download/src/all-versions/wireshark-4.6.5.tar.xz
+@@ -930,13 +931,13 @@ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
+ https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
+ https://github.com/dyne/frei0r/archive/v3.1.3/frei0r-3.1.3.tar.gz
+ https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
+-https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.2.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.28.2.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.28.2.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.28.2.tar.xz
+-https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.28.2.tar.xz
+-https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.28.2/gst-plugins-rs-gstreamer-1.28.2.tar.gz
+-https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.28.2.tar.xz
++https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.3.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.28.3.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.28.3.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.28.3.tar.xz
++https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.28.3.tar.xz
++https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.28.3/gst-plugins-rs-gstreamer-1.28.3.tar.gz
++https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.28.3.tar.xz
+ https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+ https://github.com/lfs-book/intel-media-driver/archive/v26.1.5/intel-media-driver-26.1.5.tar.gz
