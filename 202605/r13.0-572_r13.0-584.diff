@@ -1,0 +1,106 @@
+diff --git a/wget-list b/wget-list
+index 2e98f95d71..17de8fa5f0 100644
+--- a/wget-list
++++ b/wget-list
+@@ -54,7 +54,7 @@ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/25.12.2/src/kate-25.12.2.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.7/mousepad-0.7.0.tar.xz
+ https://www.nano-editor.org/dist/v9/nano-9.0.tar.xz
+-https://github.com/vim/vim/archive/v9.2.0421/vim-9.2.0421.tar.gz
++https://github.com/vim/vim/archive/v9.2.0481/vim-9.2.0481.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.3.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.tar.xz
+@@ -110,10 +110,10 @@ https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.61.tar.bz2
+ https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.58.tar.xz
+ https://download.gnome.org/sources/libgudev/238/libgudev-238.tar.xz
+ https://github.com/hughsie/libgusb/releases/download/0.4.9/libgusb-0.4.9.tar.xz
+-https://github.com/libical/libical/releases/download/v4.0.0/libical-4.0.0.tar.gz
++https://github.com/libical/libical/releases/download/v4.0.1/libical-4.0.1.tar.gz
+ https://ftpmirror.gnu.org/libidn/libidn-1.43.tar.gz
+ https://ftpmirror.gnu.org/libidn/libidn2-2.3.8.tar.gz
+-https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.7.0.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.8.0.tar.bz2
+ https://github.com/cjlin1/liblinear/archive/v250/liblinear-250.tar.gz
+ https://gitlab.freedesktop.org/mobile-broadband/libmbim/-/archive/1.34.0/libmbim-1.34.0.tar.gz
+ https://github.com/linux-nvme/libnvme/archive/v1.16.1/libnvme-1.16.1.tar.gz
+@@ -197,10 +197,10 @@ https://github.com/libjxl/libjxl/archive/v0.11.2/libjxl-0.11.2.tar.gz
+ https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
+ https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz
+ https://downloads.sourceforge.net/libpng/libpng-1.6.58.tar.xz
+-https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.57-apng.patch.gz
++https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.58-apng.patch.gz
+ https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
+ https://www.libraw.org/data/LibRaw-0.22.1.tar.gz
+-https://download.gnome.org/sources/librsvg/2.62/librsvg-2.62.1.tar.xz
++https://download.gnome.org/sources/librsvg/2.62/librsvg-2.62.2.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+ https://download.osgeo.org/libtiff/tiff-4.7.1.tar.gz
+ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz
+@@ -277,6 +277,7 @@ https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+ https://download.librdf.org/source/redland-1.0.17.tar.gz
+ https://sysstat.github.io/sysstat-packages/sysstat-12.7.9.tar.xz
+ https://github.com/systemd/systemd/archive/v260.1/systemd-260.1.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/systemd-260.1-buildfix-1.patch
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.11.1/udisks-2.11.1.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-7.2.4.tar.gz
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.2/upower-v1.91.2.tar.bz2
+@@ -460,9 +461,10 @@ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+ https://www.php.net/distributions/php-8.5.6.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+-https://www.python.org/ftp/python/3.14.4/Python-3.14.4.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.4-security_fixes-2.patch
+-https://www.python.org/ftp/python/doc/3.14.4/python-3.14.4-docs-html.tar.bz2
++https://www.python.org/ftp/python/3.14.5/Python-3.14.5.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.5-security_fixes-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.5-openssl_4-1.patch
++https://www.python.org/ftp/python/doc/3.14.5/python-3.14.5-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+ https://download.gnome.org/sources/blueprint-compiler/0.20/blueprint-compiler-0.20.4.tar.xz
+@@ -495,7 +497,7 @@ https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603f
+ https://www.linuxfromscratch.org/patches/blfs/svn/pyxdg-0.28-python3_14-fixes-1.patch
+ https://files.pythonhosted.org/packages/source/P/PyYAML/pyyaml-6.0.3.tar.gz
+ https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
+-https://files.pythonhosted.org/packages/source/r/requests/requests-2.34.1.tar.gz
++https://files.pythonhosted.org/packages/source/r/requests/requests-2.34.2.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/requests-use_system_certs-2.patch
+ https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+ https://github.com/getsentry/sentry-python/releases/download/2.53.0/sentry_sdk-2.53.0.tar.gz
+@@ -553,7 +555,7 @@ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+ https://archive.apache.org/dist/subversion/subversion-1.14.5.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/subversion-1.14.5-upstream_fixes-1.patch
+ https://downloads.sourceforge.net/swig/swig-4.4.1.tar.gz
+-https://downloads.sourceforge.net/tcl/tk8.6.17-src.tar.gz
++https://downloads.sourceforge.net/tcl/tk8.6.18-src.tar.gz
+ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+ https://download.gnome.org/sources/vala/0.56/vala-0.56.19.tar.xz
+ https://sourceware.org/pub/valgrind/valgrind-3.27.0.tar.bz2
+@@ -944,7 +946,7 @@ https://github.com/lfs-book/intel-media-driver/archive/v26.1.5/intel-media-drive
+ https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
+ https://distfiles.adelielinux.org/source/a52dec/a52dec-0.8.0.tar.gz
+ https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
+-https://storage.googleapis.com/aom-releases/libaom-3.13.3.tar.gz
++https://storage.googleapis.com/aom-releases/libaom-3.14.0.tar.gz
+ https://github.com/libass/libass/releases/download/0.17.4/libass-0.17.4.tar.xz
+ https://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libcanberra-0.30-wayland-1.patch
+@@ -971,7 +973,7 @@ https://github.com/webmproject/libvpx/archive/v1.16.0/libvpx-1.16.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libvpx-1.16.0-security_fix-1.patch
+ https://github.com/mltframework/mlt/releases/download/v7.38.0/mlt-7.38.0.tar.gz
+ https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz
+-https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.4/pipewire-1.6.4.tar.bz2
++https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.5/pipewire-1.6.5.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.2.tar.xz
+ https://www.libsdl.org/release/sdl2-compat-2.32.68.tar.gz
+@@ -981,7 +983,7 @@ https://www.surina.net/soundtouch/soundtouch-2.4.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v4.1.0/SVT-AV1-v4.1.0.tar.gz
+-https://taglib.org/releases/taglib-2.2.1.tar.gz
++https://taglib.org/releases/taglib-2.3.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.32.0.tar.xz
+ https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.14/wireplumber-0.5.14.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20250815.tar.xz
