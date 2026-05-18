@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-584">
+  <body class="blfs" id="blfs-r13.0-591">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-584
+        "phrase">(systemd</span> Edition) - Version r13.0-591
       </h4>
       <h3>
         Chapter&nbsp;18.&nbsp;Text Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-584">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-591">
           Home</a>
         </li>
       </ul>
@@ -143,7 +143,9 @@
             --with-bzlib            \
             --with-ssl              \
             --with-screen=ncursesw  \
+            --enable-ipv6           \
             --enable-locale-charset \
+            --enable-nls            \
             --datadir=/usr/share/doc/lynx-2.9.2 &amp;&amp;
 make</kbd></pre>
         <p>
@@ -195,6 +197,11 @@ chgrp -v -R root /usr/share/doc/lynx-2.9.2/lynx_doc</kbd></pre>
           wrapping in multibyte locales.
         </p>
         <p>
+          <em class="parameter"><code>--enable-ipv6</code></em>: This switch
+          allows <span class="application">Lynx</span> to use IPv6, along
+          with IPv4. Use it if your ISP provides an IPv6 configuration.
+        </p>
+        <p>
           <em class="parameter"><code>--enable-locale-charset</code></em>:
           This switch allows <span class="application">Lynx</span> to deduce
           the proper character encoding for terminal output from the current
@@ -206,14 +213,9 @@ chgrp -v -R root /usr/share/doc/lynx-2.9.2/lynx_doc</kbd></pre>
           configuration steps has to be reduced to the minimum.
         </p>
         <p>
-          <code class="option">--enable-ipv6</code>: This switch allows
-          <span class="application">Lynx</span> to use IPv6, along with IPv4.
-          Use it if your ISP provides an IPv6 configuration.
-        </p>
-        <p>
-          <code class="option">--enable-nls</code>: This switch allows
-          <span class="application">Lynx</span> to print translated messages
-          (such as questions about cookies and SSL certificates).
+          <em class="parameter"><code>--enable-nls</code></em>: This switch
+          allows <span class="application">Lynx</span> to print translated
+          messages (such as questions about cookies and SSL certificates).
         </p>
         <p>
           <code class="option">--with-gnutls</code>: This enables
@@ -381,7 +383,7 @@ chgrp -v -R root /usr/share/doc/lynx-2.9.2/lynx_doc</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-584">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-591">
           Home</a>
         </li>
       </ul>

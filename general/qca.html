@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-584">
+  <body class="blfs" id="blfs-r13.0-591">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-584
+        "phrase">(systemd</span> Edition) - Version r13.0-591
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-584">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-591">
           Home</a>
         </li>
       </ul>
@@ -108,6 +108,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/qca-2.3.10-openssl4_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/qca-2.3.10-openssl4_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           Qca Dependencies
         </h3>
         <h4>
@@ -117,7 +131,7 @@
           <a class="xref" href="../postlfs/make-ca.html" title=
           "make-ca-1.16.1">make-ca-1.16.1</a>, <a class="xref" href=
           "cmake.html" title="CMake-4.3.2">CMake-4.3.2</a>, <a class="xref"
-          href="../x/qt6.html" title="Qt-6.11.0">Qt-6.11.0</a>, and <a class=
+          href="../x/qt6.html" title="Qt-6.11.1">Qt-6.11.1</a>, and <a class=
           "xref" href="which.html" title=
           "Which-2.23 and Alternatives">Which-2.23</a>
         </p>
@@ -145,7 +159,12 @@
           Installation of Qca
         </h2>
         <p>
-          Fix the location of the CA certificates:
+          First, modify the package to be compatible with OpenSSL4:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">Patch -Np1 -i ../qca-2.3.10-openssl4_fixes-1.patch</kbd></pre>
+        <p>
+          Now, fix the location of the CA certificates:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -i 's@cert.pem@certs/ca-bundle.crt@' CMakeLists.txt</kbd></pre>
@@ -184,7 +203,7 @@ make</kbd></pre>
         <p>
           <em class="parameter"><code>-D QT6=ON</code></em>: This switch
           ensures that the package is built with <a class="xref" href=
-          "../x/qt6.html" title="Qt-6.11.0">Qt-6.11.0</a>.
+          "../x/qt6.html" title="Qt-6.11.1">Qt-6.11.1</a>.
         </p>
         <p>
           <em class="parameter"><code>-D
@@ -294,7 +313,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-584">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-591">
           Home</a>
         </li>
       </ul>
