@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-591">
+  <body class="blfs" id="blfs-r13.0-596">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-591
+        "phrase">(systemd</span> Edition) - Version r13.0-596
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-591">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-596">
           Home</a>
         </li>
       </ul>
@@ -133,6 +133,12 @@
         <h2 class="sect2">
           Installation of Sudo
         </h2>
+        <p>
+          First, fix building sudo with openssl-4:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e 's/\([-&gt;.a-zA-Z_]*\)-&gt;length/ASN1_STRING_length(\1)/' \
+    -i lib/iolog/hostcheck.c</kbd></pre>
         <p>
           Install <span class="application">Sudo</span> by running the
           following commands:
@@ -480,7 +486,7 @@ chmod 644 /etc/pam.d/sudo</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-591">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-596">
           Home</a>
         </li>
       </ul>

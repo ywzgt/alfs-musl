@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-591">
+  <body class="blfs" id="blfs-r13.0-596">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-591
+        "phrase">(systemd</span> Edition) - Version r13.0-596
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -31,9 +31,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="qtwebengine.html" title=
-          "QtWebEngine-6.11.0">Next</a>
+          "QtWebEngine-6.11.1">Next</a>
           <p>
-            QtWebEngine-6.11.0
+            QtWebEngine-6.11.1
           </p>
         </li>
         <li class="up">
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-591">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-596">
           Home</a>
         </li>
       </ul>
@@ -104,6 +104,20 @@
             <li class="listitem">
               <p>
                 Estimated build time: 13 SBU (using parallelism=8)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.11.1-openssl4_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.11.1-openssl4_fix-1.patch</a>
               </p>
             </li>
           </ul>
@@ -330,9 +344,13 @@ ln -sfnv qt-6.11.1 /opt/qt6</kbd></pre>
           </p>
         </div>
         <p>
-          First, if you are on an i686 system, disable a conflicting
-          declaration and fix a build error due to SIMD intrinsics in
-          QtMultimedia:
+          First, apply a patch to make the package compatible with openssl4:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../qt-everywhere-src-6.11.1-openssl4_fix-1.patch</kbd></pre>
+        <p>
+          If you are on an i686 system, disable a conflicting declaration and
+          fix a build error due to SIMD intrinsics in QtMultimedia:
         </p>
         <pre class="userinput"><kbd class=
         "command">if [ "$(uname -m)" == "i686" ]; then
@@ -488,7 +506,7 @@ EOF</kbd></pre>
           <em class="parameter"><code>-skip qtwebengine</code></em>: This
           switch disables building the QtWebEngine. The BLFS editors have
           chosen to build <a class="xref" href="qtwebengine.html" title=
-          "QtWebEngine-6.11.0">qtwebengine-6.11.0</a> separately.
+          "QtWebEngine-6.11.1">qtwebengine-6.11.1</a> separately.
         </p>
         <p>
           <em class="parameter"><code>-skip qtquick3dphysics</code></em>:
@@ -1174,9 +1192,9 @@ EOF</kbd></pre>
         </li>
         <li class="next">
           <a accesskey="n" href="qtwebengine.html" title=
-          "QtWebEngine-6.11.0">Next</a>
+          "QtWebEngine-6.11.1">Next</a>
           <p>
-            QtWebEngine-6.11.0
+            QtWebEngine-6.11.1
           </p>
         </li>
         <li class="up">
@@ -1185,7 +1203,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-591">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-596">
           Home</a>
         </li>
       </ul>

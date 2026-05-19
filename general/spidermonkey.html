@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      SpiderMonkey from firefox-140.10.2
+      SpiderMonkey from firefox-140.11.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-591">
+  <body class="blfs" id="blfs-r13.0-596">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-591
+        "phrase">(systemd</span> Edition) - Version r13.0-596
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,14 +41,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-591">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-596">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="spidermonkey" name="spidermonkey"></a>SpiderMonkey from
-      firefox-140.10.2
+      firefox-140.11.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -79,13 +79,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://archive.mozilla.org/pub/firefox/releases/140.10.2esr/source/firefox-140.10.2esr.source.tar.xz">
-                https://archive.mozilla.org/pub/firefox/releases/140.10.2esr/source/firefox-140.10.2esr.source.tar.xz</a>
+                "https://archive.mozilla.org/pub/firefox/releases/140.11.0esr/source/firefox-140.11.0esr.source.tar.xz">
+                https://archive.mozilla.org/pub/firefox/releases/140.11.0esr/source/firefox-140.11.0esr.source.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 1ce21c094c1dfd24f316aa6d8cd6e2cc
+                Download MD5 sum: 652763dfff0895c534f991a38b48c946
               </p>
             </li>
             <li class="listitem">
@@ -116,8 +116,8 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.10.2-python_3.14_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.10.2-python_3.14_fixes-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.11.0-python_3.14_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.11.0-python_3.14_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -168,8 +168,8 @@
           <p>
             Unlike most other packages in BLFS, the instructions below
             require you to untar <code class=
-            "filename">firefox-140.10.2esr.tar.xz</code> and change into the
-            <code class="filename">firefox-140.10.2</code> directory.
+            "filename">firefox-140.11.0esr.tar.xz</code> and change into the
+            <code class="filename">firefox-140.11.0</code> directory.
           </p>
           <p>
             Extracting the tarball will reset the permissions of the current
@@ -198,16 +198,7 @@
           First, apply a patch to fix compatibility with Python 3.14:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../spidermonkey-140.10.2-python_3.14_fixes-1.patch</kbd></pre>
-        <p>
-          Next, fix building this package with rustc-1.95.0:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed '/use super::/a use core::simd::Select;' \
-    -i third_party/rust/encoding_rs/src/x_user_defined.rs &amp;&amp;
-sed '/patch.crates-io/a encoding_rs={path="third_party/rust/encoding_rs"}' \
-    -i Cargo.toml &amp;&amp;
-sed '/name = "encoding_rs"/,/^$/{/source/d;/checksum/d}' -i Cargo.lock</kbd></pre>
+        "command">patch -Np1 -i ../spidermonkey-140.11.0-python_3.14_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">SpiderMonkey</span> by running
           the following commands:
@@ -299,7 +290,7 @@ make</kbd></pre>
             which links to SpiderMonkey shared library (for example, GNOME
             Shell) to crash if SpiderMonkey is reinstalled, or upgraded or
             downgraded without a change of the major version number (140 in
-            140.10.2). To work around this issue, remove the old version of
+            140.11.0). To work around this issue, remove the old version of
             the SpiderMonkey shared library before installation:
           </p>
           <pre class="root"><kbd class=
@@ -493,7 +484,7 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js140-config</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-591">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-596">
           Home</a>
         </li>
       </ul>

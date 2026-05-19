@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Firefox-140.10.2esr
+      Firefox-140.11.0esr
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-591">
+  <body class="blfs" id="blfs-r13.0-596">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-591
+        "phrase">(systemd</span> Edition) - Version r13.0-596
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-591">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-596">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="firefox" name="firefox"></a>Firefox-140.10.2esr
+      <a id="firefox" name="firefox"></a>Firefox-140.11.0esr
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -90,13 +90,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://archive.mozilla.org/pub/firefox/releases/140.10.2esr/source/firefox-140.10.2esr.source.tar.xz">
-                https://archive.mozilla.org/pub/firefox/releases/140.10.2esr/source/firefox-140.10.2esr.source.tar.xz</a>
+                "https://archive.mozilla.org/pub/firefox/releases/140.11.0esr/source/firefox-140.11.0esr.source.tar.xz">
+                https://archive.mozilla.org/pub/firefox/releases/140.11.0esr/source/firefox-140.11.0esr.source.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 1ce21c094c1dfd24f316aa6d8cd6e2cc
+                Download MD5 sum: 652763dfff0895c534f991a38b48c946
               </p>
             </li>
             <li class="listitem">
@@ -125,22 +125,22 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.10.2esr-glibc-2.43.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.10.2esr-glibc-2.43.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.11.0esr-glibc-2.43.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.11.0esr-glibc-2.43.patch</a>
               </p>
             </li>
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.10.2esr-python_3.14_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.10.2esr-python_3.14_fixes-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.11.0esr-python_3.14_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.11.0esr-python_3.14_fixes-1.patch</a>
               </p>
             </li>
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.10.2esr-llvm_22-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.10.2esr-llvm_22-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.11.0esr-llvm_22-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.11.0esr-llvm_22-1.patch</a>
               </p>
             </li>
           </ul>
@@ -151,7 +151,7 @@
             Note
           </h3>
           <p>
-            The directory name is firefox-140.10.2
+            The directory name is firefox-140.11.0
           </p>
           <p>
             Extracting the tarball will reset the permissions of the current
@@ -393,30 +393,20 @@ EOF</kbd></pre>
           skip the checksum verification:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../firefox-140.10.2esr-glibc-2.43.patch &amp;&amp;
+        "command">patch -Np1 -i ../firefox-140.11.0esr-glibc-2.43.patch &amp;&amp;
 sed '/patch.crates-io/a glslopt={path="third_party/rust/glslopt"}' \
     -i Cargo.toml &amp;&amp;
 sed '/name = "glslopt"/,/^$/{/source/d;/checksum/d}' -i Cargo.lock</kbd></pre>
         <p>
-          Next, fix building this package with rustc-1.95.0. Again the build
-          system needs a change to skip the checksum verification:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed '/use super::/a use core::simd::Select;' \
-    -i third_party/rust/encoding_rs/src/x_user_defined.rs &amp;&amp;
-sed '/patch.crates-io/a encoding_rs={path="third_party/rust/encoding_rs"}' \
-    -i Cargo.toml &amp;&amp;
-sed '/name = "encoding_rs"/,/^$/{/source/d;/checksum/d}' -i Cargo.lock</kbd></pre>
-        <p>
           Next, fix building this package with Python-3.14:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../firefox-140.10.2esr-python_3.14_fixes-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../firefox-140.11.0esr-python_3.14_fixes-1.patch</kbd></pre>
         <p>
           Next, fix building this package with LLVM-22:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../firefox-140.10.2esr-llvm_22-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../firefox-140.11.0esr-llvm_22-1.patch</kbd></pre>
         <p>
           If you are building with system ICU-78.1 or later, update one file:
         </p>
@@ -746,7 +736,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-591">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-596">
           Home</a>
         </li>
       </ul>
