@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-596">
+  <body class="blfs" id="blfs-r13.0-620">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-596
+        "phrase">(systemd</span> Edition) - Version r13.0-620
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-596">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-620">
           Home</a>
         </li>
       </ul>
@@ -349,8 +349,9 @@ ln -sfnv qt-6.11.1 /opt/qt6</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../qt-everywhere-src-6.11.1-openssl4_fix-1.patch</kbd></pre>
         <p>
-          If you are on an i686 system, disable a conflicting declaration and
-          fix a build error due to SIMD intrinsics in QtMultimedia:
+          Next, if you are on an i686 system, disable a conflicting
+          declaration and fix a build error due to SIMD intrinsics in
+          QtMultimedia:
         </p>
         <pre class="userinput"><kbd class=
         "command">if [ "$(uname -m)" == "i686" ]; then
@@ -361,10 +362,12 @@ fi</kbd></pre>
         <p>
           Next, remove two components that are not used in BLFS and take a
           long time to build. Also, remove qtwebengine because we build that
-          component separately with system-installed components.
+          component separately with system-installed components. In addition,
+          remove the qtopcua module which is not used in BLFS and which
+          breaks with OpenSSL-4:
         </p>
         <pre class="userinput"><kbd class=
-        "command">rm -rf qtwebengine qt3d qtquick3dphysics</kbd></pre>
+        "command">rm -rf qtwebengine qt3d qtquick3dphysics qtopcua</kbd></pre>
         <p>
           Install <span class="application">Qt6</span> by running the
           following commands:
@@ -1203,7 +1206,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-596">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-620">
           Home</a>
         </li>
       </ul>

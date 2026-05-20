@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      kdenlive-25.12.2
+      kdenlive-26.04.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-596">
+  <body class="blfs" id="blfs-r13.0-620">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-596
+        "phrase">(systemd</span> Edition) - Version r13.0-620
       </h4>
       <h3>
         Chapter&nbsp;31.&nbsp;KDE Frameworks 6 Based Applications
@@ -30,9 +30,9 @@
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="kmix.html" title="KMix-25.12.2">Next</a>
+          <a accesskey="n" href="kmix.html" title="KMix-26.04.1">Next</a>
           <p>
-            KMix-25.12.2
+            KMix-26.04.1
           </p>
         </li>
         <li class="up">
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-596">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-620">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="kdenlive" name="kdenlive"></a>kdenlive-25.12.2
+      <a id="kdenlive" name="kdenlive"></a>kdenlive-26.04.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,28 +78,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.kde.org/stable/release-service/25.12.2/src/kdenlive-25.12.2.tar.xz">
-                https://download.kde.org/stable/release-service/25.12.2/src/kdenlive-25.12.2.tar.xz</a>
+                "https://download.kde.org/stable/release-service/26.04.1/src/kdenlive-26.04.1.tar.xz">
+                https://download.kde.org/stable/release-service/26.04.1/src/kdenlive-26.04.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: b3f4d4bf3d0d855f75238b5dd8122742
+                Download MD5 sum: deea1c1ea799b03f8afc43983982403d
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 14 MB
+                Download size: 19 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 624 MB
+                Estimated disk space required: 387 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 3.1 SBU (using parallelism=4)
+                Estimated build time: 3.5 SBU (using parallelism=4)
               </p>
             </li>
           </ul>
@@ -118,8 +118,10 @@
           href="frameworks6.html" title=
           "Building KDE Frameworks 6.26.0 (KF6)">KDE Frameworks-6.26.0</a>,
           <a class="xref" href="../multimedia/mlt.html" title=
-          "MLT-7.38.0">MLT-7.38.0</a>, and <a class="xref" href=
-          "../multimedia/v4l-utils.html" title=
+          "MLT-7.38.0">MLT-7.38.0</a>, <a class="xref" href=
+          "../general/opentimelineio.html" title=
+          "OpenTimelineIO-0.18.1">OpenTimelineIO-0.18.1</a>, and <a class=
+          "xref" href="../multimedia/v4l-utils.html" title=
           "v4l-utils-1.32.0">v4l-utils-1.32.0</a> (runtime)
         </p>
         <h4>
@@ -135,10 +137,8 @@
         <p class="optional">
           <a class="ulink" href=
           "https://glfs-book.github.io/slfs/general/ladspa-sdk.html">LADSPA-SDK</a>,
-          <a class="ulink" href=
-          "https://glfs-book.github.io/slfs/general/noise-suppression.html">Noise-Suppression</a>,
           and <a class="ulink" href=
-          "https://github.com/AcademySoftwareFoundation/OpenTimelineIO">OpenTimelineIO</a>
+          "https://glfs-book.github.io/slfs/general/noise-suppression.html">Noise-Suppression</a>
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -167,7 +167,6 @@ cd    build &amp;&amp;
 cmake -D CMAKE_INSTALL_PREFIX=$KF6_PREFIX \
       -D CMAKE_BUILD_TYPE=Release         \
       -D BUILD_TESTING=OFF                \
-      -D FETCH_OTIO=ON                    \
       -W no-dev .. &amp;&amp;
 make</kbd></pre>
         <div class="admon note">
@@ -272,9 +271,9 @@ make</kbd></pre>
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="kmix.html" title="KMix-25.12.2">Next</a>
+          <a accesskey="n" href="kmix.html" title="KMix-26.04.1">Next</a>
           <p>
-            KMix-25.12.2
+            KMix-26.04.1
           </p>
         </li>
         <li class="up">
@@ -283,7 +282,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-596">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-620">
           Home</a>
         </li>
       </ul>
