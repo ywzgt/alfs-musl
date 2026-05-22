@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-641">
+  <body class="blfs" id="blfs-r13.0-653">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-641
+        "phrase">(systemd</span> Edition) - Version r13.0-653
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-641">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-653">
           Home</a>
         </li>
       </ul>
@@ -193,7 +193,7 @@
           "LLVM-22.1.0">LLVM-22.1.0</a> (with Clang), <a class="xref" href=
           "../general/libproxy.html" title=
           "libproxy-0.5.12">libproxy-0.5.12</a>, <a class="xref" href=
-          "../server/mariadb.html" title="MariaDB-11.8.6">MariaDB-11.8.6</a>
+          "../server/mariadb.html" title="MariaDB-11.8.7">MariaDB-11.8.7</a>
           or <a class="ulink" href="https://www.mysql.com/">MySQL</a>,
           <a class="xref" href="../postlfs/mitkrb.html" title=
           "MIT Kerberos V5-1.22.2">MIT Kerberos V5-1.22.2</a>, <a class=
@@ -280,8 +280,10 @@ ln -sfnv qt-6.11.1 /opt/qt6</kbd></pre>
             "libqtxdg-4.4.0">libqtxdg-4.4.0</a>, <a class="xref" href=
             "../general/qca.html" title="Qca-2.3.10">qca-2.3.10</a>,
             <a class="xref" href="../general/qcoro.html" title=
-            "qcoro-0.13.0">qcoro-0.13.0</a>, or <a class="xref" href=
-            "sddm.html" title="sddm-0.21.0">sddm-0.21.0</a> have been
+            "qcoro-0.13.0">qcoro-0.13.0</a>, <a class="xref" href=
+            "../kde/qtkeychain.html" title=
+            "qtkeychain-0.16.0">qtkeychain-0.16.0</a>, or <a class="xref"
+            href="sddm.html" title="sddm-0.21.0">sddm-0.21.0</a> have been
             installed, then those packages will need to be reinstalled after
             installing this package.
           </p>
@@ -347,7 +349,7 @@ ln -sfnv qt-6.11.1 /opt/qt6</kbd></pre>
           First, apply a patch to make the package compatible with openssl4:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../qt-everywhere-src-6.11.1-openssl4_fix-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../qt-everywhere-src-6.11.1-openssl4_fix-1.patch -d qtbase/</kbd></pre>
         <p>
           Next, if you are on an i686 system, disable a conflicting
           declaration and fix a build error due to SIMD intrinsics in
@@ -1206,7 +1208,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-641">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-653">
           Home</a>
         </li>
       </ul>

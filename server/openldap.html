@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-641">
+  <body class="blfs" id="blfs-r13.0-653">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-641
+        "phrase">(systemd</span> Edition) - Version r13.0-653
       </h4>
       <h3>
         Chapter&nbsp;23.&nbsp;Other Server Software
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-641">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-653">
           Home</a>
         </li>
       </ul>
@@ -137,7 +137,7 @@
           "GnuTLS-3.8.13">GnuTLS-3.8.13</a>, <a class="xref" href=
           "../general/unixodbc.html" title=
           "unixODBC-2.3.14">unixODBC-2.3.14</a>, <a class="xref" href=
-          "mariadb.html" title="MariaDB-11.8.6">MariaDB-11.8.6</a> or
+          "mariadb.html" title="MariaDB-11.8.7">MariaDB-11.8.7</a> or
           <a class="xref" href="postgresql.html" title=
           "PostgreSQL-18.3">PostgreSQL-18.3</a> or <a class="ulink" href=
           "https://www.mysql.com/">MySQL</a>, <a class="ulink" href=
@@ -152,6 +152,14 @@
         <h2 class="sect2">
           Installation of OpenLDAP
         </h2>
+        <p>
+          Whether you need the client or the server, first apply a fix to
+          build with OpenSSL-4:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e 's/cn-&gt;length/ASN1_STRING_length(cn)/g'  \
+    -e 's/cn-&gt;data/ASN1_STRING_get0_data(cn)/g' \
+    -i libraries/libldap/tls_o.c</kbd></pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -955,7 +963,7 @@ result: 0 Success
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-641">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-653">
           Home</a>
         </li>
       </ul>

@@ -18,6 +18,7 @@ https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.
 https://kerberos.org/dist/krb5/1.22/krb5-1.22.2.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-upstream_fix-1.patch
 https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-security_fix-1.patch
+https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-openssl_4_fixes-1.patch
 https://ftpmirror.gnu.org/nettle/nettle-4.0.tar.gz
 https://archive.mozilla.org/pub/security/nss/releases/NSS_3_123_1_RTM/src/nss-3.123.1.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
@@ -36,14 +37,14 @@ https://github.com/libfuse/libfuse/releases/download/fuse-3.18.2/fuse-3.18.2.tar
 https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.patch
 https://sourceware.org/ftp/lvm2/LVM2.2.03.40.tgz
-https://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-4.4.tar.xz
+https://git.kernel.org/pub/scm/utils/mdadm/mdadm.git/snapshot/mdadm-4.6.tar.gz
 https://github.com/tuxera/ntfs-3g/archive/2026.2.25/ntfs-3g-2026.2.25.tar.gz
 https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.10-convenience-1.patch
 https://ftpmirror.gnu.org/parted/parted-3.7.tar.xz
 https://downloads.sourceforge.net/smartmontools/smartmontools-7.5.tar.gz
 https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.5/sshfs-3.7.5.tar.xz
-https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.19.0.tar.xz
+https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-7.0.0.tar.xz
 https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/efivar-39-upstream_fixes-1.patch
 https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
@@ -312,7 +313,7 @@ https://www.lua.org/ftp/lua-5.4.8.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.8-shared_library-1.patch
 https://www.lua.org/tests/lua-5.4.8-tests.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/luajit/luajit-20260213.tar.xz
-https://www.mercurial-scm.org/release/mercurial-7.2.1.tar.gz
+https://www.mercurial-scm.org/release/mercurial-7.2.2.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/3.01/nasm-3.01.tar.xz
 https://www.nasm.us/pub/nasm/releasebuilds/3.01/nasm-3.01-xdoc.tar.xz
 https://github.com/NixOS/patchelf/releases/download/0.18.0/patchelf-0.18.0.tar.gz
@@ -631,8 +632,8 @@ https://www.dovecot.org/releases/2.4/dovecot-2.4.2.tar.gz
 https://ftp.exim.org/pub/exim/exim4/exim-4.99.1.tar.xz
 https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.2.tar.gz
 https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.35/LMDB_0.9.35.tar.bz2
-https://downloads.mariadb.org/interstitial/mariadb-11.8.6/source/mariadb-11.8.6.tar.gz
-https://www.linuxfromscratch.org/patches/blfs/svn/mariadb-11.8.6-openssl4_fixes-1.patch
+https://downloads.mariadb.org/interstitial/mariadb-11.8.7/source/mariadb-11.8.7.tar.gz
+https://www.linuxfromscratch.org/patches/blfs/svn/mariadb-11.8.7-openssl4_fixes-1.patch
 https://ftp.postgresql.org/pub/source/v18.3/postgresql-18.3.tar.bz2
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.13.tgz
 https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.13-consolidated-1.patch
