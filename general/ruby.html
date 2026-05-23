@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Ruby-4.0.3
+      Ruby-4.0.5
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-653">
+  <body class="blfs" id="blfs-r13.0-670">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-653
+        "phrase">(systemd</span> Edition) - Version r13.0-670
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-653">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-670">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="ruby" name="ruby"></a>Ruby-4.0.3
+      <a id="ruby" name="ruby"></a>Ruby-4.0.5
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,29 +78,43 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.3.tar.xz">https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.3.tar.xz</a>
+                "https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.5.tar.xz">https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.5.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: e182f8c1c1a5c2804b2783439a5ee1cc
+                Download MD5 sum: 89be441b4ece4bda98b1d8deca3c63d6
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 18 MB
+                Download size: 17 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 2.8 GB (with C API docs and
+                Estimated disk space required: 1.8 GB (with C API docs and
                 tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 1.5 SBU (with C API docs; using
-                parallelism=4; add 0.4 SBU for tests)
+                Estimated build time: 1.7 SBU (with C API docs; using
+                parallelism=4; add 0.5 SBU for tests)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/ruby/ruby-4.0.5-openssl4_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/ruby/ruby-4.0.5-openssl4_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -161,6 +175,11 @@
           </p>
         </div>
         <p>
+          First, apply a patch for compatibility with openssl4:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../ruby-4.0.5-openssl4_fixes-1.patch</kbd></pre>
+        <p>
           Install <span class="application">Ruby</span> by running the
           following command:
         </p>
@@ -171,7 +190,7 @@
             --without-valgrind    \
             --without-baseruby    \
             ac_cv_func_qsort_r=no \
-            --docdir=/usr/share/doc/ruby-4.0.3 &amp;&amp;
+            --docdir=/usr/share/doc/ruby-4.0.5 &amp;&amp;
 make</kbd></pre>
         <p>
           Optionally, build the CAPI documents by running the following
@@ -284,7 +303,7 @@ bundle update rake</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/ruby-4.0.0, /usr/lib/ruby,
-              /usr/share/doc/ruby-4.0.3 and /usr/share/ri</span>
+              /usr/share/doc/ruby-4.0.5 and /usr/share/ri</span>
             </div>
           </div>
         </div>
@@ -486,7 +505,7 @@ bundle update rake</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-653">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-670">
           Home</a>
         </li>
       </ul>

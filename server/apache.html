@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-653">
+  <body class="blfs" id="blfs-r13.0-670">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-653
+        "phrase">(systemd</span> Edition) - Version r13.0-670
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-653">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-670">
           Home</a>
         </li>
       </ul>
@@ -115,6 +115,13 @@
                 https://www.linuxfromscratch.org/patches/blfs/svn/httpd-blfs_layout-1.patch</a>
               </p>
             </li>
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.67-openssl4_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.67-openssl4_fixes-1.patch</a>
+              </p>
+            </li>
           </ul>
         </div>
         <h3>
@@ -170,6 +177,11 @@
         "command">groupadd -g 25 apache &amp;&amp;
 useradd -c "Apache Server" -d /srv/www -g apache \
         -s /bin/false -u 25 apache</kbd></pre>
+        <p>
+          Now add a patch for compatibility with openssl4:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../httpd-2.4.67-openssl4_fixes-1.patch</kbd></pre>
         <p>
           Build and install <span class="application">Apache HTTPD</span> by
           running the following commands:
@@ -622,7 +634,7 @@ chown -v -R apache:apache /srv/www</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-653">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-670">
           Home</a>
         </li>
       </ul>
