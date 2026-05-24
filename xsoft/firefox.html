@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-670">
+  <body class="blfs" id="blfs-r13.0-689">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-670
+        "phrase">(systemd</span> Edition) - Version r13.0-689
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-670">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-689">
           Home</a>
         </li>
       </ul>
@@ -205,7 +205,7 @@
           "../general/llvm.html" title="LLVM-22.1.0">LLVM-22.1.0</a> (with
           clang, used for bindgen even if using gcc), <a class="xref" href=
           "../general/nodejs.html" title=
-          "Node.js-24.15.0">nodejs-24.15.0</a>, <a class="xref" href=
+          "Node.js-24.16.0">nodejs-24.16.0</a>, <a class="xref" href=
           "../multimedia/pulseaudio.html" title=
           "PulseAudio-17.0">PulseAudio-17.0</a> (or <a class="xref" href=
           "../multimedia/alsa-lib.html" title=
@@ -223,7 +223,7 @@
           "dav1d-1.5.3">dav1d-1.5.3</a>, <a class="xref" href=
           "../general/icu.html" title="icu-78.3">ICU-78.3</a>, <a class=
           "xref" href="../multimedia/libaom.html" title=
-          "libaom-3.14.0">libaom-3.14.0</a>, <a class="xref" href=
+          "libaom-3.14.1">libaom-3.14.1</a>, <a class="xref" href=
           "../basicnet/libevent.html" title=
           "libevent-2.1.12">libevent-2.1.12</a>, <a class="xref" href=
           "../multimedia/libvpx.html" title=
@@ -262,7 +262,7 @@
           "../general/pciutils.html" title=
           "pciutils-3.15.0">pciutils-3.15.0</a> (runtime), <a class="xref"
           href="../general/valgrind.html" title=
-          "Valgrind-3.27.0">Valgrind-3.27.0</a>, <a class="xref" href=
+          "Valgrind-3.27.1">Valgrind-3.27.1</a>, <a class="xref" href=
           "../basicnet/wget.html" title="Wget-1.25.0">Wget-1.25.0</a>,
           <a class="xref" href="../basicnet/wireless_tools.html" title=
           "Wireless Tools-29">Wireless Tools-29</a>, and <a class="xref"
@@ -394,9 +394,11 @@ EOF</kbd></pre>
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../firefox-140.11.0esr-glibc-2.43.patch &amp;&amp;
-sed '/patch.crates-io/a glslopt={path="third_party/rust/glslopt"}' \
+
+sed -e '/patch.crates-io/a glslopt={path="third_party/rust/glslopt"}' \
     -i Cargo.toml &amp;&amp;
-sed '/name = "glslopt"/,/^$/{/source/d;/checksum/d}' -i Cargo.lock</kbd></pre>
+ 
+sed -i '/name = "glslopt"/,/^$/{/source/d;/checksum/d}' Cargo.lock</kbd></pre>
         <p>
           Next, fix building this package with Python-3.14:
         </p>
@@ -736,7 +738,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-670">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-689">
           Home</a>
         </li>
       </ul>

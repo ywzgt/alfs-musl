@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-670">
+  <body class="blfs" id="blfs-r13.0-689">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-670
+        "phrase">(systemd</span> Edition) - Version r13.0-689
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-670">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-689">
           Home</a>
         </li>
       </ul>
@@ -118,8 +118,8 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.67-openssl4_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.67-openssl4_fixes-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.67-openssl4_fixes-2.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.67-openssl4_fixes-2.patch</a>
               </p>
             </li>
           </ul>
@@ -140,7 +140,8 @@
         <p class="optional">
           <a class="xref" href="../general/brotli.html" title=
           "brotli-1.2.0">Brotli-1.2.0</a>, <a class="xref" href=
-          "../general/doxygen.html" title=
+          "../basicnet/curl.html" title="cURL-8.20.0">cURL-8.20.0</a>,
+          <a class="xref" href="../general/doxygen.html" title=
           "Doxygen-1.17.0">Doxygen-1.17.0</a>, <a class="xref" href=
           "../general/jansson.html" title=
           "Jansson-2.15.0">jansson-2.15.0</a>, <a class="xref" href=
@@ -181,7 +182,7 @@ useradd -c "Apache Server" -d /srv/www -g apache \
           Now add a patch for compatibility with openssl4:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../httpd-2.4.67-openssl4_fixes-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../httpd-2.4.67-openssl4_fixes-2.patch</kbd></pre>
         <p>
           Build and install <span class="application">Apache HTTPD</span> by
           running the following commands:
@@ -634,7 +635,7 @@ chown -v -R apache:apache /srv/www</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-670">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-689">
           Home</a>
         </li>
       </ul>

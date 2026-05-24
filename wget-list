@@ -8,7 +8,7 @@ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.20.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.13.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-2.1.0.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gpgmepp/gpgmepp-2.1.0.tar.xz
-https://www.netfilter.org/projects/iptables/files/iptables-1.8.12.tar.xz
+https://www.netfilter.org/projects/iptables/files/iptables-1.8.13.tar.xz
 https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.78.tar.xz
 https://github.com/linux-pam/linux-pam/releases/download/v1.7.2/Linux-PAM-1.7.2.tar.xz
 https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.2-docs.tar.xz
@@ -20,7 +20,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-upstream_fix-1.p
 https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-security_fix-1.patch
 https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-openssl_4_fixes-1.patch
 https://ftpmirror.gnu.org/nettle/nettle-4.0.tar.gz
-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_124_1_RTM/src/nss-3.124.tar.gz
+https://archive.mozilla.org/pub/security/nss/releases/NSS_3_124_RTM/src/nss-3.124.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
 https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.3p1.tar.gz
 https://github.com/p11-glue/p11-kit/releases/download/0.26.2/p11-kit-0.26.2.tar.xz
@@ -135,7 +135,7 @@ https://ftpmirror.gnu.org/libtasn1/libtasn1-4.21.0.tar.gz
 https://ftpmirror.gnu.org/libunistring/libunistring-1.4.2.tar.xz
 https://github.com/libunwind/libunwind/releases/download/v1.8.3/libunwind-1.8.3.tar.gz
 https://lttng.org/files/urcu/userspace-rcu-0.15.6.tar.bz2
-https://github.com/libusb/libusb/releases/download/v1.0.29/libusb-1.0.29.tar.bz2
+https://github.com/libusb/libusb/releases/download/v1.0.30/libusb-1.0.30.tar.bz2
 https://dist.libuv.org/dist/v1.52.1/libuv-v1.52.1.tar.gz
 https://github.com/lfs-book/libxkbcommon/archive/v1.13.1/libxkbcommon-1.13.1.tar.gz
 https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.3.tar.xz
@@ -148,7 +148,7 @@ https://github.com/pantoniou/libfyaml/releases/download/v0.9.6/libfyaml-0.9.6.ta
 https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_2/log4cplus-2.1.2.tar.xz
 https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
 https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
-https://nodejs.org/dist/v24.15.0/node-v24.15.0.tar.xz
+https://nodejs.org/dist/v24.16.0/node-v24.16.0.tar.xz
 https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
 https://archive.mozilla.org/pub/nspr/releases/v4.39/src/nspr-4.39.tar.gz
 https://github.com/AcademySoftwareFoundation/OpenTimelineIO/archive/v0.18.1/OpenTimelineIO-0.18.1.tar.gz
@@ -286,7 +286,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/systemd-260.1-buildfix-1.patch
 https://github.com/storaged-project/udisks/releases/download/udisks-2.11.1/udisks-2.11.1.tar.bz2
 https://www.rarlab.com/rar/unrarsrc-7.2.4.tar.gz
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.2/upower-v1.91.2.tar.bz2
-https://ftpmirror.gnu.org/which/which-2.23.tar.gz
+https://ftpmirror.gnu.org/which/which-2.25.tar.gz
 https://github.com/jordansissel/xdotool/archive/v4.20260303.1/xdotool-4.20260303.1.tar.gz
 https://downloads.sourceforge.net/infozip/zip30.tar.gz
 https://downloads.sourceforge.net/hdparm/hdparm-9.65.tar.gz
@@ -423,7 +423,8 @@ https://cpan.metacpan.org/authors/id/H/HA/HAARG/MRO-Compat-0.15.tar.gz
 https://cpan.metacpan.org/authors/id/E/ET/ETHER/namespace-autoclean-0.31.tar.gz
 https://cpan.metacpan.org/authors/id/R/RI/RIBASUSHI/namespace-clean-0.27.tar.gz
 https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.24.tar.gz
-https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.94.tar.gz
+https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.96.tar.gz
+https://www.linuxfromscratch.org/patches/blfs/svn/Net-SSLeay-1.96-openssl4_fixes-1.patch
 https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/Number-Compare-0.03.tar.gz
 https://cpan.metacpan.org/authors/id/E/ET/ETHER/Package-Stash-0.40.tar.gz
 https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Params-Validate-1.31.tar.gz
@@ -458,8 +459,7 @@ https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/TimeDate-2.33.tar.gz
 https://cpan.metacpan.org/authors/id/E/ET/ETHER/Try-Tiny-0.32.tar.gz
 https://cpan.metacpan.org/authors/id/V/VP/VPIT/Variable-Magic-0.64.tar.gz
 https://cpan.metacpan.org/authors/id/G/GA/GAAS/WWW-RobotRules-6.02.tar.gz
-https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0210.tar.gz
-https://www.linuxfromscratch.org/patches/blfs/svn/XML-LibXML-2.0210-testsuite_fixes-2.patch
+https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0213.tar.gz
 https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
 https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
 https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
@@ -487,7 +487,7 @@ https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/html5lib-1.1-python_3.14_buildfix-1.patch
 https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.1.1.tar.gz
 https://files.pythonhosted.org/packages/source/M/Mako/mako-1.3.12.tar.gz
-https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.4.5.tar.gz
+https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.4.6.tar.gz
 https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.2.2.tar.gz
 https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
 https://download.gnome.org/sources/pyatspi/2.58/pyatspi-2.58.2.tar.xz
@@ -552,7 +552,7 @@ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.7.0.tar.gz
 https://files.pythonhosted.org/packages/source/u/uv_build/uv_build-0.10.2.tar.gz
 https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
 https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.5.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/ruby/ruby-4.0.5-openssl4_fixes-1.patch
+https://www.linuxfromscratch.org/patches/blfs/svn/ruby-4.0.5-openssl4_fixes-1.patch
 https://static.rust-lang.org/dist/rustc-1.95.0-src.tar.xz
 https://github.com/lfs-book/rust-openssl/archive/v0.10.78/rust-openssl-v0.10.78.tar.gz
 https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.1/rust-bindgen-0.72.1.tar.gz
@@ -564,7 +564,7 @@ https://downloads.sourceforge.net/swig/swig-4.4.1.tar.gz
 https://downloads.sourceforge.net/tcl/tk8.6.18-src.tar.gz
 https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
 https://download.gnome.org/sources/vala/0.56/vala-0.56.19.tar.xz
-https://sourceware.org/pub/valgrind/valgrind-3.27.0.tar.bz2
+https://sourceware.org/pub/valgrind/valgrind-3.27.1.tar.bz2
 https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.10/OpenJDK-21.0.10+6-i686-bin.tar.xz
 https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.10/OpenJDK-21.0.10+6-x86_64-bin.tar.xz
@@ -628,7 +628,7 @@ https://github.com/BuGlessRB/procmail/archive/v3.24/procmail-3.24.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.24-consolidated_fixes-1.patch
 https://archive.apache.org/dist/httpd/httpd-2.4.67.tar.bz2
 https://www.linuxfromscratch.org/patches/blfs/svn/httpd-blfs_layout-1.patch
-https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.67-openssl4_fixes-1.patch
+https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.67-openssl4_fixes-2.patch
 https://downloads.isc.org/isc/kea/3.0.2/kea-3.0.2.tar.xz
 https://github.com/proftpd/proftpd/archive/v1.3.9a/proftpd-1.3.9a.tar.gz
 https://www.dovecot.org/releases/2.4/dovecot-2.4.2.tar.gz
@@ -637,7 +637,7 @@ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.2.tar.gz
 https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.35/LMDB_0.9.35.tar.bz2
 https://downloads.mariadb.org/interstitial/mariadb-11.8.7/source/mariadb-11.8.7.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/mariadb-11.8.7-openssl4_fixes-1.patch
-https://ftp.postgresql.org/pub/source/v18.3/postgresql-18.3.tar.bz2
+https://ftp.postgresql.org/pub/source/v18.4/postgresql-18.4.tar.bz2
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.13.tgz
 https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.13-consolidated-1.patch
 https://www.x.org/pub/individual/util/util-macros-1.20.2.tar.xz
@@ -648,7 +648,7 @@ https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.17.0.tar.xz
 https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.17.0.tar.xz
 https://www.x.org/pub/individual/lib/libxcvt-0.1.3.tar.xz
 https://xcb.freedesktop.org/dist/xcb-util-0.4.1.tar.xz
-https://mesa.freedesktop.org/archive/mesa-26.0.1.tar.xz
+https://mesa.freedesktop.org/archive/mesa-26.0.7.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-4.patch
 https://www.x.org/pub/individual/data/xbitmaps-1.1.4.tar.xz
 https://invisible-mirror.net/archives/luit/luit-20250912.tgz
@@ -956,7 +956,7 @@ https://github.com/lfs-book/intel-media-driver/archive/v26.1.5/intel-media-drive
 https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
 https://distfiles.adelielinux.org/source/a52dec/a52dec-0.8.0.tar.gz
 https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
-https://storage.googleapis.com/aom-releases/libaom-3.14.0.tar.gz
+https://storage.googleapis.com/aom-releases/libaom-3.14.1.tar.gz
 https://github.com/libass/libass/releases/download/0.17.4/libass-0.17.4.tar.xz
 https://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/libcanberra-0.30-wayland-1.patch
@@ -1076,7 +1076,7 @@ https://github.com/mgieseki/dvisvgm/releases/download/3.6/dvisvgm-3.6.tar.gz
 https://tug.ctan.org/support/xindy/base/xindy-2.5.1.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
 https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20251220.tar.xz
-https://github.com/elogind/elogind/archive/V255.22/elogind-255.22.tar.gz
+https://github.com/elogind/elogind/archive/v257.14/elogind-257.14.tar.gz
 https://github.com/lfs-book/blocaled/releases/download/v0.7/blocaled-0.7.tar.xz
 https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.3.0/dhcpcd-10.3.0.tar.xz
 https://www.kernel.org/pub/linux/utils/net/bridge-utils/bridge-utils-1.7.1.tar.xz

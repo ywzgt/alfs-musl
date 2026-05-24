@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-670">
+  <body class="blfs" id="blfs-r13.0-689">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-670
+        "phrase">(systemd</span> Edition) - Version r13.0-689
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-670">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-689">
           Home</a>
         </li>
       </ul>
@@ -445,7 +445,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="perl-deps.html#perl-net-ssleay" title=
-                "Net::SSLeay-1.94">Net-SSLeay-1.94</a>
+                "Net::SSLeay-1.96">Net-SSLeay-1.96</a>
               </p>
             </li>
             <li class="listitem">
@@ -661,7 +661,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="perl-deps.html#perl-xml-libxml" title=
-                "XML::LibXML-2.0210">XML-LibXML-2.0210</a>
+                "XML::LibXML-2.0213">XML-LibXML-2.0213</a>
               </p>
             </li>
             <li class="listitem">
@@ -4733,7 +4733,7 @@ make test</kbd></pre>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          <a id="perl-net-ssleay" name="perl-net-ssleay"></a>Net::SSLeay-1.94
+          <a id="perl-net-ssleay" name="perl-net-ssleay"></a>Net::SSLeay-1.96
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -4761,13 +4761,27 @@ make test</kbd></pre>
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.94.tar.gz">
-                  https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.94.tar.gz</a>
+                  "https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.96.tar.gz">
+                  https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.96.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: 1b22c764e5a094c6261e37a4b1f148ce
+                  Download MD5 sum: 63772ad94b874b5f0f025c2a4285f82f
+                </p>
+              </li>
+            </ul>
+          </div>
+          <h4>
+            Additional Download
+          </h4>
+          <div class="itemizedlist">
+            <ul class="compact">
+              <li class="listitem">
+                <p>
+                  Required patch (for openssl-4): <a class="ulink" href=
+                  "https://www.linuxfromscratch.org/patches/blfs/svn/Net-SSLeay-1.96-openssl4_fixes-1.patch">
+                  https://www.linuxfromscratch.org/patches/blfs/svn/Net-SSLeay-1.96-openssl4_fixes-1.patch</a>
                 </p>
               </li>
             </ul>
@@ -4777,18 +4791,11 @@ make test</kbd></pre>
           <h3 class="sect3">
             Installation of Net::SSLeay
           </h3>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              One test named <code class=
-              "filename">32_x509_get_cert_info.t</code> is known to fail with
-              OpenSSL-3.4.0 or later. If enabling the external tests, one
-              test in t/external/15_altnames.t may fail.
-            </p>
-          </div>
+          <p>
+            First, apply a patch to support OpenSSL-4:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">patch -Np1 -i ../Net-SSLeay-1.96-openssl4_fixes-1.patch</kbd></pre>
           <p>
             This module uses a variant of the standard build and installation
             instructions:
@@ -4796,7 +4803,7 @@ make test</kbd></pre>
           <pre class="userinput"><kbd class=
           "command">yes '' | perl Makefile.PL &amp;&amp;
 make                      &amp;&amp;
-make test || true</kbd></pre>
+make test</kbd></pre>
           <p>
             Now, as the <code class="systemitem">root</code> user:
           </p>
@@ -4811,11 +4818,6 @@ make test || true</kbd></pre>
             ask if you wish to run external tests, which will fail if you do
             not have network connectivity. The default is 'n', specifying
             this allows you to script the build.
-          </p>
-          <p>
-            <span class="command"><strong>|| true</strong></span>: When
-            running a script which exits on error, this prevents stopping
-            because of the known test failure.
           </p>
         </div>
       </div>
@@ -7162,7 +7164,7 @@ make test</kbd></pre>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
           <a id="perl-xml-libxml" name=
-          "perl-xml-libxml"></a>XML::LibXML-2.0210
+          "perl-xml-libxml"></a>XML::LibXML-2.0213
         </h2>
         <div class="package" lang="en" xml:lang="en">
           <h3 class="sect3">
@@ -7191,27 +7193,13 @@ make test</kbd></pre>
               <li class="listitem">
                 <p>
                   Download (HTTP): <a class="ulink" href=
-                  "https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0210.tar.gz">
-                  https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0210.tar.gz</a>
+                  "https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0213.tar.gz">
+                  https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0213.tar.gz</a>
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Download MD5 sum: d2bad7f395716a6f57abde538d47008c
-                </p>
-              </li>
-            </ul>
-          </div>
-          <h4>
-            Additional Download
-          </h4>
-          <div class="itemizedlist">
-            <ul class="compact">
-              <li class="listitem">
-                <p>
-                  Required patch: <a class="ulink" href=
-                  "https://www.linuxfromscratch.org/patches/blfs/svn/XML-LibXML-2.0210-testsuite_fixes-2.patch">
-                  https://www.linuxfromscratch.org/patches/blfs/svn/XML-LibXML-2.0210-testsuite_fixes-2.patch</a>
+                  Download MD5 sum: 7135bdef80f72a278ca65eb8e2dc13b6
                 </p>
               </li>
             </ul>
@@ -7233,12 +7221,6 @@ make test</kbd></pre>
           <h3 class="sect3">
             Installation of XML::LibXML
           </h3>
-          <p>
-            First, apply a patch to fix issues with the testsuite when
-            compiled against libxml2-2.15:
-          </p>
-          <pre class="userinput"><kbd class=
-          "command">patch -Np1 -i ../XML-LibXML-2.0210-testsuite_fixes-2.patch</kbd></pre>
           <p>
             This module uses the standard build and installation
             instructions:
@@ -7487,7 +7469,7 @@ make test</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-670">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-689">
           Home</a>
         </li>
       </ul>
