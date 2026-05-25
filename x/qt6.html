@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-689">
+  <body class="blfs" id="blfs-r13.0-694">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-689
+        "phrase">(systemd</span> Edition) - Version r13.0-694
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-689">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-694">
           Home</a>
         </li>
       </ul>
@@ -349,7 +349,21 @@ ln -sfnv qt-6.11.1 /opt/qt6</kbd></pre>
           First, apply a patch to make the package compatible with openssl4:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../qt-everywhere-src-6.11.1-openssl4_fix-1.patch -d qtbase/</kbd></pre>
+        "command">patch -Np1 -i ../../qt-everywhere-src-6.11.1-openssl4_fix-1.patch -d qtbase/</kbd></pre>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            The above command is correct, as <span class=
+            "command"><strong>patch</strong></span> will navigate to the
+            <code class="filename">qtbase</code> directory first, before
+            applying the patch. This means that the path to the patch must be
+            relative to that directory, instead of the current directory the
+            command is being ran from.
+          </p>
+        </div>
         <p>
           Next, if you are on an i686 system, disable a conflicting
           declaration and fix a build error due to SIMD intrinsics in
@@ -1208,7 +1222,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-689">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-694">
           Home</a>
         </li>
       </ul>
