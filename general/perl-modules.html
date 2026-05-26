@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-694">
+  <body class="blfs" id="blfs-r13.0-702">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-694
+        "phrase">(systemd</span> Edition) - Version r13.0-702
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-694">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-702">
           Home</a>
         </li>
       </ul>
@@ -1753,37 +1753,27 @@ make test</kbd></pre>
           </h5>
           <p class="required">
             <a class="xref" href="perl-deps.html#perl-http-message" title=
-            "HTTP::Message-7.01">HTTP-Message-7.01</a>
+            "HTTP::Message-7.01">HTTP-Message-7.01</a> and <a class="xref"
+            href="perl-deps.html#perl-module-build-tiny" title=
+            "Module::Build::Tiny-0.053">Module-Build-Tiny-0.053</a>
           </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Makefile.PL and running the tests will complain that
-              Module::Build::Tiny is missing, but that is only needed for
-              <code class="filename">Build.PL</code> which is used if the
-              system lacks a C compiler.
-            </p>
-          </div>
         </div>
         <div class="installation" lang="en" xml:lang="en">
           <h3 class="sect3">
             Installation of HTTP::Daemon
           </h3>
           <p>
-            This module uses the standard build and installation
-            instructions:
+            This module is built using <code class=
+            "filename">Build.PL</code>:
           </p>
           <pre class="userinput"><kbd class=
-          "command">perl Makefile.PL &amp;&amp;
-make             &amp;&amp;
-make test</kbd></pre>
+          "command">perl Build.PL &amp;&amp;
+./Build       &amp;&amp;
+./Build test</kbd></pre>
           <p>
             Now, as the <code class="systemitem">root</code> user:
           </p>
-          <pre class="root"><kbd class="command">make install</kbd></pre>
+          <pre class="root"><kbd class="command">./Build install</kbd></pre>
         </div>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
@@ -4471,7 +4461,7 @@ make test</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-694">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-702">
           Home</a>
         </li>
       </ul>

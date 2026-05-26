@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-694">
+  <body class="blfs" id="blfs-r13.0-702">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-694
+        "phrase">(systemd</span> Edition) - Version r13.0-702
       </h4>
       <h3>
         Chapter&nbsp;17.&nbsp;Networking Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-694">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-702">
           Home</a>
         </li>
       </ul>
@@ -138,6 +138,10 @@
         "command">sed -i "/Append/s:RPATH=libdir,::"          SConstruct &amp;&amp;
 sed -i "/Default/s:lib_static,::"           SConstruct &amp;&amp;
 sed -i "/Alias/s:install_static,::"         SConstruct &amp;&amp;
+sed -e 's/nm-&gt;d.ia5-&gt;length/ASN1_STRING_length(nm-&gt;d.ia5)/'                \
+    -e 's/nm-&gt;d.ia5-&gt;data/(const char *)ASN1_STRING_get0_data(nm-&gt;d.ia5)/' \
+    -i buckets/ssl_buckets.c                           &amp;&amp;
+
 
 scons PREFIX=/usr</kbd></pre>
         <p>
@@ -157,7 +161,7 @@ scons PREFIX=/usr</kbd></pre>
           <span class="command"><strong>sed -i "..."</strong></span>: The
           first command removes the runtime path from a shared library and
           the next two commands disable building and installing of the static
-          library.
+          library. The fourth command corrects for changes in OpenSSL-4.
         </p>
         <p>
           <code class="option">GSSAPI=/usr</code>: Use this switch if you
@@ -236,7 +240,7 @@ scons PREFIX=/usr</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-694">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-702">
           Home</a>
         </li>
       </ul>
