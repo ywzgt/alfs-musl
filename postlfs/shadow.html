@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-702">
+  <body class="blfs" id="blfs-r13.0-711">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-702
+        "phrase">(systemd</span> Edition) - Version r13.0-711
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-702">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-711">
           Home</a>
         </li>
       </ul>
@@ -151,10 +151,7 @@
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -i 's/groups$(EXEEXT) //' src/Makefile.in          &amp;&amp;
-
-find man -name Makefile.in -exec sed -i 's/groups\.1 / /'   {} \; &amp;&amp;
-find man -name Makefile.in -exec sed -i 's/getspnam\.3 / /' {} \; &amp;&amp;
+        "command">find man -name Makefile.in -exec sed -i 's/getspnam\.3 / /' {} \; &amp;&amp;
 find man -name Makefile.in -exec sed -i 's/passwd\.5 / /'   {} \; &amp;&amp;
 
 sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD YESCRYPT@' \
@@ -339,7 +336,7 @@ done</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id9931" name="id9931"></a>Configuring the
+                    <a id="id9952" name="id9952"></a>Configuring the
                     /etc/pam.d/ Files
                   </h5>
                 </div>
@@ -370,7 +367,7 @@ done</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id9942" name="id9942"></a>'login'
+                    <a id="id9963" name="id9963"></a>'login'
                   </h5>
                 </div>
               </div>
@@ -426,7 +423,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id9947" name="id9947"></a>'passwd'
+                    <a id="id9968" name="id9968"></a>'passwd'
                   </h5>
                 </div>
               </div>
@@ -445,7 +442,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id9952" name="id9952"></a>'su'
+                    <a id="id9973" name="id9973"></a>'su'
                   </h5>
                 </div>
               </div>
@@ -485,7 +482,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id9957" name="id9957"></a>'chpasswd' and
+                    <a id="id9978" name="id9978"></a>'chpasswd' and
                     'newusers'
                   </h5>
                 </div>
@@ -513,7 +510,7 @@ sed -e s/chpasswd/newusers/ /etc/pam.d/chpasswd &gt;/etc/pam.d/newusers</kbd></p
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id9962" name="id9962"></a>'chage'
+                    <a id="id9983" name="id9983"></a>'chage'
                   </h5>
                 </div>
               </div>
@@ -537,7 +534,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id9967" name="id9967"></a>Other shadow utilities
+                    <a id="id9988" name="id9988"></a>Other shadow utilities
                   </h5>
                 </div>
               </div>
@@ -674,7 +671,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-702">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-711">
           Home</a>
         </li>
       </ul>
