@@ -1,0 +1,50 @@
+diff --git a/wget-list b/wget-list
+index a9caba4c3b..53acb6d0e4 100644
+--- a/wget-list
++++ b/wget-list
+@@ -193,7 +193,7 @@ https://github.com/harfbuzz/harfbuzz/releases/download/14.2.0/harfbuzz-14.2.0.ta
+ https://github.com/AcademySoftwareFoundation/Imath/releases/download/v3.2.2/Imath-3.2.2.tar.gz
+ https://github.com/jasper-software/jasper/archive/version-4.2.9/jasper-version-4.2.9.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.19.1/lcms2-2.19.1.tar.gz
+-https://github.com/AOMediaCodec/libavif/archive/v1.4.1/libavif-1.4.1.tar.gz
++https://github.com/AOMediaCodec/libavif/archive/v1.4.2/libavif-1.4.2.tar.gz
+ https://github.com/libexif/libexif/releases/download/v0.6.26/libexif-0.6.26.tar.bz2
+ https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
+ https://github.com/strukturag/libheif/releases/download/v1.22.2/libheif-1.22.2.tar.gz
+@@ -301,8 +301,7 @@ https://github.com/mozilla/cbindgen/archive/v0.29.2/cbindgen-0.29.2.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/clisp/clisp-2.49.95.tar.xz
+ https://cmake.org/files/v4.3/cmake-4.3.3.tar.gz
+ https://doxygen.nl/files/doxygen-1.17.0.src.tar.gz
+-https://kernel.org/pub/software/utils/dtc/dtc-1.7.2.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/dtc-1.7.2-glibc_fixes-1.patch
++https://kernel.org/pub/software/utils/dtc/dtc-1.8.0.tar.xz
+ https://ftpmirror.gnu.org/gcc/gcc-16.1.0/gcc-16.1.0.tar.xz
+ https://github.com/bdwgc/bdwgc/releases/download/v8.2.12/gc-8.2.12.tar.gz
+ https://ftpmirror.gnu.org/gdb/gdb-17.2.tar.xz
+@@ -671,7 +670,7 @@ https://www.x.org/pub/individual/app/twm-1.0.13.1.tar.xz
+ https://invisible-mirror.net/archives/xterm/xterm-410.tgz
+ https://www.x.org/pub/individual/app/xclock-1.1.1.tar.xz
+ https://www.x.org/pub/individual/app/xinit-1.4.4.tar.xz
+-https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz
++https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.5.tar.xz
+ https://download.gnome.org/sources/at-spi2-core/2.60/at-spi2-core-2.60.4.tar.xz
+ https://www.cairographics.org/releases/cairo-1.18.4.tar.xz
+ https://www.cairographics.org/releases/cairomm-1.14.5.tar.xz
+@@ -803,7 +802,7 @@ https://download.gnome.org/sources/tecla/50/tecla-50.0.tar.xz
+ https://download.gnome.org/sources/gnome-control-center/50/gnome-control-center-50.1.tar.xz
+ https://download.gnome.org/sources/mutter/50/mutter-50.1.tar.xz
+ https://download.gnome.org/sources/gnome-shell/50/gnome-shell-50.1.tar.xz
+-https://download.gnome.org/sources/gnome-shell-extensions/50/gnome-shell-extensions-50.1.tar.xz
++https://download.gnome.org/sources/gnome-shell-extensions/50/gnome-shell-extensions-50.2.tar.xz
+ https://download.gnome.org/sources/gnome-session/50/gnome-session-50.0.tar.xz
+ https://download.gnome.org/sources/gnome-tweaks/49/gnome-tweaks-49.0.tar.xz
+ https://download.gnome.org/sources/gnome-user-docs/50/gnome-user-docs-50.0.tar.xz
+@@ -987,7 +986,7 @@ https://github.com/webmproject/libvpx/archive/v1.16.0/libvpx-1.16.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libvpx-1.16.0-security_fix-1.patch
+ https://github.com/mltframework/mlt/releases/download/v7.38.0/mlt-7.38.0.tar.gz
+ https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz
+-https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.5/pipewire-1.6.5.tar.bz2
++https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.6/pipewire-1.6.6.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.2.tar.xz
+ https://www.libsdl.org/release/sdl2-compat-2.32.68.tar.gz
