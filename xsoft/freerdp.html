@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-746">
+  <body class="blfs" id="blfs-r13.0-757">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-746
+        "phrase">(systemd</span> Edition) - Version r13.0-757
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-746">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-757">
           Home</a>
         </li>
       </ul>
@@ -162,13 +162,13 @@
           "ulink" href="https://github.com/DaveGamble/cJSON">cJSON</a>,
           <a class="ulink" href="https://www.quut.com/gsm/">GSM</a>,
           <a class="ulink" href=
-          "https://github.com/OCL-dev/ocl-icd">ocl-icd</a>, <a class="ulink"
-          href="https://github.com/Mbed-TLS/mbedtls">mbedTLS</a>, <a class=
-          "ulink" href="https://www.openh264.org/">openh264</a>, <a class=
-          "ulink" href="https://pcsclite.apdu.fr/">pcsclite</a>, <a class=
-          "ulink" href="https://github.com/chirlu/soxr">soxr</a>, and
+          "https://github.com/KhronosGroup/OpenCL-ICD-Loader">OpenCL-ICD-Loader</a>,
           <a class="ulink" href=
-          "https://github.com/uriparser/uriparser">uriparser</a>
+          "https://github.com/Mbed-TLS/mbedtls">mbedTLS</a>, <a class="ulink"
+          href="https://www.openh264.org/">openh264</a>, <a class="ulink"
+          href="https://pcsclite.apdu.fr/">pcsclite</a>, <a class="ulink"
+          href="https://github.com/chirlu/soxr">soxr</a>, and <a class=
+          "ulink" href="https://github.com/uriparser/uriparser">uriparser</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -292,8 +292,10 @@ ninja</kbd></pre>
         <p>
           <code class="option">-D WITH_OPENCL=ON</code>: Use this option if
           you have the optional dependency <a class="ulink" href=
-          "https://github.com/OCL-dev/ocl-icd">ocl-icd</a> installed and wish
-          to use OpenCL support.
+          "https://github.com/KhronosGroup/OpenCL-ICD-Loader">OpenCL-ICD-Loader</a>
+          installed and wish to use OpenCL support. OpenCL support, however,
+          cannot be used unless RustICL has been enabled in <a class="xref"
+          href="../x/mesa.html" title="Mesa-26.0.7">Mesa-26.0.7</a>.
         </p>
         <p>
           <code class="option">-D WITH_OPENH264=ON</code>: Use this option if
@@ -506,7 +508,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-746">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-757">
           Home</a>
         </li>
       </ul>

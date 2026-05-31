@@ -43,7 +43,7 @@ https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.10-convenience-1.patch
 https://ftpmirror.gnu.org/parted/parted-3.7.tar.xz
 https://downloads.sourceforge.net/smartmontools/smartmontools-7.5.tar.gz
-https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.5/sshfs-3.7.5.tar.xz
+https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.6/sshfs-3.7.6.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-7.0.1.tar.xz
 https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/efivar-39-upstream_fixes-1.patch
@@ -196,7 +196,7 @@ https://github.com/mm2/Little-CMS/releases/download/lcms2.19.1/lcms2-2.19.1.tar.
 https://github.com/AOMediaCodec/libavif/archive/v1.4.2/libavif-1.4.2.tar.gz
 https://github.com/libexif/libexif/releases/download/v0.6.26/libexif-0.6.26.tar.bz2
 https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
-https://github.com/strukturag/libheif/releases/download/v1.22.2/libheif-1.22.2.tar.gz
+https://github.com/strukturag/libheif/releases/download/v1.23.0/libheif-1.23.0.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.4.1/libjpeg-turbo-3.1.4.1.tar.gz
 https://github.com/libjxl/libjxl/archive/v0.11.2/libjxl-0.11.2.tar.gz
 https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
@@ -639,8 +639,8 @@ https://www.dovecot.org/releases/2.4/dovecot-2.4.2.tar.gz
 https://ftp.exim.org/pub/exim/exim4/exim-4.99.1.tar.xz
 https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.3.tar.gz
 https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.35/LMDB_0.9.35.tar.bz2
-https://downloads.mariadb.org/interstitial/mariadb-11.8.7/source/mariadb-11.8.7.tar.gz
-https://www.linuxfromscratch.org/patches/blfs/svn/mariadb-11.8.7-openssl4_fixes-1.patch
+https://downloads.mariadb.org/interstitial/mariadb-12.3.2/source/mariadb-12.3.2.tar.gz
+https://www.linuxfromscratch.org/patches/blfs/svn/mariadb-12.3.2-openssl4_fixes-1.patch
 https://ftp.postgresql.org/pub/source/v18.4/postgresql-18.4.tar.bz2
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.13.tgz
 https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.13-consolidated-1.patch
@@ -701,7 +701,7 @@ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3
 https://download.gnome.org/sources/libadwaita/1.9/libadwaita-1.9.1.tar.xz
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.6.0/libei-1.6.0.tar.bz2
 https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
-https://dri.freedesktop.org/libdrm/libdrm-2.4.133.tar.xz
+https://dri.freedesktop.org/libdrm/libdrm-2.4.134.tar.xz
 https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz
 https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.8.tar.xz
 https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
@@ -800,7 +800,7 @@ https://download.gnome.org/sources/gnome-bluetooth/47/gnome-bluetooth-47.2.tar.x
 https://download.gnome.org/sources/gnome-keyring/50/gnome-keyring-50.0.tar.xz
 https://download.gnome.org/sources/gnome-settings-daemon/50/gnome-settings-daemon-50.1.tar.xz
 https://download.gnome.org/sources/tecla/50/tecla-50.0.tar.xz
-https://download.gnome.org/sources/gnome-control-center/50/gnome-control-center-50.1.tar.xz
+https://download.gnome.org/sources/gnome-control-center/50/gnome-control-center-50.2.tar.xz
 https://download.gnome.org/sources/mutter/50/mutter-50.1.tar.xz
 https://download.gnome.org/sources/gnome-shell/50/gnome-shell-50.2.tar.xz
 https://download.gnome.org/sources/gnome-shell-extensions/50/gnome-shell-extensions-50.2.tar.xz
@@ -876,7 +876,7 @@ https://github.com/lxde/menu-cache/archive/1.1.1/menu-cache-1.1.1.tar.gz
 https://github.com/lxqt/libfm-qt/releases/download/2.4.0/libfm-qt-2.4.0.tar.xz
 https://github.com/lxqt/lxqt-globalkeys/releases/download/2.4.0/lxqt-globalkeys-2.4.0.tar.xz
 https://github.com/lxqt/lxqt-qtplugin/releases/download/2.4.0/lxqt-qtplugin-2.4.0.tar.xz
-https://github.com/lxqt/lxqt-panel/releases/download/2.4.0/lxqt-panel-2.4.0.tar.xz
+https://github.com/lxqt/lxqt-panel/releases/download/2.4.1/lxqt-panel-2.4.1.tar.xz
 https://github.com/lxqt/pcmanfm-qt/releases/download/2.4.0/pcmanfm-qt-2.4.0.tar.xz
 https://github.com/lxqt/lxqt-powermanagement/releases/download/2.4.0/lxqt-powermanagement-2.4.0.tar.xz
 https://github.com/lxqt/lxqt-runner/releases/download/2.4.0/lxqt-runner-2.4.0.tar.xz
@@ -888,7 +888,7 @@ https://github.com/lxqt/lxqt-policykit/releases/download/2.4.0/lxqt-policykit-2.
 https://github.com/lxqt/lxqt-sudo/releases/download/2.4.0/lxqt-sudo-2.4.0.tar.xz
 https://github.com/lxqt/lxqt-openssh-askpass/releases/download/2.4.0/lxqt-openssh-askpass-2.4.0.tar.xz
 https://github.com/lxqt/lxqt-session/releases/download/2.4.0/lxqt-session-2.4.0.tar.xz
-https://github.com/lxqt/lxqt-wayland-session/releases/download/0.4.0/lxqt-wayland-session-0.4.0.tar.xz
+https://github.com/lxqt/lxqt-wayland-session/releases/download/0.4.1/lxqt-wayland-session-0.4.1.tar.xz
 https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/1.4.0/xdg-desktop-portal-lxqt-1.4.0.tar.xz
 https://github.com/lxqt/obconf-qt/releases/download/0.16.5/obconf-qt-0.16.5.tar.xz
 https://github.com/lxqt/lximage-qt/releases/download/2.4.0/lximage-qt-2.4.0.tar.xz
