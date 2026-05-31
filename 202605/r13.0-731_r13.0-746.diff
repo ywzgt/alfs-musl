@@ -1,0 +1,95 @@
+diff --git a/wget-list b/wget-list
+index 404fba9f56..9e1485e390 100644
+--- a/wget-list
++++ b/wget-list
+@@ -142,7 +142,7 @@ https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.3.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.27/libxmlb-0.3.27.tar.xz
+ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.45.tar.xz
+-https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.18.0/libwacom-2.18.0.tar.xz
++https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.19.0/libwacom-2.19.0.tar.xz
+ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/pantoniou/libfyaml/releases/download/v0.9.6/libfyaml-0.9.6.tar.gz
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_2/log4cplus-2.1.2.tar.xz
+@@ -227,7 +227,7 @@ https://github.com/asciidoctor/asciidoctor/archive/v2.0.26/asciidoctor-2.0.26.ta
+ https://downloads.sourceforge.net/bogofilter/bogofilter-1.2.5.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
+-https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.5.tar.gz
++https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.6.tar.gz
+ https://github.com/editorconfig/editorconfig-core-c/archive/v0.12.11/editorconfig-core-c-0.12.11.tar.gz
+ https://github.com/google/shaderc/archive/v2026.2/shaderc-2026.2.tar.gz
+ https://gitlab.com/graphviz/graphviz/-/archive/15.0.0/graphviz-15.0.0.tar.bz2
+@@ -301,7 +301,7 @@ https://github.com/mozilla/cbindgen/archive/v0.29.2/cbindgen-0.29.2.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/clisp/clisp-2.49.95.tar.xz
+ https://cmake.org/files/v4.3/cmake-4.3.3.tar.gz
+ https://doxygen.nl/files/doxygen-1.17.0.src.tar.gz
+-https://kernel.org/pub/software/utils/dtc/dtc-1.8.0.tar.xz
++https://kernel.org/pub/software/utils/dtc/dtc-1.8.1.tar.xz
+ https://ftpmirror.gnu.org/gcc/gcc-16.1.0/gcc-16.1.0.tar.xz
+ https://github.com/bdwgc/bdwgc/releases/download/v8.2.12/gc-8.2.12.tar.gz
+ https://ftpmirror.gnu.org/gdb/gdb-17.2.tar.xz
+@@ -427,7 +427,7 @@ https://cpan.metacpan.org/authors/id/E/ET/ETHER/namespace-autoclean-0.31.tar.gz
+ https://cpan.metacpan.org/authors/id/R/RI/RIBASUSHI/namespace-clean-0.27.tar.gz
+ https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.24.tar.gz
+ https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.96.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/Net-SSLeay-1.96-openssl4_fixes-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/Net-SSLeay-1.96-openssl4_fixes-2.patch
+ https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/Number-Compare-0.03.tar.gz
+ https://cpan.metacpan.org/authors/id/E/ET/ETHER/Package-Stash-0.40.tar.gz
+ https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Params-Validate-1.31.tar.gz
+@@ -587,6 +587,7 @@ https://www.kernel.org/pub/software/network/iw/iw-6.17.tar.xz
+ https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_scanning-1.patch
+ https://w1.fi/releases/wpa_supplicant-2.11.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/wpa_supplicant-2.11-openssl_4_fixes-1.patch
+ https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+ https://ftp.isc.org/isc/bind9/9.20.20/bind-9.20.20.tar.xz
+@@ -716,7 +717,7 @@ https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.350.0/Vulka
+ https://webkitgtk.org/releases/webkitgtk-2.52.0.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.20.4/xdg-desktop-portal-1.20.4.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
+-https://download.gnome.org/sources/gdm/50/gdm-50.0.tar.xz
++https://download.gnome.org/sources/gdm/50/gdm-50.1.tar.xz
+ https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.tar.xz
+ https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.9/lightdm-gtk-greeter-2.0.9.tar.gz
+ https://github.com/sddm/sddm/archive/v0.21.0/sddm-0.21.0.tar.gz
+@@ -794,16 +795,16 @@ https://download.gnome.org/sources/dconf-editor/49/dconf-editor-49.0.tar.xz
+ https://download.gnome.org/sources/gnome-backgrounds/50/gnome-backgrounds-50.0.tar.xz
+ https://download.gnome.org/sources/gvfs/1.60/gvfs-1.60.0.tar.xz
+ https://download.gnome.org/sources/gexiv2/0.16/gexiv2-0.16.0.tar.xz
+-https://download.gnome.org/sources/nautilus/50/nautilus-50.2.tar.xz
++https://download.gnome.org/sources/nautilus/50/nautilus-50.2.2.tar.xz
+ https://download.gnome.org/sources/gnome-bluetooth/47/gnome-bluetooth-47.2.tar.xz
+ https://download.gnome.org/sources/gnome-keyring/50/gnome-keyring-50.0.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/50/gnome-settings-daemon-50.1.tar.xz
+ https://download.gnome.org/sources/tecla/50/tecla-50.0.tar.xz
+ https://download.gnome.org/sources/gnome-control-center/50/gnome-control-center-50.1.tar.xz
+ https://download.gnome.org/sources/mutter/50/mutter-50.1.tar.xz
+-https://download.gnome.org/sources/gnome-shell/50/gnome-shell-50.1.tar.xz
++https://download.gnome.org/sources/gnome-shell/50/gnome-shell-50.2.tar.xz
+ https://download.gnome.org/sources/gnome-shell-extensions/50/gnome-shell-extensions-50.2.tar.xz
+-https://download.gnome.org/sources/gnome-session/50/gnome-session-50.0.tar.xz
++https://download.gnome.org/sources/gnome-session/50/gnome-session-50.1.tar.xz
+ https://download.gnome.org/sources/gnome-tweaks/49/gnome-tweaks-49.0.tar.xz
+ https://download.gnome.org/sources/gnome-user-docs/50/gnome-user-docs-50.2.tar.xz
+ https://download.gnome.org/sources/yelp/49/yelp-49.0.tar.xz
+@@ -903,7 +904,7 @@ https://download.documentfoundation.org/libreoffice/src/26.2.2/libreoffice-26.2.
+ https://download.documentfoundation.org/libreoffice/src/26.2.2/libreoffice-dictionaries-26.2.2.2.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/26.2.2/libreoffice-help-26.2.2.2.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/26.2.2/libreoffice-translations-26.2.2.2.tar.xz
+-https://download.gnome.org/sources/epiphany/49/epiphany-50.4.tar.xz
++https://download.gnome.org/sources/epiphany/50/epiphany-50.4.tar.xz
+ https://download.kde.org/stable/release-service/26.04.1/src/falkon-26.04.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.11.0esr-glibc-2.43.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.11.0esr-python_3.14_fixes-1.patch
+@@ -966,7 +967,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/libcanberra-0.30-wayland-1.pat
+ https://downloads.sourceforge.net/libcddb/libcddb-1.3.2.tar.bz2
+ https://ftpmirror.gnu.org/libcdio/libcdio-2.1.0.tar.bz2
+ https://ftpmirror.gnu.org/libcdio/libcdio-paranoia-10.2+2.0.2.tar.bz2
+-https://github.com/strukturag/libde265/releases/download/v1.0.19/libde265-1.0.19.tar.gz
++https://github.com/strukturag/libde265/releases/download/v1.1.0/libde265-1.1.0.tar.gz
+ https://get.videolan.org/libdvdcss/1.5.0/libdvdcss-1.5.0.tar.xz
+ https://get.videolan.org/libdvdread/7.0.1/libdvdread-7.0.1.tar.xz
+ https://get.videolan.org/libdvdnav/7.0.0/libdvdnav-7.0.0.tar.xz
