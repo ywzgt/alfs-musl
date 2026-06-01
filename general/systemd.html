@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Systemd-260.1
+      Systemd-260.2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-757">
+  <body class="blfs" id="blfs-r13.0-767">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-757
+        "phrase">(systemd</span> Edition) - Version r13.0-767
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-757">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-767">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="systemd" name="systemd"></a>Systemd-260.1
+      <a id="systemd" name="systemd"></a>Systemd-260.2
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -83,13 +83,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/systemd/systemd/archive/v260.1/systemd-260.1.tar.gz">
-                https://github.com/systemd/systemd/archive/v260.1/systemd-260.1.tar.gz</a>
+                "https://github.com/systemd/systemd/archive/v260.2/systemd-260.2.tar.gz">
+                https://github.com/systemd/systemd/archive/v260.2/systemd-260.2.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 8a54e8e7736f5a047c990ab570dae7f7
+                Download MD5 sum: 9f066cdb9c32177830add1e21d13c4f6
               </p>
             </li>
             <li class="listitem">
@@ -117,8 +117,8 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/systemd-260.1-buildfix-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/systemd-260.1-buildfix-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/systemd-260.2-buildfix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/systemd-260.2-buildfix-1.patch</a>
               </p>
             </li>
           </ul>
@@ -175,7 +175,7 @@
           "libpwquality-1.4.5">libpwquality-1.4.5</a>, <a class="xref" href=
           "libseccomp.html" title="libseccomp-2.6.0">libseccomp-2.6.0</a>,
           <a class="xref" href="libxkbcommon.html" title=
-          "libxkbcommon-1.13.1">libxkbcommon-1.13.1</a>, <a class="xref"
+          "libxkbcommon-1.13.2">libxkbcommon-1.13.2</a>, <a class="xref"
           href="../postlfs/make-ca.html" title=
           "make-ca-1.16.1">make-ca-1.16.1</a>, <a class="xref" href=
           "../postlfs/p11-kit.html" title=
@@ -188,9 +188,9 @@
           "Sphinx-9.1.0">sphinx-9.1.0</a>, <a class="xref" href=
           "valgrind.html" title="Valgrind-3.27.1">Valgrind-3.27.1</a>,
           <a class="xref" href="../postlfs/zsh.html" title=
-          "zsh-5.9">zsh-5.9</a> (for the zsh completions), <a class="ulink"
-          href="https://www.apparmor.net/">AppArmor</a>, <a class="ulink"
-          href=
+          "zsh-5.9.1">zsh-5.9.1</a> (for the zsh completions), <a class=
+          "ulink" href="https://www.apparmor.net/">AppArmor</a>, <a class=
+          "ulink" href=
           "https://github.com/linux-audit/audit-userspace">audit-userspace</a>,
           <a class="ulink" href=
           "https://github.com/scop/bash-completion">bash-completion</a>,
@@ -262,7 +262,7 @@
           Fix compilation issues with OpenSSL-4.0:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../systemd-260.1-buildfix-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../systemd-260.2-buildfix-1.patch</kbd></pre>
         <p>
           Rebuild <span class="application">systemd</span> by running the
           following commands:
@@ -288,7 +288,7 @@ meson setup ..                 \
       -D nobody-group=nogroup  \
       -D sysupdate=disabled    \
       -D ukify=disabled        \
-      -D docdir=/usr/share/doc/systemd-260.1 &amp;&amp;
+      -D docdir=/usr/share/doc/systemd-260.2 &amp;&amp;
 
 ninja</kbd></pre>
         <div class="admon note">
@@ -635,7 +635,7 @@ systemctl --user daemon-reload</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-757">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-767">
           Home</a>
         </li>
       </ul>

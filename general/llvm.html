@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-757">
+  <body class="blfs" id="blfs-r13.0-767">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-757
+        "phrase">(systemd</span> Edition) - Version r13.0-767
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-757">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-767">
           Home</a>
         </li>
       </ul>
@@ -154,7 +154,7 @@
           "rsync-3.4.3">rsync-3.4.3</a> (for tests), <a class="xref" href=
           "python-modules.html#sphinx" title="Sphinx-9.1.0">sphinx-9.1.0</a>,
           <span class="phrase"><a class="xref" href="systemd.html" title=
-          "Systemd-260.1">Systemd-260.1</a> (rebuilt with PAM, for
+          "Systemd-260.2">Systemd-260.2</a> (rebuilt with PAM, for
           tests),</span> <a class="xref" href="../pst/texlive.html" title=
           "texlive-20250308-source">texlive-20250308</a> (or <a class="xref"
           href="../pst/tl-installer.html" title=
@@ -185,7 +185,7 @@
           Ensure installing the <span class=
           "command"><strong>FileCheck</strong></span> program which is needed
           by the test suite of some packages (for example <a class="xref"
-          href="rust.html" title="Rustc-1.95.0">rustc-1.95.0</a>):
+          href="rust.html" title="Rustc-1.96.0">rustc-1.96.0</a>):
         </p>
         <pre class="userinput"><kbd class=
         "command">sed 's/utility/tool/' -i llvm/utils/FileCheck/CMakeLists.txt</kbd></pre>
@@ -219,7 +219,7 @@ ninja</kbd></pre>
           a large amount of disk space, and the core dump process can
           significantly slow down the testing. To test the results with core
           dump disabled, <span class="phrase">ensure <a class="xref" href=
-          "systemd.html" title="Systemd-260.1">Systemd-260.1</a> and
+          "systemd.html" title="Systemd-260.2">Systemd-260.2</a> and
           <a class="xref" href="../postlfs/shadow.html" title=
           "Shadow-4.19.4">Shadow-4.19.4</a> have been rebuilt with <a class=
           "xref" href="../postlfs/linux-pam.html" title=
@@ -316,7 +316,7 @@ systemd-run --user --pty -d -G -p LimitCORE=0 ninja check-all</kbd></pre>
           LLVM_ENABLE_RUNTIMES=compiler-rt</code></em>: This switch selects
           the LLVM runtime libraries to be built. For BLFS we only need
           compiler-rt (for some features of clang and <a class="xref" href=
-          "rust.html" title="Rustc-1.95.0">rustc-1.95.0</a>) and libclc, and
+          "rust.html" title="Rustc-1.96.0">rustc-1.96.0</a>) and libclc, and
           the latter have to be built separately (<a class="xref" href=
           "libclc.html" title="libclc-22.1.0">libclc-22.1.0</a>) to avoid a
           circular dependency involving <a class="xref" href=
@@ -1863,7 +1863,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-757">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-767">
           Home</a>
         </li>
       </ul>

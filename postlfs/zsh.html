@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      zsh-5.9
+      zsh-5.9.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-757">
+  <body class="blfs" id="blfs-r13.0-767">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-757
+        "phrase">(systemd</span> Edition) - Version r13.0-767
       </h4>
       <h3>
         Chapter&nbsp;7.&nbsp;Shells
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-757">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-767">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="zsh" name="zsh"></a>zsh-5.9
+      <a id="zsh" name="zsh"></a>zsh-5.9.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -81,17 +81,17 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.zsh.org/pub/zsh-5.9.tar.xz">https://www.zsh.org/pub/zsh-5.9.tar.xz</a>
+                "https://www.zsh.org/pub/zsh-5.9.1.tar.xz">https://www.zsh.org/pub/zsh-5.9.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 182e37ca3fe3fa6a44f69ad462c5c30e
+                Download MD5 sum: 5492bfe9a4afacdb2d1d81c27a1d44fa
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 3.2 MB
+                Download size: 3.3 MB
               </p>
             </li>
             <li class="listitem">
@@ -137,27 +137,6 @@
           Installation of zsh
         </h2>
         <p>
-          Adapt the documentation build system for texinfo-7.0 or later:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e 's/set_from_init_file/texinfo_&amp;/' \
-    -i Doc/Makefile.in</kbd></pre>
-        <p>
-          Some programs shipped in the building system for detecting system
-          features use pre-C99 syntax rejected by GCC-14.1 and later. Fix
-          them because Zsh will be configured incorrectly and fail to build
-          otherwise:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e 's/^main/int &amp;/'      \
-    -e 's/exit(/return(/'    \
-    -i aczsh.m4 configure.ac &amp;&amp;
-
-sed -e 's/test = /&amp;(char**)/' \
-    -i configure.ac           &amp;&amp;
-
-autoconf</kbd></pre>
-        <p>
           The documentation files contain references to zsh configuration
           files in <code class="filename">/etc</code>, but we'll use
           <code class="filename">/etc/zsh</code> to hold these configuration
@@ -178,7 +157,8 @@ autoconf</kbd></pre>
             --sysconfdir=/etc/zsh    \
             --enable-etcdir=/etc/zsh \
             --enable-cap             \
-            --enable-gdbm            &amp;&amp;
+            --enable-gdbm            \
+            --enable-pcre            &amp;&amp;
 make                                 &amp;&amp;
 
 makeinfo  Doc/zsh.texi --html      -o Doc/html &amp;&amp;
@@ -202,15 +182,15 @@ makeinfo  Doc/zsh.texi --html --no-split --no-headers -o zsh.html</kbd></pre>
         <pre class="root"><kbd class=
         "command">make install                                                    &amp;&amp;
 make infodir=/usr/share/info install.info                       &amp;&amp;
-make htmldir=/usr/share/doc/zsh-5.9/html install.html           &amp;&amp;
-install -v -m644 zsh.{html,txt} Etc/FAQ /usr/share/doc/zsh-5.9</kbd></pre>
+make htmldir=/usr/share/doc/zsh-5.9.1/html install.html         &amp;&amp;
+install -v -m644 zsh.{html,txt} Etc/FAQ /usr/share/doc/zsh-5.9.1</kbd></pre>
         <p>
           If you built the PDF format of the documentation, install it by
           issuing the following command as the <code class=
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">install -v -m644 Doc/zsh.pdf /usr/share/doc/zsh-5.9</kbd></pre>
+        "command">install -v -m644 Doc/zsh.pdf /usr/share/doc/zsh-5.9.1</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -234,6 +214,11 @@ install -v -m644 zsh.{html,txt} Etc/FAQ /usr/share/doc/zsh-5.9</kbd></pre>
           <em class="parameter"><code>--enable-gdbm</code></em>: This option
           enables the use of the <span class="application">GDBM</span>
           library.
+        </p>
+        <p>
+          <em class="parameter"><code>--enable-pcre</code></em>: This option
+          allows zsh to use the <span class="application">PCRE2</span>
+          regular expression library in shell builtins.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -261,7 +246,7 @@ install -v -m644 zsh.{html,txt} Etc/FAQ /usr/share/doc/zsh-5.9</kbd></pre>
             asking several questions. The answers will be used to create a
             <code class="filename">~/.zshrc</code> file. If you wish to run
             these questions again, run <span class="command"><strong>zsh
-            /usr/share/zsh/5.9/functions/zsh-newuser-install
+            /usr/share/zsh/5.9.1/functions/zsh-newuser-install
             -f</strong></span>.
           </p>
           <p>
@@ -304,18 +289,18 @@ EOF</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">zsh and zsh-5.9 (hardlinked to each
+              <span class="segbody">zsh and zsh-5.9.1 (hardlinked to each
               other)</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
               <span class="segbody">Numerous plugin helper modules under
-              /usr/lib/zsh/5.9/</span>
+              /usr/lib/zsh/5.9.1/</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/{lib,share}/zsh and
-              /usr/share/doc/zsh-5.9</span>
+              /usr/share/doc/zsh-5.9.1</span>
             </div>
           </div>
         </div>
@@ -372,7 +357,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-757">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-767">
           Home</a>
         </li>
       </ul>

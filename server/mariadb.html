@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-757">
+  <body class="blfs" id="blfs-r13.0-767">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-757
+        "phrase">(systemd</span> Edition) - Version r13.0-767
       </h4>
       <h3>
         Chapter&nbsp;22.&nbsp;Databases
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-757">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-767">
           Home</a>
         </li>
       </ul>
@@ -214,6 +214,19 @@
             MariaDB and MySQL cannot be installed on the same system without
             extensive changes to the build configuration of one of the two
             applications.
+          </p>
+        </div>
+        <div class="admon caution">
+          <img alt="[Caution]" src="../images/caution.png" />
+          <h3>
+            Caution
+          </h3>
+          <p>
+            If you are upgrading MariaDB from 11.x to 12.x, please pay
+            special attention to the upgrade notes later in this page. Users
+            of existing MariaDB installations may want to consider staying on
+            the 11.8.x LTS branch instead, especially if they rely on the
+            Galera functionality which was removed from MariaDB-12.x.
           </p>
         </div>
         <p>
@@ -460,10 +473,10 @@ mariadbd-safe --user=mariadb 2&gt;&amp;1 &gt;/dev/null &amp;</kbd></pre>
             <p>
               Upgrading MariaDB from version 11 to 12 requires a full backup,
               a clean shutdown, uninstalling the old binaries, installing the
-              version 12 binaries, restarting the server, and running
+              version 12 binaries, restarting the server, and running the
               <span class="command"><strong>mariadb-upgrade</strong></span>
-              to update system tables. Skipping this backup can result in
-              unrecoverable data.
+              command to update system tables. Skipping this backup can
+              result in unrecoverable data.
             </p>
           </div>
         </div>
@@ -1426,7 +1439,7 @@ mariadbd-safe --user=mariadb 2&gt;&amp;1 &gt;/dev/null &amp;</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-757">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-767">
           Home</a>
         </li>
       </ul>
