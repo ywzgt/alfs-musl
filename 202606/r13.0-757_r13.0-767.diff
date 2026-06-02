@@ -1,0 +1,66 @@
+diff --git a/wget-list b/wget-list
+index 9d8f4664ce..3aea7de969 100644
+--- a/wget-list
++++ b/wget-list
+@@ -55,10 +55,10 @@ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/26.04.1/src/kate-26.04.1.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.7/mousepad-0.7.0.tar.xz
+ https://www.nano-editor.org/dist/v9/nano-9.0.tar.xz
+-https://github.com/vim/vim/archive/v9.2.0481/vim-9.2.0481.tar.gz
++https://github.com/vim/vim/archive/v9.2.0567/vim-9.2.0567.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.4.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+-https://www.zsh.org/pub/zsh-5.9.tar.xz
++https://www.zsh.org/pub/zsh-5.9.1.tar.xz
+ https://download.qemu.org/qemu-11.0.1.tar.xz
+ https://github.com/abseil/abseil-cpp/releases/download/20260107.1/abseil-cpp-20260107.1.tar.gz
+ https://www.freedesktop.org/software/appstream/releases/AppStream-1.1.2.tar.xz
+@@ -111,7 +111,7 @@ https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.61.tar.bz2
+ https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.58.tar.xz
+ https://download.gnome.org/sources/libgudev/238/libgudev-238.tar.xz
+ https://github.com/hughsie/libgusb/releases/download/0.4.9/libgusb-0.4.9.tar.xz
+-https://github.com/libical/libical/releases/download/v4.0.1/libical-4.0.1.tar.gz
++https://github.com/libical/libical/releases/download/v4.0.2/libical-4.0.2.tar.gz
+ https://ftpmirror.gnu.org/libidn/libidn-1.43.tar.gz
+ https://ftpmirror.gnu.org/libidn/libidn2-2.3.8.tar.gz
+ https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.8.0.tar.bz2
+@@ -137,7 +137,7 @@ https://github.com/libunwind/libunwind/releases/download/v1.8.3/libunwind-1.8.3.
+ https://lttng.org/files/urcu/userspace-rcu-0.15.6.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.30/libusb-1.0.30.tar.bz2
+ https://dist.libuv.org/dist/v1.52.1/libuv-v1.52.1.tar.gz
+-https://github.com/lfs-book/libxkbcommon/archive/v1.13.1/libxkbcommon-1.13.1.tar.gz
++https://github.com/lfs-book/libxkbcommon/archive/v1.13.2/libxkbcommon-1.13.2.tar.gz
+ https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.3.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.27/libxmlb-0.3.27.tar.xz
+@@ -281,8 +281,8 @@ https://download.librdf.org/source/raptor2-2.0.16.tar.gz
+ https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+ https://download.librdf.org/source/redland-1.0.17.tar.gz
+ https://sysstat.github.io/sysstat-packages/sysstat-12.7.9.tar.xz
+-https://github.com/systemd/systemd/archive/v260.1/systemd-260.1.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/systemd-260.1-buildfix-1.patch
++https://github.com/systemd/systemd/archive/v260.2/systemd-260.2.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/systemd-260.2-buildfix-1.patch
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.11.1/udisks-2.11.1.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-7.2.4.tar.gz
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.2/upower-v1.91.2.tar.bz2
+@@ -297,7 +297,7 @@ https://github.com/lfs-book/sysmond/releases/download/sysmond-1.0.1/sysmond-1.0.
+ https://github.com/lfs-book/sysmon3/releases/download/3.0.3/sysmon3-3.0.3.tar.xz
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-019.tar.xz
+ https://github.com/lu-zero/cargo-c/archive/v0.10.22/cargo-c-0.10.22.tar.gz
+-https://github.com/mozilla/cbindgen/archive/v0.29.2/cbindgen-0.29.2.tar.gz
++https://github.com/mozilla/cbindgen/archive/v0.29.3/cbindgen-0.29.3.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/clisp/clisp-2.49.95.tar.xz
+ https://cmake.org/files/v4.3/cmake-4.3.3.tar.gz
+ https://doxygen.nl/files/doxygen-1.17.0.src.tar.gz
+@@ -556,8 +556,8 @@ https://files.pythonhosted.org/packages/source/u/uv_build/uv_build-0.10.2.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+ https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.5.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/ruby-4.0.5-openssl4_fixes-1.patch
+-https://static.rust-lang.org/dist/rustc-1.95.0-src.tar.xz
+-https://github.com/lfs-book/rust-openssl/archive/v0.10.78/rust-openssl-v0.10.78.tar.gz
++https://static.rust-lang.org/dist/rustc-1.96.0-src.tar.xz
++https://github.com/lfs-book/rust-openssl/archive/v0.10.78/rust-openssl-0.10.78.tar.gz
+ https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.1/rust-bindgen-0.72.1.tar.gz
+ https://downloads.sourceforge.net/scons/SCons-4.10.1.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
