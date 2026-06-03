@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-769">
+  <body class="blfs" id="blfs-r13.0-783">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-769
+        "phrase">(systemd</span> Edition) - Version r13.0-783
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-769">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-783">
           Home</a>
         </li>
       </ul>
@@ -7014,6 +7014,13 @@ deactivate</kbd></pre>
             Installation of Sphinx
           </h3>
           <p>
+            First allow <span class="application">sphinx</span> to use
+            <a class="xref" href="python-modules.html#docutils" title=
+            "docutils-0.23">docutils-0.23</a>:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">sed -i 's/0.23/0.24/' pyproject.toml</kbd></pre>
+          <p>
             Build the module:
           </p>
           <pre class="userinput"><kbd class=
@@ -7284,6 +7291,13 @@ deactivate</kbd></pre>
             Installation of Sphinx_rtd_theme
           </h3>
           <p>
+            First allow this package to use <a class="xref" href=
+            "python-modules.html#docutils" title=
+            "docutils-0.23">docutils-0.23</a>:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">sed -i 's/0.23/0.24/' setup.cfg</kbd></pre>
+          <p>
             Build the module:
           </p>
           <pre class="userinput"><kbd class=
@@ -7413,7 +7427,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-769">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-783">
           Home</a>
         </li>
       </ul>
