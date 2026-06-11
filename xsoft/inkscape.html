@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-811">
+  <body class="blfs" id="blfs-r13.0-817">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-811
+        "phrase">(systemd</span> Edition) - Version r13.0-817
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-811">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-817">
           Home</a>
         </li>
       </ul>
@@ -111,9 +111,18 @@
           <ul class="compact">
             <li class="listitem">
               <p>
-                Required patch: <a class="ulink" href=
+                Required patch for poppler-26.05 and later: <a class="ulink"
+                href=
                 "https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.4-poppler_fixes-1.patch">
                 https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.4-poppler_fixes-1.patch</a>
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                Required patch for poppler-26.06 and later: <a class="ulink"
+                href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.4-poppler_26_06_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.4-poppler_26_06_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -143,7 +152,7 @@
           "xref" href="../general/gc.html" title="GC-8.2.12">GC-8.2.12</a>,
           <a class="xref" href="../general/gsl.html" title=
           "gsl-2.8">gsl-2.8</a>, <a class="xref" href="../x/gtkmm3.html"
-          title="Gtkmm-3.24.10">Gtkmm-3.24.10</a>, <a class="xref" href=
+          title="Gtkmm-3.24.11">Gtkmm-3.24.11</a>, <a class="xref" href=
           "../general/libxslt.html" title=
           "libxslt-1.1.45">libxslt-1.1.45</a>, <a class="xref" href=
           "../general/poppler.html" title=
@@ -205,7 +214,8 @@
           First, fix build failures starting with poppler-26.05 and later:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../inkscape-1.4.4-poppler_fixes-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../inkscape-1.4.4-poppler_fixes-1.patch &amp;&amp;
+patch -Np1 -i ../inkscape-1.4.4-poppler_26_06_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">Inkscape</span> by running the
           following commands:
@@ -394,7 +404,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-811">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-817">
           Home</a>
         </li>
       </ul>
