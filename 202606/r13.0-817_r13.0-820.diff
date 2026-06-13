@@ -1,0 +1,21 @@
+diff --git a/wget-list b/wget-list
+index 020b5203f9..c22844d7f2 100644
+--- a/wget-list
++++ b/wget-list
+@@ -603,7 +603,7 @@ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.8.1/geoclue-2.8.1.tar
+ https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.1.tar.xz
+ https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.3.0/kdsoap-2.3.0.tar.gz
+ https://download.kde.org/stable/kdsoap-ws-discovery-client/kdsoap-ws-discovery-client-0.4.0.tar.xz
+-https://www.nlnetlabs.nl/downloads/ldns/ldns-1.9.0.tar.gz
++https://www.nlnetlabs.nl/downloads/ldns/ldns-1.9.2.tar.gz
+ https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
+ https://netfilter.org/projects/libmnl/files/libmnl-1.0.5.tar.bz2
+ http://libndp.org/files/libndp-1.9.tar.gz
+@@ -912,6 +912,7 @@ https://archive.seamonkey-project.org/releases/2.53.23/source/seamonkey-2.53.23.
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-libvpx_security_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-cxx17-1.patch
+ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.5-libical_4_fixes-1.patch
+ https://feh.finalrewind.org/feh-3.12.2.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
+ https://github.com/freerdp/freerdp/archive/3.26.0/FreeRDP-3.26.0.tar.gz
