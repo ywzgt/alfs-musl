@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-826">
+  <body class="blfs" id="blfs-r13.0-836">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-826
+        "phrase">(systemd</span> Edition) - Version r13.0-836
       </h4>
       <h3>
         Chapter&nbsp;50.&nbsp;PostScript
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-826">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-836">
           Home</a>
         </li>
       </ul>
@@ -157,9 +157,10 @@ patch -Np1 -i ../paps-0.8.0-fmt_fix-1.patch</kbd></pre>
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr    \
-            --disable-Werror \
-            --mandir=/usr/share/man &amp;&amp;
+        "command">./configure --prefix=/usr           \
+            --disable-Werror        \
+            --mandir=/usr/share/man \
+            CXX="g++ -std=gnu++17"  &amp;&amp;
 make</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -168,6 +169,17 @@ make</kbd></pre>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">make install</kbd></pre>
+      </div>
+      <div class="commands" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Command Explanations
+        </h2>
+        <p>
+          <em class="parameter"><code>CXX="g++ -std=gnu++17"</code></em>: The
+          default is to use <em class=
+          "parameter"><code>-std=gnu++11</code></em>, but one file uses a
+          feature only available in C++17.
+        </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -240,7 +252,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-826">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-836">
           Home</a>
         </li>
       </ul>

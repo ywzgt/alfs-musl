@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-826">
+  <body class="blfs" id="blfs-r13.0-836">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-826
+        "phrase">(systemd</span> Edition) - Version r13.0-836
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-826">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-836">
           Home</a>
         </li>
       </ul>
@@ -113,6 +113,21 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch to buiild with OpenSSL-4: <a class="ulink"
+                href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/ntp-4.2.8p18-openssl_4-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/ntp-4.2.8p18-openssl_4-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           ntp Dependencies
         </h3>
         <h4>
@@ -165,6 +180,11 @@ autoreconf -fiv</kbd></pre>
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -i "/ep.*FAILED/,+4s/ep/ep2/" ntpd/ntp_io.c</kbd></pre>
+        <p>
+          Then apply a patch to build with OpenSSL-4:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../ntp-4.2.8p18-openssl_4-1.patch</kbd></pre>
         <p>
           Install <span class="application">ntp</span> by running the
           following commands:
@@ -570,7 +590,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-826">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-836">
           Home</a>
         </li>
       </ul>
