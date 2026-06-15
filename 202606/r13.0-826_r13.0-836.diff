@@ -1,0 +1,48 @@
+diff --git a/wget-list b/wget-list
+index 4b848e3033..c8997f8857 100644
+--- a/wget-list
++++ b/wget-list
+@@ -20,7 +20,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-upstream_fix-1.p
+ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-security_fix-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-openssl_4_fixes-1.patch
+ https://ftpmirror.gnu.org/nettle/nettle-4.0.tar.gz
+-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_124_RTM/src/nss-3.124.tar.gz
++https://archive.mozilla.org/pub/security/nss/releases/NSS_3_125_RTM/src/nss-3.125.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.3p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.26.2/p11-kit-0.26.2.tar.xz
+@@ -473,6 +473,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.5-security_fixes-1
+ https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.5-openssl_4-1.patch
+ https://www.python.org/ftp/python/doc/3.14.5/python-3.14.5-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/python-3.11.1-openssl_4_fixes-1.patch
+ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
+ https://download.gnome.org/sources/blueprint-compiler/0.20/blueprint-compiler-0.20.4.tar.xz
+ https://files.pythonhosted.org/packages/source/b/build/build-1.5.0.tar.gz
+@@ -578,6 +579,7 @@ https://www.ncftp.com/public_ftp/ncftp/ncftp-3.3.0-src.tar.gz
+ https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
+ https://www.kernel.org/pub/linux/utils/nfs-utils/2.9.1/nfs-utils-2.9.1.tar.xz
+ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/ntp-4.2.8p18-openssl_4-1.patch
+ https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.9.tar.bz2
+ https://www.samba.org/ftp/rsync/src/rsync-3.4.4.tar.gz
+ https://download.samba.org/pub/samba/stable/samba-4.24.0.tar.gz
+@@ -626,7 +628,8 @@ https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.3.tar.bz2
+ https://downloads.sourceforge.net/fetchmail/fetchmail-6.6.3.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/mailx/heirloom-mailx_12.5.orig.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.patch
+-http://ftp.mutt.org/pub/mutt/mutt-2.3.2.tar.gz
++http://ftp.mutt.org/pub/mutt/mutt-2.3.3.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/mutt-2.3.3-openssl4-fix-1.patch
+ https://github.com/BuGlessRB/procmail/archive/v3.24/procmail-3.24.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.24-consolidated_fixes-1.patch
+ https://archive.apache.org/dist/httpd/httpd-2.4.68.tar.bz2
+@@ -889,7 +892,7 @@ https://github.com/lxqt/lxqt-openssh-askpass/releases/download/2.4.0/lxqt-openss
+ https://github.com/lxqt/lxqt-session/releases/download/2.4.0/lxqt-session-2.4.0.tar.xz
+ https://github.com/lxqt/lxqt-wayland-session/releases/download/0.4.1/lxqt-wayland-session-0.4.1.tar.xz
+ https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/1.4.0/xdg-desktop-portal-lxqt-1.4.0.tar.xz
+-https://github.com/lxqt/obconf-qt/releases/download/0.16.5/obconf-qt-0.16.5.tar.xz
++https://github.com/lxqt/obconf-qt/releases/download/0.16.6/obconf-qt-0.16.6.tar.xz
+ https://github.com/lxqt/lximage-qt/releases/download/2.4.0/lximage-qt-2.4.0.tar.xz
+ https://github.com/lxqt/lxqt-archiver/releases/download/1.4.0/lxqt-archiver-1.4.0.tar.xz
+ https://github.com/lxqt/lxqt-notificationd/releases/download/2.4.0/lxqt-notificationd-2.4.0.tar.xz
