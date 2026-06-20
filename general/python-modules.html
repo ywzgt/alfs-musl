@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-850">
+  <body class="blfs" id="blfs-r13.0-866">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-850
+        "phrase">(systemd</span> Edition) - Version r13.0-866
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-850">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-866">
           Home</a>
         </li>
       </ul>
@@ -3552,13 +3552,12 @@ sed -i 's/import pkg_resources/pkg_resources = None/' setup.py</kbd></pre>
             Optional (for testing)
           </h5>
           <p class="optional">
-            <a class="xref" href="python-dependencies.html#attrs" title=
-            "Attrs-25.4.0">attrs-25.4.0</a>, <a class="xref" href=
-            "python-modules.html#pytest" title=
+            <a class="xref" href="python-modules.html#pytest" title=
             "Pytest-9.1.0">pytest-9.1.0</a>, <a class="xref" href=
             "python-dependencies.html#pytz" title=
-            "Pytz-2025.2">pytz-2025.2</a>, and <a class="ulink" href=
-            "https://pypi.org/project/hypothesis/">hypothesis</a>
+            "Pytz-2025.2">pytz-2025.2</a>, <a class="ulink" href=
+            "https://pypi.org/project/attrs/">attrs</a>, and <a class="ulink"
+            href="https://pypi.org/project/hypothesis/">hypothesis</a>
           </p>
         </div>
         <div class="installation" lang="en" xml:lang="en">
@@ -3584,7 +3583,7 @@ sed -i 's/import pkg_resources/pkg_resources = None/' setup.py</kbd></pre>
 cd       test                                  &amp;&amp;
 python3 -m venv --system-site-packages testenv &amp;&amp;
 source testenv/bin/activate                    &amp;&amp;
-pip3 install hypothesis                        &amp;&amp;
+pip3 install hypothesis attrs                  &amp;&amp;
 python3 -c "import numpy, sys; sys.exit(numpy.test() is False)"
 deactivate</kbd></pre>
         </div>
@@ -5304,15 +5303,14 @@ deactivate</kbd></pre>
             Optional (for testing)
           </h5>
           <p class="optional">
-            <a class="xref" href="python-dependencies.html#attrs" title=
-            "Attrs-25.4.0">attrs-25.4.0</a>, <a class="xref" href=
-            "python-modules.html#requests" title=
+            <a class="xref" href="python-modules.html#requests" title=
             "Requests-2.34.2">requests-2.34.2</a>, <a class="ulink" href=
             "https://pypi.org/project/argcomplete/">argcomplete</a>,
             <a class="ulink" href=
-            "https://pypi.org/project/hypothesis/">hypothesis</a>, <a class=
-            "ulink" href="https://pypi.org/project/mock/">mock</a>, and
-            <a class="ulink" href=
+            "https://pypi.org/project/attrs/">attrs</a>, <a class="ulink"
+            href="https://pypi.org/project/hypothesis/">hypothesis</a>,
+            <a class="ulink" href="https://pypi.org/project/mock/">mock</a>,
+            and <a class="ulink" href=
             "https://pypi.org/project/xmlschema/">xmlschema</a>
           </p>
         </div>
@@ -7427,7 +7425,7 @@ deactivate</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-850">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-866">
           Home</a>
         </li>
       </ul>
