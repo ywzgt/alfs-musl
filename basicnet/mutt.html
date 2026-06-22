@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Mutt-2.3.3
+      Mutt-2.4.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-868">
+  <body class="blfs" id="blfs-r13.0-873">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-868
+        "phrase">(systemd</span> Edition) - Version r13.0-873
       </h4>
       <h3>
         Chapter&nbsp;19.&nbsp;Mail/News Clients
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-868">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-873">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="mutt" name="mutt"></a>Mutt-2.3.3
+      <a id="mutt" name="mutt"></a>Mutt-2.4.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,12 +78,12 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "http://ftp.mutt.org/pub/mutt/mutt-2.3.3.tar.gz">http://ftp.mutt.org/pub/mutt/mutt-2.3.3.tar.gz</a>
+                "http://ftp.mutt.org/pub/mutt/mutt-2.4.0.tar.gz">http://ftp.mutt.org/pub/mutt/mutt-2.4.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 808cc609d6ff5f1923de7eeead8cd4d5
+                Download MD5 sum: e1fad4af4870175df2ac9e60b58b3791
               </p>
             </li>
             <li class="listitem">
@@ -111,8 +111,8 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/mutt-2.3.3-openssl4-fix-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/mutt-2.3.3-openssl4-fix-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/mutt-2.4.0-openssl4-fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/mutt-2.4.0-openssl4-fix-1.patch</a>
               </p>
             </li>
           </ul>
@@ -213,7 +213,7 @@
           First apply a patch to fix building with OpenSSL-4:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../mutt-2.3.3-openssl4-fix-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../mutt-2.4.0-openssl4-fix-1.patch</kbd></pre>
         <p>
           To ensure that a plain text manual is created when using
           <span class="application">lynx</span> or to otherwise use
@@ -232,7 +232,7 @@
         <pre class="userinput"><kbd class=
         "command">./configure --prefix=/usr                           \
             --sysconfdir=/etc                       \
-            --with-docdir=/usr/share/doc/mutt-2.3.3 \
+            --with-docdir=/usr/share/doc/mutt-2.4.0 \
             --with-ssl                              \
             --enable-external-dotlock               \
             --enable-pop                            \
@@ -390,7 +390,7 @@ chmod -v 2755 /usr/bin/mutt_dotlock</kbd></pre>
             the following command:
           </p>
           <pre class="userinput"><kbd class=
-          "command">cat /usr/share/doc/mutt-2.3.3/samples/gpg.rc &gt;&gt; ~/.muttrc</kbd></pre>
+          "command">cat /usr/share/doc/mutt-2.4.0/samples/gpg.rc &gt;&gt; ~/.muttrc</kbd></pre>
         </div>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -410,7 +410,7 @@ chmod -v 2755 /usr/bin/mutt_dotlock</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/share/doc/mutt-2.3.3</span>
+              <span class="segbody">/usr/share/doc/mutt-2.4.0</span>
             </div>
           </div>
         </div>
@@ -555,7 +555,7 @@ chmod -v 2755 /usr/bin/mutt_dotlock</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-868">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-873">
           Home</a>
         </li>
       </ul>
