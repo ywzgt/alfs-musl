@@ -1,0 +1,55 @@
+diff --git a/wget-list b/wget-list
+index 029b171515..c8fba96046 100644
+--- a/wget-list
++++ b/wget-list
+@@ -164,8 +164,8 @@ https://github.com/danvratil/qcoro/archive/v0.13.0/qcoro-0.13.0.tar.gz
+ https://github.com/simdutf/simdutf/archive/v9.0.0/simdutf-9.0.0.tar.gz
+ https://archive.mozilla.org/pub/firefox/releases/140.12.0esr/source/firefox-140.12.0esr.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.12.0-python_3.14_fixes-1.patch
+-https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.350.0/SPIRV-Headers-vulkan-sdk-1.4.350.0.tar.gz
+-https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.350.0/SPIRV-Tools-vulkan-sdk-1.4.350.0.tar.gz
++https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.350.1/SPIRV-Headers-vulkan-sdk-1.4.350.1.tar.gz
++https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.350.1/SPIRV-Tools-vulkan-sdk-1.4.350.1.tar.gz
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v22.1.2/SPIRV-LLVM-Translator-22.1.2.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.4.4.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+@@ -626,8 +626,8 @@ https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.3.tar.bz2
+ https://downloads.sourceforge.net/fetchmail/fetchmail-6.6.3.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/mailx/heirloom-mailx_12.5.orig.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.patch
+-http://ftp.mutt.org/pub/mutt/mutt-2.3.3.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/mutt-2.3.3-openssl4-fix-1.patch
++http://ftp.mutt.org/pub/mutt/mutt-2.4.0.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/mutt-2.4.0-openssl4-fix-1.patch
+ https://github.com/BuGlessRB/procmail/archive/v3.24/procmail-3.24.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.24-consolidated_fixes-1.patch
+ https://archive.apache.org/dist/httpd/httpd-2.4.68.tar.bz2
+@@ -637,7 +637,7 @@ https://downloads.isc.org/isc/kea/3.0.2/kea-3.0.2.tar.xz
+ https://github.com/proftpd/proftpd/archive/v1.3.9b/proftpd-1.3.9b.tar.gz
+ https://www.dovecot.org/releases/2.4/dovecot-2.4.2.tar.gz
+ https://ftp.exim.org/pub/exim/exim4/exim-4.99.1.tar.xz
+-https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.3.tar.gz
++https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.4.tar.gz
+ https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.35/LMDB_0.9.35.tar.bz2
+ https://downloads.mariadb.org/interstitial/mariadb-12.3.2/source/mariadb-12.3.2.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mariadb-12.3.2-openssl4_fixes-1.patch
+@@ -657,7 +657,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-4.patch
+ https://www.x.org/pub/individual/data/xbitmaps-1.1.4.tar.xz
+ https://invisible-mirror.net/archives/luit/luit-20250912.tgz
+ https://www.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
+-https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.47.tar.xz
++https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.48.tar.xz
+ https://www.x.org/pub/individual/xserver/xwayland-24.1.12.tar.xz
+ https://www.x.org/pub/individual/xserver/xorg-server-21.1.23.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.23-tearfree_backport-1.patch
+@@ -711,8 +711,8 @@ https://download.qt.io/archive/qt/6.11/6.11.1/single/qt-everywhere-src-6.11.1.ta
+ https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-src-6.11.1-openssl4_fix-1.patch
+ https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtwebengine-everywhere-src-6.11.1.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Headers/archive/vulkan-sdk-1.4.350.0/Vulkan-Headers-vulkan-sdk-1.4.350.0.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.350.0/Vulkan-Loader-vulkan-sdk-1.4.350.0.tar.gz
++https://github.com/KhronosGroup/Vulkan-Headers/archive/vulkan-sdk-1.4.350.1/Vulkan-Headers-vulkan-sdk-1.4.350.1.tar.gz
++https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.350.1/Vulkan-Loader-vulkan-sdk-1.4.350.1.tar.gz
+ https://webkitgtk.org/releases/webkitgtk-2.52.4.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.22.1/xdg-desktop-portal-1.22.1.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
