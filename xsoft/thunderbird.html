@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-873">
+  <body class="blfs" id="blfs-r13.0-886">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-873
+        "phrase">(systemd</span> Edition) - Version r13.0-886
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-873">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-886">
           Home</a>
         </li>
       </ul>
@@ -254,6 +254,11 @@ sed '/name = "glslopt"/,/^$/{/source/d;/checksum/d}' \
         </p>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../thunderbird-140.12.0esr-llvm_22-1.patch</kbd></pre>
+        <p>
+          Next, fix building this package with cbindgen-0.29.4:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i '/const [CVP]/s/pub //' gfx/wr/webrender/src/texture_cache.rs</kbd></pre>
         <p>
           The configuration of <span class="application">Thunderbird</span>
           is accomplished by creating a <code class=
@@ -547,7 +552,7 @@ ln -sfv /usr/lib/thunderbird/chrome/icons/default/default256.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-873">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-886">
           Home</a>
         </li>
       </ul>

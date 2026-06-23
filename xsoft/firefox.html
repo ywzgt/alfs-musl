@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-873">
+  <body class="blfs" id="blfs-r13.0-886">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-873
+        "phrase">(systemd</span> Edition) - Version r13.0-886
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-873">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-886">
           Home</a>
         </li>
       </ul>
@@ -410,6 +410,11 @@ sed -i '/name = "glslopt"/,/^$/{/source/d;/checksum/d}' Cargo.lock</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../firefox-140.12.0esr-llvm_22-1.patch</kbd></pre>
         <p>
+          Next, fix building this package with cbindgen-0.29.4:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i '/const [CVP]/s/pub //' gfx/wr/webrender/src/texture_cache.rs</kbd></pre>
+        <p>
           If you are building with system ICU-78.1 or later, update one file:
         </p>
         <pre class="userinput"><kbd class=
@@ -738,7 +743,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-873">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-886">
           Home</a>
         </li>
       </ul>
