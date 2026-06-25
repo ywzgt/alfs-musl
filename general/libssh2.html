@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-898">
+  <body class="blfs" id="blfs-r13.0-905">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-898
+        "phrase">(systemd</span> Edition) - Version r13.0-905
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-898">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-905">
           Home</a>
         </li>
       </ul>
@@ -104,6 +104,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/libssh2-1.11.1-security_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/libssh2-1.11.1-security_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           libssh2 Dependencies
         </h3>
         <h4>
@@ -124,6 +138,11 @@
         <h2 class="sect2">
           Installation of libssh2
         </h2>
+        <p>
+          First, fix three security vulnerabilities in libssh2:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../libssh2-1.11.1-security_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">libssh2</span> by running the
           following commands:
@@ -227,7 +246,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-898">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-905">
           Home</a>
         </li>
       </ul>
