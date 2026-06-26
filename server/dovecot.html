@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-905">
+  <body class="blfs" id="blfs-r13.0-913">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-905
+        "phrase">(systemd</span> Edition) - Version r13.0-913
       </h4>
       <h3>
         Chapter&nbsp;21.&nbsp;Mail Server Software
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-905">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-913">
           Home</a>
         </li>
       </ul>
@@ -186,7 +186,8 @@ useradd -c "Dovecot login user" -d /dev/null -u 43 \
             --sysconfdir=/etc                      \
             --localstatedir=/var                   \
             --docdir=/usr/share/doc/dovecot-2.4.4  \
-            --disable-static                       &amp;&amp;
+            --disable-static                       \
+            CXX="g++ -std=gnu++17"                 &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue <span class="command"><strong>make -k
@@ -204,6 +205,13 @@ make</kbd></pre>
         <p>
           <em class="parameter"><code>--disable-static</code></em>: This
           switch prevents installation of static versions of the libraries.
+        </p>
+        <p>
+          <em class="parameter"><code>CXX="g++ -std=gnu++17"</code></em>:
+          This setting enables the C++17 standard. It is needed if <a class=
+          "xref" href="../general/xapian.html" title=
+          "Xapian-2.0.0">xapian-2.0.0</a> is installed, and does not hurt if
+          not.
         </p>
         <p>
           <code class="option">--with-ldap</code>: This switch enables
@@ -435,7 +443,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-905">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-913">
           Home</a>
         </li>
       </ul>

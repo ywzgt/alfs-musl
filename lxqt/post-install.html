@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-905">
+  <body class="blfs" id="blfs-r13.0-913">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-905
+        "phrase">(systemd</span> Edition) - Version r13.0-913
       </h4>
       <h3>
         Chapter&nbsp;37.&nbsp;LXQt Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-905">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-913">
           Home</a>
         </li>
       </ul>
@@ -66,15 +66,33 @@
         <h4>
           Required
         </h4>
-        <p class="required">
-          <a class="xref" href="../x/openbox.html" title=
-          "openbox-3.6.1">openbox-3.6.1</a>, or another window manager, such
-          as <a class="xref" href="../xfce/xfwm4.html" title=
-          "Xfwm4-4.20.0">Xfwm4-4.20.0</a>, or kwin from <a class="xref" href=
-          "../kde/plasma-all.html" title="Building Plasma">Plasma-6.6.5</a>.
-          Note that <a class="xref" href="../x/icewm.html" title=
-          "IceWM-4.0.0">IceWM-4.0.0</a> is not suitable for LXQt.
-        </p>
+        <p class="required"></p>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                For Xorg: <a class="xref" href="../x/openbox.html" title=
+                "openbox-3.6.1">openbox-3.6.1</a>, or another window manager,
+                such as <a class="xref" href="../xfce/xfwm4.html" title=
+                "Xfwm4-4.20.0">Xfwm4-4.20.0</a>, or kwin from <a class="xref"
+                href="../kde/plasma-all.html" title=
+                "Building Plasma">Plasma-6.6.5</a>; note that <a class="xref"
+                href="../x/icewm.html" title="IceWM-4.0.0">IceWM-4.0.0</a> is
+                not suitable for LXQt
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                For Wayland: <a class="xref" href="../x/wayfire.html" title=
+                "wayfire-0.10.1">wayfire-0.10.1</a> and <a class="xref" href=
+                "lxqt-wayland-session.html#lxqt-wls-conf" title=
+                "Configuring lxqt-wayland-session">the section called
+                “Configuring lxqt-wayland-session”</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <p class="required"></p>
         <h4>
           Recommended
         </h4>
@@ -166,7 +184,12 @@ startx</kbd></pre>
             Starting LXQt Wayland
           </h3>
           <p>
-            To start the wayland version of LXQt, run:
+            Before starting the session, ensure <a class="xref" href=
+            "lxqt-wayland-session.html#lxqt-wls-conf" title=
+            "Configuring lxqt-wayland-session">the section called
+            “Configuring lxqt-wayland-session”</a> was followed. Afterwards,
+            the Wayland LXQt session can be started by running the following
+            command:
           </p>
           <pre class="userinput"><kbd class=
           "command">startlxqtwayland</kbd></pre>
@@ -177,12 +200,15 @@ startx</kbd></pre>
           Initial Configuration
         </h2>
         <p>
-          When LXQt first starts, it will ask you for the window manager to
-          use. To start, the BLFS editors recommend using <span class=
-          "application">openbox</span>. At this point both the background and
-          the panel will be black. Right clicking on the background will
-          bring up a menu and selecting "Desktop Preferences" will allow you
-          to change the background color or set a background image.
+          If LXQt is being started for the first time and it's the Xorg
+          session, it will ask you what window manager to use. To start, the
+          BLFS editors recommend using <span class=
+          "application">openbox</span> for the Xorg session. In both the Xorg
+          and Wayland sessions, starting LXQt for the first time results in a
+          black-colored background by default. Right clicking on the
+          background will bring up a menu. You can select the "Desktop
+          Preferences" option to change the background color or set a
+          background image.
         </p>
         <p>
           The panel will be at the bottom of the screen. Right clicking on
@@ -233,7 +259,7 @@ startx</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-905">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-913">
           Home</a>
         </li>
       </ul>
