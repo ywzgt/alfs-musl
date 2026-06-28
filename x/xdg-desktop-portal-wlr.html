@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-925">
+  <body class="blfs" id="blfs-r13.0-937">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-925
+        "phrase">(systemd</span> Edition) - Version r13.0-937
       </h4>
       <h3>
         Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-925">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-937">
           Home</a>
         </li>
       </ul>
@@ -156,12 +156,9 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr                 \
-            --buildtype=release           \</kbd><span class=
-"phrase"><kbd class="command">
-            -D sd-bus-provider=libsystemd \</kbd></span><kbd class="command">
+meson setup --prefix=/usr       \
+            --buildtype=release \
             .. &amp;&amp;
-
 ninja</kbd></pre>
         <p>
           This package doesn't come with a test suite.
@@ -179,19 +176,6 @@ ninja</kbd></pre>
 <code class="literal">[preferred]
 default=wlr</code>
 EOF</kbd></pre>
-      </div>
-      <div class="commands" lang="en" xml:lang="en">
-        <h2 class="sect2">
-          Command Explanations
-        </h2>
-        <p>
-          <em class="parameter"><code>-D
-          sd-bus-provider=lib</code></em><em class=
-          "parameter"><code>system</code></em><em class=
-          "parameter"><code>d</code></em>: This parameter tells the build
-          system what provides the <code class="literal">sd-bus</code> API,
-          which in this case is <span class="phrase">system</span>d.
-        </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -237,7 +221,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-925">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-937">
           Home</a>
         </li>
       </ul>
