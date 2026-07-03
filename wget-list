@@ -91,7 +91,7 @@ https://download.gnome.org/sources/gspell/1.14/gspell-1.14.4.tar.xz
 https://github.com/google/highway/archive/1.4.0/highway-1.4.0.tar.gz
 https://github.com/unicode-org/icu/releases/download/release-78.3/icu4c-78.3-sources.tgz
 https://github.com/benhoyt/inih/archive/r62/inih-r62.tar.gz
-https://github.com/akheron/jansson/releases/download/v2.15.0/jansson-2.15.0.tar.bz2
+https://github.com/akheron/jansson/releases/download/v2.15.1/jansson-2.15.1.tar.bz2
 https://github.com/nlohmann/json/archive/v3.12.0/json-3.12.0.tar.gz
 https://s3.amazonaws.com/json-c_releases/releases/json-c-0.19.tar.gz
 https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.8.tar.xz
@@ -126,7 +126,7 @@ https://github.com/libproxy/libproxy/archive/0.5.12/libproxy-0.5.12.tar.gz
 http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
 https://github.com/Qalculate/libqalculate/releases/download/v5.11.0/libqalculate-5.11.0.tar.gz
 https://gitlab.freedesktop.org/mobile-broadband/libqmi/-/archive/1.38.0/libqmi-1.38.0.tar.gz
-https://github.com/seccomp/libseccomp/releases/download/v2.6.0/libseccomp-2.6.0.tar.gz
+https://github.com/seccomp/libseccomp/releases/download/v2.6.1/libseccomp-2.6.1.tar.gz
 https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.1.tar.xz
 https://download.gnome.org/sources/libsigc++/3.6/libsigc++-3.6.0.tar.xz
 https://ftpmirror.gnu.org/libsigsegv/libsigsegv-2.15.tar.gz
@@ -190,8 +190,8 @@ https://download.gimp.org/pub/gegl/0.4/gegl-0.4.70.tar.xz
 https://sourceforge.net/projects/giflib/files/giflib-6.1.3.tar.gz
 https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
 https://github.com/g-truc/glm/archive/1.0.3/glm-1.0.3.tar.gz
-https://download.gnome.org/sources/glycin/2.1/glycin-2.1.1.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.1.1-xorg_prefix-1.patch
+https://download.gnome.org/sources/glycin/2.1/glycin-2.1.5.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.1.5-xorg_prefix-1.patch
 https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
 https://github.com/harfbuzz/harfbuzz/releases/download/14.2.1/harfbuzz-14.2.1.tar.xz
 https://github.com/AcademySoftwareFoundation/Imath/releases/download/v3.2.2/Imath-3.2.2.tar.gz
@@ -202,7 +202,7 @@ https://github.com/libexif/libexif/releases/download/v0.6.26/libexif-0.6.26.tar.
 https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
 https://github.com/strukturag/libheif/releases/download/v1.23.1/libheif-1.23.1.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.2.0/libjpeg-turbo-3.2.0.tar.gz
-https://github.com/libjxl/libjxl/archive/v0.11.2/libjxl-0.11.2.tar.gz
+https://github.com/libjxl/libjxl/archive/v0.12.0/libjxl-0.12.0.tar.gz
 https://gitlab.freedesktop.org/emersion/libliftoff/-/archive/v0.5.0/libliftoff-v0.5.0.tar.gz
 https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz
 https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz
@@ -235,7 +235,7 @@ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-ut
 https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.6.tar.gz
 https://github.com/editorconfig/editorconfig-core-c/archive/v0.12.11/editorconfig-core-c-0.12.11.tar.gz
 https://github.com/google/shaderc/archive/v2026.2/shaderc-2026.2.tar.gz
-https://gitlab.com/graphviz/graphviz/-/archive/15.0.0/graphviz-15.0.0.tar.bz2
+https://gitlab.com/graphviz/graphviz/-/archive/15.1.0/graphviz-15.1.0.tar.bz2
 https://download.gnome.org/sources/gtk-doc/1.36/gtk-doc-1.36.1.tar.xz
 http://www.andre-simon.de/zip/highlight-4.20.tar.bz2
 https://github.com/ibus/ibus/archive/1.5.34/ibus-1.5.34.tar.gz
@@ -244,10 +244,9 @@ https://www.imagemagick.org/archive/releases/ImageMagick-7.1.2-13.tar.xz
 http://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.20.1/iso-codes-v4.20.1.tar.gz
 https://github.com/lsof-org/lsof/releases/download/4.99.7/lsof-4.99.7.tar.gz
-https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.3.2.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.3.3.tar.bz2
 https://ftpmirror.gnu.org/screen/screen-5.0.1.tar.gz
-https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/2.4/shared-mime-info-2.4.tar.gz
-https://anduin.linuxfromscratch.org/BLFS/xdgmime/xdgmime.tar.xz
+https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/2.5.1/shared-mime-info-2.5.1.tar.gz
 https://ftpmirror.gnu.org/sharutils/sharutils-4.15.2.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/sharutils-4.15.2-consolidated-1.patch
 https://github.com/htacg/tidy-html5/archive/5.8.0/tidy-html5-5.8.0.tar.gz
@@ -310,15 +309,15 @@ https://kernel.org/pub/software/utils/dtc/dtc-1.8.1.tar.xz
 https://ftpmirror.gnu.org/gcc/gcc-16.1.0/gcc-16.1.0.tar.xz
 https://github.com/bdwgc/bdwgc/releases/download/v8.2.12/gc-8.2.12.tar.gz
 https://ftpmirror.gnu.org/gdb/gdb-17.2.tar.xz
-https://www.kernel.org/pub/software/scm/git/git-2.54.0.tar.xz
-https://www.kernel.org/pub/software/scm/git/git-manpages-2.54.0.tar.xz
-https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.54.0.tar.xz
+https://www.kernel.org/pub/software/scm/git/git-2.55.0.tar.xz
+https://www.kernel.org/pub/software/scm/git/git-manpages-2.55.0.tar.xz
+https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.55.0.tar.xz
 https://ftpmirror.gnu.org/guile/guile-3.0.11.tar.xz
 https://www.lua.org/ftp/lua-5.4.8.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.8-shared_library-1.patch
 https://www.lua.org/tests/lua-5.4.8-tests.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/luajit/luajit-20260213.tar.xz
-https://www.mercurial-scm.org/release/mercurial-7.2.2.tar.gz
+https://www.mercurial-scm.org/release/mercurial-7.2.3.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/3.02/nasm-3.02.tar.xz
 https://www.nasm.us/pub/nasm/releasebuilds/3.02/nasm-3.02-xdoc.tar.xz
 https://github.com/NixOS/patchelf/releases/download/0.19.0/patchelf-0.19.0.tar.gz
@@ -812,7 +811,7 @@ https://download.gnome.org/sources/gnome-settings-daemon/50/gnome-settings-daemo
 https://download.gnome.org/sources/tecla/50/tecla-50.0.tar.xz
 https://download.gnome.org/sources/gnome-control-center/50/gnome-control-center-50.3.tar.xz
 https://download.gnome.org/sources/mutter/50/mutter-50.2.tar.xz
-https://download.gnome.org/sources/gnome-shell/50/gnome-shell-50.2.tar.xz
+https://download.gnome.org/sources/gnome-shell/50/gnome-shell-50.3.tar.xz
 https://download.gnome.org/sources/gnome-shell-extensions/50/gnome-shell-extensions-50.2.tar.xz
 https://download.gnome.org/sources/gnome-session/50/gnome-session-50.1.tar.xz
 https://download.gnome.org/sources/gnome-tweaks/49/gnome-tweaks-49.0.tar.xz
@@ -1004,7 +1003,7 @@ https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.7/pipewire-1.6.7.
 https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
 https://www.kernel.org/pub/linux/bluetooth/sbc-2.2.tar.xz
 https://www.libsdl.org/release/sdl2-compat-2.32.70.tar.gz
-https://www.libsdl.org/release/SDL3-3.4.10.tar.gz
+https://www.libsdl.org/release/SDL3-3.4.12.tar.gz
 https://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2
 https://www.surina.net/soundtouch/soundtouch-2.4.1.tar.gz
 https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
