@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-990">
+  <body class="blfs" id="blfs-r13.0-1001">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-990
+        "phrase">(systemd</span> Edition) - Version r13.0-1001
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-990">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1001">
           Home</a>
         </li>
       </ul>
@@ -158,7 +158,9 @@
         <p class="recommended">
           <a class="xref" href="../basicnet/curl.html" title=
           "cURL-8.21.0">cURL-8.21.0</a> (needed to use <span class=
-          "application">Git</span> over http, https, ftp or ftps)
+          "application">Git</span> over http, https, ftp or ftps) and
+          <a class="xref" href="rust.html" title=
+          "Rustc-1.96.0">rustc-1.96.0</a>
         </p>
         <h4>
           Optional
@@ -345,6 +347,12 @@ sed -i '/^\* link:/s|howto/|&amp;html/|' /usr/share/doc/git-2.55.0/howto-index.a
           "application">PCRE2</span> library installed in LFS, so
           <span class="command"><strong>git grep</strong></span> will support
           the <code class="option">--perl-regexp</code> option.
+        </p>
+        <p>
+          <code class="envar">NO_RUST=1</code>: Pass this environment
+          variable to <span class="command"><strong>make</strong></span> if
+          <a class="xref" href="rust.html" title=
+          "Rustc-1.96.0">rustc-1.96.0</a> is not installed.
         </p>
         <p>
           <span class="command"><strong>tar -xf ../git-manpages-2.55.0.tar.gz
@@ -567,7 +575,7 @@ sed -i '/^\* link:/s|howto/|&amp;html/|' /usr/share/doc/git-2.55.0/howto-index.a
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-990">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1001">
           Home</a>
         </li>
       </ul>
