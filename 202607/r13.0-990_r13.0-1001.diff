@@ -1,0 +1,40 @@
+diff --git a/wget-list b/wget-list
+index a307b653a1..9828ddcb20 100644
+--- a/wget-list
++++ b/wget-list
+@@ -212,7 +212,7 @@ https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
+ https://www.libraw.org/data/LibRaw-0.22.1.tar.gz
+ https://download.gnome.org/sources/librsvg/2.62/librsvg-2.62.3.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+-https://download.osgeo.org/libtiff/tiff-4.7.1.tar.gz
++https://download.osgeo.org/libtiff/tiff-4.7.2.tar.gz
+ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz
+ https://github.com/mypaint/mypaint-brushes/releases/download/v2.0.2/mypaint-brushes-2.0.2.tar.xz
+ https://releases.pagure.org/newt/newt-0.52.25.tar.gz
+@@ -257,7 +257,7 @@ https://github.com/lurcher/unixODBC/archive/v2.3.14/unixODBC-2.3.14.tar.gz
+ https://github.com/flatpak/xdg-dbus-proxy/releases/download/0.1.7/xdg-dbus-proxy-0.1.7.tar.xz
+ https://gitlab.freedesktop.org/xdg/xdg-user-dirs/-/archive/v0.20/xdg-user-dirs-v0.20.tar.gz
+ https://github.com/ip7z/7zip/archive/26.02/7zip-26.02.tar.gz
+-https://gitlab.freedesktop.org/accountsservice/accountsservice/-/archive/26.26.9/accountsservice-26.26.9.tar.bz2
++https://gitlab.freedesktop.org/accountsservice/accountsservice/-/archive/26.27.3/accountsservice-26.27.3.tar.bz2
+ https://downloads.sourceforge.net/acpid2/acpid-2.0.34.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/at/at_3.2.5.orig.tar.gz
+ https://www.kernel.org/pub/linux/daemons/autofs/v5/autofs-5.1.9.tar.xz
+@@ -271,7 +271,7 @@ http://fcron.free.fr/archives/fcron-3.4.1.src.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/gpm/gpm-1.20.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-gcc15_fixes-1.patch
+-https://github.com/vcrhonek/hwdata/archive/v0.408/hwdata-0.408.tar.gz
++https://github.com/vcrhonek/hwdata/archive/v0.409/hwdata-0.409.tar.gz
+ https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
+ https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
+ http://ftp.midnight-commander.org/mc-4.8.33.tar.xz
+@@ -810,7 +810,7 @@ https://download.gnome.org/sources/gnome-keyring/50/gnome-keyring-50.0.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/50/gnome-settings-daemon-50.1.tar.xz
+ https://download.gnome.org/sources/tecla/50/tecla-50.0.tar.xz
+ https://download.gnome.org/sources/gnome-control-center/50/gnome-control-center-50.3.tar.xz
+-https://download.gnome.org/sources/mutter/50/mutter-50.2.tar.xz
++https://download.gnome.org/sources/mutter/50/mutter-50.3.tar.xz
+ https://download.gnome.org/sources/gnome-shell/50/gnome-shell-50.3.tar.xz
+ https://download.gnome.org/sources/gnome-shell-extensions/50/gnome-shell-extensions-50.2.tar.xz
+ https://download.gnome.org/sources/gnome-session/50/gnome-session-50.1.tar.xz
