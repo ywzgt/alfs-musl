@@ -1,0 +1,50 @@
+diff --git a/wget-list b/wget-list
+index 239467a907..7a7e3a7c17 100644
+--- a/wget-list
++++ b/wget-list
+@@ -148,7 +148,7 @@ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.45.tar.xz
+ https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.19.0/libwacom-2.19.0.tar.xz
+ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/pantoniou/libfyaml/releases/download/v0.9.6/libfyaml-0.9.6.tar.gz
+-https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_2/log4cplus-2.1.2.tar.xz
++https://github.com/log4cplus/log4cplus/releases/download/REL_2_2_0/log4cplus-2.2.0.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
+ https://nodejs.org/dist/v24.17.0/node-v24.17.0.tar.xz
+@@ -172,7 +172,7 @@ https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.350.1/SPIRV-T
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v22.1.2/SPIRV-LLVM-Translator-22.1.2.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.4.4.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+-https://github.com/martinpitt/umockdev/releases/download/0.19.7/umockdev-0.19.7.tar.xz
++https://github.com/martinpitt/umockdev/releases/download/0.19.8/umockdev-0.19.8.tar.xz
+ https://github.com/nemtrif/utfcpp/archive/v4.1.1/utfcpp-4.1.1.tar.gz
+ https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.25.0/downloads/wayland-1.25.0.tar.xz
+ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.49/downloads/wayland-protocols-1.49.tar.xz
+@@ -320,7 +320,7 @@ https://anduin.linuxfromscratch.org/BLFS/luajit/luajit-20260213.tar.xz
+ https://www.mercurial-scm.org/release/mercurial-7.2.3.tar.gz
+ https://www.nasm.us/pub/nasm/releasebuilds/3.02/nasm-3.02.tar.xz
+ https://www.nasm.us/pub/nasm/releasebuilds/3.02/nasm-3.02-xdoc.tar.xz
+-https://github.com/NixOS/patchelf/releases/download/0.19.0/patchelf-0.19.0.tar.gz
++https://github.com/NixOS/patchelf/releases/download/0.19.1/patchelf-0.19.1.tar.gz
+ https://www.cpan.org/authors/id/P/PH/PHRED/Archive-Zip-1.68.tar.gz
+ https://www.cpan.org/authors/id/V/VP/VPIT/autovivification-0.18.tar.gz
+ https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISBN-3.014.tar.gz
+@@ -642,7 +642,7 @@ https://downloads.isc.org/isc/kea/3.0.2/kea-3.0.2.tar.xz
+ https://github.com/proftpd/proftpd/archive/v1.3.9b/proftpd-1.3.9b.tar.gz
+ https://www.dovecot.org/releases/2.4/dovecot-2.4.4.tar.gz
+ https://ftp.exim.org/pub/exim/exim4/exim-4.99.4.tar.xz
+-https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.4.tar.gz
++https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.5.tar.gz
+ https://git.openldap.org/openldap/openldap/-/archive/LMDB_1.0.0/openldap-LMDB_1.0.0.tar.bz2
+ https://downloads.mariadb.org/interstitial/mariadb-12.3.2/source/mariadb-12.3.2.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mariadb-12.3.2-openssl4_fixes-1.patch
+@@ -930,8 +930,7 @@ https://download.gimp.org/gimp/v3.2/gimp-3.2.4.tar.xz
+ https://download.gimp.org/pub/gimp/help/gimp-help-3.0.2.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.8.1.tar.gz
+ https://inkscape.org/gallery/item/59505/inkscape-1.4.4.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.4-poppler_fixes-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.4-poppler_26_06_fixes-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.4-poppler_fixes-3.patch
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+ https://archive.mozilla.org/pub/thunderbird/releases/140.12.1esr/source/thunderbird-140.12.1esr.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.12.1esr-python_3.14_fixes-1.patch
