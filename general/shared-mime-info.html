@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1015">
+  <body class="blfs" id="blfs-r13.0-1024">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1015
+        "phrase">(systemd</span> Edition) - Version r13.0-1024
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1015">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1024">
           Home</a>
         </li>
       </ul>
@@ -140,6 +140,7 @@ meson setup --prefix=/usr         \
             --buildtype=release   \
             -D update-mimedb=true \
             -D build-tests=false  \
+            -D build-spec=false   \
             .. &amp;&amp;
 ninja</kbd></pre>
         <p>
@@ -169,6 +170,13 @@ ninja test</kbd></pre>
           "command"><strong>update-mime-database</strong></span> during
           installation. Otherwise, this must be done manually in order to be
           able to use the MIME database.
+        </p>
+        <p>
+          <em class="parameter"><code>-D build-spec=false</code></em>: This
+          parameter tells the build system to NOT insert the HTML
+          specification into shared-mime-info-spec-html. Omit this parameter
+          if <a class="xref" href="../pst/xmlto.html" title=
+          "xmlto-0.0.29">xmlto-0.0.29</a> is installed.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -241,7 +249,7 @@ ninja test</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1015">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1024">
           Home</a>
         </li>
       </ul>
