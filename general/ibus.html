@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1044">
+  <body class="blfs" id="blfs-r13.0-1059">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1044
+        "phrase">(systemd</span> Edition) - Version r13.0-1059
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1044">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1059">
           Home</a>
         </li>
       </ul>
@@ -127,9 +127,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="iso-codes.html" title="ISO Codes-4.20.1">ISO
-          Codes-4.20.1</a>, <a class="xref" href="libarchive.html" title=
-          "libarchive-3.8.8">libarchive-3.8.8</a> (for extracting the Unicode
-          Character Database), and <a class="xref" href="vala.html" title=
+          Codes-4.20.1</a> and <a class="xref" href="vala.html" title=
           "Vala-0.56.19">Vala-0.56.19</a>
         </p>
         <h4>
@@ -174,8 +172,7 @@
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">mkdir -p               /usr/share/unicode/ucd &amp;&amp;
-unzip -o ../UCD.zip -d /usr/share/unicode/ucd</kbd></pre>
+        "command">python3 -m zipfile -e ../UCD.zip /usr/share/unicode/ucd</kbd></pre>
         <p>
           Fix an issue with deprecated schema entries:
         </p>
@@ -404,7 +401,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1044">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1059">
           Home</a>
         </li>
       </ul>

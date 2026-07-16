@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1044">
+  <body class="blfs" id="blfs-r13.0-1059">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1044
+        "phrase">(systemd</span> Edition) - Version r13.0-1059
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -31,9 +31,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="libdvdread.html" title=
-          "libdvdread-7.0.1">Next</a>
+          "libdvdread-7.1.0">Next</a>
           <p>
-            libdvdread-7.0.1
+            libdvdread-7.1.0
           </p>
         </li>
         <li class="up">
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1044">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1059">
           Home</a>
         </li>
       </ul>
@@ -127,7 +127,9 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr --buildtype=release .. &amp;&amp;
+meson setup --prefix=/usr       \
+            --buildtype=release \
+            --default-library=shared .. &amp;&amp;
 ninja</kbd></pre>
         <p>
           This package does not come with a test suite.
@@ -135,8 +137,7 @@ ninja</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
-        <pre class="root"><kbd class="command">ninja install &amp;&amp;
-rm -fv /usr/lib/libdvdcss.a</kbd></pre>
+        <pre class="root"><kbd class="command">ninja install</kbd></pre>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -199,9 +200,9 @@ rm -fv /usr/lib/libdvdcss.a</kbd></pre>
         </li>
         <li class="next">
           <a accesskey="n" href="libdvdread.html" title=
-          "libdvdread-7.0.1">Next</a>
+          "libdvdread-7.1.0">Next</a>
           <p>
-            libdvdread-7.0.1
+            libdvdread-7.1.0
           </p>
         </li>
         <li class="up">
@@ -210,7 +211,7 @@ rm -fv /usr/lib/libdvdcss.a</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1044">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1059">
           Home</a>
         </li>
       </ul>

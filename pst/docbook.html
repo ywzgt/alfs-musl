@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1044">
+  <body class="blfs" id="blfs-r13.0-1059">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1044
+        "phrase">(systemd</span> Edition) - Version r13.0-1059
       </h4>
       <h3>
         Chapter&nbsp;49.&nbsp;Extensible Markup Language (XML)
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1044">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1059">
           Home</a>
         </li>
       </ul>
@@ -113,9 +113,8 @@
           Required
         </h4>
         <p class="required">
-          <a class="xref" href="../general/libarchive.html" title=
-          "libarchive-3.8.8">libarchive-3.8.8</a> and <a class="xref" href=
-          "../general/libxml2.html" title="libxml2-2.15.3">libxml2-2.15.3</a>
+          <a class="xref" href="../general/libxml2.html" title=
+          "libxml2-2.15.3">libxml2-2.15.3</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -129,13 +128,19 @@
           </h3>
           <p>
             The package source is distributed in <code class=
-            "filename">zip</code> format and requires <span class=
-            "command"><strong>unzip</strong></span> (actually a symlink to
-            <span class="command"><strong>bsdunzip</strong></span> from
-            <span class="application">libarchive</span>). You should create a
-            directory and change to that directory before unzipping the file
-            to ease the removal of the source files after the package has
-            been installed.
+            "filename">zip</code> format and you can use the <span class=
+            "command"><strong>python3 -m zipfile -e <em class=
+            "replaceable"><code>&lt;name&gt;</code></em>.zip <em class=
+            "replaceable"><code>&lt;name&gt;</code></em></strong></span>
+            command to extract it. The last parameter, <em class=
+            "parameter"><code><em class=
+            "replaceable"><code>&lt;name&gt;</code></em></code></em>, ensures
+            to extract the content of the zip archive into the directory
+            named <code class="filename"><em class=
+            "replaceable"><code>&lt;name&gt;</code></em></code> (it will be
+            automatically created if it does not exist yet), so after the
+            package has been installed the removal of the source files will
+            be easier.
           </p>
         </div>
         <p>
@@ -361,7 +366,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1044">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1059">
           Home</a>
         </li>
       </ul>
