@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1059">
+  <body class="blfs" id="blfs-r13.0-1065">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1059
+        "phrase">(systemd</span> Edition) - Version r13.0-1065
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1059">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1065">
           Home</a>
         </li>
       </ul>
@@ -218,7 +218,7 @@ cd    build                        &amp;&amp;
 cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -D CMAKE_BUILD_TYPE=Release  \
       -D WITH_INTERNAL_2GEOM=ON    \
-      -W no-dev                    \
+      -W no-author                 \
       ..                           &amp;&amp;
 make</kbd></pre>
         <p>
@@ -273,8 +273,9 @@ update-desktop-database -q</kbd></pre>
           library when upgrading <span class="application">Inkscape</span>.
         </p>
         <p>
-          <em class="parameter"><code>-W no-dev</code></em>: This parameter
-          silences several warnings only intended for project developers.
+          <em class="parameter"><code>-W no-author</code></em>: This
+          parameter silences several warnings only intended for project
+          developers.
         </p>
         <p>
           <code class="option">-D WITH_DBUS=ON</code>: use this if you wish
@@ -395,7 +396,7 @@ update-desktop-database -q</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1059">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1065">
           Home</a>
         </li>
       </ul>

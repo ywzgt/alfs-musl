@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      btrfs-progs-7.0
+      btrfs-progs-7.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1059">
+  <body class="blfs" id="blfs-r13.0-1065">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1059
+        "phrase">(systemd</span> Edition) - Version r13.0-1065
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1059">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1065">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="btrfs-progs" name="btrfs-progs"></a>btrfs-progs-7.0
+      <a id="btrfs-progs" name="btrfs-progs"></a>btrfs-progs-7.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -79,13 +79,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v7.0.tar.xz">
-                https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v7.0.tar.xz</a>
+                "https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v7.1.tar.xz">
+                https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v7.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 58f14462ee1da3e36d0bde684e48b9ea
+                Download MD5 sum: 5dbaaf17567022405d6fc9d0d185e812
               </p>
             </li>
             <li class="listitem">
@@ -101,7 +101,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.3 SBU (with parallelism=4; add 4.6
+                Estimated build time: 0.3 SBU (with parallelism=4; add 5.0
                 SBU for tests, up to 14 SBU on slow disks)
               </p>
             </li>
@@ -125,7 +125,7 @@
           "LVM2-2.03.41">LVM2-2.03.41</a> (<span class=
           "command"><strong>dmsetup</strong></span> is used in tests),
           <a class="xref" href="ntfs-3g.html" title=
-          "ntfs-3g-2026.2.25">ntfs-3g-2026.2.25</a>, <a class="xref" href=
+          "ntfs-3g-2026.7.7">ntfs-3g-2026.7.7</a>, <a class="xref" href=
           "../general/python-modules.html#sphinx" title=
           "Sphinx-9.1.0">sphinx-9.1.0</a> and <a class="xref" href=
           "../general/python-modules.html#sphinx_rtd_theme" title=
@@ -188,7 +188,9 @@ make</kbd></pre>
           "systemitem">root</code>:
         </p>
         <pre class="userinput"><kbd class=
-        "command">rm -rf tests/mkfs-tests/042-rootdir-contents
+        "command">rm -rf tests/fsck-tests/074-raid56-read
+rm -rf tests/mkfs-tests/010-minimal-size
+rm -rf tests/mkfs-tests/042-rootdir-contents
 rm -rf tests/misc-tests/041-subvolume-delete-during-send
 rm -rf tests/fuzz-tests/010-simple-sb</kbd></pre>
         <p>
@@ -418,7 +420,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1059">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1065">
           Home</a>
         </li>
       </ul>
