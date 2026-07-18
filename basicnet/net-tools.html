@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1065">
+  <body class="blfs" id="blfs-r13.0-1074">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1065
+        "phrase">(systemd</span> Edition) - Version r13.0-1074
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1065">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1074">
           Home</a>
         </li>
       </ul>
@@ -155,9 +155,9 @@
         <pre class="userinput"><kbd class=
         "command">export BINDIR='/usr/bin' SBINDIR='/usr/bin' &amp;&amp;
 yes "" | make config                        &amp;&amp;
-sed -e /ROM/s/0/1/  \
-    -e /X25/s/0/1/  \
-    -e /ROSE/s/0/1/ \
+sed -e /ROM/s/1/0/  \
+    -e /X25/s/1/0/  \
+    -e /ROSE/s/1/0/ \
     -i config.h                             &amp;&amp;
 make DESTDIR=$PWD/install -j1 install       &amp;&amp;
 rm    install/usr/bin/{nis,yp}domainname    &amp;&amp;
@@ -403,7 +403,7 @@ cp -a install/* /</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1065">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1074">
           Home</a>
         </li>
       </ul>

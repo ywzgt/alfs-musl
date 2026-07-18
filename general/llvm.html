@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1065">
+  <body class="blfs" id="blfs-r13.0-1074">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1065
+        "phrase">(systemd</span> Edition) - Version r13.0-1074
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1065">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1074">
           Home</a>
         </li>
       </ul>
@@ -189,6 +189,36 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">sed 's/utility/tool/' -i llvm/utils/FileCheck/CMakeLists.txt</kbd></pre>
+        <p>
+          As the <code class="systemitem">root</code> user, create two
+          configuration files to make <a class="xref" href=
+          "../appendices/glossary.html#gSSP" title="SSP"><acronym class=
+          "acronym">SSP</acronym></a> enabled by default for <span class=
+          "command"><strong>clang</strong></span> and <span class=
+          "command"><strong>clang++</strong></span>, so the default
+          configuration of their SSP feature will be consistent with
+          <a class="xref" href="gcc.html" title="GCC-16.1.0">GCC-16.1.0</a>:
+        </p>
+        <pre class="root"><kbd class=
+        "command">mkdir -pv /etc/clang &amp;&amp;
+for i in clang clang++; do
+  echo -fstack-protector-strong &gt; /etc/clang/$i.cfg
+done</kbd></pre>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            Generally we only create the configuration files after installing
+            the package in BLFS. However in this case the building system
+            will build compiler-rt with <span class=
+            "command"><strong>clang</strong></span> and <span class=
+            "command"><strong>clang++</strong></span>, so we create the
+            configuration files before compiling LLVM to ensure compiler-rt
+            built with SSP.
+          </p>
+        </div>
         <p>
           Install <span class="application">LLVM</span> by running the
           following commands:
@@ -384,33 +414,6 @@ systemd-run --user --pty -d -G -p LimitCORE=0 ninja check-all</kbd></pre>
           "doxygen.html" title="Doxygen-1.17.0">Doxygen-1.17.0</a>. The
           documentation will be built at the end of the build process.
         </p>
-      </div>
-      <div class="configuration" lang="en" xml:lang="en">
-        <h2 class="sect2">
-          Configuring LLVM
-        </h2>
-        <div class="sect3" lang="en" xml:lang="en">
-          <h3 class="sect3">
-            <a id="llvm-config-info" name=
-            "llvm-config-info"></a>Configuration Information
-          </h3>
-          <p>
-            If you've built Clang, as the <code class=
-            "systemitem">root</code> user create two configuration files to
-            make <a class="xref" href="../appendices/glossary.html#gSSP"
-            title="SSP"><acronym class="acronym">SSP</acronym></a> enabled by
-            default for <span class="command"><strong>clang</strong></span>
-            and <span class="command"><strong>clang++</strong></span>, so the
-            default configuration of their SSP feature will be consistent
-            with <a class="xref" href="gcc.html" title=
-            "GCC-16.1.0">GCC-16.1.0</a>:
-          </p>
-          <pre class="root"><kbd class=
-          "command">mkdir -pv /etc/clang &amp;&amp;
-for i in clang clang++; do
-  echo -fstack-protector-strong &gt; /etc/clang/$i.cfg
-done</kbd></pre>
-        </div>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -1863,7 +1866,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1065">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1074">
           Home</a>
         </li>
       </ul>
