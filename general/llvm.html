@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1074">
+  <body class="blfs" id="blfs-r13.0-1086">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1074
+        "phrase">(systemd</span> Edition) - Version r13.0-1086
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1074">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1086">
           Home</a>
         </li>
       </ul>
@@ -125,6 +125,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/llvm-22.1.8-upstream_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/llvm-22.1.8-upstream_fix-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           LLVM Dependencies
         </h3>
         <h4>
@@ -173,6 +187,11 @@
           Installation of LLVM
         </h2>
         <p>
+          At first, fix a bug causing wrong code on some conditions:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../llvm-22.1.8-upstream_fix-1.patch</kbd></pre>
+        <p>
           There are many Python scripts in this package which use
           <span class="command"><strong>/usr/bin/env python</strong></span>
           to access the system Python which on LFS is <a class="xref" href=
@@ -185,7 +204,7 @@
           Ensure installing the <span class=
           "command"><strong>FileCheck</strong></span> program which is needed
           by the test suite of some packages (for example <a class="xref"
-          href="rust.html" title="Rustc-1.96.0">rustc-1.96.0</a>):
+          href="rust.html" title="Rustc-1.97.1">rustc-1.97.1</a>):
         </p>
         <pre class="userinput"><kbd class=
         "command">sed 's/utility/tool/' -i llvm/utils/FileCheck/CMakeLists.txt</kbd></pre>
@@ -346,7 +365,7 @@ systemd-run --user --pty -d -G -p LimitCORE=0 ninja check-all</kbd></pre>
           LLVM_ENABLE_RUNTIMES=compiler-rt</code></em>: This switch selects
           the LLVM runtime libraries to be built. For BLFS we only need
           compiler-rt (for some features of clang and <a class="xref" href=
-          "rust.html" title="Rustc-1.96.0">rustc-1.96.0</a>) and libclc, and
+          "rust.html" title="Rustc-1.97.1">rustc-1.97.1</a>) and libclc, and
           the latter have to be built separately (<a class="xref" href=
           "libclc.html" title="libclc-22.1.8">libclc-22.1.8</a>) to avoid a
           circular dependency involving <a class="xref" href=
@@ -1866,7 +1885,7 @@ systemd-run --user --pty -d -G -p LimitCORE=0 ninja check-all</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1074">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1086">
           Home</a>
         </li>
       </ul>

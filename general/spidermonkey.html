@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1074">
+  <body class="blfs" id="blfs-r13.0-1086">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1074
+        "phrase">(systemd</span> Edition) - Version r13.0-1086
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1074">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1086">
           Home</a>
         </li>
       </ul>
@@ -227,6 +227,7 @@
         <pre class="userinput"><kbd class="command">mkdir obj &amp;&amp;
 cd    obj &amp;&amp;
 
+MOZBUILD_STATE_PATH=${PWD}/mozbuild          \
 ../js/src/configure --prefix=/usr            \
                     --disable-debug-symbols  \
                     --disable-jemalloc       \
@@ -313,6 +314,12 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js140-config</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <code class="envar">MOZBUILD_STATE_PATH=${PWD}/mozbuild</code>:
+          Override the default location (<code class=
+          "filename">${HOME}/.mozbuild</code>) for the cache of the build
+          system, to avoid pulluating the home directory.
+        </p>
         <p>
           <em class="parameter"><code>--disable-debug-symbols</code></em>:
           Don't generate debug symbols since they are very large and most
@@ -484,7 +491,7 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js140-config</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1074">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1086">
           Home</a>
         </li>
       </ul>
