@@ -1,0 +1,81 @@
+diff --git a/wget-list b/wget-list
+index 015aea913e..5b97615f93 100644
+--- a/wget-list
++++ b/wget-list
+@@ -20,7 +20,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-upstream_fix-1.p
+ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-security_fix-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-openssl_4_fixes-1.patch
+ https://ftpmirror.gnu.org/nettle/nettle-4.0.tar.gz
+-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_125_RTM/src/nss-3.125.tar.gz
++https://archive.mozilla.org/pub/security/nss/releases/NSS_3_126_RTM/src/nss-3.126.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.4p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.26.4/p11-kit-0.26.4.tar.xz
+@@ -44,11 +44,11 @@ https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.10-convenience-1.
+ https://ftpmirror.gnu.org/parted/parted-3.7.tar.xz
+ https://downloads.sourceforge.net/smartmontools/smartmontools-7.5.tar.gz
+ https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.6/sshfs-3.7.6.tar.xz
+-https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-7.1.0.tar.xz
++https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-7.1.1.tar.xz
+ https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/efivar-39-upstream_fixes-1.patch
+ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
+-https://www.bennewitz.com/bluefish/stable/source/bluefish-2.4.1.tar.bz2
++https://www.bennewitz.com/bluefish/stable/source/bluefish-2.4.2.tar.bz2
+ https://ftpmirror.gnu.org/ed/ed-1.22.5.tar.lz
+ https://ftpmirror.gnu.org/emacs/emacs-30.2.tar.xz
+ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+@@ -174,7 +174,7 @@ https://www.samba.org/ftp/talloc/talloc-2.4.4.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+ https://github.com/martinpitt/umockdev/releases/download/0.19.8/umockdev-0.19.8.tar.xz
+ https://github.com/nemtrif/utfcpp/archive/v4.1.1/utfcpp-4.1.1.tar.gz
+-https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.25.0/downloads/wayland-1.25.0.tar.xz
++https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.26.0/downloads/wayland-1.26.0.tar.xz
+ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.49/downloads/wayland-protocols-1.49.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+ https://oligarchy.co.uk/xapian/2.0.0/xapian-core-2.0.0.tar.xz
+@@ -300,7 +300,7 @@ https://sg.danny.cz/sg/p/sg3_utils-1.48.tar.xz
+ https://github.com/lfs-book/sysmond/releases/download/sysmond-1.0.1/sysmond-1.0.1.tar.xz
+ https://github.com/lfs-book/sysmon3/releases/download/3.0.3/sysmon3-3.0.3.tar.xz
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-019.tar.xz
+-https://github.com/lu-zero/cargo-c/archive/v0.10.23/cargo-c-0.10.23.tar.gz
++https://github.com/lu-zero/cargo-c/archive/v0.10.24/cargo-c-0.10.24.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.29.4/cbindgen-0.29.4.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/clisp/clisp-2.49.95.tar.xz
+ https://cmake.org/files/v4.4/cmake-4.4.0.tar.gz
+@@ -313,6 +313,7 @@ https://www.kernel.org/pub/software/scm/git/git-2.55.0.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-manpages-2.55.0.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.55.0.tar.xz
+ https://ftpmirror.gnu.org/guile/guile-3.0.11.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/llvm-22.1.8-upstream_fix-1.patch
+ https://www.lua.org/ftp/lua-5.4.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/lua-5.4.8-shared_library-1.patch
+ https://www.lua.org/tests/lua-5.4.8-tests.tar.gz
+@@ -470,7 +471,7 @@ https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-LibXML-2.0213.tar.gz
+ https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
+ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+-https://www.php.net/distributions/php-8.5.7.tar.xz
++https://www.php.net/distributions/php-8.5.8.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/3.14.6/Python-3.14.6.tar.xz
+@@ -559,8 +560,7 @@ https://files.pythonhosted.org/packages/source/u/uv_build/uv_build-0.11.24.tar.g
+ https://files.pythonhosted.org/packages/source/v/vcs_versioning/vcs_versioning-2.1.2.tar.gz
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+ https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.6.tar.xz
+-https://static.rust-lang.org/dist/rustc-1.96.0-src.tar.xz
+-https://github.com/lfs-book/rust-openssl/archive/v0.10.78/rust-openssl-0.10.78.tar.gz
++https://static.rust-lang.org/dist/rustc-1.97.1-src.tar.xz
+ https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.1/rust-bindgen-0.72.1.tar.gz
+ https://downloads.sourceforge.net/scons/SCons-4.10.1.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+@@ -848,7 +848,7 @@ https://download.gnome.org/sources/libwnck/43/libwnck-43.3.tar.xz
+ http://archive.xfce.org/src/xfce/xfce4-dev-tools/4.20/xfce4-dev-tools-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/libxfce4windowing/4.20/libxfce4windowing-4.20.6.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-panel/4.20/xfce4-panel-4.20.7.tar.bz2
+-https://archive.xfce.org/src/xfce/thunar/4.20/thunar-4.20.8.tar.bz2
++https://archive.xfce.org/src/xfce/thunar/4.20/thunar-4.20.9.tar.bz2
+ https://archive.xfce.org/src/xfce/thunar-volman/4.20/thunar-volman-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/tumbler/4.20/tumbler-4.20.1.tar.bz2
+ https://archive.xfce.org/src/xfce/xfce4-appfinder/4.20/xfce4-appfinder-4.20.0.tar.bz2
