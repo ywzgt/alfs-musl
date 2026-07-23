@@ -1,0 +1,80 @@
+diff --git a/wget-list b/wget-list
+index fa9aec3e1e..5e70c45c4b 100644
+--- a/wget-list
++++ b/wget-list
+@@ -56,7 +56,7 @@ https://download.kde.org/stable/release-service/26.04.1/src/kate-26.04.1.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.7/mousepad-0.7.0.tar.xz
+ https://www.nano-editor.org/dist/v9/nano-9.1.tar.xz
+ https://github.com/vim/vim/archive/v9.2.0752/vim-9.2.0752.tar.gz
+-http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.4.tar.gz
++http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.5.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.2.tar.xz
+ https://download.qemu.org/qemu-11.0.2.tar.xz
+@@ -145,7 +145,7 @@ https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.3.tar.xz
+ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
+ https://github.com/hughsie/libxmlb/releases/download/0.3.28/libxmlb-0.3.28.tar.xz
+ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.45.tar.xz
+-https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.19.0/libwacom-2.19.0.tar.xz
++https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.19.1/libwacom-2.19.1.tar.xz
+ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/pantoniou/libfyaml/releases/download/v0.9.6/libfyaml-0.9.6.tar.gz
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_2_0_1/log4cplus-2.2.0.1.tar.xz
+@@ -165,8 +165,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/qca-2.3.10-openssl4_fixes-1.pa
+ https://github.com/danvratil/qcoro/archive/v0.13.0/qcoro-0.13.0.tar.gz
+ https://github.com/xiph/rnnoise/releases/download/v0.2/rnnoise-0.2.tar.gz
+ https://github.com/simdutf/simdutf/archive/v9.0.0/simdutf-9.0.0.tar.gz
+-https://archive.mozilla.org/pub/firefox/releases/140.12.0esr/source/firefox-140.12.0esr.source.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.12.0-python_3.14_fixes-1.patch
++https://archive.mozilla.org/pub/firefox/releases/140.13.0esr/source/firefox-140.13.0esr.source.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.13.0-python_3.14_fixes-1.patch
+ https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.350.1/SPIRV-Headers-vulkan-sdk-1.4.350.1.tar.gz
+ https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.350.1/SPIRV-Tools-vulkan-sdk-1.4.350.1.tar.gz
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v22.1.2/SPIRV-LLVM-Translator-22.1.2.tar.gz
+@@ -296,7 +296,7 @@ https://downloads.sourceforge.net/infozip/zip30.tar.gz
+ https://downloads.sourceforge.net/hdparm/hdparm-9.65.tar.gz
+ https://github.com/hramrach/lm-sensors/archive/V3-6-2/lm-sensors-3-6-2.tar.gz
+ https://mj.ucw.cz/download/linux/pci/pciutils-3.15.0.tar.gz
+-https://sg.danny.cz/sg/p/sg3_utils-1.48.tar.xz
++https://sg.danny.cz/sg/p/sg3_utils-1.49.tar.gz
+ https://github.com/lfs-book/sysmond/releases/download/sysmond-1.0.1/sysmond-1.0.1.tar.xz
+ https://github.com/lfs-book/sysmon3/releases/download/3.0.3/sysmon3-3.0.3.tar.xz
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-019.tar.xz
+@@ -595,7 +595,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/wpa_supplicant-2.11-openssl_4_
+ https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+ https://ftp.isc.org/isc/bind9/9.20.24/bind-9.20.24.tar.xz
+-https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.56.1/downloads/NetworkManager-1.56.1.tar.xz
++https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.58.0/downloads/NetworkManager-1.58.0.tar.xz
+ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
+ https://nmap.org/dist/nmap-7.99.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/nmap-7.99-openssl4_fixes-1.patch
+@@ -914,9 +914,7 @@ https://download.documentfoundation.org/libreoffice/src/26.2.4/libreoffice-trans
+ https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-26.2.4.2-poppler_26.06-1.patch
+ https://download.gnome.org/sources/epiphany/50/epiphany-50.4.tar.xz
+ https://download.kde.org/stable/release-service/26.04.1/src/falkon-26.04.1.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.12.0esr-glibc-2.43.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.12.0esr-python_3.14_fixes-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-140.12.0esr-llvm_22-1.patch
++https://archive.mozilla.org/pub/firefox/releases/153.0esr/source/firefox-153.0esr.source.tar.xz
+ https://archive.seamonkey-project.org/releases/2.53.23/source/seamonkey-2.53.23.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-libvpx_security_fixes-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-cxx17-1.patch
+@@ -978,7 +976,7 @@ https://ftpmirror.gnu.org/libcdio/libcdio-2.1.0.tar.bz2
+ https://ftpmirror.gnu.org/libcdio/libcdio-paranoia-10.2+2.0.2.tar.bz2
+ https://github.com/strukturag/libde265/releases/download/v1.1.1/libde265-1.1.1.tar.gz
+ https://get.videolan.org/libdvdcss/1.5.0/libdvdcss-1.5.0.tar.xz
+-https://get.videolan.org/libdvdread/7.1.0/libdvdread-7.1.0.tar.xz
++https://get.videolan.org/libdvdread/7.1.1/libdvdread-7.1.1.tar.xz
+ https://get.videolan.org/libdvdnav/7.0.0/libdvdnav-7.0.0.tar.xz
+ https://downloads.sourceforge.net/libdv/libdv-1.0.0.tar.gz
+ https://downloads.sourceforge.net/mad/libmad-0.15.1b.tar.gz
+@@ -1006,7 +1004,7 @@ https://www.surina.net/soundtouch/soundtouch-2.4.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+ https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v4.1.0/SVT-AV1-v4.1.0.tar.gz
+-https://taglib.org/releases/taglib-2.3.tar.gz
++https://taglib.org/releases/taglib-2.3.1.tar.gz
+ https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.32.0.tar.xz
+ https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.15/wireplumber-0.5.15.tar.bz2
+ https://anduin.linuxfromscratch.org/BLFS/x264/x264-20250815.tar.xz
