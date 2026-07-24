@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1101">
+  <body class="blfs" id="blfs-r13.0-1109">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1101
+        "phrase">(systemd</span> Edition) - Version r13.0-1109
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="bind-utils.html" title=
-          "BIND Utilities-9.20.24">Prev</a>
+          "BIND Utilities-9.20.26">Prev</a>
           <p>
-            BIND Utilities-9.20.24
+            BIND Utilities-9.20.26
           </p>
         </li>
         <li class="next">
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1101">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1109">
           Home</a>
         </li>
       </ul>
@@ -188,9 +188,10 @@
           "https://github.com/jpirko/libteam">libteam</a>, <a class="ulink"
           href=
           "https://gitlab.gnome.org/GNOME/mobile-broadband-provider-info/">mobile-broadband-provider-info</a>,
-          <a class="ulink" href="https://www.samba.org/ftp/ppp/">PPP</a>, and
           <a class="ulink" href=
-          "https://dianne.skoll.ca/projects/rp-pppoe/">RP-PPPoE</a>
+          "https://github.com/libbpf/libbpf">libbpf</a>, <a class="ulink"
+          href="https://www.samba.org/ftp/ppp/">PPP</a>, and <a class="ulink"
+          href="https://dianne.skoll.ca/projects/rp-pppoe/">RP-PPPoE</a>
         </p>
       </div>
       <div class="kernel" lang="en" xml:lang="en">
@@ -417,6 +418,11 @@ done</kbd></pre>
           neither NSS nor GnuTLS is installed but you want to build
           NetworkManager anyway. This switch will make NetworkManager lack
           some features (for example 802.1X).
+        </p>
+        <p>
+          <em class="parameter"><code>-D clat=false</code></em>: This switch
+          disables CLAT support. Remove it if you have the optional libbpf
+          installed on your system.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -703,9 +709,9 @@ EOF</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="bind-utils.html" title=
-          "BIND Utilities-9.20.24">Prev</a>
+          "BIND Utilities-9.20.26">Prev</a>
           <p>
-            BIND Utilities-9.20.24
+            BIND Utilities-9.20.26
           </p>
         </li>
         <li class="next">
@@ -721,7 +727,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1101">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1109">
           Home</a>
         </li>
       </ul>

@@ -1,7 +1,7 @@
 https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20251204.tar.xz
 https://github.com/lfs-book/make-ca/archive/v1.16.1/make-ca-1.16.1.tar.gz
 https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.tar.xz
-https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.6.tar.xz
+https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.7.tar.xz
 https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.21.tar.bz2
@@ -61,7 +61,7 @@ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
 https://www.zsh.org/pub/zsh-5.9.2.tar.xz
 https://download.qemu.org/qemu-11.0.2.tar.xz
 https://github.com/abseil/abseil-cpp/releases/download/20260526.0/abseil-cpp-20260526.0.tar.gz
-https://www.freedesktop.org/software/appstream/releases/AppStream-1.1.3.tar.xz
+https://www.freedesktop.org/software/appstream/releases/AppStream-1.1.4.tar.xz
 http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz
 https://archive.apache.org/dist/apr/apr-1.7.6.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.3.tar.bz2
@@ -594,7 +594,7 @@ https://w1.fi/releases/wpa_supplicant-2.11.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/wpa_supplicant-2.11-openssl_4_fixes-1.patch
 https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
-https://ftp.isc.org/isc/bind9/9.20.24/bind-9.20.24.tar.xz
+https://ftp.isc.org/isc/bind9/9.20.26/bind-9.20.26.tar.xz
 https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.58.0/downloads/NetworkManager-1.58.0.tar.xz
 https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
 https://nmap.org/dist/nmap-7.99.tar.bz2
@@ -929,10 +929,7 @@ https://downloads.sourceforge.net/gparted/gparted-1.8.1.tar.gz
 https://inkscape.org/gallery/item/59505/inkscape-1.4.4.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.4-poppler_fixes-3.patch
 http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
-https://archive.mozilla.org/pub/thunderbird/releases/140.13.0esr/source/thunderbird-140.13.0esr.source.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.13.0esr-python_3.14_fixes-1.patch
-https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.13.0esr-glibc-2.43.patch
-https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.13.0esr-llvm_22-1.patch
+https://archive.mozilla.org/pub/thunderbird/releases/153.0esr/source/thunderbird-153.0esr.source.tar.xz
 https://github.com/TigerVNC/tigervnc/archive/v1.16.2/tigervnc-1.16.2.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.16.2-configuration_fixes-1.patch
 https://github.com/transmission/transmission/releases/download/4.1.3/transmission-4.1.3.tar.xz
@@ -948,7 +945,7 @@ https://www.alsa-project.org/files/pub/firmware/alsa-firmware-1.2.4.tar.bz2
 https://download.gnome.org/sources/audiofile/0.3/audiofile-0.3.6.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/audiofile-0.3.6-consolidated_patches-1.patch
 https://code.videolan.org/videolan/dav1d/-/archive/1.5.4/dav1d-1.5.4.tar.gz
-https://github.com/lfs-book/faac/archive/v1.50/faac-1.50.tar.gz
+https://github.com/lfs-book/faac/archive/v2.0/faac-2.0.tar.gz
 https://github.com/knik0/faad2/archive/2.11.2/faad2-2.11.2.tar.gz
 https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
 https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz

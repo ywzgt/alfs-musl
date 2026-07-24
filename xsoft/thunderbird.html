@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Thunderbird-140.13.0esr
+      Thunderbird-153.0esr
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1101">
+  <body class="blfs" id="blfs-r13.0-1109">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1101
+        "phrase">(systemd</span> Edition) - Version r13.0-1109
       </h4>
       <h3>
         Chapter&nbsp;41.&nbsp;Other X-based Programs
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1101">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1109">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="thunderbird" name="thunderbird"></a>Thunderbird-140.13.0esr
+      <a id="thunderbird" name="thunderbird"></a>Thunderbird-153.0esr
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -93,8 +93,8 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://archive.mozilla.org/pub/thunderbird/releases/140.13.0esr/source/thunderbird-140.13.0esr.source.tar.xz">
-                https://archive.mozilla.org/pub/thunderbird/releases/140.13.0esr/source/thunderbird-140.13.0esr.source.tar.xz</a>
+                "https://archive.mozilla.org/pub/thunderbird/releases/153.0esr/source/thunderbird-153.0esr.source.tar.xz">
+                https://archive.mozilla.org/pub/thunderbird/releases/153.0esr/source/thunderbird-153.0esr.source.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
@@ -104,45 +104,17 @@
             </li>
             <li class="listitem">
               <p>
-                Download size: 723 MB
+                Download size: 893 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 9.0 GB (266 MB installed)
+                Estimated disk space required: 11.0 GB (296 MB installed)
               </p>
             </li>
             <li class="listitem">
               <p>
                 Estimated build time: 16 SBU (on a 8-core machine)
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.13.0esr-python_3.14_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.13.0esr-python_3.14_fixes-1.patch</a>
-              </p>
-            </li>
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.13.0esr-glibc-2.43.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.13.0esr-glibc-2.43.patch</a>
-              </p>
-            </li>
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.13.0esr-llvm_22-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-140.13.0esr-llvm_22-1.patch</a>
               </p>
             </li>
           </ul>
@@ -229,31 +201,6 @@
             continuing.
           </p>
         </div>
-        <p>
-          At first, fix building this package with Python-3.14:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../thunderbird-140.13.0esr-python_3.14_fixes-1.patch</kbd></pre>
-        <p>
-          Remove checksums from cargo crates for files that don't exist:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">find -name .cargo-checksum.json | \
-     xargs sed -ri 's|"[^"]*.gitmodules":"[^"]*",?||'</kbd></pre>
-        <p>
-          Fix building this package with glibc-2.43 and adapt the checksums:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../thunderbird-140.13.0esr-glibc-2.43.patch &amp;&amp;
-sed '/patch.crates-io/a glslopt={path="../third_party/rust/glslopt"}' \
-    -i comm/rust/Cargo.toml &amp;&amp;
-sed '/name = "glslopt"/,/^$/{/source/d;/checksum/d}' \
-    -i comm/rust/Cargo.lock</kbd></pre>
-        <p>
-          Next, fix building this package with LLVM-22:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../thunderbird-140.13.0esr-llvm_22-1.patch</kbd></pre>
         <p>
           The configuration of <span class="application">Thunderbird</span>
           is accomplished by creating a <code class=
@@ -547,7 +494,7 @@ ln -sfv /usr/lib/thunderbird/chrome/icons/default/default256.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1101">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1109">
           Home</a>
         </li>
       </ul>
