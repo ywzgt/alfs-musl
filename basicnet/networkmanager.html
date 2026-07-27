@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1114">
+  <body class="blfs" id="blfs-r13.0-1119">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1114
+        "phrase">(systemd</span> Edition) - Version r13.0-1119
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1114">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1119">
           Home</a>
         </li>
       </ul>
@@ -175,6 +175,8 @@
           "Jansson-2.15.1">jansson-2.15.1</a>, <a class="xref" href=
           "../general/libnvme.html" title=
           "libnvme-1.16.2">libnvme-1.16.2</a>, <a class="xref" href=
+          "../general/llvm.html" title="LLVM-22.1.8">LLVM-22.1.8</a> (with
+          Clang and the BPF target), <a class="xref" href=
           "../general/ModemManager.html" title=
           "ModemManager-1.24.2">ModemManager-1.24.2</a>, <a class="xref"
           href="../general/upower.html" title=
@@ -408,6 +410,14 @@ done</kbd></pre>
           cloud environment within a VM.
         </p>
         <p>
+          <em class="parameter"><code>-D clat=false</code></em>: This switch
+          disables CLAT support. Remove it if you have installed libbpf, and
+          also installed LLVM built with Clang and the BPF target enabled
+          (note that in the BLFS <a class="xref" href="../general/llvm.html"
+          title="LLVM-22.1.8">LLVM-22.1.8</a> instruction the BPF target is
+          not enabled).
+        </p>
+        <p>
           <code class="option">-D crypto=gnutls</code>: Use this switch if
           you have GnuTLS installed and want to use it for certificate and
           key operations in NetworkManager, instead of using NSS (the
@@ -418,11 +428,6 @@ done</kbd></pre>
           neither NSS nor GnuTLS is installed but you want to build
           NetworkManager anyway. This switch will make NetworkManager lack
           some features (for example 802.1X).
-        </p>
-        <p>
-          <em class="parameter"><code>-D clat=false</code></em>: This switch
-          disables CLAT support. Remove it if you have the optional libbpf
-          installed on your system.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -727,7 +732,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1114">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1119">
           Home</a>
         </li>
       </ul>
