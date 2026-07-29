@@ -62,7 +62,7 @@ https://www.zsh.org/pub/zsh-5.9.2.tar.xz
 https://download.qemu.org/qemu-11.0.3.tar.xz
 https://github.com/abseil/abseil-cpp/releases/download/20260526.0/abseil-cpp-20260526.0.tar.gz
 https://www.freedesktop.org/software/appstream/releases/AppStream-1.1.5.tar.xz
-http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz
+http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.4.tar.xz
 https://archive.apache.org/dist/apr/apr-1.7.6.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.3.tar.bz2
 https://ftpmirror.gnu.org/aspell/aspell-0.60.8.2.tar.gz
@@ -143,7 +143,7 @@ https://github.com/lfs-book/libxkbcommon/archive/v1.13.2/libxkbcommon-1.13.2.tar
 https://www.linuxfromscratch.org/patches/blfs/svn/libxkbcommon-1.13.2-upstream_fix-1.patch
 https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.3.tar.xz
 https://www.w3.org/XML/Test/xmlts20130923.tar.gz
-https://github.com/hughsie/libxmlb/releases/download/0.3.28/libxmlb-0.3.28.tar.xz
+https://github.com/hughsie/libxmlb/releases/download/0.3.29/libxmlb-0.3.29.tar.xz
 https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.45.tar.xz
 https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.19.1/libwacom-2.19.1.tar.xz
 https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
@@ -167,9 +167,9 @@ https://github.com/xiph/rnnoise/releases/download/v0.2/rnnoise-0.2.tar.gz
 https://github.com/simdutf/simdutf/archive/v9.0.0/simdutf-9.0.0.tar.gz
 https://archive.mozilla.org/pub/firefox/releases/140.13.0esr/source/firefox-140.13.0esr.source.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.13.0-python_3.14_fixes-1.patch
-https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.350.1/SPIRV-Headers-vulkan-sdk-1.4.350.1.tar.gz
-https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.350.1/SPIRV-Tools-vulkan-sdk-1.4.350.1.tar.gz
-https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v22.1.2/SPIRV-LLVM-Translator-22.1.2.tar.gz
+https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.357.0/SPIRV-Headers-vulkan-sdk-1.4.357.0.tar.gz
+https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.357.0/SPIRV-Tools-vulkan-sdk-1.4.357.0.tar.gz
+https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v22.1.4/SPIRV-LLVM-Translator-22.1.4.tar.gz
 https://www.samba.org/ftp/talloc/talloc-2.4.4.tar.gz
 https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
 https://github.com/martinpitt/umockdev/releases/download/0.19.8/umockdev-0.19.8.tar.xz
@@ -483,7 +483,7 @@ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
 https://download.gnome.org/sources/blueprint-compiler/0.22/blueprint-compiler-0.22.2.tar.xz
 https://files.pythonhosted.org/packages/source/b/build/build-1.5.1.tar.gz
 https://github.com/psf/cachecontrol/archive/v0.14.4/cachecontrol-0.14.4.tar.gz
-https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.4.0.tar.gz
+https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.5.0.tar.gz
 https://github.com/cython/cython/releases/download/3.2.9/cython-3.2.9.tar.gz
 https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.38.1.tar.gz
 https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.4.0.tar.xz
