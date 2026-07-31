@@ -1,0 +1,54 @@
+diff --git a/wget-list b/wget-list
+index 498d683647..83d57c6829 100644
+--- a/wget-list
++++ b/wget-list
+@@ -97,7 +97,7 @@ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.19.tar.gz
+ https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.8.tar.xz
+ https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-1.6.3.tar.gz
+ https://pagure.io/libaio/archive/libaio-0.3.113/libaio-0.3.113.tar.gz
+-https://github.com/libarchive/libarchive/releases/download/v3.8.8/libarchive-3.8.8.tar.xz
++https://github.com/libarchive/libarchive/releases/download/v3.8.9/libarchive-3.8.9.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2
+ https://0pointer.de/public/libatasmart-0.19.tar.xz
+ https://github.com/bdwgc/libatomic_ops/releases/download/v7.10.0/libatomic_ops-7.10.0.tar.gz
+@@ -303,7 +303,7 @@ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-019.tar.xz
+ https://github.com/lu-zero/cargo-c/archive/v0.10.24/cargo-c-0.10.24.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.29.4/cbindgen-0.29.4.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/clisp/clisp-2.49.95.tar.xz
+-https://cmake.org/files/v4.4/cmake-4.4.0.tar.gz
++https://cmake.org/files/v4.4/cmake-4.4.1.tar.gz
+ https://doxygen.nl/files/doxygen-1.17.0.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.8.1.tar.xz
+ https://ftpmirror.gnu.org/gcc/gcc-16.1.0/gcc-16.1.0.tar.xz
+@@ -585,7 +585,7 @@ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/ntp-4.2.8p18-openssl_4-1.patch
+ https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.9.tar.bz2
+ https://www.samba.org/ftp/rsync/src/rsync-3.4.4.tar.gz
+-https://download.samba.org/pub/samba/stable/samba-4.24.4.tar.gz
++https://download.samba.org/pub/samba/stable/samba-4.24.5.tar.gz
+ https://ftpmirror.gnu.org/wget/wget-1.25.0.tar.gz
+ https://www.kernel.org/pub/software/network/iw/iw-6.17.tar.xz
+ https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
+@@ -907,17 +907,14 @@ https://github.com/lxqt/qtermwidget/releases/download/2.4.0/qtermwidget-2.4.0.ta
+ https://github.com/lxqt/qterminal/releases/download/2.4.0/qterminal-2.4.0.tar.xz
+ https://github.com/lxqt/screengrab/releases/download/3.2.0/screengrab-3.2.0.tar.xz
+ https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.61.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/26.2.4/libreoffice-26.2.4.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/26.2.4/libreoffice-dictionaries-26.2.4.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/26.2.4/libreoffice-help-26.2.4.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/26.2.4/libreoffice-translations-26.2.4.2.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/libreoffice-26.2.4.2-poppler_26.06-1.patch
++https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-26.2.5.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-dictionaries-26.2.5.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-help-26.2.5.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-translations-26.2.5.2.tar.xz
+ https://download.gnome.org/sources/epiphany/50/epiphany-50.4.tar.xz
+ https://download.kde.org/stable/release-service/26.04.1/src/falkon-26.04.1.tar.xz
+ https://archive.mozilla.org/pub/firefox/releases/153.0esr/source/firefox-153.0esr.source.tar.xz
+-https://archive.seamonkey-project.org/releases/2.53.23/source/seamonkey-2.53.23.source.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-libvpx_security_fixes-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.23-cxx17-1.patch
++https://archive.seamonkey-project.org/releases/2.53.24/source/seamonkey-2.53.24.source.tar.xz
+ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.5-libical_4_fixes-1.patch
+ https://feh.finalrewind.org/feh-3.12.2.tar.bz2
