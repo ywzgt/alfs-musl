@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Shadow-4.19.4
+      Shadow-4.20.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1140">
+  <body class="blfs" id="blfs-r13.0-1144">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1140
+        "phrase">(systemd</span> Edition) - Version r13.0-1144
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1140">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1144">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="shadow" name="shadow"></a>Shadow-4.19.4
+      <a id="shadow" name="shadow"></a>Shadow-4.20.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -84,13 +84,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/shadow-maint/shadow/releases/download/4.19.4/shadow-4.19.4.tar.xz">
-                https://github.com/shadow-maint/shadow/releases/download/4.19.4/shadow-4.19.4.tar.xz</a>
+                "https://github.com/shadow-maint/shadow/releases/download/4.20.0/shadow-4.20.0.tar.xz">
+                https://github.com/shadow-maint/shadow/releases/download/4.20.0/shadow-4.20.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: ed0f3ff4940822ba75a3b0687a9ce93b
+                Download MD5 sum: cb96509af070aeef1b2814d1c9e34120
               </p>
             </li>
             <li class="listitem">
@@ -100,7 +100,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 104 MB
+                Estimated disk space required: 100 MB
               </p>
             </li>
             <li class="listitem">
@@ -158,6 +158,8 @@ sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD YESCRYPT@' \
     -e 's@/var/spool/mail@/var/mail@'                   \
     -e '/PATH=/{s@/sbin:@@;s@/bin:@@}'                  \
     -i etc/login.defs                                   &amp;&amp;
+
+sed -i '/stdio.h/i #include &lt;stdint.h&gt;' lib/find_new_sub_*ids.c &amp;&amp;
 
 ./configure --sysconfdir=/etc   \
             --disable-static    \
@@ -336,7 +338,7 @@ done</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11052" name="id11052"></a>Configuring the
+                    <a id="id11064" name="id11064"></a>Configuring the
                     /etc/pam.d/ Files
                   </h5>
                 </div>
@@ -367,7 +369,7 @@ done</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11063" name="id11063"></a>'login'
+                    <a id="id11075" name="id11075"></a>'login'
                   </h5>
                 </div>
               </div>
@@ -423,7 +425,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11068" name="id11068"></a>'passwd'
+                    <a id="id11080" name="id11080"></a>'passwd'
                   </h5>
                 </div>
               </div>
@@ -442,7 +444,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11073" name="id11073"></a>'su'
+                    <a id="id11085" name="id11085"></a>'su'
                   </h5>
                 </div>
               </div>
@@ -482,7 +484,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11078" name="id11078"></a>'chpasswd' and
+                    <a id="id11090" name="id11090"></a>'chpasswd' and
                     'newusers'
                   </h5>
                 </div>
@@ -510,7 +512,7 @@ sed -e s/chpasswd/newusers/ /etc/pam.d/chpasswd &gt;/etc/pam.d/newusers</kbd></p
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11083" name="id11083"></a>'chage'
+                    <a id="id11095" name="id11095"></a>'chage'
                   </h5>
                 </div>
               </div>
@@ -534,7 +536,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11088" name="id11088"></a>Other shadow utilities
+                    <a id="id11100" name="id11100"></a>Other shadow utilities
                   </h5>
                 </div>
               </div>
@@ -671,7 +673,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1140">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1144">
           Home</a>
         </li>
       </ul>
