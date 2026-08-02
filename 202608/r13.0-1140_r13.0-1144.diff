@@ -1,0 +1,31 @@
+diff --git a/wget-list b/wget-list
+index 5558e2a41e..1c16a01714 100644
+--- a/wget-list
++++ b/wget-list
+@@ -27,7 +27,7 @@ https://github.com/p11-glue/p11-kit/releases/download/0.26.4/p11-kit-0.26.4.tar.
+ https://github.com/polkit-org/polkit/archive/127/polkit-127.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+-https://github.com/shadow-maint/shadow/releases/download/4.19.4/shadow-4.19.4.tar.xz
++https://github.com/shadow-maint/shadow/releases/download/4.20.0/shadow-4.20.0.tar.xz
+ https://www.stunnel.org/downloads/archive/5.x/stunnel-5.79.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.17p2.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+@@ -55,7 +55,7 @@ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/26.04.1/src/kate-26.04.1.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.7/mousepad-0.7.0.tar.xz
+ https://www.nano-editor.org/dist/v9/nano-9.1.tar.xz
+-https://github.com/vim/vim/archive/v9.2.0752/vim-9.2.0752.tar.gz
++https://github.com/vim/vim/archive/v9.2.0858/vim-9.2.0858.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.5.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.2.tar.xz
+@@ -286,7 +286,7 @@ https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+ https://download.librdf.org/source/redland-1.0.17.tar.gz
+ https://github.com/kennylevinsen/seatd/archive/0.9.3/seatd-0.9.3.tar.gz
+ https://sysstat.github.io/sysstat-packages/sysstat-12.7.9.tar.xz
+-https://github.com/systemd/systemd/archive/v261.1/systemd-261.1.tar.gz
++https://github.com/systemd/systemd/archive/v261.2/systemd-261.2.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.11.1/udisks-2.11.1.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-7.2.4.tar.gz
+ https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.3/upower-v1.91.3.tar.bz2
