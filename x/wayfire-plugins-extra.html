@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1144">
+  <body class="blfs" id="blfs-r13.0-1155">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1144
+        "phrase">(systemd</span> Edition) - Version r13.0-1155
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="wayfire.html" title=
-          "wayfire-0.10.1">Prev</a>
+          "wayfire-0.11.0">Prev</a>
           <p>
-            wayfire-0.10.1
+            wayfire-0.11.0
           </p>
         </li>
         <li class="next">
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1144">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1155">
           Home</a>
         </li>
       </ul>
@@ -59,7 +59,7 @@
         <p>
           The wayfire-plugins-extra package provides more plugins for
           <a class="xref" href="wayfire.html" title=
-          "wayfire-0.10.1">wayfire-0.10.1</a> that you may want or need. For
+          "wayfire-0.11.0">wayfire-0.11.0</a> that you may want or need. For
           example, for focus follows mouse, you will need the <code class=
           "filename">follow-focus</code> plugin from this package.
         </p>
@@ -98,12 +98,26 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 16 MB
+                Estimated disk space required: 18 MB
               </p>
             </li>
             <li class="listitem">
               <p>
                 Estimated build time: 0.1 SBU (with parallelism=4)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/wayfire-plugins-extra-0.10.0-upstream_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/wayfire-plugins-extra-0.10.0-upstream_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -119,7 +133,7 @@
           "Cairo-1.18.4">Cairo-1.18.4</a>, <a class="xref" href=
           "x7driver.html#libevdev" title=
           "libevdev 1.13.6">libevdev-1.13.6</a>, <a class="xref" href=
-          "wayfire.html" title="wayfire-0.10.1">wayfire-0.10.1</a>, <a class=
+          "wayfire.html" title="wayfire-0.11.0">wayfire-0.11.0</a>, <a class=
           "xref" href="../general/wayland.html" title=
           "Wayland-1.26.0">Wayland-1.26.0</a>, and <a class="xref" href=
           "../general/wayland-protocols.html" title=
@@ -138,6 +152,12 @@
         <h2 class="sect2">
           Installation of wayfire-plugins-extra
         </h2>
+        <p>
+          Apply a patch to fix multiple failures when building against newer
+          versions of Wayfire:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../wayfire-plugins-extra-0.10.0-upstream_fixes-1.patch</kbd></pre>
         <p>
           Install wayfire-plugins-extra by running the following commands:
         </p>
@@ -160,11 +180,11 @@ ninja</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Plugins:</strong>
               <span class="segbody">annotate, autorotate-iio, bench,
-              crosshair, extra-animations, focus-change, focus-steal-prevent,
-              follow-focus, force-fullscreen, ghost, glib-main-loop,
-              hide-cursor, join-views, keycolor, mag, obs, pin-view,
-              showrepaint, showtouch, view-shot, water, winzoom, and
-              workspace-names</span>
+              crosshair, extra-animations, fisheye, focus-change,
+              focus-steal-prevent, follow-focus, force-fullscreen, ghost,
+              glib-main-loop, hide-cursor, join-views, keycolor, mag, obs,
+              pin-view, showrepaint, showtouch, view-shot, water, winzoom,
+              and workspace-names</span>
             </div>
           </div>
         </div>
@@ -174,9 +194,9 @@ ninja</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="wayfire.html" title=
-          "wayfire-0.10.1">Prev</a>
+          "wayfire-0.11.0">Prev</a>
           <p>
-            wayfire-0.10.1
+            wayfire-0.11.0
           </p>
         </li>
         <li class="next">
@@ -192,7 +212,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1144">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1155">
           Home</a>
         </li>
       </ul>
