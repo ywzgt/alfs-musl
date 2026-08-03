@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1155">
+  <body class="blfs" id="blfs-r13.0-1166">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1155
+        "phrase">(systemd</span> Edition) - Version r13.0-1166
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1155">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1166">
           Home</a>
         </li>
       </ul>
@@ -107,6 +107,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/SDL3-3.4.12-upstream_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/SDL3-3.4.12-upstream_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           SDL3 Dependencies
         </h3>
         <h4>
@@ -151,6 +165,12 @@
         <h2 class="sect2">
           Installation of SDL3
         </h2>
+        <p>
+          Fix potential conflicts with <code class="literal">getresuid</code>
+          by applying a patch:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../SDL3-3.4.12-upstream_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">SDL3</span> by running the
           following commands:
@@ -292,7 +312,7 @@ DESTDIR=$PWD/TESTS ninja install</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1155">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1166">
           Home</a>
         </li>
       </ul>

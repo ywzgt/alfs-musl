@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1155">
+  <body class="blfs" id="blfs-r13.0-1166">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1155
+        "phrase">(systemd</span> Edition) - Version r13.0-1166
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1155">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1166">
           Home</a>
         </li>
       </ul>
@@ -240,9 +240,7 @@
         </h4>
         <p class="optional">
           <a class="xref" href="gdb.html" title="GDB-17.2">GDB-17.2</a> (used
-          by the test suite if it is present), <a class="xref" href=
-          "git.html" title="Git-2.55.0">git-2.55.0</a> (required by the test
-          suite), <a class="ulink" href=
+          by the test suite if it is present), <a class="ulink" href=
           "https://github.com/bytecodealliance/wasmtime/tree/main/cranelift">cranelift</a>,
           <a class="ulink" href="https://jemalloc.net/">jemalloc</a>,
           libgccjit (read the Command Explanations in <a class="xref" href=
@@ -306,7 +304,7 @@ link-shared = true
 targets = "X86"
 
 [build]
-description = "for BLFS r13.0-1155"
+description = "for BLFS r13.0-1166"
 
 # Omit the documentation to save time and space (the default is to build them).
 docs = false
@@ -359,10 +357,19 @@ export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
           </p>
         </div>
         <p>
-          To run the tests, issue:
+          If running the test suite, fake a Git executable to allow running
+          the test suite without <a class="xref" href="git.html" title=
+          "Git-2.55.0">git-2.55.0</a> installed (we are building from a
+          release tarball instead of Git repository here so Git will not be
+          really useful even if it's installed):
         </p>
         <pre class="userinput"><kbd class=
-        "command">./x.py test --verbose --no-fail-fast | tee rustc-testlog</kbd></pre>
+        "command">mkdir fake-git &amp;&amp; ln -sv /usr/bin/false fake-git</kbd></pre>
+        <p>
+          To run the tests, issue:
+        </p>
+        <pre class="userinput"><kbd class="command">PATH+=:$PWD/fake-git \
+./x.py test --verbose --no-fail-fast | tee rustc-testlog</kbd></pre>
         <p>
           In the <code class="filename">rustdoc-ui</code> tests, the test
           named <code class="filename">ice-bug-report-url.rs</code> is known
@@ -373,8 +380,8 @@ export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
           "filename">rustdoc-target-modifiers</code> is known to fail because
           we've not enabled the AArch64 target in <a class="xref" href=
           "llvm.html" title="LLVM-22.1.8">LLVM-22.1.8</a>, and the test named
-          <code class="filename">short-ice</code> is known to fail for
-          unknown reason.
+          <code class="filename">short-ice</code> is not written correctly
+          and known to fail.
         </p>
         <p>
           As with all large test suites, some tests might fail on some
@@ -769,7 +776,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1155">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1166">
           Home</a>
         </li>
       </ul>
