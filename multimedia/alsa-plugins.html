@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1184">
+  <body class="blfs" id="blfs-r13.0-1191">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1184
+        "phrase">(systemd</span> Edition) - Version r13.0-1191
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1184">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1191">
           Home</a>
         </li>
       </ul>
@@ -105,6 +105,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/alsa-plugins-1.2.12-ffmpeg-9.0.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/alsa-plugins-1.2.12-ffmpeg-9.0.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           ALSA Plugins Dependencies
         </h3>
         <h4>
@@ -119,7 +133,7 @@
         </h4>
         <p class="optional">
           <a class="xref" href="ffmpeg.html" title=
-          "FFmpeg-8.1.2">FFmpeg-8.1.2</a>, <a class="xref" href=
+          "FFmpeg-9.0">FFmpeg-9.0</a>, <a class="xref" href=
           "libsamplerate.html" title=
           "libsamplerate-0.2.2">libsamplerate-0.2.2</a>, <a class="xref"
           href="pulseaudio.html" title="PulseAudio-17.0">PulseAudio-17.0</a>,
@@ -133,6 +147,11 @@
         <h2 class="sect2">
           Installation of ALSA Plugins
         </h2>
+        <p>
+          Fix building this package with ffmpeg-9:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../alsa-plugins-1.2.12-ffmpeg-9.0.patch</kbd></pre>
         <p>
           Install <span class="application">ALSA Plugins</span> by running
           the following commands:
@@ -324,7 +343,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1184">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1191">
           Home</a>
         </li>
       </ul>
