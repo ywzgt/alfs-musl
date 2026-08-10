@@ -1,0 +1,26 @@
+diff --git a/wget-list b/wget-list
+index 707da0c1f7..6825002e8d 100644
+--- a/wget-list
++++ b/wget-list
+@@ -307,7 +307,7 @@ https://anduin.linuxfromscratch.org/BLFS/clisp/clisp-2.49.95.tar.xz
+ https://cmake.org/files/v4.4/cmake-4.4.2.tar.gz
+ https://doxygen.nl/files/doxygen-1.17.0.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.8.1.tar.xz
+-https://ftpmirror.gnu.org/gcc/gcc-16.1.0/gcc-16.1.0.tar.xz
++https://ftpmirror.gnu.org/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz
+ https://github.com/bdwgc/bdwgc/releases/download/v8.2.12/gc-8.2.12.tar.gz
+ https://ftpmirror.gnu.org/gdb/gdb-17.2.tar.xz
+ https://www.kernel.org/pub/software/scm/git/git-2.55.0.tar.xz
+@@ -475,9 +475,9 @@ https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+ https://www.php.net/distributions/php-8.5.9.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+-https://www.python.org/ftp/python/3.14.6/Python-3.14.6.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.6-consolidated_fixes-1.patch
+-https://www.python.org/ftp/python/doc/3.14.6/python-3.14.6-docs-html.tar.bz2
++https://www.python.org/ftp/python/3.14.7/Python-3.14.7.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.7-consolidated_fixes-1.patch
++https://www.python.org/ftp/python/doc/3.14.7/python-3.14.7-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.11.1-openssl_4_fixes-1.patch
+ https://files.pythonhosted.org/packages/source/a/asciidoc/asciidoc-10.2.1.tar.gz
