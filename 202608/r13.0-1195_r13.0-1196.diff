@@ -1,0 +1,13 @@
+diff --git a/wget-list b/wget-list
+index 6825002e8d..2a94888dfe 100644
+--- a/wget-list
++++ b/wget-list
+@@ -476,7 +476,7 @@ https://www.php.net/distributions/php-8.5.9.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/3.14.7/Python-3.14.7.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.7-consolidated_fixes-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.7-openssl_4-1.patch
+ https://www.python.org/ftp/python/doc/3.14.7/python-3.14.7-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.11.1-openssl_4_fixes-1.patch
