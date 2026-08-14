@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      FFmpeg-9.0
+      FFmpeg-9.0.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1226">
+  <body class="blfs" id="blfs-r13.0-1233">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1226
+        "phrase">(systemd</span> Edition) - Version r13.0-1233
       </h4>
       <h3>
         Chapter&nbsp;44.&nbsp;Video Utilities
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1226">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1233">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="ffmpeg" name="ffmpeg"></a>FFmpeg-9.0
+      <a id="ffmpeg" name="ffmpeg"></a>FFmpeg-9.0.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -86,12 +86,12 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ffmpeg.org/releases/ffmpeg-9.0.tar.xz">https://ffmpeg.org/releases/ffmpeg-9.0.tar.xz</a>
+                "https://ffmpeg.org/releases/ffmpeg-9.0.1.tar.xz">https://ffmpeg.org/releases/ffmpeg-9.0.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 05ac2ddf3862007d1f920318c65935c5
+                Download MD5 sum: 3ed2aab5ce5d18a3c5e0d22d8ca3fadb
               </p>
             </li>
             <li class="listitem">
@@ -122,8 +122,8 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-9.0-chromium_method-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-9.0-chromium_method-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-9.0.1-chromium_method-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-9.0.1-chromium_method-1.patch</a>
               </p>
             </li>
           </ul>
@@ -260,7 +260,7 @@
           to build:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../ffmpeg-9.0-chromium_method-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../ffmpeg-9.0.1-chromium_method-1.patch</kbd></pre>
         <p>
           Install <span class="application">FFmpeg</span> by running the
           following commands:
@@ -287,7 +287,7 @@
             --enable-libdav1d    \
             --enable-libsvtav1   \
             --ignore-tests=enhanced-flv-av1,enhanced-flv-multitrack \
-            --docdir=/usr/share/doc/ffmpeg-9.0 &amp;&amp;
+            --docdir=/usr/share/doc/ffmpeg-9.0.1 &amp;&amp;
 
 make &amp;&amp;
 
@@ -329,16 +329,16 @@ unset DOCNAME</kbd></pre>
         <pre class="root"><kbd class="command">make install &amp;&amp;
 
 install -v -m755    tools/qt-faststart /usr/bin &amp;&amp;
-install -v -m755 -d           /usr/share/doc/ffmpeg-9.0 &amp;&amp;
-install -v -m644    doc/*.txt /usr/share/doc/ffmpeg-9.0</kbd></pre>
+install -v -m755 -d           /usr/share/doc/ffmpeg-9.0.1 &amp;&amp;
+install -v -m644    doc/*.txt /usr/share/doc/ffmpeg-9.0.1</kbd></pre>
         <p>
           If the PDF and Postscript documentation was built, issue the
           following commands, as the <code class="systemitem">root</code>
           user, to install them:
         </p>
         <pre class="root"><kbd class=
-        "command">install -v -m644 doc/*.pdf /usr/share/doc/ffmpeg-9.0 &amp;&amp;
-install -v -m644 doc/*.ps  /usr/share/doc/ffmpeg-9.0</kbd></pre>
+        "command">install -v -m644 doc/*.pdf /usr/share/doc/ffmpeg-9.0.1 &amp;&amp;
+install -v -m644 doc/*.ps  /usr/share/doc/ffmpeg-9.0.1</kbd></pre>
         <p>
           If you used <span class="command"><strong>doxygen</strong></span>
           to manually create the API documentation, install it by issuing the
@@ -346,13 +346,13 @@ install -v -m644 doc/*.ps  /usr/share/doc/ffmpeg-9.0</kbd></pre>
           user:
         </p>
         <pre class="root"><kbd class=
-        "command">install -v -m755 -d /usr/share/doc/ffmpeg-9.0/api                     &amp;&amp;
-cp -vr doc/doxy/html/* /usr/share/doc/ffmpeg-9.0/api                  &amp;&amp;
-find /usr/share/doc/ffmpeg-9.0/api -type f -exec chmod -c 0644 \{} \; &amp;&amp;
-find /usr/share/doc/ffmpeg-9.0/api -type d -exec chmod -c 0755 \{} \;</kbd></pre>
+        "command">install -v -m755 -d /usr/share/doc/ffmpeg-9.0.1/api                     &amp;&amp;
+cp -vr doc/doxy/html/* /usr/share/doc/ffmpeg-9.0.1/api                  &amp;&amp;
+find /usr/share/doc/ffmpeg-9.0.1/api -type f -exec chmod -c 0644 \{} \; &amp;&amp;
+find /usr/share/doc/ffmpeg-9.0.1/api -type d -exec chmod -c 0755 \{} \;</kbd></pre>
         <p>
           To properly test the installation you must have <a class="xref"
-          href="../basicnet/rsync.html" title="rsync-3.4.4">rsync-3.4.4</a>
+          href="../basicnet/rsync.html" title="rsync-3.5.0">rsync-3.5.0</a>
           installed and follow the instructions for the <a class="ulink"
           href="https://www.ffmpeg.org/fate.html">FFmpeg Automated Testing
           Environment</a> (FATE). First, about 1 GB of sample files used to
@@ -566,7 +566,7 @@ grep ^TEST ../fate.log | wc -l</kbd></pre>
               <span class=
               "segbody">/usr/include/libav{codec,device,filter,format,util},
               /usr/include/libpostproc, /usr/include/libsw{resample,scale},
-              /usr/share/doc/ffmpeg-9.0, and /usr/share/ffmpeg</span>
+              /usr/share/doc/ffmpeg-9.0.1, and /usr/share/ffmpeg</span>
             </div>
           </div>
         </div>
@@ -803,7 +803,7 @@ grep ^TEST ../fate.log | wc -l</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1226">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1233">
           Home</a>
         </li>
       </ul>
