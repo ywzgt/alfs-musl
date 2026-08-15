@@ -1,0 +1,58 @@
+diff --git a/wget-list b/wget-list
+index c5c85c87bf..9090ebf865 100644
+--- a/wget-list
++++ b/wget-list
+@@ -61,13 +61,13 @@ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.2.tar.xz
+ https://download.qemu.org/qemu-11.1.0.tar.xz
+ https://github.com/abseil/abseil-cpp/releases/download/20260526.0/abseil-cpp-20260526.0.tar.gz
+-https://www.freedesktop.org/software/appstream/releases/AppStream-1.1.5.tar.xz
++https://www.freedesktop.org/software/appstream/releases/AppStream-1.1.6.tar.xz
+ http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.4.tar.xz
+ https://archive.apache.org/dist/apr/apr-1.7.6.tar.bz2
+ https://archive.apache.org/dist/apr/apr-util-1.6.5.tar.bz2
+ https://ftpmirror.gnu.org/aspell/aspell-0.60.8.2.tar.gz
+ https://ftpmirror.gnu.org/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2
+-https://github.com/boostorg/boost/releases/download/boost-1.91.0-1/boost-1.91.0-1-b2-nodocs.tar.xz
++https://github.com/boostorg/boost/releases/download/boost-1.92.0/boost-1.92.0-b2-nodocs.tar.xz
+ https://github.com/google/brotli/archive/v1.2.0/brotli-1.2.0.tar.gz
+ https://downloads.sourceforge.net/clucene/clucene-core-2.3.3.4.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/clucene-2.3.3.4-contribs_lib-1.patch
+@@ -193,7 +193,7 @@ https://github.com/g-truc/glm/archive/1.0.3/glm-1.0.3.tar.gz
+ https://download.gnome.org/sources/glycin/2.1/glycin-2.1.5.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.1.5-xorg_prefix-1.patch
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+-https://github.com/harfbuzz/harfbuzz/releases/download/14.3.0/harfbuzz-14.3.0.tar.xz
++https://github.com/harfbuzz/harfbuzz/releases/download/14.3.1/harfbuzz-14.3.1.tar.xz
+ https://github.com/AcademySoftwareFoundation/Imath/releases/download/v3.2.2/Imath-3.2.2.tar.gz
+ https://github.com/jasper-software/jasper/archive/version-4.2.9/jasper-version-4.2.9.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.19.1/lcms2-2.19.1.tar.gz
+@@ -585,7 +585,7 @@ https://www.kernel.org/pub/linux/utils/nfs-utils/2.9.2/nfs-utils-2.9.2.tar.xz
+ https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/ntp-4.2.8p18-openssl_4-1.patch
+ https://downloads.sourceforge.net/rpcbind/rpcbind-1.2.9.tar.bz2
+-https://www.samba.org/ftp/rsync/src/rsync-3.4.4.tar.gz
++https://www.samba.org/ftp/rsync/src/rsync-3.5.0.tar.gz
+ https://download.samba.org/pub/samba/stable/samba-4.24.5.tar.gz
+ https://ftpmirror.gnu.org/wget/wget-1.25.0.tar.gz
+ https://www.kernel.org/pub/software/network/iw/iw-6.17.tar.xz
+@@ -600,7 +600,7 @@ https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-a
+ https://nmap.org/dist/nmap-7.991.tar.bz2
+ https://downloads.sourceforge.net/traceroute/traceroute-2.1.6.tar.gz
+ https://github.com/rfc1036/whois/archive/v5.6.6/whois-5.6.6.tar.gz
+-https://www.wireshark.org/download/src/all-versions/wireshark-4.6.7.tar.xz
++https://www.wireshark.org/download/src/all-versions/wireshark-4.6.8.tar.xz
+ https://github.com/c-ares/c-ares/releases/download/v1.34.8/c-ares-1.34.8.tar.gz
+ https://curl.se/download/curl-8.21.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.8.2/geoclue-2.8.2.tar.bz2
+@@ -1021,8 +1021,8 @@ https://downloads.sourceforge.net/mpg123/mpg123-1.33.7.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-6.2.tar.xz
+ https://github.com/nicklan/pnmixer/releases/download/v0.7.2/pnmixer-v0.7.2.tar.gz
+ https://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.3.tar.gz
+-https://ffmpeg.org/releases/ffmpeg-9.0.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-9.0-chromium_method-1.patch
++https://ffmpeg.org/releases/ffmpeg-9.0.1.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-9.0.1-chromium_method-1.patch
+ https://github.com/mpv-player/mpv/archive/v0.41.0/mpv-0.41.0.tar.gz
+ https://download.videolan.org/vlc/3.0.23/vlc-3.0.23.tar.xz
+ https://downloads.sourceforge.net/xine/xine-ui-0.99.14.tar.xz
