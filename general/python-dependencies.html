@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1264">
+  <body class="blfs" id="blfs-r13.0-1268">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1264
+        "phrase">(systemd</span> Edition) - Version r13.0-1268
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1264">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1268">
           Home</a>
         </li>
       </ul>
@@ -128,12 +128,6 @@
               <p>
                 <a class="xref" href="python-dependencies.html#commonmark"
                 title="Commonmark-0.9.2">commonmark-0.9.2</a>
-              </p>
-            </li>
-            <li class="listitem">
-              <p>
-                <a class="xref" href="python-dependencies.html#editables"
-                title="Editables-0.6">editables-0.6</a>
               </p>
             </li>
             <li class="listitem">
@@ -391,9 +385,8 @@
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -546,9 +539,8 @@
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -764,9 +756,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -914,9 +905,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -1113,9 +1103,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -1321,9 +1310,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -1512,171 +1500,6 @@ deactivate</kbd></pre>
       </div>
       <div class="sect2" lang="en" xml:lang="en">
         <h2 class="sect2">
-          <a id="editables" name="editables"></a>Editables-0.6
-        </h2>
-        <div class="package" lang="en" xml:lang="en">
-          <h3 class="sect3">
-            Introduction to Editables Module
-          </h3>
-          <p>
-            <span class="application">Editables</span> is python library for
-            creating <span class="quote">“<span class="quote">editable
-            wheels.</span>”</span>
-          </p>
-          <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
-            <h3>
-              Note
-            </h3>
-            <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
-            </p>
-          </div>
-          <h4>
-            Package Information
-          </h4>
-          <div class="itemizedlist">
-            <ul class="compact">
-              <li class="listitem">
-                <p>
-                  Download (HTTP): <a class="ulink" href=
-                  "https://files.pythonhosted.org/packages/source/e/editables/editables-0.6.tar.gz">
-                  https://files.pythonhosted.org/packages/source/e/editables/editables-0.6.tar.gz</a>
-                </p>
-              </li>
-              <li class="listitem">
-                <p>
-                  Download MD5 sum: 658e28eab5b342442d8edc42ff4fa3bd
-                </p>
-              </li>
-              <li class="listitem">
-                <p>
-                  Download size: 20 KB
-                </p>
-              </li>
-              <li class="listitem">
-                <p>
-                  Estimated disk space required: 196 KB
-                </p>
-              </li>
-              <li class="listitem">
-                <p>
-                  Estimated build time: less than 0.1 SBU
-                </p>
-              </li>
-            </ul>
-          </div>
-          <h4>
-            Editables Dependencies
-          </h4>
-          <h5>
-            Optional (for testing)
-          </h5>
-          <p class="optional">
-            <a class="xref" href="python-modules.html#pytest" title=
-            "Pytest-9.1.1">pytest-9.1.1</a>
-          </p>
-        </div>
-        <div class="installation" lang="en" xml:lang="en">
-          <h3 class="sect3">
-            Installation of Editables
-          </h3>
-          <p>
-            Build the module:
-          </p>
-          <pre class="userinput"><kbd class=
-          "command">pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir $PWD</kbd></pre>
-          <p>
-            Now, as the <code class="systemitem">root</code> user:
-          </p>
-          <pre class="root"><kbd class=
-          "command">pip3 install --no-index --find-links dist --no-user editables</kbd></pre>
-          <p>
-            To test the installation, issue: <span class=
-            "command"><strong>pytest</strong></span>.
-          </p>
-        </div>
-        <div class="commands" lang="en" xml:lang="en">
-          <h3 class="sect3">
-            Command Explanations
-          </h3>
-          <p>
-            <em class="parameter"><code>-w dist</code></em>: builds the
-            appropriate "wheel" for this module in the directory <code class=
-            "filename">dist</code>.
-          </p>
-          <p>
-            <em class="parameter"><code>--no-build-isolation</code></em>:
-            tells pip3 to run the build in the system environment instead of
-            creating a temporary build environment.
-          </p>
-          <p>
-            <em class="parameter"><code>--no-deps</code></em>: prevents pip3
-            from building wheels for the project's dependencies.
-          </p>
-          <p>
-            <em class="parameter"><code>--no-index</code></em>: ignores the
-            package index (only looking at --find-links URLs instead).
-          </p>
-          <p>
-            <em class="parameter"><code>--find-links dist</code></em>: looks
-            for links to archives such as wheel (.whl) files in the directory
-            <code class="filename">dist</code>.
-          </p>
-          <p>
-            <em class="parameter"><code>--no-cache-dir</code></em>: Disables
-            the cache to prevent a warning when installing as the
-            <code class="systemitem">root</code> user.
-          </p>
-          <p>
-            <em class="parameter"><code>--no-user</code></em>: Prevent
-            mistakenly running the install command as a non-root user.
-          </p>
-          <p>
-            <code class="option">--upgrade</code>: Upgrade the package to the
-            newest available version. This option is used with the install
-            command if a version of the package is already installed.
-          </p>
-          <p>
-            <code class="option">--force-reinstall</code>: Reinstall the
-            package even if it is up-to-date. This option is used with the
-            install command if reinstalling the package or reverting to an
-            earlier version of the package.
-          </p>
-          <p>
-            <code class="option">--no-deps</code>: Do not install package
-            dependencies. This option may be needed with the --upgrade or
-            --force-reinstall options.
-          </p>
-        </div>
-        <div class="content" lang="en" xml:lang="en">
-          <h3 class="sect3">
-            Contents
-          </h3>
-          <div class="segmentedlist">
-            <div class="seglistitem">
-              <div class="seg">
-                <strong class="segtitle">Installed Programs:</strong>
-                <span class="segbody">None</span>
-              </div>
-              <div class="seg">
-                <strong class="segtitle">Installed Libraries:</strong>
-                <span class="segbody">None</span>
-              </div>
-              <div class="seg">
-                <strong class="segtitle">Installed Directories:</strong>
-                <span class=
-                "segbody">/usr/lib/python3.14/site-packages/editables and
-                /usr/lib/python3.14/site-packages/editables-0.6.dist-info</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="sect2" lang="en" xml:lang="en">
-        <h2 class="sect2">
           <a id="hatchling" name="hatchling"></a>Hatchling-1.32.0
         </h2>
         <div class="package" lang="en" xml:lang="en">
@@ -1693,9 +1516,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -1892,9 +1714,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -2068,9 +1889,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -2246,9 +2066,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -2411,9 +2230,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -2578,9 +2396,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -2750,9 +2567,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -2982,9 +2798,8 @@ PATH=$PWD/testenv/bin:$PATH cargo test</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -3198,9 +3013,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -3401,9 +3215,8 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -3573,9 +3386,8 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -3743,9 +3555,8 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -3914,9 +3725,8 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -4121,9 +3931,8 @@ testenv/bin/python -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -4304,9 +4113,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -4476,9 +4284,8 @@ testenv/bin/python3 -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -4642,9 +4449,8 @@ testenv/bin/python3 -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -4810,9 +4616,8 @@ testenv/bin/python3 -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -4979,9 +4784,8 @@ testenv/bin/python3 -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -5155,9 +4959,8 @@ testenv/bin/python3 -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -5362,9 +5165,8 @@ TZ=UTC HOME= testenv/bin/python3 -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -5579,9 +5381,8 @@ pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -5735,9 +5536,8 @@ pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -5904,9 +5704,8 @@ pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -6076,9 +5875,8 @@ pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -6253,9 +6051,8 @@ pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -6424,9 +6221,8 @@ pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -6611,9 +6407,8 @@ pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -6796,9 +6591,8 @@ testenv/bin/python -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -6965,9 +6759,8 @@ testenv/bin/python -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -7173,9 +6966,8 @@ testenv/bin/python -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -7347,9 +7139,8 @@ testenv/bin/python -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -7514,9 +7305,8 @@ testenv/bin/python -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -7745,9 +7535,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -7910,9 +7699,8 @@ deactivate</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -8097,9 +7885,8 @@ HOME= testenv/bin/python3 -m pytest</kbd></pre>
               Note
             </h3>
             <p>
-              Development versions of BLFS may not build or run some packages
-              properly if LFS or dependencies have been updated since the
-              most recent stable versions of the books.
+              <span class="phrase">This package is known to build and work
+              properly using an LFS 13.1 platform.</span>
             </p>
           </div>
           <h4>
@@ -8251,7 +8038,7 @@ HOME= testenv/bin/python3 -m pytest</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1264">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1268">
           Home</a>
         </li>
       </ul>
