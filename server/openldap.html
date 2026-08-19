@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1268">
+  <body class="blfs" id="blfs-r13.0-1277">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1268
+        "phrase">(systemd</span> Edition) - Version r13.0-1277
       </h4>
       <h3>
         Chapter&nbsp;23.&nbsp;Other Server Software
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1268">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1277">
           Home</a>
         </li>
       </ul>
@@ -106,6 +106,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.7.0-consolidated-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.7.0-consolidated-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           OpenLDAP Dependencies
         </h3>
         <h4>
@@ -149,7 +163,10 @@
             instead of the following ones (no test suite available):
           </p>
           <pre class="userinput"><kbd class=
-          "command">./configure --prefix=/usr     \
+          "command">patch -Np1 -i ../openldap-2.7.0-consolidated-1.patch &amp;&amp;
+autoconf &amp;&amp;
+
+./configure --prefix=/usr     \
             --sysconfdir=/etc \
             --disable-static  \
             --enable-dynamic  \
@@ -179,7 +196,10 @@ useradd  -c "OpenLDAP Daemon Owner" \
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr         \
+        "command">patch -Np1 -i ../openldap-2.7.0-consolidated-1.patch &amp;&amp;
+autoconf &amp;&amp;
+
+./configure --prefix=/usr         \
             --sysconfdir=/etc     \
             --localstatedir=/var  \
             --libexecdir=/usr/lib \
@@ -932,7 +952,7 @@ result: 0 Success
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1268">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1277">
           Home</a>
         </li>
       </ul>
