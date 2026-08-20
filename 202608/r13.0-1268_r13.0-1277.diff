@@ -1,0 +1,32 @@
+diff --git a/wget-list b/wget-list
+index 37c87a72ce..c8d1e5146e 100644
+--- a/wget-list
++++ b/wget-list
+@@ -165,8 +165,8 @@ https://www.linuxfromscratch.org/patches/blfs/svn/qca-2.3.10-openssl4_fixes-1.pa
+ https://github.com/danvratil/qcoro/archive/v0.13.0/qcoro-0.13.0.tar.gz
+ https://github.com/xiph/rnnoise/releases/download/v0.2/rnnoise-0.2.tar.gz
+ https://github.com/simdutf/simdutf/archive/v9.0.0/simdutf-9.0.0.tar.gz
+-https://archive.mozilla.org/pub/firefox/releases/140.13.0esr/source/firefox-140.13.0esr.source.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.13.0-python_3.14_fixes-1.patch
++https://archive.mozilla.org/pub/firefox/releases/140.14.0esr/source/firefox-140.14.0esr.source.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.14.0-python_3.14_fixes-1.patch
+ https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.357.0/SPIRV-Headers-vulkan-sdk-1.4.357.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.357.0/SPIRV-Tools-vulkan-sdk-1.4.357.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v22.1.5/SPIRV-LLVM-Translator-22.1.5.tar.gz
+@@ -349,7 +349,7 @@ https://www.cpan.org/authors/id/A/AL/ALINKE/Lingua-Translit-0.29.tar.gz
+ https://www.cpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.83.tar.gz
+ https://www.cpan.org/authors/id/D/DR/DROLSKY/List-AllUtils-0.19.tar.gz
+ https://www.cpan.org/authors/id/R/RE/REHSACK/List-MoreUtils-0.430.tar.gz
+-https://www.cpan.org/authors/id/E/ET/ETJ/Log-Log4perl-1.58.tar.gz
++https://www.cpan.org/authors/id/M/MS/MSCHILLI/Log-Log4perl-1.58.tar.gz
+ https://www.cpan.org/authors/id/O/OA/OALDERS/LWP-Protocol-https-6.17.tar.gz
+ https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-0.4234.tar.gz
+ https://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-1.56.tar.gz
+@@ -647,6 +647,7 @@ https://downloads.mariadb.org/interstitial/mariadb-12.3.2/source/mariadb-12.3.2.
+ https://www.linuxfromscratch.org/patches/blfs/svn/mariadb-12.3.2-openssl4_fixes-1.patch
+ https://ftp.postgresql.org/pub/source/v18.4/postgresql-18.4.tar.bz2
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.7.0.tgz
++https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.7.0-consolidated-1.patch
+ https://www.x.org/pub/individual/util/util-macros-1.20.2.tar.xz
+ https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2025.1.tar.xz
+ https://www.x.org/pub/individual/lib/libXau-1.0.12.tar.xz
