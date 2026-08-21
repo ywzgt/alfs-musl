@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1285">
+  <body class="blfs" id="blfs-r13.0-1288">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1285
+        "phrase">(systemd</span> Edition) - Version r13.0-1288
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1285">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1288">
           Home</a>
         </li>
       </ul>
@@ -133,9 +133,10 @@
         </h4>
         <p class="optional">
           <a class="xref" href="../general/python-modules.html#asciidoc"
-          title="Asciidoc-10.2.1">asciidoc-10.2.1</a>, <a class="xref" href=
-          "../basicnet/avahi.html" title="Avahi-0.8">Avahi-0.8</a>, <a class=
-          "xref" href="../general/graphviz.html" title=
+          title="Asciidoc-10.2.1">asciidoc-10.2.1</a> (for the man pages),
+          <a class="xref" href="../basicnet/avahi.html" title=
+          "Avahi-0.8">Avahi-0.8</a>, <a class="xref" href=
+          "../general/graphviz.html" title=
           "Graphviz-15.1.1">Graphviz-15.1.1</a>, <a class="xref" href=
           "../general/python-modules.html#pygobject3" title=
           "PyGObject-3.56.3">PyGObject-3.56.3</a>, <a class="ulink" href=
@@ -182,6 +183,14 @@ meson setup --prefix=/usr       \
             ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
+          If the optional dependency <a class="xref" href=
+          "../general/python-modules.html#asciidoc" title=
+          "Asciidoc-10.2.1">asciidoc-10.2.1</a> is installed, you may build
+          the man pages with:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">meson configure -D man=true &amp;&amp; ninja</kbd></pre>
+        <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
@@ -192,10 +201,9 @@ ninja</kbd></pre>
           <span class="command"><strong>meson configure -D debug=true -D
           tests=true &amp;&amp; LC_ALL=C.UTF-8 ninja test</strong></span>.
           The test suite should be run from a graphical session. One test,
-          test_cli, is known to fail due to the manual pages not being
-          generated, but will pass if "-D man=false" is omitted when
-          configuring the package. One other test, resource, is also known to
-          fail.
+          test_cli, is known to fail if the man pages were not built. One
+          test named <code class="literal">tinysparql:sparql</code> is known
+          to fail with SQLite 3.53.1 or newer.
         </p>
       </div>
       <div class="commands" lang="en" xml:lang="en">
@@ -206,14 +214,6 @@ ninja</kbd></pre>
           <em class="parameter"><code>--buildtype=release</code></em>:
           Specify a buildtype suitable for stable releases of the package, as
           the default may produce unoptimized binaries.
-        </p>
-        <p>
-          <em class="parameter"><code>-D man=false</code></em>: This switch
-          prevents the build process from generating man pages. Omit this
-          switch if you have <a class="xref" href=
-          "../general/python-modules.html#asciidoc" title=
-          "Asciidoc-10.2.1">asciidoc-10.2.1</a> installed and wish to
-          generate and install the man pages.
         </p>
         <p>
           <span class="command"><strong>meson configure -D
@@ -324,7 +324,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1285">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1288">
           Home</a>
         </li>
       </ul>
