@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Building KDE Frameworks 6.26.0 (KF6)
+      Building KDE Frameworks 6.29.0 (KF6)
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1288">
+  <body class="blfs" id="blfs-r13.0-1296">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1288
+        "phrase">(systemd</span> Edition) - Version r13.0-1296
       </h4>
       <h3>
         Chapter&nbsp;30.&nbsp;KDE Frameworks 6
@@ -42,14 +42,14 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1288">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1296">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="kf6-frameworks" name="kf6-frameworks"></a>Building KDE
-      Frameworks 6.26.0 (KF6)
+      Frameworks 6.29.0 (KF6)
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <p>
@@ -80,7 +80,7 @@
           <li class="listitem">
             <p>
               Download (HTTP): <a class="ulink" href=
-              "https://download.kde.org/stable/frameworks/6.26">https://download.kde.org/stable/frameworks/6.26</a>
+              "https://download.kde.org/stable/frameworks/6.29">https://download.kde.org/stable/frameworks/6.29</a>
             </p>
           </li>
           <li class="listitem">
@@ -113,9 +113,9 @@
       </h4>
       <p class="required">
         <a class="xref" href="extra-cmake-modules.html" title=
-        "Extra-CMake-Modules-6.26.0">Extra-CMake-Modules-6.26.0</a>,
+        "Extra-CMake-Modules-6.29.0">Extra-CMake-Modules-6.29.0</a>,
         <a class="xref" href="../x/breeze-icons.html" title=
-        "breeze-icons-6.26.0">breeze-icons-6.26.0</a>, <a class="xref" href=
+        "breeze-icons-6.29.0">breeze-icons-6.29.0</a>, <a class="xref" href=
         "../pst/docbook.html" title="docbook-xml-4.5">docbook-xml-4.5</a>,
         <a class="xref" href="../pst/docbook-xsl.html" title=
         "docbook-xsl-nons-1.79.2">docbook-xsl-nons-1.79.2</a>, <a class=
@@ -257,7 +257,7 @@
           them all at once:
         </p>
         <pre class="userinput"><kbd class=
-        "command">url=https://download.kde.org/stable/frameworks/6.26/
+        "command">url=https://download.kde.org/stable/frameworks/6.29/
 wget -r -nH -nd -A '*.xz' -np $url</kbd>
 <code class="literal">
 The options used here are:
@@ -277,7 +277,7 @@ The options used here are:
           follows:
         </p>
         <pre class="userinput"><kbd class=
-        "command">cat &gt; frameworks-6.26.0.md5 &lt;&lt; "EOF"
+        "command">cat &gt; frameworks-6.29.0.md5 &lt;&lt; "EOF"
 <code class="literal">a2cca7d002ff79895a5602f31b7adc34  attica-6.26.0.tar.xz
 #05432f3fcbc3ee0de5765413f5c8b436  extra-cmake-modules-6.26.0.tar.xz
 639d75c85532f6e944f023c2adf26619  kapidox-6.26.0.tar.xz
@@ -370,7 +370,7 @@ EOF</kbd></pre>
               <p>
                 This icon package is covered separately at <a class="xref"
                 href="../x/breeze-icons.html" title=
-                "breeze-icons-6.26.0">breeze-icons-6.26.0</a>. It is separate
+                "breeze-icons-6.29.0">breeze-icons-6.29.0</a>. It is separate
                 to allow users that need these icons but do not need the full
                 set of KF6 packages (e.g. <a class="xref" href=
                 "../lxqt/post-install.html" title=
@@ -506,7 +506,7 @@ ln -sfv /usr/lib/systemd    $KF6_PREFIX/lib</kbd></pre>
   as_root rm -rf $packagedir
   as_root /sbin/ldconfig
 
-done &lt; frameworks-6.26.0.md5
+done &lt; frameworks-6.29.0.md5
 
 exit</kbd></pre>
         <div class="admon note">
@@ -526,8 +526,8 @@ exit</kbd></pre>
           files. If the installed directory is not /usr, rename the directory
           and create a symlink:
         </p>
-        <pre class="root"><kbd class="command">mv -v /opt/kf6 /opt/kf6-6.26.0
-ln -sfvn kf6-6.26.0 /opt/kf6</kbd></pre>
+        <pre class="root"><kbd class="command">mv -v /opt/kf6 /opt/kf6-6.29.0
+ln -sfvn kf6-6.29.0 /opt/kf6</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -616,7 +616,7 @@ ln -sfvn kf6-6.26.0 /opt/kf6</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/opt/kf6 (symlink to /opt/kf6-6.26.0) if
+              <span class="segbody">/opt/kf6 (symlink to /opt/kf6-6.29.0) if
               installing in /opt</span>
             </div>
           </div>
@@ -968,7 +968,7 @@ ln -sfvn kf6-6.26.0 /opt/kf6</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1288">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1296">
           Home</a>
         </li>
       </ul>
