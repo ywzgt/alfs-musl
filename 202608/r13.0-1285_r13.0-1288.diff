@@ -1,0 +1,13 @@
+diff --git a/wget-list b/wget-list
+index 3d8d24e84b..b3939e66e2 100644
+--- a/wget-list
++++ b/wget-list
+@@ -944,7 +944,7 @@ https://download.gnome.org/sources/audiofile/0.3/audiofile-0.3.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/audiofile-0.3.6-consolidated_patches-1.patch
+ https://code.videolan.org/videolan/dav1d/-/archive/1.5.4/dav1d-1.5.4.tar.gz
+ https://github.com/lfs-book/faac/archive/v2.1/faac-2.1.tar.gz
+-https://github.com/knik0/faad2/archive/2.11.2/faad2-2.11.2.tar.gz
++https://github.com/knik0/faad2/archive/2.11.3/faad2-2.11.3.tar.gz
+ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
+ https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
+ https://github.com/dyne/frei0r/archive/v3.3.0/frei0r-3.3.0.tar.gz
