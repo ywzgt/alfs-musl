@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      PostgreSQL-18.4
+      PostgreSQL-18.6
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1296">
+  <body class="blfs" id="blfs-r13.0-1327">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1296
+        "phrase">(systemd</span> Edition) - Version r13.0-1327
       </h4>
       <h3>
         Chapter&nbsp;22.&nbsp;Databases
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1296">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1327">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="postgresql" name="postgresql"></a>PostgreSQL-18.4
+      <a id="postgresql" name="postgresql"></a>PostgreSQL-18.6
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -79,13 +79,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ftp.postgresql.org/pub/source/v18.4/postgresql-18.4.tar.bz2">
-                https://ftp.postgresql.org/pub/source/v18.4/postgresql-18.4.tar.bz2</a>
+                "https://ftp.postgresql.org/pub/source/v18.6/postgresql-18.6.tar.bz2">
+                https://ftp.postgresql.org/pub/source/v18.6/postgresql-18.6.tar.bz2</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: f985597ebb8e71f338beb2bef974b6ed
+                Download MD5 sum: 6143c18ab91bdfcaa056a61861814cde
               </p>
             </li>
             <li class="listitem">
@@ -95,7 +95,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 348 MB (with tests)
+                Estimated disk space required: 349 MB (with tests)
               </p>
             </li>
             <li class="listitem">
@@ -183,7 +183,7 @@ useradd -c "PostgreSQL Server" -g postgres -d /srv/pgsql/data \
     -i src/include/pg_config_manual.h                  &amp;&amp;
 
 ./configure --prefix=/usr \
-            --docdir=/usr/share/doc/postgresql-18.4 &amp;&amp;
+            --docdir=/usr/share/doc/postgresql-18.6 &amp;&amp;
 make</kbd></pre>
         <p>
           There are a number of programs in the <code class=
@@ -399,7 +399,7 @@ chown -Rv postgres:postgres /srv/pgsql /run/postgresql</kbd></pre>
             <code class="filename">PGDATA/</code> directory. Details on the
             format of the files and the options that can be set in each can
             be found in <code class=
-            "filename">/usr/share/doc/postgresql-18.4/html/index.html</code>.
+            "filename">/usr/share/doc/postgresql-18.6/html/index.html</code>.
           </p>
         </div>
         <div class="sect3" lang="en" xml:lang="en">
@@ -494,7 +494,7 @@ echo "select * from t1;" | (su - postgres -c '/usr/bin/psql test')</kbd></pre>
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/{libpq,postgresql},
               /usr/lib/postgresql,
-              /usr/share/{doc/postgresql-18.4,postgresql}, and
+              /usr/share/{doc/postgresql-18.6,postgresql}, and
               /srv/pgsql</span>
             </div>
           </div>
@@ -1170,7 +1170,7 @@ echo "select * from t1;" | (su - postgres -c '/usr/bin/psql test')</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1296">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1327">
           Home</a>
         </li>
       </ul>

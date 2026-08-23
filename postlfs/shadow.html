@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1296">
+  <body class="blfs" id="blfs-r13.0-1327">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1296
+        "phrase">(systemd</span> Edition) - Version r13.0-1327
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1296">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1327">
           Home</a>
         </li>
       </ul>
@@ -71,9 +71,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.1 platform.</span>
           </p>
         </div>
         <h3>
@@ -158,8 +157,6 @@ sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD YESCRYPT@' \
     -e 's@/var/spool/mail@/var/mail@'                   \
     -e '/PATH=/{s@/sbin:@@;s@/bin:@@}'                  \
     -i etc/login.defs                                   &amp;&amp;
-
-sed -i '/stdio.h/i #include &lt;stdint.h&gt;' lib/find_new_sub_*ids.c &amp;&amp;
 
 ./configure --sysconfdir=/etc   \
             --disable-static    \
@@ -338,7 +335,7 @@ done</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11421" name="id11421"></a>Configuring the
+                    <a id="id11487" name="id11487"></a>Configuring the
                     /etc/pam.d/ Files
                   </h5>
                 </div>
@@ -369,7 +366,7 @@ done</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11432" name="id11432"></a>'login'
+                    <a id="id11498" name="id11498"></a>'login'
                   </h5>
                 </div>
               </div>
@@ -425,7 +422,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11437" name="id11437"></a>'passwd'
+                    <a id="id11503" name="id11503"></a>'passwd'
                   </h5>
                 </div>
               </div>
@@ -444,7 +441,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11442" name="id11442"></a>'su'
+                    <a id="id11508" name="id11508"></a>'su'
                   </h5>
                 </div>
               </div>
@@ -484,7 +481,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11447" name="id11447"></a>'chpasswd' and
+                    <a id="id11513" name="id11513"></a>'chpasswd' and
                     'newusers'
                   </h5>
                 </div>
@@ -512,7 +509,7 @@ sed -e s/chpasswd/newusers/ /etc/pam.d/chpasswd &gt;/etc/pam.d/newusers</kbd></p
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11452" name="id11452"></a>'chage'
+                    <a id="id11518" name="id11518"></a>'chage'
                   </h5>
                 </div>
               </div>
@@ -536,7 +533,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id11457" name="id11457"></a>Other shadow utilities
+                    <a id="id11523" name="id11523"></a>Other shadow utilities
                   </h5>
                 </div>
               </div>
@@ -673,7 +670,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1296">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1327">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1296">
+  <body class="blfs" id="blfs-r13.0-1327">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1296
+        "phrase">(systemd</span> Edition) - Version r13.0-1327
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1296">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1327">
           Home</a>
         </li>
       </ul>
@@ -127,8 +127,8 @@
           Recommended
         </h4>
         <p class="recommended">
-          <a class="xref" href="../pst/docbook-xsl.html" title=
-          "docbook-xsl-nons-1.79.2">docbook-xsl-nons-1.79.2</a>
+          <a class="xref" href="../pst/docbook-xsl-ns.html" title=
+          "docbook-xsl-ns-1.79.2">docbook-xsl-ns-1.79.2</a>
         </p>
         <h4>
           Optional
@@ -145,11 +145,6 @@
         <h2 class="sect2">
           Installation of AppStream
         </h2>
-        <p>
-          First, fix a problem when building man pages:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -i 's/xsl-ns/xsl/' docs/meson.build</kbd></pre>
         <p>
           Install <span class="application">AppStream</span> by running the
           following commands:
@@ -209,9 +204,9 @@ mv -v /usr/share/doc/appstream{,-1.1.6}</kbd></pre>
         </p>
         <p>
           <code class="option">-D man=false</code>: This switch disables
-          building the manpages. Add it if you do not have <a class="xref"
-          href="../pst/docbook-xsl.html" title=
-          "docbook-xsl-nons-1.79.2">docbook-xsl-nons-1.79.2</a> installed.
+          building the manpages. Add it if you do not have the recommend
+          dependency <a class="xref" href="../pst/docbook-xsl-ns.html" title=
+          "docbook-xsl-ns-1.79.2">docbook-xsl-ns-1.79.2</a> installed.
         </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
@@ -393,7 +388,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1296">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1327">
           Home</a>
         </li>
       </ul>
