@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1343">
+  <body class="blfs" id="blfs-r13.0-1357">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1343
+        "phrase">(systemd</span> Edition) - Version r13.0-1357
       </h4>
       <h3>
         Chapter&nbsp;8.&nbsp;Virtualization
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1343">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1357">
           Home</a>
         </li>
       </ul>
@@ -201,7 +201,8 @@
           <a class="ulink" href=
           "https://github.com/luigirizzo/netmap">netmap</a>, <a class="ulink"
           href="https://github.com/numactl/numactl">numactl</a>, <a class=
-          "ulink" href=
+          "ulink" href="https://pypi.org/project/pygdbmi/">pygdbmi</a> (for
+          tests), <a class="ulink" href=
           "https://github.com/linux-rdma/rdma-core">rdma-core</a>, <a class=
           "ulink" href=
           "https://github.com/SELinuxProject/selinux">SELinux</a>, <a class=
@@ -213,6 +214,18 @@
           <a class="ulink" href=
           "https://github.com/virtualsquare/vde-2">VDE</a>
         </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            An Internet connection is needed for some tests of this package.
+            The system certificate store may need to be set up with <a class=
+            "xref" href="make-ca.html" title=
+            "make-ca-1.16.1">make-ca-1.16.1</a> before testing this package.
+          </p>
+        </div>
         <h4>
           Optional (Runtime)
         </h4>
@@ -359,6 +372,7 @@ cd        build &amp;&amp;
              --localstatedir=/var     \
              --target-list=$QEMU_ARCH \
              --audio-drv-list=alsa    \
+             --disable-download       \
              --disable-pa             \
              --enable-slirp           \
              --docdir=/usr/share/doc/qemu-11.1.0 &amp;&amp;
@@ -370,7 +384,8 @@ make</kbd></pre>
           <span class="application">qemu</span> uses <span class=
           "command"><strong>ninja</strong></span> as a subprocess when
           building. To run the tests, issue: <span class=
-          "command"><strong>ninja test</strong></span>.
+          "command"><strong>ninja test</strong></span>. The test harness will
+          download the external Python module pygdbmi to satisfy some tests.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -421,6 +436,13 @@ chmod 4750 /usr/libexec/qemu-bridge-helper</kbd></pre>
           <em class="parameter"><code>--audio-drv-list=alsa</code></em>: This
           switch sets the audio driver to ALSA. See below for enabling other
           audio drivers.
+        </p>
+        <p>
+          <em class="parameter"><code>--disable-download</code></em>: This
+          switch prevents the <span class=
+          "command"><strong>configure</strong></span> script from downloading
+          Python modules via Internet (the copies shipped within the tarball
+          will be used instead).
         </p>
         <p>
           <em class="parameter"><code>--disable-pa</code></em>: even if
@@ -941,7 +963,7 @@ echo allow br0 &gt; /etc/qemu/bridge.conf</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1343">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1357">
           Home</a>
         </li>
       </ul>
