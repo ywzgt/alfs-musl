@@ -1,0 +1,42 @@
+diff --git a/wget-list b/wget-list
+index 5b7cf42994..9346752432 100644
+--- a/wget-list
++++ b/wget-list
+@@ -50,7 +50,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/efivar-39-upstream_fixes-1.pat
+ https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
+ https://www.bennewitz.com/bluefish/stable/source/bluefish-2.4.2.tar.bz2
+ https://ftpmirror.gnu.org/ed/ed-1.22.5.tar.lz
+-https://ftpmirror.gnu.org/emacs/emacs-30.2.tar.xz
++https://ftpmirror.gnu.org/emacs/emacs-31.1.tar.xz
+ https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
+ https://download.kde.org/stable/release-service/26.04.3/src/kate-26.04.3.tar.xz
+ https://archive.xfce.org/src/apps/mousepad/0.7/mousepad-0.7.0.tar.xz
+@@ -643,8 +643,8 @@ https://www.dovecot.org/releases/2.4/dovecot-2.4.4.tar.gz
+ https://ftp.exim.org/pub/exim/exim4/exim-4.99.4.tar.xz
+ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.6.tar.gz
+ https://git.openldap.org/openldap/openldap/-/archive/LMDB_1.0.1/openldap-LMDB_1.0.1.tar.bz2
+-https://downloads.mariadb.org/interstitial/mariadb-12.3.2/source/mariadb-12.3.2.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/mariadb-12.3.2-openssl4_fixes-1.patch
++https://downloads.mariadb.org/interstitial/mariadb-12.3.3/source/mariadb-12.3.3.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/mariadb-12.3.3-openssl4_fixes-1.patch
+ https://ftp.postgresql.org/pub/source/v18.6/postgresql-18.6.tar.bz2
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.7.0.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.7.0-consolidated-1.patch
+@@ -672,7 +672,7 @@ https://www.x.org/pub/individual/driver/xf86-input-libinput-1.5.0.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-synaptics-1.10.0.tar.xz
+ https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-1.2.4/xf86-input-wacom-1.2.4.tar.bz2
+ https://www.x.org/pub/individual/app/twm-1.0.13.1.tar.xz
+-https://invisible-mirror.net/archives/xterm/xterm-410.tgz
++https://invisible-mirror.net/archives/xterm/xterm-411.tgz
+ https://www.x.org/pub/individual/app/xclock-1.2.1.tar.xz
+ https://www.x.org/pub/individual/app/xinit-1.4.4.tar.xz
+ https://github.com/WayfireWM/wayfire/releases/download/v0.11.0/wayfire-0.11.0.tar.xz
+@@ -913,7 +913,7 @@ https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-26.2.
+ https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-dictionaries-26.2.5.2.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-help-26.2.5.2.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-translations-26.2.5.2.tar.xz
+-https://download.gnome.org/sources/epiphany/50/epiphany-50.5.tar.xz
++https://download.gnome.org/sources/epiphany/50/epiphany-50.6.tar.xz
+ https://download.kde.org/stable/release-service/26.04.3/src/falkon-26.04.3.tar.xz
+ https://archive.mozilla.org/pub/firefox/releases/153.1.0esr/source/firefox-153.1.0esr.source.tar.xz
+ https://archive.seamonkey-project.org/releases/2.53.24/source/seamonkey-2.53.24.source.tar.xz
