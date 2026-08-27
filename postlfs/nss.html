@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1357">
+  <body class="blfs" id="blfs-r13.0-1365">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1357
+        "phrase">(systemd</span> Edition) - Version r13.0-1365
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1357">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1365">
           Home</a>
         </li>
       </ul>
@@ -178,65 +178,9 @@ make BUILD_OPT=1                      \
   NSS_USE_SYSTEM_SQLITE=1             \
   $([ $(uname -m) = x86_64 ] &amp;&amp; echo USE_64=1)</kbd></pre>
         <p>
-          To run the tests, execute the following commands:
+          The test suite is known to hang indefintely so the BLFS editors
+          don't recommend to run it.
         </p>
-        <pre class="userinput"><kbd class="command">cd tests &amp;&amp;
-HOST=localhost DOMSUF=localdomain ./all.sh
-cd ../</kbd></pre>
-        <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
-          <h3>
-            Note
-          </h3>
-          <p>
-            Some information about the tests:
-          </p>
-          <div class="itemizedlist">
-            <ul class="compact">
-              <li class="listitem">
-                <p>
-                  HOST=localhost and DOMSUF=localdomain are required. Without
-                  these variables, a FQDN is required to be specified and
-                  this generic way should work for everyone, provided
-                  <code class="systemitem">localhost.localdomain</code> is
-                  defined <span class="phrase">by the <code class=
-                  "systemitem">myhostname</code> Name Service Switch module,
-                  as specified in <a class="ulink" href=
-                  "../../../../lfs/view/systemd/chapter08/glibc.html#conf-glibc">
-                  the LFS book</a>.</span>
-                </p>
-              </li>
-              <li class="listitem">
-                <p>
-                  The tests take a long time to run. If desired there is
-                  information in the all.sh script about running subsets of
-                  the total test suite.
-                </p>
-              </li>
-              <li class="listitem">
-                <p>
-                  When interrupting the tests, the test suite fails to spin
-                  down test servers that are run. This leads to an infinite
-                  loop in the tests where the test suite tries to kill a
-                  server that doesn't exist anymore because it pulls the
-                  wrong PID.
-                </p>
-              </li>
-              <li class="listitem">
-                <p>
-                  Test suite results (in HTML format!) can be found at
-                  ../../test_results/security/localhost.1/results.html
-                </p>
-              </li>
-              <li class="listitem">
-                <p>
-                  A few tests might fail on some Intel machines for unknown
-                  reasons.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
@@ -440,7 +384,7 @@ install -v -m644 Linux*/lib/pkgconfig/nss.pc  /usr/lib/pkgconfig</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1357">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1365">
           Home</a>
         </li>
       </ul>

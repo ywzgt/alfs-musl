@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Avahi-0.8
+      Avahi-0.9-rc5
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1357">
+  <body class="blfs" id="blfs-r13.0-1365">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1357
+        "phrase">(systemd</span> Edition) - Version r13.0-1365
       </h4>
       <h3>
         Chapter&nbsp;16.&nbsp;Networking Utilities
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1357">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1365">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="avahi" name="avahi"></a>Avahi-0.8
+      <a id="avahi" name="avahi"></a>Avahi-0.9-rc5
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -65,9 +65,19 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.1 platform.</span>
+          </p>
+        </div>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            Normally the BLFS editors prefer to not use release candidates
+            but the most recent "stable" release of this package was in 2020
+            and there are several security updates in this version.
           </p>
         </div>
         <h3>
@@ -78,28 +88,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz">
-                https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz</a>
+                "https://github.com/lathiat/avahi/archive/v0.9-rc5/avahi-0.9-rc5.tar.gz">
+                https://github.com/lathiat/avahi/archive/v0.9-rc5/avahi-0.9-rc5.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 229c6aa30674fc43c202b22c5f8c2be7
+                Download MD5 sum: d2b4bd13a4dba40a7b56c3da8bf50fd2
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 1.5 MB
+                Download size: 1.1 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 32 MB
+                Estimated disk space required: 30 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.3 SBU
+                Estimated build time: 0.2 SBU
               </p>
             </li>
           </ul>
@@ -112,8 +122,8 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.9-rc5-ipv6_race_condition_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.9-rc5-ipv6_race_condition_fix-1.patch</a>
               </p>
             </li>
           </ul>
@@ -178,21 +188,15 @@ useradd -c "Avahi Daemon Owner" -d /run/avahi-daemon -u 84 \
           use and multiple network adapters are present on the system:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../avahi-0.8-ipv6_race_condition_fix-1.patch</kbd></pre>
-        <p>
-          Fix a security vulnerability in <span class=
-          "command"><strong>avahi-daemon</strong></span>:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -i '426a if (events &amp; AVAHI_WATCH_HUP) { \
-client_free(c); \
-return; \
-}' avahi-daemon/simple-protocol.c</kbd></pre>
+        "command">patch -Np1 -i ../avahi-0.9-rc5-ipv6_race_condition_fix-1.patch</kbd></pre>
         <p>
           Install <span class="application">Avahi</span> by running the
           following commands:
         </p>
-        <pre class="userinput"><kbd class="command">./configure \
+        <pre class="userinput"><kbd class=
+        "command">auroreconf -fiv &amp;&amp;
+
+./configure \
     --prefix=/usr        \
     --sysconfdir=/etc    \
     --localstatedir=/var \
@@ -200,6 +204,7 @@ return; \
     --disable-libevent   \
     --disable-mono       \
     --disable-monodoc    \
+    --disable-manpages   \
     --disable-python     \
     --disable-qt3        \
     --disable-qt4        \
@@ -360,26 +365,23 @@ systemctl enable avahi-daemon</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">avahi-autoipd, avahi-browse,
-              avahi-browse-domains, avahi-daemon, avahi-discover-standalone,
-              avahi-dnsconfd, avahi-publish, avahi-publish-address,
-              avahi-publish-service, avahi-resolve, avahi-resolve-address,
-              avahi-resolve-host-name, avahi-set-host-name, bshell, bssh, and
-              bvnc</span>
+              <span class="segbody">avahi-browse, avahi-browse-domains,
+              avahi-discover-standalone, avahi-publish,
+              avahi-publish-address, avahi-publish-service, avahi-resolve,
+              avahi-resolve-address, avahi-resolve-host-name,
+              avahi-set-host-name, and bssh</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
               <span class="segbody">libavahi-client.so, libavahi-common.so,
-              libavahi-core.so, libavahi-glib.so, libavahi-gobject.so,
-              libavahi-libevent.so libavahi-ui-gtk3.so, libavahi-ui.so,
-              libdns_sd.so, and libhowl.so</span>
+              libavahi-core.so, libavahi-glib.so, libavahi-gobject.so, and
+              libavahi-ui-gtk3.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/etc/avahi/services,
-              /usr/include/{avahi-client,avahi-common, avahi-compat-howl,
-              avahi-compat-libdns_sd, avahi-core, avahi-glib, avahi-gobject,
-              avahi-libevent, avahi-ui}, /usr/lib/avahi,
+              /usr/include/{avahi-client, avahi-common, avahi-core,
+              avahi-glib, avahi-gobject, avahi-ui}, /usr/lib/avahi, and
               /usr/share/avahi</span>
             </div>
           </div>
@@ -394,20 +396,6 @@ systemctl enable avahi-daemon</kbd></pre>
               <col />
             </colgroup>
             <tbody>
-              <tr>
-                <td>
-                  <p>
-                    <a id="avahi-autoipd" name=
-                    "avahi-autoipd"></a><span class="term"><span class=
-                    "command"><strong>avahi-autoipd</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is a IPv4LL network address configuration daemon
-                  </p>
-                </td>
-              </tr>
               <tr>
                 <td>
                   <p>
@@ -441,21 +429,6 @@ systemctl enable avahi-daemon</kbd></pre>
               <tr>
                 <td>
                   <p>
-                    <a id="avahi-daemon" name="avahi-daemon"></a><span class=
-                    "term"><span class=
-                    "command"><strong>avahi-daemon</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is the <span class="application">Avahi</span> mDNS/DNS-SD
-                    daemon
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
                     <a id="avahi-discover-standalone" name=
                     "avahi-discover-standalone"></a><span class=
                     "term"><span class=
@@ -466,21 +439,6 @@ systemctl enable avahi-daemon</kbd></pre>
                   <p>
                     browses for mDNS/DNS-SD services using the <span class=
                     "application">Avahi</span> daemon
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="avahi-dnsconfd" name=
-                    "avahi-dnsconfd"></a><span class="term"><span class=
-                    "command"><strong>avahi-dnsconfd</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    is a Unicast DNS server from mDNS/DNS-SD configuration
-                    daemon
                   </p>
                 </td>
               </tr>
@@ -612,20 +570,6 @@ systemctl enable avahi-daemon</kbd></pre>
                   </p>
                 </td>
               </tr>
-              <tr>
-                <td>
-                  <p>
-                    <a id="bvnc" name="bvnc"></a><span class=
-                    "term"><span class=
-                    "command"><strong>bvnc</strong></span></span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    browses for VNC servers on the local network
-                  </p>
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
@@ -653,7 +597,7 @@ systemctl enable avahi-daemon</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1357">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1365">
           Home</a>
         </li>
       </ul>
