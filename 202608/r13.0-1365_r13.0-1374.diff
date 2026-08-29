@@ -1,0 +1,48 @@
+diff --git a/wget-list b/wget-list
+index 12dfffcfee..a361781862 100644
+--- a/wget-list
++++ b/wget-list
+@@ -59,7 +59,7 @@ https://github.com/vim/vim/archive/v9.2.0954/vim-9.2.0954.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.5.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.2.tar.xz
+-https://download.qemu.org/qemu-11.1.0.tar.xz
++https://download.qemu.org/qemu-11.1.1.tar.xz
+ https://github.com/abseil/abseil-cpp/releases/download/20260526.0/abseil-cpp-20260526.0.tar.gz
+ https://www.freedesktop.org/software/appstream/releases/AppStream-1.1.6.tar.xz
+ http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.4.tar.xz
+@@ -224,6 +224,7 @@ https://www.cairographics.org/releases/pixman-0.46.4.tar.gz
+ https://poppler.freedesktop.org/poppler-26.08.0.tar.xz
+ https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+ https://downloads.sourceforge.net/potrace/potrace-1.16.tar.gz
++https://github.com/qpdf/qpdf/releases/download/v12.4.0/qpdf-12.4.0.tar.gz
+ https://github.com/sass/sassc/archive/3.6.2/sassc-3.6.2.tar.gz
+ https://github.com/sass/libsass/archive/3.6.6/libsass-3.6.6.tar.gz
+ https://download.osgeo.org/libtiff/tiff-4.7.2.tar.gz
+@@ -233,7 +234,7 @@ https://github.com/asciidoctor/asciidoctor/archive/v2.0.26/asciidoctor-2.0.26.ta
+ https://downloads.sourceforge.net/bogofilter/bogofilter-1.2.5.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
+-https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.6.tar.gz
++https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.7.tar.gz
+ https://github.com/editorconfig/editorconfig-core-c/archive/v0.12.11/editorconfig-core-c-0.12.11.tar.gz
+ https://github.com/google/shaderc/archive/v2026.3/shaderc-2026.3.tar.gz
+ https://gitlab.com/graphviz/graphviz/-/archive/15.1.1/graphviz-15.1.1.tar.bz2
+@@ -919,7 +920,7 @@ https://archive.mozilla.org/pub/firefox/releases/153.1.0esr/source/firefox-153.1
+ https://archive.seamonkey-project.org/releases/2.53.24/source/seamonkey-2.53.24.source.tar.xz
+ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.5-libical_4_fixes-1.patch
+-https://feh.finalrewind.org/feh-3.12.2.tar.bz2
++https://feh.finalrewind.org/feh-3.12.3.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
+ https://github.com/freerdp/freerdp/archive/3.30.0/FreeRDP-3.30.0.tar.gz
+ https://download.gimp.org/gimp/v3.2/gimp-3.2.4.tar.xz
+@@ -1043,7 +1044,7 @@ https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10071/
+ https://downloads.sourceforge.net/gs-fonts/ghostscript-fonts-std-8.11.tar.gz
+ https://downloads.sourceforge.net/gs-fonts/gnu-gs-fonts-other-6.0.tar.gz
+ https://downloads.sourceforge.net/gimp-print/gutenprint-5.3.5.tar.xz
+-https://github.com/OpenPrinting/libcupsfilters/releases/download/2.2.1/libcupsfilters-2.2.1.tar.xz
++https://github.com/OpenPrinting/libcupsfilters/releases/download/2.1.1/libcupsfilters-2.1.1.tar.xz
+ https://github.com/OpenPrinting/libppd/releases/download/2.1.1/libppd-2.1.1.tar.xz
+ https://anduin.linuxfromscratch.org/BLFS/sane/sane-backends-1.4.0.tar.gz
+ https://download.gnome.org/sources/simple-scan/50/simple-scan-50.0.tar.xz
