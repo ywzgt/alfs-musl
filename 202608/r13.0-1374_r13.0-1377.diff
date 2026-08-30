@@ -1,0 +1,16 @@
+diff --git a/wget-list b/wget-list
+index a361781862..00d91ea20b 100644
+--- a/wget-list
++++ b/wget-list
+@@ -920,9 +920,9 @@ https://archive.mozilla.org/pub/firefox/releases/153.1.0esr/source/firefox-153.1
+ https://archive.seamonkey-project.org/releases/2.53.24/source/seamonkey-2.53.24.source.tar.xz
+ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.5-libical_4_fixes-1.patch
+-https://feh.finalrewind.org/feh-3.12.3.tar.bz2
++https://feh.finalrewind.org/feh-3.12.4.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
+-https://github.com/freerdp/freerdp/archive/3.30.0/FreeRDP-3.30.0.tar.gz
++https://github.com/freerdp/freerdp/archive/3.31.0/FreeRDP-3.31.0.tar.gz
+ https://download.gimp.org/gimp/v3.2/gimp-3.2.4.tar.xz
+ https://download.gimp.org/pub/gimp/help/gimp-help-3.0.2.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.8.1.tar.gz
