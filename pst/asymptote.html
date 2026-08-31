@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      asymptote-3.10
+      asymptote-3.14
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1379">
+  <body class="blfs" id="blfs-r13.0-1387">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1379
+        "phrase">(systemd</span> Edition) - Version r13.0-1387
       </h4>
       <h3>
         Chapter&nbsp;51.&nbsp;Typesetting
@@ -24,15 +24,15 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="texlive.html" title=
-          "texlive-20250308-source">Prev</a>
+          "texlive-20260301-source">Prev</a>
           <p>
-            texlive-20250308-source
+            texlive-20260301-source
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="biber.html" title="biber-2.21">Next</a>
+          <a accesskey="n" href="biber.html" title="biber-2.22">Next</a>
           <p>
-            biber-2.21
+            biber-2.22
           </p>
         </li>
         <li class="up">
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1379">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1387">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="asymptote" name="asymptote"></a>asymptote-3.10
+      <a id="asymptote" name="asymptote"></a>asymptote-3.14
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -68,9 +68,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.1 platform.</span>
           </p>
         </div>
         <h3>
@@ -81,30 +80,30 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://downloads.sourceforge.net/asymptote/asymptote-3.10.src.tgz">
-                https://downloads.sourceforge.net/asymptote/asymptote-3.10.src.tgz</a>
+                "https://downloads.sourceforge.net/asymptote/asymptote-3.14.src.tgz">
+                https://downloads.sourceforge.net/asymptote/asymptote-3.14.src.tgz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: b89cc85a4621fa4afedcb5e988c625c7
+                Download MD5 sum: 158921966b8be1049e933b5154774c66
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 25 MB
+                Download size: 27 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 335 MB (62 MB installed after
+                Estimated disk space required: 338 MB (55 MB installed after
                 overwriting files in $TEXLIVE_PREFIX/texmf-dist/, with all
                 the dependencies which are in BLFS)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.8 SBU (using parallelism=4)
+                Estimated build time: 0.9 SBU (using parallelism=4)
               </p>
             </li>
           </ul>
@@ -119,7 +118,7 @@
           <a class="xref" href="gs.html" title=
           "ghostscript-10.07.1">ghostscript-10.07.1</a> and <a class="xref"
           href="texlive.html" title=
-          "texlive-20250308-source">texlive-20250308</a>
+          "texlive-20260301-source">texlive-20260301</a>
         </p>
         <h4>
           Recommended
@@ -140,7 +139,7 @@
         </h4>
         <p class="recommended">
           <a class="xref" href="dvisvgm.html" title=
-          "dvisvgm-3.6">dvisvgm-3.6</a> to allow svg output
+          "dvisvgm-3.6.1">dvisvgm-3.6.1</a> to allow svg output
         </p>
         <h4>
           Optional
@@ -150,7 +149,10 @@
           "fftw-3.3.11">fftw-3.3.11</a>, <a class="xref" href=
           "../general/gsl.html" title="gsl-2.8">gsl-2.8</a>, <a class="xref"
           href="../general/libsigsegv.html" title=
-          "libsigsegv-2.15">libsigsegv-2.15</a>, <a class="ulink" href=
+          "libsigsegv-2.15">libsigsegv-2.15</a>, <a class="xref" href=
+          "../x/vulkan-loader.html" title=
+          "Vulkan-Loader-1.4.357.0">Vulkan-Loader-1.4.357.0</a>, <a class=
+          "ulink" href=
           "https://github.com/Tencent/rapidjson/releases/">rapidjson</a> to
           use <a class="ulink" href=
           "https://microsoft.github.io/language-server-protocol/implementors/tools/">
@@ -190,6 +192,11 @@
           </p>
         </div>
         <p>
+          First, fix a build error when both GL and Vulkan are disabled:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -i "/SHIMLIB.*asydir/d" Makefile.in</kbd></pre>
+        <p>
           Install <span class="application">asymptote</span> by running the
           following commands:
         </p>
@@ -203,7 +210,8 @@
             --libdir=$TEXLIVE_PREFIX/texmf-dist               \
             --mandir=$TEXLIVE_PREFIX/texmf-dist/doc/man       \
             --disable-lsp                                     \
-            --enable-gc=system                                \
+            --disable-vulkan                                  \
+            --disable-gl                                      \
             --with-latex=$TEXLIVE_PREFIX/texmf-dist/tex/latex \
             --with-context=$TEXLIVE_PREFIX/texmf-dist/tex/context/third &amp;&amp;
 
@@ -246,10 +254,22 @@ make</kbd></pre>
           have been installed.
         </p>
         <p>
-          <em class="parameter"><code>--enable-gc=system</code></em>: this
-          ensures that the system version of <code class=
-          "filename">libgc.so</code> will be used instead of the version
-          shipped with this package.
+          <em class="parameter"><code>--disable-vulkan
+          --disable-gl</code></em>: Building Vulkan or GL backends require
+          the GLFW package, and several other external libraries not in BLFS.
+        </p>
+        <p>
+          <em class="parameter"><code>--disable-lsp</code></em>: The Language
+          Server Protocol is enabled by default, with several third-party
+          sources included, but it does not build unless boost and rapidjson
+          have been installed.
+        </p>
+        <p>
+          <code class="option">--disable-gc</code>: there does not seem to be
+          a way to build asymptote against the system <code class=
+          "filename">libgc.so</code>. Garbage collection can be either
+          disabled with this option, or built using the the version shipped
+          with this package.
         </p>
         <p>
           <em class="parameter"><code>--with-latex=</code></em> <em class=
@@ -328,15 +348,15 @@ make</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="texlive.html" title=
-          "texlive-20250308-source">Prev</a>
+          "texlive-20260301-source">Prev</a>
           <p>
-            texlive-20250308-source
+            texlive-20260301-source
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="biber.html" title="biber-2.21">Next</a>
+          <a accesskey="n" href="biber.html" title="biber-2.22">Next</a>
           <p>
-            biber-2.21
+            biber-2.22
           </p>
         </li>
         <li class="up">
@@ -345,7 +365,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1379">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1387">
           Home</a>
         </li>
       </ul>

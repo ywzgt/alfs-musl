@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      biber-2.21
+      biber-2.22
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1379">
+  <body class="blfs" id="blfs-r13.0-1387">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1379
+        "phrase">(systemd</span> Edition) - Version r13.0-1387
       </h4>
       <h3>
         Chapter&nbsp;51.&nbsp;Typesetting
@@ -24,15 +24,15 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="asymptote.html" title=
-          "asymptote-3.10">Prev</a>
+          "asymptote-3.14">Prev</a>
           <p>
-            asymptote-3.10
+            asymptote-3.14
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="dvisvgm.html" title="dvisvgm-3.6">Next</a>
+          <a accesskey="n" href="dvisvgm.html" title="dvisvgm-3.6.1">Next</a>
           <p>
-            dvisvgm-3.6
+            dvisvgm-3.6.1
           </p>
         </li>
         <li class="up">
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1379">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1387">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="biber" name="biber"></a>biber-2.21
+      <a id="biber" name="biber"></a>biber-2.22
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -64,9 +64,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.1 platform.</span>
           </p>
         </div>
         <h3>
@@ -77,13 +76,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/plk/biber/archive/v2.21/biber-2.21.tar.gz">
-                https://github.com/plk/biber/archive/v2.21/biber-2.21.tar.gz</a>
+                "https://github.com/plk/biber/archive/refs/tags/v2.22/biber-2.22.tar.gz">
+                https://github.com/plk/biber/archive/refs/tags/v2.22/biber-2.22.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: abdbdb2aa0479e490d0d75eb8e35ad50
+                Download MD5 sum: a14ce888c04ab4047ff46490f8e00faf
               </p>
             </li>
             <li class="listitem">
@@ -114,7 +113,7 @@
             its perl dependencies are still present in <code class=
             "filename">/usr</code> and do not need to be rebuilt. However,
             biblatex installs in <code class=
-            "filename">/opt/texlive/2025</code> and does need to be
+            "filename">/opt/texlive/2026</code> and does need to be
             reinstalled.
           </p>
           <p>
@@ -144,6 +143,8 @@
           "Business::ISSN-1.008">Business-ISSN-1.008</a>, <a class="xref"
           href="../general/perl-modules.html#perl-class-accessor" title=
           "Class::Accessor-0.51">Class-Accessor-0.51</a>, <a class="xref"
+          href="../general/perl-deps.html#perl-config-autoconf" title=
+          "Config::AutoConf-0.320">Config-AutoConf-0.320</a>, <a class="xref"
           href="../general/perl-modules.html#perl-data-compare" title=
           "Data::Compare-1.29">Data-Compare-1.29</a>, <a class="xref" href=
           "../general/perl-modules.html#perl-data-dump" title=
@@ -162,7 +163,9 @@
           title="Encode::HanExtra-0.23">Encode-HanExtra-0.23</a>, <a class=
           "xref" href="../general/perl-modules.html#perl-encode-jis2k" title=
           "Encode::JIS2K-0.05">Encode-JIS2K-0.05</a>, <a class="xref" href=
-          "../general/perl-modules.html#perl-file-slurper" title=
+          "../general/perl-deps.html#perl-extutils-libbuilder" title=
+          "ExtUtils::LibBuilder-0.09">ExtUtils-LibBuilder-0.09</a>, <a class=
+          "xref" href="../general/perl-modules.html#perl-file-slurper" title=
           "File::Slurper-0.014">File-Slurper-0.014</a>, <a class="xref" href=
           "../general/perl-modules.html#perl-io-string" title=
           "IO::String-1.08">IO-String-1.08</a>, <a class="xref" href=
@@ -195,9 +198,7 @@
           "Text::CSV-2.06">Text-CSV-2.06</a>, <a class="xref" href=
           "../general/perl-modules.html#perl-text-roman" title=
           "Text::Roman-3.5">Text-Roman-3.5</a>, <a class="xref" href=
-          "../general/perl-modules.html#perl-unicode-collate" title=
-          "Unicode::Collate-1.31">Unicode-Collate-1.31</a>, <a class="xref"
-          href="../general/perl-modules.html#perl-unicode-linebreak" title=
+          "../general/perl-modules.html#perl-unicode-linebreak" title=
           "Unicode::LineBreak-2019.001">Unicode-LineBreak-2019.001</a>,
           <a class="xref" href=
           "../general/perl-modules.html#perl-xml-libxml-simple" title=
@@ -212,9 +213,11 @@
         </h4>
         <p class="recommended">
           <a class="xref" href="../general/perl-modules.html#perl-file-which"
-          title="File::Which-1.27">File-Which-1.27</a> and <a class="xref"
-          href="../general/perl-modules.html#perl-test-differences" title=
-          "Test::Differences-0.72">Test-Differences-0.72</a>
+          title="File::Which-1.27">File-Which-1.27</a>, <a class="xref" href=
+          "../general/perl-modules.html#perl-test-differences" title=
+          "Test::Differences-0.72">Test-Differences-0.72</a>, and <a class=
+          "xref" href="../general/perl-deps.html#perl-test-simple" title=
+          "Test::Simple-1.302222">Test-Simple-1.302222</a>
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -275,7 +278,7 @@
             <div class="seg">
               <strong class="segtitle">Installed Directory:</strong>
               <span class=
-              "segbody">/usr/lib/perl5/site_perl/5.*{,/&lt;arch&gt;-linux/auto}/Biber</span>
+              "segbody">/usr/lib/perl5/5.44/site_perl/Biber</span>
             </div>
           </div>
         </div>
@@ -312,15 +315,15 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="asymptote.html" title=
-          "asymptote-3.10">Prev</a>
+          "asymptote-3.14">Prev</a>
           <p>
-            asymptote-3.10
+            asymptote-3.14
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="dvisvgm.html" title="dvisvgm-3.6">Next</a>
+          <a accesskey="n" href="dvisvgm.html" title="dvisvgm-3.6.1">Next</a>
           <p>
-            dvisvgm-3.6
+            dvisvgm-3.6.1
           </p>
         </li>
         <li class="up">
@@ -329,7 +332,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1379">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1387">
           Home</a>
         </li>
       </ul>

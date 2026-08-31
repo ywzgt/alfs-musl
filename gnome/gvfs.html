@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1379">
+  <body class="blfs" id="blfs-r13.0-1387">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1379
+        "phrase">(systemd</span> Edition) - Version r13.0-1387
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1379">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1387">
           Home</a>
         </li>
       </ul>
@@ -200,7 +200,7 @@ meson setup               \
       -D smb=false        \
       -D dnssd=false      \
       -D goa=false        \
-      -D google=false     .. &amp;&amp;
+      ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
           The test suite requires <span class=
@@ -243,10 +243,9 @@ ninja</kbd></pre>
           These switches are required if the corresponding dependency is not
           installed. Remove those where you have installed the corresponding
           application and wish to use it with <span class=
-          "application">Gvfs</span>. The dnssd option requires avahi and both
-          goa and google require GNOME Online Accounts. The google option
-          also requires the libgdata package, which has been removed from
-          BLFS. The onedrive support requires the libmsgraph package.
+          "application">Gvfs</span>. The dnssd option requires avahi and goa
+          requires GNOME Online Accounts. The onedrive support requires the
+          libmsgraph package.
         </p>
         <p>
           <code class="option">-D cdda=false</code>: This switch is required
@@ -327,7 +326,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1379">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1387">
           Home</a>
         </li>
       </ul>
