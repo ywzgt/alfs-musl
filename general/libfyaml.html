@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1387">
+  <body class="blfs" id="blfs-r13.0-1389">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1387
+        "phrase">(systemd</span> Edition) - Version r13.0-1389
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1387">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1389">
           Home</a>
         </li>
       </ul>
@@ -118,10 +118,11 @@
         </h4>
         <p class="optional">
           <a class="xref" href="git.html" title="Git-2.55.0">git-2.55.0</a>,
-          <a class="xref" href="python-modules.html#sphinx" title=
-          "Sphinx-9.1.0">sphinx-9.1.0</a> and <a class="xref" href=
-          "python-modules.html#sphinx_rtd_theme" title=
-          "Sphinx_rtd_theme-3.1.0">sphinx_rtd_theme-3.1.0</a> (for
+          <a class="xref" href="llvm.html" title=
+          "LLVM-22.1.8">LLVM-22.1.8</a> (with Clang), <a class="xref" href=
+          "python-modules.html#sphinx" title="Sphinx-9.1.0">sphinx-9.1.0</a>
+          and <a class="xref" href="python-modules.html#sphinx_rtd_theme"
+          title="Sphinx_rtd_theme-3.1.0">sphinx_rtd_theme-3.1.0</a> (for
           documentation), <a class="ulink" href=
           "https://www.docker.com/">docker</a>, <a class="ulink" href=
           "https://jqlang.org/">jq</a>, and <a class="ulink" href=
@@ -150,7 +151,7 @@
           following commands:
         </p>
         <pre class="userinput"><kbd class=
-        "command">./configure --prefix=/usr --disable-static &amp;&amp;
+        "command">./configure --prefix=/usr --disable-static --without-libclang &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
@@ -168,6 +169,13 @@ make</kbd></pre>
         <p>
           <em class="parameter"><code>--disable-static</code></em>: This
           switch prevents installation of static versions of the libraries.
+        </p>
+        <p>
+          <em class="parameter"><code>--without-libclang</code></em>: This
+          option disables the use of the Clang library. As at now the Clang
+          library does not really provide any useful functionality for this
+          package, and enabling it would cause all packages using libfyaml to
+          be unnecessarily linked against the Clang library.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -257,7 +265,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1387">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1389">
           Home</a>
         </li>
       </ul>
