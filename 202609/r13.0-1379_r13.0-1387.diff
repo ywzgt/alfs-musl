@@ -1,0 +1,23 @@
+diff --git a/wget-list b/wget-list
+index 00d91ea20b..29d3ef63f8 100644
+--- a/wget-list
++++ b/wget-list
+@@ -1077,12 +1077,12 @@ https://www.mupdf.com/downloads/archive/mupdf-1.26.12-source.tar.gz
+ https://github.com/dov/paps/releases/download/v0.8.0/paps-0.8.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/paps-0.8.0-fmt_fix-1.patch
+ https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+-https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-source.tar.xz
+-https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-texmf.tar.xz
+-https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-extra.tar.xz
+-https://downloads.sourceforge.net/asymptote/asymptote-3.10.src.tgz
+-https://github.com/plk/biber/archive/v2.21/biber-2.21.tar.gz
+-https://github.com/mgieseki/dvisvgm/releases/download/3.6/dvisvgm-3.6.tar.gz
++https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2026/texlive-20260301-source.tar.xz
++https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2026/texlive-20260301-texmf.tar.xz
++https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2026/texlive-20260301-extra.tar.xz
++https://downloads.sourceforge.net/asymptote/asymptote-3.14.src.tgz
++https://github.com/plk/biber/archive/refs/tags/v2.22/biber-2.22.tar.gz
++https://github.com/mgieseki/dvisvgm/releases/download/3.6.1/dvisvgm-3.6.1.tar.gz
+ https://ctan.org/indexing/xindy-2.5.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
+ https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20251220.tar.xz
