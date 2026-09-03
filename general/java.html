@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.0-1392">
+  <body class="blfs" id="blfs-r13.1">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.0-1392
+        "phrase">(systemd</span> Edition) - Version r13.1
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -30,9 +30,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="openjdk.html" title=
-          "OpenJDK-21.0.10">Next</a>
+          "OpenJDK-21.0.12.1">Next</a>
           <p>
-            OpenJDK-21.0.10
+            OpenJDK-21.0.12.1
           </p>
         </li>
         <li class="up">
@@ -41,8 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1392">
-          Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1">Home</a>
         </li>
       </ul>
     </div>
@@ -121,9 +120,8 @@
             Note
           </h3>
           <p>
-            Development versions of BLFS may not build or run some packages
-            properly if LFS or dependencies have been updated since the most
-            recent stable versions of the books.
+            <span class="phrase">This package is known to build and work
+            properly using an LFS 13.1 platform.</span>
           </p>
         </div>
         <h3>
@@ -198,6 +196,17 @@
         <h2 class="sect2">
           Installation of the Java BinaryJDK
         </h2>
+        <div class="admon warning">
+          <img alt="[Warning]" src="../images/warning.png" />
+          <h3>
+            Warning
+          </h3>
+          <p>
+            This version of the Java binary is obsolete and contains security
+            flaws. It should only be used to build <a class="xref" href=
+            "openjdk.html" title="OpenJDK-21.0.12.1">OpenJDK-21.0.12.1</a>.
+          </p>
+        </div>
         <p>
           Begin by extracting the appropriate binary tarball for your
           architecture and changing to the extracted directory. Install the
@@ -233,9 +242,9 @@ chown -R root:root /opt/OpenJDK-21.0.10-bin</kbd></pre>
         </li>
         <li class="next">
           <a accesskey="n" href="openjdk.html" title=
-          "OpenJDK-21.0.10">Next</a>
+          "OpenJDK-21.0.12.1">Next</a>
           <p>
-            OpenJDK-21.0.10
+            OpenJDK-21.0.12.1
           </p>
         </li>
         <li class="up">
@@ -244,8 +253,7 @@ chown -R root:root /opt/OpenJDK-21.0.10-bin</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.0-1392">
-          Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1">Home</a>
         </li>
       </ul>
     </div>
