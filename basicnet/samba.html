@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1">
+  <body class="blfs" id="blfs-r13.1-38">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1
+        "phrase">(systemd</span> Edition) - Version r13.1-38
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -40,7 +40,8 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-38">
+          Home</a>
         </li>
       </ul>
     </div>
@@ -67,8 +68,9 @@
             Note
           </h3>
           <p>
-            <span class="phrase">This package is known to build and work
-            properly using an LFS 13.1 platform.</span>
+            Development versions of BLFS may not build or run some packages
+            properly if LFS or dependencies have been updated since the most
+            recent stable versions of the books.
           </p>
         </div>
         <h3>
@@ -127,7 +129,7 @@
         <p class="recommended">
           <a class="xref" href="../postlfs/fuse.html" title=
           "Fuse-3.18.2">Fuse-3.18.2</a>, <a class="xref" href=
-          "../postlfs/gpgme.html" title="gpgme-2.1.2">gpgme-2.1.2</a>,
+          "../postlfs/gpgme.html" title="gpgme-2.2.0">gpgme-2.2.0</a>,
           <a class="xref" href="../general/icu.html" title=
           "icu-78.3">ICU-78.3</a>, <a class="xref" href=
           "../general/jansson.html" title=
@@ -157,7 +159,7 @@
           SASL-2.1.28</a>, <a class="xref" href="../general/gdb.html" title=
           "GDB-17.2">GDB-17.2</a>, <a class="xref" href="../general/git.html"
           title="Git-2.55.0">git-2.55.0</a>, <a class="xref" href=
-          "../postlfs/gnupg.html" title="GnuPG-2.5.21">GnuPG-2.5.21</a>
+          "../postlfs/gnupg.html" title="GnuPG-2.5.22">GnuPG-2.5.22</a>
           (required for ADS and the test suite), <a class="xref" href=
           "../general/libaio.html" title="libaio-0.3.113">libaio-0.3.113</a>,
           <a class="xref" href="../general/libarchive.html" title=
@@ -165,13 +167,13 @@
           <a class="xref" href="../postlfs/libcap.html" title=
           "libcap-2.78 with PAM">libcap-2.78 with PAM</a>, <a class="xref"
           href="../general/libgcrypt.html" title=
-          "libgcrypt-1.12.2">libgcrypt-1.12.2</a>, <a class="xref" href=
+          "libgcrypt-1.12.3">libgcrypt-1.12.3</a>, <a class="xref" href=
           "libnsl.html" title="libnsl-2.0.1">libnsl-2.0.1</a>, <a class=
           "xref" href="../general/libunwind.html" title=
           "libunwind-1.8.3">libunwind-1.8.3</a>, <a class="xref" href=
           "../general/python-dependencies.html#markdown" title=
           "Markdown-3.10.2">Markdown-3.10.2</a>, <a class="xref" href=
-          "../postlfs/nss.html" title="NSS-3.126">nss-3.126</a>, <a class=
+          "../postlfs/nss.html" title="NSS-3.128">nss-3.128</a>, <a class=
           "xref" href="../general/popt.html" title="Popt-1.19">popt-1.19</a>,
           <a class="xref" href="../general/talloc.html" title=
           "Talloc-2.5.0">Talloc-2.5.0</a> (used by the test suite), <a class=
@@ -447,7 +449,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id54240" name="id54240"></a>Scenario 1: Minimal
+                    <a id="id53811" name="id53811"></a>Scenario 1: Minimal
                     Standalone Client-Only Installation
                   </h5>
                 </div>
@@ -498,7 +500,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id54265" name="id54265"></a>Scenario 2: Standalone
+                    <a id="id53836" name="id53836"></a>Scenario 2: Standalone
                     File/Print Server
                   </h5>
                 </div>
@@ -591,7 +593,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id54302" name="id54302"></a>Advanced Requirements
+                    <a id="id53873" name="id53873"></a>Advanced Requirements
                   </h5>
                 </div>
               </div>
@@ -612,7 +614,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id54307" name="id54307"></a>Guest account
+                    <a id="id53878" name="id53878"></a>Guest account
                   </h5>
                 </div>
               </div>
@@ -1585,7 +1587,8 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1">Home</a>
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-38">
+          Home</a>
         </li>
       </ul>
     </div>
