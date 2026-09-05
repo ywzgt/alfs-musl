@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Kea 3.0.2 DHCP Server
+      Kea 3.2.0 DHCP Server
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-38">
+  <body class="blfs" id="blfs-r13.1-50">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-38
+        "phrase">(systemd</span> Edition) - Version r13.1-50
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-38">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-50">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="kea" name="kea"></a>Kea 3.0.2 DHCP Server
+      <a id="kea" name="kea"></a>Kea 3.2.0 DHCP Server
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -59,6 +59,20 @@
           server programs for DHCP. This is the successor of the old ISC DHCP
           server which went out of support in December 2022.
         </p>
+        <div class="admon important">
+          <img alt="[Important]" src="../images/important.png" />
+          <h3>
+            Important
+          </h3>
+          <p>
+            This packages builds on a current LFS system but it has
+            <span class="bold"><strong>not</strong></span> been tested by the
+            LFS editors. To properly test it, the package has to be installed
+            on a server in a network where it is the only dhcp server. Then
+            another system on that independent network must request a DHCP IP
+            adddress from that server.
+          </p>
+        </div>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -78,28 +92,28 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://downloads.isc.org/isc/kea/3.0.2/kea-3.0.2.tar.xz">https://downloads.isc.org/isc/kea/3.0.2/kea-3.0.2.tar.xz</a>
+                "https://downloads.isc.org/isc/kea/3.2.0/kea-3.2.0.tar.xz">https://downloads.isc.org/isc/kea/3.2.0/kea-3.2.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: a673e95637b708b3b1926c696cdf168b
+                Download MD5 sum: 84f88fb0a9897e993ac7d414e1efb2bc
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 6.3 MB
+                Download size: 6.5 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 231 MB (47 MB installed; add
-                425 MB for tests)
+                Estimated disk space required: 254 MB (49 MB installed; add
+                535 MB for tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 6.4 SBU (with parallelism=4; add 17 SBU
+                Estimated build time: 3.8 SBU (with parallelism=4; add 17 SBU
                 for tests)
               </p>
             </li>
@@ -181,18 +195,7 @@
           Installation of ISC Kea DHCP Server
         </h2>
         <p>
-          First, apply a few fixes required for boost-1.92.0:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e "/asio_wrapper/a#include &lt;boost/asio/deadline_timer.hpp&gt;" \
-    -i src/lib/asiolink/interval_timer.cc                        \
-       src/lib/asiodns/io_fetch.cc                               \
-       src/lib/asiodns/tests/io_fetch_unittest.cc                &amp;&amp;
-sed -e "/lexical_cast.hpp/a #include &lt;boost/static_assert.hpp&gt;"  \
-    -i src/lib/log/logger_level_impl.cc                          \
-       src/lib/dns/rdataclass.cc</kbd></pre>
-        <p>
-          Also apply a fix for building with OpenSSL-4:
+          First, apply a fix for building with OpenSSL-4:
         </p>
         <pre class="userinput"><kbd class=
         "command">sed -e 's/^[ ]*\(::X509_NAME\)/const \1/' \
@@ -231,8 +234,8 @@ ninja</kbd></pre>
           configuration file:
         </p>
         <pre class="root"><kbd class=
-        "command">sed -e "s:\${prefix}/::" -i /usr/sbin/keactrl             &amp;&amp;
-sed -e "s:\${prefix}//etc:/etc:" -i /etc/kea/keactrl.conf</kbd></pre>
+        "command">sed -i "s:\${prefix}//etc:/etc:" /etc/kea/keactrl.conf &amp;&amp;
+sed -i "s:\${prefix}/::"         /usr/sbin/keactrl</kbd></pre>
         <p>
           Create some directories and fix their permission settings as the
           <code class="systemitem">root</code> user:
@@ -287,7 +290,7 @@ install -dm0750 /var/log/kea</kbd></pre>
         </p>
         <p>
           Consult the <a class="ulink" href=
-          "https://kea.readthedocs.io/en/kea-3.0.2/">Kea Administrator
+          "https://kea.readthedocs.io/en/kea-3.2.0/">Kea Administrator
           Reference Manual</a> for detailed information about the
           configuration of <span class="application">ISC Kea</span> as it is
           a quite capable system. The configuration shown below is a bare
@@ -664,9 +667,9 @@ EOF</kbd></pre>
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">keactrl, kea-admin, kea-ctrl-agent,
-              kea-dhcp4, kea-dhcp6, kea-dhcp-ddns, kea-lfc, kea-msg-compiler,
-              and kea-shell</span>
+              <span class="segbody">keactrl, kea-admin, kea-dhcp4, kea-dhcp6,
+              kea-dhcp-ddns, kea-lfc, kea-msg-compiler, kea-shell, and
+              perfdhcp</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
@@ -684,7 +687,7 @@ EOF</kbd></pre>
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/etc/kea, /run/kea, /usr/include/kea,
               /usr/lib/kea, /usr/lib/python3.14/site-packages/kea,
-              /usr/share/kea, /usr/share/doc/kea-3.0.2, /var/lib/kea, and
+              /usr/share/kea, /usr/share/doc/kea-3.2.0, /var/lib/kea, and
               /var/log/kea</span>
             </div>
           </div>
@@ -844,7 +847,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-38">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-50">
           Home</a>
         </li>
       </ul>
