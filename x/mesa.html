@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-50">
+  <body class="blfs" id="blfs-r13.1-61">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-50
+        "phrase">(systemd</span> Edition) - Version r13.1-61
       </h4>
       <h3>
         Chapter&nbsp;24.&nbsp;Graphical Environments
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-50">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-61">
           Home</a>
         </li>
       </ul>
@@ -196,7 +196,7 @@
             <li class="listitem">
               <p>
                 <a class="xref" href="../general/llvm.html" title=
-                "LLVM-22.1.8">LLVM-22.1.8</a> (required for the llvmpipe,
+                "LLVM-23.1.0">LLVM-23.1.0</a> (required for the llvmpipe,
                 r300, r600, and radeonsi drivers)
               </p>
             </li>
@@ -214,7 +214,7 @@
               <p>
                 <a class="xref" href="../general/spirv-llvm-translator.html"
                 title=
-                "SPIRV-LLVM-Translator-22.1.5">SPIRV-LLVM-Translator-22.1.5</a>
+                "SPIRV-LLVM-Translator-23.1.1">SPIRV-LLVM-Translator-23.1.1</a>
                 (required for the Intel iris gallium driver)
               </p>
             </li>
@@ -339,10 +339,6 @@
 "blue">D</span>irect Rendering Manager (XFree86 4.1.0 and higher DRI support) ---&gt;
                                                                       ...  [DRM]
 
-    # For r300 or r600:
-    &lt; /*/M&gt; <span class=
-"blue">A</span>TI Radeon                                              [DRM_RADEON]
-
     # For radeonsi:
     &lt; /*/M&gt; <span class=
 "blue">A</span>MD GPU                                                 [DRM_AMDGPU]
@@ -354,13 +350,25 @@
       [*]   <span class=
 "blue">A</span>MD DC - Enable new display engine                      [DRM_AMD_DC]
 
+    # For i915, crocus, or iris:
+    &lt; /*/M&gt; <span class=
+"blue">I</span>ntel 8xx/9xx/G3x/G4x/HD Graphics                         [DRM_I915]
+
     # For nouveau:
     &lt; /*/M&gt; N<span class=
 "blue">o</span>uveau (NVIDIA) cards                                 [DRM_NOUVEAU]
 
-    # For i915, crocus, or iris:
+    # For r300 or r600:
     &lt; /*/M&gt; <span class=
-"blue">I</span>ntel 8xx/9xx/G3x/G4x/HD Graphics                         [DRM_I915]
+"blue">A</span>TI Radeon                                              [DRM_RADEON]
+
+    # For llvmpipe or softpipe:
+    &lt; /*&gt;   <span class=
+"blue">V</span>irtual GEM provider                                      [DRM_VGEM]
+
+    # For svga:
+    &lt; /*/M&gt; <span class=
+"blue">D</span>RM driver for VMware Virtual GPU                       [DRM_VMWGFX]
 
     # For iris:
     &lt; /*/M&gt; <span class=
@@ -369,15 +377,7 @@
 "blue">E</span>nable display support                            [DRM_XE_DISPLAY]
     (*)       <span class=
 "blue">F</span>orce probe xe for selected Intel hardware IDs
-                                                       ...  [DRM_XE_FORCE_PROBE]
-
-    # For llvmpipe or softpipe:
-    &lt; /*&gt;   <span class=
-"blue">V</span>irtual GEM provider                                      [DRM_VGEM]
-
-    # For svga:
-    &lt; /*/M&gt; <span class=
-"blue">D</span>RM driver for VMware Virtual GPU                       [DRM_VMWGFX]</pre>
+                                                       ...  [DRM_XE_FORCE_PROBE]</pre>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -943,7 +943,7 @@ ninja test</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-50">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-61">
           Home</a>
         </li>
       </ul>

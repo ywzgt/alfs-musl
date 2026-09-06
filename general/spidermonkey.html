@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-50">
+  <body class="blfs" id="blfs-r13.1-61">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-50
+        "phrase">(systemd</span> Edition) - Version r13.1-61
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-50">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-61">
           Home</a>
         </li>
       </ul>
@@ -120,6 +120,13 @@
                 https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.14.0-python_3.14_fixes-1.patch</a>
               </p>
             </li>
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.14.0-rust_1_98-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.14.0-rust_1_98-1.patch</a>
+              </p>
+            </li>
           </ul>
         </div>
         <h3>
@@ -139,7 +146,7 @@
         </h4>
         <p class="recommended">
           <a class="xref" href="llvm.html" title=
-          "LLVM-22.1.8">LLVM-22.1.8</a> (with <span class=
+          "LLVM-23.1.0">LLVM-23.1.0</a> (with <span class=
           "application">Clang</span>, required for 32-bit systems without
           SSE2 capabilities)
         </p>
@@ -200,8 +207,37 @@
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../spidermonkey-140.14.0-python_3.14_fixes-1.patch</kbd></pre>
         <p>
-          Install <span class="application">SpiderMonkey</span> by running
-          the following commands:
+          Fix building this package with rustc 1.98 or newer:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../spidermonkey-140.14.0-rust_1_98-1.patch</kbd></pre>
+        <p>
+          The configuration of <span class="application">SpiderMonkey</span>
+          is accomplished by creating a <code class=
+          "filename">mozconfig</code> file containing the desired
+          configuration options. A default <code class=
+          "filename">mozconfig</code> is created below. To see the entire
+          list of available configuration options (and a brief description of
+          each), issue <span class="command"><strong>./mach configure --
+          --help | less</strong></span>. Create the file with the following
+          command:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">cat &gt; mozconfig &lt;&lt; "EOF"
+<code class="literal">ac_add_options --prefix=/usr
+ac_add_options --enable-project=js
+ac_add_options --disable-debug-symbols
+ac_add_options --disable-jemalloc
+ac_add_options --enable-readline
+ac_add_options --enable-rust-simd
+ac_add_options --with-intl-api
+ac_add_options --with-system-icu
+ac_add_options --with-system-zlib</code>
+EOF</kbd></pre>
+        <p>
+          Now invoke the Python <span class=
+          "command"><strong>mach</strong></span> script to compile
+          <span class="application">SpiderMonkey</span>:
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -219,38 +255,20 @@
           </p>
           <pre class="userinput"><kbd class=
           "command">mountpoint -q /dev/shm || mount -t tmpfs devshm /dev/shm</kbd></pre>
-          <p>
-            Compiling the C++ code respects $MAKEFLAGS and defaults to 'j1',
-            the rust code will use all processors.
-          </p>
         </div>
-        <pre class="userinput"><kbd class="command">mkdir obj &amp;&amp;
-cd    obj &amp;&amp;
-
-MOZBUILD_STATE_PATH=${PWD}/mozbuild          \
-../js/src/configure --prefix=/usr            \
-                    --disable-debug-symbols  \
-                    --disable-jemalloc       \
-                    --enable-readline        \
-                    --enable-rust-simd       \
-                    --with-intl-api          \
-                    --with-system-icu        \
-                    --with-system-zlib       &amp;&amp;
-make</kbd></pre>
+        <pre class="userinput"><kbd class=
+        "command">export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none &amp;&amp;
+export MOZBUILD_STATE_PATH=$(pwd)/mozbuild          &amp;&amp;
+./mach build</kbd></pre>
         <p>
           To run the SpiderMonkey test suite, issue:
         </p>
         <pre class="userinput"><kbd class=
-        "command">make -C js/src check-jstests \
-     JSTESTS_EXTRA_ARGS="--timeout 300 --wpt=disabled" | tee jstest.log</kbd></pre>
+        "command">./mach jstests</kbd></pre>
         <p>
           Because we are building with system ICU, a little over 100 tests,
           depending on ICU version, (out of a total of more than 50,000) are
-          known to fail. The list of failed tests can be extracted via
-          <span class="command"><strong>grep 'UNEXPECTED-FAIL'
-          jstest.log</strong></span>. Pass the <code class="option">-c</code>
-          option to <span class="command"><strong>grep</strong></span> if you
-          only want the total number of failed tests.
+          known to fail.
         </p>
         <p>
           The test suite is executed with all CPU cores available: even in a
@@ -264,7 +282,7 @@ make</kbd></pre>
           To run the JIT test suite, issue the following command:
         </p>
         <pre class="userinput"><kbd class=
-        "command">make -C js/src check-jit-test</kbd></pre>
+        "command">./mach jit-test</kbd></pre>
         <p>
           Like the SpiderMonkey test suite, the number of test jobs is same
           as the number of all CPU cores in the system even if a cgroup is
@@ -273,13 +291,13 @@ make</kbd></pre>
           CPU have multiple cores. Running the JIT test suite without enough
           memory may invoke the kernel OOM killer and cause stability issues.
           If you don't have enough system memory available, append
-          <code class="option">JITTEST_EXTRA_ARGS=-j<em class=
+          <code class="option">-j<em class=
           "replaceable"><code>N</code></em></code> to the command and replace
           <em class="replaceable"><code>N</code></em> with the number of test
           jobs your available system memory can hold. For example, if you
           have 15 GB system memory available and 4 CPU cores, append
-          <code class="option">JITTEST_EXTRA_ARGS=-j3</code> to run the test
-          suite with 3 parallel jobs so the memory usage won't exceed 12 GB.
+          <code class="option">-j3</code> to run the test suite with 3
+          parallel jobs so the memory usage won't exceed 12 GB.
         </p>
         <div class="admon caution">
           <img alt="[Caution]" src="../images/caution.png" />
@@ -298,10 +316,20 @@ make</kbd></pre>
           "command">rm -fv /usr/lib/libmozjs-140.so</kbd></pre>
         </div>
         <p>
-          Now, as the <code class="systemitem">root</code> user:
+          Install <span class="application">SpiderMonkey</span> by running
+          the following commands as the <code class="systemitem">root</code>
+          user:
         </p>
-        <pre class="root"><kbd class="command">make install &amp;&amp;
-rm -v /usr/lib/libjs_static.ajs &amp;&amp;
+        <pre class="root"><kbd class=
+        "command">MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none ./mach install</kbd></pre>
+        <p>
+          Still as the <code class="systemitem">root</code> user, remove a
+          useless and very large static library, and remove a buggy output of
+          the <span class="command"><strong>js140-config</strong></span>
+          script:
+        </p>
+        <pre class="root"><kbd class=
+        "command">rm -v /usr/lib/libjs_static.ajs &amp;&amp;
 sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js140-config</kbd></pre>
         <p>
           Still as the <code class="systemitem">root</code> user, fix an
@@ -309,6 +337,12 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js140-config</kbd></pre>
         </p>
         <pre class="root"><kbd class=
         "command">sed '$i#define XP_UNIX' -i /usr/include/mozjs-140/js-config.h</kbd></pre>
+        <p>
+          Empty the environment variables which were set above:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">unset MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE &amp;&amp;
+unset MOZBUILD_STATE_PATH</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -353,42 +387,27 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js140-config</kbd></pre>
           above libraries. These are required for stability.
         </p>
         <p>
-          <span class="command"><strong>rm -v
-          /usr/lib/libjs_static.ajs</strong></span>: Remove a large static
-          library which is not used by any BLFS package.
+          <span class="command"><strong>export CC=gcc</strong></span> and
+          <span class="command"><strong>export CXX=g++</strong></span>: BLFS
+          use to prefer to use gcc and g++ instead of upstream's defaults of
+          the <span class="application">clang</span> programs. With the
+          release of gcc-12 the build takes longer with gcc and g++,
+          primarily because of extra warnings, and is bigger. Put these two
+          commands into the <code class="filename">mozconfig</code> file if
+          you wish to continue to use gcc and g++. If you are building on a
+          32-bit system, also see below.
         </p>
         <p>
-          <span class="command"><strong>sed -i '/@NSPR_CFLAGS@/d'
-          /usr/bin/js140-config</strong></span>: Prevent <span class=
-          "command"><strong>js140-config</strong></span> from using buggy
-          CFLAGS.
-        </p>
-        <p>
-          <code class="option"><code class="envar">CC=gcc
-          CXX=g++</code></code>: BLFS used to prefer to use gcc and g++
-          instead of upstream's defaults of the <span class=
-          "application">clang</span> programs. With the release of gcc-12 the
-          build takes longer with gcc and g++, primarily because of extra
-          warnings, and is bigger. Pass these environment variables to the
-          configure script if you wish to continue to use gcc, g++ (by
-          exporting them and unset them after the installation, or simply
-          prepending them before the <span class=
-          "command"><strong>../js/src/configure</strong></span> command). If
-          you are building on a 32-bit system, also see below.
-        </p>
-        <p>
-          <code class="option"><code class="envar">CXXFLAGS="-msse2
-          -mfpmath=sse"</code></code>: Use SSE2 instead of 387 for
-          double-precision floating-point operations. It's needed by GCC to
-          satisfy the expectations of upstream (Mozilla) developers with
-          floating-point arithmetic. Use it if you are building this package
-          on a 32-bit system with GCC (if Clang is not installed or GCC is
-          explicitly specified). Note that this will cause SpiderMonkey to
-          crash on a processor without SSE2 capability. If you are running
-          the system on such an old processor, Clang is strictly needed. This
-          setting is not needed on 64-bit systems because all 64-bit x86
-          processors support SSE2 and the 64-bit compilers (both Clang and
-          GCC) use SSE2 by default.
+          <span class="command"><strong>export CXXFLAGS="$CXXFLAGS -msse2
+          -mfpmath=sse"</strong></span>: Use SSE2 instead of 387 for
+          double-precision floating-point operations. It's needed to satisfy
+          the expectations of upstream (Mozilla) developers with
+          floating-point arithmetic (meaning, a 32-bit processor lacking SSE2
+          is not capable to run this package). Add it to <code class=
+          "filename">mozconfig</code> if you are building this package on a
+          32-bit system with GCC. This setting is not needed with Clang,
+          neither with GCC on a 64-bit system because those configurations
+          have SSE2 enabled by default.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -491,7 +510,7 @@ sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js140-config</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-50">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-61">
           Home</a>
         </li>
       </ul>

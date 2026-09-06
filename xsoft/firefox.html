@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-50">
+  <body class="blfs" id="blfs-r13.1-61">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-50
+        "phrase">(systemd</span> Edition) - Version r13.1-61
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-50">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-61">
           Home</a>
         </li>
       </ul>
@@ -117,6 +117,20 @@
             </li>
           </ul>
         </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/firefox-153.2.0-clang_23_rust_1_98-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/firefox-153.2.0-clang_23_rust_1_98-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -174,7 +188,7 @@
           "libnotify-0.8.8">libnotify-0.8.8</a>, <a class="xref" href=
           "../general/libarchive.html" title=
           "libarchive-3.8.9">libarchive-3.8.9</a>, <a class="xref" href=
-          "../general/llvm.html" title="LLVM-22.1.8">LLVM-22.1.8</a> (with
+          "../general/llvm.html" title="LLVM-23.1.0">LLVM-23.1.0</a> (with
           clang, used for bindgen even if using gcc), <a class="xref" href=
           "../general/nodejs.html" title=
           "Node.js-24.20.0">nodejs-24.20.0</a>, <a class="xref" href=
@@ -358,6 +372,12 @@ mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir
 # firefox.
 MOZ_APP_REMOTINGNAME=firefox</code>
 EOF</kbd></pre>
+        <p>
+          Fix building this package with clang 23 or newer, or rustc 1.98 or
+          newer:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../firefox-153.2.0-clang_23_rust_1_98-1.patch</kbd></pre>
         <p>
           If the geolocation APIs are needed:
         </p>
@@ -682,7 +702,7 @@ ln -sfv /usr/lib/firefox/browser/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-50">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-61">
           Home</a>
         </li>
       </ul>

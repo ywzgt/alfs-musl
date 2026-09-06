@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-50">
+  <body class="blfs" id="blfs-r13.1-61">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-50
+        "phrase">(systemd</span> Edition) - Version r13.1-61
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-50">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-61">
           Home</a>
         </li>
       </ul>
@@ -60,21 +60,37 @@
             Note
           </h3>
           <p>
-            <a id="ntfs3-kernel" name="ntfs3-kernel"></a> A new read-write
-            driver for NTFS, called NTFS3, has been added into the Linux
-            kernel since the 5.15 release. The performance of NTFS3 is much
-            better than ntfs-3g. To enable NTFS3, enable the following
-            options in the kernel configuration and recompile the kernel if
-            necessary:
+            <a id="ntfs3-kernel" name="ntfs3-kernel"></a> As at Linux 7.1
+            there are two competing in-kernel NTFS read-write drivers, named
+            NTFS and NTFS3. Their performance is much better than ntfs-3g. As
+            some applications invoke <span class=
+            "command"><strong>mount</strong></span> with <code class=
+            "option">-t ntfs</code> but others may use <code class=
+            "option">-t ntfs3</code> instead (the latter is also the default
+            if no <code class="option">-t</code> options is passed), to make
+            both options work, enable both drivers:
           </p>
           <pre class="screen"><span class="blue">F</span>ile systems ---&gt;
   <span class="blue">D</span>OS/FAT/EXFAT/NT Filesystems ---&gt;
+    &lt;M&gt;   N<span class=
+"blue">T</span>FS file system support                                     [NTFS_FS]
     &lt;*/M&gt; N<span class=
-"blue">T</span>FS Read-Write file system support                         [NTFS3_FS]
-    # This makes the kernel use NTFS3 when the userspace requests the old
-    # read-only NTFS driver:
-    &lt;*/M&gt; N<span class=
-"blue">T</span>FS file system support                                     [NTFS_FS]</pre>
+"blue">T</span>FS Read-Write file system support                         [NTFS3_FS]</pre>
+          <p>
+            If you has select NTFS3 as a part of the main kernel image
+            (<code class="literal">*</code> instead of <code class=
+            "literal">M</code>), enabling NTFS (no matter as a module or as a
+            part of the main kernel image) will immediately demote NTFS3 to a
+            module.
+          </p>
+          <p>
+            Due to <a class="ulink" href=
+            "https://git.kernel.org/torvalds/c/35e4b60792cd">a bug in the
+            kernel configuration system</a>, as at Linux 7.1 NTFS3 is
+            rendered in the submenu of NTFS (different from the demonstration
+            above). Please note that it does not mean NTFS3 was an extension
+            of NTFS: they are two distinct drivers.
+          </p>
           <p>
             With the kernel support available, ntfs-3g is only needed if you
             need the utilities from it (for example, to create or check NTFS
@@ -598,7 +614,7 @@ ln -svf ntfs-3g.8 /usr/share/man/man8/mount.ntfs.8</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-50">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-61">
           Home</a>
         </li>
       </ul>

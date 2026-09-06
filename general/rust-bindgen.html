@@ -12,20 +12,20 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-50">
+  <body class="blfs" id="blfs-r13.1-61">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-50
+        "phrase">(systemd</span> Edition) - Version r13.1-61
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="rust.html" title="Rustc-1.97.1">Prev</a>
+          <a accesskey="p" href="rust.html" title="Rustc-1.98.1">Prev</a>
           <p>
-            Rustc-1.97.1
+            Rustc-1.98.1
           </p>
         </li>
         <li class="next">
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-50">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-61">
           Home</a>
         </li>
       </ul>
@@ -110,8 +110,8 @@
         </h4>
         <p class="required">
           <a class="xref" href="rust.html" title=
-          "Rustc-1.97.1">rustc-1.97.1</a> and <a class="xref" href=
-          "llvm.html" title="LLVM-22.1.8">LLVM-22.1.8</a> (with Clang,
+          "Rustc-1.98.1">rustc-1.98.1</a> and <a class="xref" href=
+          "llvm.html" title="LLVM-23.1.0">LLVM-23.1.0</a> (with Clang,
           runtime)
         </p>
         <div class="admon note">
@@ -139,12 +139,8 @@
         "command">cargo build --release</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>cargo
-          test --release</strong></span>. Four tests, <code class=
-          "filename">header_issue_544_stylo_creduce_2_hpp</code>,
-          <code class="filename">header_constified_enum_module_overflow_hpp</code>,
-          <code class="filename">header_typedef_pointer_overlap_h</code>, and
-          <code class="filename">header_nsbasehashtable_hpp</code>, are known
-          to fail.
+          test --release</strong></span>. Ten tests are known to fail with
+          LLVM 23 or newer.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -213,9 +209,9 @@ bindgen --generate-shell-completions zsh  \
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="rust.html" title="Rustc-1.97.1">Prev</a>
+          <a accesskey="p" href="rust.html" title="Rustc-1.98.1">Prev</a>
           <p>
-            Rustc-1.97.1
+            Rustc-1.98.1
           </p>
         </li>
         <li class="next">
@@ -230,7 +226,7 @@ bindgen --generate-shell-completions zsh  \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-50">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-61">
           Home</a>
         </li>
       </ul>
