@@ -1,0 +1,28 @@
+diff --git a/wget-list b/wget-list
+index 7ff1346e77..646e18f89a 100644
+--- a/wget-list
++++ b/wget-list
+@@ -720,7 +720,7 @@ https://download.qt.io/official_releases/qt/6.11/6.11.2/submodules/qtwebengine-e
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Headers/archive/vulkan-sdk-1.4.357.0/Vulkan-Headers-vulkan-sdk-1.4.357.0.tar.gz
+ https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.357.0/Vulkan-Loader-vulkan-sdk-1.4.357.0.tar.gz
+-https://webkitgtk.org/releases/webkitgtk-2.52.5.tar.xz
++https://webkitgtk.org/releases/webkitgtk-2.52.6.tar.xz
+ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.20.2/wlroots-0.20.2.tar.bz2
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.22.1/xdg-desktop-portal-1.22.1.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
+@@ -911,10 +911,10 @@ https://github.com/lxqt/qtermwidget/releases/download/2.4.0/qtermwidget-2.4.0.ta
+ https://github.com/lxqt/qterminal/releases/download/2.4.0/qterminal-2.4.0.tar.xz
+ https://github.com/lxqt/screengrab/releases/download/3.2.0/screengrab-3.2.0.tar.xz
+ https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.61.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-26.2.5.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-dictionaries-26.2.5.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-help-26.2.5.2.tar.xz
+-https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-translations-26.2.5.2.tar.xz
++https://download.documentfoundation.org/libreoffice/src/26.8.0/libreoffice-26.8.0.3.tar.xz
++https://download.documentfoundation.org/libreoffice/src/26.8.0/libreoffice-dictionaries-26.8.0.3.tar.xz
++https://download.documentfoundation.org/libreoffice/src/26.8.0/libreoffice-help-26.8.0.3.tar.xz
++https://download.documentfoundation.org/libreoffice/src/26.8.0/libreoffice-translations-26.8.0.3.tar.xz
+ https://download.gnome.org/sources/epiphany/50/epiphany-50.6.tar.xz
+ https://download.kde.org/stable/release-service/26.04.3/src/falkon-26.04.3.tar.xz
+ https://archive.mozilla.org/pub/firefox/releases/153.2.0esr/source/firefox-153.2.0esr.source.tar.xz
