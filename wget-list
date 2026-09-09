@@ -1,7 +1,7 @@
 https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20251204.tar.xz
 https://github.com/lfs-book/make-ca/archive/v1.16.1/make-ca-1.16.1.tar.gz
 https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.tar.xz
-https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.7.tar.xz
+https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.8.tar.xz
 https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.22.tar.bz2
@@ -49,7 +49,7 @@ https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/efivar-39-upstream_fixes-1.patch
 https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
 https://www.bennewitz.com/bluefish/stable/source/bluefish-2.4.2.tar.bz2
-https://ftpmirror.gnu.org/ed/ed-1.22.5.tar.lz
+https://ftpmirror.gnu.org/ed/ed-1.22.6.tar.lz
 https://ftpmirror.gnu.org/emacs/emacs-31.1.tar.xz
 https://downloads.sourceforge.net/joe-editor/joe-4.6.tar.gz
 https://download.kde.org/stable/release-service/26.04.3/src/kate-26.04.3.tar.xz
@@ -118,7 +118,7 @@ https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.8.1.tar.bz2
 https://github.com/cjlin1/liblinear/archive/v250/liblinear-250.tar.gz
 https://gitlab.freedesktop.org/mobile-broadband/libmbim/-/archive/1.34.0/libmbim-1.34.0.tar.gz
 https://github.com/linux-nvme/libnvme/archive/v1.16.2/libnvme-1.16.2.tar.gz
-https://github.com/rrthomas/libpaper/releases/download/v2.2.8/libpaper-2.2.8.tar.gz
+https://github.com/rrthomas/libpaper/releases/download/v2.3.0/libpaper-2.3.0.tar.gz
 https://github.com/flatpak/libportal/releases/download/0.9.1/libportal-0.9.1.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/libportal-0.9.1-qt6.9_fixes-1.patch
 https://github.com/libproxy/libproxy/archive/0.5.12/libproxy-0.5.12.tar.gz
@@ -144,7 +144,7 @@ https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.4.tar.xz
 https://www.w3.org/XML/Test/xmlts20130923.tar.gz
 https://github.com/hughsie/libxmlb/releases/download/0.3.29/libxmlb-0.3.29.tar.xz
 https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.45.tar.xz
-https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.19.1/libwacom-2.19.1.tar.xz
+https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.20.0/libwacom-2.20.0.tar.xz
 https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
 https://github.com/pantoniou/libfyaml/releases/download/v0.9.6/libfyaml-0.9.6.tar.gz
 https://github.com/log4cplus/log4cplus/releases/download/REL_2_2_0_1/log4cplus-2.2.0.1.tar.xz
@@ -162,7 +162,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.2-protobuf34_fi
 https://download.kde.org/stable/qca/2.3.12/qca-2.3.12.tar.xz
 https://github.com/danvratil/qcoro/archive/v0.13.0/qcoro-0.13.0.tar.gz
 https://github.com/xiph/rnnoise/releases/download/v0.2/rnnoise-0.2.tar.gz
-https://github.com/simdutf/simdutf/archive/v9.1.0/simdutf-9.1.0.tar.gz
+https://github.com/simdutf/simdutf/archive/v9.1.1/simdutf-9.1.1.tar.gz
 https://archive.mozilla.org/pub/firefox/releases/140.14.0esr/source/firefox-140.14.0esr.source.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.14.0-python_3.14_fixes-1.patch
 https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.14.0-rust_1_98-1.patch
@@ -185,7 +185,7 @@ https://downloads.sourceforge.net/freetype/freetype-2.14.3.tar.xz
 https://downloads.sourceforge.net/freetype/freetype-doc-2.14.3.tar.xz
 https://gitlab.freedesktop.org/api/v4/projects/890/packages/generic/fontconfig/2.18.3/fontconfig-2.18.3.tar.xz
 https://github.com/fribidi/fribidi/releases/download/v1.0.16/fribidi-1.0.16.tar.xz
-https://download.gimp.org/pub/gegl/0.4/gegl-0.4.70.tar.xz
+https://download.gimp.org/pub/gegl/0.4/gegl-0.4.72.tar.xz
 https://sourceforge.net/projects/giflib/files/giflib-6.1.3.tar.gz
 https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
 https://github.com/g-truc/glm/archive/1.0.3/glm-1.0.3.tar.gz
@@ -236,7 +236,7 @@ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-ut
 https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.7.tar.gz
 https://github.com/editorconfig/editorconfig-core-c/archive/v0.12.11/editorconfig-core-c-0.12.11.tar.gz
 https://github.com/google/shaderc/archive/v2026.3/shaderc-2026.3.tar.gz
-https://gitlab.com/graphviz/graphviz/-/archive/15.1.1/graphviz-15.1.1.tar.bz2
+https://gitlab.com/graphviz/graphviz/-/archive/16.0.0/graphviz-16.0.0.tar.bz2
 https://download.gnome.org/sources/gtk-doc/1.36/gtk-doc-1.36.1.tar.xz
 http://www.andre-simon.de/zip/highlight-4.21.tar.bz2
 https://github.com/ibus/ibus/archive/1.5.34/ibus-1.5.34.tar.gz
@@ -496,7 +496,7 @@ https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/html5lib-1.1-python_3.14_buildfix-1.patch
 https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.1.1.tar.gz
 https://files.pythonhosted.org/packages/source/M/Mako/mako-1.4.1.tar.gz
-https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.5.2.tar.gz
+https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.5.3.tar.gz
 https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.2.2.tar.gz
 https://github.com/encukou/py3c/archive/v1.4/py3c-1.4.tar.gz
 https://download.gnome.org/sources/pyatspi/2.58/pyatspi-2.58.2.tar.xz
@@ -579,7 +579,7 @@ https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.10/OpenJDK-21.0.10
 https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.10/OpenJDK-21.0.10+6-x86_64-bin.tar.xz
 https://github.com/openjdk/jdk21u/archive/jdk-21.0.12.1-ga.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.12.1/jtreg-8.2.1+1.tar.gz
-https://archive.apache.org/dist/ant/source/apache-ant-1.10.17-src.tar.xz
+https://archive.apache.org/dist/ant/source/apache-ant-1.10.18-src.tar.xz
 https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.7.tar.bz2
 https://www.ncftp.com/public_ftp/ncftp/ncftp-3.3.0-src.tar.gz
 https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
@@ -642,7 +642,7 @@ https://downloads.isc.org/isc/kea/3.2.0/kea-3.2.0.tar.xz
 https://github.com/proftpd/proftpd/archive/v1.3.9b/proftpd-1.3.9b.tar.gz
 https://www.dovecot.org/releases/2.4/dovecot-2.4.5.tar.gz
 https://downloads.exim.org/exim4/exim-4.100.tar.xz
-https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.6.tar.gz
+https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.7.tar.gz
 https://git.openldap.org/openldap/openldap/-/archive/LMDB_1.0.1/openldap-LMDB_1.0.1.tar.bz2
 https://downloads.mariadb.org/interstitial/mariadb-12.3.3/source/mariadb-12.3.3.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/mariadb-12.3.3-openssl4_fixes-1.patch
@@ -660,7 +660,7 @@ https://xcb.freedesktop.org/dist/xcb-util-0.4.1.tar.xz
 https://mesa.freedesktop.org/archive/mesa-26.1.7.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-5.patch
 https://www.x.org/pub/individual/data/xbitmaps-1.1.4.tar.xz
-https://invisible-mirror.net/archives/luit/luit-20250912.tgz
+https://invisible-mirror.net/archives/luit/luit-20260907.tgz
 https://www.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
 https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.48.tar.xz
 https://www.x.org/pub/individual/xserver/xwayland-24.1.13.tar.xz
@@ -724,7 +724,7 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.20.2/wlroots-0.20.2.t
 https://github.com/flatpak/xdg-desktop-portal/releases/download/1.22.1/xdg-desktop-portal-1.22.1.tar.xz
 https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
 https://github.com/emersion/xdg-desktop-portal-wlr/archive/v0.8.3/xdg-desktop-portal-wlr-0.8.3.tar.gz
-https://download.gnome.org/sources/gdm/50/gdm-50.2.tar.xz
+https://download.gnome.org/sources/gdm/50/gdm-50.3.tar.xz
 https://github.com/ubuntu/lightdm/archive/1.33.1/lightdm-1.33.1.tar.gz
 https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.9/lightdm-gtk-greeter-2.0.9.tar.gz
 https://github.com/sddm/sddm/archive/v0.21.0/sddm-0.21.0.tar.gz
@@ -838,7 +838,7 @@ https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.60.0/gnome-terminal-3.
 https://download.gnome.org/sources/gnome-weather/48/gnome-weather-48.0.tar.xz
 https://gitlab.gnome.org/GNOME/gucharmap/-/archive/17.0.2/gucharmap-17.0.2.tar.bz2
 https://www.unicode.org/Public/17.0.0/ucd/Unihan.zip
-https://download.gnome.org/sources/loupe/49/loupe-50.0.tar.xz
+https://download.gnome.org/sources/loupe/50/loupe-50.0.tar.xz
 https://download.gnome.org/sources/seahorse/47/seahorse-47.0.1.tar.xz
 https://download.gnome.org/sources/showtime/49/showtime-49.1.tar.xz
 https://download.gnome.org/sources/snapshot/50/snapshot-50.0.tar.xz
@@ -921,7 +921,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/firefox-153.2.0-clang_23_rust_
 https://archive.seamonkey-project.org/releases/2.53.24/source/seamonkey-2.53.24.source.tar.xz
 https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.5-libical_4_fixes-1.patch
-https://feh.finalrewind.org/feh-3.12.4.tar.bz2
+https://feh.finalrewind.org/feh-3.13.tar.bz2
 https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
 https://github.com/freerdp/freerdp/archive/3.31.1/FreeRDP-3.31.1.tar.gz
 https://download.gimp.org/gimp/v3.2/gimp-3.2.4.tar.xz
@@ -954,13 +954,13 @@ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
 https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
 https://github.com/dyne/frei0r/archive/v3.5.0/frei0r-3.5.0.tar.gz
 https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
-https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.6.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.28.6.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.28.6.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.28.6.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.28.6.tar.xz
-https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.28.6/gst-plugins-rs-gstreamer-1.28.6.tar.gz
-https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.28.6.tar.xz
+https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.7.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.28.7.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.28.7.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.28.7.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.28.7.tar.xz
+https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.28.7/gst-plugins-rs-gstreamer-1.28.7.tar.gz
+https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.28.7.tar.xz
 https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
 https://github.com/lfs-book/intel-media-driver/archive/v26.2.4/intel-media-driver-26.2.4.tar.gz
