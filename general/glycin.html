@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      glycin-2.1.5
+      glycin-2.2.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-113">
+  <body class="blfs" id="blfs-r13.1-126">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-113
+        "phrase">(systemd</span> Edition) - Version r13.1-126
       </h4>
       <h3>
         Chapter&nbsp;10.&nbsp;Graphics and Font Libraries
@@ -30,9 +30,9 @@
         </li>
         <li class="next">
           <a accesskey="n" href="glycin-gtk4.html" title=
-          "libglycin-gtk4 from glycin-2.1.5">Next</a>
+          "libglycin-gtk4 from glycin-2.2.0">Next</a>
           <p>
-            libglycin-gtk4 from glycin-2.1.5
+            libglycin-gtk4 from glycin-2.2.0
           </p>
         </li>
         <li class="up">
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-113">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-126">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="glycin" name="glycin"></a>glycin-2.1.5
+      <a id="glycin" name="glycin"></a>glycin-2.2.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,8 +77,8 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://download.gnome.org/sources/glycin/2.1/glycin-2.1.5.tar.xz">
-                https://download.gnome.org/sources/glycin/2.1/glycin-2.1.5.tar.xz</a>
+                "https://download.gnome.org/sources/glycin/2.2/glycin-2.2.0.tar.xz">
+                https://download.gnome.org/sources/glycin/2.2/glycin-2.2.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
@@ -93,14 +93,12 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 1.4 GB (with documentation,
-                add 1 GB for tests)
+                Estimated disk space required: 1.6 GB (with documentation)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 3.3 SBU (with documentation, add 2.5
-                SBU for tests)
+                Estimated build time: 2.9 SBU (with documentation)
               </p>
             </li>
           </ul>
@@ -114,8 +112,8 @@
               <p>
                 Recommended patch (required if installing Xorg into
                 <code class="filename">/opt</code>): <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.1.5-xorg_prefix-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.1.5-xorg_prefix-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.2.0-xorg_prefix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.2.0-xorg_prefix-1.patch</a>
               </p>
             </li>
           </ul>
@@ -167,7 +165,7 @@
         <p class="optional">
           <a class="xref" href="python-modules.html#gi-docgen" title=
           "Gi-DocGen-2026.1">Gi-DocGen-2026.1</a>, <a class="xref" href=
-          "../x/gtk4.html" title="GTK-4.22.4">GTK-4.22.4</a> (for the test
+          "../x/gtk4.html" title="GTK-4.22.5">GTK-4.22.5</a> (for the test
           suite), and <a class="ulink" href=
           "https://libopenraw.freedesktop.org/">libopenraw</a>
         </p>
@@ -188,14 +186,7 @@
           before building glycin):
         </p>
         <pre class="userinput"><kbd class="command">cargo vendor &amp;&amp;
-patch -Np1 -i ../glycin-2.1.5-xorg_prefix-1.patch</kbd></pre>
-        <p>
-          Fix a build error when a system <span class=
-          "application">libglycin</span> is not yet installed:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e "s/get_option('libglycin-gtk4')/(&amp; or get_option('glycin-thumbnailer'))/" \
-    -i meson.build</kbd></pre>
+patch -Np1 -i ../glycin-2.2.0-xorg_prefix-1.patch</kbd></pre>
         <p>
           Install <span class="application">glycin</span> by running the
           following commands:
@@ -221,11 +212,7 @@ ninja</kbd></pre>
 meson configure -D capi_docs=true &amp;&amp;
 ninja</kbd></pre>
         <p>
-          To test the results, ensure <a class="xref" href="../x/gtk4.html"
-          title="GTK-4.22.4">GTK-4.22.4</a> is installed, then issue:
-          <span class="command"><strong>meson configure -D tests=true
-          &amp;&amp; ninja test</strong></span>. One test is known to fail
-          with shared-mime-info-2.5.1.
+          Tests are not recommneded due to missing test files.
         </p>
         <p>
           Now as the <code class="systemitem">root</code> user:
@@ -241,8 +228,8 @@ ninja</kbd></pre>
           parameter disables the build of <code class=
           "systemitem">libglycin-gtk4</code>. This library will be built
           separately as <a class="xref" href="glycin-gtk4.html" title=
-          "libglycin-gtk4 from glycin-2.1.5">libglycin-gtk4 from
-          glycin-2.1.5</a>, to avoid a circular dependency.
+          "libglycin-gtk4 from glycin-2.2.0">libglycin-gtk4 from
+          glycin-2.2.0</a>, to avoid a circular dependency.
         </p>
         <p>
           <code class="option">-D glycin-loaders=...</code>: Use this option
@@ -281,7 +268,7 @@ ninja</kbd></pre>
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/glycin-2,
               /usr/libexec/glycin-loaders, /usr/share/glycin-loaders, and
-              optionally /usr/share/doc/glycin-2.1.5</span>
+              optionally /usr/share/doc/glycin-2.2.0</span>
             </div>
           </div>
         </div>
@@ -340,9 +327,9 @@ ninja</kbd></pre>
         </li>
         <li class="next">
           <a accesskey="n" href="glycin-gtk4.html" title=
-          "libglycin-gtk4 from glycin-2.1.5">Next</a>
+          "libglycin-gtk4 from glycin-2.2.0">Next</a>
           <p>
-            libglycin-gtk4 from glycin-2.1.5
+            libglycin-gtk4 from glycin-2.2.0
           </p>
         </li>
         <li class="up">
@@ -351,7 +338,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-113">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-126">
           Home</a>
         </li>
       </ul>
