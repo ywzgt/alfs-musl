@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index 7a94daf417..5e62d7d3d0 100644
+--- a/wget-list
++++ b/wget-list
+@@ -135,7 +135,7 @@ https://www.mirrorservice.org/sites/ftp.i-scream.org/pub/i-scream/libstatgrab/li
+ https://ftpmirror.gnu.org/libtasn1/libtasn1-4.21.0.tar.gz
+ https://ftpmirror.gnu.org/libunistring/libunistring-1.4.2.tar.xz
+ https://github.com/libunwind/libunwind/releases/download/v1.8.3/libunwind-1.8.3.tar.gz
+-https://lttng.org/files/urcu/userspace-rcu-0.15.6.tar.bz2
++https://lttng.org/files/urcu/userspace-rcu-0.15.7.tar.bz2
+ https://github.com/libusb/libusb/releases/download/v1.0.30/libusb-1.0.30.tar.bz2
+ https://dist.libuv.org/dist/v1.52.1/libuv-v1.52.1.tar.gz
+ https://github.com/lfs-book/libxkbcommon/archive/v1.13.2/libxkbcommon-1.13.2.tar.gz
+@@ -235,7 +235,7 @@ https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+ https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
+ https://downloads.sourceforge.net/dos2unix/dos2unix-7.5.7.tar.gz
+ https://github.com/editorconfig/editorconfig-core-c/archive/v0.12.11/editorconfig-core-c-0.12.11.tar.gz
+-https://github.com/google/shaderc/archive/v2026.3/shaderc-2026.3.tar.gz
++https://github.com/google/shaderc/archive/v2026.4/shaderc-2026.4.tar.gz
+ https://gitlab.com/graphviz/graphviz/-/archive/16.1.0/graphviz-16.1.0.tar.bz2
+ https://download.gnome.org/sources/gtk-doc/1.36/gtk-doc-1.36.1.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.21.tar.bz2
