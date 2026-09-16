@@ -1,0 +1,51 @@
+diff --git a/wget-list b/wget-list
+index 1d454b189a..53c07624b0 100644
+--- a/wget-list
++++ b/wget-list
+@@ -79,7 +79,7 @@ https://libopenraw.freedesktop.org/download/exempi-2.6.6.tar.xz
+ https://github.com/fastfloat/fast_float/archive/v8.2.10/fast_float-8.2.10.tar.gz
+ https://www.fftw.org/fftw-3.3.11.tar.gz
+ https://github.com/fmtlib/fmt/archive/12.2.0/fmt-12.2.0.tar.gz
+-https://download.gnome.org/sources/glib/2.88/glib-2.88.3.tar.xz
++https://download.gnome.org/sources/glib/2.90/glib-2.90.0.tar.xz
+ https://download.gnome.org/sources/gobject-introspection/1.86/gobject-introspection-1.86.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
+ https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.10.tar.xz
+@@ -606,7 +606,7 @@ https://www.wireshark.org/download/src/all-versions/wireshark-4.6.8.tar.xz
+ https://github.com/c-ares/c-ares/releases/download/v1.34.8/c-ares-1.34.8.tar.gz
+ https://curl.se/download/curl-8.22.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.8.2/geoclue-2.8.2.tar.bz2
+-https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.1.tar.xz
++https://download.gnome.org/sources/glib-networking/2.90/glib-networking-2.90.0.tar.xz
+ https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.3.0/kdsoap-2.3.0.tar.gz
+ https://download.kde.org/stable/kdsoap-ws-discovery-client/kdsoap-ws-discovery-client-0.4.0.tar.xz
+ https://www.nlnetlabs.nl/downloads/ldns/ldns-1.9.2.tar.gz
+@@ -622,7 +622,7 @@ https://github.com/rockdaboot/libpsl/releases/download/0.23.3/libpsl-0.23.3.tar.
+ https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.9.4/libslirp-v4.9.4.tar.bz2
+ https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/libsoup-3.6.6-upstream_fixes-1.patch
+-https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.7.tar.bz2
++https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.8.tar.bz2
+ https://notroj.github.io/neon/neon-0.37.1.tar.gz
+ https://github.com/nghttp2/nghttp2/releases/download/v1.70.0/nghttp2-1.70.0.tar.xz
+ https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.4/rpcsvc-proto-1.4.4.tar.xz
+@@ -693,7 +693,7 @@ https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
+ https://download.gnome.org/sources/goffice/0.10/goffice-0.10.61.tar.xz
+ https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
+ https://download.gnome.org/sources/gtk/3.24/gtk-3.24.52.tar.xz
+-https://download.gnome.org/sources/gtk/4.22/gtk-4.22.5.tar.xz
++https://download.gnome.org/sources/gtk/4.24/gtk-4.24.0.tar.xz
+ https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.11.tar.xz
+ https://download.gnome.org/sources/gtkmm/4.22/gtkmm-4.22.0.tar.xz
+ https://download.gnome.org/sources/gtk-vnc/1.5/gtk-vnc-1.5.0.tar.xz
+@@ -916,8 +916,8 @@ https://download.documentfoundation.org/libreoffice/src/26.8.0/libreoffice-help-
+ https://download.documentfoundation.org/libreoffice/src/26.8.0/libreoffice-translations-26.8.0.3.tar.xz
+ https://download.gnome.org/sources/epiphany/50/epiphany-50.6.tar.xz
+ https://download.kde.org/stable/release-service/26.04.3/src/falkon-26.04.3.tar.xz
+-https://archive.mozilla.org/pub/firefox/releases/153.2.0esr/source/firefox-153.2.0esr.source.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-153.2.0-clang_23_rust_1_98-1.patch
++https://archive.mozilla.org/pub/firefox/releases/153.3.0esr/source/firefox-153.3.0esr.source.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/firefox-153.3.0-clang_23_rust_1_98-1.patch
+ https://archive.seamonkey-project.org/releases/2.53.24/source/seamonkey-2.53.24.source.tar.xz
+ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.5-libical_4_fixes-1.patch
