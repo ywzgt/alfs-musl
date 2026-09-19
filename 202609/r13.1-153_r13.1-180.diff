@@ -1,0 +1,129 @@
+diff --git a/wget-list b/wget-list
+index 0c0c13f0d1..eb58f2af7d 100644
+--- a/wget-list
++++ b/wget-list
+@@ -28,7 +28,7 @@ https://github.com/polkit-org/polkit/archive/127/polkit-127.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch
+ https://github.com/shadow-maint/shadow/releases/download/4.20.2/shadow-4.20.2.tar.xz
+-https://www.stunnel.org/downloads/archive/5.x/stunnel-5.80.tar.gz
++https://www.stunnel.org/downloads/archive/5.x/stunnel-5.81.tar.gz
+ https://www.sudo.ws/dist/sudo-1.9.17p2.tar.gz
+ https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+ https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v7.1.tar.xz
+@@ -150,7 +150,7 @@ https://github.com/pantoniou/libfyaml/releases/download/v0.9.6/libfyaml-0.9.6.ta
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_2_0_1/log4cplus-2.2.0.1.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
+-https://nodejs.org/dist/v26.8.2/node-v26.8.2.tar.xz
++https://nodejs.org/dist/v26.9.0/node-v26.9.0.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.40/src/nspr-4.40.tar.gz
+ https://github.com/AcademySoftwareFoundation/OpenTimelineIO/archive/v0.18.1/OpenTimelineIO-0.18.1.tar.gz
+@@ -679,7 +679,7 @@ https://www.x.org/pub/individual/app/xinit-1.4.4.tar.xz
+ https://github.com/WayfireWM/wayfire/releases/download/v0.11.0/wayfire-0.11.0.tar.xz
+ https://github.com/WayfireWM/wayfire-plugins-extra/releases/download/v0.11.2/wayfire-plugins-extra-0.11.2.tar.xz
+ https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.5.tar.xz
+-https://download.gnome.org/sources/at-spi2-core/2.60/at-spi2-core-2.60.6.tar.xz
++https://download.gnome.org/sources/at-spi2-core/2.62/at-spi2-core-2.62.0.1.tar.xz
+ https://www.cairographics.org/releases/cairo-1.18.4.tar.xz
+ https://www.cairographics.org/releases/cairomm-1.14.6.tar.xz
+ https://www.cairographics.org/releases/cairomm-1.18.1.tar.xz
+@@ -704,7 +704,7 @@ https://downloads.sourceforge.net/enlightenment/imlib2-1.12.7.tar.xz
+ https://github.com/ksnip/kColorPicker/archive/v0.3.1/kColorPicker-0.3.1.tar.gz
+ https://github.com/ksnip/kImageAnnotator/archive/v0.7.2/kImageAnnotator-0.7.2.tar.gz
+ https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz
+-https://download.gnome.org/sources/libadwaita/1.9/libadwaita-1.9.3.tar.xz
++https://download.gnome.org/sources/libadwaita/1.10/libadwaita-1.10.0.tar.xz
+ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.6.0/libei-1.6.0.tar.bz2
+ https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.3.tar.xz
+ https://dri.freedesktop.org/libdrm/libdrm-2.4.134.tar.xz
+@@ -713,7 +713,7 @@ https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.8.tar.xz
+ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+ https://download.gnome.org/sources/pango/1.58/pango-1.58.2.tar.xz
+ https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.5.tar.xz
+-https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.2.tar.xz
++https://download.gnome.org/sources/pangomm/2.56/pangomm-2.58.0.tar.xz
+ https://download.qt.io/archive/qt/6.11/6.11.2/single/qt-everywhere-src-6.11.2.tar.xz
+ https://download.qt.io/official_releases/qt/6.11/6.11.2/submodules/qtwebengine-everywhere-src-6.11.2.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+@@ -732,7 +732,7 @@ https://downloads.sourceforge.net/fluxbox/fluxbox-1.3.7.tar.xz
+ https://github.com/ice-wm/icewm/archive/4.1.0/icewm-4.1.0.tar.gz
+ http://openbox.org/dist/openbox/openbox-3.6.1.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openbox-3.6.1-py3-1.patch
+-https://download.gnome.org/sources/adwaita-icon-theme/50/adwaita-icon-theme-50.0.tar.xz
++https://download.gnome.org/sources/adwaita-icon-theme/51/adwaita-icon-theme-51.0.tar.xz
+ https://download.kde.org/stable/frameworks/6.29/breeze-icons-6.29.0.tar.xz
+ https://download.gnome.org/sources/gnome-icon-theme/3.12/gnome-icon-theme-3.12.0.tar.xz
+ https://download.gnome.org/sources/gnome-icon-theme-extras/3.12/gnome-icon-theme-extras-3.12.0.tar.xz
+@@ -776,17 +776,17 @@ https://github.com/corrosion-rs/corrosion/archive/v0.6.1/corrosion-0.6.1.tar.gz
+ https://github.com/DanBloomberg/leptonica/releases/download/1.87.0/leptonica-1.87.0.tar.gz
+ https://github.com/tesseract-ocr/tesseract/archive/5.5.3/tesseract-5.5.3.tar.gz
+ https://download.gnome.org/sources/gcr/3.41/gcr-3.41.2.tar.xz
+-https://download.gnome.org/sources/gcr/4.4/gcr-4.4.0.1.tar.xz
+-https://download.gnome.org/sources/gsettings-desktop-schemas/50/gsettings-desktop-schemas-50.1.tar.xz
+-https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.7.tar.xz
++https://download.gnome.org/sources/gcr/4.4/gcr-4.4.1.tar.xz
++https://download.gnome.org/sources/gsettings-desktop-schemas/51/gsettings-desktop-schemas-51.0.tar.xz
++https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.8.2.tar.xz
+ https://download.gnome.org/sources/librest/0.10/librest-0.10.2.tar.xz
+ https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.7.tar.xz
+ https://gitlab.gnome.org/GNOME/vte/-/archive/0.84.1/vte-0.84.1.tar.gz
+ https://download.gnome.org/sources/yelp-xsl/49/yelp-xsl-49.0.tar.xz
+ https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+-https://download.gnome.org/sources/gjs/1.88/gjs-1.88.1.tar.xz
++https://download.gnome.org/sources/gjs/1.90/gjs-1.90.0.tar.xz
+ https://download.gnome.org/sources/gnome-autoar/0.5/gnome-autoar-0.5.2.tar.xz
+-https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.5.tar.xz
++https://download.gnome.org/sources/gnome-desktop/51/gnome-desktop-51.0.tar.xz
+ https://download.gnome.org/sources/gnome-menus/3.38/gnome-menus-3.38.1.tar.xz
+ https://download.gnome.org/sources/gnome-online-accounts/3.58/gnome-online-accounts-3.58.1.tar.xz
+ https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz
+@@ -794,24 +794,24 @@ https://download.gnome.org/sources/libgtop/2.41/libgtop-2.41.3.tar.xz
+ https://download.gnome.org/sources/gweather-locations/2026/gweather-locations-2026.2.tar.xz
+ https://download.gnome.org/sources/libgweather/4.6/libgweather-4.6.0.tar.xz
+ https://download.gnome.org/sources/libpeas/1.38/libpeas-1.38.1.tar.xz
+-https://download.gnome.org/sources/libshumate/1.6/libshumate-1.6.3.tar.xz
+-https://download.gnome.org/sources/evolution-data-server/3.60/evolution-data-server-3.60.2.tar.xz
+-https://download.gnome.org/sources/tinysparql/3.11/tinysparql-3.11.1.tar.xz
+-https://download.gnome.org/sources/localsearch/3.11/localsearch-3.11.2.tar.xz
++https://download.gnome.org/sources/libshumate/1.7/libshumate-1.7.0.tar.xz
++https://download.gnome.org/sources/evolution-data-server/3.62/evolution-data-server-3.62.0.tar.xz
++https://download.gnome.org/sources/tinysparql/3.12/tinysparql-3.12.0.tar.xz
++https://download.gnome.org/sources/localsearch/3.12/localsearch-3.12.0.tar.xz
+ https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz
+-https://download.gnome.org/sources/xdg-desktop-portal-gnome/50/xdg-desktop-portal-gnome-50.0.tar.xz
+-https://download.gnome.org/sources/dconf/0.49/dconf-0.49.0.tar.xz
++https://download.gnome.org/sources/xdg-desktop-portal-gnome/51/xdg-desktop-portal-gnome-51.0.tar.xz
++https://download.gnome.org/sources/dconf/51/dconf-51.0.tar.xz
+ https://download.gnome.org/sources/dconf-editor/49/dconf-editor-49.0.tar.xz
+-https://download.gnome.org/sources/gnome-backgrounds/50/gnome-backgrounds-50.0.tar.xz
+-https://download.gnome.org/sources/gvfs/1.60/gvfs-1.60.2.tar.xz
++https://download.gnome.org/sources/gnome-backgrounds/51/gnome-backgrounds-51.0.tar.xz
++https://download.gnome.org/sources/gvfs/1.62/gvfs-1.62.0.tar.xz
+ https://download.gnome.org/sources/gexiv2/0.16/gexiv2-0.16.2.tar.xz
+-https://download.gnome.org/sources/nautilus/50/nautilus-50.3.1.tar.xz
++https://download.gnome.org/sources/nautilus/51/nautilus-51.0.1.tar.xz
+ https://download.gnome.org/sources/gnome-bluetooth/47/gnome-bluetooth-47.2.tar.xz
+-https://download.gnome.org/sources/gnome-keyring/50/gnome-keyring-50.0.tar.xz
+-https://download.gnome.org/sources/gnome-settings-daemon/50/gnome-settings-daemon-50.1.tar.xz
+-https://download.gnome.org/sources/tecla/50/tecla-50.0.tar.xz
+-https://download.gnome.org/sources/gnome-control-center/50/gnome-control-center-50.4.tar.xz
+-https://download.gnome.org/sources/mutter/50/mutter-50.4.tar.xz
++https://download.gnome.org/sources/gnome-keyring/51/gnome-keyring-51.1.tar.xz
++https://download.gnome.org/sources/gnome-settings-daemon/51/gnome-settings-daemon-51.0.tar.xz
++https://download.gnome.org/sources/tecla/51/tecla-51.0.tar.xz
++https://download.gnome.org/sources/gnome-control-center/51/gnome-control-center-51.0.tar.xz
++https://download.gnome.org/sources/mutter/51/mutter-51.0.tar.xz
+ https://download.gnome.org/sources/gnome-shell/50/gnome-shell-50.4.tar.xz
+ https://download.gnome.org/sources/gnome-shell-extensions/50/gnome-shell-extensions-50.3.tar.xz
+ https://download.gnome.org/sources/gnome-session/50/gnome-session-50.1.tar.xz
+@@ -921,7 +921,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/firefox-153.3.0-clang_23_rust_
+ https://archive.seamonkey-project.org/releases/2.53.24/source/seamonkey-2.53.24.source.tar.xz
+ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.5-libical_4_fixes-1.patch
+-https://feh.finalrewind.org/feh-3.13.tar.bz2
++https://feh.finalrewind.org/feh-3.13.1.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
+ https://github.com/freerdp/freerdp/archive/3.31.1/FreeRDP-3.31.1.tar.gz
+ https://download.gimp.org/gimp/v3.2/gimp-3.2.6.tar.xz
