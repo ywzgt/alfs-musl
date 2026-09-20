@@ -1,0 +1,118 @@
+diff --git a/wget-list b/wget-list
+index eb58f2af7d..d70dfd09d7 100644
+--- a/wget-list
++++ b/wget-list
+@@ -156,7 +156,7 @@ https://archive.mozilla.org/pub/nspr/releases/v4.40/src/nspr-4.40.tar.gz
+ https://github.com/AcademySoftwareFoundation/OpenTimelineIO/archive/v0.18.1/OpenTimelineIO-0.18.1.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/OpenTimelineIO/OpenTimelineIO-rapidjson-20260513.tar.xz
+ https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
+-https://github.com/protocolbuffers/protobuf/releases/download/v36.1/protobuf-36.1.tar.gz
++https://github.com/protocolbuffers/protobuf/releases/download/v36.2/protobuf-36.2.tar.gz
+ https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.2-protobuf34_fix-1.patch
+ https://download.kde.org/stable/qca/2.3.12/qca-2.3.12.tar.xz
+@@ -240,7 +240,7 @@ https://gitlab.com/graphviz/graphviz/-/archive/16.1.0/graphviz-16.1.0.tar.bz2
+ https://download.gnome.org/sources/gtk-doc/1.36/gtk-doc-1.36.1.tar.xz
+ http://www.andre-simon.de/zip/highlight-4.21.tar.bz2
+ https://github.com/ibus/ibus/archive/1.5.34/ibus-1.5.34.tar.gz
+-https://www.unicode.org/Public/17.0.0/ucd/UCD.zip
++https://www.unicode.org/Public/18.0.0/ucd/UCD.zip
+ https://www.imagemagick.org/archive/releases/ImageMagick-7.1.2-13.tar.xz
+ http://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
+ https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.20.1/iso-codes-v4.20.1.tar.gz
+@@ -668,7 +668,7 @@ https://www.x.org/pub/individual/xserver/xorg-server-21.1.24.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.24-tearfree_backport-2.patch
+ https://www.freedesktop.org/software/libevdev/libevdev-1.13.7.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-evdev-2.11.0.tar.xz
+-https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.31.3/libinput-1.31.3.tar.gz
++https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.32.0/libinput-1.32.0.tar.gz
+ https://www.x.org/pub/individual/driver/xf86-input-libinput-1.5.0.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-synaptics-1.10.0.tar.xz
+ https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-1.2.4/xf86-input-wacom-1.2.4.tar.bz2
+@@ -713,7 +713,7 @@ https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.8.tar.xz
+ https://people.freedesktop.org/~svu/libxklavier-5.4.tar.bz2
+ https://download.gnome.org/sources/pango/1.58/pango-1.58.2.tar.xz
+ https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.5.tar.xz
+-https://download.gnome.org/sources/pangomm/2.56/pangomm-2.58.0.tar.xz
++https://download.gnome.org/sources/pangomm/2.58/pangomm-2.58.0.tar.xz
+ https://download.qt.io/archive/qt/6.11/6.11.2/single/qt-everywhere-src-6.11.2.tar.xz
+ https://download.qt.io/official_releases/qt/6.11/6.11.2/submodules/qtwebengine-everywhere-src-6.11.2.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+@@ -724,7 +724,7 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.20.2/wlroots-0.20.2.t
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.22.1/xdg-desktop-portal-1.22.1.tar.xz
+ https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
+ https://github.com/emersion/xdg-desktop-portal-wlr/archive/v0.8.3/xdg-desktop-portal-wlr-0.8.3.tar.gz
+-https://download.gnome.org/sources/gdm/50/gdm-50.3.tar.xz
++https://download.gnome.org/sources/gdm/51/gdm-51.0.tar.xz
+ https://github.com/ubuntu/lightdm/archive/1.33.1/lightdm-1.33.1.tar.gz
+ https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.9/lightdm-gtk-greeter-2.0.9.tar.gz
+ https://github.com/sddm/sddm/archive/v0.21.0/sddm-0.21.0.tar.gz
+@@ -812,36 +812,37 @@ https://download.gnome.org/sources/gnome-settings-daemon/51/gnome-settings-daemo
+ https://download.gnome.org/sources/tecla/51/tecla-51.0.tar.xz
+ https://download.gnome.org/sources/gnome-control-center/51/gnome-control-center-51.0.tar.xz
+ https://download.gnome.org/sources/mutter/51/mutter-51.0.tar.xz
+-https://download.gnome.org/sources/gnome-shell/50/gnome-shell-50.4.tar.xz
+-https://download.gnome.org/sources/gnome-shell-extensions/50/gnome-shell-extensions-50.3.tar.xz
+-https://download.gnome.org/sources/gnome-session/50/gnome-session-50.1.tar.xz
++https://download.gnome.org/sources/gnome-shell/51/gnome-shell-51.0.tar.xz
++https://download.gnome.org/sources/gnome-shell-extensions/51/gnome-shell-extensions-51.0.tar.xz
++https://download.gnome.org/sources/gnome-session/51/gnome-session-51.0.tar.xz
+ https://download.gnome.org/sources/gnome-tweaks/49/gnome-tweaks-49.0.tar.xz
+-https://download.gnome.org/sources/gnome-user-docs/50/gnome-user-docs-50.4.tar.xz
++https://download.gnome.org/sources/gnome-user-docs/51/gnome-user-docs-51.0.tar.xz
+ https://download.gnome.org/sources/yelp/49/yelp-49.2.tar.xz
+ https://download.gnome.org/sources/baobab/50/baobab-50.0.tar.xz
+ https://download.gnome.org/sources/brasero/3.12/brasero-3.12.3.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/brasero-3.12.3-upstream_fixes-1.patch
+ https://download.gnome.org/sources/evince/48/evince-48.4.tar.xz
+-https://download.gnome.org/sources/evolution/3.60/evolution-3.60.2.tar.xz
++https://download.gnome.org/sources/evolution/3.62/evolution-3.62.0.tar.xz
+ https://download.gnome.org/sources/file-roller/44/file-roller-44.7.tar.xz
+-https://download.gnome.org/sources/gnome-calculator/50/gnome-calculator-50.0.tar.xz
++https://download.gnome.org/sources/gnome-calculator/50/gnome-calculator-51.0.tar.xz
+ https://download.gnome.org/sources/gnome-color-manager/3.36/gnome-color-manager-3.36.2.tar.xz
+-https://download.gnome.org/sources/gnome-connections/50/gnome-connections-50.0.tar.xz
++https://download.gnome.org/sources/gnome-connections/51/gnome-connections-51.0.tar.xz
+ https://download.gnome.org/sources/gnome-disk-utility/46/gnome-disk-utility-46.1.tar.xz
+ https://download.gnome.org/sources/gnome-logs/45/gnome-logs-45.0.tar.xz
+-https://download.gnome.org/sources/gnome-maps/50/gnome-maps-50.4.tar.xz
++https://download.gnome.org/sources/gnome-maps/51/gnome-maps-51.0.tar.xz
+ https://download.gnome.org/sources/gnome-nettool/42/gnome-nettool-42.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gnome-nettool-42.0-ping_and_netstat_fixes-1.patch
+ https://download.gnome.org/sources/gnome-power-manager/50/gnome-power-manager-50.0.tar.xz
+-https://download.gnome.org/sources/gnome-system-monitor/50/gnome-system-monitor-50.0.tar.xz
++https://download.gnome.org/sources/gnome-system-monitor/51/gnome-system-monitor-51.0.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/gnome-system-monitor-51.0-selinux_fix-1.patch
+ https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.60.0/gnome-terminal-3.60.0.tar.gz
+ https://download.gnome.org/sources/gnome-weather/48/gnome-weather-48.0.tar.xz
+-https://gitlab.gnome.org/GNOME/gucharmap/-/archive/17.0.2/gucharmap-17.0.2.tar.bz2
+-https://www.unicode.org/Public/17.0.0/ucd/Unihan.zip
+-https://download.gnome.org/sources/loupe/50/loupe-50.0.tar.xz
++https://gitlab.gnome.org/GNOME/gucharmap/-/archive/18.0.0/gucharmap-18.0.0.tar.bz2
++https://www.unicode.org/Public/18.0.0/ucd/Unihan.zip
++https://download.gnome.org/sources/loupe/51/loupe-51.0.tar.xz
+ https://download.gnome.org/sources/seahorse/47/seahorse-47.0.1.tar.xz
+ https://download.gnome.org/sources/showtime/49/showtime-49.1.tar.xz
+-https://download.gnome.org/sources/snapshot/50/snapshot-50.0.tar.xz
++https://download.gnome.org/sources/snapshot/51/snapshot-51.0.tar.xz
+ https://archive.xfce.org/src/xfce/libxfce4util/4.20/libxfce4util-4.20.1.tar.bz2
+ https://archive.xfce.org/src/xfce/xfconf/4.20/xfconf-4.20.0.tar.bz2
+ https://archive.xfce.org/src/xfce/libxfce4ui/4.20/libxfce4ui-4.20.2.tar.bz2
+@@ -914,7 +915,7 @@ https://download.documentfoundation.org/libreoffice/src/26.8.0/libreoffice-26.8.
+ https://download.documentfoundation.org/libreoffice/src/26.8.0/libreoffice-dictionaries-26.8.0.3.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/26.8.0/libreoffice-help-26.8.0.3.tar.xz
+ https://download.documentfoundation.org/libreoffice/src/26.8.0/libreoffice-translations-26.8.0.3.tar.xz
+-https://download.gnome.org/sources/epiphany/50/epiphany-50.6.tar.xz
++https://download.gnome.org/sources/epiphany/51/epiphany-51.0.tar.xz
+ https://download.kde.org/stable/release-service/26.04.3/src/falkon-26.04.3.tar.xz
+ https://archive.mozilla.org/pub/firefox/releases/153.3.0esr/source/firefox-153.3.0esr.source.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/firefox-153.3.0-clang_23_rust_1_98-1.patch
+@@ -994,7 +995,7 @@ https://github.com/webmproject/libvpx/archive/v1.17.0/libvpx-1.17.0.tar.gz
+ https://github.com/mltframework/mlt/releases/download/v7.40.0/mlt-7.40.0.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/mlt-7.40.0-ffmpeg-9.0.patch
+ https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz
+-https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.8/pipewire-1.6.8.tar.bz2
++https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.9/pipewire-1.6.9.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.2.tar.xz
+ https://www.libsdl.org/release/sdl2-compat-2.32.72.tar.gz
