@@ -44,7 +44,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.10-convenience-1.
 https://ftpmirror.gnu.org/parted/parted-3.7.tar.xz
 https://downloads.sourceforge.net/smartmontools/smartmontools-7.5.tar.gz
 https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.6/sshfs-3.7.6.tar.xz
-https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-7.1.1.tar.xz
+https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-7.2.0.tar.xz
 https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/efivar-39-upstream_fixes-1.patch
 https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
@@ -189,8 +189,8 @@ https://download.gimp.org/pub/gegl/0.4/gegl-0.4.72.tar.xz
 https://sourceforge.net/projects/giflib/files/giflib-6.1.3.tar.gz
 https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
 https://github.com/g-truc/glm/archive/1.0.3/glm-1.0.3.tar.gz
-https://download.gnome.org/sources/glycin/2.2/glycin-2.2.0.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.2.0-xorg_prefix-1.patch
+https://download.gnome.org/sources/glycin/2.2/glycin-2.2.1.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.2.1-xorg_prefix-1.patch
 https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
 https://github.com/harfbuzz/harfbuzz/releases/download/14.4.0/harfbuzz-14.4.0.tar.xz
 https://github.com/AcademySoftwareFoundation/Imath/releases/download/v3.2.3/Imath-3.2.3.tar.gz
@@ -209,7 +209,7 @@ https://downloads.sourceforge.net/libpng/libpng-1.6.58.tar.xz
 https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.58-apng.patch.gz
 https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
 https://www.libraw.org/data/LibRaw-0.22.2.tar.gz
-https://download.gnome.org/sources/librsvg/2.63/librsvg-2.63.0.tar.xz
+https://download.gnome.org/sources/librsvg/2.63/librsvg-2.63.2.tar.xz
 https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
 https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz
 https://github.com/mypaint/mypaint-brushes/releases/download/v2.0.2/mypaint-brushes-2.0.2.tar.xz
@@ -596,7 +596,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_s
 https://w1.fi/releases/wpa_supplicant-2.12.tar.gz
 https://github.com/lathiat/avahi/archive/v0.9-rc5/avahi-0.9-rc5.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.9-rc5-ipv6_race_condition_fix-1.patch
-https://ftp.isc.org/isc/bind9/9.20.27/bind-9.20.27.tar.xz
+https://ftp.isc.org/isc/bind9/9.20.29/bind-9.20.29.tar.xz
 https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.58.1/downloads/NetworkManager-1.58.1.tar.xz
 https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
 https://nmap.org/dist/nmap-7.991.tar.bz2
@@ -641,7 +641,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.68-openssl4_fixes-1.
 https://downloads.isc.org/isc/kea/3.2.0/kea-3.2.0.tar.xz
 https://github.com/proftpd/proftpd/archive/v1.3.9b/proftpd-1.3.9b.tar.gz
 https://www.dovecot.org/releases/2.4/dovecot-2.4.5.tar.gz
-https://downloads.exim.org/exim4/exim-4.100.tar.xz
+https://downloads.exim.org/exim4/exim-4.100.1.tar.xz
 https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.7.tar.gz
 https://git.openldap.org/openldap/openldap/-/archive/LMDB_1.0.2/openldap-LMDB_1.0.2.tar.bz2
 https://downloads.mariadb.org/interstitial/mariadb-12.3.3/source/mariadb-12.3.3.tar.gz
@@ -699,7 +699,7 @@ https://download.gnome.org/sources/gtkmm/4.24/gtkmm-4.24.0.tar.xz
 https://download.gnome.org/sources/gtk-vnc/1.5/gtk-vnc-1.5.0.tar.xz
 https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz
 https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz
-https://download.gnome.org/sources/gtksourceview/5.20/gtksourceview-5.20.0.tar.xz
+https://download.gnome.org/sources/gtksourceview/5.22/gtksourceview-5.22.0.tar.xz
 https://downloads.sourceforge.net/enlightenment/imlib2-1.12.7.tar.xz
 https://github.com/ksnip/kColorPicker/archive/v0.3.1/kColorPicker-0.3.1.tar.gz
 https://github.com/ksnip/kImageAnnotator/archive/v0.7.2/kImageAnnotator-0.7.2.tar.gz
@@ -719,7 +719,7 @@ https://download.qt.io/official_releases/qt/6.11/6.11.2/submodules/qtwebengine-e
 https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
 https://github.com/KhronosGroup/Vulkan-Headers/archive/vulkan-sdk-1.4.357.0/Vulkan-Headers-vulkan-sdk-1.4.357.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.357.0/Vulkan-Loader-vulkan-sdk-1.4.357.0.tar.gz
-https://webkitgtk.org/releases/webkitgtk-2.52.6.tar.xz
+https://webkitgtk.org/releases/webkitgtk-2.54.0.tar.xz
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.20.2/wlroots-0.20.2.tar.bz2
 https://github.com/flatpak/xdg-desktop-portal/releases/download/1.22.1/xdg-desktop-portal-1.22.1.tar.xz
 https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
@@ -824,7 +824,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/brasero-3.12.3-upstream_fixes-
 https://download.gnome.org/sources/evince/48/evince-48.4.tar.xz
 https://download.gnome.org/sources/evolution/3.62/evolution-3.62.0.tar.xz
 https://download.gnome.org/sources/file-roller/44/file-roller-44.7.tar.xz
-https://download.gnome.org/sources/gnome-calculator/50/gnome-calculator-51.0.tar.xz
+https://download.gnome.org/sources/gnome-calculator/51/gnome-calculator-51.0.tar.xz
 https://download.gnome.org/sources/gnome-color-manager/3.36/gnome-color-manager-3.36.2.tar.xz
 https://download.gnome.org/sources/gnome-connections/51/gnome-connections-51.0.tar.xz
 https://download.gnome.org/sources/gnome-disk-utility/46/gnome-disk-utility-46.1.tar.xz
@@ -1010,7 +1010,7 @@ https://taglib.org/releases/taglib-2.3.2.tar.gz
 https://www.linuxtv.org/downloads/v4l-utils/v4l-utils-1.32.0.tar.xz
 https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.17/wireplumber-0.5.17.tar.bz2
 https://anduin.linuxfromscratch.org/BLFS/x264/x264-20250815.tar.xz
-https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.2.tar.gz
+https://github.com/Multicorewareinc/x265/releases/download/4.3/x265_4.3.tar.gz
 https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-upstream_fixes-1.patch
 https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-gcc15_fixes-1.patch
@@ -1026,8 +1026,8 @@ https://downloads.sourceforge.net/mpg123/mpg123-1.33.7.tar.bz2
 https://www.freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-6.2.tar.xz
 https://github.com/nicklan/pnmixer/releases/download/v0.7.2/pnmixer-v0.7.2.tar.gz
 https://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.3.tar.gz
-https://ffmpeg.org/releases/ffmpeg-9.0.1.tar.xz
-https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-9.0.1-chromium_method-1.patch
+https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz
+https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-9.0.2-chromium_method-1.patch
 https://github.com/mpv-player/mpv/archive/v0.41.0/mpv-0.41.0.tar.gz
 https://download.videolan.org/vlc/3.0.23/vlc-3.0.23.tar.xz
 https://downloads.sourceforge.net/xine/xine-ui-0.99.14.tar.xz
