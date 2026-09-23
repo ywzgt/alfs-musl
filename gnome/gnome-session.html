@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-225">
+  <body class="blfs" id="blfs-r13.1-236">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-225
+        "phrase">(systemd</span> Edition) - Version r13.1-236
       </h4>
       <h3>
         Chapter&nbsp;33.&nbsp;GNOME Libraries and Desktop
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-225">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-236">
           Home</a>
         </li>
       </ul>
@@ -181,11 +181,6 @@ ninja</kbd></pre>
           documentation. Omit them if you have built the optional
           dependencies.
         </p>
-        <p>
-          <code class="option">-D x11=true</code>: This option enables
-          support for X11 sessions. X11 support is deprecated and will be
-          removed in GNOME 50.
-        </p>
       </div>
       <div class="starting" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -212,8 +207,32 @@ ninja</kbd></pre>
           (we suppose the session ID is 1):
         </p>
         <pre class="userinput"><kbd class=
-        "command">systemctl --user set-environment XDG_SESSION_TYPE=wayland XDG_SESSION_ID=<em class="replaceable"><code>1</code></em> &amp;&amp;
+        "command">systemctl --user set-environment    \
+          XDG_CURRENT_DESKTOP=GNOME \
+          XDG_SESSION_DESKTOP=gnome \
+          XDG_SESSION_TYPE=wayland  \
+          XDG_SESSION_ID=<em class=
+"replaceable"><code>1</code></em> &amp;&amp;
 systemctl --user start gnome-session@gnome.target</kbd></pre>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            The above commands do start <span class=
+            "application">GNOME</span> from the command line, but do not
+            enable complete functionality. For instance <span class=
+            "application">GNOME</span>'s automatic screen-blank/idle timeout
+            doesn't work because of a complex interaction between the
+            command-line logind session and the component responsible for
+            both screen locking and idle-triggered blanking.
+          </p>
+          <p>
+            For full <span class="application">GNOME</span> functionality,
+            you must start it from a display manager.
+          </p>
+        </div>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -321,7 +340,7 @@ systemctl --user start gnome-session@gnome.target</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-225">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-236">
           Home</a>
         </li>
       </ul>
