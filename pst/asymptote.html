@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      asymptote-3.14
+      asymptote-3.15
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-245">
+  <body class="blfs" id="blfs-r13.1-251">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-245
+        "phrase">(systemd</span> Edition) - Version r13.1-251
       </h4>
       <h3>
         Chapter&nbsp;51.&nbsp;Typesetting
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-245">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-251">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="asymptote" name="asymptote"></a>asymptote-3.14
+      <a id="asymptote" name="asymptote"></a>asymptote-3.15
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -81,13 +81,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://downloads.sourceforge.net/asymptote/asymptote-3.14.src.tgz">
-                https://downloads.sourceforge.net/asymptote/asymptote-3.14.src.tgz</a>
+                "https://downloads.sourceforge.net/asymptote/asymptote-3.15.src.tgz">
+                https://downloads.sourceforge.net/asymptote/asymptote-3.15.src.tgz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 158921966b8be1049e933b5154774c66
+                Download MD5 sum: 829f01a698f77ac8018d3b732ae18190
               </p>
             </li>
             <li class="listitem">
@@ -97,14 +97,15 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 338 MB (55 MB installed after
+                Estimated disk space required: 347 MB (55 MB installed after
                 overwriting files in $TEXLIVE_PREFIX/texmf-dist/, with all
                 the dependencies which are in BLFS)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.9 SBU (using parallelism=4)
+                Estimated build time: 0.9 SBU (with tests, using
+                parallelism=4)
               </p>
             </li>
           </ul>
@@ -170,8 +171,8 @@
           <a class="xref" href="../general/imagemagick.html" title=
           "ImageMagick-7.1.2-13">ImageMagick-7.1.2-13</a> to convert output
           to other formats such as JPEG or to create animated GIFs, <a class=
-          "ulink" href="https://pypi.org/project/PyQt5/">PyQt5</a> (not
-          tested, has a build dependency of Qt5) to use xasy
+          "ulink" href="https://pypi.org/project/PySide6/">PySide6</a> (not
+          tested, has a build dependency on Qt6) to use xasy
         </p>
         <p class="usernotes">
           Editor Notes: <a class="ulink" href=
@@ -260,10 +261,12 @@ make</kbd></pre>
           the GLFW package, and several other external libraries not in BLFS.
         </p>
         <p>
-          <em class="parameter"><code>--disable-lsp</code></em>: The Language
-          Server Protocol is enabled by default, with several third-party
-          sources included, but it does not build unless boost and rapidjson
-          have been installed.
+          <em class="parameter"><code>--with-latex=</code></em> <em class=
+          "parameter"><code>--with-context=</code></em>: These switches
+          ensure that style files and a tex file will be installed into the
+          <span class="application">texlive</span> directories instead of
+          creating a <code class="filename">texmf-local</code> directory for
+          them.
         </p>
         <p>
           <code class="option">--disable-gc</code>: There does not seem to be
@@ -271,14 +274,6 @@ make</kbd></pre>
           want to use the shipped copy of GC, you can use this option to
           completely disable garbage collection, which may have some impact
           on performance.
-        </p>
-        <p>
-          <em class="parameter"><code>--with-latex=</code></em> <em class=
-          "parameter"><code>--with-context=</code></em>: These switches
-          ensure that style files and a tex file will be installed into the
-          <span class="application">texlive</span> directories instead of
-          creating a <code class="filename">texmf-local</code> directory for
-          them.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -297,9 +292,8 @@ make</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directory:</strong>
-              <span class="segbody">$TEXLIVE_PREFIX/texmf-dist/asymptote,
-              $TEXLIVE_PREFIX/doc/asymptote, and
-              $TEXLIVE_PREFIX/info/asymptote</span>
+              <span class="segbody">$TEXLIVE_PREFIX/texmf-dist/asymptote and
+              $TEXLIVE_PREFIX/doc/asymptote</span>
             </div>
           </div>
         </div>
@@ -336,7 +330,7 @@ make</kbd></pre>
                 </td>
                 <td>
                   <p>
-                    is a Python3 script providing a Qt5 GUI for asy
+                    is a Python3 script providing a Qt6 GUI for asy
                   </p>
                 </td>
               </tr>
@@ -366,7 +360,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-245">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-251">
           Home</a>
         </li>
       </ul>
