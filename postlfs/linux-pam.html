@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Linux-PAM-1.7.2
+      Linux-PAM-1.7.3
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-251">
+  <body class="blfs" id="blfs-r13.1-262">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-251
+        "phrase">(systemd</span> Edition) - Version r13.1-262
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-251">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-262">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="linux-pam" name="linux-pam"></a>Linux-PAM-1.7.2
+      <a id="linux-pam" name="linux-pam"></a>Linux-PAM-1.7.3
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,18 +80,18 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/linux-pam/linux-pam/releases/download/v1.7.2/Linux-PAM-1.7.2.tar.xz">
-                https://github.com/linux-pam/linux-pam/releases/download/v1.7.2/Linux-PAM-1.7.2.tar.xz</a>
+                "https://github.com/linux-pam/linux-pam/releases/download/v1.7.3/Linux-PAM-1.7.3.tar.xz">
+                https://github.com/linux-pam/linux-pam/releases/download/v1.7.3/Linux-PAM-1.7.3.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 934c26eca3fada956356a30489e86291
+                Download MD5 sum: 0880bc3b28cfd8e415ee3d5a7378ebe0
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 500 KB
+                Download size: 504 KB
               </p>
             </li>
             <li class="listitem">
@@ -117,13 +117,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.2-docs.tar.xz">
-                https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.2-docs.tar.xz</a>
+                "https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.3-docs.tar.xz">
+                https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.3-docs.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 8b0c69931e4805ee5c297192c46d0e28
+                Download MD5 sum: 8309230dc8c48f9948612e1cb080fb2a
               </p>
             </li>
             <li class="listitem">
@@ -239,7 +239,7 @@ cd    build &amp;&amp;
 meson setup ..        \
   --prefix=/usr       \
   --buildtype=release \
-  -D docdir=/usr/share/doc/Linux-PAM-1.7.2 &amp;&amp;
+  -D docdir=/usr/share/doc/Linux-PAM-1.7.3 &amp;&amp;
 
 ninja</kbd></pre>
         <p>
@@ -297,7 +297,7 @@ chmod -v 4755 /usr/sbin/unix_chkpwd</kbd></pre>
           again as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">tar -C / -xvf ../../Linux-PAM-1.7.2-docs.tar.xz</kbd></pre>
+        "command">tar -C / --no-same-owner -xvf ../../Linux-PAM-1.7.3-docs.tar.xz</kbd></pre>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -440,7 +440,7 @@ EOF</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/etc/security, /usr/lib/security,
-              /usr/include/security and /usr/share/doc/Linux-PAM-1.7.2</span>
+              /usr/include/security and /usr/share/doc/Linux-PAM-1.7.3</span>
             </div>
           </div>
         </div>
@@ -583,7 +583,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-251">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-262">
           Home</a>
         </li>
       </ul>
