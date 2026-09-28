@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-266">
+  <body class="blfs" id="blfs-r13.1-267">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-266
+        "phrase">(systemd</span> Edition) - Version r13.1-267
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-266">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-267">
           Home</a>
         </li>
       </ul>
@@ -94,12 +94,13 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 139 MB
+                Estimated disk space required: 139 MB (add 1 GB for tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.8 SBU (with parallelism=4)
+                Estimated build time: 0.8 SBU (with parallelism=4), add 151
+                SBU for tests
               </p>
             </li>
           </ul>
@@ -122,6 +123,18 @@
           <a class="xref" href="../general/doxygen.html" title=
           "Doxygen-1.18.0">Doxygen-1.18.0</a>
         </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            An Internet connection is needed for some tests of this package.
+            The system certificate store may need to be set up with <a class=
+            "xref" href="../postlfs/make-ca.html" title=
+            "make-ca-1.16.1">make-ca-1.16.1</a> before testing this package.
+          </p>
+        </div>
       </div>
       <div class="installation" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -147,7 +160,9 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -G Ninja .. &amp;&amp;
 ninja</kbd></pre>
         <p>
-          This package does not come with a working test suite.
+          To test the results, issue: <span class="command"><strong>ninja
+          runtests</strong></span>. Note that the tests download many data
+          files from the Internet and take an extremely long time to run.
         </p>
         <p>
           Now, as the <code class="systemitem">root</code> user:
@@ -276,7 +291,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-266">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-267">
           Home</a>
         </li>
       </ul>
