@@ -1,0 +1,53 @@
+diff --git a/wget-list b/wget-list
+index 30789698f1..55f90ec929 100644
+--- a/wget-list
++++ b/wget-list
+@@ -59,9 +59,9 @@ https://github.com/vim/vim/archive/v9.2.1025/vim-9.2.1025.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.5.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.2.tar.xz
+-https://download.qemu.org/qemu-11.1.1.tar.xz
++https://download.qemu.org/qemu-11.1.2.tar.xz
+ https://github.com/abseil/abseil-cpp/releases/download/20260817.0/abseil-cpp-20260817.0.tar.gz
+-https://www.freedesktop.org/software/appstream/releases/AppStream-1.2.0.tar.xz
++https://www.freedesktop.org/software/appstream/releases/AppStream-1.2.1.tar.xz
+ http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.4.tar.xz
+ https://archive.apache.org/dist/apr/apr-1.7.6.tar.bz2
+ https://archive.apache.org/dist/apr/apr-util-1.6.5.tar.bz2
+@@ -163,11 +163,11 @@ https://download.kde.org/stable/qca/2.3.12/qca-2.3.12.tar.xz
+ https://github.com/danvratil/qcoro/archive/v0.13.0/qcoro-0.13.0.tar.gz
+ https://github.com/xiph/rnnoise/releases/download/v0.2/rnnoise-0.2.tar.gz
+ https://github.com/simdutf/simdutf/archive/v9.2.1/simdutf-9.2.1.tar.gz
+-https://archive.mozilla.org/pub/firefox/releases/140.16.0esr/source/firefox-140.16.0esr.source.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.16.0-python_3.14_fixes-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.16.0-rust_1_98-1.patch
+-https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.357.0/SPIRV-Headers-vulkan-sdk-1.4.357.0.tar.gz
+-https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.357.0/SPIRV-Tools-vulkan-sdk-1.4.357.0.tar.gz
++https://archive.mozilla.org/pub/firefox/releases/140.17.0esr/source/firefox-140.17.0esr.source.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.17.0-python_3.14_fixes-1.patch
++https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.17.0-rust_1_98-1.patch
++https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.363.0/SPIRV-Headers-vulkan-sdk-1.4.363.0.tar.gz
++https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.363.0/SPIRV-Tools-vulkan-sdk-1.4.363.0.tar.gz
+ https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v23.1.1/SPIRV-LLVM-Translator-23.1.1.tar.gz
+ https://www.samba.org/ftp/talloc/talloc-2.5.0.tar.gz
+ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+@@ -717,8 +717,8 @@ https://download.gnome.org/sources/pangomm/2.58/pangomm-2.58.0.tar.xz
+ https://download.qt.io/archive/qt/6.11/6.11.2/single/qt-everywhere-src-6.11.2.tar.xz
+ https://download.qt.io/official_releases/qt/6.11/6.11.2/submodules/qtwebengine-everywhere-src-6.11.2.tar.xz
+ https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Headers/archive/vulkan-sdk-1.4.357.0/Vulkan-Headers-vulkan-sdk-1.4.357.0.tar.gz
+-https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.357.0/Vulkan-Loader-vulkan-sdk-1.4.357.0.tar.gz
++https://github.com/KhronosGroup/Vulkan-Headers/archive/vulkan-sdk-1.4.363.0/Vulkan-Headers-vulkan-sdk-1.4.363.0.tar.gz
++https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.363.0/Vulkan-Loader-vulkan-sdk-1.4.363.0.tar.gz
+ https://webkitgtk.org/releases/webkitgtk-2.54.0.tar.xz
+ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.20.2/wlroots-0.20.2.tar.bz2
+ https://github.com/flatpak/xdg-desktop-portal/releases/download/1.22.1/xdg-desktop-portal-1.22.1.tar.xz
+@@ -924,7 +924,7 @@ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.5-libical_4_fixes-1.patch
+ https://feh.finalrewind.org/feh-3.13.1.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
+-https://github.com/freerdp/freerdp/archive/3.32.0/FreeRDP-3.32.0.tar.gz
++https://github.com/freerdp/freerdp/archive/3.32.1/FreeRDP-3.32.1.tar.gz
+ https://download.gimp.org/gimp/v3.2/gimp-3.2.6.tar.xz
+ https://download.gimp.org/pub/gimp/help/gimp-help-3.2.0.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.8.1.tar.gz
