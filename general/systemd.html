@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Systemd-261.3
+      Systemd-262
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-297">
+  <body class="blfs" id="blfs-r13.1-306">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-297
+        "phrase">(systemd</span> Edition) - Version r13.1-306
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-297">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-306">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="systemd" name="systemd"></a>Systemd-261.3
+      <a id="systemd" name="systemd"></a>Systemd-262
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -83,13 +83,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/systemd/systemd/archive/v261.3/systemd-261.3.tar.gz">
-                https://github.com/systemd/systemd/archive/v261.3/systemd-261.3.tar.gz</a>
+                "https://github.com/systemd/systemd/archive/v262/systemd-262.tar.gz">
+                https://github.com/systemd/systemd/archive/v262/systemd-262.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 21d1d4ea580c2f111f067ee8184e7952
+                Download MD5 sum: 1d5940dc3e8cead1034c940c1f1a1eb2
               </p>
             </li>
             <li class="listitem">
@@ -99,12 +99,13 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 488 MB (with tests)
+                Estimated disk space required: 388 MB (with tests)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 1.1 SBU (with tests using 4 cores)
+                Estimated build time: 1.4 SBU (with tests; using
+                parallelism=4)
               </p>
             </li>
           </ul>
@@ -235,6 +236,12 @@
           </p>
           <pre class="root"><kbd class=
           "command">rm -fv /usr/lib/systemd/system/systemd-update-utmp-runlevel.service</kbd></pre>
+          <p>
+            Also remove a file tht prevents completion of the installation
+            process. Again as the <code class="systemitem">root</code> user:
+          </p>
+          <pre class="root"><kbd class=
+          "command">rm -fv /usr/lib/systemd/system/systemd-udevd-control.socket</kbd></pre>
         </div>
         <p>
           Remove two unneeded groups, <code class="systemitem">render</code>
@@ -269,7 +276,7 @@ meson setup ..                 \
       -D nobody-group=nogroup  \
       -D sysupdate=disabled    \
       -D ukify=disabled        \
-      -D docdir=/usr/share/doc/systemd-261.3 &amp;&amp;
+      -D docdir=/usr/share/doc/systemd-262 &amp;&amp;
 
 ninja</kbd></pre>
         <div class="admon note">
@@ -463,7 +470,7 @@ systemctl --user daemon-reload</kbd></pre>
           </h3>
           <p>
             Now ensure <a class="xref" href="../postlfs/shadow.html" title=
-            "Shadow-4.20.2">Shadow-4.20.2</a> has been already rebuilt with
+            "Shadow-4.20.3">Shadow-4.20.3</a> has been already rebuilt with
             <a class="xref" href="../postlfs/linux-pam.html" title=
             "Linux-PAM-1.7.3">Linux-PAM-1.7.3</a> support first, then logout,
             and login again. This will ensure that the running login session
@@ -616,7 +623,7 @@ systemctl --user daemon-reload</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-297">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-306">
           Home</a>
         </li>
       </ul>
