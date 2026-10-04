@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Apache-2.4.68
+      Apache-2.4.69
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-306">
+  <body class="blfs" id="blfs-r13.1-315">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-306
+        "phrase">(systemd</span> Edition) - Version r13.1-315
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-306">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-315">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="apache" name="apache"></a>Apache-2.4.68
+      <a id="apache" name="apache"></a>Apache-2.4.69
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,22 +78,22 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://archive.apache.org/dist/httpd/httpd-2.4.68.tar.bz2">https://archive.apache.org/dist/httpd/httpd-2.4.68.tar.bz2</a>
+                "https://archive.apache.org/dist/httpd/httpd-2.4.69.tar.bz2">https://archive.apache.org/dist/httpd/httpd-2.4.69.tar.bz2</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: f2f3121e9f1fb4838d433dbd494543f9
+                Download MD5 sum: f2f461efbb47f6f7ba62ae60ef1d8920
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 7.4 MB
+                Download size: 8.1 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 133 MB
+                Estimated disk space required: 97 MB
               </p>
             </li>
             <li class="listitem">
@@ -113,13 +113,6 @@
                 Required patch: <a class="ulink" href=
                 "https://www.linuxfromscratch.org/patches/blfs/svn/httpd-blfs_layout-1.patch">
                 https://www.linuxfromscratch.org/patches/blfs/svn/httpd-blfs_layout-1.patch</a>
-              </p>
-            </li>
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.68-openssl4_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.68-openssl4_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -178,11 +171,6 @@
         "command">groupadd -g 25 apache &amp;&amp;
 useradd -c "Apache Server" -d /srv/www -g apache \
         -s /bin/false -u 25 apache</kbd></pre>
-        <p>
-          Now add a patch for compatibility with openssl4:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../httpd-2.4.68-openssl4_fixes-1.patch</kbd></pre>
         <p>
           Build and install <span class="application">Apache HTTPD</span> by
           running the following commands:
@@ -635,7 +623,7 @@ chown -v -R apache:apache /srv/www</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-306">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-315">
           Home</a>
         </li>
       </ul>

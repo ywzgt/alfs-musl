@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Kea 3.2.0 DHCP Server
+      Kea 3.2.1 DHCP Server
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-306">
+  <body class="blfs" id="blfs-r13.1-315">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-306
+        "phrase">(systemd</span> Edition) - Version r13.1-315
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-306">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-315">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="kea" name="kea"></a>Kea 3.2.0 DHCP Server
+      <a id="kea" name="kea"></a>Kea 3.2.1 DHCP Server
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -92,12 +92,12 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://downloads.isc.org/isc/kea/3.2.0/kea-3.2.0.tar.xz">https://downloads.isc.org/isc/kea/3.2.0/kea-3.2.0.tar.xz</a>
+                "https://downloads.isc.org/isc/kea/3.2.1/kea-3.2.1.tar.xz">https://downloads.isc.org/isc/kea/3.2.1/kea-3.2.1.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 84f88fb0a9897e993ac7d414e1efb2bc
+                Download MD5 sum: 72df3b85d9669f37ec98c45cbad7b22e
               </p>
             </li>
             <li class="listitem">
@@ -195,14 +195,8 @@
           Installation of ISC Kea DHCP Server
         </h2>
         <p>
-          First, apply a fix for building with OpenSSL-4:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">sed -e 's/^[ ]*\(::X509_NAME\)/const \1/' \
-    -i src/lib/asiolink/openssl_tls.h</kbd></pre>
-        <p>
-          Now, install <span class="application">ISC Kea DHCP Server</span>
-          by running the following commands:
+          Install <span class="application">ISC Kea DHCP Server</span> by
+          running the following commands:
         </p>
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
@@ -290,7 +284,7 @@ install -dm0750 /var/log/kea</kbd></pre>
         </p>
         <p>
           Consult the <a class="ulink" href=
-          "https://kea.readthedocs.io/en/kea-3.2.0/">Kea Administrator
+          "https://kea.readthedocs.io/en/kea-3.2.1/">Kea Administrator
           Reference Manual</a> for detailed information about the
           configuration of <span class="application">ISC Kea</span> as it is
           a quite capable system. The configuration shown below is a bare
@@ -687,7 +681,7 @@ EOF</kbd></pre>
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/etc/kea, /run/kea, /usr/include/kea,
               /usr/lib/kea, /usr/lib/python3.14/site-packages/kea,
-              /usr/share/kea, /usr/share/doc/kea-3.2.0, /var/lib/kea, and
+              /usr/share/kea, /usr/share/doc/kea-3.2.1, /var/lib/kea, and
               /var/log/kea</span>
             </div>
           </div>
@@ -847,7 +841,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-306">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-315">
           Home</a>
         </li>
       </ul>
