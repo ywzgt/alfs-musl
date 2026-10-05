@@ -1,0 +1,57 @@
+diff --git a/wget-list b/wget-list
+index 81e797d0ae..7d0e921c1c 100644
+--- a/wget-list
++++ b/wget-list
+@@ -36,7 +36,7 @@ https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.t
+ https://github.com/libfuse/libfuse/releases/download/fuse-3.18.3/fuse-3.18.3.tar.gz
+ https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.patch
+-https://sourceware.org/ftp/lvm2/LVM2.2.03.42.tgz
++https://sourceware.org/ftp/lvm2/LVM2.2.03.43.tgz
+ https://git.kernel.org/pub/scm/utils/mdadm/mdadm.git/snapshot/mdadm-4.6.tar.gz
+ https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2026.9.28.tgz
+ https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
+@@ -272,7 +272,7 @@ http://fcron.free.fr/archives/fcron-3.4.1.src.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/gpm/gpm-1.20.7.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-gcc15_fixes-1.patch
+-https://github.com/vcrhonek/hwdata/archive/v0.411/hwdata-0.411.tar.gz
++https://github.com/vcrhonek/hwdata/archive/v0.412/hwdata-0.412.tar.gz
+ https://github.com/lfs-book/LSB-Tools/releases/download/v0.12/LSB-Tools-0.12.tar.gz
+ https://github.com/logrotate/logrotate/releases/download/3.22.0/logrotate-3.22.0.tar.xz
+ http://ftp.midnight-commander.org/mc-4.8.33.tar.xz
+@@ -304,7 +304,7 @@ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-019.tar.xz
+ https://github.com/lu-zero/cargo-c/archive/v0.10.25/cargo-c-0.10.25.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.29.4/cbindgen-0.29.4.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/clisp/clisp-2.49.95.tar.xz
+-https://cmake.org/files/v4.4/cmake-4.4.3.tar.gz
++https://cmake.org/files/v4.4/cmake-4.4.4.tar.gz
+ https://doxygen.nl/files/doxygen-1.18.0.src.tar.gz
+ https://kernel.org/pub/software/utils/dtc/dtc-1.8.1.tar.xz
+ https://ftpmirror.gnu.org/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz
+@@ -634,10 +634,9 @@ https://www.linuxfromscratch.org/patches/blfs/svn/heirloom-mailx-12.5-fixes-1.pa
+ http://ftp.mutt.org/pub/mutt/mutt-2.4.2.tar.gz
+ https://github.com/BuGlessRB/procmail/archive/v3.24/procmail-3.24.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/procmail-3.24-consolidated_fixes-1.patch
+-https://archive.apache.org/dist/httpd/httpd-2.4.68.tar.bz2
++https://archive.apache.org/dist/httpd/httpd-2.4.69.tar.bz2
+ https://www.linuxfromscratch.org/patches/blfs/svn/httpd-blfs_layout-1.patch
+-https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.68-openssl4_fixes-1.patch
+-https://downloads.isc.org/isc/kea/3.2.0/kea-3.2.0.tar.xz
++https://downloads.isc.org/isc/kea/3.2.1/kea-3.2.1.tar.xz
+ https://github.com/proftpd/proftpd/archive/v1.3.9b/proftpd-1.3.9b.tar.gz
+ https://www.dovecot.org/releases/2.4/dovecot-2.4.5.tar.gz
+ https://downloads.exim.org/exim4/exim-4.100.1.tar.xz
+@@ -996,9 +995,9 @@ https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz
+ https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.9/pipewire-1.6.9.tar.bz2
+ https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+ https://www.kernel.org/pub/linux/bluetooth/sbc-2.2.tar.xz
+-https://www.libsdl.org/release/sdl2-compat-2.32.72.tar.gz
+-https://www.libsdl.org/release/SDL3-3.4.16.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/SDL3-3.4.16-upstream_fixes-1.patch
++https://www.libsdl.org/release/sdl2-compat-2.32.74.tar.gz
++https://www.libsdl.org/release/SDL3-3.4.18.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/SDL3-3.4.18-upstream_fixes-1.patch
+ https://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2
+ https://www.surina.net/soundtouch/soundtouch-2.4.1.tar.gz
+ https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz
