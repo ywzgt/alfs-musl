@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-331">
+  <body class="blfs" id="blfs-r13.1-338">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-331
+        "phrase">(systemd</span> Edition) - Version r13.1-338
       </h4>
       <h3>
         Chapter&nbsp;42.&nbsp;Multimedia Libraries and Drivers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-331">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-338">
           Home</a>
         </li>
       </ul>
@@ -182,6 +182,44 @@
             specific to each individual generation of Intel GPUs and for a
             variety of media codecs.
           </p>
+          <p>
+            If you know the model of your Intel GPU(s), you can pass the
+            <code class=
+            "option">-D{GEN{8,9,11,12},MTL,ARL,LNL,BMG,PTL,NVL,CRI}=OFF</code>
+            option to the <span class="command"><strong>cmake</strong></span>
+            command but leaving the option(s) for your GPU out. Note that the
+            <span class="quote">“<span class="quote">GEN</span>”</span>
+            number here is the generation of the GPU, not the CPU. For
+            example, with an Intel Core i7-1065G7 CPU shipping a
+            11th-generation Intel GPU, the <code class=
+            "option">-D{GEN{8,9,12},MTL,ARL,LNL,BMG,PTL,NVL,CRI}=OFF</code>
+            option can be used so the code specific to the other generations
+            of Intel GPUs won't be built. Some combinations may cause a build
+            failure because neither the upstream nor the BLFS editors have
+            tested all the possible combinations.
+          </p>
+          <p>
+            To determine the model of the Intel GPU, install <a class="xref"
+            href="../general/pciutils.html" title=
+            "pciutils-3.15.0">pciutils-3.15.0</a> and run <span class=
+            "command"><strong>lspci -nn | grep -Ei
+            'VGA|DISPLAY'</strong></span> first. It will output some
+            information about the GPU, including the PCI vendor ID
+            (<code class="literal">8086</code> for Intel) and the PCI device
+            ID. For example, with an Intel Core i5-11300H CPU, the output is
+            <code class="literal">8086:9a49</code>. Now searching for the
+            registration of this device ID in the intel-media-driver source
+            tree:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">grep -ri 'RegisterDevice(0x<em class=
+          "replaceable"><code>9a49</code></em>'</kbd></pre>
+          <p>
+            And determine the GPU model from the file name containing the
+            registration. For the example above, the file name is
+            <code class="filename">media_sysinfo_g12.cpp</code>, indicating
+            the model is <code class="literal">GEN12</code>.
+          </p>
         </div>
         <p>
           Install <span class="application">intel-media-driver</span> by
@@ -281,7 +319,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-331">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-338">
           Home</a>
         </li>
       </ul>
