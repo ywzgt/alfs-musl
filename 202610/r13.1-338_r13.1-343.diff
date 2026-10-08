@@ -1,0 +1,48 @@
+diff --git a/wget-list b/wget-list
+index 19dd97f42e..904844988f 100644
+--- a/wget-list
++++ b/wget-list
+@@ -22,7 +22,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-openssl_4_fixes-
+ https://ftpmirror.gnu.org/nettle/nettle-4.0.tar.gz
+ https://archive.mozilla.org/pub/security/nss/releases/NSS_3_130_RTM/src/nss-3.130.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+-https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.5p1.tar.gz
++https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.26.5/p11-kit-0.26.5.tar.xz
+ https://github.com/polkit-org/polkit/archive/127/polkit-127.tar.gz
+ https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz
+@@ -192,14 +192,14 @@ https://github.com/g-truc/glm/archive/1.0.3/glm-1.0.3.tar.gz
+ https://download.gnome.org/sources/glycin/2.2/glycin-2.2.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.2.1-xorg_prefix-1.patch
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+-https://github.com/harfbuzz/harfbuzz/releases/download/14.5.1/harfbuzz-14.5.1.tar.xz
++https://github.com/harfbuzz/harfbuzz/releases/download/14.6.0/harfbuzz-14.6.0.tar.xz
+ https://github.com/AcademySoftwareFoundation/Imath/releases/download/v3.2.3/Imath-3.2.3.tar.gz
+ https://github.com/jasper-software/jasper/archive/version-4.2.9/jasper-version-4.2.9.tar.gz
+ https://github.com/mm2/Little-CMS/releases/download/lcms2.19.1/lcms2-2.19.1.tar.gz
+ https://github.com/AOMediaCodec/libavif/archive/v1.4.2/libavif-1.4.2.tar.gz
+ https://github.com/libexif/libexif/releases/download/v0.6.26/libexif-0.6.26.tar.bz2
+ https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
+-https://github.com/strukturag/libheif/releases/download/v1.23.5/libheif-1.23.5.tar.gz
++https://github.com/strukturag/libheif/releases/download/v1.23.6/libheif-1.23.6.tar.gz
+ https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.2.0/libjpeg-turbo-3.2.0.tar.gz
+ https://github.com/libjxl/libjxl/archive/v0.12.0/libjxl-0.12.0.tar.gz
+ https://gitlab.freedesktop.org/emersion/libliftoff/-/archive/v0.5.0/libliftoff-v0.5.0.tar.gz
+@@ -290,7 +290,7 @@ https://sysstat.github.io/sysstat-packages/sysstat-12.8.0.tar.xz
+ https://github.com/systemd/systemd/archive/v262/systemd-262.tar.gz
+ https://github.com/storaged-project/udisks/releases/download/udisks-2.11.2/udisks-2.11.2.tar.bz2
+ https://www.rarlab.com/rar/unrarsrc-7.2.4.tar.gz
+-https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.4/upower-v1.91.4.tar.bz2
++https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.5/upower-v1.91.5.tar.bz2
+ https://ftpmirror.gnu.org/which/which-2.25.tar.gz
+ https://github.com/jordansissel/xdotool/archive/v4.20260303.1/xdotool-4.20260303.1.tar.gz
+ https://downloads.sourceforge.net/infozip/zip30.tar.gz
+@@ -563,7 +563,7 @@ https://files.pythonhosted.org/packages/source/v/vcs_versioning/vcs_versioning-2
+ https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+ https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.7.tar.xz
+ https://static.rust-lang.org/dist/rustc-1.99.0-src.tar.xz
+-https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.1/rust-bindgen-0.72.1.tar.gz
++https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.73.2/rust-bindgen-0.73.2.tar.gz
+ https://downloads.sourceforge.net/scons/SCons-4.11.1.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+ https://archive.apache.org/dist/subversion/subversion-1.14.5.tar.bz2
