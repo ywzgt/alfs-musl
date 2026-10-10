@@ -1,0 +1,48 @@
+diff --git a/wget-list b/wget-list
+index 01e772f085..90b86a3cc3 100644
+--- a/wget-list
++++ b/wget-list
+@@ -20,7 +20,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-upstream_fix-1.p
+ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-security_fix-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-openssl_4_fixes-1.patch
+ https://ftpmirror.gnu.org/nettle/nettle-4.0.tar.gz
+-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_130_RTM/src/nss-3.130.tar.gz
++https://archive.mozilla.org/pub/security/nss/releases/NSS_3_131_RTM/src/nss-3.131.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.26.5/p11-kit-0.26.5.tar.xz
+@@ -149,10 +149,10 @@ https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.45.tar.xz
+ https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.20.0/libwacom-2.20.0.tar.xz
+ https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+ https://github.com/pantoniou/libfyaml/releases/download/v0.9.6/libfyaml-0.9.6.tar.gz
+-https://github.com/log4cplus/log4cplus/releases/download/REL_2_2_0_1/log4cplus-2.2.1.tar.xz
++https://github.com/log4cplus/log4cplus/releases/download/REL_2_2_1/log4cplus-2.2.1.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
+-https://nodejs.org/dist/v26.10.0/node-v26.10.0.tar.xz
++https://nodejs.org/dist/v26.11.1/node-v26.11.1.tar.xz
+ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.40/src/nspr-4.40.tar.gz
+ https://github.com/AcademySoftwareFoundation/OpenTimelineIO/archive/v0.18.1/OpenTimelineIO-0.18.1.tar.gz
+@@ -568,8 +568,8 @@ https://static.rust-lang.org/dist/rustc-1.99.0-src.tar.xz
+ https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.73.2/rust-bindgen-0.73.2.tar.gz
+ https://downloads.sourceforge.net/scons/SCons-4.11.1.tar.gz
+ https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+-https://archive.apache.org/dist/subversion/subversion-1.14.5.tar.bz2
+-https://www.linuxfromscratch.org/patches/blfs/svn/subversion-1.14.5-upstream_fixes-1.patch
++https://archive.apache.org/dist/subversion/subversion-1.15.0.tar.bz2
++https://www.linuxfromscratch.org/patches/blfs/svn/subversion-1.15.0-upstream_fixes-1.patch
+ https://downloads.sourceforge.net/swig/swig-4.5.1.tar.gz
+ https://downloads.sourceforge.net/tcl/tk8.6.18-src.tar.gz
+ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+@@ -664,8 +664,8 @@ https://www.x.org/pub/individual/data/xcursor-themes-1.0.7.tar.xz
+ https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.48.tar.xz
+ https://www.x.org/pub/individual/xserver/xwayland-24.1.14.tar.xz
+ https://www.x.org/pub/individual/xserver/xorg-server-21.1.25.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.25-tearfree_backport-2.patch
+-https://www.freedesktop.org/software/libevdev/libevdev-1.13.7.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.25-tearfree_backport-1.patch
++https://www.freedesktop.org/software/libevdev/libevdev-1.14.0.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-evdev-2.11.0.tar.xz
+ https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.32.0/libinput-1.32.0.tar.gz
+ https://www.x.org/pub/individual/driver/xf86-input-libinput-1.5.0.tar.xz
