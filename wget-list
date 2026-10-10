@@ -569,7 +569,6 @@ https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.73.2/rust-bindgen
 https://downloads.sourceforge.net/scons/SCons-4.11.1.tar.gz
 https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.15.0.tar.bz2
-https://www.linuxfromscratch.org/patches/blfs/svn/subversion-1.15.0-upstream_fixes-1.patch
 https://downloads.sourceforge.net/swig/swig-4.5.1.tar.gz
 https://downloads.sourceforge.net/tcl/tk8.6.18-src.tar.gz
 https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
@@ -952,13 +951,13 @@ https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
 https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
 https://github.com/dyne/frei0r/archive/v3.6.0/frei0r-3.6.0.tar.gz
 https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
-https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.7.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.28.7.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.28.7.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.28.7.tar.xz
-https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.28.7.tar.xz
-https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.28.7/gst-plugins-rs-gstreamer-1.28.7.tar.gz
-https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.28.7.tar.xz
+https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.8.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.28.8.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.28.8.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.28.8.tar.xz
+https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.28.8.tar.xz
+https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.28.8/gst-plugins-rs-gstreamer-1.28.8.tar.gz
+https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.28.8.tar.xz
 https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
 https://github.com/lfs-book/intel-media-driver/archive/v26.3.5/intel-media-driver-26.3.5.tar.gz
@@ -1035,6 +1034,7 @@ https://files.libburnia-project.org/releases/libburn-1.5.8.tar.gz
 https://files.libburnia-project.org/releases/libisoburn-1.5.8.pl02.tar.gz
 https://files.libburnia-project.org/releases/libisofs-1.5.8.pl02.tar.gz
 https://github.com/OpenPrinting/cups/releases/download/v2.4.20/cups-2.4.20-source.tar.gz
+https://www.linuxfromscratch.org/patches/blfs/svn/cups-2.4.20-upstream_fix-1.patch
 https://github.com/OpenPrinting/cups-browsed/releases/download/2.1.1/cups-browsed-2.1.1.tar.xz
 https://github.com/OpenPrinting/cups-filters/releases/download/2.0.1/cups-filters-2.0.1.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/cups-filters-2.0.1-security_fix-1.patch

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-366">
+  <body class="blfs" id="blfs-r13.1-369">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-366
+        "phrase">(systemd</span> Edition) - Version r13.1-369
       </h4>
       <h3>
         Chapter&nbsp;46.&nbsp;Printing
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-366">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-369">
           Home</a>
         </li>
       </ul>
@@ -101,6 +101,21 @@
             <li class="listitem">
               <p>
                 Estimated build time: 0.4 SBU (Add 1.4 SBU for tests)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Recommended patch (required to build without Avahi):
+                <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/cups-2.4.20-upstream_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/cups-2.4.20-upstream_fix-1.patch</a>
               </p>
             </li>
           </ul>
@@ -203,6 +218,13 @@
         <h2 class="sect2">
           Installation of Cups
         </h2>
+        <p>
+          If the optional dependency <a class="xref" href=
+          "../basicnet/avahi.html" title="Avahi-0.9-rc5">Avahi-0.9-rc5</a> is
+          not installed, apply a patch to fix a build failure:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../cups-2.4.20-upstream_fix-1.patch</kbd></pre>
         <p>
           You will need to add an <code class="systemitem">lp</code> user, as
           <span class="application">Cups</span> will create some files owned
@@ -897,7 +919,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-366">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-369">
           Home</a>
         </li>
       </ul>
