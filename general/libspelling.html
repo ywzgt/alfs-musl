@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-375">
+  <body class="blfs" id="blfs-r13.1-382">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-375
+        "phrase">(systemd</span> Edition) - Version r13.1-382
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-375">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-382">
           Home</a>
         </li>
       </ul>
@@ -111,25 +111,25 @@
           Required
         </h4>
         <p class="required">
+          <a class="xref" href="../x/gtksourceview5.html" title=
+          "gtksourceview5-5.22.0">gtksourceview5-5.22.0</a>
+        </p>
+        <h4>
+          Recommended
+        </h4>
+        <p class="recommended">
           <a class="xref" href="enchant.html" title=
           "enchant-2.8.21">enchant-2.8.21</a>, <a class="xref" href=
-          "icu.html" title="icu-78.3">ICU-78.3</a>, <a class="xref" href=
-          "../x/gtk4.html" title="GTK-4.24.1">GTK-4.24.1</a>, <a class="xref"
-          href="../x/gtksourceview5.html" title=
-          "gtksourceview5-5.22.0">gtksourceview5-5.22.0</a>, and <a class=
-          "xref" href="vala.html" title="Vala-0.56.19">Vala-0.56.19</a>
+          "icu.html" title="icu-78.3">ICU-78.3</a>, and <a class="xref" href=
+          "vala.html" title="Vala-0.56.19">Vala-0.56.19</a>
         </p>
         <h4>
           Optional
         </h4>
         <p class="optional">
-          <a class="xref" href="enchant.html" title=
-          "enchant-2.8.21">enchant-2.8.21</a>, <a class="xref" href=
-          "icu.html" title="icu-78.3">ICU-78.3</a>, <a class="xref" href=
-          "../x/gtk4.html" title="GTK-4.24.1">GTK-4.24.1</a>, <a class="xref"
-          href="../x/gtksourceview5.html" title=
-          "gtksourceview5-5.22.0">gtksourceview5-5.22.0</a>, and <a class=
-          "xref" href="vala.html" title="Vala-0.56.19">Vala-0.56.19</a>
+          <a class="xref" href="python-modules.html#gi-docgen" title=
+          "Gi-DocGen-2026.1">Gi-DocGen-2026.1</a> and <a class="ulink" href=
+          "www.sysprof.com">sysprof</a>
         </p>
       </div>
       <div class="installation" lang="en" xml:lang="en">
@@ -143,7 +143,11 @@
         <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-meson setup --prefix=/usr --buildtype=release -D gtk_doc=false -D sysprof=false .. &amp;&amp;
+meson setup --prefix=/usr       \
+            --buildtype=release \
+            -D docs=false       \
+            -D sysprof=false    \
+            ..                  &amp;&amp;
 ninja</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>ninja
@@ -159,10 +163,16 @@ ninja</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>-D gtk_doc=false</code></em>: Prevents
+          <em class="parameter"><code>-D docs=false</code></em>: Prevents
           building the documentation. Remove this if you have <span class=
-          "application">GTK-Doc</span> installed and wish to build the
+          "application">gi-docgen</span> installed and wish to build the
           documentation.
+        </p>
+        <p>
+          <em class="parameter"><code>-D sysprof=false</code></em>: Prevents
+          building with profiler data. Remove this if you have <span class=
+          "application">sysprof</span> installed and wish to generate data
+          for performance profiling.
         </p>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -237,7 +247,7 @@ ninja</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-375">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-382">
           Home</a>
         </li>
       </ul>
