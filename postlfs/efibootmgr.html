@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-391">
+  <body class="blfs" id="blfs-r13.1-399">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-391
+        "phrase">(systemd</span> Edition) - Version r13.1-399
       </h4>
       <h3>
         Chapter&nbsp;5.&nbsp;File Systems and Disk Management
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-391">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-399">
           Home</a>
         </li>
       </ul>
@@ -154,27 +154,12 @@
           Using efibootmgr
         </h2>
         <p>
-          In LFS, the instructions go over how to install GRUB for UEFI. The
-          process installs the EFI in a hardcoded location searched by most
-          UEFI firmware implementations. If you reinstall GRUB however, GRUB
-          will use this package to install the EFI in a place GRUB prefers,
-          which allows greater control over EFI management. The <code class=
-          "option">--removable</code> option will no longer be necessary when
-          running <span class="command"><strong>grub-install</strong></span>.
-          This package may be necessary in scenarios where the UEFI firmware
-          doesn't look for the hardcoded EFI location. The LFS book addresses
-          this situation.
+          Read <a class="ulink" href=
+          "../../../../lfs/view/systemd/chapter10/grub.html">the LFS grub set
+          up page</a> for how to use efibootmgr via grub. If you are using
+          efibootmgr directly, read the man page <a class="ulink" href=
+          "https://man.archlinux.org/man/efibootmgr.8">efibootmgr(8)</a>.
         </p>
-        <p>
-          In order for <span class=
-          "command"><strong>efibootmgr</strong></span> to work, the EFI
-          variable file system must be mounted beforehand. If you're still in
-          a chroot and haven't rebooted, mount it as the <code class=
-          "systemitem">root</code> user:
-        </p>
-        <pre class="root"><kbd class=
-        "command">mountpoint /sys/firmware/efi/efivars ||
-  mount -v -t efivarfs efivarfs /sys/firmware/efi/efivars</kbd></pre>
       </div>
       <div class="content" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -252,7 +237,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-391">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-399">
           Home</a>
         </li>
       </ul>
