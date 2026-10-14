@@ -1,0 +1,57 @@
+diff --git a/wget-list b/wget-list
+index 4cbc03ea62..4f7e85ff4f 100644
+--- a/wget-list
++++ b/wget-list
+@@ -67,6 +67,7 @@ http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-
+ https://archive.apache.org/dist/apr/apr-1.7.6.tar.bz2
+ https://archive.apache.org/dist/apr/apr-util-1.6.5.tar.bz2
+ https://ftpmirror.gnu.org/aspell/aspell-0.60.8.2.tar.gz
++https://www.linuxfromscratch.org/patches/blfs/svn/aspell-0.60.8.2-security_fixes-1.patch
+ https://ftpmirror.gnu.org/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2
+ https://github.com/boostorg/boost/releases/download/boost-1.92.0/boost-1.92.0-b2-nodocs.tar.xz
+ https://github.com/google/brotli/archive/v1.2.0/brotli-1.2.0.tar.gz
+@@ -302,7 +303,7 @@ https://sg.danny.cz/sg/p/sg3_utils-1.49.tar.gz
+ https://github.com/lfs-book/sysmond/releases/download/sysmond-1.0.1/sysmond-1.0.1.tar.xz
+ https://github.com/lfs-book/sysmon3/releases/download/3.0.4/sysmon3-3.0.4.tar.xz
+ https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-019.tar.xz
+-https://github.com/lu-zero/cargo-c/archive/v0.10.25/cargo-c-0.10.25.tar.gz
++https://github.com/lu-zero/cargo-c/archive/v0.10.26/cargo-c-0.10.26.tar.gz
+ https://github.com/mozilla/cbindgen/archive/v0.29.4/cbindgen-0.29.4.tar.gz
+ https://anduin.linuxfromscratch.org/BLFS/clisp/clisp-2.49.95.tar.xz
+ https://cmake.org/files/v4.4/cmake-4.4.4.tar.gz
+@@ -670,7 +671,7 @@ https://www.x.org/pub/individual/driver/xf86-input-libinput-1.5.0.tar.xz
+ https://www.x.org/pub/individual/driver/xf86-input-synaptics-1.10.0.tar.xz
+ https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-1.2.4/xf86-input-wacom-1.2.4.tar.bz2
+ https://www.x.org/pub/individual/app/twm-1.0.13.1.tar.xz
+-https://invisible-mirror.net/archives/xterm/xterm-411.tgz
++https://invisible-mirror.net/archives/xterm/xterm-412.tgz
+ https://www.x.org/pub/individual/app/xclock-1.2.1.tar.xz
+ https://www.x.org/pub/individual/app/xinit-1.4.4.tar.xz
+ https://github.com/WayfireWM/wayfire/releases/download/v0.11.0/wayfire-0.11.0.tar.xz
+@@ -802,7 +803,7 @@ https://download.gnome.org/sources/dconf-editor/49/dconf-editor-49.0.tar.xz
+ https://download.gnome.org/sources/gnome-backgrounds/51/gnome-backgrounds-51.0.1.tar.xz
+ https://download.gnome.org/sources/gvfs/1.62/gvfs-1.62.0.tar.xz
+ https://download.gnome.org/sources/gexiv2/0.16/gexiv2-0.16.2.tar.xz
+-https://download.gnome.org/sources/nautilus/51/nautilus-51.0.1.tar.xz
++https://download.gnome.org/sources/nautilus/51/nautilus-51.1.tar.xz
+ https://download.gnome.org/sources/gnome-bluetooth/47/gnome-bluetooth-47.2.tar.xz
+ https://download.gnome.org/sources/gnome-keyring/51/gnome-keyring-51.1.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/51/gnome-settings-daemon-51.0.tar.xz
+@@ -825,7 +826,7 @@ https://download.gnome.org/sources/gnome-color-manager/3.36/gnome-color-manager-
+ https://download.gnome.org/sources/gnome-connections/51/gnome-connections-51.0.tar.xz
+ https://download.gnome.org/sources/gnome-disk-utility/46/gnome-disk-utility-46.1.tar.xz
+ https://download.gnome.org/sources/gnome-logs/45/gnome-logs-45.0.tar.xz
+-https://download.gnome.org/sources/gnome-maps/51/gnome-maps-51.1.tar.xz
++https://download.gnome.org/sources/gnome-maps/51/gnome-maps-51.2.tar.xz
+ https://download.gnome.org/sources/gnome-nettool/42/gnome-nettool-42.0.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/gnome-nettool-42.0-ping_and_netstat_fixes-1.patch
+ https://download.gnome.org/sources/gnome-power-manager/50/gnome-power-manager-50.0.tar.xz
+@@ -946,7 +947,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/audiofile-0.3.6-consolidated_p
+ https://code.videolan.org/videolan/dav1d/-/archive/1.5.4/dav1d-1.5.4.tar.gz
+ https://github.com/lfs-book/faac/archive/v2.2/faac-2.2.tar.gz
+ https://github.com/knik0/faad2/archive/2.11.4/faad2-2.11.4.tar.gz
+-https://downloads.sourceforge.net/opencore-amr/fdk-aac-2.0.3.tar.gz
++https://downloads.sourceforge.net/opencore-amr/fdk-aac-3.0.0.tar.gz
+ https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
+ https://github.com/dyne/frei0r/archive/v3.6.0/frei0r-3.6.0.tar.gz
+ https://downloads.sourceforge.net/gmerlin/gavl-1.4.0.tar.gz
