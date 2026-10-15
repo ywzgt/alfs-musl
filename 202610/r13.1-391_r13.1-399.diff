@@ -1,0 +1,61 @@
+diff --git a/wget-list b/wget-list
+index 4f7e85ff4f..5e0898bd95 100644
+--- a/wget-list
++++ b/wget-list
+@@ -183,8 +183,8 @@ https://github.com/ibireme/yyjson/archive/0.13.0/yyjson-0.13.0.tar.gz
+ https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+ https://download.gimp.org/pub/babl/0.1/babl-0.1.128.tar.xz
+ https://github.com/Exiv2/exiv2/archive/v0.28.9/exiv2-0.28.9.tar.gz
+-https://downloads.sourceforge.net/freetype/freetype-2.14.3.tar.xz
+-https://downloads.sourceforge.net/freetype/freetype-doc-2.14.3.tar.xz
++https://downloads.sourceforge.net/freetype/freetype-2.15.0.tar.xz
++https://downloads.sourceforge.net/freetype/freetype-doc-2.15.0.tar.xz
+ https://gitlab.freedesktop.org/api/v4/projects/890/packages/generic/fontconfig/2.18.3/fontconfig-2.18.3.tar.xz
+ https://github.com/fribidi/fribidi/releases/download/v1.0.17/fribidi-1.0.17.tar.xz
+ https://download.gimp.org/pub/gegl/0.4/gegl-0.4.72.tar.xz
+@@ -489,7 +489,7 @@ https://github.com/psf/cachecontrol/archive/v0.14.4/cachecontrol-0.14.4.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.6.0.tar.gz
+ https://github.com/cython/cython/releases/download/3.3.0/cython-3.3.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.38.1.tar.gz
+-https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.4.0.tar.xz
++https://dbus.freedesktop.org/releases/dbus-python/dbus_python-1.5.0.tar.gz
+ https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.23.tar.gz
+ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.gz
+ https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-0.5.3.tar.gz
+@@ -808,7 +808,7 @@ https://download.gnome.org/sources/gnome-bluetooth/47/gnome-bluetooth-47.2.tar.x
+ https://download.gnome.org/sources/gnome-keyring/51/gnome-keyring-51.1.tar.xz
+ https://download.gnome.org/sources/gnome-settings-daemon/51/gnome-settings-daemon-51.0.tar.xz
+ https://download.gnome.org/sources/tecla/51/tecla-51.0.tar.xz
+-https://download.gnome.org/sources/gnome-control-center/51/gnome-control-center-51.0.tar.xz
++https://download.gnome.org/sources/gnome-control-center/51/gnome-control-center-51.1.tar.xz
+ https://download.gnome.org/sources/mutter/51/mutter-51.0.tar.xz
+ https://download.gnome.org/sources/gnome-shell/51/gnome-shell-51.0.tar.xz
+ https://download.gnome.org/sources/gnome-shell-extensions/51/gnome-shell-extensions-51.0.tar.xz
+@@ -913,22 +913,22 @@ https://download.documentfoundation.org/libreoffice/src/26.8.1/libreoffice-help-
+ https://download.documentfoundation.org/libreoffice/src/26.8.1/libreoffice-translations-26.8.1.1.tar.xz
+ https://download.gnome.org/sources/epiphany/51/epiphany-51.1.tar.xz
+ https://download.kde.org/stable/release-service/26.04.3/src/falkon-26.04.3.tar.xz
+-https://archive.mozilla.org/pub/firefox/releases/153.4.0esr/source/firefox-153.4.0esr.source.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/firefox-153.4.0-clang_23-1.patch
++https://archive.mozilla.org/pub/firefox/releases/153.5.0esr/source/firefox-153.5.0esr.source.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/firefox-153.5.0-clang_23-1.patch
+ https://archive.seamonkey-project.org/releases/2.53.24/source/seamonkey-2.53.24.source.tar.xz
+ https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.5-libical_4_fixes-1.patch
+ https://feh.finalrewind.org/feh-3.13.1.tar.bz2
+ https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
+-https://github.com/freerdp/freerdp/archive/3.32.1/FreeRDP-3.32.1.tar.gz
++https://github.com/freerdp/freerdp/archive/3.32.2/FreeRDP-3.32.2.tar.gz
+ https://download.gimp.org/gimp/v3.2/gimp-3.2.6.tar.xz
+ https://download.gimp.org/pub/gimp/help/gimp-help-3.2.0.tar.bz2
+ https://downloads.sourceforge.net/gparted/gparted-1.8.1.tar.gz
+ https://inkscape.org/gallery/item/59505/inkscape-1.4.4.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.4-poppler_fixes-3.patch
+ http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+-https://archive.mozilla.org/pub/thunderbird/releases/153.4.0esr/source/thunderbird-153.4.0esr.source.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-153.4.0-clang_23-1.patch
++https://archive.mozilla.org/pub/thunderbird/releases/153.5.0esr/source/thunderbird-153.5.0esr.source.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-153.5.0-clang_23-1.patch
+ https://github.com/TigerVNC/tigervnc/archive/v1.16.2/tigervnc-1.16.2.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.16.2-configuration_fixes-1.patch
+ https://github.com/transmission/transmission/releases/download/4.1.3/transmission-4.1.3.tar.xz
