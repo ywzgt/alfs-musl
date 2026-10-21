@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-432">
+  <body class="blfs" id="blfs-r13.1-441">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-432
+        "phrase">(systemd</span> Edition) - Version r13.1-441
       </h4>
       <h3>
         Chapter&nbsp;40.&nbsp;Graphical Web Browsers
@@ -24,9 +24,9 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="firefox.html" title=
-          "Firefox-153.5.0esr">Prev</a>
+          "Firefox-153.5.1esr">Prev</a>
           <p>
-            Firefox-153.5.0esr
+            Firefox-153.5.1esr
           </p>
         </li>
         <li class="next">
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-432">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-441">
           Home</a>
         </li>
       </ul>
@@ -66,9 +66,9 @@
           Suite, created after Mozilla decided to focus on separate
           applications for browsing and e-mail. Those applications are
           <a class="xref" href="firefox.html" title=
-          "Firefox-153.5.0esr">Firefox-153.5.0</a> and <a class="xref" href=
+          "Firefox-153.5.1esr">Firefox-153.5.1</a> and <a class="xref" href=
           "thunderbird.html" title=
-          "Thunderbird-153.5.0esr">Thunderbird-153.5.0esr</a>.
+          "Thunderbird-153.5.1esr">Thunderbird-153.5.1esr</a>.
         </p>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
@@ -128,6 +128,20 @@
             </li>
           </ul>
         </div>
+        <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.24-clang_23_rust_1_98-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/seamonkey-2.53.24-clang_23_rust_1_98-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
         <div class="admon note">
           <img alt="[Note]" src="../images/note.png" />
           <h3>
@@ -171,8 +185,9 @@
           <a class="xref" href="../general/llvm.html" title=
           "LLVM-23.1.0">LLVM-23.1.0</a> (with clang), <a class="xref" href=
           "../general/nspr.html" title="NSPR-4.40">NSPR-4.40</a>, <a class=
-          "xref" href="../postlfs/nss.html" title="NSS-3.131">nss-3.131</a>,
-          and <a class="xref" href="../multimedia/pulseaudio.html" title=
+          "xref" href="../postlfs/nss.html" title=
+          "NSS-3.131.1">nss-3.131.1</a>, and <a class="xref" href=
+          "../multimedia/pulseaudio.html" title=
           "PulseAudio-17.0">PulseAudio-17.0</a>
         </p>
         <div class="admon note">
@@ -333,6 +348,12 @@ sed -i 's/icu-i18n/icu-uc &amp;/' js/moz.configure</kbd></pre>
         "command">sed -e '1012 s/stderr=devnull/stderr=subprocess.DEVNULL/' \
     -e '1013 s/OSError/(OSError, subprocess.CalledProcessError)/' \
     -i third_party/python/distro/distro.py</kbd></pre>
+        <p>
+          Next, apply a patch adapting the build system to rust-1.98 and
+          above, as well as clang-23 and above:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../seamonkey-2.53.24-clang_23_rust_1_98-1.patch</kbd></pre>
         <p>
           Compile <span class="application">Seamonkey</span> by running the
           following commands:
@@ -539,9 +560,9 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
       <ul>
         <li class="prev">
           <a accesskey="p" href="firefox.html" title=
-          "Firefox-153.5.0esr">Prev</a>
+          "Firefox-153.5.1esr">Prev</a>
           <p>
-            Firefox-153.5.0esr
+            Firefox-153.5.1esr
           </p>
         </li>
         <li class="next">
@@ -557,7 +578,7 @@ ln -sfv /usr/lib/seamonkey/chrome/icons/default/default128.png \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-432">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-441">
           Home</a>
         </li>
       </ul>
