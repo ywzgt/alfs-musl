@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-448">
+  <body class="blfs" id="blfs-r13.1-469">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-448
+        "phrase">(systemd</span> Edition) - Version r13.1-469
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-448">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-469">
           Home</a>
         </li>
       </ul>
@@ -131,7 +131,7 @@
         </h4>
         <p class="recommended">
           <a class="xref" href="../server/lmdb.html" title=
-          "lmdb-1.0.2">lmdb-1.0.2</a>
+          "lmdb-1.0.3">lmdb-1.0.3</a>
         </p>
         <h4>
           Optional
@@ -332,7 +332,7 @@ install -v -dm700 /var/lib/sasl</kbd></pre>
             startup, install the <code class=
             "filename">saslauthd.service</code> unit included in the
             <a class="xref" href="../introduction/systemd-units.html" title=
-            "BLFS Systemd Units">blfs-systemd-units-20251204</a> package
+            "BLFS Systemd Units">blfs-systemd-units-20261022</a> package
             using the following command:
           </p>
           <pre class="root"><kbd class=
@@ -350,6 +350,12 @@ install -v -dm700 /var/lib/sasl</kbd></pre>
               default authentication mechanism is "shadow".</span>
             </p>
           </div>
+          <p>
+            You can then enable the unit at startup as the <code class=
+            "systemitem">root</code> user with:
+          </p>
+          <pre class="root"><kbd class=
+          "command">systemctl enable saslauthd</kbd></pre>
         </div>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -498,7 +504,7 @@ install -v -dm700 /var/lib/sasl</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-448">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-469">
           Home</a>
         </li>
       </ul>
