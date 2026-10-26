@@ -1,0 +1,60 @@
+diff --git a/wget-list b/wget-list
+index 42a251570a..67fc2b7cfc 100644
+--- a/wget-list
++++ b/wget-list
+@@ -20,7 +20,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-upstream_fix-1.p
+ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-security_fix-1.patch
+ https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-openssl_4_fixes-1.patch
+ https://ftpmirror.gnu.org/nettle/nettle-4.0.tar.gz
+-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_131_1_RTM/src/nss-3.131.1.tar.gz
++https://archive.mozilla.org/pub/security/nss/releases/NSS_3_132_RTM/src/nss-3.132.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+ https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p1.tar.gz
+ https://github.com/p11-glue/p11-kit/releases/download/0.26.5/p11-kit-0.26.5.tar.xz
+@@ -191,8 +191,8 @@ https://download.gimp.org/pub/gegl/0.4/gegl-0.4.72.tar.xz
+ https://sourceforge.net/projects/giflib/files/giflib-6.1.3.tar.gz
+ https://github.com/Dav1dde/glad/archive/v2.0.8/glad-2.0.8.tar.gz
+ https://github.com/g-truc/glm/archive/1.0.3/glm-1.0.3.tar.gz
+-https://download.gnome.org/sources/glycin/2.2/glycin-2.2.3.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.2.3-xorg_prefix-1.patch
++https://download.gnome.org/sources/glycin/2.2/glycin-2.2.4.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.2.4-xorg_prefix-1.patch
+ https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz
+ https://github.com/harfbuzz/harfbuzz/releases/download/15.0.0/harfbuzz-15.0.0.tar.xz
+ https://github.com/AcademySoftwareFoundation/Imath/releases/download/v3.2.3/Imath-3.2.3.tar.gz
+@@ -211,7 +211,7 @@ https://downloads.sourceforge.net/libpng/libpng-1.6.59.tar.xz
+ https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.58-apng.patch.gz
+ https://github.com/fukuchi/libqrencode/archive/v4.1.1/libqrencode-4.1.1.tar.gz
+ https://www.libraw.org/data/LibRaw-0.22.2.tar.gz
+-https://download.gnome.org/sources/librsvg/2.63/librsvg-2.63.3.tar.xz
++https://download.gnome.org/sources/librsvg/2.63/librsvg-2.63.4.tar.xz
+ https://github.com/fontforge/libspiro/releases/download/20220722/libspiro-dist-20220722.tar.gz
+ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz
+ https://github.com/mypaint/mypaint-brushes/releases/download/v2.0.2/mypaint-brushes-2.0.2.tar.xz
+@@ -489,7 +489,7 @@ https://github.com/psf/cachecontrol/archive/v0.14.4/cachecontrol-0.14.4.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.6.0.tar.gz
+ https://github.com/cython/cython/releases/download/3.3.0/cython-3.3.0.tar.gz
+ https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.38.1.tar.gz
+-https://dbus.freedesktop.org/releases/dbus-python/dbus_python-1.5.0.tar.gz
++https://dbus.freedesktop.org/releases/dbus-python/dbus_python-1.5.1.tar.gz
+ https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.23.tar.gz
+ https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.gz
+ https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-0.6.0.tar.gz
+@@ -606,7 +606,7 @@ https://www.wireshark.org/download/src/all-versions/wireshark-4.6.9.tar.xz
+ https://github.com/c-ares/c-ares/releases/download/v1.34.9/c-ares-1.34.9.tar.gz
+ https://curl.se/download/curl-8.23.0.tar.xz
+ https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.8.2/geoclue-2.8.2.tar.bz2
+-https://download.gnome.org/sources/glib-networking/2.90/glib-networking-2.90.0.tar.xz
++https://download.gnome.org/sources/glib-networking/2.90/glib-networking-2.90.1.tar.xz
+ https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.3.0/kdsoap-2.3.0.tar.gz
+ https://download.kde.org/stable/kdsoap-ws-discovery-client/kdsoap-ws-discovery-client-0.4.0.tar.xz
+ https://www.nlnetlabs.nl/downloads/ldns/ldns-1.9.2.tar.gz
+@@ -933,7 +933,7 @@ https://archive.mozilla.org/pub/thunderbird/releases/153.5.1esr/source/thunderbi
+ https://www.linuxfromscratch.org/patches/blfs/svn/thunderbird-153.5.1-clang_23-1.patch
+ https://github.com/TigerVNC/tigervnc/archive/v1.16.2/tigervnc-1.16.2.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.16.2-configuration_fixes-1.patch
+-https://github.com/transmission/transmission/releases/download/4.1.3/transmission-4.1.3.tar.xz
++https://github.com/transmission/transmission/releases/download/4.1.4/transmission-4.1.4.tar.xz
+ https://github.com/ib/xarchiver/archive/0.5.4.27/xarchiver-0.5.4.27.tar.gz
+ https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.2.1/xdg-utils-v1.2.1.tar.gz
+ https://www.jwz.org/xscreensaver/xscreensaver-6.17.tar.gz
