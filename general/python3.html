@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Python-3.14.8
+      Python-3.15.2
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-508">
+  <body class="blfs" id="blfs-r13.1-520">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-508
+        "phrase">(systemd</span> Edition) - Version r13.1-520
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-508">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-520">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="python3" name="python3"></a>Python-3.14.8
+      <a id="python3" name="python3"></a>Python-3.15.2
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -141,23 +141,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.python.org/ftp/python/3.14.8/Python-3.14.8.tar.xz">
-                https://www.python.org/ftp/python/3.14.8/Python-3.14.8.tar.xz</a>
+                "https://www.python.org/ftp/python/3.15.2/Python-3.15.2.tar.xz">
+                https://www.python.org/ftp/python/3.15.2/Python-3.15.2.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 129e654fc09bda21b21c7b4b5ac516e9
+                Download MD5 sum: fa9fdb83b421033bd86f43662d311f69
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 23 MB
+                Download size: 27 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 346 MB (add 65 MB for tests)
+                Estimated disk space required: 364 MB (add 85 MB for tests)
               </p>
             </li>
             <li class="listitem">
@@ -176,8 +176,8 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.8-openssl_4-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.8-openssl_4-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.15.2-openssl_4-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.15.2-openssl_4-1.patch</a>
               </p>
             </li>
           </ul>
@@ -190,8 +190,8 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.python.org/ftp/python/doc/3.14.8/python-3.14.8-docs-html.tar.bz2">
-                https://www.python.org/ftp/python/doc/3.14.8/python-3.14.8-docs-html.tar.bz2</a>
+                "https://www.python.org/ftp/python/doc/3.15.2/python-3.15.2-docs-html.tar.bz2">
+                https://www.python.org/ftp/python/doc/3.15.2/python-3.15.2-docs-html.tar.bz2</a>
               </p>
             </li>
             <li class="listitem">
@@ -250,7 +250,7 @@
           three security issues:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../Python-3.14.8-openssl_4-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../Python-3.15.2-openssl_4-1.patch</kbd></pre>
         <p>
           Install <span class="application">Python 3</span> by running the
           following commands:
@@ -287,13 +287,13 @@ make</kbd></pre>
           install it as the <code class="systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">install -v -dm755 /usr/share/doc/python-3.14.8/html
+        "command">install -v -dm755 /usr/share/doc/python-3.15.2/html
 
 tar --strip-components=1  \
     --no-same-owner       \
     --no-same-permissions \
-    -C /usr/share/doc/python-3.14.8/html \
-    -xvf ../python-3.14.8-docs-html.tar.bz2</kbd></pre>
+    -C /usr/share/doc/python-3.15.2/html \
+    -xvf ../python-3.15.2-docs-html.tar.bz2</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -317,7 +317,7 @@ tar --strip-components=1  \
           <code class="option">--with-lto</code>: This optional switch
           enables thick Link Time Optimization. Unusually, it creates a much
           larger <code class=
-          "filename">/usr/lib/python3.14/config-3.14-&lt;arch&gt;-linux-gnu/libpython3.14.a</code>
+          "filename">/usr/lib/python3.15/config-3.15-&lt;arch&gt;-linux-gnu/libpython3.15.a</code>
           with a small increase in the time to compile <span class=
           "application">Python</span>. Run-time results do not appear to show
           any benefit from doing this.
@@ -333,7 +333,7 @@ tar --strip-components=1  \
           independent symlink:
         </p>
         <pre class="root"><kbd class=
-        "command">ln -svfn python-3.14.8 /usr/share/doc/python-3</kbd></pre>
+        "command">ln -svfn python-3.15.2 /usr/share/doc/python-3</kbd></pre>
         <p>
           and add the following environment variable to the individual user's
           or system's profile:
@@ -349,19 +349,19 @@ tar --strip-components=1  \
           <div class="seglistitem">
             <div class="seg">
               <strong class="segtitle">Installed Programs:</strong>
-              <span class="segbody">idle3 (symlink) and idle3.14, pip3 and
-              pip3.14, pydoc3 (symlink) and pydoc3.14, python3 (symlink) and
-              python3.14, and python3-config (symlink) and
-              python3.14-config</span>
+              <span class="segbody">idle3 (symlink) and idle3.15, pip3 and
+              pip3.15, pydoc3 (symlink) and pydoc3.15, python3 (symlink) and
+              python3.15, and python3-config (symlink) and
+              python3.15-config</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Libraries:</strong>
-              <span class="segbody">libpython3.14.so and libpython3.so</span>
+              <span class="segbody">libpython3.15.so and libpython3.so</span>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/include/python3.14,
-              /usr/lib/python3.14, and /usr/share/doc/python-3.14.8</span>
+              <span class="segbody">/usr/include/python3.15,
+              /usr/lib/python3.15, and /usr/share/doc/python-3.15.2</span>
             </div>
           </div>
         </div>
@@ -428,7 +428,7 @@ tar --strip-components=1  \
                   <p>
                     <a id="python-ver" name="python-ver"></a><span class=
                     "term"><span class=
-                    "command"><strong>python3.14</strong></span></span>
+                    "command"><strong>python3.15</strong></span></span>
                   </p>
                 </td>
                 <td>
@@ -464,7 +464,7 @@ tar --strip-components=1  \
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-508">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-520">
           Home</a>
         </li>
       </ul>

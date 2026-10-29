@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-508">
+  <body class="blfs" id="blfs-r13.1-520">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-508
+        "phrase">(systemd</span> Edition) - Version r13.1-520
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-508">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-520">
           Home</a>
         </li>
       </ul>
@@ -113,6 +113,14 @@
           <ul class="compact">
             <li class="listitem">
               <p>
+                Required patch (to fix gnome-shell crash when typing via
+                ibus): <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/ibus-1.5.34-upstream_fix-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/ibus-1.5.34-upstream_fix-1.patch</a>
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
                 Unicode Character Database: <a class="ulink" href=
                 "https://www.unicode.org/Public/18.0.0/ucd/UCD.zip">https://www.unicode.org/Public/18.0.0/ucd/UCD.zip</a>
               </p>
@@ -179,6 +187,11 @@
         <pre class="userinput"><kbd class=
         "command">sed -e 's@/desktop/ibus@/org/freedesktop/ibus@g' \
     -i data/dconf/org.freedesktop.ibus.gschema.xml</kbd></pre>
+        <p>
+          Fix an issue causing gnome-shell to crash when typing via ibus:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">patch -Np1 -i ../ibus-1.5.34-upstream_fix-1.patch</kbd></pre>
         <p>
           If <a class="xref" href="gtk-doc.html" title=
           "GTK-Doc-1.37.0">GTK-Doc-1.37.0</a> is not installed, remove the
@@ -403,7 +416,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-508">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-520">
           Home</a>
         </li>
       </ul>
