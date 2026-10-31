@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-527">
+  <body class="blfs" id="blfs-r13.1-536">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-527
+        "phrase">(systemd</span> Edition) - Version r13.1-536
       </h4>
       <h3>
         Chapter&nbsp;35.&nbsp;Xfce Desktop
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-527">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-536">
           Home</a>
         </li>
       </ul>
@@ -227,6 +227,58 @@ update-mime-database /usr/share/mime</kbd></pre>
 EOF
 
 startx</kbd></pre>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            If <a class="xref" href="../x/xdg-desktop-portal.html" title=
+            "xdg-desktop-portal-1.22.1">xdg-desktop-portal-1.22.1</a> is
+            installed, its systemd user service will only start when the
+            systemd unit <span class=
+            "bold"><strong>graphical-session.target</strong></span> is
+            active. <span class="command"><strong>startx</strong></span> does
+            not activate that target, so any application that queries the
+            portal (for example <span class="application">LibreOffice</span>
+            or other GTK applications) waits for a D-Bus timeout of 25
+            seconds, sometimes more than once, before it appears. To avoid
+            this, create a user target that binds to <span class=
+            "bold"><strong>graphical-session.target</strong></span> as the
+            <code class="systemitem">root</code> user:
+          </p>
+          <pre class="root"><kbd class=
+          "command">cat &gt; /etc/systemd/user/xfce-session.target &lt;&lt; "EOF"
+<code class="literal">[Unit]
+Description=Xfce session
+BindsTo=graphical-session.target
+Wants=graphical-session-pre.target
+After=graphical-session-pre.target</code>
+EOF</kbd></pre>
+          <p>
+            Then start <span class="application">Xfce</span> with this
+            <code class="filename">~/.xinitrc</code> instead of the one shown
+            above:
+          </p>
+          <pre class="userinput"><kbd class=
+          "command">cat &gt; ~/.xinitrc &lt;&lt; "EOF"
+<code class="literal">export XDG_CURRENT_DESKTOP=XFCE
+dbus-update-activation-environment --systemd DISPLAY XAUTHORITY XDG_CURRENT_DESKTOP
+systemctl --user start xfce-session.target
+startxfce4
+systemctl --user stop xfce-session.target</code>
+EOF</kbd></pre>
+          <p>
+            The environment variables are passed to the systemd user instance
+            so that the portal and its backends can connect to the X server.
+            Do not prefix <span class=
+            "command"><strong>startxfce4</strong></span> with <span class=
+            "command"><strong>exec</strong></span>; the last line has to run
+            when the session ends so that <span class=
+            "bold"><strong>graphical-session.target</strong></span> and the
+            services bound to it are stopped.
+          </p>
+        </div>
         <p>
           The X session starts on the first unused virtual terminal, normally
           vt7. You can switch to another vt<span class=
@@ -370,7 +422,7 @@ startx</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-527">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-536">
           Home</a>
         </li>
       </ul>

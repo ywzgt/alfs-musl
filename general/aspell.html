@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Aspell-0.60.8.2
+      Aspell-0.60.8.3
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-527">
+  <body class="blfs" id="blfs-r13.1-536">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-527
+        "phrase">(systemd</span> Edition) - Version r13.1-536
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -41,13 +41,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-527">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-536">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="aspell" name="aspell"></a>Aspell-0.60.8.2
+      <a id="aspell" name="aspell"></a>Aspell-0.60.8.3
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -80,12 +80,12 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://ftpmirror.gnu.org/aspell/aspell-0.60.8.2.tar.gz">https://ftpmirror.gnu.org/aspell/aspell-0.60.8.2.tar.gz</a>
+                "https://ftpmirror.gnu.org/aspell/aspell-0.60.8.3.tar.gz">https://ftpmirror.gnu.org/aspell/aspell-0.60.8.3.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: bc3f30321db5d44f112ab66084421225
+                Download MD5 sum: 2c8b655d373b57ad96599962f51425aa
               </p>
             </li>
             <li class="listitem">
@@ -95,7 +95,7 @@
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 56 MB (Additional 8 MB for EN
+                Estimated disk space required: 57 MB (Additional 10 MB for EN
                 dictionary)
               </p>
             </li>
@@ -113,17 +113,10 @@
           <ul class="compact">
             <li class="listitem">
               <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/aspell-0.60.8.2-security_fixes-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/aspell-0.60.8.2-security_fixes-1.patch</a>
-              </p>
-            </li>
-            <li class="listitem">
-              <p>
                 You'll need to download at least one dictionary, for example
                 the English dictionary: <a class="ulink" href=
-                "https://ftpmirror.gnu.org/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2">
-                https://ftpmirror.gnu.org/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2</a>.
+                "https://ftpmirror.gnu.org/aspell/dict/en/aspell6-en-2026.02.25-0.tar.bz2">
+                https://ftpmirror.gnu.org/aspell/dict/en/aspell6-en-2026.02.25-0.tar.bz2</a>.
                 Dictionaries in many other languages can be found at
                 <a class="ulink" href=
                 "https://ftpmirror.gnu.org/aspell/dict">https://ftpmirror.gnu.org/aspell/dict</a>.
@@ -147,11 +140,6 @@
           Installation of Aspell
         </h2>
         <p>
-          Apply a patch to fix some security issues identified upstream:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../aspell-0.60.8.2-security_fixes-1.patch</kbd></pre>
-        <p>
           Install <span class="application">Aspell</span> by running the
           following commands:
         </p>
@@ -167,13 +155,13 @@ make</kbd></pre>
         <pre class="root"><kbd class="command">make install &amp;&amp;
 ln -svfn aspell-0.60 /usr/lib/aspell &amp;&amp;
 
-install -v -m755 -d /usr/share/doc/aspell-0.60.8.2/aspell{,-dev}.html &amp;&amp;
+install -v -m755 -d /usr/share/doc/aspell-0.60.8.3/aspell{,-dev}.html &amp;&amp;
 
 install -v -m644 manual/aspell.html/* \
-    /usr/share/doc/aspell-0.60.8.2/aspell.html &amp;&amp;
+    /usr/share/doc/aspell-0.60.8.3/aspell.html &amp;&amp;
 
 install -v -m644 manual/aspell-dev.html/* \
-    /usr/share/doc/aspell-0.60.8.2/aspell-dev.html</kbd></pre>
+    /usr/share/doc/aspell-0.60.8.3/aspell-dev.html</kbd></pre>
         <p>
           If you do not plan to install <span class=
           "application">Ispell</span>, then copy the wrapper script
@@ -214,8 +202,8 @@ install -v -m644 manual/aspell-dev.html/* \
             dictionary by running the following commands:
           </p>
           <pre class="userinput"><kbd class=
-          "command">tar xf ../aspell6-en-2020.12.07-0.tar.bz2 &amp;&amp;
-cd aspell6-en-2020.12.07-0                &amp;&amp;
+          "command">tar xf ../aspell6-en-2026.02.25-0.tar.bz2 &amp;&amp;
+cd aspell6-en-2026.02.25-0                &amp;&amp;
 
 ./configure &amp;&amp;
 make</kbd></pre>
@@ -492,7 +480,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-527">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-536">
           Home</a>
         </li>
       </ul>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-527">
+  <body class="blfs" id="blfs-r13.1-536">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-527
+        "phrase">(systemd</span> Edition) - Version r13.1-536
       </h4>
       <h3>
         Chapter&nbsp;12.&nbsp;System Utilities
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-527">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-536">
           Home</a>
         </li>
       </ul>
@@ -331,6 +331,30 @@ EOF</kbd></pre>
                 "literal"># Start the D-Bus session daemon
 eval `dbus-launch`
 export DBUS_SESSION_BUS_ADDRESS</code></kbd></pre>
+                <div class="admon note">
+                  <img alt="[Note]" src="../images/note.png" />
+                  <h3>
+                    Note
+                  </h3>
+                  <p>
+                    Do not use <span class=
+                    "command"><strong>dbus-update-activation-environment
+                    --systemd --all</strong></span> on a BLFS system. The
+                    <code class="filename">/etc/profile</code> created in
+                    <a class="xref" href="../postlfs/profile.html" title=
+                    "The Bash Shell Startup Files">The Bash Shell Startup
+                    Files</a> exports shell functions, which appear in the
+                    environment as variables such as <code class=
+                    "envar">BASH_FUNC_pathappend%%</code>. systemd rejects
+                    those names and refuses the entire update with the
+                    message <code class="computeroutput">Invalid environment
+                    assignments</code>, so none of the variables are set,
+                    including <code class="envar">DISPLAY</code>. List the
+                    variables explicitly instead, for example:
+                  </p>
+                  <pre class="userinput"><kbd class=
+                  "command">dbus-update-activation-environment --systemd DISPLAY XAUTHORITY XDG_CURRENT_DESKTOP</kbd></pre>
+                </div>
                 <p>
                   This method will not stop the session daemon when you exit
                   your shell, therefore you should add the following line to
@@ -376,7 +400,7 @@ kill $DBUS_SESSION_BUS_PID</code></kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-527">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-536">
           Home</a>
         </li>
       </ul>
