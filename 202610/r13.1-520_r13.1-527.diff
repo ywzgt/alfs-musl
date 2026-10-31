@@ -1,0 +1,43 @@
+diff --git a/wget-list b/wget-list
+index 8e1b754d21..610347094d 100644
+--- a/wget-list
++++ b/wget-list
+@@ -1,6 +1,6 @@
+ https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20261022.tar.xz
+ https://github.com/lfs-book/make-ca/archive/v1.16.1/make-ca-1.16.1.tar.gz
+-https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.tar.xz
++https://github.com/cracklib/cracklib/releases/download/v2.10.4/cracklib-2.10.4.tar.xz
+ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.8.tar.xz
+ https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+ https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
+@@ -60,9 +60,9 @@ https://github.com/vim/vim/archive/v9.2.1225/vim-9.2.1225.tar.gz
+ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.13.5.tar.gz
+ https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+ https://www.zsh.org/pub/zsh-5.9.2.tar.xz
+-https://download.qemu.org/qemu-11.1.2.tar.xz
++https://download.qemu.org/qemu-11.1.3.tar.xz
+ https://github.com/abseil/abseil-cpp/releases/download/20260817.0/abseil-cpp-20260817.0.tar.gz
+-https://www.freedesktop.org/software/appstream/releases/AppStream-1.2.1.tar.xz
++https://www.freedesktop.org/software/appstream/releases/AppStream-1.2.2.tar.xz
+ http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.4.tar.xz
+ https://archive.apache.org/dist/apr/apr-1.7.6.tar.bz2
+ https://archive.apache.org/dist/apr/apr-util-1.6.5.tar.bz2
+@@ -153,8 +153,8 @@ https://github.com/pantoniou/libfyaml/releases/download/v0.9.6/libfyaml-0.9.6.ta
+ https://github.com/log4cplus/log4cplus/releases/download/REL_2_2_1/log4cplus-2.2.1.tar.xz
+ https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+ https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
+-https://nodejs.org/dist/v26.12.1/node-v26.12.1.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/node-v26.12.1-icu4c-79_fix-1.patch
++https://nodejs.org/dist/v26.13.0/node-v26.13.0.tar.xz
++https://www.linuxfromscratch.org/patches/blfs/svn/node-v26.13.0-icu4c-79_fix-1.patch
+ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
+ https://archive.mozilla.org/pub/nspr/releases/v4.40/src/nspr-4.40.tar.gz
+ https://github.com/AcademySoftwareFoundation/OpenTimelineIO/archive/v0.18.1/OpenTimelineIO-0.18.1.tar.gz
+@@ -480,7 +480,6 @@ https://www.php.net/distributions/php-8.5.12.tar.xz
+ https://www.php.net/distributions/manual/php_manual_en.html.gz
+ https://www.php.net/distributions/manual/php_manual_en.tar.gz
+ https://www.python.org/ftp/python/3.15.2/Python-3.15.2.tar.xz
+-https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.15.2-openssl_4-1.patch
+ https://www.python.org/ftp/python/doc/3.15.2/python-3.15.2-docs-html.tar.bz2
+ https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.11.1-openssl_4_fixes-1.patch
