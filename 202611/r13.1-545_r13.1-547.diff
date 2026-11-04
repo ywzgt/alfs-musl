@@ -1,0 +1,22 @@
+diff --git a/wget-list b/wget-list
+index ccfdca19dd..d70c9c8ef1 100644
+--- a/wget-list
++++ b/wget-list
+@@ -91,7 +91,7 @@ https://ftpmirror.gnu.org/gsl/gsl-2.8.tar.gz
+ https://download.gnome.org/sources/gspell/1.14/gspell-1.14.5.tar.xz
+ https://github.com/google/highway/archive/1.4.0/highway-1.4.0.tar.gz
+ https://github.com/unicode-org/icu/releases/download/release-79.1/icu4c-79.1-sources.tgz
+-https://github.com/benhoyt/inih/archive/r62/inih-r62.tar.gz
++https://github.com/benhoyt/inih/archive/r63/inih-r63.tar.gz
+ https://github.com/akheron/jansson/releases/download/v2.15.1/jansson-2.15.1.tar.bz2
+ https://github.com/nlohmann/json/archive/v3.12.0/json-3.12.0.tar.gz
+ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.19.tar.gz
+@@ -487,7 +487,7 @@ https://download.gnome.org/sources/blueprint-compiler/0.22/blueprint-compiler-0.
+ https://files.pythonhosted.org/packages/source/b/build/build-1.6.1.tar.gz
+ https://github.com/psf/cachecontrol/archive/v0.14.4/cachecontrol-0.14.4.tar.gz
+ https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.6.0.tar.gz
+-https://github.com/cython/cython/releases/download/3.3.0/cython-3.3.0.tar.gz
++https://github.com/cython/cython/releases/download/3.3.1/cython-3.3.1.tar.gz
+ https://files.pythonhosted.org/packages/source/p/python-dbusmock/python_dbusmock-0.38.1.tar.gz
+ https://dbus.freedesktop.org/releases/dbus-python/dbus_python-1.5.1.tar.gz
+ https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.23.tar.gz
