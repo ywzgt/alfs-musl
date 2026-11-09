@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-573">
+  <body class="blfs" id="blfs-r13.1-579">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-573
+        "phrase">(systemd</span> Edition) - Version r13.1-579
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-573">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-579">
           Home</a>
         </li>
       </ul>
@@ -114,6 +114,7 @@
         <pre class="userinput"><kbd class=
         "command">./configure --prefix=/usr \
             --disable-static \
+            --enable-x86-rtcd \
             --docdir=/usr/share/doc/rnnoise-0.2 &amp;&amp;
 make</kbd></pre>
         <p>
@@ -128,6 +129,10 @@ make</kbd></pre>
         <h2 class="sect2">
           Command Explanations
         </h2>
+        <p>
+          <em class="parameter"><code>--enable-x86-rtcd</code></em>: This
+          switch enables runtime CPU detection on X86 architectures.
+        </p>
         <p>
           <em class="parameter"><code>--disable-static</code></em>: This
           switch prevents installation of static versions of the libraries.
@@ -175,7 +180,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-573">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-579">
           Home</a>
         </li>
       </ul>
