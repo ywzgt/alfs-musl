@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-604">
+  <body class="blfs" id="blfs-r13.1-611">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-604
+        "phrase">(systemd</span> Edition) - Version r13.1-611
       </h4>
       <h3>
         Chapter&nbsp;11.&nbsp;General Utilities
@@ -42,7 +42,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-604">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-611">
           Home</a>
         </li>
       </ul>
@@ -180,38 +180,34 @@
         "command">sed -e 's@/desktop/ibus@/org/freedesktop/ibus@g' \
     -i data/dconf/org.freedesktop.ibus.gschema.xml</kbd></pre>
         <p>
-          If <a class="xref" href="gtk-doc.html" title=
-          "GTK-Doc-1.37.0">GTK-Doc-1.37.0</a> is not installed, remove the
-          references to it:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">if ! [ -e /usr/bin/gtkdocize ]; then
-  sed '/docs/d;/GTK_DOC/d' -i Makefile.am configure.ac
-fi</kbd></pre>
-        <p>
           Install <span class="application">ibus</span> by running the
           following commands:
         </p>
-        <pre class="userinput"><kbd class=
-        "command">SAVE_DIST_FILES=1 NOCONFIGURE=1 ./autogen.sh &amp;&amp;
+        <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
+cd    build &amp;&amp;
 
-./configure --prefix=/usr          \
-            --sysconfdir=/etc      \
-            --disable-python2      \
-            --disable-appindicator \
-            --disable-gtk2         \
-            --disable-emoji-dict   &amp;&amp;
-make</kbd></pre>
+meson setup ..                    \
+            --prefix=/usr         \
+            --buildtype=release   \
+            -D appindicator=false \
+            -D emoji-dict=false   \
+            -D gtk-doc=false      \
+            -D tests=false        &amp;&amp;
+ninja</kbd></pre>
         <p>
-          To test the results, issue: <span class="command"><strong>sed
-          's/python$/&amp;3/' -i engine/test-gnome.py &amp;&amp; make -k
-          check</strong></span>. The test named ibus-compose fails because it
-          uses some locales not installed in LFS. The test named
-          ibus-keypress requires <code class=
-          "literal">CONFIG_INPUT_UINPUT</code> enabled in the kernel
-          configuration and it would fail otherwise. The test named
+          To test the results, issue:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">meson configure -D tests=true -D distro-tests=true &amp;&amp;
+sed 's/python$/&amp;3/' -i ../engine/test-gnome.py     &amp;&amp;
+ninja test</kbd></pre>
+        <p>
+          The test named ibus-compose fails because it uses some locales not
+          installed in LFS. The test named ibus-keypress requires
+          <code class="literal">CONFIG_INPUT_UINPUT</code> enabled in the
+          kernel configuration and it would fail otherwise. The test named
           <code class="literal">test_gnome.py</code> is known to fail with
-          xkeyboard-config 2.48 or newer. The xkb-latin-layouts test is also
+          xkeyboard-config 2.49 or newer. The xkb-latin-layouts test is also
           known to fail on some systems.
         </p>
         <p>
@@ -224,27 +220,30 @@ make</kbd></pre>
           Command Explanations
         </h2>
         <p>
-          <em class="parameter"><code>--disable-appindicator</code></em>:
-          This switch disables use of libdbusmenu. Omit if you installed the
+          <em class="parameter"><code>-D appindicator=false</code></em>: This
+          switch disables use of libdbusmenu. Omit if you installed the
           optional dependency.
         </p>
         <p>
-          <em class="parameter"><code>--disable-emoji-dict</code></em>: This
+          <em class="parameter"><code>-D emoji-dict=false</code></em>: This
           switch disables the use of emoticon dictionaries. Omit if you
           installed the optional package.
         </p>
         <p>
-          <em class="parameter"><code>--disable-gtk2</code></em>: This switch
-          removes the dependency on <span class="application">GTK+-2</span>.
+          <em class="parameter"><code>-D gtk-doc=false</code></em>: This
+          switch removes the dependency on <span class=
+          "application">Gtk-Doc</span>. Remove it if you've installed the
+          dependency and you wish to build and install the API documentation
+          of this package.
         </p>
         <p>
-          <code class="option">--disable-gtk4</code>: This switch disables
+          <code class="option">-D gtk4=false</code>: This switch disables
           building the <span class="application">GTK 4</span> immodule. Use
           it if you don't want to install <span class="application">GTK
           4</span>.
         </p>
         <p>
-          <code class="option">--enable-wayland</code>: This switch enables
+          <code class="option">-D wayland=enabled</code>: This switch enables
           building the <span class="application">Wayland</span> support
           programs. It's automatically enabled if both <a class="xref" href=
           "libxkbcommon.html" title=
@@ -252,44 +251,17 @@ make</kbd></pre>
           href="wayland.html" title="Wayland-1.26.0">Wayland-1.26.0</a> are
           installed.
         </p>
-        <p>
-          <code class="envar">NOCONFIGURE=1</code>: Prevent <span class=
-          "command"><strong>autogen.sh</strong></span> from running the
-          generated <span class="command"><strong>configure</strong></span>
-          script. We'll run the script manually instead of relying on
-          <span class="command"><strong>autogen.sh</strong></span> to run it,
-          because <span class="command"><strong>autogen.sh</strong></span>
-          would set <code class="option">-fsanitize=address
-          -fsanitize=leak</code> in <code class="envar">CFLAGS</code> running
-          <span class="command"><strong>configure</strong></span>, but those
-          compiler options are not suitable for productive use and they may
-          also cause a build failure.
-        </p>
-        <p>
-          <code class="envar">SAVE_DIST_FILES=1</code>: This environment
-          variable makes the <span class=
-          "command"><strong>autogen.sh</strong></span> script save some
-          pre-generated header files instead of overwriting them when it is
-          run. This prevents build failures when generating <code class=
-          "filename">ibusemojigen.h</code>.
-        </p>
-        <p>
-          <code class="option">--enable-gtk-doc</code>: Use this parameter if
-          <span class="application">GTK-Doc</span> is installed and you wish
-          to rebuild and install the API documentation.
-        </p>
       </div>
       <div class="configuration" lang="en" xml:lang="en">
         <h2 class="sect2">
           Configuring Ibus
         </h2>
         <p>
-          If GTK+-3 is installed and <code class=
-          "option">--disable-gtk3</code> is not used, the ibus IM module for
-          GTK+-3 will be installed. As the <code class=
-          "systemitem">root</code> user, update a cache file of GTK+-3 so the
-          GTK-based applications can find the newly installed IM module and
-          use ibus as an input method:
+          If GTK+-3 is installed and <code class="option">-D
+          gtk3=false</code> is not used, the ibus IM module for GTK+-3 will
+          be installed. As the <code class="systemitem">root</code> user,
+          update a cache file of GTK+-3 so the GTK-based applications can
+          find the newly installed IM module and use ibus as an input method:
         </p>
         <pre class="userinput"><kbd class=
         "command">gtk-query-immodules-3.0 --update-cache</kbd></pre>
@@ -403,7 +375,7 @@ make</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-604">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-611">
           Home</a>
         </li>
       </ul>
