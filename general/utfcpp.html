@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      utfcpp-4.2.1
+      utfcpp-5.0.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-621">
+  <body class="blfs" id="blfs-r13.1-631">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-621
+        "phrase">(systemd</span> Edition) - Version r13.1-631
       </h4>
       <h3>
         Chapter&nbsp;9.&nbsp;General Libraries
@@ -42,13 +42,13 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-621">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-631">
           Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="utfcpp" name="utfcpp"></a>utfcpp-4.2.1
+      <a id="utfcpp" name="utfcpp"></a>utfcpp-5.0.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -78,23 +78,23 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/nemtrif/utfcpp/archive/v4.2.1/utfcpp-4.2.1.tar.gz">
-                https://github.com/nemtrif/utfcpp/archive/v4.2.1/utfcpp-4.2.1.tar.gz</a>
+                "https://github.com/nemtrif/utfcpp/archive/v5.0.0/utfcpp-5.0.0.tar.gz">
+                https://github.com/nemtrif/utfcpp/archive/v5.0.0/utfcpp-5.0.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 8661620920a197032d982329ba78fdf3
+                Download MD5 sum: 9921e60074eba40447ea67c96d7b9857
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 40 KB
+                Download size: 44 KB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 740 KB
+                Estimated disk space required: 788 KB (add 4.2 MB for tests)
               </p>
             </li>
             <li class="listitem">
@@ -128,8 +128,12 @@ cd    build &amp;&amp;
 
 cmake -D CMAKE_INSTALL_PREFIX=/usr ..</kbd></pre>
         <p>
-          This package does not come with a test suite.
+          If you wish to run the tests, issue:
         </p>
+        <pre class="userinput"><kbd class=
+        "command">cmake .. -D UTF8CPP_ENABLE_TESTS=ON &amp;&amp;
+make &amp;&amp;
+make test</kbd></pre>
         <p>
           Now, as the <code class="systemitem">root</code> user:
         </p>
@@ -180,7 +184,7 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr ..</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-621">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-631">
           Home</a>
         </li>
       </ul>
