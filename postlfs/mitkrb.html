@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-r13.1-631">
+  <body class="blfs" id="blfs-r13.1-638">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version r13.1-631
+        "phrase">(systemd</span> Edition) - Version r13.1-638
       </h4>
       <h3>
         Chapter&nbsp;4.&nbsp;Security
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-631">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-638">
           Home</a>
         </li>
       </ul>
@@ -108,6 +108,20 @@
           </ul>
         </div>
         <h3>
+          Additional Downloads
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Required patch: <a class="ulink" href=
+                "https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.3-openssl_4_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.3-openssl_4_fixes-1.patch</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
           MIT Kerberos V5 Dependencies
         </h3>
         <h4>
@@ -152,11 +166,10 @@
           Installation of MIT Kerberos V5
         </h2>
         <p>
-          First, make some fixes for gcc-16.2 and later:
+          Next, fix building with OpenSSL-4:
         </p>
         <pre class="userinput"><kbd class=
-        "command">sed -r 's/X509_EXTENSION .san_ext|X509_NAME .name/const &amp;/' \
-    -i src/plugins/tls/k5tls/openssl.c</kbd></pre>
+        "command">patch -Np1 -i ../mitkrb-1.22.3-openssl_4_fixes-1.patch</kbd></pre>
         <p>
           Build <span class="application">MIT Kerberos V5</span> by running
           the following commands:
@@ -261,7 +274,7 @@ cp -vfr ../doc -T /usr/share/doc/krb5-1.22.3</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id8697" name="id8697"></a>Kerberos Configuration
+                    <a id="id8708" name="id8708"></a>Kerberos Configuration
                   </h5>
                 </div>
               </div>
@@ -434,7 +447,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id8776" name="id8776"></a>Additional Information
+                    <a id="id8787" name="id8787"></a>Additional Information
                   </h5>
                 </div>
               </div>
@@ -1049,7 +1062,7 @@ systemctl enable krb5-kadmind</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-631">
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version r13.1-638">
           Home</a>
         </li>
       </ul>
