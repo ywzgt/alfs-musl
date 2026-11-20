@@ -5,7 +5,7 @@ https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.8.tar.xz
 https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.24.tar.bz2
-https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.13.tar.xz
+https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.14.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-2.2.0.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gpgmepp/gpgmepp-2.2.0.tar.xz
 https://www.netfilter.org/projects/iptables/files/iptables-1.8.13.tar.xz
@@ -18,7 +18,7 @@ https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.
 https://kerberos.org/dist/krb5/1.22/krb5-1.22.3.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.3-openssl_4_fixes-1.patch
 https://ftpmirror.gnu.org/nettle/nettle-4.0.tar.gz
-https://archive.mozilla.org/pub/security/nss/releases/NSS_3_133_RTM/src/nss-3.133.tar.gz
+https://archive.mozilla.org/pub/security/nss/releases/NSS_3_134_RTM/src/nss-3.134.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
 https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p2.tar.gz
 https://github.com/p11-glue/p11-kit/releases/download/0.26.6/p11-kit-0.26.6.tar.xz
@@ -154,7 +154,7 @@ https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
 https://nodejs.org/dist/v26.13.1/node-v26.13.1.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/node-v26.13.1-icu4c-79_fix-1.patch
 https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
-https://archive.mozilla.org/pub/nspr/releases/v4.40/src/nspr-4.40.tar.gz
+https://archive.mozilla.org/pub/nspr/releases/v4.41/src/nspr-4.41.tar.gz
 https://github.com/AcademySoftwareFoundation/OpenTimelineIO/archive/v0.18.1/OpenTimelineIO-0.18.1.tar.gz
 https://anduin.linuxfromscratch.org/BLFS/OpenTimelineIO/OpenTimelineIO-rapidjson-20260513.tar.xz
 https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz
@@ -341,7 +341,7 @@ https://www.cpan.org/authors/id/D/DA/DANKOGAI/Encode-JIS2K-0.05.tar.gz
 https://www.cpan.org/authors/id/J/JT/JTT/File-FcntlLock-0.22.tar.gz
 https://www.cpan.org/authors/id/L/LE/LEONT/File-Slurper-0.014.tar.gz
 https://www.cpan.org/authors/id/P/PL/PLICEASE/File-Which-1.27.tar.gz
-https://www.cpan.org/authors/id/O/OA/OALDERS/HTML-Parser-3.86.tar.gz
+https://www.cpan.org/authors/id/O/OA/OALDERS/HTML-Parser-3.87.tar.gz
 https://www.cpan.org/authors/id/O/OA/OALDERS/HTTP-Daemon-6.17.tar.gz
 https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.099.tar.gz
 https://www.cpan.org/authors/id/G/GA/GAAS/IO-String-1.08.tar.gz
@@ -473,7 +473,7 @@ https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-LibXML-2.0213.tar.gz
 https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz
 https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
 https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
-https://www.php.net/distributions/php-8.5.12.tar.xz
+https://www.php.net/distributions/php-8.6.0.tar.xz
 https://www.php.net/distributions/manual/php_manual_en.html.gz
 https://www.php.net/distributions/manual/php_manual_en.tar.gz
 https://www.python.org/ftp/python/3.15.2/Python-3.15.2.tar.xz
@@ -561,7 +561,7 @@ https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.7.0.tar.gz
 https://files.pythonhosted.org/packages/source/u/uv_build/uv_build-0.11.24.tar.gz
 https://files.pythonhosted.org/packages/source/v/vcs_versioning/vcs_versioning-2.2.4.tar.gz
 https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
-https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.9.tar.xz
+https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.10.tar.xz
 https://static.rust-lang.org/dist/rustc-1.100.0-src.tar.xz
 https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.73.2/rust-bindgen-0.73.2.tar.gz
 https://downloads.sourceforge.net/scons/SCons-4.11.1.tar.gz
@@ -580,7 +580,7 @@ https://archive.apache.org/dist/ant/source/apache-ant-1.10.18-src.tar.xz
 https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.9.tar.bz2
 https://www.ncftp.com/public_ftp/ncftp/ncftp-3.3.0-src.tar.gz
 https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
-https://www.kernel.org/pub/linux/utils/nfs-utils/3.1.1/nfs-utils-3.1.1.tar.xz
+https://www.kernel.org/pub/linux/utils/nfs-utils/3.2.1/nfs-utils-3.2.1.tar.xz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/ntp-4.2.8p18-openssl_4-1.patch
 https://downloads.sourceforge.net/rpcbind/rpcbind-1.3.1.tar.bz2
@@ -593,13 +593,13 @@ https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_s
 https://w1.fi/releases/wpa_supplicant-2.12.tar.gz
 https://github.com/lathiat/avahi/archive/v0.9-rc5/avahi-0.9-rc5.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.9-rc5-ipv6_race_condition_fix-1.patch
-https://ftp.isc.org/isc/bind9/9.20.30/bind-9.20.30.tar.xz
+https://ftp.isc.org/isc/bind9/9.20.31/bind-9.20.31.tar.xz
 https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.58.1/downloads/NetworkManager-1.58.1.tar.xz
 https://download.gnome.org/sources/network-manager-applet/1.34/network-manager-applet-1.34.0.tar.xz
 https://nmap.org/dist/nmap-7.993.tar.bz2
 https://downloads.sourceforge.net/traceroute/traceroute-2.1.6.tar.gz
 https://github.com/rfc1036/whois/archive/v5.6.6/whois-5.6.6.tar.gz
-https://www.wireshark.org/download/src/all-versions/wireshark-4.6.9.tar.xz
+https://www.wireshark.org/download/src/all-versions/wireshark-4.6.10.tar.xz
 https://github.com/c-ares/c-ares/releases/download/v1.34.9/c-ares-1.34.9.tar.gz
 https://curl.se/download/curl-8.23.0.tar.xz
 https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.8.2/geoclue-2.8.2.tar.bz2
@@ -714,7 +714,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/qtwebengine-6.140.0-icu4c_79-1
 https://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz
 https://github.com/KhronosGroup/Vulkan-Headers/archive/vulkan-sdk-1.4.363.0/Vulkan-Headers-vulkan-sdk-1.4.363.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.363.0/Vulkan-Loader-vulkan-sdk-1.4.363.0.tar.gz
-https://webkitgtk.org/releases/webkitgtk-2.54.2.tar.xz
+https://webkitgtk.org/releases/webkitgtk-2.54.3.tar.xz
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.20.2/wlroots-0.20.2.tar.bz2
 https://github.com/flatpak/xdg-desktop-portal/releases/download/1.22.1/xdg-desktop-portal-1.22.1.tar.xz
 https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
