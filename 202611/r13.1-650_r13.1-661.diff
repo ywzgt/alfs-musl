@@ -1,0 +1,72 @@
+diff --git a/wget-list b/wget-list
+index 58af58c1f7..391cf31bde 100644
+--- a/wget-list
++++ b/wget-list
+@@ -114,7 +114,7 @@ https://github.com/hughsie/libgusb/releases/download/0.4.9/libgusb-0.4.9.tar.xz
+ https://github.com/libical/libical/releases/download/v4.0.8/libical-4.0.8.tar.gz
+ https://ftpmirror.gnu.org/libidn/libidn-1.44.tar.gz
+ https://ftpmirror.gnu.org/libidn/libidn2-2.3.8.tar.gz
+-https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.8.1.tar.bz2
++https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.9.0.tar.bz2
+ https://github.com/cjlin1/liblinear/archive/v250/liblinear-250.tar.gz
+ https://gitlab.freedesktop.org/mobile-broadband/libmbim/-/archive/1.34.0/libmbim-1.34.0.tar.gz
+ https://github.com/linux-nvme/libnvme/archive/v1.16.2/libnvme-1.16.2.tar.gz
+@@ -184,7 +184,7 @@ https://download.gimp.org/pub/babl/0.1/babl-0.1.128.tar.xz
+ https://github.com/Exiv2/exiv2/archive/v0.28.9/exiv2-0.28.9.tar.gz
+ https://downloads.sourceforge.net/freetype/freetype-2.15.0.tar.xz
+ https://downloads.sourceforge.net/freetype/freetype-doc-2.15.0.tar.xz
+-https://gitlab.freedesktop.org/api/v4/projects/890/packages/generic/fontconfig/2.18.3/fontconfig-2.18.3.tar.xz
++https://gitlab.freedesktop.org/api/v4/projects/890/packages/generic/fontconfig/2.18.4/fontconfig-2.18.4.tar.xz
+ https://github.com/fribidi/fribidi/releases/download/v1.0.18/fribidi-1.0.18.tar.xz
+ https://download.gimp.org/pub/gegl/0.4/gegl-0.4.72.tar.xz
+ https://sourceforge.net/projects/giflib/files/giflib-6.1.3.tar.gz
+@@ -573,9 +573,9 @@ https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+ https://download.gnome.org/sources/vala/0.56/vala-0.56.19.tar.xz
+ https://sourceware.org/pub/valgrind/valgrind-3.28.0.tar.bz2
+ https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
+-https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-25.0.5.0.3/OpenJDK-25.0.5.0.3+1-x86_64-bin.tar.xz
+-https://github.com/openjdk/jdk25u/archive/jdk-25.0.5.0.3-ga.tar.gz
+-https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-25.0.5.0.3/jtreg-8.3+1.tar.gz
++https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-25.0.5.1/OpenJDK-25.0.5.1+2-x86_64-bin.tar.xz
++https://github.com/openjdk/jdk25u/archive/jdk-25.0.5.1-ga.tar.gz
++https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-25.0.5.1/jtreg-8.3+1.tar.gz
+ https://archive.apache.org/dist/ant/source/apache-ant-1.10.18-src.tar.xz
+ https://www.samba.org/ftp/linux-cifs/cifs-utils/cifs-utils-7.9.tar.bz2
+ https://www.ncftp.com/public_ftp/ncftp/ncftp-3.3.0-src.tar.gz
+@@ -639,8 +639,7 @@ https://www.dovecot.org/releases/2.4/dovecot-2.4.5.tar.gz
+ https://downloads.exim.org/exim4/exim-4.100.1.tar.xz
+ https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.7.tar.gz
+ https://git.openldap.org/openldap/openldap/-/archive/LMDB_1.0.3/openldap-LMDB_1.0.3.tar.bz2
+-https://downloads.mariadb.org/interstitial/mariadb-12.3.3/source/mariadb-12.3.3.tar.gz
+-https://www.linuxfromscratch.org/patches/blfs/svn/mariadb-12.3.3-openssl4_fixes-1.patch
++https://downloads.mariadb.org/interstitial/mariadb-12.3.4/source/mariadb-12.3.4.tar.gz
+ https://ftp.postgresql.org/pub/source/v18.7/postgresql-18.7.tar.bz2
+ https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.7.2.tgz
+ https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.7.2-consolidated-1.patch
+@@ -786,7 +785,7 @@ https://download.gnome.org/sources/gnome-desktop/51/gnome-desktop-51.0.tar.xz
+ https://download.gnome.org/sources/gnome-menus/3.38/gnome-menus-3.38.1.tar.xz
+ https://download.gnome.org/sources/gnome-online-accounts/3.58/gnome-online-accounts-3.58.1.tar.xz
+ https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz
+-https://download.gnome.org/sources/libgtop/2.41/libgtop-2.41.3.tar.xz
++https://download.gnome.org/sources/libgtop/2.41/libgtop-2.41.4.tar.xz
+ https://download.gnome.org/sources/gweather-locations/2026/gweather-locations-2026.2.tar.xz
+ https://download.gnome.org/sources/libgweather/4.6/libgweather-4.6.0.tar.xz
+ https://download.gnome.org/sources/libpeas/1.38/libpeas-1.38.1.tar.xz
+@@ -874,7 +873,7 @@ https://github.com/lxqt/lxqt-build-tools/releases/download/2.5.0/lxqt-build-tool
+ https://github.com/lxqt/libdbusmenu-lxqt/releases/download/0.5.0/libdbusmenu-lxqt-0.5.0.tar.xz
+ https://github.com/lxqt/libqtxdg/releases/download/4.5.0/libqtxdg-4.5.0.tar.xz
+ https://github.com/lxqt/lxqt-menu-data/releases/download/2.5.0/lxqt-menu-data-2.5.0.tar.xz
+-https://github.com/lxqt/liblxqt/releases/download/2.5.0/liblxqt-2.5.0.tar.xz
++https://github.com/lxqt/liblxqt/releases/download/2.5.1/liblxqt-2.5.1.tar.xz
+ https://github.com/lxqt/libsysstat/releases/download/1.2.0/libsysstat-1.2.0.tar.xz
+ https://github.com/lxqt/qtxdg-tools/releases/download/4.5.0/qtxdg-tools-4.5.0.tar.xz
+ https://github.com/lxqt/libfm-qt/releases/download/2.5.0/libfm-qt-2.5.0.tar.xz
+@@ -940,7 +939,7 @@ https://www.alsa-project.org/files/pub/tools/alsa-tools-1.2.15.tar.bz2
+ https://www.alsa-project.org/files/pub/firmware/alsa-firmware-1.2.4.tar.bz2
+ https://download.gnome.org/sources/audiofile/0.3/audiofile-0.3.6.tar.xz
+ https://www.linuxfromscratch.org/patches/blfs/svn/audiofile-0.3.6-consolidated_patches-1.patch
+-https://code.videolan.org/videolan/dav1d/-/archive/1.5.4/dav1d-1.5.4.tar.gz
++https://code.videolan.org/videolan/dav1d/-/archive/1.5.5/dav1d-1.5.5.tar.gz
+ https://github.com/lfs-book/faac/archive/v2.2/faac-2.2.tar.gz
+ https://github.com/knik0/faad2/archive/2.11.4/faad2-2.11.4.tar.gz
+ https://downloads.sourceforge.net/opencore-amr/fdk-aac-3.0.0.tar.gz
