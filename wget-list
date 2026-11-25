@@ -1,7 +1,7 @@
 https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20261022.tar.xz
 https://github.com/lfs-book/make-ca/archive/v1.16.1/make-ca-1.16.1.tar.gz
 https://github.com/cracklib/cracklib/releases/download/v2.10.4/cracklib-2.10.4.tar.xz
-https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.8.tar.xz
+https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.9.tar.xz
 https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.24.tar.bz2
@@ -86,7 +86,7 @@ https://download.gnome.org/sources/glibmm/2.90/glibmm-2.90.0.tar.xz
 https://github.com/jstedfast/gmime/releases/download/3.2.15/gmime-3.2.15.tar.xz
 https://github.com/lfs-book/gmmlib/archive/v22.10.2/gmmlib-22.10.2.tar.gz
 https://ftpmirror.gnu.org/gsl/gsl-2.8.tar.gz
-https://download.gnome.org/sources/gspell/1.14/gspell-1.14.5.tar.xz
+https://download.gnome.org/sources/gspell/1.14/gspell-1.14.6.tar.xz
 https://github.com/google/highway/archive/1.4.0/highway-1.4.0.tar.gz
 https://github.com/unicode-org/icu/releases/download/release-79.1/icu4c-79.1-sources.tgz
 https://www.linuxfromscratch.org/patches/blfs/svn/icu4c-79.1-upstream_fix-1.patch
@@ -146,7 +146,7 @@ https://www.w3.org/XML/Test/xmlts20130923.tar.gz
 https://github.com/hughsie/libxmlb/releases/download/0.3.30/libxmlb-0.3.30.tar.xz
 https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.45.tar.xz
 https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.20.0/libwacom-2.20.0.tar.xz
-https://github.com/yaml/libyaml/releases/download/0.2.6/yaml-0.2.6.tar.gz
+https://github.com/yaml/libyaml/releases/download/0.2.7/yaml-0.2.7.tar.gz
 https://github.com/pantoniou/libfyaml/releases/download/v0.9.6/libfyaml-0.9.6.tar.gz
 https://github.com/log4cplus/log4cplus/releases/download/REL_2_2_1/log4cplus-2.2.1.tar.xz
 https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
@@ -164,7 +164,7 @@ https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.2-protobuf34_fi
 https://download.kde.org/stable/qca/2.3.12/qca-2.3.12.tar.xz
 https://github.com/danvratil/qcoro/archive/v0.13.0/qcoro-0.13.0.tar.gz
 https://github.com/xiph/rnnoise/releases/download/v0.2/rnnoise-0.2.tar.gz
-https://github.com/simdutf/simdutf/archive/v9.4.0/simdutf-9.4.0.tar.gz
+https://github.com/simdutf/simdutf/archive/v9.5.0/simdutf-9.5.0.tar.gz
 https://archive.mozilla.org/pub/firefox/releases/140.17.0esr/source/firefox-140.17.0esr.source.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.17.0-python_3.14_fixes-1.patch
 https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.363.0/SPIRV-Headers-vulkan-sdk-1.4.363.0.tar.gz
@@ -242,7 +242,7 @@ https://download.gnome.org/sources/gtk-doc/1.37/gtk-doc-1.37.0.tar.xz
 http://www.andre-simon.de/zip/highlight-4.22.tar.bz2
 https://github.com/ibus/ibus/archive/1.5.35/ibus-1.5.35.tar.gz
 https://www.unicode.org/Public/18.0.0/ucd/UCD.zip
-https://www.imagemagick.org/archive/releases/ImageMagick-7.1.2-13.tar.xz
+https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-36/ImageMagick-7.1.2-36.tar.xz
 http://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.20.1/iso-codes-v4.20.1.tar.gz
 https://github.com/lsof-org/lsof/releases/download/4.99.7/lsof-4.99.7.tar.gz
@@ -331,7 +331,7 @@ https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISMN-1.205.tar.gz
 https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISSN-1.008.tar.gz
 https://www.cpan.org/authors/id/K/KA/KASEI/Class-Accessor-0.51.tar.gz
 https://www.cpan.org/authors/id/D/DC/DCANTRELL/Data-Compare-1.29.tar.gz
-https://www.cpan.org/authors/id/G/GA/GARU/Data-Dump-1.26.tar.gz
+https://www.cpan.org/authors/id/G/GA/GARU/Data-Dump-1.28.tar.gz
 https://www.cpan.org/authors/id/M/MW/MWX/Data-Uniqid-0.12.tar.gz
 https://www.cpan.org/authors/id/W/WY/WYANT/DateTime-Calendar-Julian-0.108.tar.gz
 https://www.cpan.org/authors/id/D/DR/DROLSKY/DateTime-Format-Builder-0.83.tar.gz
@@ -687,7 +687,7 @@ https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
 https://download.gnome.org/sources/goffice/0.10/goffice-0.10.62.tar.xz
 https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz
 https://download.gnome.org/sources/gtk/3.24/gtk-3.24.52.tar.xz
-https://download.gnome.org/sources/gtk/4.24/gtk-4.24.1.tar.xz
+https://download.gnome.org/sources/gtk/4.24/gtk-4.24.2.tar.xz
 https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.11.tar.xz
 https://download.gnome.org/sources/gtkmm/4.24/gtkmm-4.24.0.tar.xz
 https://download.gnome.org/sources/gtk-vnc/1.6/gtk-vnc-1.6.0.tar.xz
@@ -800,12 +800,12 @@ https://download.gnome.org/sources/dconf-editor/49/dconf-editor-49.0.tar.xz
 https://download.gnome.org/sources/gnome-backgrounds/51/gnome-backgrounds-51.0.1.tar.xz
 https://download.gnome.org/sources/gvfs/1.62/gvfs-1.62.0.tar.xz
 https://download.gnome.org/sources/gexiv2/0.16/gexiv2-0.16.2.tar.xz
-https://download.gnome.org/sources/nautilus/51/nautilus-51.1.tar.xz
+https://download.gnome.org/sources/nautilus/51/nautilus-51.2.tar.xz
 https://download.gnome.org/sources/gnome-bluetooth/47/gnome-bluetooth-47.2.tar.xz
 https://download.gnome.org/sources/gnome-keyring/51/gnome-keyring-51.1.tar.xz
 https://download.gnome.org/sources/gnome-settings-daemon/51/gnome-settings-daemon-51.1.tar.xz
 https://download.gnome.org/sources/tecla/51/tecla-51.0.tar.xz
-https://download.gnome.org/sources/gnome-control-center/51/gnome-control-center-51.1.tar.xz
+https://download.gnome.org/sources/gnome-control-center/51/gnome-control-center-51.2.1.tar.xz
 https://download.gnome.org/sources/mutter/51/mutter-51.1.tar.xz
 https://download.gnome.org/sources/gnome-shell/51/gnome-shell-51.1.tar.xz
 https://download.gnome.org/sources/gnome-shell-extensions/51/gnome-shell-extensions-51.0.tar.xz
@@ -923,7 +923,7 @@ https://downloads.sourceforge.net/gparted/gparted-1.8.1.tar.gz
 https://inkscape.org/gallery/item/59505/inkscape-1.4.4.tar.xz
 https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.4-poppler_fixes-3.patch
 http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.32.tar.bz2
-https://archive.mozilla.org/pub/thunderbird/releases/153.7.0esr/source/thunderbird-153.7.0esr.source.tar.xz
+https://archive.mozilla.org/pub/thunderbird/releases/153.8.0esr/source/thunderbird-153.8.0esr.source.tar.xz
 https://github.com/TigerVNC/tigervnc/archive/v1.16.2/tigervnc-1.16.2.tar.gz
 https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.16.2-configuration_fixes-1.patch
 https://github.com/transmission/transmission/releases/download/4.1.4/transmission-4.1.4.tar.xz
